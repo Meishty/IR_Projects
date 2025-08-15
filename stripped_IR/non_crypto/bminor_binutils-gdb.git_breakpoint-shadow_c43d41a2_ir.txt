@@ -1,0 +1,43 @@
+Function _start @ 0x400000
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I1 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I1 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I1 t53:Ity_I32 t54:Ity_I32 t55:Ity_I1 t56:Ity_I32
+
+   00 | ------ IMark(0x400000, 4, 0) ------
+   01 | t15 = GET:I32(cc_op)
+   02 | t14 = Or32(t15,0x00000020)
+   03 | t16 = GET:I32(cc_dep1)
+   04 | t17 = GET:I32(cc_dep2)
+   05 | t18 = GET:I32(cc_ndep)
+   06 | t19 = armg_calculate_condition(t14,t16,t17,t18):Ity_I32
+   07 | t1 = GET:I32(r1)
+   08 | t3 = And32(t1,0x00000082)
+   09 | t21 = GET:I32(r11)
+   10 | t22 = CmpNE32(t19,0x00000000)
+   11 | t20 = ITE(t22,t3,t21)
+   12 | PUT(r11) = t20
+   13 | ------ IMark(0x400004, 4, 0) ------
+   14 | t5 = GET:I32(r0)
+   15 | t7 = GET:I32(r2)
+   16 | t6 = Shl32(t7,0x06)
+   17 | t8 = And32(t5,t6)
+   18 | t29 = ITE(t22,t8,t7)
+   19 | PUT(r2) = t29
+   20 | ------ IMark(0x400008, 4, 0) ------
+   21 | t32 = Or32(t15,0x00000090)
+   22 | t37 = armg_calculate_condition(t32,t16,t17,t18):Ity_I32
+   23 | t39 = GET:I32(r9)
+   24 | t40 = CmpNE32(t37,0x00000000)
+   25 | t38 = ITE(t40,0x00001201,t39)
+   26 | PUT(r9) = t38
+   27 | PUT(pc) = 0x0040000c
+   28 | ------ IMark(0x40000c, 4, 0) ------
+   29 | t41 = Or32(t15,0x00000040)
+   30 | t46 = armg_calculate_condition(t41,t16,t17,t18):Ity_I32
+   31 | t47 = Sub32(t5,t29)
+   32 | t52 = CmpNE32(t46,0x00000000)
+   33 | t13 = if (t52) ILGop_8Uto32(LDle(t47)) else t20
+   34 | PUT(r11) = t13
+   35 | t53 = ITE(t52,t47,t5)
+   36 | PUT(r0) = t53
+   NEXT: PUT(pc) = 0x00400010; Ijk_Boring
+}
