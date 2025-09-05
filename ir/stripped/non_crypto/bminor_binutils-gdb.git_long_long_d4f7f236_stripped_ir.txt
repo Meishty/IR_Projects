@@ -1,0 +1,1072 @@
+Function _start @ 0x400000
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I1 t19:Ity_I32 t20:Ity_I32 t21:Ity_I1 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I1 t29:Ity_I1 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I32 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I32
+
+   00 | ------ IMark(0x400000, 4, 0) ------
+   01 | t8 = GET:I32(cc_op)
+   02 | t7 = Or32(t8,0x00000040)
+   03 | t9 = GET:I32(cc_dep1)
+   04 | t10 = GET:I32(cc_dep2)
+   05 | t11 = GET:I32(cc_ndep)
+   06 | t12 = armg_calculate_condition(t7,t9,t10,t11):Ity_I32
+   07 | t15 = GET:I32(sp)
+   08 | t14 = Shr32(t15,0x12)
+   09 | t16 = GET:I32(r0)
+   10 | t13 = Add32(t16,t14)
+   11 | t17 = GET:I32(lr)
+   12 | t18 = CmpNE32(t12,0x00000000)
+   13 | t3 = if (t18) ILGop_8Uto32(LDle(t13)) else t17
+   14 | PUT(lr) = t3
+   15 | t19 = ITE(t18,t13,t16)
+   16 | PUT(r0) = t19
+   17 | PUT(pc) = 0x00400004
+   18 | ------ IMark(0x400004, 4, 0) ------
+   19 | t27 = armg_calculate_condition(t8,t9,t10,t11):Ity_I32
+   20 | t29 = 32to1(t27)
+   21 | t28 = Not1(t29)
+   22 | if (t28) { PUT(pc) = 0x400008; Ijk_Boring }
+   23 | STle(t19) = 0x0040000c
+   24 | t31 = Sub32(t19,0x00000004)
+   25 | STle(t31) = t3
+   26 | t33 = Sub32(t19,0x00000008)
+   27 | STle(t33) = t15
+   28 | t35 = Sub32(t19,0x0000000c)
+   29 | t36 = GET:I32(r12)
+   30 | STle(t35) = t36
+   31 | t37 = Sub32(t19,0x00000010)
+   32 | t38 = GET:I32(r8)
+   33 | STle(t37) = t38
+   34 | t39 = Sub32(t19,0x00000014)
+   35 | t40 = GET:I32(r7)
+   36 | STle(t39) = t40
+   37 | t41 = Sub32(t19,0x00000018)
+   38 | t42 = GET:I32(r5)
+   39 | STle(t41) = t42
+   40 | t43 = Sub32(t19,0x0000001c)
+   41 | t44 = GET:I32(r4)
+   42 | STle(t43) = t44
+   43 | t45 = Sub32(t19,0x00000020)
+   44 | t46 = GET:I32(r1)
+   45 | STle(t45) = t46
+   46 | ------ IMark(0x400008, 0, 0) ------
+   47 | ------ IMark(0x400008, 4, 0) ------
+   48 | t48 = LDle:I32(0x00400008)
+   49 | PUT(pc) = t48
+   50 | t49 = Sub32(0x00400008,0x00000004)
+   51 | t50 = LDle:I32(t49)
+   52 | PUT(lr) = t50
+   53 | t51 = Sub32(t49,0x00000004)
+   54 | t52 = LDle:I32(t51)
+   55 | PUT(r12) = t52
+   56 | t53 = Sub32(t51,0x00000004)
+   57 | t54 = LDle:I32(t53)
+   58 | PUT(r11) = t54
+   59 | t55 = Sub32(t53,0x00000004)
+   60 | t56 = LDle:I32(t55)
+   61 | PUT(r10) = t56
+   62 | t57 = Sub32(t55,0x00000004)
+   63 | t58 = LDle:I32(t57)
+   64 | PUT(r8) = t58
+   65 | t59 = Sub32(t57,0x00000004)
+   66 | t60 = LDle:I32(t59)
+   67 | PUT(r4) = t60
+   68 | t61 = Sub32(t59,0x00000004)
+   69 | t62 = LDle:I32(t61)
+   70 | PUT(r3) = t62
+   71 | t63 = Sub32(t61,0x00000004)
+   72 | t64 = LDle:I32(t63)
+   73 | PUT(r1) = t64
+   74 | t65 = Sub32(t63,0x00000004)
+   NEXT: PUT(pc) = t48; Ijk_Ret
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32
+
+   00 | ------ IMark(0x400008, 4, 0) ------
+   01 | t0 = LDle:I32(0x00400008)
+   02 | PUT(pc) = t0
+   03 | t1 = Sub32(0x00400008,0x00000004)
+   04 | t2 = LDle:I32(t1)
+   05 | PUT(lr) = t2
+   06 | t3 = Sub32(t1,0x00000004)
+   07 | t4 = LDle:I32(t3)
+   08 | PUT(r12) = t4
+   09 | t5 = Sub32(t3,0x00000004)
+   10 | t6 = LDle:I32(t5)
+   11 | PUT(r11) = t6
+   12 | t7 = Sub32(t5,0x00000004)
+   13 | t8 = LDle:I32(t7)
+   14 | PUT(r10) = t8
+   15 | t9 = Sub32(t7,0x00000004)
+   16 | t10 = LDle:I32(t9)
+   17 | PUT(r8) = t10
+   18 | t11 = Sub32(t9,0x00000004)
+   19 | t12 = LDle:I32(t11)
+   20 | PUT(r4) = t12
+   21 | t13 = Sub32(t11,0x00000004)
+   22 | t14 = LDle:I32(t13)
+   23 | PUT(r3) = t14
+   24 | t15 = Sub32(t13,0x00000004)
+   25 | t16 = LDle:I32(t15)
+   26 | PUT(r1) = t16
+   27 | t17 = Sub32(t15,0x00000004)
+   NEXT: PUT(pc) = t0; Ijk_Ret
+}
+
+Function sub_40000d @ 0x40000d
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I1 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I32 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I32 t66:Ity_I32 t67:Ity_I32 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32 t71:Ity_I32 t72:Ity_I32 t73:Ity_I32 t74:Ity_I32 t75:Ity_I32 t76:Ity_I32 t77:Ity_I32 t78:Ity_I32 t79:Ity_I32 t80:Ity_I32 t81:Ity_I32 t82:Ity_I32 t83:Ity_I32 t84:Ity_I32 t85:Ity_I32 t86:Ity_I32 t87:Ity_I32 t88:Ity_I32 t89:Ity_I32 t90:Ity_I32 t91:Ity_I32 t92:Ity_I32 t93:Ity_I32 t94:Ity_I32 t95:Ity_I32 t96:Ity_I32 t97:Ity_I32 t98:Ity_I32 t99:Ity_I32 t100:Ity_I32 t101:Ity_I32 t102:Ity_I32 t103:Ity_I32 t104:Ity_I32 t105:Ity_I32 t106:Ity_I1 t107:Ity_I32 t108:Ity_I32 t109:Ity_I32 t110:Ity_I32 t111:Ity_I32 t112:Ity_I32 t113:Ity_I32 t114:Ity_I32 t115:Ity_I32 t116:Ity_I32 t117:Ity_I32 t118:Ity_I32 t119:Ity_I32 t120:Ity_I32 t121:Ity_I32 t122:Ity_I32 t123:Ity_I32 t124:Ity_I32 t125:Ity_I32 t126:Ity_I1 t127:Ity_I32 t128:Ity_I32 t129:Ity_I32 t130:Ity_I32 t131:Ity_I32 t132:Ity_I32 t133:Ity_I32 t134:Ity_I32 t135:Ity_I32 t136:Ity_I32 t137:Ity_I32 t138:Ity_I32 t139:Ity_I32 t140:Ity_I32 t141:Ity_I32 t142:Ity_I32 t143:Ity_I1 t144:Ity_I32 t145:Ity_I32 t146:Ity_I32 t147:Ity_I32 t148:Ity_I32 t149:Ity_I32 t150:Ity_I1 t151:Ity_I32 t152:Ity_I32 t153:Ity_I32 t154:Ity_I32 t155:Ity_I32 t156:Ity_I32 t157:Ity_I32 t158:Ity_I32 t159:Ity_I32 t160:Ity_I1 t161:Ity_I32 t162:Ity_I32 t163:Ity_I32 t164:Ity_I32 t165:Ity_I32 t166:Ity_I1 t167:Ity_I32 t168:Ity_I32 t169:Ity_I32 t170:Ity_I32 t171:Ity_I32 t172:Ity_I32 t173:Ity_I32 t174:Ity_I32 t175:Ity_I32 t176:Ity_I1 t177:Ity_I32 t178:Ity_I32 t179:Ity_I32 t180:Ity_I32 t181:Ity_I32 t182:Ity_I1 t183:Ity_I32 t184:Ity_I32 t185:Ity_I32 t186:Ity_I32 t187:Ity_I32 t188:Ity_I32 t189:Ity_I32 t190:Ity_I32 t191:Ity_I32 t192:Ity_I1 t193:Ity_I32 t194:Ity_I32 t195:Ity_I32 t196:Ity_I32 t197:Ity_I32 t198:Ity_I32 t199:Ity_I32 t200:Ity_I32 t201:Ity_I32 t202:Ity_I32 t203:Ity_I32 t204:Ity_I32 t205:Ity_I32 t206:Ity_I32 t207:Ity_I32 t208:Ity_I1 t209:Ity_I32 t210:Ity_I32 t211:Ity_I32 t212:Ity_I32 t213:Ity_I32 t214:Ity_I32 t215:Ity_I32 t216:Ity_I32 t217:Ity_I32 t218:Ity_I32 t219:Ity_I32 t220:Ity_I32 t221:Ity_I32 t222:Ity_I32 t223:Ity_I32 t224:Ity_I32 t225:Ity_I32 t226:Ity_I1 t227:Ity_I32 t228:Ity_I32 t229:Ity_I32 t230:Ity_I32 t231:Ity_I32 t232:Ity_I32 t233:Ity_I32 t234:Ity_I1 t235:Ity_I32 t236:Ity_I32 t237:Ity_I32 t238:Ity_I32 t239:Ity_I32 t240:Ity_I32 t241:Ity_I32 t242:Ity_I32 t243:Ity_I32 t244:Ity_I1 t245:Ity_I32 t246:Ity_I32 t247:Ity_I32 t248:Ity_I32 t249:Ity_I32 t250:Ity_I1 t251:Ity_I32 t252:Ity_I32 t253:Ity_I32 t254:Ity_I32 t255:Ity_I32 t256:Ity_I32 t257:Ity_I32 t258:Ity_I32 t259:Ity_I32 t260:Ity_I1 t261:Ity_I32 t262:Ity_I32 t263:Ity_I32 t264:Ity_I32 t265:Ity_I32 t266:Ity_I1 t267:Ity_I32 t268:Ity_I32 t269:Ity_I32 t270:Ity_I32 t271:Ity_I32 t272:Ity_I32 t273:Ity_I32 t274:Ity_I32 t275:Ity_I32 t276:Ity_I1 t277:Ity_I32 t278:Ity_I32 t279:Ity_I32 t280:Ity_I1 t281:Ity_I32 t282:Ity_I32 t283:Ity_I32 t284:Ity_I32 t285:Ity_I32 t286:Ity_I32 t287:Ity_I32 t288:Ity_I32 t289:Ity_I32 t290:Ity_I1 t291:Ity_I32 t292:Ity_I32 t293:Ity_I32 t294:Ity_I32 t295:Ity_I32 t296:Ity_I1 t297:Ity_I32 t298:Ity_I32 t299:Ity_I32 t300:Ity_I32 t301:Ity_I32 t302:Ity_I32 t303:Ity_I32 t304:Ity_I32 t305:Ity_I32 t306:Ity_I1 t307:Ity_I32 t308:Ity_I32 t309:Ity_I32 t310:Ity_I32 t311:Ity_I32 t312:Ity_I1 t313:Ity_I32 t314:Ity_I32 t315:Ity_I32 t316:Ity_I32 t317:Ity_I32 t318:Ity_I32 t319:Ity_I32 t320:Ity_I32 t321:Ity_I32 t322:Ity_I1 t323:Ity_I32 t324:Ity_I32 t325:Ity_I32 t326:Ity_I32 t327:Ity_I32 t328:Ity_I1 t329:Ity_I32 t330:Ity_I32 t331:Ity_I32 t332:Ity_I32 t333:Ity_I32 t334:Ity_I32 t335:Ity_I32 t336:Ity_I32 t337:Ity_I32 t338:Ity_I1 t339:Ity_I32 t340:Ity_I32 t341:Ity_I32 t342:Ity_I32 t343:Ity_I32 t344:Ity_I1 t345:Ity_I32 t346:Ity_I32 t347:Ity_I32 t348:Ity_I32 t349:Ity_I32 t350:Ity_I32 t351:Ity_I32 t352:Ity_I32 t353:Ity_I32 t354:Ity_I1 t355:Ity_I32 t356:Ity_I32 t357:Ity_I32 t358:Ity_I1 t359:Ity_I1 t360:Ity_I32 t361:Ity_I32 t362:Ity_I32 t363:Ity_I32 t364:Ity_I32 t365:Ity_I32 t366:Ity_I32 t367:Ity_I32 t368:Ity_I32 t369:Ity_I32 t370:Ity_I1 t371:Ity_I32 t372:Ity_I32 t373:Ity_I32 t374:Ity_I32 t375:Ity_I32 t376:Ity_I1 t377:Ity_I32 t378:Ity_I32 t379:Ity_I32 t380:Ity_I32 t381:Ity_I32 t382:Ity_I32 t383:Ity_I32 t384:Ity_I32 t385:Ity_I32 t386:Ity_I1 t387:Ity_I32 t388:Ity_I32 t389:Ity_I32 t390:Ity_I32 t391:Ity_I32 t392:Ity_I32 t393:Ity_I1 t394:Ity_I32 t395:Ity_I32 t396:Ity_I32 t397:Ity_I32 t398:Ity_I32 t399:Ity_I32 t400:Ity_I32 t401:Ity_I32 t402:Ity_I32 t403:Ity_I32 t404:Ity_I32 t405:Ity_I32 t406:Ity_I32 t407:Ity_I32 t408:Ity_I32 t409:Ity_I32 t410:Ity_I32 t411:Ity_I1 t412:Ity_I32 t413:Ity_I32 t414:Ity_I32 t415:Ity_I1 t416:Ity_I1 t417:Ity_I1 t418:Ity_I32
+
+   00 | ------ IMark(0x40000c, 2, 1) ------
+   01 | t0 = GET:I32(itstate)
+   02 | t1 = Shr32(t0,0x08)
+   03 | t136 = And32(t0,0x000000f0)
+   04 | t135 = Xor32(t136,0x000000e0)
+   05 | t137 = GET:I32(cc_op)
+   06 | t134 = Or32(t137,t135)
+   07 | t138 = GET:I32(cc_dep1)
+   08 | t139 = GET:I32(cc_dep2)
+   09 | t140 = GET:I32(cc_ndep)
+   10 | t141 = armg_calculate_condition(t134,t138,t139,t140):Ity_I32
+   11 | t143 = CmpNE32(t136,0x00000000)
+   12 | t142 = ITE(t143,t141,0x00000001)
+   13 | t148 = GET:I32(sp)
+   14 | t147 = Add32(t148,0x000000e0)
+   15 | t149 = GET:I32(r0)
+   16 | t150 = CmpNE32(t142,0x00000000)
+   17 | if (t150) STle(t147) = t149
+   18 | ------ IMark(0x40000e, 2, 1) ------
+   19 | t7 = Shr32(t1,0x08)
+   20 | t153 = And32(t1,0x000000f0)
+   21 | t152 = Xor32(t153,0x000000e0)
+   22 | t151 = Or32(t137,t152)
+   23 | t158 = armg_calculate_condition(t151,t138,t139,t140):Ity_I32
+   24 | t160 = CmpNE32(t153,0x00000000)
+   25 | t159 = ITE(t160,t158,0x00000001)
+   26 | t12 = GET:I32(r1)
+   27 | t165 = GET:I32(r6)
+   28 | t166 = CmpNE32(t159,0x00000000)
+   29 | t164 = ITE(t166,t12,t165)
+   30 | PUT(r6) = t164
+   31 | ------ IMark(0x400010, 2, 1) ------
+   32 | t14 = Shr32(t7,0x08)
+   33 | t169 = And32(t7,0x000000f0)
+   34 | t168 = Xor32(t169,0x000000e0)
+   35 | t167 = Or32(t137,t168)
+   36 | t174 = armg_calculate_condition(t167,t138,t139,t140):Ity_I32
+   37 | t176 = CmpNE32(t169,0x00000000)
+   38 | t175 = ITE(t176,t174,0x00000001)
+   39 | t181 = GET:I32(r5)
+   40 | t182 = CmpNE32(t175,0x00000000)
+   41 | t180 = ITE(t182,t149,t181)
+   42 | PUT(r5) = t180
+   43 | ------ IMark(0x400012, 2, 1) ------
+   44 | t21 = Shr32(t14,0x08)
+   45 | t185 = And32(t14,0x000000f0)
+   46 | t184 = Xor32(t185,0x000000e0)
+   47 | t183 = Or32(t137,t184)
+   48 | t190 = armg_calculate_condition(t183,t138,t139,t140):Ity_I32
+   49 | t192 = CmpNE32(t185,0x00000000)
+   50 | t191 = ITE(t192,t190,0x00000001)
+   51 | t195 = And32(t14,0x00000001)
+   52 | t194 = Xor32(t195,0x00000001)
+   53 | t25 = And32(t194,t191)
+   54 | t200 = armg_calculate_flag_v(t137,t138,t139,t140):Ity_I32
+   55 | t205 = armg_calculate_flag_c(t137,t138,t139,t140):Ity_I32
+   56 | t207 = GET:I32(r4)
+   57 | t208 = CmpNE32(t191,0x00000000)
+   58 | t206 = ITE(t208,0x00000000,t207)
+   59 | PUT(r4) = t206
+   60 | t29 = CmpNE32(t25,0x00000000)
+   61 | t209 = ITE(t29,0x00000005,t137)
+   62 | PUT(cc_op) = t209
+   63 | t211 = ITE(t29,0x00000000,t138)
+   64 | PUT(cc_dep1) = t211
+   65 | t213 = ITE(t29,t205,t139)
+   66 | PUT(cc_dep2) = t213
+   67 | t215 = ITE(t29,t200,t140)
+   68 | PUT(cc_ndep) = t215
+   69 | ------ IMark(0x400014, 2, 1) ------
+   70 | t31 = Shr32(t21,0x08)
+   71 | t219 = And32(t21,0x000000f0)
+   72 | t218 = Xor32(t219,0x000000e0)
+   73 | t217 = Or32(t209,t218)
+   74 | t224 = armg_calculate_condition(t217,t211,t213,t215):Ity_I32
+   75 | t226 = CmpNE32(t219,0x00000000)
+   76 | t225 = ITE(t226,t224,0x00000001)
+   77 | t231 = GET:I32(r9)
+   78 | t230 = Add32(t231,0x00400018)
+   79 | t234 = CmpNE32(t225,0x00000000)
+   80 | t232 = ITE(t234,t230,t231)
+   81 | PUT(r9) = t232
+   82 | ------ IMark(0x400016, 4, 1) ------
+   83 | t38 = Shr32(t31,0x08)
+   84 | t237 = And32(t31,0x000000f0)
+   85 | t236 = Xor32(t237,0x000000e0)
+   86 | t235 = Or32(t209,t236)
+   87 | t242 = armg_calculate_condition(t235,t211,t213,t215):Ity_I32
+   88 | t244 = CmpNE32(t237,0x00000000)
+   89 | t243 = ITE(t244,t242,0x00000001)
+   90 | t45 = Sub32(0x00000008,t12)
+   91 | t249 = GET:I32(r10)
+   92 | t250 = CmpNE32(t243,0x00000000)
+   93 | t248 = ITE(t250,t45,t249)
+   94 | PUT(r10) = t248
+   95 | ------ IMark(0x40001a, 4, 1) ------
+   96 | t47 = Shr32(t38,0x08)
+   97 | t253 = And32(t38,0x000000f0)
+   98 | t252 = Xor32(t253,0x000000e0)
+   99 | t251 = Or32(t209,t252)
+   100 | t258 = armg_calculate_condition(t251,t211,t213,t215):Ity_I32
+   101 | t260 = CmpNE32(t253,0x00000000)
+   102 | t259 = ITE(t260,t258,0x00000001)
+   103 | t54 = Add32(t232,0x00000008)
+   104 | t265 = GET:I32(r7)
+   105 | t266 = CmpNE32(t259,0x00000000)
+   106 | t264 = ITE(t266,t54,t265)
+   107 | PUT(r7) = t264
+   108 | PUT(pc) = 0x0040001f
+   109 | ------ IMark(0x40001e, 4, 1) ------
+   110 | t56 = Shr32(t47,0x08)
+   111 | t269 = And32(t47,0x000000f0)
+   112 | t268 = Xor32(t269,0x000000e0)
+   113 | t267 = Or32(t209,t268)
+   114 | t274 = armg_calculate_condition(t267,t211,t213,t215):Ity_I32
+   115 | t276 = CmpNE32(t269,0x00000000)
+   116 | t275 = ITE(t276,t274,0x00000001)
+   117 | t63 = GET:I32(r3)
+   118 | t280 = CmpNE32(t275,0x00000000)
+   119 | t65 = if (t280) ILGop_8Uto32(LDle(t232)) else t63
+   120 | PUT(r3) = t65
+   121 | ------ IMark(0x400022, 4, 1) ------
+   122 | t67 = Shr32(t56,0x08)
+   123 | t283 = And32(t56,0x000000f0)
+   124 | t282 = Xor32(t283,0x000000e0)
+   125 | t281 = Or32(t209,t282)
+   126 | t288 = armg_calculate_condition(t281,t211,t213,t215):Ity_I32
+   127 | t290 = CmpNE32(t283,0x00000000)
+   128 | t289 = ITE(t290,t288,0x00000001)
+   129 | t74 = Shl32(t206,0x03)
+   130 | t75 = Add32(t248,t74)
+   131 | t295 = GET:I32(r12)
+   132 | t296 = CmpNE32(t289,0x00000000)
+   133 | t294 = ITE(t296,t75,t295)
+   134 | PUT(r12) = t294
+   135 | ------ IMark(0x400026, 2, 1) ------
+   136 | t77 = Shr32(t67,0x08)
+   137 | t299 = And32(t67,0x000000f0)
+   138 | t298 = Xor32(t299,0x000000e0)
+   139 | t297 = Or32(t209,t298)
+   140 | t304 = armg_calculate_condition(t297,t211,t213,t215):Ity_I32
+   141 | t306 = CmpNE32(t299,0x00000000)
+   142 | t305 = ITE(t306,t304,0x00000001)
+   143 | t312 = CmpNE32(t305,0x00000000)
+   144 | t310 = ITE(t312,t180,t149)
+   145 | PUT(r0) = t310
+   146 | ------ IMark(0x400028, 4, 1) ------
+   147 | t84 = Shr32(t77,0x08)
+   148 | t315 = And32(t77,0x000000f0)
+   149 | t314 = Xor32(t315,0x000000e0)
+   150 | t313 = Or32(t209,t314)
+   151 | t320 = armg_calculate_condition(t313,t211,t213,t215):Ity_I32
+   152 | t322 = CmpNE32(t315,0x00000000)
+   153 | t321 = ITE(t322,t320,0x00000001)
+   154 | t92 = Add32(t264,t74)
+   155 | t328 = CmpNE32(t321,0x00000000)
+   156 | t326 = ITE(t328,t92,t12)
+   157 | PUT(r1) = t326
+   158 | ------ IMark(0x40002c, 2, 1) ------
+   159 | t94 = Shr32(t84,0x08)
+   160 | t331 = And32(t84,0x000000f0)
+   161 | t330 = Xor32(t331,0x000000e0)
+   162 | t329 = Or32(t209,t330)
+   163 | t336 = armg_calculate_condition(t329,t211,t213,t215):Ity_I32
+   164 | t338 = CmpNE32(t331,0x00000000)
+   165 | t337 = ITE(t338,t336,0x00000001)
+   166 | t343 = GET:I32(r2)
+   167 | t344 = CmpNE32(t337,0x00000000)
+   168 | t342 = ITE(t344,t164,t343)
+   169 | PUT(r2) = t342
+   170 | PUT(pc) = 0x0040002f
+   171 | ------ IMark(0x40002e, 2, 1) ------
+   172 | t101 = Shr32(t94,0x08)
+   173 | PUT(itstate) = t94
+   174 | t358 = CmpNE32(t94,0x00000000)
+   175 | if (t358) { PUT(pc) = 0x40002f; Ijk_NoDecode }
+   176 | PUT(itstate) = t101
+   177 | t359 = CmpEQ32(t65,0x00000000)
+   178 | if (t359) { PUT(pc) = 0x400035; Ijk_Boring }
+   179 | ------ IMark(0x400030, 4, 1) ------
+   180 | t108 = Shr32(t101,0x08)
+   181 | t363 = And32(t101,0x000000f0)
+   182 | t362 = Xor32(t363,0x000000e0)
+   183 | t361 = Or32(t209,t362)
+   184 | t368 = armg_calculate_condition(t361,t211,t213,t215):Ity_I32
+   185 | t370 = CmpNE32(t363,0x00000000)
+   186 | t369 = ITE(t370,t368,0x00000001)
+   187 | t116 = Add32(t264,t294)
+   188 | t376 = CmpNE32(t369,0x00000000)
+   189 | t374 = ITE(t376,t116,t326)
+   190 | PUT(r1) = t374
+   191 | ------ IMark(0x400034, 2, 1) ------
+   192 | t118 = Shr32(t108,0x08)
+   193 | t379 = And32(t108,0x000000f0)
+   194 | t378 = Xor32(t379,0x000000e0)
+   195 | t377 = Or32(t209,t378)
+   196 | t384 = armg_calculate_condition(t377,t211,t213,t215):Ity_I32
+   197 | t386 = CmpNE32(t379,0x00000000)
+   198 | t385 = ITE(t386,t384,0x00000001)
+   199 | t389 = And32(t108,0x00000001)
+   200 | t388 = Xor32(t389,0x00000001)
+   201 | t122 = And32(t388,t385)
+   202 | t392 = Add32(t206,0x00000001)
+   203 | t393 = CmpNE32(t385,0x00000000)
+   204 | t390 = ITE(t393,t392,t206)
+   205 | PUT(r4) = t390
+   206 | t126 = CmpNE32(t122,0x00000000)
+   207 | t394 = ITE(t126,0x00000001,t209)
+   208 | PUT(cc_op) = t394
+   209 | t396 = ITE(t126,t206,t211)
+   210 | PUT(cc_dep1) = t396
+   211 | t398 = ITE(t126,0x00000001,t213)
+   212 | PUT(cc_dep2) = t398
+   213 | t400 = ITE(t126,0x00000000,t215)
+   214 | PUT(cc_ndep) = t400
+   215 | PUT(pc) = 0x00400037
+   216 | ------ IMark(0x400036, 4, 1) ------
+   217 | t128 = Shr32(t118,0x08)
+   218 | t404 = And32(t118,0x000000f0)
+   219 | t403 = Xor32(t404,0x000000e0)
+   220 | t402 = Or32(t394,t403)
+   221 | t409 = armg_calculate_condition(t402,t396,t398,t400):Ity_I32
+   222 | t411 = CmpNE32(t404,0x00000000)
+   223 | t410 = ITE(t411,t409,0x00000001)
+   224 | PUT(itstate) = t118
+   225 | t415 = CmpNE32(t128,0x00000000)
+   226 | if (t415) { PUT(pc) = 0x400037; Ijk_NoDecode }
+   227 | PUT(itstate) = t128
+   228 | t417 = 32to1(t410)
+   229 | t416 = Not1(t417)
+   230 | if (t416) { PUT(pc) = 0x40003b; Ijk_Boring }
+   231 | PUT(lr) = 0x0040003b
+   NEXT: PUT(pc) = 0x00400037; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I1 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I1 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I1 t22:Ity_I1 t23:Ity_I1 t24:Ity_I32
+
+   00 | ------ IMark(0x400034, 2, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t11 = Add32(t2,0x00000001)
+   03 | PUT(r4) = t11
+   04 | PUT(cc_op) = 0x00000001
+   05 | PUT(cc_dep1) = t2
+   06 | PUT(cc_dep2) = 0x00000001
+   07 | PUT(cc_ndep) = 0x00000000
+   08 | ------ IMark(0x400036, 4, 1) ------
+   09 | PUT(itstate) = 0x00000000
+   10 | PUT(lr) = 0x0040003b
+   NEXT: PUT(pc) = 0x00400037; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I1 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I1 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I1 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I1 t31:Ity_I1 t32:Ity_I1 t33:Ity_I32
+
+   00 | ------ IMark(0x400030, 4, 1) ------
+   01 | t2 = GET:I32(r7)
+   02 | t3 = GET:I32(r12)
+   03 | t5 = Add32(t2,t3)
+   04 | PUT(r1) = t5
+   05 | ------ IMark(0x400034, 2, 1) ------
+   06 | t8 = GET:I32(r4)
+   07 | t20 = Add32(t8,0x00000001)
+   08 | PUT(r4) = t20
+   09 | PUT(cc_op) = 0x00000001
+   10 | PUT(cc_dep1) = t8
+   11 | PUT(cc_dep2) = 0x00000001
+   12 | PUT(cc_ndep) = 0x00000000
+   13 | ------ IMark(0x400036, 4, 1) ------
+   14 | PUT(itstate) = 0x00000000
+   15 | PUT(lr) = 0x0040003b
+   NEXT: PUT(pc) = 0x00400037; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I1 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I1 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I1 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I1 t34:Ity_I32 t35:Ity_I32 t36:Ity_I1 t37:Ity_I1
+
+   00 | ------ IMark(0x40003a, 2, 1) ------
+   01 | t13 = GET:I32(r6)
+   02 | t14 = GET:I32(r5)
+   03 | t12 = Add32(t14,t13)
+   04 | PUT(r5) = t12
+   05 | ------ IMark(0x40003c, 2, 1) ------
+   06 | t5 = GET:I32(r8)
+   07 | t6 = GET:I32(r4)
+   08 | PUT(cc_op) = 0x00000002
+   09 | PUT(cc_dep1) = t5
+   10 | PUT(cc_dep2) = t6
+   11 | PUT(cc_ndep) = 0x00000000
+   12 | PUT(pc) = 0x0040003f
+   13 | ------ IMark(0x40003e, 2, 1) ------
+   14 | PUT(itstate) = 0x00000000
+   15 | t36 = CmpNE32(t5,t6)
+   16 | t35 = 1Uto32(t36)
+   17 | t37 = 32to1(t35)
+   18 | if (t37) { PUT(pc) = 0x40001f; Ijk_Boring }
+   NEXT: PUT(pc) = 0x00400041; Ijk_Boring
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I1 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I1 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I1 t44:Ity_I32 t45:Ity_I32 t46:Ity_I1 t47:Ity_I32 t48:Ity_I32 t49:Ity_I1 t50:Ity_I32 t51:Ity_I32 t52:Ity_I1 t53:Ity_I32 t54:Ity_I32 t55:Ity_I1 t56:Ity_I1 t57:Ity_I1 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I1 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I32 t67:Ity_I32 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32 t71:Ity_I32 t72:Ity_I32 t73:Ity_I32 t74:Ity_I1 t75:Ity_I1 t76:Ity_I1 t77:Ity_I32 t78:Ity_I8
+
+   00 | ------ IMark(0x40001e, 4, 1) ------
+   01 | t2 = GET:I32(r9)
+   02 | t78 = LDle:I8(t2)
+   03 | t6 = 8Uto32(t78)
+   04 | PUT(r3) = t6
+   05 | ------ IMark(0x400022, 4, 1) ------
+   06 | t9 = GET:I32(r10)
+   07 | t10 = GET:I32(r4)
+   08 | t11 = Shl32(t10,0x03)
+   09 | t12 = Add32(t9,t11)
+   10 | PUT(r12) = t12
+   11 | ------ IMark(0x400026, 2, 1) ------
+   12 | t15 = GET:I32(r5)
+   13 | PUT(r0) = t15
+   14 | ------ IMark(0x400028, 4, 1) ------
+   15 | t18 = GET:I32(r7)
+   16 | t21 = Add32(t18,t11)
+   17 | PUT(r1) = t21
+   18 | ------ IMark(0x40002c, 2, 1) ------
+   19 | t24 = GET:I32(r6)
+   20 | PUT(r2) = t24
+   21 | PUT(pc) = 0x0040002f
+   22 | ------ IMark(0x40002e, 2, 1) ------
+   23 | PUT(itstate) = 0x00000000
+   24 | t57 = CmpEQ32(t6,0x00000000)
+   25 | if (t57) { PUT(pc) = 0x400035; Ijk_Boring }
+   26 | ------ IMark(0x400030, 4, 1) ------
+   27 | t33 = Add32(t18,t12)
+   28 | PUT(r1) = t33
+   29 | ------ IMark(0x400034, 2, 1) ------
+   30 | t64 = Add32(t10,0x00000001)
+   31 | PUT(r4) = t64
+   32 | PUT(cc_op) = 0x00000001
+   33 | PUT(cc_dep1) = t10
+   34 | PUT(cc_dep2) = 0x00000001
+   35 | PUT(cc_ndep) = 0x00000000
+   36 | ------ IMark(0x400036, 4, 1) ------
+   37 | PUT(itstate) = 0x00000000
+   38 | PUT(lr) = 0x0040003b
+   NEXT: PUT(pc) = 0x00400037; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I1 t6:Ity_I1 t7:Ity_I1 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32
+
+   00 | ------ IMark(0x400040, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | t3 = GET:I32(sp)
+   03 | t8 = LDle:I32(t3)
+   04 | PUT(r4) = t8
+   05 | t11 = Add32(t3,0x00000004)
+   06 | t10 = LDle:I32(t11)
+   07 | PUT(r5) = t10
+   08 | t13 = Add32(t3,0x00000008)
+   09 | t12 = LDle:I32(t13)
+   10 | PUT(r6) = t12
+   11 | t15 = Add32(t3,0x0000000c)
+   12 | t14 = LDle:I32(t15)
+   13 | PUT(r7) = t14
+   14 | t17 = Add32(t3,0x00000010)
+   15 | t16 = LDle:I32(t17)
+   16 | PUT(r8) = t16
+   17 | t19 = Add32(t3,0x00000014)
+   18 | t18 = LDle:I32(t19)
+   19 | PUT(r9) = t18
+   20 | t21 = Add32(t3,0x00000018)
+   21 | t20 = LDle:I32(t21)
+   22 | PUT(r10) = t20
+   23 | t23 = Add32(t3,0x0000001c)
+   24 | t22 = LDle:I32(t23)
+   25 | t24 = Add32(t3,0x00000020)
+   26 | PUT(sp) = t24
+   NEXT: PUT(pc) = t22; Ijk_Ret
+}
+
+Function sub_400037 @ 0x400037
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400036, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x0040003b
+   NEXT: PUT(pc) = 0x00400037; Ijk_Call
+}
+
+Function sub_400045 @ 0x400045
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I1 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I1 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I1 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I1 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I32 t57:Ity_I1 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I32 t66:Ity_I32 t67:Ity_I32 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32 t71:Ity_I32 t72:Ity_I32 t73:Ity_I32 t74:Ity_I32 t75:Ity_I32 t76:Ity_I32 t77:Ity_I32 t78:Ity_I1 t79:Ity_I32 t80:Ity_I32 t81:Ity_I32 t82:Ity_I32 t83:Ity_I32 t84:Ity_I32 t85:Ity_I32 t86:Ity_I32 t87:Ity_I1 t88:Ity_I1 t89:Ity_I1 t90:Ity_I32 t91:Ity_I32 t92:Ity_I32
+
+   00 | ------ IMark(0x400044, 2, 1) ------
+   01 | t4 = GET:I32(r5)
+   02 | t24 = GET:I32(cc_op)
+   03 | t25 = GET:I32(cc_dep1)
+   04 | t26 = GET:I32(cc_dep2)
+   05 | t27 = GET:I32(cc_ndep)
+   06 | t91 = armg_calculate_flag_v(t24,t25,t26,t27):Ity_I32
+   07 | t92 = armg_calculate_flag_c(t24,t25,t26,t27):Ity_I32
+   08 | PUT(r4) = t4
+   09 | ------ IMark(0x400046, 2, 1) ------
+   10 | ------ IMark(0x400048, 2, 1) ------
+   11 | PUT(r0) = 0x00000000
+   12 | PUT(cc_op) = 0x00000005
+   13 | PUT(cc_dep1) = 0x00000000
+   14 | PUT(cc_dep2) = t92
+   15 | PUT(cc_ndep) = t91
+   16 | ------ IMark(0x40004a, 2, 1) ------
+   17 | PUT(itstate) = 0x00000000
+   18 | t22 = GET:I32(lr)
+   NEXT: PUT(pc) = t22; Ijk_Ret
+}
+
+Function sub_400101 @ 0x400101
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I1 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I32 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I32 t66:Ity_I1 t67:Ity_I32 t68:Ity_I32 t69:Ity_I32 t70:Ity_I1 t71:Ity_I1 t72:Ity_I32 t73:Ity_I32 t74:Ity_I32 t75:Ity_I32 t76:Ity_I32 t77:Ity_I32 t78:Ity_I32 t79:Ity_I32 t80:Ity_I32 t81:Ity_I32 t82:Ity_I32 t83:Ity_I32 t84:Ity_I32 t85:Ity_I32 t86:Ity_I32 t87:Ity_I1 t88:Ity_I32 t89:Ity_I32 t90:Ity_I32 t91:Ity_I32 t92:Ity_I32 t93:Ity_I32 t94:Ity_I32 t95:Ity_I32 t96:Ity_I32 t97:Ity_I32 t98:Ity_I32 t99:Ity_I32 t100:Ity_I32 t101:Ity_I32 t102:Ity_I32 t103:Ity_I1 t104:Ity_I32 t105:Ity_I32 t106:Ity_I32 t107:Ity_I32 t108:Ity_I32 t109:Ity_I32 t110:Ity_I32 t111:Ity_I32 t112:Ity_I32 t113:Ity_I32 t114:Ity_I32 t115:Ity_I32 t116:Ity_I32 t117:Ity_I32 t118:Ity_I32 t119:Ity_I32 t120:Ity_I32 t121:Ity_I1 t122:Ity_I32 t123:Ity_I32 t124:Ity_I32 t125:Ity_I32 t126:Ity_I32 t127:Ity_I32 t128:Ity_I1 t129:Ity_I32 t130:Ity_I32 t131:Ity_I32 t132:Ity_I32 t133:Ity_I32 t134:Ity_I32 t135:Ity_I32 t136:Ity_I32 t137:Ity_I32 t138:Ity_I1 t139:Ity_I32 t140:Ity_I32 t141:Ity_I32 t142:Ity_I32 t143:Ity_I32 t144:Ity_I32 t145:Ity_I32 t146:Ity_I32 t147:Ity_I32 t148:Ity_I32 t149:Ity_I32 t150:Ity_I32 t151:Ity_I32 t152:Ity_I32 t153:Ity_I32 t154:Ity_I1 t155:Ity_I32 t156:Ity_I32 t157:Ity_I32 t158:Ity_I32 t159:Ity_I32 t160:Ity_I32 t161:Ity_I32 t162:Ity_I32 t163:Ity_I32 t164:Ity_I32 t165:Ity_I32 t166:Ity_I32 t167:Ity_I32 t168:Ity_I32 t169:Ity_I32 t170:Ity_I32 t171:Ity_I32 t172:Ity_I1 t173:Ity_I32 t174:Ity_I32 t175:Ity_I32 t176:Ity_I32 t177:Ity_I32 t178:Ity_I32 t179:Ity_I32 t180:Ity_I1 t181:Ity_I32 t182:Ity_I32 t183:Ity_I32 t184:Ity_I32 t185:Ity_I32 t186:Ity_I32 t187:Ity_I32 t188:Ity_I32 t189:Ity_I32 t190:Ity_I1 t191:Ity_I32 t192:Ity_I32 t193:Ity_I32 t194:Ity_I32 t195:Ity_I32 t196:Ity_I1 t197:Ity_I32 t198:Ity_I32 t199:Ity_I32 t200:Ity_I32 t201:Ity_I32 t202:Ity_I32 t203:Ity_I32 t204:Ity_I32 t205:Ity_I32 t206:Ity_I1 t207:Ity_I32 t208:Ity_I32 t209:Ity_I32 t210:Ity_I1 t211:Ity_I1 t212:Ity_I1 t213:Ity_I32
+
+   00 | ------ IMark(0x400100, 2, 1) ------
+   01 | t0 = GET:I32(itstate)
+   02 | t1 = Shr32(t0,0x08)
+   03 | PUT(itstate) = t1
+   04 | t59 = And32(t0,0x000000f0)
+   05 | t58 = Xor32(t59,0x000000e0)
+   06 | t60 = GET:I32(cc_op)
+   07 | t57 = Or32(t60,t58)
+   08 | t61 = GET:I32(cc_dep1)
+   09 | t62 = GET:I32(cc_dep2)
+   10 | t63 = GET:I32(cc_ndep)
+   11 | t64 = armg_calculate_condition(t57,t61,t62,t63):Ity_I32
+   12 | t66 = CmpNE32(t59,0x00000000)
+   13 | t65 = ITE(t66,t64,0x00000001)
+   14 | t71 = 32to1(t65)
+   15 | t70 = Not1(t71)
+   16 | if (t70) { PUT(pc) = 0x400103; Ijk_Boring }
+   17 | t73 = GET:I32(sp)
+   18 | t72 = Sub32(t73,0x00000008)
+   19 | PUT(sp) = t72
+   20 | t7 = And32(t72,0xfffffffc)
+   21 | t75 = GET:I32(r4)
+   22 | STle(t7) = t75
+   23 | t76 = Add32(t7,0x00000004)
+   24 | t77 = GET:I32(lr)
+   25 | STle(t76) = t77
+   26 | ------ IMark(0x400102, 2, 1) ------
+   27 | t9 = Shr32(t1,0x08)
+   28 | t80 = And32(t1,0x000000f0)
+   29 | t79 = Xor32(t80,0x000000e0)
+   30 | t78 = Or32(t60,t79)
+   31 | t85 = armg_calculate_condition(t78,t61,t62,t63):Ity_I32
+   32 | t87 = CmpNE32(t80,0x00000000)
+   33 | t86 = ITE(t87,t85,0x00000001)
+   34 | t90 = And32(t1,0x00000001)
+   35 | t89 = Xor32(t90,0x00000001)
+   36 | t13 = And32(t89,t86)
+   37 | t95 = armg_calculate_flag_v(t60,t61,t62,t63):Ity_I32
+   38 | t100 = armg_calculate_flag_c(t60,t61,t62,t63):Ity_I32
+   39 | t102 = GET:I32(r2)
+   40 | t103 = CmpNE32(t86,0x00000000)
+   41 | t101 = ITE(t103,0x00000002,t102)
+   42 | PUT(r2) = t101
+   43 | t17 = CmpNE32(t13,0x00000000)
+   44 | t104 = ITE(t17,0x00000005,t60)
+   45 | t106 = ITE(t17,0x00000002,t61)
+   46 | t108 = ITE(t17,t100,t62)
+   47 | t110 = ITE(t17,t95,t63)
+   48 | PUT(pc) = 0x00400105
+   49 | ------ IMark(0x400104, 2, 1) ------
+   50 | t19 = Shr32(t9,0x08)
+   51 | t114 = And32(t9,0x000000f0)
+   52 | t113 = Xor32(t114,0x000000e0)
+   53 | t112 = Or32(t104,t113)
+   54 | t119 = armg_calculate_condition(t112,t106,t108,t110):Ity_I32
+   55 | t121 = CmpNE32(t114,0x00000000)
+   56 | t120 = ITE(t121,t119,0x00000001)
+   57 | t128 = CmpNE32(t120,0x00000000)
+   58 | t25 = if (t128) ILGop_Ident32(LDle(0x00400174)) else t75
+   59 | ------ IMark(0x400106, 2, 1) ------
+   60 | t27 = Shr32(t19,0x08)
+   61 | t131 = And32(t19,0x000000f0)
+   62 | t130 = Xor32(t131,0x000000e0)
+   63 | t129 = Or32(t104,t130)
+   64 | t136 = armg_calculate_condition(t129,t106,t108,t110):Ity_I32
+   65 | t138 = CmpNE32(t131,0x00000000)
+   66 | t137 = ITE(t138,t136,0x00000001)
+   67 | t141 = And32(t19,0x00000001)
+   68 | t140 = Xor32(t141,0x00000001)
+   69 | t31 = And32(t140,t137)
+   70 | t146 = armg_calculate_flag_v(t104,t106,t108,t110):Ity_I32
+   71 | t151 = armg_calculate_flag_c(t104,t106,t108,t110):Ity_I32
+   72 | t153 = GET:I32(r1)
+   73 | t154 = CmpNE32(t137,0x00000000)
+   74 | t152 = ITE(t154,0x00000001,t153)
+   75 | PUT(r1) = t152
+   76 | t35 = CmpNE32(t31,0x00000000)
+   77 | t155 = ITE(t35,0x00000005,t104)
+   78 | PUT(cc_op) = t155
+   79 | t157 = ITE(t35,0x00000001,t106)
+   80 | PUT(cc_dep1) = t157
+   81 | t159 = ITE(t35,t151,t108)
+   82 | PUT(cc_dep2) = t159
+   83 | t161 = ITE(t35,t146,t110)
+   84 | PUT(cc_ndep) = t161
+   85 | ------ IMark(0x400108, 2, 1) ------
+   86 | t37 = Shr32(t27,0x08)
+   87 | t165 = And32(t27,0x000000f0)
+   88 | t164 = Xor32(t165,0x000000e0)
+   89 | t163 = Or32(t155,t164)
+   90 | t170 = armg_calculate_condition(t163,t157,t159,t161):Ity_I32
+   91 | t172 = CmpNE32(t165,0x00000000)
+   92 | t171 = ITE(t172,t170,0x00000001)
+   93 | t176 = Add32(t25,0x0040010c)
+   94 | t180 = CmpNE32(t171,0x00000000)
+   95 | t178 = ITE(t180,t176,t25)
+   96 | PUT(r4) = t178
+   97 | ------ IMark(0x40010a, 2, 1) ------
+   98 | t44 = Shr32(t37,0x08)
+   99 | t183 = And32(t37,0x000000f0)
+   100 | t182 = Xor32(t183,0x000000e0)
+   101 | t181 = Or32(t155,t182)
+   102 | t188 = armg_calculate_condition(t181,t157,t159,t161):Ity_I32
+   103 | t190 = CmpNE32(t183,0x00000000)
+   104 | t189 = ITE(t190,t188,0x00000001)
+   105 | t195 = GET:I32(r0)
+   106 | t196 = CmpNE32(t189,0x00000000)
+   107 | t194 = ITE(t196,t178,t195)
+   108 | PUT(r0) = t194
+   109 | PUT(pc) = 0x0040010d
+   110 | ------ IMark(0x40010c, 4, 1) ------
+   111 | t51 = Shr32(t44,0x08)
+   112 | t199 = And32(t44,0x000000f0)
+   113 | t198 = Xor32(t199,0x000000e0)
+   114 | t197 = Or32(t155,t198)
+   115 | t204 = armg_calculate_condition(t197,t157,t159,t161):Ity_I32
+   116 | t206 = CmpNE32(t199,0x00000000)
+   117 | t205 = ITE(t206,t204,0x00000001)
+   118 | PUT(itstate) = t44
+   119 | t210 = CmpNE32(t51,0x00000000)
+   120 | if (t210) { PUT(pc) = 0x40010d; Ijk_NoDecode }
+   121 | PUT(itstate) = t51
+   122 | t212 = 32to1(t205)
+   123 | t211 = Not1(t212)
+   124 | if (t211) { PUT(pc) = 0x400111; Ijk_Boring }
+   125 | PUT(lr) = 0x00400111
+   NEXT: PUT(pc) = 0x0040010d; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I1 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I1 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I32 t57:Ity_I32 t58:Ity_I1 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I32 t66:Ity_I32 t67:Ity_I32 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32 t71:Ity_I32 t72:Ity_I32 t73:Ity_I32 t74:Ity_I32 t75:Ity_I32 t76:Ity_I1 t77:Ity_I32 t78:Ity_I32 t79:Ity_I32 t80:Ity_I32 t81:Ity_I32 t82:Ity_I1 t83:Ity_I32 t84:Ity_I32 t85:Ity_I32 t86:Ity_I32 t87:Ity_I32 t88:Ity_I32 t89:Ity_I32 t90:Ity_I32 t91:Ity_I32 t92:Ity_I1 t93:Ity_I32 t94:Ity_I32 t95:Ity_I32 t96:Ity_I32 t97:Ity_I32 t98:Ity_I1 t99:Ity_I32 t100:Ity_I32 t101:Ity_I32 t102:Ity_I32 t103:Ity_I32 t104:Ity_I32 t105:Ity_I32 t106:Ity_I32 t107:Ity_I32 t108:Ity_I1 t109:Ity_I32 t110:Ity_I32 t111:Ity_I32 t112:Ity_I1 t113:Ity_I1 t114:Ity_I1 t115:Ity_I32
+
+   00 | ------ IMark(0x400110, 2, 1) ------
+   01 | t0 = GET:I32(itstate)
+   02 | t1 = Shr32(t0,0x08)
+   03 | t35 = And32(t0,0x000000f0)
+   04 | t34 = Xor32(t35,0x000000e0)
+   05 | t36 = GET:I32(cc_op)
+   06 | t33 = Or32(t36,t34)
+   07 | t37 = GET:I32(cc_dep1)
+   08 | t38 = GET:I32(cc_dep2)
+   09 | t39 = GET:I32(cc_ndep)
+   10 | t40 = armg_calculate_condition(t33,t37,t38,t39):Ity_I32
+   11 | t42 = CmpNE32(t35,0x00000000)
+   12 | t41 = ITE(t42,t40,0x00000001)
+   13 | t45 = And32(t0,0x00000001)
+   14 | t44 = Xor32(t45,0x00000001)
+   15 | t5 = And32(t44,t41)
+   16 | t50 = armg_calculate_flag_v(t36,t37,t38,t39):Ity_I32
+   17 | t55 = armg_calculate_flag_c(t36,t37,t38,t39):Ity_I32
+   18 | t57 = GET:I32(r2)
+   19 | t58 = CmpNE32(t41,0x00000000)
+   20 | t56 = ITE(t58,0x00000002,t57)
+   21 | PUT(r2) = t56
+   22 | t9 = CmpNE32(t5,0x00000000)
+   23 | t59 = ITE(t9,0x00000005,t36)
+   24 | PUT(cc_op) = t59
+   25 | t61 = ITE(t9,0x00000002,t37)
+   26 | PUT(cc_dep1) = t61
+   27 | t63 = ITE(t9,t55,t38)
+   28 | PUT(cc_dep2) = t63
+   29 | t65 = ITE(t9,t50,t39)
+   30 | PUT(cc_ndep) = t65
+   31 | ------ IMark(0x400112, 2, 1) ------
+   32 | t11 = Shr32(t1,0x08)
+   33 | t69 = And32(t1,0x000000f0)
+   34 | t68 = Xor32(t69,0x000000e0)
+   35 | t67 = Or32(t59,t68)
+   36 | t74 = armg_calculate_condition(t67,t61,t63,t65):Ity_I32
+   37 | t76 = CmpNE32(t69,0x00000000)
+   38 | t75 = ITE(t76,t74,0x00000001)
+   39 | t81 = GET:I32(r1)
+   40 | t82 = CmpNE32(t75,0x00000000)
+   41 | t80 = ITE(t82,t56,t81)
+   42 | PUT(r1) = t80
+   43 | ------ IMark(0x400114, 4, 1) ------
+   44 | t18 = Shr32(t11,0x08)
+   45 | t85 = And32(t11,0x000000f0)
+   46 | t84 = Xor32(t85,0x000000e0)
+   47 | t83 = Or32(t59,t84)
+   48 | t90 = armg_calculate_condition(t83,t61,t63,t65):Ity_I32
+   49 | t92 = CmpNE32(t85,0x00000000)
+   50 | t91 = ITE(t92,t90,0x00000001)
+   51 | t23 = GET:I32(r4)
+   52 | t25 = Add32(t23,0x00000010)
+   53 | t97 = GET:I32(r0)
+   54 | t98 = CmpNE32(t91,0x00000000)
+   55 | t96 = ITE(t98,t25,t97)
+   56 | PUT(r0) = t96
+   57 | PUT(pc) = 0x00400119
+   58 | ------ IMark(0x400118, 4, 1) ------
+   59 | t27 = Shr32(t18,0x08)
+   60 | t101 = And32(t18,0x000000f0)
+   61 | t100 = Xor32(t101,0x000000e0)
+   62 | t99 = Or32(t59,t100)
+   63 | t106 = armg_calculate_condition(t99,t61,t63,t65):Ity_I32
+   64 | t108 = CmpNE32(t101,0x00000000)
+   65 | t107 = ITE(t108,t106,0x00000001)
+   66 | PUT(itstate) = t18
+   67 | t112 = CmpNE32(t27,0x00000000)
+   68 | if (t112) { PUT(pc) = 0x400119; Ijk_NoDecode }
+   69 | PUT(itstate) = t27
+   70 | t114 = 32to1(t107)
+   71 | t113 = Not1(t114)
+   72 | if (t113) { PUT(pc) = 0x40011d; Ijk_Boring }
+   73 | PUT(lr) = 0x0040011d
+   NEXT: PUT(pc) = 0x00400119; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I1 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I1 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I1 t67:Ity_I1 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32
+
+   00 | ------ IMark(0x40011c, 4, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t4 = Add32(t2,0x00000020)
+   03 | PUT(r0) = t4
+   04 | ------ IMark(0x400120, 2, 1) ------
+   05 | t23 = GET:I32(cc_op)
+   06 | t24 = GET:I32(cc_dep1)
+   07 | t25 = GET:I32(cc_dep2)
+   08 | t26 = GET:I32(cc_ndep)
+   09 | t69 = armg_calculate_flag_v(t23,t24,t25,t26):Ity_I32
+   10 | t70 = armg_calculate_flag_c(t23,t24,t25,t26):Ity_I32
+   11 | PUT(r2) = 0x00000002
+   12 | ------ IMark(0x400122, 2, 1) ------
+   13 | PUT(r1) = 0x00000004
+   14 | PUT(cc_op) = 0x00000005
+   15 | PUT(cc_dep1) = 0x00000004
+   16 | PUT(cc_dep2) = t70
+   17 | PUT(cc_ndep) = t69
+   18 | ------ IMark(0x400124, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x00400129
+   NEXT: PUT(pc) = 0x00400125; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I1 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I1 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I1 t67:Ity_I1 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32
+
+   00 | ------ IMark(0x400128, 4, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t4 = Add32(t2,0x00000030)
+   03 | PUT(r0) = t4
+   04 | ------ IMark(0x40012c, 2, 1) ------
+   05 | t23 = GET:I32(cc_op)
+   06 | t24 = GET:I32(cc_dep1)
+   07 | t25 = GET:I32(cc_dep2)
+   08 | t26 = GET:I32(cc_ndep)
+   09 | t69 = armg_calculate_flag_v(t23,t24,t25,t26):Ity_I32
+   10 | t70 = armg_calculate_flag_c(t23,t24,t25,t26):Ity_I32
+   11 | PUT(r2) = 0x00000002
+   12 | ------ IMark(0x40012e, 2, 1) ------
+   13 | PUT(r1) = 0x00000008
+   14 | PUT(cc_op) = 0x00000005
+   15 | PUT(cc_dep1) = 0x00000008
+   16 | PUT(cc_dep2) = t70
+   17 | PUT(cc_ndep) = t69
+   18 | ------ IMark(0x400130, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x00400135
+   NEXT: PUT(pc) = 0x00400131; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I1 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I1 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I1 t67:Ity_I1 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32
+
+   00 | ------ IMark(0x400134, 4, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t4 = Add32(t2,0x00000040)
+   03 | PUT(r0) = t4
+   04 | ------ IMark(0x400138, 2, 1) ------
+   05 | t23 = GET:I32(cc_op)
+   06 | t24 = GET:I32(cc_dep1)
+   07 | t25 = GET:I32(cc_dep2)
+   08 | t26 = GET:I32(cc_ndep)
+   09 | t69 = armg_calculate_flag_v(t23,t24,t25,t26):Ity_I32
+   10 | t70 = armg_calculate_flag_c(t23,t24,t25,t26):Ity_I32
+   11 | PUT(r2) = 0x00000002
+   12 | ------ IMark(0x40013a, 2, 1) ------
+   13 | PUT(r1) = 0x00000001
+   14 | PUT(cc_op) = 0x00000005
+   15 | PUT(cc_dep1) = 0x00000001
+   16 | PUT(cc_dep2) = t70
+   17 | PUT(cc_ndep) = t69
+   18 | ------ IMark(0x40013c, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x00400141
+   NEXT: PUT(pc) = 0x0040013d; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I1 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I1 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I1 t41:Ity_I32 t42:Ity_I32 t43:Ity_I1 t44:Ity_I1 t45:Ity_I1 t46:Ity_I1 t47:Ity_I32
+
+   00 | ------ IMark(0x400140, 2, 1) ------
+   01 | t17 = GET:I32(cc_op)
+   02 | t18 = GET:I32(cc_dep1)
+   03 | t19 = GET:I32(cc_dep2)
+   04 | t20 = GET:I32(cc_ndep)
+   05 | t21 = armg_calculate_flag_v(t17,t18,t19,t20):Ity_I32
+   06 | t26 = armg_calculate_flag_c(t17,t18,t19,t20):Ity_I32
+   07 | PUT(r2) = 0x00000002
+   08 | PUT(cc_op) = 0x00000005
+   09 | PUT(cc_dep1) = 0x00000002
+   10 | PUT(cc_dep2) = t26
+   11 | PUT(cc_ndep) = t21
+   12 | ------ IMark(0x400142, 2, 1) ------
+   13 | PUT(r1) = 0x00000002
+   14 | ------ IMark(0x400144, 4, 1) ------
+   15 | t11 = GET:I32(r4)
+   16 | t13 = Add32(t11,0x00000050)
+   17 | PUT(r0) = t13
+   18 | ------ IMark(0x400148, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x0040014d
+   NEXT: PUT(pc) = 0x00400149; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I1 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I1 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I1 t67:Ity_I1 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32
+
+   00 | ------ IMark(0x40014c, 4, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t4 = Add32(t2,0x00000060)
+   03 | PUT(r0) = t4
+   04 | ------ IMark(0x400150, 2, 1) ------
+   05 | t23 = GET:I32(cc_op)
+   06 | t24 = GET:I32(cc_dep1)
+   07 | t25 = GET:I32(cc_dep2)
+   08 | t26 = GET:I32(cc_ndep)
+   09 | t69 = armg_calculate_flag_v(t23,t24,t25,t26):Ity_I32
+   10 | t70 = armg_calculate_flag_c(t23,t24,t25,t26):Ity_I32
+   11 | PUT(r2) = 0x00000002
+   12 | ------ IMark(0x400152, 2, 1) ------
+   13 | PUT(r1) = 0x00000004
+   14 | PUT(cc_op) = 0x00000005
+   15 | PUT(cc_dep1) = 0x00000004
+   16 | PUT(cc_dep2) = t70
+   17 | PUT(cc_ndep) = t69
+   18 | ------ IMark(0x400154, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x00400159
+   NEXT: PUT(pc) = 0x00400155; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I1 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I1 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I1 t67:Ity_I1 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32
+
+   00 | ------ IMark(0x400158, 4, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t4 = Add32(t2,0x00000070)
+   03 | PUT(r0) = t4
+   04 | ------ IMark(0x40015c, 2, 1) ------
+   05 | t23 = GET:I32(cc_op)
+   06 | t24 = GET:I32(cc_dep1)
+   07 | t25 = GET:I32(cc_dep2)
+   08 | t26 = GET:I32(cc_ndep)
+   09 | t69 = armg_calculate_flag_v(t23,t24,t25,t26):Ity_I32
+   10 | t70 = armg_calculate_flag_c(t23,t24,t25,t26):Ity_I32
+   11 | PUT(r2) = 0x00000002
+   12 | ------ IMark(0x40015e, 2, 1) ------
+   13 | PUT(r1) = 0x00000004
+   14 | PUT(cc_op) = 0x00000005
+   15 | PUT(cc_dep1) = 0x00000004
+   16 | PUT(cc_dep2) = t70
+   17 | PUT(cc_ndep) = t69
+   18 | ------ IMark(0x400160, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x00400165
+   NEXT: PUT(pc) = 0x00400161; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I1 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I1 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I32 t34:Ity_I32 t35:Ity_I1 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32 t40:Ity_I32 t41:Ity_I32 t42:Ity_I32 t43:Ity_I32 t44:Ity_I32 t45:Ity_I32 t46:Ity_I32 t47:Ity_I32 t48:Ity_I32 t49:Ity_I32 t50:Ity_I32 t51:Ity_I32 t52:Ity_I32 t53:Ity_I32 t54:Ity_I32 t55:Ity_I32 t56:Ity_I1 t57:Ity_I32 t58:Ity_I32 t59:Ity_I32 t60:Ity_I32 t61:Ity_I32 t62:Ity_I32 t63:Ity_I32 t64:Ity_I32 t65:Ity_I1 t66:Ity_I1 t67:Ity_I1 t68:Ity_I32 t69:Ity_I32 t70:Ity_I32
+
+   00 | ------ IMark(0x400164, 4, 1) ------
+   01 | t2 = GET:I32(r4)
+   02 | t4 = Add32(t2,0x00000080)
+   03 | PUT(r0) = t4
+   04 | ------ IMark(0x400168, 2, 1) ------
+   05 | t23 = GET:I32(cc_op)
+   06 | t24 = GET:I32(cc_dep1)
+   07 | t25 = GET:I32(cc_dep2)
+   08 | t26 = GET:I32(cc_ndep)
+   09 | t69 = armg_calculate_flag_v(t23,t24,t25,t26):Ity_I32
+   10 | t70 = armg_calculate_flag_c(t23,t24,t25,t26):Ity_I32
+   11 | PUT(r2) = 0x00000002
+   12 | ------ IMark(0x40016a, 2, 1) ------
+   13 | PUT(r1) = 0x00000008
+   14 | PUT(cc_op) = 0x00000005
+   15 | PUT(cc_dep1) = 0x00000008
+   16 | PUT(cc_dep2) = t70
+   17 | PUT(cc_ndep) = t69
+   18 | ------ IMark(0x40016c, 4, 1) ------
+   19 | PUT(itstate) = 0x00000000
+   20 | PUT(lr) = 0x00400171
+   NEXT: PUT(pc) = 0x0040016d; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I1 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I32 t21:Ity_I32 t22:Ity_I32 t23:Ity_I32 t24:Ity_I1 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I32 t31:Ity_I32 t32:Ity_I32 t33:Ity_I1 t34:Ity_I1 t35:Ity_I32 t36:Ity_I32 t37:Ity_I32 t38:Ity_I32 t39:Ity_I32
+
+   00 | ------ IMark(0x400170, 2, 1) ------
+   01 | t12 = GET:I32(cc_op)
+   02 | t13 = GET:I32(cc_dep1)
+   03 | t14 = GET:I32(cc_dep2)
+   04 | t15 = GET:I32(cc_ndep)
+   05 | t16 = armg_calculate_flag_v(t12,t13,t14,t15):Ity_I32
+   06 | t21 = armg_calculate_flag_c(t12,t13,t14,t15):Ity_I32
+   07 | PUT(r0) = 0x00000000
+   08 | PUT(cc_op) = 0x00000005
+   09 | PUT(cc_dep1) = 0x00000000
+   10 | PUT(cc_dep2) = t21
+   11 | PUT(cc_ndep) = t16
+   12 | PUT(pc) = 0x00400173
+   13 | ------ IMark(0x400172, 2, 1) ------
+   14 | t8 = GET:I32(sp)
+   15 | t9 = And32(t8,0xfffffffc)
+   16 | t10 = Add32(t8,0x00000008)
+   17 | t35 = LDle:I32(t9)
+   18 | PUT(r4) = t35
+   19 | t38 = Add32(t9,0x00000004)
+   20 | t37 = LDle:I32(t38)
+   21 | PUT(sp) = t10
+   22 | PUT(itstate) = 0x00000000
+   NEXT: PUT(pc) = t37; Ijk_Ret
+}
+
+Function sub_40010d @ 0x40010d
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I1 t17:Ity_I32 t18:Ity_I32 t19:Ity_I32 t20:Ity_I1 t21:Ity_I1 t22:Ity_I1 t23:Ity_I32
+
+   00 | ------ IMark(0x40010c, 4, 1) ------
+   01 | t0 = GET:I32(itstate)
+   02 | t1 = Shr32(t0,0x08)
+   03 | t9 = And32(t0,0x000000f0)
+   04 | t8 = Xor32(t9,0x000000e0)
+   05 | t10 = GET:I32(cc_op)
+   06 | t7 = Or32(t10,t8)
+   07 | t11 = GET:I32(cc_dep1)
+   08 | t12 = GET:I32(cc_dep2)
+   09 | t13 = GET:I32(cc_ndep)
+   10 | t14 = armg_calculate_condition(t7,t11,t12,t13):Ity_I32
+   11 | t16 = CmpNE32(t9,0x00000000)
+   12 | t15 = ITE(t16,t14,0x00000001)
+   13 | PUT(itstate) = t0
+   14 | t20 = CmpNE32(t1,0x00000000)
+   15 | if (t20) { PUT(pc) = 0x40010d; Ijk_NoDecode }
+   16 | PUT(itstate) = t1
+   17 | t22 = 32to1(t15)
+   18 | t21 = Not1(t22)
+   19 | if (t21) { PUT(pc) = 0x400111; Ijk_Boring }
+   20 | PUT(lr) = 0x00400111
+   NEXT: PUT(pc) = 0x0040010d; Ijk_Call
+}
+
+Function sub_400119 @ 0x400119
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400118, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x0040011d
+   NEXT: PUT(pc) = 0x00400119; Ijk_Call
+}
+
+Function sub_400125 @ 0x400125
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400124, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x00400129
+   NEXT: PUT(pc) = 0x00400125; Ijk_Call
+}
+
+Function sub_400131 @ 0x400131
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400130, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x00400135
+   NEXT: PUT(pc) = 0x00400131; Ijk_Call
+}
+
+Function sub_40013d @ 0x40013d
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x40013c, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x00400141
+   NEXT: PUT(pc) = 0x0040013d; Ijk_Call
+}
+
+Function sub_400149 @ 0x400149
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400148, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x0040014d
+   NEXT: PUT(pc) = 0x00400149; Ijk_Call
+}
+
+Function sub_400155 @ 0x400155
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400154, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x00400159
+   NEXT: PUT(pc) = 0x00400155; Ijk_Call
+}
+
+Function sub_400161 @ 0x400161
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x400160, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x00400165
+   NEXT: PUT(pc) = 0x00400161; Ijk_Call
+}
+
+Function sub_40016d @ 0x40016d
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I1 t4:Ity_I1 t5:Ity_I1 t6:Ity_I32
+
+   00 | ------ IMark(0x40016c, 4, 1) ------
+   01 | PUT(itstate) = 0x00000000
+   02 | PUT(lr) = 0x00400171
+   NEXT: PUT(pc) = 0x0040016d; Ijk_Call
+}
+

@@ -1,0 +1,31 @@
+Function _start @ 0x400000
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I1 t14:Ity_I32
+
+   00 | ------ IMark(0x400000, 4, 0) ------
+   01 | t6 = GET:I32(cc_op)
+   02 | t5 = Or32(t6,0x00000020)
+   03 | t7 = GET:I32(cc_dep1)
+   04 | t8 = GET:I32(cc_dep2)
+   05 | t9 = GET:I32(cc_ndep)
+   06 | t10 = armg_calculate_condition(t5,t7,t8,t9):Ity_I32
+   07 | t1 = GET:I32(r10)
+   08 | t3 = GET:I32(r8)
+   09 | t2 = Shl32(t3,0x0a)
+   10 | t4 = And32(t1,t2)
+   11 | t12 = GET:I32(r11)
+   12 | t13 = CmpNE32(t10,0x00000000)
+   13 | t11 = ITE(t13,t4,t12)
+   14 | PUT(r11) = t11
+   15 | ------ IMark(0x400004, 0, 0) ------
+   NEXT: PUT(pc) = 0x00400004; Ijk_NoDecode
+}
+
+Function sub_400008 @ 0x400008
+IRSB {
+   
+
+   00 | ------ IMark(0x400008, 4, 0) ------
+   NEXT: PUT(pc) = 0x0040000c; Ijk_Boring
+}
+
