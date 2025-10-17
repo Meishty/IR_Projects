@@ -1,27 +1,32 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_watch-cond_30e41130_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x591810
+0x00400004:	ldrbtmi	r2, [fp], #-0
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	adds	r1, #1
+0x0040000d:	str	r1, [r2]
+0x0040000f:	ldrd	r1, r2, [r3]
+0x00400013:	adds	r1, #1
+0x00400015:	adds	r2, #1
+0x00400017:	strd	r1, r2, [r3]
+0x0040001b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r2, r2
+0x0040001f:	movs	r0, r0
+0x00400021:	ldr	r2, [pc, #8]
+0x00400023:	add	r2, pc
+0x00400025:	ldr	r3, [r2, #4]
+0x00400027:	adds	r3, #1
+0x00400029:	str	r3, [r2, #4]
+0x0040002b:	bx	lr
 
-00000000 <.text>:
-   0:	4b064602 	blmi	0x191810
-   4:	447b2000 	ldrbtmi	r2, [fp], #-0
-   8:	31016811 	tstcc	r1, r1, lsl r8
-   c:	e9d36011 	ldmib	r3, {r0, r4, sp, lr}^
-  10:	31011200 	mrscc	r1, R9_usr
-  14:	e9c33201 	stmib	r3, {r0, r9, ip, sp}^
-  18:	47701200 	ldrbmi	r1, [r0, -r0, lsl #4]!
-  1c:	00000012 	andeq	r0, r0, r2, lsl r0
-  20:	447a4a02 	ldrbtmi	r4, [sl], #-2562	; 0xfffff5fe
-  24:	33016853 	movwcc	r6, #6227	; 0x1853
-  28:	47706053 			; <UNDEFINED> instruction: 0x47706053
-  2c:	00000006 	andeq	r0, r0, r6
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	447a4a02 	ldrbtmi	r4, [sl], #-2562	; 0xfffff5fe
-   4:	33026853 	movwcc	r6, #10323	; 0x2853
-   8:	e7fe6053 	ubfx	r6, r3, #0, #31
-   c:	00000006 	andeq	r0, r0, r6
+Function sub_400039 @ 0x00400039
+0x00400039:	ldr	r2, [pc, #8]
+0x0040003b:	add	r2, pc
+0x0040003d:	ldr	r3, [r2, #4]
+0x0040003f:	adds	r3, #2
+0x00400041:	str	r3, [r2, #4]
+0x00400043:	b	#0x400043
+0x00400043:	b	#0x400043

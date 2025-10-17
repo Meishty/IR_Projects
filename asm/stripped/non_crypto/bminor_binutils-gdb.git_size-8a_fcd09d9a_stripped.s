@@ -1,25 +1,43 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_size-8a_fcd09d9a_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	movs	r1, #0x14
+0x00400009:	movs	r0, #1
+0x0040000b:	bl	#0x40000b
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	ldr	r3, [pc, #0x30]
+0x00400011:	ldr	r2, [pc, #0x30]
+0x00400013:	add	r3, pc
+0x00400015:	ldr	r3, [r3, r2]
+0x00400017:	cmp	r3, #0xa
+0x00400019:	beq	#0x40001f
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r3, pc}
+0x0040001f:	ldr	r2, [pc, #0x1c]
+0x00400021:	mrc	p15, #0, r3, c13, c0, #3
+0x00400025:	add	r2, pc
+0x00400027:	ldr	r2, [r2]
+0x00400029:	add	r3, r2
+0x0040002b:	ldrb	r3, [r3, #1]
+0x0040002d:	cmp	r3, #0x14
+0x0040002f:	bne	#0x40001b
+0x00400031:	ldr	r0, [pc, #0x14]
+0x00400033:	add	r0, pc
+0x00400035:	bl	#0x400035
 
-Disassembly of section .text.startup:
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
+0x00400039:	b	#0x40001b
 
-00000000 <.text.startup>:
-   0:	2114b508 	tstcs	r4, r8, lsl #10
-   4:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-   8:	4b0cfffe 	blmi	0x340008
-   c:	447b4a0c 	ldrbtmi	r4, [fp], #-2572	; 0xfffff5f4
-  10:	2b0a589b 	blcs	0x296284
-  14:	2000d001 	andcs	sp, r0, r1
-  18:	4a07bd08 	bmi	0x1ef440
-  1c:	3f70ee1d 	svccc	0x0070ee1d
-  20:	6812447a 	ldmdavs	r2, {r1, r3, r4, r5, r6, sl, lr}
-  24:	785b4413 	ldmdavc	fp, {r0, r1, r4, sl, lr}^
-  28:	d1f42b14 	mvnsle	r2, r4, lsl fp
-  2c:	44784805 	ldrbtmi	r4, [r8], #-2053	; 0xfffff7fb
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	bf00e7ef 	svclt	0x0000e7ef
-  38:	00000014 	andeq	r0, r0, r4, lsl r0
-  3c:	0000002a 	andeq	r0, r0, sl, lsr #32
-  40:	00000000 	andeq	r0, r0, r0
-  44:	00000012 	andeq	r0, r0, r2, lsl r0
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r4, r2
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r2, r5
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r0, r0
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r2, r2
+0x0040004b:	movs	r0, r0

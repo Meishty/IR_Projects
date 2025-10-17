@@ -1,32 +1,14 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_imported-unit-bp-alt_18819d85.o:     file format elf32-littlearm
+Function line_label_1 @ 0x00400000
+0x00400000:	rsbhs	r4, r3, #0x1400
+0x00400004:	andsvs	r4, sl, fp, ror r4
+0x00400008:	andsvs	r6, sl, sl, lsl r0
+0x0040000c:	andsvs	r6, sl, sl, lsl r0
+0x00400010:	andhs	r6, r0, sl, lsl r0
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <func>:
-   0:	4b05      	ldr	r3, [pc, #20]	; (18 <line_label_7+0x6>)
-   2:	2263      	movs	r2, #99	; 0x63
-   4:	447b      	add	r3, pc
-   6:	601a      	str	r2, [r3, #0]
-
-00000008 <line_label_2>:
-   8:	601a      	str	r2, [r3, #0]
-
-0000000a <line_label_3>:
-   a:	601a      	str	r2, [r3, #0]
-
-0000000c <line_label_4>:
-   c:	601a      	str	r2, [r3, #0]
-
-0000000e <line_label_5>:
-   e:	601a      	str	r2, [r3, #0]
-
-00000010 <line_label_6>:
-  10:	601a      	str	r2, [r3, #0]
-
-00000012 <line_label_7>:
-  12:	2000      	movs	r0, #0
-  14:	601a      	str	r2, [r3, #0]
-  16:	4770      	bx	lr
-  18:	00000010 	.word	0x00000010
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r4, r2
+0x0040001b:	movs	r0, r0

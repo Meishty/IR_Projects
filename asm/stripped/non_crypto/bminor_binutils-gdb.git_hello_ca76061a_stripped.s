@@ -1,37 +1,62 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_hello_ca76061a_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x52d428
 
+Function sub_400007 @ 0x00400007
+0x00400007:	ldrsh.w	r3, [r3]
+0x0040000b:	cbz	r3, #0x40000f
+0x0040000d:	pop	{r3, pc}
+0x0040000d:	pop	{r3, pc}
+0x0040000f:	movs	r0, #1
+0x00400011:	bl	#0x400011
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	bl	#0x400011
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
+0x00400019:	push	{r3, lr}
+0x0040001b:	ldr	r3, [pc, #0x14]
+0x0040001d:	add	r3, pc
+0x0040001f:	ldrsh.w	r3, [r3]
+0x00400023:	cbz	r3, #0x400029
+0x00400025:	movs	r0, #0
+0x00400027:	pop	{r3, pc}
+0x00400025:	movs	r0, #0
+0x00400027:	pop	{r3, pc}
+0x00400029:	movs	r0, #1
+0x0040002b:	bl	#0x40002b
 
-00000000 <.text>:
-   0:	4b04b508 	blmi	0x12d428
-   4:	f9b3447b 			; <UNDEFINED> instruction: 0xf9b3447b
-   8:	b1033000 	mrslt	r3, (UNDEF: 3)
-   c:	2001bd08 	andcs	fp, r1, r8, lsl #26
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	0000000c 	andeq	r0, r0, ip
-  18:	4b05b508 	blmi	0x16d440
-  1c:	f9b3447b 			; <UNDEFINED> instruction: 0xf9b3447b
-  20:	b10b3000 	mrslt	r3, (UNDEF: 11)
-  24:	bd082000 	stclt	0, cr2, [r8, #-0]
-  28:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  2c:	bf00fffe 	svclt	0x0000fffe
-  30:	00000010 	andeq	r0, r0, r0, lsl r0
-  34:	302d0040 	eorcc	r0, sp, r0, asr #32
-  38:	bf004770 	svclt	0x00004770
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
 
-Disassembly of section .text.startup:
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r0, r2
+0x00400033:	movs	r0, r0
+0x00400035:	lsls	r0, r0, #1
+0x00400037:	adds	r0, #0x2d
+0x00400039:	bx	lr
 
-00000000 <.text.startup>:
-   0:	b50820f0 	strlt	r2, [r8, #-240]	; 0xffffff10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	447a4a07 	ldrbtmi	r4, [sl], #-2567	; 0xfffff5f9
-   c:	1000f9b2 			; <UNDEFINED> instruction: 0x1000f9b2
-  10:	232db139 			; <UNDEFINED> instruction: 0x232db139
-  14:	0341eb03 	movteq	lr, #6915	; 0x1b03
-  18:	20148013 	andscs	r8, r4, r3, lsl r0
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	2001e7fb 	strdcs	lr, [r1], -fp
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	0000001a 	andeq	r0, r0, sl, lsl r0
+Function sub_400035 @ 0x00400035
+0x00400035:	lsls	r0, r0, #1
+0x00400037:	adds	r0, #0x2d
+0x00400039:	bx	lr
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+
+Function sub_400040 @ 0x00400040
+0x00400040:	strlt	r2, [r8, #-0xf0]
+
+Function sub_400048 @ 0x00400048
+0x00400048:	ldrbtmi	r4, [sl], #-0xa07
+
+Function sub_400054 @ 0x00400054
+0x00400054:	movteq	lr, #0x1b03
+0x00400058:	andshs	r8, r4, r3, lsl r0
+
+Function sub_40005e @ 0x0040005e
+
+Function sub_400067 @ 0x00400067
+0x00400067:	vshr.u32	d16, d10, #2
+0x0040006b:	movs	r0, r0

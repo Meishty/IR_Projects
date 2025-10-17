@@ -1,73 +1,216 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_call-signals_196f1f84.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svclt	#0x4770
 
+Function gen_signal @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x500001
+0x0040000b:	pop.w	{r3, lr}
+0x0040000f:	movs	r1, #6
+0x00400011:	b.w	#0x50000d
 
-Disassembly of section .text:
+Function stop_one @ 0x00400015
+0x00400015:	bx	lr
 
-00000000 <handle_signal>:
-   0:	4770      	bx	lr
-   2:	bf00      	nop
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	bx	lr
 
-00000004 <gen_signal>:
-   4:	b508      	push	{r3, lr}
-   6:	f7ff fffe 	bl	0 <getpid>
-   a:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-   e:	2106      	movs	r1, #6
-  10:	f7ff bffe 	b.w	0 <kill>
+Function stop_two @ 0x00400019
+0x00400019:	bx	lr
 
-00000014 <stop_one>:
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	bx	lr
 
-00000018 <stop_two>:
-  18:	4770      	bx	lr
-  1a:	bf00      	nop
+Function null_hand_call @ 0x0040001d
+0x0040001d:	bx	lr
 
-0000001c <null_hand_call>:
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
 
-Disassembly of section .text.startup:
+Function main @ 0x00400021
+0x00400021:	ldr	r2, [pc, #0x58]
+0x00400023:	ldr	r3, [pc, #0x5c]
+0x00400025:	push	{lr}
+0x00400027:	add	r2, pc
+0x00400029:	sub	sp, #0x94
+0x0040002b:	ldr	r3, [r2, r3]
+0x0040002d:	add	r1, sp, #0xc
+0x0040002f:	mov	r0, r1
+0x00400031:	ldr	r3, [r3]
+0x00400033:	str	r3, [sp, #0x8c]
+0x00400035:	mov.w	r3, #0
+0x00400039:	str	r1, [sp, #4]
+0x0040003b:	bl	#0x500019
+0x0040003f:	movs	r2, #0
+0x00400041:	ldr	r1, [sp, #4]
+0x00400043:	movs	r0, #2
+0x00400045:	bl	#0x500025
+0x00400049:	ldr	r1, [pc, #0x38]
+0x0040004b:	movs	r0, #6
+0x0040004d:	add	r1, pc
+0x0040004f:	bl	#0x500031
+0x00400053:	bl	#0x500001
+0x00400057:	movs	r1, #6
+0x00400059:	bl	#0x50000d
+0x0040005d:	ldr	r2, [pc, #0x28]
+0x0040005f:	ldr	r3, [pc, #0x20]
+0x00400061:	add	r2, pc
+0x00400063:	ldr	r3, [r2, r3]
+0x00400065:	ldr	r2, [r3]
+0x00400067:	ldr	r3, [sp, #0x8c]
+0x00400069:	eors	r2, r3
+0x0040006b:	mov.w	r3, #0
+0x0040006f:	bne	#0x400079
+0x00400071:	movs	r0, #0
+0x00400073:	add	sp, #0x94
+0x00400075:	ldr	pc, [sp], #4
+0x00400079:	bl	#0x50003d
 
-00000000 <main>:
-   0:	4a16      	ldr	r2, [pc, #88]	; (5c <main+0x5c>)
-   2:	4b17      	ldr	r3, [pc, #92]	; (60 <main+0x60>)
-   4:	b500      	push	{lr}
-   6:	447a      	add	r2, pc
-   8:	b0a5      	sub	sp, #148	; 0x94
-   a:	58d3      	ldr	r3, [r2, r3]
-   c:	a903      	add	r1, sp, #12
-   e:	4608      	mov	r0, r1
-  10:	681b      	ldr	r3, [r3, #0]
-  12:	9323      	str	r3, [sp, #140]	; 0x8c
-  14:	f04f 0300 	mov.w	r3, #0
-  18:	9101      	str	r1, [sp, #4]
-  1a:	f7ff fffe 	bl	0 <sigemptyset>
-  1e:	2200      	movs	r2, #0
-  20:	9901      	ldr	r1, [sp, #4]
-  22:	2002      	movs	r0, #2
-  24:	f7ff fffe 	bl	0 <sigprocmask>
-  28:	490e      	ldr	r1, [pc, #56]	; (64 <main+0x64>)
-  2a:	2006      	movs	r0, #6
-  2c:	4479      	add	r1, pc
-  2e:	f7ff fffe 	bl	0 <signal>
-  32:	f7ff fffe 	bl	0 <getpid>
-  36:	2106      	movs	r1, #6
-  38:	f7ff fffe 	bl	0 <kill>
-  3c:	4a0a      	ldr	r2, [pc, #40]	; (68 <main+0x68>)
-  3e:	4b08      	ldr	r3, [pc, #32]	; (60 <main+0x60>)
-  40:	447a      	add	r2, pc
-  42:	58d3      	ldr	r3, [r2, r3]
-  44:	681a      	ldr	r2, [r3, #0]
-  46:	9b23      	ldr	r3, [sp, #140]	; 0x8c
-  48:	405a      	eors	r2, r3
-  4a:	f04f 0300 	mov.w	r3, #0
-  4e:	d103      	bne.n	58 <main+0x58>
-  50:	2000      	movs	r0, #0
-  52:	b025      	add	sp, #148	; 0x94
-  54:	f85d fb04 	ldr.w	pc, [sp], #4
-  58:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  5c:	00000052 	.word	0x00000052
-  60:	00000000 	.word	0x00000000
-  64:	00000034 	.word	0x00000034
-  68:	00000024 	.word	0x00000024
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function kill @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function sigemptyset @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function sigprocmask @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function signal @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

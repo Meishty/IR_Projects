@@ -1,12 +1,11 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_fork-print-inferior-events_f402e847_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	adds	r0, #1
+0x00400009:	beq	#0x40000f
+0x0040000b:	movs	r0, #0
+0x0040000d:	pop	{r3, pc}
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	3001fffe 	strdcc	pc, [r1], -lr
-   8:	2000d001 	andcs	sp, r0, r1
-   c:	f7ffbd08 			; <UNDEFINED> instruction: 0xf7ffbd08
-  10:	bf00fffe 	svclt	0x0000fffe
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	nop	

@@ -1,19 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr14525_0266764e_stripped.o:     file format elf32-littlearm
+Function sub_400004 @ 0x00400004
+0x00400004:	blmi	#0x5ed42c
+0x00400008:	ldrbtmi	r4, [fp], #-0x907
+0x0040000c:	ldrbtmi	r4, [sl], #-0xa07
+0x00400010:	addmi	r5, sl, #0x590000
+0x00400014:	andhs	sp, r0, r1, lsl #4
+0x00400018:	stmdami	r5, {r3, r8, sl, fp, ip, sp, pc}
 
+Function sub_40001f @ 0x0040001f
+0x0040001f:	bl	#0x40001f
 
-Disassembly of section .text.startup:
+Function sub_400023 @ 0x00400023
+0x00400023:	b	#0x400017
 
-00000000 <.text.startup>:
-   0:	4b07b508 	blmi	0x1ed428
-   4:	447b4907 	ldrbtmi	r4, [fp], #-2311	; 0xfffff6f9
-   8:	447a4a07 	ldrbtmi	r4, [sl], #-2567	; 0xfffff5f9
-   c:	428a5859 	addmi	r5, sl, #5832704	; 0x590000
-  10:	2000d201 	andcs	sp, r0, r1, lsl #4
-  14:	4805bd08 	stmdami	r5, {r3, r8, sl, fp, ip, sp, pc}
-  18:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  1c:	e7f8fffe 	udf	#36862	; 0x8ffe
-  20:	00000016 	andeq	r0, r0, r6, lsl r0
-  24:	00000000 	andeq	r0, r0, r0
-  28:	0000001a 	andeq	r0, r0, sl, lsl r0
-  2c:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400031 @ 0x00400031
+0x00400031:	movs	r0, r2
+0x00400033:	movs	r0, r0

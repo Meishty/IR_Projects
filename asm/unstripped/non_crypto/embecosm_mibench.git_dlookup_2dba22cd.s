@@ -1,131 +1,189 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_dlookup_2dba22cd.o:     file format elf32-littlearm
+Function main @ 0x00400049
+0x00400049:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0040004d:	mov	sb, r1
+0x0040004f:	ldr.w	sl, [pc, #0x120]
+0x00400053:	vpush	{d8}
+0x00400057:	sub	sp, #0x14
+0x00400059:	bl	#0x500001
+0x0040005d:	ldr	r3, [pc, #0x114]
+0x0040005f:	add	sl, pc
+0x00400061:	str	r0, [sp, #8]
+0x00400063:	ldr.w	r3, [sl, r3]
+0x00400067:	ldr	r3, [r3]
+0x00400069:	cmp	r3, #0
+0x0040006b:	bne	#0x400159
+0x0040006d:	ldr	r3, [pc, #0x108]
+0x0040006f:	ldr.w	r3, [sl, r3]
+0x00400073:	ldr	r3, [r3]
+0x00400075:	cmp	r3, #0
+0x00400077:	beq	#0x400139
+0x00400079:	ldr	r3, [sp, #8]
+0x0040007b:	cmp	r3, #1
+0x0040007d:	ble	#0x400135
+0x0040007f:	ldr	r3, [pc, #0xfc]
+0x00400081:	mov.w	r8, #1
+0x00400085:	str.w	sl, [sp, #4]
+0x00400089:	add	r3, pc
+0x0040008b:	vmov	s16, r3
+0x0040008f:	ldr	r3, [pc, #0xf0]
+0x00400091:	add	r3, pc
+0x00400093:	vmov	s17, r3
+0x00400097:	ldr	r3, [pc, #0xec]
+0x00400099:	add	r3, pc
+0x0040009b:	str	r3, [sp, #0xc]
+0x0040009d:	ldr	r4, [sb, #4]!
+0x004000a1:	mov	r0, r4
+0x004000a3:	bl	#0x50000d
+0x0040009d:	ldr	r4, [sb, #4]!
+0x004000a1:	mov	r0, r4
+0x004000a3:	bl	#0x50000d
+0x004000a7:	mov	r1, r0
+0x004000a9:	mov	r0, r4
+0x004000ab:	bl	#0x500019
+0x004000af:	vmov	r1, s16
+0x004000b3:	mov	r7, r0
+0x004000b5:	mov	r2, r4
+0x004000b7:	movs	r0, #1
+0x004000b9:	bl	#0x500025
+0x004000bd:	cmp	r7, #0
+0x004000bf:	beq	#0x400145
+0x004000c1:	mov	r0, r7
+0x004000c3:	bl	#0x50000d
+0x004000c7:	cmp	r0, #0
+0x004000c9:	beq	#0x40014f
+0x004000cb:	ldr	r2, [pc, #0xbc]
+0x004000cd:	subs	r4, r7, #1
+0x004000cf:	ldr	r3, [sp, #4]
+0x004000d1:	adds	r5, r4, r0
+0x004000d3:	ldr.w	sl, [pc, #0xb8]
+0x004000d7:	mov	fp, r4
+0x004000d9:	ldr	r6, [r3, r2]
+0x004000db:	add	sl, pc
+0x004000dd:	ldrb	r3, [fp, #1]!
+0x004000e1:	mov	r1, sl
+0x004000e3:	movs	r0, #1
+0x004000e5:	ldr.w	r2, [r6, r3, lsl #2]
+0x004000e9:	bl	#0x500025
+0x004000dd:	ldrb	r3, [fp, #1]!
+0x004000e1:	mov	r1, sl
+0x004000e3:	movs	r0, #1
+0x004000e5:	ldr.w	r2, [r6, r3, lsl #2]
+0x004000e9:	bl	#0x500025
+0x004000ed:	cmp	r5, fp
+0x004000ef:	bne	#0x4000dd
+0x004000f1:	ldr	r1, [pc, #0x9c]
+0x004000f3:	movs	r0, #1
+0x004000f5:	ldr.w	sl, [pc, #0x9c]
+0x004000f9:	add	r1, pc
+0x004000fb:	bl	#0x500025
+0x004000ff:	ldr	r3, [pc, #0x98]
+0x00400101:	ldr	r2, [sp, #4]
+0x00400103:	add	sl, pc
+0x00400105:	ldr	r6, [r2, r3]
+0x00400107:	ldrb	r2, [r4, #1]!
+0x0040010b:	mov	r1, sl
+0x0040010d:	ldr	r3, [r6]
+0x0040010f:	movs	r0, #1
+0x00400111:	ldr.w	r2, [r3, r2, lsl #2]
+0x00400115:	bl	#0x500025
+0x00400107:	ldrb	r2, [r4, #1]!
+0x0040010b:	mov	r1, sl
+0x0040010d:	ldr	r3, [r6]
+0x0040010f:	movs	r0, #1
+0x00400111:	ldr.w	r2, [r3, r2, lsl #2]
+0x00400115:	bl	#0x500025
+0x00400119:	cmp	r4, r5
+0x0040011b:	bne	#0x400107
+0x0040011d:	ldr	r0, [pc, #0x7c]
+0x0040011f:	add	r0, pc
+0x00400121:	bl	#0x500031
+0x00400125:	mov	r0, r7
+0x00400127:	bl	#0x50003d
+0x0040012b:	ldr	r3, [sp, #8]
+0x0040012d:	add.w	r8, r8, #1
+0x00400131:	cmp	r3, r8
+0x00400133:	bne	#0x40009d
+0x00400135:	bl	#0x500049
+0x00400139:	movs	r0, #0
+0x0040013b:	add	sp, #0x14
+0x0040013d:	vpop	{d8}
+0x00400141:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400145:	vmov	r0, s17
+0x00400149:	bl	#0x500031
+0x0040014d:	b	#0x40012b
+0x0040014f:	ldr	r1, [sp, #0xc]
+0x00400151:	movs	r0, #1
+0x00400153:	bl	#0x500025
+0x00400157:	b	#0x40011d
+0x00400159:	ldr	r0, [pc, #0x44]
+0x0040015b:	movs	r1, #1
+0x0040015d:	ldr	r2, [pc, #0x44]
+0x0040015f:	ldr.w	r3, [sb]
+0x00400163:	add	r2, pc
+0x00400165:	ldr.w	r0, [sl, r0]
+0x00400169:	ldr	r0, [r0]
+0x0040016b:	bl	#0x500055
+0x0040016f:	b	#0x400139
 
+Function dict_init @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function strlen @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	4689      	mov	r9, r1
-   6:	f8df a120 	ldr.w	sl, [pc, #288]	; 128 <main+0x128>
-   a:	ed2d 8b02 	vpush	{d8}
-   e:	b085      	sub	sp, #20
-  10:	f7ff fffe 	bl	0 <dict_init>
-  14:	4b45      	ldr	r3, [pc, #276]	; (12c <main+0x12c>)
-  16:	44fa      	add	sl, pc
-  18:	9002      	str	r0, [sp, #8]
-  1a:	f85a 3003 	ldr.w	r3, [sl, r3]
-  1e:	681b      	ldr	r3, [r3, #0]
-  20:	2b00      	cmp	r3, #0
-  22:	d175      	bne.n	110 <main+0x110>
-  24:	4b42      	ldr	r3, [pc, #264]	; (130 <main+0x130>)
-  26:	f85a 3003 	ldr.w	r3, [sl, r3]
-  2a:	681b      	ldr	r3, [r3, #0]
-  2c:	2b00      	cmp	r3, #0
-  2e:	d05f      	beq.n	f0 <main+0xf0>
-  30:	9b02      	ldr	r3, [sp, #8]
-  32:	2b01      	cmp	r3, #1
-  34:	dd5a      	ble.n	ec <main+0xec>
-  36:	4b3f      	ldr	r3, [pc, #252]	; (134 <main+0x134>)
-  38:	f04f 0801 	mov.w	r8, #1
-  3c:	f8cd a004 	str.w	sl, [sp, #4]
-  40:	447b      	add	r3, pc
-  42:	ee08 3a10 	vmov	s16, r3
-  46:	4b3c      	ldr	r3, [pc, #240]	; (138 <main+0x138>)
-  48:	447b      	add	r3, pc
-  4a:	ee08 3a90 	vmov	s17, r3
-  4e:	4b3b      	ldr	r3, [pc, #236]	; (13c <main+0x13c>)
-  50:	447b      	add	r3, pc
-  52:	9303      	str	r3, [sp, #12]
-  54:	f859 4f04 	ldr.w	r4, [r9, #4]!
-  58:	4620      	mov	r0, r4
-  5a:	f7ff fffe 	bl	0 <strlen>
-  5e:	4601      	mov	r1, r0
-  60:	4620      	mov	r0, r4
-  62:	f7ff fffe 	bl	0 <dict_find>
-  66:	ee18 1a10 	vmov	r1, s16
-  6a:	4607      	mov	r7, r0
-  6c:	4622      	mov	r2, r4
-  6e:	2001      	movs	r0, #1
-  70:	f7ff fffe 	bl	0 <__printf_chk>
-  74:	2f00      	cmp	r7, #0
-  76:	d041      	beq.n	fc <main+0xfc>
-  78:	4638      	mov	r0, r7
-  7a:	f7ff fffe 	bl	0 <strlen>
-  7e:	2800      	cmp	r0, #0
-  80:	d041      	beq.n	106 <main+0x106>
-  82:	4a2f      	ldr	r2, [pc, #188]	; (140 <main+0x140>)
-  84:	1e7c      	subs	r4, r7, #1
-  86:	9b01      	ldr	r3, [sp, #4]
-  88:	1825      	adds	r5, r4, r0
-  8a:	f8df a0b8 	ldr.w	sl, [pc, #184]	; 144 <main+0x144>
-  8e:	46a3      	mov	fp, r4
-  90:	589e      	ldr	r6, [r3, r2]
-  92:	44fa      	add	sl, pc
-  94:	f81b 3f01 	ldrb.w	r3, [fp, #1]!
-  98:	4651      	mov	r1, sl
-  9a:	2001      	movs	r0, #1
-  9c:	f856 2023 	ldr.w	r2, [r6, r3, lsl #2]
-  a0:	f7ff fffe 	bl	0 <__printf_chk>
-  a4:	455d      	cmp	r5, fp
-  a6:	d1f5      	bne.n	94 <main+0x94>
-  a8:	4927      	ldr	r1, [pc, #156]	; (148 <main+0x148>)
-  aa:	2001      	movs	r0, #1
-  ac:	f8df a09c 	ldr.w	sl, [pc, #156]	; 14c <main+0x14c>
-  b0:	4479      	add	r1, pc
-  b2:	f7ff fffe 	bl	0 <__printf_chk>
-  b6:	4b26      	ldr	r3, [pc, #152]	; (150 <main+0x150>)
-  b8:	9a01      	ldr	r2, [sp, #4]
-  ba:	44fa      	add	sl, pc
-  bc:	58d6      	ldr	r6, [r2, r3]
-  be:	f814 2f01 	ldrb.w	r2, [r4, #1]!
-  c2:	4651      	mov	r1, sl
-  c4:	6833      	ldr	r3, [r6, #0]
-  c6:	2001      	movs	r0, #1
-  c8:	f853 2022 	ldr.w	r2, [r3, r2, lsl #2]
-  cc:	f7ff fffe 	bl	0 <__printf_chk>
-  d0:	42ac      	cmp	r4, r5
-  d2:	d1f4      	bne.n	be <main+0xbe>
-  d4:	481f      	ldr	r0, [pc, #124]	; (154 <main+0x154>)
-  d6:	4478      	add	r0, pc
-  d8:	f7ff fffe 	bl	0 <puts>
-  dc:	4638      	mov	r0, r7
-  de:	f7ff fffe 	bl	0 <free>
-  e2:	9b02      	ldr	r3, [sp, #8]
-  e4:	f108 0801 	add.w	r8, r8, #1
-  e8:	4543      	cmp	r3, r8
-  ea:	d1b3      	bne.n	54 <main+0x54>
-  ec:	f7ff fffe 	bl	0 <dict_term>
-  f0:	2000      	movs	r0, #0
-  f2:	b005      	add	sp, #20
-  f4:	ecbd 8b02 	vpop	{d8}
-  f8:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
-  fc:	ee18 0a90 	vmov	r0, s17
- 100:	f7ff fffe 	bl	0 <puts>
- 104:	e7ed      	b.n	e2 <main+0xe2>
- 106:	9903      	ldr	r1, [sp, #12]
- 108:	2001      	movs	r0, #1
- 10a:	f7ff fffe 	bl	0 <__printf_chk>
- 10e:	e7e1      	b.n	d4 <main+0xd4>
- 110:	4811      	ldr	r0, [pc, #68]	; (158 <main+0x158>)
- 112:	2101      	movs	r1, #1
- 114:	4a11      	ldr	r2, [pc, #68]	; (15c <main+0x15c>)
- 116:	f8d9 3000 	ldr.w	r3, [r9]
- 11a:	447a      	add	r2, pc
- 11c:	f85a 0000 	ldr.w	r0, [sl, r0]
- 120:	6800      	ldr	r0, [r0, #0]
- 122:	f7ff fffe 	bl	0 <__fprintf_chk>
- 126:	e7e3      	b.n	f0 <main+0xf0>
- 128:	0000010e 	.word	0x0000010e
-	...
- 134:	000000f0 	.word	0x000000f0
- 138:	000000ec 	.word	0x000000ec
- 13c:	000000e8 	.word	0x000000e8
- 140:	00000000 	.word	0x00000000
- 144:	000000ae 	.word	0x000000ae
- 148:	00000094 	.word	0x00000094
- 14c:	0000008e 	.word	0x0000008e
- 150:	00000000 	.word	0x00000000
- 154:	0000007a 	.word	0x0000007a
- 158:	00000000 	.word	0x00000000
- 15c:	0000003e 	.word	0x0000003e
+Function dict_find @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __printf_chk @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function puts @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function free @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function dict_term @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function __fprintf_chk @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0

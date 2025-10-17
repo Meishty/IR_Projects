@@ -1,22 +1,35 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_lto-19a_83f1cc88_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r4, r8, lsl #10
 
+Function sub_400007 @ 0x00400007
+0x00400007:	vtbl.8	d20, {d14, d15, d16, d17}, d1
+0x0040000b:	add	r3, pc
+0x0040000d:	str	r3, [r0]
+0x0040000f:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r2, r0
+0x00400013:	movs	r0, r0
+0x00400015:	ldr	r3, [pc, #0x18]
+0x00400017:	ldr	r2, [r0]
+0x00400019:	add	r3, pc
+0x0040001b:	cmp	r2, r3
+0x0040001d:	beq	#0x400027
+0x0040001f:	ldr	r0, [pc, #0x14]
+0x00400021:	add	r0, pc
+0x00400023:	b.w	#0x400023
+0x00400023:	b.w	#0x400023
+0x00400027:	ldr	r0, [pc, #0x10]
+0x00400029:	add	r0, pc
+0x0040002b:	b.w	#0x40002b
+0x0040002b:	b.w	#0x40002b
 
-00000000 <.text>:
-   0:	2004b508 	andcs	fp, r4, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   c:	bd086003 	stclt	0, cr6, [r8, #-12]
-  10:	00000002 	andeq	r0, r0, r2
-  14:	68024b06 	stmdavs	r2, {r1, r2, r8, r9, fp, lr}
-  18:	429a447b 	addsmi	r4, sl, #2063597568	; 0x7b000000
-  1c:	4805d003 	stmdami	r5, {r0, r1, ip, lr, pc}
-  20:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  24:	4804bffe 	stmdami	r4, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, pc}
-  28:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  2c:	bf00bffe 	svclt	0x0000bffe
-  30:	00000014 	andeq	r0, r0, r4, lsl r0
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
-  38:	0000000c 	andeq	r0, r0, ip
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r4, r2
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r2
+0x00400037:	movs	r0, r0
+0x00400039:	movs	r4, r1
+0x0040003b:	movs	r0, r0

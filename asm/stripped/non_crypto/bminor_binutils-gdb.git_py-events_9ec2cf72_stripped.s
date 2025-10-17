@@ -1,25 +1,49 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-events_9ec2cf72_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	movs	r0, #0xc
+0x00400009:	pop	{r3, pc}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x40000f
 
-00000000 <.text>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	200cfffe 	strdcs	pc, [ip], -lr
-   8:	bf00bd08 	svclt	0x0000bd08
-   c:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  10:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  14:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  18:	200cfffe 	strdcs	pc, [ip], -lr
-  1c:	bf00bd08 	svclt	0x0000bd08
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text.startup:
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-   8:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-   c:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  10:	200cfffe 	strdcs	pc, [ip], -lr
-  14:	bf00bd08 	svclt	0x0000bd08
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	movs	r0, #0xc
+0x0040001d:	pop	{r3, pc}
+
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x400023
+
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bl	#0x40002f
+0x00400033:	movs	r0, #0xc
+0x00400035:	pop	{r3, pc}
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	

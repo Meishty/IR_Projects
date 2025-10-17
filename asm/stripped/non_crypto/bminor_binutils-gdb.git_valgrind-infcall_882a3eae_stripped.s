@@ -1,18 +1,30 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_valgrind-infcall_882a3eae_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0x24]
+0x00400007:	movs	r0, #1
+0x00400009:	push	{r4, lr}
+0x0040000b:	add	r3, pc
+0x0040000d:	ldr	r2, [r3]
+0x0040000f:	add	r2, r0
+0x00400011:	str	r2, [r3]
+0x00400013:	bl	#0x400013
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+0x00400017:	cbz	r0, #0x400029
+0x00400019:	mov	r4, r0
+0x0040001b:	bl	#0x40001b
+0x00400019:	mov	r4, r0
+0x0040001b:	bl	#0x40001b
+0x00400029:	movs	r0, #1
+0x0040002b:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	mov	r0, r4
+0x00400021:	bl	#0x400021
 
-00000000 <.text.startup>:
-   0:	20014b09 	andcs	r4, r1, r9, lsl #22
-   4:	447bb510 	ldrbtmi	fp, [fp], #-1296	; 0xfffffaf0
-   8:	4402681a 	strmi	r6, [r2], #-2074	; 0xfffff7e6
-   c:	f7ff601a 			; <UNDEFINED> instruction: 0xf7ff601a
-  10:	b138fffe 	teqlt	r8, lr	; <illegal shifter operand>	; <UNPREDICTABLE>
-  14:	f7ff4604 			; <UNDEFINED> instruction: 0xf7ff4604
-  18:	4620fffe 	qsub8mi	pc, r0, lr	; <UNPREDICTABLE>
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	bd102000 	ldclt	0, cr2, [r0, #-0]
-  24:	bd102001 	ldclt	0, cr2, [r0, #-4]
-  28:	0000001e 	andeq	r0, r0, lr, lsl r0
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
+0x00400025:	movs	r0, #0
+0x00400027:	pop	{r4, pc}

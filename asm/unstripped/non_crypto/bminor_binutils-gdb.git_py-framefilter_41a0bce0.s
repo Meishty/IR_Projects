@@ -1,63 +1,74 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_py-framefilter_41a0bce0.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwls	fp, #0x1082
+0x00400004:	ldrbmi	fp, [r0, -r2]!
+0x00400008:	ldrbtmi	r4, [fp], #-0xb03
+0x0040000c:	bhs	#0x65a07c
+0x00400010:	andhs	fp, sl, #220, #30
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bx	lr
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r6, r7
+0x0040001b:	movs	r0, r0
+0x0040001d:	b.w	#0x400009
 
-00000000 <end_func>:
-   0:	b082      	sub	sp, #8
-   2:	9301      	str	r3, [sp, #4]
-   4:	b002      	add	sp, #8
-   6:	4770      	bx	lr
+Function funcb @ 0x0040001d
+0x0040001d:	b.w	#0x400009
 
-00000008 <funca>:
-   8:	4b03      	ldr	r3, [pc, #12]	; (18 <funca+0x10>)
-   a:	447b      	add	r3, pc
-   c:	681a      	ldr	r2, [r3, #0]
-   e:	2a09      	cmp	r2, #9
-  10:	bfdc      	itt	le
-  12:	220a      	movle	r2, #10
-  14:	601a      	strle	r2, [r3, #0]
-  16:	4770      	bx	lr
-  18:	0000000a 	.word	0x0000000a
+Function func2.constprop.0.isra.0 @ 0x00400021
+0x00400021:	b.w	#0x400009
 
-0000001c <funcb>:
-  1c:	f7ff bffe 	b.w	8 <funca>
+Function func1 @ 0x00400025
+0x00400025:	b.w	#0x400009
 
-00000020 <func2.constprop.0.isra.0>:
-  20:	f7ff bffe 	b.w	8 <funca>
+Function func2 @ 0x00400029
+0x00400029:	push	{r3, lr}
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x400009
+0x00400031:	pop	{r3, pc}
 
-00000024 <func1>:
-  24:	f7ff bffe 	b.w	8 <funca>
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	b	#0x400021
 
-00000028 <func2>:
-  28:	b508      	push	{r3, lr}
-  2a:	2001      	movs	r0, #1
-  2c:	f7ff fffe 	bl	8 <funca>
-  30:	bd08      	pop	{r3, pc}
-  32:	bf00      	nop
+Function func3 @ 0x00400035
+0x00400035:	b	#0x400021
 
-00000034 <func3>:
-  34:	e7f4      	b.n	20 <func2.constprop.0.isra.0>
-  36:	bf00      	nop
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	push	{r3, lr}
+0x0040003b:	movs	r0, #2
+0x0040003d:	bl	#0x400021
 
-00000038 <func4>:
-  38:	b508      	push	{r3, lr}
-  3a:	2002      	movs	r0, #2
-  3c:	f7ff fff0 	bl	20 <func2.constprop.0.isra.0>
-  40:	bd08      	pop	{r3, pc}
-  42:	bf00      	nop
+Function func4 @ 0x00400039
+0x00400039:	push	{r3, lr}
+0x0040003b:	movs	r0, #2
+0x0040003d:	bl	#0x400021
 
-00000044 <func5>:
-  44:	b508      	push	{r3, lr}
-  46:	f7ff ffeb 	bl	20 <func2.constprop.0.isra.0>
-  4a:	bd08      	pop	{r3, pc}
+Function sub_400041 @ 0x00400041
+0x00400041:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	push	{r3, lr}
+0x00400047:	bl	#0x400021
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2000      	movs	r0, #0
-   4:	f7ff fffe 	bl	20 <func2.constprop.0.isra.0>
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function func5 @ 0x00400045
+0x00400045:	push	{r3, lr}
+0x00400047:	bl	#0x400021
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	pop	{r3, pc}
+
+Function main @ 0x00400051
+0x00400051:	push	{r3, lr}
+0x00400053:	movs	r0, #0
+0x00400055:	bl	#0x400021
+
+Function sub_400059 @ 0x00400059
+0x00400059:	pop	{r3, pc}
+
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	

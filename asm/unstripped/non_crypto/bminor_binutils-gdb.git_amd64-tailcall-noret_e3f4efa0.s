@@ -1,37 +1,46 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_amd64-tailcall-noret_e3f4efa0.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x52d428
+0x00400004:	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	vstrlt.16	s22, [r8, #-6]
+0x00400008:	vstrlt.16	s22, [r8, #-6]
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x400021
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r2
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r0, #1
+0x0040001b:	b	#0x400001
 
-00000000 <mayret>:
-   0:	b508      	push	{r3, lr}
-   2:	4b04      	ldr	r3, [pc, #16]	; (14 <mayret+0x14>)
-   4:	447b      	add	r3, pc
-   6:	681b      	ldr	r3, [r3, #0]
-   8:	b903      	cbnz	r3, c <mayret+0xc>
-   a:	bd08      	pop	{r3, pc}
-   c:	2001      	movs	r0, #1
-   e:	f7ff fffe 	bl	0 <mayret>
-  12:	bf00      	nop
-  14:	0000000c 	.word	0x0000000c
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r2
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r0, #1
+0x0040001b:	b	#0x400001
 
-00000018 <tailcall>:
-  18:	2001      	movs	r0, #1
-  1a:	e7f1      	b.n	0 <mayret>
+Function tailcall @ 0x00400019
+0x00400019:	movs	r0, #1
+0x0040001b:	b	#0x400001
 
-Disassembly of section .text.unlikely:
+Function noret @ 0x00400021
+0x00400021:	push	{r0, r1, r2, r3}
+0x00400023:	push	{r3, lr}
+0x00400025:	bl	#0x500001
 
-00000000 <noret>:
-   0:	b40f      	push	{r0, r1, r2, r3}
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <abort>
+Function main @ 0x00400029
+0x00400029:	push	{r3, lr}
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x400019
 
-Disassembly of section .text.startup:
+Function sub_400031 @ 0x00400031
+0x00400031:	movs	r0, #0
+0x00400033:	pop	{r3, pc}
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2001      	movs	r0, #1
-   4:	f7ff fffe 	bl	18 <tailcall>
-   8:	2000      	movs	r0, #0
-   a:	bd08      	pop	{r3, pc}
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

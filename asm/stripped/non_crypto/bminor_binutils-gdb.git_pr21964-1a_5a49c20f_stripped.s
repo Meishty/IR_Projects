@@ -1,18 +1,34 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr21964-1a_5a49c20f_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdbmi	sb, {r3, r8, sb, fp, lr}
+0x00400004:	ldrbtmi	r4, [fp], #-0xa09
+0x00400008:	ldmpl	fp, {r0, r3, r4, r6, fp, ip, lr}
+0x00400004:	ldrbtmi	r4, [fp], #-0xa09
+0x00400008:	ldmpl	fp, {r0, r3, r4, r6, fp, ip, lr}
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	beq	#0x40001d
+0x00400011:	ldr	r0, [r1]
+0x00400013:	subs	r0, #5
+0x00400015:	it	ne
+0x00400017:	movne.w	r0, #-1
+0x0040001b:	bx	lr
+0x0040001d:	mov.w	r0, #-1
+0x00400021:	bx	lr
 
-Disassembly of section .text:
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	movs	r2, r3
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, r0
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
 
-00000000 <.text>:
-   0:	49094b08 	stmdbmi	r9, {r3, r8, r9, fp, lr}
-   4:	447b4a09 	ldrbtmi	r4, [fp], #-2569	; 0xfffff5f7
-   8:	589b5859 	ldmpl	fp, {r0, r3, r4, r6, fp, ip, lr}
-   c:	d0054299 	mulle	r5, r9, r2
-  10:	38056808 	stmdacc	r5, {r3, fp, sp, lr}
-  14:	f04fbf18 			; <UNDEFINED> instruction: 0xf04fbf18
-  18:	477030ff 			; <UNDEFINED> instruction: 0x477030ff
-  1c:	30fff04f 	rscscc	pc, pc, pc, asr #32
-  20:	bf004770 	svclt	0x00004770
-  24:	0000001a 	andeq	r0, r0, sl, lsl r0
-	...
+Function sub_400025 @ 0x00400025
+0x00400025:	movs	r2, r3
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, r0
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0

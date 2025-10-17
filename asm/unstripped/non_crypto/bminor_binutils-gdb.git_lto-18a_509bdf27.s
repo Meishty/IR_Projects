@@ -1,43 +1,67 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_lto-18a_509bdf27.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r4, lr}
+0x00400007:	bl	#0x500001
+0x0040000b:	mov	r4, r0
+0x0040000d:	cmp	r0, #1
+0x0040000f:	beq	#0x40002b
+0x00400011:	cmp	r0, #2
+0x00400013:	beq	#0x40003f
+0x00400015:	movs	r0, #0
+0x00400017:	bl	#0x50000d
+0x0040001b:	ldr	r1, [pc, #0x38]
+0x0040001d:	mov	r2, r0
+0x0040001f:	movs	r0, #1
+0x00400021:	add	r1, pc
+0x00400023:	bl	#0x500019
+0x00400027:	movs	r0, #0
+0x00400029:	pop	{r4, pc}
+0x0040002b:	movs	r0, #3
+0x0040002d:	bl	#0x500025
+0x00400031:	ldr	r1, [pc, #0x24]
+0x00400033:	mov	r2, r0
+0x00400035:	mov	r0, r4
+0x00400037:	add	r1, pc
+0x00400039:	bl	#0x500019
+0x0040003d:	b	#0x400027
+0x0040003f:	movs	r0, #4
+0x00400041:	bl	#0x50000d
+0x00400045:	ldr	r1, [pc, #0x14]
+0x00400047:	mov	r2, r0
+0x00400049:	movs	r0, #1
+0x0040004b:	add	r1, pc
+0x0040004d:	bl	#0x500019
+0x00400051:	b	#0x400027
 
+Function sub_400053 @ 0x00400053
+0x00400053:	nop	
 
-Disassembly of section .text.startup:
+Function select @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	f7ff fffe 	bl	0 <select>
-   6:	4604      	mov	r4, r0
-   8:	2801      	cmp	r0, #1
-   a:	d00c      	beq.n	26 <main+0x26>
-   c:	2802      	cmp	r0, #2
-   e:	d014      	beq.n	3a <main+0x3a>
-  10:	2000      	movs	r0, #0
-  12:	f7ff fffe 	bl	0 <f2>
-  16:	490e      	ldr	r1, [pc, #56]	; (50 <main+0x50>)
-  18:	4602      	mov	r2, r0
-  1a:	2001      	movs	r0, #1
-  1c:	4479      	add	r1, pc
-  1e:	f7ff fffe 	bl	0 <__printf_chk>
-  22:	2000      	movs	r0, #0
-  24:	bd10      	pop	{r4, pc}
-  26:	2003      	movs	r0, #3
-  28:	f7ff fffe 	bl	0 <f1>
-  2c:	4909      	ldr	r1, [pc, #36]	; (54 <main+0x54>)
-  2e:	4602      	mov	r2, r0
-  30:	4620      	mov	r0, r4
-  32:	4479      	add	r1, pc
-  34:	f7ff fffe 	bl	0 <__printf_chk>
-  38:	e7f3      	b.n	22 <main+0x22>
-  3a:	2004      	movs	r0, #4
-  3c:	f7ff fffe 	bl	0 <f2>
-  40:	4905      	ldr	r1, [pc, #20]	; (58 <main+0x58>)
-  42:	4602      	mov	r2, r0
-  44:	2001      	movs	r0, #1
-  46:	4479      	add	r1, pc
-  48:	f7ff fffe 	bl	0 <__printf_chk>
-  4c:	e7e9      	b.n	22 <main+0x22>
-  4e:	bf00      	nop
-  50:	00000030 	.word	0x00000030
-  54:	0000001e 	.word	0x0000001e
-  58:	0000000e 	.word	0x0000000e
+Function f2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __printf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function f1 @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

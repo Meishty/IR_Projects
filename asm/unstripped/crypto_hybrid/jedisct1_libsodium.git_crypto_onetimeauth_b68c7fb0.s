@@ -1,45 +1,95 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_crypto_onetimeauth_b68c7fb0.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	addvc	pc, r0, pc, asr #8
+0x00400004:	svclt	#0x4770
 
+Function crypto_onetimeauth_bytes @ 0x00400009
+0x00400009:	movs	r0, #0x10
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function crypto_onetimeauth_keybytes @ 0x0040000d
+0x0040000d:	movs	r0, #0x20
+0x0040000f:	bx	lr
 
-00000000 <crypto_onetimeauth_statebytes>:
-   0:	f44f 7080 	mov.w	r0, #256	; 0x100
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function crypto_onetimeauth @ 0x00400011
+0x00400011:	b.w	#0x500001
 
-00000008 <crypto_onetimeauth_bytes>:
-   8:	2010      	movs	r0, #16
-   a:	4770      	bx	lr
+Function crypto_onetimeauth_verify @ 0x00400015
+0x00400015:	b.w	#0x50000d
 
-0000000c <crypto_onetimeauth_keybytes>:
-   c:	2020      	movs	r0, #32
-   e:	4770      	bx	lr
+Function crypto_onetimeauth_init @ 0x00400019
+0x00400019:	b.w	#0x500019
 
-00000010 <crypto_onetimeauth>:
-  10:	f7ff bffe 	b.w	0 <crypto_onetimeauth_poly1305>
+Function crypto_onetimeauth_update @ 0x0040001d
+0x0040001d:	b.w	#0x500025
 
-00000014 <crypto_onetimeauth_verify>:
-  14:	f7ff bffe 	b.w	0 <crypto_onetimeauth_poly1305_verify>
+Function crypto_onetimeauth_final @ 0x00400021
+0x00400021:	b.w	#0x500031
 
-00000018 <crypto_onetimeauth_init>:
-  18:	f7ff bffe 	b.w	0 <crypto_onetimeauth_poly1305_init>
+Function crypto_onetimeauth_primitive @ 0x00400025
+0x00400025:	ldr	r0, [pc, #4]
+0x00400027:	add	r0, pc
+0x00400029:	bx	lr
 
-0000001c <crypto_onetimeauth_update>:
-  1c:	f7ff bffe 	b.w	0 <crypto_onetimeauth_poly1305_update>
+Function sub_40002b @ 0x0040002b
+0x0040002b:	nop	
+0x0040002d:	movs	r6, r1
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r1, #0x20
+0x00400033:	b.w	#0x50003d
 
-00000020 <crypto_onetimeauth_final>:
-  20:	f7ff bffe 	b.w	0 <crypto_onetimeauth_poly1305_final>
+Function crypto_onetimeauth_keygen @ 0x00400031
+0x00400031:	movs	r1, #0x20
+0x00400033:	b.w	#0x50003d
 
-00000024 <crypto_onetimeauth_primitive>:
-  24:	4801      	ldr	r0, [pc, #4]	; (2c <crypto_onetimeauth_primitive+0x8>)
-  26:	4478      	add	r0, pc
-  28:	4770      	bx	lr
-  2a:	bf00      	nop
-  2c:	00000002 	.word	0x00000002
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
 
-00000030 <crypto_onetimeauth_keygen>:
-  30:	2120      	movs	r1, #32
-  32:	f7ff bffe 	b.w	0 <randombytes_buf>
-  36:	bf00      	nop
+Function crypto_onetimeauth_poly1305 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_verify @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_init @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_update @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_final @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function randombytes_buf @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

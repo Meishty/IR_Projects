@@ -1,14 +1,20 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_x86-set-solib-absolute-prefix_8345cf8f_stripped.o:     file format elf32-littlearm
+Function sub_400004 @ 0x00400004
+0x00400004:	blmi	#0x56d42c
+0x00400008:	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x0040000c:	andsvs	r3, sl, r1, lsl #4
+0x00400010:	andlo	r6, r1, #0x1a0000
+0x0040000c:	andsvs	r3, sl, r1, lsl #4
+0x00400010:	andlo	r6, r1, #0x1a0000
 
+Function sub_400015 @ 0x00400015
+0x00400015:	str	r2, [r3]
+0x00400017:	bl	#0x400017
 
-Disassembly of section .text.unlikely:
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
 
-00000000 <.text.unlikely>:
-   0:	4b05b508 	blmi	0x16d428
-   4:	681a447b 	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
-   8:	601a3201 	andsvs	r3, sl, r1, lsl #4
-   c:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  10:	f7ff601a 			; <UNDEFINED> instruction: 0xf7ff601a
-  14:	bf00fffe 	svclt	0x0000fffe
-  18:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r0, r2
+0x0040001f:	movs	r0, r0

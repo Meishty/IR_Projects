@@ -1,128 +1,164 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_initpri3_44311c1e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x62d428
+0x00400004:	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bne	#0x400013
+0x0040000d:	movs	r2, #2
+0x0040000f:	str	r2, [r3]
+0x00400011:	pop	{r3, pc}
+0x00400013:	ldr	r3, [pc, #0x14]
+0x00400015:	movs	r2, #0x21
+0x00400017:	ldr	r1, [pc, #0x14]
+0x00400019:	ldr	r0, [pc, #0x14]
+0x0040001b:	add	r3, pc
+0x0040001d:	add	r1, pc
+0x0040001f:	add	r0, pc
+0x00400021:	bl	#0x500001
 
-Disassembly of section .text:
+Function sub_400025 @ 0x00400025
+0x00400025:	lsls	r4, r2, #3
+0x00400027:	movs	r0, r0
+0x00400029:	lsls	r6, r0, #5
+0x0040002b:	movs	r0, r0
+0x0040002d:	lsls	r0, r0, #3
+0x0040002f:	movs	r0, r0
+0x00400031:	lsls	r6, r6, #3
+0x00400033:	movs	r0, r0
+0x00400035:	push	{r3, lr}
+0x00400037:	ldr	r3, [pc, #0x24]
+0x00400039:	add	r3, pc
+0x0040003b:	ldr	r2, [r3]
+0x0040003d:	cmp	r2, #2
+0x0040003f:	bne	#0x400047
 
-00000000 <ctor1>:
-   0:	b508      	push	{r3, lr}
-   2:	4b08      	ldr	r3, [pc, #32]	; (24 <ctor1+0x24>)
-   4:	447b      	add	r3, pc
-   6:	681a      	ldr	r2, [r3, #0]
-   8:	2a01      	cmp	r2, #1
-   a:	d102      	bne.n	12 <ctor1+0x12>
-   c:	2202      	movs	r2, #2
-   e:	601a      	str	r2, [r3, #0]
-  10:	bd08      	pop	{r3, pc}
-  12:	4b05      	ldr	r3, [pc, #20]	; (28 <ctor1+0x28>)
-  14:	2221      	movs	r2, #33	; 0x21
-  16:	4905      	ldr	r1, [pc, #20]	; (2c <ctor1+0x2c>)
-  18:	4805      	ldr	r0, [pc, #20]	; (30 <ctor1+0x30>)
-  1a:	447b      	add	r3, pc
-  1c:	4479      	add	r1, pc
-  1e:	4478      	add	r0, pc
-  20:	f7ff fffe 	bl	0 <__assert_fail>
-  24:	0000001c 	.word	0x0000001c
-  28:	0000000a 	.word	0x0000000a
-  2c:	0000000c 	.word	0x0000000c
-  30:	0000000e 	.word	0x0000000e
+Function ctor2 @ 0x00400035
+0x00400035:	push	{r3, lr}
+0x00400037:	ldr	r3, [pc, #0x24]
+0x00400039:	add	r3, pc
+0x0040003b:	ldr	r2, [r3]
+0x0040003d:	cmp	r2, #2
+0x0040003f:	bne	#0x400047
+0x00400041:	movs	r2, #3
+0x00400043:	str	r2, [r3]
+0x00400045:	pop	{r3, pc}
+0x00400047:	ldr	r3, [pc, #0x18]
+0x00400049:	movs	r2, #0x28
+0x0040004b:	ldr	r1, [pc, #0x18]
+0x0040004d:	ldr	r0, [pc, #0x18]
+0x0040004f:	add	r3, pc
+0x00400051:	add	r1, pc
+0x00400053:	adds	r3, #8
+0x00400055:	add	r0, pc
+0x00400057:	bl	#0x500001
 
-00000034 <ctor2>:
-  34:	b508      	push	{r3, lr}
-  36:	4b09      	ldr	r3, [pc, #36]	; (5c <ctor2+0x28>)
-  38:	447b      	add	r3, pc
-  3a:	681a      	ldr	r2, [r3, #0]
-  3c:	2a02      	cmp	r2, #2
-  3e:	d102      	bne.n	46 <ctor2+0x12>
-  40:	2203      	movs	r2, #3
-  42:	601a      	str	r2, [r3, #0]
-  44:	bd08      	pop	{r3, pc}
-  46:	4b06      	ldr	r3, [pc, #24]	; (60 <ctor2+0x2c>)
-  48:	2228      	movs	r2, #40	; 0x28
-  4a:	4906      	ldr	r1, [pc, #24]	; (64 <ctor2+0x30>)
-  4c:	4806      	ldr	r0, [pc, #24]	; (68 <ctor2+0x34>)
-  4e:	447b      	add	r3, pc
-  50:	4479      	add	r1, pc
-  52:	3308      	adds	r3, #8
-  54:	4478      	add	r0, pc
-  56:	f7ff fffe 	bl	0 <__assert_fail>
-  5a:	bf00      	nop
-  5c:	00000020 	.word	0x00000020
-  60:	0000000e 	.word	0x0000000e
-  64:	00000010 	.word	0x00000010
-  68:	00000010 	.word	0x00000010
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	
+0x0040005d:	lsls	r0, r4, #2
+0x0040005f:	movs	r0, r0
+0x00400061:	lsls	r2, r2, #4
+0x00400063:	movs	r0, r0
+0x00400065:	lsls	r4, r1, #2
+0x00400067:	movs	r0, r0
+0x00400069:	lsls	r0, r1, #3
+0x0040006b:	movs	r0, r0
+0x0040006d:	push	{r3, lr}
+0x0040006f:	ldr	r3, [pc, #0x24]
+0x00400071:	add	r3, pc
+0x00400073:	ldr	r2, [r3]
+0x00400075:	cmp	r2, #2
+0x00400077:	bne	#0x40007f
 
-0000006c <dtor2>:
-  6c:	b508      	push	{r3, lr}
-  6e:	4b09      	ldr	r3, [pc, #36]	; (94 <dtor2+0x28>)
-  70:	447b      	add	r3, pc
-  72:	681a      	ldr	r2, [r3, #0]
-  74:	2a02      	cmp	r2, #2
-  76:	d102      	bne.n	7e <dtor2+0x12>
-  78:	2201      	movs	r2, #1
-  7a:	601a      	str	r2, [r3, #0]
-  7c:	bd08      	pop	{r3, pc}
-  7e:	4b06      	ldr	r3, [pc, #24]	; (98 <dtor2+0x2c>)
-  80:	2236      	movs	r2, #54	; 0x36
-  82:	4906      	ldr	r1, [pc, #24]	; (9c <dtor2+0x30>)
-  84:	4806      	ldr	r0, [pc, #24]	; (a0 <dtor2+0x34>)
-  86:	447b      	add	r3, pc
-  88:	4479      	add	r1, pc
-  8a:	3310      	adds	r3, #16
-  8c:	4478      	add	r0, pc
-  8e:	f7ff fffe 	bl	0 <__assert_fail>
-  92:	bf00      	nop
-  94:	00000020 	.word	0x00000020
-  98:	0000000e 	.word	0x0000000e
-  9c:	00000010 	.word	0x00000010
-  a0:	00000010 	.word	0x00000010
+Function dtor2 @ 0x0040006d
+0x0040006d:	push	{r3, lr}
+0x0040006f:	ldr	r3, [pc, #0x24]
+0x00400071:	add	r3, pc
+0x00400073:	ldr	r2, [r3]
+0x00400075:	cmp	r2, #2
+0x00400077:	bne	#0x40007f
+0x00400079:	movs	r2, #1
+0x0040007b:	str	r2, [r3]
+0x0040007d:	pop	{r3, pc}
+0x0040007f:	ldr	r3, [pc, #0x18]
+0x00400081:	movs	r2, #0x36
+0x00400083:	ldr	r1, [pc, #0x18]
+0x00400085:	ldr	r0, [pc, #0x18]
+0x00400087:	add	r3, pc
+0x00400089:	add	r1, pc
+0x0040008b:	adds	r3, #0x10
+0x0040008d:	add	r0, pc
+0x0040008f:	bl	#0x500001
 
-000000a4 <dtor1>:
-  a4:	b508      	push	{r3, lr}
-  a6:	4b09      	ldr	r3, [pc, #36]	; (cc <dtor1+0x28>)
-  a8:	447b      	add	r3, pc
-  aa:	681a      	ldr	r2, [r3, #0]
-  ac:	2a03      	cmp	r2, #3
-  ae:	d102      	bne.n	b6 <dtor1+0x12>
-  b0:	2202      	movs	r2, #2
-  b2:	601a      	str	r2, [r3, #0]
-  b4:	bd08      	pop	{r3, pc}
-  b6:	4b06      	ldr	r3, [pc, #24]	; (d0 <dtor1+0x2c>)
-  b8:	222f      	movs	r2, #47	; 0x2f
-  ba:	4906      	ldr	r1, [pc, #24]	; (d4 <dtor1+0x30>)
-  bc:	4806      	ldr	r0, [pc, #24]	; (d8 <dtor1+0x34>)
-  be:	447b      	add	r3, pc
-  c0:	4479      	add	r1, pc
-  c2:	3318      	adds	r3, #24
-  c4:	4478      	add	r0, pc
-  c6:	f7ff fffe 	bl	0 <__assert_fail>
-  ca:	bf00      	nop
-  cc:	00000020 	.word	0x00000020
-  d0:	0000000e 	.word	0x0000000e
-  d4:	00000010 	.word	0x00000010
-  d8:	00000010 	.word	0x00000010
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+0x00400095:	lsls	r0, r5, #1
+0x00400097:	movs	r0, r0
+0x00400099:	lsls	r2, r3, #3
+0x0040009b:	movs	r0, r0
+0x0040009d:	lsls	r4, r2, #1
+0x0040009f:	movs	r0, r0
+0x004000a1:	lsls	r0, r2, #2
+0x004000a3:	movs	r0, r0
+0x004000a5:	push	{r3, lr}
+0x004000a7:	ldr	r3, [pc, #0x24]
+0x004000a9:	add	r3, pc
+0x004000ab:	ldr	r2, [r3]
+0x004000ad:	cmp	r2, #3
+0x004000af:	bne	#0x4000b7
 
-Disassembly of section .text.startup:
+Function dtor1 @ 0x004000a5
+0x004000a5:	push	{r3, lr}
+0x004000a7:	ldr	r3, [pc, #0x24]
+0x004000a9:	add	r3, pc
+0x004000ab:	ldr	r2, [r3]
+0x004000ad:	cmp	r2, #3
+0x004000af:	bne	#0x4000b7
+0x004000b1:	movs	r2, #2
+0x004000b3:	str	r2, [r3]
+0x004000b5:	pop	{r3, pc}
+0x004000b7:	ldr	r3, [pc, #0x18]
+0x004000b9:	movs	r2, #0x2f
+0x004000bb:	ldr	r1, [pc, #0x18]
+0x004000bd:	ldr	r0, [pc, #0x18]
+0x004000bf:	add	r3, pc
+0x004000c1:	add	r1, pc
+0x004000c3:	adds	r3, #0x18
+0x004000c5:	add	r0, pc
+0x004000c7:	bl	#0x500001
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b08      	ldr	r3, [pc, #32]	; (24 <main+0x24>)
-   4:	447b      	add	r3, pc
-   6:	681b      	ldr	r3, [r3, #0]
-   8:	2b03      	cmp	r3, #3
-   a:	d101      	bne.n	10 <main+0x10>
-   c:	2000      	movs	r0, #0
-   e:	bd08      	pop	{r3, pc}
-  10:	4b05      	ldr	r3, [pc, #20]	; (28 <main+0x28>)
-  12:	224e      	movs	r2, #78	; 0x4e
-  14:	4905      	ldr	r1, [pc, #20]	; (2c <main+0x2c>)
-  16:	4806      	ldr	r0, [pc, #24]	; (30 <main+0x30>)
-  18:	447b      	add	r3, pc
-  1a:	4479      	add	r1, pc
-  1c:	3320      	adds	r3, #32
-  1e:	4478      	add	r0, pc
-  20:	f7ff fffe 	bl	0 <__assert_fail>
-  24:	0000001c 	.word	0x0000001c
-  28:	0000000c 	.word	0x0000000c
-  2c:	0000000e 	.word	0x0000000e
-  30:	0000000e 	.word	0x0000000e
+Function sub_4000cb @ 0x004000cb
+0x004000cb:	nop	
+0x004000cd:	movs	r0, r6
+0x004000cf:	movs	r0, r0
+0x004000d1:	lsls	r2, r4, #2
+0x004000d3:	movs	r0, r0
+0x004000d5:	movs	r4, r3
+0x004000d7:	movs	r0, r0
+0x004000d9:	lsls	r0, r4, #1
+0x004000db:	movs	r0, r0
+
+Function main @ 0x00400131
+0x00400131:	push	{r3, lr}
+0x00400133:	ldr	r3, [pc, #0x20]
+0x00400135:	add	r3, pc
+0x00400137:	ldr	r3, [r3]
+0x00400139:	cmp	r3, #3
+0x0040013b:	bne	#0x400141
+0x0040013d:	movs	r0, #0
+0x0040013f:	pop	{r3, pc}
+0x00400141:	ldr	r3, [pc, #0x14]
+0x00400143:	movs	r2, #0x4e
+0x00400145:	ldr	r1, [pc, #0x14]
+0x00400147:	ldr	r0, [pc, #0x18]
+0x00400149:	add	r3, pc
+0x0040014b:	add	r1, pc
+0x0040014d:	adds	r3, #0x20
+0x0040014f:	add	r0, pc
+0x00400151:	bl	#0x500001
+
+Function __assert_fail @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

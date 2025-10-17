@@ -1,12 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_clobbered-registers-O2-2_cc174328.o:     file format elf32-littlearm
+Function gen_movsd @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r0, [r0]
+0x00400009:	pop	{r3, pc}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
 
-Disassembly of section .text:
-
-00000000 <gen_movsd>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <start_sequence>
-   6:	6800      	ldr	r0, [r0, #0]
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function start_sequence @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

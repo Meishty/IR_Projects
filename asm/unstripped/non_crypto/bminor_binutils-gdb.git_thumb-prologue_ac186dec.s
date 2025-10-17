@@ -1,92 +1,117 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_thumb-prologue_ac186dec.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	fp, [r0], #0x84
+0x00400004:	strls	sl, [r2, -r5, lsl #30]
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	str	r7, [sp, #0x10]
+0x0040000d:	mov	r7, fp
+0x0040000f:	str	r7, [sp, #4]
+0x00400011:	mov	r7, lr
+0x00400013:	str	r7, [sp, #0xc]
+0x00400015:	add	r7, sp, #0x10
+0x00400017:	mov	fp, r7
+0x00400019:	mov	r7, sl
+0x0040001b:	push	{r7}
+0x0040001d:	nop	
+0x0040001f:	pop	{r2}
+0x00400021:	mov	sl, r2
+0x00400023:	pop	{r7}
+0x00400025:	pop	{r1, r2}
+0x00400027:	mov	fp, r1
+0x00400029:	mov	sp, r2
+0x0040002b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40002d @ 0x0040002d
+0x0040002d:	movs	r4, r3
+0x0040002f:	movs	r0, r0
+0x00400031:	sub	sp, #0x10
+0x00400033:	push	{r7}
+0x00400035:	add	r7, sp, #0x14
+0x00400037:	str	r7, [sp, #8]
+0x00400039:	mov	r7, pc
+0x0040003b:	str	r7, [sp, #0x10]
+0x0040003d:	mov	r7, fp
+0x0040003f:	str	r7, [sp, #4]
+0x00400041:	mov	r7, lr
+0x00400043:	str	r7, [sp, #0xc]
+0x00400045:	add	r7, sp, #0x10
+0x00400047:	mov	fp, r7
+0x00400049:	mov	r7, sl
+0x0040004b:	push	{r7}
+0x0040004d:	mov.w	r7, #0
+0x00400051:	mov	lr, r7
+0x00400053:	bl	#0x400001
 
-00000000 <tpcs_frame_1>:
-   0:	b084      	sub	sp, #16
-   2:	b480      	push	{r7}
-   4:	af05      	add	r7, sp, #20
-   6:	9702      	str	r7, [sp, #8]
-   8:	467f      	mov	r7, pc
-   a:	9704      	str	r7, [sp, #16]
-   c:	465f      	mov	r7, fp
-   e:	9701      	str	r7, [sp, #4]
-  10:	4677      	mov	r7, lr
-  12:	9703      	str	r7, [sp, #12]
-  14:	af04      	add	r7, sp, #16
-  16:	46bb      	mov	fp, r7
-  18:	4657      	mov	r7, sl
-  1a:	b480      	push	{r7}
-  1c:	bf00      	nop
-  1e:	bc04      	pop	{r2}
-  20:	4692      	mov	sl, r2
-  22:	bc80      	pop	{r7}
-  24:	bc06      	pop	{r1, r2}
-  26:	468b      	mov	fp, r1
-  28:	4695      	mov	sp, r2
-  2a:	4770      	bx	lr
+Function tpcs_frame @ 0x00400031
+0x00400031:	sub	sp, #0x10
+0x00400033:	push	{r7}
+0x00400035:	add	r7, sp, #0x14
+0x00400037:	str	r7, [sp, #8]
+0x00400039:	mov	r7, pc
+0x0040003b:	str	r7, [sp, #0x10]
+0x0040003d:	mov	r7, fp
+0x0040003f:	str	r7, [sp, #4]
+0x00400041:	mov	r7, lr
+0x00400043:	str	r7, [sp, #0xc]
+0x00400045:	add	r7, sp, #0x10
+0x00400047:	mov	fp, r7
+0x00400049:	mov	r7, sl
+0x0040004b:	push	{r7}
+0x0040004d:	mov.w	r7, #0
+0x00400051:	mov	lr, r7
+0x00400053:	bl	#0x400001
 
-0000002c <tpcs_offset>:
-  2c:	001c 0000                                   ....
+Function sub_400057 @ 0x00400057
+0x00400057:	pop	{r2}
+0x00400059:	mov	sl, r2
+0x0040005b:	pop	{r7}
+0x0040005d:	pop	{r1, r2, r3}
+0x0040005f:	mov	fp, r1
+0x00400061:	mov	sp, r2
+0x00400063:	mov	lr, r3
+0x00400065:	bx	lr
 
-00000030 <tpcs_frame>:
-  30:	b084      	sub	sp, #16
-  32:	b480      	push	{r7}
-  34:	af05      	add	r7, sp, #20
-  36:	9702      	str	r7, [sp, #8]
-  38:	467f      	mov	r7, pc
-  3a:	9704      	str	r7, [sp, #16]
-  3c:	465f      	mov	r7, fp
-  3e:	9701      	str	r7, [sp, #4]
-  40:	4677      	mov	r7, lr
-  42:	9703      	str	r7, [sp, #12]
-  44:	af04      	add	r7, sp, #16
-  46:	46bb      	mov	fp, r7
-  48:	4657      	mov	r7, sl
-  4a:	b480      	push	{r7}
-  4c:	f04f 0700 	mov.w	r7, #0
-  50:	46be      	mov	lr, r7
-  52:	f7ff ffd5 	bl	0 <tpcs_frame_1>
-  56:	bc04      	pop	{r2}
-  58:	4692      	mov	sl, r2
-  5a:	bc80      	pop	{r7}
-  5c:	bc0e      	pop	{r1, r2, r3}
-  5e:	468b      	mov	fp, r1
-  60:	4695      	mov	sp, r2
-  62:	469e      	mov	lr, r3
-  64:	4770      	bx	lr
-  66:	bf00      	nop
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	mov	sp, r0
+0x0040006b:	bx	lr
 
-00000068 <write_sp>:
-  68:	4685      	mov	sp, r0
-  6a:	4770      	bx	lr
+Function write_sp @ 0x00400069
+0x00400069:	mov	sp, r0
+0x0040006b:	bx	lr
 
-0000006c <switch_stack_to_same>:
-  6c:	b500      	push	{lr}
-  6e:	4668      	mov	r0, sp
-  70:	f7ff fffa 	bl	68 <write_sp>
-  74:	bc02      	pop	{r1}
-  76:	4708      	bx	r1
+Function switch_stack_to_same @ 0x0040006d
+0x0040006d:	push	{lr}
+0x0040006f:	mov	r0, sp
+0x00400071:	bl	#0x400069
+0x00400075:	pop	{r1}
+0x00400077:	bx	r1
 
-00000078 <switch_stack_to_other>:
-  78:	b500      	push	{lr}
-  7a:	466f      	mov	r7, sp
-  7c:	f04f 0080 	mov.w	r0, #128	; 0x80
-  80:	f7ff fff2 	bl	68 <write_sp>
-  84:	46bd      	mov	sp, r7
-  86:	bc02      	pop	{r1}
-  88:	4708      	bx	r1
-  8a:	bf00      	nop
+Function switch_stack_to_other @ 0x00400079
+0x00400079:	push	{lr}
+0x0040007b:	mov	r7, sp
+0x0040007d:	mov.w	r0, #0x80
+0x00400081:	bl	#0x400069
+0x00400085:	mov	sp, r7
+0x00400087:	pop	{r1}
+0x00400089:	bx	r1
 
-Disassembly of section .text.startup:
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	30 <tpcs_frame>
-   6:	f7ff fffe 	bl	6c <switch_stack_to_same>
-   a:	f7ff fffe 	bl	78 <switch_stack_to_other>
-   e:	2000      	movs	r0, #0
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
+Function main @ 0x0040008d
+0x0040008d:	push	{r3, lr}
+0x0040008f:	bl	#0x400031
+
+Function sub_400093 @ 0x00400093
+0x00400093:	bl	#0x40006d
+0x00400097:	bl	#0x400079
+0x0040009b:	movs	r0, #0
+0x0040009d:	pop	{r3, pc}
+
+Function sub_40009f @ 0x0040009f
+0x0040009f:	nop	
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

@@ -1,36 +1,59 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_size-8a_fcd09d9a.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	movs	r1, #0x14
+0x00400009:	movs	r0, #1
+0x0040000b:	bl	#0x500001
+0x0040000f:	ldr	r3, [pc, #0x30]
+0x00400011:	ldr	r2, [pc, #0x30]
+0x00400013:	add	r3, pc
+0x00400015:	ldr	r3, [r3, r2]
+0x00400017:	cmp	r3, #0xa
+0x00400019:	beq	#0x40001f
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r3, pc}
+0x0040001f:	ldr	r2, [pc, #0x1c]
+0x00400021:	mrc	p15, #0, r3, c13, c0, #3
+0x00400025:	add	r2, pc
+0x00400027:	ldr	r2, [r2]
+0x00400029:	add	r3, r2
+0x0040002b:	ldrb	r3, [r3, #1]
+0x0040002d:	cmp	r3, #0x14
+0x0040002f:	bne	#0x40001b
+0x00400031:	ldr	r0, [pc, #0x14]
+0x00400033:	add	r0, pc
+0x00400035:	bl	#0x50000d
+0x00400039:	b	#0x40001b
 
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r4, r2
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r2, r5
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r0, r0
+0x00400047:	lsls	r0, r2, #1
 
-Disassembly of section .text.startup:
+Function set_bar @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2114      	movs	r1, #20
-   4:	2001      	movs	r0, #1
-   6:	f7ff fffe 	bl	0 <set_bar>
-   a:	4b0c      	ldr	r3, [pc, #48]	; (3c <main+0x3c>)
-   c:	4a0c      	ldr	r2, [pc, #48]	; (40 <main+0x40>)
-   e:	447b      	add	r3, pc
-  10:	589b      	ldr	r3, [r3, r2]
-  12:	2b0a      	cmp	r3, #10
-  14:	d001      	beq.n	1a <main+0x1a>
-  16:	2000      	movs	r0, #0
-  18:	bd08      	pop	{r3, pc}
-  1a:	4a07      	ldr	r2, [pc, #28]	; (38 <main+0x38>)
-  1c:	ee1d 3f70 	mrc	15, 0, r3, cr13, cr0, {3}
-  20:	447a      	add	r2, pc
-  22:	6812      	ldr	r2, [r2, #0]
-  24:	4413      	add	r3, r2
-  26:	785b      	ldrb	r3, [r3, #1]
-  28:	2b14      	cmp	r3, #20
-  2a:	d1f4      	bne.n	16 <main+0x16>
-  2c:	4805      	ldr	r0, [pc, #20]	; (44 <main+0x44>)
-  2e:	4478      	add	r0, pc
-  30:	f7ff fffe 	bl	0 <puts>
-  34:	e7ef      	b.n	16 <main+0x16>
-  36:	bf00      	nop
-  38:	00000014 	.word	0x00000014
-  3c:	0000002a 	.word	0x0000002a
-  40:	00000000 	.word	0x00000000
-  44:	00000012 	.word	0x00000012
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0

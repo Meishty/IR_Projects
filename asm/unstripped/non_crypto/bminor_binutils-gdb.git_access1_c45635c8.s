@@ -1,37 +1,62 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_access1_c45635c8.o:     file format elf32-littlearm
+Function main @ 0x00400015
+0x00400015:	push	{r3, lr}
+0x00400017:	mov	r3, r1
+0x00400019:	movs	r1, #7
+0x0040001b:	ldr	r0, [r3]
+0x0040001d:	bl	#0x500001
+0x00400021:	cbz	r0, #0x400029
+0x00400023:	movs	r0, #0
+0x00400025:	bl	#0x50000d
+0x00400023:	movs	r0, #0
+0x00400025:	bl	#0x50000d
+0x00400029:	ldr	r4, [pc, #0x2c]
+0x0040002b:	movs	r1, #6
+0x0040002d:	add	r4, pc
+0x0040002f:	mov	r0, r4
+0x00400031:	bl	#0x500001
+0x00400035:	cmp	r0, #0
+0x00400037:	bne	#0x400023
+0x00400039:	movs	r1, #1
+0x0040003b:	mov	r0, r4
+0x0040003d:	bl	#0x500001
+0x00400041:	adds	r0, #1
+0x00400043:	bne	#0x400023
+0x00400045:	bl	#0x500019
+0x00400049:	ldr	r3, [r0]
+0x0040004b:	cmp	r3, #0xd
+0x0040004d:	bne	#0x400023
+0x0040004f:	ldr	r0, [pc, #0xc]
+0x00400051:	add	r0, pc
+0x00400053:	bl	#0x500025
+0x00400057:	b	#0x400023
 
+Function access @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function exit @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	460b      	mov	r3, r1
-   4:	2107      	movs	r1, #7
-   6:	6818      	ldr	r0, [r3, #0]
-   8:	f7ff fffe 	bl	0 <access>
-   c:	b110      	cbz	r0, 14 <main+0x14>
-   e:	2000      	movs	r0, #0
-  10:	f7ff fffe 	bl	0 <exit>
-  14:	4c0b      	ldr	r4, [pc, #44]	; (44 <main+0x44>)
-  16:	2106      	movs	r1, #6
-  18:	447c      	add	r4, pc
-  1a:	4620      	mov	r0, r4
-  1c:	f7ff fffe 	bl	0 <access>
-  20:	2800      	cmp	r0, #0
-  22:	d1f4      	bne.n	e <main+0xe>
-  24:	2101      	movs	r1, #1
-  26:	4620      	mov	r0, r4
-  28:	f7ff fffe 	bl	0 <access>
-  2c:	3001      	adds	r0, #1
-  2e:	d1ee      	bne.n	e <main+0xe>
-  30:	f7ff fffe 	bl	0 <__errno_location>
-  34:	6803      	ldr	r3, [r0, #0]
-  36:	2b0d      	cmp	r3, #13
-  38:	d1e9      	bne.n	e <main+0xe>
-  3a:	4803      	ldr	r0, [pc, #12]	; (48 <main+0x48>)
-  3c:	4478      	add	r0, pc
-  3e:	f7ff fffe 	bl	0 <puts>
-  42:	e7e4      	b.n	e <main+0xe>
-  44:	00000028 	.word	0x00000028
-  48:	00000008 	.word	0x00000008
+Function __errno_location @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function puts @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

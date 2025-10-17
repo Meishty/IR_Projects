@@ -1,11 +1,13 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_attach-no-multi-process_07850bb8_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0xa]
 
+Function sub_400007 @ 0x00400007
+0x00400009:	movs	r0, #1
+0x0040000b:	bl	#0x40000b
 
-Disassembly of section .text.startup:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
 
-00000000 <.text.startup>:
-   0:	b508200a 	strlt	r2, [r8, #-10]
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-   c:	e7fbfffe 	udf	#49150	; 0xbffe
+Function sub_40000f @ 0x0040000f
+0x0040000f:	b	#0x400009

@@ -1,60 +1,96 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_bitarray_f4be7640.o:     file format elf32-littlearm
+Function alloc_bit_array @ 0x00400001
+0x00400001:	adds	r0, #7
+0x00400003:	movs	r1, #1
+0x00400005:	lsrs	r0, r0, #3
+0x00400007:	b.w	#0x500001
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	adds	r3, r1, #7
+0x0040000f:	and	r2, r1, #7
+0x00400013:	ands.w	r3, r3, r1, asr #32
+0x00400017:	it	lo
+0x00400019:	movlo	r3, r1
+0x0040001b:	asrs	r3, r3, #3
+0x0040001d:	ldrb	r0, [r0, r3]
+0x0040001f:	asrs	r0, r2
+0x00400021:	and	r0, r0, #1
+0x00400025:	bx	lr
 
-Disassembly of section .text:
+Function getbit @ 0x0040000d
+0x0040000d:	adds	r3, r1, #7
+0x0040000f:	and	r2, r1, #7
+0x00400013:	ands.w	r3, r3, r1, asr #32
+0x00400017:	it	lo
+0x00400019:	movlo	r3, r1
+0x0040001b:	asrs	r3, r3, #3
+0x0040001d:	ldrb	r0, [r0, r3]
+0x0040001f:	asrs	r0, r2
+0x00400021:	and	r0, r0, #1
+0x00400025:	bx	lr
 
-00000000 <alloc_bit_array>:
-   0:	3007      	adds	r0, #7
-   2:	2101      	movs	r1, #1
-   4:	08c0      	lsrs	r0, r0, #3
-   6:	f7ff bffe 	b.w	0 <calloc>
-   a:	bf00      	nop
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	adds	r3, r1, #7
+0x0040002b:	push	{lr}
+0x0040002d:	ands.w	r3, r3, r1, asr #32
+0x00400031:	it	lo
+0x00400033:	movlo	r3, r1
+0x00400035:	mov.w	lr, #1
+0x00400039:	and	r1, r1, #7
+0x0040003d:	asrs	r3, r3, #3
+0x0040003f:	lsl.w	r1, lr, r1
+0x00400043:	ldrb.w	ip, [r0, r3]
+0x00400047:	cbz	r2, #0x400059
+0x00400049:	orr.w	ip, ip, r1
+0x0040004d:	uxtb.w	ip, ip
+0x00400051:	strb.w	ip, [r0, r3]
+0x00400055:	ldr	pc, [sp], #4
 
-0000000c <getbit>:
-   c:	1dcb      	adds	r3, r1, #7
-   e:	f001 0207 	and.w	r2, r1, #7
-  12:	ea13 0321 	ands.w	r3, r3, r1, asr #32
-  16:	bf38      	it	cc
-  18:	460b      	movcc	r3, r1
-  1a:	10db      	asrs	r3, r3, #3
-  1c:	5cc0      	ldrb	r0, [r0, r3]
-  1e:	4110      	asrs	r0, r2
-  20:	f000 0001 	and.w	r0, r0, #1
-  24:	4770      	bx	lr
-  26:	bf00      	nop
+Function setbit @ 0x00400029
+0x00400029:	adds	r3, r1, #7
+0x0040002b:	push	{lr}
+0x0040002d:	ands.w	r3, r3, r1, asr #32
+0x00400031:	it	lo
+0x00400033:	movlo	r3, r1
+0x00400035:	mov.w	lr, #1
+0x00400039:	and	r1, r1, #7
+0x0040003d:	asrs	r3, r3, #3
+0x0040003f:	lsl.w	r1, lr, r1
+0x00400043:	ldrb.w	ip, [r0, r3]
+0x00400047:	cbz	r2, #0x400059
+0x00400049:	orr.w	ip, ip, r1
+0x0040004d:	uxtb.w	ip, ip
+0x00400051:	strb.w	ip, [r0, r3]
+0x00400055:	ldr	pc, [sp], #4
+0x00400049:	orr.w	ip, ip, r1
+0x0040004d:	uxtb.w	ip, ip
+0x00400051:	strb.w	ip, [r0, r3]
+0x00400055:	ldr	pc, [sp], #4
+0x00400059:	bic.w	ip, ip, r1
+0x0040005d:	strb.w	ip, [r0, r3]
+0x00400061:	ldr	pc, [sp], #4
 
-00000028 <setbit>:
-  28:	1dcb      	adds	r3, r1, #7
-  2a:	b500      	push	{lr}
-  2c:	ea13 0321 	ands.w	r3, r3, r1, asr #32
-  30:	bf38      	it	cc
-  32:	460b      	movcc	r3, r1
-  34:	f04f 0e01 	mov.w	lr, #1
-  38:	f001 0107 	and.w	r1, r1, #7
-  3c:	10db      	asrs	r3, r3, #3
-  3e:	fa0e f101 	lsl.w	r1, lr, r1
-  42:	f810 c003 	ldrb.w	ip, [r0, r3]
-  46:	b13a      	cbz	r2, 58 <setbit+0x30>
-  48:	ea4c 0c01 	orr.w	ip, ip, r1
-  4c:	fa5f fc8c 	uxtb.w	ip, ip
-  50:	f800 c003 	strb.w	ip, [r0, r3]
-  54:	f85d fb04 	ldr.w	pc, [sp], #4
-  58:	ea2c 0c01 	bic.w	ip, ip, r1
-  5c:	f800 c003 	strb.w	ip, [r0, r3]
-  60:	f85d fb04 	ldr.w	pc, [sp], #4
+Function flipbit @ 0x00400065
+0x00400065:	adds	r3, r1, #7
+0x00400067:	and	ip, r1, #7
+0x0040006b:	ands.w	r3, r3, r1, asr #32
+0x0040006f:	it	lo
+0x00400071:	movlo	r3, r1
+0x00400073:	movs	r2, #1
+0x00400075:	asrs	r3, r3, #3
+0x00400077:	lsl.w	r2, r2, ip
+0x0040007b:	ldrb	r1, [r0, r3]
+0x0040007d:	eors	r2, r1
+0x0040007f:	strb	r2, [r0, r3]
+0x00400081:	bx	lr
 
-00000064 <flipbit>:
-  64:	1dcb      	adds	r3, r1, #7
-  66:	f001 0c07 	and.w	ip, r1, #7
-  6a:	ea13 0321 	ands.w	r3, r3, r1, asr #32
-  6e:	bf38      	it	cc
-  70:	460b      	movcc	r3, r1
-  72:	2201      	movs	r2, #1
-  74:	10db      	asrs	r3, r3, #3
-  76:	fa02 f20c 	lsl.w	r2, r2, ip
-  7a:	5cc1      	ldrb	r1, [r0, r3]
-  7c:	404a      	eors	r2, r1
-  7e:	54c2      	strb	r2, [r0, r3]
-  80:	4770      	bx	lr
-  82:	bf00      	nop
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+
+Function calloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

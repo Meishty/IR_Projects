@@ -1,28 +1,42 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_snprintf_afb563cd_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_400005 @ 0x00400005
+0x00400005:	stm	r0!, {r2, r6}
+0x00400007:	push	{lr}
+0x00400009:	ldr	r2, [pc, #0x40]
+0x0040000b:	add	ip, pc
+0x0040000d:	sub	sp, #0xc
+0x0040000f:	add	r3, sp, #0x10
+0x00400011:	ldr.w	r2, [ip, r2]
+0x00400015:	ldr	r2, [r2]
+0x00400017:	str	r2, [sp, #4]
+0x00400019:	mov.w	r2, #0
+0x0040001d:	ldr	r2, [r3], #4
+0x00400021:	str	r3, [sp]
+0x00400023:	bl	#0x400023
 
-Disassembly of section .text:
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	ldr	r2, [pc, #0x28]
+0x00400029:	ldr	r3, [pc, #0x20]
+0x0040002b:	add	r2, pc
+0x0040002d:	ldr	r3, [r2, r3]
+0x0040002f:	ldr	r2, [r3]
+0x00400031:	ldr	r3, [sp, #4]
+0x00400033:	eors	r2, r3
+0x00400035:	mov.w	r3, #0
+0x00400039:	bne	#0x400045
+0x0040003b:	add	sp, #0xc
+0x0040003d:	ldr	lr, [sp], #4
+0x00400041:	add	sp, #8
+0x00400043:	bx	lr
 
-00000000 <.text>:
-   0:	f8dfb40c 			; <UNDEFINED> instruction: 0xf8dfb40c
-   4:	b500c044 	strlt	ip, [r0, #-68]	; 0xffffffbc
-   8:	44fc4a10 	ldrbtmi	r4, [ip], #2576	; 0xa10
-   c:	ab04b083 	blge	0x12c220
-  10:	2002f85c 	andcs	pc, r2, ip, asr r8	; <UNPREDICTABLE>
-  14:	92016812 	andls	r6, r1, #1179648	; 0x120000
-  18:	0200f04f 	andeq	pc, r0, #79	; 0x4f
-  1c:	2b04f853 	blcs	0x13e170
-  20:	f7ff9300 			; <UNDEFINED> instruction: 0xf7ff9300
-  24:	4a0afffe 	bmi	0x2c0024
-  28:	447a4b08 	ldrbtmi	r4, [sl], #-2824	; 0xfffff4f8
-  2c:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
-  30:	405a9b01 	subsmi	r9, sl, r1, lsl #22
-  34:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  38:	b003d104 	andlt	sp, r3, r4, lsl #2
-  3c:	eb04f85d 	bl	0x13e1b8
-  40:	4770b002 	ldrbmi	fp, [r0, -r2]!
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	0000003a 	andeq	r0, r0, sl, lsr r0
-  4c:	00000000 	andeq	r0, r0, r0
-  50:	00000022 	andeq	r0, r0, r2, lsr #32
+Function sub_400045 @ 0x00400045
+0x00400045:	bl	#0x400045
+0x00400049:	movs	r2, r7
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r2, r4
+0x00400053:	movs	r0, r0

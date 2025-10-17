@@ -1,17 +1,16 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_compile-shlib_a52777c5.o:     file format elf32-littlearm
+Function shlib_func @ 0x00400001
+0x00400001:	ldr	r3, [pc, #0xc]
+0x00400003:	movs	r1, #1
+0x00400005:	ldr	r2, [pc, #0xc]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r3, [r3, r2]
+0x0040000b:	str	r1, [r3]
+0x0040000d:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <shlib_func>:
-   0:	4b03      	ldr	r3, [pc, #12]	; (10 <shlib_func+0x10>)
-   2:	2101      	movs	r1, #1
-   4:	4a03      	ldr	r2, [pc, #12]	; (14 <shlib_func+0x14>)
-   6:	447b      	add	r3, pc
-   8:	589b      	ldr	r3, [r3, r2]
-   a:	6019      	str	r1, [r3, #0]
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-  10:	00000006 	.word	0x00000006
-  14:	00000000 	.word	0x00000000
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r6, r0
+0x00400013:	movs	r0, r0
+0x00400015:	movs	r0, r0
+0x00400017:	movs	r0, r0

@@ -1,15 +1,8 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_scm-block_1f079a83.o:     file format elf32-littlearm
+Function block_func @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <block_func>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr

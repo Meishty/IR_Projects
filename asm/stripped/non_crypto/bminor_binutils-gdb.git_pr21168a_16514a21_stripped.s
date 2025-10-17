@@ -1,20 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr21168a_16514a21_stripped.o:     file format elf32-littlearm
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x40000f
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	ldr	r3, [pc, #0x24]
+0x00400015:	add	r3, pc
+0x00400017:	cmp	r3, r0
+0x00400019:	beq	#0x40001f
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	bl	#0x40001f
+0x00400023:	movw	r3, #0xbeef
+0x00400027:	movt	r3, #0xbad
+0x0040002b:	cmp	r0, r3
+0x0040002d:	bne	#0x40001b
+0x0040002f:	ldr	r0, [pc, #0xc]
+0x00400031:	add	r0, pc
+0x00400033:	bl	#0x400033
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4b09fffe 	blmi	0x280004
-   8:	4283447b 	addmi	r4, r3, #2063597568	; 0x7b000000
-   c:	2000d001 	andcs	sp, r0, r1
-  10:	f7ffbd08 			; <UNDEFINED> instruction: 0xf7ffbd08
-  14:	f64bfffe 			; <UNDEFINED> instruction: 0xf64bfffe
-  18:	f6c063ef 			; <UNDEFINED> instruction: 0xf6c063ef
-  1c:	429833ad 	addsmi	r3, r8, #-1275068414	; 0xb4000002
-  20:	4803d1f5 	stmdami	r3, {r0, r2, r4, r5, r6, r7, r8, ip, lr, pc}
-  24:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  28:	e7f0fffe 	udf	#4094	; 0xffe
-  2c:	00000020 	andeq	r0, r0, r0, lsr #32
-  30:	00000008 	andeq	r0, r0, r8
+Function sub_400033 @ 0x00400033
+0x00400033:	bl	#0x400033
+0x00400037:	b	#0x40001b

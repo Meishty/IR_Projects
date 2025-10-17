@@ -1,12 +1,6 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_paginate-execution-startup_0fdd8375.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r3, r8, lsl #10
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2003      	movs	r0, #3
-   4:	f7ff fffe 	bl	0 <sleep>
-   8:	2000      	movs	r0, #0
-   a:	bd08      	pop	{r3, pc}
+Function sub_400008 @ 0x00400008
+0x00400008:	stclt	p0, c2, [r8, #-0]

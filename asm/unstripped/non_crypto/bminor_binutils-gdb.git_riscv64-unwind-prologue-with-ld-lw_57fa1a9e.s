@@ -1,14 +1,13 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_riscv64-unwind-prologue-with-ld-lw_57fa1a9e.o:     file format elf32-littlearm
+Function bar @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function main @ 0x00400005
+0x00400005:	b.w	#0x500001
 
-Disassembly of section .text:
-
-00000000 <bar>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	f7ff bffe 	b.w	0 <foo>
+Function foo @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

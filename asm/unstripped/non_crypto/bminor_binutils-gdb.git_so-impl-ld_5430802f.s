@@ -1,13 +1,14 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_so-impl-ld_5430802f.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	rsbhs	fp, r4, r8, lsl #10
 
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x500001
+0x0040000d:	movs	r0, #0
+0x0040000f:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2064      	movs	r0, #100	; 0x64
-   4:	f7ff fffe 	bl	0 <solib_main>
-   8:	f7ff fffe 	bl	0 <solib_main>
-   c:	2000      	movs	r0, #0
-   e:	bd08      	pop	{r3, pc}
+Function solib_main @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

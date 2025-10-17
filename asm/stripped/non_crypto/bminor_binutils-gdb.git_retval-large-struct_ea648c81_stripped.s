@@ -1,18 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_retval-large-struct_ea648c81_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	subhs	r4, r8, #4, #18
 
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r4, lr}
+0x00400007:	mov	r4, r0
+0x00400009:	add	r1, pc
+0x0040000b:	bl	#0x40000b
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	mov	r0, r4
+0x00400011:	pop	{r4, pc}
 
-00000000 <.text>:
-   0:	22484904 	subcs	r4, r8, #4, 18	; 0x10000
-   4:	4604b510 			; <UNDEFINED> instruction: 0x4604b510
-   8:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-   c:	4620fffe 	qsub8mi	pc, r0, lr	; <UNPREDICTABLE>
-  10:	bf00bd10 	svclt	0x0000bd10
-  14:	00000008 	andeq	r0, r0, r8
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r0, r1
+0x00400017:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r0, r1
+0x00400017:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_400061 @ 0x00400061
+0x00400061:	movs	r0, #0
+0x00400063:	bx	lr

@@ -1,43 +1,96 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_async_8d4d9854_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x804]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	movs	r0, #1
+0x0040000d:	bl	#0x40000d
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bl	#0x40000d
+0x00400011:	b	#0x40000b
 
-00000000 <.text>:
-   0:	b5084804 	strlt	r4, [r8, #-2052]	; 0xfffff7fc
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	2001fffe 	strdcs	pc, [r1], -lr
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	bf00e7fb 	svclt	0x0000e7fb
-  14:	0000000c 	andeq	r0, r0, ip
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	c054f8df 	ldrsbgt	pc, [r4], #-143	; 0xffffff71	; <UNPREDICTABLE>
-   4:	4b152203 	blmi	0x548818
-   8:	44fc2100 	ldrbtmi	r2, [ip], #256	; 0x100
-   c:	4c14b530 	cfldr32mi	mvfx11, [r4], {48}	; 0x30
-  10:	b0874d14 	addlt	r4, r7, r4, lsl sp
-  14:	3003f85c 	andcc	pc, r3, ip, asr r8	; <UNPREDICTABLE>
-  18:	4620447c 			; <UNDEFINED> instruction: 0x4620447c
-  1c:	681b447d 	ldmdavs	fp, {r0, r2, r3, r4, r5, r6, sl, lr}
-  20:	f04f9305 			; <UNDEFINED> instruction: 0xf04f9305
-  24:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
-  28:	2300fffe 	movwcs	pc, #4094	; 0xffe	; <UNPREDICTABLE>
-  2c:	4619462a 	ldrmi	r4, [r9], -sl, lsr #12
-  30:	9501a803 	strls	sl, [r1, #-2051]	; 0xfffff7fd
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	9a012300 	bls	0x48c40
-  3c:	a8044619 	stmdage	r4, {r0, r3, r4, r9, sl, lr}
-  40:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  44:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  48:	20b4fffe 	ldrshtcs	pc, [r4], lr	; <UNPREDICTABLE>
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	f7ff2000 			; <UNDEFINED> instruction: 0xf7ff2000
-  54:	bf00fffe 	svclt	0x0000fffe
-  58:	0000004a 	andeq	r0, r0, sl, asr #32
-  5c:	00000000 	andeq	r0, r0, r0
-  60:	00000044 	andeq	r0, r0, r4, asr #32
-  64:	00000044 	andeq	r0, r0, r4, asr #32
+Function sub_40002d @ 0x0040002d
+0x0040002d:	ldr.w	ip, [pc, #0x54]
+0x00400031:	movs	r2, #3
+0x00400033:	ldr	r3, [pc, #0x54]
+0x00400035:	movs	r1, #0
+0x00400037:	add	ip, pc
+0x00400039:	push	{r4, r5, lr}
+0x0040003b:	ldr	r4, [pc, #0x50]
+0x0040003d:	ldr	r5, [pc, #0x50]
+0x0040003f:	sub	sp, #0x1c
+0x00400041:	ldr.w	r3, [ip, r3]
+0x00400045:	add	r4, pc
+0x00400047:	mov	r0, r4
+0x00400049:	add	r5, pc
+0x0040004b:	ldr	r3, [r3]
+0x0040004d:	str	r3, [sp, #0x14]
+0x0040004f:	mov.w	r3, #0
+0x00400053:	bl	#0x400053
+
+Function sub_400053 @ 0x00400053
+0x00400053:	bl	#0x400053
+
+Function sub_400057 @ 0x00400057
+0x00400057:	movs	r3, #0
+0x00400059:	mov	r2, r5
+0x0040005b:	mov	r1, r3
+0x0040005d:	add	r0, sp, #0xc
+0x0040005f:	str	r5, [sp, #4]
+0x00400061:	bl	#0x400061
+
+Function sub_400061 @ 0x00400061
+0x00400061:	bl	#0x400061
+
+Function sub_400065 @ 0x00400065
+0x00400065:	movs	r3, #0
+0x00400067:	ldr	r2, [sp, #4]
+0x00400069:	mov	r1, r3
+0x0040006b:	add	r0, sp, #0x10
+0x0040006d:	bl	#0x40006d
+
+Function sub_40006d @ 0x0040006d
+0x0040006d:	bl	#0x40006d
+
+Function sub_400071 @ 0x00400071
+0x00400071:	mov	r0, r4
+0x00400073:	bl	#0x400073
+
+Function sub_400073 @ 0x00400073
+0x00400073:	bl	#0x400073
+
+Function sub_400077 @ 0x00400077
+0x00400077:	movs	r0, #0xb4
+0x00400079:	bl	#0x400079
+
+Function sub_400079 @ 0x00400079
+0x00400079:	bl	#0x400079
+
+Function sub_40007d @ 0x0040007d
+0x0040007d:	movs	r0, #0
+0x0040007f:	bl	#0x40007f
+
+Function sub_40007f @ 0x0040007f
+0x0040007f:	bl	#0x40007f
+
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	lsls	r2, r1, #1
+0x00400087:	movs	r0, r0
+0x00400089:	movs	r0, r0
+0x0040008b:	movs	r0, r0
+0x0040008d:	lsls	r4, r0, #1
+0x0040008f:	movs	r0, r0
+0x00400091:	lsls	r4, r0, #1
+0x00400093:	movs	r0, r0

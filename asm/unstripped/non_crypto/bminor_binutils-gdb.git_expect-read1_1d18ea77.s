@@ -1,41 +1,71 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_expect-read1_1d18ea77.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mvnsmi	lr, sp, lsr #18
 
+Function sub_400013 @ 0x00400013
+0x00400013:	strb	r0, [r0]
+0x00400015:	cbz	r7, #0x400035
+0x00400017:	cmp	r4, #1
+0x00400019:	bls	#0x400027
+0x00400017:	cmp	r4, #1
+0x00400019:	bls	#0x400027
+0x0040001b:	mov	r0, r5
+0x0040001d:	bl	#0x500001
+0x00400021:	cmp	r0, #1
+0x00400023:	it	eq
+0x00400025:	moveq	r4, #1
+0x00400027:	mov	r2, r4
+0x00400029:	mov	r1, r6
+0x0040002b:	mov	r0, r5
+0x0040002d:	mov	r3, r7
+0x0040002f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400033:	bx	r3
+0x00400027:	mov	r2, r4
+0x00400029:	mov	r1, r6
+0x0040002b:	mov	r0, r5
+0x0040002d:	mov	r3, r7
+0x0040002f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400033:	bx	r3
+0x00400035:	ldr	r0, [pc, #0x1c]
+0x00400037:	add	r0, pc
+0x00400039:	bl	#0x50000d
+0x0040003d:	ldr	r1, [pc, #0x18]
+0x0040003f:	mov.w	r0, #-1
+0x00400043:	add	r1, pc
+0x00400045:	bl	#0x500019
+0x00400049:	mov	r7, r0
+0x0040004b:	str.w	r0, [r8]
+0x0040004f:	b	#0x400017
 
-Disassembly of section .text:
+Function sub_400051 @ 0x00400051
+0x00400051:	lsls	r2, r1, #1
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r6, r4
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r6, r4
+0x0040005b:	movs	r0, r0
 
-00000000 <read>:
-   0:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-   4:	4605      	mov	r5, r0
-   6:	f8df 8048 	ldr.w	r8, [pc, #72]	; 50 <read+0x50>
-   a:	460e      	mov	r6, r1
-   c:	4614      	mov	r4, r2
-   e:	44f8      	add	r8, pc
-  10:	f8d8 7000 	ldr.w	r7, [r8]
-  14:	b177      	cbz	r7, 34 <read+0x34>
-  16:	2c01      	cmp	r4, #1
-  18:	d905      	bls.n	26 <read+0x26>
-  1a:	4628      	mov	r0, r5
-  1c:	f7ff fffe 	bl	0 <isatty>
-  20:	2801      	cmp	r0, #1
-  22:	bf08      	it	eq
-  24:	2401      	moveq	r4, #1
-  26:	4622      	mov	r2, r4
-  28:	4631      	mov	r1, r6
-  2a:	4628      	mov	r0, r5
-  2c:	463b      	mov	r3, r7
-  2e:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
-  32:	4718      	bx	r3
-  34:	4807      	ldr	r0, [pc, #28]	; (54 <read+0x54>)
-  36:	4478      	add	r0, pc
-  38:	f7ff fffe 	bl	0 <unsetenv>
-  3c:	4906      	ldr	r1, [pc, #24]	; (58 <read+0x58>)
-  3e:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  42:	4479      	add	r1, pc
-  44:	f7ff fffe 	bl	0 <dlsym>
-  48:	4607      	mov	r7, r0
-  4a:	f8c8 0000 	str.w	r0, [r8]
-  4e:	e7e2      	b.n	16 <read+0x16>
-  50:	0000003e 	.word	0x0000003e
-  54:	0000001a 	.word	0x0000001a
-  58:	00000012 	.word	0x00000012
+Function isatty @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function unsetenv @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function dlsym @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

@@ -1,18 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr23169c_59671f65.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	rscvs	pc, pc, fp, asr #12
+0x00400004:	adclo	pc, sp, r0, asr #13
+0x00400008:	svclt	#0x4770
 
+Function func @ 0x0040000d
+0x0040000d:	ldr	r0, [pc, #4]
+0x0040000f:	add	r0, pc
+0x00400011:	bx	lr
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
 
-00000000 <ifunc>:
-   0:	f64b 60ef 	movw	r0, #48879	; 0xbeef
-   4:	f6c0 30ad 	movt	r0, #2989	; 0xbad
-   8:	4770      	bx	lr
-   a:	bf00      	nop
-
-0000000c <resolve_func>:
-   c:	4801      	ldr	r0, [pc, #4]	; (14 <resolve_func+0x8>)
-   e:	4478      	add	r0, pc
-  10:	4770      	bx	lr
-  12:	bf00      	nop
-  14:	00000002 	.word	0x00000002
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

@@ -1,71 +1,73 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_goodbye_9db3e6c8.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	eorhs	r4, sl, #0x28000
+0x00400004:	ldrbtmi	r2, [sb], #-0
+0x00400008:	subseq	r6, fp, fp, lsl #16
+0x0040000c:	movteq	lr, #0x3b03
+0x00400010:	bl	#0x4c0284
+0x00400014:	vcgt.s8	d0, d19, d3
+0x00400018:	blx	#0x488c6e
+0x0040001c:	sbcseq	pc, fp, r3, lsl #6
+0x00400020:	bicsne	pc, r1, #0x30000000
+0x00400024:	biceq	lr, r3, #0xc00
+0x00400028:	ldrbmi	r6, [r0, -fp]!
+0x0040002c:	andeq	r0, r0, sl, asr r0
+0x00400030:	eorhs	r4, lr, #0x800
+0x00400034:	andsvs	r4, sl, fp, ror r4
+0x00400038:	svclt	#0x4770
 
+Function mailand @ 0x00400031
+0x00400031:	ldr	r3, [pc, #8]
+0x00400033:	movs	r2, #0x2e
+0x00400035:	add	r3, pc
+0x00400037:	str	r2, [r3]
+0x00400039:	bx	lr
 
-Disassembly of section .text:
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r4, r5
+0x0040003f:	movs	r0, r0
+0x00400041:	adds	r0, #0x5c
+0x00400043:	bx	lr
 
-00000000 <verylongfun>:
-   0:	490a      	ldr	r1, [pc, #40]	; (2c <verylongfun+0x2c>)
-   2:	222a      	movs	r2, #42	; 0x2a
-   4:	2000      	movs	r0, #0
-   6:	4479      	add	r1, pc
-   8:	680b      	ldr	r3, [r1, #0]
-   a:	005b      	lsls	r3, r3, #1
-   c:	eb03 0343 	add.w	r3, r3, r3, lsl #1
-  10:	009b      	lsls	r3, r3, #2
-  12:	eb03 0383 	add.w	r3, r3, r3, lsl #2
-  16:	f203 2313 	addw	r3, r3, #531	; 0x213
-  1a:	fb02 f303 	mul.w	r3, r2, r3
-  1e:	00db      	lsls	r3, r3, #3
-  20:	f203 13d1 	addw	r3, r3, #465	; 0x1d1
-  24:	eb03 03c3 	add.w	r3, r3, r3, lsl #3
-  28:	600b      	str	r3, [r1, #0]
-  2a:	4770      	bx	lr
-  2c:	00000022 	.word	0x00000022
+Function foo @ 0x00400041
+0x00400041:	adds	r0, #0x5c
+0x00400043:	bx	lr
 
-00000030 <mailand>:
-  30:	4b02      	ldr	r3, [pc, #8]	; (3c <mailand+0xc>)
-  32:	222e      	movs	r2, #46	; 0x2e
-  34:	447b      	add	r3, pc
-  36:	601a      	str	r2, [r3, #0]
-  38:	4770      	bx	lr
-  3a:	bf00      	nop
-  3c:	00000004 	.word	0x00000004
+Function goodbye @ 0x00400045
+0x00400045:	ldr	r2, [pc, #8]
+0x00400047:	add	r2, pc
+0x00400049:	ldr	r3, [r2]
+0x0040004b:	adds	r3, #1
+0x0040004d:	str	r3, [r2]
+0x0040004f:	bx	lr
 
-00000040 <foo>:
-  40:	305c      	adds	r0, #92	; 0x5c
-  42:	4770      	bx	lr
+Function commonfun @ 0x00400055
+0x00400055:	ldr	r3, [pc, #8]
+0x00400057:	movs	r2, #0x2e
+0x00400059:	add	r3, pc
+0x0040005b:	str	r2, [r3]
+0x0040005d:	bx	lr
 
-00000044 <goodbye>:
-  44:	4a02      	ldr	r2, [pc, #8]	; (50 <goodbye+0xc>)
-  46:	447a      	add	r2, pc
-  48:	6813      	ldr	r3, [r2, #0]
-  4a:	3301      	adds	r3, #1
-  4c:	6013      	str	r3, [r2, #0]
-  4e:	4770      	bx	lr
-  50:	00000006 	.word	0x00000006
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	movs	r0, r1
+0x00400063:	movs	r0, r0
 
-00000054 <commonfun>:
-  54:	4b02      	ldr	r3, [pc, #8]	; (60 <commonfun+0xc>)
-  56:	222e      	movs	r2, #46	; 0x2e
-  58:	447b      	add	r3, pc
-  5a:	601a      	str	r2, [r3, #0]
-  5c:	4770      	bx	lr
-  5e:	bf00      	nop
-  60:	00000004 	.word	0x00000004
+Function main @ 0x0040006d
+0x0040006d:	push	{r4, lr}
+0x0040006f:	movs	r3, #0x2e
+0x00400071:	ldr	r4, [pc, #0x10]
+0x00400073:	add	r4, pc
+0x00400075:	str	r3, [r4]
+0x00400077:	bl	#0x400001
 
-Disassembly of section .text.startup:
+Function sub_40007b @ 0x0040007b
+0x0040007b:	ldr	r3, [r4]
+0x0040007d:	movs	r0, #0
+0x0040007f:	adds	r3, #1
+0x00400081:	str	r3, [r4]
+0x00400083:	pop	{r4, pc}
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	232e      	movs	r3, #46	; 0x2e
-   4:	4c04      	ldr	r4, [pc, #16]	; (18 <main+0x18>)
-   6:	447c      	add	r4, pc
-   8:	6023      	str	r3, [r4, #0]
-   a:	f7ff fffe 	bl	0 <main>
-   e:	6823      	ldr	r3, [r4, #0]
-  10:	2000      	movs	r0, #0
-  12:	3301      	adds	r3, #1
-  14:	6023      	str	r3, [r4, #0]
-  16:	bd10      	pop	{r4, pc}
-  18:	0000000e 	.word	0x0000000e
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

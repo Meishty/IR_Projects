@@ -1,20 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ifunc-common-1a_88c369ac.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	push	{r3, lr}
+0x00400013:	movs	r0, #1
+0x00400015:	ldr	r3, [pc, #0x10]
+0x00400017:	ldr	r1, [pc, #0x14]
+0x00400019:	add	r3, pc
+0x0040001b:	add	r1, pc
+0x0040001d:	ldr	r2, [r3]
+0x0040001f:	bl	#0x500001
+0x00400023:	movs	r0, #0
+0x00400025:	pop	{r3, pc}
 
+Function sub_400027 @ 0x00400027
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2001      	movs	r0, #1
-   4:	4b04      	ldr	r3, [pc, #16]	; (18 <main+0x18>)
-   6:	4905      	ldr	r1, [pc, #20]	; (1c <main+0x1c>)
-   8:	447b      	add	r3, pc
-   a:	4479      	add	r1, pc
-   c:	681a      	ldr	r2, [r3, #0]
-   e:	f7ff fffe 	bl	0 <__printf_chk>
-  12:	2000      	movs	r0, #0
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
-  18:	0000000c 	.word	0x0000000c
-  1c:	0000000e 	.word	0x0000000e
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

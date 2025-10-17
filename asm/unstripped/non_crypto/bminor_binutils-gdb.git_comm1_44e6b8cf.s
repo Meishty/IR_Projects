@@ -1,28 +1,47 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_comm1_44e6b8cf.o:     file format elf32-littlearm
+Function main @ 0x0040000d
+0x0040000d:	push	{r4, lr}
+0x0040000f:	ldr	r4, [pc, #0x28]
+0x00400011:	add	r4, pc
+0x00400013:	ldr	r3, [r4]
+0x00400015:	cbnz	r3, #0x400033
+0x00400017:	movs	r3, #0xc8
+0x00400019:	str	r3, [r4]
+0x0040001b:	bl	#0x500001
+0x00400017:	movs	r3, #0xc8
+0x00400019:	str	r3, [r4]
+0x0040001b:	bl	#0x500001
+0x0040001f:	ldr	r3, [r4]
+0x00400021:	cmp	r3, #0xc8
+0x00400023:	beq	#0x400029
+0x00400025:	movs	r0, #0
+0x00400027:	pop	{r4, pc}
+0x00400029:	ldr	r0, [pc, #0x10]
+0x0040002b:	add	r0, pc
+0x0040002d:	bl	#0x50000d
+0x00400031:	b	#0x400025
+0x00400033:	bl	#0x500019
 
+Function sub_400037 @ 0x00400037
 
-Disassembly of section .text.startup:
+Function bar @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	4c0a      	ldr	r4, [pc, #40]	; (2c <main+0x2c>)
-   4:	447c      	add	r4, pc
-   6:	6823      	ldr	r3, [r4, #0]
-   8:	b96b      	cbnz	r3, 26 <main+0x26>
-   a:	23c8      	movs	r3, #200	; 0xc8
-   c:	6023      	str	r3, [r4, #0]
-   e:	f7ff fffe 	bl	0 <bar>
-  12:	6823      	ldr	r3, [r4, #0]
-  14:	2bc8      	cmp	r3, #200	; 0xc8
-  16:	d001      	beq.n	1c <main+0x1c>
-  18:	2000      	movs	r0, #0
-  1a:	bd10      	pop	{r4, pc}
-  1c:	4804      	ldr	r0, [pc, #16]	; (30 <main+0x30>)
-  1e:	4478      	add	r0, pc
-  20:	f7ff fffe 	bl	0 <puts>
-  24:	e7f8      	b.n	18 <main+0x18>
-  26:	f7ff fffe 	bl	0 <abort>
-  2a:	bf00      	nop
-  2c:	00000024 	.word	0x00000024
-  30:	0000000e 	.word	0x0000000e
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

@@ -1,105 +1,149 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sh1_d19de94e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	lsls	r6, r7, #2
+0x0040000b:	movs	r0, r0
+0x0040000d:	ldr	r3, [pc, #8]
+0x0040000f:	ldr	r2, [pc, #0xc]
+0x00400011:	add	r3, pc
+0x00400013:	ldr	r3, [r3, r2]
+0x00400015:	ldr	r0, [r3]
+0x00400017:	bx	lr
 
-00000000 <shlib_shlibvar1>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <shlib_shlibvar1+0x8>)
-   2:	447b      	add	r3, pc
-   4:	6818      	ldr	r0, [r3, #0]
-   6:	4770      	bx	lr
-   8:	00000002 	.word	0x00000002
+Function shlib_mainvar @ 0x0040000d
+0x0040000d:	ldr	r3, [pc, #8]
+0x0040000f:	ldr	r2, [pc, #0xc]
+0x00400011:	add	r3, pc
+0x00400013:	ldr	r3, [r3, r2]
+0x00400015:	ldr	r0, [r3]
+0x00400017:	bx	lr
 
-0000000c <shlib_mainvar>:
-   c:	4b02      	ldr	r3, [pc, #8]	; (18 <shlib_mainvar+0xc>)
-   e:	4a03      	ldr	r2, [pc, #12]	; (1c <shlib_mainvar+0x10>)
-  10:	447b      	add	r3, pc
-  12:	589b      	ldr	r3, [r3, r2]
-  14:	6818      	ldr	r0, [r3, #0]
-  16:	4770      	bx	lr
-  18:	00000004 	.word	0x00000004
-  1c:	00000000 	.word	0x00000000
+Function shlib_overriddenvar @ 0x00400021
+0x00400021:	ldr	r3, [pc, #4]
+0x00400023:	add	r3, pc
+0x00400025:	ldr	r0, [r3, #4]
+0x00400027:	bx	lr
 
-00000020 <shlib_overriddenvar>:
-  20:	4b01      	ldr	r3, [pc, #4]	; (28 <shlib_overriddenvar+0x8>)
-  22:	447b      	add	r3, pc
-  24:	6858      	ldr	r0, [r3, #4]
-  26:	4770      	bx	lr
-  28:	00000002 	.word	0x00000002
+Function shlib_shlibvar2 @ 0x0040002d
+0x0040002d:	ldr	r3, [pc, #8]
+0x0040002f:	ldr	r2, [pc, #0xc]
+0x00400031:	add	r3, pc
+0x00400033:	ldr	r3, [r3, r2]
+0x00400035:	ldr	r0, [r3]
+0x00400037:	bx	lr
 
-0000002c <shlib_shlibvar2>:
-  2c:	4b02      	ldr	r3, [pc, #8]	; (38 <shlib_shlibvar2+0xc>)
-  2e:	4a03      	ldr	r2, [pc, #12]	; (3c <shlib_shlibvar2+0x10>)
-  30:	447b      	add	r3, pc
-  32:	589b      	ldr	r3, [r3, r2]
-  34:	6818      	ldr	r0, [r3, #0]
-  36:	4770      	bx	lr
-  38:	00000004 	.word	0x00000004
-  3c:	00000000 	.word	0x00000000
+Function shlib_shlibcall @ 0x00400041
+0x00400041:	b.w	#0x500001
 
-00000040 <shlib_shlibcall>:
-  40:	f7ff bffe 	b.w	0 <shlib_shlibcalled>
+Function shlib_shlibcall2 @ 0x00400045
+0x00400045:	b.w	#0x50000d
 
-00000044 <shlib_shlibcall2>:
-  44:	f7ff bffe 	b.w	0 <shlib_overriddencall2>
+Function shlib_maincall @ 0x00400049
+0x00400049:	b.w	#0x500019
 
-00000048 <shlib_maincall>:
-  48:	f7ff bffe 	b.w	0 <main_called>
+Function shlib_checkfunptr1 @ 0x0040004d
+0x0040004d:	ldr	r3, [pc, #0xc]
+0x0040004f:	add	r3, pc
+0x00400051:	subs	r0, r3, r0
+0x00400053:	clz	r0, r0
+0x00400057:	lsrs	r0, r0, #5
+0x00400059:	bx	lr
 
-0000004c <shlib_checkfunptr1>:
-  4c:	4b03      	ldr	r3, [pc, #12]	; (5c <shlib_checkfunptr1+0x10>)
-  4e:	447b      	add	r3, pc
-  50:	1a18      	subs	r0, r3, r0
-  52:	fab0 f080 	clz	r0, r0
-  56:	0940      	lsrs	r0, r0, #5
-  58:	4770      	bx	lr
-  5a:	bf00      	nop
-  5c:	0000000a 	.word	0x0000000a
+Function sub_40005b @ 0x0040005b
 
-00000060 <shlib_checkfunptr2>:
-  60:	4b04      	ldr	r3, [pc, #16]	; (74 <shlib_checkfunptr2+0x14>)
-  62:	4a05      	ldr	r2, [pc, #20]	; (78 <shlib_checkfunptr2+0x18>)
-  64:	447b      	add	r3, pc
-  66:	589b      	ldr	r3, [r3, r2]
-  68:	1a18      	subs	r0, r3, r0
-  6a:	fab0 f080 	clz	r0, r0
-  6e:	0940      	lsrs	r0, r0, #5
-  70:	4770      	bx	lr
-  72:	bf00      	nop
-  74:	0000000c 	.word	0x0000000c
-  78:	00000000 	.word	0x00000000
+Function shlib_checkfunptr2 @ 0x00400061
+0x00400061:	ldr	r3, [pc, #0x10]
+0x00400063:	ldr	r2, [pc, #0x14]
+0x00400065:	add	r3, pc
+0x00400067:	ldr	r3, [r3, r2]
+0x00400069:	subs	r0, r3, r0
+0x0040006b:	clz	r0, r0
+0x0040006f:	lsrs	r0, r0, #5
+0x00400071:	bx	lr
 
-0000007c <shlib_getfunptr1>:
-  7c:	4801      	ldr	r0, [pc, #4]	; (84 <shlib_getfunptr1+0x8>)
-  7e:	4478      	add	r0, pc
-  80:	4770      	bx	lr
-  82:	bf00      	nop
-  84:	00000002 	.word	0x00000002
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+0x00400075:	movs	r4, r1
+0x00400077:	movs	r0, r0
+0x00400079:	movs	r0, r0
+0x0040007b:	movs	r0, r0
+0x0040007d:	ldr	r0, [pc, #4]
+0x0040007f:	add	r0, pc
+0x00400081:	bx	lr
 
-00000088 <shlib_getfunptr2>:
-  88:	4b02      	ldr	r3, [pc, #8]	; (94 <shlib_getfunptr2+0xc>)
-  8a:	4a03      	ldr	r2, [pc, #12]	; (98 <shlib_getfunptr2+0x10>)
-  8c:	447b      	add	r3, pc
-  8e:	5898      	ldr	r0, [r3, r2]
-  90:	4770      	bx	lr
-  92:	bf00      	nop
-  94:	00000004 	.word	0x00000004
-  98:	00000000 	.word	0x00000000
+Function shlib_getfunptr1 @ 0x0040007d
+0x0040007d:	ldr	r0, [pc, #4]
+0x0040007f:	add	r0, pc
+0x00400081:	bx	lr
 
-0000009c <shlib_check>:
-  9c:	4b07      	ldr	r3, [pc, #28]	; (bc <shlib_check+0x20>)
-  9e:	447b      	add	r3, pc
-  a0:	f813 2f01 	ldrb.w	r2, [r3, #1]!
-  a4:	2a00      	cmp	r2, #0
-  a6:	d1fb      	bne.n	a0 <shlib_check+0x4>
-  a8:	4b05      	ldr	r3, [pc, #20]	; (c0 <shlib_check+0x24>)
-  aa:	447b      	add	r3, pc
-  ac:	6818      	ldr	r0, [r3, #0]
-  ae:	f1a0 0003 	sub.w	r0, r0, #3
-  b2:	fab0 f080 	clz	r0, r0
-  b6:	0940      	lsrs	r0, r0, #5
-  b8:	4770      	bx	lr
-  ba:	bf00      	nop
-  bc:	0000001a 	.word	0x0000001a
-  c0:	00000012 	.word	0x00000012
+Function sub_400083 @ 0x00400083
+
+Function shlib_getfunptr2 @ 0x00400089
+0x00400089:	ldr	r3, [pc, #8]
+0x0040008b:	ldr	r2, [pc, #0xc]
+0x0040008d:	add	r3, pc
+0x0040008f:	ldr	r0, [r3, r2]
+0x00400091:	bx	lr
+
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+0x00400095:	movs	r4, r0
+0x00400097:	movs	r0, r0
+0x00400099:	movs	r0, r0
+0x0040009b:	movs	r0, r0
+0x0040009d:	ldr	r3, [pc, #0x1c]
+0x0040009f:	add	r3, pc
+0x004000a1:	ldrb	r2, [r3, #1]!
+0x004000a5:	cmp	r2, #0
+0x004000a7:	bne	#0x4000a1
+
+Function shlib_check @ 0x0040009d
+0x0040009d:	ldr	r3, [pc, #0x1c]
+0x0040009f:	add	r3, pc
+0x004000a1:	ldrb	r2, [r3, #1]!
+0x004000a5:	cmp	r2, #0
+0x004000a7:	bne	#0x4000a1
+0x004000a1:	ldrb	r2, [r3, #1]!
+0x004000a5:	cmp	r2, #0
+0x004000a7:	bne	#0x4000a1
+0x004000a9:	ldr	r3, [pc, #0x14]
+0x004000ab:	add	r3, pc
+0x004000ad:	ldr	r0, [r3]
+0x004000af:	sub.w	r0, r0, #3
+0x004000b3:	clz	r0, r0
+0x004000b7:	lsrs	r0, r0, #5
+0x004000b9:	bx	lr
+
+Function sub_4000bb @ 0x004000bb
+0x004000bb:	nop	
+0x004000bd:	movs	r2, r5
+0x004000bf:	movs	r0, r0
+0x004000c1:	movs	r6, r2
+0x004000c3:	movs	r0, r0
+
+Function shlib_shlibcalled @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function shlib_overriddencall2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function main_called @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

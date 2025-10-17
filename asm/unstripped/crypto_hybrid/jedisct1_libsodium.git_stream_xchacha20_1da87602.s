@@ -1,163 +1,276 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_stream_xchacha20_1da87602.o:     file format elf32-littlearm
+Function crypto_stream_xchacha20_keybytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
+Function crypto_stream_xchacha20_noncebytes @ 0x00400005
+0x00400005:	movs	r0, #0x18
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_stream_xchacha20_messagebytes_max @ 0x00400009
+0x00400009:	mov.w	r0, #-1
+0x0040000d:	bx	lr
 
-00000000 <crypto_stream_xchacha20_keybytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400015:	mov	r8, r2
+0x00400017:	ldr	r2, [pc, #0x54]
+0x00400019:	mov	r7, r3
+0x0040001b:	ldr	r3, [pc, #0x54]
+0x0040001d:	sub	sp, #0x30
+0x0040001f:	add	r2, pc
+0x00400021:	add	r5, sp, #0xc
+0x00400023:	mov	r6, r0
+0x00400025:	mov	r0, r5
+0x00400027:	ldr	r3, [r2, r3]
+0x00400029:	ldr	r4, [sp, #0x48]
+0x0040002b:	ldr	r2, [sp, #0x4c]
+0x0040002d:	ldr	r3, [r3]
+0x0040002f:	str	r3, [sp, #0x2c]
+0x00400031:	mov.w	r3, #0
+0x00400035:	mov	r1, r4
+0x00400037:	movs	r3, #0
+0x00400039:	bl	#0x500001
 
-00000004 <crypto_stream_xchacha20_noncebytes>:
-   4:	2018      	movs	r0, #24
-   6:	4770      	bx	lr
+Function crypto_stream_xchacha20 @ 0x00400011
+0x00400011:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400015:	mov	r8, r2
+0x00400017:	ldr	r2, [pc, #0x54]
+0x00400019:	mov	r7, r3
+0x0040001b:	ldr	r3, [pc, #0x54]
+0x0040001d:	sub	sp, #0x30
+0x0040001f:	add	r2, pc
+0x00400021:	add	r5, sp, #0xc
+0x00400023:	mov	r6, r0
+0x00400025:	mov	r0, r5
+0x00400027:	ldr	r3, [r2, r3]
+0x00400029:	ldr	r4, [sp, #0x48]
+0x0040002b:	ldr	r2, [sp, #0x4c]
+0x0040002d:	ldr	r3, [r3]
+0x0040002f:	str	r3, [sp, #0x2c]
+0x00400031:	mov.w	r3, #0
+0x00400035:	mov	r1, r4
+0x00400037:	movs	r3, #0
+0x00400039:	bl	#0x500001
+0x0040003d:	adds	r4, #0x10
+0x0040003f:	mov	r2, r8
+0x00400041:	mov	r3, r7
+0x00400043:	mov	r0, r6
+0x00400045:	strd	r4, r5, [sp]
+0x00400049:	bl	#0x50000d
+0x0040004d:	ldr	r2, [pc, #0x24]
+0x0040004f:	ldr	r3, [pc, #0x20]
+0x00400051:	add	r2, pc
+0x00400053:	ldr	r3, [r2, r3]
+0x00400055:	ldr	r2, [r3]
+0x00400057:	ldr	r3, [sp, #0x2c]
+0x00400059:	eors	r2, r3
+0x0040005b:	mov.w	r3, #0
+0x0040005f:	bne	#0x400067
+0x00400061:	add	sp, #0x30
+0x00400063:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400067:	bl	#0x500019
 
-00000008 <crypto_stream_xchacha20_messagebytes_max>:
-   8:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40006b @ 0x0040006b
+0x0040006b:	nop	
+0x0040006d:	lsls	r2, r1, #1
+0x0040006f:	movs	r0, r0
+0x00400071:	movs	r0, r0
+0x00400073:	movs	r0, r0
+0x00400075:	movs	r0, r4
+0x00400077:	movs	r0, r0
+0x00400079:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x0040007d:	mov	sb, r2
+0x0040007f:	ldr	r2, [pc, #0x60]
+0x00400081:	mov	r8, r3
+0x00400083:	ldr	r3, [pc, #0x60]
+0x00400085:	sub	sp, #0x44
+0x00400087:	add	r2, pc
+0x00400089:	add	r5, sp, #0x1c
+0x0040008b:	mov	r6, r0
+0x0040008d:	mov	r7, r1
+0x0040008f:	mov	r0, r5
+0x00400091:	ldr	r3, [r2, r3]
+0x00400093:	ldr	r4, [sp, #0x60]
+0x00400095:	ldr	r2, [sp, #0x70]
+0x00400097:	ldr	r3, [r3]
+0x00400099:	str	r3, [sp, #0x3c]
+0x0040009b:	mov.w	r3, #0
+0x0040009f:	mov	r1, r4
+0x004000a1:	movs	r3, #0
+0x004000a3:	bl	#0x500001
 
-00000010 <crypto_stream_xchacha20>:
-  10:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-  14:	4690      	mov	r8, r2
-  16:	4a15      	ldr	r2, [pc, #84]	; (6c <crypto_stream_xchacha20+0x5c>)
-  18:	461f      	mov	r7, r3
-  1a:	4b15      	ldr	r3, [pc, #84]	; (70 <crypto_stream_xchacha20+0x60>)
-  1c:	b08c      	sub	sp, #48	; 0x30
-  1e:	447a      	add	r2, pc
-  20:	ad03      	add	r5, sp, #12
-  22:	4606      	mov	r6, r0
-  24:	4628      	mov	r0, r5
-  26:	58d3      	ldr	r3, [r2, r3]
-  28:	9c12      	ldr	r4, [sp, #72]	; 0x48
-  2a:	9a13      	ldr	r2, [sp, #76]	; 0x4c
-  2c:	681b      	ldr	r3, [r3, #0]
-  2e:	930b      	str	r3, [sp, #44]	; 0x2c
-  30:	f04f 0300 	mov.w	r3, #0
-  34:	4621      	mov	r1, r4
-  36:	2300      	movs	r3, #0
-  38:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
-  3c:	3410      	adds	r4, #16
-  3e:	4642      	mov	r2, r8
-  40:	463b      	mov	r3, r7
-  42:	4630      	mov	r0, r6
-  44:	e9cd 4500 	strd	r4, r5, [sp]
-  48:	f7ff fffe 	bl	0 <crypto_stream_chacha20>
-  4c:	4a09      	ldr	r2, [pc, #36]	; (74 <crypto_stream_xchacha20+0x64>)
-  4e:	4b08      	ldr	r3, [pc, #32]	; (70 <crypto_stream_xchacha20+0x60>)
-  50:	447a      	add	r2, pc
-  52:	58d3      	ldr	r3, [r2, r3]
-  54:	681a      	ldr	r2, [r3, #0]
-  56:	9b0b      	ldr	r3, [sp, #44]	; 0x2c
-  58:	405a      	eors	r2, r3
-  5a:	f04f 0300 	mov.w	r3, #0
-  5e:	d102      	bne.n	66 <crypto_stream_xchacha20+0x56>
-  60:	b00c      	add	sp, #48	; 0x30
-  62:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  66:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  6a:	bf00      	nop
-  6c:	0000004a 	.word	0x0000004a
-  70:	00000000 	.word	0x00000000
-  74:	00000020 	.word	0x00000020
+Function crypto_stream_xchacha20_xor_ic @ 0x00400079
+0x00400079:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x0040007d:	mov	sb, r2
+0x0040007f:	ldr	r2, [pc, #0x60]
+0x00400081:	mov	r8, r3
+0x00400083:	ldr	r3, [pc, #0x60]
+0x00400085:	sub	sp, #0x44
+0x00400087:	add	r2, pc
+0x00400089:	add	r5, sp, #0x1c
+0x0040008b:	mov	r6, r0
+0x0040008d:	mov	r7, r1
+0x0040008f:	mov	r0, r5
+0x00400091:	ldr	r3, [r2, r3]
+0x00400093:	ldr	r4, [sp, #0x60]
+0x00400095:	ldr	r2, [sp, #0x70]
+0x00400097:	ldr	r3, [r3]
+0x00400099:	str	r3, [sp, #0x3c]
+0x0040009b:	mov.w	r3, #0
+0x0040009f:	mov	r1, r4
+0x004000a1:	movs	r3, #0
+0x004000a3:	bl	#0x500001
+0x004000a7:	adds	r4, #0x10
+0x004000a9:	ldrd	r2, r3, [sp, #0x68]
+0x004000ad:	strd	r2, r3, [sp, #8]
+0x004000b1:	mov	r1, r7
+0x004000b3:	mov	r2, sb
+0x004000b5:	mov	r3, r8
+0x004000b7:	mov	r0, r6
+0x004000b9:	str	r5, [sp, #0x10]
+0x004000bb:	str	r4, [sp]
+0x004000bd:	bl	#0x500025
+0x004000c1:	ldr	r2, [pc, #0x24]
+0x004000c3:	ldr	r3, [pc, #0x20]
+0x004000c5:	add	r2, pc
+0x004000c7:	ldr	r3, [r2, r3]
+0x004000c9:	ldr	r2, [r3]
+0x004000cb:	ldr	r3, [sp, #0x3c]
+0x004000cd:	eors	r2, r3
+0x004000cf:	mov.w	r3, #0
+0x004000d3:	bne	#0x4000db
+0x004000d5:	add	sp, #0x44
+0x004000d7:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x004000db:	bl	#0x500019
 
-00000078 <crypto_stream_xchacha20_xor_ic>:
-  78:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
-  7c:	4691      	mov	r9, r2
-  7e:	4a18      	ldr	r2, [pc, #96]	; (e0 <crypto_stream_xchacha20_xor_ic+0x68>)
-  80:	4698      	mov	r8, r3
-  82:	4b18      	ldr	r3, [pc, #96]	; (e4 <crypto_stream_xchacha20_xor_ic+0x6c>)
-  84:	b091      	sub	sp, #68	; 0x44
-  86:	447a      	add	r2, pc
-  88:	ad07      	add	r5, sp, #28
-  8a:	4606      	mov	r6, r0
-  8c:	460f      	mov	r7, r1
-  8e:	4628      	mov	r0, r5
-  90:	58d3      	ldr	r3, [r2, r3]
-  92:	9c18      	ldr	r4, [sp, #96]	; 0x60
-  94:	9a1c      	ldr	r2, [sp, #112]	; 0x70
-  96:	681b      	ldr	r3, [r3, #0]
-  98:	930f      	str	r3, [sp, #60]	; 0x3c
-  9a:	f04f 0300 	mov.w	r3, #0
-  9e:	4621      	mov	r1, r4
-  a0:	2300      	movs	r3, #0
-  a2:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
-  a6:	3410      	adds	r4, #16
-  a8:	e9dd 231a 	ldrd	r2, r3, [sp, #104]	; 0x68
-  ac:	e9cd 2302 	strd	r2, r3, [sp, #8]
-  b0:	4639      	mov	r1, r7
-  b2:	464a      	mov	r2, r9
-  b4:	4643      	mov	r3, r8
-  b6:	4630      	mov	r0, r6
-  b8:	9504      	str	r5, [sp, #16]
-  ba:	9400      	str	r4, [sp, #0]
-  bc:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor_ic>
-  c0:	4a09      	ldr	r2, [pc, #36]	; (e8 <crypto_stream_xchacha20_xor_ic+0x70>)
-  c2:	4b08      	ldr	r3, [pc, #32]	; (e4 <crypto_stream_xchacha20_xor_ic+0x6c>)
-  c4:	447a      	add	r2, pc
-  c6:	58d3      	ldr	r3, [r2, r3]
-  c8:	681a      	ldr	r2, [r3, #0]
-  ca:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
-  cc:	405a      	eors	r2, r3
-  ce:	f04f 0300 	mov.w	r3, #0
-  d2:	d102      	bne.n	da <crypto_stream_xchacha20_xor_ic+0x62>
-  d4:	b011      	add	sp, #68	; 0x44
-  d6:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
-  da:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  de:	bf00      	nop
-  e0:	00000056 	.word	0x00000056
-  e4:	00000000 	.word	0x00000000
-  e8:	00000020 	.word	0x00000020
+Function sub_4000df @ 0x004000df
+0x004000df:	nop	
+0x004000e1:	lsls	r6, r2, #1
+0x004000e3:	movs	r0, r0
+0x004000e5:	movs	r0, r0
+0x004000e7:	movs	r0, r0
+0x004000e9:	movs	r0, r4
+0x004000eb:	movs	r0, r0
+0x004000ed:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x004000f1:	mov	sb, r2
+0x004000f3:	ldr	r2, [pc, #0x60]
+0x004000f5:	mov	r8, r3
+0x004000f7:	ldr	r3, [pc, #0x60]
+0x004000f9:	sub	sp, #0x44
+0x004000fb:	add	r2, pc
+0x004000fd:	add	r5, sp, #0x1c
+0x004000ff:	mov	r6, r0
+0x00400101:	mov	r7, r1
+0x00400103:	mov	r0, r5
+0x00400105:	ldr	r3, [r2, r3]
+0x00400107:	ldr	r4, [sp, #0x60]
+0x00400109:	ldr	r2, [sp, #0x64]
+0x0040010b:	ldr	r3, [r3]
+0x0040010d:	str	r3, [sp, #0x3c]
+0x0040010f:	mov.w	r3, #0
+0x00400113:	mov	r1, r4
+0x00400115:	movs	r3, #0
+0x00400117:	bl	#0x500001
 
-000000ec <crypto_stream_xchacha20_xor>:
-  ec:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
-  f0:	4691      	mov	r9, r2
-  f2:	4a18      	ldr	r2, [pc, #96]	; (154 <crypto_stream_xchacha20_xor+0x68>)
-  f4:	4698      	mov	r8, r3
-  f6:	4b18      	ldr	r3, [pc, #96]	; (158 <crypto_stream_xchacha20_xor+0x6c>)
-  f8:	b091      	sub	sp, #68	; 0x44
-  fa:	447a      	add	r2, pc
-  fc:	ad07      	add	r5, sp, #28
-  fe:	4606      	mov	r6, r0
- 100:	460f      	mov	r7, r1
- 102:	4628      	mov	r0, r5
- 104:	58d3      	ldr	r3, [r2, r3]
- 106:	9c18      	ldr	r4, [sp, #96]	; 0x60
- 108:	9a19      	ldr	r2, [sp, #100]	; 0x64
- 10a:	681b      	ldr	r3, [r3, #0]
- 10c:	930f      	str	r3, [sp, #60]	; 0x3c
- 10e:	f04f 0300 	mov.w	r3, #0
- 112:	4621      	mov	r1, r4
- 114:	2300      	movs	r3, #0
- 116:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
- 11a:	3410      	adds	r4, #16
- 11c:	464a      	mov	r2, r9
- 11e:	4643      	mov	r3, r8
- 120:	9504      	str	r5, [sp, #16]
- 122:	4639      	mov	r1, r7
- 124:	9400      	str	r4, [sp, #0]
- 126:	4630      	mov	r0, r6
- 128:	2400      	movs	r4, #0
- 12a:	2500      	movs	r5, #0
- 12c:	e9cd 4502 	strd	r4, r5, [sp, #8]
- 130:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor_ic>
- 134:	4a09      	ldr	r2, [pc, #36]	; (15c <crypto_stream_xchacha20_xor+0x70>)
- 136:	4b08      	ldr	r3, [pc, #32]	; (158 <crypto_stream_xchacha20_xor+0x6c>)
- 138:	447a      	add	r2, pc
- 13a:	58d3      	ldr	r3, [r2, r3]
- 13c:	681a      	ldr	r2, [r3, #0]
- 13e:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
- 140:	405a      	eors	r2, r3
- 142:	f04f 0300 	mov.w	r3, #0
- 146:	d102      	bne.n	14e <crypto_stream_xchacha20_xor+0x62>
- 148:	b011      	add	sp, #68	; 0x44
- 14a:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 14e:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 152:	bf00      	nop
- 154:	00000056 	.word	0x00000056
- 158:	00000000 	.word	0x00000000
- 15c:	00000020 	.word	0x00000020
+Function crypto_stream_xchacha20_xor @ 0x004000ed
+0x004000ed:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x004000f1:	mov	sb, r2
+0x004000f3:	ldr	r2, [pc, #0x60]
+0x004000f5:	mov	r8, r3
+0x004000f7:	ldr	r3, [pc, #0x60]
+0x004000f9:	sub	sp, #0x44
+0x004000fb:	add	r2, pc
+0x004000fd:	add	r5, sp, #0x1c
+0x004000ff:	mov	r6, r0
+0x00400101:	mov	r7, r1
+0x00400103:	mov	r0, r5
+0x00400105:	ldr	r3, [r2, r3]
+0x00400107:	ldr	r4, [sp, #0x60]
+0x00400109:	ldr	r2, [sp, #0x64]
+0x0040010b:	ldr	r3, [r3]
+0x0040010d:	str	r3, [sp, #0x3c]
+0x0040010f:	mov.w	r3, #0
+0x00400113:	mov	r1, r4
+0x00400115:	movs	r3, #0
+0x00400117:	bl	#0x500001
+0x0040011b:	adds	r4, #0x10
+0x0040011d:	mov	r2, sb
+0x0040011f:	mov	r3, r8
+0x00400121:	str	r5, [sp, #0x10]
+0x00400123:	mov	r1, r7
+0x00400125:	str	r4, [sp]
+0x00400127:	mov	r0, r6
+0x00400129:	movs	r4, #0
+0x0040012b:	movs	r5, #0
+0x0040012d:	strd	r4, r5, [sp, #8]
+0x00400131:	bl	#0x500025
+0x00400135:	ldr	r2, [pc, #0x24]
+0x00400137:	ldr	r3, [pc, #0x20]
+0x00400139:	add	r2, pc
+0x0040013b:	ldr	r3, [r2, r3]
+0x0040013d:	ldr	r2, [r3]
+0x0040013f:	ldr	r3, [sp, #0x3c]
+0x00400141:	eors	r2, r3
+0x00400143:	mov.w	r3, #0
+0x00400147:	bne	#0x40014f
+0x00400149:	add	sp, #0x44
+0x0040014b:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x0040014f:	bl	#0x500019
 
-00000160 <crypto_stream_xchacha20_keygen>:
- 160:	2120      	movs	r1, #32
- 162:	f7ff bffe 	b.w	0 <randombytes_buf>
- 166:	bf00      	nop
+Function sub_400153 @ 0x00400153
+0x00400153:	nop	
+0x00400155:	lsls	r6, r2, #1
+0x00400157:	movs	r0, r0
+0x00400159:	movs	r0, r0
+0x0040015b:	movs	r0, r0
+0x0040015d:	movs	r0, r4
+0x0040015f:	movs	r0, r0
+0x00400161:	movs	r1, #0x20
+0x00400163:	b.w	#0x500031
+
+Function crypto_stream_xchacha20_keygen @ 0x00400161
+0x00400161:	movs	r1, #0x20
+0x00400163:	b.w	#0x500031
+
+Function sub_400167 @ 0x00400167
+0x00400167:	nop	
+
+Function crypto_core_hchacha20 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function crypto_stream_chacha20 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function crypto_stream_chacha20_xor_ic @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function randombytes_buf @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

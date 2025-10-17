@@ -1,51 +1,76 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_gettod_8a9bf28b.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	push	{r4, lr}
+0x00400013:	movs	r0, #0
+0x00400015:	ldr	r4, [pc, #0x58]
+0x00400017:	ldr	r1, [pc, #0x5c]
+0x00400019:	sub	sp, #0x10
+0x0040001b:	add	r4, pc
+0x0040001d:	movs	r3, #0
+0x0040001f:	movs	r2, #0
+0x00400021:	ldr	r1, [r4, r1]
+0x00400023:	ldr	r1, [r1]
+0x00400025:	str	r1, [sp, #0xc]
+0x00400027:	mov.w	r1, #0
+0x0040002b:	strd	r2, r3, [sp]
+0x0040002f:	bl	#0x500001
+0x00400033:	adds	r3, r0, #1
+0x00400035:	beq	#0x400043
+0x00400037:	mov	r4, r0
+0x00400039:	movs	r1, #0
+0x0040003b:	mov	r0, sp
+0x0040003d:	bl	#0x50000d
+0x00400041:	cbz	r0, #0x400051
+0x00400043:	ldr	r0, [pc, #0x34]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500019
+0x00400043:	ldr	r0, [pc, #0x34]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500019
+0x0040004b:	movs	r0, #1
+0x0040004d:	bl	#0x500025
+0x00400051:	ldr	r3, [sp]
+0x00400053:	cmp	r3, #0
+0x00400055:	beq	#0x400043
+0x00400057:	cmp	r3, r4
+0x00400059:	beq	#0x400061
+0x0040005b:	adds	r4, #1
+0x0040005d:	cmp	r3, r4
+0x0040005f:	bne	#0x400043
+0x00400061:	ldr	r0, [pc, #0x18]
+0x00400063:	add	r0, pc
+0x00400065:	bl	#0x500019
+0x00400069:	movs	r0, #0
+0x0040006b:	bl	#0x500025
 
+Function sub_40006f @ 0x0040006f
 
-Disassembly of section .text.startup:
+Function time @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2000      	movs	r0, #0
-   4:	4c16      	ldr	r4, [pc, #88]	; (60 <main+0x60>)
-   6:	4917      	ldr	r1, [pc, #92]	; (64 <main+0x64>)
-   8:	b084      	sub	sp, #16
-   a:	447c      	add	r4, pc
-   c:	2300      	movs	r3, #0
-   e:	2200      	movs	r2, #0
-  10:	5861      	ldr	r1, [r4, r1]
-  12:	6809      	ldr	r1, [r1, #0]
-  14:	9103      	str	r1, [sp, #12]
-  16:	f04f 0100 	mov.w	r1, #0
-  1a:	e9cd 2300 	strd	r2, r3, [sp]
-  1e:	f7ff fffe 	bl	0 <time>
-  22:	1c43      	adds	r3, r0, #1
-  24:	d005      	beq.n	32 <main+0x32>
-  26:	4604      	mov	r4, r0
-  28:	2100      	movs	r1, #0
-  2a:	4668      	mov	r0, sp
-  2c:	f7ff fffe 	bl	0 <gettimeofday>
-  30:	b130      	cbz	r0, 40 <main+0x40>
-  32:	480d      	ldr	r0, [pc, #52]	; (68 <main+0x68>)
-  34:	4478      	add	r0, pc
-  36:	f7ff fffe 	bl	0 <puts>
-  3a:	2001      	movs	r0, #1
-  3c:	f7ff fffe 	bl	0 <exit>
-  40:	9b00      	ldr	r3, [sp, #0]
-  42:	2b00      	cmp	r3, #0
-  44:	d0f5      	beq.n	32 <main+0x32>
-  46:	42a3      	cmp	r3, r4
-  48:	d002      	beq.n	50 <main+0x50>
-  4a:	3401      	adds	r4, #1
-  4c:	42a3      	cmp	r3, r4
-  4e:	d1f0      	bne.n	32 <main+0x32>
-  50:	4806      	ldr	r0, [pc, #24]	; (6c <main+0x6c>)
-  52:	4478      	add	r0, pc
-  54:	f7ff fffe 	bl	0 <puts>
-  58:	2000      	movs	r0, #0
-  5a:	f7ff fffe 	bl	0 <exit>
-  5e:	bf00      	nop
-  60:	00000052 	.word	0x00000052
-  64:	00000000 	.word	0x00000000
-  68:	00000030 	.word	0x00000030
-  6c:	00000016 	.word	0x00000016
+Function gettimeofday @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

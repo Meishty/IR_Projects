@@ -1,23 +1,39 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_strncasecmp_bf1be2f4_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_400005 @ 0x00400005
+0x00400005:	stm	r0!, {r3, r4, r5}
+0x00400007:	push	{r4, lr}
+0x00400009:	adds	r4, r0, r2
+0x0040000b:	add	ip, pc
+0x0040000d:	b	#0x400015
+0x0040000f:	cbz	r3, #0x40002f
+0x00400011:	cmp	r0, r4
+0x00400013:	beq	#0x400033
+0x00400011:	cmp	r0, r4
+0x00400013:	beq	#0x400033
+0x00400015:	ldrb	r3, [r0], #1
+0x00400019:	ldrb	lr, [r1], #1
+0x0040001d:	ldrb.w	r2, [ip, r3]
+0x00400021:	ldrb.w	lr, [ip, lr]
+0x00400025:	cmp	r2, lr
+0x00400027:	beq	#0x40000f
+0x00400029:	sub.w	r0, r2, lr
+0x0040002d:	pop	{r4, pc}
+0x0040002f:	mov	r0, r3
+0x00400031:	pop	{r4, pc}
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_400037 @ 0x00400037
+0x00400037:	mov	r0, r2
+0x00400039:	bx	lr
 
-00000000 <.text>:
-   0:	f8dfb1ca 			; <UNDEFINED> instruction: 0xf8dfb1ca
-   4:	b510c038 	ldrlt	ip, [r0, #-56]	; 0xffffffc8
-   8:	44fc1884 	ldrbtmi	r1, [ip], #2180	; 0x884
-   c:	b173e002 	cmnlt	r3, r2
-  10:	d00e42a0 	andle	r4, lr, r0, lsr #5
-  14:	3b01f810 	blcc	0x7e05c
-  18:	eb01f811 	bl	0x7e064
-  1c:	2003f81c 	andcs	pc, r3, ip, lsl r8	; <UNPREDICTABLE>
-  20:	e00ef81c 	and	pc, lr, ip, lsl r8	; <UNPREDICTABLE>
-  24:	d0f24572 	rscsle	r4, r2, r2, ror r5
-  28:	000eeba2 	andeq	lr, lr, r2, lsr #23
-  2c:	4618bd10 			; <UNDEFINED> instruction: 0x4618bd10
-  30:	2000bd10 	andcs	fp, r0, r0, lsl sp
-  34:	4610bd10 			; <UNDEFINED> instruction: 0x4610bd10
-  38:	bf004770 	svclt	0x00004770
-  3c:	0000002e 	andeq	r0, r0, lr, lsr #32
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r6, r5
+0x0040003f:	movs	r0, r0
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	movs	r6, r5
+0x0040003f:	movs	r0, r0

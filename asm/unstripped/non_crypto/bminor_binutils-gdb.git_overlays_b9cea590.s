@@ -1,44 +1,79 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_overlays_b9cea590.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r0, r0, ror r5
 
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r0, #4
+0x0040000b:	bl	#0x500001
+0x0040000f:	movs	r0, #1
+0x00400011:	bl	#0x50000d
+0x00400015:	mov	r4, r0
+0x00400017:	movs	r0, #1
+0x00400019:	bl	#0x500001
+0x0040001d:	movs	r0, #5
+0x0040001f:	bl	#0x500001
+0x00400023:	movs	r0, #1
+0x00400025:	bl	#0x500019
+0x00400029:	mov	r6, r0
+0x0040002b:	movs	r0, #2
+0x0040002d:	add	r4, r6
+0x0040002f:	bl	#0x500001
+0x00400033:	movs	r0, #6
+0x00400035:	bl	#0x500001
+0x00400039:	movs	r0, #1
+0x0040003b:	bl	#0x500025
+0x0040003f:	mov	r5, r0
+0x00400041:	movs	r0, #3
+0x00400043:	add	r4, r5
+0x00400045:	bl	#0x500001
+0x00400049:	movs	r0, #7
+0x0040004b:	bl	#0x500001
+0x0040004f:	movs	r0, #1
+0x00400051:	bl	#0x500031
+0x00400055:	add	r0, r4
+0x00400057:	movw	r3, #0x569
+0x0040005b:	subs	r0, r0, r3
+0x0040005d:	it	ne
+0x0040005f:	movne	r0, #1
+0x00400061:	pop	{r4, r5, r6, pc}
 
-Disassembly of section .text.startup:
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
 
-00000000 <main>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	2000      	movs	r0, #0
-   4:	f7ff fffe 	bl	0 <OverlayLoad>
-   8:	2004      	movs	r0, #4
-   a:	f7ff fffe 	bl	0 <OverlayLoad>
-   e:	2001      	movs	r0, #1
-  10:	f7ff fffe 	bl	0 <foo>
-  14:	4604      	mov	r4, r0
-  16:	2001      	movs	r0, #1
-  18:	f7ff fffe 	bl	0 <OverlayLoad>
-  1c:	2005      	movs	r0, #5
-  1e:	f7ff fffe 	bl	0 <OverlayLoad>
-  22:	2001      	movs	r0, #1
-  24:	f7ff fffe 	bl	0 <bar>
-  28:	4606      	mov	r6, r0
-  2a:	2002      	movs	r0, #2
-  2c:	4434      	add	r4, r6
-  2e:	f7ff fffe 	bl	0 <OverlayLoad>
-  32:	2006      	movs	r0, #6
-  34:	f7ff fffe 	bl	0 <OverlayLoad>
-  38:	2001      	movs	r0, #1
-  3a:	f7ff fffe 	bl	0 <baz>
-  3e:	4605      	mov	r5, r0
-  40:	2003      	movs	r0, #3
-  42:	442c      	add	r4, r5
-  44:	f7ff fffe 	bl	0 <OverlayLoad>
-  48:	2007      	movs	r0, #7
-  4a:	f7ff fffe 	bl	0 <OverlayLoad>
-  4e:	2001      	movs	r0, #1
-  50:	f7ff fffe 	bl	0 <grbx>
-  54:	4420      	add	r0, r4
-  56:	f240 5369 	movw	r3, #1385	; 0x569
-  5a:	1ac0      	subs	r0, r0, r3
-  5c:	bf18      	it	ne
-  5e:	2001      	movne	r0, #1
-  60:	bd70      	pop	{r4, r5, r6, pc}
-  62:	bf00      	nop
+Function OverlayLoad @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function foo @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function bar @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function baz @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function grbx @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

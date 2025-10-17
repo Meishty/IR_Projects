@@ -1,24 +1,39 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_precise-memory-exec_2f3e3298.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	cmp	r0, #1
+0x00400013:	beq	#0x400019
+0x00400015:	movs	r0, #0
+0x00400017:	bx	lr
+0x00400019:	ldr	r1, [r1]
+0x0040001b:	ldr	r2, [pc, #0x18]
+0x0040001d:	push	{r3, lr}
+0x0040001f:	mov	r0, r1
+0x00400021:	add	r2, pc
+0x00400023:	movs	r3, #0
+0x00400025:	bl	#0x500001
+0x00400029:	ldr	r0, [pc, #0xc]
+0x0040002b:	add	r0, pc
+0x0040002d:	bl	#0x50000d
+0x00400031:	bl	#0x500019
 
+Function execl @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function perror @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	2801      	cmp	r0, #1
-   2:	d001      	beq.n	8 <main+0x8>
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
-   8:	6809      	ldr	r1, [r1, #0]
-   a:	4a06      	ldr	r2, [pc, #24]	; (24 <main+0x24>)
-   c:	b508      	push	{r3, lr}
-   e:	4608      	mov	r0, r1
-  10:	447a      	add	r2, pc
-  12:	2300      	movs	r3, #0
-  14:	f7ff fffe 	bl	0 <execl>
-  18:	4803      	ldr	r0, [pc, #12]	; (28 <main+0x28>)
-  1a:	4478      	add	r0, pc
-  1c:	f7ff fffe 	bl	0 <perror>
-  20:	f7ff fffe 	bl	0 <abort>
-  24:	00000010 	.word	0x00000010
-  28:	0000000a 	.word	0x0000000a
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

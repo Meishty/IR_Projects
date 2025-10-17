@@ -1,53 +1,111 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_textdomain_5e8e456d.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0xa9286c
+0x00400004:	push	{r1, r3, r4, r5, r6, sl, lr}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	sub	sp, #8
+0x0040000d:	ldr	r7, [r2, r3]
+0x0040000f:	ldr.w	r8, [r7]
+0x00400013:	mov	r5, r8
+0x00400015:	cbz	r0, #0x400039
+0x00400017:	ldrb	r3, [r0]
+0x00400019:	mov	r4, r0
+0x0040001b:	cbz	r3, #0x400041
+0x0040001d:	ldr	r3, [pc, #0x50]
+0x0040001f:	ldr	r6, [r2, r3]
+0x00400021:	mov	r1, r6
+0x00400023:	mov	r5, r6
+0x00400025:	bl	#0x500001
+0x00400017:	ldrb	r3, [r0]
+0x00400019:	mov	r4, r0
+0x0040001b:	cbz	r3, #0x400041
+0x0040001d:	ldr	r3, [pc, #0x50]
+0x0040001f:	ldr	r6, [r2, r3]
+0x00400021:	mov	r1, r6
+0x00400023:	mov	r5, r6
+0x00400025:	bl	#0x500001
+0x0040001d:	ldr	r3, [pc, #0x50]
+0x0040001f:	ldr	r6, [r2, r3]
+0x00400021:	mov	r1, r6
+0x00400023:	mov	r5, r6
+0x00400025:	bl	#0x500001
+0x00400029:	cbnz	r0, #0x400049
+0x0040002b:	cmp	r8, r6
+0x0040002d:	str	r5, [r7]
+0x0040002f:	beq	#0x400039
+0x0040002b:	cmp	r8, r6
+0x0040002d:	str	r5, [r7]
+0x0040002f:	beq	#0x400039
+0x00400031:	mov	r0, r8
+0x00400033:	bl	#0x50000d
+0x00400037:	ldr	r5, [r7]
+0x00400039:	mov	r0, r5
+0x0040003b:	add	sp, #8
+0x0040003d:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400039:	mov	r0, r5
+0x0040003b:	add	sp, #8
+0x0040003d:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400041:	ldr	r3, [pc, #0x2c]
+0x00400043:	ldr	r6, [r2, r3]
+0x00400045:	mov	r5, r6
+0x00400047:	b	#0x40002b
+0x00400049:	mov	r0, r4
+0x0040004b:	bl	#0x500019
+0x0040004f:	adds	r2, r0, #1
+0x00400051:	mov	r0, r2
+0x00400053:	str	r2, [sp, #4]
+0x00400055:	bl	#0x500025
+0x00400059:	mov	r5, r0
+0x0040005b:	cmp	r0, #0
+0x0040005d:	beq	#0x40002b
+0x0040005f:	ldr	r2, [sp, #4]
+0x00400061:	mov	r1, r4
+0x00400063:	bl	#0x500031
+0x00400067:	b	#0x40002b
 
-Disassembly of section .text:
+Function sub_400069 @ 0x00400069
+0x00400069:	lsls	r0, r4, #1
+0x0040006b:	movs	r0, r0
+0x0040006d:	movs	r0, r0
+0x0040006f:	movs	r0, r0
+0x00400071:	movs	r0, r0
+0x00400073:	movs	r0, r0
 
-00000000 <textdomain__>:
-   0:	4a19      	ldr	r2, [pc, #100]	; (68 <textdomain__+0x68>)
-   2:	4b1a      	ldr	r3, [pc, #104]	; (6c <textdomain__+0x6c>)
-   4:	447a      	add	r2, pc
-   6:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-   a:	b082      	sub	sp, #8
-   c:	58d7      	ldr	r7, [r2, r3]
-   e:	f8d7 8000 	ldr.w	r8, [r7]
-  12:	4645      	mov	r5, r8
-  14:	b180      	cbz	r0, 38 <textdomain__+0x38>
-  16:	7803      	ldrb	r3, [r0, #0]
-  18:	4604      	mov	r4, r0
-  1a:	b18b      	cbz	r3, 40 <textdomain__+0x40>
-  1c:	4b14      	ldr	r3, [pc, #80]	; (70 <textdomain__+0x70>)
-  1e:	58d6      	ldr	r6, [r2, r3]
-  20:	4631      	mov	r1, r6
-  22:	4635      	mov	r5, r6
-  24:	f7ff fffe 	bl	0 <strcmp>
-  28:	b970      	cbnz	r0, 48 <textdomain__+0x48>
-  2a:	45b0      	cmp	r8, r6
-  2c:	603d      	str	r5, [r7, #0]
-  2e:	d003      	beq.n	38 <textdomain__+0x38>
-  30:	4640      	mov	r0, r8
-  32:	f7ff fffe 	bl	0 <free>
-  36:	683d      	ldr	r5, [r7, #0]
-  38:	4628      	mov	r0, r5
-  3a:	b002      	add	sp, #8
-  3c:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  40:	4b0b      	ldr	r3, [pc, #44]	; (70 <textdomain__+0x70>)
-  42:	58d6      	ldr	r6, [r2, r3]
-  44:	4635      	mov	r5, r6
-  46:	e7f0      	b.n	2a <textdomain__+0x2a>
-  48:	4620      	mov	r0, r4
-  4a:	f7ff fffe 	bl	0 <strlen>
-  4e:	1c42      	adds	r2, r0, #1
-  50:	4610      	mov	r0, r2
-  52:	9201      	str	r2, [sp, #4]
-  54:	f7ff fffe 	bl	0 <malloc>
-  58:	4605      	mov	r5, r0
-  5a:	2800      	cmp	r0, #0
-  5c:	d0e5      	beq.n	2a <textdomain__+0x2a>
-  5e:	9a01      	ldr	r2, [sp, #4]
-  60:	4621      	mov	r1, r4
-  62:	f7ff fffe 	bl	0 <memcpy>
-  66:	e7e0      	b.n	2a <textdomain__+0x2a>
-  68:	00000060 	.word	0x00000060
-	...
+Function strcmp @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function free @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function strlen @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function malloc @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function memcpy @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

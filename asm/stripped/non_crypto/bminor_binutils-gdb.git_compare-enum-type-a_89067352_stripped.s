@@ -1,12 +1,12 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_compare-enum-type-a_89067352_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x400007
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4b02fffe 	blmi	0xc0004
-   8:	681b447b 	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
-   c:	bd084418 	cfstrslt	mvf4, [r8, #-96]	; 0xffffffa0
-  10:	00000004 	andeq	r0, r0, r4
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	ldr	r3, [pc, #8]
+0x0040000d:	add	r3, pc
+0x0040000f:	ldr	r3, [r3]
+0x00400011:	add	r0, r3
+0x00400013:	pop	{r3, pc}

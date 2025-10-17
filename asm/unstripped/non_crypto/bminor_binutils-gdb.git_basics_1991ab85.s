@@ -1,39 +1,47 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_basics_1991ab85.o:     file format elf32-littlearm
+Function callee4 @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function callee3 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <callee4>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function callee2 @ 0x00400009
+0x00400009:	bx	lr
 
-00000004 <callee3>:
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000008 <callee2>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function callee1 @ 0x0040000d
+0x0040000d:	bx	lr
 
-0000000c <callee1>:
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	bx	lr
 
-00000010 <callme>:
-  10:	4770      	bx	lr
-  12:	bf00      	nop
+Function callme @ 0x00400011
+0x00400011:	bx	lr
 
-00000014 <return_1>:
-  14:	2001      	movs	r0, #1
-  16:	4770      	bx	lr
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r0, #1
+0x00400017:	bx	lr
 
-00000018 <do_nothing>:
-  18:	4770      	bx	lr
-  1a:	bf00      	nop
+Function return_1 @ 0x00400015
+0x00400015:	movs	r0, #1
+0x00400017:	bx	lr
 
-Disassembly of section .text.startup:
+Function do_nothing @ 0x00400019
+0x00400019:	bx	lr
 
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+
+Function main @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr

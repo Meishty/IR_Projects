@@ -1,21 +1,67 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_jmemnobs_212cc383_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	b.w	#0x400003
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	mov	r0, r1
+0x0040000b:	b.w	#0x40000b
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	mov	r0, r1
+0x0040000b:	b.w	#0x40000b
+0x0040000b:	b.w	#0x40000b
 
-00000000 <.text>:
-   0:	f7ff4608 			; <UNDEFINED> instruction: 0xf7ff4608
-   4:	bf00bffe 	svclt	0x0000bffe
-   8:	f7ff4608 			; <UNDEFINED> instruction: 0xf7ff4608
-   c:	bf00bffe 	svclt	0x0000bffe
-  10:	f7ff4608 			; <UNDEFINED> instruction: 0xf7ff4608
-  14:	bf00bffe 	svclt	0x0000bffe
-  18:	f7ff4608 			; <UNDEFINED> instruction: 0xf7ff4608
-  1c:	bf00bffe 	svclt	0x0000bffe
-  20:	47704610 			; <UNDEFINED> instruction: 0x47704610
-  24:	21306803 	teqcs	r0, r3, lsl #16
-  28:	6159681a 	cmpvs	r9, sl, lsl r8
-  2c:	bf004710 	svclt	0x00004710
-  30:	47702000 	ldrbmi	r2, [r0, -r0]!
-  34:	bf004770 	svclt	0x00004770
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	mov	r0, r1
+0x00400013:	b.w	#0x400013
+
+Function sub_400011 @ 0x00400011
+0x00400011:	mov	r0, r1
+0x00400013:	b.w	#0x400013
+0x00400013:	b.w	#0x400013
+
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	mov	r0, r1
+0x0040001b:	b.w	#0x40001b
+
+Function sub_400019 @ 0x00400019
+0x00400019:	mov	r0, r1
+0x0040001b:	b.w	#0x40001b
+0x0040001b:	b.w	#0x40001b
+
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	mov	r0, r2
+0x00400023:	bx	lr
+
+Function sub_400021 @ 0x00400021
+0x00400021:	mov	r0, r2
+0x00400023:	bx	lr
+
+Function sub_400025 @ 0x00400025
+0x00400025:	ldr	r3, [r0]
+0x00400027:	movs	r1, #0x30
+0x00400029:	ldr	r2, [r3]
+0x0040002b:	str	r1, [r3, #0x14]
+0x0040002d:	bx	r2
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r0, #0
+0x00400033:	bx	lr
+
+Function sub_400031 @ 0x00400031
+0x00400031:	movs	r0, #0
+0x00400033:	bx	lr
+
+Function sub_400035 @ 0x00400035
+0x00400035:	bx	lr
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

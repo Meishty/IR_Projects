@@ -1,219 +1,516 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_aead_aegis256_1d76e86e.o:     file format elf32-littlearm
+Function crypto_aead_aegis256_keybytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
+Function crypto_aead_aegis256_nsecbytes @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_aead_aegis256_npubbytes @ 0x00400009
+0x00400009:	movs	r0, #0x20
+0x0040000b:	bx	lr
 
-00000000 <crypto_aead_aegis256_keybytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
+Function crypto_aead_aegis256_abytes @ 0x0040000d
+0x0040000d:	movs	r0, #0x20
+0x0040000f:	bx	lr
 
-00000004 <crypto_aead_aegis256_nsecbytes>:
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
+Function crypto_aead_aegis256_messagebytes_max @ 0x00400011
+0x00400011:	mvn	r0, #0x20
+0x00400015:	bx	lr
 
-00000008 <crypto_aead_aegis256_npubbytes>:
-   8:	2020      	movs	r0, #32
-   a:	4770      	bx	lr
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r1, #0x20
+0x0040001b:	b.w	#0x50000d
 
-0000000c <crypto_aead_aegis256_abytes>:
-   c:	2020      	movs	r0, #32
-   e:	4770      	bx	lr
+Function crypto_aead_aegis256_keygen @ 0x00400019
+0x00400019:	movs	r1, #0x20
+0x0040001b:	b.w	#0x50000d
 
-00000010 <crypto_aead_aegis256_messagebytes_max>:
-  10:	f06f 0020 	mvn.w	r0, #32
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400025:	mov	r5, r1
+0x00400027:	sub	sp, #0x18
+0x00400029:	ldrd	r6, r7, [sp, #0x30]
+0x0040002d:	cmn.w	r6, #0x20
+0x00400031:	add.w	r1, r0, r6
+0x00400035:	sbcs	r3, r7, #0
+0x00400039:	mov	r3, r2
+0x0040003b:	ldrd	ip, r2, [sp, #0x40]
+0x0040003f:	ite	hs
+0x00400041:	movhs	r4, #1
+0x00400043:	movlo	r4, #0
+0x00400045:	cmn.w	ip, #0x20
+0x00400049:	sbcs	r2, r2, #0
+0x0040004d:	it	hs
+0x0040004f:	orrhs	r4, r4, #1
+0x00400053:	cbnz	r4, #0x40008f
+0x00400055:	ldr	r2, [sp, #0x50]
+0x00400057:	str	r2, [sp, #0x10]
+0x00400059:	ldr	r2, [sp, #0x4c]
+0x0040005b:	str	r2, [sp, #0xc]
+0x0040005d:	ldr	r2, [sp, #0x38]
+0x0040005f:	strd	r6, r2, [sp]
+0x00400063:	ldr	r2, [pc, #0x30]
+0x00400065:	str.w	ip, [sp, #8]
+0x00400069:	add	r2, pc
+0x0040006b:	ldr	r2, [r2]
+0x0040006d:	ldr.w	r8, [r2]
+0x00400071:	movs	r2, #0x20
+0x00400073:	blx	r8
 
-00000018 <crypto_aead_aegis256_keygen>:
-  18:	2120      	movs	r1, #32
-  1a:	f7ff bffe 	b.w	0 <randombytes_buf>
-  1e:	bf00      	nop
+Function crypto_aead_aegis256_encrypt @ 0x00400021
+0x00400021:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400025:	mov	r5, r1
+0x00400027:	sub	sp, #0x18
+0x00400029:	ldrd	r6, r7, [sp, #0x30]
+0x0040002d:	cmn.w	r6, #0x20
+0x00400031:	add.w	r1, r0, r6
+0x00400035:	sbcs	r3, r7, #0
+0x00400039:	mov	r3, r2
+0x0040003b:	ldrd	ip, r2, [sp, #0x40]
+0x0040003f:	ite	hs
+0x00400041:	movhs	r4, #1
+0x00400043:	movlo	r4, #0
+0x00400045:	cmn.w	ip, #0x20
+0x00400049:	sbcs	r2, r2, #0
+0x0040004d:	it	hs
+0x0040004f:	orrhs	r4, r4, #1
+0x00400053:	cbnz	r4, #0x40008f
+0x00400055:	ldr	r2, [sp, #0x50]
+0x00400057:	str	r2, [sp, #0x10]
+0x00400059:	ldr	r2, [sp, #0x4c]
+0x0040005b:	str	r2, [sp, #0xc]
+0x0040005d:	ldr	r2, [sp, #0x38]
+0x0040005f:	strd	r6, r2, [sp]
+0x00400063:	ldr	r2, [pc, #0x30]
+0x00400065:	str.w	ip, [sp, #8]
+0x00400069:	add	r2, pc
+0x0040006b:	ldr	r2, [r2]
+0x0040006d:	ldr.w	r8, [r2]
+0x00400071:	movs	r2, #0x20
+0x00400073:	blx	r8
+0x00400055:	ldr	r2, [sp, #0x50]
+0x00400057:	str	r2, [sp, #0x10]
+0x00400059:	ldr	r2, [sp, #0x4c]
+0x0040005b:	str	r2, [sp, #0xc]
+0x0040005d:	ldr	r2, [sp, #0x38]
+0x0040005f:	strd	r6, r2, [sp]
+0x00400063:	ldr	r2, [pc, #0x30]
+0x00400065:	str.w	ip, [sp, #8]
+0x00400069:	add	r2, pc
+0x0040006b:	ldr	r2, [r2]
+0x0040006d:	ldr.w	r8, [r2]
+0x00400071:	movs	r2, #0x20
+0x00400073:	blx	r8
+0x00400075:	cbz	r5, #0x40007f
+0x00400077:	cbz	r0, #0x400085
+0x00400079:	mov	r7, r4
+0x0040007b:	strd	r4, r7, [r5]
+0x0040007f:	add	sp, #0x18
+0x00400081:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400077:	cbz	r0, #0x400085
+0x00400079:	mov	r7, r4
+0x0040007b:	strd	r4, r7, [r5]
+0x0040007f:	add	sp, #0x18
+0x00400081:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400079:	mov	r7, r4
+0x0040007b:	strd	r4, r7, [r5]
+0x0040007f:	add	sp, #0x18
+0x00400081:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x0040007b:	strd	r4, r7, [r5]
+0x0040007f:	add	sp, #0x18
+0x00400081:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x0040007f:	add	sp, #0x18
+0x00400081:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400085:	adds.w	r4, r6, #0x20
+0x00400089:	adc	r7, r7, #0
+0x0040008d:	b	#0x40007b
+0x0040008f:	bl	#0x500001
+0x00400093:	nop	
+0x00400095:	lsls	r4, r4, #6
+0x00400097:	movs	r0, r0
+0x00400099:	push.w	{r4, r5, r6, r7, r8, lr}
+0x0040009d:	mov	r7, r1
+0x0040009f:	mov	r1, r3
+0x004000a1:	sub	sp, #0x18
+0x004000a3:	ldrd	r4, r6, [sp, #0x30]
+0x004000a7:	ldrd	r3, r2, [sp, #0x40]
+0x004000ab:	cmp	r4, #0x20
+0x004000ad:	sbcs	r5, r6, #0
+0x004000b1:	blo	#0x400117
 
-00000020 <crypto_aead_aegis256_encrypt>:
-  20:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-  24:	460d      	mov	r5, r1
-  26:	b086      	sub	sp, #24
-  28:	e9dd 670c 	ldrd	r6, r7, [sp, #48]	; 0x30
-  2c:	f116 0f20 	cmn.w	r6, #32
-  30:	eb00 0106 	add.w	r1, r0, r6
-  34:	f177 0300 	sbcs.w	r3, r7, #0
-  38:	4613      	mov	r3, r2
-  3a:	e9dd c210 	ldrd	ip, r2, [sp, #64]	; 0x40
-  3e:	bf2c      	ite	cs
-  40:	2401      	movcs	r4, #1
-  42:	2400      	movcc	r4, #0
-  44:	f11c 0f20 	cmn.w	ip, #32
-  48:	f172 0200 	sbcs.w	r2, r2, #0
-  4c:	bf28      	it	cs
-  4e:	f044 0401 	orrcs.w	r4, r4, #1
-  52:	b9e4      	cbnz	r4, 8e <crypto_aead_aegis256_encrypt+0x6e>
-  54:	9a14      	ldr	r2, [sp, #80]	; 0x50
-  56:	9204      	str	r2, [sp, #16]
-  58:	9a13      	ldr	r2, [sp, #76]	; 0x4c
-  5a:	9203      	str	r2, [sp, #12]
-  5c:	9a0e      	ldr	r2, [sp, #56]	; 0x38
-  5e:	e9cd 6200 	strd	r6, r2, [sp]
-  62:	4a0c      	ldr	r2, [pc, #48]	; (94 <crypto_aead_aegis256_encrypt+0x74>)
-  64:	f8cd c008 	str.w	ip, [sp, #8]
-  68:	447a      	add	r2, pc
-  6a:	6812      	ldr	r2, [r2, #0]
-  6c:	f8d2 8000 	ldr.w	r8, [r2]
-  70:	2220      	movs	r2, #32
-  72:	47c0      	blx	r8
-  74:	b11d      	cbz	r5, 7e <crypto_aead_aegis256_encrypt+0x5e>
-  76:	b128      	cbz	r0, 84 <crypto_aead_aegis256_encrypt+0x64>
-  78:	4627      	mov	r7, r4
-  7a:	e9c5 4700 	strd	r4, r7, [r5]
-  7e:	b006      	add	sp, #24
-  80:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  84:	f116 0420 	adds.w	r4, r6, #32
-  88:	f147 0700 	adc.w	r7, r7, #0
-  8c:	e7f5      	b.n	7a <crypto_aead_aegis256_encrypt+0x5a>
-  8e:	f7ff fffe 	bl	0 <sodium_misuse>
-  92:	bf00      	nop
-  94:	00000028 	.word	0x00000028
+Function crypto_aead_aegis256_decrypt @ 0x00400099
+0x00400099:	push.w	{r4, r5, r6, r7, r8, lr}
+0x0040009d:	mov	r7, r1
+0x0040009f:	mov	r1, r3
+0x004000a1:	sub	sp, #0x18
+0x004000a3:	ldrd	r4, r6, [sp, #0x30]
+0x004000a7:	ldrd	r3, r2, [sp, #0x40]
+0x004000ab:	cmp	r4, #0x20
+0x004000ad:	sbcs	r5, r6, #0
+0x004000b1:	blo	#0x400117
+0x004000b3:	subs	r4, #0x20
+0x004000b5:	adc	r6, r6, #-1
+0x004000b9:	cmn.w	r4, #0x20
+0x004000bd:	sbcs	r5, r6, #0
+0x004000c1:	add.w	ip, r1, r4
+0x004000c5:	ite	hs
+0x004000c7:	movhs	r5, #1
+0x004000c9:	movlo	r5, #0
+0x004000cb:	cmn.w	r3, #0x20
+0x004000cf:	sbcs	r2, r2, #0
+0x004000d3:	it	hs
+0x004000d5:	orrhs	r5, r5, #1
+0x004000d9:	cbnz	r5, #0x400117
+0x004000db:	str	r3, [sp, #8]
+0x004000dd:	ldr	r2, [pc, #0x48]
+0x004000df:	ldr	r3, [sp, #0x4c]
+0x004000e1:	str	r3, [sp, #0x10]
+0x004000e3:	add	r2, pc
+0x004000e5:	ldr	r3, [sp, #0x48]
+0x004000e7:	str	r3, [sp, #0xc]
+0x004000e9:	ldr	r3, [sp, #0x38]
+0x004000eb:	str	r3, [sp, #4]
+0x004000ed:	mov	r3, ip
+0x004000ef:	mov.w	ip, #0x20
+0x004000f3:	ldr	r2, [r2]
+0x004000f5:	str.w	ip, [sp]
+0x004000f9:	ldr.w	r8, [r2, #4]
+0x004000fd:	mov	r2, r4
+0x004000ff:	blx	r8
+0x004000db:	str	r3, [sp, #8]
+0x004000dd:	ldr	r2, [pc, #0x48]
+0x004000df:	ldr	r3, [sp, #0x4c]
+0x004000e1:	str	r3, [sp, #0x10]
+0x004000e3:	add	r2, pc
+0x004000e5:	ldr	r3, [sp, #0x48]
+0x004000e7:	str	r3, [sp, #0xc]
+0x004000e9:	ldr	r3, [sp, #0x38]
+0x004000eb:	str	r3, [sp, #4]
+0x004000ed:	mov	r3, ip
+0x004000ef:	mov.w	ip, #0x20
+0x004000f3:	ldr	r2, [r2]
+0x004000f5:	str.w	ip, [sp]
+0x004000f9:	ldr.w	r8, [r2, #4]
+0x004000fd:	mov	r2, r4
+0x004000ff:	blx	r8
+0x00400101:	cbz	r7, #0x400111
+0x00400103:	cmp	r0, #0
+0x00400105:	ite	eq
+0x00400107:	moveq	r5, r4
+0x00400109:	movne	r6, r5
+0x0040010b:	mov	r4, r5
+0x0040010d:	strd	r4, r6, [r7]
+0x00400111:	add	sp, #0x18
+0x00400113:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400103:	cmp	r0, #0
+0x00400105:	ite	eq
+0x00400107:	moveq	r5, r4
+0x00400109:	movne	r6, r5
+0x0040010b:	mov	r4, r5
+0x0040010d:	strd	r4, r6, [r7]
+0x00400111:	add	sp, #0x18
+0x00400113:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x0040010d:	strd	r4, r6, [r7]
+0x00400111:	add	sp, #0x18
+0x00400113:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400111:	add	sp, #0x18
+0x00400113:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400117:	mov.w	r0, #-1
+0x0040011b:	cmp	r7, #0
+0x0040011d:	beq	#0x400111
+0x0040011f:	movs	r4, #0
+0x00400121:	mov.w	r0, #-1
+0x00400125:	mov	r6, r4
+0x00400127:	b	#0x40010d
 
-00000098 <crypto_aead_aegis256_decrypt>:
-  98:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-  9c:	460f      	mov	r7, r1
-  9e:	4619      	mov	r1, r3
-  a0:	b086      	sub	sp, #24
-  a2:	e9dd 460c 	ldrd	r4, r6, [sp, #48]	; 0x30
-  a6:	e9dd 3210 	ldrd	r3, r2, [sp, #64]	; 0x40
-  aa:	2c20      	cmp	r4, #32
-  ac:	f176 0500 	sbcs.w	r5, r6, #0
-  b0:	d331      	bcc.n	116 <crypto_aead_aegis256_decrypt+0x7e>
-  b2:	3c20      	subs	r4, #32
-  b4:	f146 36ff 	adc.w	r6, r6, #4294967295	; 0xffffffff
-  b8:	f114 0f20 	cmn.w	r4, #32
-  bc:	f176 0500 	sbcs.w	r5, r6, #0
-  c0:	eb01 0c04 	add.w	ip, r1, r4
-  c4:	bf2c      	ite	cs
-  c6:	2501      	movcs	r5, #1
-  c8:	2500      	movcc	r5, #0
-  ca:	f113 0f20 	cmn.w	r3, #32
-  ce:	f172 0200 	sbcs.w	r2, r2, #0
-  d2:	bf28      	it	cs
-  d4:	f045 0501 	orrcs.w	r5, r5, #1
-  d8:	b9ed      	cbnz	r5, 116 <crypto_aead_aegis256_decrypt+0x7e>
-  da:	9302      	str	r3, [sp, #8]
-  dc:	4a12      	ldr	r2, [pc, #72]	; (128 <crypto_aead_aegis256_decrypt+0x90>)
-  de:	9b13      	ldr	r3, [sp, #76]	; 0x4c
-  e0:	9304      	str	r3, [sp, #16]
-  e2:	447a      	add	r2, pc
-  e4:	9b12      	ldr	r3, [sp, #72]	; 0x48
-  e6:	9303      	str	r3, [sp, #12]
-  e8:	9b0e      	ldr	r3, [sp, #56]	; 0x38
-  ea:	9301      	str	r3, [sp, #4]
-  ec:	4663      	mov	r3, ip
-  ee:	f04f 0c20 	mov.w	ip, #32
-  f2:	6812      	ldr	r2, [r2, #0]
-  f4:	f8cd c000 	str.w	ip, [sp]
-  f8:	f8d2 8004 	ldr.w	r8, [r2, #4]
-  fc:	4622      	mov	r2, r4
-  fe:	47c0      	blx	r8
- 100:	b137      	cbz	r7, 110 <crypto_aead_aegis256_decrypt+0x78>
- 102:	2800      	cmp	r0, #0
- 104:	bf0c      	ite	eq
- 106:	4625      	moveq	r5, r4
- 108:	462e      	movne	r6, r5
- 10a:	462c      	mov	r4, r5
- 10c:	e9c7 4600 	strd	r4, r6, [r7]
- 110:	b006      	add	sp, #24
- 112:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 116:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 11a:	2f00      	cmp	r7, #0
- 11c:	d0f8      	beq.n	110 <crypto_aead_aegis256_decrypt+0x78>
- 11e:	2400      	movs	r4, #0
- 120:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 124:	4626      	mov	r6, r4
- 126:	e7f1      	b.n	10c <crypto_aead_aegis256_decrypt+0x74>
- 128:	00000042 	.word	0x00000042
+Function crypto_aead_aegis256_encrypt_detached @ 0x0040012d
+0x0040012d:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400131:	ldr.w	ip, [sp, #0x20]
+0x00400135:	ldrd	r6, r5, [sp, #0x18]
+0x00400139:	ldrd	r7, r4, [sp, #0x28]
+0x0040013d:	ldrd	lr, r8, [sp, #0x34]
+0x00400141:	cbz	r2, #0x40014b
+0x00400143:	vldr	d7, [pc, #0x44]
+0x00400147:	vstr	d7, [r2]
+0x0040014b:	cmn.w	r6, #0x20
+0x0040014f:	sbcs	r5, r5, #0
+0x00400153:	ite	hs
+0x00400155:	movhs	r2, #1
+0x00400157:	movlo	r2, #0
+0x00400159:	cmn.w	r7, #0x20
+0x0040015d:	sbcs	r4, r4, #0
+0x00400161:	it	hs
+0x00400163:	orrhs	r2, r2, #1
+0x00400167:	cbnz	r2, #0x400185
+0x00400169:	ldr	r4, [pc, #0x24]
+0x0040016b:	movs	r2, #0x20
+0x0040016d:	strd	ip, r7, [sp, #0x1c]
+0x00400171:	add	r4, pc
+0x00400173:	strd	lr, r8, [sp, #0x24]
+0x00400177:	str	r6, [sp, #0x18]
+0x00400179:	ldr	r4, [r4]
+0x0040017b:	ldr	r4, [r4]
+0x0040017d:	mov	ip, r4
+0x0040017f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400183:	bx	ip
+0x00400143:	vldr	d7, [pc, #0x44]
+0x00400147:	vstr	d7, [r2]
+0x0040014b:	cmn.w	r6, #0x20
+0x0040014f:	sbcs	r5, r5, #0
+0x00400153:	ite	hs
+0x00400155:	movhs	r2, #1
+0x00400157:	movlo	r2, #0
+0x00400159:	cmn.w	r7, #0x20
+0x0040015d:	sbcs	r4, r4, #0
+0x00400161:	it	hs
+0x00400163:	orrhs	r2, r2, #1
+0x00400167:	cbnz	r2, #0x400185
+0x00400169:	ldr	r4, [pc, #0x24]
+0x0040016b:	movs	r2, #0x20
+0x0040016d:	strd	ip, r7, [sp, #0x1c]
+0x00400171:	add	r4, pc
+0x00400173:	strd	lr, r8, [sp, #0x24]
+0x00400177:	str	r6, [sp, #0x18]
+0x00400179:	ldr	r4, [r4]
+0x0040017b:	ldr	r4, [r4]
+0x0040017d:	mov	ip, r4
+0x0040017f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400183:	bx	ip
+0x0040014b:	cmn.w	r6, #0x20
+0x0040014f:	sbcs	r5, r5, #0
+0x00400153:	ite	hs
+0x00400155:	movhs	r2, #1
+0x00400157:	movlo	r2, #0
+0x00400159:	cmn.w	r7, #0x20
+0x0040015d:	sbcs	r4, r4, #0
+0x00400161:	it	hs
+0x00400163:	orrhs	r2, r2, #1
+0x00400167:	cbnz	r2, #0x400185
+0x00400169:	ldr	r4, [pc, #0x24]
+0x0040016b:	movs	r2, #0x20
+0x0040016d:	strd	ip, r7, [sp, #0x1c]
+0x00400171:	add	r4, pc
+0x00400173:	strd	lr, r8, [sp, #0x24]
+0x00400177:	str	r6, [sp, #0x18]
+0x00400179:	ldr	r4, [r4]
+0x0040017b:	ldr	r4, [r4]
+0x0040017d:	mov	ip, r4
+0x0040017f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400183:	bx	ip
+0x00400169:	ldr	r4, [pc, #0x24]
+0x0040016b:	movs	r2, #0x20
+0x0040016d:	strd	ip, r7, [sp, #0x1c]
+0x00400171:	add	r4, pc
+0x00400173:	strd	lr, r8, [sp, #0x24]
+0x00400177:	str	r6, [sp, #0x18]
+0x00400179:	ldr	r4, [r4]
+0x0040017b:	ldr	r4, [r4]
+0x0040017d:	mov	ip, r4
+0x0040017f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400183:	bx	ip
+0x00400185:	bl	#0x500001
 
-0000012c <crypto_aead_aegis256_encrypt_detached>:
- 12c:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 130:	f8dd c020 	ldr.w	ip, [sp, #32]
- 134:	e9dd 6506 	ldrd	r6, r5, [sp, #24]
- 138:	e9dd 740a 	ldrd	r7, r4, [sp, #40]	; 0x28
- 13c:	e9dd e80d 	ldrd	lr, r8, [sp, #52]	; 0x34
- 140:	b11a      	cbz	r2, 14a <crypto_aead_aegis256_encrypt_detached+0x1e>
- 142:	ed9f 7b11 	vldr	d7, [pc, #68]	; 188 <crypto_aead_aegis256_encrypt_detached+0x5c>
- 146:	ed82 7b00 	vstr	d7, [r2]
- 14a:	f116 0f20 	cmn.w	r6, #32
- 14e:	f175 0500 	sbcs.w	r5, r5, #0
- 152:	bf2c      	ite	cs
- 154:	2201      	movcs	r2, #1
- 156:	2200      	movcc	r2, #0
- 158:	f117 0f20 	cmn.w	r7, #32
- 15c:	f174 0400 	sbcs.w	r4, r4, #0
- 160:	bf28      	it	cs
- 162:	f042 0201 	orrcs.w	r2, r2, #1
- 166:	b96a      	cbnz	r2, 184 <crypto_aead_aegis256_encrypt_detached+0x58>
- 168:	4c09      	ldr	r4, [pc, #36]	; (190 <crypto_aead_aegis256_encrypt_detached+0x64>)
- 16a:	2220      	movs	r2, #32
- 16c:	e9cd c707 	strd	ip, r7, [sp, #28]
- 170:	447c      	add	r4, pc
- 172:	e9cd e809 	strd	lr, r8, [sp, #36]	; 0x24
- 176:	9606      	str	r6, [sp, #24]
- 178:	6824      	ldr	r4, [r4, #0]
- 17a:	6824      	ldr	r4, [r4, #0]
- 17c:	46a4      	mov	ip, r4
- 17e:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
- 182:	4760      	bx	ip
- 184:	f7ff fffe 	bl	0 <sodium_misuse>
- 188:	00000020 	.word	0x00000020
- 18c:	00000000 	.word	0x00000000
- 190:	0000001c 	.word	0x0000001c
+Function crypto_aead_aegis256_decrypt_detached @ 0x00400195
+0x00400195:	push	{r4, r5, r6, r7}
+0x00400197:	mov	r1, r2
+0x00400199:	ldr	r5, [sp, #0x20]
+0x0040019b:	ldrd	r6, r4, [sp, #0x10]
+0x0040019f:	ldr	r2, [sp, #0x24]
+0x004001a1:	cmn.w	r6, #0x20
+0x004001a5:	ldr	r3, [sp, #0x18]
+0x004001a7:	sbcs	r4, r4, #0
+0x004001ab:	ite	hs
+0x004001ad:	movhs	r4, #1
+0x004001af:	movlo	r4, #0
+0x004001b1:	cmn.w	r5, #0x20
+0x004001b5:	sbcs	ip, r2, #0
+0x004001b9:	ldr	r2, [sp, #0x1c]
+0x004001bb:	ldrd	r7, ip, [sp, #0x28]
+0x004001bf:	it	hs
+0x004001c1:	orrhs	r4, r4, #1
+0x004001c5:	cbnz	r4, #0x4001e3
+0x004001c7:	ldr	r4, [pc, #0x24]
+0x004001c9:	strd	r7, ip, [sp, #0x1c]
+0x004001cd:	add	r4, pc
+0x004001cf:	strd	r2, r5, [sp, #0x14]
+0x004001d3:	movs	r2, #0x20
+0x004001d5:	str	r2, [sp, #0x10]
+0x004001d7:	mov	r2, r6
+0x004001d9:	ldr	r4, [r4]
+0x004001db:	ldr	r4, [r4, #4]
+0x004001dd:	mov	ip, r4
+0x004001df:	pop	{r4, r5, r6, r7}
+0x004001e1:	bx	ip
+0x004001c7:	ldr	r4, [pc, #0x24]
+0x004001c9:	strd	r7, ip, [sp, #0x1c]
+0x004001cd:	add	r4, pc
+0x004001cf:	strd	r2, r5, [sp, #0x14]
+0x004001d3:	movs	r2, #0x20
+0x004001d5:	str	r2, [sp, #0x10]
+0x004001d7:	mov	r2, r6
+0x004001d9:	ldr	r4, [r4]
+0x004001db:	ldr	r4, [r4, #4]
+0x004001dd:	mov	ip, r4
+0x004001df:	pop	{r4, r5, r6, r7}
+0x004001e1:	bx	ip
+0x004001e3:	mov.w	r0, #-1
+0x004001e7:	pop	{r4, r5, r6, r7}
+0x004001e9:	bx	lr
 
-00000194 <crypto_aead_aegis256_decrypt_detached>:
- 194:	b4f0      	push	{r4, r5, r6, r7}
- 196:	4611      	mov	r1, r2
- 198:	9d08      	ldr	r5, [sp, #32]
- 19a:	e9dd 6404 	ldrd	r6, r4, [sp, #16]
- 19e:	9a09      	ldr	r2, [sp, #36]	; 0x24
- 1a0:	f116 0f20 	cmn.w	r6, #32
- 1a4:	9b06      	ldr	r3, [sp, #24]
- 1a6:	f174 0400 	sbcs.w	r4, r4, #0
- 1aa:	bf2c      	ite	cs
- 1ac:	2401      	movcs	r4, #1
- 1ae:	2400      	movcc	r4, #0
- 1b0:	f115 0f20 	cmn.w	r5, #32
- 1b4:	f172 0c00 	sbcs.w	ip, r2, #0
- 1b8:	9a07      	ldr	r2, [sp, #28]
- 1ba:	e9dd 7c0a 	ldrd	r7, ip, [sp, #40]	; 0x28
- 1be:	bf28      	it	cs
- 1c0:	f044 0401 	orrcs.w	r4, r4, #1
- 1c4:	b96c      	cbnz	r4, 1e2 <crypto_aead_aegis256_decrypt_detached+0x4e>
- 1c6:	4c09      	ldr	r4, [pc, #36]	; (1ec <crypto_aead_aegis256_decrypt_detached+0x58>)
- 1c8:	e9cd 7c07 	strd	r7, ip, [sp, #28]
- 1cc:	447c      	add	r4, pc
- 1ce:	e9cd 2505 	strd	r2, r5, [sp, #20]
- 1d2:	2220      	movs	r2, #32
- 1d4:	9204      	str	r2, [sp, #16]
- 1d6:	4632      	mov	r2, r6
- 1d8:	6824      	ldr	r4, [r4, #0]
- 1da:	6864      	ldr	r4, [r4, #4]
- 1dc:	46a4      	mov	ip, r4
- 1de:	bcf0      	pop	{r4, r5, r6, r7}
- 1e0:	4760      	bx	ip
- 1e2:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 1e6:	bcf0      	pop	{r4, r5, r6, r7}
- 1e8:	4770      	bx	lr
- 1ea:	bf00      	nop
- 1ec:	0000001c 	.word	0x0000001c
+Function sub_4001eb @ 0x004001eb
+0x004001eb:	nop	
+0x004001ed:	lsls	r0, r0, #1
+0x004001ef:	movs	r0, r0
+0x004001f1:	ldr	r3, [pc, #0x10]
+0x004001f3:	movs	r0, #0
+0x004001f5:	ldr	r1, [pc, #0x10]
+0x004001f7:	ldr	r2, [pc, #0x14]
+0x004001f9:	add	r3, pc
+0x004001fb:	add	r2, pc
+0x004001fd:	ldr	r1, [r3, r1]
+0x004001ff:	str	r1, [r2]
+0x00400201:	bx	lr
 
-000001f0 <_crypto_aead_aegis256_pick_best_implementation>:
- 1f0:	4b04      	ldr	r3, [pc, #16]	; (204 <_crypto_aead_aegis256_pick_best_implementation+0x14>)
- 1f2:	2000      	movs	r0, #0
- 1f4:	4904      	ldr	r1, [pc, #16]	; (208 <_crypto_aead_aegis256_pick_best_implementation+0x18>)
- 1f6:	4a05      	ldr	r2, [pc, #20]	; (20c <_crypto_aead_aegis256_pick_best_implementation+0x1c>)
- 1f8:	447b      	add	r3, pc
- 1fa:	447a      	add	r2, pc
- 1fc:	5859      	ldr	r1, [r3, r1]
- 1fe:	6011      	str	r1, [r2, #0]
- 200:	4770      	bx	lr
- 202:	bf00      	nop
- 204:	00000008 	.word	0x00000008
- 208:	00000000 	.word	0x00000000
- 20c:	0000000e 	.word	0x0000000e
+Function _crypto_aead_aegis256_pick_best_implementation @ 0x004001f1
+0x004001f1:	ldr	r3, [pc, #0x10]
+0x004001f3:	movs	r0, #0
+0x004001f5:	ldr	r1, [pc, #0x10]
+0x004001f7:	ldr	r2, [pc, #0x14]
+0x004001f9:	add	r3, pc
+0x004001fb:	add	r2, pc
+0x004001fd:	ldr	r1, [r3, r1]
+0x004001ff:	str	r1, [r2]
+0x00400201:	bx	lr
+
+Function sub_400203 @ 0x00400203
+0x00400203:	nop	
+0x00400205:	movs	r0, r1
+0x00400207:	movs	r0, r0
+0x00400209:	movs	r0, r0
+0x0040020b:	movs	r0, r0
+0x0040020d:	movs	r2, r2
+0x0040020f:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function randombytes_buf @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0
+
+Function UnresolvableCallTarget @ 0x00601050
+0x00601050:	andeq	r0, r0, r0
+0x00601054:	andeq	r0, r0, r0
+0x00601058:	andeq	r0, r0, r0
+0x0060105c:	andeq	r0, r0, r0
+0x00601060:	andeq	r0, r0, r0
+0x00601064:	andeq	r0, r0, r0
+0x00601068:	andeq	r0, r0, r0
+0x0060106c:	andeq	r0, r0, r0
+0x00601070:	andeq	r0, r0, r0
+0x00601074:	andeq	r0, r0, r0
+0x00601078:	andeq	r0, r0, r0
+0x0060107c:	andeq	r0, r0, r0
+0x00601080:	andeq	r0, r0, r0
+0x00601084:	andeq	r0, r0, r0
+0x00601088:	andeq	r0, r0, r0
+0x0060108c:	andeq	r0, r0, r0
+0x00601090:	andeq	r0, r0, r0
+0x00601094:	andeq	r0, r0, r0
+0x00601098:	andeq	r0, r0, r0
+0x0060109c:	andeq	r0, r0, r0
+0x006010a0:	andeq	r0, r0, r0
+0x006010a4:	andeq	r0, r0, r0
+0x006010a8:	andeq	r0, r0, r0
+0x006010ac:	andeq	r0, r0, r0
+0x006010b0:	andeq	r0, r0, r0
+0x006010b4:	andeq	r0, r0, r0
+0x006010b8:	andeq	r0, r0, r0
+0x006010bc:	andeq	r0, r0, r0
+0x006010c0:	andeq	r0, r0, r0
+0x006010c4:	andeq	r0, r0, r0
+0x006010c8:	andeq	r0, r0, r0
+0x006010cc:	andeq	r0, r0, r0
+0x006010d0:	andeq	r0, r0, r0
+0x006010d4:	andeq	r0, r0, r0
+0x006010d8:	andeq	r0, r0, r0
+0x006010dc:	andeq	r0, r0, r0
+0x006010e0:	andeq	r0, r0, r0
+0x006010e4:	andeq	r0, r0, r0
+0x006010e8:	andeq	r0, r0, r0
+0x006010ec:	andeq	r0, r0, r0
+0x006010f0:	andeq	r0, r0, r0
+0x006010f4:	andeq	r0, r0, r0
+0x006010f8:	andeq	r0, r0, r0
+0x006010fc:	andeq	r0, r0, r0
+0x00601100:	andeq	r0, r0, r0
+0x00601104:	andeq	r0, r0, r0
+0x00601108:	andeq	r0, r0, r0
+0x0060110c:	andeq	r0, r0, r0
+0x00601110:	andeq	r0, r0, r0
+0x00601114:	andeq	r0, r0, r0
+0x00601118:	andeq	r0, r0, r0
+0x0060111c:	andeq	r0, r0, r0
+0x00601120:	andeq	r0, r0, r0
+0x00601124:	andeq	r0, r0, r0
+0x00601128:	andeq	r0, r0, r0
+0x0060112c:	andeq	r0, r0, r0
+0x00601130:	andeq	r0, r0, r0
+0x00601134:	andeq	r0, r0, r0
+0x00601138:	andeq	r0, r0, r0
+0x0060113c:	andeq	r0, r0, r0
+0x00601140:	andeq	r0, r0, r0
+0x00601144:	andeq	r0, r0, r0
+0x00601148:	andeq	r0, r0, r0
+0x0060114c:	andeq	r0, r0, r0
+0x00601150:	andeq	r0, r0, r0
+0x00601154:	andeq	r0, r0, r0
+0x00601158:	andeq	r0, r0, r0
+0x0060115c:	andeq	r0, r0, r0
+0x00601160:	andeq	r0, r0, r0
+0x00601164:	andeq	r0, r0, r0
+0x00601168:	andeq	r0, r0, r0
+0x0060116c:	andeq	r0, r0, r0
+0x00601170:	andeq	r0, r0, r0
+0x00601174:	andeq	r0, r0, r0
+0x00601178:	andeq	r0, r0, r0
+0x0060117c:	andeq	r0, r0, r0
+0x00601180:	andeq	r0, r0, r0
+0x00601184:	andeq	r0, r0, r0
+0x00601188:	andeq	r0, r0, r0
+0x0060118c:	andeq	r0, r0, r0
+0x00601190:	andeq	r0, r0, r0
+0x00601194:	andeq	r0, r0, r0
+0x00601198:	andeq	r0, r0, r0
+0x0060119c:	andeq	r0, r0, r0
+0x006011a0:	andeq	r0, r0, r0
+0x006011a4:	andeq	r0, r0, r0
+0x006011a8:	andeq	r0, r0, r0
+0x006011ac:	andeq	r0, r0, r0
+0x006011b0:	andeq	r0, r0, r0
+0x006011b4:	andeq	r0, r0, r0
+0x006011b8:	andeq	r0, r0, r0
+0x006011bc:	andeq	r0, r0, r0
+0x006011c0:	andeq	r0, r0, r0
+0x006011c4:	andeq	r0, r0, r0
+0x006011c8:	andeq	r0, r0, r0
+0x006011cc:	andeq	r0, r0, r0
+0x006011d0:	andeq	r0, r0, r0
+0x006011d4:	andeq	r0, r0, r0
+0x006011d8:	andeq	r0, r0, r0

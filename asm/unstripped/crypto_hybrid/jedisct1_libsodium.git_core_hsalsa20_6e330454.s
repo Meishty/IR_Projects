@@ -1,21 +1,16 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_core_hsalsa20_6e330454.o:     file format elf32-littlearm
+Function crypto_core_hsalsa20_outputbytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
+Function crypto_core_hsalsa20_inputbytes @ 0x00400005
+0x00400005:	movs	r0, #0x10
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_core_hsalsa20_keybytes @ 0x00400009
+0x00400009:	movs	r0, #0x20
+0x0040000b:	bx	lr
 
-00000000 <crypto_core_hsalsa20_outputbytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
-
-00000004 <crypto_core_hsalsa20_inputbytes>:
-   4:	2010      	movs	r0, #16
-   6:	4770      	bx	lr
-
-00000008 <crypto_core_hsalsa20_keybytes>:
-   8:	2020      	movs	r0, #32
-   a:	4770      	bx	lr
-
-0000000c <crypto_core_hsalsa20_constbytes>:
-   c:	2010      	movs	r0, #16
-   e:	4770      	bx	lr
+Function crypto_core_hsalsa20_constbytes @ 0x0040000d
+0x0040000d:	movs	r0, #0x10
+0x0040000f:	bx	lr

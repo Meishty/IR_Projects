@@ -1,21 +1,43 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dl6_9fb38eb7_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb09
+0x00400004:	blhs	#0x69a078
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	adds	r3, #0x14
+0x0040000d:	beq	#0x400017
+0x0040000f:	ldr	r0, [pc, #0x1c]
+0x00400011:	add	r0, pc
+0x00400013:	b.w	#0x400013
+0x00400013:	b.w	#0x400013
+0x00400017:	ldr	r0, [pc, #0x18]
+0x00400019:	add	r0, pc
+0x0040001b:	b.w	#0x40001b
+0x0040001b:	b.w	#0x40001b
 
-Disassembly of section .text:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	ldr	r0, [pc, #0x14]
+0x00400021:	add	r0, pc
+0x00400023:	b.w	#0x400023
+0x00400023:	b.w	#0x400023
 
-00000000 <.text>:
-   0:	447b4b09 	ldrbtmi	r4, [fp], #-2825	; 0xfffff4f7
-   4:	2b0a681b 	blcs	0x29a078
-   8:	3314d009 	tstcc	r4, #9
-   c:	4807d003 	stmdami	r7, {r0, r1, ip, lr, pc}
-  10:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  14:	4806bffe 	stmdami	r6, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, pc}
-  18:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  1c:	4805bffe 	stmdami	r5, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, pc}
-  20:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  24:	bf00bffe 	svclt	0x0000bffe
-  28:	00000022 	andeq	r0, r0, r2, lsr #32
-  2c:	00000018 	andeq	r0, r0, r8, lsl r0
-  30:	00000014 	andeq	r0, r0, r4, lsl r0
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r2, r4
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r3
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r4, r2
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r2
+0x00400037:	movs	r0, r0
+
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r2, r4
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r3
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r4, r2
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r2
+0x00400037:	movs	r0, r0

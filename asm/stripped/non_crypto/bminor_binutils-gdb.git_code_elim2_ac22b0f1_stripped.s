@@ -1,19 +1,19 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_code_elim2_ac22b0f1_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb02
+0x00400004:	subeq	r6, r0, r8, lsl r8
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r0
+0x0040000f:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b02 	ldrbtmi	r4, [fp], #-2818	; 0xfffff4fe
-   4:	00406818 	subeq	r6, r0, r8, lsl r8
-   8:	47706018 			; <UNDEFINED> instruction: 0x47706018
-   c:	00000006 	andeq	r0, r0, r6
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	447b4b02 	ldrbtmi	r4, [fp], #-2818	; 0xfffff4fe
-   4:	00406818 	subeq	r6, r0, r8, lsl r8
-   8:	47706018 			; <UNDEFINED> instruction: 0x47706018
-   c:	00000006 	andeq	r0, r0, r6
+Function sub_400015 @ 0x00400015
+0x00400015:	ldr	r3, [pc, #8]
+0x00400017:	add	r3, pc
+0x00400019:	ldr	r0, [r3]
+0x0040001b:	lsls	r0, r0, #1
+0x0040001d:	str	r0, [r3]
+0x0040001f:	bx	lr

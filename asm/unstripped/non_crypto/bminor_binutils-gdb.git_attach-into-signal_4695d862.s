@@ -1,43 +1,71 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_attach-into-signal_4695d862.o:     file format elf32-littlearm
+Function action @ 0x00400001
+0x00400001:	movs	r0, #0xe
+0x00400003:	b.w	#0x500001
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
 
-Disassembly of section .text:
+Function main @ 0x00400009
+0x00400009:	ldr	r4, [pc, #0x3c]
+0x0040000b:	movs	r2, #0x88
+0x0040000d:	ldr	r3, [pc, #0x3c]
+0x0040000f:	movs	r1, #0
+0x00400011:	add	r4, pc
+0x00400013:	push	{lr}
+0x00400015:	sub	sp, #0x94
+0x00400017:	ldr	r3, [r4, r3]
+0x00400019:	add	r0, sp, #4
+0x0040001b:	mov.w	r4, #0x10000000
+0x0040001f:	ldr	r3, [r3]
+0x00400021:	str	r3, [sp, #0x8c]
+0x00400023:	mov.w	r3, #0
+0x00400027:	bl	#0x50000d
+0x0040002b:	ldr	r3, [pc, #0x24]
+0x0040002d:	movs	r2, #0
+0x0040002f:	mov	r1, sp
+0x00400031:	movs	r0, #0xe
+0x00400033:	add	r3, pc
+0x00400035:	str	r4, [sp, #0x84]
+0x00400037:	str	r3, [sp]
+0x00400039:	bl	#0x500019
+0x0040003d:	movs	r0, #0xe
+0x0040003f:	bl	#0x500001
+0x00400043:	bl	#0x500025
 
-00000000 <action>:
-   0:	200e      	movs	r0, #14
-   2:	f7ff bffe 	b.w	0 <raise>
-   6:	bf00      	nop
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	movs	r4, r6
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function raise @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4c0f      	ldr	r4, [pc, #60]	; (40 <main+0x40>)
-   2:	2288      	movs	r2, #136	; 0x88
-   4:	4b0f      	ldr	r3, [pc, #60]	; (44 <main+0x44>)
-   6:	2100      	movs	r1, #0
-   8:	447c      	add	r4, pc
-   a:	b500      	push	{lr}
-   c:	b0a5      	sub	sp, #148	; 0x94
-   e:	58e3      	ldr	r3, [r4, r3]
-  10:	a801      	add	r0, sp, #4
-  12:	f04f 5480 	mov.w	r4, #268435456	; 0x10000000
-  16:	681b      	ldr	r3, [r3, #0]
-  18:	9323      	str	r3, [sp, #140]	; 0x8c
-  1a:	f04f 0300 	mov.w	r3, #0
-  1e:	f7ff fffe 	bl	0 <memset>
-  22:	4b09      	ldr	r3, [pc, #36]	; (48 <main+0x48>)
-  24:	2200      	movs	r2, #0
-  26:	4669      	mov	r1, sp
-  28:	200e      	movs	r0, #14
-  2a:	447b      	add	r3, pc
-  2c:	9421      	str	r4, [sp, #132]	; 0x84
-  2e:	9300      	str	r3, [sp, #0]
-  30:	f7ff fffe 	bl	0 <sigaction>
-  34:	200e      	movs	r0, #14
-  36:	f7ff fffe 	bl	0 <raise>
-  3a:	f7ff fffe 	bl	0 <abort>
-  3e:	bf00      	nop
-  40:	00000034 	.word	0x00000034
-  44:	00000000 	.word	0x00000000
-  48:	0000001a 	.word	0x0000001a
+Function memset @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function sigaction @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function abort @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

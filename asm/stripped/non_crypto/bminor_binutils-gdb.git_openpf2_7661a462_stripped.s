@@ -1,19 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_openpf2_7661a462_stripped.o:     file format elf32-littlearm
+Function sub_400019 @ 0x00400019
+0x00400019:	ldr	r1, [pc, #0x20]
+0x0040001b:	ldr	r0, [pc, #0x24]
+0x0040001d:	push	{r3, lr}
+0x0040001f:	add	r1, pc
+0x00400021:	add	r0, pc
+0x00400023:	bl	#0x400023
 
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	cbz	r0, #0x400039
+0x00400029:	bl	#0x400029
 
-Disassembly of section .text.startup:
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
+0x0040002d:	ldr	r0, [pc, #0x14]
+0x0040002f:	add	r0, pc
+0x00400031:	bl	#0x400031
 
-00000000 <.text.startup>:
-   0:	48094908 	stmdami	r9, {r3, r8, fp, lr}
-   4:	4479b508 	ldrbtmi	fp, [r9], #-1288	; 0xfffffaf8
-   8:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   c:	b138fffe 	teqlt	r8, lr	; <illegal shifter operand>	; <UNPREDICTABLE>
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	44784805 	ldrbtmi	r4, [r8], #-2053	; 0xfffff7fb
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	bd082000 	stclt	0, cr2, [r8, #-0]
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	0000001a 	andeq	r0, r0, sl, lsl r0
-  28:	0000001c 	andeq	r0, r0, ip, lsl r0
-  2c:	00000012 	andeq	r0, r0, r2, lsl r0
+Function sub_400031 @ 0x00400031
+0x00400031:	bl	#0x400031
+0x00400035:	movs	r0, #0
+0x00400037:	pop	{r3, pc}
+
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039

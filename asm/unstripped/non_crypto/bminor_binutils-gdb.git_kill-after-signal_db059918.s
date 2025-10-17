@@ -1,46 +1,69 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_kill-after-signal_db059918.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vst3.8	{d27, d29, d31}, [pc], r8
 
+Function sub_400005 @ 0x00400005
+0x00400005:	strb	r6, [r2]
+0x00400007:	bl	#0x500001
+0x0040000b:	ldr	r3, [pc, #0x10]
+0x0040000d:	movs	r2, #0x1b
+0x0040000f:	ldr	r1, [pc, #0x10]
+0x00400011:	ldr	r0, [pc, #0x10]
+0x00400013:	add	r3, pc
+0x00400015:	add	r1, pc
+0x00400017:	add	r0, pc
+0x00400019:	bl	#0x50000d
 
-Disassembly of section .text:
+Function main @ 0x00400075
+0x00400075:	ldr	r1, [pc, #0x24]
+0x00400077:	movs	r0, #0xa
+0x00400079:	push	{r3, lr}
+0x0040007b:	add	r1, pc
+0x0040007d:	bl	#0x500019
+0x00400081:	movs	r0, #0xa
+0x00400083:	bl	#0x500025
+0x00400087:	ldr	r3, [pc, #0x18]
+0x00400089:	ldr	r1, [pc, #0x18]
+0x0040008b:	movs	r2, #0x23
+0x0040008d:	ldr	r0, [pc, #0x18]
+0x0040008f:	add	r3, pc
+0x00400091:	add	r1, pc
+0x00400093:	adds	r3, #8
+0x00400095:	add	r0, pc
+0x00400097:	bl	#0x50000d
 
-00000000 <handler>:
-   0:	b508      	push	{r3, lr}
-   2:	f44f 7016 	mov.w	r0, #600	; 0x258
-   6:	f7ff fffe 	bl	0 <sleep>
-   a:	4b04      	ldr	r3, [pc, #16]	; (1c <handler+0x1c>)
-   c:	221b      	movs	r2, #27
-   e:	4904      	ldr	r1, [pc, #16]	; (20 <handler+0x20>)
-  10:	4804      	ldr	r0, [pc, #16]	; (24 <handler+0x24>)
-  12:	447b      	add	r3, pc
-  14:	4479      	add	r1, pc
-  16:	4478      	add	r0, pc
-  18:	f7ff fffe 	bl	0 <__assert_fail>
-  1c:	00000006 	.word	0x00000006
-  20:	00000008 	.word	0x00000008
-  24:	0000000a 	.word	0x0000000a
+Function sub_40009b @ 0x0040009b
+0x0040009b:	nop	
 
-Disassembly of section .text.startup:
+Function sleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4909      	ldr	r1, [pc, #36]	; (28 <main+0x28>)
-   2:	200a      	movs	r0, #10
-   4:	b508      	push	{r3, lr}
-   6:	4479      	add	r1, pc
-   8:	f7ff fffe 	bl	0 <signal>
-   c:	200a      	movs	r0, #10
-   e:	f7ff fffe 	bl	0 <raise>
-  12:	4b06      	ldr	r3, [pc, #24]	; (2c <main+0x2c>)
-  14:	4906      	ldr	r1, [pc, #24]	; (30 <main+0x30>)
-  16:	2223      	movs	r2, #35	; 0x23
-  18:	4806      	ldr	r0, [pc, #24]	; (34 <main+0x34>)
-  1a:	447b      	add	r3, pc
-  1c:	4479      	add	r1, pc
-  1e:	3308      	adds	r3, #8
-  20:	4478      	add	r0, pc
-  22:	f7ff fffe 	bl	0 <__assert_fail>
-  26:	bf00      	nop
-  28:	0000001e 	.word	0x0000001e
-  2c:	0000000e 	.word	0x0000000e
-  30:	00000010 	.word	0x00000010
-  34:	00000010 	.word	0x00000010
+Function __assert_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function signal @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function raise @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

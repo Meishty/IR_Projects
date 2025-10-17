@@ -1,8 +1,4 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pretty-print_950cb55d_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_400021 @ 0x00400021
+0x00400021:	movs	r0, #0
+0x00400023:	bx	lr

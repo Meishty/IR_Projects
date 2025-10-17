@@ -1,17 +1,17 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_actions-changed_1d38d57f_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	lsls	r0, r0, #1
+0x00400007:	mul	r0, r0, r0
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	lsls	r0, r0, #1
+0x0040000f:	mul	r0, r0, r0
+0x00400013:	bx	lr
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
-   4:	fb000040 	blx	0x10e
-   8:	4770f000 	ldrbmi	pc, [r0, -r0]!	; <UNPREDICTABLE>
-   c:	fb000040 	blx	0x116
-  10:	4770f000 	ldrbmi	pc, [r0, -r0]!	; <UNPREDICTABLE>
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r0, #0
+0x00400017:	bx	lr

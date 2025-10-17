@@ -1,109 +1,127 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_version_e0ce384a.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	subshs	fp, r0, #112, #10
+0x00400004:	addlt	r4, r2, r4, lsl ip
+0x00400008:	ldrbtmi	r4, [ip], #-0xe14
+0x0040000c:	ldrbtmi	r4, [lr], #-0x605
+0x00400010:	movwhs	r2, #0x3101
+0x00400014:	stmib	sp, {r1, r2, r6, sp} ^
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	mov	r3, r6
+0x0040001d:	mov	r0, r4
+0x0040001f:	bl	#0x500001
+0x00400023:	ldr	r2, [pc, #0x3c]
+0x00400025:	mov	r3, r4
+0x00400027:	movs	r1, #1
+0x00400029:	add	r2, pc
+0x0040002b:	mov	r0, r5
+0x0040002d:	bl	#0x50000d
+0x00400031:	movs	r2, #0x50
+0x00400033:	movs	r1, #1
+0x00400035:	movs	r3, #0x4d
+0x00400037:	movs	r0, #0
+0x00400039:	str	r3, [sp, #4]
+0x0040003b:	str	r0, [sp]
+0x0040003d:	mov	r3, r6
+0x0040003f:	mov	r0, r4
+0x00400041:	bl	#0x500001
+0x00400045:	ldr	r2, [pc, #0x1c]
+0x00400047:	mov	r3, r4
+0x00400049:	movs	r1, #1
+0x0040004b:	add	r2, pc
+0x0040004d:	mov	r0, r5
+0x0040004f:	add	sp, #8
+0x00400051:	pop.w	{r4, r5, r6, lr}
+0x00400055:	b.w	#0x50000d
 
-Disassembly of section .text:
+Function sub_400059 @ 0x00400059
+0x00400059:	lsls	r6, r3, #3
+0x0040005b:	movs	r0, r0
+0x0040005d:	lsls	r2, r5, #4
+0x0040005f:	movs	r0, r0
+0x00400061:	lsls	r0, r3, #4
+0x00400063:	movs	r0, r0
+0x00400065:	lsls	r6, r3, #4
+0x00400067:	movs	r0, r0
+0x00400069:	push	{r4, lr}
+0x0040006b:	movs	r0, #0x46
+0x0040006d:	ldr	r4, [pc, #0x1c]
+0x0040006f:	sub	sp, #8
+0x00400071:	ldr	r3, [pc, #0x1c]
+0x00400073:	add	r4, pc
+0x00400075:	movs	r1, #3
+0x00400077:	add	r3, pc
+0x00400079:	movs	r2, #0x50
+0x0040007b:	strd	r1, r0, [sp]
+0x0040007f:	movs	r1, #1
+0x00400081:	mov	r0, r4
+0x00400083:	bl	#0x500001
 
-00000000 <lame_print_version>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	2250      	movs	r2, #80	; 0x50
-   4:	4c14      	ldr	r4, [pc, #80]	; (58 <lame_print_version+0x58>)
-   6:	b082      	sub	sp, #8
-   8:	4e14      	ldr	r6, [pc, #80]	; (5c <lame_print_version+0x5c>)
-   a:	447c      	add	r4, pc
-   c:	4605      	mov	r5, r0
-   e:	447e      	add	r6, pc
-  10:	2101      	movs	r1, #1
-  12:	2303      	movs	r3, #3
-  14:	2046      	movs	r0, #70	; 0x46
-  16:	e9cd 3000 	strd	r3, r0, [sp]
-  1a:	4633      	mov	r3, r6
-  1c:	4620      	mov	r0, r4
-  1e:	f7ff fffe 	bl	0 <__sprintf_chk>
-  22:	4a0f      	ldr	r2, [pc, #60]	; (60 <lame_print_version+0x60>)
-  24:	4623      	mov	r3, r4
-  26:	2101      	movs	r1, #1
-  28:	447a      	add	r2, pc
-  2a:	4628      	mov	r0, r5
-  2c:	f7ff fffe 	bl	0 <__fprintf_chk>
-  30:	2250      	movs	r2, #80	; 0x50
-  32:	2101      	movs	r1, #1
-  34:	234d      	movs	r3, #77	; 0x4d
-  36:	2000      	movs	r0, #0
-  38:	9301      	str	r3, [sp, #4]
-  3a:	9000      	str	r0, [sp, #0]
-  3c:	4633      	mov	r3, r6
-  3e:	4620      	mov	r0, r4
-  40:	f7ff fffe 	bl	0 <__sprintf_chk>
-  44:	4a07      	ldr	r2, [pc, #28]	; (64 <lame_print_version+0x64>)
-  46:	4623      	mov	r3, r4
-  48:	2101      	movs	r1, #1
-  4a:	447a      	add	r2, pc
-  4c:	4628      	mov	r0, r5
-  4e:	b002      	add	sp, #8
-  50:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
-  54:	f7ff bffe 	b.w	0 <__fprintf_chk>
-  58:	0000004a 	.word	0x0000004a
-  5c:	0000004a 	.word	0x0000004a
-  60:	00000034 	.word	0x00000034
-  64:	00000016 	.word	0x00000016
+Function get_lame_version @ 0x00400069
+0x00400069:	push	{r4, lr}
+0x0040006b:	movs	r0, #0x46
+0x0040006d:	ldr	r4, [pc, #0x1c]
+0x0040006f:	sub	sp, #8
+0x00400071:	ldr	r3, [pc, #0x1c]
+0x00400073:	add	r4, pc
+0x00400075:	movs	r1, #3
+0x00400077:	add	r3, pc
+0x00400079:	movs	r2, #0x50
+0x0040007b:	strd	r1, r0, [sp]
+0x0040007f:	movs	r1, #1
+0x00400081:	mov	r0, r4
+0x00400083:	bl	#0x500001
+0x00400087:	mov	r0, r4
+0x00400089:	add	sp, #8
+0x0040008b:	pop	{r4, pc}
 
-00000068 <get_lame_version>:
-  68:	b510      	push	{r4, lr}
-  6a:	2046      	movs	r0, #70	; 0x46
-  6c:	4c07      	ldr	r4, [pc, #28]	; (8c <get_lame_version+0x24>)
-  6e:	b082      	sub	sp, #8
-  70:	4b07      	ldr	r3, [pc, #28]	; (90 <get_lame_version+0x28>)
-  72:	447c      	add	r4, pc
-  74:	2103      	movs	r1, #3
-  76:	447b      	add	r3, pc
-  78:	2250      	movs	r2, #80	; 0x50
-  7a:	e9cd 1000 	strd	r1, r0, [sp]
-  7e:	2101      	movs	r1, #1
-  80:	4620      	mov	r0, r4
-  82:	f7ff fffe 	bl	0 <__sprintf_chk>
-  86:	4620      	mov	r0, r4
-  88:	b002      	add	sp, #8
-  8a:	bd10      	pop	{r4, pc}
-  8c:	00000016 	.word	0x00000016
-  90:	00000016 	.word	0x00000016
+Function get_psy_version @ 0x00400095
+0x00400095:	push	{r4, lr}
+0x00400097:	movs	r0, #0x4d
+0x00400099:	ldr	r4, [pc, #0x1c]
+0x0040009b:	sub	sp, #8
+0x0040009d:	ldr	r3, [pc, #0x1c]
+0x0040009f:	add	r4, pc
+0x004000a1:	movs	r1, #0
+0x004000a3:	add	r3, pc
+0x004000a5:	movs	r2, #0x50
+0x004000a7:	strd	r1, r0, [sp]
+0x004000ab:	movs	r1, #1
+0x004000ad:	mov	r0, r4
+0x004000af:	bl	#0x500001
+0x004000b3:	mov	r0, r4
+0x004000b5:	add	sp, #8
+0x004000b7:	pop	{r4, pc}
 
-00000094 <get_psy_version>:
-  94:	b510      	push	{r4, lr}
-  96:	204d      	movs	r0, #77	; 0x4d
-  98:	4c07      	ldr	r4, [pc, #28]	; (b8 <get_psy_version+0x24>)
-  9a:	b082      	sub	sp, #8
-  9c:	4b07      	ldr	r3, [pc, #28]	; (bc <get_psy_version+0x28>)
-  9e:	447c      	add	r4, pc
-  a0:	2100      	movs	r1, #0
-  a2:	447b      	add	r3, pc
-  a4:	2250      	movs	r2, #80	; 0x50
-  a6:	e9cd 1000 	strd	r1, r0, [sp]
-  aa:	2101      	movs	r1, #1
-  ac:	4620      	mov	r0, r4
-  ae:	f7ff fffe 	bl	0 <__sprintf_chk>
-  b2:	4620      	mov	r0, r4
-  b4:	b002      	add	sp, #8
-  b6:	bd10      	pop	{r4, pc}
-  b8:	00000016 	.word	0x00000016
-  bc:	00000016 	.word	0x00000016
+Function get_mp3x_version @ 0x004000c1
+0x004000c1:	push	{r4, lr}
+0x004000c3:	movs	r0, #0x52
+0x004000c5:	ldr	r4, [pc, #0x1c]
+0x004000c7:	sub	sp, #8
+0x004000c9:	ldr	r3, [pc, #0x1c]
+0x004000cb:	add	r4, pc
+0x004000cd:	movs	r1, #0
+0x004000cf:	add	r3, pc
+0x004000d1:	movs	r2, #0x50
+0x004000d3:	strd	r1, r0, [sp]
+0x004000d7:	movs	r1, #1
+0x004000d9:	mov	r0, r4
+0x004000db:	bl	#0x500001
+0x004000df:	mov	r0, r4
+0x004000e1:	add	sp, #8
+0x004000e3:	pop	{r4, pc}
 
-000000c0 <get_mp3x_version>:
-  c0:	b510      	push	{r4, lr}
-  c2:	2052      	movs	r0, #82	; 0x52
-  c4:	4c07      	ldr	r4, [pc, #28]	; (e4 <get_mp3x_version+0x24>)
-  c6:	b082      	sub	sp, #8
-  c8:	4b07      	ldr	r3, [pc, #28]	; (e8 <get_mp3x_version+0x28>)
-  ca:	447c      	add	r4, pc
-  cc:	2100      	movs	r1, #0
-  ce:	447b      	add	r3, pc
-  d0:	2250      	movs	r2, #80	; 0x50
-  d2:	e9cd 1000 	strd	r1, r0, [sp]
-  d6:	2101      	movs	r1, #1
-  d8:	4620      	mov	r0, r4
-  da:	f7ff fffe 	bl	0 <__sprintf_chk>
-  de:	4620      	mov	r0, r4
-  e0:	b002      	add	sp, #8
-  e2:	bd10      	pop	{r4, pc}
-  e4:	00000016 	.word	0x00000016
-  e8:	00000016 	.word	0x00000016
+Function __sprintf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __fprintf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

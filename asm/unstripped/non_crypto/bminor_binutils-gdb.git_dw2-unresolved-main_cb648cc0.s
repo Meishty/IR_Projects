@@ -1,24 +1,23 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dw2-unresolved-main_cb648cc0.o:     file format elf32-littlearm
+Function cu_text_end @ 0x00400000
+0x00400000:	blmi	#0x56d428
+0x00400004:	bmi	#0x5511f8
+0x00400008:	ldmdavc	fp, {r0, r1, r3, r4, r7, fp, ip, lr}
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bne	#0x400015
+0x00400011:	movs	r0, #0
+0x00400013:	pop	{r3, pc}
+0x00400015:	bl	#0x500001
 
-Disassembly of section .text.startup:
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r0, r2
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b05      	ldr	r3, [pc, #20]	; (18 <extern_block_end+0x8>)
-   4:	447b      	add	r3, pc
-
-00000006 <extern_block_start>:
-   6:	4a05      	ldr	r2, [pc, #20]	; (1c <extern_block_end+0xc>)
-   8:	589b      	ldr	r3, [r3, r2]
-   a:	781b      	ldrb	r3, [r3, #0]
-   c:	2b02      	cmp	r3, #2
-   e:	d101      	bne.n	14 <extern_block_end+0x4>
-
-00000010 <extern_block_end>:
-  10:	2000      	movs	r0, #0
-  12:	bd08      	pop	{r3, pc}
-  14:	f7ff fffe 	bl	0 <abort>
-  18:	00000010 	.word	0x00000010
-  1c:	00000000 	.word	0x00000000
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

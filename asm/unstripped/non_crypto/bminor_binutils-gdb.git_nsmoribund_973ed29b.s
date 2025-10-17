@@ -1,109 +1,155 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_nsmoribund_973ed29b.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x90f]
+0x00400004:	stmdavs	sl, {r0, r3, r4, r5, r6, sl, lr}
+0x00400008:	eorlo	pc, r0, r2, asr r8
+0x00400008:	eorlo	pc, r0, r2, asr r8
+0x0040000c:	addeq	lr, r0, #0x800
+0x00400018:	andsvs	r3, r3, r1, lsl #6
+0x0040001c:	blhs	#0x41a070
+0x00400020:	stmdavs	fp, {r1, r8, sl, fp, ip, lr, pc} ^
+0x00400024:	rscsle	r2, r6, r0, lsl #22
+0x00400028:	ldrbtmi	r4, [fp], #-0xb06
+0x0040002c:	ldmdblt	r3, {r0, r1, r3, r4, r6, fp, sp, lr}
 
+Function sub_400033 @ 0x00400033
+0x00400033:	bl	#0x500001
+0x00400037:	movs	r0, #0x64
+0x00400039:	bl	#0x50000d
+0x0040003d:	b	#0x400031
 
-Disassembly of section .text:
+Function sub_40003f @ 0x0040003f
+0x0040003f:	nop	
+0x00400041:	lsls	r4, r0, #1
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r6, r3
+0x00400047:	movs	r0, r0
 
-00000000 <thread_function>:
-   0:	490f      	ldr	r1, [pc, #60]	; (40 <thread_function+0x40>)
-   2:	b508      	push	{r3, lr}
-   4:	4479      	add	r1, pc
-   6:	680a      	ldr	r2, [r1, #0]
-   8:	f852 3020 	ldr.w	r3, [r2, r0, lsl #2]
-   c:	eb02 0280 	add.w	r2, r2, r0, lsl #2
-  10:	2b00      	cmp	r3, #0
-  12:	dc06      	bgt.n	22 <thread_function+0x22>
-  14:	e008      	b.n	28 <thread_function+0x28>
-  16:	6813      	ldr	r3, [r2, #0]
-  18:	3301      	adds	r3, #1
-  1a:	6013      	str	r3, [r2, #0]
-  1c:	6813      	ldr	r3, [r2, #0]
-  1e:	2b00      	cmp	r3, #0
-  20:	dd02      	ble.n	28 <thread_function+0x28>
-  22:	684b      	ldr	r3, [r1, #4]
-  24:	2b00      	cmp	r3, #0
-  26:	d0f6      	beq.n	16 <thread_function+0x16>
-  28:	4b06      	ldr	r3, [pc, #24]	; (44 <thread_function+0x44>)
-  2a:	447b      	add	r3, pc
-  2c:	685b      	ldr	r3, [r3, #4]
-  2e:	b913      	cbnz	r3, 36 <thread_function+0x36>
-  30:	2000      	movs	r0, #0
-  32:	f7ff fffe 	bl	0 <pthread_exit>
-  36:	2064      	movs	r0, #100	; 0x64
-  38:	f7ff fffe 	bl	0 <usleep>
-  3c:	e7f8      	b.n	30 <thread_function+0x30>
-  3e:	bf00      	nop
-  40:	00000038 	.word	0x00000038
-  44:	00000016 	.word	0x00000016
+Function sub_400041 @ 0x00400041
+0x00400041:	lsls	r4, r0, #1
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r6, r3
+0x00400047:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x00400055
+0x00400055:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x00400059:	ldr.w	r8, [pc, #0x90]
+0x0040005d:	ldr	r2, [pc, #0x90]
+0x0040005f:	sub	sp, #8
+0x00400061:	add	r8, pc
+0x00400063:	ldr	r3, [pc, #0x90]
+0x00400065:	add	r2, pc
+0x00400067:	ldr.w	r4, [r8]
+0x0040006b:	ldr	r3, [r2, r3]
+0x0040006d:	lsls	r7, r4, #2
+0x0040006f:	ldr	r3, [r3]
+0x00400071:	str	r3, [sp, #4]
+0x00400073:	mov.w	r3, #0
+0x00400077:	mov	r0, r7
+0x00400079:	bl	#0x500019
+0x0040007d:	mov	r6, r0
+0x0040007f:	mov	r0, r7
+0x00400081:	bl	#0x500019
+0x00400085:	ldr	r3, [pc, #0x70]
+0x00400087:	cmp	r4, #0
+0x00400089:	add	r3, pc
+0x0040008b:	str	r0, [r3]
+0x0040008d:	ble	#0x4000e5
+0x0040008f:	ldr.w	sl, [pc, #0x6c]
+0x00400093:	mov	r1, r0
+0x00400095:	ldr.w	sb, [pc, #0x68]
+0x00400099:	mov	r5, r6
+0x0040009b:	movs	r4, #0
+0x0040009d:	add	sl, pc
+0x0040009f:	add	sb, pc
+0x004000a1:	b	#0x4000a7
+0x004000a3:	ldr.w	r1, [sb]
+0x004000a7:	mov	r3, r4
+0x004000a9:	mov	r0, r5
+0x004000ab:	movs	r7, #1
+0x004000ad:	mov	r2, sl
+0x004000af:	str.w	r7, [r1, r4, lsl #2]
+0x004000b3:	movs	r1, #0
+0x004000b5:	bl	#0x500025
+0x004000a7:	mov	r3, r4
+0x004000a9:	mov	r0, r5
+0x004000ab:	movs	r7, #1
+0x004000ad:	mov	r2, sl
+0x004000af:	str.w	r7, [r1, r4, lsl #2]
+0x004000b3:	movs	r1, #0
+0x004000b5:	bl	#0x500025
+0x004000b9:	ldr.w	r3, [r8]
+0x004000bd:	add	r4, r7
+0x004000bf:	adds	r5, #4
+0x004000c1:	cmp	r3, r4
+0x004000c3:	bgt	#0x4000a3
+0x004000c5:	cmp	r3, #0
+0x004000c7:	ble	#0x4000e5
+0x004000c9:	ldr	r7, [pc, #0x38]
+0x004000cb:	subs	r5, r6, #4
+0x004000cd:	movs	r4, #0
+0x004000cf:	mov	r6, sp
+0x004000d1:	add	r7, pc
+0x004000d3:	ldr	r0, [r5, #4]!
+0x004000d7:	mov	r1, r6
+0x004000d9:	bl	#0x500031
+0x004000d3:	ldr	r0, [r5, #4]!
+0x004000d7:	mov	r1, r6
+0x004000d9:	bl	#0x500031
+0x004000dd:	ldr	r3, [r7]
+0x004000df:	adds	r4, #1
+0x004000e1:	cmp	r3, r4
+0x004000e3:	bgt	#0x4000d3
+0x004000e5:	movs	r0, #0
+0x004000e7:	bl	#0x50003d
 
-00000000 <main>:
-   0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
-   4:	f8df 8090 	ldr.w	r8, [pc, #144]	; 98 <main+0x98>
-   8:	4a24      	ldr	r2, [pc, #144]	; (9c <main+0x9c>)
-   a:	b082      	sub	sp, #8
-   c:	44f8      	add	r8, pc
-   e:	4b24      	ldr	r3, [pc, #144]	; (a0 <main+0xa0>)
-  10:	447a      	add	r2, pc
-  12:	f8d8 4000 	ldr.w	r4, [r8]
-  16:	58d3      	ldr	r3, [r2, r3]
-  18:	00a7      	lsls	r7, r4, #2
-  1a:	681b      	ldr	r3, [r3, #0]
-  1c:	9301      	str	r3, [sp, #4]
-  1e:	f04f 0300 	mov.w	r3, #0
-  22:	4638      	mov	r0, r7
-  24:	f7ff fffe 	bl	0 <malloc>
-  28:	4606      	mov	r6, r0
-  2a:	4638      	mov	r0, r7
-  2c:	f7ff fffe 	bl	0 <malloc>
-  30:	4b1c      	ldr	r3, [pc, #112]	; (a4 <main+0xa4>)
-  32:	2c00      	cmp	r4, #0
-  34:	447b      	add	r3, pc
-  36:	6018      	str	r0, [r3, #0]
-  38:	dd2a      	ble.n	90 <main+0x90>
-  3a:	f8df a06c 	ldr.w	sl, [pc, #108]	; a8 <main+0xa8>
-  3e:	4601      	mov	r1, r0
-  40:	f8df 9068 	ldr.w	r9, [pc, #104]	; ac <main+0xac>
-  44:	4635      	mov	r5, r6
-  46:	2400      	movs	r4, #0
-  48:	44fa      	add	sl, pc
-  4a:	44f9      	add	r9, pc
-  4c:	e001      	b.n	52 <main+0x52>
-  4e:	f8d9 1000 	ldr.w	r1, [r9]
-  52:	4623      	mov	r3, r4
-  54:	4628      	mov	r0, r5
-  56:	2701      	movs	r7, #1
-  58:	4652      	mov	r2, sl
-  5a:	f841 7024 	str.w	r7, [r1, r4, lsl #2]
-  5e:	2100      	movs	r1, #0
-  60:	f7ff fffe 	bl	0 <pthread_create>
-  64:	f8d8 3000 	ldr.w	r3, [r8]
-  68:	443c      	add	r4, r7
-  6a:	3504      	adds	r5, #4
-  6c:	42a3      	cmp	r3, r4
-  6e:	dcee      	bgt.n	4e <main+0x4e>
-  70:	2b00      	cmp	r3, #0
-  72:	dd0d      	ble.n	90 <main+0x90>
-  74:	4f0e      	ldr	r7, [pc, #56]	; (b0 <main+0xb0>)
-  76:	1f35      	subs	r5, r6, #4
-  78:	2400      	movs	r4, #0
-  7a:	466e      	mov	r6, sp
-  7c:	447f      	add	r7, pc
-  7e:	f855 0f04 	ldr.w	r0, [r5, #4]!
-  82:	4631      	mov	r1, r6
-  84:	f7ff fffe 	bl	0 <pthread_join>
-  88:	683b      	ldr	r3, [r7, #0]
-  8a:	3401      	adds	r4, #1
-  8c:	42a3      	cmp	r3, r4
-  8e:	dcf6      	bgt.n	7e <main+0x7e>
-  90:	2000      	movs	r0, #0
-  92:	f7ff fffe 	bl	0 <exit>
-  96:	bf00      	nop
-  98:	00000088 	.word	0x00000088
-  9c:	00000088 	.word	0x00000088
-  a0:	00000000 	.word	0x00000000
-  a4:	0000006c 	.word	0x0000006c
-  a8:	0000005c 	.word	0x0000005c
-  ac:	0000005e 	.word	0x0000005e
-  b0:	00000030 	.word	0x00000030
+Function sub_4000eb @ 0x004000eb
+
+Function pthread_exit @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function usleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function malloc @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function pthread_create @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function pthread_join @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function exit @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

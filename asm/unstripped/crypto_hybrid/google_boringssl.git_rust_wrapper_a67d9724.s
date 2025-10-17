@@ -1,27 +1,30 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/google_boringssl.git_rust_wrapper_a67d9724.o:     file format elf32-littlearm
+Function ERR_GET_LIB_RUST @ 0x00400001
+0x00400001:	lsrs	r0, r0, #0x18
+0x00400003:	bx	lr
 
+Function ERR_GET_REASON_RUST @ 0x00400005
+0x00400005:	ubfx	r0, r0, #0, #0xc
+0x00400009:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-00000000 <ERR_GET_LIB_RUST>:
-   0:	0e00      	lsrs	r0, r0, #24
-   2:	4770      	bx	lr
+Function ERR_GET_FUNC_RUST @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-00000004 <ERR_GET_REASON_RUST>:
-   4:	f3c0 000b 	ubfx	r0, r0, #0, #12
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function CBS_init_RUST @ 0x00400011
+0x00400011:	strd	r1, r2, [r0]
+0x00400015:	bx	lr
 
-0000000c <ERR_GET_FUNC_RUST>:
-   c:	2000      	movs	r0, #0
-   e:	4770      	bx	lr
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	ldr	r0, [r0, #4]
+0x0040001b:	bx	lr
 
-00000010 <CBS_init_RUST>:
-  10:	e9c0 1200 	strd	r1, r2, [r0]
-  14:	4770      	bx	lr
-  16:	bf00      	nop
-
-00000018 <CBS_len_RUST>:
-  18:	6840      	ldr	r0, [r0, #4]
-  1a:	4770      	bx	lr
+Function CBS_len_RUST @ 0x00400019
+0x00400019:	ldr	r0, [r0, #4]
+0x0040001b:	bx	lr

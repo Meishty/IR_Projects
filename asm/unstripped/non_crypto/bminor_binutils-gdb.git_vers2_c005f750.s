@@ -1,17 +1,29 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_vers2_c005f750.o:     file format elf32-littlearm
+Function show_xyzzy @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r1, [pc, #0x10]
+0x00400009:	mov	r2, r0
+0x0040000b:	pop.w	{r3, lr}
+0x0040000f:	add	r1, pc
+0x00400011:	movs	r0, #1
+0x00400013:	b.w	#0x50000d
 
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
 
-Disassembly of section .text:
+Function show_foo @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <show_xyzzy>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <show_foo>
-   6:	4904      	ldr	r1, [pc, #16]	; (18 <show_xyzzy+0x18>)
-   8:	4602      	mov	r2, r0
-   a:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-   e:	4479      	add	r1, pc
-  10:	2001      	movs	r0, #1
-  12:	f7ff bffe 	b.w	0 <__printf_chk>
-  16:	bf00      	nop
-  18:	00000006 	.word	0x00000006
+Function __printf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

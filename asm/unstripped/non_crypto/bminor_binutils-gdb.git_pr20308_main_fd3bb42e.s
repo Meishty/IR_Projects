@@ -1,34 +1,96 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr20308_main_fd3bb42e.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	push	{r4, lr}
+0x0040000b:	bl	#0x500001
+0x0040000f:	mov	r4, r0
+0x00400011:	movs	r0, #3
+0x00400013:	bl	#0x50000d
+0x00400017:	ldr	r0, [r4]
+0x00400019:	cmp	r0, #3
+0x0040001b:	bne	#0x400047
+0x0040001d:	bl	#0x500019
+0x00400021:	cbz	r0, #0x400047
+0x00400023:	bl	#0x500025
+0x00400023:	bl	#0x500025
+0x00400027:	mov	r4, r0
+0x00400029:	movs	r0, #4
+0x0040002b:	bl	#0x500031
+0x0040002f:	ldr	r0, [r4]
+0x00400031:	cmp	r0, #4
+0x00400033:	bne	#0x400047
+0x00400035:	bl	#0x50003d
+0x00400039:	cbz	r0, #0x400047
+0x0040003b:	ldr	r0, [pc, #0x10]
+0x0040003d:	add	r0, pc
+0x0040003f:	bl	#0x500049
+0x0040003b:	ldr	r0, [pc, #0x10]
+0x0040003d:	add	r0, pc
+0x0040003f:	bl	#0x500049
+0x00400043:	movs	r0, #0
+0x00400045:	pop	{r4, pc}
+0x00400047:	bl	#0x500055
 
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
 
-Disassembly of section .text.startup:
+Function get_gd @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	f7ff fffe 	bl	0 <get_gd>
-   6:	4604      	mov	r4, r0
-   8:	2003      	movs	r0, #3
-   a:	f7ff fffe 	bl	0 <set_gd>
-   e:	6820      	ldr	r0, [r4, #0]
-  10:	2803      	cmp	r0, #3
-  12:	d114      	bne.n	3e <main+0x3e>
-  14:	f7ff fffe 	bl	0 <test_gd>
-  18:	b188      	cbz	r0, 3e <main+0x3e>
-  1a:	f7ff fffe 	bl	0 <get_ld>
-  1e:	4604      	mov	r4, r0
-  20:	2004      	movs	r0, #4
-  22:	f7ff fffe 	bl	0 <set_ld>
-  26:	6820      	ldr	r0, [r4, #0]
-  28:	2804      	cmp	r0, #4
-  2a:	d108      	bne.n	3e <main+0x3e>
-  2c:	f7ff fffe 	bl	0 <test_ld>
-  30:	b128      	cbz	r0, 3e <main+0x3e>
-  32:	4804      	ldr	r0, [pc, #16]	; (44 <main+0x44>)
-  34:	4478      	add	r0, pc
-  36:	f7ff fffe 	bl	0 <puts>
-  3a:	2000      	movs	r0, #0
-  3c:	bd10      	pop	{r4, pc}
-  3e:	f7ff fffe 	bl	0 <abort>
-  42:	bf00      	nop
-  44:	0000000c 	.word	0x0000000c
+Function set_gd @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function test_gd @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function get_ld @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function set_ld @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function test_ld @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function puts @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function abort @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0

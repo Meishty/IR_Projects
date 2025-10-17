@@ -1,77 +1,216 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_signal-sigtrap_4385c07e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svclt	#0x4770
 
+Function thread_function_sync @ 0x00400005
+0x00400005:	ldr	r0, [pc, #0xc]
+0x00400007:	push	{r3, lr}
+0x00400009:	add	r0, pc
+0x0040000b:	bl	#0x500001
+0x0040000f:	movs	r0, #0
+0x00400011:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r0, r2
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r0, #0
+0x0040001b:	bx	lr
 
-00000000 <sigtrap_handler>:
-   0:	4770      	bx	lr
-   2:	bf00      	nop
+Function thread_function @ 0x00400019
+0x00400019:	movs	r0, #0
+0x0040001b:	bx	lr
 
-00000004 <thread_function_sync>:
-   4:	4803      	ldr	r0, [pc, #12]	; (14 <thread_function_sync+0x10>)
-   6:	b508      	push	{r3, lr}
-   8:	4478      	add	r0, pc
-   a:	f7ff fffe 	bl	0 <pthread_barrier_wait>
-   e:	2000      	movs	r0, #0
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
-  14:	00000008 	.word	0x00000008
+Function main @ 0x00400031
+0x00400031:	ldr	r2, [pc, #0x64]
+0x00400033:	movs	r0, #5
+0x00400035:	ldr	r3, [pc, #0x64]
+0x00400037:	add	r2, pc
+0x00400039:	push	{r4, lr}
+0x0040003b:	ldr	r1, [pc, #0x64]
+0x0040003d:	ldr	r4, [pc, #0x64]
+0x0040003f:	sub	sp, #8
+0x00400041:	ldr	r3, [r2, r3]
+0x00400043:	add	r1, pc
+0x00400045:	add	r4, pc
+0x00400047:	ldr	r3, [r3]
+0x00400049:	str	r3, [sp, #4]
+0x0040004b:	mov.w	r3, #0
+0x0040004f:	bl	#0x50000d
+0x00400053:	movs	r2, #2
+0x00400055:	movs	r1, #0
+0x00400057:	mov	r0, r4
+0x00400059:	bl	#0x500019
+0x0040005d:	ldr	r2, [pc, #0x48]
+0x0040005f:	movs	r3, #0
+0x00400061:	mov	r0, sp
+0x00400063:	mov	r1, r3
+0x00400065:	add	r2, pc
+0x00400067:	bl	#0x500025
+0x0040006b:	mov	r0, r4
+0x0040006d:	bl	#0x500001
+0x00400071:	ldr	r0, [sp]
+0x00400073:	movs	r1, #0
+0x00400075:	bl	#0x500031
+0x00400079:	ldr	r2, [pc, #0x30]
+0x0040007b:	ldr	r3, [pc, #0x20]
+0x0040007d:	add	r2, pc
+0x0040007f:	ldr	r3, [r2, r3]
+0x00400081:	ldr	r2, [r3]
+0x00400083:	ldr	r3, [sp, #4]
+0x00400085:	eors	r2, r3
+0x00400087:	mov.w	r3, #0
+0x0040008b:	bne	#0x400093
+0x0040008d:	movs	r0, #0
+0x0040008f:	add	sp, #8
+0x00400091:	pop	{r4, pc}
+0x00400093:	bl	#0x50003d
 
-00000018 <thread_function>:
-  18:	2000      	movs	r0, #0
-  1a:	4770      	bx	lr
+Function sub_400097 @ 0x00400097
 
-Disassembly of section .text.startup:
+Function pthread_barrier_wait @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4a19      	ldr	r2, [pc, #100]	; (68 <main+0x68>)
-   2:	2005      	movs	r0, #5
-   4:	4b19      	ldr	r3, [pc, #100]	; (6c <main+0x6c>)
-   6:	447a      	add	r2, pc
-   8:	b510      	push	{r4, lr}
-   a:	4919      	ldr	r1, [pc, #100]	; (70 <main+0x70>)
-   c:	4c19      	ldr	r4, [pc, #100]	; (74 <main+0x74>)
-   e:	b082      	sub	sp, #8
-  10:	58d3      	ldr	r3, [r2, r3]
-  12:	4479      	add	r1, pc
-  14:	447c      	add	r4, pc
-  16:	681b      	ldr	r3, [r3, #0]
-  18:	9301      	str	r3, [sp, #4]
-  1a:	f04f 0300 	mov.w	r3, #0
-  1e:	f7ff fffe 	bl	0 <signal>
-  22:	2202      	movs	r2, #2
-  24:	2100      	movs	r1, #0
-  26:	4620      	mov	r0, r4
-  28:	f7ff fffe 	bl	0 <pthread_barrier_init>
-  2c:	4a12      	ldr	r2, [pc, #72]	; (78 <main+0x78>)
-  2e:	2300      	movs	r3, #0
-  30:	4668      	mov	r0, sp
-  32:	4619      	mov	r1, r3
-  34:	447a      	add	r2, pc
-  36:	f7ff fffe 	bl	0 <pthread_create>
-  3a:	4620      	mov	r0, r4
-  3c:	f7ff fffe 	bl	0 <pthread_barrier_wait>
-  40:	9800      	ldr	r0, [sp, #0]
-  42:	2100      	movs	r1, #0
-  44:	f7ff fffe 	bl	0 <pthread_join>
-  48:	4a0c      	ldr	r2, [pc, #48]	; (7c <main+0x7c>)
-  4a:	4b08      	ldr	r3, [pc, #32]	; (6c <main+0x6c>)
-  4c:	447a      	add	r2, pc
-  4e:	58d3      	ldr	r3, [r2, r3]
-  50:	681a      	ldr	r2, [r3, #0]
-  52:	9b01      	ldr	r3, [sp, #4]
-  54:	405a      	eors	r2, r3
-  56:	f04f 0300 	mov.w	r3, #0
-  5a:	d102      	bne.n	62 <main+0x62>
-  5c:	2000      	movs	r0, #0
-  5e:	b002      	add	sp, #8
-  60:	bd10      	pop	{r4, pc}
-  62:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  66:	bf00      	nop
-  68:	0000005e 	.word	0x0000005e
-  6c:	00000000 	.word	0x00000000
-  70:	0000005a 	.word	0x0000005a
-  74:	0000005c 	.word	0x0000005c
-  78:	00000040 	.word	0x00000040
-  7c:	0000002c 	.word	0x0000002c
+Function signal @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function pthread_barrier_init @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function pthread_create @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function pthread_join @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

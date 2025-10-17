@@ -1,14 +1,11 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_break-inline-psymtab-2_149daf8e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r2, #0x800
+0x00400004:	ldrbtmi	r2, [fp], #-0
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <foo>:
-   0:	4b02      	ldr	r3, [pc, #8]	; (c <foo+0xc>)
-   2:	2202      	movs	r2, #2
-   4:	2000      	movs	r0, #0
-   6:	447b      	add	r3, pc
-   8:	601a      	str	r2, [r3, #0]
-   a:	4770      	bx	lr
-   c:	00000002 	.word	0x00000002
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r0
+0x0040000f:	movs	r0, r0

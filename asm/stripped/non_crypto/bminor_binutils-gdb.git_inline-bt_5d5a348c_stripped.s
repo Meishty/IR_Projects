@@ -1,22 +1,29 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_inline-bt_5d5a348c_stripped.o:     file format elf32-littlearm
+Function sub_400011 @ 0x00400011
+0x00400011:	push	{r4, lr}
+0x00400013:	movs	r2, #7
+0x00400015:	ldr	r4, [pc, #0x30]
+0x00400017:	movs	r3, #8
+0x00400019:	add	r4, pc
+0x0040001b:	strd	r2, r3, [r4]
+0x0040001f:	bl	#0x40001f
 
+Function sub_40001f @ 0x0040001f
+0x0040001f:	bl	#0x40001f
 
-Disassembly of section .text.startup:
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	ldrd	r3, r2, [r4]
+0x0040002b:	mul	r3, r2, r3
+0x0040002f:	adds	r3, #2
+0x00400031:	str	r3, [r4, #8]
+0x00400033:	bl	#0x400033
 
-00000000 <.text.startup>:
-   0:	2207b510 	andcs	fp, r7, #16, 10	; 0x4000000
-   4:	23084c0c 	movwcs	r4, #35852	; 0x8c0c
-   8:	e9c4447c 	stmib	r4, {r2, r3, r4, r5, r6, sl, lr}^
-   c:	f7ff2300 			; <UNDEFINED> instruction: 0xf7ff2300
-  10:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  14:	e9d4fffe 	ldmib	r4, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}^
-  18:	fb023200 	blx	0x8c822
-  1c:	3302f303 	movwcc	pc, #8963	; 0x2303	; <UNPREDICTABLE>
-  20:	f7ff60a3 			; <UNDEFINED> instruction: 0xf7ff60a3
-  24:	2000fffe 	strdcs	pc, [r0], -lr
-  28:	3200e9d4 	andcc	lr, r0, #212, 18	; 0x350000
-  2c:	f202fb03 	vqdmulh.s<illegal width 8>	d15, d2, d3
-  30:	3303fb02 	movwcc	pc, #15106	; 0x3b02	; <UNPREDICTABLE>
-  34:	bd1060a3 	ldclt	0, cr6, [r0, #-652]	; 0xfffffd74
-  38:	0000002c 	andeq	r0, r0, ip, lsr #32
+Function sub_400033 @ 0x00400033
+0x00400033:	bl	#0x400033
+0x00400037:	movs	r0, #0
+0x00400039:	ldrd	r3, r2, [r4]
+0x0040003d:	mul	r2, r3, r2
+0x00400041:	mla	r3, r2, r3, r3
+0x00400045:	str	r3, [r4, #8]
+0x00400047:	pop	{r4, pc}

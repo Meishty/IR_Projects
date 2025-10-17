@@ -1,68 +1,114 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_scrypt_platform_399f73e0.o:     file format elf32-littlearm
+Function _sodium_escrypt_alloc_region @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	cmn.w	r1, #0x40
+0x00400007:	mov	r4, r0
+0x00400009:	bhi	#0x40002b
+0x0040000b:	add.w	r0, r1, #0x3f
+0x0040000f:	mov	r5, r1
+0x00400011:	bl	#0x500001
+0x00400015:	mov	r3, r0
+0x00400017:	cbz	r0, #0x400043
+0x00400019:	add.w	r2, r0, #0x3f
+0x0040001d:	bic	r2, r2, #0x3f
+0x00400021:	mov	r0, r2
+0x00400023:	strd	r3, r2, [r4]
+0x00400027:	str	r5, [r4, #8]
+0x00400029:	pop	{r3, r4, r5, pc}
+0x00400019:	add.w	r2, r0, #0x3f
+0x0040001d:	bic	r2, r2, #0x3f
+0x00400021:	mov	r0, r2
+0x00400023:	strd	r3, r2, [r4]
+0x00400027:	str	r5, [r4, #8]
+0x00400029:	pop	{r3, r4, r5, pc}
+0x00400021:	mov	r0, r2
+0x00400023:	strd	r3, r2, [r4]
+0x00400027:	str	r5, [r4, #8]
+0x00400029:	pop	{r3, r4, r5, pc}
+0x0040002b:	bl	#0x50000d
+0x0040002f:	movs	r3, #0
+0x00400031:	mov	r2, r3
+0x00400033:	movs	r1, #0xc
+0x00400035:	mov	r5, r3
+0x00400037:	str	r1, [r0]
+0x00400039:	mov	r0, r2
+0x0040003b:	strd	r3, r2, [r4]
+0x0040003f:	str	r5, [r4, #8]
+0x00400041:	pop	{r3, r4, r5, pc}
+0x00400043:	mov	r2, r0
+0x00400045:	mov	r5, r0
+0x00400047:	b	#0x400021
 
+Function _sodium_escrypt_free_region @ 0x00400049
+0x00400049:	push	{r4, lr}
+0x0040004b:	mov	r4, r0
+0x0040004d:	ldr	r0, [r0]
+0x0040004f:	cbz	r0, #0x400055
+0x00400051:	bl	#0x500019
+0x00400051:	bl	#0x500019
+0x00400055:	movs	r0, #0
+0x00400057:	strd	r0, r0, [r4]
+0x0040005b:	str	r0, [r4, #8]
+0x0040005d:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	mov	r3, r0
+0x00400063:	movs	r2, #0
+0x00400065:	mov	r0, r2
+0x00400067:	strd	r2, r2, [r3]
+0x0040006b:	str	r2, [r3, #8]
+0x0040006d:	bx	lr
 
-00000000 <_sodium_escrypt_alloc_region>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	f111 0f40 	cmn.w	r1, #64	; 0x40
-   6:	4604      	mov	r4, r0
-   8:	d80f      	bhi.n	2a <_sodium_escrypt_alloc_region+0x2a>
-   a:	f101 003f 	add.w	r0, r1, #63	; 0x3f
-   e:	460d      	mov	r5, r1
-  10:	f7ff fffe 	bl	0 <malloc>
-  14:	4603      	mov	r3, r0
-  16:	b1a0      	cbz	r0, 42 <_sodium_escrypt_alloc_region+0x42>
-  18:	f100 023f 	add.w	r2, r0, #63	; 0x3f
-  1c:	f022 023f 	bic.w	r2, r2, #63	; 0x3f
-  20:	4610      	mov	r0, r2
-  22:	e9c4 3200 	strd	r3, r2, [r4]
-  26:	60a5      	str	r5, [r4, #8]
-  28:	bd38      	pop	{r3, r4, r5, pc}
-  2a:	f7ff fffe 	bl	0 <__errno_location>
-  2e:	2300      	movs	r3, #0
-  30:	461a      	mov	r2, r3
-  32:	210c      	movs	r1, #12
-  34:	461d      	mov	r5, r3
-  36:	6001      	str	r1, [r0, #0]
-  38:	4610      	mov	r0, r2
-  3a:	e9c4 3200 	strd	r3, r2, [r4]
-  3e:	60a5      	str	r5, [r4, #8]
-  40:	bd38      	pop	{r3, r4, r5, pc}
-  42:	4602      	mov	r2, r0
-  44:	4605      	mov	r5, r0
-  46:	e7eb      	b.n	20 <_sodium_escrypt_alloc_region+0x20>
+Function _sodium_escrypt_init_local @ 0x00400061
+0x00400061:	mov	r3, r0
+0x00400063:	movs	r2, #0
+0x00400065:	mov	r0, r2
+0x00400067:	strd	r2, r2, [r3]
+0x0040006b:	str	r2, [r3, #8]
+0x0040006d:	bx	lr
 
-00000048 <_sodium_escrypt_free_region>:
-  48:	b510      	push	{r4, lr}
-  4a:	4604      	mov	r4, r0
-  4c:	6800      	ldr	r0, [r0, #0]
-  4e:	b108      	cbz	r0, 54 <_sodium_escrypt_free_region+0xc>
-  50:	f7ff fffe 	bl	0 <free>
-  54:	2000      	movs	r0, #0
-  56:	e9c4 0000 	strd	r0, r0, [r4]
-  5a:	60a0      	str	r0, [r4, #8]
-  5c:	bd10      	pop	{r4, pc}
-  5e:	bf00      	nop
+Function sub_40006f @ 0x0040006f
+0x0040006f:	nop	
+0x00400071:	push	{r4, lr}
+0x00400073:	mov	r4, r0
+0x00400075:	ldr	r0, [r0]
+0x00400077:	cbz	r0, #0x40007d
+0x00400079:	bl	#0x500019
 
-00000060 <_sodium_escrypt_init_local>:
-  60:	4603      	mov	r3, r0
-  62:	2200      	movs	r2, #0
-  64:	4610      	mov	r0, r2
-  66:	e9c3 2200 	strd	r2, r2, [r3]
-  6a:	609a      	str	r2, [r3, #8]
-  6c:	4770      	bx	lr
-  6e:	bf00      	nop
+Function _sodium_escrypt_free_local @ 0x00400071
+0x00400071:	push	{r4, lr}
+0x00400073:	mov	r4, r0
+0x00400075:	ldr	r0, [r0]
+0x00400077:	cbz	r0, #0x40007d
+0x00400079:	bl	#0x500019
+0x00400079:	bl	#0x500019
+0x0040007d:	movs	r0, #0
+0x0040007f:	strd	r0, r0, [r4]
+0x00400083:	str	r0, [r4, #8]
+0x00400085:	pop	{r4, pc}
 
-00000070 <_sodium_escrypt_free_local>:
-  70:	b510      	push	{r4, lr}
-  72:	4604      	mov	r4, r0
-  74:	6800      	ldr	r0, [r0, #0]
-  76:	b108      	cbz	r0, 7c <_sodium_escrypt_free_local+0xc>
-  78:	f7ff fffe 	bl	0 <free>
-  7c:	2000      	movs	r0, #0
-  7e:	e9c4 0000 	strd	r0, r0, [r4]
-  82:	60a0      	str	r0, [r4, #8]
-  84:	bd10      	pop	{r4, pc}
-  86:	bf00      	nop
+Function sub_400087 @ 0x00400087
+0x00400087:	nop	
+
+Function malloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __errno_location @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function free @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

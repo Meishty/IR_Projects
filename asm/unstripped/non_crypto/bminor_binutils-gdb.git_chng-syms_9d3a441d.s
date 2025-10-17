@@ -1,28 +1,29 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_chng-syms_9d3a441d.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	subseq	r6, fp, r3, lsl r8
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r1
+0x0040000f:	movs	r0, r0
 
-00000000 <stop_here>:
-   0:	4a02      	ldr	r2, [pc, #8]	; (c <stop_here+0xc>)
-   2:	447a      	add	r2, pc
-   4:	6813      	ldr	r3, [r2, #0]
-   6:	005b      	lsls	r3, r3, #1
-   8:	6013      	str	r3, [r2, #0]
-   a:	4770      	bx	lr
-   c:	00000006 	.word	0x00000006
+Function main @ 0x00400015
+0x00400015:	ldr	r2, [pc, #0x10]
+0x00400017:	movs	r0, #0
+0x00400019:	push	{r3, lr}
+0x0040001b:	add	r2, pc
+0x0040001d:	ldr	r3, [r2]
+0x0040001f:	lsls	r3, r3, #1
+0x00400021:	str	r3, [r2]
+0x00400023:	bl	#0x500001
 
-Disassembly of section .text.startup:
+Function sub_400027 @ 0x00400027
 
-00000000 <main>:
-   0:	4a04      	ldr	r2, [pc, #16]	; (14 <main+0x14>)
-   2:	2000      	movs	r0, #0
-   4:	b508      	push	{r3, lr}
-   6:	447a      	add	r2, pc
-   8:	6813      	ldr	r3, [r2, #0]
-   a:	005b      	lsls	r3, r3, #1
-   c:	6013      	str	r3, [r2, #0]
-   e:	f7ff fffe 	bl	0 <exit>
-  12:	bf00      	nop
-  14:	0000000a 	.word	0x0000000a
+Function exit @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

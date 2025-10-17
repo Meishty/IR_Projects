@@ -1,95 +1,139 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_protected-data-1b_75eb1da0.o:     file format elf32-littlearm
+Function main @ 0x004000e1
+0x004000e1:	push	{r3, r4, r5, lr}
+0x004000e3:	bl	#0x500001
+0x004000e7:	ldr	r3, [pc, #0xb8]
+0x004000e9:	ldr	r2, [pc, #0xb8]
+0x004000eb:	add	r3, pc
+0x004000ed:	ldr	r5, [r3, r2]
+0x004000ef:	cmp	r5, r0
+0x004000f1:	it	eq
+0x004000f3:	moveq	r4, #0
+0x004000f5:	beq	#0x400101
+0x004000f7:	ldr	r0, [pc, #0xb0]
+0x004000f9:	movs	r4, #1
+0x004000fb:	add	r0, pc
+0x004000fd:	bl	#0x50000d
+0x00400101:	mov.w	r0, #-1
+0x00400105:	str	r0, [r5]
+0x00400107:	bl	#0x500019
+0x0040010b:	cmp	r0, #0
+0x0040010d:	bne	#0x400183
+0x0040010f:	mvn	r0, #2
+0x00400113:	bl	#0x500025
+0x00400117:	ldr	r3, [r5]
+0x00400119:	adds	r3, #3
+0x0040011b:	beq	#0x400127
+0x0040011d:	ldr	r0, [pc, #0x8c]
+0x0040011f:	movs	r4, #1
+0x00400121:	add	r0, pc
+0x00400123:	bl	#0x50000d
+0x00400127:	bl	#0x500031
+0x0040012b:	ldr	r3, [pc, #0x84]
+0x0040012d:	add	r3, pc
+0x0040012f:	cmp	r3, r0
+0x00400131:	beq	#0x400193
+0x00400133:	ldr	r5, [pc, #0x80]
+0x00400135:	movs	r0, #2
+0x00400137:	mvn	r3, #9
+0x0040013b:	add	r5, pc
+0x0040013d:	str	r3, [r5]
+0x0040013f:	bl	#0x50003d
+0x00400143:	cbnz	r0, #0x400161
+0x00400145:	mvn	r0, #0x1d
+0x00400149:	bl	#0x500049
+0x00400145:	mvn	r0, #0x1d
+0x00400149:	bl	#0x500049
+0x0040014d:	ldr	r3, [r5]
+0x0040014f:	adds	r3, #0xa
+0x00400151:	bne	#0x400177
+0x00400153:	cbnz	r4, #0x40018f
+0x00400155:	ldr	r0, [pc, #0x60]
+0x00400157:	add	r0, pc
+0x00400159:	bl	#0x50000d
+0x00400155:	ldr	r0, [pc, #0x60]
+0x00400157:	add	r0, pc
+0x00400159:	bl	#0x50000d
+0x0040015d:	mov	r0, r4
+0x0040015f:	pop	{r3, r4, r5, pc}
+0x00400161:	ldr	r0, [pc, #0x58]
+0x00400163:	add	r0, pc
+0x00400165:	bl	#0x50000d
+0x00400169:	mvn	r0, #0x1d
+0x0040016d:	bl	#0x500049
+0x00400171:	ldr	r3, [r5]
+0x00400173:	adds	r3, #0xa
+0x00400175:	beq	#0x40018f
+0x00400177:	ldr	r0, [pc, #0x48]
+0x00400179:	movs	r4, #1
+0x0040017b:	add	r0, pc
+0x0040017d:	bl	#0x50000d
+0x00400181:	b	#0x40015d
+0x00400183:	ldr	r0, [pc, #0x40]
+0x00400185:	movs	r4, #1
+0x00400187:	add	r0, pc
+0x00400189:	bl	#0x50000d
+0x0040018d:	b	#0x40010f
+0x0040018f:	movs	r4, #1
+0x00400191:	b	#0x40015d
+0x00400193:	ldr	r0, [pc, #0x34]
+0x00400195:	movs	r4, #1
+0x00400197:	add	r0, pc
+0x00400199:	bl	#0x50000d
+0x0040019d:	b	#0x400133
 
+Function sub_40019f @ 0x0040019f
 
-Disassembly of section .text.startup:
+Function protected_data_1a_p @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	f7ff fffe 	bl	0 <protected_data_1a_p>
-   6:	4b2e      	ldr	r3, [pc, #184]	; (c0 <main+0xc0>)
-   8:	4a2e      	ldr	r2, [pc, #184]	; (c4 <main+0xc4>)
-   a:	447b      	add	r3, pc
-   c:	589d      	ldr	r5, [r3, r2]
-   e:	4285      	cmp	r5, r0
-  10:	bf08      	it	eq
-  12:	2400      	moveq	r4, #0
-  14:	d004      	beq.n	20 <main+0x20>
-  16:	482c      	ldr	r0, [pc, #176]	; (c8 <main+0xc8>)
-  18:	2401      	movs	r4, #1
-  1a:	4478      	add	r0, pc
-  1c:	f7ff fffe 	bl	0 <puts>
-  20:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  24:	6028      	str	r0, [r5, #0]
-  26:	f7ff fffe 	bl	0 <check_protected_data_1a>
-  2a:	2800      	cmp	r0, #0
-  2c:	d139      	bne.n	a2 <main+0xa2>
-  2e:	f06f 0002 	mvn.w	r0, #2
-  32:	f7ff fffe 	bl	0 <set_protected_data_1a>
-  36:	682b      	ldr	r3, [r5, #0]
-  38:	3303      	adds	r3, #3
-  3a:	d004      	beq.n	46 <main+0x46>
-  3c:	4823      	ldr	r0, [pc, #140]	; (cc <main+0xcc>)
-  3e:	2401      	movs	r4, #1
-  40:	4478      	add	r0, pc
-  42:	f7ff fffe 	bl	0 <puts>
-  46:	f7ff fffe 	bl	0 <protected_data_1b_p>
-  4a:	4b21      	ldr	r3, [pc, #132]	; (d0 <main+0xd0>)
-  4c:	447b      	add	r3, pc
-  4e:	4283      	cmp	r3, r0
-  50:	d02f      	beq.n	b2 <main+0xb2>
-  52:	4d20      	ldr	r5, [pc, #128]	; (d4 <main+0xd4>)
-  54:	2002      	movs	r0, #2
-  56:	f06f 0309 	mvn.w	r3, #9
-  5a:	447d      	add	r5, pc
-  5c:	602b      	str	r3, [r5, #0]
-  5e:	f7ff fffe 	bl	0 <check_protected_data_1b>
-  62:	b968      	cbnz	r0, 80 <main+0x80>
-  64:	f06f 001d 	mvn.w	r0, #29
-  68:	f7ff fffe 	bl	0 <set_protected_data_1b>
-  6c:	682b      	ldr	r3, [r5, #0]
-  6e:	330a      	adds	r3, #10
-  70:	d111      	bne.n	96 <main+0x96>
-  72:	b9e4      	cbnz	r4, ae <main+0xae>
-  74:	4818      	ldr	r0, [pc, #96]	; (d8 <main+0xd8>)
-  76:	4478      	add	r0, pc
-  78:	f7ff fffe 	bl	0 <puts>
-  7c:	4620      	mov	r0, r4
-  7e:	bd38      	pop	{r3, r4, r5, pc}
-  80:	4816      	ldr	r0, [pc, #88]	; (dc <main+0xdc>)
-  82:	4478      	add	r0, pc
-  84:	f7ff fffe 	bl	0 <puts>
-  88:	f06f 001d 	mvn.w	r0, #29
-  8c:	f7ff fffe 	bl	0 <set_protected_data_1b>
-  90:	682b      	ldr	r3, [r5, #0]
-  92:	330a      	adds	r3, #10
-  94:	d00b      	beq.n	ae <main+0xae>
-  96:	4812      	ldr	r0, [pc, #72]	; (e0 <main+0xe0>)
-  98:	2401      	movs	r4, #1
-  9a:	4478      	add	r0, pc
-  9c:	f7ff fffe 	bl	0 <puts>
-  a0:	e7ec      	b.n	7c <main+0x7c>
-  a2:	4810      	ldr	r0, [pc, #64]	; (e4 <main+0xe4>)
-  a4:	2401      	movs	r4, #1
-  a6:	4478      	add	r0, pc
-  a8:	f7ff fffe 	bl	0 <puts>
-  ac:	e7bf      	b.n	2e <main+0x2e>
-  ae:	2401      	movs	r4, #1
-  b0:	e7e4      	b.n	7c <main+0x7c>
-  b2:	480d      	ldr	r0, [pc, #52]	; (e8 <main+0xe8>)
-  b4:	2401      	movs	r4, #1
-  b6:	4478      	add	r0, pc
-  b8:	f7ff fffe 	bl	0 <puts>
-  bc:	e7c9      	b.n	52 <main+0x52>
-  be:	bf00      	nop
-  c0:	000000b2 	.word	0x000000b2
-  c4:	00000000 	.word	0x00000000
-  c8:	000000aa 	.word	0x000000aa
-  cc:	00000088 	.word	0x00000088
-  d0:	00000080 	.word	0x00000080
-  d4:	00000076 	.word	0x00000076
-  d8:	0000005e 	.word	0x0000005e
-  dc:	00000056 	.word	0x00000056
-  e0:	00000042 	.word	0x00000042
-  e4:	0000003a 	.word	0x0000003a
-  e8:	0000002e 	.word	0x0000002e
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function check_protected_data_1a @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function set_protected_data_1a @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function protected_data_1b_p @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function check_protected_data_1b @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function set_protected_data_1b @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0

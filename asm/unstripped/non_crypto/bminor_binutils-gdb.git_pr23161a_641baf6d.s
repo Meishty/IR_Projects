@@ -1,28 +1,41 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr23161a_641baf6d.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdami	sl, {r0, r3, r8, sb, fp, lr}
+0x00400004:	ldrbtmi	r4, [fp], #-0x90a
+0x00400008:	ldrlt	r4, [r0], #-0xa0a
+0x0040000c:	ldmdapl	r8, {r2, r3, r4, fp, ip, lr} ^
+0x00400010:	stmdavs	r3!, {r0, r3, r4, r7, fp, ip, lr}
+0x00400014:	stmdavs	sb, {r1, fp, sp, lr}
+0x00400018:	ldmdavc	r2, {r0, r1, r3, r4, fp, ip, sp, lr}
+0x0040001c:	ldrmi	r7, [r3], #-0x808
+0x00400020:	blmi	#0x53e19c
+0x00400004:	ldrbtmi	r4, [fp], #-0x90a
+0x00400008:	ldrlt	r4, [r0], #-0xa0a
+0x0040000c:	ldmdapl	r8, {r2, r3, r4, fp, ip, lr} ^
+0x00400010:	stmdavs	r3!, {r0, r3, r4, r7, fp, ip, lr}
+0x00400014:	stmdavs	sb, {r1, fp, sp, lr}
+0x00400018:	ldmdavc	r2, {r0, r1, r3, r4, fp, ip, sp, lr}
+0x0040001c:	ldrmi	r7, [r3], #-0x808
+0x00400020:	blmi	#0x53e19c
+0x00400014:	stmdavs	sb, {r1, fp, sp, lr}
+0x00400018:	ldmdavc	r2, {r0, r1, r3, r4, fp, ip, sp, lr}
+0x0040001c:	ldrmi	r7, [r3], #-0x808
+0x00400020:	blmi	#0x53e19c
+0x00400018:	ldmdavc	r2, {r0, r1, r3, r4, fp, ip, sp, lr}
+0x0040001c:	ldrmi	r7, [r3], #-0x808
+0x00400020:	blmi	#0x53e19c
+0x0040001c:	ldrmi	r7, [r3], #-0x808
+0x00400020:	blmi	#0x53e19c
 
+Function sub_400027 @ 0x00400027
+0x00400027:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <foo>:
-   0:	4b09      	ldr	r3, [pc, #36]	; (28 <foo+0x28>)
-   2:	480a      	ldr	r0, [pc, #40]	; (2c <foo+0x2c>)
-   4:	490a      	ldr	r1, [pc, #40]	; (30 <foo+0x30>)
-   6:	447b      	add	r3, pc
-   8:	4a0a      	ldr	r2, [pc, #40]	; (34 <foo+0x34>)
-   a:	b410      	push	{r4}
-   c:	581c      	ldr	r4, [r3, r0]
-   e:	5858      	ldr	r0, [r3, r1]
-  10:	5899      	ldr	r1, [r3, r2]
-  12:	6823      	ldr	r3, [r4, #0]
-  14:	6802      	ldr	r2, [r0, #0]
-  16:	6809      	ldr	r1, [r1, #0]
-  18:	781b      	ldrb	r3, [r3, #0]
-  1a:	7812      	ldrb	r2, [r2, #0]
-  1c:	7808      	ldrb	r0, [r1, #0]
-  1e:	4413      	add	r3, r2
-  20:	f85d 4b04 	ldr.w	r4, [sp], #4
-  24:	4418      	add	r0, r3
-  26:	4770      	bx	lr
-  28:	0000001e 	.word	0x0000001e
-	...
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r6, r3
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r0, r0
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r0
+0x00400037:	movs	r0, r0

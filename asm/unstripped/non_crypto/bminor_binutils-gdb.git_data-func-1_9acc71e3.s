@@ -1,69 +1,64 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_data-func-1_9acc71e3.o:     file format elf32-littlearm
+Function func_1 @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function func_2 @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function func_3 @ 0x00400009
+0x00400009:	movs	r0, #0
+0x0040000b:	bx	lr
 
-00000000 <func_1>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function func_4 @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-00000004 <func_2>:
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
+Function func_5 @ 0x00400011
+0x00400011:	movs	r0, #0
+0x00400013:	bx	lr
 
-00000008 <func_3>:
-   8:	2000      	movs	r0, #0
-   a:	4770      	bx	lr
+Function func_6 @ 0x00400015
+0x00400015:	movs	r0, #0
+0x00400017:	bx	lr
 
-0000000c <func_4>:
-   c:	2000      	movs	r0, #0
-   e:	4770      	bx	lr
+Function func_7 @ 0x00400019
+0x00400019:	movs	r0, #0
+0x0040001b:	bx	lr
 
-00000010 <func_5>:
-  10:	2000      	movs	r0, #0
-  12:	4770      	bx	lr
+Function func_8 @ 0x0040001d
+0x0040001d:	movs	r0, #0
+0x0040001f:	bx	lr
 
-00000014 <func_6>:
-  14:	2000      	movs	r0, #0
-  16:	4770      	bx	lr
+Function func_9 @ 0x00400021
+0x00400021:	movs	r0, #0
+0x00400023:	bx	lr
 
-00000018 <func_7>:
-  18:	2000      	movs	r0, #0
-  1a:	4770      	bx	lr
+Function func_10 @ 0x00400025
+0x00400025:	movs	r0, #0
+0x00400027:	bx	lr
 
-0000001c <func_8>:
-  1c:	2000      	movs	r0, #0
-  1e:	4770      	bx	lr
+Function func_11 @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr
 
-00000020 <func_9>:
-  20:	2000      	movs	r0, #0
-  22:	4770      	bx	lr
+Function func_12 @ 0x0040002d
+0x0040002d:	movs	r0, #0
+0x0040002f:	bx	lr
 
-00000024 <func_10>:
-  24:	2000      	movs	r0, #0
-  26:	4770      	bx	lr
+Function func_13 @ 0x00400031
+0x00400031:	movs	r0, #0
+0x00400033:	bx	lr
 
-00000028 <func_11>:
-  28:	2000      	movs	r0, #0
-  2a:	4770      	bx	lr
+Function func_14 @ 0x00400035
+0x00400035:	movs	r0, #0
+0x00400037:	bx	lr
 
-0000002c <func_12>:
-  2c:	2000      	movs	r0, #0
-  2e:	4770      	bx	lr
+Function func_15 @ 0x00400039
+0x00400039:	movs	r0, #0
+0x0040003b:	bx	lr
 
-00000030 <func_13>:
-  30:	2000      	movs	r0, #0
-  32:	4770      	bx	lr
-
-00000034 <func_14>:
-  34:	2000      	movs	r0, #0
-  36:	4770      	bx	lr
-
-00000038 <func_15>:
-  38:	2000      	movs	r0, #0
-  3a:	4770      	bx	lr
-
-0000003c <func_16>:
-  3c:	2000      	movs	r0, #0
-  3e:	4770      	bx	lr
+Function func_16 @ 0x0040003d
+0x0040003d:	movs	r0, #0
+0x0040003f:	bx	lr

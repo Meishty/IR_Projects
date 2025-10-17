@@ -1,15 +1,19 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_signed-builtin-types-lib_ca353dac_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	ldrsh.w	r2, [r4, #0xc]
+0x00400013:	ldr	r3, [r4, #8]
+0x00400015:	subs	r3, r3, r2
+0x00400017:	subs	r0, r0, r3
+0x00400019:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r4, r2
+0x0040001f:	movs	r0, r0
 
-00000000 <.text>:
-   0:	4c06b510 	cfstr32mi	mvfx11, [r6], {16}
-   4:	6861447c 	stmdavs	r1!, {r2, r3, r4, r5, r6, sl, lr}^
-   8:	f7ff7820 			; <UNDEFINED> instruction: 0xf7ff7820
-   c:	f9b4fffe 			; <UNDEFINED> instruction: 0xf9b4fffe
-  10:	68a3200c 	stmiavs	r3!, {r2, r3, sp}
-  14:	1ac01a9b 	bne	0xff006a88
-  18:	bf00bd10 	svclt	0x0000bd10
-  1c:	00000014 	andeq	r0, r0, r4, lsl r0
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r4, r2
+0x0040001f:	movs	r0, r0

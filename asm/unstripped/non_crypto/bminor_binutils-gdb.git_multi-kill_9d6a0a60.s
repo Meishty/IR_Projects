@@ -1,13 +1,24 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_multi-kill_9d6a0a60.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	movs	r0, #0xa
+0x00400009:	bl	#0x50000d
+0x0040000d:	b	#0x40000d
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-Disassembly of section .text.startup:
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <getpid>
-   6:	200a      	movs	r0, #10
-   8:	f7ff fffe 	bl	0 <alarm>
-   c:	e7fe      	b.n	c <main+0xc>
-   e:	bf00      	nop
+Function alarm @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

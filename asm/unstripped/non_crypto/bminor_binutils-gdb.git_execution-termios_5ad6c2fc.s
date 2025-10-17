@@ -1,34 +1,56 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_execution-termios_5ad6c2fc.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrlt	r4, [r0, #-0x808]
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	vtbl.8	d20, {d10, d11, d12}, d7
+0x0040000f:	add	r4, pc
+0x00400011:	mov	r3, r4
+0x00400013:	ldr	r3, [r4, r2]
+0x00400015:	ldr	r0, [r3]
+0x00400017:	bl	#0x50000d
+0x0040001b:	bl	#0x500019
+0x0040001f:	movs	r0, #1
+0x00400021:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	movs	r0, r5
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r6, r2
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
 
-00000000 <func>:
-   0:	4808      	ldr	r0, [pc, #32]	; (24 <func+0x24>)
-   2:	b510      	push	{r4, lr}
-   4:	4478      	add	r0, pc
-   6:	4c08      	ldr	r4, [pc, #32]	; (28 <func+0x28>)
-   8:	f7ff fffe 	bl	0 <puts>
-   c:	4a07      	ldr	r2, [pc, #28]	; (2c <func+0x2c>)
-   e:	447c      	add	r4, pc
-  10:	4623      	mov	r3, r4
-  12:	58a3      	ldr	r3, [r4, r2]
-  14:	6818      	ldr	r0, [r3, #0]
-  16:	f7ff fffe 	bl	0 <fileno>
-  1a:	f7ff fffe 	bl	0 <tcdrain>
-  1e:	2001      	movs	r0, #1
-  20:	bd10      	pop	{r4, pc}
-  22:	bf00      	nop
-  24:	0000001c 	.word	0x0000001c
-  28:	00000016 	.word	0x00000016
-  2c:	00000000 	.word	0x00000000
+Function sub_400025 @ 0x00400025
+0x00400025:	movs	r0, r5
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r6, r2
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x00400041
+0x00400041:	push	{r3, lr}
+0x00400043:	bl	#0x400001
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <main>
-   6:	2000      	movs	r0, #0
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function sub_400047 @ 0x00400047
+0x00400047:	movs	r0, #0
+0x00400049:	pop	{r3, pc}
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
+
+Function fileno @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function tcdrain @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

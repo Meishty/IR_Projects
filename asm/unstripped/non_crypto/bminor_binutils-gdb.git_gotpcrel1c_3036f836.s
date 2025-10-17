@@ -1,10 +1,13 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_gotpcrel1c_3036f836.o:     file format elf32-littlearm
+Function myexit @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
 
-Disassembly of section .text:
-
-00000000 <myexit>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <exit>
-   6:	bf00      	nop
+Function exit @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

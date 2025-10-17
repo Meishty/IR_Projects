@@ -1,33 +1,65 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_pngrio_1b4e0e04_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	mov	r5, r2
+0x00400007:	mov	r0, r1
+0x00400009:	movs	r1, #1
+0x0040000b:	ldr.w	r3, [r4, #0x19c]
+0x0040000f:	bl	#0x40000f
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	cmp	r5, r0
+0x00400015:	bne	#0x400019
+0x00400017:	pop	{r3, r4, r5, pc}
+0x00400019:	ldr	r1, [pc, #0xc]
+0x0040001b:	mov	r0, r4
+0x0040001d:	pop.w	{r3, r4, r5, lr}
+0x00400021:	add	r1, pc
+0x00400023:	b.w	#0x400023
+0x00400023:	b.w	#0x400023
 
-Disassembly of section .text:
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r4, r0
+0x0040002b:	movs	r0, r0
+0x0040002d:	ldr.w	r3, [r0, #0x198]
+0x00400031:	cbz	r3, #0x400035
+0x00400033:	bx	r3
 
-00000000 <.text>:
-   0:	4604b538 			; <UNDEFINED> instruction: 0x4604b538
-   4:	46084615 			; <UNDEFINED> instruction: 0x46084615
-   8:	f8d42101 			; <UNDEFINED> instruction: 0xf8d42101
-   c:	f7ff319c 			; <UNDEFINED> instruction: 0xf7ff319c
-  10:	4285fffe 	addmi	pc, r5, #1016	; 0x3f8
-  14:	bd38d100 	ldfltd	f5, [r8, #-0]
-  18:	46204903 	strtmi	r4, [r0], -r3, lsl #18
-  1c:	4038e8bd 	ldrhtmi	lr, [r8], -sp
-  20:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  24:	bf00bffe 	svclt	0x0000bffe
-  28:	00000004 	andeq	r0, r0, r4
-  2c:	3198f8d0 			; <UNDEFINED> instruction: 0x3198f8d0
-  30:	4718b103 	ldrmi	fp, [r8, -r3, lsl #2]
-  34:	44794901 	ldrbtmi	r4, [r9], #-2305	; 0xfffff6ff
-  38:	bffef7ff 	svclt	0x00fef7ff
-  3c:	00000002 	andeq	r0, r0, r2
-  40:	119cf8c0 	orrsne	pc, ip, r0, asr #17
-  44:	2300b12a 	movwcs	fp, #298	; 0x12a
-  48:	3265e9c0 	rsbcc	lr, r5, #192, 18	; 0x300000
-  4c:	324cf8c0 	subcc	pc, ip, #192, 16	; 0xc00000
-  50:	4a044770 	bmi	0x111e18
-  54:	f8c02300 			; <UNDEFINED> instruction: 0xf8c02300
-  58:	447a324c 	ldrbtmi	r3, [sl], #-588	; 0xfffffdb4
-  5c:	3265e9c0 	rsbcc	lr, r5, #192, 18	; 0x300000
-  60:	bf004770 	svclt	0x00004770
-  64:	00000006 	andeq	r0, r0, r6
+Function sub_40002d @ 0x0040002d
+0x0040002d:	ldr.w	r3, [r0, #0x198]
+0x00400031:	cbz	r3, #0x400035
+0x00400033:	bx	r3
+0x00400033:	bx	r3
+0x00400035:	ldr	r1, [pc, #4]
+0x00400037:	add	r1, pc
+0x00400039:	b.w	#0x400039
+0x00400039:	b.w	#0x400039
+
+Function sub_400041 @ 0x00400041
+0x00400041:	str.w	r1, [r0, #0x19c]
+0x00400045:	cbz	r2, #0x400053
+0x00400047:	movs	r3, #0
+0x00400049:	strd	r3, r2, [r0, #0x194]
+0x0040004d:	str.w	r3, [r0, #0x24c]
+0x00400051:	bx	lr
+0x00400047:	movs	r3, #0
+0x00400049:	strd	r3, r2, [r0, #0x194]
+0x0040004d:	str.w	r3, [r0, #0x24c]
+0x00400051:	bx	lr
+0x00400053:	ldr	r2, [pc, #0x10]
+0x00400055:	movs	r3, #0
+0x00400057:	str.w	r3, [r0, #0x24c]
+0x0040005b:	add	r2, pc
+0x0040005d:	strd	r3, r2, [r0, #0x194]
+0x00400061:	bx	lr
+
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	movs	r6, r0
+0x00400067:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

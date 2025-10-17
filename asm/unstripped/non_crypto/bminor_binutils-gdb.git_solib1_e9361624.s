@@ -1,10 +1,7 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_solib1_e9361624.o:     file format elf32-littlearm
+Function solib_main @ 0x00400001
+0x00400001:	mul	r0, r0, r0
+0x00400005:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <solib_main>:
-   0:	fb00 f000 	mul.w	r0, r0, r0
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	

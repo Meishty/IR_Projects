@@ -1,84 +1,104 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_machinestate_0eb9a712.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r0, r8, lsl #10
 
+Function sub_400009 @ 0x00400009
+0x00400009:	pop.w	{r3, lr}
+0x0040000d:	movs	r0, #1
+0x0040000f:	b.w	#0x500001
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	push	{r3, lr}
+0x00400017:	movs	r0, #0
+0x00400019:	bl	#0x500001
 
-00000000 <register_state>:
-   0:	b508      	push	{r3, lr}
-   2:	2000      	movs	r0, #0
-   4:	f7ff fffe 	bl	0 <hide>
-   8:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-   c:	2001      	movs	r0, #1
-   e:	f7ff bffe 	b.w	0 <hide>
-  12:	bf00      	nop
+Function auto_state @ 0x00400015
+0x00400015:	push	{r3, lr}
+0x00400017:	movs	r0, #0
+0x00400019:	bl	#0x500001
+0x0040001d:	pop.w	{r3, lr}
+0x00400021:	movs	r0, #1
+0x00400023:	b.w	#0x500001
 
-00000014 <auto_state>:
-  14:	b508      	push	{r3, lr}
-  16:	2000      	movs	r0, #0
-  18:	f7ff fffe 	bl	0 <hide>
-  1c:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  20:	2001      	movs	r0, #1
-  22:	f7ff bffe 	b.w	0 <hide>
-  26:	bf00      	nop
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	push	{r4, lr}
+0x0040002b:	ldr	r4, [pc, #0x18]
+0x0040002d:	add	r4, pc
+0x0040002f:	ldr	r0, [r4]
+0x00400031:	bl	#0x500001
 
-00000028 <function_static_state>:
-  28:	b510      	push	{r4, lr}
-  2a:	4c06      	ldr	r4, [pc, #24]	; (44 <function_static_state+0x1c>)
-  2c:	447c      	add	r4, pc
-  2e:	6820      	ldr	r0, [r4, #0]
-  30:	f7ff fffe 	bl	0 <hide>
-  34:	6820      	ldr	r0, [r4, #0]
-  36:	3001      	adds	r0, #1
-  38:	6020      	str	r0, [r4, #0]
-  3a:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  3e:	f7ff bffe 	b.w	0 <hide>
-  42:	bf00      	nop
-  44:	00000014 	.word	0x00000014
+Function function_static_state @ 0x00400029
+0x00400029:	push	{r4, lr}
+0x0040002b:	ldr	r4, [pc, #0x18]
+0x0040002d:	add	r4, pc
+0x0040002f:	ldr	r0, [r4]
+0x00400031:	bl	#0x500001
+0x00400035:	ldr	r0, [r4]
+0x00400037:	adds	r0, #1
+0x00400039:	str	r0, [r4]
+0x0040003b:	pop.w	{r4, lr}
+0x0040003f:	b.w	#0x500001
 
-00000048 <module_static_state>:
-  48:	b510      	push	{r4, lr}
-  4a:	2000      	movs	r0, #0
-  4c:	4c05      	ldr	r4, [pc, #20]	; (64 <module_static_state+0x1c>)
-  4e:	447c      	add	r4, pc
-  50:	6060      	str	r0, [r4, #4]
-  52:	f7ff fffe 	bl	0 <hide>
-  56:	6860      	ldr	r0, [r4, #4]
-  58:	3001      	adds	r0, #1
-  5a:	6060      	str	r0, [r4, #4]
-  5c:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  60:	f7ff bffe 	b.w	0 <hide>
-  64:	00000012 	.word	0x00000012
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	lsls	r0, r3, #1
+0x00400047:	movs	r0, r0
+0x00400049:	push	{r4, lr}
+0x0040004b:	movs	r0, #0
+0x0040004d:	ldr	r4, [pc, #0x14]
+0x0040004f:	add	r4, pc
+0x00400051:	str	r0, [r4, #4]
+0x00400053:	bl	#0x500001
 
-00000068 <module_global_state>:
-  68:	b510      	push	{r4, lr}
-  6a:	2000      	movs	r0, #0
-  6c:	4c05      	ldr	r4, [pc, #20]	; (84 <module_global_state+0x1c>)
-  6e:	447c      	add	r4, pc
-  70:	60a0      	str	r0, [r4, #8]
-  72:	f7ff fffe 	bl	0 <hide>
-  76:	68a0      	ldr	r0, [r4, #8]
-  78:	3001      	adds	r0, #1
-  7a:	60a0      	str	r0, [r4, #8]
-  7c:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  80:	f7ff bffe 	b.w	0 <hide>
-  84:	00000012 	.word	0x00000012
+Function module_static_state @ 0x00400049
+0x00400049:	push	{r4, lr}
+0x0040004b:	movs	r0, #0
+0x0040004d:	ldr	r4, [pc, #0x14]
+0x0040004f:	add	r4, pc
+0x00400051:	str	r0, [r4, #4]
+0x00400053:	bl	#0x500001
+0x00400057:	ldr	r0, [r4, #4]
+0x00400059:	adds	r0, #1
+0x0040005b:	str	r0, [r4, #4]
+0x0040005d:	pop.w	{r4, lr}
+0x00400061:	b.w	#0x500001
 
-Disassembly of section .text.startup:
+Function module_global_state @ 0x00400069
+0x00400069:	push	{r4, lr}
+0x0040006b:	movs	r0, #0
+0x0040006d:	ldr	r4, [pc, #0x14]
+0x0040006f:	add	r4, pc
+0x00400071:	str	r0, [r4, #8]
+0x00400073:	bl	#0x500001
+0x00400077:	ldr	r0, [r4, #8]
+0x00400079:	adds	r0, #1
+0x0040007b:	str	r0, [r4, #8]
+0x0040007d:	pop.w	{r4, lr}
+0x00400081:	b.w	#0x500001
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2000      	movs	r0, #0
-   4:	f7ff fffe 	bl	0 <hide>
-   8:	2001      	movs	r0, #1
-   a:	f7ff fffe 	bl	0 <hide>
-   e:	2000      	movs	r0, #0
-  10:	f7ff fffe 	bl	0 <hide>
-  14:	2001      	movs	r0, #1
-  16:	f7ff fffe 	bl	0 <hide>
-  1a:	f7ff fffe 	bl	28 <main+0x28>
-  1e:	f7ff fffe 	bl	48 <module_static_state>
-  22:	f7ff fffe 	bl	68 <module_global_state>
-  26:	2000      	movs	r0, #0
-  28:	bd08      	pop	{r3, pc}
-  2a:	bf00      	nop
+Function main @ 0x00400095
+0x00400095:	push	{r3, lr}
+0x00400097:	movs	r0, #0
+0x00400099:	bl	#0x500001
+0x0040009d:	movs	r0, #1
+0x0040009f:	bl	#0x500001
+0x004000a3:	movs	r0, #0
+0x004000a5:	bl	#0x500001
+0x004000a9:	movs	r0, #1
+0x004000ab:	bl	#0x500001
+0x004000af:	bl	#0x400029
+0x004000b3:	bl	#0x400049
+0x004000b7:	bl	#0x400069
+0x004000bb:	movs	r0, #0
+0x004000bd:	pop	{r3, pc}
+
+Function sub_4000bf @ 0x004000bf
+0x004000bf:	nop	
+
+Function hide @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

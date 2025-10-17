@@ -1,15 +1,17 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pendshr_ed98c03b_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov	r2, r0
+0x00400005:	movs	r0, #1
+0x00400007:	add	r1, pc
+0x00400009:	b.w	#0x400009
+0x00400009:	b.w	#0x400009
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	46024902 	strmi	r4, [r2], -r2, lsl #18
-   4:	44792001 	ldrbtmi	r2, [r9], #-1
-   8:	bffef7ff 	svclt	0x00fef7ff
-   c:	00000002 	andeq	r0, r0, r2
-  10:	46024902 	strmi	r4, [r2], -r2, lsl #18
-  14:	44792001 	ldrbtmi	r2, [r9], #-1
-  18:	bffef7ff 	svclt	0x00fef7ff
-  1c:	00000002 	andeq	r0, r0, r2
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r0
+0x0040000f:	movs	r0, r0
+0x00400011:	ldr	r1, [pc, #8]
+0x00400013:	mov	r2, r0
+0x00400015:	movs	r0, #1
+0x00400017:	add	r1, pc
+0x00400019:	b.w	#0x400019
+0x00400019:	b.w	#0x400019

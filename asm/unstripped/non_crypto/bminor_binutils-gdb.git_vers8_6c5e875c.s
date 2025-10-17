@@ -1,15 +1,16 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_vers8_6c5e875c.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r1, r0, lsl r5
 
+Function sub_400009 @ 0x00400009
+0x00400009:	mov	r4, r0
+0x0040000b:	movs	r0, #1
+0x0040000d:	bl	#0x50000d
+0x00400011:	add	r0, r4
+0x00400013:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2001      	movs	r0, #1
-   4:	f7ff fffe 	bl	0 <a>
-   8:	4604      	mov	r4, r0
-   a:	2001      	movs	r0, #1
-   c:	f7ff fffe 	bl	0 <b>
-  10:	4420      	add	r0, r4
-  12:	bd10      	pop	{r4, pc}
+Function b @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

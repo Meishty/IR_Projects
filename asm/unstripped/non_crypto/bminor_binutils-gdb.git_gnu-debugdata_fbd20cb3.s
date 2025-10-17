@@ -1,12 +1,6 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_gnu-debugdata_fbd20cb3.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, fp, r8, lsl #10
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	200b      	movs	r0, #11
-   4:	f7ff fffe 	bl	0 <raise>
-   8:	3002      	adds	r0, #2
-   a:	bd08      	pop	{r3, pc}
+Function sub_400008 @ 0x00400008
+0x00400008:	stclt	p0, c3, [r8, #-8]

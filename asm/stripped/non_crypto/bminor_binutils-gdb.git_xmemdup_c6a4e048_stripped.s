@@ -1,22 +1,39 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_xmemdup_c6a4e048_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov	r5, r2
+0x00400005:	mov	r4, r1
+0x00400007:	mov	r7, r0
+0x00400009:	mov	r0, r2
+0x0040000b:	bl	#0x40000b
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	cmp	r5, r4
+0x00400011:	mov	r6, r0
+0x00400013:	bhi	#0x400023
+0x00400015:	mov	r2, r4
+0x00400017:	mov	r1, r7
+0x00400019:	mov	r0, r6
+0x0040001b:	pop.w	{r3, r4, r5, r6, r7, lr}
+0x0040001f:	b.w	#0x40001f
+0x0040001f:	b.w	#0x40001f
+0x00400023:	subs	r2, r5, r4
+0x00400025:	movs	r1, #0
+0x00400027:	add	r0, r4
+0x00400029:	bl	#0x400029
 
-00000000 <.text>:
-   0:	4615b5f8 			; <UNDEFINED> instruction: 0x4615b5f8
-   4:	4607460c 	strmi	r4, [r7], -ip, lsl #12
-   8:	f7ff4610 			; <UNDEFINED> instruction: 0xf7ff4610
-   c:	42a5fffe 	adcmi	pc, r5, #1016	; 0x3f8
-  10:	d8064606 	stmdale	r6, {r1, r2, r9, sl, lr}
-  14:	46394622 	ldrtmi	r4, [r9], -r2, lsr #12
-  18:	e8bd4630 	pop	{r4, r5, r9, sl, lr}
-  1c:	f7ff40f8 			; <UNDEFINED> instruction: 0xf7ff40f8
-  20:	1b2abffe 	blne	0xab0020
-  24:	44202100 	strtmi	r2, [r0], #-256	; 0xffffff00
-  28:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  2c:	46394622 	ldrtmi	r4, [r9], -r2, lsr #12
-  30:	e8bd4630 	pop	{r4, r5, r9, sl, lr}
-  34:	f7ff40f8 			; <UNDEFINED> instruction: 0xf7ff40f8
-  38:	bf00bffe 	svclt	0x0000bffe
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	mov	r2, r4
+0x0040002f:	mov	r1, r7
+0x00400031:	mov	r0, r6
+0x00400033:	pop.w	{r3, r4, r5, r6, r7, lr}
+0x00400037:	b.w	#0x400037
+0x00400037:	b.w	#0x400037
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	

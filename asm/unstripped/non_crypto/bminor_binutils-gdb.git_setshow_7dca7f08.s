@@ -1,31 +1,37 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_setshow_7dca7f08.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r3, r4, r5, r6, r7, lr}
+0x00400007:	subs	r3, r0, #1
+0x00400009:	cmp	r3, #7
+0x0040000b:	bhi	#0x400031
+0x0040000d:	mov	r6, r0
+0x0040000f:	cmp	r0, #1
+0x00400011:	beq	#0x40002d
+0x00400013:	ldr	r7, [pc, #0x24]
+0x00400015:	mov	r5, r1
+0x00400017:	movs	r4, #1
+0x00400019:	add	r7, pc
+0x0040001b:	ldr	r2, [r5, #4]!
+0x0040001f:	adds	r4, #1
+0x00400021:	mov	r1, r7
+0x00400023:	movs	r0, #1
+0x00400025:	bl	#0x500001
+0x0040001b:	ldr	r2, [r5, #4]!
+0x0040001f:	adds	r4, #1
+0x00400021:	mov	r1, r7
+0x00400023:	movs	r0, #1
+0x00400025:	bl	#0x500001
+0x00400029:	cmp	r6, r4
+0x0040002b:	bne	#0x40001b
+0x0040002d:	movs	r0, #0
+0x0040002f:	pop	{r3, r4, r5, r6, r7, pc}
+0x00400031:	mov.w	r0, #-1
+0x00400035:	pop	{r3, r4, r5, r6, r7, pc}
 
+Function sub_400037 @ 0x00400037
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-   2:	1e43      	subs	r3, r0, #1
-   4:	2b07      	cmp	r3, #7
-   6:	d811      	bhi.n	2c <main+0x2c>
-   8:	4606      	mov	r6, r0
-   a:	2801      	cmp	r0, #1
-   c:	d00c      	beq.n	28 <main+0x28>
-   e:	4f09      	ldr	r7, [pc, #36]	; (34 <main+0x34>)
-  10:	460d      	mov	r5, r1
-  12:	2401      	movs	r4, #1
-  14:	447f      	add	r7, pc
-  16:	f855 2f04 	ldr.w	r2, [r5, #4]!
-  1a:	3401      	adds	r4, #1
-  1c:	4639      	mov	r1, r7
-  1e:	2001      	movs	r0, #1
-  20:	f7ff fffe 	bl	0 <__printf_chk>
-  24:	42a6      	cmp	r6, r4
-  26:	d1f6      	bne.n	16 <main+0x16>
-  28:	2000      	movs	r0, #0
-  2a:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  2c:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  30:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  32:	bf00      	nop
-  34:	0000001c 	.word	0x0000001c
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

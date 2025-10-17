@@ -1,12 +1,13 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ifuncvar2_ad972ced.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	r3
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r6, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <bar>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <bar+0x8>)
-   2:	447b      	add	r3, pc
-   4:	681b      	ldr	r3, [r3, #0]
-   6:	4718      	bx	r3
-   8:	00000002 	.word	0x00000002
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

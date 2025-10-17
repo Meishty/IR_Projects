@@ -1,28 +1,41 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_aix-sighandle_37c072e7_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov	r2, r0
+0x00400005:	movs	r0, #1
+0x00400007:	add	r1, pc
+0x00400009:	b.w	#0x400009
+0x00400009:	b.w	#0x400009
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r0
+0x0040000f:	movs	r0, r0
+0x00400011:	ldr	r1, [pc, #0x1c]
+0x00400013:	movs	r0, #0xb
+0x00400015:	push	{r3, lr}
+0x00400017:	add	r1, pc
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	ldr	r3, [pc, #0x14]
+0x0040001f:	movs	r2, #0
+0x00400021:	add	r3, pc
+0x00400023:	ldr	r0, [r3]
+0x00400025:	ldrh	r1, [r3, #4]
+0x00400027:	ldrb	r3, [r3, #6]
+0x00400029:	str	r0, [r2]
+0x0040002b:	strh	r1, [r2, #4]
+0x0040002d:	strb	r3, [r2, #6]
+0x0040002f:	pop	{r3, pc}
 
-00000000 <.text>:
-   0:	46024902 	strmi	r4, [r2], -r2, lsl #18
-   4:	44792001 	ldrbtmi	r2, [r9], #-1
-   8:	bffef7ff 	svclt	0x00fef7ff
-   c:	00000002 	andeq	r0, r0, r2
-  10:	200b4907 	andcs	r4, fp, r7, lsl #18
-  14:	4479b508 	ldrbtmi	fp, [r9], #-1288	; 0xfffffaf8
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	22004b05 	andcs	r4, r0, #5120	; 0x1400
-  20:	6818447b 	ldmdavs	r8, {r0, r1, r3, r4, r5, r6, sl, lr}
-  24:	799b8899 	ldmibvc	fp, {r0, r3, r4, r7, fp, pc}
-  28:	80916010 	addshi	r6, r1, r0, lsl r0
-  2c:	bd087193 	stflts	f7, [r8, #-588]	; 0xfffffdb4
-  30:	00000016 	andeq	r0, r0, r6, lsl r0
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400051 @ 0x00400051
+0x00400051:	push	{r3, lr}
+0x00400053:	bl	#0x400053
 
-Disassembly of section .text.startup:
+Function sub_400053 @ 0x00400053
+0x00400053:	bl	#0x400053
+0x00400057:	movs	r0, #0
+0x00400059:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	2000fffe 	strdcs	pc, [r0], -lr
-   8:	bf00bd08 	svclt	0x0000bd08
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	

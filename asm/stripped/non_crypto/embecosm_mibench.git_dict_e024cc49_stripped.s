@@ -1,10 +1,16 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_dict_e024cc49_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
-   4:	bf004770 	svclt	0x00004770
-   8:	bf004770 	svclt	0x00004770
+Function sub_400009 @ 0x00400009
+0x00400009:	bx	lr
+
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	

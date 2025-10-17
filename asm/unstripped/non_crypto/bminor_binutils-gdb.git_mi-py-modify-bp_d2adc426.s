@@ -1,15 +1,8 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mi-py-modify-bp_d2adc426.o:     file format elf32-littlearm
+Function foo @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <foo>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr

@@ -1,26 +1,40 @@
 
-/root/projects/compiled/non_crypto/unstripped/intel_lmbench.git_enough_16645301.o:     file format elf32-littlearm
+Function main @ 0x00400021
+0x00400021:	ldr	r0, [pc, #0x24]
+0x00400023:	push	{r3, lr}
+0x00400025:	add	r0, pc
+0x00400027:	bl	#0x500001
+0x0040002b:	ldr	r0, [pc, #0x20]
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x500001
+0x00400033:	movs	r0, #0
+0x00400035:	bl	#0x50000d
+0x00400039:	ldr	r1, [pc, #0x14]
+0x0040003b:	mov	r2, r0
+0x0040003d:	movs	r0, #1
+0x0040003f:	add	r1, pc
+0x00400041:	bl	#0x500019
+0x00400045:	movs	r0, #0
+0x00400047:	pop	{r3, pc}
 
+Function putenv @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function get_enough @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	4809      	ldr	r0, [pc, #36]	; (28 <main+0x28>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <putenv>
-   a:	4808      	ldr	r0, [pc, #32]	; (2c <main+0x2c>)
-   c:	4478      	add	r0, pc
-   e:	f7ff fffe 	bl	0 <putenv>
-  12:	2000      	movs	r0, #0
-  14:	f7ff fffe 	bl	0 <get_enough>
-  18:	4905      	ldr	r1, [pc, #20]	; (30 <main+0x30>)
-  1a:	4602      	mov	r2, r0
-  1c:	2001      	movs	r0, #1
-  1e:	4479      	add	r1, pc
-  20:	f7ff fffe 	bl	0 <__printf_chk>
-  24:	2000      	movs	r0, #0
-  26:	bd08      	pop	{r3, pc}
-  28:	00000020 	.word	0x00000020
-  2c:	0000001c 	.word	0x0000001c
-  30:	0000000e 	.word	0x0000000e
+Function __printf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

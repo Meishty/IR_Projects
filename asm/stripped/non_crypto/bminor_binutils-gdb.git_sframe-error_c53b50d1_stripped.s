@@ -1,19 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_sframe-error_c53b50d1_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	sub.w	r3, r0, #0x7d0
+0x00400007:	cmp	r3, #0xb
+0x00400009:	bhi	#0x40001d
+0x0040000b:	ldr	r2, [pc, #0x1c]
+0x0040000d:	add	r2, pc
+0x0040000f:	ldr.w	r0, [r2, r3, lsl #2]
+0x00400013:	cbz	r0, #0x400017
+0x00400015:	pop	{r3, pc}
+0x00400015:	pop	{r3, pc}
+0x00400017:	ldr	r0, [pc, #0x14]
+0x00400019:	add	r0, pc
+0x0040001b:	pop	{r3, pc}
 
+Function sub_40001d @ 0x0040001d
+0x0040001d:	bl	#0x40001d
+0x00400021:	cmp	r0, #0
+0x00400023:	bne	#0x400015
+0x00400025:	b	#0x400017
 
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	f5a0b508 			; <UNDEFINED> instruction: 0xf5a0b508
-   4:	2b0b63fa 	blcs	0x2d8ff4
-   8:	4a07d808 	bmi	0x1f6030
-   c:	f852447a 			; <UNDEFINED> instruction: 0xf852447a
-  10:	b1000023 	tstlt	r0, r3, lsr #32
-  14:	4805bd08 	stmdami	r5, {r3, r8, sl, fp, ip, sp, pc}
-  18:	bd084478 	cfstrslt	mvf4, [r8, #-480]	; 0xfffffe20
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	d1f72800 	mvnsle	r2, r0, lsl #16
-  24:	bf00e7f7 	svclt	0x0000e7f7
-  28:	00000018 	andeq	r0, r0, r8, lsl r0
-  2c:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r0, r3
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r2
+0x0040002f:	movs	r0, r0

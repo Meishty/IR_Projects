@@ -1,23 +1,30 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr22751_05c43cca.o:     file format elf32-littlearm
+Function main @ 0x00400019
+0x00400019:	push	{r3, lr}
+0x0040001b:	ldr	r3, [pc, #0x20]
+0x0040001d:	add	r3, pc
+0x0040001f:	ldrd	r0, r1, [r3]
+0x00400023:	ldrd	r2, r3, [r3, #8]
+0x00400027:	bl	#0x500001
+0x0040002b:	cmp	r0, #0x2a
+0x0040002d:	beq	#0x400033
+0x0040002f:	movs	r0, #0
+0x00400031:	pop	{r3, pc}
+0x00400033:	ldr	r0, [pc, #0xc]
+0x00400035:	add	r0, pc
+0x00400037:	bl	#0x50000d
+0x0040003b:	b	#0x40002f
 
+Function __aeabi_ldivmod @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b08      	ldr	r3, [pc, #32]	; (24 <main+0x24>)
-   4:	447b      	add	r3, pc
-   6:	e9d3 0100 	ldrd	r0, r1, [r3]
-   a:	e9d3 2302 	ldrd	r2, r3, [r3, #8]
-   e:	f7ff fffe 	bl	0 <__aeabi_ldivmod>
-  12:	282a      	cmp	r0, #42	; 0x2a
-  14:	d001      	beq.n	1a <main+0x1a>
-  16:	2000      	movs	r0, #0
-  18:	bd08      	pop	{r3, pc}
-  1a:	4803      	ldr	r0, [pc, #12]	; (28 <main+0x28>)
-  1c:	4478      	add	r0, pc
-  1e:	f7ff fffe 	bl	0 <puts>
-  22:	e7f8      	b.n	16 <main+0x16>
-  24:	0000001c 	.word	0x0000001c
-  28:	00000008 	.word	0x00000008
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

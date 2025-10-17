@@ -1,31 +1,67 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_read1_3c3b4226_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mvnsmi	lr, sp, lsr #18
 
+Function sub_400013 @ 0x00400013
+0x00400013:	str	r0, [r0]
+0x00400015:	cbz	r6, #0x40002f
+0x00400017:	mov	r0, r4
+0x00400019:	bl	#0x400019
+0x00400017:	mov	r0, r4
+0x00400019:	bl	#0x400019
+0x0040002f:	ldr	r1, [pc, #0x24]
+0x00400031:	movs	r2, #1
+0x00400033:	ldr	r0, [pc, #0x24]
+0x00400035:	add	r1, pc
+0x00400037:	add	r0, pc
+0x00400039:	bl	#0x400039
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	mov	r2, r7
+0x0040001f:	cbz	r0, #0x400023
+0x00400021:	movs	r2, #1
+0x00400023:	mov	r1, r5
+0x00400025:	mov	r0, r4
+0x00400027:	mov	r3, r6
+0x00400029:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x0040002d:	bx	r3
+0x00400021:	movs	r2, #1
+0x00400023:	mov	r1, r5
+0x00400025:	mov	r0, r4
+0x00400027:	mov	r3, r6
+0x00400029:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x0040002d:	bx	r3
+0x00400023:	mov	r1, r5
+0x00400025:	mov	r0, r4
+0x00400027:	mov	r3, r6
+0x00400029:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x0040002d:	bx	r3
 
-00000000 <.text>:
-   0:	41f0e92d 	mvnsmi	lr, sp, lsr #18
-   4:	f8df4604 			; <UNDEFINED> instruction: 0xf8df4604
-   8:	460d8048 	strmi	r8, [sp], -r8, asr #32
-   c:	44f84617 	ldrbtmi	r4, [r8], #1559	; 0x617
-  10:	6000f8d8 	ldrdvs	pc, [r0], -r8
-  14:	4620b15e 			; <UNDEFINED> instruction: 0x4620b15e
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	b100463a 	tstlt	r0, sl, lsr r6
-  20:	46292201 	strtmi	r2, [r9], -r1, lsl #4
-  24:	46334620 	ldrtmi	r4, [r3], -r0, lsr #12
-  28:	41f0e8bd 	ldrhmi	lr, [r0, #141]!	; 0x8d
-  2c:	49094718 	stmdbmi	r9, {r3, r4, r8, r9, sl, lr}
-  30:	48092201 	stmdami	r9, {r0, r9, sp}
-  34:	44784479 	ldrbtmi	r4, [r8], #-1145	; 0xfffffb87
-  38:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  3c:	f04f4907 			; <UNDEFINED> instruction: 0xf04f4907
-  40:	447930ff 	ldrbtmi	r3, [r9], #-255	; 0xffffff01
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	f8c84606 			; <UNDEFINED> instruction: 0xf8c84606
-  4c:	e7e20000 	strb	r0, [r2, r0]!
-  50:	0000003e 	andeq	r0, r0, lr, lsr r0
-  54:	0000001c 	andeq	r0, r0, ip, lsl r0
-  58:	0000001e 	andeq	r0, r0, lr, lsl r0
-  5c:	00000016 	andeq	r0, r0, r6, lsl r0
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	ldr	r1, [pc, #0x1c]
+0x0040003f:	mov.w	r0, #-1
+0x00400043:	add	r1, pc
+0x00400045:	bl	#0x400045
+
+Function sub_400045 @ 0x00400045
+0x00400045:	bl	#0x400045
+0x00400049:	mov	r6, r0
+0x0040004b:	str.w	r0, [r8]
+0x0040004f:	b	#0x400017
+
+Function sub_400051 @ 0x00400051
+0x00400051:	movs	r6, r7
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r4, r3
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r6, r3
+0x0040005b:	movs	r0, r0
+0x0040005d:	movs	r6, r2
+0x0040005f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

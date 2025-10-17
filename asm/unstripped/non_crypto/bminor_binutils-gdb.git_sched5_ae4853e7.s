@@ -1,38 +1,79 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sched5_ae4853e7.o:     file format elf32-littlearm
+Function main @ 0x0040001d
+0x0040001d:	push	{r4, r5, r6, lr}
+0x0040001f:	movs	r0, #0
+0x00400021:	ldr	r5, [pc, #0x3c]
+0x00400023:	sub	sp, #8
+0x00400025:	bl	#0x500001
+0x00400029:	mov	r4, r0
+0x0040002b:	movs	r0, #0
+0x0040002d:	add	r5, pc
+0x0040002f:	bl	#0x50000d
+0x00400033:	orrs.w	r6, r4, r0
+0x00400037:	bne	#0x400047
+0x00400039:	ldr	r0, [pc, #0x28]
+0x0040003b:	add	r0, pc
+0x0040003d:	bl	#0x500019
+0x00400041:	mov	r0, r6
+0x00400043:	bl	#0x500025
+0x00400047:	ldr	r1, [pc, #0x20]
+0x00400049:	mov	r3, r4
+0x0040004b:	ldr	r2, [pc, #0x20]
+0x0040004d:	add	r2, pc
+0x0040004f:	ldr	r4, [r5, r1]
+0x00400051:	movs	r1, #1
+0x00400053:	str	r0, [sp]
+0x00400055:	ldr	r0, [r4]
+0x00400057:	bl	#0x500031
+0x0040005b:	bl	#0x50003d
 
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	movs	r0, r6
+0x00400063:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sched_get_priority_min @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	2000      	movs	r0, #0
-   4:	4d0f      	ldr	r5, [pc, #60]	; (44 <main+0x44>)
-   6:	b082      	sub	sp, #8
-   8:	f7ff fffe 	bl	0 <sched_get_priority_min>
-   c:	4604      	mov	r4, r0
-   e:	2000      	movs	r0, #0
-  10:	447d      	add	r5, pc
-  12:	f7ff fffe 	bl	0 <sched_get_priority_max>
-  16:	ea54 0600 	orrs.w	r6, r4, r0
-  1a:	d106      	bne.n	2a <main+0x2a>
-  1c:	480a      	ldr	r0, [pc, #40]	; (48 <main+0x48>)
-  1e:	4478      	add	r0, pc
-  20:	f7ff fffe 	bl	0 <puts>
-  24:	4630      	mov	r0, r6
-  26:	f7ff fffe 	bl	0 <exit>
-  2a:	4908      	ldr	r1, [pc, #32]	; (4c <main+0x4c>)
-  2c:	4623      	mov	r3, r4
-  2e:	4a08      	ldr	r2, [pc, #32]	; (50 <main+0x50>)
-  30:	447a      	add	r2, pc
-  32:	586c      	ldr	r4, [r5, r1]
-  34:	2101      	movs	r1, #1
-  36:	9000      	str	r0, [sp, #0]
-  38:	6820      	ldr	r0, [r4, #0]
-  3a:	f7ff fffe 	bl	0 <__fprintf_chk>
-  3e:	f7ff fffe 	bl	0 <abort>
-  42:	bf00      	nop
-  44:	00000030 	.word	0x00000030
-  48:	00000026 	.word	0x00000026
-  4c:	00000000 	.word	0x00000000
-  50:	0000001c 	.word	0x0000001c
+Function sched_get_priority_max @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function __fprintf_chk @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function abort @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

@@ -1,21 +1,31 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-pending-frame-level_d4b0d5ed_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	movwlo	r6, #0x1813
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r0
+0x0040000f:	movs	r0, r0
+0x00400011:	b.w	#0x400011
+0x00400011:	b.w	#0x400011
 
-00000000 <.text>:
-   0:	447a4a02 	ldrbtmi	r4, [sl], #-2562	; 0xfffff5fe
-   4:	33016813 	movwcc	r6, #6163	; 0x1813
-   8:	47706013 			; <UNDEFINED> instruction: 0x47706013
-   c:	00000006 	andeq	r0, r0, r6
-  10:	bffef7ff 	svclt	0x00fef7ff
-  14:	bffef7ff 	svclt	0x00fef7ff
-  18:	bffef7ff 	svclt	0x00fef7ff
+Function sub_400015 @ 0x00400015
+0x00400015:	b.w	#0x400015
 
-Disassembly of section .text.startup:
+Function sub_400019 @ 0x00400019
+0x00400019:	b.w	#0x400019
 
-00000000 <.text.startup>:
-   0:	2000b508 	andcs	fp, r0, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bf00bd08 	svclt	0x0000bd08
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	movs	r0, #0
+0x00400025:	bl	#0x400025
+
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+0x00400029:	pop	{r3, pc}
+
+Function sub_40002b @ 0x0040002b
+0x0040002b:	nop	

@@ -1,171 +1,227 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sh1_9a99afb3.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	lsls	r6, r5, #4
+0x0040000b:	movs	r0, r0
+0x0040000d:	movs	r0, #2
+0x0040000f:	bx	lr
 
-00000000 <shlib_shlibvar1>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <shlib_shlibvar1+0x8>)
-   2:	447b      	add	r3, pc
-   4:	6818      	ldr	r0, [r3, #0]
-   6:	4770      	bx	lr
-   8:	00000002 	.word	0x00000002
+Function visibility @ 0x0040000d
+0x0040000d:	movs	r0, #2
+0x0040000f:	bx	lr
 
-0000000c <visibility>:
-   c:	2002      	movs	r0, #2
-   e:	4770      	bx	lr
+Function shlib_mainvar @ 0x00400011
+0x00400011:	ldr	r3, [pc, #8]
+0x00400013:	ldr	r2, [pc, #0xc]
+0x00400015:	add	r3, pc
+0x00400017:	ldr	r3, [r3, r2]
+0x00400019:	ldr	r0, [r3]
+0x0040001b:	bx	lr
 
-00000010 <shlib_mainvar>:
-  10:	4b02      	ldr	r3, [pc, #8]	; (1c <shlib_mainvar+0xc>)
-  12:	4a03      	ldr	r2, [pc, #12]	; (20 <shlib_mainvar+0x10>)
-  14:	447b      	add	r3, pc
-  16:	589b      	ldr	r3, [r3, r2]
-  18:	6818      	ldr	r0, [r3, #0]
-  1a:	4770      	bx	lr
-  1c:	00000004 	.word	0x00000004
-  20:	00000000 	.word	0x00000000
+Function shlib_overriddenvar @ 0x00400025
+0x00400025:	ldr	r3, [pc, #8]
+0x00400027:	ldr	r2, [pc, #0xc]
+0x00400029:	add	r3, pc
+0x0040002b:	ldr	r3, [r3, r2]
+0x0040002d:	ldr	r0, [r3]
+0x0040002f:	bx	lr
 
-00000024 <shlib_overriddenvar>:
-  24:	4b02      	ldr	r3, [pc, #8]	; (30 <shlib_overriddenvar+0xc>)
-  26:	4a03      	ldr	r2, [pc, #12]	; (34 <shlib_overriddenvar+0x10>)
-  28:	447b      	add	r3, pc
-  2a:	589b      	ldr	r3, [r3, r2]
-  2c:	6818      	ldr	r0, [r3, #0]
-  2e:	4770      	bx	lr
-  30:	00000004 	.word	0x00000004
-  34:	00000000 	.word	0x00000000
+Function shlib_shlibvar2 @ 0x00400039
+0x00400039:	ldr	r3, [pc, #8]
+0x0040003b:	ldr	r2, [pc, #0xc]
+0x0040003d:	add	r3, pc
+0x0040003f:	ldr	r3, [r3, r2]
+0x00400041:	ldr	r0, [r3]
+0x00400043:	bx	lr
 
-00000038 <shlib_shlibvar2>:
-  38:	4b02      	ldr	r3, [pc, #8]	; (44 <shlib_shlibvar2+0xc>)
-  3a:	4a03      	ldr	r2, [pc, #12]	; (48 <shlib_shlibvar2+0x10>)
-  3c:	447b      	add	r3, pc
-  3e:	589b      	ldr	r3, [r3, r2]
-  40:	6818      	ldr	r0, [r3, #0]
-  42:	4770      	bx	lr
-  44:	00000004 	.word	0x00000004
-  48:	00000000 	.word	0x00000000
+Function shlib_shlibcall @ 0x0040004d
+0x0040004d:	b.w	#0x500001
 
-0000004c <shlib_shlibcall>:
-  4c:	f7ff bffe 	b.w	0 <shlib_shlibcalled>
+Function shlib_shlibcall2 @ 0x00400051
+0x00400051:	b.w	#0x50000d
 
-00000050 <shlib_shlibcall2>:
-  50:	f7ff bffe 	b.w	0 <shlib_overriddencall2>
+Function shlib_maincall @ 0x00400055
+0x00400055:	b.w	#0x500019
 
-00000054 <shlib_maincall>:
-  54:	f7ff bffe 	b.w	0 <main_called>
+Function shlib_checkfunptr1 @ 0x00400059
+0x00400059:	ldr	r3, [pc, #0xc]
+0x0040005b:	add	r3, pc
+0x0040005d:	subs	r0, r3, r0
+0x0040005f:	clz	r0, r0
+0x00400063:	lsrs	r0, r0, #5
+0x00400065:	bx	lr
 
-00000058 <shlib_checkfunptr1>:
-  58:	4b03      	ldr	r3, [pc, #12]	; (68 <shlib_checkfunptr1+0x10>)
-  5a:	447b      	add	r3, pc
-  5c:	1a18      	subs	r0, r3, r0
-  5e:	fab0 f080 	clz	r0, r0
-  62:	0940      	lsrs	r0, r0, #5
-  64:	4770      	bx	lr
-  66:	bf00      	nop
-  68:	0000000a 	.word	0x0000000a
+Function sub_400067 @ 0x00400067
 
-0000006c <shlib_checkfunptr2>:
-  6c:	4b04      	ldr	r3, [pc, #16]	; (80 <shlib_checkfunptr2+0x14>)
-  6e:	4a05      	ldr	r2, [pc, #20]	; (84 <shlib_checkfunptr2+0x18>)
-  70:	447b      	add	r3, pc
-  72:	589b      	ldr	r3, [r3, r2]
-  74:	1a18      	subs	r0, r3, r0
-  76:	fab0 f080 	clz	r0, r0
-  7a:	0940      	lsrs	r0, r0, #5
-  7c:	4770      	bx	lr
-  7e:	bf00      	nop
-  80:	0000000c 	.word	0x0000000c
-  84:	00000000 	.word	0x00000000
+Function shlib_checkfunptr2 @ 0x0040006d
+0x0040006d:	ldr	r3, [pc, #0x10]
+0x0040006f:	ldr	r2, [pc, #0x14]
+0x00400071:	add	r3, pc
+0x00400073:	ldr	r3, [r3, r2]
+0x00400075:	subs	r0, r3, r0
+0x00400077:	clz	r0, r0
+0x0040007b:	lsrs	r0, r0, #5
+0x0040007d:	bx	lr
 
-00000088 <shlib_getfunptr1>:
-  88:	4801      	ldr	r0, [pc, #4]	; (90 <shlib_getfunptr1+0x8>)
-  8a:	4478      	add	r0, pc
-  8c:	4770      	bx	lr
-  8e:	bf00      	nop
-  90:	00000002 	.word	0x00000002
+Function sub_40007f @ 0x0040007f
+0x0040007f:	nop	
+0x00400081:	movs	r4, r1
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	ldr	r0, [pc, #4]
+0x0040008b:	add	r0, pc
+0x0040008d:	bx	lr
 
-00000094 <shlib_getfunptr2>:
-  94:	4b02      	ldr	r3, [pc, #8]	; (a0 <shlib_getfunptr2+0xc>)
-  96:	4a03      	ldr	r2, [pc, #12]	; (a4 <shlib_getfunptr2+0x10>)
-  98:	447b      	add	r3, pc
-  9a:	5898      	ldr	r0, [r3, r2]
-  9c:	4770      	bx	lr
-  9e:	bf00      	nop
-  a0:	00000004 	.word	0x00000004
-  a4:	00000000 	.word	0x00000000
+Function shlib_getfunptr1 @ 0x00400089
+0x00400089:	ldr	r0, [pc, #4]
+0x0040008b:	add	r0, pc
+0x0040008d:	bx	lr
 
-000000a8 <shlib_check>:
-  a8:	4b07      	ldr	r3, [pc, #28]	; (c8 <shlib_check+0x20>)
-  aa:	447b      	add	r3, pc
-  ac:	f813 2f01 	ldrb.w	r2, [r3, #1]!
-  b0:	2a00      	cmp	r2, #0
-  b2:	d1fb      	bne.n	ac <shlib_check+0x4>
-  b4:	4b05      	ldr	r3, [pc, #20]	; (cc <shlib_check+0x24>)
-  b6:	447b      	add	r3, pc
-  b8:	6818      	ldr	r0, [r3, #0]
-  ba:	f1a0 0003 	sub.w	r0, r0, #3
-  be:	fab0 f080 	clz	r0, r0
-  c2:	0940      	lsrs	r0, r0, #5
-  c4:	4770      	bx	lr
-  c6:	bf00      	nop
-  c8:	0000001a 	.word	0x0000001a
-  cc:	00000012 	.word	0x00000012
+Function sub_40008f @ 0x0040008f
 
-000000d0 <visibility_checkfunptr>:
-  d0:	2001      	movs	r0, #1
-  d2:	4770      	bx	lr
+Function shlib_getfunptr2 @ 0x00400095
+0x00400095:	ldr	r3, [pc, #8]
+0x00400097:	ldr	r2, [pc, #0xc]
+0x00400099:	add	r3, pc
+0x0040009b:	ldr	r0, [r3, r2]
+0x0040009d:	bx	lr
 
-000000d4 <visibility_check>:
-  d4:	2001      	movs	r0, #1
-  d6:	4770      	bx	lr
+Function sub_40009f @ 0x0040009f
+0x0040009f:	nop	
+0x004000a1:	movs	r4, r0
+0x004000a3:	movs	r0, r0
+0x004000a5:	movs	r0, r0
+0x004000a7:	movs	r0, r0
+0x004000a9:	ldr	r3, [pc, #0x1c]
+0x004000ab:	add	r3, pc
+0x004000ad:	ldrb	r2, [r3, #1]!
+0x004000b1:	cmp	r2, #0
+0x004000b3:	bne	#0x4000ad
 
-000000d8 <visibility_funptr>:
-  d8:	4801      	ldr	r0, [pc, #4]	; (e0 <visibility_funptr+0x8>)
-  da:	4478      	add	r0, pc
-  dc:	4770      	bx	lr
-  de:	bf00      	nop
-  e0:	00000002 	.word	0x00000002
+Function shlib_check @ 0x004000a9
+0x004000a9:	ldr	r3, [pc, #0x1c]
+0x004000ab:	add	r3, pc
+0x004000ad:	ldrb	r2, [r3, #1]!
+0x004000b1:	cmp	r2, #0
+0x004000b3:	bne	#0x4000ad
+0x004000ad:	ldrb	r2, [r3, #1]!
+0x004000b1:	cmp	r2, #0
+0x004000b3:	bne	#0x4000ad
+0x004000b5:	ldr	r3, [pc, #0x14]
+0x004000b7:	add	r3, pc
+0x004000b9:	ldr	r0, [r3]
+0x004000bb:	sub.w	r0, r0, #3
+0x004000bf:	clz	r0, r0
+0x004000c3:	lsrs	r0, r0, #5
+0x004000c5:	bx	lr
 
-000000e4 <visibility_checkvarptr>:
-  e4:	4b04      	ldr	r3, [pc, #16]	; (f8 <visibility_checkvarptr+0x14>)
-  e6:	447b      	add	r3, pc
-  e8:	6858      	ldr	r0, [r3, #4]
-  ea:	f1a0 0002 	sub.w	r0, r0, #2
-  ee:	fab0 f080 	clz	r0, r0
-  f2:	0940      	lsrs	r0, r0, #5
-  f4:	4770      	bx	lr
-  f6:	bf00      	nop
-  f8:	0000000e 	.word	0x0000000e
+Function sub_4000c7 @ 0x004000c7
+0x004000c7:	nop	
+0x004000c9:	lsls	r6, r1, #2
+0x004000cb:	movs	r0, r0
+0x004000cd:	lsls	r2, r7, #1
+0x004000cf:	movs	r0, r0
+0x004000d1:	movs	r0, #1
+0x004000d3:	bx	lr
 
-000000fc <visibility_checkvar>:
-  fc:	4b04      	ldr	r3, [pc, #16]	; (110 <visibility_checkvar+0x14>)
-  fe:	447b      	add	r3, pc
- 100:	6858      	ldr	r0, [r3, #4]
- 102:	f1a0 0002 	sub.w	r0, r0, #2
- 106:	fab0 f080 	clz	r0, r0
- 10a:	0940      	lsrs	r0, r0, #5
- 10c:	4770      	bx	lr
- 10e:	bf00      	nop
- 110:	0000000e 	.word	0x0000000e
+Function visibility_checkfunptr @ 0x004000d1
+0x004000d1:	movs	r0, #1
+0x004000d3:	bx	lr
 
-00000114 <visibility_varptr>:
- 114:	4801      	ldr	r0, [pc, #4]	; (11c <visibility_varptr+0x8>)
- 116:	4478      	add	r0, pc
- 118:	3004      	adds	r0, #4
- 11a:	4770      	bx	lr
- 11c:	00000002 	.word	0x00000002
+Function visibility_check @ 0x004000d5
+0x004000d5:	movs	r0, #1
+0x004000d7:	bx	lr
 
-00000120 <visibility_varval>:
- 120:	4b01      	ldr	r3, [pc, #4]	; (128 <visibility_varval+0x8>)
- 122:	447b      	add	r3, pc
- 124:	6858      	ldr	r0, [r3, #4]
- 126:	4770      	bx	lr
- 128:	00000002 	.word	0x00000002
+Function visibility_funptr @ 0x004000d9
+0x004000d9:	ldr	r0, [pc, #4]
+0x004000db:	add	r0, pc
+0x004000dd:	bx	lr
 
-0000012c <shlib_visibility_checkcom>:
- 12c:	2001      	movs	r0, #1
- 12e:	4770      	bx	lr
+Function sub_4000df @ 0x004000df
 
-00000130 <shlib_visibility_checkweak>:
- 130:	2001      	movs	r0, #1
- 132:	4770      	bx	lr
+Function visibility_checkvarptr @ 0x004000e5
+0x004000e5:	ldr	r3, [pc, #0x10]
+0x004000e7:	add	r3, pc
+0x004000e9:	ldr	r0, [r3, #4]
+0x004000eb:	sub.w	r0, r0, #2
+0x004000ef:	clz	r0, r0
+0x004000f3:	lsrs	r0, r0, #5
+0x004000f5:	bx	lr
+
+Function sub_4000f7 @ 0x004000f7
+0x004000f7:	nop	
+0x004000f9:	lsls	r2, r1, #1
+0x004000fb:	movs	r0, r0
+0x004000fd:	ldr	r3, [pc, #0x10]
+0x004000ff:	add	r3, pc
+0x00400101:	ldr	r0, [r3, #4]
+0x00400103:	sub.w	r0, r0, #2
+0x00400107:	clz	r0, r0
+0x0040010b:	lsrs	r0, r0, #5
+0x0040010d:	bx	lr
+
+Function visibility_checkvar @ 0x004000fd
+0x004000fd:	ldr	r3, [pc, #0x10]
+0x004000ff:	add	r3, pc
+0x00400101:	ldr	r0, [r3, #4]
+0x00400103:	sub.w	r0, r0, #2
+0x00400107:	clz	r0, r0
+0x0040010b:	lsrs	r0, r0, #5
+0x0040010d:	bx	lr
+
+Function sub_40010f @ 0x0040010f
+0x0040010f:	nop	
+0x00400111:	movs	r2, r6
+0x00400113:	movs	r0, r0
+0x00400115:	ldr	r0, [pc, #4]
+0x00400117:	add	r0, pc
+0x00400119:	adds	r0, #4
+0x0040011b:	bx	lr
+
+Function visibility_varptr @ 0x00400115
+0x00400115:	ldr	r0, [pc, #4]
+0x00400117:	add	r0, pc
+0x00400119:	adds	r0, #4
+0x0040011b:	bx	lr
+
+Function visibility_varval @ 0x00400121
+0x00400121:	ldr	r3, [pc, #4]
+0x00400123:	add	r3, pc
+0x00400125:	ldr	r0, [r3, #4]
+0x00400127:	bx	lr
+
+Function shlib_visibility_checkcom @ 0x0040012d
+0x0040012d:	movs	r0, #1
+0x0040012f:	bx	lr
+
+Function shlib_visibility_checkweak @ 0x00400131
+0x00400131:	movs	r0, #1
+0x00400133:	bx	lr
+
+Function shlib_shlibcalled @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function shlib_overriddencall2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function main_called @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

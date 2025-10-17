@@ -1,23 +1,25 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_break-reverse_2991ac0c_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r2, #0x800
+0x00400004:	ldrbtmi	r2, [fp], #-1
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r0
+0x0040000f:	movs	r0, r0
+0x00400011:	ldr	r3, [pc, #8]
+0x00400013:	movs	r2, #2
+0x00400015:	movs	r0, #1
+0x00400017:	add	r3, pc
+0x00400019:	str	r2, [r3]
+0x0040001b:	bx	lr
 
-00000000 <.text>:
-   0:	22024b02 	andcs	r4, r2, #2048	; 0x800
-   4:	447b2001 	ldrbtmi	r2, [fp], #-1
-   8:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-   c:	00000002 	andeq	r0, r0, r2
-  10:	22024b02 	andcs	r4, r2, #2048	; 0x800
-  14:	447b2001 	ldrbtmi	r2, [fp], #-1
-  18:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-  1c:	00000002 	andeq	r0, r0, r2
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	22024b02 	andcs	r4, r2, #2048	; 0x800
-   4:	447b2000 	ldrbtmi	r2, [fp], #-0
-   8:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-   c:	00000002 	andeq	r0, r0, r2
+Function sub_400025 @ 0x00400025
+0x00400025:	ldr	r3, [pc, #8]
+0x00400027:	movs	r2, #2
+0x00400029:	movs	r0, #0
+0x0040002b:	add	r3, pc
+0x0040002d:	str	r2, [r3]
+0x0040002f:	bx	lr

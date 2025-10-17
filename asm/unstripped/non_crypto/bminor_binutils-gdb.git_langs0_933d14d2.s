@@ -1,28 +1,30 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_langs0_933d14d2.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r3, [r0, -r1]!
 
+Function langs0__2do @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x500001
+0x0040000b:	adds	r0, #2
+0x0040000d:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-00000000 <csub>:
-   0:	3001      	adds	r0, #1
-   2:	4770      	bx	lr
+Function main @ 0x00400011
+0x00400011:	push	{r3, lr}
+0x00400013:	bl	#0x500001
+0x00400017:	movw	r3, #0x1389
+0x0040001b:	subs	r0, r0, r3
+0x0040001d:	it	ne
+0x0040001f:	movne	r0, #1
+0x00400021:	pop	{r3, pc}
 
-00000004 <langs0__2do>:
-   4:	b508      	push	{r3, lr}
-   6:	f7ff fffe 	bl	0 <fsub_>
-   a:	3002      	adds	r0, #2
-   c:	bd08      	pop	{r3, pc}
-   e:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <fsub_>
-   6:	f241 3389 	movw	r3, #5001	; 0x1389
-   a:	1ac0      	subs	r0, r0, r3
-   c:	bf18      	it	ne
-   e:	2001      	movne	r0, #1
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
+Function fsub_ @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

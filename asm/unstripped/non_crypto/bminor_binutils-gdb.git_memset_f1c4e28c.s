@@ -1,14 +1,11 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_memset_f1c4e28c.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <memset>:
-   0:	b510      	push	{r4, lr}
-   2:	4604      	mov	r4, r0
-   4:	b112      	cbz	r2, c <memset+0xc>
-   6:	b2c9      	uxtb	r1, r1
-   8:	f7ff fffe 	bl	0 <memset>
-   c:	4620      	mov	r0, r4
-   e:	bd10      	pop	{r4, pc}
+Function memset @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	cbz	r2, #0x40000d
+0x00400007:	uxtb	r1, r1
+0x00400009:	bl	#0x400001
+0x00400007:	uxtb	r1, r1
+0x00400009:	bl	#0x400001
+0x0040000d:	mov	r0, r4
+0x0040000f:	pop	{r4, pc}

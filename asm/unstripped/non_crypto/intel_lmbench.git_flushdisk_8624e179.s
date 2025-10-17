@@ -1,18 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/intel_lmbench.git_flushdisk_8624e179.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r0, #16, #10
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	mov	r4, r0
+0x0040000f:	movw	r0, #0x86a0
+0x00400013:	movt	r0, #1
+0x00400017:	bl	#0x50000d
+0x0040001b:	mov	r0, r4
+0x0040001d:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
 
-00000000 <flushdisk>:
-   0:	b510      	push	{r4, lr}
-   2:	2200      	movs	r2, #0
-   4:	f241 2161 	movw	r1, #4705	; 0x1261
-   8:	f7ff fffe 	bl	0 <ioctl>
-   c:	4604      	mov	r4, r0
-   e:	f248 60a0 	movw	r0, #34464	; 0x86a0
-  12:	f2c0 0001 	movt	r0, #1
-  16:	f7ff fffe 	bl	0 <usleep>
-  1a:	4620      	mov	r0, r4
-  1c:	bd10      	pop	{r4, pc}
-  1e:	bf00      	nop
+Function usleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

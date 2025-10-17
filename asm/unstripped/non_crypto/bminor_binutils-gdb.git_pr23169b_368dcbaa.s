@@ -1,49 +1,82 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr23169b_368dcbaa.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x6ad428
+0x00400004:	ldrbtmi	r4, [fp], #-0x90a
+0x00400008:	ldmdapl	sb, {r1, r3, sb, fp, lr} ^
+0x0040000c:	stmdavs	sl, {r0, r1, r3, r4, r7, fp, ip, lr}
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bne	#0x400027
+0x00400015:	bl	#0x500001
+0x00400019:	movw	r3, #0xbeef
+0x0040001d:	movt	r3, #0xbad
+0x00400021:	cmp	r0, r3
+0x00400023:	bne	#0x400027
+0x00400025:	pop	{r3, pc}
+0x00400027:	bl	#0x50000d
 
-Disassembly of section .text:
+Function sub_40002b @ 0x0040002b
+0x0040002b:	nop	
+0x0040002d:	movs	r2, r4
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r0, r0
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r0
+0x00400037:	movs	r0, r0
 
-00000000 <bar>:
-   0:	b508      	push	{r3, lr}
-   2:	4b0a      	ldr	r3, [pc, #40]	; (2c <bar+0x2c>)
-   4:	490a      	ldr	r1, [pc, #40]	; (30 <bar+0x30>)
-   6:	447b      	add	r3, pc
-   8:	4a0a      	ldr	r2, [pc, #40]	; (34 <bar+0x34>)
-   a:	5859      	ldr	r1, [r3, r1]
-   c:	589b      	ldr	r3, [r3, r2]
-   e:	680a      	ldr	r2, [r1, #0]
-  10:	429a      	cmp	r2, r3
-  12:	d108      	bne.n	26 <bar+0x26>
-  14:	f7ff fffe 	bl	0 <func>
-  18:	f64b 63ef 	movw	r3, #48879	; 0xbeef
-  1c:	f6c0 33ad 	movt	r3, #2989	; 0xbad
-  20:	4298      	cmp	r0, r3
-  22:	d100      	bne.n	26 <bar+0x26>
-  24:	bd08      	pop	{r3, pc}
-  26:	f7ff fffe 	bl	0 <abort>
-  2a:	bf00      	nop
-  2c:	00000022 	.word	0x00000022
-	...
+Function sub_40002d @ 0x0040002d
+0x0040002d:	movs	r2, r4
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r0, r0
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r0
+0x00400037:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x00400041
+0x00400041:	push	{r3, lr}
+0x00400043:	ldr	r3, [pc, #0x20]
+0x00400045:	ldr	r1, [pc, #0x20]
+0x00400047:	add	r3, pc
+0x00400049:	ldr	r2, [pc, #0x20]
+0x0040004b:	ldr	r1, [r3, r1]
+0x0040004d:	ldr	r3, [r3, r2]
+0x0040004f:	str	r3, [r1]
+0x00400051:	bl	#0x500019
+0x00400055:	bl	#0x400001
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b08      	ldr	r3, [pc, #32]	; (24 <main+0x24>)
-   4:	4908      	ldr	r1, [pc, #32]	; (28 <main+0x28>)
-   6:	447b      	add	r3, pc
-   8:	4a08      	ldr	r2, [pc, #32]	; (2c <main+0x2c>)
-   a:	5859      	ldr	r1, [r3, r1]
-   c:	589b      	ldr	r3, [r3, r2]
-   e:	600b      	str	r3, [r1, #0]
-  10:	f7ff fffe 	bl	0 <foo>
-  14:	f7ff fffe 	bl	0 <main>
-  18:	4805      	ldr	r0, [pc, #20]	; (30 <main+0x30>)
-  1a:	4478      	add	r0, pc
-  1c:	f7ff fffe 	bl	0 <puts>
-  20:	2000      	movs	r0, #0
-  22:	bd08      	pop	{r3, pc}
-  24:	0000001a 	.word	0x0000001a
-	...
-  30:	00000012 	.word	0x00000012
+Function sub_400059 @ 0x00400059
+0x00400059:	ldr	r0, [pc, #0x14]
+0x0040005b:	add	r0, pc
+0x0040005d:	bl	#0x500025
+0x00400061:	movs	r0, #0
+0x00400063:	pop	{r3, pc}
+
+Function func @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function abort @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function foo @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function puts @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

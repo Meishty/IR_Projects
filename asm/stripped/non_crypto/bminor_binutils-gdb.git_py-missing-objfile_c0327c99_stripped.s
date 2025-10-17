@@ -1,15 +1,30 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-missing-objfile_c0327c99_stripped.o:     file format elf32-littlearm
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x40000f
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text.unlikely:
+Function sub_400013 @ 0x00400013
+0x00400013:	push	{r3, lr}
+0x00400015:	bl	#0x400015
 
-00000000 <.text.unlikely>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	b508fffe 	strlt	pc, [r8, #-4094]	; 0xfffff002
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	447b4b03 	ldrbtmi	r4, [fp], #-2819	; 0xfffff4fd
-  10:	685a681a 	ldmdavs	sl, {r1, r3, r4, fp, sp, lr}^
-  14:	f7ff689b 			; <UNDEFINED> instruction: 0xf7ff689b
-  18:	bf00fffe 	svclt	0x0000fffe
-  1c:	0000000a 	andeq	r0, r0, sl
+Function sub_400015 @ 0x00400015
+0x00400015:	bl	#0x400015
+
+Function sub_400019 @ 0x00400019
+0x00400019:	ldr	r3, [pc, #0xc]
+0x0040001b:	add	r3, pc
+0x0040001d:	ldr	r2, [r3]
+0x0040001f:	ldr	r2, [r3, #4]
+0x00400021:	ldr	r3, [r3, #8]
+0x00400023:	bl	#0x400023
+
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r2, r1
+0x0040002b:	movs	r0, r0

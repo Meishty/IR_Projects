@@ -1,48 +1,98 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_compress_dbcec20b_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r5, r1
+0x00400005:	movs	r1, #0
+0x00400007:	sub	sp, #0x40
+0x00400009:	vldr	d7, [pc, #0x84]
+0x0040000d:	mov	r6, sp
+0x0040000f:	str	r1, [sp, #0x28]
+0x00400011:	str	r0, [sp, #0xc]
+0x00400013:	ldr	r1, [r5]
+0x00400015:	ldr	r0, [pc, #0x80]
+0x00400017:	str	r1, [sp, #0x10]
+0x00400019:	ldr	r1, [pc, #0x80]
+0x0040001b:	add	r0, pc
+0x0040001d:	strd	r2, r3, [sp]
+0x00400021:	movs	r3, #0x38
+0x00400023:	vstr	d7, [sp, #0x20]
+0x00400027:	ldr	r2, [pc, #0x78]
+0x00400029:	ldr	r1, [r0, r1]
+0x0040002b:	mov	r0, r6
+0x0040002d:	add	r2, pc
+0x0040002f:	ldr	r1, [r1]
+0x00400031:	str	r1, [sp, #0x3c]
+0x00400033:	mov.w	r1, #0
+0x00400037:	mov.w	r1, #-1
+0x0040003b:	bl	#0x40003b
 
+Function sub_40003b @ 0x0040003b
+0x0040003b:	bl	#0x40003b
+0x0040003f:	mov	r4, r0
+0x00400041:	cbz	r0, #0x40005d
+0x00400043:	ldr	r2, [pc, #0x60]
+0x00400045:	ldr	r3, [pc, #0x54]
+0x00400047:	add	r2, pc
+0x00400049:	ldr	r3, [r2, r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	ldr	r3, [sp, #0x3c]
+0x0040004f:	eors	r2, r3
+0x00400051:	mov.w	r3, #0
+0x00400055:	bne	#0x400089
+0x00400043:	ldr	r2, [pc, #0x60]
+0x00400045:	ldr	r3, [pc, #0x54]
+0x00400047:	add	r2, pc
+0x00400049:	ldr	r3, [r2, r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	ldr	r3, [sp, #0x3c]
+0x0040004f:	eors	r2, r3
+0x00400051:	mov.w	r3, #0
+0x00400055:	bne	#0x400089
+0x00400057:	mov	r0, r4
+0x00400059:	add	sp, #0x40
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x0040005d:	movs	r1, #4
+0x0040005f:	mov	r0, r6
+0x00400061:	bl	#0x400061
 
-Disassembly of section .text:
+Function sub_400061 @ 0x00400061
+0x00400061:	bl	#0x400061
 
-00000000 <.text>:
-   0:	460db570 			; <UNDEFINED> instruction: 0x460db570
-   4:	b0902100 	addslt	r2, r0, r0, lsl #2
-   8:	7b21ed9f 	blvc	0x87b68c
-   c:	910a466e 	tstls	sl, lr, ror #12
-  10:	68299003 	stmdavs	r9!, {r0, r1, ip, pc}
-  14:	91044820 	tstls	r4, r0, lsr #16
-  18:	44784920 	ldrbtmi	r4, [r8], #-2336	; 0xfffff6e0
-  1c:	2300e9cd 	movwcs	lr, #2509	; 0x9cd
-  20:	ed8d2338 	stc	3, cr2, [sp, #224]	; 0xe0
-  24:	4a1e7b08 	bmi	0x79ec4c
-  28:	46305841 	ldrtmi	r5, [r0], -r1, asr #16
-  2c:	6809447a 	stmdavs	r9, {r1, r3, r4, r5, r6, sl, lr}
-  30:	f04f910f 			; <UNDEFINED> instruction: 0xf04f910f
-  34:	f04f0100 			; <UNDEFINED> instruction: 0xf04f0100
-  38:	f7ff31ff 			; <UNDEFINED> instruction: 0xf7ff31ff
-  3c:	4604fffe 			; <UNDEFINED> instruction: 0x4604fffe
-  40:	4a18b160 	bmi	0x62c5c8
-  44:	447a4b15 	ldrbtmi	r4, [sl], #-2837	; 0xfffff4eb
-  48:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
-  4c:	405a9b0f 	subsmi	r9, sl, pc, lsl #22
-  50:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  54:	4620d118 			; <UNDEFINED> instruction: 0x4620d118
-  58:	bd70b010 	ldcllt	0, cr11, [r0, #-64]!	; 0xffffffc0
-  5c:	46302104 	ldrtmi	r2, [r0], -r4, lsl #2
-  60:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  64:	28014604 	stmdacs	r1, {r2, r9, sl, lr}
-  68:	4630d007 	ldrtmi	sp, [r0], -r7
-  6c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  70:	bf082c00 	svclt	0x00082c00
-  74:	0404f06f 	streq	pc, [r4], #-111	; 0xffffff91
-  78:	9b05e7e3 	blls	0x17a00c
-  7c:	602b4630 	eorvs	r4, fp, r0, lsr r6
-  80:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  84:	e7dc4604 	ldrb	r4, [ip, r4, lsl #12]
-  88:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  8c:	8000f3af 	andhi	pc, r0, pc, lsr #7
-	...
-  98:	0000007a 	andeq	r0, r0, sl, ror r0
-  9c:	00000000 	andeq	r0, r0, r0
-  a0:	00000070 	andeq	r0, r0, r0, ror r0
-  a4:	0000005a 	andeq	r0, r0, sl, asr r0
+Function sub_400065 @ 0x00400065
+0x00400065:	mov	r4, r0
+0x00400067:	cmp	r0, #1
+0x00400069:	beq	#0x40007b
+0x0040006b:	mov	r0, r6
+0x0040006d:	bl	#0x40006d
+0x0040007b:	ldr	r3, [sp, #0x14]
+0x0040007d:	mov	r0, r6
+0x0040007f:	str	r3, [r5]
+0x00400081:	bl	#0x400081
+
+Function sub_40006d @ 0x0040006d
+0x0040006d:	bl	#0x40006d
+0x00400071:	cmp	r4, #0
+0x00400073:	it	eq
+0x00400075:	mvneq	r4, #4
+0x00400079:	b	#0x400043
+
+Function sub_400081 @ 0x00400081
+0x00400081:	bl	#0x400081
+0x00400085:	mov	r4, r0
+0x00400087:	b	#0x400043
+
+Function sub_400089 @ 0x00400089
+0x00400089:	bl	#0x400089
+0x0040008d:	nop.w	
+0x00400091:	movs	r0, r0
+0x00400093:	movs	r0, r0
+0x00400095:	movs	r0, r0
+0x00400097:	movs	r0, r0
+0x00400099:	lsls	r2, r7, #1
+0x0040009b:	movs	r0, r0
+0x0040009d:	movs	r0, r0
+0x0040009f:	movs	r0, r0
+0x004000a1:	lsls	r0, r6, #1
+0x004000a3:	movs	r0, r0
+0x004000a5:	lsls	r2, r3, #1
+0x004000a7:	movs	r0, r0

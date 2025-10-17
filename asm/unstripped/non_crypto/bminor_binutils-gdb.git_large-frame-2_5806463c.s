@@ -1,41 +1,62 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_large-frame-2_5806463c.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r0, #-0xa13]
+0x00400004:	ldrbtmi	r4, [sl], #-0xb13
+0x00400008:	stcmi	p5, c15, [r0, #0x2b4]
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	add.w	r1, sp, #0x4000
+0x00400013:	add	r0, sp, #4
+0x00400015:	ldr	r3, [r2, r3]
+0x00400017:	adds	r1, #4
+0x00400019:	ldr	r3, [r3]
+0x0040001b:	str	r3, [r1]
+0x0040001d:	mov.w	r3, #0
+0x00400021:	bl	#0x500001
+0x00400025:	ldr	r2, [pc, #0x30]
+0x00400027:	add.w	r1, sp, #0x4000
+0x0040002b:	ldr	r3, [pc, #0x28]
+0x0040002d:	adds	r1, #4
+0x0040002f:	add	r2, pc
+0x00400031:	ldr	r3, [r2, r3]
+0x00400033:	ldr	r2, [r3]
+0x00400035:	ldr	r3, [r1]
+0x00400037:	eors	r2, r3
+0x00400039:	mov.w	r3, #0
+0x0040003d:	bne	#0x40004b
+0x0040003f:	movs	r0, #0
+0x00400041:	add.w	sp, sp, #0x4000
+0x00400045:	add	sp, #0xc
+0x00400047:	ldr	pc, [sp], #4
+0x0040004b:	bl	#0x50000d
 
-Disassembly of section .text:
+Function sub_40004f @ 0x0040004f
+0x0040004f:	nop	
+0x00400051:	lsls	r6, r0, #1
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r6, r4
+0x0040005b:	movs	r0, r0
 
-00000000 <func>:
-   0:	4a13      	ldr	r2, [pc, #76]	; (50 <func+0x50>)
-   2:	b500      	push	{lr}
-   4:	4b13      	ldr	r3, [pc, #76]	; (54 <func+0x54>)
-   6:	447a      	add	r2, pc
-   8:	f5ad 4d80 	sub.w	sp, sp, #16384	; 0x4000
-   c:	b083      	sub	sp, #12
-   e:	f50d 4180 	add.w	r1, sp, #16384	; 0x4000
-  12:	a801      	add	r0, sp, #4
-  14:	58d3      	ldr	r3, [r2, r3]
-  16:	3104      	adds	r1, #4
-  18:	681b      	ldr	r3, [r3, #0]
-  1a:	600b      	str	r3, [r1, #0]
-  1c:	f04f 0300 	mov.w	r3, #0
-  20:	f7ff fffe 	bl	0 <blah>
-  24:	4a0c      	ldr	r2, [pc, #48]	; (58 <func+0x58>)
-  26:	f50d 4180 	add.w	r1, sp, #16384	; 0x4000
-  2a:	4b0a      	ldr	r3, [pc, #40]	; (54 <func+0x54>)
-  2c:	3104      	adds	r1, #4
-  2e:	447a      	add	r2, pc
-  30:	58d3      	ldr	r3, [r2, r3]
-  32:	681a      	ldr	r2, [r3, #0]
-  34:	680b      	ldr	r3, [r1, #0]
-  36:	405a      	eors	r2, r3
-  38:	f04f 0300 	mov.w	r3, #0
-  3c:	d105      	bne.n	4a <func+0x4a>
-  3e:	2000      	movs	r0, #0
-  40:	f50d 4d80 	add.w	sp, sp, #16384	; 0x4000
-  44:	b003      	add	sp, #12
-  46:	f85d fb04 	ldr.w	pc, [sp], #4
-  4a:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  4e:	bf00      	nop
-  50:	00000046 	.word	0x00000046
-  54:	00000000 	.word	0x00000000
-  58:	00000026 	.word	0x00000026
+Function sub_400051 @ 0x00400051
+0x00400051:	lsls	r6, r0, #1
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r6, r4
+0x0040005b:	movs	r0, r0
+
+Function blah @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

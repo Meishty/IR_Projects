@@ -1,12 +1,13 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_crashme_161e093a_stripped.o:     file format elf32-littlearm
+Function sub_400011 @ 0x00400011
+0x00400011:	ldr	r0, [pc, #0xc]
+0x00400013:	push	{r3, lr}
+0x00400015:	add	r0, pc
+0x00400017:	bl	#0x400017
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	b5084803 	strlt	r4, [r8, #-2051]	; 0xfffff7fd
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	2300fffe 	movwcs	pc, #4094	; 0xffe	; <UNPREDICTABLE>
-   c:	deff681b 	mrcle	8, 7, r6, cr15, cr11, {0}
-  10:	00000008 	andeq	r0, r0, r8
+Function sub_40001b @ 0x0040001b
+0x0040001b:	movs	r3, #0
+0x0040001d:	ldr	r3, [r3]

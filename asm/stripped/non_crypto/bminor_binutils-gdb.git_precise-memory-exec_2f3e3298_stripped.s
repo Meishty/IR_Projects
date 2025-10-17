@@ -1,18 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_precise-memory-exec_2f3e3298_stripped.o:     file format elf32-littlearm
+Function sub_400011 @ 0x00400011
+0x00400011:	cmp	r0, #1
+0x00400013:	beq	#0x400019
+0x00400015:	movs	r0, #0
+0x00400017:	bx	lr
+0x00400019:	ldr	r1, [r1]
+0x0040001b:	ldr	r2, [pc, #0x18]
+0x0040001d:	push	{r3, lr}
+0x0040001f:	mov	r0, r1
+0x00400021:	add	r2, pc
+0x00400023:	movs	r3, #0
+0x00400025:	bl	#0x400025
 
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
 
-Disassembly of section .text.startup:
+Function sub_400029 @ 0x00400029
+0x00400029:	ldr	r0, [pc, #0xc]
+0x0040002b:	add	r0, pc
+0x0040002d:	bl	#0x40002d
 
-00000000 <.text.startup>:
-   0:	d0012801 	andle	r2, r1, r1, lsl #16
-   4:	47702000 	ldrbmi	r2, [r0, -r0]!
-   8:	4a066809 	bmi	0x19a034
-   c:	4608b508 	strmi	fp, [r8], -r8, lsl #10
-  10:	2300447a 	movwcs	r4, #1146	; 0x47a
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	44784803 	ldrbtmi	r4, [r8], #-2051	; 0xfffff7fd
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	00000010 	andeq	r0, r0, r0, lsl r0
-  28:	0000000a 	andeq	r0, r0, sl
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+
+Function sub_400031 @ 0x00400031
+0x00400031:	bl	#0x400031

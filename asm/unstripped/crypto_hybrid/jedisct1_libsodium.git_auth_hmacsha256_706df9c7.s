@@ -1,550 +1,684 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_auth_hmacsha256_706df9c7.o:     file format elf32-littlearm
+Function crypto_auth_hmacsha256_bytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
+Function crypto_auth_hmacsha256_keybytes @ 0x00400005
+0x00400005:	movs	r0, #0x20
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_auth_hmacsha256_statebytes @ 0x00400009
+0x00400009:	movs	r0, #0xd0
+0x0040000b:	bx	lr
 
-00000000 <crypto_auth_hmacsha256_bytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
+Function crypto_auth_hmacsha256_keygen @ 0x0040000d
+0x0040000d:	movs	r1, #0x20
+0x0040000f:	b.w	#0x500061
 
-00000004 <crypto_auth_hmacsha256_keybytes>:
-   4:	2020      	movs	r0, #32
-   6:	4770      	bx	lr
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x00400019:	mov	r4, r2
+0x0040001b:	ldr	r2, [pc, #0x35c]
+0x0040001d:	ldr	r3, [pc, #0x35c]
+0x0040001f:	sub	sp, #0x6c
+0x00400021:	add	r2, pc
+0x00400023:	mov	r6, r0
+0x00400025:	mov	r5, r1
+0x00400027:	add.w	r8, r0, #0x68
+0x0040002b:	cmp	r4, #0x40
+0x0040002d:	ldr	r3, [r2, r3]
+0x0040002f:	ldr	r3, [r3]
+0x00400031:	str	r3, [sp, #0x64]
+0x00400033:	mov.w	r3, #0
+0x00400037:	bhi.w	#0x4002fd
 
-00000008 <crypto_auth_hmacsha256_statebytes>:
-   8:	20d0      	movs	r0, #208	; 0xd0
-   a:	4770      	bx	lr
+Function crypto_auth_hmacsha256_init @ 0x00400015
+0x00400015:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x00400019:	mov	r4, r2
+0x0040001b:	ldr	r2, [pc, #0x35c]
+0x0040001d:	ldr	r3, [pc, #0x35c]
+0x0040001f:	sub	sp, #0x6c
+0x00400021:	add	r2, pc
+0x00400023:	mov	r6, r0
+0x00400025:	mov	r5, r1
+0x00400027:	add.w	r8, r0, #0x68
+0x0040002b:	cmp	r4, #0x40
+0x0040002d:	ldr	r3, [r2, r3]
+0x0040002f:	ldr	r3, [r3]
+0x00400031:	str	r3, [sp, #0x64]
+0x00400033:	mov.w	r3, #0
+0x00400037:	bhi.w	#0x4002fd
+0x0040003b:	add	r7, sp, #0x24
+0x0040003d:	bl	#0x500001
+0x00400041:	movs	r2, #0x40
+0x00400043:	movs	r1, #0x36
+0x00400045:	mov	r0, r7
+0x00400047:	bl	#0x50000d
+0x0040004b:	cmp	r4, #0
+0x0040004d:	beq.w	#0x40034f
+0x00400051:	mov	ip, r4
+0x00400053:	cmp	r4, #3
+0x00400055:	bls.w	#0x400347
+0x00400059:	ldr	r2, [sp, #0x24]
+0x0040005b:	ldr	r3, [r5]
+0x0040005d:	eors	r3, r2
+0x0040005f:	str	r3, [sp, #0x24]
+0x00400061:	lsrs	r3, r4, #2
+0x00400063:	cmp	r3, #1
+0x00400065:	it	eq
+0x00400067:	addeq.w	sb, sp, #4
+0x0040006b:	beq	#0x400145
+0x0040006d:	ldr	r1, [sp, #0x28]
+0x0040006f:	add.w	sb, sp, #4
+0x00400073:	ldr	r2, [r5, #4]
+0x00400075:	cmp	r3, #2
+0x00400077:	eor.w	r2, r2, r1
+0x0040007b:	str	r2, [sp, #0x28]
+0x0040007d:	add.w	r2, r5, #8
+0x00400081:	beq	#0x400145
+0x00400083:	ldr	r1, [r2]
+0x00400085:	cmp	r3, #3
+0x00400087:	ldr	r0, [sp, #0x2c]
+0x00400089:	eor.w	r1, r1, r0
+0x0040008d:	str	r1, [sp, #0x2c]
+0x0040008f:	beq	#0x400145
+0x00400091:	ldr	r1, [r2, #4]
+0x00400093:	cmp	r3, #4
+0x00400095:	ldr	r0, [sp, #0x30]
+0x00400097:	eor.w	r1, r1, r0
+0x0040009b:	str	r1, [sp, #0x30]
+0x0040009d:	beq	#0x400145
+0x0040009f:	ldr	r1, [r2, #8]
+0x004000a1:	cmp	r3, #5
+0x004000a3:	ldr	r0, [sp, #0x34]
+0x004000a5:	eor.w	r1, r1, r0
+0x004000a9:	str	r1, [sp, #0x34]
+0x004000ab:	beq	#0x400145
+0x004000ad:	ldr	r1, [r2, #0xc]
+0x004000af:	cmp	r3, #6
+0x004000b1:	ldr	r0, [sp, #0x38]
+0x004000b3:	eor.w	r1, r1, r0
+0x004000b7:	str	r1, [sp, #0x38]
+0x004000b9:	beq	#0x400145
+0x004000bb:	ldr	r1, [r2, #0x10]
+0x004000bd:	cmp	r3, #7
+0x004000bf:	ldr	r0, [sp, #0x3c]
+0x004000c1:	eor.w	r1, r1, r0
+0x004000c5:	str	r1, [sp, #0x3c]
+0x004000c7:	beq	#0x400145
+0x004000c9:	ldr	r1, [r2, #0x14]
+0x004000cb:	cmp	r3, #8
+0x004000cd:	ldr	r0, [sp, #0x40]
+0x004000cf:	eor.w	r1, r1, r0
+0x004000d3:	str	r1, [sp, #0x40]
+0x004000d5:	beq	#0x400145
+0x004000d7:	ldr	r1, [r2, #0x18]
+0x004000d9:	cmp	r3, #9
+0x004000db:	ldr	r0, [sp, #0x44]
+0x004000dd:	eor.w	r1, r1, r0
+0x004000e1:	str	r1, [sp, #0x44]
+0x004000e3:	beq	#0x400145
+0x004000e5:	ldr	r1, [r2, #0x1c]
+0x004000e7:	cmp	r3, #0xa
+0x004000e9:	ldr	r0, [sp, #0x48]
+0x004000eb:	eor.w	r1, r1, r0
+0x004000ef:	str	r1, [sp, #0x48]
+0x004000f1:	beq	#0x400145
+0x004000f3:	ldr	r1, [r2, #0x20]
+0x004000f5:	cmp	r3, #0xb
+0x004000f7:	ldr	r0, [sp, #0x4c]
+0x004000f9:	eor.w	r1, r1, r0
+0x004000fd:	str	r1, [sp, #0x4c]
+0x004000ff:	beq	#0x400145
+0x00400101:	ldr	r1, [r2, #0x24]
+0x00400103:	cmp	r3, #0xc
+0x00400105:	ldr	r0, [sp, #0x50]
+0x00400107:	eor.w	r1, r1, r0
+0x0040010b:	str	r1, [sp, #0x50]
+0x0040010d:	beq	#0x400145
+0x0040010f:	ldr	r1, [r2, #0x28]
+0x00400111:	cmp	r3, #0xd
+0x00400113:	ldr	r0, [sp, #0x54]
+0x00400115:	eor.w	r1, r1, r0
+0x00400119:	str	r1, [sp, #0x54]
+0x0040011b:	beq	#0x400145
+0x0040011d:	ldr	r1, [r2, #0x2c]
+0x0040011f:	cmp	r3, #0xe
+0x00400121:	ldr	r0, [sp, #0x58]
+0x00400123:	eor.w	r1, r1, r0
+0x00400127:	str	r1, [sp, #0x58]
+0x00400129:	beq	#0x400145
+0x0040012b:	ldr	r1, [r2, #0x30]
+0x0040012d:	cmp	r3, #0x10
+0x0040012f:	ldr	r0, [sp, #0x5c]
+0x00400131:	eor.w	r1, r1, r0
+0x00400135:	str	r1, [sp, #0x5c]
+0x00400137:	bne	#0x400143
+0x00400139:	ldr	r3, [r2, #0x34]
+0x0040013b:	ldr	r2, [sp, #0x60]
+0x0040013d:	eors	r3, r2
+0x0040013f:	str	r3, [sp, #0x60]
+0x00400141:	b	#0x400193
+0x00400143:	movs	r3, #0xf
+0x00400145:	lsls	r3, r3, #2
+0x00400147:	cmp	r3, ip
+0x00400149:	beq	#0x400193
+0x00400145:	lsls	r3, r3, #2
+0x00400147:	cmp	r3, ip
+0x00400149:	beq	#0x400193
+0x0040014b:	add.w	r2, r3, #0x68
+0x0040014f:	ldrb	r1, [r5, r3]
+0x00400151:	add	r2, sp, r2
+0x00400153:	adds	r0, r3, #1
+0x00400155:	cmp	r0, r4
+0x00400157:	ldrb	ip, [r2, #-0x44]
+0x0040015b:	eor.w	r1, r1, ip
+0x0040015f:	strb	r1, [r2, #-0x44]
+0x00400163:	bhs	#0x400193
+0x00400165:	add.w	r2, r0, #0x68
+0x00400169:	adds	r3, #2
+0x0040016b:	add.w	r1, sp, r2
+0x0040016f:	ldrb	r2, [r5, r0]
+0x00400171:	cmp	r3, r4
+0x00400173:	ldrb	r0, [r1, #-0x44]
+0x00400177:	eor.w	r2, r2, r0
+0x0040017b:	strb	r2, [r1, #-0x44]
+0x0040017f:	bhs	#0x400193
+0x00400181:	add.w	r2, r3, #0x68
+0x00400185:	ldrb	r3, [r5, r3]
+0x00400187:	add	r2, sp, r2
+0x00400189:	ldrb	r1, [r2, #-0x44]
+0x0040018d:	eors	r3, r1
+0x0040018f:	strb	r3, [r2, #-0x44]
+0x00400193:	movs	r3, #0
+0x00400195:	mov	r1, r7
+0x00400197:	movs	r2, #0x40
+0x00400199:	mov	r0, r6
+0x0040019b:	bl	#0x500019
+0x00400193:	movs	r3, #0
+0x00400195:	mov	r1, r7
+0x00400197:	movs	r2, #0x40
+0x00400199:	mov	r0, r6
+0x0040019b:	bl	#0x500019
+0x0040019f:	mov	r0, r8
+0x004001a1:	bl	#0x500001
+0x004001a5:	movs	r2, #0x40
+0x004001a7:	movs	r1, #0x5c
+0x004001a9:	mov	r0, r7
+0x004001ab:	bl	#0x50000d
+0x004001af:	subs	r3, r4, #1
+0x004001b1:	cmp	r3, #2
+0x004001b3:	bls.w	#0x400371
+0x004001b7:	ldr	r3, [r5]
+0x004001b9:	eor	r3, r3, #0x5c5c5c5c
+0x004001bd:	str	r3, [sp, #0x24]
+0x004001bf:	lsrs	r3, r4, #2
+0x004001c1:	cmp	r3, #1
+0x004001c3:	beq	#0x400277
+0x004001c5:	ldr	r2, [r5, #4]
+0x004001c7:	cmp	r3, #2
+0x004001c9:	eor	r2, r2, #0x5c5c5c5c
+0x004001cd:	str	r2, [sp, #0x28]
+0x004001cf:	beq	#0x400277
+0x004001d1:	ldr	r2, [r5, #8]
+0x004001d3:	cmp	r3, #3
+0x004001d5:	eor	r2, r2, #0x5c5c5c5c
+0x004001d9:	str	r2, [sp, #0x2c]
+0x004001db:	beq	#0x400277
+0x004001dd:	ldr	r2, [r5, #0xc]
+0x004001df:	cmp	r3, #4
+0x004001e1:	eor	r2, r2, #0x5c5c5c5c
+0x004001e5:	str	r2, [sp, #0x30]
+0x004001e7:	beq	#0x400277
+0x004001e9:	ldr	r2, [r5, #0x10]
+0x004001eb:	cmp	r3, #5
+0x004001ed:	eor	r2, r2, #0x5c5c5c5c
+0x004001f1:	str	r2, [sp, #0x34]
+0x004001f3:	beq	#0x400277
+0x004001f5:	ldr	r2, [r5, #0x14]
+0x004001f7:	cmp	r3, #6
+0x004001f9:	eor	r2, r2, #0x5c5c5c5c
+0x004001fd:	str	r2, [sp, #0x38]
+0x004001ff:	beq	#0x400277
+0x00400201:	ldr	r2, [r5, #0x18]
+0x00400203:	cmp	r3, #7
+0x00400205:	eor	r2, r2, #0x5c5c5c5c
+0x00400209:	str	r2, [sp, #0x3c]
+0x0040020b:	beq	#0x400277
+0x0040020d:	ldr	r2, [r5, #0x1c]
+0x0040020f:	cmp	r3, #8
+0x00400211:	eor	r2, r2, #0x5c5c5c5c
+0x00400215:	str	r2, [sp, #0x40]
+0x00400217:	beq	#0x400277
+0x00400219:	ldr	r2, [r5, #0x20]
+0x0040021b:	cmp	r3, #9
+0x0040021d:	eor	r2, r2, #0x5c5c5c5c
+0x00400221:	str	r2, [sp, #0x44]
+0x00400223:	beq	#0x400277
+0x00400225:	ldr	r2, [r5, #0x24]
+0x00400227:	cmp	r3, #0xa
+0x00400229:	eor	r2, r2, #0x5c5c5c5c
+0x0040022d:	str	r2, [sp, #0x48]
+0x0040022f:	beq	#0x400277
+0x00400231:	ldr	r2, [r5, #0x28]
+0x00400233:	cmp	r3, #0xb
+0x00400235:	eor	r2, r2, #0x5c5c5c5c
+0x00400239:	str	r2, [sp, #0x4c]
+0x0040023b:	beq	#0x400277
+0x0040023d:	ldr	r2, [r5, #0x2c]
+0x0040023f:	cmp	r3, #0xc
+0x00400241:	eor	r2, r2, #0x5c5c5c5c
+0x00400245:	str	r2, [sp, #0x50]
+0x00400247:	beq	#0x400277
+0x00400249:	ldr	r2, [r5, #0x30]
+0x0040024b:	cmp	r3, #0xd
+0x0040024d:	eor	r2, r2, #0x5c5c5c5c
+0x00400251:	str	r2, [sp, #0x54]
+0x00400253:	beq	#0x400277
+0x00400255:	ldr	r2, [r5, #0x34]
+0x00400257:	cmp	r3, #0xe
+0x00400259:	eor	r2, r2, #0x5c5c5c5c
+0x0040025d:	str	r2, [sp, #0x58]
+0x0040025f:	beq	#0x400277
+0x00400261:	ldr	r2, [r5, #0x38]
+0x00400263:	cmp	r3, #0x10
+0x00400265:	eor	r2, r2, #0x5c5c5c5c
+0x00400269:	str	r2, [sp, #0x5c]
+0x0040026b:	bne	#0x400277
+0x0040026d:	ldr	r3, [r5, #0x3c]
+0x0040026f:	eor	r3, r3, #0x5c5c5c5c
+0x00400273:	str	r3, [sp, #0x60]
+0x00400275:	b	#0x4002c5
+0x00400277:	bic	r3, r4, #3
+0x0040027b:	cmp	r3, r4
+0x0040027d:	beq	#0x4002c5
+0x0040027f:	add.w	r2, r3, #0x68
+0x00400283:	ldrb	r1, [r5, r3]
+0x00400285:	add	r2, sp, r2
+0x00400287:	adds	r0, r3, #1
+0x00400289:	cmp	r0, r4
+0x0040028b:	ldrb	r6, [r2, #-0x44]
+0x0040028f:	eor.w	r1, r1, r6
+0x00400293:	strb	r1, [r2, #-0x44]
+0x00400297:	bhs	#0x4002c5
+0x00400299:	add.w	r2, r0, #0x68
+0x0040029d:	adds	r3, #2
+0x0040029f:	add.w	r1, sp, r2
+0x004002a3:	ldrb	r2, [r5, r0]
+0x004002a5:	cmp	r3, r4
+0x004002a7:	ldrb	r0, [r1, #-0x44]
+0x004002ab:	eor.w	r2, r2, r0
+0x004002af:	strb	r2, [r1, #-0x44]
+0x004002b3:	bhs	#0x4002c5
+0x004002b5:	ldrb	r2, [r5, r3]
+0x004002b7:	adds	r3, #0x68
+0x004002b9:	add	r3, sp, r3
+0x004002bb:	ldrb	r1, [r3, #-0x44]
+0x004002bf:	eors	r2, r1
+0x004002c1:	strb	r2, [r3, #-0x44]
+0x004002c5:	movs	r2, #0x40
+0x004002c7:	movs	r3, #0
+0x004002c9:	mov	r1, r7
+0x004002cb:	mov	r0, r8
+0x004002cd:	bl	#0x500019
+0x004002c5:	movs	r2, #0x40
+0x004002c7:	movs	r3, #0
+0x004002c9:	mov	r1, r7
+0x004002cb:	mov	r0, r8
+0x004002cd:	bl	#0x500019
+0x004002d1:	movs	r1, #0x40
+0x004002d3:	mov	r0, r7
+0x004002d5:	bl	#0x500025
+0x004002d9:	movs	r1, #0x20
+0x004002db:	mov	r0, sb
+0x004002dd:	bl	#0x500025
+0x004002e1:	ldr	r2, [pc, #0x9c]
+0x004002e3:	ldr	r3, [pc, #0x98]
+0x004002e5:	add	r2, pc
+0x004002e7:	ldr	r3, [r2, r3]
+0x004002e9:	ldr	r2, [r3]
+0x004002eb:	ldr	r3, [sp, #0x64]
+0x004002ed:	eors	r2, r3
+0x004002ef:	mov.w	r3, #0
+0x004002f3:	bne	#0x400375
+0x004002f5:	movs	r0, #0
+0x004002f7:	add	sp, #0x6c
+0x004002f9:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x004002fd:	bl	#0x500001
+0x00400301:	add.w	sb, sp, #4
+0x00400305:	mov	r2, r4
+0x00400307:	movs	r3, #0
+0x00400309:	mov	r1, r5
+0x0040030b:	mov	r0, r6
+0x0040030d:	bl	#0x500019
+0x00400311:	mov	r1, sb
+0x00400313:	mov	r0, r6
+0x00400315:	add	r7, sp, #0x24
+0x00400317:	bl	#0x500031
+0x0040031b:	mov	r0, r6
+0x0040031d:	bl	#0x500001
+0x00400321:	movs	r2, #0x40
+0x00400323:	movs	r1, #0x36
+0x00400325:	mov	r0, r7
+0x00400327:	bl	#0x50000d
+0x0040032b:	ldr	r3, [sp, #4]
+0x0040032d:	movs	r4, #0x20
+0x0040032f:	add	r2, sp, #0xc
+0x00400331:	eor	r3, r3, #0x36363636
+0x00400335:	str	r3, [sp, #0x24]
+0x00400337:	ldr	r3, [sp, #8]
+0x00400339:	mov	ip, r4
+0x0040033b:	mov	r5, sb
+0x0040033d:	eor	r3, r3, #0x36363636
+0x00400341:	str	r3, [sp, #0x28]
+0x00400343:	movs	r3, #8
+0x00400345:	b	#0x400083
+0x00400347:	movs	r3, #0
+0x00400349:	add.w	sb, sp, #4
+0x0040034d:	b	#0x40014b
+0x0040034f:	movs	r2, #0x40
+0x00400351:	movs	r3, #0
+0x00400353:	mov	r1, r7
+0x00400355:	mov	r0, r6
+0x00400357:	bl	#0x500019
+0x0040035b:	mov	r0, r8
+0x0040035d:	bl	#0x500001
+0x00400361:	movs	r2, #0x40
+0x00400363:	movs	r1, #0x5c
+0x00400365:	mov	r0, r7
+0x00400367:	add.w	sb, sp, #4
+0x0040036b:	bl	#0x50000d
+0x0040036f:	b	#0x4002c5
+0x00400371:	movs	r3, #0
+0x00400373:	b	#0x40027f
+0x00400375:	bl	#0x50003d
 
-0000000c <crypto_auth_hmacsha256_keygen>:
-   c:	2120      	movs	r1, #32
-   e:	f7ff bffe 	b.w	0 <randombytes_buf>
-  12:	bf00      	nop
+Function crypto_auth_hmacsha256_update @ 0x00400385
+0x00400385:	push	{r3, lr}
+0x00400387:	bl	#0x500019
+0x0040038b:	movs	r0, #0
+0x0040038d:	pop	{r3, pc}
 
-00000014 <crypto_auth_hmacsha256_init>:
-  14:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
-  18:	4614      	mov	r4, r2
-  1a:	4ad7      	ldr	r2, [pc, #860]	; (378 <crypto_auth_hmacsha256_init+0x364>)
-  1c:	4bd7      	ldr	r3, [pc, #860]	; (37c <crypto_auth_hmacsha256_init+0x368>)
-  1e:	b09b      	sub	sp, #108	; 0x6c
-  20:	447a      	add	r2, pc
-  22:	4606      	mov	r6, r0
-  24:	460d      	mov	r5, r1
-  26:	f100 0868 	add.w	r8, r0, #104	; 0x68
-  2a:	2c40      	cmp	r4, #64	; 0x40
-  2c:	58d3      	ldr	r3, [r2, r3]
-  2e:	681b      	ldr	r3, [r3, #0]
-  30:	9319      	str	r3, [sp, #100]	; 0x64
-  32:	f04f 0300 	mov.w	r3, #0
-  36:	f200 8161 	bhi.w	2fc <crypto_auth_hmacsha256_init+0x2e8>
-  3a:	af09      	add	r7, sp, #36	; 0x24
-  3c:	f7ff fffe 	bl	0 <crypto_hash_sha256_init>
-  40:	2240      	movs	r2, #64	; 0x40
-  42:	2136      	movs	r1, #54	; 0x36
-  44:	4638      	mov	r0, r7
-  46:	f7ff fffe 	bl	0 <memset>
-  4a:	2c00      	cmp	r4, #0
-  4c:	f000 817f 	beq.w	34e <crypto_auth_hmacsha256_init+0x33a>
-  50:	46a4      	mov	ip, r4
-  52:	2c03      	cmp	r4, #3
-  54:	f240 8177 	bls.w	346 <crypto_auth_hmacsha256_init+0x332>
-  58:	9a09      	ldr	r2, [sp, #36]	; 0x24
-  5a:	682b      	ldr	r3, [r5, #0]
-  5c:	4053      	eors	r3, r2
-  5e:	9309      	str	r3, [sp, #36]	; 0x24
-  60:	08a3      	lsrs	r3, r4, #2
-  62:	2b01      	cmp	r3, #1
-  64:	bf08      	it	eq
-  66:	f10d 0904 	addeq.w	r9, sp, #4
-  6a:	d06b      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  6c:	990a      	ldr	r1, [sp, #40]	; 0x28
-  6e:	f10d 0904 	add.w	r9, sp, #4
-  72:	686a      	ldr	r2, [r5, #4]
-  74:	2b02      	cmp	r3, #2
-  76:	ea82 0201 	eor.w	r2, r2, r1
-  7a:	920a      	str	r2, [sp, #40]	; 0x28
-  7c:	f105 0208 	add.w	r2, r5, #8
-  80:	d060      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  82:	6811      	ldr	r1, [r2, #0]
-  84:	2b03      	cmp	r3, #3
-  86:	980b      	ldr	r0, [sp, #44]	; 0x2c
-  88:	ea81 0100 	eor.w	r1, r1, r0
-  8c:	910b      	str	r1, [sp, #44]	; 0x2c
-  8e:	d059      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  90:	6851      	ldr	r1, [r2, #4]
-  92:	2b04      	cmp	r3, #4
-  94:	980c      	ldr	r0, [sp, #48]	; 0x30
-  96:	ea81 0100 	eor.w	r1, r1, r0
-  9a:	910c      	str	r1, [sp, #48]	; 0x30
-  9c:	d052      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  9e:	6891      	ldr	r1, [r2, #8]
-  a0:	2b05      	cmp	r3, #5
-  a2:	980d      	ldr	r0, [sp, #52]	; 0x34
-  a4:	ea81 0100 	eor.w	r1, r1, r0
-  a8:	910d      	str	r1, [sp, #52]	; 0x34
-  aa:	d04b      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  ac:	68d1      	ldr	r1, [r2, #12]
-  ae:	2b06      	cmp	r3, #6
-  b0:	980e      	ldr	r0, [sp, #56]	; 0x38
-  b2:	ea81 0100 	eor.w	r1, r1, r0
-  b6:	910e      	str	r1, [sp, #56]	; 0x38
-  b8:	d044      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  ba:	6911      	ldr	r1, [r2, #16]
-  bc:	2b07      	cmp	r3, #7
-  be:	980f      	ldr	r0, [sp, #60]	; 0x3c
-  c0:	ea81 0100 	eor.w	r1, r1, r0
-  c4:	910f      	str	r1, [sp, #60]	; 0x3c
-  c6:	d03d      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  c8:	6951      	ldr	r1, [r2, #20]
-  ca:	2b08      	cmp	r3, #8
-  cc:	9810      	ldr	r0, [sp, #64]	; 0x40
-  ce:	ea81 0100 	eor.w	r1, r1, r0
-  d2:	9110      	str	r1, [sp, #64]	; 0x40
-  d4:	d036      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  d6:	6991      	ldr	r1, [r2, #24]
-  d8:	2b09      	cmp	r3, #9
-  da:	9811      	ldr	r0, [sp, #68]	; 0x44
-  dc:	ea81 0100 	eor.w	r1, r1, r0
-  e0:	9111      	str	r1, [sp, #68]	; 0x44
-  e2:	d02f      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  e4:	69d1      	ldr	r1, [r2, #28]
-  e6:	2b0a      	cmp	r3, #10
-  e8:	9812      	ldr	r0, [sp, #72]	; 0x48
-  ea:	ea81 0100 	eor.w	r1, r1, r0
-  ee:	9112      	str	r1, [sp, #72]	; 0x48
-  f0:	d028      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
-  f2:	6a11      	ldr	r1, [r2, #32]
-  f4:	2b0b      	cmp	r3, #11
-  f6:	9813      	ldr	r0, [sp, #76]	; 0x4c
-  f8:	ea81 0100 	eor.w	r1, r1, r0
-  fc:	9113      	str	r1, [sp, #76]	; 0x4c
-  fe:	d021      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
- 100:	6a51      	ldr	r1, [r2, #36]	; 0x24
- 102:	2b0c      	cmp	r3, #12
- 104:	9814      	ldr	r0, [sp, #80]	; 0x50
- 106:	ea81 0100 	eor.w	r1, r1, r0
- 10a:	9114      	str	r1, [sp, #80]	; 0x50
- 10c:	d01a      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
- 10e:	6a91      	ldr	r1, [r2, #40]	; 0x28
- 110:	2b0d      	cmp	r3, #13
- 112:	9815      	ldr	r0, [sp, #84]	; 0x54
- 114:	ea81 0100 	eor.w	r1, r1, r0
- 118:	9115      	str	r1, [sp, #84]	; 0x54
- 11a:	d013      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
- 11c:	6ad1      	ldr	r1, [r2, #44]	; 0x2c
- 11e:	2b0e      	cmp	r3, #14
- 120:	9816      	ldr	r0, [sp, #88]	; 0x58
- 122:	ea81 0100 	eor.w	r1, r1, r0
- 126:	9116      	str	r1, [sp, #88]	; 0x58
- 128:	d00c      	beq.n	144 <crypto_auth_hmacsha256_init+0x130>
- 12a:	6b11      	ldr	r1, [r2, #48]	; 0x30
- 12c:	2b10      	cmp	r3, #16
- 12e:	9817      	ldr	r0, [sp, #92]	; 0x5c
- 130:	ea81 0100 	eor.w	r1, r1, r0
- 134:	9117      	str	r1, [sp, #92]	; 0x5c
- 136:	d104      	bne.n	142 <crypto_auth_hmacsha256_init+0x12e>
- 138:	6b53      	ldr	r3, [r2, #52]	; 0x34
- 13a:	9a18      	ldr	r2, [sp, #96]	; 0x60
- 13c:	4053      	eors	r3, r2
- 13e:	9318      	str	r3, [sp, #96]	; 0x60
- 140:	e027      	b.n	192 <crypto_auth_hmacsha256_init+0x17e>
- 142:	230f      	movs	r3, #15
- 144:	009b      	lsls	r3, r3, #2
- 146:	4563      	cmp	r3, ip
- 148:	d023      	beq.n	192 <crypto_auth_hmacsha256_init+0x17e>
- 14a:	f103 0268 	add.w	r2, r3, #104	; 0x68
- 14e:	5ce9      	ldrb	r1, [r5, r3]
- 150:	446a      	add	r2, sp
- 152:	1c58      	adds	r0, r3, #1
- 154:	42a0      	cmp	r0, r4
- 156:	f812 cc44 	ldrb.w	ip, [r2, #-68]
- 15a:	ea81 010c 	eor.w	r1, r1, ip
- 15e:	f802 1c44 	strb.w	r1, [r2, #-68]
- 162:	d216      	bcs.n	192 <crypto_auth_hmacsha256_init+0x17e>
- 164:	f100 0268 	add.w	r2, r0, #104	; 0x68
- 168:	3302      	adds	r3, #2
- 16a:	eb0d 0102 	add.w	r1, sp, r2
- 16e:	5c2a      	ldrb	r2, [r5, r0]
- 170:	42a3      	cmp	r3, r4
- 172:	f811 0c44 	ldrb.w	r0, [r1, #-68]
- 176:	ea82 0200 	eor.w	r2, r2, r0
- 17a:	f801 2c44 	strb.w	r2, [r1, #-68]
- 17e:	d208      	bcs.n	192 <crypto_auth_hmacsha256_init+0x17e>
- 180:	f103 0268 	add.w	r2, r3, #104	; 0x68
- 184:	5ceb      	ldrb	r3, [r5, r3]
- 186:	446a      	add	r2, sp
- 188:	f812 1c44 	ldrb.w	r1, [r2, #-68]
- 18c:	404b      	eors	r3, r1
- 18e:	f802 3c44 	strb.w	r3, [r2, #-68]
- 192:	2300      	movs	r3, #0
- 194:	4639      	mov	r1, r7
- 196:	2240      	movs	r2, #64	; 0x40
- 198:	4630      	mov	r0, r6
- 19a:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 19e:	4640      	mov	r0, r8
- 1a0:	f7ff fffe 	bl	0 <crypto_hash_sha256_init>
- 1a4:	2240      	movs	r2, #64	; 0x40
- 1a6:	215c      	movs	r1, #92	; 0x5c
- 1a8:	4638      	mov	r0, r7
- 1aa:	f7ff fffe 	bl	0 <memset>
- 1ae:	1e63      	subs	r3, r4, #1
- 1b0:	2b02      	cmp	r3, #2
- 1b2:	f240 80dd 	bls.w	370 <crypto_auth_hmacsha256_init+0x35c>
- 1b6:	682b      	ldr	r3, [r5, #0]
- 1b8:	f083 335c 	eor.w	r3, r3, #1549556828	; 0x5c5c5c5c
- 1bc:	9309      	str	r3, [sp, #36]	; 0x24
- 1be:	08a3      	lsrs	r3, r4, #2
- 1c0:	2b01      	cmp	r3, #1
- 1c2:	d058      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 1c4:	686a      	ldr	r2, [r5, #4]
- 1c6:	2b02      	cmp	r3, #2
- 1c8:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 1cc:	920a      	str	r2, [sp, #40]	; 0x28
- 1ce:	d052      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 1d0:	68aa      	ldr	r2, [r5, #8]
- 1d2:	2b03      	cmp	r3, #3
- 1d4:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 1d8:	920b      	str	r2, [sp, #44]	; 0x2c
- 1da:	d04c      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 1dc:	68ea      	ldr	r2, [r5, #12]
- 1de:	2b04      	cmp	r3, #4
- 1e0:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 1e4:	920c      	str	r2, [sp, #48]	; 0x30
- 1e6:	d046      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 1e8:	692a      	ldr	r2, [r5, #16]
- 1ea:	2b05      	cmp	r3, #5
- 1ec:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 1f0:	920d      	str	r2, [sp, #52]	; 0x34
- 1f2:	d040      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 1f4:	696a      	ldr	r2, [r5, #20]
- 1f6:	2b06      	cmp	r3, #6
- 1f8:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 1fc:	920e      	str	r2, [sp, #56]	; 0x38
- 1fe:	d03a      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 200:	69aa      	ldr	r2, [r5, #24]
- 202:	2b07      	cmp	r3, #7
- 204:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 208:	920f      	str	r2, [sp, #60]	; 0x3c
- 20a:	d034      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 20c:	69ea      	ldr	r2, [r5, #28]
- 20e:	2b08      	cmp	r3, #8
- 210:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 214:	9210      	str	r2, [sp, #64]	; 0x40
- 216:	d02e      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 218:	6a2a      	ldr	r2, [r5, #32]
- 21a:	2b09      	cmp	r3, #9
- 21c:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 220:	9211      	str	r2, [sp, #68]	; 0x44
- 222:	d028      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 224:	6a6a      	ldr	r2, [r5, #36]	; 0x24
- 226:	2b0a      	cmp	r3, #10
- 228:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 22c:	9212      	str	r2, [sp, #72]	; 0x48
- 22e:	d022      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 230:	6aaa      	ldr	r2, [r5, #40]	; 0x28
- 232:	2b0b      	cmp	r3, #11
- 234:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 238:	9213      	str	r2, [sp, #76]	; 0x4c
- 23a:	d01c      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 23c:	6aea      	ldr	r2, [r5, #44]	; 0x2c
- 23e:	2b0c      	cmp	r3, #12
- 240:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 244:	9214      	str	r2, [sp, #80]	; 0x50
- 246:	d016      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 248:	6b2a      	ldr	r2, [r5, #48]	; 0x30
- 24a:	2b0d      	cmp	r3, #13
- 24c:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 250:	9215      	str	r2, [sp, #84]	; 0x54
- 252:	d010      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 254:	6b6a      	ldr	r2, [r5, #52]	; 0x34
- 256:	2b0e      	cmp	r3, #14
- 258:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 25c:	9216      	str	r2, [sp, #88]	; 0x58
- 25e:	d00a      	beq.n	276 <crypto_auth_hmacsha256_init+0x262>
- 260:	6baa      	ldr	r2, [r5, #56]	; 0x38
- 262:	2b10      	cmp	r3, #16
- 264:	f082 325c 	eor.w	r2, r2, #1549556828	; 0x5c5c5c5c
- 268:	9217      	str	r2, [sp, #92]	; 0x5c
- 26a:	d104      	bne.n	276 <crypto_auth_hmacsha256_init+0x262>
- 26c:	6beb      	ldr	r3, [r5, #60]	; 0x3c
- 26e:	f083 335c 	eor.w	r3, r3, #1549556828	; 0x5c5c5c5c
- 272:	9318      	str	r3, [sp, #96]	; 0x60
- 274:	e026      	b.n	2c4 <crypto_auth_hmacsha256_init+0x2b0>
- 276:	f024 0303 	bic.w	r3, r4, #3
- 27a:	42a3      	cmp	r3, r4
- 27c:	d022      	beq.n	2c4 <crypto_auth_hmacsha256_init+0x2b0>
- 27e:	f103 0268 	add.w	r2, r3, #104	; 0x68
- 282:	5ce9      	ldrb	r1, [r5, r3]
- 284:	446a      	add	r2, sp
- 286:	1c58      	adds	r0, r3, #1
- 288:	42a0      	cmp	r0, r4
- 28a:	f812 6c44 	ldrb.w	r6, [r2, #-68]
- 28e:	ea81 0106 	eor.w	r1, r1, r6
- 292:	f802 1c44 	strb.w	r1, [r2, #-68]
- 296:	d215      	bcs.n	2c4 <crypto_auth_hmacsha256_init+0x2b0>
- 298:	f100 0268 	add.w	r2, r0, #104	; 0x68
- 29c:	3302      	adds	r3, #2
- 29e:	eb0d 0102 	add.w	r1, sp, r2
- 2a2:	5c2a      	ldrb	r2, [r5, r0]
- 2a4:	42a3      	cmp	r3, r4
- 2a6:	f811 0c44 	ldrb.w	r0, [r1, #-68]
- 2aa:	ea82 0200 	eor.w	r2, r2, r0
- 2ae:	f801 2c44 	strb.w	r2, [r1, #-68]
- 2b2:	d207      	bcs.n	2c4 <crypto_auth_hmacsha256_init+0x2b0>
- 2b4:	5cea      	ldrb	r2, [r5, r3]
- 2b6:	3368      	adds	r3, #104	; 0x68
- 2b8:	446b      	add	r3, sp
- 2ba:	f813 1c44 	ldrb.w	r1, [r3, #-68]
- 2be:	404a      	eors	r2, r1
- 2c0:	f803 2c44 	strb.w	r2, [r3, #-68]
- 2c4:	2240      	movs	r2, #64	; 0x40
- 2c6:	2300      	movs	r3, #0
- 2c8:	4639      	mov	r1, r7
- 2ca:	4640      	mov	r0, r8
- 2cc:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 2d0:	2140      	movs	r1, #64	; 0x40
- 2d2:	4638      	mov	r0, r7
- 2d4:	f7ff fffe 	bl	0 <sodium_memzero>
- 2d8:	2120      	movs	r1, #32
- 2da:	4648      	mov	r0, r9
- 2dc:	f7ff fffe 	bl	0 <sodium_memzero>
- 2e0:	4a27      	ldr	r2, [pc, #156]	; (380 <crypto_auth_hmacsha256_init+0x36c>)
- 2e2:	4b26      	ldr	r3, [pc, #152]	; (37c <crypto_auth_hmacsha256_init+0x368>)
- 2e4:	447a      	add	r2, pc
- 2e6:	58d3      	ldr	r3, [r2, r3]
- 2e8:	681a      	ldr	r2, [r3, #0]
- 2ea:	9b19      	ldr	r3, [sp, #100]	; 0x64
- 2ec:	405a      	eors	r2, r3
- 2ee:	f04f 0300 	mov.w	r3, #0
- 2f2:	d13f      	bne.n	374 <crypto_auth_hmacsha256_init+0x360>
- 2f4:	2000      	movs	r0, #0
- 2f6:	b01b      	add	sp, #108	; 0x6c
- 2f8:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 2fc:	f7ff fffe 	bl	0 <crypto_hash_sha256_init>
- 300:	f10d 0904 	add.w	r9, sp, #4
- 304:	4622      	mov	r2, r4
- 306:	2300      	movs	r3, #0
- 308:	4629      	mov	r1, r5
- 30a:	4630      	mov	r0, r6
- 30c:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 310:	4649      	mov	r1, r9
- 312:	4630      	mov	r0, r6
- 314:	af09      	add	r7, sp, #36	; 0x24
- 316:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 31a:	4630      	mov	r0, r6
- 31c:	f7ff fffe 	bl	0 <crypto_hash_sha256_init>
- 320:	2240      	movs	r2, #64	; 0x40
- 322:	2136      	movs	r1, #54	; 0x36
- 324:	4638      	mov	r0, r7
- 326:	f7ff fffe 	bl	0 <memset>
- 32a:	9b01      	ldr	r3, [sp, #4]
- 32c:	2420      	movs	r4, #32
- 32e:	aa03      	add	r2, sp, #12
- 330:	f083 3336 	eor.w	r3, r3, #909522486	; 0x36363636
- 334:	9309      	str	r3, [sp, #36]	; 0x24
- 336:	9b02      	ldr	r3, [sp, #8]
- 338:	46a4      	mov	ip, r4
- 33a:	464d      	mov	r5, r9
- 33c:	f083 3336 	eor.w	r3, r3, #909522486	; 0x36363636
- 340:	930a      	str	r3, [sp, #40]	; 0x28
- 342:	2308      	movs	r3, #8
- 344:	e69d      	b.n	82 <crypto_auth_hmacsha256_init+0x6e>
- 346:	2300      	movs	r3, #0
- 348:	f10d 0904 	add.w	r9, sp, #4
- 34c:	e6fd      	b.n	14a <crypto_auth_hmacsha256_init+0x136>
- 34e:	2240      	movs	r2, #64	; 0x40
- 350:	2300      	movs	r3, #0
- 352:	4639      	mov	r1, r7
- 354:	4630      	mov	r0, r6
- 356:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 35a:	4640      	mov	r0, r8
- 35c:	f7ff fffe 	bl	0 <crypto_hash_sha256_init>
- 360:	2240      	movs	r2, #64	; 0x40
- 362:	215c      	movs	r1, #92	; 0x5c
- 364:	4638      	mov	r0, r7
- 366:	f10d 0904 	add.w	r9, sp, #4
- 36a:	f7ff fffe 	bl	0 <memset>
- 36e:	e7a9      	b.n	2c4 <crypto_auth_hmacsha256_init+0x2b0>
- 370:	2300      	movs	r3, #0
- 372:	e784      	b.n	27e <crypto_auth_hmacsha256_init+0x26a>
- 374:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 378:	00000354 	.word	0x00000354
- 37c:	00000000 	.word	0x00000000
- 380:	00000098 	.word	0x00000098
+Function sub_40038f @ 0x0040038f
+0x0040038f:	nop	
+0x00400391:	ldr	r2, [pc, #0x58]
+0x00400393:	ldr	r3, [pc, #0x5c]
+0x00400395:	push	{r4, r5, r6, lr}
+0x00400397:	add	r2, pc
+0x00400399:	mov	r4, r0
+0x0040039b:	sub	sp, #0x28
+0x0040039d:	mov	r6, r1
+0x0040039f:	ldr	r3, [r2, r3]
+0x004003a1:	add	r5, sp, #4
+0x004003a3:	adds	r4, #0x68
+0x004003a5:	mov	r1, r5
+0x004003a7:	ldr	r3, [r3]
+0x004003a9:	str	r3, [sp, #0x24]
+0x004003ab:	mov.w	r3, #0
+0x004003af:	bl	#0x500031
 
-00000384 <crypto_auth_hmacsha256_update>:
- 384:	b508      	push	{r3, lr}
- 386:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 38a:	2000      	movs	r0, #0
- 38c:	bd08      	pop	{r3, pc}
- 38e:	bf00      	nop
+Function crypto_auth_hmacsha256_final @ 0x00400391
+0x00400391:	ldr	r2, [pc, #0x58]
+0x00400393:	ldr	r3, [pc, #0x5c]
+0x00400395:	push	{r4, r5, r6, lr}
+0x00400397:	add	r2, pc
+0x00400399:	mov	r4, r0
+0x0040039b:	sub	sp, #0x28
+0x0040039d:	mov	r6, r1
+0x0040039f:	ldr	r3, [r2, r3]
+0x004003a1:	add	r5, sp, #4
+0x004003a3:	adds	r4, #0x68
+0x004003a5:	mov	r1, r5
+0x004003a7:	ldr	r3, [r3]
+0x004003a9:	str	r3, [sp, #0x24]
+0x004003ab:	mov.w	r3, #0
+0x004003af:	bl	#0x500031
+0x004003b3:	movs	r2, #0x20
+0x004003b5:	movs	r3, #0
+0x004003b7:	mov	r1, r5
+0x004003b9:	mov	r0, r4
+0x004003bb:	bl	#0x500019
+0x004003bf:	mov	r1, r6
+0x004003c1:	mov	r0, r4
+0x004003c3:	bl	#0x500031
+0x004003c7:	movs	r1, #0x20
+0x004003c9:	mov	r0, r5
+0x004003cb:	bl	#0x500025
+0x004003cf:	ldr	r2, [pc, #0x24]
+0x004003d1:	ldr	r3, [pc, #0x1c]
+0x004003d3:	add	r2, pc
+0x004003d5:	ldr	r3, [r2, r3]
+0x004003d7:	ldr	r2, [r3]
+0x004003d9:	ldr	r3, [sp, #0x24]
+0x004003db:	eors	r2, r3
+0x004003dd:	mov.w	r3, #0
+0x004003e1:	bne	#0x4003e9
+0x004003e3:	movs	r0, #0
+0x004003e5:	add	sp, #0x28
+0x004003e7:	pop	{r4, r5, r6, pc}
+0x004003e9:	bl	#0x50003d
 
-00000390 <crypto_auth_hmacsha256_final>:
- 390:	4a16      	ldr	r2, [pc, #88]	; (3ec <crypto_auth_hmacsha256_final+0x5c>)
- 392:	4b17      	ldr	r3, [pc, #92]	; (3f0 <crypto_auth_hmacsha256_final+0x60>)
- 394:	b570      	push	{r4, r5, r6, lr}
- 396:	447a      	add	r2, pc
- 398:	4604      	mov	r4, r0
- 39a:	b08a      	sub	sp, #40	; 0x28
- 39c:	460e      	mov	r6, r1
- 39e:	58d3      	ldr	r3, [r2, r3]
- 3a0:	ad01      	add	r5, sp, #4
- 3a2:	3468      	adds	r4, #104	; 0x68
- 3a4:	4629      	mov	r1, r5
- 3a6:	681b      	ldr	r3, [r3, #0]
- 3a8:	9309      	str	r3, [sp, #36]	; 0x24
- 3aa:	f04f 0300 	mov.w	r3, #0
- 3ae:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 3b2:	2220      	movs	r2, #32
- 3b4:	2300      	movs	r3, #0
- 3b6:	4629      	mov	r1, r5
- 3b8:	4620      	mov	r0, r4
- 3ba:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 3be:	4631      	mov	r1, r6
- 3c0:	4620      	mov	r0, r4
- 3c2:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 3c6:	2120      	movs	r1, #32
- 3c8:	4628      	mov	r0, r5
- 3ca:	f7ff fffe 	bl	0 <sodium_memzero>
- 3ce:	4a09      	ldr	r2, [pc, #36]	; (3f4 <crypto_auth_hmacsha256_final+0x64>)
- 3d0:	4b07      	ldr	r3, [pc, #28]	; (3f0 <crypto_auth_hmacsha256_final+0x60>)
- 3d2:	447a      	add	r2, pc
- 3d4:	58d3      	ldr	r3, [r2, r3]
- 3d6:	681a      	ldr	r2, [r3, #0]
- 3d8:	9b09      	ldr	r3, [sp, #36]	; 0x24
- 3da:	405a      	eors	r2, r3
- 3dc:	f04f 0300 	mov.w	r3, #0
- 3e0:	d102      	bne.n	3e8 <crypto_auth_hmacsha256_final+0x58>
- 3e2:	2000      	movs	r0, #0
- 3e4:	b00a      	add	sp, #40	; 0x28
- 3e6:	bd70      	pop	{r4, r5, r6, pc}
- 3e8:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 3ec:	00000052 	.word	0x00000052
- 3f0:	00000000 	.word	0x00000000
- 3f4:	0000001e 	.word	0x0000001e
+Function crypto_auth_hmacsha256 @ 0x004003f9
+0x004003f9:	push	{r4, r5, r6, r7, lr}
+0x004003fb:	mov	r7, r1
+0x004003fd:	ldr	r1, [pc, #0x74]
+0x004003ff:	sub	sp, #0x104
+0x00400401:	mov	r5, r2
+0x00400403:	ldr	r2, [pc, #0x74]
+0x00400405:	add	r1, pc
+0x00400407:	add	r4, sp, #8
+0x00400409:	mov	r6, r0
+0x0040040b:	str	r3, [sp, #4]
+0x0040040d:	mov	r0, r4
+0x0040040f:	ldr	r2, [r1, r2]
+0x00400411:	ldr	r1, [sp, #0x118]
+0x00400413:	ldr	r2, [r2]
+0x00400415:	str	r2, [sp, #0xfc]
+0x00400417:	mov.w	r2, #0
+0x0040041b:	movs	r2, #0x20
+0x0040041d:	bl	#0x400015
+0x00400421:	mov	r2, r5
+0x00400423:	ldr	r3, [sp, #4]
+0x00400425:	add	r5, sp, #0xdc
+0x00400427:	mov	r1, r7
+0x00400429:	mov	r0, r4
+0x0040042b:	bl	#0x500019
+0x0040042f:	mov	r1, r5
+0x00400431:	mov	r0, r4
+0x00400433:	add	r4, sp, #0x70
+0x00400435:	bl	#0x500031
+0x00400439:	movs	r2, #0x20
+0x0040043b:	movs	r3, #0
+0x0040043d:	mov	r1, r5
+0x0040043f:	mov	r0, r4
+0x00400441:	bl	#0x500019
+0x00400445:	mov	r1, r6
+0x00400447:	mov	r0, r4
+0x00400449:	bl	#0x500031
+0x0040044d:	movs	r1, #0x20
+0x0040044f:	mov	r0, r5
+0x00400451:	bl	#0x500025
+0x00400455:	ldr	r2, [pc, #0x24]
+0x00400457:	ldr	r3, [pc, #0x20]
+0x00400459:	add	r2, pc
+0x0040045b:	ldr	r3, [r2, r3]
+0x0040045d:	ldr	r2, [r3]
+0x0040045f:	ldr	r3, [sp, #0xfc]
+0x00400461:	eors	r2, r3
+0x00400463:	mov.w	r3, #0
+0x00400467:	bne	#0x40046f
+0x00400469:	movs	r0, #0
+0x0040046b:	add	sp, #0x104
+0x0040046d:	pop	{r4, r5, r6, r7, pc}
+0x0040046f:	bl	#0x50003d
 
-000003f8 <crypto_auth_hmacsha256>:
- 3f8:	b5f0      	push	{r4, r5, r6, r7, lr}
- 3fa:	460f      	mov	r7, r1
- 3fc:	491d      	ldr	r1, [pc, #116]	; (474 <crypto_auth_hmacsha256+0x7c>)
- 3fe:	b0c1      	sub	sp, #260	; 0x104
- 400:	4615      	mov	r5, r2
- 402:	4a1d      	ldr	r2, [pc, #116]	; (478 <crypto_auth_hmacsha256+0x80>)
- 404:	4479      	add	r1, pc
- 406:	ac02      	add	r4, sp, #8
- 408:	4606      	mov	r6, r0
- 40a:	9301      	str	r3, [sp, #4]
- 40c:	4620      	mov	r0, r4
- 40e:	588a      	ldr	r2, [r1, r2]
- 410:	9946      	ldr	r1, [sp, #280]	; 0x118
- 412:	6812      	ldr	r2, [r2, #0]
- 414:	923f      	str	r2, [sp, #252]	; 0xfc
- 416:	f04f 0200 	mov.w	r2, #0
- 41a:	2220      	movs	r2, #32
- 41c:	f7ff fffe 	bl	14 <crypto_auth_hmacsha256_init>
- 420:	462a      	mov	r2, r5
- 422:	9b01      	ldr	r3, [sp, #4]
- 424:	ad37      	add	r5, sp, #220	; 0xdc
- 426:	4639      	mov	r1, r7
- 428:	4620      	mov	r0, r4
- 42a:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 42e:	4629      	mov	r1, r5
- 430:	4620      	mov	r0, r4
- 432:	ac1c      	add	r4, sp, #112	; 0x70
- 434:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 438:	2220      	movs	r2, #32
- 43a:	2300      	movs	r3, #0
- 43c:	4629      	mov	r1, r5
- 43e:	4620      	mov	r0, r4
- 440:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 444:	4631      	mov	r1, r6
- 446:	4620      	mov	r0, r4
- 448:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 44c:	2120      	movs	r1, #32
- 44e:	4628      	mov	r0, r5
- 450:	f7ff fffe 	bl	0 <sodium_memzero>
- 454:	4a09      	ldr	r2, [pc, #36]	; (47c <crypto_auth_hmacsha256+0x84>)
- 456:	4b08      	ldr	r3, [pc, #32]	; (478 <crypto_auth_hmacsha256+0x80>)
- 458:	447a      	add	r2, pc
- 45a:	58d3      	ldr	r3, [r2, r3]
- 45c:	681a      	ldr	r2, [r3, #0]
- 45e:	9b3f      	ldr	r3, [sp, #252]	; 0xfc
- 460:	405a      	eors	r2, r3
- 462:	f04f 0300 	mov.w	r3, #0
- 466:	d102      	bne.n	46e <crypto_auth_hmacsha256+0x76>
- 468:	2000      	movs	r0, #0
- 46a:	b041      	add	sp, #260	; 0x104
- 46c:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 46e:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 472:	bf00      	nop
- 474:	0000006c 	.word	0x0000006c
- 478:	00000000 	.word	0x00000000
- 47c:	00000020 	.word	0x00000020
+Function sub_400473 @ 0x00400473
+0x00400473:	nop	
+0x00400475:	lsls	r4, r5, #1
+0x00400477:	movs	r0, r0
+0x00400479:	movs	r0, r0
+0x0040047b:	movs	r0, r0
+0x0040047d:	movs	r0, r4
+0x0040047f:	movs	r0, r0
+0x00400481:	push	{r4, r5, r6, r7, lr}
+0x00400483:	mov	r6, r1
+0x00400485:	ldr	r1, [pc, #0x8c]
+0x00400487:	sub	sp, #0x124
+0x00400489:	mov	r7, r2
+0x0040048b:	ldr	r2, [pc, #0x8c]
+0x0040048d:	add	r1, pc
+0x0040048f:	add	r4, sp, #8
+0x00400491:	mov	r5, r0
+0x00400493:	str	r3, [sp, #4]
+0x00400495:	mov	r0, r4
+0x00400497:	ldr	r2, [r1, r2]
+0x00400499:	ldr	r1, [sp, #0x138]
+0x0040049b:	ldr	r2, [r2]
+0x0040049d:	str	r2, [sp, #0x11c]
+0x0040049f:	mov.w	r2, #0
+0x004004a3:	movs	r2, #0x20
+0x004004a5:	bl	#0x400015
 
-00000480 <crypto_auth_hmacsha256_verify>:
- 480:	b5f0      	push	{r4, r5, r6, r7, lr}
- 482:	460e      	mov	r6, r1
- 484:	4923      	ldr	r1, [pc, #140]	; (514 <crypto_auth_hmacsha256_verify+0x94>)
- 486:	b0c9      	sub	sp, #292	; 0x124
- 488:	4617      	mov	r7, r2
- 48a:	4a23      	ldr	r2, [pc, #140]	; (518 <crypto_auth_hmacsha256_verify+0x98>)
- 48c:	4479      	add	r1, pc
- 48e:	ac02      	add	r4, sp, #8
- 490:	4605      	mov	r5, r0
- 492:	9301      	str	r3, [sp, #4]
- 494:	4620      	mov	r0, r4
- 496:	588a      	ldr	r2, [r1, r2]
- 498:	994e      	ldr	r1, [sp, #312]	; 0x138
- 49a:	6812      	ldr	r2, [r2, #0]
- 49c:	9247      	str	r2, [sp, #284]	; 0x11c
- 49e:	f04f 0200 	mov.w	r2, #0
- 4a2:	2220      	movs	r2, #32
- 4a4:	f7ff fffe 	bl	14 <crypto_auth_hmacsha256_init>
- 4a8:	463a      	mov	r2, r7
- 4aa:	9b01      	ldr	r3, [sp, #4]
- 4ac:	4631      	mov	r1, r6
- 4ae:	af3f      	add	r7, sp, #252	; 0xfc
- 4b0:	4620      	mov	r0, r4
- 4b2:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 4b6:	ae1c      	add	r6, sp, #112	; 0x70
- 4b8:	4639      	mov	r1, r7
- 4ba:	4620      	mov	r0, r4
- 4bc:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 4c0:	ac37      	add	r4, sp, #220	; 0xdc
- 4c2:	2220      	movs	r2, #32
- 4c4:	2300      	movs	r3, #0
- 4c6:	4639      	mov	r1, r7
- 4c8:	4630      	mov	r0, r6
- 4ca:	f7ff fffe 	bl	0 <crypto_hash_sha256_update>
- 4ce:	4621      	mov	r1, r4
- 4d0:	4630      	mov	r0, r6
- 4d2:	f7ff fffe 	bl	0 <crypto_hash_sha256_final>
- 4d6:	2120      	movs	r1, #32
- 4d8:	4638      	mov	r0, r7
- 4da:	f7ff fffe 	bl	0 <sodium_memzero>
- 4de:	4621      	mov	r1, r4
- 4e0:	4628      	mov	r0, r5
- 4e2:	f7ff fffe 	bl	0 <crypto_verify_32>
- 4e6:	2220      	movs	r2, #32
- 4e8:	4603      	mov	r3, r0
- 4ea:	4629      	mov	r1, r5
- 4ec:	4620      	mov	r0, r4
- 4ee:	461c      	mov	r4, r3
- 4f0:	f7ff fffe 	bl	0 <sodium_memcmp>
- 4f4:	4a09      	ldr	r2, [pc, #36]	; (51c <crypto_auth_hmacsha256_verify+0x9c>)
- 4f6:	4b08      	ldr	r3, [pc, #32]	; (518 <crypto_auth_hmacsha256_verify+0x98>)
- 4f8:	4320      	orrs	r0, r4
- 4fa:	447a      	add	r2, pc
- 4fc:	58d3      	ldr	r3, [r2, r3]
- 4fe:	681a      	ldr	r2, [r3, #0]
- 500:	9b47      	ldr	r3, [sp, #284]	; 0x11c
- 502:	405a      	eors	r2, r3
- 504:	f04f 0300 	mov.w	r3, #0
- 508:	d101      	bne.n	50e <crypto_auth_hmacsha256_verify+0x8e>
- 50a:	b049      	add	sp, #292	; 0x124
- 50c:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 50e:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 512:	bf00      	nop
- 514:	00000084 	.word	0x00000084
- 518:	00000000 	.word	0x00000000
- 51c:	0000001e 	.word	0x0000001e
+Function crypto_auth_hmacsha256_verify @ 0x00400481
+0x00400481:	push	{r4, r5, r6, r7, lr}
+0x00400483:	mov	r6, r1
+0x00400485:	ldr	r1, [pc, #0x8c]
+0x00400487:	sub	sp, #0x124
+0x00400489:	mov	r7, r2
+0x0040048b:	ldr	r2, [pc, #0x8c]
+0x0040048d:	add	r1, pc
+0x0040048f:	add	r4, sp, #8
+0x00400491:	mov	r5, r0
+0x00400493:	str	r3, [sp, #4]
+0x00400495:	mov	r0, r4
+0x00400497:	ldr	r2, [r1, r2]
+0x00400499:	ldr	r1, [sp, #0x138]
+0x0040049b:	ldr	r2, [r2]
+0x0040049d:	str	r2, [sp, #0x11c]
+0x0040049f:	mov.w	r2, #0
+0x004004a3:	movs	r2, #0x20
+0x004004a5:	bl	#0x400015
+0x004004a9:	mov	r2, r7
+0x004004ab:	ldr	r3, [sp, #4]
+0x004004ad:	mov	r1, r6
+0x004004af:	add	r7, sp, #0xfc
+0x004004b1:	mov	r0, r4
+0x004004b3:	bl	#0x500019
+0x004004b7:	add	r6, sp, #0x70
+0x004004b9:	mov	r1, r7
+0x004004bb:	mov	r0, r4
+0x004004bd:	bl	#0x500031
+0x004004c1:	add	r4, sp, #0xdc
+0x004004c3:	movs	r2, #0x20
+0x004004c5:	movs	r3, #0
+0x004004c7:	mov	r1, r7
+0x004004c9:	mov	r0, r6
+0x004004cb:	bl	#0x500019
+0x004004cf:	mov	r1, r4
+0x004004d1:	mov	r0, r6
+0x004004d3:	bl	#0x500031
+0x004004d7:	movs	r1, #0x20
+0x004004d9:	mov	r0, r7
+0x004004db:	bl	#0x500025
+0x004004df:	mov	r1, r4
+0x004004e1:	mov	r0, r5
+0x004004e3:	bl	#0x500049
+0x004004e7:	movs	r2, #0x20
+0x004004e9:	mov	r3, r0
+0x004004eb:	mov	r1, r5
+0x004004ed:	mov	r0, r4
+0x004004ef:	mov	r4, r3
+0x004004f1:	bl	#0x500055
+0x004004f5:	ldr	r2, [pc, #0x24]
+0x004004f7:	ldr	r3, [pc, #0x20]
+0x004004f9:	orrs	r0, r4
+0x004004fb:	add	r2, pc
+0x004004fd:	ldr	r3, [r2, r3]
+0x004004ff:	ldr	r2, [r3]
+0x00400501:	ldr	r3, [sp, #0x11c]
+0x00400503:	eors	r2, r3
+0x00400505:	mov.w	r3, #0
+0x00400509:	bne	#0x40050f
+0x0040050b:	add	sp, #0x124
+0x0040050d:	pop	{r4, r5, r6, r7, pc}
+0x0040050f:	bl	#0x50003d
+
+Function sub_400513 @ 0x00400513
+0x00400513:	nop	
+0x00400515:	lsls	r4, r0, #2
+0x00400517:	movs	r0, r0
+0x00400519:	movs	r0, r0
+0x0040051b:	movs	r0, r0
+0x0040051d:	movs	r6, r3
+0x0040051f:	movs	r0, r0
+
+Function crypto_hash_sha256_init @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function memset @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function crypto_hash_sha256_update @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function sodium_memzero @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function crypto_hash_sha256_final @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function crypto_verify_32 @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function sodium_memcmp @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function randombytes_buf @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0

@@ -1,51 +1,58 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_threads_1f7f2698_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x804]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	movs	r0, #1
+0x0040000d:	bl	#0x40000d
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bl	#0x40000d
+0x00400011:	b	#0x40000b
 
-00000000 <.text>:
-   0:	b5084804 	strlt	r4, [r8, #-2052]	; 0xfffff7fc
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	2001fffe 	strdcs	pc, [r1], -lr
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	bf00e7fb 	svclt	0x0000e7fb
-  14:	0000000c 	andeq	r0, r0, ip
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	c068f8df 	ldrdgt	pc, [r8], #-143	; 0xffffff71	; <UNPREDICTABLE>
-   4:	4b1a2203 	blmi	0x688818
-   8:	44fc2100 	ldrbtmi	r2, [ip], #256	; 0x100
-   c:	4c19b530 	cfldr32mi	mvfx11, [r9], {48}	; 0x30
-  10:	b0874d19 	addlt	r4, r7, r9, lsl sp
-  14:	3003f85c 	andcc	pc, r3, ip, asr r8	; <UNPREDICTABLE>
-  18:	4620447c 			; <UNDEFINED> instruction: 0x4620447c
-  1c:	681b447d 	ldmdavs	fp, {r0, r2, r3, r4, r5, r6, sl, lr}
-  20:	f04f9305 			; <UNDEFINED> instruction: 0xf04f9305
-  24:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
-  28:	2300fffe 	movwcs	pc, #4094	; 0xffe	; <UNPREDICTABLE>
-  2c:	4619462a 	ldrmi	r4, [r9], -sl, lsr #12
-  30:	9501a803 	strls	sl, [r1, #-2051]	; 0xfffff7fd
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	9a012300 	bls	0x48c40
-  3c:	a8044619 	stmdage	r4, {r0, r3, r4, r9, sl, lr}
-  40:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  44:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  48:	480cfffe 	stmdami	ip, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  4c:	44784d0c 	ldrbtmi	r4, [r8], #-3340	; 0xfffff2f4
-  50:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  54:	447d4b0b 	ldrbtmi	r4, [sp], #-2827	; 0xfffff4f5
-  58:	681858eb 	ldmdavs	r8, {r0, r1, r3, r5, r6, r7, fp, ip, lr}
-  5c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  60:	f7ff20b4 			; <UNDEFINED> instruction: 0xf7ff20b4
-  64:	2000fffe 	strdcs	pc, [r0], -lr
-  68:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  6c:	0000005e 	andeq	r0, r0, lr, asr r0
-  70:	00000000 	andeq	r0, r0, r0
-  74:	00000058 	andeq	r0, r0, r8, asr r0
-  78:	00000058 	andeq	r0, r0, r8, asr r0
-  7c:	0000002a 	andeq	r0, r0, sl, lsr #32
-  80:	00000026 	andeq	r0, r0, r6, lsr #32
-  84:	00000000 	andeq	r0, r0, r0
+Function sub_400046 @ 0x00400046
+0x00400046:	ldcmi	p12, c4, [sb, #-0x64]
+
+Function sub_400064 @ 0x00400064
+0x00400064:	ldrmi	r4, [sb], -sl, lsr #12
+0x00400068:	strls	sl, [r1, #-0x803]
+
+Function sub_400070 @ 0x00400070
+0x00400070:	bls	#0x448c78
+
+Function sub_400080 @ 0x00400080
+0x00400080:	stmdami	ip, {r1, r2, r3, r4, r5, r6, r7, r8, sb, sl, fp, ip, sp, lr, pc}
+0x00400084:	ldrbtmi	r4, [r8], #-0xd0c
+0x00400084:	ldrbtmi	r4, [r8], #-0xd0c
+
+Function sub_40008c @ 0x0040008c
+0x0040008c:	ldrbtmi	r4, [sp], #-0xb0b
+0x00400090:	ldmdavs	r8, {r0, r1, r3, r5, r6, r7, fp, ip, lr}
+
+Function sub_40009d @ 0x0040009d
+
+Function sub_4000a3 @ 0x004000a3
+0x004000a3:	vshr.u32	q8, q7, #2
+0x004000a7:	movs	r0, r0
+0x004000a9:	movs	r0, r0
+0x004000ab:	movs	r0, r0
+0x004000ad:	lsls	r0, r3, #1
+0x004000af:	movs	r0, r0
+0x004000b1:	lsls	r0, r3, #1
+0x004000b3:	movs	r0, r0
+0x004000b5:	movs	r2, r5
+0x004000b7:	movs	r0, r0
+0x004000b9:	movs	r6, r4
+0x004000bb:	movs	r0, r0
+0x004000bd:	movs	r0, r0
+0x004000bf:	movs	r0, r0

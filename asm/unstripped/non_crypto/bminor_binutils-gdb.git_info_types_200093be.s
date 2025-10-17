@@ -1,17 +1,8 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_info_types_200093be.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwlo	r6, #0x1803
+0x00400004:	ldrbmi	r6, [r0, -r3]!
 
-
-Disassembly of section .text:
-
-00000000 <do_something>:
-   0:	6803      	ldr	r3, [r0, #0]
-   2:	3301      	adds	r3, #1
-   4:	6003      	str	r3, [r0, #0]
-   6:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400009
+0x00400009:	movs	r0, #0
+0x0040000b:	bx	lr

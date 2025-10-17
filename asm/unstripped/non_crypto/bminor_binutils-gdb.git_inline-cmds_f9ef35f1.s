@@ -1,44 +1,60 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_inline-cmds_f9ef35f1.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	push	{r3, r4, r5, lr}
+0x00400013:	movs	r2, #7
+0x00400015:	ldr	r4, [pc, #0x68]
+0x00400017:	movs	r3, #8
+0x00400019:	movs	r5, #0
+0x0040001b:	add	r4, pc
+0x0040001d:	strd	r2, r3, [r4]
+0x00400021:	bl	#0x500001
+0x00400025:	ldrd	r3, r2, [r4]
+0x00400029:	mul	r3, r2, r3
+0x0040002d:	str	r3, [r4, #8]
+0x0040002f:	bl	#0x500001
+0x00400033:	ldrd	r2, r3, [r4]
+0x00400037:	mul	r3, r2, r3
+0x0040003b:	mul	r3, r2, r3
+0x0040003f:	str	r3, [r4, #8]
+0x00400041:	bl	#0x50000d
+0x00400045:	str	r5, [r4, #8]
+0x00400047:	str	r5, [r4, #8]
+0x00400049:	bl	#0x500001
+0x0040004d:	bl	#0x500001
+0x00400051:	bl	#0x50000d
+0x00400055:	str	r5, [r4, #8]
+0x00400057:	str	r5, [r4, #8]
+0x00400059:	bl	#0x500001
+0x0040005d:	bl	#0x500001
+0x00400061:	bl	#0x50000d
+0x00400065:	str	r5, [r4, #8]
+0x00400067:	str	r5, [r4, #8]
+0x00400069:	bl	#0x50000d
+0x0040006d:	bl	#0x500001
+0x00400071:	bl	#0x500001
+0x00400075:	bl	#0x50000d
+0x00400079:	bl	#0x500019
+0x0040007d:	mov	r0, r5
+0x0040007f:	pop	{r3, r4, r5, pc}
 
+Function bar @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function marker @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	2207      	movs	r2, #7
-   4:	4c1a      	ldr	r4, [pc, #104]	; (70 <main+0x70>)
-   6:	2308      	movs	r3, #8
-   8:	2500      	movs	r5, #0
-   a:	447c      	add	r4, pc
-   c:	e9c4 2300 	strd	r2, r3, [r4]
-  10:	f7ff fffe 	bl	0 <bar>
-  14:	e9d4 3200 	ldrd	r3, r2, [r4]
-  18:	fb02 f303 	mul.w	r3, r2, r3
-  1c:	60a3      	str	r3, [r4, #8]
-  1e:	f7ff fffe 	bl	0 <bar>
-  22:	e9d4 2300 	ldrd	r2, r3, [r4]
-  26:	fb02 f303 	mul.w	r3, r2, r3
-  2a:	fb02 f303 	mul.w	r3, r2, r3
-  2e:	60a3      	str	r3, [r4, #8]
-  30:	f7ff fffe 	bl	0 <marker>
-  34:	60a5      	str	r5, [r4, #8]
-  36:	60a5      	str	r5, [r4, #8]
-  38:	f7ff fffe 	bl	0 <bar>
-  3c:	f7ff fffe 	bl	0 <bar>
-  40:	f7ff fffe 	bl	0 <marker>
-  44:	60a5      	str	r5, [r4, #8]
-  46:	60a5      	str	r5, [r4, #8]
-  48:	f7ff fffe 	bl	0 <bar>
-  4c:	f7ff fffe 	bl	0 <bar>
-  50:	f7ff fffe 	bl	0 <marker>
-  54:	60a5      	str	r5, [r4, #8]
-  56:	60a5      	str	r5, [r4, #8]
-  58:	f7ff fffe 	bl	0 <marker>
-  5c:	f7ff fffe 	bl	0 <bar>
-  60:	f7ff fffe 	bl	0 <bar>
-  64:	f7ff fffe 	bl	0 <marker>
-  68:	f7ff fffe 	bl	0 <noinline>
-  6c:	4628      	mov	r0, r5
-  6e:	bd38      	pop	{r3, r4, r5, pc}
-  70:	00000062 	.word	0x00000062
+Function noinline @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

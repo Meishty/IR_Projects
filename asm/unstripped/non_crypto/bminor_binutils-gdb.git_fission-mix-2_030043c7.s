@@ -1,14 +1,11 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_fission-mix-2_030043c7.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r1, #0x800
+0x00400004:	ldrbtmi	r2, [fp], #-0x2a
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <func2>:
-   0:	4b02      	ldr	r3, [pc, #8]	; (c <func2+0xc>)
-   2:	2201      	movs	r2, #1
-   4:	202a      	movs	r0, #42	; 0x2a
-   6:	447b      	add	r3, pc
-   8:	601a      	str	r2, [r3, #0]
-   a:	4770      	bx	lr
-   c:	00000002 	.word	0x00000002
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r0
+0x0040000f:	movs	r0, r0

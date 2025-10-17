@@ -1,21 +1,37 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_interrupt-daemon_27c570b7_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	eorshs	fp, ip, r8, lsl #10
 
+Function sub_400006 @ 0x00400006
 
-Disassembly of section .text.startup:
+Function sub_40000b @ 0x0040000b
 
-00000000 <.text.startup>:
-   0:	203cb508 	eorscs	fp, ip, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	d0101c42 	andsle	r1, r0, r2, asr #24
-  10:	2000b108 	andcs	fp, r0, r8, lsl #2
-  14:	f7ffbd08 			; <UNDEFINED> instruction: 0xf7ffbd08
-  18:	3001fffe 	strdcc	pc, [r1], -lr
-  1c:	f7ffd009 			; <UNDEFINED> instruction: 0xf7ffd009
-  20:	1c43fffe 	mcrrne	15, 15, pc, r3, cr14	; <UNPREDICTABLE>
-  24:	2800d005 	stmdacs	r0, {r0, r2, ip, lr, pc}
-  28:	2001d1f3 	strdcs	sp, [r1], -r3
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	2001e7fb 	strdcs	lr, [r1], -fp
-  34:	bf00bd08 	svclt	0x0000bd08
+Function sub_400011 @ 0x00400011
+0x00400011:	cbz	r0, #0x400017
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
+
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	adds	r0, #1
+0x0040001d:	beq	#0x400033
+0x00400033:	movs	r0, #1
+0x00400035:	pop	{r3, pc}
+
+Function sub_40001f @ 0x0040001f
+0x0040001f:	bl	#0x40001f
+0x00400023:	adds	r3, r0, #1
+0x00400025:	beq	#0x400033
+0x00400027:	cmp	r0, #0
+0x00400029:	bne	#0x400013
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x40002d
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	b	#0x40002b
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	

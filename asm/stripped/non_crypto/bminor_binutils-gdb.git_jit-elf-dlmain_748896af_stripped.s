@@ -1,21 +1,39 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_jit-elf-dlmain_748896af_stripped.o:     file format elf32-littlearm
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r4, r5, r6, lr}
+0x00400023:	mov	r4, r0
+0x00400025:	ldr	r0, [pc, #0x28]
+0x00400027:	mov	r5, r1
+0x00400029:	movs	r1, #1
+0x0040002b:	add	r0, pc
+0x0040002d:	bl	#0x40002d
 
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	cbz	r0, #0x400049
+0x00400033:	ldr	r1, [pc, #0x20]
+0x00400035:	add	r1, pc
+0x00400037:	bl	#0x400037
+0x00400033:	ldr	r1, [pc, #0x20]
+0x00400035:	add	r1, pc
+0x00400037:	bl	#0x400037
+0x00400049:	movs	r0, #1
+0x0040004b:	pop	{r4, r5, r6, pc}
 
-Disassembly of section .text.startup:
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400037
+0x0040003b:	mov	r3, r0
+0x0040003d:	cbz	r0, #0x40004d
+0x0040003f:	mov	r1, r5
+0x00400041:	mov	r0, r4
+0x00400043:	pop.w	{r4, r5, r6, lr}
+0x00400047:	bx	r3
+0x0040003f:	mov	r1, r5
+0x00400041:	mov	r0, r4
+0x00400043:	pop.w	{r4, r5, r6, lr}
+0x00400047:	bx	r3
+0x0040004d:	movs	r0, #2
+0x0040004f:	pop	{r4, r5, r6, pc}
 
-00000000 <.text.startup>:
-   0:	4604b570 			; <UNDEFINED> instruction: 0x4604b570
-   4:	460d480a 	strmi	r4, [sp], -sl, lsl #16
-   8:	44782101 	ldrbtmi	r2, [r8], #-257	; 0xfffffeff
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	4908b150 	stmdbmi	r8, {r4, r6, r8, ip, sp, pc}
-  14:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  18:	4603fffe 			; <UNDEFINED> instruction: 0x4603fffe
-  1c:	4629b130 			; <UNDEFINED> instruction: 0x4629b130
-  20:	e8bd4620 	pop	{r5, r9, sl, lr}
-  24:	47184070 			; <UNDEFINED> instruction: 0x47184070
-  28:	bd702001 	ldcllt	0, cr2, [r0, #-4]!
-  2c:	bd702002 	ldcllt	0, cr2, [r0, #-8]!
-  30:	00000022 	andeq	r0, r0, r2, lsr #32
-  34:	0000001c 	andeq	r0, r0, ip, lsl r0
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

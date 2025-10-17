@@ -1,23 +1,45 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_execd-prog_4e835c47_stripped.o:     file format elf32-littlearm
+Function sub_400059 @ 0x00400059
+0x00400059:	push	{r3, r4, r5, lr}
+0x0040005b:	mov	r4, r0
+0x0040005d:	ldr	r0, [pc, #0x2c]
+0x0040005f:	mov	r5, r1
+0x00400061:	add	r0, pc
+0x00400063:	bl	#0x400063
 
+Function sub_400063 @ 0x00400063
+0x00400063:	bl	#0x400063
+0x00400067:	cmp	r4, #2
+0x00400069:	bne	#0x40007b
+0x0040006b:	ldr	r1, [pc, #0x24]
+0x0040006d:	movs	r0, #1
+0x0040006f:	ldr	r2, [r5, #4]
+0x00400071:	add	r1, pc
+0x00400073:	bl	#0x400073
+0x0040007b:	ldr	r0, [pc, #0x18]
+0x0040007d:	add	r0, pc
+0x0040007f:	bl	#0x40007f
 
-Disassembly of section .text.startup:
+Function sub_400073 @ 0x00400073
+0x00400073:	bl	#0x400073
+0x00400077:	movs	r0, #0
+0x00400079:	pop	{r3, r4, r5, pc}
 
-00000000 <.text.startup>:
-   0:	4604b538 			; <UNDEFINED> instruction: 0x4604b538
-   4:	460d480b 	strmi	r4, [sp], -fp, lsl #16
-   8:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   c:	2c02fffe 	stccs	15, cr15, [r2], {254}	; 0xfe
-  10:	4909d107 	stmdbmi	r9, {r0, r1, r2, r8, ip, lr, pc}
-  14:	686a2001 	stmdavs	sl!, {r0, sp}^
-  18:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  1c:	2000fffe 	strdcs	pc, [r0], -lr
-  20:	4806bd38 	stmdami	r6, {r3, r4, r5, r8, sl, fp, ip, sp, pc}
-  24:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  28:	f04ffffe 			; <UNDEFINED> instruction: 0xf04ffffe
-  2c:	f7ff30ff 			; <UNDEFINED> instruction: 0xf7ff30ff
-  30:	bf00fffe 	svclt	0x0000fffe
-  34:	00000028 	andeq	r0, r0, r8, lsr #32
-  38:	0000001c 	andeq	r0, r0, ip, lsl r0
-  3c:	00000014 	andeq	r0, r0, r4, lsl r0
+Function sub_40007f @ 0x0040007f
+0x0040007f:	bl	#0x40007f
+
+Function sub_400083 @ 0x00400083
+0x00400083:	mov.w	r0, #-1
+0x00400087:	bl	#0x400087
+
+Function sub_400087 @ 0x00400087
+0x00400087:	bl	#0x400087
+
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	movs	r0, r5
+0x0040008f:	movs	r0, r0
+0x00400091:	movs	r4, r3
+0x00400093:	movs	r0, r0
+0x00400095:	movs	r4, r2
+0x00400097:	movs	r0, r0

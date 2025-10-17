@@ -1,17 +1,22 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_arm-pseudo-unwind_24ef104e.o:     file format elf32-littlearm
+Function caller_trampoline @ 0x00400000
+0x00400000:	b	#0x500000
 
+Function main @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x500001
+0x0040000b:	movs	r0, #0
+0x0040000d:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-00000000 <caller_trampoline>:
-   0:	eafffffe 	b	0 <caller>
+Function caller @ 0x00500000
+0x00500000:	andeq	r0, r0, r0
+0x00500004:	andeq	r0, r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <caller>
-   6:	2000      	movs	r0, #0
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function sub_500001 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

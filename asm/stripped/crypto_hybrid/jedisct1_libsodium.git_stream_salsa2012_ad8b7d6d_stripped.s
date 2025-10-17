@@ -1,13 +1,24 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_stream_salsa2012_ad8b7d6d_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #8
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	mov.w	r0, #-1
+0x0040000d:	bx	lr
 
-00000000 <.text>:
-   0:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   4:	47702008 	ldrbmi	r2, [r0, -r8]!
-   8:	30fff04f 	rscscc	pc, pc, pc, asr #32
-   c:	bf004770 	svclt	0x00004770
-  10:	f7ff2120 			; <UNDEFINED> instruction: 0xf7ff2120
-  14:	bf00bffe 	svclt	0x0000bffe
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r1, #0x20
+0x00400013:	b.w	#0x400013
+
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r1, #0x20
+0x00400013:	b.w	#0x400013
+0x00400013:	b.w	#0x400013
+
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	

@@ -1,441 +1,763 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_lz4file_be131393.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdahs	r0, {r0, r1, r6, sb, fp, lr}
+0x00400004:	stmdbhs	r0, {r3, r4, r8, sb, sl, fp, ip, sp, pc}
+0x00400008:	ldrbtmi	r4, [sl], #-0xb42
+0x0040000c:	mvnsmi	lr, sp, lsr #18
+0x00400010:	ldmpl	r3, {r4, r7, ip, sp, pc} ^
+0x00400004:	stmdbhs	r0, {r3, r4, r8, sb, sl, fp, ip, sp, pc}
+0x00400008:	ldrbtmi	r4, [sl], #-0xb42
+0x0040000c:	mvnsmi	lr, sp, lsr #18
+0x00400010:	ldmpl	r3, {r4, r7, ip, sp, pc} ^
+0x00400008:	ldrbtmi	r4, [sl], #-0xb42
+0x0040000c:	mvnsmi	lr, sp, lsr #18
+0x00400010:	ldmpl	r3, {r4, r7, ip, sp, pc} ^
 
+Function sub_400015 @ 0x00400015
+0x00400015:	ldr	r3, [r3]
+0x00400017:	str	r3, [sp, #0x3c]
+0x00400019:	mov.w	r3, #0
+0x0040001d:	beq	#0x4000a9
+0x0040001f:	mov	r5, r1
+0x00400021:	mov	r7, r0
+0x00400023:	movs	r1, #0x18
+0x00400025:	movs	r0, #1
+0x00400027:	bl	#0x500001
+0x0040002b:	mov	r4, r0
+0x0040002d:	cmp	r0, #0
+0x0040002f:	beq	#0x4000f3
+0x00400031:	movs	r1, #0x64
+0x00400033:	str	r5, [r0, #4]
+0x00400035:	bl	#0x50000d
+0x00400039:	mov	r6, r0
+0x0040003b:	bl	#0x500019
+0x0040003f:	cbnz	r0, #0x40007b
+0x00400041:	add	r6, sp, #0x28
+0x00400043:	mov	r3, r5
+0x00400045:	movs	r2, #0x13
+0x00400047:	movs	r1, #1
+0x00400049:	mov	r0, r6
+0x0040004b:	bl	#0x500025
+0x00400041:	add	r6, sp, #0x28
+0x00400043:	mov	r3, r5
+0x00400045:	movs	r2, #0x13
+0x00400047:	movs	r1, #1
+0x00400049:	mov	r0, r6
+0x0040004b:	bl	#0x500025
+0x0040004f:	mov	r5, r0
+0x00400051:	cmp	r0, #0xa
+0x00400053:	bls	#0x4000d5
+0x00400055:	str	r0, [sp, #4]
+0x00400057:	add	r3, sp, #4
+0x00400059:	ldr	r0, [r4]
+0x0040005b:	mov	r2, r6
+0x0040005d:	add	r1, sp, #8
+0x0040005f:	bl	#0x500031
+0x00400063:	mov	r8, r0
+0x00400065:	bl	#0x500019
+0x00400069:	cbz	r0, #0x4000af
+0x0040006b:	mov	r0, r8
+0x0040006d:	bl	#0x500019
+0x0040006b:	mov	r0, r8
+0x0040006d:	bl	#0x500019
+0x00400071:	mov	r6, r0
+0x00400073:	cmp	r0, #0
+0x00400075:	bne	#0x4000db
+0x00400077:	str	r4, [r7]
+0x00400079:	b	#0x40008d
+0x0040007b:	ldr	r0, [r4]
+0x0040007d:	bl	#0x50003d
+0x0040007d:	bl	#0x50003d
+0x00400081:	ldr	r0, [r4, #8]
+0x00400083:	bl	#0x500049
+0x00400087:	mov	r0, r4
+0x00400089:	bl	#0x500049
+0x0040008d:	ldr	r2, [pc, #0x88]
+0x0040008f:	ldr	r3, [pc, #0x84]
+0x00400091:	add	r2, pc
+0x00400093:	ldr	r3, [r2, r3]
+0x00400095:	ldr	r2, [r3]
+0x00400097:	ldr	r3, [sp, #0x3c]
+0x00400099:	eors	r2, r3
+0x0040009b:	mov.w	r3, #0
+0x0040009f:	bne	#0x4000ef
+0x004000a1:	mov	r0, r6
+0x004000a3:	add	sp, #0x40
+0x004000a5:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x004000a9:	mvn	r6, #0x14
+0x004000ad:	b	#0x40008d
+0x004000af:	ldr	r0, [sp, #8]
+0x004000b1:	bl	#0x500055
+0x004000b5:	cbz	r0, #0x4000e9
+0x004000b7:	ldr	r3, [r4, #8]
+0x004000b9:	str	r0, [r4, #0x14]
+0x004000bb:	cbnz	r3, #0x4000ff
+0x004000bd:	bl	#0x500061
+0x004000b7:	ldr	r3, [r4, #8]
+0x004000b9:	str	r0, [r4, #0x14]
+0x004000bb:	cbnz	r3, #0x4000ff
+0x004000bd:	bl	#0x500061
+0x004000bd:	bl	#0x500061
+0x004000c1:	str	r0, [r4, #8]
+0x004000c3:	cbz	r0, #0x4000f9
+0x004000c5:	ldr	r1, [sp, #4]
+0x004000c7:	subs	r2, r5, r1
+0x004000c9:	str	r2, [r4, #0x10]
+0x004000cb:	cbnz	r2, #0x4000e1
+0x004000cd:	movs	r0, #0
+0x004000cf:	str	r0, [r4, #0xc]
+0x004000d1:	mov	r8, r0
+0x004000d3:	b	#0x40006b
+0x004000c5:	ldr	r1, [sp, #4]
+0x004000c7:	subs	r2, r5, r1
+0x004000c9:	str	r2, [r4, #0x10]
+0x004000cb:	cbnz	r2, #0x4000e1
+0x004000cd:	movs	r0, #0
+0x004000cf:	str	r0, [r4, #0xc]
+0x004000d1:	mov	r8, r0
+0x004000d3:	b	#0x40006b
+0x004000cd:	movs	r0, #0
+0x004000cf:	str	r0, [r4, #0xc]
+0x004000d1:	mov	r8, r0
+0x004000d3:	b	#0x40006b
+0x004000d5:	mvn	r8, #0x16
+0x004000d9:	b	#0x40006b
+0x004000db:	ldr	r0, [r4]
+0x004000dd:	mov	r6, r8
+0x004000df:	b	#0x40007d
+0x004000e1:	add	r1, r6
+0x004000e3:	bl	#0x50006d
+0x004000e7:	b	#0x4000cd
+0x004000e9:	mvn	r8, #1
+0x004000ed:	b	#0x40006b
+0x004000ef:	bl	#0x500079
+0x004000f3:	mvn	r6, #8
+0x004000f7:	b	#0x40008d
+0x004000f9:	mvn	r8, #8
+0x004000fd:	b	#0x40006b
+0x004000ff:	ldr	r3, [pc, #0x1c]
+0x00400101:	movs	r2, #0x67
+0x00400103:	ldr	r1, [pc, #0x1c]
+0x00400105:	ldr	r0, [pc, #0x1c]
+0x00400107:	add	r3, pc
+0x00400109:	add	r1, pc
+0x0040010b:	add	r0, pc
+0x0040010d:	bl	#0x500085
 
-Disassembly of section .text:
+Function sub_400111 @ 0x00400111
+0x00400111:	lsls	r2, r0, #4
+0x00400113:	movs	r0, r0
+0x00400115:	movs	r0, r0
+0x00400117:	movs	r0, r0
+0x00400119:	lsls	r4, r0, #2
+0x0040011b:	movs	r0, r0
+0x0040011d:	lsls	r6, r2, #0xd
+0x0040011f:	movs	r0, r0
+0x00400121:	lsls	r0, r3, #0xc
+0x00400123:	movs	r0, r0
+0x00400125:	lsls	r6, r6, #0xc
+0x00400127:	movs	r0, r0
+0x00400129:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x0040012d:	cmp	r1, #0
+0x0040012f:	it	ne
+0x00400131:	cmpne	r0, #0
+0x00400133:	ldr	r4, [pc, #0xd0]
+0x00400135:	ldr	r3, [pc, #0xd0]
+0x00400137:	sub	sp, #0x18
+0x00400139:	add	r4, pc
+0x0040013b:	ite	eq
+0x0040013d:	moveq	r5, #1
+0x0040013f:	movne	r5, #0
+0x00400141:	ldr	r3, [r4, r3]
+0x00400143:	ldr	r3, [r3]
+0x00400145:	str	r3, [sp, #0x14]
+0x00400147:	mov.w	r3, #0
+0x0040014b:	beq	#0x4001e3
 
-00000000 <LZ4F_readOpen>:
-   0:	4a43      	ldr	r2, [pc, #268]	; (110 <LZ4F_readOpen+0x110>)
-   2:	2800      	cmp	r0, #0
-   4:	bf18      	it	ne
-   6:	2900      	cmpne	r1, #0
-   8:	4b42      	ldr	r3, [pc, #264]	; (114 <LZ4F_readOpen+0x114>)
-   a:	447a      	add	r2, pc
-   c:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-  10:	b090      	sub	sp, #64	; 0x40
-  12:	58d3      	ldr	r3, [r2, r3]
-  14:	681b      	ldr	r3, [r3, #0]
-  16:	930f      	str	r3, [sp, #60]	; 0x3c
-  18:	f04f 0300 	mov.w	r3, #0
-  1c:	d044      	beq.n	a8 <LZ4F_readOpen+0xa8>
-  1e:	460d      	mov	r5, r1
-  20:	4607      	mov	r7, r0
-  22:	2118      	movs	r1, #24
-  24:	2001      	movs	r0, #1
-  26:	f7ff fffe 	bl	0 <calloc>
-  2a:	4604      	mov	r4, r0
-  2c:	2800      	cmp	r0, #0
-  2e:	d060      	beq.n	f2 <LZ4F_readOpen+0xf2>
-  30:	2164      	movs	r1, #100	; 0x64
-  32:	6045      	str	r5, [r0, #4]
-  34:	f7ff fffe 	bl	0 <LZ4F_createDecompressionContext>
-  38:	4606      	mov	r6, r0
-  3a:	f7ff fffe 	bl	0 <LZ4F_isError>
-  3e:	b9e0      	cbnz	r0, 7a <LZ4F_readOpen+0x7a>
-  40:	ae0a      	add	r6, sp, #40	; 0x28
-  42:	462b      	mov	r3, r5
-  44:	2213      	movs	r2, #19
-  46:	2101      	movs	r1, #1
-  48:	4630      	mov	r0, r6
-  4a:	f7ff fffe 	bl	0 <fread>
-  4e:	4605      	mov	r5, r0
-  50:	280a      	cmp	r0, #10
-  52:	d93f      	bls.n	d4 <LZ4F_readOpen+0xd4>
-  54:	9001      	str	r0, [sp, #4]
-  56:	ab01      	add	r3, sp, #4
-  58:	6820      	ldr	r0, [r4, #0]
-  5a:	4632      	mov	r2, r6
-  5c:	a902      	add	r1, sp, #8
-  5e:	f7ff fffe 	bl	0 <LZ4F_getFrameInfo>
-  62:	4680      	mov	r8, r0
-  64:	f7ff fffe 	bl	0 <LZ4F_isError>
-  68:	b308      	cbz	r0, ae <LZ4F_readOpen+0xae>
-  6a:	4640      	mov	r0, r8
-  6c:	f7ff fffe 	bl	0 <LZ4F_isError>
-  70:	4606      	mov	r6, r0
-  72:	2800      	cmp	r0, #0
-  74:	d131      	bne.n	da <LZ4F_readOpen+0xda>
-  76:	603c      	str	r4, [r7, #0]
-  78:	e008      	b.n	8c <LZ4F_readOpen+0x8c>
-  7a:	6820      	ldr	r0, [r4, #0]
-  7c:	f7ff fffe 	bl	0 <LZ4F_freeDecompressionContext>
-  80:	68a0      	ldr	r0, [r4, #8]
-  82:	f7ff fffe 	bl	0 <free>
-  86:	4620      	mov	r0, r4
-  88:	f7ff fffe 	bl	0 <free>
-  8c:	4a22      	ldr	r2, [pc, #136]	; (118 <LZ4F_readOpen+0x118>)
-  8e:	4b21      	ldr	r3, [pc, #132]	; (114 <LZ4F_readOpen+0x114>)
-  90:	447a      	add	r2, pc
-  92:	58d3      	ldr	r3, [r2, r3]
-  94:	681a      	ldr	r2, [r3, #0]
-  96:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
-  98:	405a      	eors	r2, r3
-  9a:	f04f 0300 	mov.w	r3, #0
-  9e:	d126      	bne.n	ee <LZ4F_readOpen+0xee>
-  a0:	4630      	mov	r0, r6
-  a2:	b010      	add	sp, #64	; 0x40
-  a4:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  a8:	f06f 0614 	mvn.w	r6, #20
-  ac:	e7ee      	b.n	8c <LZ4F_readOpen+0x8c>
-  ae:	9802      	ldr	r0, [sp, #8]
-  b0:	f7ff fffe 	bl	0 <LZ4F_getBlockSize>
-  b4:	b1c0      	cbz	r0, e8 <LZ4F_readOpen+0xe8>
-  b6:	68a3      	ldr	r3, [r4, #8]
-  b8:	6160      	str	r0, [r4, #20]
-  ba:	bb03      	cbnz	r3, fe <LZ4F_readOpen+0xfe>
-  bc:	f7ff fffe 	bl	0 <malloc>
-  c0:	60a0      	str	r0, [r4, #8]
-  c2:	b1c8      	cbz	r0, f8 <LZ4F_readOpen+0xf8>
-  c4:	9901      	ldr	r1, [sp, #4]
-  c6:	1a6a      	subs	r2, r5, r1
-  c8:	6122      	str	r2, [r4, #16]
-  ca:	b94a      	cbnz	r2, e0 <LZ4F_readOpen+0xe0>
-  cc:	2000      	movs	r0, #0
-  ce:	60e0      	str	r0, [r4, #12]
-  d0:	4680      	mov	r8, r0
-  d2:	e7ca      	b.n	6a <LZ4F_readOpen+0x6a>
-  d4:	f06f 0816 	mvn.w	r8, #22
-  d8:	e7c7      	b.n	6a <LZ4F_readOpen+0x6a>
-  da:	6820      	ldr	r0, [r4, #0]
-  dc:	4646      	mov	r6, r8
-  de:	e7cd      	b.n	7c <LZ4F_readOpen+0x7c>
-  e0:	4431      	add	r1, r6
-  e2:	f7ff fffe 	bl	0 <memcpy>
-  e6:	e7f1      	b.n	cc <LZ4F_readOpen+0xcc>
-  e8:	f06f 0801 	mvn.w	r8, #1
-  ec:	e7bd      	b.n	6a <LZ4F_readOpen+0x6a>
-  ee:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  f2:	f06f 0608 	mvn.w	r6, #8
-  f6:	e7c9      	b.n	8c <LZ4F_readOpen+0x8c>
-  f8:	f06f 0808 	mvn.w	r8, #8
-  fc:	e7b5      	b.n	6a <LZ4F_readOpen+0x6a>
-  fe:	4b07      	ldr	r3, [pc, #28]	; (11c <LZ4F_readOpen+0x11c>)
- 100:	2267      	movs	r2, #103	; 0x67
- 102:	4907      	ldr	r1, [pc, #28]	; (120 <LZ4F_readOpen+0x120>)
- 104:	4807      	ldr	r0, [pc, #28]	; (124 <LZ4F_readOpen+0x124>)
- 106:	447b      	add	r3, pc
- 108:	4479      	add	r1, pc
- 10a:	4478      	add	r0, pc
- 10c:	f7ff fffe 	bl	0 <__assert_fail>
- 110:	00000102 	.word	0x00000102
- 114:	00000000 	.word	0x00000000
- 118:	00000084 	.word	0x00000084
- 11c:	00000012 	.word	0x00000012
- 120:	00000014 	.word	0x00000014
- 124:	00000016 	.word	0x00000016
+Function LZ4F_read @ 0x00400129
+0x00400129:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x0040012d:	cmp	r1, #0
+0x0040012f:	it	ne
+0x00400131:	cmpne	r0, #0
+0x00400133:	ldr	r4, [pc, #0xd0]
+0x00400135:	ldr	r3, [pc, #0xd0]
+0x00400137:	sub	sp, #0x18
+0x00400139:	add	r4, pc
+0x0040013b:	ite	eq
+0x0040013d:	moveq	r5, #1
+0x0040013f:	movne	r5, #0
+0x00400141:	ldr	r3, [r4, r3]
+0x00400143:	ldr	r3, [r3]
+0x00400145:	str	r3, [sp, #0x14]
+0x00400147:	mov.w	r3, #0
+0x0040014b:	beq	#0x4001e3
+0x0040014d:	mov	r7, r2
+0x0040014f:	cmp	r2, #0
+0x00400151:	beq	#0x4001fb
+0x00400153:	ldr	r3, [r0, #0xc]
+0x00400155:	mov	r4, r0
+0x00400157:	mov	r6, r1
+0x00400159:	mov	sb, r5
+0x0040015b:	add.w	r8, sp, #0x10
+0x0040015f:	b	#0x400173
+0x00400161:	ldr	r2, [sp, #0x10]
+0x00400163:	ldr	r3, [r4, #0xc]
+0x00400165:	ldr	r1, [sp, #0xc]
+0x00400167:	add	r5, r2
+0x00400169:	add	r6, r2
+0x0040016b:	cmp	r7, r5
+0x0040016d:	add	r3, r1
+0x0040016f:	str	r3, [r4, #0xc]
+0x00400171:	bls	#0x4001c7
+0x00400173:	ldr	r1, [r4, #0x10]
+0x00400175:	subs	r2, r7, r5
+0x00400177:	ldr	r0, [r4, #8]
+0x00400179:	sub.w	sl, r1, r3
+0x0040017d:	str	r2, [sp, #0x10]
+0x0040017f:	str.w	sl, [sp, #0xc]
+0x00400183:	cmp.w	sl, #0
+0x00400187:	bne	#0x4001a3
+0x00400189:	ldr	r2, [r4, #0x14]
+0x0040018b:	movs	r1, #1
+0x0040018d:	ldr	r3, [r4, #4]
+0x0040018f:	bl	#0x500025
+0x00400193:	mov	r2, r0
+0x00400195:	cbz	r0, #0x4001e9
+0x00400197:	ldr	r0, [r4, #8]
+0x00400199:	mov	r3, sl
+0x0040019b:	str	r2, [r4, #0x10]
+0x0040019d:	str	r2, [sp, #0xc]
+0x0040019f:	str.w	sl, [r4, #0xc]
+0x004001a3:	add	r3, r0
+0x004001a5:	add.w	ip, sp, #0xc
+0x004001a9:	ldr	r0, [r4]
+0x004001ab:	mov	r2, r8
+0x004001ad:	mov	r1, r6
+0x004001af:	str.w	sb, [sp, #4]
+0x004001b3:	str.w	ip, [sp]
+0x004001b7:	bl	#0x500091
+0x00400197:	ldr	r0, [r4, #8]
+0x00400199:	mov	r3, sl
+0x0040019b:	str	r2, [r4, #0x10]
+0x0040019d:	str	r2, [sp, #0xc]
+0x0040019f:	str.w	sl, [r4, #0xc]
+0x004001a3:	add	r3, r0
+0x004001a5:	add.w	ip, sp, #0xc
+0x004001a9:	ldr	r0, [r4]
+0x004001ab:	mov	r2, r8
+0x004001ad:	mov	r1, r6
+0x004001af:	str.w	sb, [sp, #4]
+0x004001b3:	str.w	ip, [sp]
+0x004001b7:	bl	#0x500091
+0x004001a3:	add	r3, r0
+0x004001a5:	add.w	ip, sp, #0xc
+0x004001a9:	ldr	r0, [r4]
+0x004001ab:	mov	r2, r8
+0x004001ad:	mov	r1, r6
+0x004001af:	str.w	sb, [sp, #4]
+0x004001b3:	str.w	ip, [sp]
+0x004001b7:	bl	#0x500091
+0x004001bb:	mov	sl, r0
+0x004001bd:	bl	#0x500019
+0x004001c1:	cmp	r0, #0
+0x004001c3:	beq	#0x400161
+0x004001c5:	mov	r5, sl
+0x004001c7:	ldr	r2, [pc, #0x44]
+0x004001c9:	ldr	r3, [pc, #0x3c]
+0x004001cb:	add	r2, pc
+0x004001cd:	ldr	r3, [r2, r3]
+0x004001cf:	ldr	r2, [r3]
+0x004001d1:	ldr	r3, [sp, #0x14]
+0x004001d3:	eors	r2, r3
+0x004001d5:	mov.w	r3, #0
+0x004001d9:	bne	#0x4001ff
+0x004001c7:	ldr	r2, [pc, #0x44]
+0x004001c9:	ldr	r3, [pc, #0x3c]
+0x004001cb:	add	r2, pc
+0x004001cd:	ldr	r3, [r2, r3]
+0x004001cf:	ldr	r2, [r3]
+0x004001d1:	ldr	r3, [sp, #0x14]
+0x004001d3:	eors	r2, r3
+0x004001d5:	mov.w	r3, #0
+0x004001d9:	bne	#0x4001ff
+0x004001db:	mov	r0, r5
+0x004001dd:	add	sp, #0x18
+0x004001df:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x004001e3:	mvn	r5, #0x14
+0x004001e7:	b	#0x4001c7
+0x004001e9:	ldr	r0, [r4, #4]
+0x004001eb:	bl	#0x50009d
+0x004001ef:	cmp	r0, #0
+0x004001f1:	beq	#0x4001c7
+0x004001f3:	mvn	sl, #0x16
+0x004001f7:	mov	r5, sl
+0x004001f9:	b	#0x4001c7
+0x004001fb:	mov	r5, r2
+0x004001fd:	b	#0x4001c7
+0x004001ff:	bl	#0x500079
 
-00000128 <LZ4F_read>:
- 128:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
- 12c:	2900      	cmp	r1, #0
- 12e:	bf18      	it	ne
- 130:	2800      	cmpne	r0, #0
- 132:	4c34      	ldr	r4, [pc, #208]	; (204 <LZ4F_read+0xdc>)
- 134:	4b34      	ldr	r3, [pc, #208]	; (208 <LZ4F_read+0xe0>)
- 136:	b086      	sub	sp, #24
- 138:	447c      	add	r4, pc
- 13a:	bf0c      	ite	eq
- 13c:	2501      	moveq	r5, #1
- 13e:	2500      	movne	r5, #0
- 140:	58e3      	ldr	r3, [r4, r3]
- 142:	681b      	ldr	r3, [r3, #0]
- 144:	9305      	str	r3, [sp, #20]
- 146:	f04f 0300 	mov.w	r3, #0
- 14a:	d04a      	beq.n	1e2 <LZ4F_read+0xba>
- 14c:	4617      	mov	r7, r2
- 14e:	2a00      	cmp	r2, #0
- 150:	d053      	beq.n	1fa <LZ4F_read+0xd2>
- 152:	68c3      	ldr	r3, [r0, #12]
- 154:	4604      	mov	r4, r0
- 156:	460e      	mov	r6, r1
- 158:	46a9      	mov	r9, r5
- 15a:	f10d 0810 	add.w	r8, sp, #16
- 15e:	e008      	b.n	172 <LZ4F_read+0x4a>
- 160:	9a04      	ldr	r2, [sp, #16]
- 162:	68e3      	ldr	r3, [r4, #12]
- 164:	9903      	ldr	r1, [sp, #12]
- 166:	4415      	add	r5, r2
- 168:	4416      	add	r6, r2
- 16a:	42af      	cmp	r7, r5
- 16c:	440b      	add	r3, r1
- 16e:	60e3      	str	r3, [r4, #12]
- 170:	d929      	bls.n	1c6 <LZ4F_read+0x9e>
- 172:	6921      	ldr	r1, [r4, #16]
- 174:	1b7a      	subs	r2, r7, r5
- 176:	68a0      	ldr	r0, [r4, #8]
- 178:	eba1 0a03 	sub.w	sl, r1, r3
- 17c:	9204      	str	r2, [sp, #16]
- 17e:	f8cd a00c 	str.w	sl, [sp, #12]
- 182:	f1ba 0f00 	cmp.w	sl, #0
- 186:	d10c      	bne.n	1a2 <LZ4F_read+0x7a>
- 188:	6962      	ldr	r2, [r4, #20]
- 18a:	2101      	movs	r1, #1
- 18c:	6863      	ldr	r3, [r4, #4]
- 18e:	f7ff fffe 	bl	0 <fread>
- 192:	4602      	mov	r2, r0
- 194:	b340      	cbz	r0, 1e8 <LZ4F_read+0xc0>
- 196:	68a0      	ldr	r0, [r4, #8]
- 198:	4653      	mov	r3, sl
- 19a:	6122      	str	r2, [r4, #16]
- 19c:	9203      	str	r2, [sp, #12]
- 19e:	f8c4 a00c 	str.w	sl, [r4, #12]
- 1a2:	4403      	add	r3, r0
- 1a4:	f10d 0c0c 	add.w	ip, sp, #12
- 1a8:	6820      	ldr	r0, [r4, #0]
- 1aa:	4642      	mov	r2, r8
- 1ac:	4631      	mov	r1, r6
- 1ae:	f8cd 9004 	str.w	r9, [sp, #4]
- 1b2:	f8cd c000 	str.w	ip, [sp]
- 1b6:	f7ff fffe 	bl	0 <LZ4F_decompress>
- 1ba:	4682      	mov	sl, r0
- 1bc:	f7ff fffe 	bl	0 <LZ4F_isError>
- 1c0:	2800      	cmp	r0, #0
- 1c2:	d0cd      	beq.n	160 <LZ4F_read+0x38>
- 1c4:	4655      	mov	r5, sl
- 1c6:	4a11      	ldr	r2, [pc, #68]	; (20c <LZ4F_read+0xe4>)
- 1c8:	4b0f      	ldr	r3, [pc, #60]	; (208 <LZ4F_read+0xe0>)
- 1ca:	447a      	add	r2, pc
- 1cc:	58d3      	ldr	r3, [r2, r3]
- 1ce:	681a      	ldr	r2, [r3, #0]
- 1d0:	9b05      	ldr	r3, [sp, #20]
- 1d2:	405a      	eors	r2, r3
- 1d4:	f04f 0300 	mov.w	r3, #0
- 1d8:	d111      	bne.n	1fe <LZ4F_read+0xd6>
- 1da:	4628      	mov	r0, r5
- 1dc:	b006      	add	sp, #24
- 1de:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 1e2:	f06f 0514 	mvn.w	r5, #20
- 1e6:	e7ee      	b.n	1c6 <LZ4F_read+0x9e>
- 1e8:	6860      	ldr	r0, [r4, #4]
- 1ea:	f7ff fffe 	bl	0 <ferror>
- 1ee:	2800      	cmp	r0, #0
- 1f0:	d0e9      	beq.n	1c6 <LZ4F_read+0x9e>
- 1f2:	f06f 0a16 	mvn.w	sl, #22
- 1f6:	4655      	mov	r5, sl
- 1f8:	e7e5      	b.n	1c6 <LZ4F_read+0x9e>
- 1fa:	4615      	mov	r5, r2
- 1fc:	e7e3      	b.n	1c6 <LZ4F_read+0x9e>
- 1fe:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 202:	bf00      	nop
- 204:	000000c8 	.word	0x000000c8
- 208:	00000000 	.word	0x00000000
- 20c:	0000003e 	.word	0x0000003e
+Function sub_400203 @ 0x00400203
+0x00400203:	nop	
+0x00400205:	lsls	r0, r1, #3
+0x00400207:	movs	r0, r0
+0x00400209:	movs	r0, r0
+0x0040020b:	movs	r0, r0
+0x0040020d:	movs	r6, r7
+0x0040020f:	movs	r0, r0
+0x00400211:	cbz	r0, #0x40022d
+0x00400213:	push	{r4, lr}
+0x00400215:	mov	r4, r0
+0x00400217:	ldr	r0, [r0]
+0x00400219:	bl	#0x50003d
 
-00000210 <LZ4F_readClose>:
- 210:	b160      	cbz	r0, 22c <LZ4F_readClose+0x1c>
- 212:	b510      	push	{r4, lr}
- 214:	4604      	mov	r4, r0
- 216:	6800      	ldr	r0, [r0, #0]
- 218:	f7ff fffe 	bl	0 <LZ4F_freeDecompressionContext>
- 21c:	68a0      	ldr	r0, [r4, #8]
- 21e:	f7ff fffe 	bl	0 <free>
- 222:	4620      	mov	r0, r4
- 224:	f7ff fffe 	bl	0 <free>
- 228:	2000      	movs	r0, #0
- 22a:	bd10      	pop	{r4, pc}
- 22c:	f06f 0014 	mvn.w	r0, #20
- 230:	4770      	bx	lr
- 232:	bf00      	nop
+Function LZ4F_readClose @ 0x00400211
+0x00400211:	cbz	r0, #0x40022d
+0x00400213:	push	{r4, lr}
+0x00400215:	mov	r4, r0
+0x00400217:	ldr	r0, [r0]
+0x00400219:	bl	#0x50003d
+0x00400213:	push	{r4, lr}
+0x00400215:	mov	r4, r0
+0x00400217:	ldr	r0, [r0]
+0x00400219:	bl	#0x50003d
+0x0040021d:	ldr	r0, [r4, #8]
+0x0040021f:	bl	#0x500049
+0x00400223:	mov	r0, r4
+0x00400225:	bl	#0x500049
+0x00400229:	movs	r0, #0
+0x0040022b:	pop	{r4, pc}
+0x0040022d:	mvn	r0, #0x14
+0x00400231:	bx	lr
 
-00000234 <LZ4F_writeOpen>:
- 234:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 238:	2800      	cmp	r0, #0
- 23a:	bf18      	it	ne
- 23c:	2900      	cmpne	r1, #0
- 23e:	4c42      	ldr	r4, [pc, #264]	; (348 <LZ4F_writeOpen+0x114>)
- 240:	4b42      	ldr	r3, [pc, #264]	; (34c <LZ4F_writeOpen+0x118>)
- 242:	b086      	sub	sp, #24
- 244:	447c      	add	r4, pc
- 246:	bf08      	it	eq
- 248:	f06f 0814 	mvneq.w	r8, #20
- 24c:	58e3      	ldr	r3, [r4, r3]
- 24e:	681b      	ldr	r3, [r3, #0]
- 250:	9305      	str	r3, [sp, #20]
- 252:	f04f 0300 	mov.w	r3, #0
- 256:	d038      	beq.n	2ca <LZ4F_writeOpen+0x96>
- 258:	4607      	mov	r7, r0
- 25a:	4615      	mov	r5, r2
- 25c:	460e      	mov	r6, r1
- 25e:	4610      	mov	r0, r2
- 260:	b102      	cbz	r2, 264 <LZ4F_writeOpen+0x30>
- 262:	6810      	ldr	r0, [r2, #0]
- 264:	f7ff fffe 	bl	0 <LZ4F_getBlockSize>
- 268:	4680      	mov	r8, r0
- 26a:	2800      	cmp	r0, #0
- 26c:	d03b      	beq.n	2e6 <LZ4F_writeOpen+0xb2>
- 26e:	2118      	movs	r1, #24
- 270:	2001      	movs	r0, #1
- 272:	f7ff fffe 	bl	0 <calloc>
- 276:	4604      	mov	r4, r0
- 278:	2800      	cmp	r0, #0
- 27a:	d062      	beq.n	342 <LZ4F_writeOpen+0x10e>
- 27c:	f8c0 800c 	str.w	r8, [r0, #12]
- 280:	4629      	mov	r1, r5
- 282:	6046      	str	r6, [r0, #4]
- 284:	2000      	movs	r0, #0
- 286:	6160      	str	r0, [r4, #20]
- 288:	f7ff fffe 	bl	0 <LZ4F_compressBound>
- 28c:	6120      	str	r0, [r4, #16]
- 28e:	f7ff fffe 	bl	0 <malloc>
- 292:	60a0      	str	r0, [r4, #8]
- 294:	2800      	cmp	r0, #0
- 296:	d050      	beq.n	33a <LZ4F_writeOpen+0x106>
- 298:	2164      	movs	r1, #100	; 0x64
- 29a:	4620      	mov	r0, r4
- 29c:	f7ff fffe 	bl	0 <LZ4F_createCompressionContext>
- 2a0:	4680      	mov	r8, r0
- 2a2:	f7ff fffe 	bl	0 <LZ4F_isError>
- 2a6:	bb08      	cbnz	r0, 2ec <LZ4F_writeOpen+0xb8>
- 2a8:	46e8      	mov	r8, sp
- 2aa:	462b      	mov	r3, r5
- 2ac:	6820      	ldr	r0, [r4, #0]
- 2ae:	2213      	movs	r2, #19
- 2b0:	4641      	mov	r1, r8
- 2b2:	f7ff fffe 	bl	0 <LZ4F_compressBegin>
- 2b6:	4605      	mov	r5, r0
- 2b8:	f7ff fffe 	bl	0 <LZ4F_isError>
- 2bc:	b320      	cbz	r0, 308 <LZ4F_writeOpen+0xd4>
- 2be:	4628      	mov	r0, r5
- 2c0:	f7ff fffe 	bl	0 <LZ4F_isError>
- 2c4:	4680      	mov	r8, r0
- 2c6:	bb58      	cbnz	r0, 320 <LZ4F_writeOpen+0xec>
- 2c8:	603c      	str	r4, [r7, #0]
- 2ca:	4a21      	ldr	r2, [pc, #132]	; (350 <LZ4F_writeOpen+0x11c>)
- 2cc:	4b1f      	ldr	r3, [pc, #124]	; (34c <LZ4F_writeOpen+0x118>)
- 2ce:	447a      	add	r2, pc
- 2d0:	58d3      	ldr	r3, [r2, r3]
- 2d2:	681a      	ldr	r2, [r3, #0]
- 2d4:	9b05      	ldr	r3, [sp, #20]
- 2d6:	405a      	eors	r2, r3
- 2d8:	f04f 0300 	mov.w	r3, #0
- 2dc:	d12b      	bne.n	336 <LZ4F_writeOpen+0x102>
- 2de:	4640      	mov	r0, r8
- 2e0:	b006      	add	sp, #24
- 2e2:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 2e6:	f06f 0801 	mvn.w	r8, #1
- 2ea:	e7ee      	b.n	2ca <LZ4F_writeOpen+0x96>
- 2ec:	683c      	ldr	r4, [r7, #0]
- 2ee:	b144      	cbz	r4, 302 <LZ4F_writeOpen+0xce>
- 2f0:	6820      	ldr	r0, [r4, #0]
- 2f2:	f7ff fffe 	bl	0 <LZ4F_freeCompressionContext>
- 2f6:	68a0      	ldr	r0, [r4, #8]
- 2f8:	f7ff fffe 	bl	0 <free>
- 2fc:	4620      	mov	r0, r4
- 2fe:	f7ff fffe 	bl	0 <free>
- 302:	2300      	movs	r3, #0
- 304:	603b      	str	r3, [r7, #0]
- 306:	e7e0      	b.n	2ca <LZ4F_writeOpen+0x96>
- 308:	462a      	mov	r2, r5
- 30a:	4633      	mov	r3, r6
- 30c:	4640      	mov	r0, r8
- 30e:	2101      	movs	r1, #1
- 310:	f7ff fffe 	bl	0 <fwrite>
- 314:	4285      	cmp	r5, r0
- 316:	bf0c      	ite	eq
- 318:	2500      	moveq	r5, #0
- 31a:	f06f 0515 	mvnne.w	r5, #21
- 31e:	e7ce      	b.n	2be <LZ4F_writeOpen+0x8a>
- 320:	6820      	ldr	r0, [r4, #0]
- 322:	46a8      	mov	r8, r5
- 324:	f7ff fffe 	bl	0 <LZ4F_freeCompressionContext>
- 328:	68a0      	ldr	r0, [r4, #8]
- 32a:	f7ff fffe 	bl	0 <free>
- 32e:	4620      	mov	r0, r4
- 330:	f7ff fffe 	bl	0 <free>
- 334:	e7c9      	b.n	2ca <LZ4F_writeOpen+0x96>
- 336:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 33a:	6820      	ldr	r0, [r4, #0]
- 33c:	f06f 0808 	mvn.w	r8, #8
- 340:	e7f0      	b.n	324 <LZ4F_writeOpen+0xf0>
- 342:	f06f 0808 	mvn.w	r8, #8
- 346:	e7c0      	b.n	2ca <LZ4F_writeOpen+0x96>
- 348:	00000100 	.word	0x00000100
- 34c:	00000000 	.word	0x00000000
- 350:	0000007e 	.word	0x0000007e
+Function sub_400233 @ 0x00400233
+0x00400233:	nop	
+0x00400235:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400239:	cmp	r0, #0
+0x0040023b:	it	ne
+0x0040023d:	cmpne	r1, #0
+0x0040023f:	ldr	r4, [pc, #0x108]
+0x00400241:	ldr	r3, [pc, #0x108]
+0x00400243:	sub	sp, #0x18
+0x00400245:	add	r4, pc
+0x00400247:	it	eq
+0x00400249:	mvneq	r8, #0x14
+0x0040024d:	ldr	r3, [r4, r3]
+0x0040024f:	ldr	r3, [r3]
+0x00400251:	str	r3, [sp, #0x14]
+0x00400253:	mov.w	r3, #0
+0x00400257:	beq	#0x4002cb
 
-00000354 <LZ4F_write>:
- 354:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
- 358:	2900      	cmp	r1, #0
- 35a:	bf18      	it	ne
- 35c:	2800      	cmpne	r0, #0
- 35e:	bf08      	it	eq
- 360:	f04f 0901 	moveq.w	r9, #1
- 364:	b082      	sub	sp, #8
- 366:	bf14      	ite	ne
- 368:	f04f 0900 	movne.w	r9, #0
- 36c:	f06f 0614 	mvneq.w	r6, #20
- 370:	d022      	beq.n	3b8 <LZ4F_write+0x64>
- 372:	4692      	mov	sl, r2
- 374:	b322      	cbz	r2, 3c0 <LZ4F_write+0x6c>
- 376:	4605      	mov	r5, r0
- 378:	4688      	mov	r8, r1
- 37a:	4617      	mov	r7, r2
- 37c:	e008      	b.n	390 <LZ4F_write+0x3c>
- 37e:	e9d5 3001 	ldrd	r3, r0, [r5, #4]
- 382:	f7ff fffe 	bl	0 <fwrite>
- 386:	42b0      	cmp	r0, r6
- 388:	d11f      	bne.n	3ca <LZ4F_write+0x76>
- 38a:	44a0      	add	r8, r4
- 38c:	1b3f      	subs	r7, r7, r4
- 38e:	d017      	beq.n	3c0 <LZ4F_write+0x6c>
- 390:	68ec      	ldr	r4, [r5, #12]
- 392:	4643      	mov	r3, r8
- 394:	692a      	ldr	r2, [r5, #16]
- 396:	42bc      	cmp	r4, r7
- 398:	68a9      	ldr	r1, [r5, #8]
- 39a:	bf28      	it	cs
- 39c:	463c      	movcs	r4, r7
- 39e:	6828      	ldr	r0, [r5, #0]
- 3a0:	e9cd 4900 	strd	r4, r9, [sp]
- 3a4:	f7ff fffe 	bl	0 <LZ4F_compressUpdate>
- 3a8:	4606      	mov	r6, r0
- 3aa:	f7ff fffe 	bl	0 <LZ4F_isError>
- 3ae:	4632      	mov	r2, r6
- 3b0:	2101      	movs	r1, #1
- 3b2:	2800      	cmp	r0, #0
- 3b4:	d0e3      	beq.n	37e <LZ4F_write+0x2a>
- 3b6:	616e      	str	r6, [r5, #20]
- 3b8:	4630      	mov	r0, r6
- 3ba:	b002      	add	sp, #8
- 3bc:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 3c0:	4656      	mov	r6, sl
- 3c2:	4630      	mov	r0, r6
- 3c4:	b002      	add	sp, #8
- 3c6:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 3ca:	f06f 0615 	mvn.w	r6, #21
- 3ce:	e7f2      	b.n	3b6 <LZ4F_write+0x62>
+Function LZ4F_writeOpen @ 0x00400235
+0x00400235:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400239:	cmp	r0, #0
+0x0040023b:	it	ne
+0x0040023d:	cmpne	r1, #0
+0x0040023f:	ldr	r4, [pc, #0x108]
+0x00400241:	ldr	r3, [pc, #0x108]
+0x00400243:	sub	sp, #0x18
+0x00400245:	add	r4, pc
+0x00400247:	it	eq
+0x00400249:	mvneq	r8, #0x14
+0x0040024d:	ldr	r3, [r4, r3]
+0x0040024f:	ldr	r3, [r3]
+0x00400251:	str	r3, [sp, #0x14]
+0x00400253:	mov.w	r3, #0
+0x00400257:	beq	#0x4002cb
+0x00400259:	mov	r7, r0
+0x0040025b:	mov	r5, r2
+0x0040025d:	mov	r6, r1
+0x0040025f:	mov	r0, r2
+0x00400261:	cbz	r2, #0x400265
+0x00400263:	ldr	r0, [r2]
+0x00400265:	bl	#0x500055
+0x00400263:	ldr	r0, [r2]
+0x00400265:	bl	#0x500055
+0x00400265:	bl	#0x500055
+0x00400269:	mov	r8, r0
+0x0040026b:	cmp	r0, #0
+0x0040026d:	beq	#0x4002e7
+0x0040026f:	movs	r1, #0x18
+0x00400271:	movs	r0, #1
+0x00400273:	bl	#0x500001
+0x00400277:	mov	r4, r0
+0x00400279:	cmp	r0, #0
+0x0040027b:	beq	#0x400343
+0x0040027d:	str.w	r8, [r0, #0xc]
+0x00400281:	mov	r1, r5
+0x00400283:	str	r6, [r0, #4]
+0x00400285:	movs	r0, #0
+0x00400287:	str	r0, [r4, #0x14]
+0x00400289:	bl	#0x5000a9
+0x0040028d:	str	r0, [r4, #0x10]
+0x0040028f:	bl	#0x500061
+0x00400293:	str	r0, [r4, #8]
+0x00400295:	cmp	r0, #0
+0x00400297:	beq	#0x40033b
+0x00400299:	movs	r1, #0x64
+0x0040029b:	mov	r0, r4
+0x0040029d:	bl	#0x5000b5
+0x004002a1:	mov	r8, r0
+0x004002a3:	bl	#0x500019
+0x004002a7:	cbnz	r0, #0x4002ed
+0x004002a9:	mov	r8, sp
+0x004002ab:	mov	r3, r5
+0x004002ad:	ldr	r0, [r4]
+0x004002af:	movs	r2, #0x13
+0x004002b1:	mov	r1, r8
+0x004002b3:	bl	#0x5000c1
+0x004002a9:	mov	r8, sp
+0x004002ab:	mov	r3, r5
+0x004002ad:	ldr	r0, [r4]
+0x004002af:	movs	r2, #0x13
+0x004002b1:	mov	r1, r8
+0x004002b3:	bl	#0x5000c1
+0x004002b7:	mov	r5, r0
+0x004002b9:	bl	#0x500019
+0x004002bd:	cbz	r0, #0x400309
+0x004002bf:	mov	r0, r5
+0x004002c1:	bl	#0x500019
+0x004002bf:	mov	r0, r5
+0x004002c1:	bl	#0x500019
+0x004002c5:	mov	r8, r0
+0x004002c7:	cbnz	r0, #0x400321
+0x004002c9:	str	r4, [r7]
+0x004002cb:	ldr	r2, [pc, #0x84]
+0x004002cd:	ldr	r3, [pc, #0x7c]
+0x004002cf:	add	r2, pc
+0x004002d1:	ldr	r3, [r2, r3]
+0x004002d3:	ldr	r2, [r3]
+0x004002d5:	ldr	r3, [sp, #0x14]
+0x004002d7:	eors	r2, r3
+0x004002d9:	mov.w	r3, #0
+0x004002dd:	bne	#0x400337
+0x004002c9:	str	r4, [r7]
+0x004002cb:	ldr	r2, [pc, #0x84]
+0x004002cd:	ldr	r3, [pc, #0x7c]
+0x004002cf:	add	r2, pc
+0x004002d1:	ldr	r3, [r2, r3]
+0x004002d3:	ldr	r2, [r3]
+0x004002d5:	ldr	r3, [sp, #0x14]
+0x004002d7:	eors	r2, r3
+0x004002d9:	mov.w	r3, #0
+0x004002dd:	bne	#0x400337
+0x004002cb:	ldr	r2, [pc, #0x84]
+0x004002cd:	ldr	r3, [pc, #0x7c]
+0x004002cf:	add	r2, pc
+0x004002d1:	ldr	r3, [r2, r3]
+0x004002d3:	ldr	r2, [r3]
+0x004002d5:	ldr	r3, [sp, #0x14]
+0x004002d7:	eors	r2, r3
+0x004002d9:	mov.w	r3, #0
+0x004002dd:	bne	#0x400337
+0x004002df:	mov	r0, r8
+0x004002e1:	add	sp, #0x18
+0x004002e3:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x004002e7:	mvn	r8, #1
+0x004002eb:	b	#0x4002cb
+0x004002ed:	ldr	r4, [r7]
+0x004002ef:	cbz	r4, #0x400303
+0x004002f1:	ldr	r0, [r4]
+0x004002f3:	bl	#0x5000cd
+0x004002f1:	ldr	r0, [r4]
+0x004002f3:	bl	#0x5000cd
+0x004002f7:	ldr	r0, [r4, #8]
+0x004002f9:	bl	#0x500049
+0x004002fd:	mov	r0, r4
+0x004002ff:	bl	#0x500049
+0x00400303:	movs	r3, #0
+0x00400305:	str	r3, [r7]
+0x00400307:	b	#0x4002cb
+0x00400309:	mov	r2, r5
+0x0040030b:	mov	r3, r6
+0x0040030d:	mov	r0, r8
+0x0040030f:	movs	r1, #1
+0x00400311:	bl	#0x5000d9
+0x00400315:	cmp	r5, r0
+0x00400317:	ite	eq
+0x00400319:	moveq	r5, #0
+0x0040031b:	mvnne	r5, #0x15
+0x0040031f:	b	#0x4002bf
+0x00400321:	ldr	r0, [r4]
+0x00400323:	mov	r8, r5
+0x00400325:	bl	#0x5000cd
+0x00400325:	bl	#0x5000cd
+0x00400329:	ldr	r0, [r4, #8]
+0x0040032b:	bl	#0x500049
+0x0040032f:	mov	r0, r4
+0x00400331:	bl	#0x500049
+0x00400335:	b	#0x4002cb
+0x00400337:	bl	#0x500079
+0x0040033b:	ldr	r0, [r4]
+0x0040033d:	mvn	r8, #8
+0x00400341:	b	#0x400325
+0x00400343:	mvn	r8, #8
+0x00400347:	b	#0x4002cb
 
-000003d0 <LZ4F_writeClose>:
- 3d0:	b538      	push	{r3, r4, r5, lr}
- 3d2:	b318      	cbz	r0, 41c <LZ4F_writeClose+0x4c>
- 3d4:	6943      	ldr	r3, [r0, #20]
- 3d6:	4604      	mov	r4, r0
- 3d8:	2500      	movs	r5, #0
- 3da:	b153      	cbz	r3, 3f2 <LZ4F_writeClose+0x22>
- 3dc:	6820      	ldr	r0, [r4, #0]
- 3de:	f7ff fffe 	bl	0 <LZ4F_freeCompressionContext>
- 3e2:	68a0      	ldr	r0, [r4, #8]
- 3e4:	f7ff fffe 	bl	0 <free>
- 3e8:	4620      	mov	r0, r4
- 3ea:	f7ff fffe 	bl	0 <free>
- 3ee:	4628      	mov	r0, r5
- 3f0:	bd38      	pop	{r3, r4, r5, pc}
- 3f2:	6902      	ldr	r2, [r0, #16]
- 3f4:	6881      	ldr	r1, [r0, #8]
- 3f6:	6800      	ldr	r0, [r0, #0]
- 3f8:	f7ff fffe 	bl	0 <LZ4F_compressEnd>
- 3fc:	4605      	mov	r5, r0
- 3fe:	f7ff fffe 	bl	0 <LZ4F_isError>
- 402:	2800      	cmp	r0, #0
- 404:	d1ea      	bne.n	3dc <LZ4F_writeClose+0xc>
- 406:	462a      	mov	r2, r5
- 408:	6863      	ldr	r3, [r4, #4]
- 40a:	68a0      	ldr	r0, [r4, #8]
- 40c:	2101      	movs	r1, #1
- 40e:	f7ff fffe 	bl	0 <fwrite>
- 412:	42a8      	cmp	r0, r5
- 414:	bf18      	it	ne
- 416:	f06f 0515 	mvnne.w	r5, #21
- 41a:	e7df      	b.n	3dc <LZ4F_writeClose+0xc>
- 41c:	f06f 0514 	mvn.w	r5, #20
- 420:	4628      	mov	r0, r5
- 422:	bd38      	pop	{r3, r4, r5, pc}
+Function LZ4F_write @ 0x00400355
+0x00400355:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x00400359:	cmp	r1, #0
+0x0040035b:	it	ne
+0x0040035d:	cmpne	r0, #0
+0x0040035f:	it	eq
+0x00400361:	moveq.w	sb, #1
+0x00400365:	sub	sp, #8
+0x00400367:	ite	ne
+0x00400369:	movne.w	sb, #0
+0x0040036d:	mvneq	r6, #0x14
+0x00400371:	beq	#0x4003b9
+0x00400373:	mov	sl, r2
+0x00400375:	cbz	r2, #0x4003c1
+0x00400377:	mov	r5, r0
+0x00400379:	mov	r8, r1
+0x0040037b:	mov	r7, r2
+0x0040037d:	b	#0x400391
+0x00400377:	mov	r5, r0
+0x00400379:	mov	r8, r1
+0x0040037b:	mov	r7, r2
+0x0040037d:	b	#0x400391
+0x0040037f:	ldrd	r3, r0, [r5, #4]
+0x00400383:	bl	#0x5000d9
+0x00400387:	cmp	r0, r6
+0x00400389:	bne	#0x4003cb
+0x0040038b:	add	r8, r4
+0x0040038d:	subs	r7, r7, r4
+0x0040038f:	beq	#0x4003c1
+0x00400391:	ldr	r4, [r5, #0xc]
+0x00400393:	mov	r3, r8
+0x00400395:	ldr	r2, [r5, #0x10]
+0x00400397:	cmp	r4, r7
+0x00400399:	ldr	r1, [r5, #8]
+0x0040039b:	it	hs
+0x0040039d:	movhs	r4, r7
+0x0040039f:	ldr	r0, [r5]
+0x004003a1:	strd	r4, sb, [sp]
+0x004003a5:	bl	#0x5000e5
+0x004003a9:	mov	r6, r0
+0x004003ab:	bl	#0x500019
+0x004003af:	mov	r2, r6
+0x004003b1:	movs	r1, #1
+0x004003b3:	cmp	r0, #0
+0x004003b5:	beq	#0x40037f
+0x004003b7:	str	r6, [r5, #0x14]
+0x004003b9:	mov	r0, r6
+0x004003bb:	add	sp, #8
+0x004003bd:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x004003b9:	mov	r0, r6
+0x004003bb:	add	sp, #8
+0x004003bd:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x004003c1:	mov	r6, sl
+0x004003c3:	mov	r0, r6
+0x004003c5:	add	sp, #8
+0x004003c7:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x004003cb:	mvn	r6, #0x15
+0x004003cf:	b	#0x4003b7
+
+Function LZ4F_writeClose @ 0x004003d1
+0x004003d1:	push	{r3, r4, r5, lr}
+0x004003d3:	cbz	r0, #0x40041d
+0x004003d5:	ldr	r3, [r0, #0x14]
+0x004003d7:	mov	r4, r0
+0x004003d9:	movs	r5, #0
+0x004003db:	cbz	r3, #0x4003f3
+0x004003dd:	ldr	r0, [r4]
+0x004003df:	bl	#0x5000cd
+0x004003d5:	ldr	r3, [r0, #0x14]
+0x004003d7:	mov	r4, r0
+0x004003d9:	movs	r5, #0
+0x004003db:	cbz	r3, #0x4003f3
+0x004003dd:	ldr	r0, [r4]
+0x004003df:	bl	#0x5000cd
+0x004003dd:	ldr	r0, [r4]
+0x004003df:	bl	#0x5000cd
+0x004003e3:	ldr	r0, [r4, #8]
+0x004003e5:	bl	#0x500049
+0x004003e9:	mov	r0, r4
+0x004003eb:	bl	#0x500049
+0x004003ef:	mov	r0, r5
+0x004003f1:	pop	{r3, r4, r5, pc}
+0x004003f3:	ldr	r2, [r0, #0x10]
+0x004003f5:	ldr	r1, [r0, #8]
+0x004003f7:	ldr	r0, [r0]
+0x004003f9:	bl	#0x5000f1
+0x004003fd:	mov	r5, r0
+0x004003ff:	bl	#0x500019
+0x00400403:	cmp	r0, #0
+0x00400405:	bne	#0x4003dd
+0x00400407:	mov	r2, r5
+0x00400409:	ldr	r3, [r4, #4]
+0x0040040b:	ldr	r0, [r4, #8]
+0x0040040d:	movs	r1, #1
+0x0040040f:	bl	#0x5000d9
+0x00400413:	cmp	r0, r5
+0x00400415:	it	ne
+0x00400417:	mvnne	r5, #0x15
+0x0040041b:	b	#0x4003dd
+0x0040041d:	mvn	r5, #0x14
+0x00400421:	mov	r0, r5
+0x00400423:	pop	{r3, r4, r5, pc}
+
+Function calloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function LZ4F_createDecompressionContext @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function LZ4F_isError @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function fread @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function LZ4F_getFrameInfo @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function LZ4F_freeDecompressionContext @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function free @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function LZ4F_getBlockSize @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function malloc @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function memcpy @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function __assert_fail @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function LZ4F_decompress @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function ferror @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0
+0x005000a5:	movs	r0, r0
+0x005000a7:	movs	r0, r0
+
+Function LZ4F_compressBound @ 0x005000a9
+0x005000a9:	movs	r0, r0
+0x005000ab:	movs	r0, r0
+0x005000ad:	movs	r0, r0
+0x005000af:	movs	r0, r0
+0x005000b1:	movs	r0, r0
+0x005000b3:	movs	r0, r0
+
+Function LZ4F_createCompressionContext @ 0x005000b5
+0x005000b5:	movs	r0, r0
+0x005000b7:	movs	r0, r0
+0x005000b9:	movs	r0, r0
+0x005000bb:	movs	r0, r0
+0x005000bd:	movs	r0, r0
+0x005000bf:	movs	r0, r0
+
+Function LZ4F_compressBegin @ 0x005000c1
+0x005000c1:	movs	r0, r0
+0x005000c3:	movs	r0, r0
+0x005000c5:	movs	r0, r0
+0x005000c7:	movs	r0, r0
+0x005000c9:	movs	r0, r0
+0x005000cb:	movs	r0, r0
+
+Function LZ4F_freeCompressionContext @ 0x005000cd
+0x005000cd:	movs	r0, r0
+0x005000cf:	movs	r0, r0
+0x005000d1:	movs	r0, r0
+0x005000d3:	movs	r0, r0
+0x005000d5:	movs	r0, r0
+0x005000d7:	movs	r0, r0
+
+Function fwrite @ 0x005000d9
+0x005000d9:	movs	r0, r0
+0x005000db:	movs	r0, r0
+0x005000dd:	movs	r0, r0
+0x005000df:	movs	r0, r0
+0x005000e1:	movs	r0, r0
+0x005000e3:	movs	r0, r0
+
+Function LZ4F_compressUpdate @ 0x005000e5
+0x005000e5:	movs	r0, r0
+0x005000e7:	movs	r0, r0
+0x005000e9:	movs	r0, r0
+0x005000eb:	movs	r0, r0
+0x005000ed:	movs	r0, r0
+0x005000ef:	movs	r0, r0
+
+Function LZ4F_compressEnd @ 0x005000f1
+0x005000f1:	movs	r0, r0
+0x005000f3:	movs	r0, r0
+0x005000f5:	movs	r0, r0
+0x005000f7:	movs	r0, r0

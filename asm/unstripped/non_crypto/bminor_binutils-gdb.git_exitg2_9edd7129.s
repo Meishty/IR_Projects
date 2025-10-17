@@ -1,21 +1,37 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_exitg2_9edd7129.o:     file format elf32-littlearm
+Function main @ 0x00400015
+0x00400015:	ldr	r0, [pc, #0x1c]
+0x00400017:	push	{r3, lr}
+0x00400019:	add	r0, pc
+0x0040001b:	bl	#0x500001
+0x0040001f:	movs	r1, #1
+0x00400021:	movs	r0, #0xf8
+0x00400023:	bl	#0x50000d
+0x00400027:	ldr	r0, [pc, #0x10]
+0x00400029:	add	r0, pc
+0x0040002b:	bl	#0x500001
+0x0040002f:	bl	#0x500019
 
+Function sub_400033 @ 0x00400033
 
-Disassembly of section .text.startup:
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4807      	ldr	r0, [pc, #28]	; (20 <main+0x20>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <puts>
-   a:	2101      	movs	r1, #1
-   c:	20f8      	movs	r0, #248	; 0xf8
-   e:	f7ff fffe 	bl	0 <syscall>
-  12:	4804      	ldr	r0, [pc, #16]	; (24 <main+0x24>)
-  14:	4478      	add	r0, pc
-  16:	f7ff fffe 	bl	0 <puts>
-  1a:	f7ff fffe 	bl	0 <abort>
-  1e:	bf00      	nop
-  20:	00000018 	.word	0x00000018
-  24:	0000000c 	.word	0x0000000c
+Function syscall @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

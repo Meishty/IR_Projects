@@ -1,18 +1,33 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_inferior-args_84d85fc0_stripped.o:     file format elf32-littlearm
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, r4, r5, r6, r7, lr}
+0x0040000f:	subs	r6, r0, #0
+0x00400011:	ble	#0x40002f
+0x00400013:	ldr	r7, [pc, #0x20]
+0x00400015:	subs	r5, r1, #4
+0x00400017:	movs	r4, #0
+0x00400019:	add	r7, pc
+0x0040001b:	movs	r0, #1
+0x0040001d:	mov	r2, r4
+0x0040001f:	ldr	r3, [r5, #4]!
+0x00400023:	add	r4, r0
+0x00400025:	mov	r1, r7
+0x00400027:	bl	#0x400027
+0x0040001b:	movs	r0, #1
+0x0040001d:	mov	r2, r4
+0x0040001f:	ldr	r3, [r5, #4]!
+0x00400023:	add	r4, r0
+0x00400025:	mov	r1, r7
+0x00400027:	bl	#0x400027
+0x0040002f:	movs	r0, #0
+0x00400031:	pop	{r3, r4, r5, r6, r7, pc}
 
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	cmp	r6, r4
+0x0040002d:	bne	#0x40001b
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	1e06b5f8 	mcrne	5, 0, fp, cr6, cr8, {7}
-   4:	4f08dd0d 	svcmi	0x0008dd0d
-   8:	24001f0d 	strcs	r1, [r0], #-3853	; 0xfffff0f3
-   c:	2001447f 	andcs	r4, r1, pc, ror r4
-  10:	f8554622 			; <UNDEFINED> instruction: 0xf8554622
-  14:	44043f04 	strmi	r3, [r4], #-3844	; 0xfffff0fc
-  18:	f7ff4639 			; <UNDEFINED> instruction: 0xf7ff4639
-  1c:	42a6fffe 	adcmi	pc, r6, #1016	; 0x3f8
-  20:	2000d1f5 	strdcs	sp, [r0], -r5
-  24:	bf00bdf8 	svclt	0x0000bdf8
-  28:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	movs	r0, r3
+0x00400037:	movs	r0, r0

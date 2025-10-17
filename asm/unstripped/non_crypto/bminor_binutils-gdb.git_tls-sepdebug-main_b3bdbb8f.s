@@ -1,16 +1,16 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_tls-sepdebug-main_b3bdbb8f.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r3, [pc, #0xc]
+0x00400009:	mrc	p15, #0, r2, c13, c0, #3
+0x0040000d:	add	r3, pc
+0x0040000f:	ldr	r3, [r3]
+0x00400011:	ldr	r0, [r2, r3]
+0x00400013:	pop	{r3, pc}
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <pthread_testcancel>
-   6:	4b03      	ldr	r3, [pc, #12]	; (14 <main+0x14>)
-   8:	ee1d 2f70 	mrc	15, 0, r2, cr13, cr0, {3}
-   c:	447b      	add	r3, pc
-   e:	681b      	ldr	r3, [r3, #0]
-  10:	58d0      	ldr	r0, [r2, r3]
-  12:	bd08      	pop	{r3, pc}
-  14:	00000004 	.word	0x00000004
+Function pthread_testcancel @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

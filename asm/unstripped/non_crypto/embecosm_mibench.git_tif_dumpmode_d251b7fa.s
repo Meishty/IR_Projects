@@ -1,130 +1,158 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_tif_dumpmode_d251b7fa.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrlt	r4, [r0], #-0x603
 
+Function sub_400015 @ 0x00400015
+0x00400015:	ldr	r3, [pc, #0x10]
+0x00400017:	add	r2, r1
+0x00400019:	str.w	r2, [r3, #0x1d8]
+0x0040001d:	ldr.w	r2, [r3, #0x1dc]
+0x00400021:	subs	r2, r2, r1
+0x00400023:	str.w	r2, [r3, #0x1dc]
+0x00400027:	bx	lr
+0x0040001c:	ldrsbhs	pc, [ip, #0x83]
 
-Disassembly of section .text:
+Function sub_400027 @ 0x00400027
+0x00400027:	bx	lr
 
-00000000 <DumpModeSeek>:
-   0:	4603      	mov	r3, r0
-   2:	b410      	push	{r4}
-   4:	2001      	movs	r0, #1
-   6:	f8d3 41c8 	ldr.w	r4, [r3, #456]	; 0x1c8
-   a:	f8d3 21d8 	ldr.w	r2, [r3, #472]	; 0x1d8
-   e:	fb04 f101 	mul.w	r1, r4, r1
-  12:	f85d 4b04 	ldr.w	r4, [sp], #4
-  16:	440a      	add	r2, r1
-  18:	f8c3 21d8 	str.w	r2, [r3, #472]	; 0x1d8
-  1c:	f8d3 21dc 	ldr.w	r2, [r3, #476]	; 0x1dc
-  20:	1a52      	subs	r2, r2, r1
-  22:	f8c3 21dc 	str.w	r2, [r3, #476]	; 0x1dc
-  26:	4770      	bx	lr
+Function DumpModeEncode @ 0x00400029
+0x00400029:	push	{r3, r4, r5, r6, r7, lr}
+0x0040002b:	subs	r6, r2, #0
+0x0040002d:	itt	gt
+0x0040002f:	movgt	r4, r0
+0x00400031:	movgt	r7, r1
+0x00400033:	bgt	#0x400067
+0x00400035:	b	#0x4000b7
+0x00400037:	subs	r5, r3, r5
+0x00400039:	cmp	r0, r7
+0x0040003b:	sub.w	r6, r6, r5
+0x0040003f:	beq	#0x400083
+0x00400041:	mov	r1, r7
+0x00400043:	mov	r2, r5
+0x00400045:	bl	#0x500001
+0x00400049:	ldr.w	r1, [r4, #0x1d4]
+0x0040004d:	ldrd	r2, r3, [r4, #0x1d8]
+0x00400051:	add	r7, r5
+0x00400053:	add	r3, r5
+0x00400055:	add	r2, r5
+0x00400057:	cmp	r3, r1
+0x00400059:	str.w	r3, [r4, #0x1dc]
+0x0040005d:	str.w	r2, [r4, #0x1d8]
+0x00400061:	bge	#0x40008f
+0x00400063:	cmp	r6, #0
+0x00400065:	ble	#0x4000b7
+0x00400067:	ldr.w	r5, [r4, #0x1dc]
+0x0040006b:	ldr.w	r3, [r4, #0x1d4]
+0x0040006f:	adds	r1, r5, r6
+0x00400071:	ldr.w	r0, [r4, #0x1d8]
+0x00400075:	cmp	r1, r3
+0x00400077:	bgt	#0x400037
+0x00400079:	cmp	r0, r7
+0x0040007b:	beq	#0x40009f
+0x0040007d:	mov	r5, r6
+0x0040007f:	movs	r6, #0
+0x00400081:	b	#0x400041
+0x00400083:	add	r5, r7
+0x00400085:	str.w	r3, [r4, #0x1dc]
+0x00400089:	mov	r7, r5
+0x0040008b:	str.w	r5, [r4, #0x1d8]
+0x0040008f:	mov	r0, r4
+0x00400091:	bl	#0x50000d
+0x0040008f:	mov	r0, r4
+0x00400091:	bl	#0x50000d
+0x00400095:	cmp	r0, #0
+0x00400097:	bne	#0x400063
+0x00400099:	mov.w	r0, #-1
+0x0040009d:	pop	{r3, r4, r5, r6, r7, pc}
+0x0040009f:	add	r7, r6
+0x004000a1:	cmp	r1, r3
+0x004000a3:	strd	r7, r1, [r4, #0x1d8]
+0x004000a7:	blt	#0x4000b7
+0x004000a9:	mov	r0, r4
+0x004000ab:	movs	r6, #0
+0x004000ad:	bl	#0x50000d
+0x004000b1:	cmp	r0, #0
+0x004000b3:	bne	#0x400063
+0x004000b5:	b	#0x400099
+0x004000b7:	movs	r0, #1
+0x004000b9:	pop	{r3, r4, r5, r6, r7, pc}
 
-00000028 <DumpModeEncode>:
-  28:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  2a:	1e16      	subs	r6, r2, #0
-  2c:	bfc4      	itt	gt
-  2e:	4604      	movgt	r4, r0
-  30:	460f      	movgt	r7, r1
-  32:	dc18      	bgt.n	66 <DumpModeEncode+0x3e>
-  34:	e03f      	b.n	b6 <DumpModeEncode+0x8e>
-  36:	1b5d      	subs	r5, r3, r5
-  38:	42b8      	cmp	r0, r7
-  3a:	eba6 0605 	sub.w	r6, r6, r5
-  3e:	d020      	beq.n	82 <DumpModeEncode+0x5a>
-  40:	4639      	mov	r1, r7
-  42:	462a      	mov	r2, r5
-  44:	f7ff fffe 	bl	0 <_TIFFmemcpy>
-  48:	f8d4 11d4 	ldr.w	r1, [r4, #468]	; 0x1d4
-  4c:	e9d4 2376 	ldrd	r2, r3, [r4, #472]	; 0x1d8
-  50:	442f      	add	r7, r5
-  52:	442b      	add	r3, r5
-  54:	442a      	add	r2, r5
-  56:	428b      	cmp	r3, r1
-  58:	f8c4 31dc 	str.w	r3, [r4, #476]	; 0x1dc
-  5c:	f8c4 21d8 	str.w	r2, [r4, #472]	; 0x1d8
-  60:	da15      	bge.n	8e <DumpModeEncode+0x66>
-  62:	2e00      	cmp	r6, #0
-  64:	dd27      	ble.n	b6 <DumpModeEncode+0x8e>
-  66:	f8d4 51dc 	ldr.w	r5, [r4, #476]	; 0x1dc
-  6a:	f8d4 31d4 	ldr.w	r3, [r4, #468]	; 0x1d4
-  6e:	19a9      	adds	r1, r5, r6
-  70:	f8d4 01d8 	ldr.w	r0, [r4, #472]	; 0x1d8
-  74:	4299      	cmp	r1, r3
-  76:	dcde      	bgt.n	36 <DumpModeEncode+0xe>
-  78:	42b8      	cmp	r0, r7
-  7a:	d010      	beq.n	9e <DumpModeEncode+0x76>
-  7c:	4635      	mov	r5, r6
-  7e:	2600      	movs	r6, #0
-  80:	e7de      	b.n	40 <DumpModeEncode+0x18>
-  82:	443d      	add	r5, r7
-  84:	f8c4 31dc 	str.w	r3, [r4, #476]	; 0x1dc
-  88:	462f      	mov	r7, r5
-  8a:	f8c4 51d8 	str.w	r5, [r4, #472]	; 0x1d8
-  8e:	4620      	mov	r0, r4
-  90:	f7ff fffe 	bl	0 <TIFFFlushData1>
-  94:	2800      	cmp	r0, #0
-  96:	d1e4      	bne.n	62 <DumpModeEncode+0x3a>
-  98:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  9c:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  9e:	4437      	add	r7, r6
-  a0:	4299      	cmp	r1, r3
-  a2:	e9c4 7176 	strd	r7, r1, [r4, #472]	; 0x1d8
-  a6:	db06      	blt.n	b6 <DumpModeEncode+0x8e>
-  a8:	4620      	mov	r0, r4
-  aa:	2600      	movs	r6, #0
-  ac:	f7ff fffe 	bl	0 <TIFFFlushData1>
-  b0:	2800      	cmp	r0, #0
-  b2:	d1d6      	bne.n	62 <DumpModeEncode+0x3a>
-  b4:	e7f0      	b.n	98 <DumpModeEncode+0x70>
-  b6:	2001      	movs	r0, #1
-  b8:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  ba:	bf00      	nop
+Function sub_4000bb @ 0x004000bb
+0x004000bb:	nop	
+0x004000bd:	ldr.w	r3, [r0, #0x1dc]
+0x004000c1:	push	{r4, r5, r6, lr}
+0x004000c3:	mov	r4, r0
+0x004000c5:	cmp	r3, r2
+0x004000c7:	blt	#0x4000eb
 
-000000bc <DumpModeDecode>:
-  bc:	f8d0 31dc 	ldr.w	r3, [r0, #476]	; 0x1dc
-  c0:	b570      	push	{r4, r5, r6, lr}
-  c2:	4604      	mov	r4, r0
-  c4:	4293      	cmp	r3, r2
-  c6:	db10      	blt.n	ea <DumpModeDecode+0x2e>
-  c8:	f8d0 61d8 	ldr.w	r6, [r0, #472]	; 0x1d8
-  cc:	4615      	mov	r5, r2
-  ce:	428e      	cmp	r6, r1
-  d0:	d005      	beq.n	de <DumpModeDecode+0x22>
-  d2:	4608      	mov	r0, r1
-  d4:	4631      	mov	r1, r6
-  d6:	f7ff fffe 	bl	0 <_TIFFmemcpy>
-  da:	e9d4 1376 	ldrd	r1, r3, [r4, #472]	; 0x1d8
-  de:	4429      	add	r1, r5
-  e0:	1b5b      	subs	r3, r3, r5
-  e2:	2001      	movs	r0, #1
-  e4:	e9c4 1376 	strd	r1, r3, [r4, #472]	; 0x1d8
-  e8:	bd70      	pop	{r4, r5, r6, pc}
-  ea:	4904      	ldr	r1, [pc, #16]	; (fc <DumpModeDecode+0x40>)
-  ec:	f8d0 215c 	ldr.w	r2, [r0, #348]	; 0x15c
-  f0:	4479      	add	r1, pc
-  f2:	6800      	ldr	r0, [r0, #0]
-  f4:	f7ff fffe 	bl	0 <TIFFError>
-  f8:	2000      	movs	r0, #0
-  fa:	bd70      	pop	{r4, r5, r6, pc}
-  fc:	00000008 	.word	0x00000008
+Function DumpModeDecode @ 0x004000bd
+0x004000bd:	ldr.w	r3, [r0, #0x1dc]
+0x004000c1:	push	{r4, r5, r6, lr}
+0x004000c3:	mov	r4, r0
+0x004000c5:	cmp	r3, r2
+0x004000c7:	blt	#0x4000eb
+0x004000c9:	ldr.w	r6, [r0, #0x1d8]
+0x004000cd:	mov	r5, r2
+0x004000cf:	cmp	r6, r1
+0x004000d1:	beq	#0x4000df
+0x004000d3:	mov	r0, r1
+0x004000d5:	mov	r1, r6
+0x004000d7:	bl	#0x500001
+0x004000db:	ldrd	r1, r3, [r4, #0x1d8]
+0x004000df:	add	r1, r5
+0x004000e1:	subs	r3, r3, r5
+0x004000e3:	movs	r0, #1
+0x004000e5:	strd	r1, r3, [r4, #0x1d8]
+0x004000e9:	pop	{r4, r5, r6, pc}
+0x004000df:	add	r1, r5
+0x004000e1:	subs	r3, r3, r5
+0x004000e3:	movs	r0, #1
+0x004000e5:	strd	r1, r3, [r4, #0x1d8]
+0x004000e9:	pop	{r4, r5, r6, pc}
+0x004000eb:	ldr	r1, [pc, #0x10]
+0x004000ed:	ldr.w	r2, [r0, #0x15c]
+0x004000f1:	add	r1, pc
+0x004000f3:	ldr	r0, [r0]
+0x004000f5:	bl	#0x500019
+0x004000f9:	movs	r0, #0
+0x004000fb:	pop	{r4, r5, r6, pc}
 
-00000100 <TIFFInitDumpMode>:
- 100:	4603      	mov	r3, r0
- 102:	490b      	ldr	r1, [pc, #44]	; (130 <TIFFInitDumpMode+0x30>)
- 104:	4a0b      	ldr	r2, [pc, #44]	; (134 <TIFFInitDumpMode+0x34>)
- 106:	2001      	movs	r0, #1
- 108:	f8df c02c 	ldr.w	ip, [pc, #44]	; 138 <TIFFInitDumpMode+0x38>
- 10c:	4479      	add	r1, pc
- 10e:	447a      	add	r2, pc
- 110:	f8c3 1198 	str.w	r1, [r3, #408]	; 0x198
- 114:	44fc      	add	ip, pc
- 116:	f8c3 11a0 	str.w	r1, [r3, #416]	; 0x1a0
- 11a:	f8c3 11a8 	str.w	r1, [r3, #424]	; 0x1a8
- 11e:	f8c3 219c 	str.w	r2, [r3, #412]	; 0x19c
- 122:	f8c3 21a4 	str.w	r2, [r3, #420]	; 0x1a4
- 126:	f8c3 21ac 	str.w	r2, [r3, #428]	; 0x1ac
- 12a:	f8c3 c1b4 	str.w	ip, [r3, #436]	; 0x1b4
- 12e:	4770      	bx	lr
- 130:	00000020 	.word	0x00000020
- 134:	00000022 	.word	0x00000022
- 138:	00000020 	.word	0x00000020
+Function TIFFInitDumpMode @ 0x00400101
+0x00400101:	mov	r3, r0
+0x00400103:	ldr	r1, [pc, #0x2c]
+0x00400105:	ldr	r2, [pc, #0x2c]
+0x00400107:	movs	r0, #1
+0x00400109:	ldr.w	ip, [pc, #0x2c]
+0x0040010d:	add	r1, pc
+0x0040010f:	add	r2, pc
+0x00400111:	str.w	r1, [r3, #0x198]
+0x00400115:	add	ip, pc
+0x00400117:	str.w	r1, [r3, #0x1a0]
+0x0040011b:	str.w	r1, [r3, #0x1a8]
+0x0040011f:	str.w	r2, [r3, #0x19c]
+0x00400123:	str.w	r2, [r3, #0x1a4]
+0x00400127:	str.w	r2, [r3, #0x1ac]
+0x0040012b:	str.w	ip, [r3, #0x1b4]
+0x0040012f:	bx	lr
+
+Function _TIFFmemcpy @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function TIFFFlushData1 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function TIFFError @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

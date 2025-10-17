@@ -1,66 +1,85 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_cdjpeg_245cf244.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	lr, [r0, sp, lsr #18]!
+0x00400004:	ldrmi	r4, [r2], r7, lsl #12
+0x00400008:	blmi	#0x47e06c
+0x0040000c:	strmi	fp, [r8], r4, lsl #6
 
+Function sub_400013 @ 0x00400013
+0x00400013:	mov.w	sb, #0
+0x00400017:	b	#0x40003d
+0x00400019:	bl	#0x500001
+0x0040001d:	ldr	r3, [r0]
+0x0040001f:	ldrh.w	r3, [r3, r4, lsl #1]
+0x00400023:	lsls	r3, r3, #0x17
+0x00400025:	bpl	#0x400031
+0x00400027:	bl	#0x50000d
+0x0040002b:	ldr	r3, [r0]
+0x0040002d:	ldr.w	r5, [r3, r4, lsl #2]
+0x00400031:	cmp	r5, r6
+0x00400033:	bne	#0x400061
+0x00400031:	cmp	r5, r6
+0x00400033:	bne	#0x400061
+0x00400035:	ldrb	r5, [r7], #1
+0x00400039:	mov	r4, r5
+0x0040003b:	cbz	r5, #0x400053
+0x0040003d:	ldrb	r6, [r8], #1
+0x00400041:	sxth	r4, r4
+0x00400043:	add.w	sb, sb, #1
+0x00400047:	cmp	r6, #0
+0x00400049:	bne	#0x400019
+0x0040003d:	ldrb	r6, [r8], #1
+0x00400041:	sxth	r4, r4
+0x00400043:	add.w	sb, sb, #1
+0x00400047:	cmp	r6, #0
+0x00400049:	bne	#0x400019
+0x0040004b:	mov	r0, r6
+0x0040004d:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x00400053:	cmp	sl, sb
+0x00400055:	ite	gt
+0x00400057:	movgt	r6, #0
+0x00400059:	movle	r6, #1
+0x0040005b:	mov	r0, r6
+0x0040005d:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x00400061:	movs	r6, #0
+0x00400063:	mov	r0, r6
+0x00400065:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
 
-Disassembly of section .text:
+Function sub_400051 @ 0x00400051
+0x00400051:	mov	sb, r4
+0x00400053:	cmp	sl, sb
+0x00400055:	ite	gt
+0x00400057:	movgt	r6, #0
+0x00400059:	movle	r6, #1
+0x0040005b:	mov	r0, r6
+0x0040005d:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
 
-00000000 <keymatch>:
-   0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
-   4:	4607      	mov	r7, r0
-   6:	4692      	mov	sl, r2
-   8:	f817 4b01 	ldrb.w	r4, [r7], #1
-   c:	b304      	cbz	r4, 50 <keymatch+0x50>
-   e:	4688      	mov	r8, r1
-  10:	4625      	mov	r5, r4
-  12:	f04f 0900 	mov.w	r9, #0
-  16:	e011      	b.n	3c <keymatch+0x3c>
-  18:	f7ff fffe 	bl	0 <__ctype_b_loc>
-  1c:	6803      	ldr	r3, [r0, #0]
-  1e:	f833 3014 	ldrh.w	r3, [r3, r4, lsl #1]
-  22:	05db      	lsls	r3, r3, #23
-  24:	d504      	bpl.n	30 <keymatch+0x30>
-  26:	f7ff fffe 	bl	0 <__ctype_tolower_loc>
-  2a:	6803      	ldr	r3, [r0, #0]
-  2c:	f853 5024 	ldr.w	r5, [r3, r4, lsl #2]
-  30:	42b5      	cmp	r5, r6
-  32:	d115      	bne.n	60 <keymatch+0x60>
-  34:	f817 5b01 	ldrb.w	r5, [r7], #1
-  38:	462c      	mov	r4, r5
-  3a:	b155      	cbz	r5, 52 <keymatch+0x52>
-  3c:	f818 6b01 	ldrb.w	r6, [r8], #1
-  40:	b224      	sxth	r4, r4
-  42:	f109 0901 	add.w	r9, r9, #1
-  46:	2e00      	cmp	r6, #0
-  48:	d1e6      	bne.n	18 <keymatch+0x18>
-  4a:	4630      	mov	r0, r6
-  4c:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
-  50:	46a1      	mov	r9, r4
-  52:	45ca      	cmp	sl, r9
-  54:	bfcc      	ite	gt
-  56:	2600      	movgt	r6, #0
-  58:	2601      	movle	r6, #1
-  5a:	4630      	mov	r0, r6
-  5c:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
-  60:	2600      	movs	r6, #0
-  62:	4630      	mov	r0, r6
-  64:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+Function read_stdin @ 0x00400069
+0x00400069:	ldr	r3, [pc, #8]
+0x0040006b:	ldr	r2, [pc, #0xc]
+0x0040006d:	add	r3, pc
+0x0040006f:	ldr	r3, [r3, r2]
+0x00400071:	ldr	r0, [r3]
+0x00400073:	bx	lr
 
-00000068 <read_stdin>:
-  68:	4b02      	ldr	r3, [pc, #8]	; (74 <read_stdin+0xc>)
-  6a:	4a03      	ldr	r2, [pc, #12]	; (78 <read_stdin+0x10>)
-  6c:	447b      	add	r3, pc
-  6e:	589b      	ldr	r3, [r3, r2]
-  70:	6818      	ldr	r0, [r3, #0]
-  72:	4770      	bx	lr
-  74:	00000004 	.word	0x00000004
-  78:	00000000 	.word	0x00000000
+Function write_stdout @ 0x0040007d
+0x0040007d:	ldr	r3, [pc, #8]
+0x0040007f:	ldr	r2, [pc, #0xc]
+0x00400081:	add	r3, pc
+0x00400083:	ldr	r3, [r3, r2]
+0x00400085:	ldr	r0, [r3]
+0x00400087:	bx	lr
 
-0000007c <write_stdout>:
-  7c:	4b02      	ldr	r3, [pc, #8]	; (88 <write_stdout+0xc>)
-  7e:	4a03      	ldr	r2, [pc, #12]	; (8c <write_stdout+0x10>)
-  80:	447b      	add	r3, pc
-  82:	589b      	ldr	r3, [r3, r2]
-  84:	6818      	ldr	r0, [r3, #0]
-  86:	4770      	bx	lr
-  88:	00000004 	.word	0x00000004
-  8c:	00000000 	.word	0x00000000
+Function __ctype_b_loc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __ctype_tolower_loc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

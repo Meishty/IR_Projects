@@ -1,144 +1,169 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_longio_30d1faff.o:     file format elf32-littlearm
+Function read_long @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	mov	r5, r0
+0x00400005:	bl	#0x500001
+0x00400009:	adds	r4, r0, #1
+0x0040000b:	beq	#0x40003f
+0x0040000d:	mov	r4, r0
+0x0040000f:	mov	r0, r5
+0x00400011:	bl	#0x500001
+0x00400015:	mov	r3, r0
+0x00400017:	adds	r1, r0, #1
+0x00400019:	beq	#0x40003f
+0x0040001b:	mov	r0, r5
+0x0040001d:	orr.w	r4, r3, r4, lsl #8
+0x00400021:	bl	#0x500001
+0x00400025:	mov	r3, r0
+0x00400027:	adds	r2, r0, #1
+0x00400029:	beq	#0x40003f
+0x0040002b:	mov	r0, r5
+0x0040002d:	orr.w	r4, r3, r4, lsl #8
+0x00400031:	bl	#0x500001
+0x00400035:	adds	r3, r0, #1
+0x00400037:	beq	#0x40003f
+0x00400039:	orr.w	r0, r0, r4, lsl #8
+0x0040003d:	pop	{r3, r4, r5, pc}
+0x0040003f:	mov.w	r0, #-1
+0x00400043:	pop	{r3, r4, r5, pc}
 
+Function write_long @ 0x00400045
+0x00400045:	push	{r4, lr}
+0x00400047:	mov	r4, r1
+0x00400049:	mov	r1, r0
+0x0040004b:	sub	sp, #8
+0x0040004d:	str	r0, [sp, #4]
+0x0040004f:	asrs	r0, r4, #0x18
+0x00400051:	bl	#0x50000d
+0x00400055:	ldr	r1, [sp, #4]
+0x00400057:	adds	r0, #1
+0x00400059:	beq	#0x400089
+0x0040005b:	asrs	r0, r4, #0x10
+0x0040005d:	str	r1, [sp, #4]
+0x0040005f:	bl	#0x50000d
+0x00400063:	adds	r0, #1
+0x00400065:	beq	#0x400089
+0x00400067:	ldr	r1, [sp, #4]
+0x00400069:	asrs	r0, r4, #8
+0x0040006b:	bl	#0x50000d
+0x0040006f:	adds	r0, #1
+0x00400071:	beq	#0x400089
+0x00400073:	ldr	r1, [sp, #4]
+0x00400075:	mov	r0, r4
+0x00400077:	bl	#0x50000d
+0x0040007b:	adds	r0, #1
+0x0040007d:	mov.w	r0, #-1
+0x00400081:	it	ne
+0x00400083:	movne	r0, #0
+0x00400085:	add	sp, #8
+0x00400087:	pop	{r4, pc}
+0x00400085:	add	sp, #8
+0x00400087:	pop	{r4, pc}
+0x00400089:	mov.w	r0, #-1
+0x0040008d:	b	#0x400085
 
-Disassembly of section .text:
+Function sub_40008f @ 0x0040008f
+0x0040008f:	nop	
+0x00400091:	push	{r3, r4, r5, r6, r7, lr}
+0x00400093:	subs	r6, r2, #1
+0x00400095:	bmi	#0x4000e7
 
-00000000 <read_long>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	4605      	mov	r5, r0
-   4:	f7ff fffe 	bl	0 <getc>
-   8:	1c44      	adds	r4, r0, #1
-   a:	d018      	beq.n	3e <read_long+0x3e>
-   c:	4604      	mov	r4, r0
-   e:	4628      	mov	r0, r5
-  10:	f7ff fffe 	bl	0 <getc>
-  14:	4603      	mov	r3, r0
-  16:	1c41      	adds	r1, r0, #1
-  18:	d011      	beq.n	3e <read_long+0x3e>
-  1a:	4628      	mov	r0, r5
-  1c:	ea43 2404 	orr.w	r4, r3, r4, lsl #8
-  20:	f7ff fffe 	bl	0 <getc>
-  24:	4603      	mov	r3, r0
-  26:	1c42      	adds	r2, r0, #1
-  28:	d009      	beq.n	3e <read_long+0x3e>
-  2a:	4628      	mov	r0, r5
-  2c:	ea43 2404 	orr.w	r4, r3, r4, lsl #8
-  30:	f7ff fffe 	bl	0 <getc>
-  34:	1c43      	adds	r3, r0, #1
-  36:	d002      	beq.n	3e <read_long+0x3e>
-  38:	ea40 2004 	orr.w	r0, r0, r4, lsl #8
-  3c:	bd38      	pop	{r3, r4, r5, pc}
-  3e:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  42:	bd38      	pop	{r3, r4, r5, pc}
+Function read_long_array @ 0x00400091
+0x00400091:	push	{r3, r4, r5, r6, r7, lr}
+0x00400093:	subs	r6, r2, #1
+0x00400095:	bmi	#0x4000e7
+0x00400097:	mov	r5, r0
+0x00400099:	mov	r7, r1
+0x0040009b:	b	#0x4000d1
+0x0040009d:	bl	#0x500001
+0x004000a1:	mov	r3, r0
+0x004000a3:	orr.w	r4, r3, r4, lsl #8
+0x004000a7:	mov	r0, r5
+0x004000a9:	adds	r3, #1
+0x004000ab:	beq	#0x4000e1
+0x004000ad:	bl	#0x500001
+0x004000b1:	mov	r3, r0
+0x004000b3:	orr.w	r4, r3, r4, lsl #8
+0x004000b7:	mov	r0, r5
+0x004000b9:	adds	r3, #1
+0x004000bb:	beq	#0x4000e1
+0x004000bd:	bl	#0x500001
+0x004000c1:	adds	r2, r0, #1
+0x004000c3:	beq	#0x4000e1
+0x004000c5:	orr.w	r0, r0, r4, lsl #8
+0x004000c9:	adds	r3, r6, #1
+0x004000cb:	str	r0, [r7], #4
+0x004000cf:	beq	#0x4000e7
+0x004000d1:	mov	r0, r5
+0x004000d3:	subs	r6, #1
+0x004000d5:	bl	#0x500001
+0x004000d9:	mov	r4, r0
+0x004000db:	adds	r1, r4, #1
+0x004000dd:	mov	r0, r5
+0x004000df:	bne	#0x40009d
+0x004000e1:	mov.w	r0, #-1
+0x004000e5:	pop	{r3, r4, r5, r6, r7, pc}
+0x004000e7:	movs	r0, #0
+0x004000e9:	pop	{r3, r4, r5, r6, r7, pc}
 
-00000044 <write_long>:
-  44:	b510      	push	{r4, lr}
-  46:	460c      	mov	r4, r1
-  48:	4601      	mov	r1, r0
-  4a:	b082      	sub	sp, #8
-  4c:	9001      	str	r0, [sp, #4]
-  4e:	1620      	asrs	r0, r4, #24
-  50:	f7ff fffe 	bl	0 <putc>
-  54:	9901      	ldr	r1, [sp, #4]
-  56:	3001      	adds	r0, #1
-  58:	d016      	beq.n	88 <write_long+0x44>
-  5a:	1420      	asrs	r0, r4, #16
-  5c:	9101      	str	r1, [sp, #4]
-  5e:	f7ff fffe 	bl	0 <putc>
-  62:	3001      	adds	r0, #1
-  64:	d010      	beq.n	88 <write_long+0x44>
-  66:	9901      	ldr	r1, [sp, #4]
-  68:	1220      	asrs	r0, r4, #8
-  6a:	f7ff fffe 	bl	0 <putc>
-  6e:	3001      	adds	r0, #1
-  70:	d00a      	beq.n	88 <write_long+0x44>
-  72:	9901      	ldr	r1, [sp, #4]
-  74:	4620      	mov	r0, r4
-  76:	f7ff fffe 	bl	0 <putc>
-  7a:	3001      	adds	r0, #1
-  7c:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  80:	bf18      	it	ne
-  82:	2000      	movne	r0, #0
-  84:	b002      	add	sp, #8
-  86:	bd10      	pop	{r4, pc}
-  88:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  8c:	e7fa      	b.n	84 <write_long+0x40>
-  8e:	bf00      	nop
+Function sub_4000eb @ 0x004000eb
+0x004000eb:	nop	
+0x004000ed:	push	{r3, r4, r5, r6, r7, lr}
+0x004000ef:	mov	r5, r0
+0x004000f1:	mov	r7, r1
+0x004000f3:	mov	r6, r2
+0x004000f5:	b	#0x40012f
 
-00000090 <read_long_array>:
-  90:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  92:	1e56      	subs	r6, r2, #1
-  94:	d427      	bmi.n	e6 <read_long_array+0x56>
-  96:	4605      	mov	r5, r0
-  98:	460f      	mov	r7, r1
-  9a:	e019      	b.n	d0 <read_long_array+0x40>
-  9c:	f7ff fffe 	bl	0 <getc>
-  a0:	4603      	mov	r3, r0
-  a2:	ea43 2404 	orr.w	r4, r3, r4, lsl #8
-  a6:	4628      	mov	r0, r5
-  a8:	3301      	adds	r3, #1
-  aa:	d019      	beq.n	e0 <read_long_array+0x50>
-  ac:	f7ff fffe 	bl	0 <getc>
-  b0:	4603      	mov	r3, r0
-  b2:	ea43 2404 	orr.w	r4, r3, r4, lsl #8
-  b6:	4628      	mov	r0, r5
-  b8:	3301      	adds	r3, #1
-  ba:	d011      	beq.n	e0 <read_long_array+0x50>
-  bc:	f7ff fffe 	bl	0 <getc>
-  c0:	1c42      	adds	r2, r0, #1
-  c2:	d00d      	beq.n	e0 <read_long_array+0x50>
-  c4:	ea40 2004 	orr.w	r0, r0, r4, lsl #8
-  c8:	1c73      	adds	r3, r6, #1
-  ca:	f847 0b04 	str.w	r0, [r7], #4
-  ce:	d00a      	beq.n	e6 <read_long_array+0x56>
-  d0:	4628      	mov	r0, r5
-  d2:	3e01      	subs	r6, #1
-  d4:	f7ff fffe 	bl	0 <getc>
-  d8:	4604      	mov	r4, r0
-  da:	1c61      	adds	r1, r4, #1
-  dc:	4628      	mov	r0, r5
-  de:	d1dd      	bne.n	9c <read_long_array+0xc>
-  e0:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  e4:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  e6:	2000      	movs	r0, #0
-  e8:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  ea:	bf00      	nop
+Function write_long_array @ 0x004000ed
+0x004000ed:	push	{r3, r4, r5, r6, r7, lr}
+0x004000ef:	mov	r5, r0
+0x004000f1:	mov	r7, r1
+0x004000f3:	mov	r6, r2
+0x004000f5:	b	#0x40012f
+0x004000f7:	ldr	r4, [r7], #4
+0x004000fb:	asrs	r0, r4, #0x18
+0x004000fd:	bl	#0x50000d
+0x00400101:	mov	r3, r0
+0x00400103:	mov	r1, r5
+0x00400105:	asrs	r0, r4, #0x10
+0x00400107:	adds	r3, #1
+0x00400109:	beq	#0x400139
+0x0040010b:	bl	#0x50000d
+0x0040010f:	mov	r3, r0
+0x00400111:	mov	r1, r5
+0x00400113:	asrs	r0, r4, #8
+0x00400115:	adds	r3, #1
+0x00400117:	beq	#0x400139
+0x00400119:	bl	#0x50000d
+0x0040011d:	mov	r3, r0
+0x0040011f:	mov	r1, r5
+0x00400121:	mov	r0, r4
+0x00400123:	adds	r3, #1
+0x00400125:	beq	#0x400139
+0x00400127:	bl	#0x50000d
+0x0040012b:	adds	r0, #1
+0x0040012d:	beq	#0x400139
+0x0040012f:	mov	r1, r5
+0x00400131:	subs	r6, #1
+0x00400133:	bpl	#0x4000f7
+0x00400135:	movs	r0, #0
+0x00400137:	pop	{r3, r4, r5, r6, r7, pc}
+0x00400139:	mov.w	r0, #-1
+0x0040013d:	pop	{r3, r4, r5, r6, r7, pc}
 
-000000ec <write_long_array>:
-  ec:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  ee:	4605      	mov	r5, r0
-  f0:	460f      	mov	r7, r1
-  f2:	4616      	mov	r6, r2
-  f4:	e01b      	b.n	12e <write_long_array+0x42>
-  f6:	f857 4b04 	ldr.w	r4, [r7], #4
-  fa:	1620      	asrs	r0, r4, #24
-  fc:	f7ff fffe 	bl	0 <putc>
- 100:	4603      	mov	r3, r0
- 102:	4629      	mov	r1, r5
- 104:	1420      	asrs	r0, r4, #16
- 106:	3301      	adds	r3, #1
- 108:	d016      	beq.n	138 <write_long_array+0x4c>
- 10a:	f7ff fffe 	bl	0 <putc>
- 10e:	4603      	mov	r3, r0
- 110:	4629      	mov	r1, r5
- 112:	1220      	asrs	r0, r4, #8
- 114:	3301      	adds	r3, #1
- 116:	d00f      	beq.n	138 <write_long_array+0x4c>
- 118:	f7ff fffe 	bl	0 <putc>
- 11c:	4603      	mov	r3, r0
- 11e:	4629      	mov	r1, r5
- 120:	4620      	mov	r0, r4
- 122:	3301      	adds	r3, #1
- 124:	d008      	beq.n	138 <write_long_array+0x4c>
- 126:	f7ff fffe 	bl	0 <putc>
- 12a:	3001      	adds	r0, #1
- 12c:	d004      	beq.n	138 <write_long_array+0x4c>
- 12e:	4629      	mov	r1, r5
- 130:	3e01      	subs	r6, #1
- 132:	d5e0      	bpl.n	f6 <write_long_array+0xa>
- 134:	2000      	movs	r0, #0
- 136:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
- 138:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 13c:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
- 13e:	bf00      	nop
+Function sub_40013f @ 0x0040013f
+0x0040013f:	nop	
+
+Function getc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function putc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

@@ -1,183 +1,250 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_blake2b-long_d6062858.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	lr, [r0, sp, lsr #18]!
+0x00400004:	ldclmi	p6, c4, [r6], #-0x38
+0x00400008:	blhi	#0x4bb4c4
+0x0040000c:	ldcvc	p5, c15, [r4, #-0x2b4]
 
+Function sub_400013 @ 0x00400013
+0x00400013:	add.w	r5, sp, #0x4f
+0x00400017:	mov	r7, r2
+0x00400019:	mov	sb, r0
+0x0040001b:	str	r1, [sp, #0x1c8]
+0x0040001d:	mov	r8, r3
+0x0040001f:	ldr	r1, [pc, #0x1c4]
+0x00400021:	bic	r5, r5, #0x3f
+0x00400025:	movs	r2, #0
+0x00400027:	cmp	r6, #0x40
+0x00400029:	ldr	r1, [r4, r1]
+0x0040002b:	ldr	r1, [r1]
+0x0040002d:	str	r1, [sp, #0x24c]
+0x0040002f:	mov.w	r1, #0
+0x00400033:	bhi	#0x40009d
+0x00400035:	mov	r3, r6
+0x00400037:	mov	r1, r2
+0x00400039:	mov	r0, r5
+0x0040003b:	bl	#0x500001
+0x0040003f:	subs	r4, r0, #0
+0x00400041:	blt	#0x40006f
+0x00400043:	add	r1, sp, #0x1c8
+0x00400045:	mov	r0, r5
+0x00400047:	movs	r2, #4
+0x00400049:	movs	r3, #0
+0x0040004b:	bl	#0x50000d
+0x0040004f:	subs	r4, r0, #0
+0x00400051:	blt	#0x40006f
+0x00400053:	mov	r2, r8
+0x00400055:	mov	r1, r7
+0x00400057:	movs	r3, #0
+0x00400059:	mov	r0, r5
+0x0040005b:	bl	#0x50000d
+0x0040005f:	subs	r4, r0, #0
+0x00400061:	blt	#0x40006f
+0x00400063:	mov	r2, r6
+0x00400065:	mov	r1, sb
+0x00400067:	mov	r0, r5
+0x00400069:	bl	#0x500019
+0x0040006d:	mov	r4, r0
+0x0040006f:	mov.w	r1, #0x180
+0x00400073:	mov	r0, r5
+0x00400075:	bl	#0x500025
+0x0040006f:	mov.w	r1, #0x180
+0x00400073:	mov	r0, r5
+0x00400075:	bl	#0x500025
+0x00400079:	ldr	r2, [pc, #0x16c]
+0x0040007b:	ldr	r3, [pc, #0x168]
+0x0040007d:	add	r2, pc
+0x0040007f:	ldr	r3, [r2, r3]
+0x00400081:	ldr	r2, [r3]
+0x00400083:	ldr	r3, [sp, #0x24c]
+0x00400085:	eors	r2, r3
+0x00400087:	mov.w	r3, #0
+0x0040008b:	bne.w	#0x4001d1
+0x0040008f:	mov	r0, r4
+0x00400091:	add.w	sp, sp, #0x250
+0x00400095:	vpop	{d8}
+0x00400099:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x0040009d:	movs	r3, #0x40
+0x0040009f:	mov	r1, r2
+0x004000a1:	mov	r0, r5
+0x004000a3:	bl	#0x500001
+0x004000a7:	subs	r4, r0, #0
+0x004000a9:	blt	#0x40006f
+0x004000ab:	add	r1, sp, #0x1c8
+0x004000ad:	mov	r0, r5
+0x004000af:	movs	r2, #4
+0x004000b1:	movs	r3, #0
+0x004000b3:	bl	#0x50000d
+0x004000b7:	subs	r4, r0, #0
+0x004000b9:	blt	#0x40006f
+0x004000bb:	mov	r2, r8
+0x004000bd:	mov	r1, r7
+0x004000bf:	movs	r3, #0
+0x004000c1:	mov	r0, r5
+0x004000c3:	bl	#0x50000d
+0x004000c7:	subs	r4, r0, #0
+0x004000c9:	blt	#0x40006f
+0x004000cb:	add.w	r8, sp, #0x1cc
+0x004000cf:	movs	r2, #0x40
+0x004000d1:	mov	r1, r8
+0x004000d3:	mov	r0, r5
+0x004000d5:	bl	#0x500019
+0x004000d9:	subs	r4, r0, #0
+0x004000db:	blt	#0x40006f
+0x004000dd:	mov	r4, r8
+0x004000df:	subs	r6, #0x20
+0x004000e1:	cmp	r6, #0x40
+0x004000e3:	add.w	r7, sb, #0x20
+0x004000e7:	it	hi
+0x004000e9:	movhi.w	sl, #0
+0x004000ed:	ldm	r4!, {r0, r1, r2, r3}
+0x004000ef:	str.w	r0, [sb]
+0x004000f3:	str.w	r1, [sb, #4]
+0x004000f7:	str.w	r2, [sb, #8]
+0x004000fb:	str.w	r3, [sb, #0xc]
+0x004000ff:	it	hi
+0x00400101:	vldrhi	d8, [pc, #0xd4]
+0x00400105:	ldm	r4!, {r0, r1, r2, r3}
+0x00400107:	str.w	r0, [sb, #0x10]
+0x0040010b:	str.w	r1, [sb, #0x14]
+0x0040010f:	str.w	r2, [sb, #0x18]
+0x00400113:	str.w	r3, [sb, #0x1c]
+0x00400117:	add.w	sb, sp, #0x20c
+0x0040011b:	bhi	#0x40014d
+0x0040011d:	b	#0x400183
+0x0040011f:	mov	r4, r8
+0x00400121:	adds	r7, #0x20
+0x00400123:	subs	r6, #0x20
+0x00400125:	cmp	r6, #0x40
+0x00400127:	ldm	r4!, {r0, r1, r2, r3}
+0x00400129:	str	r0, [r7, #-0x20]
+0x0040012d:	str	r1, [r7, #-0x1c]
+0x00400131:	str	r2, [r7, #-0x18]
+0x00400135:	str	r3, [r7, #-0x14]
+0x00400139:	ldm	r4!, {r0, r1, r2, r3}
+0x0040013b:	str	r0, [r7, #-0x10]
+0x0040013f:	str	r1, [r7, #-0xc]
+0x00400143:	str	r2, [r7, #-0x8]
+0x00400147:	str	r3, [r7, #-0x4]
+0x0040014b:	bls	#0x400183
+0x0040014d:	mov	ip, r8
+0x0040014f:	mov	r4, sb
+0x00400151:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400155:	stm	r4!, {r0, r1, r2, r3}
+0x00400157:	ldm.w	ip!, {r0, r1, r2, r3}
+0x0040015b:	stm	r4!, {r0, r1, r2, r3}
+0x0040015d:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400161:	stm	r4!, {r0, r1, r2, r3}
+0x00400163:	ldm.w	ip, {r0, r1, r2, r3}
+0x00400167:	stm.w	r4, {r0, r1, r2, r3}
+0x0040016b:	mov	r2, sb
+0x0040016d:	strd	sl, sl, [sp, #8]
+0x00400171:	movs	r1, #0x40
+0x00400173:	mov	r0, r8
+0x00400175:	vstr	d8, [sp]
+0x00400179:	bl	#0x500031
+0x0040017d:	subs	r4, r0, #0
+0x0040017f:	bge	#0x40011f
+0x00400181:	b	#0x40006f
+0x00400183:	mov	ip, r8
+0x00400185:	mov	r4, sb
+0x00400187:	vldr	d7, [pc, #0x50]
+0x0040018b:	mov.w	lr, #0
+0x0040018f:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400193:	stm	r4!, {r0, r1, r2, r3}
+0x00400195:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400199:	stm	r4!, {r0, r1, r2, r3}
+0x0040019b:	ldm.w	ip!, {r0, r1, r2, r3}
+0x0040019f:	stm	r4!, {r0, r1, r2, r3}
+0x004001a1:	ldm.w	ip, {r0, r1, r2, r3}
+0x004001a5:	stm.w	r4, {r0, r1, r2, r3}
+0x004001a9:	mov	r2, sb
+0x004001ab:	str.w	lr, [sp, #0xc]
+0x004001af:	mov	r1, r6
+0x004001b1:	mov	r0, r8
+0x004001b3:	str.w	lr, [sp, #8]
+0x004001b7:	vstr	d7, [sp]
+0x004001bb:	bl	#0x500031
+0x004001bf:	subs	r4, r0, #0
+0x004001c1:	blt.w	#0x40006f
+0x004001c5:	mov	r2, r6
+0x004001c7:	mov	r1, r8
+0x004001c9:	mov	r0, r7
+0x004001cb:	bl	#0x50003d
+0x004001cf:	b	#0x40006f
+0x004001d1:	bl	#0x500049
 
-Disassembly of section .text:
+Function sub_4001d5 @ 0x004001d5
+0x004001d5:	nop.w	
+0x004001d9:	lsls	r0, r0, #1
+0x004001db:	movs	r0, r0
+0x004001dd:	movs	r0, r0
+0x004001df:	movs	r0, r0
+0x004001e1:	lsls	r4, r1, #7
+0x004001e3:	movs	r0, r0
+0x004001e5:	movs	r0, r0
+0x004001e7:	movs	r0, r0
+0x004001e9:	lsls	r0, r5, #5
+0x004001eb:	movs	r0, r0
 
-00000000 <_sodium_blake2b_long>:
-   0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
-   4:	460e      	mov	r6, r1
-   6:	4c76      	ldr	r4, [pc, #472]	; (1e0 <_sodium_blake2b_long+0x1e0>)
-   8:	ed2d 8b02 	vpush	{d8}
-   c:	f5ad 7d14 	sub.w	sp, sp, #592	; 0x250
-  10:	447c      	add	r4, pc
-  12:	f10d 054f 	add.w	r5, sp, #79	; 0x4f
-  16:	4617      	mov	r7, r2
-  18:	4681      	mov	r9, r0
-  1a:	9172      	str	r1, [sp, #456]	; 0x1c8
-  1c:	4698      	mov	r8, r3
-  1e:	4971      	ldr	r1, [pc, #452]	; (1e4 <_sodium_blake2b_long+0x1e4>)
-  20:	f025 053f 	bic.w	r5, r5, #63	; 0x3f
-  24:	2200      	movs	r2, #0
-  26:	2e40      	cmp	r6, #64	; 0x40
-  28:	5861      	ldr	r1, [r4, r1]
-  2a:	6809      	ldr	r1, [r1, #0]
-  2c:	9193      	str	r1, [sp, #588]	; 0x24c
-  2e:	f04f 0100 	mov.w	r1, #0
-  32:	d833      	bhi.n	9c <_sodium_blake2b_long+0x9c>
-  34:	4633      	mov	r3, r6
-  36:	4611      	mov	r1, r2
-  38:	4628      	mov	r0, r5
-  3a:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_init>
-  3e:	1e04      	subs	r4, r0, #0
-  40:	db15      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  42:	a972      	add	r1, sp, #456	; 0x1c8
-  44:	4628      	mov	r0, r5
-  46:	2204      	movs	r2, #4
-  48:	2300      	movs	r3, #0
-  4a:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_update>
-  4e:	1e04      	subs	r4, r0, #0
-  50:	db0d      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  52:	4642      	mov	r2, r8
-  54:	4639      	mov	r1, r7
-  56:	2300      	movs	r3, #0
-  58:	4628      	mov	r0, r5
-  5a:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_update>
-  5e:	1e04      	subs	r4, r0, #0
-  60:	db05      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  62:	4632      	mov	r2, r6
-  64:	4649      	mov	r1, r9
-  66:	4628      	mov	r0, r5
-  68:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_final>
-  6c:	4604      	mov	r4, r0
-  6e:	f44f 71c0 	mov.w	r1, #384	; 0x180
-  72:	4628      	mov	r0, r5
-  74:	f7ff fffe 	bl	0 <sodium_memzero>
-  78:	4a5b      	ldr	r2, [pc, #364]	; (1e8 <_sodium_blake2b_long+0x1e8>)
-  7a:	4b5a      	ldr	r3, [pc, #360]	; (1e4 <_sodium_blake2b_long+0x1e4>)
-  7c:	447a      	add	r2, pc
-  7e:	58d3      	ldr	r3, [r2, r3]
-  80:	681a      	ldr	r2, [r3, #0]
-  82:	9b93      	ldr	r3, [sp, #588]	; 0x24c
-  84:	405a      	eors	r2, r3
-  86:	f04f 0300 	mov.w	r3, #0
-  8a:	f040 80a1 	bne.w	1d0 <_sodium_blake2b_long+0x1d0>
-  8e:	4620      	mov	r0, r4
-  90:	f50d 7d14 	add.w	sp, sp, #592	; 0x250
-  94:	ecbd 8b02 	vpop	{d8}
-  98:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
-  9c:	2340      	movs	r3, #64	; 0x40
-  9e:	4611      	mov	r1, r2
-  a0:	4628      	mov	r0, r5
-  a2:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_init>
-  a6:	1e04      	subs	r4, r0, #0
-  a8:	dbe1      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  aa:	a972      	add	r1, sp, #456	; 0x1c8
-  ac:	4628      	mov	r0, r5
-  ae:	2204      	movs	r2, #4
-  b0:	2300      	movs	r3, #0
-  b2:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_update>
-  b6:	1e04      	subs	r4, r0, #0
-  b8:	dbd9      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  ba:	4642      	mov	r2, r8
-  bc:	4639      	mov	r1, r7
-  be:	2300      	movs	r3, #0
-  c0:	4628      	mov	r0, r5
-  c2:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_update>
-  c6:	1e04      	subs	r4, r0, #0
-  c8:	dbd1      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  ca:	f50d 78e6 	add.w	r8, sp, #460	; 0x1cc
-  ce:	2240      	movs	r2, #64	; 0x40
-  d0:	4641      	mov	r1, r8
-  d2:	4628      	mov	r0, r5
-  d4:	f7ff fffe 	bl	0 <crypto_generichash_blake2b_final>
-  d8:	1e04      	subs	r4, r0, #0
-  da:	dbc8      	blt.n	6e <_sodium_blake2b_long+0x6e>
-  dc:	4644      	mov	r4, r8
-  de:	3e20      	subs	r6, #32
-  e0:	2e40      	cmp	r6, #64	; 0x40
-  e2:	f109 0720 	add.w	r7, r9, #32
-  e6:	bf88      	it	hi
-  e8:	f04f 0a00 	movhi.w	sl, #0
-  ec:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
-  ee:	f8c9 0000 	str.w	r0, [r9]
-  f2:	f8c9 1004 	str.w	r1, [r9, #4]
-  f6:	f8c9 2008 	str.w	r2, [r9, #8]
-  fa:	f8c9 300c 	str.w	r3, [r9, #12]
-  fe:	bf88      	it	hi
- 100:	ed9f 8b35 	vldrhi	d8, [pc, #212]	; 1d8 <_sodium_blake2b_long+0x1d8>
- 104:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
- 106:	f8c9 0010 	str.w	r0, [r9, #16]
- 10a:	f8c9 1014 	str.w	r1, [r9, #20]
- 10e:	f8c9 2018 	str.w	r2, [r9, #24]
- 112:	f8c9 301c 	str.w	r3, [r9, #28]
- 116:	f50d 7903 	add.w	r9, sp, #524	; 0x20c
- 11a:	d817      	bhi.n	14c <_sodium_blake2b_long+0x14c>
- 11c:	e031      	b.n	182 <_sodium_blake2b_long+0x182>
- 11e:	4644      	mov	r4, r8
- 120:	3720      	adds	r7, #32
- 122:	3e20      	subs	r6, #32
- 124:	2e40      	cmp	r6, #64	; 0x40
- 126:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
- 128:	f847 0c20 	str.w	r0, [r7, #-32]
- 12c:	f847 1c1c 	str.w	r1, [r7, #-28]
- 130:	f847 2c18 	str.w	r2, [r7, #-24]
- 134:	f847 3c14 	str.w	r3, [r7, #-20]
- 138:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
- 13a:	f847 0c10 	str.w	r0, [r7, #-16]
- 13e:	f847 1c0c 	str.w	r1, [r7, #-12]
- 142:	f847 2c08 	str.w	r2, [r7, #-8]
- 146:	f847 3c04 	str.w	r3, [r7, #-4]
- 14a:	d91a      	bls.n	182 <_sodium_blake2b_long+0x182>
- 14c:	46c4      	mov	ip, r8
- 14e:	464c      	mov	r4, r9
- 150:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 154:	c40f      	stmia	r4!, {r0, r1, r2, r3}
- 156:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 15a:	c40f      	stmia	r4!, {r0, r1, r2, r3}
- 15c:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 160:	c40f      	stmia	r4!, {r0, r1, r2, r3}
- 162:	e89c 000f 	ldmia.w	ip, {r0, r1, r2, r3}
- 166:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
- 16a:	464a      	mov	r2, r9
- 16c:	e9cd aa02 	strd	sl, sl, [sp, #8]
- 170:	2140      	movs	r1, #64	; 0x40
- 172:	4640      	mov	r0, r8
- 174:	ed8d 8b00 	vstr	d8, [sp]
- 178:	f7ff fffe 	bl	0 <crypto_generichash_blake2b>
- 17c:	1e04      	subs	r4, r0, #0
- 17e:	dace      	bge.n	11e <_sodium_blake2b_long+0x11e>
- 180:	e775      	b.n	6e <_sodium_blake2b_long+0x6e>
- 182:	46c4      	mov	ip, r8
- 184:	464c      	mov	r4, r9
- 186:	ed9f 7b14 	vldr	d7, [pc, #80]	; 1d8 <_sodium_blake2b_long+0x1d8>
- 18a:	f04f 0e00 	mov.w	lr, #0
- 18e:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 192:	c40f      	stmia	r4!, {r0, r1, r2, r3}
- 194:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 198:	c40f      	stmia	r4!, {r0, r1, r2, r3}
- 19a:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 19e:	c40f      	stmia	r4!, {r0, r1, r2, r3}
- 1a0:	e89c 000f 	ldmia.w	ip, {r0, r1, r2, r3}
- 1a4:	e884 000f 	stmia.w	r4, {r0, r1, r2, r3}
- 1a8:	464a      	mov	r2, r9
- 1aa:	f8cd e00c 	str.w	lr, [sp, #12]
- 1ae:	4631      	mov	r1, r6
- 1b0:	4640      	mov	r0, r8
- 1b2:	f8cd e008 	str.w	lr, [sp, #8]
- 1b6:	ed8d 7b00 	vstr	d7, [sp]
- 1ba:	f7ff fffe 	bl	0 <crypto_generichash_blake2b>
- 1be:	1e04      	subs	r4, r0, #0
- 1c0:	f6ff af55 	blt.w	6e <_sodium_blake2b_long+0x6e>
- 1c4:	4632      	mov	r2, r6
- 1c6:	4641      	mov	r1, r8
- 1c8:	4638      	mov	r0, r7
- 1ca:	f7ff fffe 	bl	0 <memcpy>
- 1ce:	e74e      	b.n	6e <_sodium_blake2b_long+0x6e>
- 1d0:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 1d4:	f3af 8000 	nop.w
- 1d8:	00000040 	.word	0x00000040
- 1dc:	00000000 	.word	0x00000000
- 1e0:	000001cc 	.word	0x000001cc
- 1e4:	00000000 	.word	0x00000000
- 1e8:	00000168 	.word	0x00000168
+Function sub_4001e1 @ 0x004001e1
+0x004001e1:	lsls	r4, r1, #7
+0x004001e3:	movs	r0, r0
+0x004001e5:	movs	r0, r0
+0x004001e7:	movs	r0, r0
+0x004001e9:	lsls	r0, r5, #5
+0x004001eb:	movs	r0, r0
+
+Function crypto_generichash_blake2b_init @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function crypto_generichash_blake2b_update @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function crypto_generichash_blake2b_final @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function sodium_memzero @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function crypto_generichash_blake2b @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function memcpy @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0

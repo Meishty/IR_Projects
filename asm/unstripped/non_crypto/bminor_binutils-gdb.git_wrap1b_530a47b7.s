@@ -1,29 +1,57 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_wrap1b_530a47b7.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x804]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x500001
+0x0040000b:	pop.w	{r3, lr}
+0x0040000f:	b.w	#0x50000d
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r6
+0x00400017:	movs	r0, r0
+0x00400019:	ldr	r0, [pc, #0x18]
+0x0040001b:	push	{r3, lr}
+0x0040001d:	add	r0, pc
+0x0040001f:	bl	#0x500001
 
-00000000 <__real_par>:
-   0:	4804      	ldr	r0, [pc, #16]	; (14 <__real_par+0x14>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <puts>
-   a:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-   e:	f7ff bffe 	b.w	0 <par>
-  12:	bf00      	nop
-  14:	0000000c 	.word	0x0000000c
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r6
+0x00400017:	movs	r0, r0
+0x00400019:	ldr	r0, [pc, #0x18]
+0x0040001b:	push	{r3, lr}
+0x0040001d:	add	r0, pc
+0x0040001f:	bl	#0x500001
 
-00000018 <__wrap_par>:
-  18:	4806      	ldr	r0, [pc, #24]	; (34 <__wrap_par+0x1c>)
-  1a:	b508      	push	{r3, lr}
-  1c:	4478      	add	r0, pc
-  1e:	f7ff fffe 	bl	0 <puts>
-  22:	4805      	ldr	r0, [pc, #20]	; (38 <__wrap_par+0x20>)
-  24:	4478      	add	r0, pc
-  26:	f7ff fffe 	bl	0 <puts>
-  2a:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  2e:	f7ff bffe 	b.w	0 <par>
-  32:	bf00      	nop
-  34:	00000014 	.word	0x00000014
-  38:	00000010 	.word	0x00000010
+Function __wrap_par @ 0x00400019
+0x00400019:	ldr	r0, [pc, #0x18]
+0x0040001b:	push	{r3, lr}
+0x0040001d:	add	r0, pc
+0x0040001f:	bl	#0x500001
+0x00400023:	ldr	r0, [pc, #0x14]
+0x00400025:	add	r0, pc
+0x00400027:	bl	#0x500001
+0x0040002b:	pop.w	{r3, lr}
+0x0040002f:	b.w	#0x50000d
+
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	movs	r0, r5
+0x00400037:	movs	r0, r0
+0x00400039:	movs	r4, r2
+0x0040003b:	movs	r0, r0
+
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function par @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

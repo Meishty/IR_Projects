@@ -1,27 +1,38 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_share-env-with-gdbserver_644e158e.o:     file format elf32-littlearm
+Function main @ 0x00400039
+0x00400039:	ldr	r0, [pc, #0x24]
+0x0040003b:	push	{r3, lr}
+0x0040003d:	add	r0, pc
+0x0040003f:	bl	#0x500001
+0x00400043:	cbz	r0, #0x400055
+0x00400045:	ldr	r1, [pc, #0x1c]
+0x00400047:	mov	r2, r0
+0x00400049:	movs	r0, #1
+0x0040004b:	add	r1, pc
+0x0040004d:	bl	#0x50000d
+0x00400045:	ldr	r1, [pc, #0x1c]
+0x00400047:	mov	r2, r0
+0x00400049:	movs	r0, #1
+0x0040004b:	add	r1, pc
+0x0040004d:	bl	#0x50000d
+0x00400051:	movs	r0, #0
+0x00400053:	pop	{r3, pc}
+0x00400055:	ldr	r1, [pc, #0x10]
+0x00400057:	movs	r0, #1
+0x00400059:	add	r1, pc
+0x0040005b:	bl	#0x50000d
+0x0040005f:	b	#0x400051
 
+Function getenv @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4809      	ldr	r0, [pc, #36]	; (28 <main+0x28>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <getenv>
-   a:	b138      	cbz	r0, 1c <main+0x1c>
-   c:	4907      	ldr	r1, [pc, #28]	; (2c <main+0x2c>)
-   e:	4602      	mov	r2, r0
-  10:	2001      	movs	r0, #1
-  12:	4479      	add	r1, pc
-  14:	f7ff fffe 	bl	0 <__printf_chk>
-  18:	2000      	movs	r0, #0
-  1a:	bd08      	pop	{r3, pc}
-  1c:	4904      	ldr	r1, [pc, #16]	; (30 <main+0x30>)
-  1e:	2001      	movs	r0, #1
-  20:	4479      	add	r1, pc
-  22:	f7ff fffe 	bl	0 <__printf_chk>
-  26:	e7f7      	b.n	18 <main+0x18>
-  28:	00000020 	.word	0x00000020
-  2c:	00000016 	.word	0x00000016
-  30:	0000000c 	.word	0x0000000c
+Function __printf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

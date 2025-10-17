@@ -1,14 +1,14 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_tls-shared_11412758.o:     file format elf32-littlearm
+Function foo @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r2, [pc, #8]
+0x00400009:	mrc	p15, #0, r3, c13, c0, #3
+0x0040000d:	ldr	r0, [r2, r3]
+0x0040000f:	pop	{r3, pc}
 
-
-Disassembly of section .text:
-
-00000000 <foo>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <pthread_testcancel>
-   6:	4a02      	ldr	r2, [pc, #8]	; (10 <foo+0x10>)
-   8:	ee1d 3f70 	mrc	15, 0, r3, cr13, cr0, {3}
-   c:	58d0      	ldr	r0, [r2, r3]
-   e:	bd08      	pop	{r3, pc}
-  10:	00000000 	.word	0x00000000
+Function pthread_testcancel @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

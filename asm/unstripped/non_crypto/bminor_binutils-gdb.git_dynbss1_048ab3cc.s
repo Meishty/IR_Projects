@@ -1,31 +1,45 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dynbss1_048ab3cc.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	ldr	r2, [pc, #0x30]
+0x0040000b:	ldr	r3, [pc, #0x34]
+0x0040000d:	add	r2, pc
+0x0040000f:	push	{r4, lr}
+0x00400011:	ldr	r3, [r2, r3]
+0x00400013:	ubfx	r3, r3, #0, #0xb
+0x00400017:	cbnz	r3, #0x400039
+0x00400019:	ldr	r3, [pc, #0x28]
+0x0040001b:	ldr	r1, [pc, #0x2c]
+0x0040001d:	ldr	r3, [r2, r3]
+0x0040001f:	ldr	r2, [r2, r1]
+0x00400021:	ubfx	r3, r3, #0, #0xa
+0x00400025:	uxtb	r2, r2
+0x00400027:	orrs.w	r4, r3, r2
+0x0040002b:	bne	#0x400039
+0x00400019:	ldr	r3, [pc, #0x28]
+0x0040001b:	ldr	r1, [pc, #0x2c]
+0x0040001d:	ldr	r3, [r2, r3]
+0x0040001f:	ldr	r2, [r2, r1]
+0x00400021:	ubfx	r3, r3, #0, #0xa
+0x00400025:	uxtb	r2, r2
+0x00400027:	orrs.w	r4, r3, r2
+0x0040002b:	bne	#0x400039
+0x0040002d:	ldr	r0, [pc, #0x1c]
+0x0040002f:	add	r0, pc
+0x00400031:	bl	#0x500001
+0x00400035:	mov	r0, r4
+0x00400037:	pop	{r4, pc}
+0x00400039:	bl	#0x50000d
 
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4a0c      	ldr	r2, [pc, #48]	; (34 <main+0x34>)
-   2:	4b0d      	ldr	r3, [pc, #52]	; (38 <main+0x38>)
-   4:	447a      	add	r2, pc
-   6:	b510      	push	{r4, lr}
-   8:	58d3      	ldr	r3, [r2, r3]
-   a:	f3c3 030a 	ubfx	r3, r3, #0, #11
-   e:	b97b      	cbnz	r3, 30 <main+0x30>
-  10:	4b0a      	ldr	r3, [pc, #40]	; (3c <main+0x3c>)
-  12:	490b      	ldr	r1, [pc, #44]	; (40 <main+0x40>)
-  14:	58d3      	ldr	r3, [r2, r3]
-  16:	5852      	ldr	r2, [r2, r1]
-  18:	f3c3 0309 	ubfx	r3, r3, #0, #10
-  1c:	b2d2      	uxtb	r2, r2
-  1e:	ea53 0402 	orrs.w	r4, r3, r2
-  22:	d105      	bne.n	30 <main+0x30>
-  24:	4807      	ldr	r0, [pc, #28]	; (44 <main+0x44>)
-  26:	4478      	add	r0, pc
-  28:	f7ff fffe 	bl	0 <puts>
-  2c:	4620      	mov	r0, r4
-  2e:	bd10      	pop	{r4, pc}
-  30:	f7ff fffe 	bl	0 <abort>
-  34:	0000002c 	.word	0x0000002c
-	...
-  44:	0000001a 	.word	0x0000001a
+Function abort @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

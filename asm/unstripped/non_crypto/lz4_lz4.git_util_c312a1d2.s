@@ -1,21 +1,21 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_util_c312a1d2.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400008:	ldclt	p1, c11, [r0, #-0]
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x500001
+0x00400013:	adds	r3, r0, #1
+0x00400015:	it	eq
+0x00400017:	moveq	r0, #1
+0x00400019:	str	r0, [r4]
+0x0040001b:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, r3
+0x0040001f:	movs	r0, r0
 
-00000000 <UTIL_countCores>:
-   0:	b510      	push	{r4, lr}
-   2:	4c06      	ldr	r4, [pc, #24]	; (1c <UTIL_countCores+0x1c>)
-   4:	447c      	add	r4, pc
-   6:	6820      	ldr	r0, [r4, #0]
-   8:	b100      	cbz	r0, c <UTIL_countCores+0xc>
-   a:	bd10      	pop	{r4, pc}
-   c:	2054      	movs	r0, #84	; 0x54
-   e:	f7ff fffe 	bl	0 <sysconf>
-  12:	1c43      	adds	r3, r0, #1
-  14:	bf08      	it	eq
-  16:	2001      	moveq	r0, #1
-  18:	6020      	str	r0, [r4, #0]
-  1a:	bd10      	pop	{r4, pc}
-  1c:	00000014 	.word	0x00000014
+Function sysconf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

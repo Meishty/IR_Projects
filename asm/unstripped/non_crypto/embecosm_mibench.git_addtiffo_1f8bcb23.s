@@ -1,79 +1,128 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_addtiffo_1f8bcb23.o:     file format elf32-littlearm
+Function main @ 0x0040006d
+0x0040006d:	ldr	r2, [pc, #0xac]
+0x0040006f:	cmp	r0, #1
+0x00400071:	ldr	r3, [pc, #0xac]
+0x00400073:	add	r2, pc
+0x00400075:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x00400079:	sub	sp, #0x19c
+0x0040007b:	ldr	r3, [r2, r3]
+0x0040007d:	ldr	r3, [r3]
+0x0040007f:	str	r3, [sp, #0x194]
+0x00400081:	mov.w	r3, #0
+0x00400085:	ble	#0x4000f7
+0x00400087:	mov	r8, r1
+0x00400089:	ldr	r1, [pc, #0x98]
+0x0040008b:	mov	r7, r0
+0x0040008d:	mov.w	sb, #0
+0x00400091:	add	r1, pc
+0x00400093:	ldr.w	r0, [r8, #4]
+0x00400097:	bl	#0x500001
+0x0040009b:	cbz	r0, #0x4000d9
+0x0040009d:	subs	r7, #2
+0x0040009f:	ittt	ne
+0x004000a1:	addne.w	r6, r8, #4
+0x004000a5:	subne.w	r5, sp, #4
+0x004000a9:	movne	r4, #0
+0x004000ab:	bne	#0x4000b3
+0x0040009d:	subs	r7, #2
+0x0040009f:	ittt	ne
+0x004000a1:	addne.w	r6, r8, #4
+0x004000a5:	subne.w	r5, sp, #4
+0x004000a9:	movne	r4, #0
+0x004000ab:	bne	#0x4000b3
+0x004000ad:	b	#0x4000e3
+0x004000af:	cmp	r4, #0x64
+0x004000b1:	beq	#0x4000c5
+0x004000b3:	ldr	r0, [r6, #4]!
+0x004000b7:	adds	r4, #1
+0x004000b9:	bl	#0x50000d
+0x004000bd:	cmp	r4, r7
+0x004000bf:	str	r0, [r5, #4]!
+0x004000c3:	bne	#0x4000af
+0x004000c5:	ldr.w	r0, [r8, #4]
+0x004000c9:	mov	r3, sb
+0x004000cb:	mov	r2, sp
+0x004000cd:	mov	r1, r4
+0x004000cf:	bl	#0x500019
+0x004000d3:	movs	r0, #0
+0x004000d5:	bl	#0x500025
+0x004000d9:	add.w	r8, r8, #4
+0x004000dd:	mov.w	sb, #1
+0x004000e1:	b	#0x40009d
+0x004000e3:	movs	r2, #2
+0x004000e5:	movs	r3, #4
+0x004000e7:	movs	r4, #4
+0x004000e9:	strd	r2, r3, [sp]
+0x004000ed:	movs	r2, #8
+0x004000ef:	movs	r3, #0x10
+0x004000f1:	strd	r2, r3, [sp, #8]
+0x004000f5:	b	#0x4000c5
+0x004000f7:	ldr	r0, [pc, #0x30]
+0x004000f9:	add	r0, pc
+0x004000fb:	bl	#0x500031
+0x004000ff:	movs	r0, #0xa
+0x00400101:	bl	#0x50003d
+0x00400105:	ldr	r0, [pc, #0x24]
+0x00400107:	add	r0, pc
+0x00400109:	bl	#0x500031
+0x0040010d:	ldr	r1, [pc, #0x20]
+0x0040010f:	movs	r0, #1
+0x00400111:	add	r1, pc
+0x00400113:	bl	#0x500049
+0x00400117:	movs	r0, #1
+0x00400119:	bl	#0x500025
 
+Function strcmp @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function atoi @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	4a2b      	ldr	r2, [pc, #172]	; (b0 <main+0xb0>)
-   2:	2801      	cmp	r0, #1
-   4:	4b2b      	ldr	r3, [pc, #172]	; (b4 <main+0xb4>)
-   6:	447a      	add	r2, pc
-   8:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
-   c:	b0e7      	sub	sp, #412	; 0x19c
-   e:	58d3      	ldr	r3, [r2, r3]
-  10:	681b      	ldr	r3, [r3, #0]
-  12:	9365      	str	r3, [sp, #404]	; 0x194
-  14:	f04f 0300 	mov.w	r3, #0
-  18:	dd37      	ble.n	8a <main+0x8a>
-  1a:	4688      	mov	r8, r1
-  1c:	4926      	ldr	r1, [pc, #152]	; (b8 <main+0xb8>)
-  1e:	4607      	mov	r7, r0
-  20:	f04f 0900 	mov.w	r9, #0
-  24:	4479      	add	r1, pc
-  26:	f8d8 0004 	ldr.w	r0, [r8, #4]
-  2a:	f7ff fffe 	bl	0 <strcmp>
-  2e:	b1e8      	cbz	r0, 6c <main+0x6c>
-  30:	3f02      	subs	r7, #2
-  32:	bf1e      	ittt	ne
-  34:	f108 0604 	addne.w	r6, r8, #4
-  38:	f1ad 0504 	subne.w	r5, sp, #4
-  3c:	2400      	movne	r4, #0
-  3e:	d102      	bne.n	46 <main+0x46>
-  40:	e019      	b.n	76 <main+0x76>
-  42:	2c64      	cmp	r4, #100	; 0x64
-  44:	d008      	beq.n	58 <main+0x58>
-  46:	f856 0f04 	ldr.w	r0, [r6, #4]!
-  4a:	3401      	adds	r4, #1
-  4c:	f7ff fffe 	bl	0 <atoi>
-  50:	42bc      	cmp	r4, r7
-  52:	f845 0f04 	str.w	r0, [r5, #4]!
-  56:	d1f4      	bne.n	42 <main+0x42>
-  58:	f8d8 0004 	ldr.w	r0, [r8, #4]
-  5c:	464b      	mov	r3, r9
-  5e:	466a      	mov	r2, sp
-  60:	4621      	mov	r1, r4
-  62:	f7ff fffe 	bl	0 <TIFFBuildOverviews>
-  66:	2000      	movs	r0, #0
-  68:	f7ff fffe 	bl	0 <exit>
-  6c:	f108 0804 	add.w	r8, r8, #4
-  70:	f04f 0901 	mov.w	r9, #1
-  74:	e7dc      	b.n	30 <main+0x30>
-  76:	2202      	movs	r2, #2
-  78:	2304      	movs	r3, #4
-  7a:	2404      	movs	r4, #4
-  7c:	e9cd 2300 	strd	r2, r3, [sp]
-  80:	2208      	movs	r2, #8
-  82:	2310      	movs	r3, #16
-  84:	e9cd 2302 	strd	r2, r3, [sp, #8]
-  88:	e7e6      	b.n	58 <main+0x58>
-  8a:	480c      	ldr	r0, [pc, #48]	; (bc <main+0xbc>)
-  8c:	4478      	add	r0, pc
-  8e:	f7ff fffe 	bl	0 <puts>
-  92:	200a      	movs	r0, #10
-  94:	f7ff fffe 	bl	0 <putchar>
-  98:	4809      	ldr	r0, [pc, #36]	; (c0 <main+0xc0>)
-  9a:	4478      	add	r0, pc
-  9c:	f7ff fffe 	bl	0 <puts>
-  a0:	4908      	ldr	r1, [pc, #32]	; (c4 <main+0xc4>)
-  a2:	2001      	movs	r0, #1
-  a4:	4479      	add	r1, pc
-  a6:	f7ff fffe 	bl	0 <__printf_chk>
-  aa:	2001      	movs	r0, #1
-  ac:	f7ff fffe 	bl	0 <exit>
-  b0:	000000a6 	.word	0x000000a6
-  b4:	00000000 	.word	0x00000000
-  b8:	00000090 	.word	0x00000090
-  bc:	0000002c 	.word	0x0000002c
-  c0:	00000022 	.word	0x00000022
-  c4:	0000001c 	.word	0x0000001c
+Function TIFFBuildOverviews @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function puts @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function putchar @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function __printf_chk @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0

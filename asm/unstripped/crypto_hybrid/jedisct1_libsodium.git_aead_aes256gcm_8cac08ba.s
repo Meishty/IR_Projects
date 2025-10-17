@@ -1,130 +1,187 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_aead_aes256gcm_8cac08ba.o:     file format elf32-littlearm
+Function crypto_aead_aes256gcm_keybytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
+Function crypto_aead_aes256gcm_nsecbytes @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_aead_aes256gcm_npubbytes @ 0x00400009
+0x00400009:	movs	r0, #0xc
+0x0040000b:	bx	lr
 
-00000000 <crypto_aead_aes256gcm_keybytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
+Function crypto_aead_aes256gcm_abytes @ 0x0040000d
+0x0040000d:	movs	r0, #0x10
+0x0040000f:	bx	lr
 
-00000004 <crypto_aead_aes256gcm_nsecbytes>:
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
+Function crypto_aead_aes256gcm_statebytes @ 0x00400011
+0x00400011:	mov.w	r0, #0x200
+0x00400015:	bx	lr
 
-00000008 <crypto_aead_aes256gcm_npubbytes>:
-   8:	200c      	movs	r0, #12
-   a:	4770      	bx	lr
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	mvn	r0, #0x10
+0x0040001d:	bx	lr
 
-0000000c <crypto_aead_aes256gcm_abytes>:
-   c:	2010      	movs	r0, #16
-   e:	4770      	bx	lr
+Function crypto_aead_aes256gcm_messagebytes_max @ 0x00400019
+0x00400019:	mvn	r0, #0x10
+0x0040001d:	bx	lr
 
-00000010 <crypto_aead_aes256gcm_statebytes>:
-  10:	f44f 7000 	mov.w	r0, #512	; 0x200
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	movs	r1, #0x20
+0x00400023:	b.w	#0x50000d
 
-00000018 <crypto_aead_aes256gcm_messagebytes_max>:
-  18:	f06f 0010 	mvn.w	r0, #16
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
+Function crypto_aead_aes256gcm_keygen @ 0x00400021
+0x00400021:	movs	r1, #0x20
+0x00400023:	b.w	#0x50000d
 
-00000020 <crypto_aead_aes256gcm_keygen>:
-  20:	2120      	movs	r1, #32
-  22:	f7ff bffe 	b.w	0 <randombytes_buf>
-  26:	bf00      	nop
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	push	{r3, lr}
+0x0040002b:	bl	#0x500001
 
-00000028 <crypto_aead_aes256gcm_encrypt_detached>:
-  28:	b508      	push	{r3, lr}
-  2a:	f7ff fffe 	bl	0 <__errno_location>
-  2e:	4603      	mov	r3, r0
-  30:	2226      	movs	r2, #38	; 0x26
-  32:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  36:	601a      	str	r2, [r3, #0]
-  38:	bd08      	pop	{r3, pc}
-  3a:	bf00      	nop
+Function crypto_aead_aes256gcm_encrypt_detached @ 0x00400029
+0x00400029:	push	{r3, lr}
+0x0040002b:	bl	#0x500001
+0x0040002f:	mov	r3, r0
+0x00400031:	movs	r2, #0x26
+0x00400033:	mov.w	r0, #-1
+0x00400037:	str	r2, [r3]
+0x00400039:	pop	{r3, pc}
 
-0000003c <crypto_aead_aes256gcm_encrypt>:
-  3c:	b508      	push	{r3, lr}
-  3e:	f7ff fffe 	bl	0 <__errno_location>
-  42:	4603      	mov	r3, r0
-  44:	2226      	movs	r2, #38	; 0x26
-  46:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  4a:	601a      	str	r2, [r3, #0]
-  4c:	bd08      	pop	{r3, pc}
-  4e:	bf00      	nop
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	push	{r3, lr}
+0x0040003f:	bl	#0x500001
 
-00000050 <crypto_aead_aes256gcm_decrypt_detached>:
-  50:	b508      	push	{r3, lr}
-  52:	f7ff fffe 	bl	0 <__errno_location>
-  56:	4603      	mov	r3, r0
-  58:	2226      	movs	r2, #38	; 0x26
-  5a:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  5e:	601a      	str	r2, [r3, #0]
-  60:	bd08      	pop	{r3, pc}
-  62:	bf00      	nop
+Function crypto_aead_aes256gcm_encrypt @ 0x0040003d
+0x0040003d:	push	{r3, lr}
+0x0040003f:	bl	#0x500001
+0x00400043:	mov	r3, r0
+0x00400045:	movs	r2, #0x26
+0x00400047:	mov.w	r0, #-1
+0x0040004b:	str	r2, [r3]
+0x0040004d:	pop	{r3, pc}
 
-00000064 <crypto_aead_aes256gcm_decrypt>:
-  64:	b508      	push	{r3, lr}
-  66:	f7ff fffe 	bl	0 <__errno_location>
-  6a:	4603      	mov	r3, r0
-  6c:	2226      	movs	r2, #38	; 0x26
-  6e:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  72:	601a      	str	r2, [r3, #0]
-  74:	bd08      	pop	{r3, pc}
-  76:	bf00      	nop
+Function sub_40004f @ 0x0040004f
+0x0040004f:	nop	
+0x00400051:	push	{r3, lr}
+0x00400053:	bl	#0x500001
 
-00000078 <crypto_aead_aes256gcm_beforenm>:
-  78:	b508      	push	{r3, lr}
-  7a:	f7ff fffe 	bl	0 <__errno_location>
-  7e:	4603      	mov	r3, r0
-  80:	2226      	movs	r2, #38	; 0x26
-  82:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  86:	601a      	str	r2, [r3, #0]
-  88:	bd08      	pop	{r3, pc}
-  8a:	bf00      	nop
+Function crypto_aead_aes256gcm_decrypt_detached @ 0x00400051
+0x00400051:	push	{r3, lr}
+0x00400053:	bl	#0x500001
+0x00400057:	mov	r3, r0
+0x00400059:	movs	r2, #0x26
+0x0040005b:	mov.w	r0, #-1
+0x0040005f:	str	r2, [r3]
+0x00400061:	pop	{r3, pc}
 
-0000008c <crypto_aead_aes256gcm_encrypt_detached_afternm>:
-  8c:	b508      	push	{r3, lr}
-  8e:	f7ff fffe 	bl	0 <__errno_location>
-  92:	4603      	mov	r3, r0
-  94:	2226      	movs	r2, #38	; 0x26
-  96:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  9a:	601a      	str	r2, [r3, #0]
-  9c:	bd08      	pop	{r3, pc}
-  9e:	bf00      	nop
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	push	{r3, lr}
+0x00400067:	bl	#0x500001
 
-000000a0 <crypto_aead_aes256gcm_encrypt_afternm>:
-  a0:	b508      	push	{r3, lr}
-  a2:	f7ff fffe 	bl	0 <__errno_location>
-  a6:	4603      	mov	r3, r0
-  a8:	2226      	movs	r2, #38	; 0x26
-  aa:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  ae:	601a      	str	r2, [r3, #0]
-  b0:	bd08      	pop	{r3, pc}
-  b2:	bf00      	nop
+Function crypto_aead_aes256gcm_decrypt @ 0x00400065
+0x00400065:	push	{r3, lr}
+0x00400067:	bl	#0x500001
+0x0040006b:	mov	r3, r0
+0x0040006d:	movs	r2, #0x26
+0x0040006f:	mov.w	r0, #-1
+0x00400073:	str	r2, [r3]
+0x00400075:	pop	{r3, pc}
 
-000000b4 <crypto_aead_aes256gcm_decrypt_detached_afternm>:
-  b4:	b508      	push	{r3, lr}
-  b6:	f7ff fffe 	bl	0 <__errno_location>
-  ba:	4603      	mov	r3, r0
-  bc:	2226      	movs	r2, #38	; 0x26
-  be:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  c2:	601a      	str	r2, [r3, #0]
-  c4:	bd08      	pop	{r3, pc}
-  c6:	bf00      	nop
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	push	{r3, lr}
+0x0040007b:	bl	#0x500001
 
-000000c8 <crypto_aead_aes256gcm_decrypt_afternm>:
-  c8:	b508      	push	{r3, lr}
-  ca:	f7ff fffe 	bl	0 <__errno_location>
-  ce:	4603      	mov	r3, r0
-  d0:	2226      	movs	r2, #38	; 0x26
-  d2:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  d6:	601a      	str	r2, [r3, #0]
-  d8:	bd08      	pop	{r3, pc}
-  da:	bf00      	nop
+Function crypto_aead_aes256gcm_beforenm @ 0x00400079
+0x00400079:	push	{r3, lr}
+0x0040007b:	bl	#0x500001
+0x0040007f:	mov	r3, r0
+0x00400081:	movs	r2, #0x26
+0x00400083:	mov.w	r0, #-1
+0x00400087:	str	r2, [r3]
+0x00400089:	pop	{r3, pc}
 
-000000dc <crypto_aead_aes256gcm_is_available>:
-  dc:	2000      	movs	r0, #0
-  de:	4770      	bx	lr
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	push	{r3, lr}
+0x0040008f:	bl	#0x500001
+
+Function crypto_aead_aes256gcm_encrypt_detached_afternm @ 0x0040008d
+0x0040008d:	push	{r3, lr}
+0x0040008f:	bl	#0x500001
+0x00400093:	mov	r3, r0
+0x00400095:	movs	r2, #0x26
+0x00400097:	mov.w	r0, #-1
+0x0040009b:	str	r2, [r3]
+0x0040009d:	pop	{r3, pc}
+
+Function sub_40009f @ 0x0040009f
+0x0040009f:	nop	
+0x004000a1:	push	{r3, lr}
+0x004000a3:	bl	#0x500001
+
+Function crypto_aead_aes256gcm_encrypt_afternm @ 0x004000a1
+0x004000a1:	push	{r3, lr}
+0x004000a3:	bl	#0x500001
+0x004000a7:	mov	r3, r0
+0x004000a9:	movs	r2, #0x26
+0x004000ab:	mov.w	r0, #-1
+0x004000af:	str	r2, [r3]
+0x004000b1:	pop	{r3, pc}
+
+Function sub_4000b3 @ 0x004000b3
+0x004000b3:	nop	
+0x004000b5:	push	{r3, lr}
+0x004000b7:	bl	#0x500001
+
+Function crypto_aead_aes256gcm_decrypt_detached_afternm @ 0x004000b5
+0x004000b5:	push	{r3, lr}
+0x004000b7:	bl	#0x500001
+0x004000bb:	mov	r3, r0
+0x004000bd:	movs	r2, #0x26
+0x004000bf:	mov.w	r0, #-1
+0x004000c3:	str	r2, [r3]
+0x004000c5:	pop	{r3, pc}
+
+Function sub_4000c7 @ 0x004000c7
+0x004000c7:	nop	
+0x004000c9:	push	{r3, lr}
+0x004000cb:	bl	#0x500001
+
+Function crypto_aead_aes256gcm_decrypt_afternm @ 0x004000c9
+0x004000c9:	push	{r3, lr}
+0x004000cb:	bl	#0x500001
+0x004000cf:	mov	r3, r0
+0x004000d1:	movs	r2, #0x26
+0x004000d3:	mov.w	r0, #-1
+0x004000d7:	str	r2, [r3]
+0x004000d9:	pop	{r3, pc}
+
+Function sub_4000db @ 0x004000db
+0x004000db:	nop	
+0x004000dd:	movs	r0, #0
+0x004000df:	bx	lr
+
+Function crypto_aead_aes256gcm_is_available @ 0x004000dd
+0x004000dd:	movs	r0, #0
+0x004000df:	bx	lr
+
+Function __errno_location @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function randombytes_buf @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

@@ -1,127 +1,210 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_macscp1_a3d9ebe6.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [r8], #-0x801
+0x00400004:	svclt	#0xfcf0ff
+0x00400008:	andeq	r0, r0, r6, lsl #1
+0x0040000c:	ldrbtmi	r4, [r8], #-0x801
+0x00400010:	svclt	#0xf6f0ff
 
+Function macscp2_1 @ 0x0040000d
+0x0040000d:	ldr	r0, [pc, #4]
+0x0040000f:	add	r0, pc
+0x00400011:	b.w	#0x500001
 
-Disassembly of section .text:
+Function macscp4_1_from_macscp2 @ 0x00400019
+0x00400019:	ldr	r0, [pc, #4]
+0x0040001b:	add	r0, pc
+0x0040001d:	b.w	#0x500001
 
-00000000 <macscp1_1>:
-   0:	4801      	ldr	r0, [pc, #4]	; (8 <macscp1_1+0x8>)
-   2:	4478      	add	r0, pc
-   4:	f7ff bffe 	b.w	0 <puts>
-   8:	00000002 	.word	0x00000002
+Function macscp4_2_from_macscp2 @ 0x00400025
+0x00400025:	ldr	r0, [pc, #4]
+0x00400027:	add	r0, pc
+0x00400029:	b.w	#0x500001
 
-0000000c <macscp2_1>:
-   c:	4801      	ldr	r0, [pc, #4]	; (14 <macscp2_1+0x8>)
-   e:	4478      	add	r0, pc
-  10:	f7ff bffe 	b.w	0 <puts>
-  14:	00000002 	.word	0x00000002
+Function macscp2_2 @ 0x00400031
+0x00400031:	ldr	r0, [pc, #4]
+0x00400033:	add	r0, pc
+0x00400035:	b.w	#0x500001
 
-00000018 <macscp4_1_from_macscp2>:
-  18:	4801      	ldr	r0, [pc, #4]	; (20 <macscp4_1_from_macscp2+0x8>)
-  1a:	4478      	add	r0, pc
-  1c:	f7ff bffe 	b.w	0 <puts>
-  20:	00000002 	.word	0x00000002
+Function macscp1_2 @ 0x0040003d
+0x0040003d:	ldr	r0, [pc, #4]
+0x0040003f:	add	r0, pc
+0x00400041:	b.w	#0x500001
 
-00000024 <macscp4_2_from_macscp2>:
-  24:	4801      	ldr	r0, [pc, #4]	; (2c <macscp4_2_from_macscp2+0x8>)
-  26:	4478      	add	r0, pc
-  28:	f7ff bffe 	b.w	0 <puts>
-  2c:	00000002 	.word	0x00000002
+Function macscp3_1 @ 0x00400049
+0x00400049:	ldr	r0, [pc, #4]
+0x0040004b:	add	r0, pc
+0x0040004d:	b.w	#0x500001
 
-00000030 <macscp2_2>:
-  30:	4801      	ldr	r0, [pc, #4]	; (38 <macscp2_2+0x8>)
-  32:	4478      	add	r0, pc
-  34:	f7ff bffe 	b.w	0 <puts>
-  38:	00000002 	.word	0x00000002
+Function macscp4_1_from_macscp3 @ 0x00400055
+0x00400055:	ldr	r0, [pc, #4]
+0x00400057:	add	r0, pc
+0x00400059:	b.w	#0x500001
 
-0000003c <macscp1_2>:
-  3c:	4801      	ldr	r0, [pc, #4]	; (44 <macscp1_2+0x8>)
-  3e:	4478      	add	r0, pc
-  40:	f7ff bffe 	b.w	0 <puts>
-  44:	00000002 	.word	0x00000002
+Function macscp4_2_from_macscp3 @ 0x00400061
+0x00400061:	ldr	r0, [pc, #4]
+0x00400063:	add	r0, pc
+0x00400065:	b.w	#0x500001
 
-00000048 <macscp3_1>:
-  48:	4801      	ldr	r0, [pc, #4]	; (50 <macscp3_1+0x8>)
-  4a:	4478      	add	r0, pc
-  4c:	f7ff bffe 	b.w	0 <puts>
-  50:	00000002 	.word	0x00000002
+Function macscp3_2 @ 0x0040006d
+0x0040006d:	ldr	r0, [pc, #4]
+0x0040006f:	add	r0, pc
+0x00400071:	b.w	#0x500001
 
-00000054 <macscp4_1_from_macscp3>:
-  54:	4801      	ldr	r0, [pc, #4]	; (5c <macscp4_1_from_macscp3+0x8>)
-  56:	4478      	add	r0, pc
-  58:	f7ff bffe 	b.w	0 <puts>
-  5c:	00000002 	.word	0x00000002
+Function macscp1_3 @ 0x00400079
+0x00400079:	ldr	r0, [pc, #4]
+0x0040007b:	add	r0, pc
+0x0040007d:	b.w	#0x500001
 
-00000060 <macscp4_2_from_macscp3>:
-  60:	4801      	ldr	r0, [pc, #4]	; (68 <macscp4_2_from_macscp3+0x8>)
-  62:	4478      	add	r0, pc
-  64:	f7ff bffe 	b.w	0 <puts>
-  68:	00000002 	.word	0x00000002
+Function macscp_expr @ 0x00400085
+0x00400085:	bx	lr
 
-0000006c <macscp3_2>:
-  6c:	4801      	ldr	r0, [pc, #4]	; (74 <macscp3_2+0x8>)
-  6e:	4478      	add	r0, pc
-  70:	f7ff bffe 	b.w	0 <puts>
-  74:	00000002 	.word	0x00000002
+Function sub_400087 @ 0x00400087
+0x00400087:	nop	
 
-00000078 <macscp1_3>:
-  78:	4801      	ldr	r0, [pc, #4]	; (80 <macscp1_3+0x8>)
-  7a:	4478      	add	r0, pc
-  7c:	f7ff bffe 	b.w	0 <puts>
-  80:	00000002 	.word	0x00000002
+Function main @ 0x00400141
+0x00400141:	ldr	r0, [pc, #0x5c]
+0x00400143:	push	{r3, lr}
+0x00400145:	add	r0, pc
+0x00400147:	bl	#0x500001
+0x0040014b:	ldr	r0, [pc, #0x58]
+0x0040014d:	add	r0, pc
+0x0040014f:	bl	#0x500001
+0x00400153:	ldr	r0, [pc, #0x54]
+0x00400155:	add	r0, pc
+0x00400157:	bl	#0x500001
+0x0040015b:	ldr	r0, [pc, #0x50]
+0x0040015d:	add	r0, pc
+0x0040015f:	bl	#0x500001
+0x00400163:	ldr	r0, [pc, #0x4c]
+0x00400165:	add	r0, pc
+0x00400167:	bl	#0x500001
+0x0040016b:	ldr	r0, [pc, #0x48]
+0x0040016d:	add	r0, pc
+0x0040016f:	bl	#0x500001
+0x00400173:	ldr	r0, [pc, #0x44]
+0x00400175:	add	r0, pc
+0x00400177:	bl	#0x500001
+0x0040017b:	ldr	r0, [pc, #0x40]
+0x0040017d:	add	r0, pc
+0x0040017f:	bl	#0x500001
+0x00400183:	ldr	r0, [pc, #0x3c]
+0x00400185:	add	r0, pc
+0x00400187:	bl	#0x500001
+0x0040018b:	ldr	r0, [pc, #0x38]
+0x0040018d:	add	r0, pc
+0x0040018f:	bl	#0x500001
+0x00400193:	ldr	r0, [pc, #0x34]
+0x00400195:	add	r0, pc
+0x00400197:	bl	#0x500001
+0x0040019b:	movs	r0, #0
+0x0040019d:	pop	{r3, pc}
 
-00000084 <macscp_expr>:
-  84:	4770      	bx	lr
-  86:	bf00      	nop
+Function sub_40019f @ 0x0040019f
 
-Disassembly of section .text.startup:
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
 
-00000000 <main>:
-   0:	4817      	ldr	r0, [pc, #92]	; (60 <main+0x60>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <puts>
-   a:	4816      	ldr	r0, [pc, #88]	; (64 <main+0x64>)
-   c:	4478      	add	r0, pc
-   e:	f7ff fffe 	bl	0 <puts>
-  12:	4815      	ldr	r0, [pc, #84]	; (68 <main+0x68>)
-  14:	4478      	add	r0, pc
-  16:	f7ff fffe 	bl	0 <puts>
-  1a:	4814      	ldr	r0, [pc, #80]	; (6c <main+0x6c>)
-  1c:	4478      	add	r0, pc
-  1e:	f7ff fffe 	bl	0 <puts>
-  22:	4813      	ldr	r0, [pc, #76]	; (70 <main+0x70>)
-  24:	4478      	add	r0, pc
-  26:	f7ff fffe 	bl	0 <puts>
-  2a:	4812      	ldr	r0, [pc, #72]	; (74 <main+0x74>)
-  2c:	4478      	add	r0, pc
-  2e:	f7ff fffe 	bl	0 <puts>
-  32:	4811      	ldr	r0, [pc, #68]	; (78 <main+0x78>)
-  34:	4478      	add	r0, pc
-  36:	f7ff fffe 	bl	0 <puts>
-  3a:	4810      	ldr	r0, [pc, #64]	; (7c <main+0x7c>)
-  3c:	4478      	add	r0, pc
-  3e:	f7ff fffe 	bl	0 <puts>
-  42:	480f      	ldr	r0, [pc, #60]	; (80 <main+0x80>)
-  44:	4478      	add	r0, pc
-  46:	f7ff fffe 	bl	0 <puts>
-  4a:	480e      	ldr	r0, [pc, #56]	; (84 <main+0x84>)
-  4c:	4478      	add	r0, pc
-  4e:	f7ff fffe 	bl	0 <puts>
-  52:	480d      	ldr	r0, [pc, #52]	; (88 <main+0x88>)
-  54:	4478      	add	r0, pc
-  56:	f7ff fffe 	bl	0 <puts>
-  5a:	2000      	movs	r0, #0
-  5c:	bd08      	pop	{r3, pc}
-  5e:	bf00      	nop
-  60:	00000058 	.word	0x00000058
-  64:	00000054 	.word	0x00000054
-  68:	00000050 	.word	0x00000050
-  6c:	0000004c 	.word	0x0000004c
-  70:	00000048 	.word	0x00000048
-  74:	00000044 	.word	0x00000044
-  78:	00000040 	.word	0x00000040
-  7c:	0000003c 	.word	0x0000003c
-  80:	00000038 	.word	0x00000038
-  84:	00000034 	.word	0x00000034
-  88:	00000030 	.word	0x00000030
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

@@ -1,50 +1,72 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_strcasecmp_685a84ad.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vmlane.f32	s9, s6, s18
+0x00400004:	ldrbtmi	fp, [sl], #-0x500
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	cbz	r0, #0x400025
+0x0040000d:	ldrb	r0, [r3, #1]!
+0x00400011:	ldrb	ip, [r1], #1
+0x00400015:	ldrb.w	lr, [r2, r0]
+0x00400019:	ldrb.w	ip, [r2, ip]
+0x0040001d:	cmp	lr, ip
+0x0040001f:	beq	#0x40000b
+0x0040000d:	ldrb	r0, [r3, #1]!
+0x00400011:	ldrb	ip, [r1], #1
+0x00400015:	ldrb.w	lr, [r2, r0]
+0x00400019:	ldrb.w	ip, [r2, ip]
+0x0040001d:	cmp	lr, ip
+0x0040001f:	beq	#0x40000b
+0x00400021:	sub.w	r0, lr, ip
+0x00400025:	ldr	pc, [sp], #4
+0x00400025:	ldr	pc, [sp], #4
 
-Disassembly of section .text:
+Function sub_400029 @ 0x00400029
+0x00400029:	lsls	r2, r4, #1
+0x0040002b:	movs	r0, r0
+0x0040002d:	cbz	r2, #0x40005b
+0x0040002f:	ldr	r3, [pc, #0x38]
+0x00400031:	subs	r0, #1
+0x00400033:	push	{r4, lr}
+0x00400035:	adds	r4, r1, r2
+0x00400037:	add	r3, pc
+0x00400039:	b	#0x400041
 
-00000000 <strcasecmp>:
-   0:	4a09      	ldr	r2, [pc, #36]	; (28 <strcasecmp+0x28>)
-   2:	1e43      	subs	r3, r0, #1
-   4:	b500      	push	{lr}
-   6:	447a      	add	r2, pc
-   8:	e000      	b.n	c <strcasecmp+0xc>
-   a:	b158      	cbz	r0, 24 <strcasecmp+0x24>
-   c:	f813 0f01 	ldrb.w	r0, [r3, #1]!
-  10:	f811 cb01 	ldrb.w	ip, [r1], #1
-  14:	f812 e000 	ldrb.w	lr, [r2, r0]
-  18:	f812 c00c 	ldrb.w	ip, [r2, ip]
-  1c:	45e6      	cmp	lr, ip
-  1e:	d0f4      	beq.n	a <strcasecmp+0xa>
-  20:	ebae 000c 	sub.w	r0, lr, ip
-  24:	f85d fb04 	ldr.w	pc, [sp], #4
-  28:	0000001e 	.word	0x0000001e
+Function strncasecmp @ 0x0040002d
+0x0040002d:	cbz	r2, #0x40005b
+0x0040002f:	ldr	r3, [pc, #0x38]
+0x00400031:	subs	r0, #1
+0x00400033:	push	{r4, lr}
+0x00400035:	adds	r4, r1, r2
+0x00400037:	add	r3, pc
+0x00400039:	b	#0x400041
+0x0040002f:	ldr	r3, [pc, #0x38]
+0x00400031:	subs	r0, #1
+0x00400033:	push	{r4, lr}
+0x00400035:	adds	r4, r1, r2
+0x00400037:	add	r3, pc
+0x00400039:	b	#0x400041
+0x0040003b:	cbz	r2, #0x40005f
+0x0040003d:	cmp	r1, r4
+0x0040003f:	beq	#0x400063
+0x0040003d:	cmp	r1, r4
+0x0040003f:	beq	#0x400063
+0x00400041:	ldrb	r2, [r0, #1]!
+0x00400045:	ldrb	ip, [r1], #1
+0x00400049:	ldrb.w	lr, [r3, r2]
+0x0040004d:	ldrb.w	ip, [r3, ip]
+0x00400051:	cmp	lr, ip
+0x00400053:	beq	#0x40003b
+0x00400055:	sub.w	r0, lr, ip
+0x00400059:	pop	{r4, pc}
+0x0040005b:	mov	r0, r2
+0x0040005d:	bx	lr
+0x0040005f:	mov	r0, r2
+0x00400061:	pop	{r4, pc}
+0x00400063:	movs	r0, #0
+0x00400065:	pop	{r4, pc}
 
-0000002c <strncasecmp>:
-  2c:	b1aa      	cbz	r2, 5a <strncasecmp+0x2e>
-  2e:	4b0e      	ldr	r3, [pc, #56]	; (68 <strncasecmp+0x3c>)
-  30:	3801      	subs	r0, #1
-  32:	b510      	push	{r4, lr}
-  34:	188c      	adds	r4, r1, r2
-  36:	447b      	add	r3, pc
-  38:	e002      	b.n	40 <strncasecmp+0x14>
-  3a:	b182      	cbz	r2, 5e <strncasecmp+0x32>
-  3c:	42a1      	cmp	r1, r4
-  3e:	d010      	beq.n	62 <strncasecmp+0x36>
-  40:	f810 2f01 	ldrb.w	r2, [r0, #1]!
-  44:	f811 cb01 	ldrb.w	ip, [r1], #1
-  48:	f813 e002 	ldrb.w	lr, [r3, r2]
-  4c:	f813 c00c 	ldrb.w	ip, [r3, ip]
-  50:	45e6      	cmp	lr, ip
-  52:	d0f2      	beq.n	3a <strncasecmp+0xe>
-  54:	ebae 000c 	sub.w	r0, lr, ip
-  58:	bd10      	pop	{r4, pc}
-  5a:	4610      	mov	r0, r2
-  5c:	4770      	bx	lr
-  5e:	4610      	mov	r0, r2
-  60:	bd10      	pop	{r4, pc}
-  62:	2000      	movs	r0, #0
-  64:	bd10      	pop	{r4, pc}
-  66:	bf00      	nop
-  68:	0000002e 	.word	0x0000002e
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	movs	r2, r6
+0x0040006b:	movs	r0, r0

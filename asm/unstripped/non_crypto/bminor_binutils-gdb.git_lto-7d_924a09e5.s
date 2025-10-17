@@ -1,20 +1,29 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_lto-7d_924a09e5.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x56d428
+0x00400004:	ldrbtmi	r4, [fp], #-0xa05
+0x00400008:	ldmdavs	fp, {r0, r1, r3, r4, r7, fp, ip, lr}
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bne	#0x400013
+0x00400011:	pop	{r3, pc}
+0x00400013:	bl	#0x500001
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r6, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
 
-00000000 <bar>:
-   0:	b508      	push	{r3, lr}
-   2:	4b05      	ldr	r3, [pc, #20]	; (18 <bar+0x18>)
-   4:	4a05      	ldr	r2, [pc, #20]	; (1c <bar+0x1c>)
-   6:	447b      	add	r3, pc
-   8:	589b      	ldr	r3, [r3, r2]
-   a:	681b      	ldr	r3, [r3, #0]
-   c:	2b1e      	cmp	r3, #30
-   e:	d100      	bne.n	12 <bar+0x12>
-  10:	bd08      	pop	{r3, pc}
-  12:	f7ff fffe 	bl	0 <abort>
-  16:	bf00      	nop
-  18:	0000000e 	.word	0x0000000e
-  1c:	00000000 	.word	0x00000000
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r6, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

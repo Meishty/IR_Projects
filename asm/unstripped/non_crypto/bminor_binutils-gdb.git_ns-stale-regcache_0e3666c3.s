@@ -1,23 +1,17 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ns-stale-regcache_0e3666c3.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwhs	fp, #0x1500
+0x00400004:	movwls	fp, #0x1083
+0x00400008:	blhs	#0x426c14
+0x0040000c:	andhs	sp, r1, r5, lsl #26
 
+Function sub_400013 @ 0x00400013
+0x00400013:	vtbl.8	d25, {d6, d7, d8, d9}, d1
+0x00400017:	cmp	r3, #0
+0x00400019:	bgt	#0x40000f
+0x0040001b:	movs	r0, #0
+0x0040001d:	add	sp, #0xc
+0x0040001f:	ldr	pc, [sp], #4
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b500      	push	{lr}
-   2:	2301      	movs	r3, #1
-   4:	b083      	sub	sp, #12
-   6:	9301      	str	r3, [sp, #4]
-   8:	9b01      	ldr	r3, [sp, #4]
-   a:	2b00      	cmp	r3, #0
-   c:	dd05      	ble.n	1a <main+0x1a>
-   e:	2001      	movs	r0, #1
-  10:	f7ff fffe 	bl	0 <usleep>
-  14:	9b01      	ldr	r3, [sp, #4]
-  16:	2b00      	cmp	r3, #0
-  18:	dcf9      	bgt.n	e <main+0xe>
-  1a:	2000      	movs	r0, #0
-  1c:	b003      	add	sp, #12
-  1e:	f85d fb04 	ldr.w	pc, [sp], #4
-  22:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	

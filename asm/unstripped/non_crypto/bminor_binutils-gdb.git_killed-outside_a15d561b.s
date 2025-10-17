@@ -1,17 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_killed-outside_a15d561b.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x500001
+0x0040000b:	ldr	r3, [pc, #0xc]
+0x0040000d:	mov	r2, r0
+0x0040000f:	movs	r0, #0
+0x00400011:	add	r3, pc
+0x00400013:	str	r2, [r3]
+0x00400015:	pop	{r3, pc}
 
+Function sub_400017 @ 0x00400017
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <getpid>
-   6:	4b03      	ldr	r3, [pc, #12]	; (14 <main+0x14>)
-   8:	4602      	mov	r2, r0
-   a:	2000      	movs	r0, #0
-   c:	447b      	add	r3, pc
-   e:	601a      	str	r2, [r3, #0]
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
-  14:	00000004 	.word	0x00000004
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

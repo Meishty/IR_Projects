@@ -1,11 +1,11 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_run-with-two-mi-uis_c719dae0_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vrshl.s8	d27, d8, d0
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	movs	r0, #0
+0x0040000d:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f240b508 	vrshl.s8	d27, d8, d0
-   4:	f7ff40d2 			; <UNDEFINED> instruction: 0xf7ff40d2
-   8:	2000fffe 	strdcs	pc, [r0], -lr
-   c:	bf00bd08 	svclt	0x0000bd08
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	

@@ -1,17 +1,21 @@
 
-/root/projects/compiled/non_crypto/unstripped/embench_embench-iot.git_boardsupport_f5a721d9.o:     file format elf32-littlearm
+Function initialise_board @ 0x00400001
+0x00400001:	nop	
+0x00400003:	bx	lr
 
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
-Disassembly of section .text:
+Function start_trigger @ 0x00400005
+0x00400005:	nop	
+0x00400007:	bx	lr
 
-00000000 <initialise_board>:
-   0:	bf00      	nop
-   2:	4770      	bx	lr
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-00000004 <start_trigger>:
-   4:	bf00      	nop
-   6:	4770      	bx	lr
+Function stop_trigger @ 0x00400009
+0x00400009:	nop	
+0x0040000b:	bx	lr
 
-00000008 <stop_trigger>:
-   8:	bf00      	nop
-   a:	4770      	bx	lr
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr

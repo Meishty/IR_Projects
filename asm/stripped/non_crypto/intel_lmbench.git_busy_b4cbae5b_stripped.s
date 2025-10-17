@@ -1,11 +1,15 @@
 
-/root/projects/compiled/non_crypto/stripped/intel_lmbench.git_busy_b4cbae5b_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0xa
+0x00400007:	push	{r3, lr}
+0x00400009:	bl	#0x400009
 
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x400009
 
-Disassembly of section .text.startup:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bl	#0x40000d
+0x00400011:	b	#0x40000d
 
-00000000 <.text.startup>:
-   0:	b508200a 	strlt	r2, [r8, #-10]
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	bf00e7fc 	svclt	0x0000e7fc
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	

@@ -1,20 +1,36 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mbind2b_dcd01888_stripped.o:     file format elf32-littlearm
+Function sub_400008 @ 0x00400008
+0x00400008:	stmdbmi	sl, {r0, r3, r8, sb, fp, lr}
+0x0040000c:	ldrbtmi	r4, [fp], #-0xa0a
+0x00400010:	ldmdapl	ip, {r4, r8, sl, ip, sp, pc} ^
+0x0040000c:	ldrbtmi	r4, [fp], #-0xa0a
+0x00400010:	ldmdapl	ip, {r4, r8, sl, ip, sp, pc} ^
 
+Function sub_400015 @ 0x00400015
+0x00400015:	ldr	r3, [r3, r2]
+0x00400017:	orrs	r4, r3
+0x00400019:	ubfx	r4, r4, #0, #0xe
+0x0040001d:	cbnz	r4, #0x40002b
+0x0040001f:	ldr	r0, [pc, #0x1c]
+0x00400021:	add	r0, pc
+0x00400023:	bl	#0x400023
+0x0040001f:	ldr	r0, [pc, #0x1c]
+0x00400021:	add	r0, pc
+0x00400023:	bl	#0x400023
 
-Disassembly of section .text.startup:
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	mov	r0, r4
+0x00400029:	pop	{r4, pc}
 
-00000000 <.text.startup>:
-   0:	490a4b09 	stmdbmi	sl, {r0, r3, r8, r9, fp, lr}
-   4:	447b4a0a 	ldrbtmi	r4, [fp], #-2570	; 0xfffff5f6
-   8:	585cb510 	ldmdapl	ip, {r4, r8, sl, ip, sp, pc}^
-   c:	431c589b 	tstmi	ip, #10158080	; 0x9b0000
-  10:	040df3c4 	streq	pc, [sp], #-964	; 0xfffffc3c
-  14:	4807b92c 	stmdami	r7, {r2, r3, r5, r8, fp, ip, sp, pc}
-  18:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  1c:	4620fffe 	qsub8mi	pc, r0, lr	; <UNPREDICTABLE>
-  20:	f7ffbd10 			; <UNDEFINED> instruction: 0xf7ffbd10
-  24:	bf00fffe 	svclt	0x0000fffe
-  28:	0000001e 	andeq	r0, r0, lr, lsl r0
-	...
-  34:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
+0x0040002f:	nop	
+0x00400031:	movs	r6, r3
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r0
+0x00400037:	movs	r0, r0
+0x00400039:	movs	r0, r0
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r0, r3
+0x0040003f:	movs	r0, r0

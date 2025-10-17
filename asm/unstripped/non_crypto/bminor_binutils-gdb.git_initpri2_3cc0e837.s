@@ -1,121 +1,145 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_initpri2_3cc0e837.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x56d428
+0x00400004:	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	vmul.i8	d27, d0, d10
+0x0040000c:	andsvs	r3, sl, sp, ror #5
+0x00400008:	vmul.i8	d27, d0, d10
+0x0040000c:	andsvs	r3, sl, sp, ror #5
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x500001
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	lsls	r0, r6, #3
+0x0040001b:	movs	r0, r0
+0x0040001d:	push	{r3, lr}
+0x0040001f:	movw	r2, #0x3ed
+0x00400023:	ldr	r3, [pc, #0x10]
+0x00400025:	add	r3, pc
+0x00400027:	ldr	r3, [r3]
+0x00400029:	cmp	r3, r2
+0x0040002b:	bne	#0x40002f
 
-00000000 <init1005>:
-   0:	b508      	push	{r3, lr}
-   2:	4b05      	ldr	r3, [pc, #20]	; (18 <init1005+0x18>)
-   4:	447b      	add	r3, pc
-   6:	681a      	ldr	r2, [r3, #0]
-   8:	b91a      	cbnz	r2, 12 <init1005+0x12>
-   a:	f240 32ed 	movw	r2, #1005	; 0x3ed
-   e:	601a      	str	r2, [r3, #0]
-  10:	bd08      	pop	{r3, pc}
-  12:	f7ff fffe 	bl	0 <abort>
-  16:	bf00      	nop
-  18:	00000010 	.word	0x00000010
+Function sub_400019 @ 0x00400019
+0x00400019:	lsls	r0, r6, #3
+0x0040001b:	movs	r0, r0
+0x0040001d:	push	{r3, lr}
+0x0040001f:	movw	r2, #0x3ed
+0x00400023:	ldr	r3, [pc, #0x10]
+0x00400025:	add	r3, pc
+0x00400027:	ldr	r3, [r3]
+0x00400029:	cmp	r3, r2
+0x0040002b:	bne	#0x40002f
 
-0000001c <fini1005>:
-  1c:	b508      	push	{r3, lr}
-  1e:	f240 32ed 	movw	r2, #1005	; 0x3ed
-  22:	4b04      	ldr	r3, [pc, #16]	; (34 <fini1005+0x18>)
-  24:	447b      	add	r3, pc
-  26:	681b      	ldr	r3, [r3, #0]
-  28:	4293      	cmp	r3, r2
-  2a:	d100      	bne.n	2e <fini1005+0x12>
-  2c:	bd08      	pop	{r3, pc}
-  2e:	f7ff fffe 	bl	0 <abort>
-  32:	bf00      	nop
-  34:	0000000c 	.word	0x0000000c
+Function fini1005 @ 0x0040001d
+0x0040001d:	push	{r3, lr}
+0x0040001f:	movw	r2, #0x3ed
+0x00400023:	ldr	r3, [pc, #0x10]
+0x00400025:	add	r3, pc
+0x00400027:	ldr	r3, [r3]
+0x00400029:	cmp	r3, r2
+0x0040002b:	bne	#0x40002f
+0x0040002d:	pop	{r3, pc}
+0x0040002f:	bl	#0x500001
 
-00000038 <ctor1007>:
-  38:	b508      	push	{r3, lr}
-  3a:	f240 32ed 	movw	r2, #1005	; 0x3ed
-  3e:	4b05      	ldr	r3, [pc, #20]	; (54 <ctor1007+0x1c>)
-  40:	447b      	add	r3, pc
-  42:	6819      	ldr	r1, [r3, #0]
-  44:	4291      	cmp	r1, r2
-  46:	d103      	bne.n	50 <ctor1007+0x18>
-  48:	f240 32ef 	movw	r2, #1007	; 0x3ef
-  4c:	601a      	str	r2, [r3, #0]
-  4e:	bd08      	pop	{r3, pc}
-  50:	f7ff fffe 	bl	0 <abort>
-  54:	00000010 	.word	0x00000010
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	lsls	r0, r2, #3
+0x00400037:	movs	r0, r0
+0x00400039:	push	{r3, lr}
+0x0040003b:	movw	r2, #0x3ed
+0x0040003f:	ldr	r3, [pc, #0x14]
+0x00400041:	add	r3, pc
+0x00400043:	ldr	r1, [r3]
+0x00400045:	cmp	r1, r2
+0x00400047:	bne	#0x400051
 
-00000058 <dtor1007>:
-  58:	b508      	push	{r3, lr}
-  5a:	f240 32ef 	movw	r2, #1007	; 0x3ef
-  5e:	4b05      	ldr	r3, [pc, #20]	; (74 <dtor1007+0x1c>)
-  60:	447b      	add	r3, pc
-  62:	6819      	ldr	r1, [r3, #0]
-  64:	4291      	cmp	r1, r2
-  66:	d103      	bne.n	70 <dtor1007+0x18>
-  68:	f240 32ed 	movw	r2, #1005	; 0x3ed
-  6c:	601a      	str	r2, [r3, #0]
-  6e:	bd08      	pop	{r3, pc}
-  70:	f7ff fffe 	bl	0 <abort>
-  74:	00000010 	.word	0x00000010
+Function ctor1007 @ 0x00400039
+0x00400039:	push	{r3, lr}
+0x0040003b:	movw	r2, #0x3ed
+0x0040003f:	ldr	r3, [pc, #0x14]
+0x00400041:	add	r3, pc
+0x00400043:	ldr	r1, [r3]
+0x00400045:	cmp	r1, r2
+0x00400047:	bne	#0x400051
+0x00400049:	movw	r2, #0x3ef
+0x0040004d:	str	r2, [r3]
+0x0040004f:	pop	{r3, pc}
+0x00400051:	bl	#0x500001
 
-00000078 <init65530>:
-  78:	b508      	push	{r3, lr}
-  7a:	f240 32ef 	movw	r2, #1007	; 0x3ef
-  7e:	4b05      	ldr	r3, [pc, #20]	; (94 <init65530+0x1c>)
-  80:	447b      	add	r3, pc
-  82:	6819      	ldr	r1, [r3, #0]
-  84:	4291      	cmp	r1, r2
-  86:	d103      	bne.n	90 <init65530+0x18>
-  88:	f64f 72fa 	movw	r2, #65530	; 0xfffa
-  8c:	601a      	str	r2, [r3, #0]
-  8e:	bd08      	pop	{r3, pc}
-  90:	f7ff fffe 	bl	0 <abort>
-  94:	00000010 	.word	0x00000010
+Function dtor1007 @ 0x00400059
+0x00400059:	push	{r3, lr}
+0x0040005b:	movw	r2, #0x3ef
+0x0040005f:	ldr	r3, [pc, #0x14]
+0x00400061:	add	r3, pc
+0x00400063:	ldr	r1, [r3]
+0x00400065:	cmp	r1, r2
+0x00400067:	bne	#0x400071
+0x00400069:	movw	r2, #0x3ed
+0x0040006d:	str	r2, [r3]
+0x0040006f:	pop	{r3, pc}
+0x00400071:	bl	#0x500001
 
-00000098 <fini65530>:
-  98:	b508      	push	{r3, lr}
-  9a:	f64f 72fa 	movw	r2, #65530	; 0xfffa
-  9e:	4b05      	ldr	r3, [pc, #20]	; (b4 <fini65530+0x1c>)
-  a0:	447b      	add	r3, pc
-  a2:	6819      	ldr	r1, [r3, #0]
-  a4:	4291      	cmp	r1, r2
-  a6:	d103      	bne.n	b0 <fini65530+0x18>
-  a8:	f240 32ef 	movw	r2, #1007	; 0x3ef
-  ac:	601a      	str	r2, [r3, #0]
-  ae:	bd08      	pop	{r3, pc}
-  b0:	f7ff fffe 	bl	0 <abort>
-  b4:	00000010 	.word	0x00000010
+Function init65530 @ 0x00400079
+0x00400079:	push	{r3, lr}
+0x0040007b:	movw	r2, #0x3ef
+0x0040007f:	ldr	r3, [pc, #0x14]
+0x00400081:	add	r3, pc
+0x00400083:	ldr	r1, [r3]
+0x00400085:	cmp	r1, r2
+0x00400087:	bne	#0x400091
+0x00400089:	movw	r2, #0xfffa
+0x0040008d:	str	r2, [r3]
+0x0040008f:	pop	{r3, pc}
+0x00400091:	bl	#0x500001
 
-000000b8 <ctor65535>:
-  b8:	b508      	push	{r3, lr}
-  ba:	f64f 72fa 	movw	r2, #65530	; 0xfffa
-  be:	4b05      	ldr	r3, [pc, #20]	; (d4 <ctor65535+0x1c>)
-  c0:	447b      	add	r3, pc
-  c2:	6819      	ldr	r1, [r3, #0]
-  c4:	4291      	cmp	r1, r2
-  c6:	d103      	bne.n	d0 <ctor65535+0x18>
-  c8:	f64f 72ff 	movw	r2, #65535	; 0xffff
-  cc:	601a      	str	r2, [r3, #0]
-  ce:	bd08      	pop	{r3, pc}
-  d0:	f7ff fffe 	bl	0 <abort>
-  d4:	00000010 	.word	0x00000010
+Function fini65530 @ 0x00400099
+0x00400099:	push	{r3, lr}
+0x0040009b:	movw	r2, #0xfffa
+0x0040009f:	ldr	r3, [pc, #0x14]
+0x004000a1:	add	r3, pc
+0x004000a3:	ldr	r1, [r3]
+0x004000a5:	cmp	r1, r2
+0x004000a7:	bne	#0x4000b1
+0x004000a9:	movw	r2, #0x3ef
+0x004000ad:	str	r2, [r3]
+0x004000af:	pop	{r3, pc}
+0x004000b1:	bl	#0x500001
 
-000000d8 <dtor65535>:
-  d8:	b508      	push	{r3, lr}
-  da:	f64f 72ff 	movw	r2, #65535	; 0xffff
-  de:	4b05      	ldr	r3, [pc, #20]	; (f4 <dtor65535+0x1c>)
-  e0:	447b      	add	r3, pc
-  e2:	6819      	ldr	r1, [r3, #0]
-  e4:	4291      	cmp	r1, r2
-  e6:	d103      	bne.n	f0 <dtor65535+0x18>
-  e8:	f64f 72fa 	movw	r2, #65530	; 0xfffa
-  ec:	601a      	str	r2, [r3, #0]
-  ee:	bd08      	pop	{r3, pc}
-  f0:	f7ff fffe 	bl	0 <abort>
-  f4:	00000010 	.word	0x00000010
+Function ctor65535 @ 0x004000b9
+0x004000b9:	push	{r3, lr}
+0x004000bb:	movw	r2, #0xfffa
+0x004000bf:	ldr	r3, [pc, #0x14]
+0x004000c1:	add	r3, pc
+0x004000c3:	ldr	r1, [r3]
+0x004000c5:	cmp	r1, r2
+0x004000c7:	bne	#0x4000d1
+0x004000c9:	movw	r2, #0xffff
+0x004000cd:	str	r2, [r3]
+0x004000cf:	pop	{r3, pc}
+0x004000d1:	bl	#0x500001
 
-Disassembly of section .text.startup:
+Function dtor65535 @ 0x004000d9
+0x004000d9:	push	{r3, lr}
+0x004000db:	movw	r2, #0xffff
+0x004000df:	ldr	r3, [pc, #0x14]
+0x004000e1:	add	r3, pc
+0x004000e3:	ldr	r1, [r3]
+0x004000e5:	cmp	r1, r2
+0x004000e7:	bne	#0x4000f1
+0x004000e9:	movw	r2, #0xfffa
+0x004000ed:	str	r2, [r3]
+0x004000ef:	pop	{r3, pc}
+0x004000f1:	bl	#0x500001
 
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x004000fd
+0x004000fd:	movs	r0, #0
+0x004000ff:	bx	lr
+
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

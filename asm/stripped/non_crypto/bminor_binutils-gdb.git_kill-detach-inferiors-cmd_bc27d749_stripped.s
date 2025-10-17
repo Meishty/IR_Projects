@@ -1,11 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_kill-detach-inferiors-cmd_bc27d749_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vst3.8	{d27, d29, d31}, [pc], r8
 
+Function sub_400005 @ 0x00400005
+0x00400005:	strb	r6, [r2]
+0x00400007:	bl	#0x400007
 
-Disassembly of section .text.startup:
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	movs	r0, #0
+0x0040000d:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	f44fb508 	vst3.8	{d27,d29,d31}, [pc], r8
-   4:	f7ff7016 			; <UNDEFINED> instruction: 0xf7ff7016
-   8:	2000fffe 	strdcs	pc, [r0], -lr
-   c:	bf00bd08 	svclt	0x0000bd08
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

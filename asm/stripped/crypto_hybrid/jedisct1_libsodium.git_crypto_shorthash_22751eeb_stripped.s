@@ -1,15 +1,28 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_crypto_shorthash_22751eeb_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r8]!
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r0, [pc, #4]
+0x0040000b:	add	r0, pc
+0x0040000d:	bx	lr
 
-00000000 <.text>:
-   0:	47702008 	ldrbmi	r2, [r0, -r8]!
-   4:	47702010 			; <UNDEFINED> instruction: 0x47702010
-   8:	44784801 	ldrbtmi	r4, [r8], #-2049	; 0xfffff7ff
-   c:	bf004770 	svclt	0x00004770
-  10:	00000002 	andeq	r0, r0, r2
-  14:	bffef7ff 	svclt	0x00fef7ff
-  18:	f7ff2110 			; <UNDEFINED> instruction: 0xf7ff2110
-  1c:	bf00bffe 	svclt	0x0000bffe
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r2, r0
+0x00400013:	movs	r0, r0
+0x00400015:	b.w	#0x400015
+
+Function sub_400015 @ 0x00400015
+0x00400015:	b.w	#0x400015
+
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r1, #0x10
+0x0040001b:	b.w	#0x40001b
+0x0040001b:	b.w	#0x40001b
+
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	

@@ -1,8 +1,3 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_infcall-nodebug-lib_a8883164_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	47702001 	ldrbmi	r2, [r0, -r1]!
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r1]!

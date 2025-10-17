@@ -1,8 +1,3 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_gnu-ifunc-final_5493bbdf_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	47703001 	ldrbmi	r3, [r0, -r1]!
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r3, [r0, -r1]!

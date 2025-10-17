@@ -1,90 +1,309 @@
 
-/root/projects/compiled/crypto/unstripped/stamparm_cryptospecs.git_arcfour_e7ef7066.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svcmi	#0xf0e92d
+0x00400004:	stmdami	r1!, {r1, r2, sb, sl, lr}
+0x00400008:	ldrtmi	r4, [r5], -r1, lsr #22
+0x0040000c:	sbclt	r4, r3, r8, ror r4
+0x00400008:	ldrtmi	r4, [r5], -r1, lsr #22
+0x0040000c:	sbclt	r4, r3, r8, ror r4
 
+Function sub_400013 @ 0x00400013
+0x00400013:	add.w	r7, sp, #3
+0x00400017:	mov	sl, r1
+0x00400019:	mov	sb, r2
+0x0040001b:	ldr	r3, [r0, r3]
+0x0040001d:	mov	fp, r7
+0x0040001f:	ldr	r3, [r3]
+0x00400021:	str	r3, [sp, #0x104]
+0x00400023:	mov.w	r3, #0
+0x00400027:	str	r4, [r6, #4]
+0x00400029:	str	r4, [r5], #7
+0x0040002d:	mov	r8, r5
+0x0040002f:	mov	r0, r4
+0x00400031:	strb	r4, [r8, #1]!
+0x00400035:	mov	r1, sb
+0x00400037:	adds	r4, #1
+0x00400039:	bl	#0x500001
+0x0040002f:	mov	r0, r4
+0x00400031:	strb	r4, [r8, #1]!
+0x00400035:	mov	r1, sb
+0x00400037:	adds	r4, #1
+0x00400039:	bl	#0x500001
+0x0040003d:	ldrb.w	r3, [sl, r1]
+0x00400041:	cmp.w	r4, #0x100
+0x00400045:	strb	r3, [fp, #1]!
+0x00400049:	bne	#0x40002f
+0x0040004b:	addw	r4, r6, #0x107
+0x0040004f:	movs	r3, #0
+0x00400051:	ldrb	r1, [r5, #1]!
+0x00400055:	ldrb	r2, [r7, #1]!
+0x00400059:	cmp	r4, r5
+0x0040005b:	add	r2, r1
+0x0040005d:	add	r3, r2
+0x0040005f:	uxtb	r3, r3
+0x00400061:	add.w	r2, r6, r3
+0x00400065:	ldrb	r0, [r2, #8]
+0x00400067:	strb	r1, [r2, #8]
+0x00400069:	strb	r0, [r5]
+0x0040006b:	bne	#0x400051
+0x00400051:	ldrb	r1, [r5, #1]!
+0x00400055:	ldrb	r2, [r7, #1]!
+0x00400059:	cmp	r4, r5
+0x0040005b:	add	r2, r1
+0x0040005d:	add	r3, r2
+0x0040005f:	uxtb	r3, r3
+0x00400061:	add.w	r2, r6, r3
+0x00400065:	ldrb	r0, [r2, #8]
+0x00400067:	strb	r1, [r2, #8]
+0x00400069:	strb	r0, [r5]
+0x0040006b:	bne	#0x400051
+0x0040006d:	ldr	r2, [pc, #0x24]
+0x0040006f:	ldr	r3, [pc, #0x20]
+0x00400071:	add	r2, pc
+0x00400073:	ldr	r3, [r2, r3]
+0x00400075:	ldr	r2, [r3]
+0x00400077:	ldr	r3, [sp, #0x104]
+0x00400079:	eors	r2, r3
+0x0040007b:	mov.w	r3, #0
+0x0040007f:	bne	#0x400087
+0x00400081:	add	sp, #0x10c
+0x00400083:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400087:	bl	#0x50000d
 
-Disassembly of section .text:
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	lsls	r4, r7, #1
+0x0040008f:	movs	r0, r0
+0x00400091:	movs	r0, r0
+0x00400093:	movs	r0, r0
+0x00400095:	movs	r0, r4
+0x00400097:	movs	r0, r0
+0x00400099:	push	{r4, r5, r6, r7, lr}
+0x0040009b:	ldrd	r5, r4, [r0]
+0x0040009f:	cbz	r2, #0x4000db
+0x004000a1:	add.w	ip, r0, #8
+0x004000a5:	adds	r6, r1, r2
+0x004000a7:	adds	r5, #1
+0x004000a9:	uxtb	r5, r5
+0x004000ab:	ldrb.w	lr, [ip, r5]
+0x004000af:	add	r4, lr
+0x004000b1:	uxtb	r4, r4
+0x004000b3:	ldrb.w	r2, [ip, r4]
+0x004000b7:	strb.w	lr, [ip, r4]
+0x004000bb:	strb.w	r2, [ip, r5]
+0x004000bf:	ldrb.w	r7, [ip, r4]
+0x004000c3:	ldrb	lr, [r1], #1
+0x004000c7:	add	r2, r7
+0x004000c9:	cmp	r1, r6
+0x004000cb:	uxtb	r2, r2
+0x004000cd:	ldrb.w	r2, [ip, r2]
+0x004000d1:	eor.w	r2, r2, lr
+0x004000d5:	strb	r2, [r3], #1
+0x004000d9:	bne	#0x4000a7
 
-00000000 <arcfour_setkey>:
-   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	4606      	mov	r6, r0
-   6:	4821      	ldr	r0, [pc, #132]	; (8c <arcfour_setkey+0x8c>)
-   8:	4b21      	ldr	r3, [pc, #132]	; (90 <arcfour_setkey+0x90>)
-   a:	4635      	mov	r5, r6
-   c:	4478      	add	r0, pc
-   e:	b0c3      	sub	sp, #268	; 0x10c
-  10:	2400      	movs	r4, #0
-  12:	f10d 0703 	add.w	r7, sp, #3
-  16:	468a      	mov	sl, r1
-  18:	4691      	mov	r9, r2
-  1a:	58c3      	ldr	r3, [r0, r3]
-  1c:	46bb      	mov	fp, r7
-  1e:	681b      	ldr	r3, [r3, #0]
-  20:	9341      	str	r3, [sp, #260]	; 0x104
-  22:	f04f 0300 	mov.w	r3, #0
-  26:	6074      	str	r4, [r6, #4]
-  28:	f845 4b07 	str.w	r4, [r5], #7
-  2c:	46a8      	mov	r8, r5
-  2e:	4620      	mov	r0, r4
-  30:	f808 4f01 	strb.w	r4, [r8, #1]!
-  34:	4649      	mov	r1, r9
-  36:	3401      	adds	r4, #1
-  38:	f7ff fffe 	bl	0 <__aeabi_uidivmod>
-  3c:	f81a 3001 	ldrb.w	r3, [sl, r1]
-  40:	f5b4 7f80 	cmp.w	r4, #256	; 0x100
-  44:	f80b 3f01 	strb.w	r3, [fp, #1]!
-  48:	d1f1      	bne.n	2e <arcfour_setkey+0x2e>
-  4a:	f206 1407 	addw	r4, r6, #263	; 0x107
-  4e:	2300      	movs	r3, #0
-  50:	f815 1f01 	ldrb.w	r1, [r5, #1]!
-  54:	f817 2f01 	ldrb.w	r2, [r7, #1]!
-  58:	42ac      	cmp	r4, r5
-  5a:	440a      	add	r2, r1
-  5c:	4413      	add	r3, r2
-  5e:	b2db      	uxtb	r3, r3
-  60:	eb06 0203 	add.w	r2, r6, r3
-  64:	7a10      	ldrb	r0, [r2, #8]
-  66:	7211      	strb	r1, [r2, #8]
-  68:	7028      	strb	r0, [r5, #0]
-  6a:	d1f1      	bne.n	50 <arcfour_setkey+0x50>
-  6c:	4a09      	ldr	r2, [pc, #36]	; (94 <arcfour_setkey+0x94>)
-  6e:	4b08      	ldr	r3, [pc, #32]	; (90 <arcfour_setkey+0x90>)
-  70:	447a      	add	r2, pc
-  72:	58d3      	ldr	r3, [r2, r3]
-  74:	681a      	ldr	r2, [r3, #0]
-  76:	9b41      	ldr	r3, [sp, #260]	; 0x104
-  78:	405a      	eors	r2, r3
-  7a:	f04f 0300 	mov.w	r3, #0
-  7e:	d102      	bne.n	86 <arcfour_setkey+0x86>
-  80:	b043      	add	sp, #268	; 0x10c
-  82:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
-  86:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  8a:	bf00      	nop
-  8c:	0000007c 	.word	0x0000007c
-  90:	00000000 	.word	0x00000000
-  94:	00000020 	.word	0x00000020
+Function sub_40008d @ 0x0040008d
+0x0040008d:	lsls	r4, r7, #1
+0x0040008f:	movs	r0, r0
+0x00400091:	movs	r0, r0
+0x00400093:	movs	r0, r0
+0x00400095:	movs	r0, r4
+0x00400097:	movs	r0, r0
+0x00400099:	push	{r4, r5, r6, r7, lr}
+0x0040009b:	ldrd	r5, r4, [r0]
+0x0040009f:	cbz	r2, #0x4000db
+0x004000a1:	add.w	ip, r0, #8
+0x004000a5:	adds	r6, r1, r2
+0x004000a7:	adds	r5, #1
+0x004000a9:	uxtb	r5, r5
+0x004000ab:	ldrb.w	lr, [ip, r5]
+0x004000af:	add	r4, lr
+0x004000b1:	uxtb	r4, r4
+0x004000b3:	ldrb.w	r2, [ip, r4]
+0x004000b7:	strb.w	lr, [ip, r4]
+0x004000bb:	strb.w	r2, [ip, r5]
+0x004000bf:	ldrb.w	r7, [ip, r4]
+0x004000c3:	ldrb	lr, [r1], #1
+0x004000c7:	add	r2, r7
+0x004000c9:	cmp	r1, r6
+0x004000cb:	uxtb	r2, r2
+0x004000cd:	ldrb.w	r2, [ip, r2]
+0x004000d1:	eor.w	r2, r2, lr
+0x004000d5:	strb	r2, [r3], #1
+0x004000d9:	bne	#0x4000a7
 
-00000098 <arcfour_encrypt>:
-  98:	b5f0      	push	{r4, r5, r6, r7, lr}
-  9a:	e9d0 5400 	ldrd	r5, r4, [r0]
-  9e:	b1e2      	cbz	r2, da <arcfour_encrypt+0x42>
-  a0:	f100 0c08 	add.w	ip, r0, #8
-  a4:	188e      	adds	r6, r1, r2
-  a6:	3501      	adds	r5, #1
-  a8:	b2ed      	uxtb	r5, r5
-  aa:	f81c e005 	ldrb.w	lr, [ip, r5]
-  ae:	4474      	add	r4, lr
-  b0:	b2e4      	uxtb	r4, r4
-  b2:	f81c 2004 	ldrb.w	r2, [ip, r4]
-  b6:	f80c e004 	strb.w	lr, [ip, r4]
-  ba:	f80c 2005 	strb.w	r2, [ip, r5]
-  be:	f81c 7004 	ldrb.w	r7, [ip, r4]
-  c2:	f811 eb01 	ldrb.w	lr, [r1], #1
-  c6:	443a      	add	r2, r7
-  c8:	42b1      	cmp	r1, r6
-  ca:	b2d2      	uxtb	r2, r2
-  cc:	f81c 2002 	ldrb.w	r2, [ip, r2]
-  d0:	ea82 020e 	eor.w	r2, r2, lr
-  d4:	f803 2b01 	strb.w	r2, [r3], #1
-  d8:	d1e5      	bne.n	a6 <arcfour_encrypt+0xe>
-  da:	e9c0 5400 	strd	r5, r4, [r0]
-  de:	bdf0      	pop	{r4, r5, r6, r7, pc}
+Function arcfour_encrypt @ 0x00400099
+0x00400099:	push	{r4, r5, r6, r7, lr}
+0x0040009b:	ldrd	r5, r4, [r0]
+0x0040009f:	cbz	r2, #0x4000db
+0x004000a1:	add.w	ip, r0, #8
+0x004000a5:	adds	r6, r1, r2
+0x004000a7:	adds	r5, #1
+0x004000a9:	uxtb	r5, r5
+0x004000ab:	ldrb.w	lr, [ip, r5]
+0x004000af:	add	r4, lr
+0x004000b1:	uxtb	r4, r4
+0x004000b3:	ldrb.w	r2, [ip, r4]
+0x004000b7:	strb.w	lr, [ip, r4]
+0x004000bb:	strb.w	r2, [ip, r5]
+0x004000bf:	ldrb.w	r7, [ip, r4]
+0x004000c3:	ldrb	lr, [r1], #1
+0x004000c7:	add	r2, r7
+0x004000c9:	cmp	r1, r6
+0x004000cb:	uxtb	r2, r2
+0x004000cd:	ldrb.w	r2, [ip, r2]
+0x004000d1:	eor.w	r2, r2, lr
+0x004000d5:	strb	r2, [r3], #1
+0x004000d9:	bne	#0x4000a7
+0x004000a1:	add.w	ip, r0, #8
+0x004000a5:	adds	r6, r1, r2
+0x004000a7:	adds	r5, #1
+0x004000a9:	uxtb	r5, r5
+0x004000ab:	ldrb.w	lr, [ip, r5]
+0x004000af:	add	r4, lr
+0x004000b1:	uxtb	r4, r4
+0x004000b3:	ldrb.w	r2, [ip, r4]
+0x004000b7:	strb.w	lr, [ip, r4]
+0x004000bb:	strb.w	r2, [ip, r5]
+0x004000bf:	ldrb.w	r7, [ip, r4]
+0x004000c3:	ldrb	lr, [r1], #1
+0x004000c7:	add	r2, r7
+0x004000c9:	cmp	r1, r6
+0x004000cb:	uxtb	r2, r2
+0x004000cd:	ldrb.w	r2, [ip, r2]
+0x004000d1:	eor.w	r2, r2, lr
+0x004000d5:	strb	r2, [r3], #1
+0x004000d9:	bne	#0x4000a7
+0x004000a7:	adds	r5, #1
+0x004000a9:	uxtb	r5, r5
+0x004000ab:	ldrb.w	lr, [ip, r5]
+0x004000af:	add	r4, lr
+0x004000b1:	uxtb	r4, r4
+0x004000b3:	ldrb.w	r2, [ip, r4]
+0x004000b7:	strb.w	lr, [ip, r4]
+0x004000bb:	strb.w	r2, [ip, r5]
+0x004000bf:	ldrb.w	r7, [ip, r4]
+0x004000c3:	ldrb	lr, [r1], #1
+0x004000c7:	add	r2, r7
+0x004000c9:	cmp	r1, r6
+0x004000cb:	uxtb	r2, r2
+0x004000cd:	ldrb.w	r2, [ip, r2]
+0x004000d1:	eor.w	r2, r2, lr
+0x004000d5:	strb	r2, [r3], #1
+0x004000d9:	bne	#0x4000a7
+0x004000db:	strd	r5, r4, [r0]
+0x004000df:	pop	{r4, r5, r6, r7, pc}
+
+Function __aeabi_uidivmod @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

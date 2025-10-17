@@ -1,81 +1,82 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mi-thread-specific-bp_a8e76be1.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r0, #0x3400
+0x00400004:	andhs	fp, r1, r0, lsl r4
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	movs	r1, #2
+0x0040000d:	movs	r4, #3
+0x0040000f:	str	r2, [r3]
+0x00400011:	str	r2, [r3]
+0x00400013:	movs	r2, #6
+0x00400015:	str	r0, [r3]
+0x00400017:	movs	r0, #4
+0x00400019:	str	r1, [r3]
+0x0040001b:	movs	r1, #5
+0x0040001d:	str	r4, [r3]
+0x0040001f:	str	r0, [r3]
+0x00400021:	movs	r0, #7
+0x00400023:	str	r1, [r3]
+0x00400025:	movs	r1, #8
+0x00400027:	str	r2, [r3]
+0x00400029:	movs	r2, #9
+0x0040002b:	str	r0, [r3]
+0x0040002d:	ldr	r4, [sp], #4
+0x00400031:	str	r1, [r3]
+0x00400033:	str	r2, [r3]
+0x00400035:	bx	lr
 
-Disassembly of section .text:
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r0, r6
+0x0040003b:	movs	r0, r0
 
-00000000 <bar>:
-   0:	4b0d      	ldr	r3, [pc, #52]	; (38 <bar+0x38>)
-   2:	2200      	movs	r2, #0
-   4:	b410      	push	{r4}
-   6:	2001      	movs	r0, #1
-   8:	447b      	add	r3, pc
-   a:	2102      	movs	r1, #2
-   c:	2403      	movs	r4, #3
-   e:	601a      	str	r2, [r3, #0]
-  10:	601a      	str	r2, [r3, #0]
-  12:	2206      	movs	r2, #6
-  14:	6018      	str	r0, [r3, #0]
-  16:	2004      	movs	r0, #4
-  18:	6019      	str	r1, [r3, #0]
-  1a:	2105      	movs	r1, #5
-  1c:	601c      	str	r4, [r3, #0]
-  1e:	6018      	str	r0, [r3, #0]
-  20:	2007      	movs	r0, #7
-  22:	6019      	str	r1, [r3, #0]
-  24:	2108      	movs	r1, #8
-  26:	601a      	str	r2, [r3, #0]
-  28:	2209      	movs	r2, #9
-  2a:	6018      	str	r0, [r3, #0]
-  2c:	f85d 4b04 	ldr.w	r4, [sp], #4
-  30:	6019      	str	r1, [r3, #0]
-  32:	601a      	str	r2, [r3, #0]
-  34:	4770      	bx	lr
-  36:	bf00      	nop
-  38:	0000002c 	.word	0x0000002c
+Function sub_400039 @ 0x00400039
+0x00400039:	movs	r0, r6
+0x0040003b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x00400041
+0x00400041:	push.w	{r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400045:	movs	r5, #0
+0x00400047:	ldr	r4, [pc, #0x68]
+0x00400049:	movs	r1, #1
+0x0040004b:	movs	r2, #2
+0x0040004d:	add	r4, pc
+0x0040004f:	movs	r3, #3
+0x00400051:	mov.w	fp, #4
+0x00400055:	mov.w	sl, #5
+0x00400059:	mov.w	sb, #6
+0x0040005d:	mov.w	r8, #7
+0x00400061:	str	r5, [r4]
+0x00400063:	movs	r7, #8
+0x00400065:	str	r5, [r4]
+0x00400067:	movs	r6, #9
+0x00400069:	str	r1, [r4]
+0x0040006b:	str	r2, [r4]
+0x0040006d:	str	r3, [r4]
+0x0040006f:	str.w	fp, [r4]
+0x00400073:	str.w	sl, [r4]
+0x00400077:	str.w	sb, [r4]
+0x0040007b:	str.w	r8, [r4]
+0x0040007f:	str	r7, [r4]
+0x00400081:	str	r6, [r4]
+0x00400083:	bl	#0x400001
 
-00000000 <main>:
-   0:	e92d 4ff8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	2500      	movs	r5, #0
-   6:	4c1a      	ldr	r4, [pc, #104]	; (70 <main+0x70>)
-   8:	2101      	movs	r1, #1
-   a:	2202      	movs	r2, #2
-   c:	447c      	add	r4, pc
-   e:	2303      	movs	r3, #3
-  10:	f04f 0b04 	mov.w	fp, #4
-  14:	f04f 0a05 	mov.w	sl, #5
-  18:	f04f 0906 	mov.w	r9, #6
-  1c:	f04f 0807 	mov.w	r8, #7
-  20:	6025      	str	r5, [r4, #0]
-  22:	2708      	movs	r7, #8
-  24:	6025      	str	r5, [r4, #0]
-  26:	2609      	movs	r6, #9
-  28:	6021      	str	r1, [r4, #0]
-  2a:	6022      	str	r2, [r4, #0]
-  2c:	6023      	str	r3, [r4, #0]
-  2e:	f8c4 b000 	str.w	fp, [r4]
-  32:	f8c4 a000 	str.w	sl, [r4]
-  36:	f8c4 9000 	str.w	r9, [r4]
-  3a:	f8c4 8000 	str.w	r8, [r4]
-  3e:	6027      	str	r7, [r4, #0]
-  40:	6026      	str	r6, [r4, #0]
-  42:	f7ff fffe 	bl	0 <main>
-  46:	6025      	str	r5, [r4, #0]
-  48:	2101      	movs	r1, #1
-  4a:	2202      	movs	r2, #2
-  4c:	6021      	str	r1, [r4, #0]
-  4e:	2303      	movs	r3, #3
-  50:	6022      	str	r2, [r4, #0]
-  52:	4628      	mov	r0, r5
-  54:	6023      	str	r3, [r4, #0]
-  56:	f8c4 b000 	str.w	fp, [r4]
-  5a:	f8c4 a000 	str.w	sl, [r4]
-  5e:	f8c4 9000 	str.w	r9, [r4]
-  62:	f8c4 8000 	str.w	r8, [r4]
-  66:	6027      	str	r7, [r4, #0]
-  68:	6026      	str	r6, [r4, #0]
-  6a:	e8bd 8ff8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, sl, fp, pc}
-  6e:	bf00      	nop
-  70:	00000060 	.word	0x00000060
+Function sub_400087 @ 0x00400087
+0x00400087:	str	r5, [r4]
+0x00400089:	movs	r1, #1
+0x0040008b:	movs	r2, #2
+0x0040008d:	str	r1, [r4]
+0x0040008f:	movs	r3, #3
+0x00400091:	str	r2, [r4]
+0x00400093:	mov	r0, r5
+0x00400095:	str	r3, [r4]
+0x00400097:	str.w	fp, [r4]
+0x0040009b:	str.w	sl, [r4]
+0x0040009f:	str.w	sb, [r4]
+0x004000a3:	str.w	r8, [r4]
+0x004000a7:	str	r7, [r4]
+0x004000a9:	str	r6, [r4]
+0x004000ab:	pop.w	{r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+
+Function sub_4000af @ 0x004000af

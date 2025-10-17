@@ -1,152 +1,225 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_allocfail_c15ec6fb.o:     file format elf32-littlearm
+Function callback_full @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function error_callback_full @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x500001
+0x0040000b:	cbnz	r0, #0x400019
+0x0040000d:	ldr	r2, [pc, #0x14]
+0x0040000f:	add	r2, pc
+0x00400011:	ldr	r3, [r2]
+0x00400013:	adds	r3, #1
+0x00400015:	str	r3, [r2]
+0x00400017:	pop	{r3, pc}
+0x0040000d:	ldr	r2, [pc, #0x14]
+0x0040000f:	add	r2, pc
+0x00400011:	ldr	r3, [r2]
+0x00400013:	adds	r3, #1
+0x00400015:	str	r3, [r2]
+0x00400017:	pop	{r3, pc}
+0x00400019:	pop.w	{r3, lr}
+0x0040001d:	movs	r0, #0
+0x0040001f:	movs	r1, #0
+0x00400021:	b.w	#0x500025
 
-Disassembly of section .text:
+Function f3.constprop.0.isra.0 @ 0x00400029
+0x00400029:	push	{r4, lr}
+0x0040002b:	movs	r1, #0
+0x0040002d:	ldr	r4, [pc, #0x50]
+0x0040002f:	ldr	r0, [pc, #0x54]
+0x00400031:	sub	sp, #8
+0x00400033:	add	r4, pc
+0x00400035:	ldr	r3, [pc, #0x50]
+0x00400037:	ldr	r2, [pc, #0x54]
+0x00400039:	add	r3, pc
+0x0040003b:	ldr	r0, [r4, r0]
+0x0040003d:	add	r2, pc
+0x0040003f:	str	r1, [sp]
+0x00400041:	ldr	r0, [r0]
+0x00400043:	bl	#0x50000d
+0x00400047:	cbnz	r0, #0x40005f
+0x00400049:	ldr	r3, [pc, #0x44]
+0x0040004b:	add	r3, pc
+0x0040004d:	ldr	r3, [r3]
+0x0040004f:	cbz	r3, #0x40005b
+0x00400051:	ldr	r3, [pc, #0x40]
+0x00400053:	ldr	r2, [r4, r3]
+0x00400055:	ldr	r3, [r2]
+0x00400057:	adds	r3, #1
+0x00400059:	str	r3, [r2]
+0x0040005b:	add	sp, #8
+0x0040005d:	pop	{r4, pc}
+0x00400049:	ldr	r3, [pc, #0x44]
+0x0040004b:	add	r3, pc
+0x0040004d:	ldr	r3, [r3]
+0x0040004f:	cbz	r3, #0x40005b
+0x00400051:	ldr	r3, [pc, #0x40]
+0x00400053:	ldr	r2, [r4, r3]
+0x00400055:	ldr	r3, [r2]
+0x00400057:	adds	r3, #1
+0x00400059:	str	r3, [r2]
+0x0040005b:	add	sp, #8
+0x0040005d:	pop	{r4, pc}
+0x00400051:	ldr	r3, [pc, #0x40]
+0x00400053:	ldr	r2, [r4, r3]
+0x00400055:	ldr	r3, [r2]
+0x00400057:	adds	r3, #1
+0x00400059:	str	r3, [r2]
+0x0040005b:	add	sp, #8
+0x0040005d:	pop	{r4, pc}
+0x0040005b:	add	sp, #8
+0x0040005d:	pop	{r4, pc}
+0x0040005f:	ldr.w	ip, [pc, #0x38]
+0x00400063:	mov	r3, r0
+0x00400065:	ldr	r2, [pc, #0x34]
+0x00400067:	movs	r1, #1
+0x00400069:	add	r2, pc
+0x0040006b:	ldr.w	r0, [r4, ip]
+0x0040006f:	ldr	r0, [r0]
+0x00400071:	bl	#0x500019
+0x00400075:	ldr	r3, [pc, #0x1c]
+0x00400077:	ldr	r2, [r4, r3]
+0x00400079:	ldr	r3, [r2]
+0x0040007b:	adds	r3, #1
+0x0040007d:	str	r3, [r2]
+0x0040007f:	b	#0x400049
 
-00000000 <callback_full>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function f2.constprop.0.isra.0 @ 0x004000a1
+0x004000a1:	b	#0x400029
 
-00000004 <error_callback_full>:
-   4:	b508      	push	{r3, lr}
-   6:	f7ff fffe 	bl	0 <at_fail_alloc_p>
-   a:	b928      	cbnz	r0, 18 <error_callback_full+0x14>
-   c:	4a05      	ldr	r2, [pc, #20]	; (24 <error_callback_full+0x20>)
-   e:	447a      	add	r2, pc
-  10:	6813      	ldr	r3, [r2, #0]
-  12:	3301      	adds	r3, #1
-  14:	6013      	str	r3, [r2, #0]
-  16:	bd08      	pop	{r3, pc}
-  18:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  1c:	2000      	movs	r0, #0
-  1e:	2100      	movs	r1, #0
-  20:	f7ff bffe 	b.w	0 <set_fail_at_alloc>
-  24:	00000012 	.word	0x00000012
+Function sub_4000a3 @ 0x004000a3
+0x004000a3:	nop	
+0x004000a5:	b	#0x4000a1
 
-00000028 <f3.constprop.0.isra.0>:
-  28:	b510      	push	{r4, lr}
-  2a:	2100      	movs	r1, #0
-  2c:	4c14      	ldr	r4, [pc, #80]	; (80 <f3.constprop.0.isra.0+0x58>)
-  2e:	4815      	ldr	r0, [pc, #84]	; (84 <f3.constprop.0.isra.0+0x5c>)
-  30:	b082      	sub	sp, #8
-  32:	447c      	add	r4, pc
-  34:	4b14      	ldr	r3, [pc, #80]	; (88 <f3.constprop.0.isra.0+0x60>)
-  36:	4a15      	ldr	r2, [pc, #84]	; (8c <f3.constprop.0.isra.0+0x64>)
-  38:	447b      	add	r3, pc
-  3a:	5820      	ldr	r0, [r4, r0]
-  3c:	447a      	add	r2, pc
-  3e:	9100      	str	r1, [sp, #0]
-  40:	6800      	ldr	r0, [r0, #0]
-  42:	f7ff fffe 	bl	0 <backtrace_full>
-  46:	b950      	cbnz	r0, 5e <f3.constprop.0.isra.0+0x36>
-  48:	4b11      	ldr	r3, [pc, #68]	; (90 <f3.constprop.0.isra.0+0x68>)
-  4a:	447b      	add	r3, pc
-  4c:	681b      	ldr	r3, [r3, #0]
-  4e:	b123      	cbz	r3, 5a <f3.constprop.0.isra.0+0x32>
-  50:	4b10      	ldr	r3, [pc, #64]	; (94 <f3.constprop.0.isra.0+0x6c>)
-  52:	58e2      	ldr	r2, [r4, r3]
-  54:	6813      	ldr	r3, [r2, #0]
-  56:	3301      	adds	r3, #1
-  58:	6013      	str	r3, [r2, #0]
-  5a:	b002      	add	sp, #8
-  5c:	bd10      	pop	{r4, pc}
-  5e:	f8df c038 	ldr.w	ip, [pc, #56]	; 98 <f3.constprop.0.isra.0+0x70>
-  62:	4603      	mov	r3, r0
-  64:	4a0d      	ldr	r2, [pc, #52]	; (9c <f3.constprop.0.isra.0+0x74>)
-  66:	2101      	movs	r1, #1
-  68:	447a      	add	r2, pc
-  6a:	f854 000c 	ldr.w	r0, [r4, ip]
-  6e:	6800      	ldr	r0, [r0, #0]
-  70:	f7ff fffe 	bl	0 <__fprintf_chk>
-  74:	4b07      	ldr	r3, [pc, #28]	; (94 <f3.constprop.0.isra.0+0x6c>)
-  76:	58e2      	ldr	r2, [r4, r3]
-  78:	6813      	ldr	r3, [r2, #0]
-  7a:	3301      	adds	r3, #1
-  7c:	6013      	str	r3, [r2, #0]
-  7e:	e7e3      	b.n	48 <f3.constprop.0.isra.0+0x20>
-  80:	0000004a 	.word	0x0000004a
-  84:	00000000 	.word	0x00000000
-  88:	0000004c 	.word	0x0000004c
-  8c:	0000004c 	.word	0x0000004c
-  90:	00000042 	.word	0x00000042
-	...
-  9c:	00000030 	.word	0x00000030
+Function test1.isra.0 @ 0x004000a5
+0x004000a5:	b	#0x4000a1
 
-000000a0 <f2.constprop.0.isra.0>:
-  a0:	e7c2      	b.n	28 <f3.constprop.0.isra.0>
-  a2:	bf00      	nop
+Function sub_4000a7 @ 0x004000a7
+0x004000a7:	nop	
 
-000000a4 <test1.isra.0>:
-  a4:	e7fc      	b.n	a0 <f2.constprop.0.isra.0>
-  a6:	bf00      	nop
+Function main @ 0x004000d9
+0x004000d9:	push	{r4, r5, r6, lr}
+0x004000db:	cmp	r0, #2
+0x004000dd:	ldr	r6, [pc, #0x84]
+0x004000df:	sub	sp, #8
+0x004000e1:	mov	r5, r1
+0x004000e3:	add	r6, pc
+0x004000e5:	beq	#0x400117
+0x004000e7:	ldr	r2, [pc, #0x80]
+0x004000e9:	movs	r3, #0
+0x004000eb:	mov	r4, r0
+0x004000ed:	ldr	r0, [r1]
+0x004000ef:	add	r2, pc
+0x004000f1:	movs	r1, #1
+0x004000f3:	bl	#0x500031
+0x004000f7:	ldr	r3, [pc, #0x74]
+0x004000f9:	ldr	r3, [r6, r3]
+0x004000fb:	str	r0, [r3]
+0x004000fd:	cbz	r0, #0x400107
+0x004000ff:	bl	#0x4000a5
+0x004000ff:	bl	#0x4000a5
+0x00400103:	cmp	r4, #1
+0x00400105:	beq	#0x400145
+0x00400107:	ldr	r3, [pc, #0x68]
+0x00400109:	ldr	r3, [r6, r3]
+0x0040010b:	ldr	r0, [r3]
+0x0040010d:	subs	r0, #0
+0x0040010f:	it	ne
+0x00400111:	movne	r0, #1
+0x00400113:	bl	#0x50003d
+0x00400117:	movs	r2, #0xa
+0x00400119:	movs	r1, #0
+0x0040011b:	ldr	r0, [r5, #4]
+0x0040011d:	bl	#0x500049
+0x00400121:	asrs	r1, r0, #0x1f
+0x00400123:	bl	#0x500025
+0x00400127:	ldr	r2, [pc, #0x4c]
+0x00400129:	movs	r3, #0
+0x0040012b:	ldr	r0, [r5]
+0x0040012d:	add	r2, pc
+0x0040012f:	movs	r1, #1
+0x00400131:	bl	#0x500031
+0x00400135:	ldr	r3, [pc, #0x34]
+0x00400137:	ldr	r3, [r6, r3]
+0x00400139:	str	r0, [r3]
+0x0040013b:	cmp	r0, #0
+0x0040013d:	beq	#0x400107
+0x0040013f:	bl	#0x4000a5
+0x00400143:	b	#0x400107
+0x00400145:	ldr	r3, [pc, #0x30]
+0x00400147:	ldr	r3, [r6, r3]
+0x00400149:	ldr	r5, [r3]
+0x0040014b:	bl	#0x500055
+0x0040014f:	mov	r2, r0
+0x00400151:	mov	r3, r1
+0x00400153:	strd	r2, r3, [sp]
+0x00400157:	mov	r1, r4
+0x00400159:	ldr	r2, [pc, #0x20]
+0x0040015b:	mov	r0, r5
+0x0040015d:	add	r2, pc
+0x0040015f:	bl	#0x500019
+0x00400163:	b	#0x400107
 
-Disassembly of section .text.startup:
+Function at_fail_alloc_p @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	2802      	cmp	r0, #2
-   4:	4e21      	ldr	r6, [pc, #132]	; (8c <main+0x8c>)
-   6:	b082      	sub	sp, #8
-   8:	460d      	mov	r5, r1
-   a:	447e      	add	r6, pc
-   c:	d017      	beq.n	3e <main+0x3e>
-   e:	4a20      	ldr	r2, [pc, #128]	; (90 <main+0x90>)
-  10:	2300      	movs	r3, #0
-  12:	4604      	mov	r4, r0
-  14:	6808      	ldr	r0, [r1, #0]
-  16:	447a      	add	r2, pc
-  18:	2101      	movs	r1, #1
-  1a:	f7ff fffe 	bl	0 <backtrace_create_state>
-  1e:	4b1d      	ldr	r3, [pc, #116]	; (94 <main+0x94>)
-  20:	58f3      	ldr	r3, [r6, r3]
-  22:	6018      	str	r0, [r3, #0]
-  24:	b118      	cbz	r0, 2e <main+0x2e>
-  26:	f7ff fffe 	bl	a4 <main+0xa4>
-  2a:	2c01      	cmp	r4, #1
-  2c:	d01e      	beq.n	6c <main+0x6c>
-  2e:	4b1a      	ldr	r3, [pc, #104]	; (98 <main+0x98>)
-  30:	58f3      	ldr	r3, [r6, r3]
-  32:	6818      	ldr	r0, [r3, #0]
-  34:	3800      	subs	r0, #0
-  36:	bf18      	it	ne
-  38:	2001      	movne	r0, #1
-  3a:	f7ff fffe 	bl	0 <exit>
-  3e:	220a      	movs	r2, #10
-  40:	2100      	movs	r1, #0
-  42:	6868      	ldr	r0, [r5, #4]
-  44:	f7ff fffe 	bl	0 <strtol>
-  48:	17c1      	asrs	r1, r0, #31
-  4a:	f7ff fffe 	bl	0 <set_fail_at_alloc>
-  4e:	4a13      	ldr	r2, [pc, #76]	; (9c <main+0x9c>)
-  50:	2300      	movs	r3, #0
-  52:	6828      	ldr	r0, [r5, #0]
-  54:	447a      	add	r2, pc
-  56:	2101      	movs	r1, #1
-  58:	f7ff fffe 	bl	0 <backtrace_create_state>
-  5c:	4b0d      	ldr	r3, [pc, #52]	; (94 <main+0x94>)
-  5e:	58f3      	ldr	r3, [r6, r3]
-  60:	6018      	str	r0, [r3, #0]
-  62:	2800      	cmp	r0, #0
-  64:	d0e3      	beq.n	2e <main+0x2e>
-  66:	f7ff fffe 	bl	a4 <main+0xa4>
-  6a:	e7e0      	b.n	2e <main+0x2e>
-  6c:	4b0c      	ldr	r3, [pc, #48]	; (a0 <main+0xa0>)
-  6e:	58f3      	ldr	r3, [r6, r3]
-  70:	681d      	ldr	r5, [r3, #0]
-  72:	f7ff fffe 	bl	0 <get_nr_allocs>
-  76:	4602      	mov	r2, r0
-  78:	460b      	mov	r3, r1
-  7a:	e9cd 2300 	strd	r2, r3, [sp]
-  7e:	4621      	mov	r1, r4
-  80:	4a08      	ldr	r2, [pc, #32]	; (a4 <main+0xa4>)
-  82:	4628      	mov	r0, r5
-  84:	447a      	add	r2, pc
-  86:	f7ff fffe 	bl	0 <__fprintf_chk>
-  8a:	e7d0      	b.n	2e <main+0x2e>
-  8c:	0000007e 	.word	0x0000007e
-  90:	00000076 	.word	0x00000076
-	...
-  9c:	00000044 	.word	0x00000044
-  a0:	00000000 	.word	0x00000000
-  a4:	0000001c 	.word	0x0000001c
+Function backtrace_full @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __fprintf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function set_fail_at_alloc @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function backtrace_create_state @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function exit @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function strtol @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function get_nr_allocs @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0

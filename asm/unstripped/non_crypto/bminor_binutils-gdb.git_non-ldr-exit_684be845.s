@@ -1,48 +1,71 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_non-ldr-exit_684be845.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0]
 
+Function main @ 0x00400059
+0x00400059:	push	{lr}
+0x0040005b:	movs	r3, #0
+0x0040005d:	ldr.w	lr, [pc, #0x44]
+0x00400061:	ldr.w	ip, [pc, #0x44]
+0x00400065:	sub	sp, #0xc
+0x00400067:	add	lr, pc
+0x00400069:	ldr	r2, [pc, #0x40]
+0x0040006b:	mov	r1, r3
+0x0040006d:	mov	r0, sp
+0x0040006f:	add	r2, pc
+0x00400071:	ldr.w	ip, [lr, ip]
+0x00400075:	ldr.w	ip, [ip]
+0x00400079:	str.w	ip, [sp, #4]
+0x0040007d:	mov.w	ip, #0
+0x00400081:	bl	#0x50000d
+0x00400085:	cbz	r0, #0x400099
+0x00400087:	ldr	r3, [pc, #0x28]
+0x00400089:	movs	r2, #0x25
+0x0040008b:	ldr	r1, [pc, #0x28]
+0x0040008d:	ldr	r0, [pc, #0x28]
+0x0040008f:	add	r3, pc
+0x00400091:	add	r1, pc
+0x00400093:	add	r0, pc
+0x00400095:	bl	#0x500019
+0x00400087:	ldr	r3, [pc, #0x28]
+0x00400089:	movs	r2, #0x25
+0x0040008b:	ldr	r1, [pc, #0x28]
+0x0040008d:	ldr	r0, [pc, #0x28]
+0x0040008f:	add	r3, pc
+0x00400091:	add	r1, pc
+0x00400093:	add	r0, pc
+0x00400095:	bl	#0x500019
+0x00400099:	mov	r1, r0
+0x0040009b:	ldr	r0, [sp]
+0x0040009d:	bl	#0x500025
+0x004000a1:	bl	#0x500031
 
-Disassembly of section .text:
+Function pthread_create @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <start>:
-   0:	2000      	movs	r0, #0
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <exit>
+Function __assert_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function pthread_join @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
 
-00000000 <main>:
-   0:	b500      	push	{lr}
-   2:	2300      	movs	r3, #0
-   4:	f8df e044 	ldr.w	lr, [pc, #68]	; 4c <main+0x4c>
-   8:	f8df c044 	ldr.w	ip, [pc, #68]	; 50 <main+0x50>
-   c:	b083      	sub	sp, #12
-   e:	44fe      	add	lr, pc
-  10:	4a10      	ldr	r2, [pc, #64]	; (54 <main+0x54>)
-  12:	4619      	mov	r1, r3
-  14:	4668      	mov	r0, sp
-  16:	447a      	add	r2, pc
-  18:	f85e c00c 	ldr.w	ip, [lr, ip]
-  1c:	f8dc c000 	ldr.w	ip, [ip]
-  20:	f8cd c004 	str.w	ip, [sp, #4]
-  24:	f04f 0c00 	mov.w	ip, #0
-  28:	f7ff fffe 	bl	0 <pthread_create>
-  2c:	b140      	cbz	r0, 40 <main+0x40>
-  2e:	4b0a      	ldr	r3, [pc, #40]	; (58 <main+0x58>)
-  30:	2225      	movs	r2, #37	; 0x25
-  32:	490a      	ldr	r1, [pc, #40]	; (5c <main+0x5c>)
-  34:	480a      	ldr	r0, [pc, #40]	; (60 <main+0x60>)
-  36:	447b      	add	r3, pc
-  38:	4479      	add	r1, pc
-  3a:	4478      	add	r0, pc
-  3c:	f7ff fffe 	bl	0 <__assert_fail>
-  40:	4601      	mov	r1, r0
-  42:	9800      	ldr	r0, [sp, #0]
-  44:	f7ff fffe 	bl	0 <pthread_join>
-  48:	f7ff fffe 	bl	0 <abort>
-  4c:	0000003a 	.word	0x0000003a
-  50:	00000000 	.word	0x00000000
-  54:	0000003a 	.word	0x0000003a
-  58:	0000001e 	.word	0x0000001e
-  5c:	00000020 	.word	0x00000020
-  60:	00000022 	.word	0x00000022
+Function abort @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

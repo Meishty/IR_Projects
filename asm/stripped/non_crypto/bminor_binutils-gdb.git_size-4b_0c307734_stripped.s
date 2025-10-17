@@ -1,23 +1,46 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_size-4b_0c307734_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r2, r0
+0x0040000b:	movs	r0, r0
+0x0040000d:	ldr	r3, [pc, #8]
+0x0040000f:	ldr	r2, [pc, #0xc]
+0x00400011:	add	r3, pc
+0x00400013:	ldr	r0, [r3, r2]
+0x00400015:	bx	lr
 
-00000000 <.text>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706818 			; <UNDEFINED> instruction: 0x47706818
-   8:	00000002 	andeq	r0, r0, r2
-   c:	4a034b02 	bmi	0xd2c1c
-  10:	5898447b 	ldmpl	r8, {r0, r1, r3, r4, r5, r6, sl, lr}
-  14:	bf004770 	svclt	0x00004770
-  18:	00000004 	andeq	r0, r0, r4
-  1c:	00000000 	andeq	r0, r0, r0
-  20:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-  24:	47706858 			; <UNDEFINED> instruction: 0x47706858
-  28:	00000002 	andeq	r0, r0, r2
-  2c:	4a034b02 	bmi	0xd2c3c
-  30:	5898447b 	ldmpl	r8, {r0, r1, r3, r4, r5, r6, sl, lr}
-  34:	bf004770 	svclt	0x00004770
-  38:	00000004 	andeq	r0, r0, r4
-  3c:	00000000 	andeq	r0, r0, r0
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r4, r0
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+0x00400021:	ldr	r3, [pc, #4]
+0x00400023:	add	r3, pc
+0x00400025:	ldr	r0, [r3, #4]
+0x00400027:	bx	lr
+
+Function sub_400021 @ 0x00400021
+0x00400021:	ldr	r3, [pc, #4]
+0x00400023:	add	r3, pc
+0x00400025:	ldr	r0, [r3, #4]
+0x00400027:	bx	lr
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	ldr	r3, [pc, #8]
+0x0040002f:	ldr	r2, [pc, #0xc]
+0x00400031:	add	r3, pc
+0x00400033:	ldr	r0, [r3, r2]
+0x00400035:	bx	lr
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r4, r0
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r0, r0
+0x0040003f:	movs	r0, r0

@@ -1,28 +1,50 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_vasprintf_e28ac128.o:     file format elf32-littlearm
+Function vasprintf @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r3, r1
+0x00400005:	mov	r6, r0
+0x00400007:	sub	sp, #0x10
+0x00400009:	mov	r1, r2
+0x0040000b:	mov	r0, r3
+0x0040000d:	mov	r5, r2
+0x0040000f:	str	r3, [sp, #0xc]
+0x00400011:	bl	#0x500001
+0x00400015:	bl	#0x50000d
+0x00400019:	str	r0, [r6]
+0x0040001b:	cbz	r0, #0x40002f
+0x0040001d:	ldr	r3, [sp, #0xc]
+0x0040001f:	mov.w	r2, #-1
+0x00400023:	movs	r1, #1
+0x00400025:	str	r5, [sp]
+0x00400027:	bl	#0x500019
+0x0040001d:	ldr	r3, [sp, #0xc]
+0x0040001f:	mov.w	r2, #-1
+0x00400023:	movs	r1, #1
+0x00400025:	str	r5, [sp]
+0x00400027:	bl	#0x500019
+0x0040002b:	add	sp, #0x10
+0x0040002d:	pop	{r4, r5, r6, pc}
+0x0040002f:	mov.w	r0, #-1
+0x00400033:	b	#0x40002b
 
+Function libiberty_vprintf_buffer_size @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
+Function malloc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <vasprintf>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	460b      	mov	r3, r1
-   4:	4606      	mov	r6, r0
-   6:	b084      	sub	sp, #16
-   8:	4611      	mov	r1, r2
-   a:	4618      	mov	r0, r3
-   c:	4615      	mov	r5, r2
-   e:	9303      	str	r3, [sp, #12]
-  10:	f7ff fffe 	bl	0 <libiberty_vprintf_buffer_size>
-  14:	f7ff fffe 	bl	0 <malloc>
-  18:	6030      	str	r0, [r6, #0]
-  1a:	b140      	cbz	r0, 2e <vasprintf+0x2e>
-  1c:	9b03      	ldr	r3, [sp, #12]
-  1e:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
-  22:	2101      	movs	r1, #1
-  24:	9500      	str	r5, [sp, #0]
-  26:	f7ff fffe 	bl	0 <__vsprintf_chk>
-  2a:	b004      	add	sp, #16
-  2c:	bd70      	pop	{r4, r5, r6, pc}
-  2e:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  32:	e7fa      	b.n	2a <vasprintf+0x2a>
+Function __vsprintf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

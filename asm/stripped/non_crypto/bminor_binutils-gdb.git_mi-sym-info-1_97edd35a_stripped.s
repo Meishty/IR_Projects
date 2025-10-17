@@ -1,21 +1,23 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mi-sym-info-1_97edd35a_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwlo	r6, #0x1803
+0x00400004:	ldrbmi	r6, [r0, -r3]!
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r4, lr}
+0x0040000f:	movs	r0, #4
+0x00400011:	bl	#0x400011
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	bl	#0x400011
+0x00400015:	vmov.f32	s0, #1.000000e+00
+0x00400019:	mov	r4, r0
+0x0040001b:	bl	#0x40001b
 
-00000000 <.text>:
-   0:	33016803 	movwcc	r6, #6147	; 0x1803
-   4:	47706003 	ldrbmi	r6, [r0, -r3]!
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	2004b510 	andcs	fp, r4, r0, lsl r5
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	0a00eeb7 	beq	0x3baec
-   c:	f7ff4604 			; <UNDEFINED> instruction: 0xf7ff4604
-  10:	eefdfffe 	mrc	15, 7, APSR_nzcv, cr13, cr14, {7}
-  14:	34047ac0 	strcc	r7, [r4], #-2752	; 0xfffff540
-  18:	0a90ee17 	beq	0xfe43b87c
-  1c:	bd104420 	cfldrslt	mvf4, [r0, #-128]	; 0xffffff80
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	vcvt.s32.f32	s15, s0
+0x00400023:	adds	r4, #4
+0x00400025:	vmov	r0, s15
+0x00400029:	add	r0, r4
+0x0040002b:	pop	{r4, pc}

@@ -1,20 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_weak_undef_lib_4_5d400412.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x56d428
+0x00400004:	ldrbtmi	r4, [fp], #-0xa05
+0x00400008:	ldmdblt	sl, {r1, r3, r4, r7, fp, ip, lr}
+0x0040000c:	ldmpl	fp, {r2, sb, fp, lr}
+0x00400010:	vstrlt.16	s22, [r8, #-6]
+0x0040000c:	ldmpl	fp, {r2, sb, fp, lr}
+0x00400010:	vstrlt.16	s22, [r8, #-6]
+0x00400010:	vstrlt.16	s22, [r8, #-6]
 
-
-Disassembly of section .text:
-
-00000000 <foo>:
-   0:	b508      	push	{r3, lr}
-   2:	4b05      	ldr	r3, [pc, #20]	; (18 <foo+0x18>)
-   4:	4a05      	ldr	r2, [pc, #20]	; (1c <foo+0x1c>)
-   6:	447b      	add	r3, pc
-   8:	589a      	ldr	r2, [r3, r2]
-   a:	b91a      	cbnz	r2, 14 <foo+0x14>
-   c:	4a04      	ldr	r2, [pc, #16]	; (20 <foo+0x20>)
-   e:	589b      	ldr	r3, [r3, r2]
-  10:	b903      	cbnz	r3, 14 <foo+0x14>
-  12:	bd08      	pop	{r3, pc}
-  14:	f7ff fffe 	bl	0 <abort>
-  18:	0000000e 	.word	0x0000000e
-	...
+Function sub_400017 @ 0x00400017
+0x00400017:	vrev64.16	d16, d14
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+0x00400021:	movs	r0, r0
+0x00400023:	movs	r0, r0

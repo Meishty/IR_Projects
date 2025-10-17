@@ -1,30 +1,52 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_sigchld_b2fc30e9_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x912854
+0x00400004:	ldrbtmi	fp, [sl], #-0x510
+0x00400008:	ldmpl	r3, {r1, r5, r7, ip, sp, pc} ^
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	add	r4, sp, #4
+0x0040000f:	mov	r0, r4
+0x00400011:	ldr	r3, [r3]
+0x00400013:	str	r3, [sp, #0x84]
+0x00400015:	mov.w	r3, #0
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text.startup:
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	movs	r1, #0
+0x0040001f:	mov	r2, r4
+0x00400021:	mov	r0, r1
+0x00400023:	bl	#0x400023
 
-00000000 <.text.startup>:
-   0:	4b144a13 	blmi	0x512854
-   4:	447ab510 	ldrbtmi	fp, [sl], #-1296	; 0xfffffaf0
-   8:	58d3b0a2 	ldmpl	r3, {r1, r5, r7, ip, sp, pc}^
-   c:	4620ac01 	strtmi	sl, [r0], -r1, lsl #24
-  10:	9321681b 			; <UNDEFINED> instruction: 0x9321681b
-  14:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	46222100 	strtmi	r2, [r2], -r0, lsl #2
-  20:	f7ff4608 			; <UNDEFINED> instruction: 0xf7ff4608
-  24:	2111fffe 			; <UNDEFINED> instruction: 0x2111fffe
-  28:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  2c:	4a0afffe 	bmi	0x2c002c
-  30:	38004b08 	stmdacc	r0, {r3, r8, r9, fp, lr}
-  34:	bf18447a 	svclt	0x0018447a
-  38:	58d32001 	ldmpl	r3, {r0, sp}^
-  3c:	9b21681a 	blls	0x85a0ac
-  40:	f04f405a 			; <UNDEFINED> instruction: 0xf04f405a
-  44:	d1010300 	mrsle	r0, SP_irq
-  48:	bd10b022 	ldclt	0, cr11, [r0, #-136]	; 0xffffff78
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	00000046 	andeq	r0, r0, r6, asr #32
-  54:	00000000 	andeq	r0, r0, r0
-  58:	00000020 	andeq	r0, r0, r0, lsr #32
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	movs	r1, #0x11
+0x00400029:	mov	r0, r4
+0x0040002b:	bl	#0x40002b
+
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
+0x0040002f:	ldr	r2, [pc, #0x28]
+0x00400031:	ldr	r3, [pc, #0x20]
+0x00400033:	subs	r0, #0
+0x00400035:	add	r2, pc
+0x00400037:	it	ne
+0x00400039:	movne	r0, #1
+0x0040003b:	ldr	r3, [r2, r3]
+0x0040003d:	ldr	r2, [r3]
+0x0040003f:	ldr	r3, [sp, #0x84]
+0x00400041:	eors	r2, r3
+0x00400043:	mov.w	r3, #0
+0x00400047:	bne	#0x40004d
+0x00400049:	add	sp, #0x88
+0x0040004b:	pop	{r4, pc}
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	bl	#0x40004d
+0x00400051:	lsls	r6, r0, #1
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r0, r4
+0x0040005b:	movs	r0, r0

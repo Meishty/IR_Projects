@@ -1,11 +1,14 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_memset_f1c4e28c_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	cbz	r2, #0x40000d
+0x00400007:	uxtb	r1, r1
+0x00400009:	bl	#0x400009
+0x00400007:	uxtb	r1, r1
+0x00400009:	bl	#0x400009
+0x0040000d:	mov	r0, r4
+0x0040000f:	pop	{r4, pc}
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	4604b510 			; <UNDEFINED> instruction: 0x4604b510
-   4:	b2c9b112 	sbclt	fp, r9, #-2147483644	; 0x80000004
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	bd104620 	ldclt	6, cr4, [r0, #-128]	; 0xffffff80
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x400009

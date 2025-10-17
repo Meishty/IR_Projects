@@ -1,16 +1,32 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_crypto_auth_955cbe3f_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0x20
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r0, [pc, #4]
+0x0040000b:	add	r0, pc
+0x0040000d:	bx	lr
 
-00000000 <.text>:
-   0:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   4:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   8:	44784801 	ldrbtmi	r4, [r8], #-2049	; 0xfffff7ff
-   c:	bf004770 	svclt	0x00004770
-  10:	00000002 	andeq	r0, r0, r2
-  14:	bffef7ff 	svclt	0x00fef7ff
-  18:	bffef7ff 	svclt	0x00fef7ff
-  1c:	f7ff2120 			; <UNDEFINED> instruction: 0xf7ff2120
-  20:	bf00bffe 	svclt	0x0000bffe
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r2, r0
+0x00400013:	movs	r0, r0
+0x00400015:	b.w	#0x400015
+
+Function sub_400015 @ 0x00400015
+0x00400015:	b.w	#0x400015
+
+Function sub_400019 @ 0x00400019
+0x00400019:	b.w	#0x400019
+
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r1, #0x20
+0x0040001f:	b.w	#0x40001f
+0x0040001f:	b.w	#0x40001f
+
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	

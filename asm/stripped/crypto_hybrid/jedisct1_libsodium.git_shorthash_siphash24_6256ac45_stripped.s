@@ -1,9 +1,6 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_shorthash_siphash24_6256ac45_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r8]!
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	47702008 	ldrbmi	r2, [r0, -r8]!
-   4:	47702010 			; <UNDEFINED> instruction: 0x47702010
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr

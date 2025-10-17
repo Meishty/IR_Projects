@@ -1,47 +1,41 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_process-dies-while-detaching_95d50ea7_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x803]
 
+Function sub_400020 @ 0x00400020
+0x00400020:	ldrblt	r4, [r0, #-0x4fc]!
+0x00400024:	mrcmi	p8, #0, r4, c3, c2, #0
+0x00400028:	stcvs	p5, c15, [r1, #0x2b4]
+0x0040002c:	andlo	pc, r3, ip, asr r8
 
-Disassembly of section .text:
+Function sub_400024 @ 0x00400024
+0x00400024:	mrcmi	p8, #0, r4, c3, c2, #0
+0x00400028:	stcvs	p5, c15, [r1, #0x2b4]
+0x0040002c:	andlo	pc, r3, ip, asr r8
+0x00400030:	ldrbtmi	r4, [lr], #-0x478
 
-00000000 <.text>:
-   0:	b5084803 	strlt	r4, [r8, #-2051]	; 0xfffff7fd
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	2000fffe 	strdcs	pc, [r0], -lr
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	00000008 	andeq	r0, r0, r8
-  14:	c050f8df 	ldrsbgt	pc, [r0], #-143	; 0xffffff71	; <UNPREDICTABLE>
-  18:	4b142100 	blmi	0x508420
-  1c:	1201f240 	andne	pc, r1, #64, 4
-  20:	b57044fc 	ldrblt	r4, [r0, #-1276]!	; 0xfffffb04
-  24:	4e134812 	mrcmi	8, 0, r4, cr3, cr2, {0}
-  28:	6d81f5ad 	cfstr32vs	mvfx15, [r1, #692]	; 0x2b4
-  2c:	3003f85c 	andcc	pc, r3, ip, asr r8	; <UNPREDICTABLE>
-  30:	447e4478 	ldrbtmi	r4, [lr], #-1144	; 0xfffffb88
-  34:	f20dac01 			; <UNDEFINED> instruction: 0xf20dac01
-  38:	681b4504 	ldmdavs	fp, {r2, r8, sl, lr}
-  3c:	3404f8cd 	strcc	pc, [r4], #-2253	; 0xfffff733
-  40:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	46202300 	strtmi	r2, [r0], -r0, lsl #6
-  4c:	46194632 			; <UNDEFINED> instruction: 0x46194632
-  50:	f7ff3404 			; <UNDEFINED> instruction: 0xf7ff3404
-  54:	42acfffe 	adcmi	pc, ip, #1016	; 0x3f8
-  58:	4807d1f6 	stmdami	r7, {r1, r2, r4, r5, r6, r7, r8, ip, lr, pc}
-  5c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  60:	2000fffe 	strdcs	pc, [r0], -lr
-  64:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  68:	00000044 	andeq	r0, r0, r4, asr #32
-  6c:	00000000 	andeq	r0, r0, r0
-  70:	0000003c 	andeq	r0, r0, ip, lsr r0
-  74:	0000003e 	andeq	r0, r0, lr, lsr r0
-  78:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_400032 @ 0x00400032
 
-Disassembly of section .text.startup:
+Function sub_40003a @ 0x0040003a
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4b02fffe 	blmi	0xc0004
-   8:	6158447b 	cmpvs	r8, fp, ror r4
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	00000004 	andeq	r0, r0, r4
+Function sub_400048 @ 0x00400048
+0x00400048:	strtmi	r2, [r0], -r0, lsl #6
+
+Function sub_400054 @ 0x00400054
+0x00400054:	adcmi	pc, ip, #0x3f8
+0x00400058:	stmdami	r7, {r1, r2, r4, r5, r6, r7, r8, ip, lr, pc}
+
+Function sub_400061 @ 0x00400061
+
+Function sub_400067 @ 0x00400067
+
+Function sub_40009d @ 0x0040009d
+0x0040009d:	vtbl.8	d20, {d14, d15, d16, d17}, d2
+0x004000a1:	add	r3, pc
+0x004000a3:	str	r0, [r3, #0x14]
+0x004000a5:	bl	#0x4000a5
+
+Function sub_4000a7 @ 0x004000a7
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

@@ -1,15 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_rtld-step-nodebugsym_ccbae6f8.o:     file format elf32-littlearm
+Function main @ 0x0040000d
+0x0040000d:	ldr	r1, [pc, #0xc]
+0x0040000f:	movs	r0, #1
+0x00400011:	push	{r3, lr}
+0x00400013:	add	r1, pc
+0x00400015:	bl	#0x500001
+0x00400019:	movs	r0, #0
+0x0040001b:	pop	{r3, pc}
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4903      	ldr	r1, [pc, #12]	; (10 <main+0x10>)
-   2:	2001      	movs	r0, #1
-   4:	b508      	push	{r3, lr}
-   6:	4479      	add	r1, pc
-   8:	f7ff fffe 	bl	0 <__printf_chk>
-   c:	2000      	movs	r0, #0
-   e:	bd08      	pop	{r3, pc}
-  10:	00000006 	.word	0x00000006
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,66 +1,82 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr22842a_17a7d279.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400008:	bmi	#0x5ae49c
+0x0040000c:	ldrbtmi	r3, [sl], #-0x301
+0x00400010:	ldclt	p0, c6, [r0, #-0x4c]
+0x00400014:	ldrbtmi	r4, [r8], #-0x804
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	vtbl.8	d22, {d2}, d19
+0x0040001f:	b	#0x40000b
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	lsls	r4, r0, #2
+0x00400023:	movs	r0, r0
+0x00400025:	lsls	r2, r7, #1
+0x00400027:	movs	r0, r0
+0x00400029:	lsls	r6, r6, #1
+0x0040002b:	movs	r0, r0
+0x0040002d:	ldr	r3, [pc, #0x44]
+0x0040002f:	push	{r4, lr}
+0x00400031:	add	r3, pc
+0x00400033:	cmp	r3, r0
+0x00400035:	bne	#0x40006f
 
-00000000 <test>:
-   0:	b510      	push	{r4, lr}
-   2:	4c07      	ldr	r4, [pc, #28]	; (20 <test+0x20>)
-   4:	447c      	add	r4, pc
-   6:	6823      	ldr	r3, [r4, #0]
-   8:	b923      	cbnz	r3, 14 <test+0x14>
-   a:	4a06      	ldr	r2, [pc, #24]	; (24 <test+0x24>)
-   c:	3301      	adds	r3, #1
-   e:	447a      	add	r2, pc
-  10:	6013      	str	r3, [r2, #0]
-  12:	bd10      	pop	{r4, pc}
-  14:	4804      	ldr	r0, [pc, #16]	; (28 <test+0x28>)
-  16:	4478      	add	r0, pc
-  18:	f7ff fffe 	bl	0 <puts>
-  1c:	6823      	ldr	r3, [r4, #0]
-  1e:	e7f4      	b.n	a <test+0xa>
-  20:	00000018 	.word	0x00000018
-  24:	00000012 	.word	0x00000012
-  28:	0000000e 	.word	0x0000000e
+Function foo @ 0x0040002d
+0x0040002d:	ldr	r3, [pc, #0x44]
+0x0040002f:	push	{r4, lr}
+0x00400031:	add	r3, pc
+0x00400033:	cmp	r3, r0
+0x00400035:	bne	#0x40006f
+0x00400037:	ldr	r4, [pc, #0x40]
+0x00400039:	add	r4, pc
+0x0040003b:	ldr	r3, [r4]
+0x0040003d:	cbnz	r3, #0x400053
+0x0040003f:	movs	r3, #1
+0x00400041:	str	r3, [r4]
+0x00400043:	ldr	r0, [pc, #0x38]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500001
+0x0040003f:	movs	r3, #1
+0x00400041:	str	r3, [r4]
+0x00400043:	ldr	r0, [pc, #0x38]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500001
+0x00400043:	ldr	r0, [pc, #0x38]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500001
+0x0040004b:	ldr	r3, [pc, #0x34]
+0x0040004d:	add	r3, pc
+0x0040004f:	ldr	r3, [r3]
+0x00400051:	b	#0x400065
+0x00400053:	ldr	r0, [pc, #0x30]
+0x00400055:	add	r0, pc
+0x00400057:	bl	#0x500001
+0x0040005b:	ldr	r3, [r4]
+0x0040005d:	adds	r3, #1
+0x0040005f:	str	r3, [r4]
+0x00400061:	cmp	r3, #0
+0x00400063:	bne	#0x400043
+0x00400065:	ldr	r2, [pc, #0x20]
+0x00400067:	adds	r3, #1
+0x00400069:	add	r2, pc
+0x0040006b:	str	r3, [r2]
+0x0040006d:	pop	{r4, pc}
+0x0040006f:	bl	#0x50000d
 
-0000002c <foo>:
-  2c:	4b11      	ldr	r3, [pc, #68]	; (74 <foo+0x48>)
-  2e:	b510      	push	{r4, lr}
-  30:	447b      	add	r3, pc
-  32:	4283      	cmp	r3, r0
-  34:	d11b      	bne.n	6e <foo+0x42>
-  36:	4c10      	ldr	r4, [pc, #64]	; (78 <foo+0x4c>)
-  38:	447c      	add	r4, pc
-  3a:	6823      	ldr	r3, [r4, #0]
-  3c:	b94b      	cbnz	r3, 52 <foo+0x26>
-  3e:	2301      	movs	r3, #1
-  40:	6023      	str	r3, [r4, #0]
-  42:	480e      	ldr	r0, [pc, #56]	; (7c <foo+0x50>)
-  44:	4478      	add	r0, pc
-  46:	f7ff fffe 	bl	0 <puts>
-  4a:	4b0d      	ldr	r3, [pc, #52]	; (80 <foo+0x54>)
-  4c:	447b      	add	r3, pc
-  4e:	681b      	ldr	r3, [r3, #0]
-  50:	e008      	b.n	64 <foo+0x38>
-  52:	480c      	ldr	r0, [pc, #48]	; (84 <foo+0x58>)
-  54:	4478      	add	r0, pc
-  56:	f7ff fffe 	bl	0 <puts>
-  5a:	6823      	ldr	r3, [r4, #0]
-  5c:	3301      	adds	r3, #1
-  5e:	6023      	str	r3, [r4, #0]
-  60:	2b00      	cmp	r3, #0
-  62:	d1ee      	bne.n	42 <foo+0x16>
-  64:	4a08      	ldr	r2, [pc, #32]	; (88 <foo+0x5c>)
-  66:	3301      	adds	r3, #1
-  68:	447a      	add	r2, pc
-  6a:	6013      	str	r3, [r2, #0]
-  6c:	bd10      	pop	{r4, pc}
-  6e:	f7ff fffe 	bl	0 <abort>
-  72:	bf00      	nop
-  74:	00000040 	.word	0x00000040
-  78:	0000003c 	.word	0x0000003c
-  7c:	00000034 	.word	0x00000034
-  80:	00000030 	.word	0x00000030
-  84:	0000002c 	.word	0x0000002c
-  88:	0000001c 	.word	0x0000001c
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function abort @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

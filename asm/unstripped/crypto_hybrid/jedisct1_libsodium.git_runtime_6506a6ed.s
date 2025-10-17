@@ -1,103 +1,188 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_runtime_6506a6ed.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r0, r7, lsl #22
+0x00400004:	blvc	#0x53b688
+0x00400008:	addsvs	r4, r8, fp, ror r4
+0x0040000c:	blvc	#0x43b620
+0x00400010:	svclt	#0x4770
+0x00400014:	andhi	pc, r0, pc, lsr #7
+0x00400018:	andeq	r0, r0, r1
+0x0040001c:	andeq	r0, r0, r0
+0x00400020:	andeq	r0, r0, ip, lsr #1
+0x00400024:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sodium_runtime_has_neon @ 0x00400025
+0x00400025:	ldr	r3, [pc, #4]
+0x00400027:	add	r3, pc
+0x00400029:	ldr	r0, [r3, #4]
+0x0040002b:	bx	lr
 
-Disassembly of section .text:
+Function sodium_runtime_has_armcrypto @ 0x00400031
+0x00400031:	ldr	r3, [pc, #4]
+0x00400033:	add	r3, pc
+0x00400035:	ldr	r0, [r3, #8]
+0x00400037:	bx	lr
 
-00000000 <_sodium_runtime_get_cpu_features>:
-   0:	4b07      	ldr	r3, [pc, #28]	; (20 <_sodium_runtime_get_cpu_features+0x20>)
-   2:	2000      	movs	r0, #0
-   4:	ed9f 7b04 	vldr	d7, [pc, #16]	; 18 <_sodium_runtime_get_cpu_features+0x18>
-   8:	447b      	add	r3, pc
-   a:	6098      	str	r0, [r3, #8]
-   c:	ed83 7b00 	vstr	d7, [r3]
-  10:	4770      	bx	lr
-  12:	bf00      	nop
-  14:	f3af 8000 	nop.w
-  18:	00000001 	.word	0x00000001
-  1c:	00000000 	.word	0x00000000
-  20:	00000014 	.word	0x00000014
+Function sodium_runtime_has_sse2 @ 0x0040003d
+0x0040003d:	ldr	r3, [pc, #4]
+0x0040003f:	add	r3, pc
+0x00400041:	ldr	r0, [r3, #0xc]
+0x00400043:	bx	lr
 
-00000024 <sodium_runtime_has_neon>:
-  24:	4b01      	ldr	r3, [pc, #4]	; (2c <sodium_runtime_has_neon+0x8>)
-  26:	447b      	add	r3, pc
-  28:	6858      	ldr	r0, [r3, #4]
-  2a:	4770      	bx	lr
-  2c:	00000002 	.word	0x00000002
+Function sodium_runtime_has_sse3 @ 0x00400049
+0x00400049:	ldr	r3, [pc, #4]
+0x0040004b:	add	r3, pc
+0x0040004d:	ldr	r0, [r3, #0x10]
+0x0040004f:	bx	lr
 
-00000030 <sodium_runtime_has_armcrypto>:
-  30:	4b01      	ldr	r3, [pc, #4]	; (38 <sodium_runtime_has_armcrypto+0x8>)
-  32:	447b      	add	r3, pc
-  34:	6898      	ldr	r0, [r3, #8]
-  36:	4770      	bx	lr
-  38:	00000002 	.word	0x00000002
+Function sodium_runtime_has_ssse3 @ 0x00400055
+0x00400055:	ldr	r3, [pc, #4]
+0x00400057:	add	r3, pc
+0x00400059:	ldr	r0, [r3, #0x14]
+0x0040005b:	bx	lr
 
-0000003c <sodium_runtime_has_sse2>:
-  3c:	4b01      	ldr	r3, [pc, #4]	; (44 <sodium_runtime_has_sse2+0x8>)
-  3e:	447b      	add	r3, pc
-  40:	68d8      	ldr	r0, [r3, #12]
-  42:	4770      	bx	lr
-  44:	00000002 	.word	0x00000002
+Function sodium_runtime_has_sse41 @ 0x00400061
+0x00400061:	ldr	r3, [pc, #4]
+0x00400063:	add	r3, pc
+0x00400065:	ldr	r0, [r3, #0x18]
+0x00400067:	bx	lr
 
-00000048 <sodium_runtime_has_sse3>:
-  48:	4b01      	ldr	r3, [pc, #4]	; (50 <sodium_runtime_has_sse3+0x8>)
-  4a:	447b      	add	r3, pc
-  4c:	6918      	ldr	r0, [r3, #16]
-  4e:	4770      	bx	lr
-  50:	00000002 	.word	0x00000002
+Function sodium_runtime_has_avx @ 0x0040006d
+0x0040006d:	ldr	r3, [pc, #4]
+0x0040006f:	add	r3, pc
+0x00400071:	ldr	r0, [r3, #0x1c]
+0x00400073:	bx	lr
 
-00000054 <sodium_runtime_has_ssse3>:
-  54:	4b01      	ldr	r3, [pc, #4]	; (5c <sodium_runtime_has_ssse3+0x8>)
-  56:	447b      	add	r3, pc
-  58:	6958      	ldr	r0, [r3, #20]
-  5a:	4770      	bx	lr
-  5c:	00000002 	.word	0x00000002
+Function sodium_runtime_has_avx2 @ 0x00400079
+0x00400079:	ldr	r3, [pc, #4]
+0x0040007b:	add	r3, pc
+0x0040007d:	ldr	r0, [r3, #0x20]
+0x0040007f:	bx	lr
 
-00000060 <sodium_runtime_has_sse41>:
-  60:	4b01      	ldr	r3, [pc, #4]	; (68 <sodium_runtime_has_sse41+0x8>)
-  62:	447b      	add	r3, pc
-  64:	6998      	ldr	r0, [r3, #24]
-  66:	4770      	bx	lr
-  68:	00000002 	.word	0x00000002
+Function sodium_runtime_has_avx512f @ 0x00400085
+0x00400085:	ldr	r3, [pc, #4]
+0x00400087:	add	r3, pc
+0x00400089:	ldr	r0, [r3, #0x24]
+0x0040008b:	bx	lr
 
-0000006c <sodium_runtime_has_avx>:
-  6c:	4b01      	ldr	r3, [pc, #4]	; (74 <sodium_runtime_has_avx+0x8>)
-  6e:	447b      	add	r3, pc
-  70:	69d8      	ldr	r0, [r3, #28]
-  72:	4770      	bx	lr
-  74:	00000002 	.word	0x00000002
+Function sodium_runtime_has_pclmul @ 0x00400091
+0x00400091:	ldr	r3, [pc, #4]
+0x00400093:	add	r3, pc
+0x00400095:	ldr	r0, [r3, #0x28]
+0x00400097:	bx	lr
 
-00000078 <sodium_runtime_has_avx2>:
-  78:	4b01      	ldr	r3, [pc, #4]	; (80 <sodium_runtime_has_avx2+0x8>)
-  7a:	447b      	add	r3, pc
-  7c:	6a18      	ldr	r0, [r3, #32]
-  7e:	4770      	bx	lr
-  80:	00000002 	.word	0x00000002
+Function sodium_runtime_has_aesni @ 0x0040009d
+0x0040009d:	ldr	r3, [pc, #4]
+0x0040009f:	add	r3, pc
+0x004000a1:	ldr	r0, [r3, #0x2c]
+0x004000a3:	bx	lr
 
-00000084 <sodium_runtime_has_avx512f>:
-  84:	4b01      	ldr	r3, [pc, #4]	; (8c <sodium_runtime_has_avx512f+0x8>)
-  86:	447b      	add	r3, pc
-  88:	6a58      	ldr	r0, [r3, #36]	; 0x24
-  8a:	4770      	bx	lr
-  8c:	00000002 	.word	0x00000002
+Function sodium_runtime_has_rdrand @ 0x004000a9
+0x004000a9:	ldr	r3, [pc, #4]
+0x004000ab:	add	r3, pc
+0x004000ad:	ldr	r0, [r3, #0x30]
+0x004000af:	bx	lr
 
-00000090 <sodium_runtime_has_pclmul>:
-  90:	4b01      	ldr	r3, [pc, #4]	; (98 <sodium_runtime_has_pclmul+0x8>)
-  92:	447b      	add	r3, pc
-  94:	6a98      	ldr	r0, [r3, #40]	; 0x28
-  96:	4770      	bx	lr
-  98:	00000002 	.word	0x00000002
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0
 
-0000009c <sodium_runtime_has_aesni>:
-  9c:	4b01      	ldr	r3, [pc, #4]	; (a4 <sodium_runtime_has_aesni+0x8>)
-  9e:	447b      	add	r3, pc
-  a0:	6ad8      	ldr	r0, [r3, #44]	; 0x2c
-  a2:	4770      	bx	lr
-  a4:	00000002 	.word	0x00000002
-
-000000a8 <sodium_runtime_has_rdrand>:
-  a8:	4b01      	ldr	r3, [pc, #4]	; (b0 <sodium_runtime_has_rdrand+0x8>)
-  aa:	447b      	add	r3, pc
-  ac:	6b18      	ldr	r0, [r3, #48]	; 0x30
-  ae:	4770      	bx	lr
-  b0:	00000002 	.word	0x00000002
+Function sys_380 @ 0x007002f8
+0x007002f8:	andeq	r0, r0, r0
+0x007002fc:	andeq	r0, r0, r0
+0x00700300:	andeq	r0, r0, r0
+0x00700304:	andeq	r0, r0, r0
+0x00700308:	andeq	r0, r0, r0
+0x0070030c:	andeq	r0, r0, r0
+0x00700310:	andeq	r0, r0, r0
+0x00700314:	andeq	r0, r0, r0
+0x00700318:	andeq	r0, r0, r0
+0x0070031c:	andeq	r0, r0, r0
+0x00700320:	andeq	r0, r0, r0
+0x00700324:	andeq	r0, r0, r0
+0x00700328:	andeq	r0, r0, r0
+0x0070032c:	andeq	r0, r0, r0
+0x00700330:	andeq	r0, r0, r0
+0x00700334:	andeq	r0, r0, r0
+0x00700338:	andeq	r0, r0, r0
+0x0070033c:	andeq	r0, r0, r0
+0x00700340:	andeq	r0, r0, r0
+0x00700344:	andeq	r0, r0, r0
+0x00700348:	andeq	r0, r0, r0
+0x0070034c:	andeq	r0, r0, r0
+0x00700350:	andeq	r0, r0, r0
+0x00700354:	andeq	r0, r0, r0
+0x00700358:	andeq	r0, r0, r0
+0x0070035c:	andeq	r0, r0, r0
+0x00700360:	andeq	r0, r0, r0
+0x00700364:	andeq	r0, r0, r0
+0x00700368:	andeq	r0, r0, r0
+0x0070036c:	andeq	r0, r0, r0
+0x00700370:	andeq	r0, r0, r0
+0x00700374:	andeq	r0, r0, r0
+0x00700378:	andeq	r0, r0, r0
+0x0070037c:	andeq	r0, r0, r0
+0x00700380:	andeq	r0, r0, r0
+0x00700384:	andeq	r0, r0, r0
+0x00700388:	andeq	r0, r0, r0
+0x0070038c:	andeq	r0, r0, r0
+0x00700390:	andeq	r0, r0, r0
+0x00700394:	andeq	r0, r0, r0
+0x00700398:	andeq	r0, r0, r0
+0x0070039c:	andeq	r0, r0, r0
+0x007003a0:	andeq	r0, r0, r0
+0x007003a4:	andeq	r0, r0, r0
+0x007003a8:	andeq	r0, r0, r0
+0x007003ac:	andeq	r0, r0, r0
+0x007003b0:	andeq	r0, r0, r0
+0x007003b4:	andeq	r0, r0, r0
+0x007003b8:	andeq	r0, r0, r0
+0x007003bc:	andeq	r0, r0, r0
+0x007003c0:	andeq	r0, r0, r0
+0x007003c4:	andeq	r0, r0, r0
+0x007003c8:	andeq	r0, r0, r0
+0x007003cc:	andeq	r0, r0, r0
+0x007003d0:	andeq	r0, r0, r0
+0x007003d4:	andeq	r0, r0, r0
+0x007003d8:	andeq	r0, r0, r0
+0x007003dc:	andeq	r0, r0, r0
+0x007003e0:	andeq	r0, r0, r0
+0x007003e4:	andeq	r0, r0, r0
+0x007003e8:	andeq	r0, r0, r0
+0x007003ec:	andeq	r0, r0, r0
+0x007003f0:	andeq	r0, r0, r0
+0x007003f4:	andeq	r0, r0, r0
+0x007003f8:	andeq	r0, r0, r0
+0x007003fc:	andeq	r0, r0, r0
+0x00700400:	andeq	r0, r0, r0
+0x00700404:	andeq	r0, r0, r0
+0x00700408:	andeq	r0, r0, r0
+0x0070040c:	andeq	r0, r0, r0
+0x00700410:	andeq	r0, r0, r0
+0x00700414:	andeq	r0, r0, r0
+0x00700418:	andeq	r0, r0, r0
+0x0070041c:	andeq	r0, r0, r0
+0x00700420:	andeq	r0, r0, r0
+0x00700424:	andeq	r0, r0, r0
+0x00700428:	andeq	r0, r0, r0
+0x0070042c:	andeq	r0, r0, r0
+0x00700430:	andeq	r0, r0, r0
+0x00700434:	andeq	r0, r0, r0
+0x00700438:	andeq	r0, r0, r0
+0x0070043c:	andeq	r0, r0, r0
+0x00700440:	andeq	r0, r0, r0
+0x00700444:	andeq	r0, r0, r0
+0x00700448:	andeq	r0, r0, r0
+0x0070044c:	andeq	r0, r0, r0
+0x00700450:	andeq	r0, r0, r0
+0x00700454:	andeq	r0, r0, r0
+0x00700458:	andeq	r0, r0, r0
+0x0070045c:	andeq	r0, r0, r0
+0x00700460:	andeq	r0, r0, r0
+0x00700464:	andeq	r0, r0, r0
+0x00700468:	andeq	r0, r0, r0
+0x0070046c:	andeq	r0, r0, r0
+0x00700470:	andeq	r0, r0, r0
+0x00700474:	andeq	r0, r0, r0
+0x00700478:	andeq	r0, r0, r0
+0x0070047c:	andeq	r0, r0, r0
+0x00700480:	andeq	r0, r0, r0

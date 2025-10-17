@@ -1,22 +1,38 @@
 
-/root/projects/compiled/non_crypto/unstripped/intel_lmbench.git_timing_o_358b3ea0.o:     file format elf32-littlearm
+Function main @ 0x00400015
+0x00400015:	ldr	r0, [pc, #0x1c]
+0x00400017:	push	{r3, lr}
+0x00400019:	add	r0, pc
+0x0040001b:	bl	#0x500001
+0x0040001f:	bl	#0x50000d
+0x00400023:	ldr	r1, [pc, #0x14]
+0x00400025:	mov	r2, r0
+0x00400027:	movs	r0, #1
+0x00400029:	add	r1, pc
+0x0040002b:	bl	#0x500019
+0x0040002f:	movs	r0, #0
+0x00400031:	pop	{r3, pc}
 
+Function sub_400033 @ 0x00400033
 
-Disassembly of section .text.startup:
+Function putenv @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4807      	ldr	r0, [pc, #28]	; (20 <main+0x20>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <putenv>
-   a:	f7ff fffe 	bl	0 <t_overhead>
-   e:	4905      	ldr	r1, [pc, #20]	; (24 <main+0x24>)
-  10:	4602      	mov	r2, r0
-  12:	2001      	movs	r0, #1
-  14:	4479      	add	r1, pc
-  16:	f7ff fffe 	bl	0 <__printf_chk>
-  1a:	2000      	movs	r0, #0
-  1c:	bd08      	pop	{r3, pc}
-  1e:	bf00      	nop
-  20:	00000018 	.word	0x00000018
-  24:	0000000c 	.word	0x0000000c
+Function t_overhead @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __printf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

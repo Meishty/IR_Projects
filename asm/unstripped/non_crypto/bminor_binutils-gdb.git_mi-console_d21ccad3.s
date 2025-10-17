@@ -1,29 +1,29 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mi-console_d21ccad3.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	vqshrun.s64	d31, q2, #8
+0x00400013:	subs	r7, #1
+0x00400015:	cmp	r3, #0
+0x00400017:	bne	#0x400007
+0x00400019:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r0, r3
+0x0040001f:	movs	r0, r0
 
-00000000 <hello>:
-   0:	b510      	push	{r4, lr}
-   2:	4c06      	ldr	r4, [pc, #24]	; (1c <hello+0x1c>)
-   4:	447c      	add	r4, pc
-   6:	2201      	movs	r2, #1
-   8:	4621      	mov	r1, r4
-   a:	4610      	mov	r0, r2
-   c:	f7ff fffe 	bl	0 <write>
-  10:	f814 3f01 	ldrb.w	r3, [r4, #1]!
-  14:	2b00      	cmp	r3, #0
-  16:	d1f6      	bne.n	6 <hello+0x6>
-  18:	bd10      	pop	{r4, pc}
-  1a:	bf00      	nop
-  1c:	00000014 	.word	0x00000014
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, r3
+0x0040001f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x0040002d
+0x0040002d:	push	{r3, lr}
+0x0040002f:	bl	#0x400001
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <main>
-   6:	2000      	movs	r0, #0
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function sub_400033 @ 0x00400033
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r3, pc}
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	

@@ -1,13 +1,7 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dw2-restrict_10a120bc_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	47707800 	ldrbmi	r7, [r0, -r0, lsl #16]!
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	47702068 	ldrbmi	r2, [r0, -r8, rrx]!
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0x68
+0x00400007:	bx	lr

@@ -1,39 +1,82 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_step-over-lands-on-breakpoint_1abf4ce2_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdami	ip, {r0, r1, r3, sl, fp, lr}
+0x00400004:	strlt	r4, [r8, #-0x47c]
+0x00400004:	strlt	r4, [r8, #-0x47c]
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	ldr	r3, [r4]
+0x00400011:	cbz	r3, #0x400029
+0x00400013:	ldr	r3, [r4]
+0x00400015:	adds	r3, #1
+0x00400017:	str	r3, [r4]
+0x00400019:	nop	
+0x0040001b:	nop	
+0x0040001d:	movs	r0, #1
+0x0040001f:	bl	#0x40001f
+0x00400013:	ldr	r3, [r4]
+0x00400015:	adds	r3, #1
+0x00400017:	str	r3, [r4]
+0x00400019:	nop	
+0x0040001b:	nop	
+0x0040001d:	movs	r0, #1
+0x0040001f:	bl	#0x40001f
+0x00400029:	movs	r0, #0
+0x0040002b:	bl	#0x40002b
 
-Disassembly of section .text:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	bl	#0x40001f
+0x00400023:	ldr	r3, [r4]
+0x00400025:	cmp	r3, #0
+0x00400027:	bne	#0x400013
 
-00000000 <.text>:
-   0:	480c4c0b 	stmdami	ip, {r0, r1, r3, sl, fp, lr}
-   4:	b508447c 	strlt	r4, [r8, #-1148]	; 0xfffffb84
-   8:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   c:	6823fffe 	stmdavs	r3!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  10:	6823b153 	stmdavs	r3!, {r0, r1, r4, r6, r8, ip, sp, pc}
-  14:	60233301 	eorvs	r3, r3, r1, lsl #6
-  18:	bf00bf00 	svclt	0x0000bf00
-  1c:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  20:	6823fffe 	stmdavs	r3!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  24:	d1f42b00 	mvnsle	r2, r0, lsl #22
-  28:	f7ff2000 			; <UNDEFINED> instruction: 0xf7ff2000
-  2c:	bf00fffe 	svclt	0x0000fffe
-  30:	00000028 	andeq	r0, r0, r8, lsr #32
-  34:	00000028 	andeq	r0, r0, r8, lsr #32
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
 
-Disassembly of section .text.startup:
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r0, r5
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r5
+0x00400037:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	f44fb510 	vst3.8	{d27,d29,d31}, [pc :64], r0
-   4:	4c0a7096 	stcmi	0, cr7, [sl], {150}	; 0x96
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	447c2202 	ldrbtmi	r2, [ip], #-514	; 0xfffffdfe
-  10:	46202100 	strtmi	r2, [r0], -r0, lsl #2
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	23004a06 	movwcs	r4, #2566	; 0xa06
-  1c:	0014f104 	andseq	pc, r4, r4, lsl #2
-  20:	4619447a 			; <UNDEFINED> instruction: 0x4619447a
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  2c:	e7fefffe 	udf	#61438	; 0xeffe
-  30:	0000001e 	andeq	r0, r0, lr, lsl r0
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400055 @ 0x00400055
+0x00400055:	push	{r4, lr}
+0x00400057:	mov.w	r0, #0x12c
+0x0040005b:	ldr	r4, [pc, #0x28]
+0x0040005d:	bl	#0x40005d
+
+Function sub_40005d @ 0x0040005d
+0x0040005d:	bl	#0x40005d
+
+Function sub_400061 @ 0x00400061
+0x00400061:	movs	r2, #2
+0x00400063:	add	r4, pc
+0x00400065:	movs	r1, #0
+0x00400067:	mov	r0, r4
+0x00400069:	bl	#0x400069
+
+Function sub_400069 @ 0x00400069
+0x00400069:	bl	#0x400069
+
+Function sub_40006d @ 0x0040006d
+0x0040006d:	ldr	r2, [pc, #0x18]
+0x0040006f:	movs	r3, #0
+0x00400071:	add.w	r0, r4, #0x14
+0x00400075:	add	r2, pc
+0x00400077:	mov	r1, r3
+0x00400079:	bl	#0x400079
+
+Function sub_400079 @ 0x00400079
+0x00400079:	bl	#0x400079
+
+Function sub_40007d @ 0x0040007d
+0x0040007d:	mov	r0, r4
+0x0040007f:	bl	#0x40007f
+
+Function sub_40007f @ 0x0040007f
+0x0040007f:	bl	#0x40007f
+
+Function sub_400083 @ 0x00400083
+0x00400083:	b	#0x400083

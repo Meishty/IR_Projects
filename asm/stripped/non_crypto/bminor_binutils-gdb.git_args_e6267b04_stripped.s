@@ -1,19 +1,30 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_args_e6267b04_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r4, r5, r6, lr}
+0x00400007:	mov	r5, r1
+0x00400009:	ldr	r1, [pc, #0x24]
+0x0040000b:	mov	r6, r0
+0x0040000d:	mov	r2, r0
+0x0040000f:	add	r1, pc
+0x00400011:	movs	r0, #1
+0x00400013:	bl	#0x400013
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+0x00400017:	cmp	r6, #0
+0x00400019:	ble	#0x40002d
+0x0040001b:	subs	r5, #4
+0x0040001d:	movs	r4, #0
+0x0040001f:	ldr	r0, [r5, #4]!
+0x00400023:	adds	r4, #1
+0x00400025:	bl	#0x400025
+0x0040001f:	ldr	r0, [r5, #4]!
+0x00400023:	adds	r4, #1
+0x00400025:	bl	#0x400025
+0x0040002d:	movs	r0, #0
+0x0040002f:	pop	{r4, r5, r6, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	460db570 			; <UNDEFINED> instruction: 0x460db570
-   4:	46064909 	strmi	r4, [r6], -r9, lsl #18
-   8:	44794602 	ldrbtmi	r4, [r9], #-1538	; 0xfffff9fe
-   c:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  10:	2e00fffe 	mcrcs	15, 0, pc, cr0, cr14, {7}	; <UNPREDICTABLE>
-  14:	3d04dd08 	stccc	13, cr13, [r4, #-32]	; 0xffffffe0
-  18:	f8552400 			; <UNDEFINED> instruction: 0xf8552400
-  1c:	34010f04 	strcc	r0, [r1], #-3844	; 0xfffff0fc
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	d1f842a6 	mvnsle	r4, r6, lsr #5
-  28:	bd702000 	ldcllt	0, cr2, [r0, #-0]
-  2c:	0000001e 	andeq	r0, r0, lr, lsl r0
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+0x00400029:	cmp	r6, r4
+0x0040002b:	bne	#0x40001f

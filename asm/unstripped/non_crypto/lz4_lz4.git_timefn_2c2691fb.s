@@ -1,165 +1,255 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_timefn_2c2691fb.o:     file format elf32-littlearm
+Function TIME_getTime @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	ldr.w	lr, [pc, #0x6c]
+0x00400009:	ldr.w	ip, [pc, #0x6c]
+0x0040000d:	sub	sp, #0x10
+0x0040000f:	add	lr, pc
+0x00400011:	mov	r1, sp
+0x00400013:	movs	r0, #1
+0x00400015:	movs	r2, #0
+0x00400017:	movs	r3, #0
+0x00400019:	ldr.w	ip, [lr, ip]
+0x0040001d:	ldr.w	ip, [ip]
+0x00400021:	str.w	ip, [sp, #0xc]
+0x00400025:	mov.w	ip, #0
+0x00400029:	strd	r2, r3, [sp]
+0x0040002d:	bl	#0x500001
+0x00400031:	cbnz	r0, #0x400063
+0x00400033:	ldrd	r0, r3, [sp]
+0x00400037:	mov.w	r1, #0xca00
+0x0040003b:	movt	r1, #0x3b9a
+0x0040003f:	asrs	r2, r3, #0x1f
+0x00400041:	smlal	r3, r2, r0, r1
+0x00400045:	strd	r3, r2, [r4]
+0x00400049:	ldr	r2, [pc, #0x30]
+0x0040004b:	ldr	r3, [pc, #0x2c]
+0x0040004d:	add	r2, pc
+0x0040004f:	ldr	r3, [r2, r3]
+0x00400051:	ldr	r2, [r3]
+0x00400053:	ldr	r3, [sp, #0xc]
+0x00400055:	eors	r2, r3
+0x00400057:	mov.w	r3, #0
+0x0040005b:	bne	#0x40006f
+0x00400033:	ldrd	r0, r3, [sp]
+0x00400037:	mov.w	r1, #0xca00
+0x0040003b:	movt	r1, #0x3b9a
+0x0040003f:	asrs	r2, r3, #0x1f
+0x00400041:	smlal	r3, r2, r0, r1
+0x00400045:	strd	r3, r2, [r4]
+0x00400049:	ldr	r2, [pc, #0x30]
+0x0040004b:	ldr	r3, [pc, #0x2c]
+0x0040004d:	add	r2, pc
+0x0040004f:	ldr	r3, [r2, r3]
+0x00400051:	ldr	r2, [r3]
+0x00400053:	ldr	r3, [sp, #0xc]
+0x00400055:	eors	r2, r3
+0x00400057:	mov.w	r3, #0
+0x0040005b:	bne	#0x40006f
+0x0040005d:	mov	r0, r4
+0x0040005f:	add	sp, #0x10
+0x00400061:	pop	{r4, pc}
+0x00400063:	ldr	r0, [pc, #0x1c]
+0x00400065:	add	r0, pc
+0x00400067:	bl	#0x50000d
+0x0040006b:	bl	#0x500019
+0x0040006f:	bl	#0x500025
 
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+0x00400075:	lsls	r2, r4, #1
+0x00400077:	movs	r0, r0
+0x00400079:	movs	r0, r0
+0x0040007b:	movs	r0, r0
+0x0040007d:	movs	r4, r5
+0x0040007f:	movs	r0, r0
+0x00400081:	lsls	r0, r0, #5
+0x00400083:	movs	r0, r0
+0x00400085:	subs	r0, r2, r0
+0x00400087:	sbc.w	r1, r3, r1
+0x0040008b:	bx	lr
 
-Disassembly of section .text:
+Function TIME_span_ns @ 0x00400085
+0x00400085:	subs	r0, r2, r0
+0x00400087:	sbc.w	r1, r3, r1
+0x0040008b:	bx	lr
 
-00000000 <TIME_getTime>:
-   0:	b510      	push	{r4, lr}
-   2:	4604      	mov	r4, r0
-   4:	f8df e06c 	ldr.w	lr, [pc, #108]	; 74 <TIME_getTime+0x74>
-   8:	f8df c06c 	ldr.w	ip, [pc, #108]	; 78 <TIME_getTime+0x78>
-   c:	b084      	sub	sp, #16
-   e:	44fe      	add	lr, pc
-  10:	4669      	mov	r1, sp
-  12:	2001      	movs	r0, #1
-  14:	2200      	movs	r2, #0
-  16:	2300      	movs	r3, #0
-  18:	f85e c00c 	ldr.w	ip, [lr, ip]
-  1c:	f8dc c000 	ldr.w	ip, [ip]
-  20:	f8cd c00c 	str.w	ip, [sp, #12]
-  24:	f04f 0c00 	mov.w	ip, #0
-  28:	e9cd 2300 	strd	r2, r3, [sp]
-  2c:	f7ff fffe 	bl	0 <clock_gettime>
-  30:	b9b8      	cbnz	r0, 62 <TIME_getTime+0x62>
-  32:	e9dd 0300 	ldrd	r0, r3, [sp]
-  36:	f44f 414a 	mov.w	r1, #51712	; 0xca00
-  3a:	f6c3 319a 	movt	r1, #15258	; 0x3b9a
-  3e:	17da      	asrs	r2, r3, #31
-  40:	fbc0 3201 	smlal	r3, r2, r0, r1
-  44:	e9c4 3200 	strd	r3, r2, [r4]
-  48:	4a0c      	ldr	r2, [pc, #48]	; (7c <TIME_getTime+0x7c>)
-  4a:	4b0b      	ldr	r3, [pc, #44]	; (78 <TIME_getTime+0x78>)
-  4c:	447a      	add	r2, pc
-  4e:	58d3      	ldr	r3, [r2, r3]
-  50:	681a      	ldr	r2, [r3, #0]
-  52:	9b03      	ldr	r3, [sp, #12]
-  54:	405a      	eors	r2, r3
-  56:	f04f 0300 	mov.w	r3, #0
-  5a:	d108      	bne.n	6e <TIME_getTime+0x6e>
-  5c:	4620      	mov	r0, r4
-  5e:	b004      	add	sp, #16
-  60:	bd10      	pop	{r4, pc}
-  62:	4807      	ldr	r0, [pc, #28]	; (80 <TIME_getTime+0x80>)
-  64:	4478      	add	r0, pc
-  66:	f7ff fffe 	bl	0 <perror>
-  6a:	f7ff fffe 	bl	0 <abort>
-  6e:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  72:	bf00      	nop
-  74:	00000062 	.word	0x00000062
-  78:	00000000 	.word	0x00000000
-  7c:	0000002c 	.word	0x0000002c
-  80:	00000018 	.word	0x00000018
+Function TIME_clockSpan_ns @ 0x0040008d
+0x0040008d:	push	{r4, r5, lr}
+0x0040008f:	movs	r2, #0
+0x00400091:	movs	r3, #0
+0x00400093:	sub	sp, #0x14
+0x00400095:	mov	r4, r0
+0x00400097:	mov	r5, r1
+0x00400099:	movs	r0, #1
+0x0040009b:	mov	r1, sp
+0x0040009d:	strd	r2, r3, [sp]
+0x004000a1:	ldr	r2, [pc, #0x54]
+0x004000a3:	ldr	r3, [pc, #0x58]
+0x004000a5:	add	r2, pc
+0x004000a7:	ldr	r3, [r2, r3]
+0x004000a9:	ldr	r3, [r3]
+0x004000ab:	str	r3, [sp, #0xc]
+0x004000ad:	mov.w	r3, #0
+0x004000b1:	bl	#0x500001
+0x004000b5:	cbnz	r0, #0x4000e9
+0x004000b7:	ldrd	r2, r3, [sp]
+0x004000bb:	subs	r0, r3, r4
+0x004000bd:	asr.w	r3, r3, #0x1f
+0x004000c1:	sbc.w	r1, r3, r5
+0x004000c5:	mov.w	r3, #0xca00
+0x004000c9:	movt	r3, #0x3b9a
+0x004000cd:	smlal	r0, r1, r2, r3
+0x004000d1:	ldr	r2, [pc, #0x2c]
+0x004000d3:	ldr	r3, [pc, #0x28]
+0x004000d5:	add	r2, pc
+0x004000d7:	ldr	r3, [r2, r3]
+0x004000d9:	ldr	r2, [r3]
+0x004000db:	ldr	r3, [sp, #0xc]
+0x004000dd:	eors	r2, r3
+0x004000df:	mov.w	r3, #0
+0x004000e3:	bne	#0x4000f5
+0x004000b7:	ldrd	r2, r3, [sp]
+0x004000bb:	subs	r0, r3, r4
+0x004000bd:	asr.w	r3, r3, #0x1f
+0x004000c1:	sbc.w	r1, r3, r5
+0x004000c5:	mov.w	r3, #0xca00
+0x004000c9:	movt	r3, #0x3b9a
+0x004000cd:	smlal	r0, r1, r2, r3
+0x004000d1:	ldr	r2, [pc, #0x2c]
+0x004000d3:	ldr	r3, [pc, #0x28]
+0x004000d5:	add	r2, pc
+0x004000d7:	ldr	r3, [r2, r3]
+0x004000d9:	ldr	r2, [r3]
+0x004000db:	ldr	r3, [sp, #0xc]
+0x004000dd:	eors	r2, r3
+0x004000df:	mov.w	r3, #0
+0x004000e3:	bne	#0x4000f5
+0x004000e5:	add	sp, #0x14
+0x004000e7:	pop	{r4, r5, pc}
+0x004000e9:	ldr	r0, [pc, #0x18]
+0x004000eb:	add	r0, pc
+0x004000ed:	bl	#0x50000d
+0x004000f1:	bl	#0x500019
+0x004000f5:	bl	#0x500025
 
-00000084 <TIME_span_ns>:
-  84:	1a10      	subs	r0, r2, r0
-  86:	eb63 0101 	sbc.w	r1, r3, r1
-  8a:	4770      	bx	lr
+Function TIME_waitForNextTick @ 0x00400109
+0x00400109:	ldr	r2, [pc, #0x88]
+0x0040010b:	movs	r0, #1
+0x0040010d:	ldr	r3, [pc, #0x88]
+0x0040010f:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x00400113:	add	r2, pc
+0x00400115:	mov.w	r8, #0
+0x00400119:	sub	sp, #0x1c
+0x0040011b:	mov.w	sb, #0
+0x0040011f:	ldr	r3, [r2, r3]
+0x00400121:	mov	r1, sp
+0x00400123:	ldr	r3, [r3]
+0x00400125:	str	r3, [sp, #0x14]
+0x00400127:	mov.w	r3, #0
+0x0040012b:	strd	r8, sb, [sp]
+0x0040012f:	bl	#0x500001
+0x00400133:	cbnz	r0, #0x400183
+0x00400135:	ldrd	r3, r5, [sp]
+0x00400139:	mov.w	r4, #0xca00
+0x0040013d:	movt	r4, #0x3b9a
+0x00400141:	add	r7, sp, #8
+0x00400143:	asrs	r6, r5, #0x1f
+0x00400145:	smlal	r5, r6, r3, r4
+0x00400149:	mov	r1, r7
+0x0040014b:	movs	r0, #1
+0x0040014d:	strd	r8, sb, [sp, #8]
+0x00400151:	bl	#0x500001
+0x00400135:	ldrd	r3, r5, [sp]
+0x00400139:	mov.w	r4, #0xca00
+0x0040013d:	movt	r4, #0x3b9a
+0x00400141:	add	r7, sp, #8
+0x00400143:	asrs	r6, r5, #0x1f
+0x00400145:	smlal	r5, r6, r3, r4
+0x00400149:	mov	r1, r7
+0x0040014b:	movs	r0, #1
+0x0040014d:	strd	r8, sb, [sp, #8]
+0x00400151:	bl	#0x500001
+0x00400149:	mov	r1, r7
+0x0040014b:	movs	r0, #1
+0x0040014d:	strd	r8, sb, [sp, #8]
+0x00400151:	bl	#0x500001
+0x00400155:	cbnz	r0, #0x400183
+0x00400157:	ldrd	r0, r3, [sp, #8]
+0x0040015b:	asrs	r2, r3, #0x1f
+0x0040015d:	smlal	r3, r2, r0, r4
+0x00400161:	cmp	r6, r2
+0x00400163:	it	eq
+0x00400165:	cmpeq	r5, r3
+0x00400167:	beq	#0x400149
+0x00400157:	ldrd	r0, r3, [sp, #8]
+0x0040015b:	asrs	r2, r3, #0x1f
+0x0040015d:	smlal	r3, r2, r0, r4
+0x00400161:	cmp	r6, r2
+0x00400163:	it	eq
+0x00400165:	cmpeq	r5, r3
+0x00400167:	beq	#0x400149
+0x00400169:	ldr	r2, [pc, #0x30]
+0x0040016b:	ldr	r3, [pc, #0x2c]
+0x0040016d:	add	r2, pc
+0x0040016f:	ldr	r3, [r2, r3]
+0x00400171:	ldr	r2, [r3]
+0x00400173:	ldr	r3, [sp, #0x14]
+0x00400175:	eors	r2, r3
+0x00400177:	mov.w	r3, #0
+0x0040017b:	bne	#0x40018f
+0x0040017d:	add	sp, #0x1c
+0x0040017f:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x00400183:	ldr	r0, [pc, #0x1c]
+0x00400185:	add	r0, pc
+0x00400187:	bl	#0x50000d
+0x0040018b:	bl	#0x500019
+0x0040018f:	bl	#0x500025
 
-0000008c <TIME_clockSpan_ns>:
-  8c:	b530      	push	{r4, r5, lr}
-  8e:	2200      	movs	r2, #0
-  90:	2300      	movs	r3, #0
-  92:	b085      	sub	sp, #20
-  94:	4604      	mov	r4, r0
-  96:	460d      	mov	r5, r1
-  98:	2001      	movs	r0, #1
-  9a:	4669      	mov	r1, sp
-  9c:	e9cd 2300 	strd	r2, r3, [sp]
-  a0:	4a15      	ldr	r2, [pc, #84]	; (f8 <TIME_clockSpan_ns+0x6c>)
-  a2:	4b16      	ldr	r3, [pc, #88]	; (fc <TIME_clockSpan_ns+0x70>)
-  a4:	447a      	add	r2, pc
-  a6:	58d3      	ldr	r3, [r2, r3]
-  a8:	681b      	ldr	r3, [r3, #0]
-  aa:	9303      	str	r3, [sp, #12]
-  ac:	f04f 0300 	mov.w	r3, #0
-  b0:	f7ff fffe 	bl	0 <clock_gettime>
-  b4:	b9c0      	cbnz	r0, e8 <TIME_clockSpan_ns+0x5c>
-  b6:	e9dd 2300 	ldrd	r2, r3, [sp]
-  ba:	1b18      	subs	r0, r3, r4
-  bc:	ea4f 73e3 	mov.w	r3, r3, asr #31
-  c0:	eb63 0105 	sbc.w	r1, r3, r5
-  c4:	f44f 434a 	mov.w	r3, #51712	; 0xca00
-  c8:	f6c3 339a 	movt	r3, #15258	; 0x3b9a
-  cc:	fbc2 0103 	smlal	r0, r1, r2, r3
-  d0:	4a0b      	ldr	r2, [pc, #44]	; (100 <TIME_clockSpan_ns+0x74>)
-  d2:	4b0a      	ldr	r3, [pc, #40]	; (fc <TIME_clockSpan_ns+0x70>)
-  d4:	447a      	add	r2, pc
-  d6:	58d3      	ldr	r3, [r2, r3]
-  d8:	681a      	ldr	r2, [r3, #0]
-  da:	9b03      	ldr	r3, [sp, #12]
-  dc:	405a      	eors	r2, r3
-  de:	f04f 0300 	mov.w	r3, #0
-  e2:	d107      	bne.n	f4 <TIME_clockSpan_ns+0x68>
-  e4:	b005      	add	sp, #20
-  e6:	bd30      	pop	{r4, r5, pc}
-  e8:	4806      	ldr	r0, [pc, #24]	; (104 <TIME_clockSpan_ns+0x78>)
-  ea:	4478      	add	r0, pc
-  ec:	f7ff fffe 	bl	0 <perror>
-  f0:	f7ff fffe 	bl	0 <abort>
-  f4:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  f8:	00000050 	.word	0x00000050
-  fc:	00000000 	.word	0x00000000
- 100:	00000028 	.word	0x00000028
- 104:	00000016 	.word	0x00000016
+Function sub_400193 @ 0x00400193
+0x00400193:	nop	
+0x00400195:	lsls	r6, r7, #1
+0x00400197:	movs	r0, r0
+0x00400199:	movs	r0, r0
+0x0040019b:	movs	r0, r0
+0x0040019d:	movs	r4, r5
+0x0040019f:	movs	r0, r0
+0x004001a1:	movs	r0, r4
+0x004001a3:	movs	r0, r0
+0x004001a5:	movs	r0, #1
+0x004001a7:	bx	lr
 
-00000108 <TIME_waitForNextTick>:
- 108:	4a22      	ldr	r2, [pc, #136]	; (194 <TIME_waitForNextTick+0x8c>)
- 10a:	2001      	movs	r0, #1
- 10c:	4b22      	ldr	r3, [pc, #136]	; (198 <TIME_waitForNextTick+0x90>)
- 10e:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
- 112:	447a      	add	r2, pc
- 114:	f04f 0800 	mov.w	r8, #0
- 118:	b087      	sub	sp, #28
- 11a:	f04f 0900 	mov.w	r9, #0
- 11e:	58d3      	ldr	r3, [r2, r3]
- 120:	4669      	mov	r1, sp
- 122:	681b      	ldr	r3, [r3, #0]
- 124:	9305      	str	r3, [sp, #20]
- 126:	f04f 0300 	mov.w	r3, #0
- 12a:	e9cd 8900 	strd	r8, r9, [sp]
- 12e:	f7ff fffe 	bl	0 <clock_gettime>
- 132:	bb30      	cbnz	r0, 182 <TIME_waitForNextTick+0x7a>
- 134:	e9dd 3500 	ldrd	r3, r5, [sp]
- 138:	f44f 444a 	mov.w	r4, #51712	; 0xca00
- 13c:	f6c3 349a 	movt	r4, #15258	; 0x3b9a
- 140:	af02      	add	r7, sp, #8
- 142:	17ee      	asrs	r6, r5, #31
- 144:	fbc3 5604 	smlal	r5, r6, r3, r4
- 148:	4639      	mov	r1, r7
- 14a:	2001      	movs	r0, #1
- 14c:	e9cd 8902 	strd	r8, r9, [sp, #8]
- 150:	f7ff fffe 	bl	0 <clock_gettime>
- 154:	b9a8      	cbnz	r0, 182 <TIME_waitForNextTick+0x7a>
- 156:	e9dd 0302 	ldrd	r0, r3, [sp, #8]
- 15a:	17da      	asrs	r2, r3, #31
- 15c:	fbc0 3204 	smlal	r3, r2, r0, r4
- 160:	4296      	cmp	r6, r2
- 162:	bf08      	it	eq
- 164:	429d      	cmpeq	r5, r3
- 166:	d0ef      	beq.n	148 <TIME_waitForNextTick+0x40>
- 168:	4a0c      	ldr	r2, [pc, #48]	; (19c <TIME_waitForNextTick+0x94>)
- 16a:	4b0b      	ldr	r3, [pc, #44]	; (198 <TIME_waitForNextTick+0x90>)
- 16c:	447a      	add	r2, pc
- 16e:	58d3      	ldr	r3, [r2, r3]
- 170:	681a      	ldr	r2, [r3, #0]
- 172:	9b05      	ldr	r3, [sp, #20]
- 174:	405a      	eors	r2, r3
- 176:	f04f 0300 	mov.w	r3, #0
- 17a:	d108      	bne.n	18e <TIME_waitForNextTick+0x86>
- 17c:	b007      	add	sp, #28
- 17e:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 182:	4807      	ldr	r0, [pc, #28]	; (1a0 <TIME_waitForNextTick+0x98>)
- 184:	4478      	add	r0, pc
- 186:	f7ff fffe 	bl	0 <perror>
- 18a:	f7ff fffe 	bl	0 <abort>
- 18e:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 192:	bf00      	nop
- 194:	0000007e 	.word	0x0000007e
- 198:	00000000 	.word	0x00000000
- 19c:	0000002c 	.word	0x0000002c
- 1a0:	00000018 	.word	0x00000018
+Function TIME_support_MT_measurements @ 0x004001a5
+0x004001a5:	movs	r0, #1
+0x004001a7:	bx	lr
 
-000001a4 <TIME_support_MT_measurements>:
- 1a4:	2001      	movs	r0, #1
- 1a6:	4770      	bx	lr
+Function clock_gettime @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function perror @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

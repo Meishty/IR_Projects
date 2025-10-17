@@ -1,23 +1,34 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_bg-execution-repeat_9d5e6609_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400009 @ 0x00400009
+0x00400009:	push	{r4, lr}
+0x0040000b:	movs	r0, #0x3c
+0x0040000d:	ldr	r4, [pc, #0x20]
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	movs	r3, #1
+0x00400015:	add	r4, pc
+0x00400017:	str	r3, [r4]
+0x00400019:	ldr	r3, [r4]
+0x0040001b:	cbz	r3, #0x40002b
+0x0040001d:	movw	r0, #0x2710
+0x00400021:	bl	#0x400021
+0x0040001d:	movw	r0, #0x2710
+0x00400021:	bl	#0x400021
+0x0040002b:	movs	r0, #0
+0x0040002d:	pop	{r4, pc}
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
+0x00400025:	ldr	r3, [r4]
+0x00400027:	cmp	r3, #0
+0x00400029:	bne	#0x40001d
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	203cb510 	eorscs	fp, ip, r0, lsl r5
-   4:	f7ff4c08 			; <UNDEFINED> instruction: 0xf7ff4c08
-   8:	2301fffe 	movwcs	pc, #8190	; 0x1ffe	; <UNPREDICTABLE>
-   c:	6023447c 	eorvs	r4, r3, ip, ror r4
-  10:	b1336823 	teqlt	r3, r3, lsr #16
-  14:	7010f242 	andsvc	pc, r0, r2, asr #4
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	2b006823 	blcs	0x1a0b0
-  20:	2000d1f8 	strdcs	sp, [r0], -r8
-  24:	bf00bd10 	svclt	0x0000bd10
-  28:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r0, r3
+0x00400033:	movs	r0, r0

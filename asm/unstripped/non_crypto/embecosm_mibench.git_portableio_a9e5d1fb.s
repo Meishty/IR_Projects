@@ -1,858 +1,1140 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_portableio_a9e5d1fb.o:     file format elf32-littlearm
+Function ReadByte @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	uxtb	r3, r0
+0x00400009:	lsls	r2, r0, #0x18
+0x0040000b:	it	mi
+0x0040000d:	submi.w	r3, r3, #0x100
+0x00400011:	mov	r0, r3
+0x00400013:	pop	{r3, pc}
 
+Function Read16BitsLowHigh @ 0x00400015
+0x00400015:	push	{r3, r4, r5, lr}
+0x00400017:	mov	r5, r0
+0x00400019:	bl	#0x500001
+0x0040001d:	mov	r4, r0
+0x0040001f:	mov	r0, r5
+0x00400021:	bl	#0x500001
+0x00400025:	lsls	r3, r0, #8
+0x00400027:	uxth	r3, r3
+0x00400029:	uxtab	r0, r3, r4
+0x0040002d:	lsrs	r3, r3, #0xf
+0x0040002f:	it	ne
+0x00400031:	subne.w	r0, r0, #0x10000
+0x00400035:	pop	{r3, r4, r5, pc}
 
-Disassembly of section .text:
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	push	{r3, r4, r5, lr}
+0x0040003b:	mov	r5, r0
+0x0040003d:	bl	#0x500001
 
-00000000 <ReadByte>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <getc>
-   6:	b2c3      	uxtb	r3, r0
-   8:	0602      	lsls	r2, r0, #24
-   a:	bf48      	it	mi
-   c:	f5a3 7380 	submi.w	r3, r3, #256	; 0x100
-  10:	4618      	mov	r0, r3
-  12:	bd08      	pop	{r3, pc}
+Function Read16BitsHighLow @ 0x00400039
+0x00400039:	push	{r3, r4, r5, lr}
+0x0040003b:	mov	r5, r0
+0x0040003d:	bl	#0x500001
+0x00400041:	mov	r4, r0
+0x00400043:	mov	r0, r5
+0x00400045:	bl	#0x500001
+0x00400049:	lsls	r3, r4, #8
+0x0040004b:	uxth	r3, r3
+0x0040004d:	uxtab	r0, r3, r0
+0x00400051:	lsrs	r3, r3, #0xf
+0x00400053:	it	ne
+0x00400055:	subne.w	r0, r0, #0x10000
+0x00400059:	pop	{r3, r4, r5, pc}
 
-00000014 <Read16BitsLowHigh>:
-  14:	b538      	push	{r3, r4, r5, lr}
-  16:	4605      	mov	r5, r0
-  18:	f7ff fffe 	bl	0 <getc>
-  1c:	4604      	mov	r4, r0
-  1e:	4628      	mov	r0, r5
-  20:	f7ff fffe 	bl	0 <getc>
-  24:	0203      	lsls	r3, r0, #8
-  26:	b29b      	uxth	r3, r3
-  28:	fa53 f084 	uxtab	r0, r3, r4
-  2c:	0bdb      	lsrs	r3, r3, #15
-  2e:	bf18      	it	ne
-  30:	f5a0 3080 	subne.w	r0, r0, #65536	; 0x10000
-  34:	bd38      	pop	{r3, r4, r5, pc}
-  36:	bf00      	nop
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	
+0x0040005d:	mov	r3, r1
+0x0040005f:	mov	r1, r0
+0x00400061:	uxtb	r0, r3
+0x00400063:	b.w	#0x50000d
 
-00000038 <Read16BitsHighLow>:
-  38:	b538      	push	{r3, r4, r5, lr}
-  3a:	4605      	mov	r5, r0
-  3c:	f7ff fffe 	bl	0 <getc>
-  40:	4604      	mov	r4, r0
-  42:	4628      	mov	r0, r5
-  44:	f7ff fffe 	bl	0 <getc>
-  48:	0223      	lsls	r3, r4, #8
-  4a:	b29b      	uxth	r3, r3
-  4c:	fa53 f080 	uxtab	r0, r3, r0
-  50:	0bdb      	lsrs	r3, r3, #15
-  52:	bf18      	it	ne
-  54:	f5a0 3080 	subne.w	r0, r0, #65536	; 0x10000
-  58:	bd38      	pop	{r3, r4, r5, pc}
-  5a:	bf00      	nop
+Function Write8Bits @ 0x0040005d
+0x0040005d:	mov	r3, r1
+0x0040005f:	mov	r1, r0
+0x00400061:	uxtb	r0, r3
+0x00400063:	b.w	#0x50000d
 
-0000005c <Write8Bits>:
-  5c:	460b      	mov	r3, r1
-  5e:	4601      	mov	r1, r0
-  60:	b2d8      	uxtb	r0, r3
-  62:	f7ff bffe 	b.w	0 <putc>
-  66:	bf00      	nop
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	push	{r4, lr}
+0x0040006b:	mov	r4, r1
+0x0040006d:	mov	r1, r0
+0x0040006f:	sub	sp, #8
+0x00400071:	str	r0, [sp, #4]
+0x00400073:	uxtb	r0, r4
+0x00400075:	bl	#0x50000d
 
-00000068 <Write16BitsLowHigh>:
-  68:	b510      	push	{r4, lr}
-  6a:	460c      	mov	r4, r1
-  6c:	4601      	mov	r1, r0
-  6e:	b082      	sub	sp, #8
-  70:	9001      	str	r0, [sp, #4]
-  72:	b2e0      	uxtb	r0, r4
-  74:	f7ff fffe 	bl	0 <putc>
-  78:	9901      	ldr	r1, [sp, #4]
-  7a:	f3c4 2007 	ubfx	r0, r4, #8, #8
-  7e:	b002      	add	sp, #8
-  80:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  84:	f7ff bffe 	b.w	0 <putc>
+Function Write16BitsLowHigh @ 0x00400069
+0x00400069:	push	{r4, lr}
+0x0040006b:	mov	r4, r1
+0x0040006d:	mov	r1, r0
+0x0040006f:	sub	sp, #8
+0x00400071:	str	r0, [sp, #4]
+0x00400073:	uxtb	r0, r4
+0x00400075:	bl	#0x50000d
+0x00400079:	ldr	r1, [sp, #4]
+0x0040007b:	ubfx	r0, r4, #8, #8
+0x0040007f:	add	sp, #8
+0x00400081:	pop.w	{r4, lr}
+0x00400085:	b.w	#0x50000d
 
-00000088 <Write16BitsHighLow>:
-  88:	b510      	push	{r4, lr}
-  8a:	460c      	mov	r4, r1
-  8c:	4601      	mov	r1, r0
-  8e:	b082      	sub	sp, #8
-  90:	9001      	str	r0, [sp, #4]
-  92:	f3c4 2007 	ubfx	r0, r4, #8, #8
-  96:	f7ff fffe 	bl	0 <putc>
-  9a:	9901      	ldr	r1, [sp, #4]
-  9c:	b2e0      	uxtb	r0, r4
-  9e:	b002      	add	sp, #8
-  a0:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  a4:	f7ff bffe 	b.w	0 <putc>
+Function Write16BitsHighLow @ 0x00400089
+0x00400089:	push	{r4, lr}
+0x0040008b:	mov	r4, r1
+0x0040008d:	mov	r1, r0
+0x0040008f:	sub	sp, #8
+0x00400091:	str	r0, [sp, #4]
+0x00400093:	ubfx	r0, r4, #8, #8
+0x00400097:	bl	#0x50000d
+0x0040009b:	ldr	r1, [sp, #4]
+0x0040009d:	uxtb	r0, r4
+0x0040009f:	add	sp, #8
+0x004000a1:	pop.w	{r4, lr}
+0x004000a5:	b.w	#0x50000d
 
-000000a8 <Read24BitsHighLow>:
-  a8:	b570      	push	{r4, r5, r6, lr}
-  aa:	4606      	mov	r6, r0
-  ac:	f7ff fffe 	bl	0 <getc>
-  b0:	4604      	mov	r4, r0
-  b2:	4630      	mov	r0, r6
-  b4:	f7ff fffe 	bl	0 <getc>
-  b8:	4605      	mov	r5, r0
-  ba:	4630      	mov	r0, r6
-  bc:	022d      	lsls	r5, r5, #8
-  be:	f7ff fffe 	bl	0 <getc>
-  c2:	0423      	lsls	r3, r4, #16
-  c4:	b2ad      	uxth	r5, r5
-  c6:	f403 037f 	and.w	r3, r3, #16711680	; 0xff0000
-  ca:	432b      	orrs	r3, r5
-  cc:	fa53 f080 	uxtab	r0, r3, r0
-  d0:	0ddb      	lsrs	r3, r3, #23
-  d2:	bf18      	it	ne
-  d4:	f100 407f 	addne.w	r0, r0, #4278190080	; 0xff000000
-  d8:	bd70      	pop	{r4, r5, r6, pc}
-  da:	bf00      	nop
+Function Read24BitsHighLow @ 0x004000a9
+0x004000a9:	push	{r4, r5, r6, lr}
+0x004000ab:	mov	r6, r0
+0x004000ad:	bl	#0x500001
+0x004000b1:	mov	r4, r0
+0x004000b3:	mov	r0, r6
+0x004000b5:	bl	#0x500001
+0x004000b9:	mov	r5, r0
+0x004000bb:	mov	r0, r6
+0x004000bd:	lsls	r5, r5, #8
+0x004000bf:	bl	#0x500001
+0x004000c3:	lsls	r3, r4, #0x10
+0x004000c5:	uxth	r5, r5
+0x004000c7:	and	r3, r3, #0xff0000
+0x004000cb:	orrs	r3, r5
+0x004000cd:	uxtab	r0, r3, r0
+0x004000d1:	lsrs	r3, r3, #0x17
+0x004000d3:	it	ne
+0x004000d5:	addne.w	r0, r0, #-0x1000000
+0x004000d9:	pop	{r4, r5, r6, pc}
 
-000000dc <Read32Bits>:
-  dc:	b570      	push	{r4, r5, r6, lr}
-  de:	4606      	mov	r6, r0
-  e0:	f7ff fffe 	bl	0 <getc>
-  e4:	4604      	mov	r4, r0
-  e6:	4630      	mov	r0, r6
-  e8:	f7ff fffe 	bl	0 <getc>
-  ec:	0203      	lsls	r3, r0, #8
-  ee:	4630      	mov	r0, r6
-  f0:	b29b      	uxth	r3, r3
-  f2:	fa53 f484 	uxtab	r4, r3, r4
-  f6:	0bdb      	lsrs	r3, r3, #15
-  f8:	bf18      	it	ne
-  fa:	b2a4      	uxthne	r4, r4
-  fc:	f7ff fffe 	bl	0 <getc>
- 100:	4605      	mov	r5, r0
- 102:	4630      	mov	r0, r6
- 104:	f7ff fffe 	bl	0 <getc>
- 108:	0203      	lsls	r3, r0, #8
- 10a:	b29b      	uxth	r3, r3
- 10c:	fa53 f085 	uxtab	r0, r3, r5
- 110:	0bdb      	lsrs	r3, r3, #15
- 112:	bf18      	it	ne
- 114:	f5a0 3080 	subne.w	r0, r0, #65536	; 0x10000
- 118:	eb04 4000 	add.w	r0, r4, r0, lsl #16
- 11c:	bd70      	pop	{r4, r5, r6, pc}
- 11e:	bf00      	nop
+Function sub_4000db @ 0x004000db
+0x004000db:	nop	
+0x004000dd:	push	{r4, r5, r6, lr}
+0x004000df:	mov	r6, r0
+0x004000e1:	bl	#0x500001
 
-00000120 <Read32BitsHighLow>:
- 120:	b570      	push	{r4, r5, r6, lr}
- 122:	4605      	mov	r5, r0
- 124:	f7ff fffe 	bl	0 <getc>
- 128:	4604      	mov	r4, r0
- 12a:	4628      	mov	r0, r5
- 12c:	f7ff fffe 	bl	0 <getc>
- 130:	0223      	lsls	r3, r4, #8
- 132:	b29b      	uxth	r3, r3
- 134:	fa53 f680 	uxtab	r6, r3, r0
- 138:	4628      	mov	r0, r5
- 13a:	0bdb      	lsrs	r3, r3, #15
- 13c:	bf18      	it	ne
- 13e:	f5a6 3680 	subne.w	r6, r6, #65536	; 0x10000
- 142:	f7ff fffe 	bl	0 <getc>
- 146:	4604      	mov	r4, r0
- 148:	4628      	mov	r0, r5
- 14a:	f7ff fffe 	bl	0 <getc>
- 14e:	0223      	lsls	r3, r4, #8
- 150:	b29b      	uxth	r3, r3
- 152:	fa53 f080 	uxtab	r0, r3, r0
- 156:	0bdb      	lsrs	r3, r3, #15
- 158:	bf18      	it	ne
- 15a:	b280      	uxthne	r0, r0
- 15c:	eb00 4006 	add.w	r0, r0, r6, lsl #16
- 160:	bd70      	pop	{r4, r5, r6, pc}
- 162:	bf00      	nop
+Function Read32Bits @ 0x004000dd
+0x004000dd:	push	{r4, r5, r6, lr}
+0x004000df:	mov	r6, r0
+0x004000e1:	bl	#0x500001
+0x004000e5:	mov	r4, r0
+0x004000e7:	mov	r0, r6
+0x004000e9:	bl	#0x500001
+0x004000ed:	lsls	r3, r0, #8
+0x004000ef:	mov	r0, r6
+0x004000f1:	uxth	r3, r3
+0x004000f3:	uxtab	r4, r3, r4
+0x004000f7:	lsrs	r3, r3, #0xf
+0x004000f9:	it	ne
+0x004000fb:	uxthne	r4, r4
+0x004000fd:	bl	#0x500001
+0x00400101:	mov	r5, r0
+0x00400103:	mov	r0, r6
+0x00400105:	bl	#0x500001
+0x00400109:	lsls	r3, r0, #8
+0x0040010b:	uxth	r3, r3
+0x0040010d:	uxtab	r0, r3, r5
+0x00400111:	lsrs	r3, r3, #0xf
+0x00400113:	it	ne
+0x00400115:	subne.w	r0, r0, #0x10000
+0x00400119:	add.w	r0, r4, r0, lsl #16
+0x0040011d:	pop	{r4, r5, r6, pc}
 
-00000164 <Write32Bits>:
- 164:	b530      	push	{r4, r5, lr}
- 166:	460c      	mov	r4, r1
- 168:	4601      	mov	r1, r0
- 16a:	b083      	sub	sp, #12
- 16c:	0c25      	lsrs	r5, r4, #16
- 16e:	9001      	str	r0, [sp, #4]
- 170:	b2e0      	uxtb	r0, r4
- 172:	f7ff fffe 	bl	0 <putc>
- 176:	9901      	ldr	r1, [sp, #4]
- 178:	f3c4 2007 	ubfx	r0, r4, #8, #8
- 17c:	f7ff fffe 	bl	0 <putc>
- 180:	9901      	ldr	r1, [sp, #4]
- 182:	b2e8      	uxtb	r0, r5
- 184:	f7ff fffe 	bl	0 <putc>
- 188:	9901      	ldr	r1, [sp, #4]
- 18a:	0a28      	lsrs	r0, r5, #8
- 18c:	b003      	add	sp, #12
- 18e:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
- 192:	f7ff bffe 	b.w	0 <putc>
- 196:	bf00      	nop
+Function sub_40011f @ 0x0040011f
+0x0040011f:	nop	
+0x00400121:	push	{r4, r5, r6, lr}
+0x00400123:	mov	r5, r0
+0x00400125:	bl	#0x500001
 
-00000198 <Write32BitsLowHigh>:
- 198:	b530      	push	{r4, r5, lr}
- 19a:	460c      	mov	r4, r1
- 19c:	4601      	mov	r1, r0
- 19e:	b083      	sub	sp, #12
- 1a0:	0c25      	lsrs	r5, r4, #16
- 1a2:	9001      	str	r0, [sp, #4]
- 1a4:	b2e0      	uxtb	r0, r4
- 1a6:	f7ff fffe 	bl	0 <putc>
- 1aa:	9901      	ldr	r1, [sp, #4]
- 1ac:	f3c4 2007 	ubfx	r0, r4, #8, #8
- 1b0:	f7ff fffe 	bl	0 <putc>
- 1b4:	9901      	ldr	r1, [sp, #4]
- 1b6:	b2e8      	uxtb	r0, r5
- 1b8:	f7ff fffe 	bl	0 <putc>
- 1bc:	9901      	ldr	r1, [sp, #4]
- 1be:	0a28      	lsrs	r0, r5, #8
- 1c0:	b003      	add	sp, #12
- 1c2:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
- 1c6:	f7ff bffe 	b.w	0 <putc>
- 1ca:	bf00      	nop
+Function Read32BitsHighLow @ 0x00400121
+0x00400121:	push	{r4, r5, r6, lr}
+0x00400123:	mov	r5, r0
+0x00400125:	bl	#0x500001
+0x00400129:	mov	r4, r0
+0x0040012b:	mov	r0, r5
+0x0040012d:	bl	#0x500001
+0x00400131:	lsls	r3, r4, #8
+0x00400133:	uxth	r3, r3
+0x00400135:	uxtab	r6, r3, r0
+0x00400139:	mov	r0, r5
+0x0040013b:	lsrs	r3, r3, #0xf
+0x0040013d:	it	ne
+0x0040013f:	subne.w	r6, r6, #0x10000
+0x00400143:	bl	#0x500001
+0x00400147:	mov	r4, r0
+0x00400149:	mov	r0, r5
+0x0040014b:	bl	#0x500001
+0x0040014f:	lsls	r3, r4, #8
+0x00400151:	uxth	r3, r3
+0x00400153:	uxtab	r0, r3, r0
+0x00400157:	lsrs	r3, r3, #0xf
+0x00400159:	it	ne
+0x0040015b:	uxthne	r0, r0
+0x0040015d:	add.w	r0, r0, r6, lsl #16
+0x00400161:	pop	{r4, r5, r6, pc}
 
-000001cc <Write32BitsHighLow>:
- 1cc:	b530      	push	{r4, r5, lr}
- 1ce:	460c      	mov	r4, r1
- 1d0:	4601      	mov	r1, r0
- 1d2:	b083      	sub	sp, #12
- 1d4:	0c25      	lsrs	r5, r4, #16
- 1d6:	9001      	str	r0, [sp, #4]
- 1d8:	0e20      	lsrs	r0, r4, #24
- 1da:	f7ff fffe 	bl	0 <putc>
- 1de:	9901      	ldr	r1, [sp, #4]
- 1e0:	b2e8      	uxtb	r0, r5
- 1e2:	f7ff fffe 	bl	0 <putc>
- 1e6:	9901      	ldr	r1, [sp, #4]
- 1e8:	f3c4 2007 	ubfx	r0, r4, #8, #8
- 1ec:	f7ff fffe 	bl	0 <putc>
- 1f0:	9901      	ldr	r1, [sp, #4]
- 1f2:	b2e0      	uxtb	r0, r4
- 1f4:	b003      	add	sp, #12
- 1f6:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
- 1fa:	f7ff bffe 	b.w	0 <putc>
- 1fe:	bf00      	nop
+Function sub_400163 @ 0x00400163
+0x00400163:	nop	
+0x00400165:	push	{r4, r5, lr}
+0x00400167:	mov	r4, r1
+0x00400169:	mov	r1, r0
+0x0040016b:	sub	sp, #0xc
+0x0040016d:	lsrs	r5, r4, #0x10
+0x0040016f:	str	r0, [sp, #4]
+0x00400171:	uxtb	r0, r4
+0x00400173:	bl	#0x50000d
 
-00000200 <ReadBytes>:
- 200:	b570      	push	{r4, r5, r6, lr}
- 202:	460c      	mov	r4, r1
- 204:	4605      	mov	r5, r0
- 206:	188e      	adds	r6, r1, r2
- 208:	e003      	b.n	212 <ReadBytes+0x12>
- 20a:	f7ff fffe 	bl	0 <getc>
- 20e:	f804 0b01 	strb.w	r0, [r4], #1
- 212:	4628      	mov	r0, r5
- 214:	f7ff fffe 	bl	0 <feof>
- 218:	4603      	mov	r3, r0
- 21a:	1b31      	subs	r1, r6, r4
- 21c:	fab3 f383 	clz	r3, r3
- 220:	2900      	cmp	r1, #0
- 222:	4628      	mov	r0, r5
- 224:	ea4f 1353 	mov.w	r3, r3, lsr #5
- 228:	bfd8      	it	le
- 22a:	2300      	movle	r3, #0
- 22c:	2b00      	cmp	r3, #0
- 22e:	d1ec      	bne.n	20a <ReadBytes+0xa>
- 230:	bd70      	pop	{r4, r5, r6, pc}
- 232:	bf00      	nop
+Function Write32Bits @ 0x00400165
+0x00400165:	push	{r4, r5, lr}
+0x00400167:	mov	r4, r1
+0x00400169:	mov	r1, r0
+0x0040016b:	sub	sp, #0xc
+0x0040016d:	lsrs	r5, r4, #0x10
+0x0040016f:	str	r0, [sp, #4]
+0x00400171:	uxtb	r0, r4
+0x00400173:	bl	#0x50000d
+0x00400177:	ldr	r1, [sp, #4]
+0x00400179:	ubfx	r0, r4, #8, #8
+0x0040017d:	bl	#0x50000d
+0x00400181:	ldr	r1, [sp, #4]
+0x00400183:	uxtb	r0, r5
+0x00400185:	bl	#0x50000d
+0x00400189:	ldr	r1, [sp, #4]
+0x0040018b:	lsrs	r0, r5, #8
+0x0040018d:	add	sp, #0xc
+0x0040018f:	pop.w	{r4, r5, lr}
+0x00400193:	b.w	#0x50000d
 
-00000234 <ReadBytesSwapped>:
- 234:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
- 236:	460e      	mov	r6, r1
- 238:	4605      	mov	r5, r0
- 23a:	460c      	mov	r4, r1
- 23c:	188f      	adds	r7, r1, r2
- 23e:	e003      	b.n	248 <ReadBytesSwapped+0x14>
- 240:	f7ff fffe 	bl	0 <getc>
- 244:	f804 0b01 	strb.w	r0, [r4], #1
- 248:	4628      	mov	r0, r5
- 24a:	f7ff fffe 	bl	0 <feof>
- 24e:	4603      	mov	r3, r0
- 250:	eba7 0c04 	sub.w	ip, r7, r4
- 254:	fab3 f383 	clz	r3, r3
- 258:	f1bc 0f00 	cmp.w	ip, #0
- 25c:	4628      	mov	r0, r5
- 25e:	ea4f 1353 	mov.w	r3, r3, lsr #5
- 262:	46b4      	mov	ip, r6
- 264:	bfd8      	it	le
- 266:	2300      	movle	r3, #0
- 268:	2b00      	cmp	r3, #0
- 26a:	d1e9      	bne.n	240 <ReadBytesSwapped+0xc>
- 26c:	1e63      	subs	r3, r4, #1
- 26e:	429e      	cmp	r6, r3
- 270:	d208      	bcs.n	284 <ReadBytesSwapped+0x50>
- 272:	f89c 2000 	ldrb.w	r2, [ip]
- 276:	7819      	ldrb	r1, [r3, #0]
- 278:	f80c 1b01 	strb.w	r1, [ip], #1
- 27c:	f803 2901 	strb.w	r2, [r3], #-1
- 280:	459c      	cmp	ip, r3
- 282:	d3f6      	bcc.n	272 <ReadBytesSwapped+0x3e>
- 284:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
- 286:	bf00      	nop
+Function sub_400197 @ 0x00400197
+0x00400197:	nop	
+0x00400199:	push	{r4, r5, lr}
+0x0040019b:	mov	r4, r1
+0x0040019d:	mov	r1, r0
+0x0040019f:	sub	sp, #0xc
+0x004001a1:	lsrs	r5, r4, #0x10
+0x004001a3:	str	r0, [sp, #4]
+0x004001a5:	uxtb	r0, r4
+0x004001a7:	bl	#0x50000d
 
-00000288 <WriteBytes>:
- 288:	2a00      	cmp	r2, #0
- 28a:	dd0b      	ble.n	2a4 <WriteBytes+0x1c>
- 28c:	b570      	push	{r4, r5, r6, lr}
- 28e:	4606      	mov	r6, r0
- 290:	460c      	mov	r4, r1
- 292:	188d      	adds	r5, r1, r2
- 294:	f814 0b01 	ldrb.w	r0, [r4], #1
- 298:	4631      	mov	r1, r6
- 29a:	f7ff fffe 	bl	0 <putc>
- 29e:	42ac      	cmp	r4, r5
- 2a0:	d1f8      	bne.n	294 <WriteBytes+0xc>
- 2a2:	bd70      	pop	{r4, r5, r6, pc}
- 2a4:	4770      	bx	lr
- 2a6:	bf00      	nop
+Function Write32BitsLowHigh @ 0x00400199
+0x00400199:	push	{r4, r5, lr}
+0x0040019b:	mov	r4, r1
+0x0040019d:	mov	r1, r0
+0x0040019f:	sub	sp, #0xc
+0x004001a1:	lsrs	r5, r4, #0x10
+0x004001a3:	str	r0, [sp, #4]
+0x004001a5:	uxtb	r0, r4
+0x004001a7:	bl	#0x50000d
+0x004001ab:	ldr	r1, [sp, #4]
+0x004001ad:	ubfx	r0, r4, #8, #8
+0x004001b1:	bl	#0x50000d
+0x004001b5:	ldr	r1, [sp, #4]
+0x004001b7:	uxtb	r0, r5
+0x004001b9:	bl	#0x50000d
+0x004001bd:	ldr	r1, [sp, #4]
+0x004001bf:	lsrs	r0, r5, #8
+0x004001c1:	add	sp, #0xc
+0x004001c3:	pop.w	{r4, r5, lr}
+0x004001c7:	b.w	#0x50000d
 
-000002a8 <WriteBytesSwapped>:
- 2a8:	b570      	push	{r4, r5, r6, lr}
- 2aa:	1e54      	subs	r4, r2, #1
- 2ac:	440c      	add	r4, r1
- 2ae:	2a00      	cmp	r2, #0
- 2b0:	dd08      	ble.n	2c4 <WriteBytesSwapped+0x1c>
- 2b2:	4606      	mov	r6, r0
- 2b4:	1e4d      	subs	r5, r1, #1
- 2b6:	f814 0901 	ldrb.w	r0, [r4], #-1
- 2ba:	4631      	mov	r1, r6
- 2bc:	f7ff fffe 	bl	0 <putc>
- 2c0:	42a5      	cmp	r5, r4
- 2c2:	d1f8      	bne.n	2b6 <WriteBytesSwapped+0xe>
- 2c4:	bd70      	pop	{r4, r5, r6, pc}
- 2c6:	bf00      	nop
+Function sub_4001cb @ 0x004001cb
+0x004001cb:	nop	
+0x004001cd:	push	{r4, r5, lr}
+0x004001cf:	mov	r4, r1
+0x004001d1:	mov	r1, r0
+0x004001d3:	sub	sp, #0xc
+0x004001d5:	lsrs	r5, r4, #0x10
+0x004001d7:	str	r0, [sp, #4]
+0x004001d9:	lsrs	r0, r4, #0x18
+0x004001db:	bl	#0x50000d
 
-000002c8 <ReadIeeeFloatHighLow>:
- 2c8:	4a18      	ldr	r2, [pc, #96]	; (32c <ReadIeeeFloatHighLow+0x64>)
- 2ca:	4b19      	ldr	r3, [pc, #100]	; (330 <ReadIeeeFloatHighLow+0x68>)
- 2cc:	447a      	add	r2, pc
- 2ce:	b5f0      	push	{r4, r5, r6, r7, lr}
- 2d0:	4605      	mov	r5, r0
- 2d2:	b083      	sub	sp, #12
- 2d4:	58d3      	ldr	r3, [r2, r3]
- 2d6:	466f      	mov	r7, sp
- 2d8:	463c      	mov	r4, r7
- 2da:	ae01      	add	r6, sp, #4
- 2dc:	681b      	ldr	r3, [r3, #0]
- 2de:	9301      	str	r3, [sp, #4]
- 2e0:	f04f 0300 	mov.w	r3, #0
- 2e4:	e004      	b.n	2f0 <ReadIeeeFloatHighLow+0x28>
- 2e6:	4628      	mov	r0, r5
- 2e8:	f7ff fffe 	bl	0 <getc>
- 2ec:	f804 0b01 	strb.w	r0, [r4], #1
- 2f0:	4628      	mov	r0, r5
- 2f2:	f7ff fffe 	bl	0 <feof>
- 2f6:	1b33      	subs	r3, r6, r4
- 2f8:	2b00      	cmp	r3, #0
- 2fa:	bfd4      	ite	le
- 2fc:	2300      	movle	r3, #0
- 2fe:	2301      	movgt	r3, #1
- 300:	2800      	cmp	r0, #0
- 302:	bf18      	it	ne
- 304:	2300      	movne	r3, #0
- 306:	2b00      	cmp	r3, #0
- 308:	d1ed      	bne.n	2e6 <ReadIeeeFloatHighLow+0x1e>
- 30a:	4638      	mov	r0, r7
- 30c:	f7ff fffe 	bl	0 <ConvertFromIeeeSingle>
- 310:	4a08      	ldr	r2, [pc, #32]	; (334 <ReadIeeeFloatHighLow+0x6c>)
- 312:	4b07      	ldr	r3, [pc, #28]	; (330 <ReadIeeeFloatHighLow+0x68>)
- 314:	447a      	add	r2, pc
- 316:	58d3      	ldr	r3, [r2, r3]
- 318:	681a      	ldr	r2, [r3, #0]
- 31a:	9b01      	ldr	r3, [sp, #4]
- 31c:	405a      	eors	r2, r3
- 31e:	f04f 0300 	mov.w	r3, #0
- 322:	d101      	bne.n	328 <ReadIeeeFloatHighLow+0x60>
- 324:	b003      	add	sp, #12
- 326:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 328:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 32c:	0000005c 	.word	0x0000005c
- 330:	00000000 	.word	0x00000000
- 334:	0000001c 	.word	0x0000001c
+Function Write32BitsHighLow @ 0x004001cd
+0x004001cd:	push	{r4, r5, lr}
+0x004001cf:	mov	r4, r1
+0x004001d1:	mov	r1, r0
+0x004001d3:	sub	sp, #0xc
+0x004001d5:	lsrs	r5, r4, #0x10
+0x004001d7:	str	r0, [sp, #4]
+0x004001d9:	lsrs	r0, r4, #0x18
+0x004001db:	bl	#0x50000d
+0x004001df:	ldr	r1, [sp, #4]
+0x004001e1:	uxtb	r0, r5
+0x004001e3:	bl	#0x50000d
+0x004001e7:	ldr	r1, [sp, #4]
+0x004001e9:	ubfx	r0, r4, #8, #8
+0x004001ed:	bl	#0x50000d
+0x004001f1:	ldr	r1, [sp, #4]
+0x004001f3:	uxtb	r0, r4
+0x004001f5:	add	sp, #0xc
+0x004001f7:	pop.w	{r4, r5, lr}
+0x004001fb:	b.w	#0x50000d
 
-00000338 <ReadIeeeFloatLowHigh>:
- 338:	4a1e      	ldr	r2, [pc, #120]	; (3b4 <ReadIeeeFloatLowHigh+0x7c>)
- 33a:	4b1f      	ldr	r3, [pc, #124]	; (3b8 <ReadIeeeFloatLowHigh+0x80>)
- 33c:	447a      	add	r2, pc
- 33e:	b5f0      	push	{r4, r5, r6, r7, lr}
- 340:	4605      	mov	r5, r0
- 342:	b083      	sub	sp, #12
- 344:	58d3      	ldr	r3, [r2, r3]
- 346:	466e      	mov	r6, sp
- 348:	4634      	mov	r4, r6
- 34a:	af01      	add	r7, sp, #4
- 34c:	681b      	ldr	r3, [r3, #0]
- 34e:	9301      	str	r3, [sp, #4]
- 350:	f04f 0300 	mov.w	r3, #0
- 354:	e004      	b.n	360 <ReadIeeeFloatLowHigh+0x28>
- 356:	4628      	mov	r0, r5
- 358:	f7ff fffe 	bl	0 <getc>
- 35c:	f804 0b01 	strb.w	r0, [r4], #1
- 360:	4628      	mov	r0, r5
- 362:	f7ff fffe 	bl	0 <feof>
- 366:	1b3b      	subs	r3, r7, r4
- 368:	2b00      	cmp	r3, #0
- 36a:	4632      	mov	r2, r6
- 36c:	bfd4      	ite	le
- 36e:	2300      	movle	r3, #0
- 370:	2301      	movgt	r3, #1
- 372:	2800      	cmp	r0, #0
- 374:	bf18      	it	ne
- 376:	2300      	movne	r3, #0
- 378:	2b00      	cmp	r3, #0
- 37a:	d1ec      	bne.n	356 <ReadIeeeFloatLowHigh+0x1e>
- 37c:	1e63      	subs	r3, r4, #1
- 37e:	42b3      	cmp	r3, r6
- 380:	d907      	bls.n	392 <ReadIeeeFloatLowHigh+0x5a>
- 382:	7811      	ldrb	r1, [r2, #0]
- 384:	7818      	ldrb	r0, [r3, #0]
- 386:	f802 0b01 	strb.w	r0, [r2], #1
- 38a:	f803 1901 	strb.w	r1, [r3], #-1
- 38e:	429a      	cmp	r2, r3
- 390:	d3f7      	bcc.n	382 <ReadIeeeFloatLowHigh+0x4a>
- 392:	4630      	mov	r0, r6
- 394:	f7ff fffe 	bl	0 <ConvertFromIeeeSingle>
- 398:	4a08      	ldr	r2, [pc, #32]	; (3bc <ReadIeeeFloatLowHigh+0x84>)
- 39a:	4b07      	ldr	r3, [pc, #28]	; (3b8 <ReadIeeeFloatLowHigh+0x80>)
- 39c:	447a      	add	r2, pc
- 39e:	58d3      	ldr	r3, [r2, r3]
- 3a0:	681a      	ldr	r2, [r3, #0]
- 3a2:	9b01      	ldr	r3, [sp, #4]
- 3a4:	405a      	eors	r2, r3
- 3a6:	f04f 0300 	mov.w	r3, #0
- 3aa:	d101      	bne.n	3b0 <ReadIeeeFloatLowHigh+0x78>
- 3ac:	b003      	add	sp, #12
- 3ae:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 3b0:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 3b4:	00000074 	.word	0x00000074
- 3b8:	00000000 	.word	0x00000000
- 3bc:	0000001c 	.word	0x0000001c
+Function sub_4001ff @ 0x004001ff
+0x004001ff:	nop	
+0x00400201:	push	{r4, r5, r6, lr}
+0x00400203:	mov	r4, r1
+0x00400205:	mov	r5, r0
+0x00400207:	adds	r6, r1, r2
+0x00400209:	b	#0x400213
 
-000003c0 <ReadIeeeDoubleHighLow>:
- 3c0:	4a18      	ldr	r2, [pc, #96]	; (424 <ReadIeeeDoubleHighLow+0x64>)
- 3c2:	4b19      	ldr	r3, [pc, #100]	; (428 <ReadIeeeDoubleHighLow+0x68>)
- 3c4:	447a      	add	r2, pc
- 3c6:	b5f0      	push	{r4, r5, r6, r7, lr}
- 3c8:	4605      	mov	r5, r0
- 3ca:	b085      	sub	sp, #20
- 3cc:	58d3      	ldr	r3, [r2, r3]
- 3ce:	af01      	add	r7, sp, #4
- 3d0:	463c      	mov	r4, r7
- 3d2:	ae03      	add	r6, sp, #12
- 3d4:	681b      	ldr	r3, [r3, #0]
- 3d6:	9303      	str	r3, [sp, #12]
- 3d8:	f04f 0300 	mov.w	r3, #0
- 3dc:	e004      	b.n	3e8 <ReadIeeeDoubleHighLow+0x28>
- 3de:	4628      	mov	r0, r5
- 3e0:	f7ff fffe 	bl	0 <getc>
- 3e4:	f804 0b01 	strb.w	r0, [r4], #1
- 3e8:	4628      	mov	r0, r5
- 3ea:	f7ff fffe 	bl	0 <feof>
- 3ee:	1b33      	subs	r3, r6, r4
- 3f0:	2b00      	cmp	r3, #0
- 3f2:	bfd4      	ite	le
- 3f4:	2300      	movle	r3, #0
- 3f6:	2301      	movgt	r3, #1
- 3f8:	2800      	cmp	r0, #0
- 3fa:	bf18      	it	ne
- 3fc:	2300      	movne	r3, #0
- 3fe:	2b00      	cmp	r3, #0
- 400:	d1ed      	bne.n	3de <ReadIeeeDoubleHighLow+0x1e>
- 402:	4638      	mov	r0, r7
- 404:	f7ff fffe 	bl	0 <ConvertFromIeeeDouble>
- 408:	4a08      	ldr	r2, [pc, #32]	; (42c <ReadIeeeDoubleHighLow+0x6c>)
- 40a:	4b07      	ldr	r3, [pc, #28]	; (428 <ReadIeeeDoubleHighLow+0x68>)
- 40c:	447a      	add	r2, pc
- 40e:	58d3      	ldr	r3, [r2, r3]
- 410:	681a      	ldr	r2, [r3, #0]
- 412:	9b03      	ldr	r3, [sp, #12]
- 414:	405a      	eors	r2, r3
- 416:	f04f 0300 	mov.w	r3, #0
- 41a:	d101      	bne.n	420 <ReadIeeeDoubleHighLow+0x60>
- 41c:	b005      	add	sp, #20
- 41e:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 420:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 424:	0000005c 	.word	0x0000005c
- 428:	00000000 	.word	0x00000000
- 42c:	0000001c 	.word	0x0000001c
+Function ReadBytes @ 0x00400201
+0x00400201:	push	{r4, r5, r6, lr}
+0x00400203:	mov	r4, r1
+0x00400205:	mov	r5, r0
+0x00400207:	adds	r6, r1, r2
+0x00400209:	b	#0x400213
+0x0040020b:	bl	#0x500001
+0x0040020f:	strb	r0, [r4], #1
+0x00400213:	mov	r0, r5
+0x00400215:	bl	#0x500019
+0x00400213:	mov	r0, r5
+0x00400215:	bl	#0x500019
+0x00400219:	mov	r3, r0
+0x0040021b:	subs	r1, r6, r4
+0x0040021d:	clz	r3, r3
+0x00400221:	cmp	r1, #0
+0x00400223:	mov	r0, r5
+0x00400225:	lsr.w	r3, r3, #5
+0x00400229:	it	le
+0x0040022b:	movle	r3, #0
+0x0040022d:	cmp	r3, #0
+0x0040022f:	bne	#0x40020b
+0x00400231:	pop	{r4, r5, r6, pc}
 
-00000430 <ReadIeeeDoubleLowHigh>:
- 430:	4a1e      	ldr	r2, [pc, #120]	; (4ac <ReadIeeeDoubleLowHigh+0x7c>)
- 432:	4b1f      	ldr	r3, [pc, #124]	; (4b0 <ReadIeeeDoubleLowHigh+0x80>)
- 434:	447a      	add	r2, pc
- 436:	b5f0      	push	{r4, r5, r6, r7, lr}
- 438:	4605      	mov	r5, r0
- 43a:	b085      	sub	sp, #20
- 43c:	58d3      	ldr	r3, [r2, r3]
- 43e:	ae01      	add	r6, sp, #4
- 440:	4634      	mov	r4, r6
- 442:	af03      	add	r7, sp, #12
- 444:	681b      	ldr	r3, [r3, #0]
- 446:	9303      	str	r3, [sp, #12]
- 448:	f04f 0300 	mov.w	r3, #0
- 44c:	e004      	b.n	458 <ReadIeeeDoubleLowHigh+0x28>
- 44e:	4628      	mov	r0, r5
- 450:	f7ff fffe 	bl	0 <getc>
- 454:	f804 0b01 	strb.w	r0, [r4], #1
- 458:	4628      	mov	r0, r5
- 45a:	f7ff fffe 	bl	0 <feof>
- 45e:	1b3b      	subs	r3, r7, r4
- 460:	2b00      	cmp	r3, #0
- 462:	4632      	mov	r2, r6
- 464:	bfd4      	ite	le
- 466:	2300      	movle	r3, #0
- 468:	2301      	movgt	r3, #1
- 46a:	2800      	cmp	r0, #0
- 46c:	bf18      	it	ne
- 46e:	2300      	movne	r3, #0
- 470:	2b00      	cmp	r3, #0
- 472:	d1ec      	bne.n	44e <ReadIeeeDoubleLowHigh+0x1e>
- 474:	1e63      	subs	r3, r4, #1
- 476:	42b3      	cmp	r3, r6
- 478:	d907      	bls.n	48a <ReadIeeeDoubleLowHigh+0x5a>
- 47a:	7811      	ldrb	r1, [r2, #0]
- 47c:	7818      	ldrb	r0, [r3, #0]
- 47e:	f802 0b01 	strb.w	r0, [r2], #1
- 482:	f803 1901 	strb.w	r1, [r3], #-1
- 486:	429a      	cmp	r2, r3
- 488:	d3f7      	bcc.n	47a <ReadIeeeDoubleLowHigh+0x4a>
- 48a:	4630      	mov	r0, r6
- 48c:	f7ff fffe 	bl	0 <ConvertFromIeeeDouble>
- 490:	4a08      	ldr	r2, [pc, #32]	; (4b4 <ReadIeeeDoubleLowHigh+0x84>)
- 492:	4b07      	ldr	r3, [pc, #28]	; (4b0 <ReadIeeeDoubleLowHigh+0x80>)
- 494:	447a      	add	r2, pc
- 496:	58d3      	ldr	r3, [r2, r3]
- 498:	681a      	ldr	r2, [r3, #0]
- 49a:	9b03      	ldr	r3, [sp, #12]
- 49c:	405a      	eors	r2, r3
- 49e:	f04f 0300 	mov.w	r3, #0
- 4a2:	d101      	bne.n	4a8 <ReadIeeeDoubleLowHigh+0x78>
- 4a4:	b005      	add	sp, #20
- 4a6:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 4a8:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 4ac:	00000074 	.word	0x00000074
- 4b0:	00000000 	.word	0x00000000
- 4b4:	0000001c 	.word	0x0000001c
+Function sub_400233 @ 0x00400233
+0x00400233:	nop	
+0x00400235:	push	{r3, r4, r5, r6, r7, lr}
+0x00400237:	mov	r6, r1
+0x00400239:	mov	r5, r0
+0x0040023b:	mov	r4, r1
+0x0040023d:	adds	r7, r1, r2
+0x0040023f:	b	#0x400249
 
-000004b8 <ReadIeeeExtendedHighLow>:
- 4b8:	4a19      	ldr	r2, [pc, #100]	; (520 <ReadIeeeExtendedHighLow+0x68>)
- 4ba:	4b1a      	ldr	r3, [pc, #104]	; (524 <ReadIeeeExtendedHighLow+0x6c>)
- 4bc:	447a      	add	r2, pc
- 4be:	b5f0      	push	{r4, r5, r6, r7, lr}
- 4c0:	4605      	mov	r5, r0
- 4c2:	b085      	sub	sp, #20
- 4c4:	58d3      	ldr	r3, [r2, r3]
- 4c6:	466f      	mov	r7, sp
- 4c8:	463c      	mov	r4, r7
- 4ca:	f10d 060a 	add.w	r6, sp, #10
- 4ce:	681b      	ldr	r3, [r3, #0]
- 4d0:	9303      	str	r3, [sp, #12]
- 4d2:	f04f 0300 	mov.w	r3, #0
- 4d6:	e004      	b.n	4e2 <ReadIeeeExtendedHighLow+0x2a>
- 4d8:	4628      	mov	r0, r5
- 4da:	f7ff fffe 	bl	0 <getc>
- 4de:	f804 0b01 	strb.w	r0, [r4], #1
- 4e2:	4628      	mov	r0, r5
- 4e4:	f7ff fffe 	bl	0 <feof>
- 4e8:	1b33      	subs	r3, r6, r4
- 4ea:	2b00      	cmp	r3, #0
- 4ec:	bfd4      	ite	le
- 4ee:	2300      	movle	r3, #0
- 4f0:	2301      	movgt	r3, #1
- 4f2:	2800      	cmp	r0, #0
- 4f4:	bf18      	it	ne
- 4f6:	2300      	movne	r3, #0
- 4f8:	2b00      	cmp	r3, #0
- 4fa:	d1ed      	bne.n	4d8 <ReadIeeeExtendedHighLow+0x20>
- 4fc:	4638      	mov	r0, r7
- 4fe:	f7ff fffe 	bl	0 <ConvertFromIeeeExtended>
- 502:	4a09      	ldr	r2, [pc, #36]	; (528 <ReadIeeeExtendedHighLow+0x70>)
- 504:	4b07      	ldr	r3, [pc, #28]	; (524 <ReadIeeeExtendedHighLow+0x6c>)
- 506:	447a      	add	r2, pc
- 508:	58d3      	ldr	r3, [r2, r3]
- 50a:	681a      	ldr	r2, [r3, #0]
- 50c:	9b03      	ldr	r3, [sp, #12]
- 50e:	405a      	eors	r2, r3
- 510:	f04f 0300 	mov.w	r3, #0
- 514:	d101      	bne.n	51a <ReadIeeeExtendedHighLow+0x62>
- 516:	b005      	add	sp, #20
- 518:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 51a:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 51e:	bf00      	nop
- 520:	00000060 	.word	0x00000060
- 524:	00000000 	.word	0x00000000
- 528:	0000001e 	.word	0x0000001e
+Function ReadBytesSwapped @ 0x00400235
+0x00400235:	push	{r3, r4, r5, r6, r7, lr}
+0x00400237:	mov	r6, r1
+0x00400239:	mov	r5, r0
+0x0040023b:	mov	r4, r1
+0x0040023d:	adds	r7, r1, r2
+0x0040023f:	b	#0x400249
+0x00400241:	bl	#0x500001
+0x00400245:	strb	r0, [r4], #1
+0x00400249:	mov	r0, r5
+0x0040024b:	bl	#0x500019
+0x00400249:	mov	r0, r5
+0x0040024b:	bl	#0x500019
+0x0040024f:	mov	r3, r0
+0x00400251:	sub.w	ip, r7, r4
+0x00400255:	clz	r3, r3
+0x00400259:	cmp.w	ip, #0
+0x0040025d:	mov	r0, r5
+0x0040025f:	lsr.w	r3, r3, #5
+0x00400263:	mov	ip, r6
+0x00400265:	it	le
+0x00400267:	movle	r3, #0
+0x00400269:	cmp	r3, #0
+0x0040026b:	bne	#0x400241
+0x0040026d:	subs	r3, r4, #1
+0x0040026f:	cmp	r6, r3
+0x00400271:	bhs	#0x400285
+0x00400273:	ldrb.w	r2, [ip]
+0x00400277:	ldrb	r1, [r3]
+0x00400279:	strb	r1, [ip], #1
+0x0040027d:	strb	r2, [r3], #-1
+0x00400281:	cmp	ip, r3
+0x00400283:	blo	#0x400273
+0x00400285:	pop	{r3, r4, r5, r6, r7, pc}
 
-0000052c <ReadIeeeExtendedLowHigh>:
- 52c:	4a1f      	ldr	r2, [pc, #124]	; (5ac <ReadIeeeExtendedLowHigh+0x80>)
- 52e:	4b20      	ldr	r3, [pc, #128]	; (5b0 <ReadIeeeExtendedLowHigh+0x84>)
- 530:	447a      	add	r2, pc
- 532:	b5f0      	push	{r4, r5, r6, r7, lr}
- 534:	4605      	mov	r5, r0
- 536:	b085      	sub	sp, #20
- 538:	58d3      	ldr	r3, [r2, r3]
- 53a:	466e      	mov	r6, sp
- 53c:	4634      	mov	r4, r6
- 53e:	f10d 070a 	add.w	r7, sp, #10
- 542:	681b      	ldr	r3, [r3, #0]
- 544:	9303      	str	r3, [sp, #12]
- 546:	f04f 0300 	mov.w	r3, #0
- 54a:	e004      	b.n	556 <ReadIeeeExtendedLowHigh+0x2a>
- 54c:	4628      	mov	r0, r5
- 54e:	f7ff fffe 	bl	0 <getc>
- 552:	f804 0b01 	strb.w	r0, [r4], #1
- 556:	4628      	mov	r0, r5
- 558:	f7ff fffe 	bl	0 <feof>
- 55c:	1b3b      	subs	r3, r7, r4
- 55e:	2b00      	cmp	r3, #0
- 560:	4632      	mov	r2, r6
- 562:	bfd4      	ite	le
- 564:	2300      	movle	r3, #0
- 566:	2301      	movgt	r3, #1
- 568:	2800      	cmp	r0, #0
- 56a:	bf18      	it	ne
- 56c:	2300      	movne	r3, #0
- 56e:	2b00      	cmp	r3, #0
- 570:	d1ec      	bne.n	54c <ReadIeeeExtendedLowHigh+0x20>
- 572:	1e63      	subs	r3, r4, #1
- 574:	42b3      	cmp	r3, r6
- 576:	d907      	bls.n	588 <ReadIeeeExtendedLowHigh+0x5c>
- 578:	7811      	ldrb	r1, [r2, #0]
- 57a:	7818      	ldrb	r0, [r3, #0]
- 57c:	f802 0b01 	strb.w	r0, [r2], #1
- 580:	f803 1901 	strb.w	r1, [r3], #-1
- 584:	429a      	cmp	r2, r3
- 586:	d3f7      	bcc.n	578 <ReadIeeeExtendedLowHigh+0x4c>
- 588:	4630      	mov	r0, r6
- 58a:	f7ff fffe 	bl	0 <ConvertFromIeeeExtended>
- 58e:	4a09      	ldr	r2, [pc, #36]	; (5b4 <ReadIeeeExtendedLowHigh+0x88>)
- 590:	4b07      	ldr	r3, [pc, #28]	; (5b0 <ReadIeeeExtendedLowHigh+0x84>)
- 592:	447a      	add	r2, pc
- 594:	58d3      	ldr	r3, [r2, r3]
- 596:	681a      	ldr	r2, [r3, #0]
- 598:	9b03      	ldr	r3, [sp, #12]
- 59a:	405a      	eors	r2, r3
- 59c:	f04f 0300 	mov.w	r3, #0
- 5a0:	d101      	bne.n	5a6 <ReadIeeeExtendedLowHigh+0x7a>
- 5a2:	b005      	add	sp, #20
- 5a4:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 5a6:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 5aa:	bf00      	nop
- 5ac:	00000078 	.word	0x00000078
- 5b0:	00000000 	.word	0x00000000
- 5b4:	0000001e 	.word	0x0000001e
+Function sub_400287 @ 0x00400287
+0x00400287:	nop	
+0x00400289:	cmp	r2, #0
+0x0040028b:	ble	#0x4002a5
 
-000005b8 <WriteIeeeFloatLowHigh>:
- 5b8:	4a13      	ldr	r2, [pc, #76]	; (608 <WriteIeeeFloatLowHigh+0x50>)
- 5ba:	4b14      	ldr	r3, [pc, #80]	; (60c <WriteIeeeFloatLowHigh+0x54>)
- 5bc:	447a      	add	r2, pc
- 5be:	b570      	push	{r4, r5, r6, lr}
- 5c0:	4605      	mov	r5, r0
- 5c2:	b082      	sub	sp, #8
- 5c4:	58d3      	ldr	r3, [r2, r3]
- 5c6:	4668      	mov	r0, sp
- 5c8:	f10d 0403 	add.w	r4, sp, #3
- 5cc:	f10d 36ff 	add.w	r6, sp, #4294967295	; 0xffffffff
- 5d0:	681b      	ldr	r3, [r3, #0]
- 5d2:	9301      	str	r3, [sp, #4]
- 5d4:	f04f 0300 	mov.w	r3, #0
- 5d8:	f7ff fffe 	bl	0 <ConvertToIeeeSingle>
- 5dc:	f814 0901 	ldrb.w	r0, [r4], #-1
- 5e0:	4629      	mov	r1, r5
- 5e2:	f7ff fffe 	bl	0 <putc>
- 5e6:	42b4      	cmp	r4, r6
- 5e8:	d1f8      	bne.n	5dc <WriteIeeeFloatLowHigh+0x24>
- 5ea:	4a09      	ldr	r2, [pc, #36]	; (610 <WriteIeeeFloatLowHigh+0x58>)
- 5ec:	4b07      	ldr	r3, [pc, #28]	; (60c <WriteIeeeFloatLowHigh+0x54>)
- 5ee:	447a      	add	r2, pc
- 5f0:	58d3      	ldr	r3, [r2, r3]
- 5f2:	681a      	ldr	r2, [r3, #0]
- 5f4:	9b01      	ldr	r3, [sp, #4]
- 5f6:	405a      	eors	r2, r3
- 5f8:	f04f 0300 	mov.w	r3, #0
- 5fc:	d101      	bne.n	602 <WriteIeeeFloatLowHigh+0x4a>
- 5fe:	b002      	add	sp, #8
- 600:	bd70      	pop	{r4, r5, r6, pc}
- 602:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 606:	bf00      	nop
- 608:	00000048 	.word	0x00000048
- 60c:	00000000 	.word	0x00000000
- 610:	0000001e 	.word	0x0000001e
+Function WriteBytes @ 0x00400289
+0x00400289:	cmp	r2, #0
+0x0040028b:	ble	#0x4002a5
+0x0040028d:	push	{r4, r5, r6, lr}
+0x0040028f:	mov	r6, r0
+0x00400291:	mov	r4, r1
+0x00400293:	adds	r5, r1, r2
+0x00400295:	ldrb	r0, [r4], #1
+0x00400299:	mov	r1, r6
+0x0040029b:	bl	#0x50000d
+0x00400295:	ldrb	r0, [r4], #1
+0x00400299:	mov	r1, r6
+0x0040029b:	bl	#0x50000d
+0x0040029f:	cmp	r4, r5
+0x004002a1:	bne	#0x400295
+0x004002a3:	pop	{r4, r5, r6, pc}
+0x004002a5:	bx	lr
 
-00000614 <WriteIeeeFloatHighLow>:
- 614:	b570      	push	{r4, r5, r6, lr}
- 616:	4605      	mov	r5, r0
- 618:	4a11      	ldr	r2, [pc, #68]	; (660 <WriteIeeeFloatHighLow+0x4c>)
- 61a:	b082      	sub	sp, #8
- 61c:	466b      	mov	r3, sp
- 61e:	447a      	add	r2, pc
- 620:	461c      	mov	r4, r3
- 622:	4618      	mov	r0, r3
- 624:	4b0f      	ldr	r3, [pc, #60]	; (664 <WriteIeeeFloatHighLow+0x50>)
- 626:	ae01      	add	r6, sp, #4
- 628:	58d3      	ldr	r3, [r2, r3]
- 62a:	681b      	ldr	r3, [r3, #0]
- 62c:	9301      	str	r3, [sp, #4]
- 62e:	f04f 0300 	mov.w	r3, #0
- 632:	f7ff fffe 	bl	0 <ConvertToIeeeSingle>
- 636:	f814 0b01 	ldrb.w	r0, [r4], #1
- 63a:	4629      	mov	r1, r5
- 63c:	f7ff fffe 	bl	0 <putc>
- 640:	42b4      	cmp	r4, r6
- 642:	d1f8      	bne.n	636 <WriteIeeeFloatHighLow+0x22>
- 644:	4a08      	ldr	r2, [pc, #32]	; (668 <WriteIeeeFloatHighLow+0x54>)
- 646:	4b07      	ldr	r3, [pc, #28]	; (664 <WriteIeeeFloatHighLow+0x50>)
- 648:	447a      	add	r2, pc
- 64a:	58d3      	ldr	r3, [r2, r3]
- 64c:	681a      	ldr	r2, [r3, #0]
- 64e:	9b01      	ldr	r3, [sp, #4]
- 650:	405a      	eors	r2, r3
- 652:	f04f 0300 	mov.w	r3, #0
- 656:	d101      	bne.n	65c <WriteIeeeFloatHighLow+0x48>
- 658:	b002      	add	sp, #8
- 65a:	bd70      	pop	{r4, r5, r6, pc}
- 65c:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 660:	0000003e 	.word	0x0000003e
- 664:	00000000 	.word	0x00000000
- 668:	0000001c 	.word	0x0000001c
+Function sub_4002a7 @ 0x004002a7
+0x004002a7:	nop	
+0x004002a9:	push	{r4, r5, r6, lr}
+0x004002ab:	subs	r4, r2, #1
+0x004002ad:	add	r4, r1
+0x004002af:	cmp	r2, #0
+0x004002b1:	ble	#0x4002c5
 
-0000066c <WriteIeeeDoubleLowHigh>:
- 66c:	4a13      	ldr	r2, [pc, #76]	; (6bc <WriteIeeeDoubleLowHigh+0x50>)
- 66e:	4b14      	ldr	r3, [pc, #80]	; (6c0 <WriteIeeeDoubleLowHigh+0x54>)
- 670:	447a      	add	r2, pc
- 672:	b570      	push	{r4, r5, r6, lr}
- 674:	4605      	mov	r5, r0
- 676:	b084      	sub	sp, #16
- 678:	58d3      	ldr	r3, [r2, r3]
- 67a:	a801      	add	r0, sp, #4
- 67c:	f10d 040b 	add.w	r4, sp, #11
- 680:	f10d 0603 	add.w	r6, sp, #3
- 684:	681b      	ldr	r3, [r3, #0]
- 686:	9303      	str	r3, [sp, #12]
- 688:	f04f 0300 	mov.w	r3, #0
- 68c:	f7ff fffe 	bl	0 <ConvertToIeeeDouble>
- 690:	f814 0901 	ldrb.w	r0, [r4], #-1
- 694:	4629      	mov	r1, r5
- 696:	f7ff fffe 	bl	0 <putc>
- 69a:	42b4      	cmp	r4, r6
- 69c:	d1f8      	bne.n	690 <WriteIeeeDoubleLowHigh+0x24>
- 69e:	4a09      	ldr	r2, [pc, #36]	; (6c4 <WriteIeeeDoubleLowHigh+0x58>)
- 6a0:	4b07      	ldr	r3, [pc, #28]	; (6c0 <WriteIeeeDoubleLowHigh+0x54>)
- 6a2:	447a      	add	r2, pc
- 6a4:	58d3      	ldr	r3, [r2, r3]
- 6a6:	681a      	ldr	r2, [r3, #0]
- 6a8:	9b03      	ldr	r3, [sp, #12]
- 6aa:	405a      	eors	r2, r3
- 6ac:	f04f 0300 	mov.w	r3, #0
- 6b0:	d101      	bne.n	6b6 <WriteIeeeDoubleLowHigh+0x4a>
- 6b2:	b004      	add	sp, #16
- 6b4:	bd70      	pop	{r4, r5, r6, pc}
- 6b6:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 6ba:	bf00      	nop
- 6bc:	00000048 	.word	0x00000048
- 6c0:	00000000 	.word	0x00000000
- 6c4:	0000001e 	.word	0x0000001e
+Function WriteBytesSwapped @ 0x004002a9
+0x004002a9:	push	{r4, r5, r6, lr}
+0x004002ab:	subs	r4, r2, #1
+0x004002ad:	add	r4, r1
+0x004002af:	cmp	r2, #0
+0x004002b1:	ble	#0x4002c5
+0x004002b3:	mov	r6, r0
+0x004002b5:	subs	r5, r1, #1
+0x004002b7:	ldrb	r0, [r4], #-1
+0x004002bb:	mov	r1, r6
+0x004002bd:	bl	#0x50000d
+0x004002b7:	ldrb	r0, [r4], #-1
+0x004002bb:	mov	r1, r6
+0x004002bd:	bl	#0x50000d
+0x004002c1:	cmp	r5, r4
+0x004002c3:	bne	#0x4002b7
+0x004002c5:	pop	{r4, r5, r6, pc}
 
-000006c8 <WriteIeeeDoubleHighLow>:
- 6c8:	b570      	push	{r4, r5, r6, lr}
- 6ca:	4605      	mov	r5, r0
- 6cc:	4a11      	ldr	r2, [pc, #68]	; (714 <WriteIeeeDoubleHighLow+0x4c>)
- 6ce:	b084      	sub	sp, #16
- 6d0:	ab01      	add	r3, sp, #4
- 6d2:	447a      	add	r2, pc
- 6d4:	461c      	mov	r4, r3
- 6d6:	4618      	mov	r0, r3
- 6d8:	4b0f      	ldr	r3, [pc, #60]	; (718 <WriteIeeeDoubleHighLow+0x50>)
- 6da:	ae03      	add	r6, sp, #12
- 6dc:	58d3      	ldr	r3, [r2, r3]
- 6de:	681b      	ldr	r3, [r3, #0]
- 6e0:	9303      	str	r3, [sp, #12]
- 6e2:	f04f 0300 	mov.w	r3, #0
- 6e6:	f7ff fffe 	bl	0 <ConvertToIeeeDouble>
- 6ea:	f814 0b01 	ldrb.w	r0, [r4], #1
- 6ee:	4629      	mov	r1, r5
- 6f0:	f7ff fffe 	bl	0 <putc>
- 6f4:	42b4      	cmp	r4, r6
- 6f6:	d1f8      	bne.n	6ea <WriteIeeeDoubleHighLow+0x22>
- 6f8:	4a08      	ldr	r2, [pc, #32]	; (71c <WriteIeeeDoubleHighLow+0x54>)
- 6fa:	4b07      	ldr	r3, [pc, #28]	; (718 <WriteIeeeDoubleHighLow+0x50>)
- 6fc:	447a      	add	r2, pc
- 6fe:	58d3      	ldr	r3, [r2, r3]
- 700:	681a      	ldr	r2, [r3, #0]
- 702:	9b03      	ldr	r3, [sp, #12]
- 704:	405a      	eors	r2, r3
- 706:	f04f 0300 	mov.w	r3, #0
- 70a:	d101      	bne.n	710 <WriteIeeeDoubleHighLow+0x48>
- 70c:	b004      	add	sp, #16
- 70e:	bd70      	pop	{r4, r5, r6, pc}
- 710:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 714:	0000003e 	.word	0x0000003e
- 718:	00000000 	.word	0x00000000
- 71c:	0000001c 	.word	0x0000001c
+Function sub_4002c7 @ 0x004002c7
+0x004002c7:	nop	
+0x004002c9:	ldr	r2, [pc, #0x60]
+0x004002cb:	ldr	r3, [pc, #0x64]
+0x004002cd:	add	r2, pc
+0x004002cf:	push	{r4, r5, r6, r7, lr}
+0x004002d1:	mov	r5, r0
+0x004002d3:	sub	sp, #0xc
+0x004002d5:	ldr	r3, [r2, r3]
+0x004002d7:	mov	r7, sp
+0x004002d9:	mov	r4, r7
+0x004002db:	add	r6, sp, #4
+0x004002dd:	ldr	r3, [r3]
+0x004002df:	str	r3, [sp, #4]
+0x004002e1:	mov.w	r3, #0
+0x004002e5:	b	#0x4002f1
 
-00000720 <WriteIeeeExtendedLowHigh>:
- 720:	4a13      	ldr	r2, [pc, #76]	; (770 <WriteIeeeExtendedLowHigh+0x50>)
- 722:	4b14      	ldr	r3, [pc, #80]	; (774 <WriteIeeeExtendedLowHigh+0x54>)
- 724:	447a      	add	r2, pc
- 726:	b570      	push	{r4, r5, r6, lr}
- 728:	4605      	mov	r5, r0
- 72a:	b084      	sub	sp, #16
- 72c:	58d3      	ldr	r3, [r2, r3]
- 72e:	4668      	mov	r0, sp
- 730:	f10d 0409 	add.w	r4, sp, #9
- 734:	f10d 36ff 	add.w	r6, sp, #4294967295	; 0xffffffff
- 738:	681b      	ldr	r3, [r3, #0]
- 73a:	9303      	str	r3, [sp, #12]
- 73c:	f04f 0300 	mov.w	r3, #0
- 740:	f7ff fffe 	bl	0 <ConvertToIeeeExtended>
- 744:	f814 0901 	ldrb.w	r0, [r4], #-1
- 748:	4629      	mov	r1, r5
- 74a:	f7ff fffe 	bl	0 <putc>
- 74e:	42b4      	cmp	r4, r6
- 750:	d1f8      	bne.n	744 <WriteIeeeExtendedLowHigh+0x24>
- 752:	4a09      	ldr	r2, [pc, #36]	; (778 <WriteIeeeExtendedLowHigh+0x58>)
- 754:	4b07      	ldr	r3, [pc, #28]	; (774 <WriteIeeeExtendedLowHigh+0x54>)
- 756:	447a      	add	r2, pc
- 758:	58d3      	ldr	r3, [r2, r3]
- 75a:	681a      	ldr	r2, [r3, #0]
- 75c:	9b03      	ldr	r3, [sp, #12]
- 75e:	405a      	eors	r2, r3
- 760:	f04f 0300 	mov.w	r3, #0
- 764:	d101      	bne.n	76a <WriteIeeeExtendedLowHigh+0x4a>
- 766:	b004      	add	sp, #16
- 768:	bd70      	pop	{r4, r5, r6, pc}
- 76a:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 76e:	bf00      	nop
- 770:	00000048 	.word	0x00000048
- 774:	00000000 	.word	0x00000000
- 778:	0000001e 	.word	0x0000001e
+Function ReadIeeeFloatHighLow @ 0x004002c9
+0x004002c9:	ldr	r2, [pc, #0x60]
+0x004002cb:	ldr	r3, [pc, #0x64]
+0x004002cd:	add	r2, pc
+0x004002cf:	push	{r4, r5, r6, r7, lr}
+0x004002d1:	mov	r5, r0
+0x004002d3:	sub	sp, #0xc
+0x004002d5:	ldr	r3, [r2, r3]
+0x004002d7:	mov	r7, sp
+0x004002d9:	mov	r4, r7
+0x004002db:	add	r6, sp, #4
+0x004002dd:	ldr	r3, [r3]
+0x004002df:	str	r3, [sp, #4]
+0x004002e1:	mov.w	r3, #0
+0x004002e5:	b	#0x4002f1
+0x004002e7:	mov	r0, r5
+0x004002e9:	bl	#0x500001
+0x004002ed:	strb	r0, [r4], #1
+0x004002f1:	mov	r0, r5
+0x004002f3:	bl	#0x500019
+0x004002f1:	mov	r0, r5
+0x004002f3:	bl	#0x500019
+0x004002f7:	subs	r3, r6, r4
+0x004002f9:	cmp	r3, #0
+0x004002fb:	ite	le
+0x004002fd:	movle	r3, #0
+0x004002ff:	movgt	r3, #1
+0x00400301:	cmp	r0, #0
+0x00400303:	it	ne
+0x00400305:	movne	r3, #0
+0x00400307:	cmp	r3, #0
+0x00400309:	bne	#0x4002e7
+0x0040030b:	mov	r0, r7
+0x0040030d:	bl	#0x500025
+0x00400311:	ldr	r2, [pc, #0x20]
+0x00400313:	ldr	r3, [pc, #0x1c]
+0x00400315:	add	r2, pc
+0x00400317:	ldr	r3, [r2, r3]
+0x00400319:	ldr	r2, [r3]
+0x0040031b:	ldr	r3, [sp, #4]
+0x0040031d:	eors	r2, r3
+0x0040031f:	mov.w	r3, #0
+0x00400323:	bne	#0x400329
+0x00400325:	add	sp, #0xc
+0x00400327:	pop	{r4, r5, r6, r7, pc}
+0x00400329:	bl	#0x500031
 
-0000077c <WriteIeeeExtendedHighLow>:
- 77c:	b570      	push	{r4, r5, r6, lr}
- 77e:	4605      	mov	r5, r0
- 780:	4a12      	ldr	r2, [pc, #72]	; (7cc <WriteIeeeExtendedHighLow+0x50>)
- 782:	b084      	sub	sp, #16
- 784:	466b      	mov	r3, sp
- 786:	447a      	add	r2, pc
- 788:	461c      	mov	r4, r3
- 78a:	4618      	mov	r0, r3
- 78c:	4b10      	ldr	r3, [pc, #64]	; (7d0 <WriteIeeeExtendedHighLow+0x54>)
- 78e:	f10d 060a 	add.w	r6, sp, #10
- 792:	58d3      	ldr	r3, [r2, r3]
- 794:	681b      	ldr	r3, [r3, #0]
- 796:	9303      	str	r3, [sp, #12]
- 798:	f04f 0300 	mov.w	r3, #0
- 79c:	f7ff fffe 	bl	0 <ConvertToIeeeExtended>
- 7a0:	f814 0b01 	ldrb.w	r0, [r4], #1
- 7a4:	4629      	mov	r1, r5
- 7a6:	f7ff fffe 	bl	0 <putc>
- 7aa:	42b4      	cmp	r4, r6
- 7ac:	d1f8      	bne.n	7a0 <WriteIeeeExtendedHighLow+0x24>
- 7ae:	4a09      	ldr	r2, [pc, #36]	; (7d4 <WriteIeeeExtendedHighLow+0x58>)
- 7b0:	4b07      	ldr	r3, [pc, #28]	; (7d0 <WriteIeeeExtendedHighLow+0x54>)
- 7b2:	447a      	add	r2, pc
- 7b4:	58d3      	ldr	r3, [r2, r3]
- 7b6:	681a      	ldr	r2, [r3, #0]
- 7b8:	9b03      	ldr	r3, [sp, #12]
- 7ba:	405a      	eors	r2, r3
- 7bc:	f04f 0300 	mov.w	r3, #0
- 7c0:	d101      	bne.n	7c6 <WriteIeeeExtendedHighLow+0x4a>
- 7c2:	b004      	add	sp, #16
- 7c4:	bd70      	pop	{r4, r5, r6, pc}
- 7c6:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 7ca:	bf00      	nop
- 7cc:	00000042 	.word	0x00000042
- 7d0:	00000000 	.word	0x00000000
- 7d4:	0000001e 	.word	0x0000001e
+Function ReadIeeeFloatLowHigh @ 0x00400339
+0x00400339:	ldr	r2, [pc, #0x78]
+0x0040033b:	ldr	r3, [pc, #0x7c]
+0x0040033d:	add	r2, pc
+0x0040033f:	push	{r4, r5, r6, r7, lr}
+0x00400341:	mov	r5, r0
+0x00400343:	sub	sp, #0xc
+0x00400345:	ldr	r3, [r2, r3]
+0x00400347:	mov	r6, sp
+0x00400349:	mov	r4, r6
+0x0040034b:	add	r7, sp, #4
+0x0040034d:	ldr	r3, [r3]
+0x0040034f:	str	r3, [sp, #4]
+0x00400351:	mov.w	r3, #0
+0x00400355:	b	#0x400361
+0x00400357:	mov	r0, r5
+0x00400359:	bl	#0x500001
+0x0040035d:	strb	r0, [r4], #1
+0x00400361:	mov	r0, r5
+0x00400363:	bl	#0x500019
+0x00400361:	mov	r0, r5
+0x00400363:	bl	#0x500019
+0x00400367:	subs	r3, r7, r4
+0x00400369:	cmp	r3, #0
+0x0040036b:	mov	r2, r6
+0x0040036d:	ite	le
+0x0040036f:	movle	r3, #0
+0x00400371:	movgt	r3, #1
+0x00400373:	cmp	r0, #0
+0x00400375:	it	ne
+0x00400377:	movne	r3, #0
+0x00400379:	cmp	r3, #0
+0x0040037b:	bne	#0x400357
+0x0040037d:	subs	r3, r4, #1
+0x0040037f:	cmp	r3, r6
+0x00400381:	bls	#0x400393
+0x00400383:	ldrb	r1, [r2]
+0x00400385:	ldrb	r0, [r3]
+0x00400387:	strb	r0, [r2], #1
+0x0040038b:	strb	r1, [r3], #-1
+0x0040038f:	cmp	r2, r3
+0x00400391:	blo	#0x400383
+0x00400393:	mov	r0, r6
+0x00400395:	bl	#0x500025
+0x00400399:	ldr	r2, [pc, #0x20]
+0x0040039b:	ldr	r3, [pc, #0x1c]
+0x0040039d:	add	r2, pc
+0x0040039f:	ldr	r3, [r2, r3]
+0x004003a1:	ldr	r2, [r3]
+0x004003a3:	ldr	r3, [sp, #4]
+0x004003a5:	eors	r2, r3
+0x004003a7:	mov.w	r3, #0
+0x004003ab:	bne	#0x4003b1
+0x004003ad:	add	sp, #0xc
+0x004003af:	pop	{r4, r5, r6, r7, pc}
+0x004003b1:	bl	#0x500031
+
+Function ReadIeeeDoubleHighLow @ 0x004003c1
+0x004003c1:	ldr	r2, [pc, #0x60]
+0x004003c3:	ldr	r3, [pc, #0x64]
+0x004003c5:	add	r2, pc
+0x004003c7:	push	{r4, r5, r6, r7, lr}
+0x004003c9:	mov	r5, r0
+0x004003cb:	sub	sp, #0x14
+0x004003cd:	ldr	r3, [r2, r3]
+0x004003cf:	add	r7, sp, #4
+0x004003d1:	mov	r4, r7
+0x004003d3:	add	r6, sp, #0xc
+0x004003d5:	ldr	r3, [r3]
+0x004003d7:	str	r3, [sp, #0xc]
+0x004003d9:	mov.w	r3, #0
+0x004003dd:	b	#0x4003e9
+0x004003df:	mov	r0, r5
+0x004003e1:	bl	#0x500001
+0x004003e5:	strb	r0, [r4], #1
+0x004003e9:	mov	r0, r5
+0x004003eb:	bl	#0x500019
+0x004003e9:	mov	r0, r5
+0x004003eb:	bl	#0x500019
+0x004003ef:	subs	r3, r6, r4
+0x004003f1:	cmp	r3, #0
+0x004003f3:	ite	le
+0x004003f5:	movle	r3, #0
+0x004003f7:	movgt	r3, #1
+0x004003f9:	cmp	r0, #0
+0x004003fb:	it	ne
+0x004003fd:	movne	r3, #0
+0x004003ff:	cmp	r3, #0
+0x00400401:	bne	#0x4003df
+0x00400403:	mov	r0, r7
+0x00400405:	bl	#0x50003d
+0x00400409:	ldr	r2, [pc, #0x20]
+0x0040040b:	ldr	r3, [pc, #0x1c]
+0x0040040d:	add	r2, pc
+0x0040040f:	ldr	r3, [r2, r3]
+0x00400411:	ldr	r2, [r3]
+0x00400413:	ldr	r3, [sp, #0xc]
+0x00400415:	eors	r2, r3
+0x00400417:	mov.w	r3, #0
+0x0040041b:	bne	#0x400421
+0x0040041d:	add	sp, #0x14
+0x0040041f:	pop	{r4, r5, r6, r7, pc}
+0x00400421:	bl	#0x500031
+
+Function ReadIeeeDoubleLowHigh @ 0x00400431
+0x00400431:	ldr	r2, [pc, #0x78]
+0x00400433:	ldr	r3, [pc, #0x7c]
+0x00400435:	add	r2, pc
+0x00400437:	push	{r4, r5, r6, r7, lr}
+0x00400439:	mov	r5, r0
+0x0040043b:	sub	sp, #0x14
+0x0040043d:	ldr	r3, [r2, r3]
+0x0040043f:	add	r6, sp, #4
+0x00400441:	mov	r4, r6
+0x00400443:	add	r7, sp, #0xc
+0x00400445:	ldr	r3, [r3]
+0x00400447:	str	r3, [sp, #0xc]
+0x00400449:	mov.w	r3, #0
+0x0040044d:	b	#0x400459
+0x0040044f:	mov	r0, r5
+0x00400451:	bl	#0x500001
+0x00400455:	strb	r0, [r4], #1
+0x00400459:	mov	r0, r5
+0x0040045b:	bl	#0x500019
+0x00400459:	mov	r0, r5
+0x0040045b:	bl	#0x500019
+0x0040045f:	subs	r3, r7, r4
+0x00400461:	cmp	r3, #0
+0x00400463:	mov	r2, r6
+0x00400465:	ite	le
+0x00400467:	movle	r3, #0
+0x00400469:	movgt	r3, #1
+0x0040046b:	cmp	r0, #0
+0x0040046d:	it	ne
+0x0040046f:	movne	r3, #0
+0x00400471:	cmp	r3, #0
+0x00400473:	bne	#0x40044f
+0x00400475:	subs	r3, r4, #1
+0x00400477:	cmp	r3, r6
+0x00400479:	bls	#0x40048b
+0x0040047b:	ldrb	r1, [r2]
+0x0040047d:	ldrb	r0, [r3]
+0x0040047f:	strb	r0, [r2], #1
+0x00400483:	strb	r1, [r3], #-1
+0x00400487:	cmp	r2, r3
+0x00400489:	blo	#0x40047b
+0x0040048b:	mov	r0, r6
+0x0040048d:	bl	#0x50003d
+0x00400491:	ldr	r2, [pc, #0x20]
+0x00400493:	ldr	r3, [pc, #0x1c]
+0x00400495:	add	r2, pc
+0x00400497:	ldr	r3, [r2, r3]
+0x00400499:	ldr	r2, [r3]
+0x0040049b:	ldr	r3, [sp, #0xc]
+0x0040049d:	eors	r2, r3
+0x0040049f:	mov.w	r3, #0
+0x004004a3:	bne	#0x4004a9
+0x004004a5:	add	sp, #0x14
+0x004004a7:	pop	{r4, r5, r6, r7, pc}
+0x004004a9:	bl	#0x500031
+
+Function ReadIeeeExtendedHighLow @ 0x004004b9
+0x004004b9:	ldr	r2, [pc, #0x64]
+0x004004bb:	ldr	r3, [pc, #0x68]
+0x004004bd:	add	r2, pc
+0x004004bf:	push	{r4, r5, r6, r7, lr}
+0x004004c1:	mov	r5, r0
+0x004004c3:	sub	sp, #0x14
+0x004004c5:	ldr	r3, [r2, r3]
+0x004004c7:	mov	r7, sp
+0x004004c9:	mov	r4, r7
+0x004004cb:	add.w	r6, sp, #0xa
+0x004004cf:	ldr	r3, [r3]
+0x004004d1:	str	r3, [sp, #0xc]
+0x004004d3:	mov.w	r3, #0
+0x004004d7:	b	#0x4004e3
+0x004004d9:	mov	r0, r5
+0x004004db:	bl	#0x500001
+0x004004df:	strb	r0, [r4], #1
+0x004004e3:	mov	r0, r5
+0x004004e5:	bl	#0x500019
+0x004004e3:	mov	r0, r5
+0x004004e5:	bl	#0x500019
+0x004004e9:	subs	r3, r6, r4
+0x004004eb:	cmp	r3, #0
+0x004004ed:	ite	le
+0x004004ef:	movle	r3, #0
+0x004004f1:	movgt	r3, #1
+0x004004f3:	cmp	r0, #0
+0x004004f5:	it	ne
+0x004004f7:	movne	r3, #0
+0x004004f9:	cmp	r3, #0
+0x004004fb:	bne	#0x4004d9
+0x004004fd:	mov	r0, r7
+0x004004ff:	bl	#0x500049
+0x00400503:	ldr	r2, [pc, #0x24]
+0x00400505:	ldr	r3, [pc, #0x1c]
+0x00400507:	add	r2, pc
+0x00400509:	ldr	r3, [r2, r3]
+0x0040050b:	ldr	r2, [r3]
+0x0040050d:	ldr	r3, [sp, #0xc]
+0x0040050f:	eors	r2, r3
+0x00400511:	mov.w	r3, #0
+0x00400515:	bne	#0x40051b
+0x00400517:	add	sp, #0x14
+0x00400519:	pop	{r4, r5, r6, r7, pc}
+0x0040051b:	bl	#0x500031
+
+Function sub_40051f @ 0x0040051f
+0x0040051f:	nop	
+0x00400521:	lsls	r0, r4, #1
+0x00400523:	movs	r0, r0
+0x00400525:	movs	r0, r0
+0x00400527:	movs	r0, r0
+0x00400529:	movs	r6, r3
+0x0040052b:	movs	r0, r0
+0x0040052d:	ldr	r2, [pc, #0x7c]
+0x0040052f:	ldr	r3, [pc, #0x80]
+0x00400531:	add	r2, pc
+0x00400533:	push	{r4, r5, r6, r7, lr}
+0x00400535:	mov	r5, r0
+0x00400537:	sub	sp, #0x14
+0x00400539:	ldr	r3, [r2, r3]
+0x0040053b:	mov	r6, sp
+0x0040053d:	mov	r4, r6
+0x0040053f:	add.w	r7, sp, #0xa
+0x00400543:	ldr	r3, [r3]
+0x00400545:	str	r3, [sp, #0xc]
+0x00400547:	mov.w	r3, #0
+0x0040054b:	b	#0x400557
+
+Function ReadIeeeExtendedLowHigh @ 0x0040052d
+0x0040052d:	ldr	r2, [pc, #0x7c]
+0x0040052f:	ldr	r3, [pc, #0x80]
+0x00400531:	add	r2, pc
+0x00400533:	push	{r4, r5, r6, r7, lr}
+0x00400535:	mov	r5, r0
+0x00400537:	sub	sp, #0x14
+0x00400539:	ldr	r3, [r2, r3]
+0x0040053b:	mov	r6, sp
+0x0040053d:	mov	r4, r6
+0x0040053f:	add.w	r7, sp, #0xa
+0x00400543:	ldr	r3, [r3]
+0x00400545:	str	r3, [sp, #0xc]
+0x00400547:	mov.w	r3, #0
+0x0040054b:	b	#0x400557
+0x0040054d:	mov	r0, r5
+0x0040054f:	bl	#0x500001
+0x00400553:	strb	r0, [r4], #1
+0x00400557:	mov	r0, r5
+0x00400559:	bl	#0x500019
+0x00400557:	mov	r0, r5
+0x00400559:	bl	#0x500019
+0x0040055d:	subs	r3, r7, r4
+0x0040055f:	cmp	r3, #0
+0x00400561:	mov	r2, r6
+0x00400563:	ite	le
+0x00400565:	movle	r3, #0
+0x00400567:	movgt	r3, #1
+0x00400569:	cmp	r0, #0
+0x0040056b:	it	ne
+0x0040056d:	movne	r3, #0
+0x0040056f:	cmp	r3, #0
+0x00400571:	bne	#0x40054d
+0x00400573:	subs	r3, r4, #1
+0x00400575:	cmp	r3, r6
+0x00400577:	bls	#0x400589
+0x00400579:	ldrb	r1, [r2]
+0x0040057b:	ldrb	r0, [r3]
+0x0040057d:	strb	r0, [r2], #1
+0x00400581:	strb	r1, [r3], #-1
+0x00400585:	cmp	r2, r3
+0x00400587:	blo	#0x400579
+0x00400589:	mov	r0, r6
+0x0040058b:	bl	#0x500049
+0x0040058f:	ldr	r2, [pc, #0x24]
+0x00400591:	ldr	r3, [pc, #0x1c]
+0x00400593:	add	r2, pc
+0x00400595:	ldr	r3, [r2, r3]
+0x00400597:	ldr	r2, [r3]
+0x00400599:	ldr	r3, [sp, #0xc]
+0x0040059b:	eors	r2, r3
+0x0040059d:	mov.w	r3, #0
+0x004005a1:	bne	#0x4005a7
+0x004005a3:	add	sp, #0x14
+0x004005a5:	pop	{r4, r5, r6, r7, pc}
+0x004005a7:	bl	#0x500031
+
+Function sub_4005ab @ 0x004005ab
+0x004005ab:	nop	
+0x004005ad:	lsls	r0, r7, #1
+0x004005af:	movs	r0, r0
+0x004005b1:	movs	r0, r0
+0x004005b3:	movs	r0, r0
+0x004005b5:	movs	r6, r3
+0x004005b7:	movs	r0, r0
+0x004005b9:	ldr	r2, [pc, #0x4c]
+0x004005bb:	ldr	r3, [pc, #0x50]
+0x004005bd:	add	r2, pc
+0x004005bf:	push	{r4, r5, r6, lr}
+0x004005c1:	mov	r5, r0
+0x004005c3:	sub	sp, #8
+0x004005c5:	ldr	r3, [r2, r3]
+0x004005c7:	mov	r0, sp
+0x004005c9:	add.w	r4, sp, #3
+0x004005cd:	add.w	r6, sp, #-1
+0x004005d1:	ldr	r3, [r3]
+0x004005d3:	str	r3, [sp, #4]
+0x004005d5:	mov.w	r3, #0
+0x004005d9:	bl	#0x500055
+
+Function WriteIeeeFloatLowHigh @ 0x004005b9
+0x004005b9:	ldr	r2, [pc, #0x4c]
+0x004005bb:	ldr	r3, [pc, #0x50]
+0x004005bd:	add	r2, pc
+0x004005bf:	push	{r4, r5, r6, lr}
+0x004005c1:	mov	r5, r0
+0x004005c3:	sub	sp, #8
+0x004005c5:	ldr	r3, [r2, r3]
+0x004005c7:	mov	r0, sp
+0x004005c9:	add.w	r4, sp, #3
+0x004005cd:	add.w	r6, sp, #-1
+0x004005d1:	ldr	r3, [r3]
+0x004005d3:	str	r3, [sp, #4]
+0x004005d5:	mov.w	r3, #0
+0x004005d9:	bl	#0x500055
+0x004005dd:	ldrb	r0, [r4], #-1
+0x004005e1:	mov	r1, r5
+0x004005e3:	bl	#0x50000d
+0x004005e7:	cmp	r4, r6
+0x004005e9:	bne	#0x4005dd
+0x004005eb:	ldr	r2, [pc, #0x24]
+0x004005ed:	ldr	r3, [pc, #0x1c]
+0x004005ef:	add	r2, pc
+0x004005f1:	ldr	r3, [r2, r3]
+0x004005f3:	ldr	r2, [r3]
+0x004005f5:	ldr	r3, [sp, #4]
+0x004005f7:	eors	r2, r3
+0x004005f9:	mov.w	r3, #0
+0x004005fd:	bne	#0x400603
+0x004005ff:	add	sp, #8
+0x00400601:	pop	{r4, r5, r6, pc}
+0x00400603:	bl	#0x500031
+
+Function sub_400607 @ 0x00400607
+0x00400607:	nop	
+0x00400609:	lsls	r0, r1, #1
+0x0040060b:	movs	r0, r0
+0x0040060d:	movs	r0, r0
+0x0040060f:	movs	r0, r0
+0x00400611:	movs	r6, r3
+0x00400613:	movs	r0, r0
+0x00400615:	push	{r4, r5, r6, lr}
+0x00400617:	mov	r5, r0
+0x00400619:	ldr	r2, [pc, #0x44]
+0x0040061b:	sub	sp, #8
+0x0040061d:	mov	r3, sp
+0x0040061f:	add	r2, pc
+0x00400621:	mov	r4, r3
+0x00400623:	mov	r0, r3
+0x00400625:	ldr	r3, [pc, #0x3c]
+0x00400627:	add	r6, sp, #4
+0x00400629:	ldr	r3, [r2, r3]
+0x0040062b:	ldr	r3, [r3]
+0x0040062d:	str	r3, [sp, #4]
+0x0040062f:	mov.w	r3, #0
+0x00400633:	bl	#0x500055
+
+Function WriteIeeeFloatHighLow @ 0x00400615
+0x00400615:	push	{r4, r5, r6, lr}
+0x00400617:	mov	r5, r0
+0x00400619:	ldr	r2, [pc, #0x44]
+0x0040061b:	sub	sp, #8
+0x0040061d:	mov	r3, sp
+0x0040061f:	add	r2, pc
+0x00400621:	mov	r4, r3
+0x00400623:	mov	r0, r3
+0x00400625:	ldr	r3, [pc, #0x3c]
+0x00400627:	add	r6, sp, #4
+0x00400629:	ldr	r3, [r2, r3]
+0x0040062b:	ldr	r3, [r3]
+0x0040062d:	str	r3, [sp, #4]
+0x0040062f:	mov.w	r3, #0
+0x00400633:	bl	#0x500055
+0x00400637:	ldrb	r0, [r4], #1
+0x0040063b:	mov	r1, r5
+0x0040063d:	bl	#0x50000d
+0x00400641:	cmp	r4, r6
+0x00400643:	bne	#0x400637
+0x00400645:	ldr	r2, [pc, #0x20]
+0x00400647:	ldr	r3, [pc, #0x1c]
+0x00400649:	add	r2, pc
+0x0040064b:	ldr	r3, [r2, r3]
+0x0040064d:	ldr	r2, [r3]
+0x0040064f:	ldr	r3, [sp, #4]
+0x00400651:	eors	r2, r3
+0x00400653:	mov.w	r3, #0
+0x00400657:	bne	#0x40065d
+0x00400659:	add	sp, #8
+0x0040065b:	pop	{r4, r5, r6, pc}
+0x0040065d:	bl	#0x500031
+
+Function WriteIeeeDoubleLowHigh @ 0x0040066d
+0x0040066d:	ldr	r2, [pc, #0x4c]
+0x0040066f:	ldr	r3, [pc, #0x50]
+0x00400671:	add	r2, pc
+0x00400673:	push	{r4, r5, r6, lr}
+0x00400675:	mov	r5, r0
+0x00400677:	sub	sp, #0x10
+0x00400679:	ldr	r3, [r2, r3]
+0x0040067b:	add	r0, sp, #4
+0x0040067d:	add.w	r4, sp, #0xb
+0x00400681:	add.w	r6, sp, #3
+0x00400685:	ldr	r3, [r3]
+0x00400687:	str	r3, [sp, #0xc]
+0x00400689:	mov.w	r3, #0
+0x0040068d:	bl	#0x500061
+0x00400691:	ldrb	r0, [r4], #-1
+0x00400695:	mov	r1, r5
+0x00400697:	bl	#0x50000d
+0x0040069b:	cmp	r4, r6
+0x0040069d:	bne	#0x400691
+0x0040069f:	ldr	r2, [pc, #0x24]
+0x004006a1:	ldr	r3, [pc, #0x1c]
+0x004006a3:	add	r2, pc
+0x004006a5:	ldr	r3, [r2, r3]
+0x004006a7:	ldr	r2, [r3]
+0x004006a9:	ldr	r3, [sp, #0xc]
+0x004006ab:	eors	r2, r3
+0x004006ad:	mov.w	r3, #0
+0x004006b1:	bne	#0x4006b7
+0x004006b3:	add	sp, #0x10
+0x004006b5:	pop	{r4, r5, r6, pc}
+0x004006b7:	bl	#0x500031
+
+Function sub_4006bb @ 0x004006bb
+0x004006bb:	nop	
+0x004006bd:	lsls	r0, r1, #1
+0x004006bf:	movs	r0, r0
+0x004006c1:	movs	r0, r0
+0x004006c3:	movs	r0, r0
+0x004006c5:	movs	r6, r3
+0x004006c7:	movs	r0, r0
+0x004006c9:	push	{r4, r5, r6, lr}
+0x004006cb:	mov	r5, r0
+0x004006cd:	ldr	r2, [pc, #0x44]
+0x004006cf:	sub	sp, #0x10
+0x004006d1:	add	r3, sp, #4
+0x004006d3:	add	r2, pc
+0x004006d5:	mov	r4, r3
+0x004006d7:	mov	r0, r3
+0x004006d9:	ldr	r3, [pc, #0x3c]
+0x004006db:	add	r6, sp, #0xc
+0x004006dd:	ldr	r3, [r2, r3]
+0x004006df:	ldr	r3, [r3]
+0x004006e1:	str	r3, [sp, #0xc]
+0x004006e3:	mov.w	r3, #0
+0x004006e7:	bl	#0x500061
+
+Function WriteIeeeDoubleHighLow @ 0x004006c9
+0x004006c9:	push	{r4, r5, r6, lr}
+0x004006cb:	mov	r5, r0
+0x004006cd:	ldr	r2, [pc, #0x44]
+0x004006cf:	sub	sp, #0x10
+0x004006d1:	add	r3, sp, #4
+0x004006d3:	add	r2, pc
+0x004006d5:	mov	r4, r3
+0x004006d7:	mov	r0, r3
+0x004006d9:	ldr	r3, [pc, #0x3c]
+0x004006db:	add	r6, sp, #0xc
+0x004006dd:	ldr	r3, [r2, r3]
+0x004006df:	ldr	r3, [r3]
+0x004006e1:	str	r3, [sp, #0xc]
+0x004006e3:	mov.w	r3, #0
+0x004006e7:	bl	#0x500061
+0x004006eb:	ldrb	r0, [r4], #1
+0x004006ef:	mov	r1, r5
+0x004006f1:	bl	#0x50000d
+0x004006f5:	cmp	r4, r6
+0x004006f7:	bne	#0x4006eb
+0x004006f9:	ldr	r2, [pc, #0x20]
+0x004006fb:	ldr	r3, [pc, #0x1c]
+0x004006fd:	add	r2, pc
+0x004006ff:	ldr	r3, [r2, r3]
+0x00400701:	ldr	r2, [r3]
+0x00400703:	ldr	r3, [sp, #0xc]
+0x00400705:	eors	r2, r3
+0x00400707:	mov.w	r3, #0
+0x0040070b:	bne	#0x400711
+0x0040070d:	add	sp, #0x10
+0x0040070f:	pop	{r4, r5, r6, pc}
+0x00400711:	bl	#0x500031
+
+Function WriteIeeeExtendedLowHigh @ 0x00400721
+0x00400721:	ldr	r2, [pc, #0x4c]
+0x00400723:	ldr	r3, [pc, #0x50]
+0x00400725:	add	r2, pc
+0x00400727:	push	{r4, r5, r6, lr}
+0x00400729:	mov	r5, r0
+0x0040072b:	sub	sp, #0x10
+0x0040072d:	ldr	r3, [r2, r3]
+0x0040072f:	mov	r0, sp
+0x00400731:	add.w	r4, sp, #9
+0x00400735:	add.w	r6, sp, #-1
+0x00400739:	ldr	r3, [r3]
+0x0040073b:	str	r3, [sp, #0xc]
+0x0040073d:	mov.w	r3, #0
+0x00400741:	bl	#0x50006d
+0x00400745:	ldrb	r0, [r4], #-1
+0x00400749:	mov	r1, r5
+0x0040074b:	bl	#0x50000d
+0x0040074f:	cmp	r4, r6
+0x00400751:	bne	#0x400745
+0x00400753:	ldr	r2, [pc, #0x24]
+0x00400755:	ldr	r3, [pc, #0x1c]
+0x00400757:	add	r2, pc
+0x00400759:	ldr	r3, [r2, r3]
+0x0040075b:	ldr	r2, [r3]
+0x0040075d:	ldr	r3, [sp, #0xc]
+0x0040075f:	eors	r2, r3
+0x00400761:	mov.w	r3, #0
+0x00400765:	bne	#0x40076b
+0x00400767:	add	sp, #0x10
+0x00400769:	pop	{r4, r5, r6, pc}
+0x0040076b:	bl	#0x500031
+
+Function sub_40076f @ 0x0040076f
+0x0040076f:	nop	
+0x00400771:	lsls	r0, r1, #1
+0x00400773:	movs	r0, r0
+0x00400775:	movs	r0, r0
+0x00400777:	movs	r0, r0
+0x00400779:	movs	r6, r3
+0x0040077b:	movs	r0, r0
+0x0040077d:	push	{r4, r5, r6, lr}
+0x0040077f:	mov	r5, r0
+0x00400781:	ldr	r2, [pc, #0x48]
+0x00400783:	sub	sp, #0x10
+0x00400785:	mov	r3, sp
+0x00400787:	add	r2, pc
+0x00400789:	mov	r4, r3
+0x0040078b:	mov	r0, r3
+0x0040078d:	ldr	r3, [pc, #0x40]
+0x0040078f:	add.w	r6, sp, #0xa
+0x00400793:	ldr	r3, [r2, r3]
+0x00400795:	ldr	r3, [r3]
+0x00400797:	str	r3, [sp, #0xc]
+0x00400799:	mov.w	r3, #0
+0x0040079d:	bl	#0x50006d
+
+Function WriteIeeeExtendedHighLow @ 0x0040077d
+0x0040077d:	push	{r4, r5, r6, lr}
+0x0040077f:	mov	r5, r0
+0x00400781:	ldr	r2, [pc, #0x48]
+0x00400783:	sub	sp, #0x10
+0x00400785:	mov	r3, sp
+0x00400787:	add	r2, pc
+0x00400789:	mov	r4, r3
+0x0040078b:	mov	r0, r3
+0x0040078d:	ldr	r3, [pc, #0x40]
+0x0040078f:	add.w	r6, sp, #0xa
+0x00400793:	ldr	r3, [r2, r3]
+0x00400795:	ldr	r3, [r3]
+0x00400797:	str	r3, [sp, #0xc]
+0x00400799:	mov.w	r3, #0
+0x0040079d:	bl	#0x50006d
+0x004007a1:	ldrb	r0, [r4], #1
+0x004007a5:	mov	r1, r5
+0x004007a7:	bl	#0x50000d
+0x004007ab:	cmp	r4, r6
+0x004007ad:	bne	#0x4007a1
+0x004007af:	ldr	r2, [pc, #0x24]
+0x004007b1:	ldr	r3, [pc, #0x1c]
+0x004007b3:	add	r2, pc
+0x004007b5:	ldr	r3, [r2, r3]
+0x004007b7:	ldr	r2, [r3]
+0x004007b9:	ldr	r3, [sp, #0xc]
+0x004007bb:	eors	r2, r3
+0x004007bd:	mov.w	r3, #0
+0x004007c1:	bne	#0x4007c7
+0x004007c3:	add	sp, #0x10
+0x004007c5:	pop	{r4, r5, r6, pc}
+0x004007c7:	bl	#0x500031
+
+Function sub_4007cb @ 0x004007cb
+0x004007cb:	nop	
+0x004007cd:	lsls	r2, r0, #1
+0x004007cf:	movs	r0, r0
+0x004007d1:	movs	r0, r0
+0x004007d3:	movs	r0, r0
+0x004007d5:	movs	r6, r3
+0x004007d7:	movs	r0, r0
+
+Function getc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function putc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function feof @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function ConvertFromIeeeSingle @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function ConvertFromIeeeDouble @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function ConvertFromIeeeExtended @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function ConvertToIeeeSingle @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function ConvertToIeeeDouble @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function ConvertToIeeeExtended @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0

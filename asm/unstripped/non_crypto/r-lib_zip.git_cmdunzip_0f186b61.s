@@ -1,74 +1,108 @@
 
-/root/projects/compiled/non_crypto/unstripped/r-lib_zip.git_cmdunzip_0f186b61.o:     file format elf32-littlearm
+Function cmd_zip_error_handler @ 0x00400001
+0x00400001:	ldr.w	ip, [pc, #0x38]
+0x00400005:	mov	r3, r0
+0x00400007:	push	{lr}
+0x00400009:	ldr.w	lr, [pc, #0x34]
+0x0040000d:	add	ip, pc
+0x0040000f:	sub	sp, #0xc
+0x00400011:	mov	r0, ip
+0x00400013:	ldr.w	r0, [ip, lr]
+0x00400017:	str	r2, [sp, #4]
+0x00400019:	str	r1, [sp]
+0x0040001b:	movs	r1, #1
+0x0040001d:	ldr	r2, [pc, #0x24]
+0x0040001f:	ldr	r4, [sp, #0x10]
+0x00400021:	ldr	r0, [r0]
+0x00400023:	add	r2, pc
+0x00400025:	bl	#0x500001
+0x00400029:	cmp	r4, #0
+0x0040002b:	it	lt
+0x0040002d:	rsblt	r4, r4, #0
+0x0040002f:	blt	#0x400035
+0x00400031:	it	eq
+0x00400033:	moveq	r4, #1
+0x00400035:	mov	r0, r4
+0x00400037:	bl	#0x50000d
+0x00400035:	mov	r0, r4
+0x00400037:	bl	#0x50000d
 
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r4, r5
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r0, r0
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r2, r4
+0x00400047:	movs	r0, r0
 
-Disassembly of section .text:
+Function main @ 0x0040008d
+0x0040008d:	push	{r4, r5, lr}
+0x0040008f:	cmp	r0, #3
+0x00400091:	ldr	r4, [pc, #0x40]
+0x00400093:	sub	sp, #0xc
+0x00400095:	mov	r5, r1
+0x00400097:	add	r4, pc
+0x00400099:	beq	#0x4000b3
+0x0040009b:	ldr	r0, [pc, #0x3c]
+0x0040009d:	ldr	r2, [pc, #0x3c]
+0x0040009f:	ldr	r3, [r1]
+0x004000a1:	movs	r1, #1
+0x004000a3:	add	r2, pc
+0x004000a5:	ldr	r0, [r4, r0]
+0x004000a7:	ldr	r0, [r0]
+0x004000a9:	bl	#0x500001
+0x004000ad:	movs	r0, #1
+0x004000af:	add	sp, #0xc
+0x004000b1:	pop	{r4, r5, pc}
+0x004000af:	add	sp, #0xc
+0x004000b1:	pop	{r4, r5, pc}
+0x004000b3:	ldr	r0, [pc, #0x2c]
+0x004000b5:	movs	r4, #0
+0x004000b7:	add	r0, pc
+0x004000b9:	bl	#0x500019
+0x004000bd:	movs	r3, #1
+0x004000bf:	ldrd	r0, r1, [r5, #4]
+0x004000c3:	strd	r4, r1, [sp]
+0x004000c7:	mov	r2, r4
+0x004000c9:	mov	r1, r4
+0x004000cb:	bl	#0x500025
+0x004000cf:	mov	r0, r4
+0x004000d1:	b	#0x4000af
 
-00000000 <cmd_zip_error_handler>:
-   0:	f8df c038 	ldr.w	ip, [pc, #56]	; 3c <cmd_zip_error_handler+0x3c>
-   4:	4603      	mov	r3, r0
-   6:	b500      	push	{lr}
-   8:	f8df e034 	ldr.w	lr, [pc, #52]	; 40 <cmd_zip_error_handler+0x40>
-   c:	44fc      	add	ip, pc
-   e:	b083      	sub	sp, #12
-  10:	4660      	mov	r0, ip
-  12:	f85c 000e 	ldr.w	r0, [ip, lr]
-  16:	9201      	str	r2, [sp, #4]
-  18:	9100      	str	r1, [sp, #0]
-  1a:	2101      	movs	r1, #1
-  1c:	4a09      	ldr	r2, [pc, #36]	; (44 <cmd_zip_error_handler+0x44>)
-  1e:	9c04      	ldr	r4, [sp, #16]
-  20:	6800      	ldr	r0, [r0, #0]
-  22:	447a      	add	r2, pc
-  24:	f7ff fffe 	bl	0 <__fprintf_chk>
-  28:	2c00      	cmp	r4, #0
-  2a:	bfb8      	it	lt
-  2c:	4264      	neglt	r4, r4
-  2e:	db01      	blt.n	34 <cmd_zip_error_handler+0x34>
-  30:	bf08      	it	eq
-  32:	2401      	moveq	r4, #1
-  34:	4620      	mov	r0, r4
-  36:	f7ff fffe 	bl	0 <exit>
-  3a:	bf00      	nop
-  3c:	0000002c 	.word	0x0000002c
-  40:	00000000 	.word	0x00000000
-  44:	0000001e 	.word	0x0000001e
+Function sub_4000d3 @ 0x004000d3
+0x004000d3:	nop	
+0x004000d5:	movs	r2, r7
+0x004000d7:	movs	r0, r0
+0x004000d9:	movs	r0, r0
+0x004000db:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function __fprintf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b530      	push	{r4, r5, lr}
-   2:	2803      	cmp	r0, #3
-   4:	4c10      	ldr	r4, [pc, #64]	; (48 <main+0x48>)
-   6:	b083      	sub	sp, #12
-   8:	460d      	mov	r5, r1
-   a:	447c      	add	r4, pc
-   c:	d00b      	beq.n	26 <main+0x26>
-   e:	480f      	ldr	r0, [pc, #60]	; (4c <main+0x4c>)
-  10:	4a0f      	ldr	r2, [pc, #60]	; (50 <main+0x50>)
-  12:	680b      	ldr	r3, [r1, #0]
-  14:	2101      	movs	r1, #1
-  16:	447a      	add	r2, pc
-  18:	5820      	ldr	r0, [r4, r0]
-  1a:	6800      	ldr	r0, [r0, #0]
-  1c:	f7ff fffe 	bl	0 <__fprintf_chk>
-  20:	2001      	movs	r0, #1
-  22:	b003      	add	sp, #12
-  24:	bd30      	pop	{r4, r5, pc}
-  26:	480b      	ldr	r0, [pc, #44]	; (54 <main+0x54>)
-  28:	2400      	movs	r4, #0
-  2a:	4478      	add	r0, pc
-  2c:	f7ff fffe 	bl	0 <zip_set_error_handler>
-  30:	2301      	movs	r3, #1
-  32:	e9d5 0101 	ldrd	r0, r1, [r5, #4]
-  36:	e9cd 4100 	strd	r4, r1, [sp]
-  3a:	4622      	mov	r2, r4
-  3c:	4621      	mov	r1, r4
-  3e:	f7ff fffe 	bl	0 <zip_unzip>
-  42:	4620      	mov	r0, r4
-  44:	e7ed      	b.n	22 <main+0x22>
-  46:	bf00      	nop
-  48:	0000003a 	.word	0x0000003a
-  4c:	00000000 	.word	0x00000000
-  50:	00000036 	.word	0x00000036
-  54:	00000026 	.word	0x00000026
+Function exit @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function zip_set_error_handler @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function zip_unzip @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

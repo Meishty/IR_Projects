@@ -1,9 +1,4 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_ptype1_9560fced_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	f0000040 			; <UNDEFINED> instruction: 0xf0000040
-   4:	477000fe 			; <UNDEFINED> instruction: 0x477000fe
+Function sub_400005 @ 0x00400005
+0x00400005:	lsls	r6, r7, #3
+0x00400007:	bx	lr

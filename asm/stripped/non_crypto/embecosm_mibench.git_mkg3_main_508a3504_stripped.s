@@ -1,11 +1,15 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_mkg3_main_508a3504_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r4, r2, lsl #18
 
+Function sub_400007 @ 0x00400007
+0x00400007:	b.w	#0x400007
 
-Disassembly of section .text.startup:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	movs	r4, r0
+0x0040000f:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	20044902 	andcs	r4, r4, r2, lsl #18
-   4:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-   8:	bf00bffe 	svclt	0x0000bffe
-   c:	00000004 	andeq	r0, r0, r4
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r4, r0
+0x0040000f:	movs	r0, r0

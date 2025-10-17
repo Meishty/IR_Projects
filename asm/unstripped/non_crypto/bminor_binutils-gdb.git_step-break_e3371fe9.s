@@ -1,25 +1,16 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_step-break_e3371fe9.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwhs	fp, #0x1082
+0x00400004:	blls	#0x464c10
+0x00400008:	vstrle	d2, [r8, #-0]
+0x0040000c:	movwlo	sb, #0x1b01
+0x00400010:	blls	#0x464c1c
+0x0040000c:	movwlo	sb, #0x1b01
+0x00400010:	blls	#0x464c1c
+0x00400014:	movwls	r3, #0x1301
+0x00400018:	blhs	#0x426c24
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b082      	sub	sp, #8
-   2:	2301      	movs	r3, #1
-   4:	9301      	str	r3, [sp, #4]
-   6:	9b01      	ldr	r3, [sp, #4]
-   8:	2b00      	cmp	r3, #0
-   a:	dd08      	ble.n	1e <main+0x1e>
-   c:	9b01      	ldr	r3, [sp, #4]
-   e:	3301      	adds	r3, #1
-  10:	9301      	str	r3, [sp, #4]
-  12:	9b01      	ldr	r3, [sp, #4]
-  14:	3301      	adds	r3, #1
-  16:	9301      	str	r3, [sp, #4]
-  18:	9b01      	ldr	r3, [sp, #4]
-  1a:	2b00      	cmp	r3, #0
-  1c:	dcf6      	bgt.n	c <main+0xc>
-  1e:	2000      	movs	r0, #0
-  20:	b002      	add	sp, #8
-  22:	4770      	bx	lr
+Function sub_40001f @ 0x0040001f
+0x0040001f:	movs	r0, #0
+0x00400021:	add	sp, #8
+0x00400023:	bx	lr

@@ -1,26 +1,48 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_execution-termios_5ad6c2fc_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrlt	r4, [r0, #-0x808]
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	vtbl.8	d20, {d14, d15, d16}, d7
+0x0040000f:	add	r4, pc
+0x00400011:	mov	r3, r4
+0x00400013:	ldr	r3, [r4, r2]
+0x00400015:	ldr	r0, [r3]
+0x00400017:	bl	#0x400017
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
 
-00000000 <.text>:
-   0:	b5104808 	ldrlt	r4, [r0, #-2056]	; 0xfffff7f8
-   4:	4c084478 	cfstrsmi	mvf4, [r8], {120}	; 0x78
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	447c4a07 	ldrbtmi	r4, [ip], #-2567	; 0xfffff5f9
-  10:	58a34623 	stmiapl	r3!, {r0, r1, r5, r9, sl, lr}
-  14:	f7ff6818 			; <UNDEFINED> instruction: 0xf7ff6818
-  18:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  1c:	2001fffe 	strdcs	pc, [r1], -lr
-  20:	bf00bd10 	svclt	0x0000bd10
-  24:	0000001c 	andeq	r0, r0, ip, lsl r0
-  28:	00000016 	andeq	r0, r0, r6, lsl r0
-  2c:	00000000 	andeq	r0, r0, r0
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	movs	r0, #1
+0x00400021:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	movs	r4, r3
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r6, r2
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	2000fffe 	strdcs	pc, [r0], -lr
-   8:	bf00bd08 	svclt	0x0000bd08
+Function sub_400025 @ 0x00400025
+0x00400025:	movs	r4, r3
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r6, r2
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+
+Function sub_400041 @ 0x00400041
+0x00400041:	push	{r3, lr}
+0x00400043:	bl	#0x400043
+
+Function sub_400043 @ 0x00400043
+0x00400043:	bl	#0x400043
+0x00400047:	movs	r0, #0
+0x00400049:	pop	{r3, pc}
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	

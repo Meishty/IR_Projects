@@ -1,613 +1,1160 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_vers-script-dll_520d0c13.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svclt	#0x4770
 
+Function B @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <A>:
-   0:	4770      	bx	lr
-   2:	bf00      	nop
+Function C @ 0x00400009
+0x00400009:	bx	lr
 
-00000004 <B>:
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000008 <C>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function D @ 0x0040000d
+0x0040000d:	bx	lr
 
-0000000c <D>:
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	bx	lr
 
-00000010 <E>:
-  10:	4770      	bx	lr
-  12:	bf00      	nop
+Function E @ 0x00400011
+0x00400011:	bx	lr
 
-00000014 <GC_abort>:
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	bx	lr
 
-00000018 <GC_add_ext_descriptor>:
-  18:	4770      	bx	lr
-  1a:	bf00      	nop
+Function GC_abort @ 0x00400015
+0x00400015:	bx	lr
 
-0000001c <GC_add_leaked>:
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	bx	lr
 
-00000020 <GC_add_map_entry>:
-  20:	4770      	bx	lr
-  22:	bf00      	nop
+Function GC_add_ext_descriptor @ 0x00400019
+0x00400019:	bx	lr
 
-00000024 <GC_used_heap_size_after_full>:
-  24:	4770      	bx	lr
-  26:	bf00      	nop
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	bx	lr
 
-00000028 <GC_version>:
-  28:	4770      	bx	lr
-  2a:	bf00      	nop
+Function GC_add_leaked @ 0x0040001d
+0x0040001d:	bx	lr
 
-0000002c <GC_with_callee_saves_pushed>:
-  2c:	4770      	bx	lr
-  2e:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	bx	lr
 
-00000030 <GC_words_allocd_at_reset>:
-  30:	4770      	bx	lr
-  32:	bf00      	nop
+Function GC_add_map_entry @ 0x00400021
+0x00400021:	bx	lr
 
-00000034 <GC_world_stopped>:
-  34:	4770      	bx	lr
-  36:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	bx	lr
 
-00000038 <GC_write>:
-  38:	4770      	bx	lr
-  3a:	bf00      	nop
+Function GC_used_heap_size_after_full @ 0x00400025
+0x00400025:	bx	lr
 
-0000003c <JIS0208_to_Unicode>:
-  3c:	4770      	bx	lr
-  3e:	bf00      	nop
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	bx	lr
 
-00000040 <JIS0212_to_Unicode>:
-  40:	4770      	bx	lr
-  42:	bf00      	nop
+Function GC_version @ 0x00400029
+0x00400029:	bx	lr
 
-00000044 <JvConvertArgv>:
-  44:	4770      	bx	lr
-  46:	bf00      	nop
+Function sub_40002b @ 0x0040002b
+0x0040002b:	nop	
+0x0040002d:	bx	lr
 
-00000048 <JvRunMain>:
-  48:	4770      	bx	lr
-  4a:	bf00      	nop
+Function GC_with_callee_saves_pushed @ 0x0040002d
+0x0040002d:	bx	lr
 
-0000004c <JvRunMainName>:
-  4c:	4770      	bx	lr
-  4e:	bf00      	nop
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	bx	lr
 
-00000050 <Unicode_to_JIS>:
-  50:	4770      	bx	lr
-  52:	bf00      	nop
+Function GC_words_allocd_at_reset @ 0x00400031
+0x00400031:	bx	lr
 
-00000054 <_Jv_AllocBytes>:
-  54:	4770      	bx	lr
-  56:	bf00      	nop
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	bx	lr
 
-00000058 <_Jv_AllocObject>:
-  58:	4770      	bx	lr
-  5a:	bf00      	nop
+Function GC_world_stopped @ 0x00400035
+0x00400035:	bx	lr
 
-0000005c <_Jv_AllocObjectNoFinalizer>:
-  5c:	4770      	bx	lr
-  5e:	bf00      	nop
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	bx	lr
 
-00000060 <_ZTVN5javax8security4sasl23AuthenticationExceptionE>:
-  60:	4770      	bx	lr
-  62:	bf00      	nop
+Function GC_write @ 0x00400039
+0x00400039:	bx	lr
 
-00000064 <_ZTVN5javax8security4sasl4SaslE>:
-  64:	4770      	bx	lr
-  66:	bf00      	nop
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	bx	lr
 
-00000068 <__gcj_personality_v0>:
-  68:	4770      	bx	lr
-  6a:	bf00      	nop
+Function JIS0208_to_Unicode @ 0x0040003d
+0x0040003d:	bx	lr
 
-0000006c <__ieee754_acos>:
-  6c:	4770      	bx	lr
-  6e:	bf00      	nop
+Function sub_40003f @ 0x0040003f
+0x0040003f:	nop	
+0x00400041:	bx	lr
 
-00000070 <__ieee754_asin>:
-  70:	4770      	bx	lr
-  72:	bf00      	nop
+Function JIS0212_to_Unicode @ 0x00400041
+0x00400041:	bx	lr
 
-00000074 <__ieee754_atan2>:
-  74:	4770      	bx	lr
-  76:	bf00      	nop
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	bx	lr
 
-00000078 <__kernel_cos>:
-  78:	4770      	bx	lr
-  7a:	bf00      	nop
+Function JvConvertArgv @ 0x00400045
+0x00400045:	bx	lr
 
-0000007c <__kernel_rem_pio2>:
-  7c:	4770      	bx	lr
-  7e:	bf00      	nop
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	bx	lr
 
-00000080 <__kernel_sin>:
-  80:	4770      	bx	lr
-  82:	bf00      	nop
+Function JvRunMain @ 0x00400049
+0x00400049:	bx	lr
 
-00000084 <__kernel_tan>:
-  84:	4770      	bx	lr
-  86:	bf00      	nop
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
+0x0040004d:	bx	lr
 
-00000088 <_dist_code>:
-  88:	4770      	bx	lr
-  8a:	bf00      	nop
+Function JvRunMainName @ 0x0040004d
+0x0040004d:	bx	lr
 
-0000008c <_length_code>:
-  8c:	4770      	bx	lr
-  8e:	bf00      	nop
+Function sub_40004f @ 0x0040004f
+0x0040004f:	nop	
+0x00400051:	bx	lr
 
-00000090 <_mprec_log10>:
-  90:	4770      	bx	lr
-  92:	bf00      	nop
+Function Unicode_to_JIS @ 0x00400051
+0x00400051:	bx	lr
 
-00000094 <_tr_align>:
-  94:	4770      	bx	lr
-  96:	bf00      	nop
+Function sub_400053 @ 0x00400053
+0x00400053:	nop	
+0x00400055:	bx	lr
 
-00000098 <_tr_flush_block>:
-  98:	4770      	bx	lr
-  9a:	bf00      	nop
+Function _Jv_AllocBytes @ 0x00400055
+0x00400055:	bx	lr
 
-0000009c <_tr_init>:
-  9c:	4770      	bx	lr
-  9e:	bf00      	nop
+Function sub_400057 @ 0x00400057
+0x00400057:	nop	
+0x00400059:	bx	lr
 
-000000a0 <_tr_stored_block>:
-  a0:	4770      	bx	lr
-  a2:	bf00      	nop
+Function _Jv_AllocObject @ 0x00400059
+0x00400059:	bx	lr
 
-000000a4 <_tr_tally>:
-  a4:	4770      	bx	lr
-  a6:	bf00      	nop
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	
+0x0040005d:	bx	lr
 
-000000a8 <adler32>:
-  a8:	4770      	bx	lr
-  aa:	bf00      	nop
+Function _Jv_AllocObjectNoFinalizer @ 0x0040005d
+0x0040005d:	bx	lr
 
-000000ac <adler32_combine>:
-  ac:	4770      	bx	lr
-  ae:	bf00      	nop
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	bx	lr
 
-000000b0 <crc32>:
-  b0:	4770      	bx	lr
-  b2:	bf00      	nop
+Function _ZTVN5javax8security4sasl23AuthenticationExceptionE @ 0x00400061
+0x00400061:	bx	lr
 
-000000b4 <crc32_combine>:
-  b4:	4770      	bx	lr
-  b6:	bf00      	nop
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	bx	lr
 
-000000b8 <deflate>:
-  b8:	4770      	bx	lr
-  ba:	bf00      	nop
+Function _ZTVN5javax8security4sasl4SaslE @ 0x00400065
+0x00400065:	bx	lr
 
-000000bc <deflateBound>:
-  bc:	4770      	bx	lr
-  be:	bf00      	nop
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	bx	lr
 
-000000c0 <deflateCopy>:
-  c0:	4770      	bx	lr
-  c2:	bf00      	nop
+Function __gcj_personality_v0 @ 0x00400069
+0x00400069:	bx	lr
 
-000000c4 <ffi_call_STDCALL>:
-  c4:	4770      	bx	lr
-  c6:	bf00      	nop
+Function sub_40006b @ 0x0040006b
+0x0040006b:	nop	
+0x0040006d:	bx	lr
 
-000000c8 <ffi_call_SYSV>:
-  c8:	4770      	bx	lr
-  ca:	bf00      	nop
+Function __ieee754_acos @ 0x0040006d
+0x0040006d:	bx	lr
 
-000000cc <ffi_closure_SYSV>:
-  cc:	4770      	bx	lr
-  ce:	bf00      	nop
+Function sub_40006f @ 0x0040006f
+0x0040006f:	nop	
+0x00400071:	bx	lr
 
-000000d0 <ffi_closure_SYSV_inner>:
-  d0:	4770      	bx	lr
-  d2:	bf00      	nop
+Function __ieee754_asin @ 0x00400071
+0x00400071:	bx	lr
 
-000000d4 <ffi_closure_alloc>:
-  d4:	4770      	bx	lr
-  d6:	bf00      	nop
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+0x00400075:	bx	lr
 
-000000d8 <ffi_closure_free>:
-  d8:	4770      	bx	lr
-  da:	bf00      	nop
+Function __ieee754_atan2 @ 0x00400075
+0x00400075:	bx	lr
 
-000000dc <free_list_index_of>:
-  dc:	4770      	bx	lr
-  de:	bf00      	nop
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	bx	lr
 
-000000e0 <get_crc_table>:
-  e0:	4770      	bx	lr
-  e2:	bf00      	nop
+Function __kernel_cos @ 0x00400079
+0x00400079:	bx	lr
 
-000000e4 <gzclearerr>:
-  e4:	4770      	bx	lr
-  e6:	bf00      	nop
+Function sub_40007b @ 0x0040007b
+0x0040007b:	nop	
+0x0040007d:	bx	lr
 
-000000e8 <gzclose>:
-  e8:	4770      	bx	lr
-  ea:	bf00      	nop
+Function __kernel_rem_pio2 @ 0x0040007d
+0x0040007d:	bx	lr
 
-000000ec <gzungetc>:
-  ec:	4770      	bx	lr
-  ee:	bf00      	nop
+Function sub_40007f @ 0x0040007f
+0x0040007f:	nop	
+0x00400081:	bx	lr
 
-000000f0 <gzwrite>:
-  f0:	4770      	bx	lr
-  f2:	bf00      	nop
+Function __kernel_sin @ 0x00400081
+0x00400081:	bx	lr
 
-000000f4 <h0>:
-  f4:	4770      	bx	lr
-  f6:	bf00      	nop
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	bx	lr
 
-000000f8 <h1>:
-  f8:	4770      	bx	lr
-  fa:	bf00      	nop
+Function __kernel_tan @ 0x00400085
+0x00400085:	bx	lr
 
-000000fc <h2>:
-  fc:	4770      	bx	lr
-  fe:	bf00      	nop
+Function sub_400087 @ 0x00400087
+0x00400087:	nop	
+0x00400089:	bx	lr
 
-00000100 <h3>:
- 100:	4770      	bx	lr
- 102:	bf00      	nop
+Function _dist_code @ 0x00400089
+0x00400089:	bx	lr
 
-00000104 <h4>:
- 104:	4770      	bx	lr
- 106:	bf00      	nop
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	bx	lr
 
-00000108 <inflate>:
- 108:	4770      	bx	lr
- 10a:	bf00      	nop
+Function _length_code @ 0x0040008d
+0x0040008d:	bx	lr
 
-0000010c <inflateBack>:
- 10c:	4770      	bx	lr
- 10e:	bf00      	nop
+Function sub_40008f @ 0x0040008f
+0x0040008f:	nop	
+0x00400091:	bx	lr
 
-00000110 <inflateBackEnd>:
- 110:	4770      	bx	lr
- 112:	bf00      	nop
+Function _mprec_log10 @ 0x00400091
+0x00400091:	bx	lr
 
-00000114 <inflate_fast>:
- 114:	4770      	bx	lr
- 116:	bf00      	nop
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+0x00400095:	bx	lr
 
-00000118 <inflate_table>:
- 118:	4770      	bx	lr
- 11a:	bf00      	nop
+Function _tr_align @ 0x00400095
+0x00400095:	bx	lr
 
-0000011c <lt_dladderror>:
- 11c:	4770      	bx	lr
- 11e:	bf00      	nop
+Function sub_400097 @ 0x00400097
+0x00400097:	nop	
+0x00400099:	bx	lr
 
-00000120 <lt_dladdsearchdir>:
- 120:	4770      	bx	lr
- 122:	bf00      	nop
+Function _tr_flush_block @ 0x00400099
+0x00400099:	bx	lr
 
-00000124 <lt_dlsetsearchpath>:
- 124:	4770      	bx	lr
- 126:	bf00      	nop
+Function sub_40009b @ 0x0040009b
+0x0040009b:	nop	
+0x0040009d:	bx	lr
 
-00000128 <lt_dlsym>:
- 128:	4770      	bx	lr
- 12a:	bf00      	nop
+Function _tr_init @ 0x0040009d
+0x0040009d:	bx	lr
 
-0000012c <lt_preloaded_symbols>:
- 12c:	4770      	bx	lr
- 12e:	bf00      	nop
+Function sub_40009f @ 0x0040009f
+0x0040009f:	nop	
+0x004000a1:	bx	lr
 
-00000130 <print>:
- 130:	4770      	bx	lr
- 132:	bf00      	nop
+Function _tr_stored_block @ 0x004000a1
+0x004000a1:	bx	lr
 
-00000134 <thread_table>:
- 134:	4770      	bx	lr
- 136:	bf00      	nop
+Function sub_4000a3 @ 0x004000a3
+0x004000a3:	nop	
+0x004000a5:	bx	lr
 
-00000138 <uncompress>:
- 138:	4770      	bx	lr
- 13a:	bf00      	nop
+Function _tr_tally @ 0x004000a5
+0x004000a5:	bx	lr
 
-0000013c <zError>:
- 13c:	4770      	bx	lr
- 13e:	bf00      	nop
+Function sub_4000a7 @ 0x004000a7
+0x004000a7:	nop	
+0x004000a9:	bx	lr
 
-00000140 <z_errmsg>:
- 140:	4770      	bx	lr
- 142:	bf00      	nop
+Function adler32 @ 0x004000a9
+0x004000a9:	bx	lr
 
-00000144 <zcalloc>:
- 144:	4770      	bx	lr
- 146:	bf00      	nop
+Function sub_4000ab @ 0x004000ab
+0x004000ab:	nop	
+0x004000ad:	bx	lr
 
-00000148 <zcfree>:
- 148:	4770      	bx	lr
- 14a:	bf00      	nop
+Function adler32_combine @ 0x004000ad
+0x004000ad:	bx	lr
 
-0000014c <zlibCompileFlags>:
- 14c:	4770      	bx	lr
- 14e:	bf00      	nop
+Function sub_4000af @ 0x004000af
+0x004000af:	nop	
+0x004000b1:	bx	lr
 
-00000150 <zlibVersion>:
- 150:	4770      	bx	lr
- 152:	bf00      	nop
+Function crc32 @ 0x004000b1
+0x004000b1:	bx	lr
 
-00000154 <_Jv_JNIFunctions>:
- 154:	4770      	bx	lr
- 156:	bf00      	nop
+Function sub_4000b3 @ 0x004000b3
+0x004000b3:	nop	
+0x004000b5:	bx	lr
 
-00000158 <_Jv_JNI_InvokeFunctions>:
- 158:	4770      	bx	lr
- 15a:	bf00      	nop
+Function crc32_combine @ 0x004000b5
+0x004000b5:	bx	lr
 
-0000015c <_Jv_JNI_PopSystemFrame>:
- 15c:	4770      	bx	lr
- 15e:	bf00      	nop
+Function sub_4000b7 @ 0x004000b7
+0x004000b7:	nop	
+0x004000b9:	bx	lr
 
-00000160 <_Jv_JVMPI_Notify_OBJECT_ALLOC>:
- 160:	4770      	bx	lr
- 162:	bf00      	nop
+Function deflate @ 0x004000b9
+0x004000b9:	bx	lr
 
-00000164 <_Jv_JVMPI_Notify_THREAD_END>:
- 164:	4770      	bx	lr
- 166:	bf00      	nop
+Function sub_4000bb @ 0x004000bb
+0x004000bb:	nop	
+0x004000bd:	bx	lr
 
-00000168 <_Jv_JVMPI_Notify_THREAD_START>:
- 168:	4770      	bx	lr
- 16a:	bf00      	nop
+Function deflateBound @ 0x004000bd
+0x004000bd:	bx	lr
 
-0000016c <_Jv_JVMTI_Interface>:
- 16c:	4770      	bx	lr
- 16e:	bf00      	nop
+Function sub_4000bf @ 0x004000bf
+0x004000bf:	nop	
+0x004000c1:	bx	lr
 
-00000170 <_Jv_LookupInterfaceMethod>:
- 170:	4770      	bx	lr
- 172:	bf00      	nop
+Function deflateCopy @ 0x004000c1
+0x004000c1:	bx	lr
 
-00000174 <_Jv_LookupInterfaceMethodIdx>:
- 174:	4770      	bx	lr
- 176:	bf00      	nop
+Function sub_4000c3 @ 0x004000c3
+0x004000c3:	nop	
+0x004000c5:	bx	lr
 
-00000178 <_Jv_LookupJNIMethod>:
- 178:	4770      	bx	lr
- 17a:	bf00      	nop
+Function ffi_call_STDCALL @ 0x004000c5
+0x004000c5:	bx	lr
 
-0000017c <_Jv_Malloc>:
- 17c:	4770      	bx	lr
- 17e:	bf00      	nop
+Function sub_4000c7 @ 0x004000c7
+0x004000c7:	nop	
+0x004000c9:	bx	lr
 
-00000180 <_Jv_Throw>:
- 180:	4770      	bx	lr
- 182:	bf00      	nop
+Function ffi_call_SYSV @ 0x004000c9
+0x004000c9:	bx	lr
 
-00000184 <_Jv_ThrowAbstractMethodError>:
- 184:	4770      	bx	lr
- 186:	bf00      	nop
+Function sub_4000cb @ 0x004000cb
+0x004000cb:	nop	
+0x004000cd:	bx	lr
 
-00000188 <_Jv_UnwrapJNIweakReference>:
- 188:	4770      	bx	lr
- 18a:	bf00      	nop
+Function ffi_closure_SYSV @ 0x004000cd
+0x004000cd:	bx	lr
 
-0000018c <_Jv__mcmp>:
- 18c:	4770      	bx	lr
- 18e:	bf00      	nop
+Function sub_4000cf @ 0x004000cf
+0x004000cf:	nop	
+0x004000d1:	bx	lr
 
-00000190 <_Jv__mdiff>:
- 190:	4770      	bx	lr
- 192:	bf00      	nop
+Function ffi_closure_SYSV_inner @ 0x004000d1
+0x004000d1:	bx	lr
 
-00000194 <_Jv__mprec_bigtens>:
- 194:	4770      	bx	lr
- 196:	bf00      	nop
+Function sub_4000d3 @ 0x004000d3
+0x004000d3:	nop	
+0x004000d5:	bx	lr
 
-00000198 <_Jv__mprec_tinytens>:
- 198:	4770      	bx	lr
- 19a:	bf00      	nop
+Function ffi_closure_alloc @ 0x004000d5
+0x004000d5:	bx	lr
 
-0000019c <_Jv_argc>:
- 19c:	4770      	bx	lr
- 19e:	bf00      	nop
+Function sub_4000d7 @ 0x004000d7
+0x004000d7:	nop	
+0x004000d9:	bx	lr
 
-000001a0 <_Jv_argv>:
- 1a0:	4770      	bx	lr
- 1a2:	bf00      	nop
+Function ffi_closure_free @ 0x004000d9
+0x004000d9:	bx	lr
 
-000001a4 <_Jv_b2d>:
- 1a4:	4770      	bx	lr
- 1a6:	bf00      	nop
+Function sub_4000db @ 0x004000db
+0x004000db:	nop	
+0x004000dd:	bx	lr
 
-000001a8 <_Jv_booleanClass>:
- 1a8:	4770      	bx	lr
- 1aa:	bf00      	nop
+Function free_list_index_of @ 0x004000dd
+0x004000dd:	bx	lr
 
-000001ac <_Jv_byteClass>:
- 1ac:	4770      	bx	lr
- 1ae:	bf00      	nop
+Function sub_4000df @ 0x004000df
+0x004000df:	nop	
+0x004000e1:	bx	lr
 
-000001b0 <_Jv_charClass>:
- 1b0:	4770      	bx	lr
- 1b2:	bf00      	nop
+Function get_crc_table @ 0x004000e1
+0x004000e1:	bx	lr
 
-000001b4 <_Jv_d2b>:
- 1b4:	4770      	bx	lr
- 1b6:	bf00      	nop
+Function sub_4000e3 @ 0x004000e3
+0x004000e3:	nop	
+0x004000e5:	bx	lr
 
-000001b8 <_Jv_ulp>:
- 1b8:	4770      	bx	lr
- 1ba:	bf00      	nop
+Function gzclearerr @ 0x004000e5
+0x004000e5:	bx	lr
 
-000001bc <_Jv_voidClass>:
- 1bc:	4770      	bx	lr
- 1be:	bf00      	nop
+Function sub_4000e7 @ 0x004000e7
+0x004000e7:	nop	
+0x004000e9:	bx	lr
 
-000001c0 <_Z10_Jv_InitGCv>:
- 1c0:	4770      	bx	lr
- 1c2:	bf00      	nop
+Function gzclose @ 0x004000e9
+0x004000e9:	bx	lr
 
-000001c4 <_Z10_Jv_equalnP13_Jv_Utf8ConstPN4java4lang6StringEi>:
- 1c4:	4770      	bx	lr
- 1c6:	bf00      	nop
+Function sub_4000eb @ 0x004000eb
+0x004000eb:	nop	
+0x004000ed:	bx	lr
 
-000001c8 <_Z11_Jv_SetArgsiPPKc>:
- 1c8:	4770      	bx	lr
- 1ca:	bf00      	nop
+Function gzungetc @ 0x004000ed
+0x004000ed:	bx	lr
 
-000001cc <_Z11_Jv_ZMallocPvjj>:
- 1cc:	4770      	bx	lr
- 1ce:	bf00      	nop
+Function sub_4000ef @ 0x004000ef
+0x004000ef:	nop	
+0x004000f1:	bx	lr
 
-000001d0 <_Z11trie_lookupPtt>:
- 1d0:	4770      	bx	lr
- 1d2:	bf00      	nop
+Function gzwrite @ 0x004000f1
+0x004000f1:	bx	lr
 
-000001d4 <_Z12_Jv_CondWaitP23_Jv_ConditionVariable_tP11_Jv_Mutex_txi>:
- 1d4:	4770      	bx	lr
- 1d6:	bf00      	nop
+Function sub_4000f3 @ 0x004000f3
+0x004000f3:	nop	
+0x004000f5:	bx	lr
 
-000001d8 <_Z12_Jv_init_cifP13_Jv_Utf8ConstibP7ffi_cifPP9_ffi_typeS5_>:
- 1d8:	4770      	bx	lr
- 1da:	bf00      	nop
+Function h0 @ 0x004000f5
+0x004000f5:	bx	lr
 
-000001dc <_Z12_Jv_is_proxyPv>:
- 1dc:	4770      	bx	lr
- 1de:	bf00      	nop
+Function sub_4000f7 @ 0x004000f7
+0x004000f7:	nop	
+0x004000f9:	bx	lr
 
-000001e0 <_Z12shsTransformP8SHS_INFO>:
- 1e0:	4770      	bx	lr
- 1e2:	bf00      	nop
+Function h1 @ 0x004000f9
+0x004000f9:	bx	lr
 
-000001e4 <_Z13_Jv_DisableGCv>:
- 1e4:	4770      	bx	lr
- 1e6:	bf00      	nop
+Function sub_4000fb @ 0x004000fb
+0x004000fb:	nop	
+0x004000fd:	bx	lr
 
-000001e8 <_Z15_Jv_create_coreP14_Jv_core_chainPN4java4lang6StringE>:
- 1e8:	4770      	bx	lr
- 1ea:	bf00      	nop
+Function h2 @ 0x004000fd
+0x004000fd:	bx	lr
 
-000001ec <_Z16_Jv_BlockSigchldv>:
- 1ec:	4770      	bx	lr
- 1ee:	bf00      	nop
+Function sub_4000ff @ 0x004000ff
+0x004000ff:	nop	
+0x00400101:	bx	lr
 
-000001f0 <_Z16_Jv_BuildGCDescrPN4java4lang5ClassE>:
- 1f0:	4770      	bx	lr
- 1f2:	bf00      	nop
+Function h3 @ 0x00400101
+0x00400101:	bx	lr
 
-000001f4 <_Z16_Jv_GCFreeMemoryv>:
- 1f4:	4770      	bx	lr
- 1f6:	bf00      	nop
+Function sub_400103 @ 0x00400103
+0x00400103:	nop	
+0x00400105:	bx	lr
 
-000001f8 <_Z16_Jv_SetStackSizePKc>:
- 1f8:	4770      	bx	lr
- 1fa:	bf00      	nop
+Function h4 @ 0x00400105
+0x00400105:	bx	lr
 
-000001fc <_Z16_Jv_VerifyMethodP16_Jv_InterpMethod>:
- 1fc:	4770      	bx	lr
- 1fe:	bf00      	nop
+Function sub_400107 @ 0x00400107
+0x00400107:	nop	
+0x00400109:	bx	lr
 
-00000200 <_Z17JvNewStringLatin1PKc>:
- 200:	4770      	bx	lr
- 202:	bf00      	nop
+Function inflate @ 0x00400109
+0x00400109:	bx	lr
 
-00000204 <_ZTVN5javax8security4auth4x50021X500PrivateCredentialE>:
- 204:	4770      	bx	lr
- 206:	bf00      	nop
+Function sub_40010b @ 0x0040010b
+0x0040010b:	nop	
+0x0040010d:	bx	lr
 
-00000208 <_ZTVN5javax8security4auth5login12LoginContextE>:
- 208:	4770      	bx	lr
- 20a:	bf00      	nop
+Function inflateBack @ 0x0040010d
+0x0040010d:	bx	lr
 
-0000020c <_ZTVN5javax8security4auth5login13ConfigurationE>:
- 20c:	4770      	bx	lr
- 20e:	bf00      	nop
+Function sub_40010f @ 0x0040010f
+0x0040010f:	nop	
+0x00400111:	bx	lr
 
-00000210 <_ZTVN5javax8security4auth5login14LoginExceptionE>:
- 210:	4770      	bx	lr
- 212:	bf00      	nop
+Function inflateBackEnd @ 0x00400111
+0x00400111:	bx	lr
 
-00000214 <_ZTVN5javax8security4sasl19RealmChoiceCallbackE>:
- 214:	4770      	bx	lr
- 216:	bf00      	nop
+Function sub_400113 @ 0x00400113
+0x00400113:	nop	
+0x00400115:	bx	lr
 
-00000218 <_Z24_Jv_isPrimitiveOrDerivedPK13_Jv_Utf8Const>:
- 218:	4770      	bx	lr
- 21a:	bf00      	nop
+Function inflate_fast @ 0x00400115
+0x00400115:	bx	lr
 
-0000021c <_Z26_Jv_FindSymbolInExecutablePKc>:
- 21c:	4770      	bx	lr
- 21e:	bf00      	nop
+Function sub_400117 @ 0x00400117
+0x00400117:	nop	
+0x00400119:	bx	lr
 
-00000220 <_Z26_Jv_GCInitializeFinalizersPFvvE>:
- 220:	4770      	bx	lr
- 222:	bf00      	nop
+Function inflate_table @ 0x00400119
+0x00400119:	bx	lr
 
-00000224 <_Z37_Jv_FindClassFromSignatureNoExceptionPcPN4java4lang11ClassLoaderEPS_>:
- 224:	4770      	bx	lr
- 226:	bf00      	nop
+Function sub_40011b @ 0x0040011b
+0x0040011b:	nop	
+0x0040011d:	bx	lr
 
-00000228 <_Z39_Jv_ThrowNoClassDefFoundErrorTrampolineP7ffi_cifPvPS1_S1_>:
- 228:	4770      	bx	lr
- 22a:	bf00      	nop
+Function lt_dladderror @ 0x0040011d
+0x0040011d:	bx	lr
 
-0000022c <_Z7in_hashPN4java4lang6ObjectE>:
- 22c:	4770      	bx	lr
- 22e:	bf00      	nop
+Function sub_40011f @ 0x0040011f
+0x0040011f:	nop	
+0x00400121:	bx	lr
 
-00000230 <_Z7shsInitP8SHS_INFO>:
- 230:	4770      	bx	lr
- 232:	bf00      	nop
+Function lt_dladdsearchdir @ 0x00400121
+0x00400121:	bx	lr
 
-00000234 <_Z8shsFinalP8SHS_INFO>:
- 234:	4770      	bx	lr
- 236:	bf00      	nop
+Function sub_400123 @ 0x00400123
+0x00400123:	nop	
+0x00400125:	bx	lr
 
-00000238 <_Z9_Jv_AbortPKcS0_iS0_>:
- 238:	4770      	bx	lr
- 23a:	bf00      	nop
+Function lt_dlsetsearchpath @ 0x00400125
+0x00400125:	bx	lr
 
-0000023c <_Z9_Jv_RunGCv>:
- 23c:	4770      	bx	lr
- 23e:	bf00      	nop
+Function sub_400127 @ 0x00400127
+0x00400127:	nop	
+0x00400129:	bx	lr
 
-00000240 <_Z9_Jv_ZFreePvS_>:
- 240:	4770      	bx	lr
- 242:	bf00      	nop
+Function lt_dlsym @ 0x00400129
+0x00400129:	bx	lr
 
-00000244 <_Z9_Jv_equalP13_Jv_Utf8ConstPN4java4lang6StringEi>:
- 244:	4770      	bx	lr
- 246:	bf00      	nop
+Function sub_40012b @ 0x0040012b
+0x0040012b:	nop	
+0x0040012d:	bx	lr
 
-00000248 <_Z9shsUpdateP8SHS_INFOPhi>:
- 248:	4770      	bx	lr
- 24a:	bf00      	nop
+Function lt_preloaded_symbols @ 0x0040012d
+0x0040012d:	bx	lr
 
-0000024c <_ZGr30_java_Sutil_Sweeks__properties>:
- 24c:	4770      	bx	lr
- 24e:	bf00      	nop
+Function sub_40012f @ 0x0040012f
+0x0040012f:	nop	
+0x00400131:	bx	lr
 
-00000250 <_ZGr32_java_Sutil_Siso4217__properties>:
- 250:	4770      	bx	lr
- 252:	bf00      	nop
+Function print @ 0x00400131
+0x00400131:	bx	lr
 
-00000254 <_ZGr48_gnu_Sjavax_Sprint_SPrinterDialog_de__properties>:
- 254:	4770      	bx	lr
- 256:	bf00      	nop
+Function sub_400133 @ 0x00400133
+0x00400133:	nop	
+0x00400135:	bx	lr
 
-00000258 <_ZGr49_gnu_Sjava_Slocale_SLocaleInformation__properties>:
- 258:	4770      	bx	lr
- 25a:	bf00      	nop
+Function thread_table @ 0x00400135
+0x00400135:	bx	lr
 
-0000025c <_ZGr51_gnu_Sjava_Sutil_Sregex_SMessagesBundle__properties>:
- 25c:	4770      	bx	lr
- 25e:	bf00      	nop
+Function sub_400137 @ 0x00400137
+0x00400137:	nop	
+0x00400139:	bx	lr
+
+Function uncompress @ 0x00400139
+0x00400139:	bx	lr
+
+Function sub_40013b @ 0x0040013b
+0x0040013b:	nop	
+0x0040013d:	bx	lr
+
+Function zError @ 0x0040013d
+0x0040013d:	bx	lr
+
+Function sub_40013f @ 0x0040013f
+0x0040013f:	nop	
+0x00400141:	bx	lr
+
+Function z_errmsg @ 0x00400141
+0x00400141:	bx	lr
+
+Function sub_400143 @ 0x00400143
+0x00400143:	nop	
+0x00400145:	bx	lr
+
+Function zcalloc @ 0x00400145
+0x00400145:	bx	lr
+
+Function sub_400147 @ 0x00400147
+0x00400147:	nop	
+0x00400149:	bx	lr
+
+Function zcfree @ 0x00400149
+0x00400149:	bx	lr
+
+Function sub_40014b @ 0x0040014b
+0x0040014b:	nop	
+0x0040014d:	bx	lr
+
+Function zlibCompileFlags @ 0x0040014d
+0x0040014d:	bx	lr
+
+Function sub_40014f @ 0x0040014f
+0x0040014f:	nop	
+0x00400151:	bx	lr
+
+Function zlibVersion @ 0x00400151
+0x00400151:	bx	lr
+
+Function sub_400153 @ 0x00400153
+0x00400153:	nop	
+0x00400155:	bx	lr
+
+Function _Jv_JNIFunctions @ 0x00400155
+0x00400155:	bx	lr
+
+Function sub_400157 @ 0x00400157
+0x00400157:	nop	
+0x00400159:	bx	lr
+
+Function _Jv_JNI_InvokeFunctions @ 0x00400159
+0x00400159:	bx	lr
+
+Function sub_40015b @ 0x0040015b
+0x0040015b:	nop	
+0x0040015d:	bx	lr
+
+Function _Jv_JNI_PopSystemFrame @ 0x0040015d
+0x0040015d:	bx	lr
+
+Function sub_40015f @ 0x0040015f
+0x0040015f:	nop	
+0x00400161:	bx	lr
+
+Function _Jv_JVMPI_Notify_OBJECT_ALLOC @ 0x00400161
+0x00400161:	bx	lr
+
+Function sub_400163 @ 0x00400163
+0x00400163:	nop	
+0x00400165:	bx	lr
+
+Function _Jv_JVMPI_Notify_THREAD_END @ 0x00400165
+0x00400165:	bx	lr
+
+Function sub_400167 @ 0x00400167
+0x00400167:	nop	
+0x00400169:	bx	lr
+
+Function _Jv_JVMPI_Notify_THREAD_START @ 0x00400169
+0x00400169:	bx	lr
+
+Function sub_40016b @ 0x0040016b
+0x0040016b:	nop	
+0x0040016d:	bx	lr
+
+Function _Jv_JVMTI_Interface @ 0x0040016d
+0x0040016d:	bx	lr
+
+Function sub_40016f @ 0x0040016f
+0x0040016f:	nop	
+0x00400171:	bx	lr
+
+Function _Jv_LookupInterfaceMethod @ 0x00400171
+0x00400171:	bx	lr
+
+Function sub_400173 @ 0x00400173
+0x00400173:	nop	
+0x00400175:	bx	lr
+
+Function _Jv_LookupInterfaceMethodIdx @ 0x00400175
+0x00400175:	bx	lr
+
+Function sub_400177 @ 0x00400177
+0x00400177:	nop	
+0x00400179:	bx	lr
+
+Function _Jv_LookupJNIMethod @ 0x00400179
+0x00400179:	bx	lr
+
+Function sub_40017b @ 0x0040017b
+0x0040017b:	nop	
+0x0040017d:	bx	lr
+
+Function _Jv_Malloc @ 0x0040017d
+0x0040017d:	bx	lr
+
+Function sub_40017f @ 0x0040017f
+0x0040017f:	nop	
+0x00400181:	bx	lr
+
+Function _Jv_Throw @ 0x00400181
+0x00400181:	bx	lr
+
+Function sub_400183 @ 0x00400183
+0x00400183:	nop	
+0x00400185:	bx	lr
+
+Function _Jv_ThrowAbstractMethodError @ 0x00400185
+0x00400185:	bx	lr
+
+Function sub_400187 @ 0x00400187
+0x00400187:	nop	
+0x00400189:	bx	lr
+
+Function _Jv_UnwrapJNIweakReference @ 0x00400189
+0x00400189:	bx	lr
+
+Function sub_40018b @ 0x0040018b
+0x0040018b:	nop	
+0x0040018d:	bx	lr
+
+Function _Jv__mcmp @ 0x0040018d
+0x0040018d:	bx	lr
+
+Function sub_40018f @ 0x0040018f
+0x0040018f:	nop	
+0x00400191:	bx	lr
+
+Function _Jv__mdiff @ 0x00400191
+0x00400191:	bx	lr
+
+Function sub_400193 @ 0x00400193
+0x00400193:	nop	
+0x00400195:	bx	lr
+
+Function _Jv__mprec_bigtens @ 0x00400195
+0x00400195:	bx	lr
+
+Function sub_400197 @ 0x00400197
+0x00400197:	nop	
+0x00400199:	bx	lr
+
+Function _Jv__mprec_tinytens @ 0x00400199
+0x00400199:	bx	lr
+
+Function sub_40019b @ 0x0040019b
+0x0040019b:	nop	
+0x0040019d:	bx	lr
+
+Function _Jv_argc @ 0x0040019d
+0x0040019d:	bx	lr
+
+Function sub_40019f @ 0x0040019f
+0x0040019f:	nop	
+0x004001a1:	bx	lr
+
+Function _Jv_argv @ 0x004001a1
+0x004001a1:	bx	lr
+
+Function sub_4001a3 @ 0x004001a3
+0x004001a3:	nop	
+0x004001a5:	bx	lr
+
+Function _Jv_b2d @ 0x004001a5
+0x004001a5:	bx	lr
+
+Function sub_4001a7 @ 0x004001a7
+0x004001a7:	nop	
+0x004001a9:	bx	lr
+
+Function _Jv_booleanClass @ 0x004001a9
+0x004001a9:	bx	lr
+
+Function sub_4001ab @ 0x004001ab
+0x004001ab:	nop	
+0x004001ad:	bx	lr
+
+Function _Jv_byteClass @ 0x004001ad
+0x004001ad:	bx	lr
+
+Function sub_4001af @ 0x004001af
+0x004001af:	nop	
+0x004001b1:	bx	lr
+
+Function _Jv_charClass @ 0x004001b1
+0x004001b1:	bx	lr
+
+Function sub_4001b3 @ 0x004001b3
+0x004001b3:	nop	
+0x004001b5:	bx	lr
+
+Function _Jv_d2b @ 0x004001b5
+0x004001b5:	bx	lr
+
+Function sub_4001b7 @ 0x004001b7
+0x004001b7:	nop	
+0x004001b9:	bx	lr
+
+Function _Jv_ulp @ 0x004001b9
+0x004001b9:	bx	lr
+
+Function sub_4001bb @ 0x004001bb
+0x004001bb:	nop	
+0x004001bd:	bx	lr
+
+Function _Jv_voidClass @ 0x004001bd
+0x004001bd:	bx	lr
+
+Function sub_4001bf @ 0x004001bf
+0x004001bf:	nop	
+0x004001c1:	bx	lr
+
+Function _Z10_Jv_InitGCv @ 0x004001c1
+0x004001c1:	bx	lr
+
+Function sub_4001c3 @ 0x004001c3
+0x004001c3:	nop	
+0x004001c5:	bx	lr
+
+Function _Z10_Jv_equalnP13_Jv_Utf8ConstPN4java4lang6StringEi @ 0x004001c5
+0x004001c5:	bx	lr
+
+Function sub_4001c7 @ 0x004001c7
+0x004001c7:	nop	
+0x004001c9:	bx	lr
+
+Function _Z11_Jv_SetArgsiPPKc @ 0x004001c9
+0x004001c9:	bx	lr
+
+Function sub_4001cb @ 0x004001cb
+0x004001cb:	nop	
+0x004001cd:	bx	lr
+
+Function _Z11_Jv_ZMallocPvjj @ 0x004001cd
+0x004001cd:	bx	lr
+
+Function sub_4001cf @ 0x004001cf
+0x004001cf:	nop	
+0x004001d1:	bx	lr
+
+Function _Z11trie_lookupPtt @ 0x004001d1
+0x004001d1:	bx	lr
+
+Function sub_4001d3 @ 0x004001d3
+0x004001d3:	nop	
+0x004001d5:	bx	lr
+
+Function _Z12_Jv_CondWaitP23_Jv_ConditionVariable_tP11_Jv_Mutex_txi @ 0x004001d5
+0x004001d5:	bx	lr
+
+Function sub_4001d7 @ 0x004001d7
+0x004001d7:	nop	
+0x004001d9:	bx	lr
+
+Function _Z12_Jv_init_cifP13_Jv_Utf8ConstibP7ffi_cifPP9_ffi_typeS5_ @ 0x004001d9
+0x004001d9:	bx	lr
+
+Function sub_4001db @ 0x004001db
+0x004001db:	nop	
+0x004001dd:	bx	lr
+
+Function _Z12_Jv_is_proxyPv @ 0x004001dd
+0x004001dd:	bx	lr
+
+Function sub_4001df @ 0x004001df
+0x004001df:	nop	
+0x004001e1:	bx	lr
+
+Function _Z12shsTransformP8SHS_INFO @ 0x004001e1
+0x004001e1:	bx	lr
+
+Function sub_4001e3 @ 0x004001e3
+0x004001e3:	nop	
+0x004001e5:	bx	lr
+
+Function _Z13_Jv_DisableGCv @ 0x004001e5
+0x004001e5:	bx	lr
+
+Function sub_4001e7 @ 0x004001e7
+0x004001e7:	nop	
+0x004001e9:	bx	lr
+
+Function _Z15_Jv_create_coreP14_Jv_core_chainPN4java4lang6StringE @ 0x004001e9
+0x004001e9:	bx	lr
+
+Function sub_4001eb @ 0x004001eb
+0x004001eb:	nop	
+0x004001ed:	bx	lr
+
+Function _Z16_Jv_BlockSigchldv @ 0x004001ed
+0x004001ed:	bx	lr
+
+Function sub_4001ef @ 0x004001ef
+0x004001ef:	nop	
+0x004001f1:	bx	lr
+
+Function _Z16_Jv_BuildGCDescrPN4java4lang5ClassE @ 0x004001f1
+0x004001f1:	bx	lr
+
+Function sub_4001f3 @ 0x004001f3
+0x004001f3:	nop	
+0x004001f5:	bx	lr
+
+Function _Z16_Jv_GCFreeMemoryv @ 0x004001f5
+0x004001f5:	bx	lr
+
+Function sub_4001f7 @ 0x004001f7
+0x004001f7:	nop	
+0x004001f9:	bx	lr
+
+Function _Z16_Jv_SetStackSizePKc @ 0x004001f9
+0x004001f9:	bx	lr
+
+Function sub_4001fb @ 0x004001fb
+0x004001fb:	nop	
+0x004001fd:	bx	lr
+
+Function _Z16_Jv_VerifyMethodP16_Jv_InterpMethod @ 0x004001fd
+0x004001fd:	bx	lr
+
+Function sub_4001ff @ 0x004001ff
+0x004001ff:	nop	
+0x00400201:	bx	lr
+
+Function _Z17JvNewStringLatin1PKc @ 0x00400201
+0x00400201:	bx	lr
+
+Function sub_400203 @ 0x00400203
+0x00400203:	nop	
+0x00400205:	bx	lr
+
+Function _ZTVN5javax8security4auth4x50021X500PrivateCredentialE @ 0x00400205
+0x00400205:	bx	lr
+
+Function sub_400207 @ 0x00400207
+0x00400207:	nop	
+0x00400209:	bx	lr
+
+Function _ZTVN5javax8security4auth5login12LoginContextE @ 0x00400209
+0x00400209:	bx	lr
+
+Function sub_40020b @ 0x0040020b
+0x0040020b:	nop	
+0x0040020d:	bx	lr
+
+Function _ZTVN5javax8security4auth5login13ConfigurationE @ 0x0040020d
+0x0040020d:	bx	lr
+
+Function sub_40020f @ 0x0040020f
+0x0040020f:	nop	
+0x00400211:	bx	lr
+
+Function _ZTVN5javax8security4auth5login14LoginExceptionE @ 0x00400211
+0x00400211:	bx	lr
+
+Function sub_400213 @ 0x00400213
+0x00400213:	nop	
+0x00400215:	bx	lr
+
+Function _ZTVN5javax8security4sasl19RealmChoiceCallbackE @ 0x00400215
+0x00400215:	bx	lr
+
+Function sub_400217 @ 0x00400217
+0x00400217:	nop	
+0x00400219:	bx	lr
+
+Function _Z24_Jv_isPrimitiveOrDerivedPK13_Jv_Utf8Const @ 0x00400219
+0x00400219:	bx	lr
+
+Function sub_40021b @ 0x0040021b
+0x0040021b:	nop	
+0x0040021d:	bx	lr
+
+Function _Z26_Jv_FindSymbolInExecutablePKc @ 0x0040021d
+0x0040021d:	bx	lr
+
+Function sub_40021f @ 0x0040021f
+0x0040021f:	nop	
+0x00400221:	bx	lr
+
+Function _Z26_Jv_GCInitializeFinalizersPFvvE @ 0x00400221
+0x00400221:	bx	lr
+
+Function sub_400223 @ 0x00400223
+0x00400223:	nop	
+0x00400225:	bx	lr
+
+Function _Z37_Jv_FindClassFromSignatureNoExceptionPcPN4java4lang11ClassLoaderEPS_ @ 0x00400225
+0x00400225:	bx	lr
+
+Function sub_400227 @ 0x00400227
+0x00400227:	nop	
+0x00400229:	bx	lr
+
+Function _Z39_Jv_ThrowNoClassDefFoundErrorTrampolineP7ffi_cifPvPS1_S1_ @ 0x00400229
+0x00400229:	bx	lr
+
+Function sub_40022b @ 0x0040022b
+0x0040022b:	nop	
+0x0040022d:	bx	lr
+
+Function _Z7in_hashPN4java4lang6ObjectE @ 0x0040022d
+0x0040022d:	bx	lr
+
+Function sub_40022f @ 0x0040022f
+0x0040022f:	nop	
+0x00400231:	bx	lr
+
+Function _Z7shsInitP8SHS_INFO @ 0x00400231
+0x00400231:	bx	lr
+
+Function sub_400233 @ 0x00400233
+0x00400233:	nop	
+0x00400235:	bx	lr
+
+Function _Z8shsFinalP8SHS_INFO @ 0x00400235
+0x00400235:	bx	lr
+
+Function sub_400237 @ 0x00400237
+0x00400237:	nop	
+0x00400239:	bx	lr
+
+Function _Z9_Jv_AbortPKcS0_iS0_ @ 0x00400239
+0x00400239:	bx	lr
+
+Function sub_40023b @ 0x0040023b
+0x0040023b:	nop	
+0x0040023d:	bx	lr
+
+Function _Z9_Jv_RunGCv @ 0x0040023d
+0x0040023d:	bx	lr
+
+Function sub_40023f @ 0x0040023f
+0x0040023f:	nop	
+0x00400241:	bx	lr
+
+Function _Z9_Jv_ZFreePvS_ @ 0x00400241
+0x00400241:	bx	lr
+
+Function sub_400243 @ 0x00400243
+0x00400243:	nop	
+0x00400245:	bx	lr
+
+Function _Z9_Jv_equalP13_Jv_Utf8ConstPN4java4lang6StringEi @ 0x00400245
+0x00400245:	bx	lr
+
+Function sub_400247 @ 0x00400247
+0x00400247:	nop	
+0x00400249:	bx	lr
+
+Function _Z9shsUpdateP8SHS_INFOPhi @ 0x00400249
+0x00400249:	bx	lr
+
+Function sub_40024b @ 0x0040024b
+0x0040024b:	nop	
+0x0040024d:	bx	lr
+
+Function _ZGr30_java_Sutil_Sweeks__properties @ 0x0040024d
+0x0040024d:	bx	lr
+
+Function sub_40024f @ 0x0040024f
+0x0040024f:	nop	
+0x00400251:	bx	lr
+
+Function _ZGr32_java_Sutil_Siso4217__properties @ 0x00400251
+0x00400251:	bx	lr
+
+Function sub_400253 @ 0x00400253
+0x00400253:	nop	
+0x00400255:	bx	lr
+
+Function _ZGr48_gnu_Sjavax_Sprint_SPrinterDialog_de__properties @ 0x00400255
+0x00400255:	bx	lr
+
+Function sub_400257 @ 0x00400257
+0x00400257:	nop	
+0x00400259:	bx	lr
+
+Function _ZGr49_gnu_Sjava_Slocale_SLocaleInformation__properties @ 0x00400259
+0x00400259:	bx	lr
+
+Function sub_40025b @ 0x0040025b
+0x0040025b:	nop	
+0x0040025d:	bx	lr
+
+Function _ZGr51_gnu_Sjava_Sutil_Sregex_SMessagesBundle__properties @ 0x0040025d
+0x0040025d:	bx	lr
+
+Function sub_40025f @ 0x0040025f
+0x0040025f:	nop	
+
+Function sys_380 @ 0x007002f8
+0x007002f8:	andeq	r0, r0, r0
+0x007002fc:	andeq	r0, r0, r0
+0x00700300:	andeq	r0, r0, r0
+0x00700304:	andeq	r0, r0, r0
+0x00700308:	andeq	r0, r0, r0
+0x0070030c:	andeq	r0, r0, r0
+0x00700310:	andeq	r0, r0, r0
+0x00700314:	andeq	r0, r0, r0
+0x00700318:	andeq	r0, r0, r0
+0x0070031c:	andeq	r0, r0, r0
+0x00700320:	andeq	r0, r0, r0
+0x00700324:	andeq	r0, r0, r0
+0x00700328:	andeq	r0, r0, r0
+0x0070032c:	andeq	r0, r0, r0
+0x00700330:	andeq	r0, r0, r0
+0x00700334:	andeq	r0, r0, r0
+0x00700338:	andeq	r0, r0, r0
+0x0070033c:	andeq	r0, r0, r0
+0x00700340:	andeq	r0, r0, r0
+0x00700344:	andeq	r0, r0, r0
+0x00700348:	andeq	r0, r0, r0
+0x0070034c:	andeq	r0, r0, r0
+0x00700350:	andeq	r0, r0, r0
+0x00700354:	andeq	r0, r0, r0
+0x00700358:	andeq	r0, r0, r0
+0x0070035c:	andeq	r0, r0, r0
+0x00700360:	andeq	r0, r0, r0
+0x00700364:	andeq	r0, r0, r0
+0x00700368:	andeq	r0, r0, r0
+0x0070036c:	andeq	r0, r0, r0
+0x00700370:	andeq	r0, r0, r0
+0x00700374:	andeq	r0, r0, r0
+0x00700378:	andeq	r0, r0, r0
+0x0070037c:	andeq	r0, r0, r0
+0x00700380:	andeq	r0, r0, r0
+0x00700384:	andeq	r0, r0, r0
+0x00700388:	andeq	r0, r0, r0
+0x0070038c:	andeq	r0, r0, r0
+0x00700390:	andeq	r0, r0, r0
+0x00700394:	andeq	r0, r0, r0
+0x00700398:	andeq	r0, r0, r0
+0x0070039c:	andeq	r0, r0, r0
+0x007003a0:	andeq	r0, r0, r0
+0x007003a4:	andeq	r0, r0, r0
+0x007003a8:	andeq	r0, r0, r0
+0x007003ac:	andeq	r0, r0, r0
+0x007003b0:	andeq	r0, r0, r0
+0x007003b4:	andeq	r0, r0, r0
+0x007003b8:	andeq	r0, r0, r0
+0x007003bc:	andeq	r0, r0, r0
+0x007003c0:	andeq	r0, r0, r0
+0x007003c4:	andeq	r0, r0, r0
+0x007003c8:	andeq	r0, r0, r0
+0x007003cc:	andeq	r0, r0, r0
+0x007003d0:	andeq	r0, r0, r0
+0x007003d4:	andeq	r0, r0, r0
+0x007003d8:	andeq	r0, r0, r0
+0x007003dc:	andeq	r0, r0, r0
+0x007003e0:	andeq	r0, r0, r0
+0x007003e4:	andeq	r0, r0, r0
+0x007003e8:	andeq	r0, r0, r0
+0x007003ec:	andeq	r0, r0, r0
+0x007003f0:	andeq	r0, r0, r0
+0x007003f4:	andeq	r0, r0, r0
+0x007003f8:	andeq	r0, r0, r0
+0x007003fc:	andeq	r0, r0, r0
+0x00700400:	andeq	r0, r0, r0
+0x00700404:	andeq	r0, r0, r0
+0x00700408:	andeq	r0, r0, r0
+0x0070040c:	andeq	r0, r0, r0
+0x00700410:	andeq	r0, r0, r0
+0x00700414:	andeq	r0, r0, r0
+0x00700418:	andeq	r0, r0, r0
+0x0070041c:	andeq	r0, r0, r0
+0x00700420:	andeq	r0, r0, r0
+0x00700424:	andeq	r0, r0, r0
+0x00700428:	andeq	r0, r0, r0
+0x0070042c:	andeq	r0, r0, r0
+0x00700430:	andeq	r0, r0, r0
+0x00700434:	andeq	r0, r0, r0
+0x00700438:	andeq	r0, r0, r0
+0x0070043c:	andeq	r0, r0, r0
+0x00700440:	andeq	r0, r0, r0
+0x00700444:	andeq	r0, r0, r0
+0x00700448:	andeq	r0, r0, r0
+0x0070044c:	andeq	r0, r0, r0
+0x00700450:	andeq	r0, r0, r0
+0x00700454:	andeq	r0, r0, r0
+0x00700458:	andeq	r0, r0, r0
+0x0070045c:	andeq	r0, r0, r0
+0x00700460:	andeq	r0, r0, r0
+0x00700464:	andeq	r0, r0, r0
+0x00700468:	andeq	r0, r0, r0
+0x0070046c:	andeq	r0, r0, r0
+0x00700470:	andeq	r0, r0, r0
+0x00700474:	andeq	r0, r0, r0
+0x00700478:	andeq	r0, r0, r0
+0x0070047c:	andeq	r0, r0, r0
+0x00700480:	andeq	r0, r0, r0

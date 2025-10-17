@@ -1,25 +1,41 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_time2_47177420_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r1, [pc, #0x38]
+0x0040000b:	mov.w	r3, #-1
+0x0040000f:	ldr	r2, [pc, #0x38]
+0x00400011:	push	{lr}
+0x00400013:	add	r1, pc
+0x00400015:	sub	sp, #0xc
+0x00400017:	ldr	r2, [r1, r2]
+0x00400019:	mov	r0, sp
+0x0040001b:	ldr	r2, [r2]
+0x0040001d:	str	r2, [sp, #4]
+0x0040001f:	mov.w	r2, #0
+0x00400023:	str	r3, [sp]
+0x00400025:	bl	#0x400025
 
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
 
-Disassembly of section .text.startup:
+Function sub_400029 @ 0x00400029
+0x00400029:	adds	r3, r0, #1
+0x0040002b:	beq	#0x400041
+0x0040002d:	ldr	r3, [sp]
+0x0040002f:	cmp	r3, r0
+0x00400031:	bne	#0x400041
+0x00400033:	ldr	r0, [pc, #0x18]
+0x00400035:	add	r0, pc
+0x00400037:	bl	#0x400037
 
-00000000 <.text.startup>:
-   0:	f04f490e 			; <UNDEFINED> instruction: 0xf04f490e
-   4:	4a0e33ff 	bmi	0x38d008
-   8:	4479b500 	ldrbtmi	fp, [r9], #-1280	; 0xfffffb00
-   c:	588ab083 	stmpl	sl, {r0, r1, r7, ip, sp, pc}
-  10:	68124668 	ldmdavs	r2, {r3, r5, r6, r9, sl, lr}
-  14:	f04f9201 			; <UNDEFINED> instruction: 0xf04f9201
-  18:	93000200 	movwls	r0, #512	; 0x200
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	d0091c43 	andle	r1, r9, r3, asr #24
-  24:	42839b00 	addmi	r9, r3, #0, 22
-  28:	4806d106 	stmdami	r6, {r1, r2, r8, ip, lr, pc}
-  2c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  30:	2000fffe 	strdcs	pc, [r0], -lr
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  3c:	0000002e 	andeq	r0, r0, lr, lsr #32
-  40:	00000000 	andeq	r0, r0, r0
-  44:	00000014 	andeq	r0, r0, r4, lsl r0
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400037
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	movs	r0, #0
+0x0040003d:	bl	#0x40003d
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041

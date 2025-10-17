@@ -1,208 +1,486 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_stream_chacha20_9582a358.o:     file format elf32-littlearm
+Function crypto_stream_chacha20_keybytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
+Function crypto_stream_chacha20_noncebytes @ 0x00400005
+0x00400005:	movs	r0, #8
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_stream_chacha20_messagebytes_max @ 0x00400009
+0x00400009:	mov.w	r0, #-1
+0x0040000d:	bx	lr
 
-00000000 <crypto_stream_chacha20_keybytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r0, #0x20
+0x00400013:	bx	lr
 
-00000004 <crypto_stream_chacha20_noncebytes>:
-   4:	2008      	movs	r0, #8
-   6:	4770      	bx	lr
+Function crypto_stream_chacha20_ietf_keybytes @ 0x00400011
+0x00400011:	movs	r0, #0x20
+0x00400013:	bx	lr
 
-00000008 <crypto_stream_chacha20_messagebytes_max>:
-   8:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function crypto_stream_chacha20_ietf_noncebytes @ 0x00400015
+0x00400015:	movs	r0, #0xc
+0x00400017:	bx	lr
 
-00000010 <crypto_stream_chacha20_ietf_keybytes>:
-  10:	2020      	movs	r0, #32
-  12:	4770      	bx	lr
+Function crypto_stream_chacha20_ietf_messagebytes_max @ 0x00400019
+0x00400019:	mov.w	r0, #-1
+0x0040001d:	bx	lr
 
-00000014 <crypto_stream_chacha20_ietf_noncebytes>:
-  14:	200c      	movs	r0, #12
-  16:	4770      	bx	lr
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	push	{r4, lr}
+0x00400023:	ldrd	r1, r4, [sp, #8]
+0x00400027:	cbnz	r3, #0x40003b
+0x00400029:	strd	r1, r4, [sp, #8]
+0x0040002d:	ldr	r1, [pc, #0x10]
+0x0040002f:	pop.w	{r4, lr}
+0x00400033:	add	r1, pc
+0x00400035:	ldr	r1, [r1]
+0x00400037:	ldr	r1, [r1]
+0x00400039:	bx	r1
 
-00000018 <crypto_stream_chacha20_ietf_messagebytes_max>:
-  18:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
+Function crypto_stream_chacha20 @ 0x00400021
+0x00400021:	push	{r4, lr}
+0x00400023:	ldrd	r1, r4, [sp, #8]
+0x00400027:	cbnz	r3, #0x40003b
+0x00400029:	strd	r1, r4, [sp, #8]
+0x0040002d:	ldr	r1, [pc, #0x10]
+0x0040002f:	pop.w	{r4, lr}
+0x00400033:	add	r1, pc
+0x00400035:	ldr	r1, [r1]
+0x00400037:	ldr	r1, [r1]
+0x00400039:	bx	r1
+0x00400029:	strd	r1, r4, [sp, #8]
+0x0040002d:	ldr	r1, [pc, #0x10]
+0x0040002f:	pop.w	{r4, lr}
+0x00400033:	add	r1, pc
+0x00400035:	ldr	r1, [r1]
+0x00400037:	ldr	r1, [r1]
+0x00400039:	bx	r1
+0x0040003b:	bl	#0x500001
+0x0040003f:	nop	
+0x00400041:	lsls	r6, r1, #6
+0x00400043:	movs	r0, r0
+0x00400045:	push	{r4, r5, r6, lr}
+0x00400047:	ldr	r4, [sp, #0x10]
+0x00400049:	ldr	r5, [sp, #0x20]
+0x0040004b:	vldr	d7, [sp, #0x18]
+0x0040004f:	cbnz	r3, #0x400069
+0x00400051:	str	r4, [sp, #0x10]
+0x00400053:	ldr	r4, [pc, #0x18]
+0x00400055:	str	r5, [sp, #0x20]
+0x00400057:	add	r4, pc
+0x00400059:	vstr	d7, [sp, #0x18]
+0x0040005d:	ldr	r4, [r4]
+0x0040005f:	ldr	r4, [r4, #8]
+0x00400061:	mov	ip, r4
+0x00400063:	pop.w	{r4, r5, r6, lr}
+0x00400067:	bx	ip
 
-00000020 <crypto_stream_chacha20>:
-  20:	b510      	push	{r4, lr}
-  22:	e9dd 1402 	ldrd	r1, r4, [sp, #8]
-  26:	b943      	cbnz	r3, 3a <crypto_stream_chacha20+0x1a>
-  28:	e9cd 1402 	strd	r1, r4, [sp, #8]
-  2c:	4904      	ldr	r1, [pc, #16]	; (40 <crypto_stream_chacha20+0x20>)
-  2e:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  32:	4479      	add	r1, pc
-  34:	6809      	ldr	r1, [r1, #0]
-  36:	6809      	ldr	r1, [r1, #0]
-  38:	4708      	bx	r1
-  3a:	f7ff fffe 	bl	0 <sodium_misuse>
-  3e:	bf00      	nop
-  40:	0000000a 	.word	0x0000000a
+Function crypto_stream_chacha20_xor_ic @ 0x00400045
+0x00400045:	push	{r4, r5, r6, lr}
+0x00400047:	ldr	r4, [sp, #0x10]
+0x00400049:	ldr	r5, [sp, #0x20]
+0x0040004b:	vldr	d7, [sp, #0x18]
+0x0040004f:	cbnz	r3, #0x400069
+0x00400051:	str	r4, [sp, #0x10]
+0x00400053:	ldr	r4, [pc, #0x18]
+0x00400055:	str	r5, [sp, #0x20]
+0x00400057:	add	r4, pc
+0x00400059:	vstr	d7, [sp, #0x18]
+0x0040005d:	ldr	r4, [r4]
+0x0040005f:	ldr	r4, [r4, #8]
+0x00400061:	mov	ip, r4
+0x00400063:	pop.w	{r4, r5, r6, lr}
+0x00400067:	bx	ip
+0x00400051:	str	r4, [sp, #0x10]
+0x00400053:	ldr	r4, [pc, #0x18]
+0x00400055:	str	r5, [sp, #0x20]
+0x00400057:	add	r4, pc
+0x00400059:	vstr	d7, [sp, #0x18]
+0x0040005d:	ldr	r4, [r4]
+0x0040005f:	ldr	r4, [r4, #8]
+0x00400061:	mov	ip, r4
+0x00400063:	pop.w	{r4, r5, r6, lr}
+0x00400067:	bx	ip
+0x00400069:	bl	#0x500001
 
-00000044 <crypto_stream_chacha20_xor_ic>:
-  44:	b570      	push	{r4, r5, r6, lr}
-  46:	9c04      	ldr	r4, [sp, #16]
-  48:	9d08      	ldr	r5, [sp, #32]
-  4a:	ed9d 7b06 	vldr	d7, [sp, #24]
-  4e:	b95b      	cbnz	r3, 68 <crypto_stream_chacha20_xor_ic+0x24>
-  50:	9404      	str	r4, [sp, #16]
-  52:	4c06      	ldr	r4, [pc, #24]	; (6c <crypto_stream_chacha20_xor_ic+0x28>)
-  54:	9508      	str	r5, [sp, #32]
-  56:	447c      	add	r4, pc
-  58:	ed8d 7b06 	vstr	d7, [sp, #24]
-  5c:	6824      	ldr	r4, [r4, #0]
-  5e:	68a4      	ldr	r4, [r4, #8]
-  60:	46a4      	mov	ip, r4
-  62:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
-  66:	4760      	bx	ip
-  68:	f7ff fffe 	bl	0 <sodium_misuse>
-  6c:	00000012 	.word	0x00000012
+Function crypto_stream_chacha20_xor @ 0x00400071
+0x00400071:	push	{r4, lr}
+0x00400073:	sub	sp, #0x18
+0x00400075:	cbnz	r3, #0x400099
+0x00400077:	ldr.w	ip, [pc, #0x30]
+0x0040007b:	ldr	r4, [sp, #0x24]
+0x0040007d:	str	r4, [sp, #0x10]
+0x0040007f:	add	ip, pc
+0x00400081:	ldr	r4, [sp, #0x20]
+0x00400083:	str	r4, [sp]
+0x00400085:	vldr	d7, [pc, #0x18]
+0x00400089:	ldr.w	r4, [ip]
+0x0040008d:	vstr	d7, [sp, #8]
+0x00400091:	ldr	r4, [r4, #8]
+0x00400093:	blx	r4
+0x00400077:	ldr.w	ip, [pc, #0x30]
+0x0040007b:	ldr	r4, [sp, #0x24]
+0x0040007d:	str	r4, [sp, #0x10]
+0x0040007f:	add	ip, pc
+0x00400081:	ldr	r4, [sp, #0x20]
+0x00400083:	str	r4, [sp]
+0x00400085:	vldr	d7, [pc, #0x18]
+0x00400089:	ldr.w	r4, [ip]
+0x0040008d:	vstr	d7, [sp, #8]
+0x00400091:	ldr	r4, [r4, #8]
+0x00400093:	blx	r4
+0x00400095:	add	sp, #0x18
+0x00400097:	pop	{r4, pc}
+0x00400099:	bl	#0x500001
+0x0040009d:	nop.w	
+0x004000a1:	movs	r0, r0
+0x004000a3:	movs	r0, r0
+0x004000a5:	movs	r0, r0
+0x004000a7:	movs	r0, r0
+0x004000a9:	lsls	r2, r0, #5
+0x004000ab:	movs	r0, r0
+0x004000ad:	push	{r4, lr}
+0x004000af:	ldrd	r1, r4, [sp, #8]
+0x004000b3:	cbnz	r3, #0x4000c7
+0x004000b5:	strd	r1, r4, [sp, #8]
+0x004000b9:	ldr	r1, [pc, #0x10]
+0x004000bb:	pop.w	{r4, lr}
+0x004000bf:	add	r1, pc
+0x004000c1:	ldr	r1, [r1]
+0x004000c3:	ldr	r1, [r1, #4]
+0x004000c5:	bx	r1
 
-00000070 <crypto_stream_chacha20_xor>:
-  70:	b510      	push	{r4, lr}
-  72:	b086      	sub	sp, #24
-  74:	b983      	cbnz	r3, 98 <crypto_stream_chacha20_xor+0x28>
-  76:	f8df c030 	ldr.w	ip, [pc, #48]	; a8 <crypto_stream_chacha20_xor+0x38>
-  7a:	9c09      	ldr	r4, [sp, #36]	; 0x24
-  7c:	9404      	str	r4, [sp, #16]
-  7e:	44fc      	add	ip, pc
-  80:	9c08      	ldr	r4, [sp, #32]
-  82:	9400      	str	r4, [sp, #0]
-  84:	ed9f 7b06 	vldr	d7, [pc, #24]	; a0 <crypto_stream_chacha20_xor+0x30>
-  88:	f8dc 4000 	ldr.w	r4, [ip]
-  8c:	ed8d 7b02 	vstr	d7, [sp, #8]
-  90:	68a4      	ldr	r4, [r4, #8]
-  92:	47a0      	blx	r4
-  94:	b006      	add	sp, #24
-  96:	bd10      	pop	{r4, pc}
-  98:	f7ff fffe 	bl	0 <sodium_misuse>
-  9c:	f3af 8000 	nop.w
-	...
-  a8:	00000026 	.word	0x00000026
+Function crypto_stream_chacha20_ietf_ext @ 0x004000ad
+0x004000ad:	push	{r4, lr}
+0x004000af:	ldrd	r1, r4, [sp, #8]
+0x004000b3:	cbnz	r3, #0x4000c7
+0x004000b5:	strd	r1, r4, [sp, #8]
+0x004000b9:	ldr	r1, [pc, #0x10]
+0x004000bb:	pop.w	{r4, lr}
+0x004000bf:	add	r1, pc
+0x004000c1:	ldr	r1, [r1]
+0x004000c3:	ldr	r1, [r1, #4]
+0x004000c5:	bx	r1
+0x004000b5:	strd	r1, r4, [sp, #8]
+0x004000b9:	ldr	r1, [pc, #0x10]
+0x004000bb:	pop.w	{r4, lr}
+0x004000bf:	add	r1, pc
+0x004000c1:	ldr	r1, [r1]
+0x004000c3:	ldr	r1, [r1, #4]
+0x004000c5:	bx	r1
+0x004000c7:	bl	#0x500001
+0x004000cb:	nop	
+0x004000cd:	lsls	r2, r0, #4
+0x004000cf:	movs	r0, r0
+0x004000d1:	push	{r4, r5, r6, lr}
+0x004000d3:	ldr	r6, [sp, #0x18]
+0x004000d5:	ldrd	r4, r5, [sp, #0x10]
+0x004000d9:	cbnz	r3, #0x4000f1
+0x004000db:	str	r4, [sp, #0x10]
+0x004000dd:	ldr	r4, [pc, #0x14]
+0x004000df:	strd	r5, r6, [sp, #0x14]
+0x004000e3:	add	r4, pc
+0x004000e5:	ldr	r4, [r4]
+0x004000e7:	ldr	r4, [r4, #0xc]
+0x004000e9:	mov	ip, r4
+0x004000eb:	pop.w	{r4, r5, r6, lr}
+0x004000ef:	bx	ip
 
-000000ac <crypto_stream_chacha20_ietf_ext>:
-  ac:	b510      	push	{r4, lr}
-  ae:	e9dd 1402 	ldrd	r1, r4, [sp, #8]
-  b2:	b943      	cbnz	r3, c6 <crypto_stream_chacha20_ietf_ext+0x1a>
-  b4:	e9cd 1402 	strd	r1, r4, [sp, #8]
-  b8:	4904      	ldr	r1, [pc, #16]	; (cc <crypto_stream_chacha20_ietf_ext+0x20>)
-  ba:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  be:	4479      	add	r1, pc
-  c0:	6809      	ldr	r1, [r1, #0]
-  c2:	6849      	ldr	r1, [r1, #4]
-  c4:	4708      	bx	r1
-  c6:	f7ff fffe 	bl	0 <sodium_misuse>
-  ca:	bf00      	nop
-  cc:	0000000a 	.word	0x0000000a
+Function crypto_stream_chacha20_ietf_ext_xor_ic @ 0x004000d1
+0x004000d1:	push	{r4, r5, r6, lr}
+0x004000d3:	ldr	r6, [sp, #0x18]
+0x004000d5:	ldrd	r4, r5, [sp, #0x10]
+0x004000d9:	cbnz	r3, #0x4000f1
+0x004000db:	str	r4, [sp, #0x10]
+0x004000dd:	ldr	r4, [pc, #0x14]
+0x004000df:	strd	r5, r6, [sp, #0x14]
+0x004000e3:	add	r4, pc
+0x004000e5:	ldr	r4, [r4]
+0x004000e7:	ldr	r4, [r4, #0xc]
+0x004000e9:	mov	ip, r4
+0x004000eb:	pop.w	{r4, r5, r6, lr}
+0x004000ef:	bx	ip
+0x004000db:	str	r4, [sp, #0x10]
+0x004000dd:	ldr	r4, [pc, #0x14]
+0x004000df:	strd	r5, r6, [sp, #0x14]
+0x004000e3:	add	r4, pc
+0x004000e5:	ldr	r4, [r4]
+0x004000e7:	ldr	r4, [r4, #0xc]
+0x004000e9:	mov	ip, r4
+0x004000eb:	pop.w	{r4, r5, r6, lr}
+0x004000ef:	bx	ip
+0x004000f1:	bl	#0x500001
 
-000000d0 <crypto_stream_chacha20_ietf_ext_xor_ic>:
-  d0:	b570      	push	{r4, r5, r6, lr}
-  d2:	9e06      	ldr	r6, [sp, #24]
-  d4:	e9dd 4504 	ldrd	r4, r5, [sp, #16]
-  d8:	b953      	cbnz	r3, f0 <crypto_stream_chacha20_ietf_ext_xor_ic+0x20>
-  da:	9404      	str	r4, [sp, #16]
-  dc:	4c05      	ldr	r4, [pc, #20]	; (f4 <crypto_stream_chacha20_ietf_ext_xor_ic+0x24>)
-  de:	e9cd 5605 	strd	r5, r6, [sp, #20]
-  e2:	447c      	add	r4, pc
-  e4:	6824      	ldr	r4, [r4, #0]
-  e6:	68e4      	ldr	r4, [r4, #12]
-  e8:	46a4      	mov	ip, r4
-  ea:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
-  ee:	4760      	bx	ip
-  f0:	f7ff fffe 	bl	0 <sodium_misuse>
-  f4:	0000000e 	.word	0x0000000e
+Function crypto_stream_chacha20_ietf @ 0x004000f9
+0x004000f9:	push	{r4, lr}
+0x004000fb:	ldrd	r1, r4, [sp, #8]
+0x004000ff:	cbnz	r3, #0x400113
+0x00400101:	strd	r1, r4, [sp, #8]
+0x00400105:	ldr	r1, [pc, #0x10]
+0x00400107:	pop.w	{r4, lr}
+0x0040010b:	add	r1, pc
+0x0040010d:	ldr	r1, [r1]
+0x0040010f:	ldr	r1, [r1, #4]
+0x00400111:	bx	r1
+0x00400101:	strd	r1, r4, [sp, #8]
+0x00400105:	ldr	r1, [pc, #0x10]
+0x00400107:	pop.w	{r4, lr}
+0x0040010b:	add	r1, pc
+0x0040010d:	ldr	r1, [r1]
+0x0040010f:	ldr	r1, [r1, #4]
+0x00400111:	bx	r1
+0x00400113:	bl	#0x500001
+0x00400117:	nop	
+0x00400119:	lsls	r6, r6, #2
+0x0040011b:	movs	r0, r0
+0x0040011d:	adds.w	ip, r2, #0x3f
+0x00400121:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400125:	adc	lr, r3, #0
+0x00400129:	lsr.w	ip, ip, #6
+0x0040012d:	ldr	r5, [sp, #0x1c]
+0x0040012f:	orr.w	ip, ip, lr, lsl #26
+0x00400133:	movs	r6, #1
+0x00400135:	rsbs.w	ip, ip, #0
+0x00400139:	lsr.w	lr, lr, #6
+0x0040013d:	sbc.w	lr, r6, lr
+0x00400141:	cmp	ip, r5
+0x00400143:	ldr	r6, [sp, #0x18]
+0x00400145:	sbcs	lr, lr, #0
+0x00400149:	ldr	r7, [sp, #0x20]
+0x0040014b:	blo	#0x400165
 
-000000f8 <crypto_stream_chacha20_ietf>:
-  f8:	b510      	push	{r4, lr}
-  fa:	e9dd 1402 	ldrd	r1, r4, [sp, #8]
-  fe:	b943      	cbnz	r3, 112 <crypto_stream_chacha20_ietf+0x1a>
- 100:	e9cd 1402 	strd	r1, r4, [sp, #8]
- 104:	4904      	ldr	r1, [pc, #16]	; (118 <crypto_stream_chacha20_ietf+0x20>)
- 106:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
- 10a:	4479      	add	r1, pc
- 10c:	6809      	ldr	r1, [r1, #0]
- 10e:	6849      	ldr	r1, [r1, #4]
- 110:	4708      	bx	r1
- 112:	f7ff fffe 	bl	0 <sodium_misuse>
- 116:	bf00      	nop
- 118:	0000000a 	.word	0x0000000a
+Function crypto_stream_chacha20_ietf_xor_ic @ 0x0040011d
+0x0040011d:	adds.w	ip, r2, #0x3f
+0x00400121:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400125:	adc	lr, r3, #0
+0x00400129:	lsr.w	ip, ip, #6
+0x0040012d:	ldr	r5, [sp, #0x1c]
+0x0040012f:	orr.w	ip, ip, lr, lsl #26
+0x00400133:	movs	r6, #1
+0x00400135:	rsbs.w	ip, ip, #0
+0x00400139:	lsr.w	lr, lr, #6
+0x0040013d:	sbc.w	lr, r6, lr
+0x00400141:	cmp	ip, r5
+0x00400143:	ldr	r6, [sp, #0x18]
+0x00400145:	sbcs	lr, lr, #0
+0x00400149:	ldr	r7, [sp, #0x20]
+0x0040014b:	blo	#0x400165
+0x0040014d:	cbnz	r3, #0x400165
+0x0040014f:	ldr	r4, [pc, #0x18]
+0x00400151:	strd	r5, r7, [sp, #0x1c]
+0x00400155:	add	r4, pc
+0x00400157:	str	r6, [sp, #0x18]
+0x00400159:	ldr	r4, [r4]
+0x0040015b:	ldr	r4, [r4, #0xc]
+0x0040015d:	mov	ip, r4
+0x0040015f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400163:	bx	ip
+0x0040014f:	ldr	r4, [pc, #0x18]
+0x00400151:	strd	r5, r7, [sp, #0x1c]
+0x00400155:	add	r4, pc
+0x00400157:	str	r6, [sp, #0x18]
+0x00400159:	ldr	r4, [r4]
+0x0040015b:	ldr	r4, [r4, #0xc]
+0x0040015d:	mov	ip, r4
+0x0040015f:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400163:	bx	ip
+0x00400165:	bl	#0x500001
 
-0000011c <crypto_stream_chacha20_ietf_xor_ic>:
- 11c:	f112 0c3f 	adds.w	ip, r2, #63	; 0x3f
- 120:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 124:	f143 0e00 	adc.w	lr, r3, #0
- 128:	ea4f 1c9c 	mov.w	ip, ip, lsr #6
- 12c:	9d07      	ldr	r5, [sp, #28]
- 12e:	ea4c 6c8e 	orr.w	ip, ip, lr, lsl #26
- 132:	2601      	movs	r6, #1
- 134:	f1dc 0c00 	rsbs	ip, ip, #0
- 138:	ea4f 1e9e 	mov.w	lr, lr, lsr #6
- 13c:	eb66 0e0e 	sbc.w	lr, r6, lr
- 140:	45ac      	cmp	ip, r5
- 142:	9e06      	ldr	r6, [sp, #24]
- 144:	f17e 0e00 	sbcs.w	lr, lr, #0
- 148:	9f08      	ldr	r7, [sp, #32]
- 14a:	d30b      	bcc.n	164 <crypto_stream_chacha20_ietf_xor_ic+0x48>
- 14c:	b953      	cbnz	r3, 164 <crypto_stream_chacha20_ietf_xor_ic+0x48>
- 14e:	4c06      	ldr	r4, [pc, #24]	; (168 <crypto_stream_chacha20_ietf_xor_ic+0x4c>)
- 150:	e9cd 5707 	strd	r5, r7, [sp, #28]
- 154:	447c      	add	r4, pc
- 156:	9606      	str	r6, [sp, #24]
- 158:	6824      	ldr	r4, [r4, #0]
- 15a:	68e4      	ldr	r4, [r4, #12]
- 15c:	46a4      	mov	ip, r4
- 15e:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
- 162:	4760      	bx	ip
- 164:	f7ff fffe 	bl	0 <sodium_misuse>
- 168:	00000010 	.word	0x00000010
+Function crypto_stream_chacha20_ietf_xor @ 0x0040016d
+0x0040016d:	push	{r4, lr}
+0x0040016f:	sub	sp, #0x10
+0x00400171:	cbnz	r3, #0x40018d
+0x00400173:	movs	r4, #0
+0x00400175:	str	r4, [sp, #4]
+0x00400177:	ldr	r4, [sp, #0x1c]
+0x00400179:	str	r4, [sp, #8]
+0x0040017b:	ldr	r4, [sp, #0x18]
+0x0040017d:	str	r4, [sp]
+0x0040017f:	ldr	r4, [pc, #0x10]
+0x00400181:	add	r4, pc
+0x00400183:	ldr	r4, [r4]
+0x00400185:	ldr	r4, [r4, #0xc]
+0x00400187:	blx	r4
+0x00400173:	movs	r4, #0
+0x00400175:	str	r4, [sp, #4]
+0x00400177:	ldr	r4, [sp, #0x1c]
+0x00400179:	str	r4, [sp, #8]
+0x0040017b:	ldr	r4, [sp, #0x18]
+0x0040017d:	str	r4, [sp]
+0x0040017f:	ldr	r4, [pc, #0x10]
+0x00400181:	add	r4, pc
+0x00400183:	ldr	r4, [r4]
+0x00400185:	ldr	r4, [r4, #0xc]
+0x00400187:	blx	r4
+0x00400189:	add	sp, #0x10
+0x0040018b:	pop	{r4, pc}
+0x0040018d:	bl	#0x500001
 
-0000016c <crypto_stream_chacha20_ietf_xor>:
- 16c:	b510      	push	{r4, lr}
- 16e:	b084      	sub	sp, #16
- 170:	b963      	cbnz	r3, 18c <crypto_stream_chacha20_ietf_xor+0x20>
- 172:	2400      	movs	r4, #0
- 174:	9401      	str	r4, [sp, #4]
- 176:	9c07      	ldr	r4, [sp, #28]
- 178:	9402      	str	r4, [sp, #8]
- 17a:	9c06      	ldr	r4, [sp, #24]
- 17c:	9400      	str	r4, [sp, #0]
- 17e:	4c04      	ldr	r4, [pc, #16]	; (190 <crypto_stream_chacha20_ietf_xor+0x24>)
- 180:	447c      	add	r4, pc
- 182:	6824      	ldr	r4, [r4, #0]
- 184:	68e4      	ldr	r4, [r4, #12]
- 186:	47a0      	blx	r4
- 188:	b004      	add	sp, #16
- 18a:	bd10      	pop	{r4, pc}
- 18c:	f7ff fffe 	bl	0 <sodium_misuse>
- 190:	0000000c 	.word	0x0000000c
+Function crypto_stream_chacha20_ietf_keygen @ 0x00400195
+0x00400195:	movs	r1, #0x20
+0x00400197:	b.w	#0x50000d
 
-00000194 <crypto_stream_chacha20_ietf_keygen>:
- 194:	2120      	movs	r1, #32
- 196:	f7ff bffe 	b.w	0 <randombytes_buf>
- 19a:	bf00      	nop
+Function sub_40019b @ 0x0040019b
+0x0040019b:	nop	
+0x0040019d:	movs	r1, #0x20
+0x0040019f:	b.w	#0x50000d
 
-0000019c <crypto_stream_chacha20_keygen>:
- 19c:	2120      	movs	r1, #32
- 19e:	f7ff bffe 	b.w	0 <randombytes_buf>
- 1a2:	bf00      	nop
+Function crypto_stream_chacha20_keygen @ 0x0040019d
+0x0040019d:	movs	r1, #0x20
+0x0040019f:	b.w	#0x50000d
 
-000001a4 <_crypto_stream_chacha20_pick_best_implementation>:
- 1a4:	4b04      	ldr	r3, [pc, #16]	; (1b8 <_crypto_stream_chacha20_pick_best_implementation+0x14>)
- 1a6:	2000      	movs	r0, #0
- 1a8:	4904      	ldr	r1, [pc, #16]	; (1bc <_crypto_stream_chacha20_pick_best_implementation+0x18>)
- 1aa:	4a05      	ldr	r2, [pc, #20]	; (1c0 <_crypto_stream_chacha20_pick_best_implementation+0x1c>)
- 1ac:	447b      	add	r3, pc
- 1ae:	447a      	add	r2, pc
- 1b0:	5859      	ldr	r1, [r3, r1]
- 1b2:	6011      	str	r1, [r2, #0]
- 1b4:	4770      	bx	lr
- 1b6:	bf00      	nop
- 1b8:	00000008 	.word	0x00000008
- 1bc:	00000000 	.word	0x00000000
- 1c0:	0000000e 	.word	0x0000000e
+Function sub_4001a3 @ 0x004001a3
+0x004001a3:	nop	
+0x004001a5:	ldr	r3, [pc, #0x10]
+0x004001a7:	movs	r0, #0
+0x004001a9:	ldr	r1, [pc, #0x10]
+0x004001ab:	ldr	r2, [pc, #0x14]
+0x004001ad:	add	r3, pc
+0x004001af:	add	r2, pc
+0x004001b1:	ldr	r1, [r3, r1]
+0x004001b3:	str	r1, [r2]
+0x004001b5:	bx	lr
+
+Function _crypto_stream_chacha20_pick_best_implementation @ 0x004001a5
+0x004001a5:	ldr	r3, [pc, #0x10]
+0x004001a7:	movs	r0, #0
+0x004001a9:	ldr	r1, [pc, #0x10]
+0x004001ab:	ldr	r2, [pc, #0x14]
+0x004001ad:	add	r3, pc
+0x004001af:	add	r2, pc
+0x004001b1:	ldr	r1, [r3, r1]
+0x004001b3:	str	r1, [r2]
+0x004001b5:	bx	lr
+
+Function sub_4001b7 @ 0x004001b7
+0x004001b7:	nop	
+0x004001b9:	movs	r0, r1
+0x004001bb:	movs	r0, r0
+0x004001bd:	movs	r0, r0
+0x004001bf:	movs	r0, r0
+0x004001c1:	movs	r2, r2
+0x004001c3:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function randombytes_buf @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0
+
+Function UnresolvableCallTarget @ 0x00601050
+0x00601050:	andeq	r0, r0, r0
+0x00601054:	andeq	r0, r0, r0
+0x00601058:	andeq	r0, r0, r0
+0x0060105c:	andeq	r0, r0, r0
+0x00601060:	andeq	r0, r0, r0
+0x00601064:	andeq	r0, r0, r0
+0x00601068:	andeq	r0, r0, r0
+0x0060106c:	andeq	r0, r0, r0
+0x00601070:	andeq	r0, r0, r0
+0x00601074:	andeq	r0, r0, r0
+0x00601078:	andeq	r0, r0, r0
+0x0060107c:	andeq	r0, r0, r0
+0x00601080:	andeq	r0, r0, r0
+0x00601084:	andeq	r0, r0, r0
+0x00601088:	andeq	r0, r0, r0
+0x0060108c:	andeq	r0, r0, r0
+0x00601090:	andeq	r0, r0, r0
+0x00601094:	andeq	r0, r0, r0
+0x00601098:	andeq	r0, r0, r0
+0x0060109c:	andeq	r0, r0, r0
+0x006010a0:	andeq	r0, r0, r0
+0x006010a4:	andeq	r0, r0, r0
+0x006010a8:	andeq	r0, r0, r0
+0x006010ac:	andeq	r0, r0, r0
+0x006010b0:	andeq	r0, r0, r0
+0x006010b4:	andeq	r0, r0, r0
+0x006010b8:	andeq	r0, r0, r0
+0x006010bc:	andeq	r0, r0, r0
+0x006010c0:	andeq	r0, r0, r0
+0x006010c4:	andeq	r0, r0, r0
+0x006010c8:	andeq	r0, r0, r0
+0x006010cc:	andeq	r0, r0, r0
+0x006010d0:	andeq	r0, r0, r0
+0x006010d4:	andeq	r0, r0, r0
+0x006010d8:	andeq	r0, r0, r0
+0x006010dc:	andeq	r0, r0, r0
+0x006010e0:	andeq	r0, r0, r0
+0x006010e4:	andeq	r0, r0, r0
+0x006010e8:	andeq	r0, r0, r0
+0x006010ec:	andeq	r0, r0, r0
+0x006010f0:	andeq	r0, r0, r0
+0x006010f4:	andeq	r0, r0, r0
+0x006010f8:	andeq	r0, r0, r0
+0x006010fc:	andeq	r0, r0, r0
+0x00601100:	andeq	r0, r0, r0
+0x00601104:	andeq	r0, r0, r0
+0x00601108:	andeq	r0, r0, r0
+0x0060110c:	andeq	r0, r0, r0
+0x00601110:	andeq	r0, r0, r0
+0x00601114:	andeq	r0, r0, r0
+0x00601118:	andeq	r0, r0, r0
+0x0060111c:	andeq	r0, r0, r0
+0x00601120:	andeq	r0, r0, r0
+0x00601124:	andeq	r0, r0, r0
+0x00601128:	andeq	r0, r0, r0
+0x0060112c:	andeq	r0, r0, r0
+0x00601130:	andeq	r0, r0, r0
+0x00601134:	andeq	r0, r0, r0
+0x00601138:	andeq	r0, r0, r0
+0x0060113c:	andeq	r0, r0, r0
+0x00601140:	andeq	r0, r0, r0
+0x00601144:	andeq	r0, r0, r0
+0x00601148:	andeq	r0, r0, r0
+0x0060114c:	andeq	r0, r0, r0
+0x00601150:	andeq	r0, r0, r0
+0x00601154:	andeq	r0, r0, r0
+0x00601158:	andeq	r0, r0, r0
+0x0060115c:	andeq	r0, r0, r0
+0x00601160:	andeq	r0, r0, r0
+0x00601164:	andeq	r0, r0, r0
+0x00601168:	andeq	r0, r0, r0
+0x0060116c:	andeq	r0, r0, r0
+0x00601170:	andeq	r0, r0, r0
+0x00601174:	andeq	r0, r0, r0
+0x00601178:	andeq	r0, r0, r0
+0x0060117c:	andeq	r0, r0, r0
+0x00601180:	andeq	r0, r0, r0
+0x00601184:	andeq	r0, r0, r0
+0x00601188:	andeq	r0, r0, r0
+0x0060118c:	andeq	r0, r0, r0
+0x00601190:	andeq	r0, r0, r0
+0x00601194:	andeq	r0, r0, r0
+0x00601198:	andeq	r0, r0, r0
+0x0060119c:	andeq	r0, r0, r0
+0x006011a0:	andeq	r0, r0, r0
+0x006011a4:	andeq	r0, r0, r0
+0x006011a8:	andeq	r0, r0, r0
+0x006011ac:	andeq	r0, r0, r0
+0x006011b0:	andeq	r0, r0, r0
+0x006011b4:	andeq	r0, r0, r0
+0x006011b8:	andeq	r0, r0, r0
+0x006011bc:	andeq	r0, r0, r0
+0x006011c0:	andeq	r0, r0, r0
+0x006011c4:	andeq	r0, r0, r0
+0x006011c8:	andeq	r0, r0, r0
+0x006011cc:	andeq	r0, r0, r0
+0x006011d0:	andeq	r0, r0, r0
+0x006011d4:	andeq	r0, r0, r0
+0x006011d8:	andeq	r0, r0, r0

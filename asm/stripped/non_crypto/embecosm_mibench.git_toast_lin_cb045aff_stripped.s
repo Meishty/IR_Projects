@@ -1,26 +1,57 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_toast_lin_cb045aff_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	adchs	r4, r0, #0x1400
 
+Function sub_400007 @ 0x00400007
+0x00400007:	stm	r0!, {r2, r4}
+0x00400009:	movs	r1, #2
+0x0040000b:	add	r3, pc
+0x0040000d:	ldr.w	r3, [r3, ip]
+0x00400011:	ldr	r3, [r3]
+0x00400013:	b.w	#0x400013
+0x00400013:	b.w	#0x400013
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+0x00400021:	push	{r3, lr}
+0x00400023:	movs	r2, #0xa0
+0x00400025:	ldr	r3, [pc, #0x1c]
+0x00400027:	ldr.w	ip, [pc, #0x20]
+0x0040002b:	movs	r1, #2
+0x0040002d:	add	r3, pc
+0x0040002f:	ldr.w	r3, [r3, ip]
+0x00400033:	ldr	r3, [r3]
+0x00400035:	bl	#0x400035
 
-00000000 <.text>:
-   0:	22a04b05 	adccs	r4, r0, #5120	; 0x1400
-   4:	c014f8df 			; <UNDEFINED> instruction: 0xc014f8df
-   8:	447b2102 	ldrbtmi	r2, [fp], #-258	; 0xfffffefe
-   c:	300cf853 	andcc	pc, ip, r3, asr r8	; <UNPREDICTABLE>
-  10:	f7ff681b 			; <UNDEFINED> instruction: 0xf7ff681b
-  14:	bf00bffe 	svclt	0x0000bffe
-  18:	0000000a 	andeq	r0, r0, sl
-  1c:	00000000 	andeq	r0, r0, r0
-  20:	22a0b508 	adccs	fp, r0, #8, 10	; 0x2000000
-  24:	f8df4b07 			; <UNDEFINED> instruction: 0xf8df4b07
-  28:	2102c020 	tstcs	r2, r0, lsr #32
-  2c:	f853447b 			; <UNDEFINED> instruction: 0xf853447b
-  30:	681b300c 	ldmdavs	fp, {r2, r3, ip, sp}
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	bf1838a0 	svclt	0x001838a0
-  3c:	30fff04f 	rscscc	pc, pc, pc, asr #32
-  40:	bf00bd08 	svclt	0x0000bd08
-  44:	00000014 	andeq	r0, r0, r4, lsl r0
-  48:	00000000 	andeq	r0, r0, r0
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+0x00400021:	push	{r3, lr}
+0x00400023:	movs	r2, #0xa0
+0x00400025:	ldr	r3, [pc, #0x1c]
+0x00400027:	ldr.w	ip, [pc, #0x20]
+0x0040002b:	movs	r1, #2
+0x0040002d:	add	r3, pc
+0x0040002f:	ldr.w	r3, [r3, ip]
+0x00400033:	ldr	r3, [r3]
+0x00400035:	bl	#0x400035
+
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
+0x00400039:	subs	r0, #0xa0
+0x0040003b:	it	ne
+0x0040003d:	movne.w	r0, #-1
+0x00400041:	pop	{r3, pc}
+
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	movs	r4, r2
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0

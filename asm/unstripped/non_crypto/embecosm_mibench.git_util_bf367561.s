@@ -1,179 +1,280 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_util_bf367561.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	eorsle	r2, pc, r0, lsl #18
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	add.w	r0, ip, #-1
+0x0040000f:	cmp	r0, r3
+0x00400011:	bls	#0x400085
+0x00400013:	push	{r4, r5, r6, lr}
+0x00400015:	movs	r4, #0
+0x00400017:	b	#0x40001d
+0x00400019:	cmp	r3, r0
+0x0040001b:	beq	#0x400037
+0x0040001d:	ldrb	r2, [r3], #1
+0x00400021:	cmp	r2, #0xff
+0x00400023:	bne	#0x400019
+0x00400025:	ldrb	r2, [r3]
+0x00400027:	and	r5, r2, #0xe0
+0x0040002b:	cbz	r2, #0x400031
+0x0040002d:	cmp	r5, #0xe0
+0x0040002f:	bne	#0x400019
+0x0040002d:	cmp	r5, #0xe0
+0x0040002f:	bne	#0x400019
+0x00400031:	adds	r4, #1
+0x00400033:	cmp	r3, r0
+0x00400035:	bne	#0x40001d
+0x00400037:	adds	r0, r4, r1
+0x00400039:	cbz	r4, #0x400083
+0x0040003b:	add.w	r2, ip, r4
+0x0040003f:	ldrb	r1, [ip, #-0x1]
+0x00400043:	subs	r2, #1
+0x00400045:	movs	r6, #0
+0x00400047:	strb	r1, [r2]
+0x00400049:	ldrb	r1, [r3, #-0x1]!
+0x0040004d:	cmp	r1, #0xff
+0x0040004f:	beq	#0x40005f
+0x0040003b:	add.w	r2, ip, r4
+0x0040003f:	ldrb	r1, [ip, #-0x1]
+0x00400043:	subs	r2, #1
+0x00400045:	movs	r6, #0
+0x00400047:	strb	r1, [r2]
+0x00400049:	ldrb	r1, [r3, #-0x1]!
+0x0040004d:	cmp	r1, #0xff
+0x0040004f:	beq	#0x40005f
+0x00400049:	ldrb	r1, [r3, #-0x1]!
+0x0040004d:	cmp	r1, #0xff
+0x0040004f:	beq	#0x40005f
+0x00400051:	strb	r1, [r2, #-0x1]
+0x00400055:	subs	r2, #1
+0x00400057:	ldrb	r1, [r3, #-0x1]!
+0x0040005b:	cmp	r1, #0xff
+0x0040005d:	bne	#0x400051
+0x0040005f:	ldrb	r5, [r3, #1]
+0x00400061:	sub.w	lr, r2, #2
+0x00400065:	and	ip, r5, #0xe0
+0x00400069:	cbz	r5, #0x400071
+0x0040006b:	cmp.w	ip, #0xe0
+0x0040006f:	bne	#0x400051
+0x0040006b:	cmp.w	ip, #0xe0
+0x0040006f:	bne	#0x400051
+0x00400071:	strb	r6, [r2, #-0x1]
+0x00400075:	subs	r4, #1
+0x00400077:	ldrb	r1, [r3]
+0x00400079:	strb	r1, [r2, #-0x2]
+0x0040007d:	beq	#0x400083
+0x0040007f:	mov	r2, lr
+0x00400081:	b	#0x400049
+0x00400083:	pop	{r4, r5, r6, pc}
+0x00400085:	mov	r0, r1
+0x00400087:	bx	lr
 
-Disassembly of section .text:
+Function id3_util_deunsynchronise @ 0x00400089
+0x00400089:	cbz	r1, #0x4000c7
+0x0040008b:	subs	r1, #1
+0x0040008d:	push	{r4}
+0x0040008f:	add	r1, r0
+0x00400091:	ldrb	r4, [r0]
+0x00400093:	mov	r2, r0
+0x00400095:	cmp	r0, r1
+0x00400097:	bhs	#0x4000bb
+0x0040008b:	subs	r1, #1
+0x0040008d:	push	{r4}
+0x0040008f:	add	r1, r0
+0x00400091:	ldrb	r4, [r0]
+0x00400093:	mov	r2, r0
+0x00400095:	cmp	r0, r1
+0x00400097:	bhs	#0x4000bb
+0x00400099:	mov	r3, r0
+0x0040009b:	b	#0x4000a3
+0x0040009d:	adds	r3, #1
+0x0040009f:	cmp	r3, r1
+0x004000a1:	bhs	#0x4000bb
+0x004000a3:	strb	r4, [r2], #1
+0x004000a7:	cmp	r4, #0xff
+0x004000a9:	ldrb	r4, [r3, #1]
+0x004000ab:	bne	#0x40009d
+0x004000ad:	cmp	r4, #0
+0x004000af:	bne	#0x40009d
+0x004000b1:	ldrb	r4, [r3, #2]
+0x004000b3:	adds	r3, #1
+0x004000b5:	adds	r3, #1
+0x004000b7:	cmp	r3, r1
+0x004000b9:	blo	#0x4000a3
+0x004000bb:	strb	r4, [r2], #1
+0x004000bf:	ldr	r4, [sp], #4
+0x004000c3:	subs	r0, r2, r0
+0x004000c5:	bx	lr
+0x004000c7:	mov	r0, r1
+0x004000c9:	bx	lr
 
-00000000 <id3_util_unsynchronise>:
-   0:	2900      	cmp	r1, #0
-   2:	d03f      	beq.n	84 <id3_util_unsynchronise+0x84>
-   4:	eb00 0c01 	add.w	ip, r0, r1
-   8:	4603      	mov	r3, r0
-   a:	f10c 30ff 	add.w	r0, ip, #4294967295	; 0xffffffff
-   e:	4298      	cmp	r0, r3
-  10:	d938      	bls.n	84 <id3_util_unsynchronise+0x84>
-  12:	b570      	push	{r4, r5, r6, lr}
-  14:	2400      	movs	r4, #0
-  16:	e001      	b.n	1c <id3_util_unsynchronise+0x1c>
-  18:	4283      	cmp	r3, r0
-  1a:	d00c      	beq.n	36 <id3_util_unsynchronise+0x36>
-  1c:	f813 2b01 	ldrb.w	r2, [r3], #1
-  20:	2aff      	cmp	r2, #255	; 0xff
-  22:	d1f9      	bne.n	18 <id3_util_unsynchronise+0x18>
-  24:	781a      	ldrb	r2, [r3, #0]
-  26:	f002 05e0 	and.w	r5, r2, #224	; 0xe0
-  2a:	b10a      	cbz	r2, 30 <id3_util_unsynchronise+0x30>
-  2c:	2de0      	cmp	r5, #224	; 0xe0
-  2e:	d1f3      	bne.n	18 <id3_util_unsynchronise+0x18>
-  30:	3401      	adds	r4, #1
-  32:	4283      	cmp	r3, r0
-  34:	d1f2      	bne.n	1c <id3_util_unsynchronise+0x1c>
-  36:	1860      	adds	r0, r4, r1
-  38:	b31c      	cbz	r4, 82 <id3_util_unsynchronise+0x82>
-  3a:	eb0c 0204 	add.w	r2, ip, r4
-  3e:	f81c 1c01 	ldrb.w	r1, [ip, #-1]
-  42:	3a01      	subs	r2, #1
-  44:	2600      	movs	r6, #0
-  46:	7011      	strb	r1, [r2, #0]
-  48:	f813 1d01 	ldrb.w	r1, [r3, #-1]!
-  4c:	29ff      	cmp	r1, #255	; 0xff
-  4e:	d006      	beq.n	5e <id3_util_unsynchronise+0x5e>
-  50:	f802 1c01 	strb.w	r1, [r2, #-1]
-  54:	3a01      	subs	r2, #1
-  56:	f813 1d01 	ldrb.w	r1, [r3, #-1]!
-  5a:	29ff      	cmp	r1, #255	; 0xff
-  5c:	d1f8      	bne.n	50 <id3_util_unsynchronise+0x50>
-  5e:	785d      	ldrb	r5, [r3, #1]
-  60:	f1a2 0e02 	sub.w	lr, r2, #2
-  64:	f005 0ce0 	and.w	ip, r5, #224	; 0xe0
-  68:	b115      	cbz	r5, 70 <id3_util_unsynchronise+0x70>
-  6a:	f1bc 0fe0 	cmp.w	ip, #224	; 0xe0
-  6e:	d1ef      	bne.n	50 <id3_util_unsynchronise+0x50>
-  70:	f802 6c01 	strb.w	r6, [r2, #-1]
-  74:	3c01      	subs	r4, #1
-  76:	7819      	ldrb	r1, [r3, #0]
-  78:	f802 1c02 	strb.w	r1, [r2, #-2]
-  7c:	d001      	beq.n	82 <id3_util_unsynchronise+0x82>
-  7e:	4672      	mov	r2, lr
-  80:	e7e2      	b.n	48 <id3_util_unsynchronise+0x48>
-  82:	bd70      	pop	{r4, r5, r6, pc}
-  84:	4608      	mov	r0, r1
-  86:	4770      	bx	lr
+Function sub_4000cb @ 0x004000cb
+0x004000cb:	nop	
+0x004000cd:	add.w	ip, r1, #0xc
+0x004000d1:	movw	r3, #0x4dd3
+0x004000d5:	movt	r3, #0x1062
+0x004000d9:	push	{r4, r5, r6, r7, lr}
+0x004000db:	mov	r6, r2
+0x004000dd:	sub	sp, #0xc
+0x004000df:	mov	r7, r0
+0x004000e1:	umull	r2, r3, r3, ip
+0x004000e5:	mov	r5, r1
+0x004000e7:	add.w	r0, ip, r3, lsr #6
+0x004000eb:	str	r0, [r6]
+0x004000ed:	bl	#0x500001
 
-00000088 <id3_util_deunsynchronise>:
-  88:	b1e9      	cbz	r1, c6 <id3_util_deunsynchronise+0x3e>
-  8a:	3901      	subs	r1, #1
-  8c:	b410      	push	{r4}
-  8e:	4401      	add	r1, r0
-  90:	7804      	ldrb	r4, [r0, #0]
-  92:	4602      	mov	r2, r0
-  94:	4288      	cmp	r0, r1
-  96:	d210      	bcs.n	ba <id3_util_deunsynchronise+0x32>
-  98:	4603      	mov	r3, r0
-  9a:	e002      	b.n	a2 <id3_util_deunsynchronise+0x1a>
-  9c:	3301      	adds	r3, #1
-  9e:	428b      	cmp	r3, r1
-  a0:	d20b      	bcs.n	ba <id3_util_deunsynchronise+0x32>
-  a2:	f802 4b01 	strb.w	r4, [r2], #1
-  a6:	2cff      	cmp	r4, #255	; 0xff
-  a8:	785c      	ldrb	r4, [r3, #1]
-  aa:	d1f7      	bne.n	9c <id3_util_deunsynchronise+0x14>
-  ac:	2c00      	cmp	r4, #0
-  ae:	d1f5      	bne.n	9c <id3_util_deunsynchronise+0x14>
-  b0:	789c      	ldrb	r4, [r3, #2]
-  b2:	3301      	adds	r3, #1
-  b4:	3301      	adds	r3, #1
-  b6:	428b      	cmp	r3, r1
-  b8:	d3f3      	bcc.n	a2 <id3_util_deunsynchronise+0x1a>
-  ba:	f802 4b01 	strb.w	r4, [r2], #1
-  be:	f85d 4b04 	ldr.w	r4, [sp], #4
-  c2:	1a10      	subs	r0, r2, r0
-  c4:	4770      	bx	lr
-  c6:	4608      	mov	r0, r1
-  c8:	4770      	bx	lr
-  ca:	bf00      	nop
+Function id3_util_compress @ 0x004000cd
+0x004000cd:	add.w	ip, r1, #0xc
+0x004000d1:	movw	r3, #0x4dd3
+0x004000d5:	movt	r3, #0x1062
+0x004000d9:	push	{r4, r5, r6, r7, lr}
+0x004000db:	mov	r6, r2
+0x004000dd:	sub	sp, #0xc
+0x004000df:	mov	r7, r0
+0x004000e1:	umull	r2, r3, r3, ip
+0x004000e5:	mov	r5, r1
+0x004000e7:	add.w	r0, ip, r3, lsr #6
+0x004000eb:	str	r0, [r6]
+0x004000ed:	bl	#0x500001
+0x004000f1:	mov	r4, r0
+0x004000f3:	cbz	r0, #0x40010b
+0x004000f5:	movs	r3, #9
+0x004000f7:	mov	r2, r7
+0x004000f9:	str	r3, [sp]
+0x004000fb:	mov	r1, r6
+0x004000fd:	mov	r3, r5
+0x004000ff:	bl	#0x50000d
+0x004000f5:	movs	r3, #9
+0x004000f7:	mov	r2, r7
+0x004000f9:	str	r3, [sp]
+0x004000fb:	mov	r1, r6
+0x004000fd:	mov	r3, r5
+0x004000ff:	bl	#0x50000d
+0x00400103:	cbnz	r0, #0x400111
+0x00400105:	ldr	r3, [r6]
+0x00400107:	cmp	r3, r5
+0x00400109:	bhs	#0x400111
+0x00400105:	ldr	r3, [r6]
+0x00400107:	cmp	r3, r5
+0x00400109:	bhs	#0x400111
+0x0040010b:	mov	r0, r4
+0x0040010d:	add	sp, #0xc
+0x0040010f:	pop	{r4, r5, r6, r7, pc}
+0x00400111:	mov	r0, r4
+0x00400113:	movs	r4, #0
+0x00400115:	bl	#0x500019
+0x00400119:	mov	r0, r4
+0x0040011b:	add	sp, #0xc
+0x0040011d:	pop	{r4, r5, r6, r7, pc}
 
-000000cc <id3_util_compress>:
-  cc:	f101 0c0c 	add.w	ip, r1, #12
-  d0:	f644 53d3 	movw	r3, #19923	; 0x4dd3
-  d4:	f2c1 0362 	movt	r3, #4194	; 0x1062
-  d8:	b5f0      	push	{r4, r5, r6, r7, lr}
-  da:	4616      	mov	r6, r2
-  dc:	b083      	sub	sp, #12
-  de:	4607      	mov	r7, r0
-  e0:	fba3 230c 	umull	r2, r3, r3, ip
-  e4:	460d      	mov	r5, r1
-  e6:	eb0c 1093 	add.w	r0, ip, r3, lsr #6
-  ea:	6030      	str	r0, [r6, #0]
-  ec:	f7ff fffe 	bl	0 <malloc>
-  f0:	4604      	mov	r4, r0
-  f2:	b150      	cbz	r0, 10a <id3_util_compress+0x3e>
-  f4:	2309      	movs	r3, #9
-  f6:	463a      	mov	r2, r7
-  f8:	9300      	str	r3, [sp, #0]
-  fa:	4631      	mov	r1, r6
-  fc:	462b      	mov	r3, r5
-  fe:	f7ff fffe 	bl	0 <compress2>
- 102:	b928      	cbnz	r0, 110 <id3_util_compress+0x44>
- 104:	6833      	ldr	r3, [r6, #0]
- 106:	42ab      	cmp	r3, r5
- 108:	d202      	bcs.n	110 <id3_util_compress+0x44>
- 10a:	4620      	mov	r0, r4
- 10c:	b003      	add	sp, #12
- 10e:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 110:	4620      	mov	r0, r4
- 112:	2400      	movs	r4, #0
- 114:	f7ff fffe 	bl	0 <free>
- 118:	4620      	mov	r0, r4
- 11a:	b003      	add	sp, #12
- 11c:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 11e:	bf00      	nop
+Function sub_40011f @ 0x0040011f
+0x0040011f:	nop	
+0x00400121:	push	{r4, r5, r6, r7, lr}
+0x00400123:	cmp	r2, #1
+0x00400125:	mov	r6, r0
+0x00400127:	mov	r5, r2
+0x00400129:	mov	r0, r2
+0x0040012b:	ldr	r2, [pc, #0x58]
+0x0040012d:	sub	sp, #0xc
+0x0040012f:	ldr	r3, [pc, #0x58]
+0x00400131:	it	lo
+0x00400133:	movlo	r0, #1
+0x00400135:	add	r2, pc
+0x00400137:	mov	r7, r1
+0x00400139:	ldr	r3, [r2, r3]
+0x0040013b:	ldr	r3, [r3]
+0x0040013d:	str	r3, [sp, #4]
+0x0040013f:	mov.w	r3, #0
+0x00400143:	bl	#0x500001
 
-00000120 <id3_util_decompress>:
- 120:	b5f0      	push	{r4, r5, r6, r7, lr}
- 122:	2a01      	cmp	r2, #1
- 124:	4606      	mov	r6, r0
- 126:	4615      	mov	r5, r2
- 128:	4610      	mov	r0, r2
- 12a:	4a16      	ldr	r2, [pc, #88]	; (184 <id3_util_decompress+0x64>)
- 12c:	b083      	sub	sp, #12
- 12e:	4b16      	ldr	r3, [pc, #88]	; (188 <id3_util_decompress+0x68>)
- 130:	bf38      	it	cc
- 132:	2001      	movcc	r0, #1
- 134:	447a      	add	r2, pc
- 136:	460f      	mov	r7, r1
- 138:	58d3      	ldr	r3, [r2, r3]
- 13a:	681b      	ldr	r3, [r3, #0]
- 13c:	9301      	str	r3, [sp, #4]
- 13e:	f04f 0300 	mov.w	r3, #0
- 142:	f7ff fffe 	bl	0 <malloc>
- 146:	4604      	mov	r4, r0
- 148:	b168      	cbz	r0, 166 <id3_util_decompress+0x46>
- 14a:	463b      	mov	r3, r7
- 14c:	4632      	mov	r2, r6
- 14e:	4669      	mov	r1, sp
- 150:	9500      	str	r5, [sp, #0]
- 152:	f7ff fffe 	bl	0 <uncompress>
- 156:	b910      	cbnz	r0, 15e <id3_util_decompress+0x3e>
- 158:	9b00      	ldr	r3, [sp, #0]
- 15a:	42ab      	cmp	r3, r5
- 15c:	d003      	beq.n	166 <id3_util_decompress+0x46>
- 15e:	4620      	mov	r0, r4
- 160:	2400      	movs	r4, #0
- 162:	f7ff fffe 	bl	0 <free>
- 166:	4a09      	ldr	r2, [pc, #36]	; (18c <id3_util_decompress+0x6c>)
- 168:	4b07      	ldr	r3, [pc, #28]	; (188 <id3_util_decompress+0x68>)
- 16a:	447a      	add	r2, pc
- 16c:	58d3      	ldr	r3, [r2, r3]
- 16e:	681a      	ldr	r2, [r3, #0]
- 170:	9b01      	ldr	r3, [sp, #4]
- 172:	405a      	eors	r2, r3
- 174:	f04f 0300 	mov.w	r3, #0
- 178:	d102      	bne.n	180 <id3_util_decompress+0x60>
- 17a:	4620      	mov	r0, r4
- 17c:	b003      	add	sp, #12
- 17e:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 180:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 184:	0000004c 	.word	0x0000004c
- 188:	00000000 	.word	0x00000000
- 18c:	0000001e 	.word	0x0000001e
+Function id3_util_decompress @ 0x00400121
+0x00400121:	push	{r4, r5, r6, r7, lr}
+0x00400123:	cmp	r2, #1
+0x00400125:	mov	r6, r0
+0x00400127:	mov	r5, r2
+0x00400129:	mov	r0, r2
+0x0040012b:	ldr	r2, [pc, #0x58]
+0x0040012d:	sub	sp, #0xc
+0x0040012f:	ldr	r3, [pc, #0x58]
+0x00400131:	it	lo
+0x00400133:	movlo	r0, #1
+0x00400135:	add	r2, pc
+0x00400137:	mov	r7, r1
+0x00400139:	ldr	r3, [r2, r3]
+0x0040013b:	ldr	r3, [r3]
+0x0040013d:	str	r3, [sp, #4]
+0x0040013f:	mov.w	r3, #0
+0x00400143:	bl	#0x500001
+0x00400147:	mov	r4, r0
+0x00400149:	cbz	r0, #0x400167
+0x0040014b:	mov	r3, r7
+0x0040014d:	mov	r2, r6
+0x0040014f:	mov	r1, sp
+0x00400151:	str	r5, [sp]
+0x00400153:	bl	#0x500025
+0x0040014b:	mov	r3, r7
+0x0040014d:	mov	r2, r6
+0x0040014f:	mov	r1, sp
+0x00400151:	str	r5, [sp]
+0x00400153:	bl	#0x500025
+0x00400157:	cbnz	r0, #0x40015f
+0x00400159:	ldr	r3, [sp]
+0x0040015b:	cmp	r3, r5
+0x0040015d:	beq	#0x400167
+0x00400159:	ldr	r3, [sp]
+0x0040015b:	cmp	r3, r5
+0x0040015d:	beq	#0x400167
+0x0040015f:	mov	r0, r4
+0x00400161:	movs	r4, #0
+0x00400163:	bl	#0x500019
+0x00400167:	ldr	r2, [pc, #0x24]
+0x00400169:	ldr	r3, [pc, #0x1c]
+0x0040016b:	add	r2, pc
+0x0040016d:	ldr	r3, [r2, r3]
+0x0040016f:	ldr	r2, [r3]
+0x00400171:	ldr	r3, [sp, #4]
+0x00400173:	eors	r2, r3
+0x00400175:	mov.w	r3, #0
+0x00400179:	bne	#0x400181
+0x0040017b:	mov	r0, r4
+0x0040017d:	add	sp, #0xc
+0x0040017f:	pop	{r4, r5, r6, r7, pc}
+0x00400181:	bl	#0x500031
+
+Function malloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function compress2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function free @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function uncompress @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

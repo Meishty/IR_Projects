@@ -1,21 +1,40 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_util_bfd4360a_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blt	#0xada014
+0x00400004:	ldrbmi	r6, [r0, -r3]!
+0x00400008:	vstrle.16	s4, [r7, #-0]
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	lsls	r1, r0, #5
+0x00400011:	ldrh	r3, [r0]
+0x00400013:	rev16	r3, r3
+0x00400015:	strh	r3, [r0], #2
+0x00400019:	cmp	r0, r1
+0x0040001b:	bne	#0x400011
+0x00400011:	ldrh	r3, [r0]
+0x00400013:	rev16	r3, r3
+0x00400015:	strh	r3, [r0], #2
+0x00400019:	cmp	r0, r1
+0x0040001b:	bne	#0x400011
+0x0040001d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	subs	r2, r1, #1
+0x00400023:	cmp	r1, #0
+0x00400025:	ble	#0x400035
 
-00000000 <.text>:
-   0:	ba1b6803 	blt	0x6da014
-   4:	47706003 	ldrbmi	r6, [r0, -r3]!
-   8:	dd072900 	vstrle.16	s4, [r7, #-0]	; <UNPREDICTABLE>
-   c:	0141eb00 	cmpeq	r1, r0, lsl #22
-  10:	ba5b8803 	blt	0x16e2024
-  14:	3b02f820 	blcc	0xbe09c
-  18:	d1f94288 	mvnsle	r4, r8, lsl #5
-  1c:	bf004770 	svclt	0x00004770
-  20:	29001e4a 	stmdbcs	r0, {r1, r3, r6, r9, sl, fp, ip}
-  24:	6803dd06 	stmdavs	r3, {r1, r2, r8, sl, fp, ip, lr, pc}
-  28:	ba1b3a01 	blt	0x6ce834
-  2c:	3b04f840 	blcc	0x13e134
-  30:	d1f81c53 	mvnsle	r1, r3, asr ip
-  34:	bf004770 	svclt	0x00004770
+Function sub_400021 @ 0x00400021
+0x00400021:	subs	r2, r1, #1
+0x00400023:	cmp	r1, #0
+0x00400025:	ble	#0x400035
+0x00400027:	ldr	r3, [r0]
+0x00400029:	subs	r2, #1
+0x0040002b:	rev	r3, r3
+0x0040002d:	str	r3, [r0], #4
+0x00400031:	adds	r3, r2, #1
+0x00400033:	bne	#0x400027
+0x00400035:	bx	lr
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	

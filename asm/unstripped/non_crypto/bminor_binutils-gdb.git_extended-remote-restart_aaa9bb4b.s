@@ -1,19 +1,38 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_extended-remote-restart_aaa9bb4b.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	adds	r3, r0, #1
+0x00400009:	beq	#0x40001d
+0x0040000b:	cbnz	r0, #0x400015
+0x0040000d:	movs	r0, #1
+0x0040000f:	bl	#0x50000d
+0x0040000d:	movs	r0, #1
+0x0040000f:	bl	#0x50000d
+0x00400013:	b	#0x40000d
+0x00400015:	movs	r0, #1
+0x00400017:	bl	#0x50000d
+0x0040001b:	b	#0x400015
+0x0040001d:	bl	#0x500019
 
+Function fork @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <fork>
-   6:	1c43      	adds	r3, r0, #1
-   8:	d008      	beq.n	1c <main+0x1c>
-   a:	b918      	cbnz	r0, 14 <main+0x14>
-   c:	2001      	movs	r0, #1
-   e:	f7ff fffe 	bl	0 <sleep>
-  12:	e7fb      	b.n	c <main+0xc>
-  14:	2001      	movs	r0, #1
-  16:	f7ff fffe 	bl	0 <sleep>
-  1a:	e7fb      	b.n	14 <main+0x14>
-  1c:	f7ff fffe 	bl	0 <abort>
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

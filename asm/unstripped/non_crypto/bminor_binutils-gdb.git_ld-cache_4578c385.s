@@ -1,136 +1,190 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ld-cache_4578c385.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	lr, [r0, sp, lsr #18]!
+0x00400004:	stmdavs	r4, {r1, r3, r7, sb, sl, lr}
+0x00400008:	ldrmi	sb, [r1], r8, lsl #30
+0x0040000c:	ldrmi	sb, [r8], sb, lsl #28
+0x00400008:	ldrmi	sb, [r1], r8, lsl #30
+0x0040000c:	ldrmi	sb, [r8], sb, lsl #28
 
+Function sub_400013 @ 0x00400013
+0x00400013:	mov	r0, r4
+0x00400015:	ldr	r4, [r4, #0x18]
+0x00400017:	cmp	r4, #0
+0x00400019:	bne	#0x400013
+0x0040001b:	add.w	r5, r0, #0x18
+0x0040001f:	movs	r0, #0x1c
+0x00400021:	bl	#0x500001
+0x0040001f:	movs	r0, #0x1c
+0x00400021:	bl	#0x500001
+0x00400025:	ldr	r1, [pc, #0x38]
+0x00400027:	str	r0, [r5]
+0x00400029:	mov	r0, sl
+0x0040002b:	add	r1, pc
+0x0040002d:	bl	#0x50000d
+0x00400031:	ldr	r1, [r5]
+0x00400033:	movs	r2, #0
+0x00400035:	strd	r0, sb, [r1]
+0x00400039:	str.w	r8, [r1, #8]
+0x0040003d:	ldr	r0, [sp, #0x28]
+0x0040003f:	ldrb	r3, [r7]
+0x00400041:	cmp	r3, #0
+0x00400043:	it	eq
+0x00400045:	moveq	r7, r2
+0x00400047:	str	r7, [r1, #0xc]
+0x00400049:	ldrb	r3, [r6]
+0x0040004b:	strd	r0, r2, [r1, #0x14]
+0x0040004f:	cmp	r3, r2
+0x00400051:	it	eq
+0x00400053:	moveq	r6, r2
+0x00400055:	str	r6, [r1, #0x10]
+0x00400057:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
 
-Disassembly of section .text:
+Function sub_40005b @ 0x0040005b
+0x0040005b:	mov	r5, r0
+0x0040005d:	b	#0x40001f
 
-00000000 <append_cache_rule>:
-   0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
-   4:	468a      	mov	sl, r1
-   6:	6804      	ldr	r4, [r0, #0]
-   8:	9f08      	ldr	r7, [sp, #32]
-   a:	4691      	mov	r9, r2
-   c:	9e09      	ldr	r6, [sp, #36]	; 0x24
-   e:	4698      	mov	r8, r3
-  10:	b31c      	cbz	r4, 5a <append_cache_rule+0x5a>
-  12:	4620      	mov	r0, r4
-  14:	69a4      	ldr	r4, [r4, #24]
-  16:	2c00      	cmp	r4, #0
-  18:	d1fb      	bne.n	12 <append_cache_rule+0x12>
-  1a:	f100 0518 	add.w	r5, r0, #24
-  1e:	201c      	movs	r0, #28
-  20:	f7ff fffe 	bl	0 <zalloc>
-  24:	490e      	ldr	r1, [pc, #56]	; (60 <append_cache_rule+0x60>)
-  26:	6028      	str	r0, [r5, #0]
-  28:	4650      	mov	r0, sl
-  2a:	4479      	add	r1, pc
-  2c:	f7ff fffe 	bl	0 <name2i>
-  30:	6829      	ldr	r1, [r5, #0]
-  32:	2200      	movs	r2, #0
-  34:	e9c1 0900 	strd	r0, r9, [r1]
-  38:	f8c1 8008 	str.w	r8, [r1, #8]
-  3c:	980a      	ldr	r0, [sp, #40]	; 0x28
-  3e:	783b      	ldrb	r3, [r7, #0]
-  40:	2b00      	cmp	r3, #0
-  42:	bf08      	it	eq
-  44:	4617      	moveq	r7, r2
-  46:	60cf      	str	r7, [r1, #12]
-  48:	7833      	ldrb	r3, [r6, #0]
-  4a:	e9c1 0205 	strd	r0, r2, [r1, #20]
-  4e:	4293      	cmp	r3, r2
-  50:	bf08      	it	eq
-  52:	4616      	moveq	r6, r2
-  54:	610e      	str	r6, [r1, #16]
-  56:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
-  5a:	4605      	mov	r5, r0
-  5c:	e7df      	b.n	1e <append_cache_rule+0x1e>
-  5e:	bf00      	nop
-  60:	00000032 	.word	0x00000032
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	lsls	r6, r4, #4
+0x00400063:	movs	r0, r0
+0x00400065:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400069:	movs	r2, #0
+0x0040006b:	ldr	r4, [pc, #0xc0]
+0x0040006d:	ldr	r3, [pc, #0xc0]
+0x0040006f:	sub	sp, #0x14
+0x00400071:	add	r4, pc
+0x00400073:	movs	r1, #5
+0x00400075:	ldr.w	fp, [pc, #0xbc]
+0x00400079:	add	r6, sp, #8
+0x0040007b:	ldr	r3, [r4, r3]
+0x0040007d:	add	fp, pc
+0x0040007f:	ldr	r3, [r3]
+0x00400081:	str	r3, [sp, #0xc]
+0x00400083:	mov.w	r3, #0
+0x00400087:	bl	#0x500019
 
-00000064 <load_cache_table>:
-  64:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-  68:	2200      	movs	r2, #0
-  6a:	4c30      	ldr	r4, [pc, #192]	; (12c <load_cache_table+0xc8>)
-  6c:	4b30      	ldr	r3, [pc, #192]	; (130 <load_cache_table+0xcc>)
-  6e:	b085      	sub	sp, #20
-  70:	447c      	add	r4, pc
-  72:	2105      	movs	r1, #5
-  74:	f8df b0bc 	ldr.w	fp, [pc, #188]	; 134 <load_cache_table+0xd0>
-  78:	ae02      	add	r6, sp, #8
-  7a:	58e3      	ldr	r3, [r4, r3]
-  7c:	44fb      	add	fp, pc
-  7e:	681b      	ldr	r3, [r3, #0]
-  80:	9303      	str	r3, [sp, #12]
-  82:	f04f 0300 	mov.w	r3, #0
-  86:	f7ff fffe 	bl	0 <table_open>
-  8a:	4682      	mov	sl, r0
-  8c:	2300      	movs	r3, #0
-  8e:	4650      	mov	r0, sl
-  90:	9302      	str	r3, [sp, #8]
-  92:	f7ff fffe 	bl	0 <table_entry_read>
-  96:	4605      	mov	r5, r0
-  98:	2800      	cmp	r0, #0
-  9a:	d035      	beq.n	108 <load_cache_table+0xa4>
-  9c:	6831      	ldr	r1, [r6, #0]
-  9e:	e9d5 2306 	ldrd	r2, r3, [r5, #24]
-  a2:	9300      	str	r3, [sp, #0]
-  a4:	e9d5 9808 	ldrd	r9, r8, [r5, #32]
-  a8:	6aaf      	ldr	r7, [r5, #40]	; 0x28
-  aa:	2900      	cmp	r1, #0
-  ac:	d03a      	beq.n	124 <load_cache_table+0xc0>
-  ae:	460c      	mov	r4, r1
-  b0:	6989      	ldr	r1, [r1, #24]
-  b2:	2900      	cmp	r1, #0
-  b4:	d1fb      	bne.n	ae <load_cache_table+0x4a>
-  b6:	3418      	adds	r4, #24
-  b8:	201c      	movs	r0, #28
-  ba:	9201      	str	r2, [sp, #4]
-  bc:	f7ff fffe 	bl	0 <zalloc>
-  c0:	9a01      	ldr	r2, [sp, #4]
-  c2:	4603      	mov	r3, r0
-  c4:	4659      	mov	r1, fp
-  c6:	4610      	mov	r0, r2
-  c8:	6023      	str	r3, [r4, #0]
-  ca:	f7ff fffe 	bl	0 <name2i>
-  ce:	6822      	ldr	r2, [r4, #0]
-  d0:	9b00      	ldr	r3, [sp, #0]
-  d2:	2100      	movs	r1, #0
-  d4:	6010      	str	r0, [r2, #0]
-  d6:	4650      	mov	r0, sl
-  d8:	e9c2 3901 	strd	r3, r9, [r2, #4]
-  dc:	f898 3000 	ldrb.w	r3, [r8]
-  e0:	2b00      	cmp	r3, #0
-  e2:	bf08      	it	eq
-  e4:	f04f 0800 	moveq.w	r8, #0
-  e8:	f8c2 800c 	str.w	r8, [r2, #12]
-  ec:	783b      	ldrb	r3, [r7, #0]
-  ee:	e9c2 5105 	strd	r5, r1, [r2, #20]
-  f2:	428b      	cmp	r3, r1
-  f4:	6836      	ldr	r6, [r6, #0]
-  f6:	bf08      	it	eq
-  f8:	460f      	moveq	r7, r1
-  fa:	6117      	str	r7, [r2, #16]
-  fc:	f7ff fffe 	bl	0 <table_entry_read>
- 100:	3618      	adds	r6, #24
- 102:	4605      	mov	r5, r0
- 104:	2800      	cmp	r0, #0
- 106:	d1c9      	bne.n	9c <load_cache_table+0x38>
- 108:	4a0b      	ldr	r2, [pc, #44]	; (138 <load_cache_table+0xd4>)
- 10a:	4b09      	ldr	r3, [pc, #36]	; (130 <load_cache_table+0xcc>)
- 10c:	447a      	add	r2, pc
- 10e:	9802      	ldr	r0, [sp, #8]
- 110:	58d3      	ldr	r3, [r2, r3]
- 112:	681a      	ldr	r2, [r3, #0]
- 114:	9b03      	ldr	r3, [sp, #12]
- 116:	405a      	eors	r2, r3
- 118:	f04f 0300 	mov.w	r3, #0
- 11c:	d104      	bne.n	128 <load_cache_table+0xc4>
- 11e:	b005      	add	sp, #20
- 120:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 124:	4634      	mov	r4, r6
- 126:	e7c7      	b.n	b8 <load_cache_table+0x54>
- 128:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 12c:	000000b8 	.word	0x000000b8
- 130:	00000000 	.word	0x00000000
- 134:	000000b4 	.word	0x000000b4
- 138:	00000028 	.word	0x00000028
+Function load_cache_table @ 0x00400065
+0x00400065:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400069:	movs	r2, #0
+0x0040006b:	ldr	r4, [pc, #0xc0]
+0x0040006d:	ldr	r3, [pc, #0xc0]
+0x0040006f:	sub	sp, #0x14
+0x00400071:	add	r4, pc
+0x00400073:	movs	r1, #5
+0x00400075:	ldr.w	fp, [pc, #0xbc]
+0x00400079:	add	r6, sp, #8
+0x0040007b:	ldr	r3, [r4, r3]
+0x0040007d:	add	fp, pc
+0x0040007f:	ldr	r3, [r3]
+0x00400081:	str	r3, [sp, #0xc]
+0x00400083:	mov.w	r3, #0
+0x00400087:	bl	#0x500019
+0x0040008b:	mov	sl, r0
+0x0040008d:	movs	r3, #0
+0x0040008f:	mov	r0, sl
+0x00400091:	str	r3, [sp, #8]
+0x00400093:	bl	#0x500025
+0x00400097:	mov	r5, r0
+0x00400099:	cmp	r0, #0
+0x0040009b:	beq	#0x400109
+0x0040009d:	ldr	r1, [r6]
+0x0040009f:	ldrd	r2, r3, [r5, #0x18]
+0x004000a3:	str	r3, [sp]
+0x004000a5:	ldrd	sb, r8, [r5, #0x20]
+0x004000a9:	ldr	r7, [r5, #0x28]
+0x004000ab:	cmp	r1, #0
+0x004000ad:	beq	#0x400125
+0x004000af:	mov	r4, r1
+0x004000b1:	ldr	r1, [r1, #0x18]
+0x004000b3:	cmp	r1, #0
+0x004000b5:	bne	#0x4000af
+0x004000b7:	adds	r4, #0x18
+0x004000b9:	movs	r0, #0x1c
+0x004000bb:	str	r2, [sp, #4]
+0x004000bd:	bl	#0x500001
+0x004000b9:	movs	r0, #0x1c
+0x004000bb:	str	r2, [sp, #4]
+0x004000bd:	bl	#0x500001
+0x004000c1:	ldr	r2, [sp, #4]
+0x004000c3:	mov	r3, r0
+0x004000c5:	mov	r1, fp
+0x004000c7:	mov	r0, r2
+0x004000c9:	str	r3, [r4]
+0x004000cb:	bl	#0x50000d
+0x004000cf:	ldr	r2, [r4]
+0x004000d1:	ldr	r3, [sp]
+0x004000d3:	movs	r1, #0
+0x004000d5:	str	r0, [r2]
+0x004000d7:	mov	r0, sl
+0x004000d9:	strd	r3, sb, [r2, #4]
+0x004000dd:	ldrb.w	r3, [r8]
+0x004000e1:	cmp	r3, #0
+0x004000e3:	it	eq
+0x004000e5:	moveq.w	r8, #0
+0x004000e9:	str.w	r8, [r2, #0xc]
+0x004000ed:	ldrb	r3, [r7]
+0x004000ef:	strd	r5, r1, [r2, #0x14]
+0x004000f3:	cmp	r3, r1
+0x004000f5:	ldr	r6, [r6]
+0x004000f7:	it	eq
+0x004000f9:	moveq	r7, r1
+0x004000fb:	str	r7, [r2, #0x10]
+0x004000fd:	bl	#0x500025
+0x00400101:	adds	r6, #0x18
+0x00400103:	mov	r5, r0
+0x00400105:	cmp	r0, #0
+0x00400107:	bne	#0x40009d
+0x00400109:	ldr	r2, [pc, #0x2c]
+0x0040010b:	ldr	r3, [pc, #0x24]
+0x0040010d:	add	r2, pc
+0x0040010f:	ldr	r0, [sp, #8]
+0x00400111:	ldr	r3, [r2, r3]
+0x00400113:	ldr	r2, [r3]
+0x00400115:	ldr	r3, [sp, #0xc]
+0x00400117:	eors	r2, r3
+0x00400119:	mov.w	r3, #0
+0x0040011d:	bne	#0x400129
+0x0040011f:	add	sp, #0x14
+0x00400121:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400125:	mov	r4, r6
+0x00400127:	b	#0x4000b9
+0x00400129:	bl	#0x500031
+
+Function zalloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function name2i @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function table_open @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function table_entry_read @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

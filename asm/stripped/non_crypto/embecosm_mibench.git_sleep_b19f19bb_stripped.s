@@ -1,29 +1,51 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_sleep_b19f19bb_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x8d2850
+0x00400004:	ldrbtmi	fp, [sl], #-0x530
+0x00400008:	addlt	r4, r5, r4, lsl #12
+0x0040000c:	stmdage	r1, {r0, r1, r4, r6, r7, fp, ip, lr}
+0x00400010:	ldmdavs	fp, {r1, r8, sl, fp, sp, pc}
+0x00400010:	ldmdavs	fp, {r1, r8, sl, fp, sp, pc}
 
+Function sub_400017 @ 0x00400017
+0x00400017:	mov.w	r3, #0
+0x0040001b:	bl	#0x40001b
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	ldr	r3, [sp, #4]
+0x00400021:	add	r4, r3
+0x00400023:	mov	r0, r5
+0x00400025:	bl	#0x400025
+0x00400023:	mov	r0, r5
+0x00400025:	bl	#0x400025
 
-00000000 <.text>:
-   0:	4b134a12 	blmi	0x4d2850
-   4:	447ab530 	ldrbtmi	fp, [sl], #-1328	; 0xfffffad0
-   8:	b0854604 	addlt	r4, r5, r4, lsl #12
-   c:	a80158d3 	stmdage	r1, {r0, r1, r4, r6, r7, fp, ip, lr}
-  10:	681bad02 	ldmdavs	fp, {r1, r8, sl, fp, sp, pc}
-  14:	f04f9303 			; <UNDEFINED> instruction: 0xf04f9303
-  18:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
-  1c:	9b01fffe 	blls	0x8001c
-  20:	4628441c 			; <UNDEFINED> instruction: 0x4628441c
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	42a39b02 	adcmi	r9, r3, #2048	; 0x800
-  2c:	4a09ddf9 	bmi	0x277818
-  30:	447a4b07 	ldrbtmi	r4, [sl], #-2823	; 0xfffff4f9
-  34:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
-  38:	405a9b03 	subsmi	r9, sl, r3, lsl #22
-  3c:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  40:	2000d102 	andcs	sp, r0, r2, lsl #2
-  44:	bd30b005 	ldclt	0, cr11, [r0, #-20]!	; 0xffffffec
-  48:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  4c:	00000042 	andeq	r0, r0, r2, asr #32
-  50:	00000000 	andeq	r0, r0, r0
-  54:	0000001e 	andeq	r0, r0, lr, lsl r0
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+0x00400029:	ldr	r3, [sp, #8]
+0x0040002b:	cmp	r3, r4
+0x0040002d:	ble	#0x400023
+0x0040002f:	ldr	r2, [pc, #0x24]
+0x00400031:	ldr	r3, [pc, #0x1c]
+0x00400033:	add	r2, pc
+0x00400035:	ldr	r3, [r2, r3]
+0x00400037:	ldr	r2, [r3]
+0x00400039:	ldr	r3, [sp, #0xc]
+0x0040003b:	eors	r2, r3
+0x0040003d:	mov.w	r3, #0
+0x00400041:	bne	#0x400049
+0x00400043:	movs	r0, #0
+0x00400045:	add	sp, #0x14
+0x00400047:	pop	{r4, r5, pc}
+
+Function sub_400049 @ 0x00400049
+0x00400049:	bl	#0x400049
+0x0040004d:	lsls	r2, r0, #1
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r0, r0
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r6, r3
+0x00400057:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

@@ -1,15 +1,17 @@
 
-/root/projects/compiled/non_crypto/stripped/intel_lmbench.git_flushdisk_8624e179_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r0, #16, #10
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	mov	r4, r0
+0x0040000f:	movw	r0, #0x86a0
+0x00400013:	movt	r0, #1
+0x00400017:	bl	#0x400017
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	mov	r0, r4
+0x0040001d:	pop	{r4, pc}
 
-00000000 <.text>:
-   0:	2200b510 	andcs	fp, r0, #16, 10	; 0x4000000
-   4:	2161f241 	msrcs	(UNDEF: 97), r1
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	f2484604 	vmax.s8	d20, d8, d4
-  10:	f2c060a0 	vaddl.s8	q11, d16, d16
-  14:	f7ff0001 			; <UNDEFINED> instruction: 0xf7ff0001
-  18:	4620fffe 	qsub8mi	pc, r0, lr	; <UNPREDICTABLE>
-  1c:	bf00bd10 	svclt	0x0000bd10
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	

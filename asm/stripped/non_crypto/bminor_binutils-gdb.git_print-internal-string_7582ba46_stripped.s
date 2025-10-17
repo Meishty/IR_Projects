@@ -1,23 +1,32 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_print-internal-string_7582ba46_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	rscshs	r4, pc, #8, #22
 
+Function sub_400007 @ 0x00400007
+0x00400007:	movs	r1, #0x58
+0x00400009:	add	r3, pc
+0x0040000b:	mov	r4, r0
+0x0040000d:	mov	r0, r3
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	mov	r3, r0
+0x00400015:	movs	r2, #0
+0x00400017:	cmp.w	r4, #0x100
+0x0040001b:	it	hi
+0x0040001d:	movhi	r0, r2
+0x0040001f:	strb.w	r2, [r3, #0xff]
+0x00400023:	pop	{r4, pc}
 
-00000000 <.text>:
-   0:	22ff4b08 	rscscs	r4, pc, #8, 22	; 0x2000
-   4:	2158b510 	cmpcs	r8, r0, lsl r5
-   8:	4604447b 			; <UNDEFINED> instruction: 0x4604447b
-   c:	f7ff4618 			; <UNDEFINED> instruction: 0xf7ff4618
-  10:	4603fffe 			; <UNDEFINED> instruction: 0x4603fffe
-  14:	f5b42200 			; <UNDEFINED> instruction: 0xf5b42200
-  18:	bf887f80 	svclt	0x00887f80
-  1c:	f8834610 			; <UNDEFINED> instruction: 0xf8834610
-  20:	bd1020ff 	ldclt	0, cr2, [r0, #-1020]	; 0xfffffc04
-  24:	00000018 	andeq	r0, r0, r8, lsl r0
-  28:	bf004770 	svclt	0x00004770
+Function sub_400025 @ 0x00400025
+0x00400025:	movs	r0, r3
+0x00400027:	movs	r0, r0
+0x00400029:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_40002b @ 0x0040002b
+0x0040002b:	nop	
 
-00000000 <.text.startup>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_40012d @ 0x0040012d
+0x0040012d:	movs	r0, #0
+0x0040012f:	bx	lr

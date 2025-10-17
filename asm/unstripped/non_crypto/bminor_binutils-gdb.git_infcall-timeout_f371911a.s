@@ -1,22 +1,24 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_infcall-timeout_f371911a.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r1, r8, lsl #10
 
+Function sub_400006 @ 0x00400006
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
 
-00000000 <function_that_never_returns>:
-   0:	b508      	push	{r3, lr}
-   2:	2001      	movs	r0, #1
-   4:	f7ff fffe 	bl	0 <sleep>
-   8:	e7fb      	b.n	2 <function_that_never_returns+0x2>
-   a:	bf00      	nop
+Function main @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	mov.w	r0, #0x12c
+0x00400013:	bl	#0x50000d
+0x00400017:	movs	r0, #0
+0x00400019:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f44f 7096 	mov.w	r0, #300	; 0x12c
-   6:	f7ff fffe 	bl	0 <alarm>
-   a:	2000      	movs	r0, #0
-   c:	bd08      	pop	{r3, pc}
-   e:	bf00      	nop
+Function alarm @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

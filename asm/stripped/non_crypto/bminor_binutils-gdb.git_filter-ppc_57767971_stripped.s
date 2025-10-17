@@ -1,24 +1,51 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_filter-ppc_57767971_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r4, r1
+0x00400005:	mov	r6, r0
+0x00400007:	bl	#0x400007
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	mov	r5, r0
+0x0040000d:	ldrb	r0, [r4]
+0x0040000f:	cbz	r0, #0x40003f
+0x00400011:	mov	r2, r5
+0x00400013:	mov	r1, r6
+0x00400015:	mov	r0, r4
+0x00400017:	bl	#0x400017
+0x00400011:	mov	r2, r5
+0x00400013:	mov	r1, r6
+0x00400015:	mov	r0, r4
+0x00400017:	bl	#0x400017
+0x0040003f:	pop	{r4, r5, r6, pc}
 
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	460cb570 			; <UNDEFINED> instruction: 0x460cb570
-   4:	f7ff4606 			; <UNDEFINED> instruction: 0xf7ff4606
-   8:	4605fffe 			; <UNDEFINED> instruction: 0x4605fffe
-   c:	b1b07820 	lsrslt	r7, r0, #16
-  10:	4631462a 	ldrtmi	r4, [r1], -sl, lsr #12
-  14:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  18:	b920fffe 	stmdblt	r0!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  1c:	2b005d63 	blcs	0x175b0
-  20:	2b2cbf18 	blcs	0xb2fc88
-  24:	7820d00c 	stmdavc	r0!, {r2, r3, ip, lr, pc}
-  28:	d004282c 	andle	r2, r4, ip, lsr #16
-  2c:	f814b138 			; <UNDEFINED> instruction: 0xf814b138
-  30:	282c0f01 	stmdacs	ip!, {r0, r8, r9, sl, fp}
-  34:	7860d1fa 	stmdavc	r0!, {r1, r3, r4, r5, r6, r7, r8, ip, lr, pc}^
-  38:	28003401 	stmdacs	r0, {r0, sl, ip, sp}
-  3c:	bd70d1e8 	ldfltp	f5, [r0, #-928]!	; 0xfffffc60
-  40:	bd702001 	ldcllt	0, cr2, [r0, #-4]!
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	cbnz	r0, #0x400027
+0x0040001d:	ldrb	r3, [r4, r5]
+0x0040001f:	cmp	r3, #0
+0x00400021:	it	ne
+0x00400023:	cmpne	r3, #0x2c
+0x00400025:	beq	#0x400041
+0x0040001d:	ldrb	r3, [r4, r5]
+0x0040001f:	cmp	r3, #0
+0x00400021:	it	ne
+0x00400023:	cmpne	r3, #0x2c
+0x00400025:	beq	#0x400041
+0x00400027:	ldrb	r0, [r4]
+0x00400029:	cmp	r0, #0x2c
+0x0040002b:	beq	#0x400037
+0x0040002d:	cbz	r0, #0x40003f
+0x0040002f:	ldrb	r0, [r4, #1]!
+0x00400033:	cmp	r0, #0x2c
+0x00400035:	bne	#0x40002d
+0x0040002f:	ldrb	r0, [r4, #1]!
+0x00400033:	cmp	r0, #0x2c
+0x00400035:	bne	#0x40002d
+0x00400037:	ldrb	r0, [r4, #1]
+0x00400039:	adds	r4, #1
+0x0040003b:	cmp	r0, #0
+0x0040003d:	bne	#0x400011
+0x00400041:	movs	r0, #1
+0x00400043:	pop	{r4, r5, r6, pc}

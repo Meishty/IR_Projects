@@ -1,30 +1,51 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_interrupt-daemon_27c570b7.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	eorshs	fp, ip, r8, lsl #10
 
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x50000d
+0x0040000d:	adds	r2, r0, #1
+0x0040000f:	beq	#0x400033
+0x00400011:	cbz	r0, #0x400017
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
+0x00400017:	bl	#0x500019
+0x0040001b:	adds	r0, #1
+0x0040001d:	beq	#0x400033
+0x0040001f:	bl	#0x50000d
+0x00400023:	adds	r3, r0, #1
+0x00400025:	beq	#0x400033
+0x00400027:	cmp	r0, #0
+0x00400029:	bne	#0x400013
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x500025
+0x00400031:	b	#0x40002b
+0x00400033:	movs	r0, #1
+0x00400035:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	203c      	movs	r0, #60	; 0x3c
-   4:	f7ff fffe 	bl	0 <alarm>
-   8:	f7ff fffe 	bl	0 <fork>
-   c:	1c42      	adds	r2, r0, #1
-   e:	d010      	beq.n	32 <main+0x32>
-  10:	b108      	cbz	r0, 16 <main+0x16>
-  12:	2000      	movs	r0, #0
-  14:	bd08      	pop	{r3, pc}
-  16:	f7ff fffe 	bl	0 <setsid>
-  1a:	3001      	adds	r0, #1
-  1c:	d009      	beq.n	32 <main+0x32>
-  1e:	f7ff fffe 	bl	0 <fork>
-  22:	1c43      	adds	r3, r0, #1
-  24:	d005      	beq.n	32 <main+0x32>
-  26:	2800      	cmp	r0, #0
-  28:	d1f3      	bne.n	12 <main+0x12>
-  2a:	2001      	movs	r0, #1
-  2c:	f7ff fffe 	bl	0 <sleep>
-  30:	e7fb      	b.n	2a <main+0x2a>
-  32:	2001      	movs	r0, #1
-  34:	bd08      	pop	{r3, pc}
-  36:	bf00      	nop
+Function fork @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function setsid @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function sleep @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

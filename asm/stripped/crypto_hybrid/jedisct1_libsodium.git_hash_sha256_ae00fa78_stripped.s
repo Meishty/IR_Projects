@@ -1,9 +1,7 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_hash_sha256_ae00fa78_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   4:	47702068 	ldrbmi	r2, [r0, -r8, rrx]!
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0x68
+0x00400007:	bx	lr

@@ -1,16 +1,21 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_ctxobj-m_7a734233_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	mov	r4, r0
+0x00400009:	bl	#0x400009
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f7ffb510 			; <UNDEFINED> instruction: 0xf7ffb510
-   4:	4604fffe 			; <UNDEFINED> instruction: 0x4604fffe
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	bf182c68 	svclt	0x00182c68
-  10:	d1062001 	tstle	r6, r1
-  14:	bf182868 	svclt	0x00182868
-  18:	bf1428cb 	svclt	0x001428cb
-  1c:	20002001 	andcs	r2, r0, r1
-  20:	bd100040 	ldclt	0, cr0, [r0, #-256]	; 0xffffff00
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x400009
+0x0040000d:	cmp	r4, #0x68
+0x0040000f:	it	ne
+0x00400011:	movne	r0, #1
+0x00400013:	bne	#0x400023
+0x00400015:	cmp	r0, #0x68
+0x00400017:	it	ne
+0x00400019:	cmpne	r0, #0xcb
+0x0040001b:	ite	ne
+0x0040001d:	movne	r0, #1
+0x0040001f:	moveq	r0, #0
+0x00400021:	lsls	r0, r0, #1
+0x00400023:	pop	{r4, pc}
+0x00400023:	pop	{r4, pc}

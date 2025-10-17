@@ -1,9 +1,10 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_lto-15b_38b58ee9.o:     file format elf32-littlearm
+Function __udivdi3 @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
 
-
-Disassembly of section .text.unlikely:
-
-00000000 <__udivdi3>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <abort>
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

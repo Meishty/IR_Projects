@@ -1,19 +1,46 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_basics_1991ab85_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
-   4:	bf004770 	svclt	0x00004770
-   8:	bf004770 	svclt	0x00004770
-   c:	bf004770 	svclt	0x00004770
-  10:	bf004770 	svclt	0x00004770
-  14:	47702001 	ldrbmi	r2, [r0, -r1]!
-  18:	bf004770 	svclt	0x00004770
+Function sub_400009 @ 0x00400009
+0x00400009:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000000 <.text.startup>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bx	lr
+
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	bx	lr
+
+Function sub_400011 @ 0x00400011
+0x00400011:	bx	lr
+
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r0, #1
+0x00400017:	bx	lr
+
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r0, #1
+0x00400017:	bx	lr
+
+Function sub_400019 @ 0x00400019
+0x00400019:	bx	lr
+
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr

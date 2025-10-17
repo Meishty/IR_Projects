@@ -1,34 +1,37 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_frame-selection_258b1739.o:     file format elf32-littlearm
+Function frame_2 @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function frame_1 @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function recursive @ 0x00400009
+0x00400009:	movs	r0, #0
+0x0040000b:	bx	lr
 
-00000000 <frame_2>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function func_that_never_returns @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	push	{r3, lr}
+0x00400011:	bl	#0x500001
 
-00000004 <frame_1>:
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
+Function func_that_tail_calls @ 0x00400015
+0x00400015:	push	{r3, lr}
+0x00400017:	bl	#0x40000d
 
-00000008 <recursive>:
-   8:	2000      	movs	r0, #0
-   a:	4770      	bx	lr
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
 
-0000000c <func_that_never_returns>:
-   c:	2000      	movs	r0, #0
-   e:	b508      	push	{r3, lr}
-  10:	f7ff fffe 	bl	0 <exit>
+Function main @ 0x0040001d
+0x0040001d:	push	{r3, lr}
+0x0040001f:	bl	#0x40000d
 
-00000014 <func_that_tail_calls>:
-  14:	b508      	push	{r3, lr}
-  16:	f7ff fffe 	bl	c <func_that_never_returns>
-  1a:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	c <func_that_never_returns>
-   6:	bf00      	nop
+Function exit @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

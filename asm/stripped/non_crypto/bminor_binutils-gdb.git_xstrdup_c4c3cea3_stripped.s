@@ -1,16 +1,23 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_xstrdup_c4c3cea3_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	addlt	fp, r3, r0, lsl #10
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	adds	r2, r0, #1
+0x0040000d:	str	r2, [sp]
+0x0040000f:	mov	r0, r2
+0x00400011:	bl	#0x400011
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	bl	#0x400011
 
-00000000 <.text>:
-   0:	b083b500 	addlt	fp, r3, r0, lsl #10
-   4:	f7ff9001 			; <UNDEFINED> instruction: 0xf7ff9001
-   8:	1c42fffe 	mcrrne	15, 15, pc, r2, cr14	; <UNPREDICTABLE>
-   c:	46109200 	ldrmi	r9, [r0], -r0, lsl #4
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	2100e9dd 	ldrdcs	lr, [r0, -sp]
-  18:	f85db003 			; <UNDEFINED> instruction: 0xf85db003
-  1c:	f7ffeb04 			; <UNDEFINED> instruction: 0xf7ffeb04
-  20:	bf00bffe 	svclt	0x0000bffe
+Function sub_400015 @ 0x00400015
+0x00400015:	ldrd	r2, r1, [sp]
+0x00400019:	add	sp, #0xc
+0x0040001b:	ldr	lr, [sp], #4
+0x0040001f:	b.w	#0x40001f
+0x0040001f:	b.w	#0x40001f
+
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	

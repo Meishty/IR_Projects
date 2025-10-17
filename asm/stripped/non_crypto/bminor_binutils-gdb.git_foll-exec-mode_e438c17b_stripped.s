@@ -1,51 +1,74 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_foll-exec-mode_e438c17b_stripped.o:     file format elf32-littlearm
+Function sub_400064 @ 0x00400064
 
+Function sub_400069 @ 0x00400069
+0x00400069:	strh	r0, [r0, r2]
+0x0040006b:	ldr	r6, [pc, #0x8c]
+0x0040006d:	ldr	r3, [pc, #0x8c]
+0x0040006f:	sub.w	sp, sp, #0x1000
+0x00400073:	add	r6, pc
+0x00400075:	sub	sp, #8
+0x00400077:	add	r4, sp, #4
+0x00400079:	add.w	ip, sp, #0x1000
+0x0040007d:	add.w	ip, ip, #4
+0x00400081:	ldr	r1, [r1]
+0x00400083:	ldr	r3, [r6, r3]
+0x00400085:	mov	r0, r4
+0x00400087:	add	r5, sp, #8
+0x00400089:	movs	r6, #0
+0x0040008b:	ldr	r3, [r3]
+0x0040008d:	str.w	r3, [ip]
+0x00400091:	mov.w	r3, #0
+0x00400095:	bl	#0x400095
 
-Disassembly of section .text.startup:
+Function sub_400095 @ 0x00400095
+0x00400095:	bl	#0x400095
+0x00400099:	ldr	r2, [pc, #0x64]
+0x0040009b:	subs	r0, r0, r4
+0x0040009d:	sub.w	ip, r0, #0xe
+0x004000a1:	add	r5, r0
+0x004000a3:	add	r2, pc
+0x004000a5:	add.w	r3, r4, ip
+0x004000a9:	ldm	r2!, {r0, r1}
+0x004000ab:	str.w	r0, [r4, ip]
+0x004000af:	ldr	r0, [pc, #0x54]
+0x004000b1:	str	r1, [r3, #4]
+0x004000b3:	ldrh	r2, [r2]
+0x004000b5:	add	r0, pc
+0x004000b7:	strh	r2, [r3, #8]
+0x004000b9:	strb	r6, [r5, #-0x8]
+0x004000bd:	bl	#0x4000bd
 
-00000000 <.text.startup>:
-   0:	f44fb570 	vst3.16	{d27,d29,d31}, [pc :256], r0
-   4:	4e235280 	cdpmi	2, 2, cr5, cr3, cr0, {4}
-   8:	f5ad4b23 			; <UNDEFINED> instruction: 0xf5ad4b23
-   c:	447e5d80 	ldrbtmi	r5, [lr], #-3456	; 0xfffff280
-  10:	ac01b082 	stcge	0, cr11, [r1], {130}	; 0x82
-  14:	5c80f50d 	cfstr32pl	mvfx15, [r0], {13}
-  18:	0c04f10c 	stfeqd	f7, [r4], {12}
-  1c:	58f36809 	ldmpl	r3!, {r0, r3, fp, sp, lr}^
-  20:	ad024620 	stcge	6, cr4, [r2, #-128]	; 0xffffff80
-  24:	681b2600 	ldmdavs	fp, {r9, sl, sp}
-  28:	3000f8cc 	andcc	pc, r0, ip, asr #17
-  2c:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	1b004a19 	blne	0x128a0
-  38:	0c0ef1a0 	stfeqd	f7, [lr], {160}	; 0xa0
-  3c:	447a4405 	ldrbtmi	r4, [sl], #-1029	; 0xfffffbfb
-  40:	030ceb04 	movweq	lr, #51972	; 0xcb04
-  44:	f844ca03 			; <UNDEFINED> instruction: 0xf844ca03
-  48:	4815000c 	ldmdami	r5, {r2, r3}
-  4c:	88126059 	ldmdahi	r2, {r0, r3, r4, r6, sp, lr}
-  50:	811a4478 	tsthi	sl, r8, ror r4
-  54:	6c08f805 	stcvs	8, cr15, [r8], {5}
-  58:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  5c:	49124a11 	ldmdbmi	r2, {r0, r4, r9, fp, lr}
-  60:	447a4633 	ldrbtmi	r4, [sl], #-1587	; 0xfffff9cd
-  64:	44794620 	ldrbtmi	r4, [r9], #-1568	; 0xfffff9e0
-  68:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  6c:	4b0a4a0f 	blmi	0x2928b0
-  70:	5180f50d 	orrpl	pc, r0, sp, lsl #10
-  74:	3104447a 	tstcc	r4, sl, ror r4
-  78:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
-  7c:	405a680b 	subsmi	r6, sl, fp, lsl #16
-  80:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  84:	4630d104 	ldrtmi	sp, [r0], -r4, lsl #2
-  88:	5d80f50d 	cfstr32pl	mvfx15, [r0, #52]	; 0x34
-  8c:	bd70b002 	ldcllt	0, cr11, [r0, #-8]!
-  90:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  94:	00000082 	andeq	r0, r0, r2, lsl #1
-  98:	00000000 	andeq	r0, r0, r0
-  9c:	0000005a 	andeq	r0, r0, sl, asr r0
-  a0:	0000004c 	andeq	r0, r0, ip, asr #32
-  a4:	0000003e 	andeq	r0, r0, lr, lsr r0
-  a8:	0000003e 	andeq	r0, r0, lr, lsr r0
-  ac:	00000034 	andeq	r0, r0, r4, lsr r0
+Function sub_4000bd @ 0x004000bd
+0x004000bd:	bl	#0x4000bd
+0x004000c1:	ldr	r2, [pc, #0x44]
+0x004000c3:	ldr	r1, [pc, #0x48]
+0x004000c5:	mov	r3, r6
+0x004000c7:	add	r2, pc
+0x004000c9:	mov	r0, r4
+0x004000cb:	add	r1, pc
+0x004000cd:	bl	#0x4000cd
+
+Function sub_4000cd @ 0x004000cd
+0x004000cd:	bl	#0x4000cd
+0x004000d1:	ldr	r2, [pc, #0x3c]
+0x004000d3:	ldr	r3, [pc, #0x28]
+0x004000d5:	add.w	r1, sp, #0x1000
+0x004000d9:	add	r2, pc
+0x004000db:	adds	r1, #4
+0x004000dd:	ldr	r3, [r2, r3]
+0x004000df:	ldr	r2, [r3]
+0x004000e1:	ldr	r3, [r1]
+0x004000e3:	eors	r2, r3
+0x004000e5:	mov.w	r3, #0
+0x004000e9:	bne	#0x4000f5
+0x004000eb:	mov	r0, r6
+0x004000ed:	add.w	sp, sp, #0x1000
+0x004000f1:	add	sp, #8
+0x004000f3:	pop	{r4, r5, r6, pc}
+
+Function sub_4000f5 @ 0x004000f5
+0x004000f5:	bl	#0x4000f5
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

@@ -1,153 +1,260 @@
 
-/root/projects/compiled/non_crypto/unstripped/intel_lmbench.git_lib_udp_ab1150c1.o:     file format elf32-littlearm
+Function udp_server @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r3, r1
+0x00400005:	ldr	r5, [pc, #0x84]
+0x00400007:	mov	r4, r3
+0x00400009:	ldr	r3, [pc, #0x84]
+0x0040000b:	add	r5, pc
+0x0040000d:	movs	r1, #2
+0x0040000f:	sub	sp, #0x18
+0x00400011:	mov	r6, r0
+0x00400013:	movs	r2, #0x11
+0x00400015:	mov	r0, r1
+0x00400017:	ldr	r3, [r5, r3]
+0x00400019:	ldr	r3, [r3]
+0x0040001b:	str	r3, [sp, #0x14]
+0x0040001d:	mov.w	r3, #0
+0x00400021:	bl	#0x500001
+0x00400025:	subs	r5, r0, #0
+0x00400027:	blt	#0x40006b
+0x00400029:	mov	r1, r4
+0x0040002b:	movs	r4, #2
+0x0040002d:	bl	#0x50000d
+0x00400031:	movs	r2, #0
+0x00400033:	rev16	r0, r6
+0x00400035:	str	r2, [sp, #8]
+0x00400037:	strd	r2, r2, [sp, #0xc]
+0x0040003b:	add	r1, sp, #4
+0x0040003d:	strh.w	r0, [sp, #6]
+0x00400041:	movs	r2, #0x10
+0x00400043:	mov	r0, r5
+0x00400045:	strh.w	r4, [sp, #4]
+0x00400049:	bl	#0x500019
+0x0040004d:	cmp	r0, #0
+0x0040004f:	blt	#0x40007d
+0x00400051:	ldr	r2, [pc, #0x40]
+0x00400053:	ldr	r3, [pc, #0x3c]
+0x00400055:	add	r2, pc
+0x00400057:	ldr	r3, [r2, r3]
+0x00400059:	ldr	r2, [r3]
+0x0040005b:	ldr	r3, [sp, #0x14]
+0x0040005d:	eors	r2, r3
+0x0040005f:	mov.w	r3, #0
+0x00400063:	bne	#0x400079
+0x00400065:	mov	r0, r5
+0x00400067:	add	sp, #0x18
+0x00400069:	pop	{r4, r5, r6, pc}
+0x0040006b:	ldr	r0, [pc, #0x2c]
+0x0040006d:	add	r0, pc
+0x0040006f:	bl	#0x500025
+0x00400073:	movs	r0, #1
+0x00400075:	bl	#0x500031
+0x00400079:	bl	#0x50003d
+0x0040007d:	ldr	r0, [pc, #0x1c]
+0x0040007f:	add	r0, pc
+0x00400081:	bl	#0x500025
+0x00400085:	mov	r0, r4
+0x00400087:	bl	#0x500031
 
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	lsls	r6, r7, #1
+0x0040008f:	movs	r0, r0
+0x00400091:	movs	r0, r0
+0x00400093:	movs	r0, r0
+0x00400095:	movs	r4, r7
+0x00400097:	movs	r0, r0
+0x00400099:	lsls	r0, r0, #4
+0x0040009b:	movs	r0, r0
+0x0040009d:	lsls	r6, r6, #3
+0x0040009f:	movs	r0, r0
+0x004000a1:	movs	r1, #1
+0x004000a3:	b.w	#0x50006d
 
-Disassembly of section .text:
+Function udp_done @ 0x004000a1
+0x004000a1:	movs	r1, #1
+0x004000a3:	b.w	#0x50006d
 
-00000000 <udp_server>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	460b      	mov	r3, r1
-   4:	4d21      	ldr	r5, [pc, #132]	; (8c <udp_server+0x8c>)
-   6:	461c      	mov	r4, r3
-   8:	4b21      	ldr	r3, [pc, #132]	; (90 <udp_server+0x90>)
-   a:	447d      	add	r5, pc
-   c:	2102      	movs	r1, #2
-   e:	b086      	sub	sp, #24
-  10:	4606      	mov	r6, r0
-  12:	2211      	movs	r2, #17
-  14:	4608      	mov	r0, r1
-  16:	58eb      	ldr	r3, [r5, r3]
-  18:	681b      	ldr	r3, [r3, #0]
-  1a:	9305      	str	r3, [sp, #20]
-  1c:	f04f 0300 	mov.w	r3, #0
-  20:	f7ff fffe 	bl	0 <socket>
-  24:	1e05      	subs	r5, r0, #0
-  26:	db20      	blt.n	6a <udp_server+0x6a>
-  28:	4621      	mov	r1, r4
-  2a:	2402      	movs	r4, #2
-  2c:	f7ff fffe 	bl	0 <sock_optimize>
-  30:	2200      	movs	r2, #0
-  32:	ba70      	rev16	r0, r6
-  34:	9202      	str	r2, [sp, #8]
-  36:	e9cd 2203 	strd	r2, r2, [sp, #12]
-  3a:	a901      	add	r1, sp, #4
-  3c:	f8ad 0006 	strh.w	r0, [sp, #6]
-  40:	2210      	movs	r2, #16
-  42:	4628      	mov	r0, r5
-  44:	f8ad 4004 	strh.w	r4, [sp, #4]
-  48:	f7ff fffe 	bl	0 <bind>
-  4c:	2800      	cmp	r0, #0
-  4e:	db15      	blt.n	7c <udp_server+0x7c>
-  50:	4a10      	ldr	r2, [pc, #64]	; (94 <udp_server+0x94>)
-  52:	4b0f      	ldr	r3, [pc, #60]	; (90 <udp_server+0x90>)
-  54:	447a      	add	r2, pc
-  56:	58d3      	ldr	r3, [r2, r3]
-  58:	681a      	ldr	r2, [r3, #0]
-  5a:	9b05      	ldr	r3, [sp, #20]
-  5c:	405a      	eors	r2, r3
-  5e:	f04f 0300 	mov.w	r3, #0
-  62:	d109      	bne.n	78 <udp_server+0x78>
-  64:	4628      	mov	r0, r5
-  66:	b006      	add	sp, #24
-  68:	bd70      	pop	{r4, r5, r6, pc}
-  6a:	480b      	ldr	r0, [pc, #44]	; (98 <udp_server+0x98>)
-  6c:	4478      	add	r0, pc
-  6e:	f7ff fffe 	bl	0 <perror>
-  72:	2001      	movs	r0, #1
-  74:	f7ff fffe 	bl	0 <exit>
-  78:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  7c:	4807      	ldr	r0, [pc, #28]	; (9c <udp_server+0x9c>)
-  7e:	4478      	add	r0, pc
-  80:	f7ff fffe 	bl	0 <perror>
-  84:	4620      	mov	r0, r4
-  86:	f7ff fffe 	bl	0 <exit>
-  8a:	bf00      	nop
-  8c:	0000007e 	.word	0x0000007e
-  90:	00000000 	.word	0x00000000
-  94:	0000003c 	.word	0x0000003c
-  98:	00000028 	.word	0x00000028
-  9c:	0000001a 	.word	0x0000001a
+Function sub_4000a7 @ 0x004000a7
+0x004000a7:	nop	
+0x004000a9:	push	{r4, r5, r6, r7, lr}
+0x004000ab:	mov	r6, r1
+0x004000ad:	ldr	r5, [pc, #0xac]
+0x004000af:	ldr	r3, [pc, #0xb0]
+0x004000b1:	movs	r1, #2
+0x004000b3:	add	r5, pc
+0x004000b5:	sub	sp, #0x1c
+0x004000b7:	mov	r4, r0
+0x004000b9:	mov	r7, r2
+0x004000bb:	mov	r0, r1
+0x004000bd:	movs	r2, #0x11
+0x004000bf:	ldr	r3, [r5, r3]
+0x004000c1:	ldr	r3, [r3]
+0x004000c3:	str	r3, [sp, #0x14]
+0x004000c5:	mov.w	r3, #0
+0x004000c9:	bl	#0x500001
 
-000000a0 <udp_done>:
-  a0:	2101      	movs	r1, #1
-  a2:	f7ff bffe 	b.w	0 <pmap_unset>
-  a6:	bf00      	nop
+Function udp_connect @ 0x004000a9
+0x004000a9:	push	{r4, r5, r6, r7, lr}
+0x004000ab:	mov	r6, r1
+0x004000ad:	ldr	r5, [pc, #0xac]
+0x004000af:	ldr	r3, [pc, #0xb0]
+0x004000b1:	movs	r1, #2
+0x004000b3:	add	r5, pc
+0x004000b5:	sub	sp, #0x1c
+0x004000b7:	mov	r4, r0
+0x004000b9:	mov	r7, r2
+0x004000bb:	mov	r0, r1
+0x004000bd:	movs	r2, #0x11
+0x004000bf:	ldr	r3, [r5, r3]
+0x004000c1:	ldr	r3, [r3]
+0x004000c3:	str	r3, [sp, #0x14]
+0x004000c5:	mov.w	r3, #0
+0x004000c9:	bl	#0x500001
+0x004000cd:	subs	r5, r0, #0
+0x004000cf:	blt	#0x40012f
+0x004000d1:	mov	r1, r7
+0x004000d3:	bl	#0x50000d
+0x004000d7:	mov	r0, r4
+0x004000d9:	bl	#0x500049
+0x004000dd:	cmp	r0, #0
+0x004000df:	beq	#0x40014f
+0x004000e1:	add	r4, sp, #4
+0x004000e3:	movs	r3, #0
+0x004000e5:	str	r3, [sp, #4]
+0x004000e7:	rev16	r6, r6
+0x004000e9:	strd	r3, r3, [r4, #4]
+0x004000ed:	str	r3, [r4, #0xc]
+0x004000ef:	movs	r3, #2
+0x004000f1:	strh.w	r3, [sp, #4]
+0x004000f5:	ldrd	r2, r3, [r0, #0xc]
+0x004000f9:	add	r0, sp, #8
+0x004000fb:	ldr	r1, [r3]
+0x004000fd:	movs	r3, #0xc
+0x004000ff:	bl	#0x500055
+0x00400103:	movs	r2, #0x10
+0x00400105:	mov	r1, r4
+0x00400107:	mov	r0, r5
+0x00400109:	strh.w	r6, [sp, #6]
+0x0040010d:	bl	#0x500061
+0x00400111:	cmp	r0, #0
+0x00400113:	blt	#0x400141
+0x00400115:	ldr	r2, [pc, #0x4c]
+0x00400117:	ldr	r3, [pc, #0x48]
+0x00400119:	add	r2, pc
+0x0040011b:	ldr	r3, [r2, r3]
+0x0040011d:	ldr	r2, [r3]
+0x0040011f:	ldr	r3, [sp, #0x14]
+0x00400121:	eors	r2, r3
+0x00400123:	mov.w	r3, #0
+0x00400127:	bne	#0x40013d
+0x00400129:	mov	r0, r5
+0x0040012b:	add	sp, #0x1c
+0x0040012d:	pop	{r4, r5, r6, r7, pc}
+0x0040012f:	ldr	r0, [pc, #0x38]
+0x00400131:	add	r0, pc
+0x00400133:	bl	#0x500025
+0x00400137:	movs	r0, #1
+0x00400139:	bl	#0x500031
+0x0040013d:	bl	#0x50003d
+0x00400141:	ldr	r0, [pc, #0x28]
+0x00400143:	add	r0, pc
+0x00400145:	bl	#0x500025
+0x00400149:	movs	r0, #4
+0x0040014b:	bl	#0x500031
+0x0040014f:	mov	r0, r4
+0x00400151:	bl	#0x500025
+0x00400155:	movs	r0, #2
+0x00400157:	bl	#0x500031
 
-000000a8 <udp_connect>:
-  a8:	b5f0      	push	{r4, r5, r6, r7, lr}
-  aa:	460e      	mov	r6, r1
-  ac:	4d2b      	ldr	r5, [pc, #172]	; (15c <udp_connect+0xb4>)
-  ae:	4b2c      	ldr	r3, [pc, #176]	; (160 <udp_connect+0xb8>)
-  b0:	2102      	movs	r1, #2
-  b2:	447d      	add	r5, pc
-  b4:	b087      	sub	sp, #28
-  b6:	4604      	mov	r4, r0
-  b8:	4617      	mov	r7, r2
-  ba:	4608      	mov	r0, r1
-  bc:	2211      	movs	r2, #17
-  be:	58eb      	ldr	r3, [r5, r3]
-  c0:	681b      	ldr	r3, [r3, #0]
-  c2:	9305      	str	r3, [sp, #20]
-  c4:	f04f 0300 	mov.w	r3, #0
-  c8:	f7ff fffe 	bl	0 <socket>
-  cc:	1e05      	subs	r5, r0, #0
-  ce:	db2e      	blt.n	12e <udp_connect+0x86>
-  d0:	4639      	mov	r1, r7
-  d2:	f7ff fffe 	bl	0 <sock_optimize>
-  d6:	4620      	mov	r0, r4
-  d8:	f7ff fffe 	bl	0 <gethostbyname>
-  dc:	2800      	cmp	r0, #0
-  de:	d036      	beq.n	14e <udp_connect+0xa6>
-  e0:	ac01      	add	r4, sp, #4
-  e2:	2300      	movs	r3, #0
-  e4:	9301      	str	r3, [sp, #4]
-  e6:	ba76      	rev16	r6, r6
-  e8:	e9c4 3301 	strd	r3, r3, [r4, #4]
-  ec:	60e3      	str	r3, [r4, #12]
-  ee:	2302      	movs	r3, #2
-  f0:	f8ad 3004 	strh.w	r3, [sp, #4]
-  f4:	e9d0 2303 	ldrd	r2, r3, [r0, #12]
-  f8:	a802      	add	r0, sp, #8
-  fa:	6819      	ldr	r1, [r3, #0]
-  fc:	230c      	movs	r3, #12
-  fe:	f7ff fffe 	bl	0 <__memmove_chk>
- 102:	2210      	movs	r2, #16
- 104:	4621      	mov	r1, r4
- 106:	4628      	mov	r0, r5
- 108:	f8ad 6006 	strh.w	r6, [sp, #6]
- 10c:	f7ff fffe 	bl	0 <connect>
- 110:	2800      	cmp	r0, #0
- 112:	db15      	blt.n	140 <udp_connect+0x98>
- 114:	4a13      	ldr	r2, [pc, #76]	; (164 <udp_connect+0xbc>)
- 116:	4b12      	ldr	r3, [pc, #72]	; (160 <udp_connect+0xb8>)
- 118:	447a      	add	r2, pc
- 11a:	58d3      	ldr	r3, [r2, r3]
- 11c:	681a      	ldr	r2, [r3, #0]
- 11e:	9b05      	ldr	r3, [sp, #20]
- 120:	405a      	eors	r2, r3
- 122:	f04f 0300 	mov.w	r3, #0
- 126:	d109      	bne.n	13c <udp_connect+0x94>
- 128:	4628      	mov	r0, r5
- 12a:	b007      	add	sp, #28
- 12c:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 12e:	480e      	ldr	r0, [pc, #56]	; (168 <udp_connect+0xc0>)
- 130:	4478      	add	r0, pc
- 132:	f7ff fffe 	bl	0 <perror>
- 136:	2001      	movs	r0, #1
- 138:	f7ff fffe 	bl	0 <exit>
- 13c:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 140:	480a      	ldr	r0, [pc, #40]	; (16c <udp_connect+0xc4>)
- 142:	4478      	add	r0, pc
- 144:	f7ff fffe 	bl	0 <perror>
- 148:	2004      	movs	r0, #4
- 14a:	f7ff fffe 	bl	0 <exit>
- 14e:	4620      	mov	r0, r4
- 150:	f7ff fffe 	bl	0 <perror>
- 154:	2002      	movs	r0, #2
- 156:	f7ff fffe 	bl	0 <exit>
- 15a:	bf00      	nop
- 15c:	000000a6 	.word	0x000000a6
- 160:	00000000 	.word	0x00000000
- 164:	00000048 	.word	0x00000048
- 168:	00000034 	.word	0x00000034
- 16c:	00000026 	.word	0x00000026
+Function sub_40015b @ 0x0040015b
+0x0040015b:	nop	
+0x0040015d:	lsls	r6, r4, #2
+0x0040015f:	movs	r0, r0
+0x00400161:	movs	r0, r0
+0x00400163:	movs	r0, r0
+0x00400165:	lsls	r0, r1, #1
+0x00400167:	movs	r0, r0
+0x00400169:	movs	r4, r7
+0x0040016b:	movs	r0, r0
+0x0040016d:	movs	r2, r7
+0x0040016f:	movs	r0, r0
+
+Function socket @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function sock_optimize @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function bind @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function perror @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function exit @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function gethostbyname @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function __memmove_chk @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function connect @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function pmap_unset @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0

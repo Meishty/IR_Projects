@@ -1,48 +1,88 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sched4_8398fc4c.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	ldr	r1, [pc, #0x5c]
+0x0040000b:	movs	r3, #0
+0x0040000d:	ldr	r2, [pc, #0x5c]
+0x0040000f:	push	{lr}
+0x00400011:	add	r1, pc
+0x00400013:	sub	sp, #0xc
+0x00400015:	ldr	r2, [r1, r2]
+0x00400017:	mov	r5, sp
+0x00400019:	ldr	r2, [r2]
+0x0040001b:	str	r2, [sp, #4]
+0x0040001d:	mov.w	r2, #0
+0x00400021:	str	r3, [sp]
+0x00400023:	bl	#0x500001
+0x00400027:	mov	r1, r5
+0x00400029:	bl	#0x50000d
+0x0040002d:	ldr	r3, [sp]
+0x0040002f:	orrs.w	r4, r0, r3
+0x00400033:	bne	#0x400063
+0x00400035:	movs	r3, #5
+0x00400037:	str	r3, [sp]
+0x00400039:	bl	#0x500001
+0x0040003d:	mov	r1, r5
+0x0040003f:	bl	#0x50000d
+0x00400043:	cbz	r0, #0x400063
+0x00400045:	bl	#0x500019
+0x00400045:	bl	#0x500019
+0x00400049:	ldr	r3, [r0]
+0x0040004b:	cmp	r3, #0x16
+0x0040004d:	bne	#0x400063
+0x0040004f:	ldr	r3, [sp]
+0x00400051:	cmp	r3, #5
+0x00400053:	bne	#0x400063
+0x00400055:	ldr	r0, [pc, #0x18]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x500025
+0x0040005d:	mov	r0, r4
+0x0040005f:	bl	#0x500031
+0x00400063:	bl	#0x50003d
 
+Function sub_400067 @ 0x00400067
 
-Disassembly of section .text.startup:
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4917      	ldr	r1, [pc, #92]	; (60 <main+0x60>)
-   2:	2300      	movs	r3, #0
-   4:	4a17      	ldr	r2, [pc, #92]	; (64 <main+0x64>)
-   6:	b500      	push	{lr}
-   8:	4479      	add	r1, pc
-   a:	b083      	sub	sp, #12
-   c:	588a      	ldr	r2, [r1, r2]
-   e:	466d      	mov	r5, sp
-  10:	6812      	ldr	r2, [r2, #0]
-  12:	9201      	str	r2, [sp, #4]
-  14:	f04f 0200 	mov.w	r2, #0
-  18:	9300      	str	r3, [sp, #0]
-  1a:	f7ff fffe 	bl	0 <getpid>
-  1e:	4629      	mov	r1, r5
-  20:	f7ff fffe 	bl	0 <sched_setparam>
-  24:	9b00      	ldr	r3, [sp, #0]
-  26:	ea50 0403 	orrs.w	r4, r0, r3
-  2a:	d116      	bne.n	5a <main+0x5a>
-  2c:	2305      	movs	r3, #5
-  2e:	9300      	str	r3, [sp, #0]
-  30:	f7ff fffe 	bl	0 <getpid>
-  34:	4629      	mov	r1, r5
-  36:	f7ff fffe 	bl	0 <sched_setparam>
-  3a:	b170      	cbz	r0, 5a <main+0x5a>
-  3c:	f7ff fffe 	bl	0 <__errno_location>
-  40:	6803      	ldr	r3, [r0, #0]
-  42:	2b16      	cmp	r3, #22
-  44:	d109      	bne.n	5a <main+0x5a>
-  46:	9b00      	ldr	r3, [sp, #0]
-  48:	2b05      	cmp	r3, #5
-  4a:	d106      	bne.n	5a <main+0x5a>
-  4c:	4806      	ldr	r0, [pc, #24]	; (68 <main+0x68>)
-  4e:	4478      	add	r0, pc
-  50:	f7ff fffe 	bl	0 <puts>
-  54:	4620      	mov	r0, r4
-  56:	f7ff fffe 	bl	0 <exit>
-  5a:	f7ff fffe 	bl	0 <abort>
-  5e:	bf00      	nop
-  60:	00000054 	.word	0x00000054
-  64:	00000000 	.word	0x00000000
-  68:	00000016 	.word	0x00000016
+Function sched_setparam @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __errno_location @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function puts @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function exit @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function abort @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

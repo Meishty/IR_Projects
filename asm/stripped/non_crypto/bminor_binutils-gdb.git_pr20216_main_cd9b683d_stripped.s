@@ -1,22 +1,41 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr20216_main_cd9b683d_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	mov	r4, r0
+0x00400009:	movs	r0, #3
+0x0040000b:	bl	#0x40000b
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	ldr	r0, [r4]
+0x00400011:	cmp	r0, #3
+0x00400013:	bne	#0x400037
 
-Disassembly of section .text.startup:
+Function sub_400015 @ 0x00400015
+0x00400015:	bl	#0x400015
+0x00400019:	cbz	r0, #0x400037
+0x0040001b:	bl	#0x40001b
 
-00000000 <.text.startup>:
-   0:	f7ffb510 			; <UNDEFINED> instruction: 0xf7ffb510
-   4:	4604fffe 			; <UNDEFINED> instruction: 0x4604fffe
-   8:	f7ff2003 			; <UNDEFINED> instruction: 0xf7ff2003
-   c:	6820fffe 	stmdavs	r0!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  10:	d1102803 	tstle	r0, r3, lsl #16
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	f7ffb168 			; <UNDEFINED> instruction: 0xf7ffb168
-  1c:	4604fffe 			; <UNDEFINED> instruction: 0x4604fffe
-  20:	f7ff2004 			; <UNDEFINED> instruction: 0xf7ff2004
-  24:	6820fffe 	stmdavs	r0!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  28:	d1042804 	tstle	r4, r4, lsl #16
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	2000b108 	andcs	fp, r0, r8, lsl #2
-  34:	f7ffbd10 			; <UNDEFINED> instruction: 0xf7ffbd10
-  38:	bf00fffe 	svclt	0x0000fffe
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	mov	r4, r0
+0x00400021:	movs	r0, #4
+0x00400023:	bl	#0x400023
+
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	ldr	r0, [r4]
+0x00400029:	cmp	r0, #4
+0x0040002b:	bne	#0x400037
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	cbz	r0, #0x400037
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r4, pc}
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r4, pc}
+
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400037
+0x0040003b:	nop	

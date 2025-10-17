@@ -1,21 +1,20 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_bitcnt_2_ad6dbd3f_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	f0000843 			; <UNDEFINED> instruction: 0xf0000843
-   4:	f0033255 			; <UNDEFINED> instruction: 0xf0033255
-   8:	44133355 	ldrmi	r3, [r3], #-853	; 0xfffffcab
-   c:	3233f003 	eorscc	pc, r3, #3
-  10:	f003089b 			; <UNDEFINED> instruction: 0xf003089b
-  14:	44133333 	ldrmi	r3, [r3], #-819	; 0xfffffccd
-  18:	320ff003 	andcc	pc, pc, #3
-  1c:	f003091b 			; <UNDEFINED> instruction: 0xf003091b
-  20:	4413330f 	ldrmi	r3, [r3], #-783	; 0xfffffcf1
-  24:	12fff003 	rscsne	pc, pc, #3
-  28:	f0030a1b 			; <UNDEFINED> instruction: 0xf0030a1b
-  2c:	441313ff 	ldrmi	r1, [r3], #-1023	; 0xfffffc01
-  30:	eb00b298 	bl	0x2ca98
-  34:	47704013 			; <UNDEFINED> instruction: 0x47704013
+Function sub_400003 @ 0x00400003
+0x00400003:	and	r2, r0, #0x55555555
+0x00400007:	and	r3, r3, #0x55555555
+0x0040000b:	add	r3, r2
+0x0040000d:	and	r2, r3, #0x33333333
+0x00400011:	lsrs	r3, r3, #2
+0x00400013:	and	r3, r3, #0x33333333
+0x00400017:	add	r3, r2
+0x00400019:	and	r2, r3, #0xf0f0f0f
+0x0040001d:	lsrs	r3, r3, #4
+0x0040001f:	and	r3, r3, #0xf0f0f0f
+0x00400023:	add	r3, r2
+0x00400025:	and	r2, r3, #0xff00ff
+0x00400029:	lsrs	r3, r3, #8
+0x0040002b:	and	r3, r3, #0xff00ff
+0x0040002f:	add	r3, r2
+0x00400031:	uxth	r0, r3
+0x00400033:	add.w	r0, r0, r3, lsr #16
+0x00400037:	bx	lr

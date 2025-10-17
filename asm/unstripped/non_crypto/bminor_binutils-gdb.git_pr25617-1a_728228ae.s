@@ -1,20 +1,27 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr25617-1a_728228ae.o:     file format elf32-littlearm
+Function test @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r3, [pc, #0x14]
+0x00400009:	add	r3, pc
+0x0040000b:	cmp	r3, r0
+0x0040000d:	beq	#0x400011
+0x0040000f:	pop	{r3, pc}
+0x00400011:	ldr	r0, [pc, #0xc]
+0x00400013:	pop.w	{r3, lr}
+0x00400017:	add	r0, pc
+0x00400019:	b.w	#0x50000d
 
+Function get_protected_ptr @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
-
-00000000 <test>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <get_protected_ptr>
-   6:	4b05      	ldr	r3, [pc, #20]	; (1c <test+0x1c>)
-   8:	447b      	add	r3, pc
-   a:	4283      	cmp	r3, r0
-   c:	d000      	beq.n	10 <test+0x10>
-   e:	bd08      	pop	{r3, pc}
-  10:	4803      	ldr	r0, [pc, #12]	; (20 <test+0x20>)
-  12:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  16:	4478      	add	r0, pc
-  18:	f7ff bffe 	b.w	0 <puts>
-  1c:	00000010 	.word	0x00000010
-  20:	00000006 	.word	0x00000006
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

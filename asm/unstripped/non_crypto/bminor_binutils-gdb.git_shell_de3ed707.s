@@ -1,58 +1,87 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_shell_de3ed707.o:     file format elf32-littlearm
+Function sh_single_quote @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	bl	#0x500001
+0x00400009:	lsls	r0, r0, #2
+0x0040000b:	adds	r0, #3
+0x0040000d:	bl	#0x50000d
+0x00400011:	mov	r2, r0
+0x00400013:	movs	r3, #0x27
+0x00400015:	strb	r3, [r2], #1
+0x00400019:	ldrb	r3, [r4]
+0x0040001b:	cbz	r3, #0x400031
+0x0040001d:	movw	ip, #0x275c
+0x00400021:	cmp	r3, #0x27
+0x00400023:	strb	r3, [r2]
+0x00400025:	beq	#0x400037
+0x0040001d:	movw	ip, #0x275c
+0x00400021:	cmp	r3, #0x27
+0x00400023:	strb	r3, [r2]
+0x00400025:	beq	#0x400037
+0x00400021:	cmp	r3, #0x27
+0x00400023:	strb	r3, [r2]
+0x00400025:	beq	#0x400037
+0x00400027:	ldrb	r3, [r4, #1]!
+0x0040002b:	adds	r2, #1
+0x0040002d:	cmp	r3, #0
+0x0040002f:	bne	#0x400021
+0x00400031:	movs	r3, #0x27
+0x00400033:	strh	r3, [r2]
+0x00400035:	pop	{r4, pc}
+0x00400037:	strh.w	ip, [r2, #1]
+0x0040003b:	adds	r1, r2, #4
+0x0040003d:	strb	r3, [r2, #3]
+0x0040003f:	mov	r2, r1
+0x00400041:	ldrb	r3, [r4, #1]!
+0x00400045:	cmp	r3, #0
+0x00400047:	bne	#0x400021
+0x00400049:	movs	r3, #0x27
+0x0040004b:	strh	r3, [r2]
+0x0040004d:	pop	{r4, pc}
 
+Function sub_40004f @ 0x0040004f
+0x0040004f:	nop	
+0x00400051:	bx	lr
 
-Disassembly of section .text:
+Function sh_set_lines_and_columns @ 0x00400051
+0x00400051:	bx	lr
 
-00000000 <sh_single_quote>:
-   0:	b510      	push	{r4, lr}
-   2:	4604      	mov	r4, r0
-   4:	f7ff fffe 	bl	0 <strlen>
-   8:	0080      	lsls	r0, r0, #2
-   a:	3003      	adds	r0, #3
-   c:	f7ff fffe 	bl	0 <xmalloc>
-  10:	4602      	mov	r2, r0
-  12:	2327      	movs	r3, #39	; 0x27
-  14:	f802 3b01 	strb.w	r3, [r2], #1
-  18:	7823      	ldrb	r3, [r4, #0]
-  1a:	b14b      	cbz	r3, 30 <sh_single_quote+0x30>
-  1c:	f242 7c5c 	movw	ip, #10076	; 0x275c
-  20:	2b27      	cmp	r3, #39	; 0x27
-  22:	7013      	strb	r3, [r2, #0]
-  24:	d007      	beq.n	36 <sh_single_quote+0x36>
-  26:	f814 3f01 	ldrb.w	r3, [r4, #1]!
-  2a:	3201      	adds	r2, #1
-  2c:	2b00      	cmp	r3, #0
-  2e:	d1f7      	bne.n	20 <sh_single_quote+0x20>
-  30:	2327      	movs	r3, #39	; 0x27
-  32:	8013      	strh	r3, [r2, #0]
-  34:	bd10      	pop	{r4, pc}
-  36:	f8a2 c001 	strh.w	ip, [r2, #1]
-  3a:	1d11      	adds	r1, r2, #4
-  3c:	70d3      	strb	r3, [r2, #3]
-  3e:	460a      	mov	r2, r1
-  40:	f814 3f01 	ldrb.w	r3, [r4, #1]!
-  44:	2b00      	cmp	r3, #0
-  46:	d1eb      	bne.n	20 <sh_single_quote+0x20>
-  48:	2327      	movs	r3, #39	; 0x27
-  4a:	8013      	strh	r3, [r2, #0]
-  4c:	bd10      	pop	{r4, pc}
-  4e:	bf00      	nop
+Function sub_400053 @ 0x00400053
+0x00400053:	nop	
+0x00400055:	b.w	#0x500019
 
-00000050 <sh_set_lines_and_columns>:
-  50:	4770      	bx	lr
-  52:	bf00      	nop
+Function sh_get_env_value @ 0x00400055
+0x00400055:	b.w	#0x500019
 
-00000054 <sh_get_env_value>:
-  54:	f7ff bffe 	b.w	0 <getenv>
+Function sh_get_home_dir @ 0x00400059
+0x00400059:	ldr	r3, [pc, #4]
+0x0040005b:	add	r3, pc
+0x0040005d:	ldr	r0, [r3]
+0x0040005f:	bx	lr
 
-00000058 <sh_get_home_dir>:
-  58:	4b01      	ldr	r3, [pc, #4]	; (60 <sh_get_home_dir+0x8>)
-  5a:	447b      	add	r3, pc
-  5c:	6818      	ldr	r0, [r3, #0]
-  5e:	4770      	bx	lr
-  60:	00000002 	.word	0x00000002
+Function sh_unset_nodelay_mode @ 0x00400065
+0x00400065:	movs	r0, #0
+0x00400067:	bx	lr
 
-00000064 <sh_unset_nodelay_mode>:
-  64:	2000      	movs	r0, #0
-  66:	4770      	bx	lr
+Function strlen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function xmalloc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function getenv @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

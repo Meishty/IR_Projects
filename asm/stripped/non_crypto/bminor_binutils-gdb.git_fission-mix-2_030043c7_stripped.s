@@ -1,11 +1,11 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_fission-mix-2_030043c7_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r1, #0x800
+0x00400004:	ldrbtmi	r2, [fp], #-0x2a
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	22014b02 	andcs	r4, r1, #2048	; 0x800
-   4:	447b202a 	ldrbtmi	r2, [fp], #-42	; 0xffffffd6
-   8:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-   c:	00000002 	andeq	r0, r0, r2
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r0
+0x0040000f:	movs	r0, r0

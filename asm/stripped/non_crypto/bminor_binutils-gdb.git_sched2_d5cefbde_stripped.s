@@ -1,26 +1,52 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_sched2_d5cefbde_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r1, [pc, #0x3c]
+0x0040000b:	mov.w	r3, #-1
+0x0040000f:	ldr	r2, [pc, #0x3c]
+0x00400011:	push	{lr}
+0x00400013:	add	r1, pc
+0x00400015:	sub	sp, #0xc
+0x00400017:	ldr	r2, [r1, r2]
+0x00400019:	ldr	r2, [r2]
+0x0040001b:	str	r2, [sp, #4]
+0x0040001d:	mov.w	r2, #0
+0x00400021:	str	r3, [sp]
+0x00400023:	bl	#0x400023
 
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
 
-Disassembly of section .text.startup:
+Function sub_400027 @ 0x00400027
+0x00400027:	mov	r1, sp
+0x00400029:	bl	#0x400029
 
-00000000 <.text.startup>:
-   0:	f04f490f 			; <UNDEFINED> instruction: 0xf04f490f
-   4:	4a0f33ff 	bmi	0x3cd008
-   8:	4479b500 	ldrbtmi	fp, [r9], #-1280	; 0xfffffb00
-   c:	588ab083 	stmpl	sl, {r0, r1, r7, ip, sp, pc}
-  10:	92016812 	andls	r6, r1, #1179648	; 0x120000
-  14:	0200f04f 	andeq	pc, r0, #79	; 0x4f
-  18:	f7ff9300 			; <UNDEFINED> instruction: 0xf7ff9300
-  1c:	4669fffe 	uqsub8mi	pc, r9, lr	; <UNPREDICTABLE>
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	ea509b00 	b	0x1426c2c
-  28:	d1060403 	tstle	r6, r3, lsl #8
-  2c:	44784806 	ldrbtmi	r4, [r8], #-2054	; 0xfffff7fa
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  38:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  3c:	bf00fffe 	svclt	0x0000fffe
-  40:	00000032 	andeq	r0, r0, r2, lsr r0
-  44:	00000000 	andeq	r0, r0, r0
-  48:	00000016 	andeq	r0, r0, r6, lsl r0
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	ldr	r3, [sp]
+0x0040002f:	orrs.w	r4, r0, r3
+0x00400033:	bne	#0x400043
+0x00400035:	ldr	r0, [pc, #0x18]
+0x00400037:	add	r0, pc
+0x00400039:	bl	#0x400039
+
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	mov	r0, r4
+0x0040003f:	bl	#0x40003f
+
+Function sub_40003f @ 0x0040003f
+0x0040003f:	bl	#0x40003f
+
+Function sub_400043 @ 0x00400043
+0x00400043:	bl	#0x400043
+0x00400047:	nop	
+0x00400049:	movs	r2, r6
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r6, r2
+0x00400053:	movs	r0, r0

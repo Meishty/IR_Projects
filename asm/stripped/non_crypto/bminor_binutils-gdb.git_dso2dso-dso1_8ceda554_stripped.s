@@ -1,10 +1,8 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dso2dso-dso1_8ceda554_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	movs	r0, #5
+0x00400009:	pop	{r3, pc}
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	2005fffe 	strdcs	pc, [r5], -lr
-   8:	bf00bd08 	svclt	0x0000bd08
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	

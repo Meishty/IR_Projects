@@ -1,524 +1,656 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_round_trip_frame_uncompressed_fuzzer_2c4c0087.o:     file format elf32-littlearm
+Function LLVMFuzzerTestOneInput @ 0x00400001
+0x00400001:	ldr.w	r2, [pc, #0x438]
+0x00400005:	ldr.w	r3, [pc, #0x438]
+0x00400009:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0040000d:	add	r2, pc
+0x0040000f:	ldr.w	r5, [pc, #0x434]
+0x00400013:	vpush	{d8}
+0x00400017:	sub	sp, #0xc4
+0x00400019:	ldr	r3, [r2, r3]
+0x0040001b:	add	r4, sp, #0x48
+0x0040001d:	add	r5, pc
+0x0040001f:	movs	r7, #1
+0x00400021:	ldr	r3, [r3]
+0x00400023:	str	r3, [sp, #0xbc]
+0x00400025:	mov.w	r3, #0
+0x00400029:	str	r0, [sp, #0x24]
+0x0040002b:	bl	#0x500001
+0x0040002f:	mov	r6, r0
+0x00400031:	mov	r1, r6
+0x00400033:	vmov	s17, r0
+0x00400037:	mov	r0, r4
+0x00400039:	str	r5, [sp, #0x1c]
+0x0040003b:	bl	#0x50000d
+0x0040003f:	str	r7, [sp, #0x4c]
+0x00400041:	add.w	r8, sp, #0x80
+0x00400045:	ldm	r4!, {r0, r1, r2, r3}
+0x00400047:	mov	r5, r8
+0x00400049:	stm	r5!, {r0, r1, r2, r3}
+0x0040004b:	ldm	r4!, {r0, r1, r2, r3}
+0x0040004d:	stm	r5!, {r0, r1, r2, r3}
+0x0040004f:	ldm	r4!, {r0, r1, r2, r3}
+0x00400051:	stm	r5!, {r0, r1, r2, r3}
+0x00400053:	ldm.w	r4, {r0, r1}
+0x00400057:	stm.w	r5, {r0, r1}
+0x0040005b:	mov	r0, r6
+0x0040005d:	bl	#0x500019
+0x00400061:	mov	r5, r0
+0x00400063:	mov	r0, r6
+0x00400065:	bl	#0x500019
+0x00400069:	mov	r4, r0
+0x0040006b:	mov	r0, r6
+0x0040006d:	bl	#0x500025
+0x00400071:	mov	r6, r0
+0x00400073:	mov	r2, r6
+0x00400075:	movs	r1, #0
+0x00400077:	vmov	s16, r0
+0x0040007b:	mov	r0, r5
+0x0040007d:	bl	#0x500031
+0x00400081:	mov	r5, r0
+0x00400083:	mov	r2, r6
+0x00400085:	mov	r0, r4
+0x00400087:	mov	r1, r5
+0x00400089:	bl	#0x500031
+0x0040008d:	sub.w	sl, r0, r5
+0x00400091:	cmp	r5, r0
+0x00400093:	bhi.w	#0x4003ff
+0x00400097:	mov	r4, r0
+0x00400099:	cmp	r6, r0
+0x0040009b:	blo.w	#0x4003e1
+0x0040009f:	mov	r0, r6
+0x004000a1:	bl	#0x50003d
+0x004000a5:	mov	r1, r8
+0x004000a7:	bl	#0x500049
+0x004000ab:	ldr	r3, [sp, #0x24]
+0x004000ad:	add.w	r6, sl, r0
+0x004000b1:	mov	r0, r6
+0x004000b3:	add.w	sb, r3, r5
+0x004000b7:	bl	#0x500055
+0x004000bb:	mov	fp, r0
+0x004000bd:	str	r0, [sp, #0x18]
+0x004000bf:	mov	r0, r6
+0x004000c1:	bl	#0x500055
+0x004000c5:	mov	r3, fp
+0x004000c7:	str	r0, [sp, #0x20]
+0x004000c9:	cmp	r3, #0
+0x004000cb:	beq.w	#0x4003c3
+0x004000cf:	cmp	r0, #0
+0x004000d1:	beq.w	#0x4003a5
+0x004000d5:	movs	r1, #0x64
+0x004000d7:	add	r0, sp, #0x28
+0x004000d9:	bl	#0x500061
+0x004000dd:	bl	#0x50006d
+0x004000e1:	cmp	r0, #0
+0x004000e3:	bne.w	#0x400387
+0x004000e7:	mov	r3, r8
+0x004000e9:	ldr	r1, [sp, #0x18]
+0x004000eb:	ldr	r0, [sp, #0x28]
+0x004000ed:	mov	r2, r6
+0x004000ef:	bl	#0x500079
+0x004000f3:	mov	r8, r0
+0x004000f5:	bl	#0x50006d
+0x004000f9:	cmp	r0, #0
+0x004000fb:	bne.w	#0x400369
+0x004000ff:	ldr	r1, [sp, #0x18]
+0x00400101:	mov	r2, r6
+0x00400103:	strd	r5, r0, [sp]
+0x00400107:	ldr	r3, [sp, #0x24]
+0x00400109:	add	r1, r8
+0x0040010b:	ldr	r0, [sp, #0x28]
+0x0040010d:	bl	#0x500085
+0x00400111:	mov	r5, r0
+0x00400113:	bl	#0x50006d
+0x00400117:	cmp	r0, #0
+0x00400119:	bne.w	#0x40034b
+0x0040011d:	ldr	r1, [sp, #0x18]
+0x0040011f:	add	r5, r8
+0x00400121:	strd	sl, r0, [sp]
+0x00400125:	mov	r3, sb
+0x00400127:	ldr	r0, [sp, #0x28]
+0x00400129:	mov	r2, r6
+0x0040012b:	add	r1, r5
+0x0040012d:	bl	#0x500091
+0x00400131:	mov	r8, r0
+0x00400133:	bl	#0x50006d
+0x00400137:	cmp	r0, #0
+0x00400139:	bne.w	#0x40032d
+0x0040013d:	vmov	r2, s16
+0x00400141:	ldr	r3, [sp, #0x24]
+0x00400143:	ldr	r1, [sp, #0x18]
+0x00400145:	add	r5, r8
+0x00400147:	add	r3, r4
+0x00400149:	str	r0, [sp, #4]
+0x0040014b:	add	r1, r5
+0x0040014d:	ldr	r0, [sp, #0x28]
+0x0040014f:	subs	r4, r2, r4
+0x00400151:	mov	r2, r6
+0x00400153:	str	r4, [sp]
+0x00400155:	bl	#0x500085
+0x00400159:	mov	r4, r0
+0x0040015b:	bl	#0x50006d
+0x0040015f:	mov	r3, r0
+0x00400161:	cmp	r0, #0
+0x00400163:	bne.w	#0x400303
+0x00400167:	ldr	r1, [sp, #0x18]
+0x00400169:	add	r4, r5
+0x0040016b:	ldr	r0, [sp, #0x28]
+0x0040016d:	mov	r2, r6
+0x0040016f:	add	r1, r4
+0x00400171:	bl	#0x50009d
+0x00400175:	mov	r5, r0
+0x00400177:	bl	#0x50006d
+0x0040017b:	cmp	r0, #0
+0x0040017d:	bne.w	#0x4002e7
+0x00400181:	movs	r1, #0x64
+0x00400183:	add	r0, sp, #0x2c
+0x00400185:	movs	r7, #0
+0x00400187:	add	r5, r4
+0x00400189:	strd	r7, r7, [sp, #0x3c]
+0x0040018d:	movs	r4, #1
+0x0040018f:	str	r7, [sp, #0x44]
+0x00400191:	str	r4, [sp, #0x38]
+0x00400193:	bl	#0x5000a9
+0x00400197:	ldr.w	r8, [sp, #0x2c]
+0x0040019b:	cmp.w	r8, #0
+0x0040019f:	beq.w	#0x4002bd
+0x004001a3:	ldr	r3, [sp, #0x18]
+0x004001a5:	add.w	fp, sp, #0x30
+0x004001a9:	str	r3, [sp, #0x14]
+0x004001ab:	mov	r2, fp
+0x004001ad:	add	r5, r3
+0x004001af:	add	r3, sp, #0x34
+0x004001b1:	mov	sb, r3
+0x004001b3:	ldr	r3, [sp, #0x14]
+0x004001b5:	ldr.w	sl, [sp, #0x20]
+0x004001b9:	cmp	r5, r3
+0x004001bb:	it	hi
+0x004001bd:	movhi	r4, r3
+0x004001bf:	bls	#0x400215
+0x004001c1:	mov	r3, r4
+0x004001c3:	mov	r1, sl
+0x004001c5:	mov	r0, r8
+0x004001c7:	strd	sb, r7, [sp]
+0x004001cb:	sub.w	ip, r5, r4
+0x004001cf:	str	r2, [sp, #0x10]
+0x004001d1:	str.w	ip, [sp, #0x34]
+0x004001d5:	str	r6, [sp, #0x30]
+0x004001d7:	bl	#0x5000b5
+0x004001db:	mov	fp, r0
+0x004001dd:	bl	#0x50006d
+0x004001e1:	ldr	r2, [sp, #0x10]
+0x004001e3:	cmp	r0, #0
+0x004001e5:	bne	#0x400277
+0x004001e7:	ldr	r3, [sp, #0x34]
+0x004001e9:	add	r4, r3
+0x004001eb:	ldr	r3, [sp, #0x30]
+0x004001ed:	cmp.w	fp, #0
+0x004001f1:	it	ne
+0x004001f3:	cmpne	r5, r4
+0x004001f5:	add	sl, r3
+0x004001f7:	bhi	#0x4001c1
+0x004001f9:	cmp	r5, r4
+0x004001fb:	blo	#0x4002a1
+0x004001fd:	cmp.w	fp, #0
+0x00400201:	beq	#0x400221
+0x00400203:	ldr	r3, [sp, #0x14]
+0x00400205:	cmp	r5, r3
+0x00400207:	bls	#0x40021f
+0x00400209:	mov	r3, r4
+0x0040020b:	str	r4, [sp, #0x14]
+0x0040020d:	cmp	r5, r3
+0x0040020f:	it	hi
+0x00400211:	movhi	r4, r3
+0x00400213:	bhi	#0x4001c1
+0x00400215:	blo	#0x4002a1
+0x00400217:	mov	r4, r3
+0x00400219:	ldr	r3, [sp, #0x14]
+0x0040021b:	cmp	r5, r3
+0x0040021d:	bhi	#0x400209
+0x0040021f:	b	#0x40021f
+0x00400221:	ldr	r0, [sp, #0x2c]
+0x00400223:	bl	#0x5000c1
+0x00400227:	vmov	r2, s16
+0x0040022b:	ldrd	r1, r0, [sp, #0x20]
+0x0040022f:	bl	#0x5000cd
+0x00400233:	mov	r4, r0
+0x00400235:	cmp	r0, #0
+0x00400237:	bne.w	#0x400421
+0x0040023b:	ldr	r0, [sp, #0x18]
+0x0040023d:	bl	#0x5000d9
+0x00400241:	ldr	r0, [sp, #0x20]
+0x00400243:	bl	#0x5000d9
+0x00400247:	vmov	r0, s17
+0x0040024b:	bl	#0x5000e5
+0x0040024f:	ldr	r0, [sp, #0x28]
+0x00400251:	bl	#0x5000f1
+0x00400255:	ldr	r2, [pc, #0x1f0]
+0x00400257:	ldr	r3, [pc, #0x1e8]
+0x00400259:	add	r2, pc
+0x0040025b:	ldr	r3, [r2, r3]
+0x0040025d:	ldr	r2, [r3]
+0x0040025f:	ldr	r3, [sp, #0xbc]
+0x00400261:	eors	r2, r3
+0x00400263:	mov.w	r3, #0
+0x00400267:	bne.w	#0x40041d
+0x0040026b:	mov	r0, r4
+0x0040026d:	add	sp, #0xc4
+0x0040026f:	vpop	{d8}
+0x00400273:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400277:	ldr	r0, [pc, #0x1d4]
+0x00400279:	movs	r4, #0x20
+0x0040027b:	ldr	r5, [sp, #0x1c]
+0x0040027d:	ldr	r2, [pc, #0x1d0]
+0x0040027f:	ldr	r1, [pc, #0x1d4]
+0x00400281:	add	r2, pc
+0x00400283:	ldr	r3, [pc, #0x1d4]
+0x00400285:	ldr	r0, [r5, r0]
+0x00400287:	add	r1, pc
+0x00400289:	str	r2, [sp, #8]
+0x0040028b:	add	r3, pc
+0x0040028d:	ldr	r2, [pc, #0x1cc]
+0x0040028f:	add	r2, pc
+0x00400291:	strd	r4, r1, [sp]
+0x00400295:	movs	r1, #1
+0x00400297:	ldr	r0, [r0]
+0x00400299:	bl	#0x5000fd
+0x00400291:	strd	r4, r1, [sp]
+0x00400295:	movs	r1, #1
+0x00400297:	ldr	r0, [r0]
+0x00400299:	bl	#0x5000fd
+0x0040029d:	bl	#0x500109
+0x004002a1:	ldr	r0, [pc, #0x1a8]
+0x004002a3:	movs	r4, #0x27
+0x004002a5:	ldr	r5, [sp, #0x1c]
+0x004002a7:	ldr	r2, [pc, #0x1b8]
+0x004002a9:	ldr	r1, [pc, #0x1b8]
+0x004002ab:	add	r2, pc
+0x004002ad:	ldr	r3, [pc, #0x1b8]
+0x004002af:	ldr	r0, [r5, r0]
+0x004002b1:	add	r1, pc
+0x004002b3:	str	r2, [sp, #8]
+0x004002b5:	add	r3, pc
+0x004002b7:	ldr	r2, [pc, #0x1b4]
+0x004002b9:	add	r2, pc
+0x004002bb:	b	#0x400291
+0x004002bd:	ldr	r2, [pc, #0x18c]
+0x004002bf:	mov	r1, r4
+0x004002c1:	ldr	r0, [sp, #0x1c]
+0x004002c3:	movs	r4, #0x6c
+0x004002c5:	ldr	r3, [pc, #0x1a8]
+0x004002c7:	ldr	r5, [pc, #0x1ac]
+0x004002c9:	ldr	r0, [r0, r2]
+0x004002cb:	add	r3, pc
+0x004002cd:	ldr	r2, [pc, #0x1a8]
+0x004002cf:	add	r5, pc
+0x004002d1:	str	r3, [sp, #8]
+0x004002d3:	str	r4, [sp]
+0x004002d5:	add	r2, pc
+0x004002d7:	ldr	r3, [pc, #0x1a4]
+0x004002d9:	ldr	r0, [r0]
+0x004002db:	add	r3, pc
+0x004002dd:	str	r5, [sp, #4]
+0x004002df:	bl	#0x5000fd
+0x004002e3:	bl	#0x500109
+0x004002e7:	ldr	r0, [pc, #0x164]
+0x004002e9:	movs	r4, #0x64
+0x004002eb:	ldr	r5, [sp, #0x1c]
+0x004002ed:	ldr	r2, [pc, #0x190]
+0x004002ef:	ldr	r1, [pc, #0x194]
+0x004002f1:	add	r2, pc
+0x004002f3:	ldr	r3, [pc, #0x194]
+0x004002f5:	ldr	r0, [r5, r0]
+0x004002f7:	add	r1, pc
+0x004002f9:	str	r2, [sp, #8]
+0x004002fb:	add	r3, pc
+0x004002fd:	ldr	r2, [pc, #0x18c]
+0x004002ff:	add	r2, pc
+0x00400301:	b	#0x400291
+0x00400303:	ldr	r2, [pc, #0x148]
+0x00400305:	mov	r1, r7
+0x00400307:	ldr	r0, [sp, #0x1c]
+0x00400309:	movs	r5, #0x5f
+0x0040030b:	ldr	r3, [pc, #0x184]
+0x0040030d:	ldr	r4, [pc, #0x184]
+0x0040030f:	ldr	r0, [r0, r2]
+0x00400311:	add	r3, pc
+0x00400313:	ldr	r2, [pc, #0x184]
+0x00400315:	add	r4, pc
+0x00400317:	str	r3, [sp, #8]
+0x00400319:	ldr	r3, [pc, #0x180]
+0x0040031b:	add	r2, pc
+0x0040031d:	add	r3, pc
+0x0040031f:	str	r5, [sp]
+0x00400321:	ldr	r0, [r0]
+0x00400323:	str	r4, [sp, #4]
+0x00400325:	bl	#0x5000fd
+0x0040031f:	str	r5, [sp]
+0x00400321:	ldr	r0, [r0]
+0x00400323:	str	r4, [sp, #4]
+0x00400325:	bl	#0x5000fd
+0x00400329:	bl	#0x500109
+0x0040032d:	ldr	r2, [pc, #0x11c]
+0x0040032f:	mov	r1, r7
+0x00400331:	ldr	r0, [sp, #0x1c]
+0x00400333:	movs	r5, #0x58
+0x00400335:	ldr	r3, [pc, #0x168]
+0x00400337:	ldr	r4, [pc, #0x16c]
+0x00400339:	ldr	r0, [r0, r2]
+0x0040033b:	add	r3, pc
+0x0040033d:	ldr	r2, [pc, #0x168]
+0x0040033f:	add	r4, pc
+0x00400341:	str	r3, [sp, #8]
+0x00400343:	ldr	r3, [pc, #0x168]
+0x00400345:	add	r2, pc
+0x00400347:	add	r3, pc
+0x00400349:	b	#0x40031f
+0x0040034b:	ldr	r2, [pc, #0x100]
+0x0040034d:	mov	r1, r7
+0x0040034f:	ldr	r0, [sp, #0x1c]
+0x00400351:	movs	r5, #0x52
+0x00400353:	ldr	r3, [pc, #0x15c]
+0x00400355:	ldr	r4, [pc, #0x15c]
+0x00400357:	ldr	r0, [r0, r2]
+0x00400359:	add	r3, pc
+0x0040035b:	ldr	r2, [pc, #0x15c]
+0x0040035d:	add	r4, pc
+0x0040035f:	str	r3, [sp, #8]
+0x00400361:	ldr	r3, [pc, #0x158]
+0x00400363:	add	r2, pc
+0x00400365:	add	r3, pc
+0x00400367:	b	#0x40031f
+0x00400369:	ldr	r2, [pc, #0xe0]
+0x0040036b:	mov	r1, r7
+0x0040036d:	ldr	r0, [sp, #0x1c]
+0x0040036f:	movs	r5, #0x4c
+0x00400371:	ldr	r3, [pc, #0x14c]
+0x00400373:	ldr	r4, [pc, #0x150]
+0x00400375:	ldr	r0, [r0, r2]
+0x00400377:	add	r3, pc
+0x00400379:	ldr	r2, [pc, #0x14c]
+0x0040037b:	add	r4, pc
+0x0040037d:	str	r3, [sp, #8]
+0x0040037f:	ldr	r3, [pc, #0x14c]
+0x00400381:	add	r2, pc
+0x00400383:	add	r3, pc
+0x00400385:	b	#0x40031f
+0x00400387:	ldr	r2, [pc, #0xc4]
+0x00400389:	mov	r1, r7
+0x0040038b:	ldr	r0, [sp, #0x1c]
+0x0040038d:	movs	r5, #0x49
+0x0040038f:	ldr	r3, [pc, #0x140]
+0x00400391:	ldr	r4, [pc, #0x140]
+0x00400393:	ldr	r0, [r0, r2]
+0x00400395:	add	r3, pc
+0x00400397:	ldr	r2, [pc, #0x140]
+0x00400399:	add	r4, pc
+0x0040039b:	str	r3, [sp, #8]
+0x0040039d:	ldr	r3, [pc, #0x13c]
+0x0040039f:	add	r2, pc
+0x004003a1:	add	r3, pc
+0x004003a3:	b	#0x40031f
+0x004003a5:	ldr	r2, [pc, #0xa4]
+0x004003a7:	mov	r1, r7
+0x004003a9:	ldr	r0, [sp, #0x1c]
+0x004003ab:	movs	r5, #0x44
+0x004003ad:	ldr	r3, [pc, #0x130]
+0x004003af:	ldr	r4, [pc, #0x134]
+0x004003b1:	ldr	r0, [r0, r2]
+0x004003b3:	add	r3, pc
+0x004003b5:	ldr	r2, [pc, #0x130]
+0x004003b7:	add	r4, pc
+0x004003b9:	str	r3, [sp, #8]
+0x004003bb:	ldr	r3, [pc, #0x130]
+0x004003bd:	add	r2, pc
+0x004003bf:	add	r3, pc
+0x004003c1:	b	#0x40031f
+0x004003c3:	ldr	r2, [pc, #0x88]
+0x004003c5:	mov	r1, r7
+0x004003c7:	ldr	r0, [sp, #0x1c]
+0x004003c9:	movs	r5, #0x43
+0x004003cb:	ldr	r3, [pc, #0x124]
+0x004003cd:	ldr	r4, [pc, #0x124]
+0x004003cf:	ldr	r0, [r0, r2]
+0x004003d1:	add	r3, pc
+0x004003d3:	ldr	r2, [pc, #0x124]
+0x004003d5:	add	r4, pc
+0x004003d7:	str	r3, [sp, #8]
+0x004003d9:	ldr	r3, [pc, #0x120]
+0x004003db:	add	r2, pc
+0x004003dd:	add	r3, pc
+0x004003df:	b	#0x40031f
+0x004003e1:	ldr	r2, [pc, #0x68]
+0x004003e3:	mov	r1, r7
+0x004003e5:	ldr	r0, [sp, #0x1c]
+0x004003e7:	movs	r5, #0x38
+0x004003e9:	ldr	r3, [pc, #0x114]
+0x004003eb:	ldr	r4, [pc, #0x118]
+0x004003ed:	ldr	r0, [r0, r2]
+0x004003ef:	add	r3, pc
+0x004003f1:	ldr	r2, [pc, #0x114]
+0x004003f3:	add	r4, pc
+0x004003f5:	str	r3, [sp, #8]
+0x004003f7:	ldr	r3, [pc, #0x114]
+0x004003f9:	add	r2, pc
+0x004003fb:	add	r3, pc
+0x004003fd:	b	#0x40031f
+0x004003ff:	ldr	r2, [pc, #0x4c]
+0x00400401:	mov	r1, r7
+0x00400403:	ldr	r0, [sp, #0x1c]
+0x00400405:	movs	r5, #0x37
+0x00400407:	ldr	r3, [pc, #0x108]
+0x00400409:	ldr	r4, [pc, #0x108]
+0x0040040b:	ldr	r0, [r0, r2]
+0x0040040d:	add	r3, pc
+0x0040040f:	ldr	r2, [pc, #0x108]
+0x00400411:	add	r4, pc
+0x00400413:	str	r3, [sp, #8]
+0x00400415:	ldr	r3, [pc, #0x104]
+0x00400417:	add	r2, pc
+0x00400419:	add	r3, pc
+0x0040041b:	b	#0x40031f
+0x0040041d:	bl	#0x500115
+0x00400421:	ldr	r0, [pc, #0x28]
+0x00400423:	movs	r4, #0x72
+0x00400425:	ldr	r5, [sp, #0x1c]
+0x00400427:	ldr	r2, [pc, #0xf8]
+0x00400429:	ldr	r1, [pc, #0xf8]
+0x0040042b:	add	r2, pc
+0x0040042d:	ldr	r3, [pc, #0xf8]
+0x0040042f:	ldr	r0, [r5, r0]
+0x00400431:	add	r1, pc
+0x00400433:	str	r2, [sp, #8]
+0x00400435:	add	r3, pc
+0x00400437:	ldr	r2, [pc, #0xf4]
+0x00400439:	add	r2, pc
+0x0040043b:	b	#0x400291
 
+Function FUZZ_dataProducer_create @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
+Function FUZZ_dataProducer_preferences @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <LLVMFuzzerTestOneInput>:
-   0:	f8df 2438 	ldr.w	r2, [pc, #1080]	; 43c <LLVMFuzzerTestOneInput+0x43c>
-   4:	f8df 3438 	ldr.w	r3, [pc, #1080]	; 440 <LLVMFuzzerTestOneInput+0x440>
-   8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   c:	447a      	add	r2, pc
-   e:	f8df 5434 	ldr.w	r5, [pc, #1076]	; 444 <LLVMFuzzerTestOneInput+0x444>
-  12:	ed2d 8b02 	vpush	{d8}
-  16:	b0b1      	sub	sp, #196	; 0xc4
-  18:	58d3      	ldr	r3, [r2, r3]
-  1a:	ac12      	add	r4, sp, #72	; 0x48
-  1c:	447d      	add	r5, pc
-  1e:	2701      	movs	r7, #1
-  20:	681b      	ldr	r3, [r3, #0]
-  22:	932f      	str	r3, [sp, #188]	; 0xbc
-  24:	f04f 0300 	mov.w	r3, #0
-  28:	9009      	str	r0, [sp, #36]	; 0x24
-  2a:	f7ff fffe 	bl	0 <FUZZ_dataProducer_create>
-  2e:	4606      	mov	r6, r0
-  30:	4631      	mov	r1, r6
-  32:	ee08 0a90 	vmov	s17, r0
-  36:	4620      	mov	r0, r4
-  38:	9507      	str	r5, [sp, #28]
-  3a:	f7ff fffe 	bl	0 <FUZZ_dataProducer_preferences>
-  3e:	9713      	str	r7, [sp, #76]	; 0x4c
-  40:	f10d 0880 	add.w	r8, sp, #128	; 0x80
-  44:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
-  46:	4645      	mov	r5, r8
-  48:	c50f      	stmia	r5!, {r0, r1, r2, r3}
-  4a:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
-  4c:	c50f      	stmia	r5!, {r0, r1, r2, r3}
-  4e:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
-  50:	c50f      	stmia	r5!, {r0, r1, r2, r3}
-  52:	e894 0003 	ldmia.w	r4, {r0, r1}
-  56:	e885 0003 	stmia.w	r5, {r0, r1}
-  5a:	4630      	mov	r0, r6
-  5c:	f7ff fffe 	bl	0 <FUZZ_dataProducer_retrieve32>
-  60:	4605      	mov	r5, r0
-  62:	4630      	mov	r0, r6
-  64:	f7ff fffe 	bl	0 <FUZZ_dataProducer_retrieve32>
-  68:	4604      	mov	r4, r0
-  6a:	4630      	mov	r0, r6
-  6c:	f7ff fffe 	bl	0 <FUZZ_dataProducer_remainingBytes>
-  70:	4606      	mov	r6, r0
-  72:	4632      	mov	r2, r6
-  74:	2100      	movs	r1, #0
-  76:	ee08 0a10 	vmov	s16, r0
-  7a:	4628      	mov	r0, r5
-  7c:	f7ff fffe 	bl	0 <FUZZ_getRange_from_uint32>
-  80:	4605      	mov	r5, r0
-  82:	4632      	mov	r2, r6
-  84:	4620      	mov	r0, r4
-  86:	4629      	mov	r1, r5
-  88:	f7ff fffe 	bl	0 <FUZZ_getRange_from_uint32>
-  8c:	eba0 0a05 	sub.w	sl, r0, r5
-  90:	4285      	cmp	r5, r0
-  92:	f200 81b4 	bhi.w	3fe <LLVMFuzzerTestOneInput+0x3fe>
-  96:	4604      	mov	r4, r0
-  98:	4286      	cmp	r6, r0
-  9a:	f0c0 81a1 	bcc.w	3e0 <LLVMFuzzerTestOneInput+0x3e0>
-  9e:	4630      	mov	r0, r6
-  a0:	f7ff fffe 	bl	0 <LZ4_compressBound>
-  a4:	4641      	mov	r1, r8
-  a6:	f7ff fffe 	bl	0 <LZ4F_compressFrameBound>
-  aa:	9b09      	ldr	r3, [sp, #36]	; 0x24
-  ac:	eb0a 0600 	add.w	r6, sl, r0
-  b0:	4630      	mov	r0, r6
-  b2:	eb03 0905 	add.w	r9, r3, r5
-  b6:	f7ff fffe 	bl	0 <malloc>
-  ba:	4683      	mov	fp, r0
-  bc:	9006      	str	r0, [sp, #24]
-  be:	4630      	mov	r0, r6
-  c0:	f7ff fffe 	bl	0 <malloc>
-  c4:	465b      	mov	r3, fp
-  c6:	9008      	str	r0, [sp, #32]
-  c8:	2b00      	cmp	r3, #0
-  ca:	f000 817a 	beq.w	3c2 <LLVMFuzzerTestOneInput+0x3c2>
-  ce:	2800      	cmp	r0, #0
-  d0:	f000 8168 	beq.w	3a4 <LLVMFuzzerTestOneInput+0x3a4>
-  d4:	2164      	movs	r1, #100	; 0x64
-  d6:	a80a      	add	r0, sp, #40	; 0x28
-  d8:	f7ff fffe 	bl	0 <LZ4F_createCompressionContext>
-  dc:	f7ff fffe 	bl	0 <LZ4F_isError>
-  e0:	2800      	cmp	r0, #0
-  e2:	f040 8150 	bne.w	386 <LLVMFuzzerTestOneInput+0x386>
-  e6:	4643      	mov	r3, r8
-  e8:	9906      	ldr	r1, [sp, #24]
-  ea:	980a      	ldr	r0, [sp, #40]	; 0x28
-  ec:	4632      	mov	r2, r6
-  ee:	f7ff fffe 	bl	0 <LZ4F_compressBegin>
-  f2:	4680      	mov	r8, r0
-  f4:	f7ff fffe 	bl	0 <LZ4F_isError>
-  f8:	2800      	cmp	r0, #0
-  fa:	f040 8135 	bne.w	368 <LLVMFuzzerTestOneInput+0x368>
-  fe:	9906      	ldr	r1, [sp, #24]
- 100:	4632      	mov	r2, r6
- 102:	e9cd 5000 	strd	r5, r0, [sp]
- 106:	9b09      	ldr	r3, [sp, #36]	; 0x24
- 108:	4441      	add	r1, r8
- 10a:	980a      	ldr	r0, [sp, #40]	; 0x28
- 10c:	f7ff fffe 	bl	0 <LZ4F_compressUpdate>
- 110:	4605      	mov	r5, r0
- 112:	f7ff fffe 	bl	0 <LZ4F_isError>
- 116:	2800      	cmp	r0, #0
- 118:	f040 8117 	bne.w	34a <LLVMFuzzerTestOneInput+0x34a>
- 11c:	9906      	ldr	r1, [sp, #24]
- 11e:	4445      	add	r5, r8
- 120:	e9cd a000 	strd	sl, r0, [sp]
- 124:	464b      	mov	r3, r9
- 126:	980a      	ldr	r0, [sp, #40]	; 0x28
- 128:	4632      	mov	r2, r6
- 12a:	4429      	add	r1, r5
- 12c:	f7ff fffe 	bl	0 <LZ4F_uncompressedUpdate>
- 130:	4680      	mov	r8, r0
- 132:	f7ff fffe 	bl	0 <LZ4F_isError>
- 136:	2800      	cmp	r0, #0
- 138:	f040 80f8 	bne.w	32c <LLVMFuzzerTestOneInput+0x32c>
- 13c:	ee18 2a10 	vmov	r2, s16
- 140:	9b09      	ldr	r3, [sp, #36]	; 0x24
- 142:	9906      	ldr	r1, [sp, #24]
- 144:	4445      	add	r5, r8
- 146:	4423      	add	r3, r4
- 148:	9001      	str	r0, [sp, #4]
- 14a:	4429      	add	r1, r5
- 14c:	980a      	ldr	r0, [sp, #40]	; 0x28
- 14e:	1b14      	subs	r4, r2, r4
- 150:	4632      	mov	r2, r6
- 152:	9400      	str	r4, [sp, #0]
- 154:	f7ff fffe 	bl	0 <LZ4F_compressUpdate>
- 158:	4604      	mov	r4, r0
- 15a:	f7ff fffe 	bl	0 <LZ4F_isError>
- 15e:	4603      	mov	r3, r0
- 160:	2800      	cmp	r0, #0
- 162:	f040 80ce 	bne.w	302 <LLVMFuzzerTestOneInput+0x302>
- 166:	9906      	ldr	r1, [sp, #24]
- 168:	442c      	add	r4, r5
- 16a:	980a      	ldr	r0, [sp, #40]	; 0x28
- 16c:	4632      	mov	r2, r6
- 16e:	4421      	add	r1, r4
- 170:	f7ff fffe 	bl	0 <LZ4F_compressEnd>
- 174:	4605      	mov	r5, r0
- 176:	f7ff fffe 	bl	0 <LZ4F_isError>
- 17a:	2800      	cmp	r0, #0
- 17c:	f040 80b3 	bne.w	2e6 <LLVMFuzzerTestOneInput+0x2e6>
- 180:	2164      	movs	r1, #100	; 0x64
- 182:	a80b      	add	r0, sp, #44	; 0x2c
- 184:	2700      	movs	r7, #0
- 186:	4425      	add	r5, r4
- 188:	e9cd 770f 	strd	r7, r7, [sp, #60]	; 0x3c
- 18c:	2401      	movs	r4, #1
- 18e:	9711      	str	r7, [sp, #68]	; 0x44
- 190:	940e      	str	r4, [sp, #56]	; 0x38
- 192:	f7ff fffe 	bl	0 <LZ4F_createDecompressionContext>
- 196:	f8dd 802c 	ldr.w	r8, [sp, #44]	; 0x2c
- 19a:	f1b8 0f00 	cmp.w	r8, #0
- 19e:	f000 808d 	beq.w	2bc <LLVMFuzzerTestOneInput+0x2bc>
- 1a2:	9b06      	ldr	r3, [sp, #24]
- 1a4:	f10d 0b30 	add.w	fp, sp, #48	; 0x30
- 1a8:	9305      	str	r3, [sp, #20]
- 1aa:	465a      	mov	r2, fp
- 1ac:	441d      	add	r5, r3
- 1ae:	ab0d      	add	r3, sp, #52	; 0x34
- 1b0:	4699      	mov	r9, r3
- 1b2:	9b05      	ldr	r3, [sp, #20]
- 1b4:	f8dd a020 	ldr.w	sl, [sp, #32]
- 1b8:	429d      	cmp	r5, r3
- 1ba:	bf88      	it	hi
- 1bc:	461c      	movhi	r4, r3
- 1be:	d929      	bls.n	214 <LLVMFuzzerTestOneInput+0x214>
- 1c0:	4623      	mov	r3, r4
- 1c2:	4651      	mov	r1, sl
- 1c4:	4640      	mov	r0, r8
- 1c6:	e9cd 9700 	strd	r9, r7, [sp]
- 1ca:	eba5 0c04 	sub.w	ip, r5, r4
- 1ce:	9204      	str	r2, [sp, #16]
- 1d0:	f8cd c034 	str.w	ip, [sp, #52]	; 0x34
- 1d4:	960c      	str	r6, [sp, #48]	; 0x30
- 1d6:	f7ff fffe 	bl	0 <LZ4F_decompress>
- 1da:	4683      	mov	fp, r0
- 1dc:	f7ff fffe 	bl	0 <LZ4F_isError>
- 1e0:	9a04      	ldr	r2, [sp, #16]
- 1e2:	2800      	cmp	r0, #0
- 1e4:	d147      	bne.n	276 <LLVMFuzzerTestOneInput+0x276>
- 1e6:	9b0d      	ldr	r3, [sp, #52]	; 0x34
- 1e8:	441c      	add	r4, r3
- 1ea:	9b0c      	ldr	r3, [sp, #48]	; 0x30
- 1ec:	f1bb 0f00 	cmp.w	fp, #0
- 1f0:	bf18      	it	ne
- 1f2:	42a5      	cmpne	r5, r4
- 1f4:	449a      	add	sl, r3
- 1f6:	d8e3      	bhi.n	1c0 <LLVMFuzzerTestOneInput+0x1c0>
- 1f8:	42a5      	cmp	r5, r4
- 1fa:	d351      	bcc.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 1fc:	f1bb 0f00 	cmp.w	fp, #0
- 200:	d00e      	beq.n	220 <LLVMFuzzerTestOneInput+0x220>
- 202:	9b05      	ldr	r3, [sp, #20]
- 204:	429d      	cmp	r5, r3
- 206:	d90a      	bls.n	21e <LLVMFuzzerTestOneInput+0x21e>
- 208:	4623      	mov	r3, r4
- 20a:	9405      	str	r4, [sp, #20]
- 20c:	429d      	cmp	r5, r3
- 20e:	bf88      	it	hi
- 210:	461c      	movhi	r4, r3
- 212:	d8d5      	bhi.n	1c0 <LLVMFuzzerTestOneInput+0x1c0>
- 214:	d344      	bcc.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 216:	461c      	mov	r4, r3
- 218:	9b05      	ldr	r3, [sp, #20]
- 21a:	429d      	cmp	r5, r3
- 21c:	d8f4      	bhi.n	208 <LLVMFuzzerTestOneInput+0x208>
- 21e:	e7fe      	b.n	21e <LLVMFuzzerTestOneInput+0x21e>
- 220:	980b      	ldr	r0, [sp, #44]	; 0x2c
- 222:	f7ff fffe 	bl	0 <LZ4F_freeDecompressionContext>
- 226:	ee18 2a10 	vmov	r2, s16
- 22a:	e9dd 1008 	ldrd	r1, r0, [sp, #32]
- 22e:	f7ff fffe 	bl	0 <memcmp>
- 232:	4604      	mov	r4, r0
- 234:	2800      	cmp	r0, #0
- 236:	f040 80f3 	bne.w	420 <LLVMFuzzerTestOneInput+0x420>
- 23a:	9806      	ldr	r0, [sp, #24]
- 23c:	f7ff fffe 	bl	0 <free>
- 240:	9808      	ldr	r0, [sp, #32]
- 242:	f7ff fffe 	bl	0 <free>
- 246:	ee18 0a90 	vmov	r0, s17
- 24a:	f7ff fffe 	bl	0 <FUZZ_dataProducer_free>
- 24e:	980a      	ldr	r0, [sp, #40]	; 0x28
- 250:	f7ff fffe 	bl	0 <LZ4F_freeCompressionContext>
- 254:	4a7c      	ldr	r2, [pc, #496]	; (448 <LLVMFuzzerTestOneInput+0x448>)
- 256:	4b7a      	ldr	r3, [pc, #488]	; (440 <LLVMFuzzerTestOneInput+0x440>)
- 258:	447a      	add	r2, pc
- 25a:	58d3      	ldr	r3, [r2, r3]
- 25c:	681a      	ldr	r2, [r3, #0]
- 25e:	9b2f      	ldr	r3, [sp, #188]	; 0xbc
- 260:	405a      	eors	r2, r3
- 262:	f04f 0300 	mov.w	r3, #0
- 266:	f040 80d9 	bne.w	41c <LLVMFuzzerTestOneInput+0x41c>
- 26a:	4620      	mov	r0, r4
- 26c:	b031      	add	sp, #196	; 0xc4
- 26e:	ecbd 8b02 	vpop	{d8}
- 272:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 276:	4875      	ldr	r0, [pc, #468]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 278:	2420      	movs	r4, #32
- 27a:	9d07      	ldr	r5, [sp, #28]
- 27c:	4a74      	ldr	r2, [pc, #464]	; (450 <LLVMFuzzerTestOneInput+0x450>)
- 27e:	4975      	ldr	r1, [pc, #468]	; (454 <LLVMFuzzerTestOneInput+0x454>)
- 280:	447a      	add	r2, pc
- 282:	4b75      	ldr	r3, [pc, #468]	; (458 <LLVMFuzzerTestOneInput+0x458>)
- 284:	5828      	ldr	r0, [r5, r0]
- 286:	4479      	add	r1, pc
- 288:	9202      	str	r2, [sp, #8]
- 28a:	447b      	add	r3, pc
- 28c:	4a73      	ldr	r2, [pc, #460]	; (45c <LLVMFuzzerTestOneInput+0x45c>)
- 28e:	447a      	add	r2, pc
- 290:	e9cd 4100 	strd	r4, r1, [sp]
- 294:	2101      	movs	r1, #1
- 296:	6800      	ldr	r0, [r0, #0]
- 298:	f7ff fffe 	bl	0 <__fprintf_chk>
- 29c:	f7ff fffe 	bl	0 <abort>
- 2a0:	486a      	ldr	r0, [pc, #424]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 2a2:	2427      	movs	r4, #39	; 0x27
- 2a4:	9d07      	ldr	r5, [sp, #28]
- 2a6:	4a6e      	ldr	r2, [pc, #440]	; (460 <LLVMFuzzerTestOneInput+0x460>)
- 2a8:	496e      	ldr	r1, [pc, #440]	; (464 <LLVMFuzzerTestOneInput+0x464>)
- 2aa:	447a      	add	r2, pc
- 2ac:	4b6e      	ldr	r3, [pc, #440]	; (468 <LLVMFuzzerTestOneInput+0x468>)
- 2ae:	5828      	ldr	r0, [r5, r0]
- 2b0:	4479      	add	r1, pc
- 2b2:	9202      	str	r2, [sp, #8]
- 2b4:	447b      	add	r3, pc
- 2b6:	4a6d      	ldr	r2, [pc, #436]	; (46c <LLVMFuzzerTestOneInput+0x46c>)
- 2b8:	447a      	add	r2, pc
- 2ba:	e7e9      	b.n	290 <LLVMFuzzerTestOneInput+0x290>
- 2bc:	4a63      	ldr	r2, [pc, #396]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 2be:	4621      	mov	r1, r4
- 2c0:	9807      	ldr	r0, [sp, #28]
- 2c2:	246c      	movs	r4, #108	; 0x6c
- 2c4:	4b6a      	ldr	r3, [pc, #424]	; (470 <LLVMFuzzerTestOneInput+0x470>)
- 2c6:	4d6b      	ldr	r5, [pc, #428]	; (474 <LLVMFuzzerTestOneInput+0x474>)
- 2c8:	5880      	ldr	r0, [r0, r2]
- 2ca:	447b      	add	r3, pc
- 2cc:	4a6a      	ldr	r2, [pc, #424]	; (478 <LLVMFuzzerTestOneInput+0x478>)
- 2ce:	447d      	add	r5, pc
- 2d0:	9302      	str	r3, [sp, #8]
- 2d2:	9400      	str	r4, [sp, #0]
- 2d4:	447a      	add	r2, pc
- 2d6:	4b69      	ldr	r3, [pc, #420]	; (47c <LLVMFuzzerTestOneInput+0x47c>)
- 2d8:	6800      	ldr	r0, [r0, #0]
- 2da:	447b      	add	r3, pc
- 2dc:	9501      	str	r5, [sp, #4]
- 2de:	f7ff fffe 	bl	0 <__fprintf_chk>
- 2e2:	f7ff fffe 	bl	0 <abort>
- 2e6:	4859      	ldr	r0, [pc, #356]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 2e8:	2464      	movs	r4, #100	; 0x64
- 2ea:	9d07      	ldr	r5, [sp, #28]
- 2ec:	4a64      	ldr	r2, [pc, #400]	; (480 <LLVMFuzzerTestOneInput+0x480>)
- 2ee:	4965      	ldr	r1, [pc, #404]	; (484 <LLVMFuzzerTestOneInput+0x484>)
- 2f0:	447a      	add	r2, pc
- 2f2:	4b65      	ldr	r3, [pc, #404]	; (488 <LLVMFuzzerTestOneInput+0x488>)
- 2f4:	5828      	ldr	r0, [r5, r0]
- 2f6:	4479      	add	r1, pc
- 2f8:	9202      	str	r2, [sp, #8]
- 2fa:	447b      	add	r3, pc
- 2fc:	4a63      	ldr	r2, [pc, #396]	; (48c <LLVMFuzzerTestOneInput+0x48c>)
- 2fe:	447a      	add	r2, pc
- 300:	e7c6      	b.n	290 <LLVMFuzzerTestOneInput+0x290>
- 302:	4a52      	ldr	r2, [pc, #328]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 304:	4639      	mov	r1, r7
- 306:	9807      	ldr	r0, [sp, #28]
- 308:	255f      	movs	r5, #95	; 0x5f
- 30a:	4b61      	ldr	r3, [pc, #388]	; (490 <LLVMFuzzerTestOneInput+0x490>)
- 30c:	4c61      	ldr	r4, [pc, #388]	; (494 <LLVMFuzzerTestOneInput+0x494>)
- 30e:	5880      	ldr	r0, [r0, r2]
- 310:	447b      	add	r3, pc
- 312:	4a61      	ldr	r2, [pc, #388]	; (498 <LLVMFuzzerTestOneInput+0x498>)
- 314:	447c      	add	r4, pc
- 316:	9302      	str	r3, [sp, #8]
- 318:	4b60      	ldr	r3, [pc, #384]	; (49c <LLVMFuzzerTestOneInput+0x49c>)
- 31a:	447a      	add	r2, pc
- 31c:	447b      	add	r3, pc
- 31e:	9500      	str	r5, [sp, #0]
- 320:	6800      	ldr	r0, [r0, #0]
- 322:	9401      	str	r4, [sp, #4]
- 324:	f7ff fffe 	bl	0 <__fprintf_chk>
- 328:	f7ff fffe 	bl	0 <abort>
- 32c:	4a47      	ldr	r2, [pc, #284]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 32e:	4639      	mov	r1, r7
- 330:	9807      	ldr	r0, [sp, #28]
- 332:	2558      	movs	r5, #88	; 0x58
- 334:	4b5a      	ldr	r3, [pc, #360]	; (4a0 <LLVMFuzzerTestOneInput+0x4a0>)
- 336:	4c5b      	ldr	r4, [pc, #364]	; (4a4 <LLVMFuzzerTestOneInput+0x4a4>)
- 338:	5880      	ldr	r0, [r0, r2]
- 33a:	447b      	add	r3, pc
- 33c:	4a5a      	ldr	r2, [pc, #360]	; (4a8 <LLVMFuzzerTestOneInput+0x4a8>)
- 33e:	447c      	add	r4, pc
- 340:	9302      	str	r3, [sp, #8]
- 342:	4b5a      	ldr	r3, [pc, #360]	; (4ac <LLVMFuzzerTestOneInput+0x4ac>)
- 344:	447a      	add	r2, pc
- 346:	447b      	add	r3, pc
- 348:	e7e9      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 34a:	4a40      	ldr	r2, [pc, #256]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 34c:	4639      	mov	r1, r7
- 34e:	9807      	ldr	r0, [sp, #28]
- 350:	2552      	movs	r5, #82	; 0x52
- 352:	4b57      	ldr	r3, [pc, #348]	; (4b0 <LLVMFuzzerTestOneInput+0x4b0>)
- 354:	4c57      	ldr	r4, [pc, #348]	; (4b4 <LLVMFuzzerTestOneInput+0x4b4>)
- 356:	5880      	ldr	r0, [r0, r2]
- 358:	447b      	add	r3, pc
- 35a:	4a57      	ldr	r2, [pc, #348]	; (4b8 <LLVMFuzzerTestOneInput+0x4b8>)
- 35c:	447c      	add	r4, pc
- 35e:	9302      	str	r3, [sp, #8]
- 360:	4b56      	ldr	r3, [pc, #344]	; (4bc <LLVMFuzzerTestOneInput+0x4bc>)
- 362:	447a      	add	r2, pc
- 364:	447b      	add	r3, pc
- 366:	e7da      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 368:	4a38      	ldr	r2, [pc, #224]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 36a:	4639      	mov	r1, r7
- 36c:	9807      	ldr	r0, [sp, #28]
- 36e:	254c      	movs	r5, #76	; 0x4c
- 370:	4b53      	ldr	r3, [pc, #332]	; (4c0 <LLVMFuzzerTestOneInput+0x4c0>)
- 372:	4c54      	ldr	r4, [pc, #336]	; (4c4 <LLVMFuzzerTestOneInput+0x4c4>)
- 374:	5880      	ldr	r0, [r0, r2]
- 376:	447b      	add	r3, pc
- 378:	4a53      	ldr	r2, [pc, #332]	; (4c8 <LLVMFuzzerTestOneInput+0x4c8>)
- 37a:	447c      	add	r4, pc
- 37c:	9302      	str	r3, [sp, #8]
- 37e:	4b53      	ldr	r3, [pc, #332]	; (4cc <LLVMFuzzerTestOneInput+0x4cc>)
- 380:	447a      	add	r2, pc
- 382:	447b      	add	r3, pc
- 384:	e7cb      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 386:	4a31      	ldr	r2, [pc, #196]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 388:	4639      	mov	r1, r7
- 38a:	9807      	ldr	r0, [sp, #28]
- 38c:	2549      	movs	r5, #73	; 0x49
- 38e:	4b50      	ldr	r3, [pc, #320]	; (4d0 <LLVMFuzzerTestOneInput+0x4d0>)
- 390:	4c50      	ldr	r4, [pc, #320]	; (4d4 <LLVMFuzzerTestOneInput+0x4d4>)
- 392:	5880      	ldr	r0, [r0, r2]
- 394:	447b      	add	r3, pc
- 396:	4a50      	ldr	r2, [pc, #320]	; (4d8 <LLVMFuzzerTestOneInput+0x4d8>)
- 398:	447c      	add	r4, pc
- 39a:	9302      	str	r3, [sp, #8]
- 39c:	4b4f      	ldr	r3, [pc, #316]	; (4dc <LLVMFuzzerTestOneInput+0x4dc>)
- 39e:	447a      	add	r2, pc
- 3a0:	447b      	add	r3, pc
- 3a2:	e7bc      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 3a4:	4a29      	ldr	r2, [pc, #164]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 3a6:	4639      	mov	r1, r7
- 3a8:	9807      	ldr	r0, [sp, #28]
- 3aa:	2544      	movs	r5, #68	; 0x44
- 3ac:	4b4c      	ldr	r3, [pc, #304]	; (4e0 <LLVMFuzzerTestOneInput+0x4e0>)
- 3ae:	4c4d      	ldr	r4, [pc, #308]	; (4e4 <LLVMFuzzerTestOneInput+0x4e4>)
- 3b0:	5880      	ldr	r0, [r0, r2]
- 3b2:	447b      	add	r3, pc
- 3b4:	4a4c      	ldr	r2, [pc, #304]	; (4e8 <LLVMFuzzerTestOneInput+0x4e8>)
- 3b6:	447c      	add	r4, pc
- 3b8:	9302      	str	r3, [sp, #8]
- 3ba:	4b4c      	ldr	r3, [pc, #304]	; (4ec <LLVMFuzzerTestOneInput+0x4ec>)
- 3bc:	447a      	add	r2, pc
- 3be:	447b      	add	r3, pc
- 3c0:	e7ad      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 3c2:	4a22      	ldr	r2, [pc, #136]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 3c4:	4639      	mov	r1, r7
- 3c6:	9807      	ldr	r0, [sp, #28]
- 3c8:	2543      	movs	r5, #67	; 0x43
- 3ca:	4b49      	ldr	r3, [pc, #292]	; (4f0 <LLVMFuzzerTestOneInput+0x4f0>)
- 3cc:	4c49      	ldr	r4, [pc, #292]	; (4f4 <LLVMFuzzerTestOneInput+0x4f4>)
- 3ce:	5880      	ldr	r0, [r0, r2]
- 3d0:	447b      	add	r3, pc
- 3d2:	4a49      	ldr	r2, [pc, #292]	; (4f8 <LLVMFuzzerTestOneInput+0x4f8>)
- 3d4:	447c      	add	r4, pc
- 3d6:	9302      	str	r3, [sp, #8]
- 3d8:	4b48      	ldr	r3, [pc, #288]	; (4fc <LLVMFuzzerTestOneInput+0x4fc>)
- 3da:	447a      	add	r2, pc
- 3dc:	447b      	add	r3, pc
- 3de:	e79e      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 3e0:	4a1a      	ldr	r2, [pc, #104]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 3e2:	4639      	mov	r1, r7
- 3e4:	9807      	ldr	r0, [sp, #28]
- 3e6:	2538      	movs	r5, #56	; 0x38
- 3e8:	4b45      	ldr	r3, [pc, #276]	; (500 <LLVMFuzzerTestOneInput+0x500>)
- 3ea:	4c46      	ldr	r4, [pc, #280]	; (504 <LLVMFuzzerTestOneInput+0x504>)
- 3ec:	5880      	ldr	r0, [r0, r2]
- 3ee:	447b      	add	r3, pc
- 3f0:	4a45      	ldr	r2, [pc, #276]	; (508 <LLVMFuzzerTestOneInput+0x508>)
- 3f2:	447c      	add	r4, pc
- 3f4:	9302      	str	r3, [sp, #8]
- 3f6:	4b45      	ldr	r3, [pc, #276]	; (50c <LLVMFuzzerTestOneInput+0x50c>)
- 3f8:	447a      	add	r2, pc
- 3fa:	447b      	add	r3, pc
- 3fc:	e78f      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 3fe:	4a13      	ldr	r2, [pc, #76]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 400:	4639      	mov	r1, r7
- 402:	9807      	ldr	r0, [sp, #28]
- 404:	2537      	movs	r5, #55	; 0x37
- 406:	4b42      	ldr	r3, [pc, #264]	; (510 <LLVMFuzzerTestOneInput+0x510>)
- 408:	4c42      	ldr	r4, [pc, #264]	; (514 <LLVMFuzzerTestOneInput+0x514>)
- 40a:	5880      	ldr	r0, [r0, r2]
- 40c:	447b      	add	r3, pc
- 40e:	4a42      	ldr	r2, [pc, #264]	; (518 <LLVMFuzzerTestOneInput+0x518>)
- 410:	447c      	add	r4, pc
- 412:	9302      	str	r3, [sp, #8]
- 414:	4b41      	ldr	r3, [pc, #260]	; (51c <LLVMFuzzerTestOneInput+0x51c>)
- 416:	447a      	add	r2, pc
- 418:	447b      	add	r3, pc
- 41a:	e780      	b.n	31e <LLVMFuzzerTestOneInput+0x31e>
- 41c:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 420:	480a      	ldr	r0, [pc, #40]	; (44c <LLVMFuzzerTestOneInput+0x44c>)
- 422:	2472      	movs	r4, #114	; 0x72
- 424:	9d07      	ldr	r5, [sp, #28]
- 426:	4a3e      	ldr	r2, [pc, #248]	; (520 <LLVMFuzzerTestOneInput+0x520>)
- 428:	493e      	ldr	r1, [pc, #248]	; (524 <LLVMFuzzerTestOneInput+0x524>)
- 42a:	447a      	add	r2, pc
- 42c:	4b3e      	ldr	r3, [pc, #248]	; (528 <LLVMFuzzerTestOneInput+0x528>)
- 42e:	5828      	ldr	r0, [r5, r0]
- 430:	4479      	add	r1, pc
- 432:	9202      	str	r2, [sp, #8]
- 434:	447b      	add	r3, pc
- 436:	4a3d      	ldr	r2, [pc, #244]	; (52c <LLVMFuzzerTestOneInput+0x52c>)
- 438:	447a      	add	r2, pc
- 43a:	e729      	b.n	290 <LLVMFuzzerTestOneInput+0x290>
- 43c:	0000042c 	.word	0x0000042c
- 440:	00000000 	.word	0x00000000
- 444:	00000424 	.word	0x00000424
- 448:	000001ec 	.word	0x000001ec
- 44c:	00000000 	.word	0x00000000
- 450:	000001cc 	.word	0x000001cc
- 454:	000001ca 	.word	0x000001ca
- 458:	000001ca 	.word	0x000001ca
- 45c:	000001ca 	.word	0x000001ca
- 460:	000001b2 	.word	0x000001b2
- 464:	000001b0 	.word	0x000001b0
- 468:	000001b0 	.word	0x000001b0
- 46c:	000001b0 	.word	0x000001b0
- 470:	000001a2 	.word	0x000001a2
- 474:	000001a2 	.word	0x000001a2
- 478:	000001a0 	.word	0x000001a0
- 47c:	0000019e 	.word	0x0000019e
- 480:	0000018c 	.word	0x0000018c
- 484:	0000018a 	.word	0x0000018a
- 488:	0000018a 	.word	0x0000018a
- 48c:	0000018a 	.word	0x0000018a
- 490:	0000017c 	.word	0x0000017c
- 494:	0000017c 	.word	0x0000017c
- 498:	0000017a 	.word	0x0000017a
- 49c:	0000017c 	.word	0x0000017c
- 4a0:	00000162 	.word	0x00000162
- 4a4:	00000162 	.word	0x00000162
- 4a8:	00000160 	.word	0x00000160
- 4ac:	00000162 	.word	0x00000162
- 4b0:	00000154 	.word	0x00000154
- 4b4:	00000154 	.word	0x00000154
- 4b8:	00000152 	.word	0x00000152
- 4bc:	00000154 	.word	0x00000154
- 4c0:	00000146 	.word	0x00000146
- 4c4:	00000146 	.word	0x00000146
- 4c8:	00000144 	.word	0x00000144
- 4cc:	00000146 	.word	0x00000146
- 4d0:	00000138 	.word	0x00000138
- 4d4:	00000138 	.word	0x00000138
- 4d8:	00000136 	.word	0x00000136
- 4dc:	00000138 	.word	0x00000138
- 4e0:	0000012a 	.word	0x0000012a
- 4e4:	0000012a 	.word	0x0000012a
- 4e8:	00000128 	.word	0x00000128
- 4ec:	0000012a 	.word	0x0000012a
- 4f0:	0000011c 	.word	0x0000011c
- 4f4:	0000011c 	.word	0x0000011c
- 4f8:	0000011a 	.word	0x0000011a
- 4fc:	0000011c 	.word	0x0000011c
- 500:	0000010e 	.word	0x0000010e
- 504:	0000010e 	.word	0x0000010e
- 508:	0000010c 	.word	0x0000010c
- 50c:	0000010e 	.word	0x0000010e
- 510:	00000100 	.word	0x00000100
- 514:	00000100 	.word	0x00000100
- 518:	000000fe 	.word	0x000000fe
- 51c:	00000100 	.word	0x00000100
- 520:	000000f2 	.word	0x000000f2
- 524:	000000f0 	.word	0x000000f0
- 528:	000000f0 	.word	0x000000f0
- 52c:	000000f0 	.word	0x000000f0
+Function FUZZ_dataProducer_retrieve32 @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function FUZZ_dataProducer_remainingBytes @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function FUZZ_getRange_from_uint32 @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function LZ4_compressBound @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function LZ4F_compressFrameBound @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function malloc @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function LZ4F_createCompressionContext @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function LZ4F_isError @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function LZ4F_compressBegin @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function LZ4F_compressUpdate @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function LZ4F_uncompressedUpdate @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function LZ4F_compressEnd @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0
+0x005000a5:	movs	r0, r0
+0x005000a7:	movs	r0, r0
+
+Function LZ4F_createDecompressionContext @ 0x005000a9
+0x005000a9:	movs	r0, r0
+0x005000ab:	movs	r0, r0
+0x005000ad:	movs	r0, r0
+0x005000af:	movs	r0, r0
+0x005000b1:	movs	r0, r0
+0x005000b3:	movs	r0, r0
+
+Function LZ4F_decompress @ 0x005000b5
+0x005000b5:	movs	r0, r0
+0x005000b7:	movs	r0, r0
+0x005000b9:	movs	r0, r0
+0x005000bb:	movs	r0, r0
+0x005000bd:	movs	r0, r0
+0x005000bf:	movs	r0, r0
+
+Function LZ4F_freeDecompressionContext @ 0x005000c1
+0x005000c1:	movs	r0, r0
+0x005000c3:	movs	r0, r0
+0x005000c5:	movs	r0, r0
+0x005000c7:	movs	r0, r0
+0x005000c9:	movs	r0, r0
+0x005000cb:	movs	r0, r0
+
+Function memcmp @ 0x005000cd
+0x005000cd:	movs	r0, r0
+0x005000cf:	movs	r0, r0
+0x005000d1:	movs	r0, r0
+0x005000d3:	movs	r0, r0
+0x005000d5:	movs	r0, r0
+0x005000d7:	movs	r0, r0
+
+Function free @ 0x005000d9
+0x005000d9:	movs	r0, r0
+0x005000db:	movs	r0, r0
+0x005000dd:	movs	r0, r0
+0x005000df:	movs	r0, r0
+0x005000e1:	movs	r0, r0
+0x005000e3:	movs	r0, r0
+
+Function FUZZ_dataProducer_free @ 0x005000e5
+0x005000e5:	movs	r0, r0
+0x005000e7:	movs	r0, r0
+0x005000e9:	movs	r0, r0
+0x005000eb:	movs	r0, r0
+0x005000ed:	movs	r0, r0
+0x005000ef:	movs	r0, r0
+
+Function LZ4F_freeCompressionContext @ 0x005000f1
+0x005000f1:	movs	r0, r0
+0x005000f3:	movs	r0, r0
+0x005000f5:	movs	r0, r0
+0x005000f7:	movs	r0, r0
+0x005000f9:	movs	r0, r0
+0x005000fb:	movs	r0, r0
+
+Function __fprintf_chk @ 0x005000fd
+0x005000fd:	movs	r0, r0
+0x005000ff:	movs	r0, r0
+0x00500101:	movs	r0, r0
+0x00500103:	movs	r0, r0
+0x00500105:	movs	r0, r0
+0x00500107:	movs	r0, r0
+
+Function abort @ 0x00500109
+0x00500109:	movs	r0, r0
+0x0050010b:	movs	r0, r0
+0x0050010d:	movs	r0, r0
+0x0050010f:	movs	r0, r0
+0x00500111:	movs	r0, r0
+0x00500113:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500115
+0x00500115:	movs	r0, r0
+0x00500117:	movs	r0, r0
+0x00500119:	movs	r0, r0
+0x0050011b:	movs	r0, r0

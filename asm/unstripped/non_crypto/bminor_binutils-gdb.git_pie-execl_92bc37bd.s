@@ -1,25 +1,24 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pie-execl_92bc37bd.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	movs	r1, #0
+0x00400009:	ldr	r3, [pc, #0x18]
+0x0040000b:	ldr	r2, [pc, #0x1c]
+0x0040000d:	add	r3, pc
+0x0040000f:	ldr	r3, [r3, r2]
+0x00400011:	ldr	r0, [r3]
+0x00400013:	bl	#0x500001
+0x00400017:	ldr	r3, [pc, #0x14]
+0x00400019:	movs	r2, #1
+0x0040001b:	movs	r0, #0
+0x0040001d:	add	r3, pc
+0x0040001f:	str	r2, [r3]
+0x00400021:	pop	{r3, pc}
 
+Function sub_400023 @ 0x00400023
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2100      	movs	r1, #0
-   4:	4b06      	ldr	r3, [pc, #24]	; (20 <main+0x20>)
-   6:	4a07      	ldr	r2, [pc, #28]	; (24 <main+0x24>)
-   8:	447b      	add	r3, pc
-   a:	589b      	ldr	r3, [r3, r2]
-   c:	6818      	ldr	r0, [r3, #0]
-   e:	f7ff fffe 	bl	0 <setbuf>
-  12:	4b05      	ldr	r3, [pc, #20]	; (28 <main+0x28>)
-  14:	2201      	movs	r2, #1
-  16:	2000      	movs	r0, #0
-  18:	447b      	add	r3, pc
-  1a:	601a      	str	r2, [r3, #0]
-  1c:	bd08      	pop	{r3, pc}
-  1e:	bf00      	nop
-  20:	00000014 	.word	0x00000014
-  24:	00000000 	.word	0x00000000
-  28:	0000000c 	.word	0x0000000c
+Function setbuf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

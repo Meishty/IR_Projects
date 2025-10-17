@@ -1,20 +1,25 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_info-var-f1_c944ebe5.o:     file format elf32-littlearm
+Function main @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x500001
+0x0040002b:	ldr	r3, [pc, #0x10]
+0x0040002d:	ldr	r2, [pc, #0x10]
+0x0040002f:	add	r3, pc
+0x00400031:	ldr	r3, [r3, r2]
+0x00400033:	ldr	r3, [r3]
+0x00400035:	add	r0, r3
+0x00400037:	subs	r0, #3
+0x00400039:	pop	{r3, pc}
 
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r2, r1
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r0, r0
+0x00400043:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <get_offset>
-   6:	4b04      	ldr	r3, [pc, #16]	; (18 <main+0x18>)
-   8:	4a04      	ldr	r2, [pc, #16]	; (1c <main+0x1c>)
-   a:	447b      	add	r3, pc
-   c:	589b      	ldr	r3, [r3, r2]
-   e:	681b      	ldr	r3, [r3, #0]
-  10:	4418      	add	r0, r3
-  12:	3803      	subs	r0, #3
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
-  18:	0000000a 	.word	0x0000000a
-  1c:	00000000 	.word	0x00000000
+Function get_offset @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

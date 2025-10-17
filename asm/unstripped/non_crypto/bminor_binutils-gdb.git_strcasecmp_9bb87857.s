@@ -1,23 +1,22 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_strcasecmp_9bb87857.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r0, #-0xa0a]
+0x00400004:	and	r4, r0, sl, ror r4
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	ldrb	r3, [r0], #1
+0x0040000f:	ldrb	ip, [r1], #1
+0x00400013:	ldrb.w	lr, [r2, r3]
+0x00400017:	ldrb.w	ip, [r2, ip]
+0x0040001b:	cmp	lr, ip
+0x0040001d:	beq	#0x400009
+0x0040001f:	sub.w	r0, lr, ip
+0x00400023:	ldr	pc, [sp], #4
 
-Disassembly of section .text:
+Function sub_400027 @ 0x00400027
+0x00400027:	mov	r0, r3
+0x00400029:	ldr	pc, [sp], #4
 
-00000000 <strcasecmp>:
-   0:	4a0a      	ldr	r2, [pc, #40]	; (2c <strcasecmp+0x2c>)
-   2:	b500      	push	{lr}
-   4:	447a      	add	r2, pc
-   6:	e000      	b.n	a <strcasecmp+0xa>
-   8:	b16b      	cbz	r3, 26 <strcasecmp+0x26>
-   a:	f810 3b01 	ldrb.w	r3, [r0], #1
-   e:	f811 cb01 	ldrb.w	ip, [r1], #1
-  12:	f812 e003 	ldrb.w	lr, [r2, r3]
-  16:	f812 c00c 	ldrb.w	ip, [r2, ip]
-  1a:	45e6      	cmp	lr, ip
-  1c:	d0f4      	beq.n	8 <strcasecmp+0x8>
-  1e:	ebae 000c 	sub.w	r0, lr, ip
-  22:	f85d fb04 	ldr.w	pc, [sp], #4
-  26:	4618      	mov	r0, r3
-  28:	f85d fb04 	ldr.w	pc, [sp], #4
-  2c:	00000024 	.word	0x00000024
+Function sub_40002d @ 0x0040002d
+0x0040002d:	movs	r0, r5
+0x0040002f:	movs	r0, r0

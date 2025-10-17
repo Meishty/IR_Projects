@@ -1,37 +1,68 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_rename2_fa72cfed_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	nop	
 
-Disassembly of section .text:
+Function sub_40002d @ 0x0040002d
+0x0040002d:	push	{r4, r5, r6, lr}
+0x0040002f:	mov	r5, r1
+0x00400031:	movs	r1, #0
+0x00400033:	ldr	r0, [r5]
+0x00400035:	bl	#0x400035
 
-00000000 <.text>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-   8:	bf00fffe 	svclt	0x0000fffe
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
+0x00400039:	adds	r0, #1
+0x0040003b:	bne	#0x40006b
+0x0040006b:	ldr	r0, [pc, #0x14]
+0x0040006d:	add	r0, pc
+0x0040006f:	bl	#0x40006f
 
-Disassembly of section .text.startup:
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+0x00400041:	ldr	r3, [r0]
+0x00400043:	mov	r4, r0
+0x00400045:	cmp	r3, #0xe
+0x00400047:	bne	#0x40006b
+0x00400049:	movs	r6, #0
+0x0040004b:	ldr	r1, [r5]
+0x0040004d:	mov	r0, r6
+0x0040004f:	str	r6, [r4]
+0x00400051:	bl	#0x400051
 
-00000000 <.text.startup>:
-   0:	460db570 			; <UNDEFINED> instruction: 0x460db570
-   4:	68282100 	stmdavs	r8!, {r8, sp}
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	d1163001 	tstle	r6, r1
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	46046803 	strmi	r6, [r4], -r3, lsl #16
-  18:	d1102b0e 	tstle	r0, lr, lsl #22
-  1c:	68292600 	stmdavs	r9!, {r9, sl, sp}
-  20:	60264630 	eorvs	r4, r6, r0, lsr r6
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	d10c3001 	tstle	ip, r1
-  2c:	2b0e6823 	blcs	0x39a0c0
-  30:	4807d109 	stmdami	r7, {r0, r3, r8, ip, lr, pc}
-  34:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  38:	4630fffe 	shsub8mi	pc, r0, lr	; <UNPREDICTABLE>
-  3c:	4805bd70 	stmdami	r5, {r4, r5, r6, r8, sl, fp, ip, sp, pc}
-  40:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  44:	4804fffe 	stmdami	r4, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  48:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  4c:	bf00fffe 	svclt	0x0000fffe
-  50:	00000018 	andeq	r0, r0, r8, lsl r0
-  54:	00000010 	andeq	r0, r0, r0, lsl r0
-  58:	0000000c 	andeq	r0, r0, ip
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+0x00400055:	adds	r0, #1
+0x00400057:	bne	#0x400073
+0x00400059:	ldr	r3, [r4]
+0x0040005b:	cmp	r3, #0xe
+0x0040005d:	bne	#0x400073
+0x0040005f:	ldr	r0, [pc, #0x1c]
+0x00400061:	add	r0, pc
+0x00400063:	bl	#0x400063
+
+Function sub_400063 @ 0x00400063
+0x00400063:	bl	#0x400063
+0x00400067:	mov	r0, r6
+0x00400069:	pop	{r4, r5, r6, pc}
+
+Function sub_40006f @ 0x0040006f
+0x0040006f:	bl	#0x40006f
+0x00400073:	ldr	r0, [pc, #0x10]
+0x00400075:	add	r0, pc
+0x00400077:	bl	#0x400077
+
+Function sub_400077 @ 0x00400077
+0x00400077:	bl	#0x400077
+
+Function sub_40007b @ 0x0040007b
+0x0040007b:	nop	
+0x0040007d:	movs	r0, r3
+0x0040007f:	movs	r0, r0
+0x00400081:	movs	r0, r2
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r4, r1
+0x00400087:	movs	r0, r0

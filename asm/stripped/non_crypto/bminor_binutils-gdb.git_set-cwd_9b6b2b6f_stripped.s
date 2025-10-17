@@ -1,16 +1,25 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_set-cwd_9b6b2b6f_stripped.o:     file format elf32-littlearm
+Function sub_401009 @ 0x00401009
+0x00401009:	ldr	r0, [pc, #0x18]
+0x0040100b:	push	{r3, lr}
+0x0040100d:	add	r0, pc
+0x0040100f:	bl	#0x40100f
 
+Function sub_40100f @ 0x0040100f
+0x0040100f:	bl	#0x40100f
+0x00401013:	ldr	r0, [pc, #0x14]
+0x00401015:	mov.w	r1, #0x1000
+0x00401019:	add	r0, pc
+0x0040101b:	bl	#0x40101b
 
-Disassembly of section .text.startup:
+Function sub_40101b @ 0x0040101b
+0x0040101b:	bl	#0x40101b
+0x0040101f:	movs	r0, #0
+0x00401021:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	b5084806 	strlt	r4, [r8, #-2054]	; 0xfffff7fa
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	4805fffe 	stmdami	r5, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   c:	5180f44f 	orrpl	pc, r0, pc, asr #8
-  10:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  14:	2000fffe 	strdcs	pc, [r0], -lr
-  18:	bf00bd08 	svclt	0x0000bd08
-  1c:	00000014 	andeq	r0, r0, r4, lsl r0
-  20:	0000000c 	andeq	r0, r0, ip
+Function sub_401023 @ 0x00401023
+0x00401023:	nop	
+0x00401025:	movs	r4, r2
+0x00401027:	movs	r0, r0
+0x00401029:	movs	r4, r1
+0x0040102b:	movs	r0, r0

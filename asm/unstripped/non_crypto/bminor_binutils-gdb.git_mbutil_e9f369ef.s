@@ -1,15 +1,12 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mbutil_e9f369ef.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r1, [r0, -r8, lsl #17]!
 
-
-Disassembly of section .text:
-
-00000000 <_rl_find_next_mbchar>:
-   0:	1888      	adds	r0, r1, r2
-   2:	4770      	bx	lr
-
-00000004 <_rl_find_prev_mbchar>:
-   4:	4608      	mov	r0, r1
-   6:	b101      	cbz	r1, a <_rl_find_prev_mbchar+0x6>
-   8:	1e48      	subs	r0, r1, #1
-   a:	4770      	bx	lr
+Function _rl_find_prev_mbchar @ 0x00400005
+0x00400005:	mov	r0, r1
+0x00400007:	cbz	r1, #0x40000b
+0x00400009:	subs	r0, r1, #1
+0x0040000b:	bx	lr
+0x00400009:	subs	r0, r1, #1
+0x0040000b:	bx	lr
+0x0040000b:	bx	lr

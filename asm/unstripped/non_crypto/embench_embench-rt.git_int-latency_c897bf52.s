@@ -1,305 +1,399 @@
 
-/root/projects/compiled/non_crypto/unstripped/embench_embench-rt.git_int-latency_c897bf52.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_400005 @ 0x00400005
+0x00400005:	strb	r0, [r0, #0x16]
+0x00400007:	ldr	r4, [pc, #0xa8]
+0x00400009:	ldr	r6, [pc, #0xa8]
+0x0040000b:	bl	#0x500001
+0x0040000f:	add	r4, pc
+0x00400011:	add	r6, pc
+0x00400013:	bl	#0x50000d
+0x00400017:	mov	r0, r4
+0x00400019:	bl	#0x500019
+0x0040001d:	ldr	r2, [r4]
+0x0040001f:	ldr	r3, [r4, #4]
+0x00400021:	cmp	r2, r3
+0x00400023:	bls	#0x4000ab
+0x00400025:	ldr	r2, [r4, #4]
+0x00400027:	ldr	r3, [r4]
+0x00400029:	subs	r3, r3, r2
+0x0040002b:	str	r3, [r4]
+0x0040002d:	bl	#0x500025
+0x00400031:	subs	r5, #1
+0x00400033:	bne	#0x400017
+0x00400035:	bl	#0x500031
+0x00400039:	ldr	r3, [pc, #0x7c]
+0x0040003b:	str	r5, [r4, #0xc]
+0x0040003d:	mov.w	r5, #0x100
+0x00400041:	movs	r1, #1
+0x00400043:	ldr	r0, [r6, r3]
+0x00400045:	bl	#0x50003d
+0x00400049:	bl	#0x500049
+0x0040004d:	ldr	r2, [r4, #4]
+0x0040004f:	ldr	r1, [r4]
+0x00400051:	subs	r5, #1
+0x00400053:	ldr	r3, [r4, #8]
+0x00400055:	add	r2, r1
+0x00400057:	sub.w	r3, r3, r2
+0x0040005b:	str	r3, [r4, #8]
+0x0040005d:	bne	#0x400049
+0x0040005f:	ldr	r3, [r4, #0xc]
+0x00400061:	movs	r2, #0
+0x00400063:	movs	r1, #1
+0x00400065:	cmp.w	r3, #0x100
+0x00400069:	ldr	r3, [pc, #0x50]
+0x0040006b:	it	eq
+0x0040006d:	ldreq	r5, [r4, #8]
+0x0040006f:	ldr	r4, [pc, #0x50]
+0x00400071:	add	r4, pc
+0x00400073:	str	r5, [r4, #0x10]
+0x00400075:	mov.w	r5, #0x100
+0x00400079:	str	r2, [r4, #0xc]
+0x0040007b:	ldr	r0, [r6, r3]
+0x0040007d:	bl	#0x50003d
+0x00400081:	bl	#0x500049
+0x00400085:	ldr	r2, [r4, #4]
+0x00400087:	ldr	r1, [r4]
+0x00400089:	subs	r5, #1
+0x0040008b:	ldr	r3, [r4, #0x14]
+0x0040008d:	add	r2, r1
+0x0040008f:	sub.w	r3, r3, r2
+0x00400093:	str	r3, [r4, #0x14]
+0x00400095:	bne	#0x400081
+0x00400097:	ldr	r3, [r4, #0xc]
+0x00400099:	movs	r0, #0
+0x0040009b:	cmp.w	r3, #0x100
+0x0040009f:	ldr	r3, [pc, #0x24]
+0x004000a1:	add	r3, pc
+0x004000a3:	it	eq
+0x004000a5:	ldreq	r5, [r4, #0x14]
+0x004000a7:	str	r5, [r3, #0x18]
+0x004000a9:	pop	{r4, r5, r6, pc}
+0x004000ab:	movs	r0, #1
+0x004000ad:	pop	{r4, r5, r6, pc}
 
-Disassembly of section .text:
+Function sub_4000af @ 0x004000af
+0x004000af:	nop	
+0x004000b1:	lsls	r6, r6, #0xa
+0x004000b3:	movs	r0, r0
+0x004000b5:	lsls	r0, r4, #2
+0x004000b7:	movs	r0, r0
+0x004000b9:	movs	r0, r0
+0x004000bb:	movs	r0, r0
+0x004000bd:	movs	r0, r0
+0x004000bf:	movs	r0, r0
+0x004000c1:	lsls	r4, r2, #9
+0x004000c3:	movs	r0, r0
+0x004000c5:	lsls	r4, r4, #8
+0x004000c7:	movs	r0, r0
+0x004000c9:	push.w	{r3, r4, r5, r6, r7, r8, sb, lr}
+0x004000cd:	mov	r7, r0
+0x004000cf:	ldr.w	r8, [pc, #0x10c]
+0x004000d3:	bl	#0x500001
 
-00000000 <benchmark_body.constprop.0>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	f44f 7580 	mov.w	r5, #256	; 0x100
-   6:	4c2a      	ldr	r4, [pc, #168]	; (b0 <benchmark_body.constprop.0+0xb0>)
-   8:	4e2a      	ldr	r6, [pc, #168]	; (b4 <benchmark_body.constprop.0+0xb4>)
-   a:	f7ff fffe 	bl	0 <bsp_enble_external_interrupt>
-   e:	447c      	add	r4, pc
-  10:	447e      	add	r6, pc
-  12:	f7ff fffe 	bl	0 <bsp_disable_interrupts>
-  16:	4620      	mov	r0, r4
-  18:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt_sample_cycles>
-  1c:	6822      	ldr	r2, [r4, #0]
-  1e:	6863      	ldr	r3, [r4, #4]
-  20:	429a      	cmp	r2, r3
-  22:	d942      	bls.n	aa <benchmark_body.constprop.0+0xaa>
-  24:	6862      	ldr	r2, [r4, #4]
-  26:	6823      	ldr	r3, [r4, #0]
-  28:	1a9b      	subs	r3, r3, r2
-  2a:	6023      	str	r3, [r4, #0]
-  2c:	f7ff fffe 	bl	0 <bsp_clear_external_interrupt_indication>
-  30:	3d01      	subs	r5, #1
-  32:	d1f0      	bne.n	16 <benchmark_body.constprop.0+0x16>
-  34:	f7ff fffe 	bl	0 <bsp_enable_interrupts>
-  38:	4b1f      	ldr	r3, [pc, #124]	; (b8 <benchmark_body.constprop.0+0xb8>)
-  3a:	60e5      	str	r5, [r4, #12]
-  3c:	f44f 7580 	mov.w	r5, #256	; 0x100
-  40:	2101      	movs	r1, #1
-  42:	58f0      	ldr	r0, [r6, r3]
-  44:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
-  48:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt>
-  4c:	6862      	ldr	r2, [r4, #4]
-  4e:	6821      	ldr	r1, [r4, #0]
-  50:	3d01      	subs	r5, #1
-  52:	68a3      	ldr	r3, [r4, #8]
-  54:	440a      	add	r2, r1
-  56:	eba3 0302 	sub.w	r3, r3, r2
-  5a:	60a3      	str	r3, [r4, #8]
-  5c:	d1f4      	bne.n	48 <benchmark_body.constprop.0+0x48>
-  5e:	68e3      	ldr	r3, [r4, #12]
-  60:	2200      	movs	r2, #0
-  62:	2101      	movs	r1, #1
-  64:	f5b3 7f80 	cmp.w	r3, #256	; 0x100
-  68:	4b14      	ldr	r3, [pc, #80]	; (bc <benchmark_body.constprop.0+0xbc>)
-  6a:	bf08      	it	eq
-  6c:	68a5      	ldreq	r5, [r4, #8]
-  6e:	4c14      	ldr	r4, [pc, #80]	; (c0 <benchmark_body.constprop.0+0xc0>)
-  70:	447c      	add	r4, pc
-  72:	6125      	str	r5, [r4, #16]
-  74:	f44f 7580 	mov.w	r5, #256	; 0x100
-  78:	60e2      	str	r2, [r4, #12]
-  7a:	58f0      	ldr	r0, [r6, r3]
-  7c:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
-  80:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt>
-  84:	6862      	ldr	r2, [r4, #4]
-  86:	6821      	ldr	r1, [r4, #0]
-  88:	3d01      	subs	r5, #1
-  8a:	6963      	ldr	r3, [r4, #20]
-  8c:	440a      	add	r2, r1
-  8e:	eba3 0302 	sub.w	r3, r3, r2
-  92:	6163      	str	r3, [r4, #20]
-  94:	d1f4      	bne.n	80 <benchmark_body.constprop.0+0x80>
-  96:	68e3      	ldr	r3, [r4, #12]
-  98:	2000      	movs	r0, #0
-  9a:	f5b3 7f80 	cmp.w	r3, #256	; 0x100
-  9e:	4b09      	ldr	r3, [pc, #36]	; (c4 <benchmark_body.constprop.0+0xc4>)
-  a0:	447b      	add	r3, pc
-  a2:	bf08      	it	eq
-  a4:	6965      	ldreq	r5, [r4, #20]
-  a6:	619d      	str	r5, [r3, #24]
-  a8:	bd70      	pop	{r4, r5, r6, pc}
-  aa:	2001      	movs	r0, #1
-  ac:	bd70      	pop	{r4, r5, r6, pc}
-  ae:	bf00      	nop
-  b0:	0000009e 	.word	0x0000009e
-  b4:	000000a0 	.word	0x000000a0
-	...
-  c0:	0000004c 	.word	0x0000004c
-  c4:	00000020 	.word	0x00000020
+Function benchmark_body.isra.0 @ 0x004000c9
+0x004000c9:	push.w	{r3, r4, r5, r6, r7, r8, sb, lr}
+0x004000cd:	mov	r7, r0
+0x004000cf:	ldr.w	r8, [pc, #0x10c]
+0x004000d3:	bl	#0x500001
+0x004000d7:	add	r8, pc
+0x004000d9:	bl	#0x50000d
+0x004000dd:	cmp	r7, #0
+0x004000df:	ble	#0x400197
+0x004000e1:	ldr	r4, [pc, #0xfc]
+0x004000e3:	movs	r6, #0
+0x004000e5:	add	r4, pc
+0x004000e7:	b	#0x4000fb
+0x004000e9:	ldr	r2, [r4, #4]
+0x004000eb:	ldr	r3, [r4]
+0x004000ed:	subs	r3, r3, r2
+0x004000ef:	str	r3, [r4]
+0x004000f1:	bl	#0x500025
+0x004000f5:	cmp	r7, r5
+0x004000f7:	beq	#0x40010f
+0x004000f9:	mov	r6, r5
+0x004000fb:	mov	r0, r4
+0x004000fd:	adds	r5, r6, #1
+0x004000ff:	bl	#0x500019
+0x004000fb:	mov	r0, r4
+0x004000fd:	adds	r5, r6, #1
+0x004000ff:	bl	#0x500019
+0x00400103:	ldr	r2, [r4]
+0x00400105:	ldr	r3, [r4, #4]
+0x00400107:	cmp	r2, r3
+0x00400109:	bhi	#0x4000e9
+0x0040010b:	pop.w	{r3, r4, r5, r6, r7, r8, sb, pc}
+0x0040010f:	bl	#0x500031
+0x00400113:	ldr	r3, [pc, #0xd0]
+0x00400115:	movs	r2, #0
+0x00400117:	str	r2, [r4, #0xc]
+0x00400119:	movs	r1, #1
+0x0040011b:	mov	sb, r2
+0x0040011d:	ldr.w	r0, [r8, r3]
+0x00400121:	bl	#0x50003d
+0x00400125:	bl	#0x500049
+0x00400129:	ldr	r1, [r4, #4]
+0x0040012b:	ldr	r0, [r4]
+0x0040012d:	cmp	sb, r6
+0x0040012f:	ldr	r2, [r4, #8]
+0x00400131:	add.w	sb, sb, #1
+0x00400135:	add	r1, r0
+0x00400137:	sub.w	r2, r2, r1
+0x0040013b:	str	r2, [r4, #8]
+0x0040013d:	bne	#0x400125
+0x0040013f:	ldr	r3, [r4, #0xc]
+0x00400141:	cmp	r3, r5
+0x00400143:	itt	ne
+0x00400145:	movne	r3, #0
+0x00400147:	strne	r3, [r4, #0x10]
+0x00400149:	beq	#0x40018f
+0x0040014b:	str	r3, [r4, #0xc]
+0x0040014d:	movs	r6, #0
+0x0040014f:	ldr	r3, [pc, #0x98]
+0x00400151:	movs	r1, #1
+0x00400153:	ldr	r4, [pc, #0x98]
+0x00400155:	add	r4, pc
+0x00400157:	ldr.w	r0, [r8, r3]
+0x0040015b:	bl	#0x50003d
+0x0040015f:	bl	#0x500049
+0x00400163:	ldr	r2, [r4, #4]
+0x00400165:	ldr	r1, [r4]
+0x00400167:	adds	r6, #1
+0x00400169:	ldr	r3, [r4, #0x14]
+0x0040016b:	cmp	r7, r6
+0x0040016d:	add	r2, r1
+0x0040016f:	sub.w	r3, r3, r2
+0x00400173:	str	r3, [r4, #0x14]
+0x00400175:	bgt	#0x40015f
+0x00400177:	ldr	r3, [pc, #0x78]
+0x00400179:	add	r3, pc
+0x0040017b:	ldr	r2, [r3, #0xc]
+0x0040017d:	cmp	r2, r5
+0x0040017f:	ite	ne
+0x00400181:	movne	r2, #0
+0x00400183:	ldreq	r2, [r3, #0x14]
+0x00400185:	ldr	r3, [pc, #0x6c]
+0x00400187:	add	r3, pc
+0x00400189:	str	r2, [r3, #0x18]
+0x0040018b:	pop.w	{r3, r4, r5, r6, r7, r8, sb, pc}
+0x0040018f:	ldr	r3, [r4, #8]
+0x00400191:	str	r3, [r4, #0x10]
+0x00400193:	movs	r3, #0
+0x00400195:	b	#0x40014b
+0x00400197:	ldr	r4, [pc, #0x60]
+0x00400199:	bl	#0x500031
+0x0040019d:	ldr	r3, [pc, #0x44]
+0x0040019f:	movs	r6, #0
+0x004001a1:	add	r4, pc
+0x004001a3:	movs	r1, #1
+0x004001a5:	mov	r5, r7
+0x004001a7:	str	r6, [r4, #0xc]
+0x004001a9:	ldr.w	r0, [r8, r3]
+0x004001ad:	bl	#0x50003d
+0x004001b1:	ldr	r3, [r4, #0xc]
+0x004001b3:	cmp	r3, r7
+0x004001b5:	beq	#0x4001c9
+0x004001b7:	ldr	r3, [pc, #0x30]
+0x004001b9:	movs	r1, #1
+0x004001bb:	str	r6, [r4, #0x10]
+0x004001bd:	str	r6, [r4, #0xc]
+0x004001bf:	ldr.w	r0, [r8, r3]
+0x004001c3:	bl	#0x50003d
+0x004001c7:	b	#0x400177
+0x004001c9:	ldr	r3, [pc, #0x1c]
+0x004001cb:	movs	r1, #1
+0x004001cd:	ldr	r2, [r4, #8]
+0x004001cf:	str	r6, [r4, #0xc]
+0x004001d1:	str	r2, [r4, #0x10]
+0x004001d3:	ldr.w	r0, [r8, r3]
+0x004001d7:	bl	#0x50003d
+0x004001db:	b	#0x400177
 
-000000c8 <benchmark_body.isra.0>:
-  c8:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
-  cc:	4607      	mov	r7, r0
-  ce:	f8df 810c 	ldr.w	r8, [pc, #268]	; 1dc <benchmark_body.isra.0+0x114>
-  d2:	f7ff fffe 	bl	0 <bsp_enble_external_interrupt>
-  d6:	44f8      	add	r8, pc
-  d8:	f7ff fffe 	bl	0 <bsp_disable_interrupts>
-  dc:	2f00      	cmp	r7, #0
-  de:	dd5a      	ble.n	196 <benchmark_body.isra.0+0xce>
-  e0:	4c3f      	ldr	r4, [pc, #252]	; (1e0 <benchmark_body.isra.0+0x118>)
-  e2:	2600      	movs	r6, #0
-  e4:	447c      	add	r4, pc
-  e6:	e008      	b.n	fa <benchmark_body.isra.0+0x32>
-  e8:	6862      	ldr	r2, [r4, #4]
-  ea:	6823      	ldr	r3, [r4, #0]
-  ec:	1a9b      	subs	r3, r3, r2
-  ee:	6023      	str	r3, [r4, #0]
-  f0:	f7ff fffe 	bl	0 <bsp_clear_external_interrupt_indication>
-  f4:	42af      	cmp	r7, r5
-  f6:	d00a      	beq.n	10e <benchmark_body.isra.0+0x46>
-  f8:	462e      	mov	r6, r5
-  fa:	4620      	mov	r0, r4
-  fc:	1c75      	adds	r5, r6, #1
-  fe:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt_sample_cycles>
- 102:	6822      	ldr	r2, [r4, #0]
- 104:	6863      	ldr	r3, [r4, #4]
- 106:	429a      	cmp	r2, r3
- 108:	d8ee      	bhi.n	e8 <benchmark_body.isra.0+0x20>
- 10a:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
- 10e:	f7ff fffe 	bl	0 <bsp_enable_interrupts>
- 112:	4b34      	ldr	r3, [pc, #208]	; (1e4 <benchmark_body.isra.0+0x11c>)
- 114:	2200      	movs	r2, #0
- 116:	60e2      	str	r2, [r4, #12]
- 118:	2101      	movs	r1, #1
- 11a:	4691      	mov	r9, r2
- 11c:	f858 0003 	ldr.w	r0, [r8, r3]
- 120:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
- 124:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt>
- 128:	6861      	ldr	r1, [r4, #4]
- 12a:	6820      	ldr	r0, [r4, #0]
- 12c:	45b1      	cmp	r9, r6
- 12e:	68a2      	ldr	r2, [r4, #8]
- 130:	f109 0901 	add.w	r9, r9, #1
- 134:	4401      	add	r1, r0
- 136:	eba2 0201 	sub.w	r2, r2, r1
- 13a:	60a2      	str	r2, [r4, #8]
- 13c:	d1f2      	bne.n	124 <benchmark_body.isra.0+0x5c>
- 13e:	68e3      	ldr	r3, [r4, #12]
- 140:	42ab      	cmp	r3, r5
- 142:	bf1c      	itt	ne
- 144:	2300      	movne	r3, #0
- 146:	6123      	strne	r3, [r4, #16]
- 148:	d021      	beq.n	18e <benchmark_body.isra.0+0xc6>
- 14a:	60e3      	str	r3, [r4, #12]
- 14c:	2600      	movs	r6, #0
- 14e:	4b26      	ldr	r3, [pc, #152]	; (1e8 <benchmark_body.isra.0+0x120>)
- 150:	2101      	movs	r1, #1
- 152:	4c26      	ldr	r4, [pc, #152]	; (1ec <benchmark_body.isra.0+0x124>)
- 154:	447c      	add	r4, pc
- 156:	f858 0003 	ldr.w	r0, [r8, r3]
- 15a:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
- 15e:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt>
- 162:	6862      	ldr	r2, [r4, #4]
- 164:	6821      	ldr	r1, [r4, #0]
- 166:	3601      	adds	r6, #1
- 168:	6963      	ldr	r3, [r4, #20]
- 16a:	42b7      	cmp	r7, r6
- 16c:	440a      	add	r2, r1
- 16e:	eba3 0302 	sub.w	r3, r3, r2
- 172:	6163      	str	r3, [r4, #20]
- 174:	dcf3      	bgt.n	15e <benchmark_body.isra.0+0x96>
- 176:	4b1e      	ldr	r3, [pc, #120]	; (1f0 <benchmark_body.isra.0+0x128>)
- 178:	447b      	add	r3, pc
- 17a:	68da      	ldr	r2, [r3, #12]
- 17c:	42aa      	cmp	r2, r5
- 17e:	bf14      	ite	ne
- 180:	2200      	movne	r2, #0
- 182:	695a      	ldreq	r2, [r3, #20]
- 184:	4b1b      	ldr	r3, [pc, #108]	; (1f4 <benchmark_body.isra.0+0x12c>)
- 186:	447b      	add	r3, pc
- 188:	619a      	str	r2, [r3, #24]
- 18a:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
- 18e:	68a3      	ldr	r3, [r4, #8]
- 190:	6123      	str	r3, [r4, #16]
- 192:	2300      	movs	r3, #0
- 194:	e7d9      	b.n	14a <benchmark_body.isra.0+0x82>
- 196:	4c18      	ldr	r4, [pc, #96]	; (1f8 <benchmark_body.isra.0+0x130>)
- 198:	f7ff fffe 	bl	0 <bsp_enable_interrupts>
- 19c:	4b11      	ldr	r3, [pc, #68]	; (1e4 <benchmark_body.isra.0+0x11c>)
- 19e:	2600      	movs	r6, #0
- 1a0:	447c      	add	r4, pc
- 1a2:	2101      	movs	r1, #1
- 1a4:	463d      	mov	r5, r7
- 1a6:	60e6      	str	r6, [r4, #12]
- 1a8:	f858 0003 	ldr.w	r0, [r8, r3]
- 1ac:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
- 1b0:	68e3      	ldr	r3, [r4, #12]
- 1b2:	42bb      	cmp	r3, r7
- 1b4:	d008      	beq.n	1c8 <benchmark_body.isra.0+0x100>
- 1b6:	4b0c      	ldr	r3, [pc, #48]	; (1e8 <benchmark_body.isra.0+0x120>)
- 1b8:	2101      	movs	r1, #1
- 1ba:	6126      	str	r6, [r4, #16]
- 1bc:	60e6      	str	r6, [r4, #12]
- 1be:	f858 0003 	ldr.w	r0, [r8, r3]
- 1c2:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
- 1c6:	e7d6      	b.n	176 <benchmark_body.isra.0+0xae>
- 1c8:	4b07      	ldr	r3, [pc, #28]	; (1e8 <benchmark_body.isra.0+0x120>)
- 1ca:	2101      	movs	r1, #1
- 1cc:	68a2      	ldr	r2, [r4, #8]
- 1ce:	60e6      	str	r6, [r4, #12]
- 1d0:	6122      	str	r2, [r4, #16]
- 1d2:	f858 0003 	ldr.w	r0, [r8, r3]
- 1d6:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
- 1da:	e7cc      	b.n	176 <benchmark_body.isra.0+0xae>
- 1dc:	00000102 	.word	0x00000102
- 1e0:	000000f8 	.word	0x000000f8
-	...
- 1ec:	00000094 	.word	0x00000094
- 1f0:	00000074 	.word	0x00000074
- 1f4:	0000006a 	.word	0x0000006a
- 1f8:	00000054 	.word	0x00000054
+Function interrupt_handler_from_vect @ 0x004001fd
+0x004001fd:	push.w	{r0, r1, r2, r3, ip, lr}
+0x00400201:	ldr	r2, [pc, #0x14]
+0x00400203:	add	r2, pc
+0x00400205:	ldr	r3, [r2, #0xc]
+0x00400207:	adds	r3, #1
+0x00400209:	str	r3, [r2, #0xc]
+0x0040020b:	bl	#0x500025
+0x0040020f:	pop.w	{r0, r1, r2, r3, ip, lr}
 
-000001fc <interrupt_handler_from_vect>:
- 1fc:	e92d 500f 	stmdb	sp!, {r0, r1, r2, r3, ip, lr}
- 200:	4a05      	ldr	r2, [pc, #20]	; (218 <interrupt_handler_from_vect+0x1c>)
- 202:	447a      	add	r2, pc
- 204:	68d3      	ldr	r3, [r2, #12]
- 206:	3301      	adds	r3, #1
- 208:	60d3      	str	r3, [r2, #12]
- 20a:	f7ff fffe 	bl	0 <bsp_clear_external_interrupt_indication>
- 20e:	e8bd 500f 	ldmia.w	sp!, {r0, r1, r2, r3, ip, lr}
- 212:	f3de 8f04 	subs	pc, lr, #4
- 216:	bf00      	nop
- 218:	00000012 	.word	0x00000012
+Function sub_400215 @ 0x00400215
+0x00400215:	ldrh	r4, [r0, #0x38]
+0x00400217:	nop	
+0x00400219:	lsls	r2, r0, #3
+0x0040021b:	movs	r0, r0
+0x0040021d:	ldr	r2, [pc, #0xc]
+0x0040021f:	add	r2, pc
+0x00400221:	ldr	r3, [r2, #0x1c]
+0x00400223:	adds	r3, #1
+0x00400225:	str	r3, [r2, #0x1c]
+0x00400227:	b.w	#0x500025
 
-0000021c <interrupt_handler_from_trap>:
- 21c:	4a03      	ldr	r2, [pc, #12]	; (22c <interrupt_handler_from_trap+0x10>)
- 21e:	447a      	add	r2, pc
- 220:	69d3      	ldr	r3, [r2, #28]
- 222:	3301      	adds	r3, #1
- 224:	61d3      	str	r3, [r2, #28]
- 226:	f7ff bffe 	b.w	0 <bsp_clear_external_interrupt_indication>
- 22a:	bf00      	nop
- 22c:	0000000a 	.word	0x0000000a
+Function interrupt_handler_from_trap @ 0x0040021d
+0x0040021d:	ldr	r2, [pc, #0xc]
+0x0040021f:	add	r2, pc
+0x00400221:	ldr	r3, [r2, #0x1c]
+0x00400223:	adds	r3, #1
+0x00400225:	str	r3, [r2, #0x1c]
+0x00400227:	b.w	#0x500025
 
-00000230 <measure_int_latency>:
- 230:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 234:	4606      	mov	r6, r0
- 236:	460f      	mov	r7, r1
- 238:	4610      	mov	r0, r2
- 23a:	4619      	mov	r1, r3
- 23c:	9d06      	ldr	r5, [sp, #24]
- 23e:	f7ff fffe 	bl	0 <bsp_set_interrupts_handler>
- 242:	2e00      	cmp	r6, #0
- 244:	dd11      	ble.n	26a <measure_int_latency+0x3a>
- 246:	f8df 8030 	ldr.w	r8, [pc, #48]	; 278 <measure_int_latency+0x48>
- 24a:	2400      	movs	r4, #0
- 24c:	44f8      	add	r8, pc
- 24e:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt>
- 252:	f8d8 2004 	ldr.w	r2, [r8, #4]
- 256:	f8d8 1000 	ldr.w	r1, [r8]
- 25a:	3401      	adds	r4, #1
- 25c:	682b      	ldr	r3, [r5, #0]
- 25e:	42a6      	cmp	r6, r4
- 260:	440a      	add	r2, r1
- 262:	eba3 0302 	sub.w	r3, r3, r2
- 266:	602b      	str	r3, [r5, #0]
- 268:	d1f1      	bne.n	24e <measure_int_latency+0x1e>
- 26a:	683b      	ldr	r3, [r7, #0]
- 26c:	42b3      	cmp	r3, r6
- 26e:	bf14      	ite	ne
- 270:	2000      	movne	r0, #0
- 272:	6828      	ldreq	r0, [r5, #0]
- 274:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 278:	00000028 	.word	0x00000028
+Function sub_40022b @ 0x0040022b
+0x0040022b:	nop	
+0x0040022d:	lsls	r6, r4, #2
+0x0040022f:	movs	r0, r0
+0x00400231:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400235:	mov	r6, r0
+0x00400237:	mov	r7, r1
+0x00400239:	mov	r0, r2
+0x0040023b:	mov	r1, r3
+0x0040023d:	ldr	r5, [sp, #0x18]
+0x0040023f:	bl	#0x50003d
 
-0000027c <measure_overhead_cycles_trigger_ext_int>:
- 27c:	b570      	push	{r4, r5, r6, lr}
- 27e:	1e06      	subs	r6, r0, #0
- 280:	dd15      	ble.n	2ae <measure_overhead_cycles_trigger_ext_int+0x32>
- 282:	4c0c      	ldr	r4, [pc, #48]	; (2b4 <measure_overhead_cycles_trigger_ext_int+0x38>)
- 284:	2500      	movs	r5, #0
- 286:	447c      	add	r4, pc
- 288:	e007      	b.n	29a <measure_overhead_cycles_trigger_ext_int+0x1e>
- 28a:	6862      	ldr	r2, [r4, #4]
- 28c:	6823      	ldr	r3, [r4, #0]
- 28e:	1a9b      	subs	r3, r3, r2
- 290:	6023      	str	r3, [r4, #0]
- 292:	f7ff fffe 	bl	0 <bsp_clear_external_interrupt_indication>
- 296:	42ae      	cmp	r6, r5
- 298:	d009      	beq.n	2ae <measure_overhead_cycles_trigger_ext_int+0x32>
- 29a:	4620      	mov	r0, r4
- 29c:	3501      	adds	r5, #1
- 29e:	f7ff fffe 	bl	0 <bsp_trigger_external_interrupt_sample_cycles>
- 2a2:	6822      	ldr	r2, [r4, #0]
- 2a4:	6863      	ldr	r3, [r4, #4]
- 2a6:	429a      	cmp	r2, r3
- 2a8:	d8ef      	bhi.n	28a <measure_overhead_cycles_trigger_ext_int+0xe>
- 2aa:	2001      	movs	r0, #1
- 2ac:	bd70      	pop	{r4, r5, r6, pc}
- 2ae:	2000      	movs	r0, #0
- 2b0:	bd70      	pop	{r4, r5, r6, pc}
- 2b2:	bf00      	nop
- 2b4:	0000002a 	.word	0x0000002a
+Function measure_int_latency @ 0x00400231
+0x00400231:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400235:	mov	r6, r0
+0x00400237:	mov	r7, r1
+0x00400239:	mov	r0, r2
+0x0040023b:	mov	r1, r3
+0x0040023d:	ldr	r5, [sp, #0x18]
+0x0040023f:	bl	#0x50003d
+0x00400243:	cmp	r6, #0
+0x00400245:	ble	#0x40026b
+0x00400247:	ldr.w	r8, [pc, #0x30]
+0x0040024b:	movs	r4, #0
+0x0040024d:	add	r8, pc
+0x0040024f:	bl	#0x500049
+0x0040024f:	bl	#0x500049
+0x00400253:	ldr.w	r2, [r8, #4]
+0x00400257:	ldr.w	r1, [r8]
+0x0040025b:	adds	r4, #1
+0x0040025d:	ldr	r3, [r5]
+0x0040025f:	cmp	r6, r4
+0x00400261:	add	r2, r1
+0x00400263:	sub.w	r3, r3, r2
+0x00400267:	str	r3, [r5]
+0x00400269:	bne	#0x40024f
+0x0040026b:	ldr	r3, [r7]
+0x0040026d:	cmp	r3, r6
+0x0040026f:	ite	ne
+0x00400271:	movne	r0, #0
+0x00400273:	ldreq	r0, [r5]
+0x00400275:	pop.w	{r4, r5, r6, r7, r8, pc}
 
-000002b8 <verify_benchmark>:
- 2b8:	2000      	movs	r0, #0
- 2ba:	4770      	bx	lr
+Function measure_overhead_cycles_trigger_ext_int @ 0x0040027d
+0x0040027d:	push	{r4, r5, r6, lr}
+0x0040027f:	subs	r6, r0, #0
+0x00400281:	ble	#0x4002af
+0x00400283:	ldr	r4, [pc, #0x30]
+0x00400285:	movs	r5, #0
+0x00400287:	add	r4, pc
+0x00400289:	b	#0x40029b
+0x0040028b:	ldr	r2, [r4, #4]
+0x0040028d:	ldr	r3, [r4]
+0x0040028f:	subs	r3, r3, r2
+0x00400291:	str	r3, [r4]
+0x00400293:	bl	#0x500025
+0x00400297:	cmp	r6, r5
+0x00400299:	beq	#0x4002af
+0x0040029b:	mov	r0, r4
+0x0040029d:	adds	r5, #1
+0x0040029f:	bl	#0x500019
+0x004002a3:	ldr	r2, [r4]
+0x004002a5:	ldr	r3, [r4, #4]
+0x004002a7:	cmp	r2, r3
+0x004002a9:	bhi	#0x40028b
+0x004002ab:	movs	r0, #1
+0x004002ad:	pop	{r4, r5, r6, pc}
+0x004002af:	movs	r0, #0
+0x004002b1:	pop	{r4, r5, r6, pc}
 
-000002bc <initialise_benchmark>:
- 2bc:	4770      	bx	lr
- 2be:	bf00      	nop
+Function sub_4002b3 @ 0x004002b3
+0x004002b3:	nop	
+0x004002b5:	movs	r6, r7
+0x004002b7:	movs	r0, r0
+0x004002b9:	movs	r0, #0
+0x004002bb:	bx	lr
 
-000002c0 <warm_caches>:
- 2c0:	e702      	b.n	c8 <benchmark_body.isra.0>
- 2c2:	bf00      	nop
+Function verify_benchmark @ 0x004002b9
+0x004002b9:	movs	r0, #0
+0x004002bb:	bx	lr
 
-000002c4 <benchmark>:
- 2c4:	e69c      	b.n	0 <benchmark_body.constprop.0>
- 2c6:	bf00      	nop
+Function initialise_benchmark @ 0x004002bd
+0x004002bd:	bx	lr
+
+Function sub_4002bf @ 0x004002bf
+0x004002bf:	nop	
+0x004002c1:	b	#0x4000c9
+
+Function warm_caches @ 0x004002c1
+0x004002c1:	b	#0x4000c9
+
+Function sub_4002c3 @ 0x004002c3
+0x004002c3:	nop	
+0x004002c5:	b	#0x400001
+
+Function benchmark @ 0x004002c5
+0x004002c5:	b	#0x400001
+
+Function sub_4002c7 @ 0x004002c7
+0x004002c7:	nop	
+
+Function bsp_enble_external_interrupt @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function bsp_disable_interrupts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function bsp_trigger_external_interrupt_sample_cycles @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function bsp_clear_external_interrupt_indication @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function bsp_enable_interrupts @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function bsp_set_interrupts_handler @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function bsp_trigger_external_interrupt @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

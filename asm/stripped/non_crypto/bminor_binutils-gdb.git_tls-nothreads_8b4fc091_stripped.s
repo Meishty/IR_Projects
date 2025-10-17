@@ -1,35 +1,45 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_tls-nothreads_8b4fc091_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r2, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706018 			; <UNDEFINED> instruction: 0x47706018
-   8:	00000002 	andeq	r0, r0, r2
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	ee1d4812 	mrc	8, 0, r4, cr13, cr2, {0}
-   4:	4b132f70 	blmi	0x4cbdcc
-   8:	eb022118 	bl	0x88470
-   c:	b4700c00 	ldrbtlt	r0, [r0], #-3072	; 0xfffff400
-  10:	4d0f447b 	cfstrsmi	mvf4, [pc, #-492]	; 0xfffffe2c
-  14:	34fff04f 	ldrbtcc	pc, [pc], #79	; 0x1c	; <UNPREDICTABLE>
-  18:	26645081 	strbtcs	r5, [r4], -r1, lsl #1
-  1c:	2000601c 	andcs	r6, r0, ip, lsl r0
-  20:	21196019 	tstcs	r9, r9, lsl r0
-  24:	241a6019 	ldrcs	r6, [sl], #-25	; 0xffffffe7
-  28:	1004f8cc 	andne	pc, r4, ip, asr #17
-  2c:	601c1951 	andsvs	r1, ip, r1, asr r9
-  30:	4008f8cc 	andmi	pc, r8, ip, asr #17
-  34:	601c242a 	andsvs	r2, ip, sl, lsr #8
-  38:	222b50ac 	eorcs	r5, fp, #172	; 0xac
-  3c:	604a601a 	subvs	r6, sl, sl, lsl r0
-  40:	601a222c 	andsvs	r2, sl, ip, lsr #4
-  44:	601e608a 	andsvs	r6, lr, sl, lsl #1
-  48:	4770bc70 			; <UNDEFINED> instruction: 0x4770bc70
-	...
-  54:	00000040 	andeq	r0, r0, r0, asr #32
+Function sub_400011 @ 0x00400011
+0x00400011:	ldr	r0, [pc, #0x48]
+0x00400013:	mrc	p15, #0, r2, c13, c0, #3
+0x00400017:	ldr	r3, [pc, #0x4c]
+0x00400019:	movs	r1, #0x18
+0x0040001b:	add.w	ip, r2, r0
+0x0040001f:	push	{r4, r5, r6}
+0x00400021:	add	r3, pc
+0x00400023:	ldr	r5, [pc, #0x3c]
+0x00400025:	mov.w	r4, #-1
+0x00400029:	str	r1, [r0, r2]
+0x0040002b:	movs	r6, #0x64
+0x0040002d:	str	r4, [r3]
+0x0040002f:	movs	r0, #0
+0x00400031:	str	r1, [r3]
+0x00400033:	movs	r1, #0x19
+0x00400035:	str	r1, [r3]
+0x00400037:	movs	r4, #0x1a
+0x00400039:	str.w	r1, [ip, #4]
+0x0040003d:	adds	r1, r2, r5
+0x0040003f:	str	r4, [r3]
+0x00400041:	str.w	r4, [ip, #8]
+0x00400045:	movs	r4, #0x2a
+0x00400047:	str	r4, [r3]
+0x00400049:	str	r4, [r5, r2]
+0x0040004b:	movs	r2, #0x2b
+0x0040004d:	str	r2, [r3]
+0x0040004f:	str	r2, [r1, #4]
+0x00400051:	movs	r2, #0x2c
+0x00400053:	str	r2, [r3]
+0x00400055:	str	r2, [r1, #8]
+0x00400057:	str	r6, [r3]
+0x00400059:	pop	{r4, r5, r6}
+0x0040005b:	bx	lr

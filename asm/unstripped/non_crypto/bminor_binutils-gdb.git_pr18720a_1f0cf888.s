@@ -1,39 +1,56 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr18720a_1f0cf888.o:     file format elf32-littlearm
+Function foo_p @ 0x00400001
+0x00400001:	ldr	r3, [pc, #0x18]
+0x00400003:	movw	r1, #0x5678
+0x00400007:	movt	r1, #0x1234
+0x0040000b:	ldr	r2, [pc, #0x14]
+0x0040000d:	add	r3, pc
+0x0040000f:	ldr	r0, [r3, r2]
+0x00400011:	subs	r0, r0, r1
+0x00400013:	clz	r0, r0
+0x00400017:	lsrs	r0, r0, #5
+0x00400019:	bx	lr
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r4, r1
+0x0040001f:	movs	r0, r0
+0x00400021:	movs	r0, r0
+0x00400023:	movs	r0, r0
 
-Disassembly of section .text:
+Function main @ 0x00400025
+0x00400025:	push	{r4, lr}
+0x00400027:	ldr	r4, [pc, #0x1c]
+0x00400029:	bl	#0x500001
+0x0040002d:	bl	#0x50000d
+0x00400031:	ldr	r2, [pc, #0x14]
+0x00400033:	ldr	r1, [pc, #0x18]
+0x00400035:	add	r4, pc
+0x00400037:	mov	r3, r4
+0x00400039:	ldr	r0, [r4, r2]
+0x0040003b:	ldr	r1, [r4, r1]
+0x0040003d:	bl	#0x500019
+0x00400041:	movs	r0, #0
+0x00400043:	pop	{r4, pc}
 
-00000000 <foo_p>:
-   0:	4b06      	ldr	r3, [pc, #24]	; (1c <foo_p+0x1c>)
-   2:	f245 6178 	movw	r1, #22136	; 0x5678
-   6:	f2c1 2134 	movt	r1, #4660	; 0x1234
-   a:	4a05      	ldr	r2, [pc, #20]	; (20 <foo_p+0x20>)
-   c:	447b      	add	r3, pc
-   e:	5898      	ldr	r0, [r3, r2]
-  10:	1a40      	subs	r0, r0, r1
-  12:	fab0 f080 	clz	r0, r0
-  16:	0940      	lsrs	r0, r0, #5
-  18:	4770      	bx	lr
-  1a:	bf00      	nop
-  1c:	0000000c 	.word	0x0000000c
-  20:	00000000 	.word	0x00000000
+Function foo @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function bar @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	4c07      	ldr	r4, [pc, #28]	; (20 <main+0x20>)
-   4:	f7ff fffe 	bl	0 <foo>
-   8:	f7ff fffe 	bl	0 <bar>
-   c:	4a05      	ldr	r2, [pc, #20]	; (24 <main+0x24>)
-   e:	4906      	ldr	r1, [pc, #24]	; (28 <main+0x28>)
-  10:	447c      	add	r4, pc
-  12:	4623      	mov	r3, r4
-  14:	58a0      	ldr	r0, [r4, r2]
-  16:	5861      	ldr	r1, [r4, r1]
-  18:	f7ff fffe 	bl	0 <check_ptr_eq>
-  1c:	2000      	movs	r0, #0
-  1e:	bd10      	pop	{r4, pc}
-  20:	0000000c 	.word	0x0000000c
-	...
+Function check_ptr_eq @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

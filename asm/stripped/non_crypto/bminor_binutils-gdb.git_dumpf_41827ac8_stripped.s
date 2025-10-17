@@ -1,36 +1,68 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dumpf_41827ac8_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bmi	#0x9ed040
+0x00400004:	ldrblt	r4, [r0, #-0xb17]!
+0x00400008:	ldcmi	p4, c4, [r7, #-0x1e8]
+0x0040000c:	cdpne	p0, #0, c11, c4, c3, #4
+0x00400010:	ldrbtmi	r5, [sp], #-0x8d3
+0x00400014:	ldmdavs	fp, {r0, r1, r2, sb, sl, fp, ip, pc}
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	mov.w	r3, #0
+0x0040001f:	ble	#0x40002b
+0x00400021:	movs	r0, #0x20
+0x00400023:	bl	#0x400023
+0x0040002b:	ldr	r0, [pc, #0x40]
+0x0040002d:	add	r3, sp, #0x20
+0x0040002f:	str	r3, [sp]
+0x00400031:	mov	r2, r6
+0x00400033:	movs	r1, #1
+0x00400035:	ldr	r0, [r5, r0]
+0x00400037:	ldr	r0, [r0]
+0x00400039:	bl	#0x400039
 
-Disassembly of section .text:
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	subs	r4, #1
+0x00400029:	bne	#0x400021
 
-00000000 <.text>:
-   0:	4a17b40e 	bmi	0x5ed040
-   4:	b5704b17 	ldrblt	r4, [r0, #-2839]!	; 0xfffff4e9
-   8:	4d17447a 	cfldrsmi	mvf4, [r7, #-488]	; 0xfffffe18
-   c:	1e04b083 	cdpne	0, 0, cr11, cr4, cr3, {4}
-  10:	447d58d3 	ldrbtmi	r5, [sp], #-2259	; 0xfffff72d
-  14:	681b9e07 	ldmdavs	fp, {r0, r1, r2, r9, sl, fp, ip, pc}
-  18:	f04f9301 			; <UNDEFINED> instruction: 0xf04f9301
-  1c:	dd040300 	stcle	3, cr0, [r4, #-0]
-  20:	f7ff2020 			; <UNDEFINED> instruction: 0xf7ff2020
-  24:	3c01fffe 	stccc	15, cr15, [r1], {254}	; 0xfe
-  28:	4810d1fa 	ldmdami	r0, {r1, r3, r4, r5, r6, r7, r8, ip, lr, pc}
-  2c:	9300ab08 	movwls	sl, #2824	; 0xb08
-  30:	21014632 	tstcs	r1, r2, lsr r6
-  34:	68005828 	stmdavs	r0, {r3, r5, fp, ip, lr}
-  38:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  3c:	4b094a0c 	blmi	0x252874
-  40:	58d3447a 	ldmpl	r3, {r1, r3, r4, r5, r6, sl, lr}^
-  44:	9b01681a 	blls	0x5a0b4
-  48:	f04f405a 			; <UNDEFINED> instruction: 0xf04f405a
-  4c:	d1040300 	mrsle	r0, LR_abt
-  50:	e8bdb003 	pop	{r0, r1, ip, sp, pc}
-  54:	b0034070 	andlt	r4, r3, r0, ror r0
-  58:	f7ff4770 			; <UNDEFINED> instruction: 0xf7ff4770
-  5c:	bf00fffe 	svclt	0x0000fffe
-  60:	00000054 	andeq	r0, r0, r4, asr r0
-  64:	00000000 	andeq	r0, r0, r0
-  68:	00000052 	andeq	r0, r0, r2, asr r0
-  6c:	00000000 	andeq	r0, r0, r0
-  70:	0000002c 	andeq	r0, r0, ip, lsr #32
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039
+0x0040003d:	ldr	r2, [pc, #0x30]
+0x0040003f:	ldr	r3, [pc, #0x24]
+0x00400041:	add	r2, pc
+0x00400043:	ldr	r3, [r2, r3]
+0x00400045:	ldr	r2, [r3]
+0x00400047:	ldr	r3, [sp, #4]
+0x00400049:	eors	r2, r3
+0x0040004b:	mov.w	r3, #0
+0x0040004f:	bne	#0x40005b
+0x00400051:	add	sp, #0xc
+0x00400053:	pop.w	{r4, r5, r6, lr}
+0x00400057:	add	sp, #0xc
+0x00400059:	bx	lr
+
+Function sub_40005b @ 0x0040005b
+0x0040005b:	bl	#0x40005b
+0x0040005f:	nop	
+0x00400061:	lsls	r4, r2, #1
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r0, r0
+0x00400067:	movs	r0, r0
+0x00400069:	lsls	r2, r2, #1
+0x0040006b:	movs	r0, r0
+0x0040006d:	movs	r0, r0
+0x0040006f:	movs	r0, r0
+0x00400071:	movs	r4, r5
+0x00400073:	movs	r0, r0
+
+Function sub_400069 @ 0x00400069
+0x00400069:	lsls	r2, r2, #1
+0x0040006b:	movs	r0, r0
+0x0040006d:	movs	r0, r0
+0x0040006f:	movs	r0, r0
+0x00400071:	movs	r4, r5
+0x00400073:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

@@ -1,64 +1,107 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_uncompr_92d52839.o:     file format elf32-littlearm
+Function uncompress @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r5, r1
+0x00400005:	ldr	r4, [pc, #0x80]
+0x00400007:	sub	sp, #0x40
+0x00400009:	vldr	d7, [pc, #0x74]
+0x0040000d:	add	r4, pc
+0x0040000f:	mov	r6, sp
+0x00400011:	strd	r2, r3, [sp]
+0x00400015:	movs	r2, #0x38
+0x00400017:	ldr	r3, [r1]
+0x00400019:	strd	r0, r3, [sp, #0xc]
+0x0040001d:	mov	r0, r6
+0x0040001f:	ldr	r3, [pc, #0x6c]
+0x00400021:	ldr	r1, [pc, #0x6c]
+0x00400023:	vstr	d7, [sp, #0x20]
+0x00400027:	add	r1, pc
+0x00400029:	ldr	r3, [r4, r3]
+0x0040002b:	ldr	r3, [r3]
+0x0040002d:	str	r3, [sp, #0x3c]
+0x0040002f:	mov.w	r3, #0
+0x00400033:	bl	#0x500001
+0x00400037:	mov	r4, r0
+0x00400039:	cbz	r0, #0x400055
+0x0040003b:	ldr	r2, [pc, #0x58]
+0x0040003d:	ldr	r3, [pc, #0x4c]
+0x0040003f:	add	r2, pc
+0x00400041:	ldr	r3, [r2, r3]
+0x00400043:	ldr	r2, [r3]
+0x00400045:	ldr	r3, [sp, #0x3c]
+0x00400047:	eors	r2, r3
+0x00400049:	mov.w	r3, #0
+0x0040004d:	bne	#0x400079
+0x0040003b:	ldr	r2, [pc, #0x58]
+0x0040003d:	ldr	r3, [pc, #0x4c]
+0x0040003f:	add	r2, pc
+0x00400041:	ldr	r3, [r2, r3]
+0x00400043:	ldr	r2, [r3]
+0x00400045:	ldr	r3, [sp, #0x3c]
+0x00400047:	eors	r2, r3
+0x00400049:	mov.w	r3, #0
+0x0040004d:	bne	#0x400079
+0x0040004f:	mov	r0, r4
+0x00400051:	add	sp, #0x40
+0x00400053:	pop	{r4, r5, r6, pc}
+0x00400055:	movs	r1, #4
+0x00400057:	mov	r0, r6
+0x00400059:	bl	#0x50000d
+0x0040005d:	mov	r4, r0
+0x0040005f:	cmp	r0, #1
+0x00400061:	beq	#0x40006b
+0x00400063:	mov	r0, r6
+0x00400065:	bl	#0x500019
+0x00400069:	b	#0x40003b
+0x0040006b:	ldr	r3, [sp, #0x14]
+0x0040006d:	mov	r0, r6
+0x0040006f:	str	r3, [r5]
+0x00400071:	bl	#0x500019
+0x00400075:	mov	r4, r0
+0x00400077:	b	#0x40003b
+0x00400079:	bl	#0x500025
 
+Function sub_40007d @ 0x0040007d
+0x0040007d:	nop.w	
+0x00400081:	movs	r0, r0
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	lsls	r0, r7, #1
+0x0040008b:	movs	r0, r0
+0x0040008d:	movs	r0, r0
+0x0040008f:	movs	r0, r0
+0x00400091:	lsls	r6, r5, #1
+0x00400093:	movs	r0, r0
+0x00400095:	lsls	r2, r2, #1
+0x00400097:	movs	r0, r0
 
-Disassembly of section .text:
+Function inflateInit_ @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <uncompress>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	460d      	mov	r5, r1
-   4:	4c20      	ldr	r4, [pc, #128]	; (88 <uncompress+0x88>)
-   6:	b090      	sub	sp, #64	; 0x40
-   8:	ed9f 7b1d 	vldr	d7, [pc, #116]	; 80 <uncompress+0x80>
-   c:	447c      	add	r4, pc
-   e:	466e      	mov	r6, sp
-  10:	e9cd 2300 	strd	r2, r3, [sp]
-  14:	2238      	movs	r2, #56	; 0x38
-  16:	680b      	ldr	r3, [r1, #0]
-  18:	e9cd 0303 	strd	r0, r3, [sp, #12]
-  1c:	4630      	mov	r0, r6
-  1e:	4b1b      	ldr	r3, [pc, #108]	; (8c <uncompress+0x8c>)
-  20:	491b      	ldr	r1, [pc, #108]	; (90 <uncompress+0x90>)
-  22:	ed8d 7b08 	vstr	d7, [sp, #32]
-  26:	4479      	add	r1, pc
-  28:	58e3      	ldr	r3, [r4, r3]
-  2a:	681b      	ldr	r3, [r3, #0]
-  2c:	930f      	str	r3, [sp, #60]	; 0x3c
-  2e:	f04f 0300 	mov.w	r3, #0
-  32:	f7ff fffe 	bl	0 <inflateInit_>
-  36:	4604      	mov	r4, r0
-  38:	b160      	cbz	r0, 54 <uncompress+0x54>
-  3a:	4a16      	ldr	r2, [pc, #88]	; (94 <uncompress+0x94>)
-  3c:	4b13      	ldr	r3, [pc, #76]	; (8c <uncompress+0x8c>)
-  3e:	447a      	add	r2, pc
-  40:	58d3      	ldr	r3, [r2, r3]
-  42:	681a      	ldr	r2, [r3, #0]
-  44:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
-  46:	405a      	eors	r2, r3
-  48:	f04f 0300 	mov.w	r3, #0
-  4c:	d114      	bne.n	78 <uncompress+0x78>
-  4e:	4620      	mov	r0, r4
-  50:	b010      	add	sp, #64	; 0x40
-  52:	bd70      	pop	{r4, r5, r6, pc}
-  54:	2104      	movs	r1, #4
-  56:	4630      	mov	r0, r6
-  58:	f7ff fffe 	bl	0 <inflate>
-  5c:	4604      	mov	r4, r0
-  5e:	2801      	cmp	r0, #1
-  60:	d003      	beq.n	6a <uncompress+0x6a>
-  62:	4630      	mov	r0, r6
-  64:	f7ff fffe 	bl	0 <inflateEnd>
-  68:	e7e7      	b.n	3a <uncompress+0x3a>
-  6a:	9b05      	ldr	r3, [sp, #20]
-  6c:	4630      	mov	r0, r6
-  6e:	602b      	str	r3, [r5, #0]
-  70:	f7ff fffe 	bl	0 <inflateEnd>
-  74:	4604      	mov	r4, r0
-  76:	e7e0      	b.n	3a <uncompress+0x3a>
-  78:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  7c:	f3af 8000 	nop.w
-	...
-  88:	00000078 	.word	0x00000078
-  8c:	00000000 	.word	0x00000000
-  90:	00000066 	.word	0x00000066
-  94:	00000052 	.word	0x00000052
+Function inflate @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function inflateEnd @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

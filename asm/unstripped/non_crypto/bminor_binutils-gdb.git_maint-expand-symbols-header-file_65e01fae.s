@@ -1,18 +1,17 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_maint-expand-symbols-header-file_65e01fae.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	ldr	r2, [pc, #0x10]
+0x00400013:	movs	r0, #1
+0x00400015:	ldr	r1, [pc, #0x10]
+0x00400017:	push	{r3, lr}
+0x00400019:	add	r2, pc
+0x0040001b:	add	r1, pc
+0x0040001d:	bl	#0x500001
+0x00400021:	movs	r0, #0
+0x00400023:	pop	{r3, pc}
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4a04      	ldr	r2, [pc, #16]	; (14 <main+0x14>)
-   2:	2001      	movs	r0, #1
-   4:	4904      	ldr	r1, [pc, #16]	; (18 <main+0x18>)
-   6:	b508      	push	{r3, lr}
-   8:	447a      	add	r2, pc
-   a:	4479      	add	r1, pc
-   c:	f7ff fffe 	bl	0 <__printf_chk>
-  10:	2000      	movs	r0, #0
-  12:	bd08      	pop	{r3, pc}
-  14:	00000008 	.word	0x00000008
-  18:	0000000a 	.word	0x0000000a
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

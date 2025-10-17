@@ -1,93 +1,121 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_longjmp_f9dd9a18.o:     file format elf32-littlearm
+Function call_longjmp @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	movs	r1, #1
+0x00400005:	ldr	r3, [pc, #0xc]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r2, [r3]
+0x0040000b:	add	r2, r1
+0x0040000d:	str	r2, [r3]
+0x0040000f:	bl	#0x500001
+0x00400013:	nop	
+0x00400015:	lsls	r6, r0, #1
+0x00400017:	movs	r0, r0
+0x00400019:	ldr	r0, [pc, #0x24]
+0x0040001b:	push	{r3, lr}
+0x0040001d:	add	r0, pc
+0x0040001f:	adds	r0, #8
+0x00400021:	bl	#0x50000d
 
+Function hidden_longjmp @ 0x00400019
+0x00400019:	ldr	r0, [pc, #0x24]
+0x0040001b:	push	{r3, lr}
+0x0040001d:	add	r0, pc
+0x0040001f:	adds	r0, #8
+0x00400021:	bl	#0x50000d
+0x00400025:	cbz	r0, #0x400037
+0x00400027:	ldr	r2, [pc, #0x1c]
+0x00400029:	add	r2, pc
+0x0040002b:	ldr.w	r3, [r2, #0x190]
+0x0040002f:	adds	r3, #1
+0x00400031:	str.w	r3, [r2, #0x190]
+0x00400035:	pop	{r3, pc}
+0x00400027:	ldr	r2, [pc, #0x1c]
+0x00400029:	add	r2, pc
+0x0040002b:	ldr.w	r3, [r2, #0x190]
+0x0040002f:	adds	r3, #1
+0x00400031:	str.w	r3, [r2, #0x190]
+0x00400035:	pop	{r3, pc}
+0x00400037:	ldr	r0, [pc, #0x10]
+0x00400039:	add	r0, pc
+0x0040003b:	adds	r0, #8
+0x0040003d:	bl	#0x400001
 
-Disassembly of section .text:
+Function main @ 0x004001e5
+0x004001e5:	push	{lr}
+0x004001e7:	movs	r3, #0
+0x004001e9:	ldr	r0, [pc, #0x6c]
+0x004001eb:	sub	sp, #0xc
+0x004001ed:	add	r0, pc
+0x004001ef:	adds	r0, #8
+0x004001f1:	str	r3, [sp, #4]
+0x004001f3:	bl	#0x50000d
+0x004001f7:	cbz	r0, #0x40023b
+0x004001f9:	ldr	r3, [pc, #0x60]
+0x004001fb:	movs	r1, #1
+0x004001fd:	add	r3, pc
+0x004001ff:	add.w	r0, r3, #8
+0x00400203:	ldr.w	r2, [r3, #0x190]
+0x00400207:	add	r2, r1
+0x00400209:	str.w	r2, [r3, #0x190]
+0x0040020d:	str	r1, [sp, #4]
+0x0040020f:	bl	#0x50000d
+0x004001f9:	ldr	r3, [pc, #0x60]
+0x004001fb:	movs	r1, #1
+0x004001fd:	add	r3, pc
+0x004001ff:	add.w	r0, r3, #8
+0x00400203:	ldr.w	r2, [r3, #0x190]
+0x00400207:	add	r2, r1
+0x00400209:	str.w	r2, [r3, #0x190]
+0x0040020d:	str	r1, [sp, #4]
+0x0040020f:	bl	#0x50000d
+0x00400213:	cbz	r0, #0x40024f
+0x00400215:	ldr	r3, [pc, #0x48]
+0x00400217:	movs	r1, #2
+0x00400219:	add	r3, pc
+0x0040021b:	ldr.w	r2, [r3, #0x190]
+0x0040021f:	adds	r2, #1
+0x00400221:	str.w	r2, [r3, #0x190]
+0x00400225:	str	r1, [sp, #4]
+0x00400227:	bl	#0x400019
+0x00400215:	ldr	r3, [pc, #0x48]
+0x00400217:	movs	r1, #2
+0x00400219:	add	r3, pc
+0x0040021b:	ldr.w	r2, [r3, #0x190]
+0x0040021f:	adds	r2, #1
+0x00400221:	str.w	r2, [r3, #0x190]
+0x00400225:	str	r1, [sp, #4]
+0x00400227:	bl	#0x400019
+0x0040022b:	movs	r2, #0x4d
+0x0040022d:	movs	r3, #3
+0x0040022f:	movs	r0, #0
+0x00400231:	str	r2, [sp, #4]
+0x00400233:	str	r3, [sp, #4]
+0x00400235:	add	sp, #0xc
+0x00400237:	ldr	pc, [sp], #4
+0x0040023b:	ldr	r3, [pc, #0x28]
+0x0040023d:	movs	r1, #1
+0x0040023f:	add	r3, pc
+0x00400241:	mov	r0, r3
+0x00400243:	ldr	r3, [r3]
+0x00400245:	add	r3, r1
+0x00400247:	str	r3, [r0], #8
+0x0040024b:	bl	#0x500001
+0x0040024f:	ldr	r0, [pc, #0x18]
+0x00400251:	add	r0, pc
+0x00400253:	adds	r0, #8
+0x00400255:	bl	#0x400001
 
-00000000 <call_longjmp>:
-   0:	b508      	push	{r3, lr}
-   2:	2101      	movs	r1, #1
-   4:	4b03      	ldr	r3, [pc, #12]	; (14 <call_longjmp+0x14>)
-   6:	447b      	add	r3, pc
-   8:	681a      	ldr	r2, [r3, #0]
-   a:	440a      	add	r2, r1
-   c:	601a      	str	r2, [r3, #0]
-   e:	f7ff fffe 	bl	0 <__longjmp_chk>
-  12:	bf00      	nop
-  14:	0000000a 	.word	0x0000000a
+Function __longjmp_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000018 <hidden_longjmp>:
-  18:	4809      	ldr	r0, [pc, #36]	; (40 <hidden_longjmp+0x28>)
-  1a:	b508      	push	{r3, lr}
-  1c:	4478      	add	r0, pc
-  1e:	3008      	adds	r0, #8
-  20:	f7ff fffe 	bl	0 <_setjmp>
-  24:	b138      	cbz	r0, 36 <hidden_longjmp+0x1e>
-  26:	4a07      	ldr	r2, [pc, #28]	; (44 <hidden_longjmp+0x2c>)
-  28:	447a      	add	r2, pc
-  2a:	f8d2 3190 	ldr.w	r3, [r2, #400]	; 0x190
-  2e:	3301      	adds	r3, #1
-  30:	f8c2 3190 	str.w	r3, [r2, #400]	; 0x190
-  34:	bd08      	pop	{r3, pc}
-  36:	4804      	ldr	r0, [pc, #16]	; (48 <hidden_longjmp+0x30>)
-  38:	4478      	add	r0, pc
-  3a:	3008      	adds	r0, #8
-  3c:	f7ff fffe 	bl	0 <call_longjmp>
-  40:	00000020 	.word	0x00000020
-  44:	00000018 	.word	0x00000018
-  48:	0000000c 	.word	0x0000000c
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b500      	push	{lr}
-   2:	2300      	movs	r3, #0
-   4:	481b      	ldr	r0, [pc, #108]	; (74 <main+0x74>)
-   6:	b083      	sub	sp, #12
-   8:	4478      	add	r0, pc
-   a:	3008      	adds	r0, #8
-   c:	9301      	str	r3, [sp, #4]
-   e:	f7ff fffe 	bl	0 <_setjmp>
-  12:	b300      	cbz	r0, 56 <main+0x56>
-  14:	4b18      	ldr	r3, [pc, #96]	; (78 <main+0x78>)
-  16:	2101      	movs	r1, #1
-  18:	447b      	add	r3, pc
-  1a:	f103 0008 	add.w	r0, r3, #8
-  1e:	f8d3 2190 	ldr.w	r2, [r3, #400]	; 0x190
-  22:	440a      	add	r2, r1
-  24:	f8c3 2190 	str.w	r2, [r3, #400]	; 0x190
-  28:	9101      	str	r1, [sp, #4]
-  2a:	f7ff fffe 	bl	0 <_setjmp>
-  2e:	b1e0      	cbz	r0, 6a <main+0x6a>
-  30:	4b12      	ldr	r3, [pc, #72]	; (7c <main+0x7c>)
-  32:	2102      	movs	r1, #2
-  34:	447b      	add	r3, pc
-  36:	f8d3 2190 	ldr.w	r2, [r3, #400]	; 0x190
-  3a:	3201      	adds	r2, #1
-  3c:	f8c3 2190 	str.w	r2, [r3, #400]	; 0x190
-  40:	9101      	str	r1, [sp, #4]
-  42:	f7ff fffe 	bl	18 <main+0x18>
-  46:	224d      	movs	r2, #77	; 0x4d
-  48:	2303      	movs	r3, #3
-  4a:	2000      	movs	r0, #0
-  4c:	9201      	str	r2, [sp, #4]
-  4e:	9301      	str	r3, [sp, #4]
-  50:	b003      	add	sp, #12
-  52:	f85d fb04 	ldr.w	pc, [sp], #4
-  56:	4b0a      	ldr	r3, [pc, #40]	; (80 <main+0x80>)
-  58:	2101      	movs	r1, #1
-  5a:	447b      	add	r3, pc
-  5c:	4618      	mov	r0, r3
-  5e:	681b      	ldr	r3, [r3, #0]
-  60:	440b      	add	r3, r1
-  62:	f840 3b08 	str.w	r3, [r0], #8
-  66:	f7ff fffe 	bl	0 <__longjmp_chk>
-  6a:	4806      	ldr	r0, [pc, #24]	; (84 <main+0x84>)
-  6c:	4478      	add	r0, pc
-  6e:	3008      	adds	r0, #8
-  70:	f7ff fffe 	bl	0 <main>
-  74:	00000068 	.word	0x00000068
-  78:	0000005c 	.word	0x0000005c
-  7c:	00000044 	.word	0x00000044
-  80:	00000022 	.word	0x00000022
-  84:	00000014 	.word	0x00000014
+Function _setjmp @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

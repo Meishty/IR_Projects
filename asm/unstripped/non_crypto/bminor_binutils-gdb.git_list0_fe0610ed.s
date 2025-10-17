@@ -1,134 +1,140 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_list0_fe0610ed.o:     file format elf32-littlearm
+Function foo @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	bl	#0x500001
+0x00400009:	adds	r0, r4, #1
+0x0040000b:	bl	#0x500001
+0x0040000f:	adds	r0, r4, #2
+0x00400011:	bl	#0x500001
+0x00400015:	adds	r0, r4, #3
+0x00400017:	bl	#0x500001
+0x0040001b:	adds	r0, r4, #4
+0x0040001d:	bl	#0x500001
+0x00400021:	adds	r0, r4, #5
+0x00400023:	bl	#0x500001
+0x00400027:	adds	r0, r4, #6
+0x00400029:	bl	#0x500001
+0x0040002d:	adds	r0, r4, #7
+0x0040002f:	bl	#0x500001
+0x00400033:	add.w	r0, r4, #8
+0x00400037:	bl	#0x500001
+0x0040003b:	add.w	r0, r4, #9
+0x0040003f:	bl	#0x500001
+0x00400043:	add.w	r0, r4, #0xa
+0x00400047:	bl	#0x500001
+0x0040004b:	add.w	r0, r4, #0xb
+0x0040004f:	bl	#0x500001
+0x00400053:	add.w	r0, r4, #0xc
+0x00400057:	bl	#0x500001
+0x0040005b:	add.w	r0, r4, #0xd
+0x0040005f:	bl	#0x500001
+0x00400063:	add.w	r0, r4, #0xe
+0x00400067:	bl	#0x500001
+0x0040006b:	add.w	r0, r4, #0xf
+0x0040006f:	bl	#0x500001
+0x00400073:	add.w	r0, r4, #0x10
+0x00400077:	bl	#0x500001
+0x0040007b:	add.w	r0, r4, #0x11
+0x0040007f:	bl	#0x500001
+0x00400083:	add.w	r0, r4, #0x12
+0x00400087:	bl	#0x500001
+0x0040008b:	add.w	r0, r4, #0x13
+0x0040008f:	bl	#0x500001
+0x00400093:	add.w	r0, r4, #0x14
+0x00400097:	bl	#0x500001
+0x0040009b:	add.w	r0, r4, #0x15
+0x0040009f:	bl	#0x500001
+0x004000a3:	add.w	r0, r4, #0x16
+0x004000a7:	bl	#0x500001
+0x004000ab:	add.w	r0, r4, #0x17
+0x004000af:	bl	#0x500001
+0x004000b3:	add.w	r0, r4, #0x18
+0x004000b7:	bl	#0x500001
+0x004000bb:	add.w	r0, r4, #0x19
+0x004000bf:	bl	#0x500001
+0x004000c3:	add.w	r0, r4, #0x1a
+0x004000c7:	bl	#0x500001
+0x004000cb:	add.w	r0, r4, #0x1b
+0x004000cf:	pop.w	{r4, lr}
+0x004000d3:	b.w	#0x500001
 
+Function sub_4000d7 @ 0x004000d7
+0x004000d7:	nop	
+0x004000d9:	bx	lr
 
-Disassembly of section .text:
+Function unused @ 0x004000d9
+0x004000d9:	bx	lr
 
-00000000 <foo>:
-   0:	b510      	push	{r4, lr}
-   2:	4604      	mov	r4, r0
-   4:	f7ff fffe 	bl	0 <bar>
-   8:	1c60      	adds	r0, r4, #1
-   a:	f7ff fffe 	bl	0 <bar>
-   e:	1ca0      	adds	r0, r4, #2
-  10:	f7ff fffe 	bl	0 <bar>
-  14:	1ce0      	adds	r0, r4, #3
-  16:	f7ff fffe 	bl	0 <bar>
-  1a:	1d20      	adds	r0, r4, #4
-  1c:	f7ff fffe 	bl	0 <bar>
-  20:	1d60      	adds	r0, r4, #5
-  22:	f7ff fffe 	bl	0 <bar>
-  26:	1da0      	adds	r0, r4, #6
-  28:	f7ff fffe 	bl	0 <bar>
-  2c:	1de0      	adds	r0, r4, #7
-  2e:	f7ff fffe 	bl	0 <bar>
-  32:	f104 0008 	add.w	r0, r4, #8
-  36:	f7ff fffe 	bl	0 <bar>
-  3a:	f104 0009 	add.w	r0, r4, #9
-  3e:	f7ff fffe 	bl	0 <bar>
-  42:	f104 000a 	add.w	r0, r4, #10
-  46:	f7ff fffe 	bl	0 <bar>
-  4a:	f104 000b 	add.w	r0, r4, #11
-  4e:	f7ff fffe 	bl	0 <bar>
-  52:	f104 000c 	add.w	r0, r4, #12
-  56:	f7ff fffe 	bl	0 <bar>
-  5a:	f104 000d 	add.w	r0, r4, #13
-  5e:	f7ff fffe 	bl	0 <bar>
-  62:	f104 000e 	add.w	r0, r4, #14
-  66:	f7ff fffe 	bl	0 <bar>
-  6a:	f104 000f 	add.w	r0, r4, #15
-  6e:	f7ff fffe 	bl	0 <bar>
-  72:	f104 0010 	add.w	r0, r4, #16
-  76:	f7ff fffe 	bl	0 <bar>
-  7a:	f104 0011 	add.w	r0, r4, #17
-  7e:	f7ff fffe 	bl	0 <bar>
-  82:	f104 0012 	add.w	r0, r4, #18
-  86:	f7ff fffe 	bl	0 <bar>
-  8a:	f104 0013 	add.w	r0, r4, #19
-  8e:	f7ff fffe 	bl	0 <bar>
-  92:	f104 0014 	add.w	r0, r4, #20
-  96:	f7ff fffe 	bl	0 <bar>
-  9a:	f104 0015 	add.w	r0, r4, #21
-  9e:	f7ff fffe 	bl	0 <bar>
-  a2:	f104 0016 	add.w	r0, r4, #22
-  a6:	f7ff fffe 	bl	0 <bar>
-  aa:	f104 0017 	add.w	r0, r4, #23
-  ae:	f7ff fffe 	bl	0 <bar>
-  b2:	f104 0018 	add.w	r0, r4, #24
-  b6:	f7ff fffe 	bl	0 <bar>
-  ba:	f104 0019 	add.w	r0, r4, #25
-  be:	f7ff fffe 	bl	0 <bar>
-  c2:	f104 001a 	add.w	r0, r4, #26
-  c6:	f7ff fffe 	bl	0 <bar>
-  ca:	f104 001b 	add.w	r0, r4, #27
-  ce:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  d2:	f7ff bffe 	b.w	0 <bar>
-  d6:	bf00      	nop
+Function sub_4000db @ 0x004000db
+0x004000db:	nop	
 
-000000d8 <unused>:
-  d8:	4770      	bx	lr
-  da:	bf00      	nop
+Function main @ 0x004000dd
+0x004000dd:	push	{r3, lr}
+0x004000df:	movs	r0, #0
+0x004000e1:	bl	#0x400001
+0x004000e5:	movs	r0, #1
+0x004000e7:	bl	#0x400001
+0x004000eb:	movs	r0, #2
+0x004000ed:	bl	#0x400001
+0x004000f1:	movs	r0, #3
+0x004000f3:	bl	#0x400001
+0x004000f7:	movs	r0, #4
+0x004000f9:	bl	#0x400001
+0x004000fd:	movs	r0, #5
+0x004000ff:	bl	#0x400001
+0x00400103:	movs	r0, #6
+0x00400105:	bl	#0x400001
+0x00400109:	movs	r0, #7
+0x0040010b:	bl	#0x400001
+0x0040010f:	movs	r0, #8
+0x00400111:	bl	#0x400001
+0x00400115:	movs	r0, #9
+0x00400117:	bl	#0x400001
+0x0040011b:	movs	r0, #0xa
+0x0040011d:	bl	#0x400001
+0x00400121:	movs	r0, #0xb
+0x00400123:	bl	#0x400001
+0x00400127:	movs	r0, #0xc
+0x00400129:	bl	#0x400001
+0x0040012d:	movs	r0, #0xd
+0x0040012f:	bl	#0x400001
+0x00400133:	movs	r0, #0xe
+0x00400135:	bl	#0x400001
+0x00400139:	movs	r0, #0xf
+0x0040013b:	bl	#0x400001
+0x0040013f:	movs	r0, #0x10
+0x00400141:	bl	#0x400001
+0x00400145:	movs	r0, #0x11
+0x00400147:	bl	#0x400001
+0x0040014b:	movs	r0, #0x12
+0x0040014d:	bl	#0x400001
+0x00400151:	movs	r0, #0x13
+0x00400153:	bl	#0x400001
+0x00400157:	movs	r0, #0x14
+0x00400159:	bl	#0x400001
+0x0040015d:	movs	r0, #0x15
+0x0040015f:	bl	#0x400001
+0x00400163:	movs	r0, #0x16
+0x00400165:	bl	#0x400001
+0x00400169:	movs	r0, #0x17
+0x0040016b:	bl	#0x400001
+0x0040016f:	movs	r0, #0x18
+0x00400171:	bl	#0x400001
+0x00400175:	movs	r0, #0x19
+0x00400177:	bl	#0x400001
+0x0040017b:	movs	r0, #0x1a
+0x0040017d:	bl	#0x400001
+0x00400181:	movs	r0, #0x1b
+0x00400183:	bl	#0x400001
+0x00400187:	movs	r0, #0
+0x00400189:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_40018b @ 0x0040018b
+0x0040018b:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2000      	movs	r0, #0
-   4:	f7ff fffe 	bl	0 <main>
-   8:	2001      	movs	r0, #1
-   a:	f7ff fffe 	bl	0 <main>
-   e:	2002      	movs	r0, #2
-  10:	f7ff fffe 	bl	0 <main>
-  14:	2003      	movs	r0, #3
-  16:	f7ff fffe 	bl	0 <main>
-  1a:	2004      	movs	r0, #4
-  1c:	f7ff fffe 	bl	0 <main>
-  20:	2005      	movs	r0, #5
-  22:	f7ff fffe 	bl	0 <main>
-  26:	2006      	movs	r0, #6
-  28:	f7ff fffe 	bl	0 <main>
-  2c:	2007      	movs	r0, #7
-  2e:	f7ff fffe 	bl	0 <main>
-  32:	2008      	movs	r0, #8
-  34:	f7ff fffe 	bl	0 <main>
-  38:	2009      	movs	r0, #9
-  3a:	f7ff fffe 	bl	0 <main>
-  3e:	200a      	movs	r0, #10
-  40:	f7ff fffe 	bl	0 <main>
-  44:	200b      	movs	r0, #11
-  46:	f7ff fffe 	bl	0 <main>
-  4a:	200c      	movs	r0, #12
-  4c:	f7ff fffe 	bl	0 <main>
-  50:	200d      	movs	r0, #13
-  52:	f7ff fffe 	bl	0 <main>
-  56:	200e      	movs	r0, #14
-  58:	f7ff fffe 	bl	0 <main>
-  5c:	200f      	movs	r0, #15
-  5e:	f7ff fffe 	bl	0 <main>
-  62:	2010      	movs	r0, #16
-  64:	f7ff fffe 	bl	0 <main>
-  68:	2011      	movs	r0, #17
-  6a:	f7ff fffe 	bl	0 <main>
-  6e:	2012      	movs	r0, #18
-  70:	f7ff fffe 	bl	0 <main>
-  74:	2013      	movs	r0, #19
-  76:	f7ff fffe 	bl	0 <main>
-  7a:	2014      	movs	r0, #20
-  7c:	f7ff fffe 	bl	0 <main>
-  80:	2015      	movs	r0, #21
-  82:	f7ff fffe 	bl	0 <main>
-  86:	2016      	movs	r0, #22
-  88:	f7ff fffe 	bl	0 <main>
-  8c:	2017      	movs	r0, #23
-  8e:	f7ff fffe 	bl	0 <main>
-  92:	2018      	movs	r0, #24
-  94:	f7ff fffe 	bl	0 <main>
-  98:	2019      	movs	r0, #25
-  9a:	f7ff fffe 	bl	0 <main>
-  9e:	201a      	movs	r0, #26
-  a0:	f7ff fffe 	bl	0 <main>
-  a4:	201b      	movs	r0, #27
-  a6:	f7ff fffe 	bl	0 <main>
-  aa:	2000      	movs	r0, #0
-  ac:	bd08      	pop	{r3, pc}
-  ae:	bf00      	nop
+Function bar @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,67 +1,118 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_rtsigprocmask1_483d73b3.o:     file format elf32-littlearm
+Function process @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400003:	bl	#0x500001
+0x00400007:	b	#0x400003
 
+Function main @ 0x00400019
+0x00400019:	ldr	r2, [pc, #0x6c]
+0x0040001b:	ldr	r3, [pc, #0x70]
+0x0040001d:	push	{r4, lr}
+0x0040001f:	add	r2, pc
+0x00400021:	sub	sp, #0x88
+0x00400023:	ldr	r3, [r2, r3]
+0x00400025:	add	r4, sp, #4
+0x00400027:	mov	r0, r4
+0x00400029:	ldr	r3, [r3]
+0x0040002b:	str	r3, [sp, #0x84]
+0x0040002d:	mov.w	r3, #0
+0x00400031:	bl	#0x50000d
+0x00400035:	cbnz	r0, #0x400085
+0x00400037:	ldr	r2, [pc, #0x58]
+0x00400039:	mov	r1, r0
+0x0040003b:	mov	r3, r0
+0x0040003d:	mov	r0, sp
+0x0040003f:	add	r2, pc
+0x00400041:	bl	#0x500019
+0x00400037:	ldr	r2, [pc, #0x58]
+0x00400039:	mov	r1, r0
+0x0040003b:	mov	r3, r0
+0x0040003d:	mov	r0, sp
+0x0040003f:	add	r2, pc
+0x00400041:	bl	#0x500019
+0x00400045:	mov	r1, r0
+0x00400047:	cbnz	r0, #0x400085
+0x00400049:	mov	r2, r4
+0x0040004b:	movs	r0, #3
+0x0040004d:	bl	#0x500025
+0x00400049:	mov	r2, r4
+0x0040004b:	movs	r0, #3
+0x0040004d:	bl	#0x500025
+0x00400051:	cmp	r0, #0x26
+0x00400053:	beq	#0x400077
+0x00400055:	ldr	r0, [pc, #0x3c]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x500031
+0x0040005d:	ldr	r2, [pc, #0x38]
+0x0040005f:	ldr	r3, [pc, #0x2c]
+0x00400061:	add	r2, pc
+0x00400063:	ldr	r3, [r2, r3]
+0x00400065:	ldr	r2, [r3]
+0x00400067:	ldr	r3, [sp, #0x84]
+0x00400069:	eors	r2, r3
+0x0040006b:	mov.w	r3, #0
+0x0040006f:	bne	#0x400081
+0x00400071:	movs	r0, #0
+0x00400073:	add	sp, #0x88
+0x00400075:	pop	{r4, pc}
+0x00400077:	ldr	r0, [pc, #0x24]
+0x00400079:	add	r0, pc
+0x0040007b:	bl	#0x500031
+0x0040007f:	b	#0x400055
+0x00400081:	bl	#0x50003d
+0x00400085:	bl	#0x500049
 
-Disassembly of section .text:
+Function sched_yield @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <process>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <sched_yield>
-   6:	e7fc      	b.n	2 <process+0x2>
+Function sigemptyset @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function pthread_create @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
 
-00000000 <main>:
-   0:	4a1b      	ldr	r2, [pc, #108]	; (70 <main+0x70>)
-   2:	4b1c      	ldr	r3, [pc, #112]	; (74 <main+0x74>)
-   4:	b510      	push	{r4, lr}
-   6:	447a      	add	r2, pc
-   8:	b0a2      	sub	sp, #136	; 0x88
-   a:	58d3      	ldr	r3, [r2, r3]
-   c:	ac01      	add	r4, sp, #4
-   e:	4620      	mov	r0, r4
-  10:	681b      	ldr	r3, [r3, #0]
-  12:	9321      	str	r3, [sp, #132]	; 0x84
-  14:	f04f 0300 	mov.w	r3, #0
-  18:	f7ff fffe 	bl	0 <sigemptyset>
-  1c:	bb30      	cbnz	r0, 6c <main+0x6c>
-  1e:	4a16      	ldr	r2, [pc, #88]	; (78 <main+0x78>)
-  20:	4601      	mov	r1, r0
-  22:	4603      	mov	r3, r0
-  24:	4668      	mov	r0, sp
-  26:	447a      	add	r2, pc
-  28:	f7ff fffe 	bl	0 <pthread_create>
-  2c:	4601      	mov	r1, r0
-  2e:	b9e8      	cbnz	r0, 6c <main+0x6c>
-  30:	4622      	mov	r2, r4
-  32:	2003      	movs	r0, #3
-  34:	f7ff fffe 	bl	0 <pthread_sigmask>
-  38:	2826      	cmp	r0, #38	; 0x26
-  3a:	d010      	beq.n	5e <main+0x5e>
-  3c:	480f      	ldr	r0, [pc, #60]	; (7c <main+0x7c>)
-  3e:	4478      	add	r0, pc
-  40:	f7ff fffe 	bl	0 <puts>
-  44:	4a0e      	ldr	r2, [pc, #56]	; (80 <main+0x80>)
-  46:	4b0b      	ldr	r3, [pc, #44]	; (74 <main+0x74>)
-  48:	447a      	add	r2, pc
-  4a:	58d3      	ldr	r3, [r2, r3]
-  4c:	681a      	ldr	r2, [r3, #0]
-  4e:	9b21      	ldr	r3, [sp, #132]	; 0x84
-  50:	405a      	eors	r2, r3
-  52:	f04f 0300 	mov.w	r3, #0
-  56:	d107      	bne.n	68 <main+0x68>
-  58:	2000      	movs	r0, #0
-  5a:	b022      	add	sp, #136	; 0x88
-  5c:	bd10      	pop	{r4, pc}
-  5e:	4809      	ldr	r0, [pc, #36]	; (84 <main+0x84>)
-  60:	4478      	add	r0, pc
-  62:	f7ff fffe 	bl	0 <puts>
-  66:	e7e9      	b.n	3c <main+0x3c>
-  68:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  6c:	f7ff fffe 	bl	0 <abort>
-  70:	00000066 	.word	0x00000066
-  74:	00000000 	.word	0x00000000
-  78:	0000004e 	.word	0x0000004e
-  7c:	0000003a 	.word	0x0000003a
-  80:	00000034 	.word	0x00000034
-  84:	00000020 	.word	0x00000020
+Function pthread_sigmask @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function puts @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function abort @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0

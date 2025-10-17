@@ -1,445 +1,655 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_box_curve25519xchacha20poly1305_13a2c0dd.o:     file format elf32-littlearm
+Function crypto_box_curve25519xchacha20poly1305_seed_keypair @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r4, r1
+0x00400005:	mov	r1, r2
+0x00400007:	ldr	r2, [pc, #0x64]
+0x00400009:	sub	sp, #0x48
+0x0040000b:	ldr	r3, [pc, #0x64]
+0x0040000d:	add	r5, sp, #4
+0x0040000f:	add	r2, pc
+0x00400011:	mov	r6, r0
+0x00400013:	mov	r0, r5
+0x00400015:	ldr	r3, [r2, r3]
+0x00400017:	movs	r2, #0x20
+0x00400019:	ldr	r3, [r3]
+0x0040001b:	str	r3, [sp, #0x44]
+0x0040001d:	mov.w	r3, #0
+0x00400021:	movs	r3, #0
+0x00400023:	bl	#0x500001
+0x00400027:	mov	ip, r5
+0x00400029:	ldm.w	ip!, {r0, r1, r2, r3}
+0x0040002d:	str	r0, [r4]
+0x0040002f:	str	r1, [r4, #4]
+0x00400031:	str	r2, [r4, #8]
+0x00400033:	str	r3, [r4, #0xc]
+0x00400035:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400039:	str	r2, [r4, #0x18]
+0x0040003b:	str	r3, [r4, #0x1c]
+0x0040003d:	str	r0, [r4, #0x10]
+0x0040003f:	mov	r0, r5
+0x00400041:	str	r1, [r4, #0x14]
+0x00400043:	movs	r1, #0x40
+0x00400045:	bl	#0x50000d
+0x00400049:	mov	r1, r4
+0x0040004b:	mov	r0, r6
+0x0040004d:	bl	#0x500019
+0x00400051:	ldr	r2, [pc, #0x20]
+0x00400053:	ldr	r3, [pc, #0x1c]
+0x00400055:	add	r2, pc
+0x00400057:	ldr	r3, [r2, r3]
+0x00400059:	ldr	r2, [r3]
+0x0040005b:	ldr	r3, [sp, #0x44]
+0x0040005d:	eors	r2, r3
+0x0040005f:	mov.w	r3, #0
+0x00400063:	bne	#0x400069
+0x00400065:	add	sp, #0x48
+0x00400067:	pop	{r4, r5, r6, pc}
+0x00400069:	bl	#0x500025
 
+Function crypto_box_curve25519xchacha20poly1305_keypair @ 0x00400079
+0x00400079:	push	{r3, r4, r5, lr}
+0x0040007b:	mov	r4, r1
+0x0040007d:	mov	r5, r0
+0x0040007f:	movs	r1, #0x20
+0x00400081:	mov	r0, r4
+0x00400083:	bl	#0x500031
+0x00400087:	mov	r1, r4
+0x00400089:	mov	r0, r5
+0x0040008b:	pop.w	{r3, r4, r5, lr}
+0x0040008f:	b.w	#0x500019
 
-Disassembly of section .text:
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+0x00400095:	push	{r4, r5, lr}
+0x00400097:	mov	r3, r0
+0x00400099:	mov	r4, r1
+0x0040009b:	ldr.w	ip, [pc, #0x54]
+0x0040009f:	mov	r1, r2
+0x004000a1:	mov	r2, r4
+0x004000a3:	mov	r4, r3
+0x004000a5:	ldr	r3, [pc, #0x4c]
+0x004000a7:	add	ip, pc
+0x004000a9:	sub	sp, #0x2c
+0x004000ab:	add	r5, sp, #4
+0x004000ad:	mov	r0, r5
+0x004000af:	ldr.w	r3, [ip, r3]
+0x004000b3:	ldr	r3, [r3]
+0x004000b5:	str	r3, [sp, #0x24]
+0x004000b7:	mov.w	r3, #0
+0x004000bb:	bl	#0x50003d
 
-00000000 <crypto_box_curve25519xchacha20poly1305_seed_keypair>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	460c      	mov	r4, r1
-   4:	4611      	mov	r1, r2
-   6:	4a19      	ldr	r2, [pc, #100]	; (6c <crypto_box_curve25519xchacha20poly1305_seed_keypair+0x6c>)
-   8:	b092      	sub	sp, #72	; 0x48
-   a:	4b19      	ldr	r3, [pc, #100]	; (70 <crypto_box_curve25519xchacha20poly1305_seed_keypair+0x70>)
-   c:	ad01      	add	r5, sp, #4
-   e:	447a      	add	r2, pc
-  10:	4606      	mov	r6, r0
-  12:	4628      	mov	r0, r5
-  14:	58d3      	ldr	r3, [r2, r3]
-  16:	2220      	movs	r2, #32
-  18:	681b      	ldr	r3, [r3, #0]
-  1a:	9311      	str	r3, [sp, #68]	; 0x44
-  1c:	f04f 0300 	mov.w	r3, #0
-  20:	2300      	movs	r3, #0
-  22:	f7ff fffe 	bl	0 <crypto_hash_sha512>
-  26:	46ac      	mov	ip, r5
-  28:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
-  2c:	6020      	str	r0, [r4, #0]
-  2e:	6061      	str	r1, [r4, #4]
-  30:	60a2      	str	r2, [r4, #8]
-  32:	60e3      	str	r3, [r4, #12]
-  34:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
-  38:	61a2      	str	r2, [r4, #24]
-  3a:	61e3      	str	r3, [r4, #28]
-  3c:	6120      	str	r0, [r4, #16]
-  3e:	4628      	mov	r0, r5
-  40:	6161      	str	r1, [r4, #20]
-  42:	2140      	movs	r1, #64	; 0x40
-  44:	f7ff fffe 	bl	0 <sodium_memzero>
-  48:	4621      	mov	r1, r4
-  4a:	4630      	mov	r0, r6
-  4c:	f7ff fffe 	bl	0 <crypto_scalarmult_curve25519_base>
-  50:	4a08      	ldr	r2, [pc, #32]	; (74 <crypto_box_curve25519xchacha20poly1305_seed_keypair+0x74>)
-  52:	4b07      	ldr	r3, [pc, #28]	; (70 <crypto_box_curve25519xchacha20poly1305_seed_keypair+0x70>)
-  54:	447a      	add	r2, pc
-  56:	58d3      	ldr	r3, [r2, r3]
-  58:	681a      	ldr	r2, [r3, #0]
-  5a:	9b11      	ldr	r3, [sp, #68]	; 0x44
-  5c:	405a      	eors	r2, r3
-  5e:	f04f 0300 	mov.w	r3, #0
-  62:	d101      	bne.n	68 <crypto_box_curve25519xchacha20poly1305_seed_keypair+0x68>
-  64:	b012      	add	sp, #72	; 0x48
-  66:	bd70      	pop	{r4, r5, r6, pc}
-  68:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  6c:	0000005a 	.word	0x0000005a
-  70:	00000000 	.word	0x00000000
-  74:	0000001c 	.word	0x0000001c
+Function crypto_box_curve25519xchacha20poly1305_beforenm @ 0x00400095
+0x00400095:	push	{r4, r5, lr}
+0x00400097:	mov	r3, r0
+0x00400099:	mov	r4, r1
+0x0040009b:	ldr.w	ip, [pc, #0x54]
+0x0040009f:	mov	r1, r2
+0x004000a1:	mov	r2, r4
+0x004000a3:	mov	r4, r3
+0x004000a5:	ldr	r3, [pc, #0x4c]
+0x004000a7:	add	ip, pc
+0x004000a9:	sub	sp, #0x2c
+0x004000ab:	add	r5, sp, #4
+0x004000ad:	mov	r0, r5
+0x004000af:	ldr.w	r3, [ip, r3]
+0x004000b3:	ldr	r3, [r3]
+0x004000b5:	str	r3, [sp, #0x24]
+0x004000b7:	mov.w	r3, #0
+0x004000bb:	bl	#0x50003d
+0x004000bf:	cbnz	r0, #0x4000e7
+0x004000c1:	ldr	r1, [pc, #0x34]
+0x004000c3:	mov	r3, r0
+0x004000c5:	mov	r2, r5
+0x004000c7:	mov	r0, r4
+0x004000c9:	add	r1, pc
+0x004000cb:	bl	#0x500049
+0x004000c1:	ldr	r1, [pc, #0x34]
+0x004000c3:	mov	r3, r0
+0x004000c5:	mov	r2, r5
+0x004000c7:	mov	r0, r4
+0x004000c9:	add	r1, pc
+0x004000cb:	bl	#0x500049
+0x004000cf:	ldr	r2, [pc, #0x2c]
+0x004000d1:	ldr	r3, [pc, #0x20]
+0x004000d3:	add	r2, pc
+0x004000d5:	ldr	r3, [r2, r3]
+0x004000d7:	ldr	r2, [r3]
+0x004000d9:	ldr	r3, [sp, #0x24]
+0x004000db:	eors	r2, r3
+0x004000dd:	mov.w	r3, #0
+0x004000e1:	bne	#0x4000ed
+0x004000e3:	add	sp, #0x2c
+0x004000e5:	pop	{r4, r5, pc}
+0x004000e7:	mov.w	r0, #-1
+0x004000eb:	b	#0x4000cf
+0x004000ed:	bl	#0x500025
 
-00000078 <crypto_box_curve25519xchacha20poly1305_keypair>:
-  78:	b538      	push	{r3, r4, r5, lr}
-  7a:	460c      	mov	r4, r1
-  7c:	4605      	mov	r5, r0
-  7e:	2120      	movs	r1, #32
-  80:	4620      	mov	r0, r4
-  82:	f7ff fffe 	bl	0 <randombytes_buf>
-  86:	4621      	mov	r1, r4
-  88:	4628      	mov	r0, r5
-  8a:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
-  8e:	f7ff bffe 	b.w	0 <crypto_scalarmult_curve25519_base>
-  92:	bf00      	nop
+Function crypto_box_curve25519xchacha20poly1305_detached_afternm @ 0x00400101
+0x00400101:	b.w	#0x500055
 
-00000094 <crypto_box_curve25519xchacha20poly1305_beforenm>:
-  94:	b530      	push	{r4, r5, lr}
-  96:	4603      	mov	r3, r0
-  98:	460c      	mov	r4, r1
-  9a:	f8df c054 	ldr.w	ip, [pc, #84]	; f0 <crypto_box_curve25519xchacha20poly1305_beforenm+0x5c>
-  9e:	4611      	mov	r1, r2
-  a0:	4622      	mov	r2, r4
-  a2:	461c      	mov	r4, r3
-  a4:	4b13      	ldr	r3, [pc, #76]	; (f4 <crypto_box_curve25519xchacha20poly1305_beforenm+0x60>)
-  a6:	44fc      	add	ip, pc
-  a8:	b08b      	sub	sp, #44	; 0x2c
-  aa:	ad01      	add	r5, sp, #4
-  ac:	4628      	mov	r0, r5
-  ae:	f85c 3003 	ldr.w	r3, [ip, r3]
-  b2:	681b      	ldr	r3, [r3, #0]
-  b4:	9309      	str	r3, [sp, #36]	; 0x24
-  b6:	f04f 0300 	mov.w	r3, #0
-  ba:	f7ff fffe 	bl	0 <crypto_scalarmult_curve25519>
-  be:	b990      	cbnz	r0, e6 <crypto_box_curve25519xchacha20poly1305_beforenm+0x52>
-  c0:	490d      	ldr	r1, [pc, #52]	; (f8 <crypto_box_curve25519xchacha20poly1305_beforenm+0x64>)
-  c2:	4603      	mov	r3, r0
-  c4:	462a      	mov	r2, r5
-  c6:	4620      	mov	r0, r4
-  c8:	4479      	add	r1, pc
-  ca:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
-  ce:	4a0b      	ldr	r2, [pc, #44]	; (fc <crypto_box_curve25519xchacha20poly1305_beforenm+0x68>)
-  d0:	4b08      	ldr	r3, [pc, #32]	; (f4 <crypto_box_curve25519xchacha20poly1305_beforenm+0x60>)
-  d2:	447a      	add	r2, pc
-  d4:	58d3      	ldr	r3, [r2, r3]
-  d6:	681a      	ldr	r2, [r3, #0]
-  d8:	9b09      	ldr	r3, [sp, #36]	; 0x24
-  da:	405a      	eors	r2, r3
-  dc:	f04f 0300 	mov.w	r3, #0
-  e0:	d104      	bne.n	ec <crypto_box_curve25519xchacha20poly1305_beforenm+0x58>
-  e2:	b00b      	add	sp, #44	; 0x2c
-  e4:	bd30      	pop	{r4, r5, pc}
-  e6:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  ea:	e7f0      	b.n	ce <crypto_box_curve25519xchacha20poly1305_beforenm+0x3a>
-  ec:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  f0:	00000046 	.word	0x00000046
-  f4:	00000000 	.word	0x00000000
-  f8:	0000002c 	.word	0x0000002c
-  fc:	00000026 	.word	0x00000026
+Function crypto_box_curve25519xchacha20poly1305_detached @ 0x00400105
+0x00400105:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400109:	mov	r4, r0
+0x0040010b:	ldr	r0, [pc, #0x80]
+0x0040010d:	ldr	r3, [pc, #0x80]
+0x0040010f:	sub	sp, #0x58
+0x00400111:	add	r0, pc
+0x00400113:	add	r5, sp, #0x34
+0x00400115:	mov	r7, r1
+0x00400117:	mov	r6, r2
+0x00400119:	ldrd	r2, r1, [sp, #0x7c]
+0x0040011d:	ldr	r3, [r0, r3]
+0x0040011f:	mov	r0, r5
+0x00400121:	ldr.w	r8, [sp, #0x78]
+0x00400125:	ldr	r3, [r3]
+0x00400127:	str	r3, [sp, #0x54]
+0x00400129:	mov.w	r3, #0
+0x0040012d:	bl	#0x50003d
+0x00400131:	cbnz	r0, #0x400181
+0x00400133:	ldr	r1, [pc, #0x60]
+0x00400135:	mov	r2, r5
+0x00400137:	add	r5, sp, #0x14
+0x00400139:	mov	r3, r0
+0x0040013b:	add	r1, pc
+0x0040013d:	mov	r0, r5
+0x0040013f:	bl	#0x500049
+0x00400133:	ldr	r1, [pc, #0x60]
+0x00400135:	mov	r2, r5
+0x00400137:	add	r5, sp, #0x14
+0x00400139:	mov	r3, r0
+0x0040013b:	add	r1, pc
+0x0040013d:	mov	r0, r5
+0x0040013f:	bl	#0x500049
+0x00400143:	cbnz	r0, #0x400181
+0x00400145:	mov	r0, r4
+0x00400147:	mov	r1, r7
+0x00400149:	ldrd	r3, r4, [sp, #0x70]
+0x0040014d:	strd	r3, r4, [sp]
+0x00400151:	mov	r2, r6
+0x00400153:	strd	r8, r5, [sp, #8]
+0x00400157:	bl	#0x500055
+0x00400145:	mov	r0, r4
+0x00400147:	mov	r1, r7
+0x00400149:	ldrd	r3, r4, [sp, #0x70]
+0x0040014d:	strd	r3, r4, [sp]
+0x00400151:	mov	r2, r6
+0x00400153:	strd	r8, r5, [sp, #8]
+0x00400157:	bl	#0x500055
+0x0040015b:	movs	r1, #0x20
+0x0040015d:	mov	r4, r0
+0x0040015f:	mov	r0, r5
+0x00400161:	bl	#0x50000d
+0x00400165:	ldr	r2, [pc, #0x30]
+0x00400167:	ldr	r3, [pc, #0x28]
+0x00400169:	add	r2, pc
+0x0040016b:	ldr	r3, [r2, r3]
+0x0040016d:	ldr	r2, [r3]
+0x0040016f:	ldr	r3, [sp, #0x54]
+0x00400171:	eors	r2, r3
+0x00400173:	mov.w	r3, #0
+0x00400177:	bne	#0x400187
+0x00400179:	mov	r0, r4
+0x0040017b:	add	sp, #0x58
+0x0040017d:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400181:	mov.w	r4, #-1
+0x00400185:	b	#0x400165
+0x00400187:	bl	#0x500025
 
-00000100 <crypto_box_curve25519xchacha20poly1305_detached_afternm>:
- 100:	f7ff bffe 	b.w	0 <crypto_secretbox_xchacha20poly1305_detached>
+Function sub_40018b @ 0x0040018b
+0x0040018b:	nop	
+0x0040018d:	lsls	r0, r7, #1
+0x0040018f:	movs	r0, r0
+0x00400191:	movs	r0, r0
+0x00400193:	movs	r0, r0
+0x00400195:	lsls	r2, r5, #0xb
+0x00400197:	movs	r0, r0
+0x00400199:	movs	r4, r5
+0x0040019b:	movs	r0, r0
+0x0040019d:	push	{r4, r5, lr}
+0x0040019f:	mvn	ip, #0x10
+0x004001a3:	mov	r4, r2
+0x004001a5:	cmp	ip, r4
+0x004001a7:	mov	r2, r1
+0x004001a9:	mov.w	r1, #0
+0x004001ad:	sub	sp, #0x14
+0x004001af:	sbcs	r1, r3
+0x004001b1:	blo	#0x4001cb
 
-00000104 <crypto_box_curve25519xchacha20poly1305_detached>:
- 104:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 108:	4604      	mov	r4, r0
- 10a:	4820      	ldr	r0, [pc, #128]	; (18c <crypto_box_curve25519xchacha20poly1305_detached+0x88>)
- 10c:	4b20      	ldr	r3, [pc, #128]	; (190 <crypto_box_curve25519xchacha20poly1305_detached+0x8c>)
- 10e:	b096      	sub	sp, #88	; 0x58
- 110:	4478      	add	r0, pc
- 112:	ad0d      	add	r5, sp, #52	; 0x34
- 114:	460f      	mov	r7, r1
- 116:	4616      	mov	r6, r2
- 118:	e9dd 211f 	ldrd	r2, r1, [sp, #124]	; 0x7c
- 11c:	58c3      	ldr	r3, [r0, r3]
- 11e:	4628      	mov	r0, r5
- 120:	f8dd 8078 	ldr.w	r8, [sp, #120]	; 0x78
- 124:	681b      	ldr	r3, [r3, #0]
- 126:	9315      	str	r3, [sp, #84]	; 0x54
- 128:	f04f 0300 	mov.w	r3, #0
- 12c:	f7ff fffe 	bl	0 <crypto_scalarmult_curve25519>
- 130:	bb30      	cbnz	r0, 180 <crypto_box_curve25519xchacha20poly1305_detached+0x7c>
- 132:	4918      	ldr	r1, [pc, #96]	; (194 <crypto_box_curve25519xchacha20poly1305_detached+0x90>)
- 134:	462a      	mov	r2, r5
- 136:	ad05      	add	r5, sp, #20
- 138:	4603      	mov	r3, r0
- 13a:	4479      	add	r1, pc
- 13c:	4628      	mov	r0, r5
- 13e:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
- 142:	b9e8      	cbnz	r0, 180 <crypto_box_curve25519xchacha20poly1305_detached+0x7c>
- 144:	4620      	mov	r0, r4
- 146:	4639      	mov	r1, r7
- 148:	e9dd 341c 	ldrd	r3, r4, [sp, #112]	; 0x70
- 14c:	e9cd 3400 	strd	r3, r4, [sp]
- 150:	4632      	mov	r2, r6
- 152:	e9cd 8502 	strd	r8, r5, [sp, #8]
- 156:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_detached>
- 15a:	2120      	movs	r1, #32
- 15c:	4604      	mov	r4, r0
- 15e:	4628      	mov	r0, r5
- 160:	f7ff fffe 	bl	0 <sodium_memzero>
- 164:	4a0c      	ldr	r2, [pc, #48]	; (198 <crypto_box_curve25519xchacha20poly1305_detached+0x94>)
- 166:	4b0a      	ldr	r3, [pc, #40]	; (190 <crypto_box_curve25519xchacha20poly1305_detached+0x8c>)
- 168:	447a      	add	r2, pc
- 16a:	58d3      	ldr	r3, [r2, r3]
- 16c:	681a      	ldr	r2, [r3, #0]
- 16e:	9b15      	ldr	r3, [sp, #84]	; 0x54
- 170:	405a      	eors	r2, r3
- 172:	f04f 0300 	mov.w	r3, #0
- 176:	d106      	bne.n	186 <crypto_box_curve25519xchacha20poly1305_detached+0x82>
- 178:	4620      	mov	r0, r4
- 17a:	b016      	add	sp, #88	; 0x58
- 17c:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 180:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
- 184:	e7ee      	b.n	164 <crypto_box_curve25519xchacha20poly1305_detached+0x60>
- 186:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 18a:	bf00      	nop
- 18c:	00000078 	.word	0x00000078
- 190:	00000000 	.word	0x00000000
- 194:	00000056 	.word	0x00000056
- 198:	0000002c 	.word	0x0000002c
+Function crypto_box_curve25519xchacha20poly1305_easy_afternm @ 0x0040019d
+0x0040019d:	push	{r4, r5, lr}
+0x0040019f:	mvn	ip, #0x10
+0x004001a3:	mov	r4, r2
+0x004001a5:	cmp	ip, r4
+0x004001a7:	mov	r2, r1
+0x004001a9:	mov.w	r1, #0
+0x004001ad:	sub	sp, #0x14
+0x004001af:	sbcs	r1, r3
+0x004001b1:	blo	#0x4001cb
+0x004001b3:	ldr	r5, [sp, #0x24]
+0x004001b5:	mov	r1, r0
+0x004001b7:	str	r5, [sp, #0xc]
+0x004001b9:	adds	r0, #0x10
+0x004001bb:	ldr	r5, [sp, #0x20]
+0x004001bd:	str	r5, [sp, #8]
+0x004001bf:	strd	r4, r3, [sp]
+0x004001c3:	bl	#0x500055
+0x004001c7:	add	sp, #0x14
+0x004001c9:	pop	{r4, r5, pc}
+0x004001cb:	bl	#0x500061
+0x004001cf:	nop	
+0x004001d1:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x004001d5:	mov	r5, r2
+0x004001d7:	ldr	r2, [pc, #0x9c]
+0x004001d9:	mov	r4, r3
+0x004001db:	ldr	r3, [pc, #0x9c]
+0x004001dd:	add	r2, pc
+0x004001df:	sub	sp, #0x58
+0x004001e1:	mov	r6, r0
+0x004001e3:	mvn	r0, #0x10
+0x004001e7:	cmp	r0, r5
+0x004001e9:	mov	r7, r1
+0x004001eb:	ldr	r3, [r2, r3]
+0x004001ed:	ldr.w	sb, [sp, #0x78]
+0x004001f1:	ldr	r3, [r3]
+0x004001f3:	str	r3, [sp, #0x54]
+0x004001f5:	mov.w	r3, #0
+0x004001f9:	mov.w	r3, #0
+0x004001fd:	ldrd	r2, r1, [sp, #0x7c]
+0x00400201:	sbcs	r3, r4
+0x00400203:	blo	#0x40026b
 
-0000019c <crypto_box_curve25519xchacha20poly1305_easy_afternm>:
- 19c:	b530      	push	{r4, r5, lr}
- 19e:	f06f 0c10 	mvn.w	ip, #16
- 1a2:	4614      	mov	r4, r2
- 1a4:	45a4      	cmp	ip, r4
- 1a6:	460a      	mov	r2, r1
- 1a8:	f04f 0100 	mov.w	r1, #0
- 1ac:	b085      	sub	sp, #20
- 1ae:	4199      	sbcs	r1, r3
- 1b0:	d30b      	bcc.n	1ca <crypto_box_curve25519xchacha20poly1305_easy_afternm+0x2e>
- 1b2:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 1b4:	4601      	mov	r1, r0
- 1b6:	9503      	str	r5, [sp, #12]
- 1b8:	3010      	adds	r0, #16
- 1ba:	9d08      	ldr	r5, [sp, #32]
- 1bc:	9502      	str	r5, [sp, #8]
- 1be:	e9cd 4300 	strd	r4, r3, [sp]
- 1c2:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_detached>
- 1c6:	b005      	add	sp, #20
- 1c8:	bd30      	pop	{r4, r5, pc}
- 1ca:	f7ff fffe 	bl	0 <sodium_misuse>
- 1ce:	bf00      	nop
+Function crypto_box_curve25519xchacha20poly1305_easy @ 0x004001d1
+0x004001d1:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x004001d5:	mov	r5, r2
+0x004001d7:	ldr	r2, [pc, #0x9c]
+0x004001d9:	mov	r4, r3
+0x004001db:	ldr	r3, [pc, #0x9c]
+0x004001dd:	add	r2, pc
+0x004001df:	sub	sp, #0x58
+0x004001e1:	mov	r6, r0
+0x004001e3:	mvn	r0, #0x10
+0x004001e7:	cmp	r0, r5
+0x004001e9:	mov	r7, r1
+0x004001eb:	ldr	r3, [r2, r3]
+0x004001ed:	ldr.w	sb, [sp, #0x78]
+0x004001f1:	ldr	r3, [r3]
+0x004001f3:	str	r3, [sp, #0x54]
+0x004001f5:	mov.w	r3, #0
+0x004001f9:	mov.w	r3, #0
+0x004001fd:	ldrd	r2, r1, [sp, #0x7c]
+0x00400201:	sbcs	r3, r4
+0x00400203:	blo	#0x40026b
+0x00400205:	add.w	r8, sp, #0x34
+0x00400209:	add.w	sl, r6, #0x10
+0x0040020d:	mov	r0, r8
+0x0040020f:	bl	#0x50003d
+0x00400213:	mov	r3, r0
+0x00400215:	cbnz	r0, #0x400265
+0x00400217:	ldr	r1, [pc, #0x64]
+0x00400219:	mov	r2, r8
+0x0040021b:	add.w	r8, sp, #0x14
+0x0040021f:	add	r1, pc
+0x00400221:	mov	r0, r8
+0x00400223:	bl	#0x500049
+0x00400217:	ldr	r1, [pc, #0x64]
+0x00400219:	mov	r2, r8
+0x0040021b:	add.w	r8, sp, #0x14
+0x0040021f:	add	r1, pc
+0x00400221:	mov	r0, r8
+0x00400223:	bl	#0x500049
+0x00400227:	cbnz	r0, #0x400265
+0x00400229:	mov	r1, r6
+0x0040022b:	str	r4, [sp, #4]
+0x0040022d:	mov	r2, r7
+0x0040022f:	mov	r0, sl
+0x00400231:	str.w	sb, [sp, #8]
+0x00400235:	str	r5, [sp]
+0x00400237:	str.w	r8, [sp, #0xc]
+0x0040023b:	bl	#0x500055
+0x00400229:	mov	r1, r6
+0x0040022b:	str	r4, [sp, #4]
+0x0040022d:	mov	r2, r7
+0x0040022f:	mov	r0, sl
+0x00400231:	str.w	sb, [sp, #8]
+0x00400235:	str	r5, [sp]
+0x00400237:	str.w	r8, [sp, #0xc]
+0x0040023b:	bl	#0x500055
+0x0040023f:	movs	r1, #0x20
+0x00400241:	mov	r4, r0
+0x00400243:	mov	r0, r8
+0x00400245:	bl	#0x50000d
+0x00400249:	ldr	r2, [pc, #0x34]
+0x0040024b:	ldr	r3, [pc, #0x2c]
+0x0040024d:	add	r2, pc
+0x0040024f:	ldr	r3, [r2, r3]
+0x00400251:	ldr	r2, [r3]
+0x00400253:	ldr	r3, [sp, #0x54]
+0x00400255:	eors	r2, r3
+0x00400257:	mov.w	r3, #0
+0x0040025b:	bne	#0x40026f
+0x0040025d:	mov	r0, r4
+0x0040025f:	add	sp, #0x58
+0x00400261:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x00400265:	mov.w	r4, #-1
+0x00400269:	b	#0x400249
+0x0040026b:	bl	#0x500061
+0x0040026f:	bl	#0x500025
 
-000001d0 <crypto_box_curve25519xchacha20poly1305_easy>:
- 1d0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
- 1d4:	4615      	mov	r5, r2
- 1d6:	4a27      	ldr	r2, [pc, #156]	; (274 <crypto_box_curve25519xchacha20poly1305_easy+0xa4>)
- 1d8:	461c      	mov	r4, r3
- 1da:	4b27      	ldr	r3, [pc, #156]	; (278 <crypto_box_curve25519xchacha20poly1305_easy+0xa8>)
- 1dc:	447a      	add	r2, pc
- 1de:	b096      	sub	sp, #88	; 0x58
- 1e0:	4606      	mov	r6, r0
- 1e2:	f06f 0010 	mvn.w	r0, #16
- 1e6:	42a8      	cmp	r0, r5
- 1e8:	460f      	mov	r7, r1
- 1ea:	58d3      	ldr	r3, [r2, r3]
- 1ec:	f8dd 9078 	ldr.w	r9, [sp, #120]	; 0x78
- 1f0:	681b      	ldr	r3, [r3, #0]
- 1f2:	9315      	str	r3, [sp, #84]	; 0x54
- 1f4:	f04f 0300 	mov.w	r3, #0
- 1f8:	f04f 0300 	mov.w	r3, #0
- 1fc:	e9dd 211f 	ldrd	r2, r1, [sp, #124]	; 0x7c
- 200:	41a3      	sbcs	r3, r4
- 202:	d332      	bcc.n	26a <crypto_box_curve25519xchacha20poly1305_easy+0x9a>
- 204:	f10d 0834 	add.w	r8, sp, #52	; 0x34
- 208:	f106 0a10 	add.w	sl, r6, #16
- 20c:	4640      	mov	r0, r8
- 20e:	f7ff fffe 	bl	0 <crypto_scalarmult_curve25519>
- 212:	4603      	mov	r3, r0
- 214:	bb30      	cbnz	r0, 264 <crypto_box_curve25519xchacha20poly1305_easy+0x94>
- 216:	4919      	ldr	r1, [pc, #100]	; (27c <crypto_box_curve25519xchacha20poly1305_easy+0xac>)
- 218:	4642      	mov	r2, r8
- 21a:	f10d 0814 	add.w	r8, sp, #20
- 21e:	4479      	add	r1, pc
- 220:	4640      	mov	r0, r8
- 222:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
- 226:	b9e8      	cbnz	r0, 264 <crypto_box_curve25519xchacha20poly1305_easy+0x94>
- 228:	4631      	mov	r1, r6
- 22a:	9401      	str	r4, [sp, #4]
- 22c:	463a      	mov	r2, r7
- 22e:	4650      	mov	r0, sl
- 230:	f8cd 9008 	str.w	r9, [sp, #8]
- 234:	9500      	str	r5, [sp, #0]
- 236:	f8cd 800c 	str.w	r8, [sp, #12]
- 23a:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_detached>
- 23e:	2120      	movs	r1, #32
- 240:	4604      	mov	r4, r0
- 242:	4640      	mov	r0, r8
- 244:	f7ff fffe 	bl	0 <sodium_memzero>
- 248:	4a0d      	ldr	r2, [pc, #52]	; (280 <crypto_box_curve25519xchacha20poly1305_easy+0xb0>)
- 24a:	4b0b      	ldr	r3, [pc, #44]	; (278 <crypto_box_curve25519xchacha20poly1305_easy+0xa8>)
- 24c:	447a      	add	r2, pc
- 24e:	58d3      	ldr	r3, [r2, r3]
- 250:	681a      	ldr	r2, [r3, #0]
- 252:	9b15      	ldr	r3, [sp, #84]	; 0x54
- 254:	405a      	eors	r2, r3
- 256:	f04f 0300 	mov.w	r3, #0
- 25a:	d108      	bne.n	26e <crypto_box_curve25519xchacha20poly1305_easy+0x9e>
- 25c:	4620      	mov	r0, r4
- 25e:	b016      	add	sp, #88	; 0x58
- 260:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 264:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
- 268:	e7ee      	b.n	248 <crypto_box_curve25519xchacha20poly1305_easy+0x78>
- 26a:	f7ff fffe 	bl	0 <sodium_misuse>
- 26e:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 272:	bf00      	nop
- 274:	00000094 	.word	0x00000094
- 278:	00000000 	.word	0x00000000
- 27c:	0000005a 	.word	0x0000005a
- 280:	00000030 	.word	0x00000030
+Function sub_400273 @ 0x00400273
+0x00400273:	nop	
+0x00400275:	lsls	r4, r2, #2
+0x00400277:	movs	r0, r0
+0x00400279:	movs	r0, r0
+0x0040027b:	movs	r0, r0
+0x0040027d:	lsls	r6, r0, #8
+0x0040027f:	movs	r0, r0
+0x00400281:	movs	r0, r6
+0x00400283:	movs	r0, r0
+0x00400285:	b.w	#0x50006d
 
-00000284 <crypto_box_curve25519xchacha20poly1305_open_detached_afternm>:
- 284:	f7ff bffe 	b.w	0 <crypto_secretbox_xchacha20poly1305_open_detached>
+Function crypto_box_curve25519xchacha20poly1305_open_detached_afternm @ 0x00400285
+0x00400285:	b.w	#0x50006d
 
-00000288 <crypto_box_curve25519xchacha20poly1305_open_detached>:
- 288:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 28c:	4604      	mov	r4, r0
- 28e:	4820      	ldr	r0, [pc, #128]	; (310 <crypto_box_curve25519xchacha20poly1305_open_detached+0x88>)
- 290:	4b20      	ldr	r3, [pc, #128]	; (314 <crypto_box_curve25519xchacha20poly1305_open_detached+0x8c>)
- 292:	b096      	sub	sp, #88	; 0x58
- 294:	4478      	add	r0, pc
- 296:	ad0d      	add	r5, sp, #52	; 0x34
- 298:	460f      	mov	r7, r1
- 29a:	4616      	mov	r6, r2
- 29c:	e9dd 211f 	ldrd	r2, r1, [sp, #124]	; 0x7c
- 2a0:	58c3      	ldr	r3, [r0, r3]
- 2a2:	4628      	mov	r0, r5
- 2a4:	f8dd 8078 	ldr.w	r8, [sp, #120]	; 0x78
- 2a8:	681b      	ldr	r3, [r3, #0]
- 2aa:	9315      	str	r3, [sp, #84]	; 0x54
- 2ac:	f04f 0300 	mov.w	r3, #0
- 2b0:	f7ff fffe 	bl	0 <crypto_scalarmult_curve25519>
- 2b4:	bb30      	cbnz	r0, 304 <crypto_box_curve25519xchacha20poly1305_open_detached+0x7c>
- 2b6:	4918      	ldr	r1, [pc, #96]	; (318 <crypto_box_curve25519xchacha20poly1305_open_detached+0x90>)
- 2b8:	462a      	mov	r2, r5
- 2ba:	ad05      	add	r5, sp, #20
- 2bc:	4603      	mov	r3, r0
- 2be:	4479      	add	r1, pc
- 2c0:	4628      	mov	r0, r5
- 2c2:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
- 2c6:	b9e8      	cbnz	r0, 304 <crypto_box_curve25519xchacha20poly1305_open_detached+0x7c>
- 2c8:	4620      	mov	r0, r4
- 2ca:	4639      	mov	r1, r7
- 2cc:	e9dd 341c 	ldrd	r3, r4, [sp, #112]	; 0x70
- 2d0:	e9cd 3400 	strd	r3, r4, [sp]
- 2d4:	4632      	mov	r2, r6
- 2d6:	e9cd 8502 	strd	r8, r5, [sp, #8]
- 2da:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_open_detached>
- 2de:	2120      	movs	r1, #32
- 2e0:	4604      	mov	r4, r0
- 2e2:	4628      	mov	r0, r5
- 2e4:	f7ff fffe 	bl	0 <sodium_memzero>
- 2e8:	4a0c      	ldr	r2, [pc, #48]	; (31c <crypto_box_curve25519xchacha20poly1305_open_detached+0x94>)
- 2ea:	4b0a      	ldr	r3, [pc, #40]	; (314 <crypto_box_curve25519xchacha20poly1305_open_detached+0x8c>)
- 2ec:	447a      	add	r2, pc
- 2ee:	58d3      	ldr	r3, [r2, r3]
- 2f0:	681a      	ldr	r2, [r3, #0]
- 2f2:	9b15      	ldr	r3, [sp, #84]	; 0x54
- 2f4:	405a      	eors	r2, r3
- 2f6:	f04f 0300 	mov.w	r3, #0
- 2fa:	d106      	bne.n	30a <crypto_box_curve25519xchacha20poly1305_open_detached+0x82>
- 2fc:	4620      	mov	r0, r4
- 2fe:	b016      	add	sp, #88	; 0x58
- 300:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 304:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
- 308:	e7ee      	b.n	2e8 <crypto_box_curve25519xchacha20poly1305_open_detached+0x60>
- 30a:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 30e:	bf00      	nop
- 310:	00000078 	.word	0x00000078
- 314:	00000000 	.word	0x00000000
- 318:	00000056 	.word	0x00000056
- 31c:	0000002c 	.word	0x0000002c
+Function crypto_box_curve25519xchacha20poly1305_open_detached @ 0x00400289
+0x00400289:	push.w	{r4, r5, r6, r7, r8, lr}
+0x0040028d:	mov	r4, r0
+0x0040028f:	ldr	r0, [pc, #0x80]
+0x00400291:	ldr	r3, [pc, #0x80]
+0x00400293:	sub	sp, #0x58
+0x00400295:	add	r0, pc
+0x00400297:	add	r5, sp, #0x34
+0x00400299:	mov	r7, r1
+0x0040029b:	mov	r6, r2
+0x0040029d:	ldrd	r2, r1, [sp, #0x7c]
+0x004002a1:	ldr	r3, [r0, r3]
+0x004002a3:	mov	r0, r5
+0x004002a5:	ldr.w	r8, [sp, #0x78]
+0x004002a9:	ldr	r3, [r3]
+0x004002ab:	str	r3, [sp, #0x54]
+0x004002ad:	mov.w	r3, #0
+0x004002b1:	bl	#0x50003d
+0x004002b5:	cbnz	r0, #0x400305
+0x004002b7:	ldr	r1, [pc, #0x60]
+0x004002b9:	mov	r2, r5
+0x004002bb:	add	r5, sp, #0x14
+0x004002bd:	mov	r3, r0
+0x004002bf:	add	r1, pc
+0x004002c1:	mov	r0, r5
+0x004002c3:	bl	#0x500049
+0x004002b7:	ldr	r1, [pc, #0x60]
+0x004002b9:	mov	r2, r5
+0x004002bb:	add	r5, sp, #0x14
+0x004002bd:	mov	r3, r0
+0x004002bf:	add	r1, pc
+0x004002c1:	mov	r0, r5
+0x004002c3:	bl	#0x500049
+0x004002c7:	cbnz	r0, #0x400305
+0x004002c9:	mov	r0, r4
+0x004002cb:	mov	r1, r7
+0x004002cd:	ldrd	r3, r4, [sp, #0x70]
+0x004002d1:	strd	r3, r4, [sp]
+0x004002d5:	mov	r2, r6
+0x004002d7:	strd	r8, r5, [sp, #8]
+0x004002db:	bl	#0x50006d
+0x004002c9:	mov	r0, r4
+0x004002cb:	mov	r1, r7
+0x004002cd:	ldrd	r3, r4, [sp, #0x70]
+0x004002d1:	strd	r3, r4, [sp]
+0x004002d5:	mov	r2, r6
+0x004002d7:	strd	r8, r5, [sp, #8]
+0x004002db:	bl	#0x50006d
+0x004002df:	movs	r1, #0x20
+0x004002e1:	mov	r4, r0
+0x004002e3:	mov	r0, r5
+0x004002e5:	bl	#0x50000d
+0x004002e9:	ldr	r2, [pc, #0x30]
+0x004002eb:	ldr	r3, [pc, #0x28]
+0x004002ed:	add	r2, pc
+0x004002ef:	ldr	r3, [r2, r3]
+0x004002f1:	ldr	r2, [r3]
+0x004002f3:	ldr	r3, [sp, #0x54]
+0x004002f5:	eors	r2, r3
+0x004002f7:	mov.w	r3, #0
+0x004002fb:	bne	#0x40030b
+0x004002fd:	mov	r0, r4
+0x004002ff:	add	sp, #0x58
+0x00400301:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400305:	mov.w	r4, #-1
+0x00400309:	b	#0x4002e9
+0x0040030b:	bl	#0x500025
 
-00000320 <crypto_box_curve25519xchacha20poly1305_open_easy_afternm>:
- 320:	4694      	mov	ip, r2
- 322:	460a      	mov	r2, r1
- 324:	f1bc 0f10 	cmp.w	ip, #16
- 328:	f173 0100 	sbcs.w	r1, r3, #0
- 32c:	d311      	bcc.n	352 <crypto_box_curve25519xchacha20poly1305_open_easy_afternm+0x32>
- 32e:	b530      	push	{r4, r5, lr}
- 330:	f1bc 0410 	subs.w	r4, ip, #16
- 334:	f143 33ff 	adc.w	r3, r3, #4294967295	; 0xffffffff
- 338:	b085      	sub	sp, #20
- 33a:	f102 0110 	add.w	r1, r2, #16
- 33e:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 340:	9503      	str	r5, [sp, #12]
- 342:	9d08      	ldr	r5, [sp, #32]
- 344:	9502      	str	r5, [sp, #8]
- 346:	e9cd 4300 	strd	r4, r3, [sp]
- 34a:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_open_detached>
- 34e:	b005      	add	sp, #20
- 350:	bd30      	pop	{r4, r5, pc}
- 352:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 356:	4770      	bx	lr
+Function sub_40030f @ 0x0040030f
+0x0040030f:	nop	
+0x00400311:	lsls	r0, r7, #1
+0x00400313:	movs	r0, r0
+0x00400315:	movs	r0, r0
+0x00400317:	movs	r0, r0
+0x00400319:	lsls	r6, r4, #5
+0x0040031b:	movs	r0, r0
+0x0040031d:	movs	r4, r5
+0x0040031f:	movs	r0, r0
+0x00400321:	mov	ip, r2
+0x00400323:	mov	r2, r1
+0x00400325:	cmp.w	ip, #0x10
+0x00400329:	sbcs	r1, r3, #0
+0x0040032d:	blo	#0x400353
 
-00000358 <crypto_box_curve25519xchacha20poly1305_open_easy>:
- 358:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
- 35c:	2a10      	cmp	r2, #16
- 35e:	4d26      	ldr	r5, [pc, #152]	; (3f8 <crypto_box_curve25519xchacha20poly1305_open_easy+0xa0>)
- 360:	4c26      	ldr	r4, [pc, #152]	; (3fc <crypto_box_curve25519xchacha20poly1305_open_easy+0xa4>)
- 362:	b096      	sub	sp, #88	; 0x58
- 364:	447d      	add	r5, pc
- 366:	4607      	mov	r7, r0
- 368:	460e      	mov	r6, r1
- 36a:	f8dd 8078 	ldr.w	r8, [sp, #120]	; 0x78
- 36e:	592c      	ldr	r4, [r5, r4]
- 370:	e9dd 011f 	ldrd	r0, r1, [sp, #124]	; 0x7c
- 374:	6824      	ldr	r4, [r4, #0]
- 376:	9415      	str	r4, [sp, #84]	; 0x54
- 378:	f04f 0400 	mov.w	r4, #0
- 37c:	f173 0400 	sbcs.w	r4, r3, #0
- 380:	d334      	bcc.n	3ec <crypto_box_curve25519xchacha20poly1305_open_easy+0x94>
- 382:	f10d 0934 	add.w	r9, sp, #52	; 0x34
- 386:	f1b2 0410 	subs.w	r4, r2, #16
- 38a:	4602      	mov	r2, r0
- 38c:	4648      	mov	r0, r9
- 38e:	f143 35ff 	adc.w	r5, r3, #4294967295	; 0xffffffff
- 392:	f106 0a10 	add.w	sl, r6, #16
- 396:	f7ff fffe 	bl	0 <crypto_scalarmult_curve25519>
- 39a:	4603      	mov	r3, r0
- 39c:	bb30      	cbnz	r0, 3ec <crypto_box_curve25519xchacha20poly1305_open_easy+0x94>
- 39e:	4918      	ldr	r1, [pc, #96]	; (400 <crypto_box_curve25519xchacha20poly1305_open_easy+0xa8>)
- 3a0:	464a      	mov	r2, r9
- 3a2:	f10d 0914 	add.w	r9, sp, #20
- 3a6:	4479      	add	r1, pc
- 3a8:	4648      	mov	r0, r9
- 3aa:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
- 3ae:	b9e8      	cbnz	r0, 3ec <crypto_box_curve25519xchacha20poly1305_open_easy+0x94>
- 3b0:	4651      	mov	r1, sl
- 3b2:	9400      	str	r4, [sp, #0]
- 3b4:	4632      	mov	r2, r6
- 3b6:	4638      	mov	r0, r7
- 3b8:	f8cd 8008 	str.w	r8, [sp, #8]
- 3bc:	f8cd 900c 	str.w	r9, [sp, #12]
- 3c0:	9501      	str	r5, [sp, #4]
- 3c2:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_open_detached>
- 3c6:	2120      	movs	r1, #32
- 3c8:	4604      	mov	r4, r0
- 3ca:	4648      	mov	r0, r9
- 3cc:	f7ff fffe 	bl	0 <sodium_memzero>
- 3d0:	4a0c      	ldr	r2, [pc, #48]	; (404 <crypto_box_curve25519xchacha20poly1305_open_easy+0xac>)
- 3d2:	4b0a      	ldr	r3, [pc, #40]	; (3fc <crypto_box_curve25519xchacha20poly1305_open_easy+0xa4>)
- 3d4:	447a      	add	r2, pc
- 3d6:	58d3      	ldr	r3, [r2, r3]
- 3d8:	681a      	ldr	r2, [r3, #0]
- 3da:	9b15      	ldr	r3, [sp, #84]	; 0x54
- 3dc:	405a      	eors	r2, r3
- 3de:	f04f 0300 	mov.w	r3, #0
- 3e2:	d106      	bne.n	3f2 <crypto_box_curve25519xchacha20poly1305_open_easy+0x9a>
- 3e4:	4620      	mov	r0, r4
- 3e6:	b016      	add	sp, #88	; 0x58
- 3e8:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 3ec:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
- 3f0:	e7ee      	b.n	3d0 <crypto_box_curve25519xchacha20poly1305_open_easy+0x78>
- 3f2:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 3f6:	bf00      	nop
- 3f8:	00000090 	.word	0x00000090
- 3fc:	00000000 	.word	0x00000000
- 400:	00000056 	.word	0x00000056
- 404:	0000002c 	.word	0x0000002c
+Function crypto_box_curve25519xchacha20poly1305_open_easy_afternm @ 0x00400321
+0x00400321:	mov	ip, r2
+0x00400323:	mov	r2, r1
+0x00400325:	cmp.w	ip, #0x10
+0x00400329:	sbcs	r1, r3, #0
+0x0040032d:	blo	#0x400353
+0x0040032f:	push	{r4, r5, lr}
+0x00400331:	subs.w	r4, ip, #0x10
+0x00400335:	adc	r3, r3, #-1
+0x00400339:	sub	sp, #0x14
+0x0040033b:	add.w	r1, r2, #0x10
+0x0040033f:	ldr	r5, [sp, #0x24]
+0x00400341:	str	r5, [sp, #0xc]
+0x00400343:	ldr	r5, [sp, #0x20]
+0x00400345:	str	r5, [sp, #8]
+0x00400347:	strd	r4, r3, [sp]
+0x0040034b:	bl	#0x50006d
+0x0040034f:	add	sp, #0x14
+0x00400351:	pop	{r4, r5, pc}
+0x00400353:	mov.w	r0, #-1
+0x00400357:	bx	lr
 
-00000408 <crypto_box_curve25519xchacha20poly1305_seedbytes>:
- 408:	2020      	movs	r0, #32
- 40a:	4770      	bx	lr
+Function crypto_box_curve25519xchacha20poly1305_open_easy @ 0x00400359
+0x00400359:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x0040035d:	cmp	r2, #0x10
+0x0040035f:	ldr	r5, [pc, #0x98]
+0x00400361:	ldr	r4, [pc, #0x98]
+0x00400363:	sub	sp, #0x58
+0x00400365:	add	r5, pc
+0x00400367:	mov	r7, r0
+0x00400369:	mov	r6, r1
+0x0040036b:	ldr.w	r8, [sp, #0x78]
+0x0040036f:	ldr	r4, [r5, r4]
+0x00400371:	ldrd	r0, r1, [sp, #0x7c]
+0x00400375:	ldr	r4, [r4]
+0x00400377:	str	r4, [sp, #0x54]
+0x00400379:	mov.w	r4, #0
+0x0040037d:	sbcs	r4, r3, #0
+0x00400381:	blo	#0x4003ed
+0x00400383:	add.w	sb, sp, #0x34
+0x00400387:	subs.w	r4, r2, #0x10
+0x0040038b:	mov	r2, r0
+0x0040038d:	mov	r0, sb
+0x0040038f:	adc	r5, r3, #-1
+0x00400393:	add.w	sl, r6, #0x10
+0x00400397:	bl	#0x50003d
+0x0040039b:	mov	r3, r0
+0x0040039d:	cbnz	r0, #0x4003ed
+0x0040039f:	ldr	r1, [pc, #0x60]
+0x004003a1:	mov	r2, sb
+0x004003a3:	add.w	sb, sp, #0x14
+0x004003a7:	add	r1, pc
+0x004003a9:	mov	r0, sb
+0x004003ab:	bl	#0x500049
+0x0040039f:	ldr	r1, [pc, #0x60]
+0x004003a1:	mov	r2, sb
+0x004003a3:	add.w	sb, sp, #0x14
+0x004003a7:	add	r1, pc
+0x004003a9:	mov	r0, sb
+0x004003ab:	bl	#0x500049
+0x004003af:	cbnz	r0, #0x4003ed
+0x004003b1:	mov	r1, sl
+0x004003b3:	str	r4, [sp]
+0x004003b5:	mov	r2, r6
+0x004003b7:	mov	r0, r7
+0x004003b9:	str.w	r8, [sp, #8]
+0x004003bd:	str.w	sb, [sp, #0xc]
+0x004003c1:	str	r5, [sp, #4]
+0x004003c3:	bl	#0x50006d
+0x004003b1:	mov	r1, sl
+0x004003b3:	str	r4, [sp]
+0x004003b5:	mov	r2, r6
+0x004003b7:	mov	r0, r7
+0x004003b9:	str.w	r8, [sp, #8]
+0x004003bd:	str.w	sb, [sp, #0xc]
+0x004003c1:	str	r5, [sp, #4]
+0x004003c3:	bl	#0x50006d
+0x004003c7:	movs	r1, #0x20
+0x004003c9:	mov	r4, r0
+0x004003cb:	mov	r0, sb
+0x004003cd:	bl	#0x50000d
+0x004003d1:	ldr	r2, [pc, #0x30]
+0x004003d3:	ldr	r3, [pc, #0x28]
+0x004003d5:	add	r2, pc
+0x004003d7:	ldr	r3, [r2, r3]
+0x004003d9:	ldr	r2, [r3]
+0x004003db:	ldr	r3, [sp, #0x54]
+0x004003dd:	eors	r2, r3
+0x004003df:	mov.w	r3, #0
+0x004003e3:	bne	#0x4003f3
+0x004003e5:	mov	r0, r4
+0x004003e7:	add	sp, #0x58
+0x004003e9:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x004003ed:	mov.w	r4, #-1
+0x004003f1:	b	#0x4003d1
+0x004003f3:	bl	#0x500025
 
-0000040c <crypto_box_curve25519xchacha20poly1305_publickeybytes>:
- 40c:	2020      	movs	r0, #32
- 40e:	4770      	bx	lr
+Function sub_4003f7 @ 0x004003f7
+0x004003f7:	nop	
+0x004003f9:	lsls	r0, r2, #2
+0x004003fb:	movs	r0, r0
+0x004003fd:	movs	r0, r0
+0x004003ff:	movs	r0, r0
+0x00400401:	lsls	r6, r7, #1
+0x00400403:	movs	r0, r0
+0x00400405:	movs	r4, r5
+0x00400407:	movs	r0, r0
+0x00400409:	movs	r0, #0x20
+0x0040040b:	bx	lr
 
-00000410 <crypto_box_curve25519xchacha20poly1305_secretkeybytes>:
- 410:	2020      	movs	r0, #32
- 412:	4770      	bx	lr
+Function crypto_box_curve25519xchacha20poly1305_seedbytes @ 0x00400409
+0x00400409:	movs	r0, #0x20
+0x0040040b:	bx	lr
 
-00000414 <crypto_box_curve25519xchacha20poly1305_beforenmbytes>:
- 414:	2020      	movs	r0, #32
- 416:	4770      	bx	lr
+Function crypto_box_curve25519xchacha20poly1305_publickeybytes @ 0x0040040d
+0x0040040d:	movs	r0, #0x20
+0x0040040f:	bx	lr
 
-00000418 <crypto_box_curve25519xchacha20poly1305_noncebytes>:
- 418:	2018      	movs	r0, #24
- 41a:	4770      	bx	lr
+Function crypto_box_curve25519xchacha20poly1305_secretkeybytes @ 0x00400411
+0x00400411:	movs	r0, #0x20
+0x00400413:	bx	lr
 
-0000041c <crypto_box_curve25519xchacha20poly1305_macbytes>:
- 41c:	2010      	movs	r0, #16
- 41e:	4770      	bx	lr
+Function crypto_box_curve25519xchacha20poly1305_beforenmbytes @ 0x00400415
+0x00400415:	movs	r0, #0x20
+0x00400417:	bx	lr
 
-00000420 <crypto_box_curve25519xchacha20poly1305_messagebytes_max>:
- 420:	f06f 0010 	mvn.w	r0, #16
- 424:	4770      	bx	lr
- 426:	bf00      	nop
+Function crypto_box_curve25519xchacha20poly1305_noncebytes @ 0x00400419
+0x00400419:	movs	r0, #0x18
+0x0040041b:	bx	lr
+
+Function crypto_box_curve25519xchacha20poly1305_macbytes @ 0x0040041d
+0x0040041d:	movs	r0, #0x10
+0x0040041f:	bx	lr
+
+Function crypto_box_curve25519xchacha20poly1305_messagebytes_max @ 0x00400421
+0x00400421:	mvn	r0, #0x10
+0x00400425:	bx	lr
+
+Function sub_400427 @ 0x00400427
+0x00400427:	nop	
+
+Function crypto_hash_sha512 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function sodium_memzero @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function crypto_scalarmult_curve25519_base @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function randombytes_buf @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function crypto_scalarmult_curve25519 @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function crypto_core_hchacha20 @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function crypto_secretbox_xchacha20poly1305_detached @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function crypto_secretbox_xchacha20poly1305_open_detached @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0

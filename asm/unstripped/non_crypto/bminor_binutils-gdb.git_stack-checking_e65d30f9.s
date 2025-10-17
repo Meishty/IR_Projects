@@ -1,45 +1,44 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_stack-checking_e65d30f9.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	movwlo	r6, #0x1813
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r5
+0x0040000f:	movs	r0, r0
+0x00400011:	ldr	r2, [pc, #8]
+0x00400013:	add	r2, pc
+0x00400015:	ldr	r3, [r2]
+0x00400017:	adds	r3, #1
+0x00400019:	str	r3, [r2]
+0x0040001b:	bx	lr
 
-00000000 <small_frame>:
-   0:	4a02      	ldr	r2, [pc, #8]	; (c <small_frame+0xc>)
-   2:	447a      	add	r2, pc
-   4:	6813      	ldr	r3, [r2, #0]
-   6:	3301      	adds	r3, #1
-   8:	6013      	str	r3, [r2, #0]
-   a:	4770      	bx	lr
-   c:	00000006 	.word	0x00000006
+Function medium_frame @ 0x00400011
+0x00400011:	ldr	r2, [pc, #8]
+0x00400013:	add	r2, pc
+0x00400015:	ldr	r3, [r2]
+0x00400017:	adds	r3, #1
+0x00400019:	str	r3, [r2]
+0x0040001b:	bx	lr
 
-00000010 <medium_frame>:
-  10:	4a02      	ldr	r2, [pc, #8]	; (1c <medium_frame+0xc>)
-  12:	447a      	add	r2, pc
-  14:	6813      	ldr	r3, [r2, #0]
-  16:	3301      	adds	r3, #1
-  18:	6013      	str	r3, [r2, #0]
-  1a:	4770      	bx	lr
-  1c:	00000006 	.word	0x00000006
+Function big_frame @ 0x00400021
+0x00400021:	ldr	r2, [pc, #8]
+0x00400023:	add	r2, pc
+0x00400025:	ldr	r3, [r2]
+0x00400027:	adds	r3, #1
+0x00400029:	str	r3, [r2]
+0x0040002b:	bx	lr
 
-00000020 <big_frame>:
-  20:	4a02      	ldr	r2, [pc, #8]	; (2c <big_frame+0xc>)
-  22:	447a      	add	r2, pc
-  24:	6813      	ldr	r3, [r2, #0]
-  26:	3301      	adds	r3, #1
-  28:	6013      	str	r3, [r2, #0]
-  2a:	4770      	bx	lr
-  2c:	00000006 	.word	0x00000006
+Function main @ 0x00400035
+0x00400035:	ldr	r2, [pc, #0xc]
+0x00400037:	movs	r0, #0
+0x00400039:	add	r2, pc
+0x0040003b:	ldr	r3, [r2]
+0x0040003d:	adds	r3, #3
+0x0040003f:	str	r3, [r2]
+0x00400041:	bx	lr
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4a03      	ldr	r2, [pc, #12]	; (10 <main+0x10>)
-   2:	2000      	movs	r0, #0
-   4:	447a      	add	r2, pc
-   6:	6813      	ldr	r3, [r2, #0]
-   8:	3303      	adds	r3, #3
-   a:	6013      	str	r3, [r2, #0]
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-  10:	00000008 	.word	0x00000008
+Function sub_400043 @ 0x00400043

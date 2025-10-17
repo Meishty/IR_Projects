@@ -1,22 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_strncasecmp_bacccd07_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strhs	fp, [r0, #-0x5f8]
+0x00400004:	stmne	r7, {r2, sb, sl, lr}
+0x00400008:	strtmi	r4, [r8], -lr, lsl #12
+0x00400008:	strtmi	r4, [r8], -lr, lsl #12
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	2500b5f8 	strcs	fp, [r0, #-1528]	; 0xfffffa08
-   4:	18874604 	stmne	r7, {r2, r9, sl, lr}
-   8:	4628460e 	strtmi	r4, [r8], -lr, lsl #12
-   c:	f7ffe012 			; <UNDEFINED> instruction: 0xf7ffe012
-  10:	f814fffe 			; <UNDEFINED> instruction: 0xf814fffe
-  14:	f8161b01 			; <UNDEFINED> instruction: 0xf8161b01
-  18:	68032b01 	stmdavs	r3, {r0, r8, r9, fp, sp}
-  1c:	0021f853 	eoreq	pc, r1, r3, asr r8	; <UNPREDICTABLE>
-  20:	5022f853 	eorpl	pc, r2, r3, asr r8	; <UNPREDICTABLE>
-  24:	bf181b43 	svclt	0x00181b43
-  28:	28002301 	stmdacs	r0, {r0, r8, r9, sp}
-  2c:	f043bf08 			; <UNDEFINED> instruction: 0xf043bf08
-  30:	b90b0301 	stmdblt	fp, {r0, r8, r9}
-  34:	d1ea42bc 	strhle	r4, [sl, #44]!	; 0x2c
-  38:	bdf81b40 			; <UNDEFINED> instruction: 0xbdf81b40
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	ldrb	r1, [r4], #1
+0x00400017:	ldrb	r2, [r6], #1
+0x0040001b:	ldr	r3, [r0]
+0x0040001d:	ldr.w	r0, [r3, r1, lsl #2]
+0x00400021:	ldr.w	r5, [r3, r2, lsl #2]
+0x00400025:	subs	r3, r0, r5
+0x00400027:	it	ne
+0x00400029:	movne	r3, #1
+0x0040002b:	cmp	r0, #0
+0x0040002d:	it	eq
+0x0040002f:	orreq	r3, r3, #1
+0x00400033:	cbnz	r3, #0x400039
+0x00400035:	cmp	r4, r7
+0x00400037:	bne	#0x40000f
+0x00400035:	cmp	r4, r7
+0x00400037:	bne	#0x40000f
+0x00400039:	subs	r0, r0, r5
+0x0040003b:	pop	{r3, r4, r5, r6, r7, pc}

@@ -1,23 +1,42 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mips16-thunks-sinfrob_0c1d3322_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	ldr	r3, [pc, #0x10]
+0x00400009:	ldr	r2, [pc, #0x10]
+0x0040000b:	add	r3, pc
+0x0040000d:	ldr	r2, [r3, r2]
+0x0040000f:	ldr	r3, [r2]
+0x00400011:	adds	r3, #2
+0x00400013:	str	r3, [r2]
+0x00400015:	pop	{r3, pc}
 
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x400023
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x400023
 
-00000000 <.text>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4b04fffe 	blmi	0x140004
-   8:	447b4a04 	ldrbtmi	r4, [fp], #-2564	; 0xfffff5fc
-   c:	6813589a 	ldmdavs	r3, {r1, r3, r4, r7, fp, ip, lr}
-  10:	60133302 	andsvs	r3, r3, r2, lsl #6
-  14:	bf00bd08 	svclt	0x0000bd08
-  18:	0000000a 	andeq	r0, r0, sl
-  1c:	00000000 	andeq	r0, r0, r0
-  20:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  24:	4b04fffe 	blmi	0x140024
-  28:	447b4a04 	ldrbtmi	r4, [fp], #-2564	; 0xfffff5fc
-  2c:	6813589a 	ldmdavs	r3, {r1, r3, r4, r7, fp, ip, lr}
-  30:	60133302 	andsvs	r3, r3, r2, lsl #6
-  34:	bf00bd08 	svclt	0x0000bd08
-  38:	0000000a 	andeq	r0, r0, sl
-  3c:	00000000 	andeq	r0, r0, r0
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	ldr	r3, [pc, #0x10]
+0x00400029:	ldr	r2, [pc, #0x10]
+0x0040002b:	add	r3, pc
+0x0040002d:	ldr	r2, [r3, r2]
+0x0040002f:	ldr	r3, [r2]
+0x00400031:	adds	r3, #2
+0x00400033:	str	r3, [r2]
+0x00400035:	pop	{r3, pc}
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r2, r1
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r0, r0
+0x0040003f:	movs	r0, r0

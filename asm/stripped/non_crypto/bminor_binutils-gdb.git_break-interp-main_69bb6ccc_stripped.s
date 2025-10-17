@@ -1,19 +1,32 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_break-interp-main_69bb6ccc_stripped.o:     file format elf32-littlearm
+Function sub_400055 @ 0x00400055
+0x00400055:	cmp	r0, #2
+0x00400057:	push	{r3, lr}
+0x00400059:	bne	#0x400065
+0x0040005b:	ldr	r0, [r1, #4]
+0x0040005d:	bl	#0x40005d
+0x00400065:	ldr	r3, [pc, #0x10]
+0x00400067:	movs	r2, #0x19
+0x00400069:	ldr	r1, [pc, #0x10]
+0x0040006b:	ldr	r0, [pc, #0x14]
+0x0040006d:	add	r3, pc
+0x0040006f:	add	r1, pc
+0x00400071:	add	r0, pc
+0x00400073:	bl	#0x400073
 
+Function sub_40005d @ 0x0040005d
+0x0040005d:	bl	#0x40005d
+0x00400061:	movs	r0, #0
+0x00400063:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400073 @ 0x00400073
+0x00400073:	bl	#0x400073
 
-00000000 <.text.startup>:
-   0:	b5082802 	strlt	r2, [r8, #-2050]	; 0xfffff7fe
-   4:	6848d104 	stmdavs	r8, {r2, r8, ip, lr, pc}^
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	bd082000 	stclt	0, cr2, [r8, #-0]
-  10:	22194b04 	andscs	r4, r9, #4, 22	; 0x1000
-  14:	48054904 	stmdami	r5, {r2, r8, fp, lr}
-  18:	4479447b 	ldrbtmi	r4, [r9], #-1147	; 0xfffffb85
-  1c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  20:	bf00fffe 	svclt	0x0000fffe
-  24:	00000008 	andeq	r0, r0, r8
-  28:	0000000a 	andeq	r0, r0, sl
-  2c:	0000000c 	andeq	r0, r0, ip
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	movs	r0, r1
+0x0040007b:	movs	r0, r0
+0x0040007d:	movs	r2, r1
+0x0040007f:	movs	r0, r0
+0x00400081:	movs	r4, r1
+0x00400083:	movs	r0, r0

@@ -1,26 +1,45 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_foll-fork-syscall_0d52969b.o:     file format elf32-littlearm
+Function main @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x500001
+0x0040002b:	cbnz	r0, #0x400041
+0x0040002d:	ldr	r0, [pc, #0x1c]
+0x0040002f:	add	r0, pc
+0x00400031:	bl	#0x50000d
+0x0040002d:	ldr	r0, [pc, #0x1c]
+0x0040002f:	add	r0, pc
+0x00400031:	bl	#0x50000d
+0x00400035:	ldr	r0, [pc, #0x18]
+0x00400037:	add	r0, pc
+0x00400039:	bl	#0x500019
+0x0040003d:	movs	r0, #0
+0x0040003f:	pop	{r3, pc}
+0x00400041:	ldr	r0, [pc, #0x10]
+0x00400043:	add	r0, pc
+0x00400045:	bl	#0x50000d
+0x00400049:	b	#0x400035
 
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
 
-Disassembly of section .text.startup:
+Function fork @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <fork>
-   6:	b948      	cbnz	r0, 1c <main+0x1c>
-   8:	4807      	ldr	r0, [pc, #28]	; (28 <main+0x28>)
-   a:	4478      	add	r0, pc
-   c:	f7ff fffe 	bl	0 <puts>
-  10:	4806      	ldr	r0, [pc, #24]	; (2c <main+0x2c>)
-  12:	4478      	add	r0, pc
-  14:	f7ff fffe 	bl	0 <chdir>
-  18:	2000      	movs	r0, #0
-  1a:	bd08      	pop	{r3, pc}
-  1c:	4804      	ldr	r0, [pc, #16]	; (30 <main+0x30>)
-  1e:	4478      	add	r0, pc
-  20:	f7ff fffe 	bl	0 <puts>
-  24:	e7f4      	b.n	10 <main+0x10>
-  26:	bf00      	nop
-  28:	0000001a 	.word	0x0000001a
-  2c:	00000016 	.word	0x00000016
-  30:	0000000e 	.word	0x0000000e
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function chdir @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

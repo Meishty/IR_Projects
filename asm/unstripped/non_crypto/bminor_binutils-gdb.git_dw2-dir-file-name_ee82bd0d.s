@@ -1,180 +1,108 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dw2-dir-file-name_ee82bd0d.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b34      	ldr	r3, [pc, #208]	; (d4 <compdir_absolute_ldir_absolute_file_absolute_different_label+0xa>)
-   2:	447b      	add	r3, pc
-   4:	681a      	ldr	r2, [r3, #0]
-   6:	3201      	adds	r2, #1
-   8:	601a      	str	r2, [r3, #0]
-
-0000000a <compdir_missing__ldir_missing__file_relative_label>:
-   a:	681a      	ldr	r2, [r3, #0]
-   c:	3201      	adds	r2, #1
-   e:	601a      	str	r2, [r3, #0]
-
-00000010 <compdir_missing__ldir_missing__file_absolute_label>:
-  10:	681a      	ldr	r2, [r3, #0]
-  12:	3201      	adds	r2, #1
-  14:	601a      	str	r2, [r3, #0]
-
-00000016 <compdir_missing__ldir_relative_file_basename_label>:
-  16:	681a      	ldr	r2, [r3, #0]
-  18:	3201      	adds	r2, #1
-  1a:	601a      	str	r2, [r3, #0]
-
-0000001c <compdir_missing__ldir_relative_file_relative_label>:
-  1c:	681a      	ldr	r2, [r3, #0]
-  1e:	3201      	adds	r2, #1
-  20:	601a      	str	r2, [r3, #0]
-
-00000022 <compdir_missing__ldir_relative_file_absolute_label>:
-  22:	681a      	ldr	r2, [r3, #0]
-  24:	3201      	adds	r2, #1
-  26:	601a      	str	r2, [r3, #0]
-
-00000028 <compdir_missing__ldir_absolute_file_basename_label>:
-  28:	681a      	ldr	r2, [r3, #0]
-  2a:	3201      	adds	r2, #1
-  2c:	601a      	str	r2, [r3, #0]
-
-0000002e <compdir_missing__ldir_absolute_file_relative_label>:
-  2e:	681a      	ldr	r2, [r3, #0]
-  30:	3201      	adds	r2, #1
-  32:	601a      	str	r2, [r3, #0]
-
-00000034 <compdir_missing__ldir_absolute_file_absolute_same_label>:
-  34:	681a      	ldr	r2, [r3, #0]
-  36:	3201      	adds	r2, #1
-  38:	601a      	str	r2, [r3, #0]
-
-0000003a <compdir_missing__ldir_absolute_file_absolute_different_label>:
-  3a:	681a      	ldr	r2, [r3, #0]
-  3c:	3201      	adds	r2, #1
-  3e:	601a      	str	r2, [r3, #0]
-
-00000040 <compdir_relative_ldir_missing__file_basename_label>:
-  40:	681a      	ldr	r2, [r3, #0]
-  42:	3201      	adds	r2, #1
-  44:	601a      	str	r2, [r3, #0]
-
-00000046 <compdir_relative_ldir_missing__file_relative_label>:
-  46:	681a      	ldr	r2, [r3, #0]
-  48:	3201      	adds	r2, #1
-  4a:	601a      	str	r2, [r3, #0]
-
-0000004c <compdir_relative_ldir_missing__file_absolute_label>:
-  4c:	681a      	ldr	r2, [r3, #0]
-  4e:	3201      	adds	r2, #1
-  50:	601a      	str	r2, [r3, #0]
-
-00000052 <compdir_relative_ldir_relative_file_basename_label>:
-  52:	681a      	ldr	r2, [r3, #0]
-  54:	3201      	adds	r2, #1
-  56:	601a      	str	r2, [r3, #0]
-
-00000058 <compdir_relative_ldir_relative_file_relative_label>:
-  58:	681a      	ldr	r2, [r3, #0]
-  5a:	3201      	adds	r2, #1
-  5c:	601a      	str	r2, [r3, #0]
-
-0000005e <compdir_relative_ldir_relative_file_absolute_label>:
-  5e:	681a      	ldr	r2, [r3, #0]
-  60:	3201      	adds	r2, #1
-  62:	601a      	str	r2, [r3, #0]
-
-00000064 <compdir_relative_ldir_absolute_file_basename_label>:
-  64:	681a      	ldr	r2, [r3, #0]
-  66:	3201      	adds	r2, #1
-  68:	601a      	str	r2, [r3, #0]
-
-0000006a <compdir_relative_ldir_absolute_file_relative_label>:
-  6a:	681a      	ldr	r2, [r3, #0]
-  6c:	3201      	adds	r2, #1
-  6e:	601a      	str	r2, [r3, #0]
-
-00000070 <compdir_relative_ldir_absolute_file_absolute_same_label>:
-  70:	681a      	ldr	r2, [r3, #0]
-  72:	3201      	adds	r2, #1
-  74:	601a      	str	r2, [r3, #0]
-
-00000076 <compdir_relative_ldir_absolute_file_absolute_different_label>:
-  76:	681a      	ldr	r2, [r3, #0]
-  78:	3201      	adds	r2, #1
-  7a:	601a      	str	r2, [r3, #0]
-
-0000007c <compdir_absolute_ldir_missing__file_basename_label>:
-  7c:	681a      	ldr	r2, [r3, #0]
-  7e:	3201      	adds	r2, #1
-  80:	601a      	str	r2, [r3, #0]
-
-00000082 <compdir_absolute_ldir_missing__file_relative_label>:
-  82:	681a      	ldr	r2, [r3, #0]
-  84:	3201      	adds	r2, #1
-  86:	601a      	str	r2, [r3, #0]
-
-00000088 <compdir_absolute_ldir_missing__file_absolute_same_label>:
-  88:	681a      	ldr	r2, [r3, #0]
-  8a:	3201      	adds	r2, #1
-  8c:	601a      	str	r2, [r3, #0]
-
-0000008e <compdir_absolute_ldir_missing__file_absolute_different_label>:
-  8e:	681a      	ldr	r2, [r3, #0]
-  90:	3201      	adds	r2, #1
-  92:	601a      	str	r2, [r3, #0]
-
-00000094 <compdir_absolute_ldir_relative_file_basename_label>:
-  94:	681a      	ldr	r2, [r3, #0]
-  96:	3201      	adds	r2, #1
-  98:	601a      	str	r2, [r3, #0]
-
-0000009a <compdir_absolute_ldir_relative_file_relative_label>:
-  9a:	681a      	ldr	r2, [r3, #0]
-  9c:	3201      	adds	r2, #1
-  9e:	601a      	str	r2, [r3, #0]
-
-000000a0 <compdir_absolute_ldir_relative_file_absolute_same_label>:
-  a0:	681a      	ldr	r2, [r3, #0]
-  a2:	3201      	adds	r2, #1
-  a4:	601a      	str	r2, [r3, #0]
-
-000000a6 <compdir_absolute_ldir_relative_file_absolute_different_label>:
-  a6:	681a      	ldr	r2, [r3, #0]
-  a8:	3201      	adds	r2, #1
-  aa:	601a      	str	r2, [r3, #0]
-
-000000ac <compdir_absolute_ldir_absolute_file_basename_same_label>:
-  ac:	681a      	ldr	r2, [r3, #0]
-  ae:	3201      	adds	r2, #1
-  b0:	601a      	str	r2, [r3, #0]
-
-000000b2 <compdir_absolute_ldir_absolute_file_basename_different_label>:
-  b2:	681a      	ldr	r2, [r3, #0]
-  b4:	3201      	adds	r2, #1
-  b6:	601a      	str	r2, [r3, #0]
-
-000000b8 <compdir_absolute_ldir_absolute_file_relative_same_label>:
-  b8:	681a      	ldr	r2, [r3, #0]
-  ba:	3201      	adds	r2, #1
-  bc:	601a      	str	r2, [r3, #0]
-
-000000be <compdir_absolute_ldir_absolute_file_relative_different_label>:
-  be:	681a      	ldr	r2, [r3, #0]
-  c0:	3201      	adds	r2, #1
-  c2:	601a      	str	r2, [r3, #0]
-
-000000c4 <compdir_absolute_ldir_absolute_file_absolute_same_label>:
-  c4:	681a      	ldr	r2, [r3, #0]
-  c6:	3201      	adds	r2, #1
-  c8:	601a      	str	r2, [r3, #0]
-
-000000ca <compdir_absolute_ldir_absolute_file_absolute_different_label>:
-  ca:	681a      	ldr	r2, [r3, #0]
-  cc:	2000      	movs	r0, #0
-  ce:	3201      	adds	r2, #1
-  d0:	601a      	str	r2, [r3, #0]
-  d2:	4770      	bx	lr
-  d4:	000000ce 	.word	0x000000ce
+Function main @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0xd0]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r2, [r3]
+0x0040000b:	adds	r2, #1
+0x0040000d:	str	r2, [r3]
+0x0040000f:	ldr	r2, [r3]
+0x00400011:	adds	r2, #1
+0x00400013:	str	r2, [r3]
+0x00400015:	ldr	r2, [r3]
+0x00400017:	adds	r2, #1
+0x00400019:	str	r2, [r3]
+0x0040001b:	ldr	r2, [r3]
+0x0040001d:	adds	r2, #1
+0x0040001f:	str	r2, [r3]
+0x00400021:	ldr	r2, [r3]
+0x00400023:	adds	r2, #1
+0x00400025:	str	r2, [r3]
+0x00400027:	ldr	r2, [r3]
+0x00400029:	adds	r2, #1
+0x0040002b:	str	r2, [r3]
+0x0040002d:	ldr	r2, [r3]
+0x0040002f:	adds	r2, #1
+0x00400031:	str	r2, [r3]
+0x00400033:	ldr	r2, [r3]
+0x00400035:	adds	r2, #1
+0x00400037:	str	r2, [r3]
+0x00400039:	ldr	r2, [r3]
+0x0040003b:	adds	r2, #1
+0x0040003d:	str	r2, [r3]
+0x0040003f:	ldr	r2, [r3]
+0x00400041:	adds	r2, #1
+0x00400043:	str	r2, [r3]
+0x00400045:	ldr	r2, [r3]
+0x00400047:	adds	r2, #1
+0x00400049:	str	r2, [r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	adds	r2, #1
+0x0040004f:	str	r2, [r3]
+0x00400051:	ldr	r2, [r3]
+0x00400053:	adds	r2, #1
+0x00400055:	str	r2, [r3]
+0x00400057:	ldr	r2, [r3]
+0x00400059:	adds	r2, #1
+0x0040005b:	str	r2, [r3]
+0x0040005d:	ldr	r2, [r3]
+0x0040005f:	adds	r2, #1
+0x00400061:	str	r2, [r3]
+0x00400063:	ldr	r2, [r3]
+0x00400065:	adds	r2, #1
+0x00400067:	str	r2, [r3]
+0x00400069:	ldr	r2, [r3]
+0x0040006b:	adds	r2, #1
+0x0040006d:	str	r2, [r3]
+0x0040006f:	ldr	r2, [r3]
+0x00400071:	adds	r2, #1
+0x00400073:	str	r2, [r3]
+0x00400075:	ldr	r2, [r3]
+0x00400077:	adds	r2, #1
+0x00400079:	str	r2, [r3]
+0x0040007b:	ldr	r2, [r3]
+0x0040007d:	adds	r2, #1
+0x0040007f:	str	r2, [r3]
+0x00400081:	ldr	r2, [r3]
+0x00400083:	adds	r2, #1
+0x00400085:	str	r2, [r3]
+0x00400087:	ldr	r2, [r3]
+0x00400089:	adds	r2, #1
+0x0040008b:	str	r2, [r3]
+0x0040008d:	ldr	r2, [r3]
+0x0040008f:	adds	r2, #1
+0x00400091:	str	r2, [r3]
+0x00400093:	ldr	r2, [r3]
+0x00400095:	adds	r2, #1
+0x00400097:	str	r2, [r3]
+0x00400099:	ldr	r2, [r3]
+0x0040009b:	adds	r2, #1
+0x0040009d:	str	r2, [r3]
+0x0040009f:	ldr	r2, [r3]
+0x004000a1:	adds	r2, #1
+0x004000a3:	str	r2, [r3]
+0x004000a5:	ldr	r2, [r3]
+0x004000a7:	adds	r2, #1
+0x004000a9:	str	r2, [r3]
+0x004000ab:	ldr	r2, [r3]
+0x004000ad:	adds	r2, #1
+0x004000af:	str	r2, [r3]
+0x004000b1:	ldr	r2, [r3]
+0x004000b3:	adds	r2, #1
+0x004000b5:	str	r2, [r3]
+0x004000b7:	ldr	r2, [r3]
+0x004000b9:	adds	r2, #1
+0x004000bb:	str	r2, [r3]
+0x004000bd:	ldr	r2, [r3]
+0x004000bf:	adds	r2, #1
+0x004000c1:	str	r2, [r3]
+0x004000c3:	ldr	r2, [r3]
+0x004000c5:	adds	r2, #1
+0x004000c7:	str	r2, [r3]
+0x004000c9:	ldr	r2, [r3]
+0x004000cb:	adds	r2, #1
+0x004000cd:	str	r2, [r3]
+0x004000cf:	ldr	r2, [r3]
+0x004000d1:	movs	r0, #0
+0x004000d3:	adds	r2, #1
+0x004000d5:	str	r2, [r3]
+0x004000d7:	bx	lr

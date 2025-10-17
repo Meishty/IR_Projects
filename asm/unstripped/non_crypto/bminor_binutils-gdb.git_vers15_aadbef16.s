@@ -1,45 +1,49 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_vers15_aadbef16.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andmi	pc, sl, r0, asr #4
+0x00400004:	svclt	#0x4770
 
+Function show_foo@VERS_1.1 @ 0x00400009
+0x00400009:	movw	r0, #0x53f
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movw	r0, #0x536
+0x00400015:	bx	lr
 
-00000000 <foo_1>:
-   0:	f240 400a 	movw	r0, #1034	; 0x40a
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function show_foo@@VERS_1.2 @ 0x00400011
+0x00400011:	movw	r0, #0x536
+0x00400015:	bx	lr
 
-00000008 <foo_2>:
-   8:	f240 503f 	movw	r0, #1343	; 0x53f
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
 
-00000010 <foo_3>:
-  10:	f240 5036 	movw	r0, #1334	; 0x536
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function main @ 0x00400061
+0x00400061:	ldr	r1, [pc, #0x2c]
+0x00400063:	movw	r2, #0x40a
+0x00400067:	push	{r3, lr}
+0x00400069:	movs	r0, #1
+0x0040006b:	add	r1, pc
+0x0040006d:	bl	#0x500001
+0x00400071:	ldr	r1, [pc, #0x20]
+0x00400073:	movw	r2, #0x53f
+0x00400077:	movs	r0, #1
+0x00400079:	add	r1, pc
+0x0040007b:	bl	#0x500001
+0x0040007f:	ldr	r1, [pc, #0x18]
+0x00400081:	movw	r2, #0x536
+0x00400085:	movs	r0, #1
+0x00400087:	add	r1, pc
+0x00400089:	bl	#0x500001
+0x0040008d:	movs	r0, #0
+0x0040008f:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
 
-00000000 <main>:
-   0:	490b      	ldr	r1, [pc, #44]	; (30 <main+0x30>)
-   2:	f240 420a 	movw	r2, #1034	; 0x40a
-   6:	b508      	push	{r3, lr}
-   8:	2001      	movs	r0, #1
-   a:	4479      	add	r1, pc
-   c:	f7ff fffe 	bl	0 <__printf_chk>
-  10:	4908      	ldr	r1, [pc, #32]	; (34 <main+0x34>)
-  12:	f240 523f 	movw	r2, #1343	; 0x53f
-  16:	2001      	movs	r0, #1
-  18:	4479      	add	r1, pc
-  1a:	f7ff fffe 	bl	0 <__printf_chk>
-  1e:	4906      	ldr	r1, [pc, #24]	; (38 <main+0x38>)
-  20:	f240 5236 	movw	r2, #1334	; 0x536
-  24:	2001      	movs	r0, #1
-  26:	4479      	add	r1, pc
-  28:	f7ff fffe 	bl	0 <__printf_chk>
-  2c:	2000      	movs	r0, #0
-  2e:	bd08      	pop	{r3, pc}
-  30:	00000022 	.word	0x00000022
-  34:	00000018 	.word	0x00000018
-  38:	0000000e 	.word	0x0000000e
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

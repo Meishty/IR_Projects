@@ -1,14 +1,20 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mi-catch-load_18d67d1e_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	movs	r1, #1
+0x00400005:	ldr	r3, [pc, #0x10]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r0, [r3]
+0x0040000b:	bl	#0x40000b
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
 
-Disassembly of section .text.startup:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	2101b508 	tstcs	r1, r8, lsl #10
-   4:	447b4b04 	ldrbtmi	r4, [fp], #-2820	; 0xfffff4fc
-   8:	f7ff6818 			; <UNDEFINED> instruction: 0xf7ff6818
-   c:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  10:	2000fffe 	strdcs	pc, [r0], -lr
-  14:	bf00bd08 	svclt	0x0000bd08
-  18:	0000000e 	andeq	r0, r0, lr
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r6, r1
+0x0040001b:	movs	r0, r0

@@ -1,16 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_breakpoint-in-ro-region_d9b44e72_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	20004b07 	andcs	r4, r0, r7, lsl #22
-   4:	6018447b 	andsvs	r4, r8, fp, ror r4
-   8:	60186018 	andsvs	r6, r8, r8, lsl r0
-   c:	60186018 	andsvs	r6, r8, r8, lsl r0
-  10:	60186018 	andsvs	r6, r8, r8, lsl r0
-  14:	60186018 	andsvs	r6, r8, r8, lsl r0
-  18:	60186018 	andsvs	r6, r8, r8, lsl r0
-  1c:	47706018 			; <UNDEFINED> instruction: 0x47706018
-  20:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_400005 @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0x1c]
+0x00400007:	movs	r0, #0
+0x00400009:	add	r3, pc
+0x0040000b:	str	r0, [r3]
+0x0040000d:	str	r0, [r3]
+0x0040000f:	str	r0, [r3]
+0x00400011:	str	r0, [r3]
+0x00400013:	str	r0, [r3]
+0x00400015:	str	r0, [r3]
+0x00400017:	str	r0, [r3]
+0x00400019:	str	r0, [r3]
+0x0040001b:	str	r0, [r3]
+0x0040001d:	str	r0, [r3]
+0x0040001f:	str	r0, [r3]
+0x00400021:	str	r0, [r3]
+0x00400023:	bx	lr

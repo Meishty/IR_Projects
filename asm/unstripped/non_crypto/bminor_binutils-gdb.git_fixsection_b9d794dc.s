@@ -1,12 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_fixsection_b9d794dc.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	movs	r0, #0
+0x00400009:	pop	{r3, pc}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <force_static_fun>
-   6:	2000      	movs	r0, #0
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function force_static_fun @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

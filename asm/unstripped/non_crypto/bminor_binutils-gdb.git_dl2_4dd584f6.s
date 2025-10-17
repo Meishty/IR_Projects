@@ -1,32 +1,53 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dl2_4dd584f6.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x72d428
+0x00400004:	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	andle	r2, lr, r1, lsl #22
+0x0040000c:	blmi	#0x6ac520
+0x00400008:	andle	r2, lr, r1, lsl #22
+0x0040000c:	blmi	#0x6ac520
+0x00400010:	rscslo	pc, pc, #0x4f
+0x00400014:	andsvs	r4, sl, fp, ror r4
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	ands	r0, r1
+0x0040001d:	b.w	#0x50000d
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	ldr	r0, [pc, #0x18]
+0x00400023:	add	r0, pc
+0x00400025:	bl	#0x500001
+0x00400029:	b	#0x40000f
 
-00000000 <bar>:
-   0:	b508      	push	{r3, lr}
-   2:	4b0c      	ldr	r3, [pc, #48]	; (34 <bar+0x34>)
-   4:	447b      	add	r3, pc
-   6:	681b      	ldr	r3, [r3, #0]
-   8:	2b01      	cmp	r3, #1
-   a:	d00e      	beq.n	2a <bar+0x2a>
-   c:	b143      	cbz	r3, 20 <bar+0x20>
-   e:	4b0a      	ldr	r3, [pc, #40]	; (38 <bar+0x38>)
-  10:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
-  14:	447b      	add	r3, pc
-  16:	601a      	str	r2, [r3, #0]
-  18:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  1c:	f7ff bffe 	b.w	0 <xxx>
-  20:	4806      	ldr	r0, [pc, #24]	; (3c <bar+0x3c>)
-  22:	4478      	add	r0, pc
-  24:	f7ff fffe 	bl	0 <puts>
-  28:	e7f1      	b.n	e <bar+0xe>
-  2a:	4805      	ldr	r0, [pc, #20]	; (40 <bar+0x40>)
-  2c:	4478      	add	r0, pc
-  2e:	f7ff fffe 	bl	0 <puts>
-  32:	e7ec      	b.n	e <bar+0xe>
-  34:	0000002c 	.word	0x0000002c
-  38:	00000020 	.word	0x00000020
-  3c:	00000016 	.word	0x00000016
-  40:	00000010 	.word	0x00000010
+Function sub_40002b @ 0x0040002b
+0x0040002b:	ldr	r0, [pc, #0x14]
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x500001
+0x00400033:	b	#0x40000f
+
+Function sub_400035 @ 0x00400035
+0x00400035:	movs	r4, r7
+0x00400037:	movs	r0, r0
+0x00400039:	movs	r4, r5
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r6, r4
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r0, r3
+0x00400043:	movs	r0, r0
+
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function xxx @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

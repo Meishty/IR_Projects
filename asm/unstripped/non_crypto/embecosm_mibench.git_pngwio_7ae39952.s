@@ -1,69 +1,115 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_pngwio_7ae39952.o:     file format elf32-littlearm
+Function png_default_flush @ 0x00400001
+0x00400001:	ldr.w	r0, [r0, #0x19c]
+0x00400005:	cbz	r0, #0x40000b
+0x00400007:	b.w	#0x50000d
+0x00400007:	b.w	#0x50000d
+0x0040000b:	bx	lr
 
+Function png_default_write_data @ 0x0040000d
+0x0040000d:	push	{r3, r4, r5, lr}
+0x0040000f:	mov	r4, r0
+0x00400011:	mov	r5, r2
+0x00400013:	mov	r0, r1
+0x00400015:	movs	r1, #1
+0x00400017:	ldr.w	r3, [r4, #0x19c]
+0x0040001b:	bl	#0x500001
+0x0040001f:	cmp	r5, r0
+0x00400021:	bne	#0x400025
+0x00400023:	pop	{r3, r4, r5, pc}
+0x00400025:	ldr	r1, [pc, #0xc]
+0x00400027:	mov	r0, r4
+0x00400029:	pop.w	{r3, r4, r5, lr}
+0x0040002d:	add	r1, pc
+0x0040002f:	b.w	#0x500019
 
-Disassembly of section .text:
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	lsls	r4, r4, #1
+0x00400037:	movs	r0, r0
+0x00400039:	ldr.w	r3, [r0, #0x194]
+0x0040003d:	cbz	r3, #0x400041
+0x0040003f:	bx	r3
 
-00000000 <png_default_flush>:
-   0:	f8d0 019c 	ldr.w	r0, [r0, #412]	; 0x19c
-   4:	b108      	cbz	r0, a <png_default_flush+0xa>
-   6:	f7ff bffe 	b.w	0 <fflush>
-   a:	4770      	bx	lr
+Function png_write_data @ 0x00400039
+0x00400039:	ldr.w	r3, [r0, #0x194]
+0x0040003d:	cbz	r3, #0x400041
+0x0040003f:	bx	r3
+0x0040003f:	bx	r3
+0x00400041:	ldr	r1, [pc, #4]
+0x00400043:	add	r1, pc
+0x00400045:	b.w	#0x500019
 
-0000000c <png_default_write_data>:
-   c:	b538      	push	{r3, r4, r5, lr}
-   e:	4604      	mov	r4, r0
-  10:	4615      	mov	r5, r2
-  12:	4608      	mov	r0, r1
-  14:	2101      	movs	r1, #1
-  16:	f8d4 319c 	ldr.w	r3, [r4, #412]	; 0x19c
-  1a:	f7ff fffe 	bl	0 <fwrite>
-  1e:	4285      	cmp	r5, r0
-  20:	d100      	bne.n	24 <png_default_write_data+0x18>
-  22:	bd38      	pop	{r3, r4, r5, pc}
-  24:	4903      	ldr	r1, [pc, #12]	; (34 <png_default_write_data+0x28>)
-  26:	4620      	mov	r0, r4
-  28:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
-  2c:	4479      	add	r1, pc
-  2e:	f7ff bffe 	b.w	0 <png_error>
-  32:	bf00      	nop
-  34:	00000004 	.word	0x00000004
+Function png_flush @ 0x0040004d
+0x0040004d:	ldr.w	r3, [r0, #0x24c]
+0x00400051:	cbz	r3, #0x400055
+0x00400053:	bx	r3
+0x00400053:	bx	r3
+0x00400055:	bx	lr
 
-00000038 <png_write_data>:
-  38:	f8d0 3194 	ldr.w	r3, [r0, #404]	; 0x194
-  3c:	b103      	cbz	r3, 40 <png_write_data+0x8>
-  3e:	4718      	bx	r3
-  40:	4901      	ldr	r1, [pc, #4]	; (48 <png_write_data+0x10>)
-  42:	4479      	add	r1, pc
-  44:	f7ff bffe 	b.w	0 <png_error>
-  48:	00000002 	.word	0x00000002
+Function sub_400057 @ 0x00400057
+0x00400057:	nop	
+0x00400059:	str.w	r1, [r0, #0x19c]
+0x0040005d:	cbz	r2, #0x400071
+0x0040005f:	str.w	r2, [r0, #0x194]
+0x00400063:	cbz	r3, #0x40007d
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
 
-0000004c <png_flush>:
-  4c:	f8d0 324c 	ldr.w	r3, [r0, #588]	; 0x24c
-  50:	b103      	cbz	r3, 54 <png_flush+0x8>
-  52:	4718      	bx	r3
-  54:	4770      	bx	lr
-  56:	bf00      	nop
+Function png_set_write_fn @ 0x00400059
+0x00400059:	str.w	r1, [r0, #0x19c]
+0x0040005d:	cbz	r2, #0x400071
+0x0040005f:	str.w	r2, [r0, #0x194]
+0x00400063:	cbz	r3, #0x40007d
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+0x0040005f:	str.w	r2, [r0, #0x194]
+0x00400063:	cbz	r3, #0x40007d
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+0x00400071:	ldr	r2, [pc, #0x18]
+0x00400073:	add	r2, pc
+0x00400075:	str.w	r2, [r0, #0x194]
+0x00400079:	cmp	r3, #0
+0x0040007b:	bne	#0x400065
+0x0040007d:	ldr	r3, [pc, #0x10]
+0x0040007f:	movs	r2, #0
+0x00400081:	str.w	r2, [r0, #0x198]
+0x00400085:	add	r3, pc
+0x00400087:	str.w	r3, [r0, #0x24c]
+0x0040008b:	bx	lr
 
-00000058 <png_set_write_fn>:
-  58:	f8c0 119c 	str.w	r1, [r0, #412]	; 0x19c
-  5c:	b142      	cbz	r2, 70 <png_set_write_fn+0x18>
-  5e:	f8c0 2194 	str.w	r2, [r0, #404]	; 0x194
-  62:	b15b      	cbz	r3, 7c <png_set_write_fn+0x24>
-  64:	2200      	movs	r2, #0
-  66:	f8c0 324c 	str.w	r3, [r0, #588]	; 0x24c
-  6a:	f8c0 2198 	str.w	r2, [r0, #408]	; 0x198
-  6e:	4770      	bx	lr
-  70:	4a06      	ldr	r2, [pc, #24]	; (8c <png_set_write_fn+0x34>)
-  72:	447a      	add	r2, pc
-  74:	f8c0 2194 	str.w	r2, [r0, #404]	; 0x194
-  78:	2b00      	cmp	r3, #0
-  7a:	d1f3      	bne.n	64 <png_set_write_fn+0xc>
-  7c:	4b04      	ldr	r3, [pc, #16]	; (90 <png_set_write_fn+0x38>)
-  7e:	2200      	movs	r2, #0
-  80:	f8c0 2198 	str.w	r2, [r0, #408]	; 0x198
-  84:	447b      	add	r3, pc
-  86:	f8c0 324c 	str.w	r3, [r0, #588]	; 0x24c
-  8a:	4770      	bx	lr
-  8c:	00000016 	.word	0x00000016
-  90:	00000008 	.word	0x00000008
+Function fwrite @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function fflush @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function png_error @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

@@ -1,15 +1,22 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_info-var-f1_c944ebe5_stripped.o:     file format elf32-littlearm
+Function sub_400025 @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x400027
 
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	ldr	r3, [pc, #0x10]
+0x0040002d:	ldr	r2, [pc, #0x10]
+0x0040002f:	add	r3, pc
+0x00400031:	ldr	r3, [r3, r2]
+0x00400033:	ldr	r3, [r3]
+0x00400035:	add	r0, r3
+0x00400037:	subs	r0, #3
+0x00400039:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4b04fffe 	blmi	0x140004
-   8:	447b4a04 	ldrbtmi	r4, [fp], #-2564	; 0xfffff5fc
-   c:	681b589b 	ldmdavs	fp, {r0, r1, r3, r4, r7, fp, ip, lr}
-  10:	38034418 	stmdacc	r3, {r3, r4, sl, lr}
-  14:	bf00bd08 	svclt	0x0000bd08
-  18:	0000000a 	andeq	r0, r0, sl
-  1c:	00000000 	andeq	r0, r0, r0
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r2, r1
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r0, r0
+0x00400043:	movs	r0, r0

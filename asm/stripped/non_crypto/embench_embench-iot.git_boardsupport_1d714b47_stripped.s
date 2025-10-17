@@ -1,10 +1,17 @@
 
-/root/projects/compiled/non_crypto/stripped/embench_embench-iot.git_boardsupport_1d714b47_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	nop	
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-00000000 <.text>:
-   0:	4770bf00 	ldrbmi	fp, [r0, -r0, lsl #30]!
-   4:	4770bf00 	ldrbmi	fp, [r0, -r0, lsl #30]!
-   8:	4770bf00 	ldrbmi	fp, [r0, -r0, lsl #30]!
+Function sub_400009 @ 0x00400009
+0x00400009:	nop	
+0x0040000b:	bx	lr
+
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr

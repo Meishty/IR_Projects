@@ -1,19 +1,36 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_strcasecmp_cca4822a_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	mov	r5, r0
+0x00400005:	mov	r4, r1
+0x00400007:	bl	#0x400007
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	4605b538 			; <UNDEFINED> instruction: 0x4605b538
-   4:	f7ff460c 			; <UNDEFINED> instruction: 0xf7ff460c
-   8:	6802fffe 	stmdavs	r2, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   c:	3b01f815 	blcc	0x7e068
-  10:	1b01f814 	blne	0x7e068
-  14:	3023f852 	eorcc	pc, r3, r2, asr r8	; <UNPREDICTABLE>
-  18:	0021f852 	eoreq	pc, r1, r2, asr r8	; <UNPREDICTABLE>
-  1c:	bf181e19 	svclt	0x00181e19
-  20:	42982101 	addsmi	r2, r8, #1073741824	; 0x40000000
-  24:	2100bf18 	tstcs	r0, r8, lsl pc
-  28:	d1ef2900 	mvnle	r2, r0, lsl #18
-  2c:	bd381a18 	vldmdblt	r8!, {s2-s25}
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	ldr	r2, [r0]
+0x0040000d:	ldrb	r3, [r5], #1
+0x00400011:	ldrb	r1, [r4], #1
+0x00400015:	ldr.w	r3, [r2, r3, lsl #2]
+0x00400019:	ldr.w	r0, [r2, r1, lsl #2]
+0x0040001d:	subs	r1, r3, #0
+0x0040001f:	it	ne
+0x00400021:	movne	r1, #1
+0x00400023:	cmp	r0, r3
+0x00400025:	it	ne
+0x00400027:	movne	r1, #0
+0x00400029:	cmp	r1, #0
+0x0040002b:	bne	#0x40000d
+0x0040000d:	ldrb	r3, [r5], #1
+0x00400011:	ldrb	r1, [r4], #1
+0x00400015:	ldr.w	r3, [r2, r3, lsl #2]
+0x00400019:	ldr.w	r0, [r2, r1, lsl #2]
+0x0040001d:	subs	r1, r3, #0
+0x0040001f:	it	ne
+0x00400021:	movne	r1, #1
+0x00400023:	cmp	r0, r3
+0x00400025:	it	ne
+0x00400027:	movne	r1, #0
+0x00400029:	cmp	r1, #0
+0x0040002b:	bne	#0x40000d
+0x0040002d:	subs	r0, r3, r0
+0x0040002f:	pop	{r3, r4, r5, pc}

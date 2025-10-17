@@ -1,13 +1,21 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_mkg3_main_508a3504.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r4, r2, lsl #18
 
+Function sub_400007 @ 0x00400007
+0x00400007:	b.w	#0x500001
 
-Disassembly of section .text.startup:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	movs	r0, r6
+0x0040000f:	movs	r0, r0
 
-00000000 <main>:
-   0:	4902      	ldr	r1, [pc, #8]	; (c <main+0xc>)
-   2:	2004      	movs	r0, #4
-   4:	4479      	add	r1, pc
-   6:	f7ff bffe 	b.w	0 <tool_main>
-   a:	bf00      	nop
-   c:	00000004 	.word	0x00000004
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r0, r6
+0x0040000f:	movs	r0, r0
+
+Function tool_main @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

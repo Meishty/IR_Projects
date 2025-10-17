@@ -1,24 +1,30 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr25749-1d_fc4245c4.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdbmi	r4, {r0, r1, r8, sb, fp, lr}
+0x00400004:	ldrbtmi	r4, [fp], #-0xa04
+0x00400008:	ldmpl	fp, {r3, r4, r6, fp, ip, lr}
+0x00400004:	ldrbtmi	r4, [fp], #-0xa04
+0x00400008:	ldmpl	fp, {r3, r4, r6, fp, ip, lr}
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bx	lr
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r6, r0
+0x00400013:	movs	r0, r0
+0x00400015:	movs	r0, r0
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r0, r0
+0x0040001b:	movs	r0, r0
+0x0040001d:	ldr	r0, [pc, #4]
+0x0040001f:	add	r0, pc
+0x00400021:	bx	lr
 
-00000000 <size>:
-   0:	4b03      	ldr	r3, [pc, #12]	; (10 <size+0x10>)
-   2:	4904      	ldr	r1, [pc, #16]	; (14 <size+0x14>)
-   4:	4a04      	ldr	r2, [pc, #16]	; (18 <size+0x18>)
-   6:	447b      	add	r3, pc
-   8:	5858      	ldr	r0, [r3, r1]
-   a:	589b      	ldr	r3, [r3, r2]
-   c:	1ac0      	subs	r0, r0, r3
-   e:	4770      	bx	lr
-  10:	00000006 	.word	0x00000006
-	...
+Function size_p @ 0x0040001d
+0x0040001d:	ldr	r0, [pc, #4]
+0x0040001f:	add	r0, pc
+0x00400021:	bx	lr
 
-0000001c <size_p>:
-  1c:	4801      	ldr	r0, [pc, #4]	; (24 <size_p+0x8>)
-  1e:	4478      	add	r0, pc
-  20:	4770      	bx	lr
-  22:	bf00      	nop
-  24:	00000002 	.word	0x00000002
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	vaddl.u16	q8, d14, d15

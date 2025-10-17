@@ -1,35 +1,58 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_kill-after-signal_db059918_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vst3.8	{d27, d29, d31}, [pc], r8
 
+Function sub_400008 @ 0x00400008
+0x00400008:	blmi	#0x540008
+0x0040000c:	stmdbmi	r4, {r0, r1, r3, r4, sb, sp}
+0x00400010:	ldrbtmi	r4, [fp], #-0x804
+0x00400014:	ldrbtmi	r4, [r8], #-0x479
+0x00400010:	ldrbtmi	r4, [fp], #-0x804
+0x00400014:	ldrbtmi	r4, [r8], #-0x479
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
 
-00000000 <.text>:
-   0:	f44fb508 	vst3.8	{d27,d29,d31}, [pc], r8
-   4:	f7ff7016 			; <UNDEFINED> instruction: 0xf7ff7016
-   8:	4b04fffe 	blmi	0x140008
-   c:	4904221b 	stmdbmi	r4, {r0, r1, r3, r4, r9, sp}
-  10:	447b4804 	ldrbtmi	r4, [fp], #-2052	; 0xfffff7fc
-  14:	44784479 	ldrbtmi	r4, [r8], #-1145	; 0xfffffb87
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	00000006 	andeq	r0, r0, r6
-  20:	00000008 	andeq	r0, r0, r8
-  24:	0000000a 	andeq	r0, r0, sl
+Function sub_400075 @ 0x00400075
+0x00400075:	ldr	r1, [pc, #0x24]
+0x00400077:	movs	r0, #0xa
+0x00400079:	push	{r3, lr}
+0x0040007b:	add	r1, pc
+0x0040007d:	bl	#0x40007d
 
-Disassembly of section .text.startup:
+Function sub_40007d @ 0x0040007d
+0x0040007d:	bl	#0x40007d
 
-00000000 <.text.startup>:
-   0:	200a4909 	andcs	r4, sl, r9, lsl #18
-   4:	4479b508 	ldrbtmi	fp, [r9], #-1288	; 0xfffffaf8
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	f7ff200a 			; <UNDEFINED> instruction: 0xf7ff200a
-  10:	4b06fffe 	blmi	0x1c0010
-  14:	22234906 	eorcs	r4, r3, #98304	; 0x18000
-  18:	447b4806 	ldrbtmi	r4, [fp], #-2054	; 0xfffff7fa
-  1c:	33084479 	movwcc	r4, #33913	; 0x8479
-  20:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  24:	bf00fffe 	svclt	0x0000fffe
-  28:	0000001e 	andeq	r0, r0, lr, lsl r0
-  2c:	0000000e 	andeq	r0, r0, lr
-  30:	00000010 	andeq	r0, r0, r0, lsl r0
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400081 @ 0x00400081
+0x00400081:	movs	r0, #0xa
+0x00400083:	bl	#0x400083
+
+Function sub_400083 @ 0x00400083
+0x00400083:	bl	#0x400083
+
+Function sub_400087 @ 0x00400087
+0x00400087:	ldr	r3, [pc, #0x18]
+0x00400089:	ldr	r1, [pc, #0x18]
+0x0040008b:	movs	r2, #0x23
+0x0040008d:	ldr	r0, [pc, #0x18]
+0x0040008f:	add	r3, pc
+0x00400091:	add	r1, pc
+0x00400093:	adds	r3, #8
+0x00400095:	add	r0, pc
+0x00400097:	bl	#0x400097
+
+Function sub_400097 @ 0x00400097
+0x00400097:	bl	#0x400097
+
+Function sub_40009b @ 0x0040009b
+0x0040009b:	nop	
+0x0040009d:	movs	r6, r3
+0x0040009f:	movs	r0, r0
+0x004000a1:	movs	r6, r1
+0x004000a3:	movs	r0, r0
+0x004000a5:	movs	r0, r2
+0x004000a7:	movs	r0, r0
+0x004000a9:	movs	r0, r2
+0x004000ab:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

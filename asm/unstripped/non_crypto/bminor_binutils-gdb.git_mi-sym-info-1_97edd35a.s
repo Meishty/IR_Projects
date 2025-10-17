@@ -1,26 +1,31 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mi-sym-info-1_97edd35a.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwlo	r6, #0x1803
+0x00400004:	ldrbmi	r6, [r0, -r3]!
 
+Function main @ 0x0040000d
+0x0040000d:	push	{r4, lr}
+0x0040000f:	movs	r0, #4
+0x00400011:	bl	#0x500001
+0x00400015:	vmov.f32	s0, #1.000000e+00
+0x00400019:	mov	r4, r0
+0x0040001b:	bl	#0x50000d
+0x0040001f:	vcvt.s32.f32	s15, s0
+0x00400023:	adds	r4, #4
+0x00400025:	vmov	r0, s15
+0x00400029:	add	r0, r4
+0x0040002b:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function f3 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <f4>:
-   0:	6803      	ldr	r3, [r0, #0]
-   2:	3301      	adds	r3, #1
-   4:	6003      	str	r3, [r0, #0]
-   6:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2004      	movs	r0, #4
-   4:	f7ff fffe 	bl	0 <f3>
-   8:	eeb7 0a00 	vmov.f32	s0, #112	; 0x3f800000  1.0
-   c:	4604      	mov	r4, r0
-   e:	f7ff fffe 	bl	0 <f2>
-  12:	eefd 7ac0 	vcvt.s32.f32	s15, s0
-  16:	3404      	adds	r4, #4
-  18:	ee17 0a90 	vmov	r0, s15
-  1c:	4420      	add	r0, r4
-  1e:	bd10      	pop	{r4, pc}
+Function f2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

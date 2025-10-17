@@ -1,17 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watch-before-fork_ff4727a6.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	movs	r2, #1
+0x00400009:	ldr	r3, [pc, #0xc]
+0x0040000b:	add	r3, pc
+0x0040000d:	str	r2, [r3]
+0x0040000f:	bl	#0x500001
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
 
+Function sub_400017 @ 0x00400017
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	2201      	movs	r2, #1
-   4:	4b03      	ldr	r3, [pc, #12]	; (14 <main+0x14>)
-   6:	447b      	add	r3, pc
-   8:	601a      	str	r2, [r3, #0]
-   a:	f7ff fffe 	bl	0 <fork>
-   e:	2000      	movs	r0, #0
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
-  14:	0000000a 	.word	0x0000000a
+Function fork @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,18 +1,21 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_infcall-timeout_f371911a_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r1, r8, lsl #10
 
+Function sub_400006 @ 0x00400006
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
 
-00000000 <.text>:
-   0:	2001b508 	andcs	fp, r1, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bf00e7fb 	svclt	0x0000e7fb
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	mov.w	r0, #0x12c
+0x00400013:	bl	#0x400013
 
-Disassembly of section .text.startup:
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+0x00400017:	movs	r0, #0
+0x00400019:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	f44fb508 	vst3.8	{d27,d29,d31}, [pc], r8
-   4:	f7ff7096 			; <UNDEFINED> instruction: 0xf7ff7096
-   8:	2000fffe 	strdcs	pc, [r0], -lr
-   c:	bf00bd08 	svclt	0x0000bd08
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	

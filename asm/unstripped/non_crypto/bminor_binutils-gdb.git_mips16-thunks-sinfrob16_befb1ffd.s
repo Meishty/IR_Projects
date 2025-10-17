@@ -1,35 +1,46 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mips16-thunks-sinfrob16_befb1ffd.o:     file format elf32-littlearm
+Function sinfrob16 @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r3, [pc, #0x10]
+0x00400009:	ldr	r2, [pc, #0x10]
+0x0040000b:	add	r3, pc
+0x0040000d:	ldr	r2, [r3, r2]
+0x0040000f:	ldr	r3, [r2]
+0x00400011:	adds	r3, #2
+0x00400013:	str	r3, [r2]
+0x00400015:	pop	{r3, pc}
 
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x500001
 
-Disassembly of section .text:
+Function sinblah16 @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x500001
+0x00400027:	ldr	r3, [pc, #0x10]
+0x00400029:	ldr	r2, [pc, #0x10]
+0x0040002b:	add	r3, pc
+0x0040002d:	ldr	r2, [r3, r2]
+0x0040002f:	ldr	r3, [r2]
+0x00400031:	adds	r3, #2
+0x00400033:	str	r3, [r2]
+0x00400035:	pop	{r3, pc}
 
-00000000 <sinfrob16>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <sin>
-   6:	4b04      	ldr	r3, [pc, #16]	; (18 <sinfrob16+0x18>)
-   8:	4a04      	ldr	r2, [pc, #16]	; (1c <sinfrob16+0x1c>)
-   a:	447b      	add	r3, pc
-   c:	589a      	ldr	r2, [r3, r2]
-   e:	6813      	ldr	r3, [r2, #0]
-  10:	3302      	adds	r3, #2
-  12:	6013      	str	r3, [r2, #0]
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
-  18:	0000000a 	.word	0x0000000a
-  1c:	00000000 	.word	0x00000000
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r2, r1
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r0, r0
+0x0040003f:	movs	r0, r0
 
-00000020 <sinblah16>:
-  20:	b508      	push	{r3, lr}
-  22:	f7ff fffe 	bl	0 <sin>
-  26:	4b04      	ldr	r3, [pc, #16]	; (38 <sinblah16+0x18>)
-  28:	4a04      	ldr	r2, [pc, #16]	; (3c <sinblah16+0x1c>)
-  2a:	447b      	add	r3, pc
-  2c:	589a      	ldr	r2, [r3, r2]
-  2e:	6813      	ldr	r3, [r2, #0]
-  30:	3302      	adds	r3, #2
-  32:	6013      	str	r3, [r2, #0]
-  34:	bd08      	pop	{r3, pc}
-  36:	bf00      	nop
-  38:	0000000a 	.word	0x0000000a
-  3c:	00000000 	.word	0x00000000
+Function sin @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,472 +1,1403 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr32690a_a539f355_stripped.o:     file format elf32-littlearm
+Function sub_40002d @ 0x0040002d
+0x0040002d:	push	{r3, r4, r5, r6, r7, lr}
+0x0040002f:	mov	r6, r1
+0x00400031:	ldr.w	r5, [pc, #0x71c]
+0x00400035:	ldr.w	r0, [pc, #0x71c]
+0x00400039:	ldr.w	r2, [pc, #0x71c]
+0x0040003d:	add	r5, pc
+0x0040003f:	ldr.w	r3, [pc, #0x71c]
+0x00400043:	ldr	r1, [r5, r0]
+0x00400045:	ldr	r0, [r5, r2]
+0x00400047:	ldr	r2, [r5, r3]
+0x00400049:	ldrb	r7, [r1]
+0x0040004b:	ldrb	r3, [r0]
+0x0040004d:	ldrb	r4, [r2]
+0x0040004f:	add	r7, r3
+0x00400051:	bl	#0x400051
 
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
 
-Disassembly of section .text.startup:
+Function sub_400055 @ 0x00400055
+0x00400055:	bl	#0x400055
 
-00000000 <.text.startup>:
-   0:	460eb5f8 			; <UNDEFINED> instruction: 0x460eb5f8
-   4:	571cf8df 			; <UNDEFINED> instruction: 0x571cf8df
-   8:	071cf8df 			; <UNDEFINED> instruction: 0x071cf8df
-   c:	271cf8df 			; <UNDEFINED> instruction: 0x271cf8df
-  10:	f8df447d 			; <UNDEFINED> instruction: 0xf8df447d
-  14:	5829371c 	stmdapl	r9!, {r2, r3, r4, r8, r9, sl, ip, sp}
-  18:	58ea58a8 	stmiapl	sl!, {r3, r5, r7, fp, ip, lr}^
-  1c:	7803780f 	stmdavc	r3, {r0, r1, r2, r3, fp, ip, sp, lr}
-  20:	441f7814 	ldrmi	r7, [pc], #-2068	; 0x28
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  3c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  40:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  54:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  58:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  5c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  60:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  64:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  68:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  6c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  70:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  74:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  78:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  7c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  80:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  84:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  88:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  8c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  90:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  94:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  98:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  9c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  bc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  c0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  c4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  c8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  cc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  d4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  d8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  dc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  e0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  e4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  e8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  f8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  fc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 100:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 104:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 108:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 10c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 110:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 114:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 118:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 11c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 120:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 124:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 128:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 12c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 130:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 134:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 138:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 13c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 140:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 144:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 148:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 14c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 150:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 154:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 158:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 15c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 160:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 164:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 168:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 16c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 170:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 174:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 178:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 17c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 180:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 184:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 188:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 18c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 190:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 194:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 198:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 19c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1bc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1c0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1c4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1c8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1cc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1d4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1d8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1dc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1e0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1e4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1e8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1f8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1fc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 200:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 204:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 208:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 20c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 210:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 214:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 218:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 21c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 220:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 224:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 228:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 22c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 230:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 234:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 238:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 23c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 240:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 244:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 248:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 24c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 250:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 254:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 258:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 25c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 260:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 264:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 268:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 26c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 270:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 274:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 278:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 27c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 280:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 284:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 288:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 28c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 290:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 294:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 298:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 29c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2bc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2c0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2c4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2c8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2cc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2d4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2d8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2dc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2e0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2e4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2e8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2f8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2fc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 300:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 304:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 308:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 30c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 310:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 314:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 318:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 31c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 320:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 324:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 328:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 32c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 330:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 334:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 338:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 33c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 340:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 344:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 348:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 34c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 350:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 354:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 358:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 35c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 360:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 364:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 368:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 36c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 370:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 374:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 378:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 37c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 380:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 384:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 388:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 38c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 390:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 394:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 398:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 39c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3bc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3c0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3c4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3c8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3cc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3d4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3d8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3dc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3e0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3e4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3e8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3f8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3fc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 400:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 404:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 408:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 40c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 410:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 414:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 418:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 41c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 420:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 424:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 428:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 42c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 430:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 434:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 438:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 43c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 440:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 444:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 448:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 44c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 450:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 454:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 458:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 45c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 460:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 464:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 468:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 46c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 470:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 474:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 478:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 47c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 480:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 484:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 488:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 48c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 490:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 494:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 498:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 49c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4bc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4c0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4c4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4c8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4cc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4d4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4d8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4dc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4e0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4e4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4e8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4f8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4fc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 500:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 504:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 508:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 50c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 510:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 514:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 518:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 51c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 520:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 524:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 528:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 52c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 530:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 534:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 538:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 53c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 540:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 544:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 548:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 54c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 550:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 554:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 558:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 55c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 560:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 564:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 568:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 56c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 570:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 574:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 578:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 57c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 580:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 584:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 588:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 58c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 590:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 594:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 598:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 59c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5bc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5c0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5c4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5c8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5cc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5d4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5d8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5dc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5e0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5e4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5e8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5f8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 5fc:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 600:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 604:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 608:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 60c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 610:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 614:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 618:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 61c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 620:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 624:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 628:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 62c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 630:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 634:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 638:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 63c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 640:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 644:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 648:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 64c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 650:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 654:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 658:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 65c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 660:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 664:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 668:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 66c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 670:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 674:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 678:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 67c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 680:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 684:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 688:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 68c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 690:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 694:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 698:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 69c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6a0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6a4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6a8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6ac:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6b0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6b8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6bc:	68364b1d 	ldmdavs	r6!, {r0, r2, r3, r4, r8, r9, fp, lr}
- 6c0:	4630491d 			; <UNDEFINED> instruction: 0x4630491d
- 6c4:	447958eb 	ldrbtmi	r5, [r9], #-2283	; 0xfffff715
- 6c8:	441c681b 	ldrmi	r6, [ip], #-2075	; 0xfffff7e5
- 6cc:	58eb4b1b 	stmiapl	fp!, {r0, r1, r3, r4, r8, r9, fp, lr}^
- 6d0:	441c681b 	ldrmi	r6, [ip], #-2075	; 0xfffff7e5
- 6d4:	58eb4b1a 	stmiapl	fp!, {r1, r3, r4, r8, r9, fp, lr}^
- 6d8:	441c681b 	ldrmi	r6, [ip], #-2075	; 0xfffff7e5
- 6dc:	f7ff443c 			; <UNDEFINED> instruction: 0xf7ff443c
- 6e0:	b900fffe 	stmdblt	r0, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
- 6e4:	49173401 	ldmdbmi	r7, {r0, sl, ip, sp}
- 6e8:	44794630 	ldrbtmi	r4, [r9], #-1584	; 0xfffff9d0
- 6ec:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 6f0:	3401b900 	strcc	fp, [r1], #-2304	; 0xfffff700
- 6f4:	46304914 			; <UNDEFINED> instruction: 0x46304914
- 6f8:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
- 6fc:	b900fffe 	stmdblt	r0, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
- 700:	49123401 	ldmdbmi	r2, {r0, sl, ip, sp}
- 704:	44794630 	ldrbtmi	r4, [r9], #-1584	; 0xfffff9d0
- 708:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 70c:	3401b900 	strcc	fp, [r1], #-2304	; 0xfffff700
- 710:	d0012c03 	andle	r2, r1, r3, lsl #24
- 714:	bdf82000 	ldcllt	0, cr2, [r8]
- 718:	4478480d 	ldrbtmi	r4, [r8], #-2061	; 0xfffff7f3
- 71c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 720:	bf00e7f8 	svclt	0x0000e7f8
- 724:	00000710 	andeq	r0, r0, r0, lsl r7
-	...
- 738:	0000006e 	andeq	r0, r0, lr, rrx
-	...
- 744:	00000056 	andeq	r0, r0, r6, asr r0
- 748:	0000004c 	andeq	r0, r0, ip, asr #32
- 74c:	00000042 	andeq	r0, r0, r2, asr #32
- 750:	00000032 	andeq	r0, r0, r2, lsr r0
+Function sub_400059 @ 0x00400059
+0x00400059:	bl	#0x400059
+
+Function sub_40005d @ 0x0040005d
+0x0040005d:	bl	#0x40005d
+
+Function sub_400061 @ 0x00400061
+0x00400061:	bl	#0x400061
+
+Function sub_400065 @ 0x00400065
+0x00400065:	bl	#0x400065
+
+Function sub_400069 @ 0x00400069
+0x00400069:	bl	#0x400069
+
+Function sub_40006d @ 0x0040006d
+0x0040006d:	bl	#0x40006d
+
+Function sub_400071 @ 0x00400071
+0x00400071:	bl	#0x400071
+
+Function sub_400075 @ 0x00400075
+0x00400075:	bl	#0x400075
+
+Function sub_400079 @ 0x00400079
+0x00400079:	bl	#0x400079
+
+Function sub_40007d @ 0x0040007d
+0x0040007d:	bl	#0x40007d
+
+Function sub_400081 @ 0x00400081
+0x00400081:	bl	#0x400081
+
+Function sub_400085 @ 0x00400085
+0x00400085:	bl	#0x400085
+
+Function sub_400089 @ 0x00400089
+0x00400089:	bl	#0x400089
+
+Function sub_40008d @ 0x0040008d
+0x0040008d:	bl	#0x40008d
+
+Function sub_400091 @ 0x00400091
+0x00400091:	bl	#0x400091
+
+Function sub_400095 @ 0x00400095
+0x00400095:	bl	#0x400095
+
+Function sub_400099 @ 0x00400099
+0x00400099:	bl	#0x400099
+
+Function sub_40009d @ 0x0040009d
+0x0040009d:	bl	#0x40009d
+
+Function sub_4000a1 @ 0x004000a1
+0x004000a1:	bl	#0x4000a1
+
+Function sub_4000a5 @ 0x004000a5
+0x004000a5:	bl	#0x4000a5
+
+Function sub_4000a9 @ 0x004000a9
+0x004000a9:	bl	#0x4000a9
+
+Function sub_4000ad @ 0x004000ad
+0x004000ad:	bl	#0x4000ad
+
+Function sub_4000b1 @ 0x004000b1
+0x004000b1:	bl	#0x4000b1
+
+Function sub_4000b5 @ 0x004000b5
+0x004000b5:	bl	#0x4000b5
+
+Function sub_4000b9 @ 0x004000b9
+0x004000b9:	bl	#0x4000b9
+
+Function sub_4000bd @ 0x004000bd
+0x004000bd:	bl	#0x4000bd
+
+Function sub_4000c1 @ 0x004000c1
+0x004000c1:	bl	#0x4000c1
+
+Function sub_4000c5 @ 0x004000c5
+0x004000c5:	bl	#0x4000c5
+
+Function sub_4000c9 @ 0x004000c9
+0x004000c9:	bl	#0x4000c9
+
+Function sub_4000cd @ 0x004000cd
+0x004000cd:	bl	#0x4000cd
+
+Function sub_4000d1 @ 0x004000d1
+0x004000d1:	bl	#0x4000d1
+
+Function sub_4000d5 @ 0x004000d5
+0x004000d5:	bl	#0x4000d5
+
+Function sub_4000d9 @ 0x004000d9
+0x004000d9:	bl	#0x4000d9
+
+Function sub_4000dd @ 0x004000dd
+0x004000dd:	bl	#0x4000dd
+
+Function sub_4000e1 @ 0x004000e1
+0x004000e1:	bl	#0x4000e1
+
+Function sub_4000e5 @ 0x004000e5
+0x004000e5:	bl	#0x4000e5
+
+Function sub_4000e9 @ 0x004000e9
+0x004000e9:	bl	#0x4000e9
+
+Function sub_4000ed @ 0x004000ed
+0x004000ed:	bl	#0x4000ed
+
+Function sub_4000f1 @ 0x004000f1
+0x004000f1:	bl	#0x4000f1
+
+Function sub_4000f5 @ 0x004000f5
+0x004000f5:	bl	#0x4000f5
+
+Function sub_4000f9 @ 0x004000f9
+0x004000f9:	bl	#0x4000f9
+
+Function sub_4000fd @ 0x004000fd
+0x004000fd:	bl	#0x4000fd
+
+Function sub_400101 @ 0x00400101
+0x00400101:	bl	#0x400101
+
+Function sub_400105 @ 0x00400105
+0x00400105:	bl	#0x400105
+
+Function sub_400109 @ 0x00400109
+0x00400109:	bl	#0x400109
+
+Function sub_40010d @ 0x0040010d
+0x0040010d:	bl	#0x40010d
+
+Function sub_400111 @ 0x00400111
+0x00400111:	bl	#0x400111
+
+Function sub_400115 @ 0x00400115
+0x00400115:	bl	#0x400115
+
+Function sub_400119 @ 0x00400119
+0x00400119:	bl	#0x400119
+
+Function sub_40011d @ 0x0040011d
+0x0040011d:	bl	#0x40011d
+
+Function sub_400121 @ 0x00400121
+0x00400121:	bl	#0x400121
+
+Function sub_400125 @ 0x00400125
+0x00400125:	bl	#0x400125
+
+Function sub_400129 @ 0x00400129
+0x00400129:	bl	#0x400129
+
+Function sub_40012d @ 0x0040012d
+0x0040012d:	bl	#0x40012d
+
+Function sub_400131 @ 0x00400131
+0x00400131:	bl	#0x400131
+
+Function sub_400135 @ 0x00400135
+0x00400135:	bl	#0x400135
+
+Function sub_400139 @ 0x00400139
+0x00400139:	bl	#0x400139
+
+Function sub_40013d @ 0x0040013d
+0x0040013d:	bl	#0x40013d
+
+Function sub_400141 @ 0x00400141
+0x00400141:	bl	#0x400141
+
+Function sub_400145 @ 0x00400145
+0x00400145:	bl	#0x400145
+
+Function sub_400149 @ 0x00400149
+0x00400149:	bl	#0x400149
+
+Function sub_40014d @ 0x0040014d
+0x0040014d:	bl	#0x40014d
+
+Function sub_400151 @ 0x00400151
+0x00400151:	bl	#0x400151
+
+Function sub_400155 @ 0x00400155
+0x00400155:	bl	#0x400155
+
+Function sub_400159 @ 0x00400159
+0x00400159:	bl	#0x400159
+
+Function sub_40015d @ 0x0040015d
+0x0040015d:	bl	#0x40015d
+
+Function sub_400161 @ 0x00400161
+0x00400161:	bl	#0x400161
+
+Function sub_400165 @ 0x00400165
+0x00400165:	bl	#0x400165
+
+Function sub_400169 @ 0x00400169
+0x00400169:	bl	#0x400169
+
+Function sub_40016d @ 0x0040016d
+0x0040016d:	bl	#0x40016d
+
+Function sub_400171 @ 0x00400171
+0x00400171:	bl	#0x400171
+
+Function sub_400175 @ 0x00400175
+0x00400175:	bl	#0x400175
+
+Function sub_400179 @ 0x00400179
+0x00400179:	bl	#0x400179
+
+Function sub_40017d @ 0x0040017d
+0x0040017d:	bl	#0x40017d
+
+Function sub_400181 @ 0x00400181
+0x00400181:	bl	#0x400181
+
+Function sub_400185 @ 0x00400185
+0x00400185:	bl	#0x400185
+
+Function sub_400189 @ 0x00400189
+0x00400189:	bl	#0x400189
+
+Function sub_40018d @ 0x0040018d
+0x0040018d:	bl	#0x40018d
+
+Function sub_400191 @ 0x00400191
+0x00400191:	bl	#0x400191
+
+Function sub_400195 @ 0x00400195
+0x00400195:	bl	#0x400195
+
+Function sub_400199 @ 0x00400199
+0x00400199:	bl	#0x400199
+
+Function sub_40019d @ 0x0040019d
+0x0040019d:	bl	#0x40019d
+
+Function sub_4001a1 @ 0x004001a1
+0x004001a1:	bl	#0x4001a1
+
+Function sub_4001a5 @ 0x004001a5
+0x004001a5:	bl	#0x4001a5
+
+Function sub_4001a9 @ 0x004001a9
+0x004001a9:	bl	#0x4001a9
+
+Function sub_4001ad @ 0x004001ad
+0x004001ad:	bl	#0x4001ad
+
+Function sub_4001b1 @ 0x004001b1
+0x004001b1:	bl	#0x4001b1
+
+Function sub_4001b5 @ 0x004001b5
+0x004001b5:	bl	#0x4001b5
+
+Function sub_4001b9 @ 0x004001b9
+0x004001b9:	bl	#0x4001b9
+
+Function sub_4001bd @ 0x004001bd
+0x004001bd:	bl	#0x4001bd
+
+Function sub_4001c1 @ 0x004001c1
+0x004001c1:	bl	#0x4001c1
+
+Function sub_4001c5 @ 0x004001c5
+0x004001c5:	bl	#0x4001c5
+
+Function sub_4001c9 @ 0x004001c9
+0x004001c9:	bl	#0x4001c9
+
+Function sub_4001cd @ 0x004001cd
+0x004001cd:	bl	#0x4001cd
+
+Function sub_4001d1 @ 0x004001d1
+0x004001d1:	bl	#0x4001d1
+
+Function sub_4001d5 @ 0x004001d5
+0x004001d5:	bl	#0x4001d5
+
+Function sub_4001d9 @ 0x004001d9
+0x004001d9:	bl	#0x4001d9
+
+Function sub_4001dd @ 0x004001dd
+0x004001dd:	bl	#0x4001dd
+
+Function sub_4001e1 @ 0x004001e1
+0x004001e1:	bl	#0x4001e1
+
+Function sub_4001e5 @ 0x004001e5
+0x004001e5:	bl	#0x4001e5
+
+Function sub_4001e9 @ 0x004001e9
+0x004001e9:	bl	#0x4001e9
+
+Function sub_4001ed @ 0x004001ed
+0x004001ed:	bl	#0x4001ed
+
+Function sub_4001f1 @ 0x004001f1
+0x004001f1:	bl	#0x4001f1
+
+Function sub_4001f5 @ 0x004001f5
+0x004001f5:	bl	#0x4001f5
+
+Function sub_4001f9 @ 0x004001f9
+0x004001f9:	bl	#0x4001f9
+
+Function sub_4001fd @ 0x004001fd
+0x004001fd:	bl	#0x4001fd
+
+Function sub_400201 @ 0x00400201
+0x00400201:	bl	#0x400201
+
+Function sub_400205 @ 0x00400205
+0x00400205:	bl	#0x400205
+
+Function sub_400209 @ 0x00400209
+0x00400209:	bl	#0x400209
+
+Function sub_40020d @ 0x0040020d
+0x0040020d:	bl	#0x40020d
+
+Function sub_400211 @ 0x00400211
+0x00400211:	bl	#0x400211
+
+Function sub_400215 @ 0x00400215
+0x00400215:	bl	#0x400215
+
+Function sub_400219 @ 0x00400219
+0x00400219:	bl	#0x400219
+
+Function sub_40021d @ 0x0040021d
+0x0040021d:	bl	#0x40021d
+
+Function sub_400221 @ 0x00400221
+0x00400221:	bl	#0x400221
+
+Function sub_400225 @ 0x00400225
+0x00400225:	bl	#0x400225
+
+Function sub_400229 @ 0x00400229
+0x00400229:	bl	#0x400229
+
+Function sub_40022d @ 0x0040022d
+0x0040022d:	bl	#0x40022d
+
+Function sub_400231 @ 0x00400231
+0x00400231:	bl	#0x400231
+
+Function sub_400235 @ 0x00400235
+0x00400235:	bl	#0x400235
+
+Function sub_400239 @ 0x00400239
+0x00400239:	bl	#0x400239
+
+Function sub_40023d @ 0x0040023d
+0x0040023d:	bl	#0x40023d
+
+Function sub_400241 @ 0x00400241
+0x00400241:	bl	#0x400241
+
+Function sub_400245 @ 0x00400245
+0x00400245:	bl	#0x400245
+
+Function sub_400249 @ 0x00400249
+0x00400249:	bl	#0x400249
+
+Function sub_40024d @ 0x0040024d
+0x0040024d:	bl	#0x40024d
+
+Function sub_400251 @ 0x00400251
+0x00400251:	bl	#0x400251
+
+Function sub_400255 @ 0x00400255
+0x00400255:	bl	#0x400255
+
+Function sub_400259 @ 0x00400259
+0x00400259:	bl	#0x400259
+
+Function sub_40025d @ 0x0040025d
+0x0040025d:	bl	#0x40025d
+
+Function sub_400261 @ 0x00400261
+0x00400261:	bl	#0x400261
+
+Function sub_400265 @ 0x00400265
+0x00400265:	bl	#0x400265
+
+Function sub_400269 @ 0x00400269
+0x00400269:	bl	#0x400269
+
+Function sub_40026d @ 0x0040026d
+0x0040026d:	bl	#0x40026d
+
+Function sub_400271 @ 0x00400271
+0x00400271:	bl	#0x400271
+
+Function sub_400275 @ 0x00400275
+0x00400275:	bl	#0x400275
+
+Function sub_400279 @ 0x00400279
+0x00400279:	bl	#0x400279
+
+Function sub_40027d @ 0x0040027d
+0x0040027d:	bl	#0x40027d
+
+Function sub_400281 @ 0x00400281
+0x00400281:	bl	#0x400281
+
+Function sub_400285 @ 0x00400285
+0x00400285:	bl	#0x400285
+
+Function sub_400289 @ 0x00400289
+0x00400289:	bl	#0x400289
+
+Function sub_40028d @ 0x0040028d
+0x0040028d:	bl	#0x40028d
+
+Function sub_400291 @ 0x00400291
+0x00400291:	bl	#0x400291
+
+Function sub_400295 @ 0x00400295
+0x00400295:	bl	#0x400295
+
+Function sub_400299 @ 0x00400299
+0x00400299:	bl	#0x400299
+
+Function sub_40029d @ 0x0040029d
+0x0040029d:	bl	#0x40029d
+
+Function sub_4002a1 @ 0x004002a1
+0x004002a1:	bl	#0x4002a1
+
+Function sub_4002a5 @ 0x004002a5
+0x004002a5:	bl	#0x4002a5
+
+Function sub_4002a9 @ 0x004002a9
+0x004002a9:	bl	#0x4002a9
+
+Function sub_4002ad @ 0x004002ad
+0x004002ad:	bl	#0x4002ad
+
+Function sub_4002b1 @ 0x004002b1
+0x004002b1:	bl	#0x4002b1
+
+Function sub_4002b5 @ 0x004002b5
+0x004002b5:	bl	#0x4002b5
+
+Function sub_4002b9 @ 0x004002b9
+0x004002b9:	bl	#0x4002b9
+
+Function sub_4002bd @ 0x004002bd
+0x004002bd:	bl	#0x4002bd
+
+Function sub_4002c1 @ 0x004002c1
+0x004002c1:	bl	#0x4002c1
+
+Function sub_4002c5 @ 0x004002c5
+0x004002c5:	bl	#0x4002c5
+
+Function sub_4002c9 @ 0x004002c9
+0x004002c9:	bl	#0x4002c9
+
+Function sub_4002cd @ 0x004002cd
+0x004002cd:	bl	#0x4002cd
+
+Function sub_4002d1 @ 0x004002d1
+0x004002d1:	bl	#0x4002d1
+
+Function sub_4002d5 @ 0x004002d5
+0x004002d5:	bl	#0x4002d5
+
+Function sub_4002d9 @ 0x004002d9
+0x004002d9:	bl	#0x4002d9
+
+Function sub_4002dd @ 0x004002dd
+0x004002dd:	bl	#0x4002dd
+
+Function sub_4002e1 @ 0x004002e1
+0x004002e1:	bl	#0x4002e1
+
+Function sub_4002e5 @ 0x004002e5
+0x004002e5:	bl	#0x4002e5
+
+Function sub_4002e9 @ 0x004002e9
+0x004002e9:	bl	#0x4002e9
+
+Function sub_4002ed @ 0x004002ed
+0x004002ed:	bl	#0x4002ed
+
+Function sub_4002f1 @ 0x004002f1
+0x004002f1:	bl	#0x4002f1
+
+Function sub_4002f5 @ 0x004002f5
+0x004002f5:	bl	#0x4002f5
+
+Function sub_4002f9 @ 0x004002f9
+0x004002f9:	bl	#0x4002f9
+
+Function sub_4002fd @ 0x004002fd
+0x004002fd:	bl	#0x4002fd
+
+Function sub_400301 @ 0x00400301
+0x00400301:	bl	#0x400301
+
+Function sub_400305 @ 0x00400305
+0x00400305:	bl	#0x400305
+
+Function sub_400309 @ 0x00400309
+0x00400309:	bl	#0x400309
+
+Function sub_40030d @ 0x0040030d
+0x0040030d:	bl	#0x40030d
+
+Function sub_400311 @ 0x00400311
+0x00400311:	bl	#0x400311
+
+Function sub_400315 @ 0x00400315
+0x00400315:	bl	#0x400315
+
+Function sub_400319 @ 0x00400319
+0x00400319:	bl	#0x400319
+
+Function sub_40031d @ 0x0040031d
+0x0040031d:	bl	#0x40031d
+
+Function sub_400321 @ 0x00400321
+0x00400321:	bl	#0x400321
+
+Function sub_400325 @ 0x00400325
+0x00400325:	bl	#0x400325
+
+Function sub_400329 @ 0x00400329
+0x00400329:	bl	#0x400329
+
+Function sub_40032d @ 0x0040032d
+0x0040032d:	bl	#0x40032d
+
+Function sub_400331 @ 0x00400331
+0x00400331:	bl	#0x400331
+
+Function sub_400335 @ 0x00400335
+0x00400335:	bl	#0x400335
+
+Function sub_400339 @ 0x00400339
+0x00400339:	bl	#0x400339
+
+Function sub_40033d @ 0x0040033d
+0x0040033d:	bl	#0x40033d
+
+Function sub_400341 @ 0x00400341
+0x00400341:	bl	#0x400341
+
+Function sub_400345 @ 0x00400345
+0x00400345:	bl	#0x400345
+
+Function sub_400349 @ 0x00400349
+0x00400349:	bl	#0x400349
+
+Function sub_40034d @ 0x0040034d
+0x0040034d:	bl	#0x40034d
+
+Function sub_400351 @ 0x00400351
+0x00400351:	bl	#0x400351
+
+Function sub_400355 @ 0x00400355
+0x00400355:	bl	#0x400355
+
+Function sub_400359 @ 0x00400359
+0x00400359:	bl	#0x400359
+
+Function sub_40035d @ 0x0040035d
+0x0040035d:	bl	#0x40035d
+
+Function sub_400361 @ 0x00400361
+0x00400361:	bl	#0x400361
+
+Function sub_400365 @ 0x00400365
+0x00400365:	bl	#0x400365
+
+Function sub_400369 @ 0x00400369
+0x00400369:	bl	#0x400369
+
+Function sub_40036d @ 0x0040036d
+0x0040036d:	bl	#0x40036d
+
+Function sub_400371 @ 0x00400371
+0x00400371:	bl	#0x400371
+
+Function sub_400375 @ 0x00400375
+0x00400375:	bl	#0x400375
+
+Function sub_400379 @ 0x00400379
+0x00400379:	bl	#0x400379
+
+Function sub_40037d @ 0x0040037d
+0x0040037d:	bl	#0x40037d
+
+Function sub_400381 @ 0x00400381
+0x00400381:	bl	#0x400381
+
+Function sub_400385 @ 0x00400385
+0x00400385:	bl	#0x400385
+
+Function sub_400389 @ 0x00400389
+0x00400389:	bl	#0x400389
+
+Function sub_40038d @ 0x0040038d
+0x0040038d:	bl	#0x40038d
+
+Function sub_400391 @ 0x00400391
+0x00400391:	bl	#0x400391
+
+Function sub_400395 @ 0x00400395
+0x00400395:	bl	#0x400395
+
+Function sub_400399 @ 0x00400399
+0x00400399:	bl	#0x400399
+
+Function sub_40039d @ 0x0040039d
+0x0040039d:	bl	#0x40039d
+
+Function sub_4003a1 @ 0x004003a1
+0x004003a1:	bl	#0x4003a1
+
+Function sub_4003a5 @ 0x004003a5
+0x004003a5:	bl	#0x4003a5
+
+Function sub_4003a9 @ 0x004003a9
+0x004003a9:	bl	#0x4003a9
+
+Function sub_4003ad @ 0x004003ad
+0x004003ad:	bl	#0x4003ad
+
+Function sub_4003b1 @ 0x004003b1
+0x004003b1:	bl	#0x4003b1
+
+Function sub_4003b5 @ 0x004003b5
+0x004003b5:	bl	#0x4003b5
+
+Function sub_4003b9 @ 0x004003b9
+0x004003b9:	bl	#0x4003b9
+
+Function sub_4003bd @ 0x004003bd
+0x004003bd:	bl	#0x4003bd
+
+Function sub_4003c1 @ 0x004003c1
+0x004003c1:	bl	#0x4003c1
+
+Function sub_4003c5 @ 0x004003c5
+0x004003c5:	bl	#0x4003c5
+
+Function sub_4003c9 @ 0x004003c9
+0x004003c9:	bl	#0x4003c9
+
+Function sub_4003cd @ 0x004003cd
+0x004003cd:	bl	#0x4003cd
+
+Function sub_4003d1 @ 0x004003d1
+0x004003d1:	bl	#0x4003d1
+
+Function sub_4003d5 @ 0x004003d5
+0x004003d5:	bl	#0x4003d5
+
+Function sub_4003d9 @ 0x004003d9
+0x004003d9:	bl	#0x4003d9
+
+Function sub_4003dd @ 0x004003dd
+0x004003dd:	bl	#0x4003dd
+
+Function sub_4003e1 @ 0x004003e1
+0x004003e1:	bl	#0x4003e1
+
+Function sub_4003e5 @ 0x004003e5
+0x004003e5:	bl	#0x4003e5
+
+Function sub_4003e9 @ 0x004003e9
+0x004003e9:	bl	#0x4003e9
+
+Function sub_4003ed @ 0x004003ed
+0x004003ed:	bl	#0x4003ed
+
+Function sub_4003f1 @ 0x004003f1
+0x004003f1:	bl	#0x4003f1
+
+Function sub_4003f5 @ 0x004003f5
+0x004003f5:	bl	#0x4003f5
+
+Function sub_4003f9 @ 0x004003f9
+0x004003f9:	bl	#0x4003f9
+
+Function sub_4003fd @ 0x004003fd
+0x004003fd:	bl	#0x4003fd
+
+Function sub_400401 @ 0x00400401
+0x00400401:	bl	#0x400401
+
+Function sub_400405 @ 0x00400405
+0x00400405:	bl	#0x400405
+
+Function sub_400409 @ 0x00400409
+0x00400409:	bl	#0x400409
+
+Function sub_40040d @ 0x0040040d
+0x0040040d:	bl	#0x40040d
+
+Function sub_400411 @ 0x00400411
+0x00400411:	bl	#0x400411
+
+Function sub_400415 @ 0x00400415
+0x00400415:	bl	#0x400415
+
+Function sub_400419 @ 0x00400419
+0x00400419:	bl	#0x400419
+
+Function sub_40041d @ 0x0040041d
+0x0040041d:	bl	#0x40041d
+
+Function sub_400421 @ 0x00400421
+0x00400421:	bl	#0x400421
+
+Function sub_400425 @ 0x00400425
+0x00400425:	bl	#0x400425
+
+Function sub_400429 @ 0x00400429
+0x00400429:	bl	#0x400429
+
+Function sub_40042d @ 0x0040042d
+0x0040042d:	bl	#0x40042d
+
+Function sub_400431 @ 0x00400431
+0x00400431:	bl	#0x400431
+
+Function sub_400435 @ 0x00400435
+0x00400435:	bl	#0x400435
+
+Function sub_400439 @ 0x00400439
+0x00400439:	bl	#0x400439
+
+Function sub_40043d @ 0x0040043d
+0x0040043d:	bl	#0x40043d
+
+Function sub_400441 @ 0x00400441
+0x00400441:	bl	#0x400441
+
+Function sub_400445 @ 0x00400445
+0x00400445:	bl	#0x400445
+
+Function sub_400449 @ 0x00400449
+0x00400449:	bl	#0x400449
+
+Function sub_40044d @ 0x0040044d
+0x0040044d:	bl	#0x40044d
+
+Function sub_400451 @ 0x00400451
+0x00400451:	bl	#0x400451
+
+Function sub_400455 @ 0x00400455
+0x00400455:	bl	#0x400455
+
+Function sub_400459 @ 0x00400459
+0x00400459:	bl	#0x400459
+
+Function sub_40045d @ 0x0040045d
+0x0040045d:	bl	#0x40045d
+
+Function sub_400461 @ 0x00400461
+0x00400461:	bl	#0x400461
+
+Function sub_400465 @ 0x00400465
+0x00400465:	bl	#0x400465
+
+Function sub_400469 @ 0x00400469
+0x00400469:	bl	#0x400469
+
+Function sub_40046d @ 0x0040046d
+0x0040046d:	bl	#0x40046d
+
+Function sub_400471 @ 0x00400471
+0x00400471:	bl	#0x400471
+
+Function sub_400475 @ 0x00400475
+0x00400475:	bl	#0x400475
+
+Function sub_400479 @ 0x00400479
+0x00400479:	bl	#0x400479
+
+Function sub_40047d @ 0x0040047d
+0x0040047d:	bl	#0x40047d
+
+Function sub_400481 @ 0x00400481
+0x00400481:	bl	#0x400481
+
+Function sub_400485 @ 0x00400485
+0x00400485:	bl	#0x400485
+
+Function sub_400489 @ 0x00400489
+0x00400489:	bl	#0x400489
+
+Function sub_40048d @ 0x0040048d
+0x0040048d:	bl	#0x40048d
+
+Function sub_400491 @ 0x00400491
+0x00400491:	bl	#0x400491
+
+Function sub_400495 @ 0x00400495
+0x00400495:	bl	#0x400495
+
+Function sub_400499 @ 0x00400499
+0x00400499:	bl	#0x400499
+
+Function sub_40049d @ 0x0040049d
+0x0040049d:	bl	#0x40049d
+
+Function sub_4004a1 @ 0x004004a1
+0x004004a1:	bl	#0x4004a1
+
+Function sub_4004a5 @ 0x004004a5
+0x004004a5:	bl	#0x4004a5
+
+Function sub_4004a9 @ 0x004004a9
+0x004004a9:	bl	#0x4004a9
+
+Function sub_4004ad @ 0x004004ad
+0x004004ad:	bl	#0x4004ad
+
+Function sub_4004b1 @ 0x004004b1
+0x004004b1:	bl	#0x4004b1
+
+Function sub_4004b5 @ 0x004004b5
+0x004004b5:	bl	#0x4004b5
+
+Function sub_4004b9 @ 0x004004b9
+0x004004b9:	bl	#0x4004b9
+
+Function sub_4004bd @ 0x004004bd
+0x004004bd:	bl	#0x4004bd
+
+Function sub_4004c1 @ 0x004004c1
+0x004004c1:	bl	#0x4004c1
+
+Function sub_4004c5 @ 0x004004c5
+0x004004c5:	bl	#0x4004c5
+
+Function sub_4004c9 @ 0x004004c9
+0x004004c9:	bl	#0x4004c9
+
+Function sub_4004cd @ 0x004004cd
+0x004004cd:	bl	#0x4004cd
+
+Function sub_4004d1 @ 0x004004d1
+0x004004d1:	bl	#0x4004d1
+
+Function sub_4004d5 @ 0x004004d5
+0x004004d5:	bl	#0x4004d5
+
+Function sub_4004d9 @ 0x004004d9
+0x004004d9:	bl	#0x4004d9
+
+Function sub_4004dd @ 0x004004dd
+0x004004dd:	bl	#0x4004dd
+
+Function sub_4004e1 @ 0x004004e1
+0x004004e1:	bl	#0x4004e1
+
+Function sub_4004e5 @ 0x004004e5
+0x004004e5:	bl	#0x4004e5
+
+Function sub_4004e9 @ 0x004004e9
+0x004004e9:	bl	#0x4004e9
+
+Function sub_4004ed @ 0x004004ed
+0x004004ed:	bl	#0x4004ed
+
+Function sub_4004f1 @ 0x004004f1
+0x004004f1:	bl	#0x4004f1
+
+Function sub_4004f5 @ 0x004004f5
+0x004004f5:	bl	#0x4004f5
+
+Function sub_4004f9 @ 0x004004f9
+0x004004f9:	bl	#0x4004f9
+
+Function sub_4004fd @ 0x004004fd
+0x004004fd:	bl	#0x4004fd
+
+Function sub_400501 @ 0x00400501
+0x00400501:	bl	#0x400501
+
+Function sub_400505 @ 0x00400505
+0x00400505:	bl	#0x400505
+
+Function sub_400509 @ 0x00400509
+0x00400509:	bl	#0x400509
+
+Function sub_40050d @ 0x0040050d
+0x0040050d:	bl	#0x40050d
+
+Function sub_400511 @ 0x00400511
+0x00400511:	bl	#0x400511
+
+Function sub_400515 @ 0x00400515
+0x00400515:	bl	#0x400515
+
+Function sub_400519 @ 0x00400519
+0x00400519:	bl	#0x400519
+
+Function sub_40051d @ 0x0040051d
+0x0040051d:	bl	#0x40051d
+
+Function sub_400521 @ 0x00400521
+0x00400521:	bl	#0x400521
+
+Function sub_400525 @ 0x00400525
+0x00400525:	bl	#0x400525
+
+Function sub_400529 @ 0x00400529
+0x00400529:	bl	#0x400529
+
+Function sub_40052d @ 0x0040052d
+0x0040052d:	bl	#0x40052d
+
+Function sub_400531 @ 0x00400531
+0x00400531:	bl	#0x400531
+
+Function sub_400535 @ 0x00400535
+0x00400535:	bl	#0x400535
+
+Function sub_400539 @ 0x00400539
+0x00400539:	bl	#0x400539
+
+Function sub_40053d @ 0x0040053d
+0x0040053d:	bl	#0x40053d
+
+Function sub_400541 @ 0x00400541
+0x00400541:	bl	#0x400541
+
+Function sub_400545 @ 0x00400545
+0x00400545:	bl	#0x400545
+
+Function sub_400549 @ 0x00400549
+0x00400549:	bl	#0x400549
+
+Function sub_40054d @ 0x0040054d
+0x0040054d:	bl	#0x40054d
+
+Function sub_400551 @ 0x00400551
+0x00400551:	bl	#0x400551
+
+Function sub_400555 @ 0x00400555
+0x00400555:	bl	#0x400555
+
+Function sub_400559 @ 0x00400559
+0x00400559:	bl	#0x400559
+
+Function sub_40055d @ 0x0040055d
+0x0040055d:	bl	#0x40055d
+
+Function sub_400561 @ 0x00400561
+0x00400561:	bl	#0x400561
+
+Function sub_400565 @ 0x00400565
+0x00400565:	bl	#0x400565
+
+Function sub_400569 @ 0x00400569
+0x00400569:	bl	#0x400569
+
+Function sub_40056d @ 0x0040056d
+0x0040056d:	bl	#0x40056d
+
+Function sub_400571 @ 0x00400571
+0x00400571:	bl	#0x400571
+
+Function sub_400575 @ 0x00400575
+0x00400575:	bl	#0x400575
+
+Function sub_400579 @ 0x00400579
+0x00400579:	bl	#0x400579
+
+Function sub_40057d @ 0x0040057d
+0x0040057d:	bl	#0x40057d
+
+Function sub_400581 @ 0x00400581
+0x00400581:	bl	#0x400581
+
+Function sub_400585 @ 0x00400585
+0x00400585:	bl	#0x400585
+
+Function sub_400589 @ 0x00400589
+0x00400589:	bl	#0x400589
+
+Function sub_40058d @ 0x0040058d
+0x0040058d:	bl	#0x40058d
+
+Function sub_400591 @ 0x00400591
+0x00400591:	bl	#0x400591
+
+Function sub_400595 @ 0x00400595
+0x00400595:	bl	#0x400595
+
+Function sub_400599 @ 0x00400599
+0x00400599:	bl	#0x400599
+
+Function sub_40059d @ 0x0040059d
+0x0040059d:	bl	#0x40059d
+
+Function sub_4005a1 @ 0x004005a1
+0x004005a1:	bl	#0x4005a1
+
+Function sub_4005a5 @ 0x004005a5
+0x004005a5:	bl	#0x4005a5
+
+Function sub_4005a9 @ 0x004005a9
+0x004005a9:	bl	#0x4005a9
+
+Function sub_4005ad @ 0x004005ad
+0x004005ad:	bl	#0x4005ad
+
+Function sub_4005b1 @ 0x004005b1
+0x004005b1:	bl	#0x4005b1
+
+Function sub_4005b5 @ 0x004005b5
+0x004005b5:	bl	#0x4005b5
+
+Function sub_4005b9 @ 0x004005b9
+0x004005b9:	bl	#0x4005b9
+
+Function sub_4005bd @ 0x004005bd
+0x004005bd:	bl	#0x4005bd
+
+Function sub_4005c1 @ 0x004005c1
+0x004005c1:	bl	#0x4005c1
+
+Function sub_4005c5 @ 0x004005c5
+0x004005c5:	bl	#0x4005c5
+
+Function sub_4005c9 @ 0x004005c9
+0x004005c9:	bl	#0x4005c9
+
+Function sub_4005cd @ 0x004005cd
+0x004005cd:	bl	#0x4005cd
+
+Function sub_4005d1 @ 0x004005d1
+0x004005d1:	bl	#0x4005d1
+
+Function sub_4005d5 @ 0x004005d5
+0x004005d5:	bl	#0x4005d5
+
+Function sub_4005d9 @ 0x004005d9
+0x004005d9:	bl	#0x4005d9
+
+Function sub_4005dd @ 0x004005dd
+0x004005dd:	bl	#0x4005dd
+
+Function sub_4005e1 @ 0x004005e1
+0x004005e1:	bl	#0x4005e1
+
+Function sub_4005e5 @ 0x004005e5
+0x004005e5:	bl	#0x4005e5
+
+Function sub_4005e9 @ 0x004005e9
+0x004005e9:	bl	#0x4005e9
+
+Function sub_4005ed @ 0x004005ed
+0x004005ed:	bl	#0x4005ed
+
+Function sub_4005f1 @ 0x004005f1
+0x004005f1:	bl	#0x4005f1
+
+Function sub_4005f5 @ 0x004005f5
+0x004005f5:	bl	#0x4005f5
+
+Function sub_4005f9 @ 0x004005f9
+0x004005f9:	bl	#0x4005f9
+
+Function sub_4005fd @ 0x004005fd
+0x004005fd:	bl	#0x4005fd
+
+Function sub_400601 @ 0x00400601
+0x00400601:	bl	#0x400601
+
+Function sub_400605 @ 0x00400605
+0x00400605:	bl	#0x400605
+
+Function sub_400609 @ 0x00400609
+0x00400609:	bl	#0x400609
+
+Function sub_40060d @ 0x0040060d
+0x0040060d:	bl	#0x40060d
+
+Function sub_400611 @ 0x00400611
+0x00400611:	bl	#0x400611
+
+Function sub_400615 @ 0x00400615
+0x00400615:	bl	#0x400615
+
+Function sub_400619 @ 0x00400619
+0x00400619:	bl	#0x400619
+
+Function sub_40061d @ 0x0040061d
+0x0040061d:	bl	#0x40061d
+
+Function sub_400621 @ 0x00400621
+0x00400621:	bl	#0x400621
+
+Function sub_400625 @ 0x00400625
+0x00400625:	bl	#0x400625
+
+Function sub_400629 @ 0x00400629
+0x00400629:	bl	#0x400629
+
+Function sub_40062d @ 0x0040062d
+0x0040062d:	bl	#0x40062d
+
+Function sub_400631 @ 0x00400631
+0x00400631:	bl	#0x400631
+
+Function sub_400635 @ 0x00400635
+0x00400635:	bl	#0x400635
+
+Function sub_400639 @ 0x00400639
+0x00400639:	bl	#0x400639
+
+Function sub_40063d @ 0x0040063d
+0x0040063d:	bl	#0x40063d
+
+Function sub_400641 @ 0x00400641
+0x00400641:	bl	#0x400641
+
+Function sub_400645 @ 0x00400645
+0x00400645:	bl	#0x400645
+
+Function sub_400649 @ 0x00400649
+0x00400649:	bl	#0x400649
+
+Function sub_40064d @ 0x0040064d
+0x0040064d:	bl	#0x40064d
+
+Function sub_400651 @ 0x00400651
+0x00400651:	bl	#0x400651
+
+Function sub_400655 @ 0x00400655
+0x00400655:	bl	#0x400655
+
+Function sub_400659 @ 0x00400659
+0x00400659:	bl	#0x400659
+
+Function sub_40065d @ 0x0040065d
+0x0040065d:	bl	#0x40065d
+
+Function sub_400661 @ 0x00400661
+0x00400661:	bl	#0x400661
+
+Function sub_400665 @ 0x00400665
+0x00400665:	bl	#0x400665
+
+Function sub_400669 @ 0x00400669
+0x00400669:	bl	#0x400669
+
+Function sub_40066d @ 0x0040066d
+0x0040066d:	bl	#0x40066d
+
+Function sub_400671 @ 0x00400671
+0x00400671:	bl	#0x400671
+
+Function sub_400675 @ 0x00400675
+0x00400675:	bl	#0x400675
+
+Function sub_400679 @ 0x00400679
+0x00400679:	bl	#0x400679
+
+Function sub_40067d @ 0x0040067d
+0x0040067d:	bl	#0x40067d
+
+Function sub_400681 @ 0x00400681
+0x00400681:	bl	#0x400681
+
+Function sub_400685 @ 0x00400685
+0x00400685:	bl	#0x400685
+
+Function sub_400689 @ 0x00400689
+0x00400689:	bl	#0x400689
+
+Function sub_40068d @ 0x0040068d
+0x0040068d:	bl	#0x40068d
+
+Function sub_400691 @ 0x00400691
+0x00400691:	bl	#0x400691
+
+Function sub_400695 @ 0x00400695
+0x00400695:	bl	#0x400695
+
+Function sub_400699 @ 0x00400699
+0x00400699:	bl	#0x400699
+
+Function sub_40069d @ 0x0040069d
+0x0040069d:	bl	#0x40069d
+
+Function sub_4006a1 @ 0x004006a1
+0x004006a1:	bl	#0x4006a1
+
+Function sub_4006a5 @ 0x004006a5
+0x004006a5:	bl	#0x4006a5
+
+Function sub_4006a9 @ 0x004006a9
+0x004006a9:	bl	#0x4006a9
+
+Function sub_4006ad @ 0x004006ad
+0x004006ad:	bl	#0x4006ad
+
+Function sub_4006b1 @ 0x004006b1
+0x004006b1:	bl	#0x4006b1
+
+Function sub_4006b5 @ 0x004006b5
+0x004006b5:	bl	#0x4006b5
+
+Function sub_4006b9 @ 0x004006b9
+0x004006b9:	bl	#0x4006b9
+
+Function sub_4006bd @ 0x004006bd
+0x004006bd:	bl	#0x4006bd
+
+Function sub_4006c1 @ 0x004006c1
+0x004006c1:	bl	#0x4006c1
+
+Function sub_4006c5 @ 0x004006c5
+0x004006c5:	bl	#0x4006c5
+
+Function sub_4006c9 @ 0x004006c9
+0x004006c9:	bl	#0x4006c9
+
+Function sub_4006cd @ 0x004006cd
+0x004006cd:	bl	#0x4006cd
+
+Function sub_4006d1 @ 0x004006d1
+0x004006d1:	bl	#0x4006d1
+
+Function sub_4006d5 @ 0x004006d5
+0x004006d5:	bl	#0x4006d5
+
+Function sub_4006d9 @ 0x004006d9
+0x004006d9:	bl	#0x4006d9
+
+Function sub_4006dd @ 0x004006dd
+0x004006dd:	bl	#0x4006dd
+
+Function sub_4006e1 @ 0x004006e1
+0x004006e1:	bl	#0x4006e1
+
+Function sub_4006e5 @ 0x004006e5
+0x004006e5:	bl	#0x4006e5
+0x004006e9:	ldr	r3, [pc, #0x74]
+0x004006eb:	ldr	r6, [r6]
+0x004006ed:	ldr	r1, [pc, #0x74]
+0x004006ef:	mov	r0, r6
+0x004006f1:	ldr	r3, [r5, r3]
+0x004006f3:	add	r1, pc
+0x004006f5:	ldr	r3, [r3]
+0x004006f7:	add	r4, r3
+0x004006f9:	ldr	r3, [pc, #0x6c]
+0x004006fb:	ldr	r3, [r5, r3]
+0x004006fd:	ldr	r3, [r3]
+0x004006ff:	add	r4, r3
+0x00400701:	ldr	r3, [pc, #0x68]
+0x00400703:	ldr	r3, [r5, r3]
+0x00400705:	ldr	r3, [r3]
+0x00400707:	add	r4, r3
+0x00400709:	add	r4, r7
+0x0040070b:	bl	#0x40070b
+
+Function sub_40070b @ 0x0040070b
+0x0040070b:	bl	#0x40070b
+0x0040070f:	cbnz	r0, #0x400713
+0x00400711:	adds	r4, #1
+0x00400713:	ldr	r1, [pc, #0x5c]
+0x00400715:	mov	r0, r6
+0x00400717:	add	r1, pc
+0x00400719:	bl	#0x400719
+0x00400711:	adds	r4, #1
+0x00400713:	ldr	r1, [pc, #0x5c]
+0x00400715:	mov	r0, r6
+0x00400717:	add	r1, pc
+0x00400719:	bl	#0x400719
+0x00400713:	ldr	r1, [pc, #0x5c]
+0x00400715:	mov	r0, r6
+0x00400717:	add	r1, pc
+0x00400719:	bl	#0x400719
+
+Function sub_400719 @ 0x00400719
+0x00400719:	bl	#0x400719
+0x0040071d:	cbnz	r0, #0x400721
+0x0040071f:	adds	r4, #1
+0x00400721:	ldr	r1, [pc, #0x50]
+0x00400723:	mov	r0, r6
+0x00400725:	add	r1, pc
+0x00400727:	bl	#0x400727
+0x0040071f:	adds	r4, #1
+0x00400721:	ldr	r1, [pc, #0x50]
+0x00400723:	mov	r0, r6
+0x00400725:	add	r1, pc
+0x00400727:	bl	#0x400727
+0x00400721:	ldr	r1, [pc, #0x50]
+0x00400723:	mov	r0, r6
+0x00400725:	add	r1, pc
+0x00400727:	bl	#0x400727
+
+Function sub_400727 @ 0x00400727
+0x00400727:	bl	#0x400727
+0x0040072b:	cbnz	r0, #0x40072f
+0x0040072d:	adds	r4, #1
+0x0040072f:	ldr	r1, [pc, #0x48]
+0x00400731:	mov	r0, r6
+0x00400733:	add	r1, pc
+0x00400735:	bl	#0x400735
+0x0040072d:	adds	r4, #1
+0x0040072f:	ldr	r1, [pc, #0x48]
+0x00400731:	mov	r0, r6
+0x00400733:	add	r1, pc
+0x00400735:	bl	#0x400735
+0x0040072f:	ldr	r1, [pc, #0x48]
+0x00400731:	mov	r0, r6
+0x00400733:	add	r1, pc
+0x00400735:	bl	#0x400735
+
+Function sub_400735 @ 0x00400735
+0x00400735:	bl	#0x400735
+0x00400739:	cbnz	r0, #0x40073d
+0x0040073b:	adds	r4, #1
+0x0040073d:	cmp	r4, #3
+0x0040073f:	beq	#0x400745
+0x0040073b:	adds	r4, #1
+0x0040073d:	cmp	r4, #3
+0x0040073f:	beq	#0x400745
+0x0040073d:	cmp	r4, #3
+0x0040073f:	beq	#0x400745
+0x00400741:	movs	r0, #0
+0x00400743:	pop	{r3, r4, r5, r6, r7, pc}
+0x00400745:	ldr	r0, [pc, #0x34]
+0x00400747:	add	r0, pc
+0x00400749:	bl	#0x400749
+
+Function sub_400749 @ 0x00400749
+0x00400749:	bl	#0x400749
+0x0040074d:	b	#0x400741
+
+Function sub_40074f @ 0x0040074f
+0x0040074f:	nop	
+0x00400751:	lsls	r0, r2, #0x1c
+0x00400753:	movs	r0, r0
+0x00400755:	movs	r0, r0
+0x00400757:	movs	r0, r0
+0x00400759:	movs	r0, r0
+0x0040075b:	movs	r0, r0
+0x0040075d:	movs	r0, r0
+0x0040075f:	movs	r0, r0
+0x00400761:	movs	r0, r0
+0x00400763:	movs	r0, r0
+0x00400765:	lsls	r6, r5, #1
+0x00400767:	movs	r0, r0
+0x00400769:	movs	r0, r0
+0x0040076b:	movs	r0, r0
+0x0040076d:	movs	r0, r0
+0x0040076f:	movs	r0, r0
+0x00400771:	lsls	r6, r2, #1
+0x00400773:	movs	r0, r0
+0x00400775:	lsls	r4, r1, #1
+0x00400777:	movs	r0, r0
+0x00400779:	lsls	r2, r0, #1
+0x0040077b:	movs	r0, r0
+0x0040077d:	movs	r2, r6
+0x0040077f:	movs	r0, r0

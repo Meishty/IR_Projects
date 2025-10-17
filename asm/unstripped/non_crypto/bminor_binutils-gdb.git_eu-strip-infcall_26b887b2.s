@@ -1,21 +1,9 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_eu-strip-infcall_26b887b2.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r1]!
+0x00400004:	strmi	fp, [r0, r8, lsl #10]
+0x00400008:	stclt	p0, c0, [r8, #-0x100]
 
-
-Disassembly of section .text:
-
-00000000 <func>:
-   0:	2001      	movs	r0, #1
-   2:	4770      	bx	lr
-
-00000004 <callfunc>:
-   4:	b508      	push	{r3, lr}
-   6:	4780      	blx	r0
-   8:	0040      	lsls	r0, r0, #1
-   a:	bd08      	pop	{r3, pc}
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2002      	movs	r0, #2
-   2:	4770      	bx	lr
+Function main @ 0x0040000d
+0x0040000d:	movs	r0, #2
+0x0040000f:	bx	lr

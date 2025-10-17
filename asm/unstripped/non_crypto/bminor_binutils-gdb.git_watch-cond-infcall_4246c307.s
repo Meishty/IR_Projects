@@ -1,24 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watch-cond-infcall_4246c307.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r1]!
 
-
-Disassembly of section .text:
-
-00000000 <return_1>:
-   0:	2001      	movs	r0, #1
-   2:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b04      	ldr	r3, [pc, #16]	; (14 <main+0x14>)
-   2:	2000      	movs	r0, #0
-   4:	447b      	add	r3, pc
-   6:	681a      	ldr	r2, [r3, #0]
-   8:	3201      	adds	r2, #1
-   a:	601a      	str	r2, [r3, #0]
-   c:	681a      	ldr	r2, [r3, #0]
-   e:	3201      	adds	r2, #1
-  10:	601a      	str	r2, [r3, #0]
-  12:	4770      	bx	lr
-  14:	0000000c 	.word	0x0000000c
+Function main @ 0x00400009
+0x00400009:	ldr	r3, [pc, #0x10]
+0x0040000b:	movs	r0, #0
+0x0040000d:	add	r3, pc
+0x0040000f:	ldr	r2, [r3]
+0x00400011:	adds	r2, #1
+0x00400013:	str	r2, [r3]
+0x00400015:	ldr	r2, [r3]
+0x00400017:	adds	r2, #1
+0x00400019:	str	r2, [r3]
+0x0040001b:	bx	lr

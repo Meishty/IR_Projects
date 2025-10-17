@@ -1,26 +1,51 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_access1_c45635c8_stripped.o:     file format elf32-littlearm
+Function sub_400015 @ 0x00400015
+0x00400015:	push	{r3, lr}
+0x00400017:	mov	r3, r1
+0x00400019:	movs	r1, #7
+0x0040001b:	ldr	r0, [r3]
+0x0040001d:	bl	#0x40001d
 
+Function sub_40001d @ 0x0040001d
+0x0040001d:	bl	#0x40001d
 
-Disassembly of section .text.startup:
+Function sub_400021 @ 0x00400021
+0x00400021:	cbz	r0, #0x400029
+0x00400023:	movs	r0, #0
+0x00400025:	bl	#0x400025
 
-00000000 <.text.startup>:
-   0:	460bb508 	strmi	fp, [fp], -r8, lsl #10
-   4:	68182107 	ldmdavs	r8, {r0, r1, r2, r8, sp}
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	2000b110 	andcs	fp, r0, r0, lsl r1
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	21064c0b 	tstcs	r6, fp, lsl #24
-  18:	4620447c 			; <UNDEFINED> instruction: 0x4620447c
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	d1f42800 	mvnsle	r2, r0, lsl #16
-  24:	46202101 	strtmi	r2, [r0], -r1, lsl #2
-  28:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  2c:	d1ee3001 	mvnle	r3, r1
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	2b0d6803 	blcs	0x35a048
-  38:	4803d1e9 	stmdami	r3, {r0, r3, r5, r6, r7, r8, ip, lr, pc}
-  3c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  40:	e7e4fffe 			; <UNDEFINED> instruction: 0xe7e4fffe
-  44:	00000028 	andeq	r0, r0, r8, lsr #32
-  48:	00000008 	andeq	r0, r0, r8
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+0x00400029:	ldr	r4, [pc, #0x2c]
+0x0040002b:	movs	r1, #6
+0x0040002d:	add	r4, pc
+0x0040002f:	mov	r0, r4
+0x00400031:	bl	#0x400031
+
+Function sub_400031 @ 0x00400031
+0x00400023:	movs	r0, #0
+0x00400025:	bl	#0x400025
+0x00400031:	bl	#0x400031
+0x00400035:	cmp	r0, #0
+0x00400037:	bne	#0x400023
+0x00400039:	movs	r1, #1
+0x0040003b:	mov	r0, r4
+0x0040003d:	bl	#0x40003d
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+0x00400041:	adds	r0, #1
+0x00400043:	bne	#0x400023
+
+Function sub_400045 @ 0x00400045
+0x00400045:	bl	#0x400045
+0x00400049:	ldr	r3, [r0]
+0x0040004b:	cmp	r3, #0xd
+0x0040004d:	bne	#0x400023
+0x0040004f:	ldr	r0, [pc, #0xc]
+0x00400051:	add	r0, pc
+0x00400053:	bl	#0x400053
+
+Function sub_400053 @ 0x00400053
+0x00400053:	bl	#0x400053
+0x00400057:	b	#0x400023

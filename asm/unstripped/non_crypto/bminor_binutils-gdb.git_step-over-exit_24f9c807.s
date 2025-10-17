@@ -1,16 +1,28 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_step-over-exit_24f9c807.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	cbz	r0, #0x400013
+0x00400009:	bl	#0x500001
+0x00400009:	bl	#0x500001
+0x0040000d:	cbz	r0, #0x400013
+0x0040000f:	movs	r0, #0
+0x00400011:	pop	{r3, pc}
+0x0040000f:	movs	r0, #0
+0x00400011:	pop	{r3, pc}
+0x00400013:	movs	r0, #0
+0x00400015:	bl	#0x50000d
 
+Function fork @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <fork>
-   6:	b120      	cbz	r0, 12 <main+0x12>
-   8:	f7ff fffe 	bl	0 <fork>
-   c:	b108      	cbz	r0, 12 <main+0x12>
-   e:	2000      	movs	r0, #0
-  10:	bd08      	pop	{r3, pc}
-  12:	2000      	movs	r0, #0
-  14:	f7ff fffe 	bl	0 <_exit>
+Function _exit @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

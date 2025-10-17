@@ -1,27 +1,51 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr24406-2a_e9a46b48.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x803]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x500001
+0x0040000b:	movs	r0, #0
+0x0040000d:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r4, r1
+0x00400013:	movs	r0, r0
 
-00000000 <__wrap_cook>:
-   0:	4803      	ldr	r0, [pc, #12]	; (10 <__wrap_cook+0x10>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <puts>
-   a:	2000      	movs	r0, #0
-   c:	bd08      	pop	{r3, pc}
-   e:	bf00      	nop
-  10:	00000008 	.word	0x00000008
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r4, r1
+0x00400013:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x0040001d
+0x0040001d:	push	{r3, lr}
+0x0040001f:	bl	#0x50000d
+0x00400023:	adds	r0, #1
+0x00400025:	beq	#0x40002b
+0x00400027:	movs	r0, #0
+0x00400029:	pop	{r3, pc}
+0x0040002b:	bl	#0x500019
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <cook>
-   6:	3001      	adds	r0, #1
-   8:	d001      	beq.n	e <main+0xe>
-   a:	2000      	movs	r0, #0
-   c:	bd08      	pop	{r3, pc}
-   e:	f7ff fffe 	bl	0 <abort>
-  12:	bf00      	nop
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function cook @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

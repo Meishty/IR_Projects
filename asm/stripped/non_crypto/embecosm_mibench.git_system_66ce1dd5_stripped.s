@@ -1,14 +1,19 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_system_66ce1dd5_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	mov	r5, r0
+0x00400005:	ldrb	r0, [r0]
+0x00400007:	cbz	r0, #0x400019
+0x00400009:	mov	r4, r5
+0x0040000b:	bl	#0x40000b
+0x00400009:	mov	r4, r5
+0x0040000b:	bl	#0x40000b
+0x00400019:	mov	r0, r5
+0x0040001b:	pop	{r3, r4, r5, pc}
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	4605b538 			; <UNDEFINED> instruction: 0x4605b538
-   4:	b1387800 	teqlt	r8, r0, lsl #16
-   8:	f7ff462c 			; <UNDEFINED> instruction: 0xf7ff462c
-   c:	f804fffe 			; <UNDEFINED> instruction: 0xf804fffe
-  10:	78200b01 	stmdavc	r0!, {r0, r8, r9, fp}
-  14:	d1f82800 	mvnsle	r2, r0, lsl #16
-  18:	bd384628 	ldclt	6, cr4, [r8, #-160]!	; 0xffffff60
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	strb	r0, [r4], #1
+0x00400013:	ldrb	r0, [r4]
+0x00400015:	cmp	r0, #0
+0x00400017:	bne	#0x40000b

@@ -1,31 +1,53 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_implptr_dd7f025e_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bl	#0x412c38
 
+Function sub_400007 @ 0x00400007
+0x00400007:	push	{r4, r5}
+0x00400009:	add	r3, pc
+0x0040000b:	ldrd	r4, r1, [r3]
+0x0040000f:	ldr	r2, [r3, #8]
+0x00400011:	adds	r5, r4, #1
+0x00400013:	adds	r1, #1
+0x00400015:	adds	r4, r2, #1
+0x00400017:	strd	r5, r1, [r3]
+0x0040001b:	ldrd	r2, r1, [r3, #0xc]
+0x0040001f:	str	r4, [r3, #8]
+0x00400021:	pop	{r4, r5}
+0x00400023:	adds	r2, #1
+0x00400025:	str	r2, [r3, #0xc]
+0x00400027:	adds	r1, #1
+0x00400029:	ldr	r2, [r3, #0x14]
+0x0040002b:	str	r1, [r3, #0x10]
+0x0040002d:	adds	r2, #1
+0x0040002f:	str	r2, [r3, #0x14]
+0x00400031:	bx	lr
 
-Disassembly of section .text:
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	movs	r0, r5
+0x00400037:	movs	r0, r0
+0x00400039:	adds	r0, #1
+0x0040003b:	bx	lr
 
-00000000 <.text>:
-   0:	eb004b0c 	bl	0x12c38
-   4:	b4300080 	ldrtlt	r0, [r0], #-128	; 0xffffff80
-   8:	e9d3447b 	ldmib	r3, {r0, r1, r3, r4, r5, r6, sl, lr}^
-   c:	689a4100 	ldmvs	sl, {r8, lr}
-  10:	31011c65 	tstcc	r1, r5, ror #24
-  14:	e9c31c54 	stmib	r3, {r2, r4, r6, sl, fp, ip}^
-  18:	e9d35100 	ldmib	r3, {r8, ip, lr}^
-  1c:	609c2103 	addsvs	r2, ip, r3, lsl #2
-  20:	3201bc30 	andcc	fp, r1, #48, 24	; 0x3000
-  24:	310160da 	ldrdcc	r6, [r1, -sl]
-  28:	6119695a 	tstvs	r9, sl, asr r9
-  2c:	615a3201 	cmpvs	sl, r1, lsl #4
-  30:	bf004770 	svclt	0x00004770
-  34:	00000028 	andeq	r0, r0, r8, lsr #32
-  38:	47703001 	ldrbmi	r3, [r0, -r1]!
+Function sub_400035 @ 0x00400035
+0x00400035:	movs	r0, r5
+0x00400037:	movs	r0, r0
+0x00400039:	adds	r0, #1
+0x0040003b:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_400055 @ 0x00400055
+0x00400055:	push	{r4, lr}
+0x00400057:	movs	r0, #5
+0x00400059:	bl	#0x400059
 
-00000000 <.text.startup>:
-   0:	2005b510 	andcs	fp, r5, r0, lsl r5
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	20174604 	andscs	r4, r7, r4, lsl #12
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	bd104420 	cfldrslt	mvf4, [r0, #-128]	; 0xffffff80
+Function sub_400059 @ 0x00400059
+0x00400059:	bl	#0x400059
+0x0040005d:	mov	r4, r0
+0x0040005f:	movs	r0, #0x17
+0x00400061:	bl	#0x400061
+
+Function sub_400061 @ 0x00400061
+0x00400061:	bl	#0x400061
+0x00400065:	add	r0, r4
+0x00400067:	pop	{r4, pc}

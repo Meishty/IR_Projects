@@ -1,24 +1,47 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_size-4a_cd87edc6_stripped.o:     file format elf32-littlearm
+Function sub_400025 @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x400027
 
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	cmp	r0, #0xa
+0x0040002d:	beq	#0x40003b
 
-Disassembly of section .text.startup:
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bl	#0x40002f
+0x00400033:	cmp	r0, #0x14
+0x00400035:	beq	#0x40004d
+0x00400037:	movs	r0, #0
+0x00400039:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	280afffe 	stmdacs	sl, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   8:	f7ffd005 			; <UNDEFINED> instruction: 0xf7ffd005
-   c:	2814fffe 	ldmdacs	r4, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  10:	2000d00a 	andcs	sp, r0, sl
-  14:	f7ffbd08 			; <UNDEFINED> instruction: 0xf7ffbd08
-  18:	280afffe 	stmdacs	sl, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  1c:	4807d1f5 	stmdami	r7, {r0, r2, r4, r5, r6, r7, r8, ip, lr, pc}
-  20:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  24:	e7f0fffe 	udf	#4094	; 0xffe
-  28:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  2c:	d1f02814 	mvnsle	r2, r4, lsl r8
-  30:	44784803 	ldrbtmi	r4, [r8], #-2051	; 0xfffff7fd
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	bf00e7eb 	svclt	0x0000e7eb
-  3c:	00000018 	andeq	r0, r0, r8, lsl r0
-  40:	0000000a 	andeq	r0, r0, sl
+Function sub_40003b @ 0x0040003b
+0x0040003b:	bl	#0x40003b
+0x0040003f:	cmp	r0, #0xa
+0x00400041:	bne	#0x40002f
+0x00400043:	ldr	r0, [pc, #0x1c]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x400047
+
+Function sub_400047 @ 0x00400047
+0x00400047:	bl	#0x400047
+0x0040004b:	b	#0x40002f
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	bl	#0x40004d
+0x00400051:	cmp	r0, #0x14
+0x00400053:	bne	#0x400037
+0x00400055:	ldr	r0, [pc, #0xc]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x400059
+
+Function sub_400059 @ 0x00400059
+0x00400059:	bl	#0x400059
+0x0040005d:	b	#0x400037
+
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	movs	r0, r3
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r2, r1
+0x00400067:	movs	r0, r0

@@ -1,12 +1,7 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_solib-list-lib_6c2a7996.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, sl, r8, lsl #10
 
-
-Disassembly of section .text:
-
-00000000 <libfunc>:
-   0:	b508      	push	{r3, lr}
-   2:	200a      	movs	r0, #10
-   4:	f7ff fffe 	bl	0 <raise>
-   8:	2017      	movs	r0, #23
-   a:	bd08      	pop	{r3, pc}
+Function sub_400007 @ 0x00400007
+0x00400007:	vshr.u32	d18, d7, #4
+0x0040000b:	pop	{r3, pc}

@@ -1,291 +1,642 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_randombytes_ec83c189.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdbmi	r6, {r0, r2, r8, sb, fp, lr}
+0x00400004:	bmi	#0x5911f8
+0x00400004:	bmi	#0x5911f8
+0x00400008:	ldmdapl	sb, {r1, r3, r4, r5, r6, sl, lr} ^
+0x0040000c:	stmvs	fp, {r0, r4, sp, lr}
+0x00400010:	ldrmi	fp, [r8, -r3, lsl #2]
+0x00400014:	svclt	#0x4770
+0x00400010:	ldrmi	fp, [r8, -r3, lsl #2]
+0x00400014:	svclt	#0x4770
+0x00400018:	andeq	r0, r0, r0, lsl r0
+0x0040001c:	andeq	r0, r0, r0
+0x00400020:	andeq	r0, r0, r4, ror r2
 
+Function randombytes_set_implementation @ 0x00400025
+0x00400025:	ldr	r3, [pc, #8]
+0x00400027:	mov	r2, r0
+0x00400029:	movs	r0, #0
+0x0040002b:	add	r3, pc
+0x0040002d:	str	r2, [r3]
+0x0040002f:	bx	lr
 
-Disassembly of section .text:
+Function randombytes_implementation_name @ 0x00400035
+0x00400035:	push	{r4, lr}
+0x00400037:	ldr	r4, [pc, #0x2c]
+0x00400039:	ldr	r2, [pc, #0x2c]
+0x0040003b:	add	r4, pc
+0x0040003d:	add	r2, pc
+0x0040003f:	ldr	r3, [r4]
+0x00400041:	cbz	r3, #0x40004b
+0x00400043:	pop.w	{r4, lr}
+0x00400047:	ldr	r3, [r3]
+0x00400049:	bx	r3
+0x00400043:	pop.w	{r4, lr}
+0x00400047:	ldr	r3, [r3]
+0x00400049:	bx	r3
+0x0040004b:	ldr	r3, [pc, #0x20]
+0x0040004d:	ldr	r3, [r2, r3]
+0x0040004f:	str	r3, [r4]
+0x00400051:	ldr	r2, [r3, #8]
+0x00400053:	cmp	r2, #0
+0x00400055:	beq	#0x400043
+0x00400057:	blx	r2
+0x00400059:	ldr	r3, [r4]
+0x0040005b:	pop.w	{r4, lr}
+0x0040005f:	ldr	r3, [r3]
+0x00400061:	bx	r3
 
-00000000 <randombytes_init_if_needed.part.0>:
-   0:	4b05      	ldr	r3, [pc, #20]	; (18 <randombytes_init_if_needed.part.0+0x18>)
-   2:	4906      	ldr	r1, [pc, #24]	; (1c <randombytes_init_if_needed.part.0+0x1c>)
-   4:	447b      	add	r3, pc
-   6:	4a06      	ldr	r2, [pc, #24]	; (20 <randombytes_init_if_needed.part.0+0x20>)
-   8:	447a      	add	r2, pc
-   a:	5859      	ldr	r1, [r3, r1]
-   c:	6011      	str	r1, [r2, #0]
-   e:	688b      	ldr	r3, [r1, #8]
-  10:	b103      	cbz	r3, 14 <randombytes_init_if_needed.part.0+0x14>
-  12:	4718      	bx	r3
-  14:	4770      	bx	lr
-  16:	bf00      	nop
-  18:	00000010 	.word	0x00000010
-  1c:	00000000 	.word	0x00000000
-  20:	00000014 	.word	0x00000014
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	lsls	r2, r0, #9
+0x00400067:	movs	r0, r0
+0x00400069:	movs	r0, r5
+0x0040006b:	movs	r0, r0
+0x0040006d:	movs	r0, r0
+0x0040006f:	movs	r0, r0
+0x00400071:	push	{r4, lr}
+0x00400073:	ldr	r4, [pc, #0x2c]
+0x00400075:	ldr	r2, [pc, #0x2c]
+0x00400077:	add	r4, pc
+0x00400079:	add	r2, pc
+0x0040007b:	ldr	r3, [r4]
+0x0040007d:	cbz	r3, #0x400087
+0x0040007f:	pop.w	{r4, lr}
+0x00400083:	ldr	r3, [r3, #4]
+0x00400085:	bx	r3
 
-00000024 <randombytes_set_implementation>:
-  24:	4b02      	ldr	r3, [pc, #8]	; (30 <randombytes_set_implementation+0xc>)
-  26:	4602      	mov	r2, r0
-  28:	2000      	movs	r0, #0
-  2a:	447b      	add	r3, pc
-  2c:	601a      	str	r2, [r3, #0]
-  2e:	4770      	bx	lr
-  30:	00000002 	.word	0x00000002
+Function randombytes_random @ 0x00400071
+0x00400071:	push	{r4, lr}
+0x00400073:	ldr	r4, [pc, #0x2c]
+0x00400075:	ldr	r2, [pc, #0x2c]
+0x00400077:	add	r4, pc
+0x00400079:	add	r2, pc
+0x0040007b:	ldr	r3, [r4]
+0x0040007d:	cbz	r3, #0x400087
+0x0040007f:	pop.w	{r4, lr}
+0x00400083:	ldr	r3, [r3, #4]
+0x00400085:	bx	r3
+0x0040007f:	pop.w	{r4, lr}
+0x00400083:	ldr	r3, [r3, #4]
+0x00400085:	bx	r3
+0x00400087:	ldr	r3, [pc, #0x20]
+0x00400089:	ldr	r3, [r2, r3]
+0x0040008b:	str	r3, [r4]
+0x0040008d:	ldr	r2, [r3, #8]
+0x0040008f:	cmp	r2, #0
+0x00400091:	beq	#0x40007f
+0x00400093:	blx	r2
+0x00400095:	ldr	r3, [r4]
+0x00400097:	pop.w	{r4, lr}
+0x0040009b:	ldr	r3, [r3, #4]
+0x0040009d:	bx	r3
 
-00000034 <randombytes_implementation_name>:
-  34:	b510      	push	{r4, lr}
-  36:	4c0b      	ldr	r4, [pc, #44]	; (64 <randombytes_implementation_name+0x30>)
-  38:	4a0b      	ldr	r2, [pc, #44]	; (68 <randombytes_implementation_name+0x34>)
-  3a:	447c      	add	r4, pc
-  3c:	447a      	add	r2, pc
-  3e:	6823      	ldr	r3, [r4, #0]
-  40:	b11b      	cbz	r3, 4a <randombytes_implementation_name+0x16>
-  42:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  46:	681b      	ldr	r3, [r3, #0]
-  48:	4718      	bx	r3
-  4a:	4b08      	ldr	r3, [pc, #32]	; (6c <randombytes_implementation_name+0x38>)
-  4c:	58d3      	ldr	r3, [r2, r3]
-  4e:	6023      	str	r3, [r4, #0]
-  50:	689a      	ldr	r2, [r3, #8]
-  52:	2a00      	cmp	r2, #0
-  54:	d0f5      	beq.n	42 <randombytes_implementation_name+0xe>
-  56:	4790      	blx	r2
-  58:	6823      	ldr	r3, [r4, #0]
-  5a:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  5e:	681b      	ldr	r3, [r3, #0]
-  60:	4718      	bx	r3
-  62:	bf00      	nop
-  64:	00000026 	.word	0x00000026
-  68:	00000028 	.word	0x00000028
-  6c:	00000000 	.word	0x00000000
+Function sub_40009f @ 0x0040009f
+0x0040009f:	nop	
+0x004000a1:	lsls	r6, r0, #8
+0x004000a3:	movs	r0, r0
+0x004000a5:	movs	r0, r5
+0x004000a7:	movs	r0, r0
+0x004000a9:	movs	r0, r0
+0x004000ab:	movs	r0, r0
+0x004000ad:	push	{r4, lr}
+0x004000af:	ldr	r4, [pc, #0x28]
+0x004000b1:	ldr	r2, [pc, #0x28]
+0x004000b3:	add	r4, pc
+0x004000b5:	add	r2, pc
+0x004000b7:	ldr	r3, [r4]
+0x004000b9:	cbz	r3, #0x4000c7
+0x004000bb:	ldr	r3, [r3, #8]
+0x004000bd:	cbz	r3, #0x4000c5
+0x004000bf:	pop.w	{r4, lr}
+0x004000c3:	bx	r3
 
-00000070 <randombytes_random>:
-  70:	b510      	push	{r4, lr}
-  72:	4c0b      	ldr	r4, [pc, #44]	; (a0 <randombytes_random+0x30>)
-  74:	4a0b      	ldr	r2, [pc, #44]	; (a4 <randombytes_random+0x34>)
-  76:	447c      	add	r4, pc
-  78:	447a      	add	r2, pc
-  7a:	6823      	ldr	r3, [r4, #0]
-  7c:	b11b      	cbz	r3, 86 <randombytes_random+0x16>
-  7e:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  82:	685b      	ldr	r3, [r3, #4]
-  84:	4718      	bx	r3
-  86:	4b08      	ldr	r3, [pc, #32]	; (a8 <randombytes_random+0x38>)
-  88:	58d3      	ldr	r3, [r2, r3]
-  8a:	6023      	str	r3, [r4, #0]
-  8c:	689a      	ldr	r2, [r3, #8]
-  8e:	2a00      	cmp	r2, #0
-  90:	d0f5      	beq.n	7e <randombytes_random+0xe>
-  92:	4790      	blx	r2
-  94:	6823      	ldr	r3, [r4, #0]
-  96:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  9a:	685b      	ldr	r3, [r3, #4]
-  9c:	4718      	bx	r3
-  9e:	bf00      	nop
-  a0:	00000026 	.word	0x00000026
-  a4:	00000028 	.word	0x00000028
-  a8:	00000000 	.word	0x00000000
+Function randombytes_stir @ 0x004000ad
+0x004000ad:	push	{r4, lr}
+0x004000af:	ldr	r4, [pc, #0x28]
+0x004000b1:	ldr	r2, [pc, #0x28]
+0x004000b3:	add	r4, pc
+0x004000b5:	add	r2, pc
+0x004000b7:	ldr	r3, [r4]
+0x004000b9:	cbz	r3, #0x4000c7
+0x004000bb:	ldr	r3, [r3, #8]
+0x004000bd:	cbz	r3, #0x4000c5
+0x004000bf:	pop.w	{r4, lr}
+0x004000c3:	bx	r3
+0x004000bb:	ldr	r3, [r3, #8]
+0x004000bd:	cbz	r3, #0x4000c5
+0x004000bf:	pop.w	{r4, lr}
+0x004000c3:	bx	r3
+0x004000bf:	pop.w	{r4, lr}
+0x004000c3:	bx	r3
+0x004000c5:	pop	{r4, pc}
+0x004000c7:	ldr	r3, [pc, #0x18]
+0x004000c9:	ldr	r3, [r2, r3]
+0x004000cb:	str	r3, [r4]
+0x004000cd:	ldr	r3, [r3, #8]
+0x004000cf:	cmp	r3, #0
+0x004000d1:	beq	#0x4000c5
+0x004000d3:	blx	r3
+0x004000d5:	ldr	r3, [r4]
+0x004000d7:	b	#0x4000bb
 
-000000ac <randombytes_stir>:
-  ac:	b510      	push	{r4, lr}
-  ae:	4c0a      	ldr	r4, [pc, #40]	; (d8 <randombytes_stir+0x2c>)
-  b0:	4a0a      	ldr	r2, [pc, #40]	; (dc <randombytes_stir+0x30>)
-  b2:	447c      	add	r4, pc
-  b4:	447a      	add	r2, pc
-  b6:	6823      	ldr	r3, [r4, #0]
-  b8:	b12b      	cbz	r3, c6 <randombytes_stir+0x1a>
-  ba:	689b      	ldr	r3, [r3, #8]
-  bc:	b113      	cbz	r3, c4 <randombytes_stir+0x18>
-  be:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  c2:	4718      	bx	r3
-  c4:	bd10      	pop	{r4, pc}
-  c6:	4b06      	ldr	r3, [pc, #24]	; (e0 <randombytes_stir+0x34>)
-  c8:	58d3      	ldr	r3, [r2, r3]
-  ca:	6023      	str	r3, [r4, #0]
-  cc:	689b      	ldr	r3, [r3, #8]
-  ce:	2b00      	cmp	r3, #0
-  d0:	d0f8      	beq.n	c4 <randombytes_stir+0x18>
-  d2:	4798      	blx	r3
-  d4:	6823      	ldr	r3, [r4, #0]
-  d6:	e7f0      	b.n	ba <randombytes_stir+0xe>
-  d8:	00000022 	.word	0x00000022
-  dc:	00000024 	.word	0x00000024
-  e0:	00000000 	.word	0x00000000
+Function randombytes_uniform @ 0x004000e5
+0x004000e5:	push.w	{r4, r5, r6, r7, r8, lr}
+0x004000e9:	mov	r5, r0
+0x004000eb:	ldr	r7, [pc, #0x78]
+0x004000ed:	ldr	r6, [pc, #0x78]
+0x004000ef:	add	r7, pc
+0x004000f1:	add	r6, pc
+0x004000f3:	ldr	r4, [r7]
+0x004000f5:	cbz	r4, #0x400153
+0x004000f7:	ldr	r1, [r4, #0xc]
+0x004000f9:	cbz	r1, #0x400103
+0x004000fb:	mov	r0, r5
+0x004000fd:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400101:	bx	r1
+0x004000f7:	ldr	r1, [r4, #0xc]
+0x004000f9:	cbz	r1, #0x400103
+0x004000fb:	mov	r0, r5
+0x004000fd:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400101:	bx	r1
+0x004000fb:	mov	r0, r5
+0x004000fd:	pop.w	{r4, r5, r6, r7, r8, lr}
+0x00400101:	bx	r1
+0x00400103:	cmp	r5, #1
+0x00400105:	it	ls
+0x00400107:	movls	r0, r1
+0x00400109:	bls	#0x40014f
+0x0040010b:	ldr.w	r8, [pc, #0x60]
+0x0040010f:	mov	r1, r5
+0x00400111:	rsbs	r0, r5, #0
+0x00400113:	bl	#0x500001
+0x00400117:	add	r8, pc
+0x00400119:	mov	r7, r1
+0x0040011b:	ldr	r3, [r4, #4]
+0x0040011d:	blx	r3
+0x0040011b:	ldr	r3, [r4, #4]
+0x0040011d:	blx	r3
+0x0040011f:	cmp	r7, r0
+0x00400121:	bls	#0x400147
+0x00400123:	ldr.w	r4, [r8]
+0x00400127:	cmp	r4, #0
+0x00400129:	bne	#0x40011b
+0x0040012b:	ldr	r3, [pc, #0x44]
+0x0040012d:	ldr	r4, [r6, r3]
+0x0040012f:	str.w	r4, [r8]
+0x00400133:	ldr	r3, [r4, #8]
+0x00400135:	cmp	r3, #0
+0x00400137:	beq	#0x40011b
+0x00400139:	blx	r3
+0x0040013b:	ldr.w	r4, [r8]
+0x0040013f:	ldr	r3, [r4, #4]
+0x00400141:	blx	r3
+0x00400143:	cmp	r7, r0
+0x00400145:	bhi	#0x400123
+0x00400147:	mov	r1, r5
+0x00400149:	bl	#0x500001
+0x0040014d:	mov	r0, r1
+0x0040014f:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x0040014f:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x00400153:	ldr	r3, [pc, #0x1c]
+0x00400155:	ldr	r4, [r6, r3]
+0x00400157:	str	r4, [r7]
+0x00400159:	ldr	r3, [r4, #8]
+0x0040015b:	cmp	r3, #0
+0x0040015d:	beq	#0x4000f7
+0x0040015f:	blx	r3
+0x00400161:	ldr	r4, [r7]
+0x00400163:	b	#0x4000f7
 
-000000e4 <randombytes_uniform>:
-  e4:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-  e8:	4605      	mov	r5, r0
-  ea:	4f1e      	ldr	r7, [pc, #120]	; (164 <randombytes_uniform+0x80>)
-  ec:	4e1e      	ldr	r6, [pc, #120]	; (168 <randombytes_uniform+0x84>)
-  ee:	447f      	add	r7, pc
-  f0:	447e      	add	r6, pc
-  f2:	683c      	ldr	r4, [r7, #0]
-  f4:	b36c      	cbz	r4, 152 <randombytes_uniform+0x6e>
-  f6:	68e1      	ldr	r1, [r4, #12]
-  f8:	b119      	cbz	r1, 102 <randombytes_uniform+0x1e>
-  fa:	4628      	mov	r0, r5
-  fc:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
- 100:	4708      	bx	r1
- 102:	2d01      	cmp	r5, #1
- 104:	bf98      	it	ls
- 106:	4608      	movls	r0, r1
- 108:	d921      	bls.n	14e <randombytes_uniform+0x6a>
- 10a:	f8df 8060 	ldr.w	r8, [pc, #96]	; 16c <randombytes_uniform+0x88>
- 10e:	4629      	mov	r1, r5
- 110:	4268      	negs	r0, r5
- 112:	f7ff fffe 	bl	0 <__aeabi_uidivmod>
- 116:	44f8      	add	r8, pc
- 118:	460f      	mov	r7, r1
- 11a:	6863      	ldr	r3, [r4, #4]
- 11c:	4798      	blx	r3
- 11e:	4287      	cmp	r7, r0
- 120:	d911      	bls.n	146 <randombytes_uniform+0x62>
- 122:	f8d8 4000 	ldr.w	r4, [r8]
- 126:	2c00      	cmp	r4, #0
- 128:	d1f7      	bne.n	11a <randombytes_uniform+0x36>
- 12a:	4b11      	ldr	r3, [pc, #68]	; (170 <randombytes_uniform+0x8c>)
- 12c:	58f4      	ldr	r4, [r6, r3]
- 12e:	f8c8 4000 	str.w	r4, [r8]
- 132:	68a3      	ldr	r3, [r4, #8]
- 134:	2b00      	cmp	r3, #0
- 136:	d0f0      	beq.n	11a <randombytes_uniform+0x36>
- 138:	4798      	blx	r3
- 13a:	f8d8 4000 	ldr.w	r4, [r8]
- 13e:	6863      	ldr	r3, [r4, #4]
- 140:	4798      	blx	r3
- 142:	4287      	cmp	r7, r0
- 144:	d8ed      	bhi.n	122 <randombytes_uniform+0x3e>
- 146:	4629      	mov	r1, r5
- 148:	f7ff fffe 	bl	0 <__aeabi_uidivmod>
- 14c:	4608      	mov	r0, r1
- 14e:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 152:	4b07      	ldr	r3, [pc, #28]	; (170 <randombytes_uniform+0x8c>)
- 154:	58f4      	ldr	r4, [r6, r3]
- 156:	603c      	str	r4, [r7, #0]
- 158:	68a3      	ldr	r3, [r4, #8]
- 15a:	2b00      	cmp	r3, #0
- 15c:	d0cb      	beq.n	f6 <randombytes_uniform+0x12>
- 15e:	4798      	blx	r3
- 160:	683c      	ldr	r4, [r7, #0]
- 162:	e7c8      	b.n	f6 <randombytes_uniform+0x12>
- 164:	00000072 	.word	0x00000072
- 168:	00000074 	.word	0x00000074
- 16c:	00000052 	.word	0x00000052
- 170:	00000000 	.word	0x00000000
+Function randombytes_buf @ 0x00400175
+0x00400175:	ldr	r3, [pc, #0x40]
+0x00400177:	push	{r4, lr}
+0x00400179:	add	r3, pc
+0x0040017b:	ldr	r2, [pc, #0x40]
+0x0040017d:	sub	sp, #8
+0x0040017f:	ldr	r4, [r3]
+0x00400181:	add	r2, pc
+0x00400183:	cbz	r4, #0x40019b
+0x00400185:	cbz	r1, #0x400197
+0x00400187:	ldr	r3, [pc, #0x38]
+0x00400189:	add	r3, pc
+0x0040018b:	ldr	r3, [r3]
+0x0040018d:	ldr	r3, [r3, #0x10]
+0x0040018f:	add	sp, #8
+0x00400191:	pop.w	{r4, lr}
+0x00400195:	bx	r3
+0x00400185:	cbz	r1, #0x400197
+0x00400187:	ldr	r3, [pc, #0x38]
+0x00400189:	add	r3, pc
+0x0040018b:	ldr	r3, [r3]
+0x0040018d:	ldr	r3, [r3, #0x10]
+0x0040018f:	add	sp, #8
+0x00400191:	pop.w	{r4, lr}
+0x00400195:	bx	r3
+0x00400187:	ldr	r3, [pc, #0x38]
+0x00400189:	add	r3, pc
+0x0040018b:	ldr	r3, [r3]
+0x0040018d:	ldr	r3, [r3, #0x10]
+0x0040018f:	add	sp, #8
+0x00400191:	pop.w	{r4, lr}
+0x00400195:	bx	r3
+0x00400197:	add	sp, #8
+0x00400199:	pop	{r4, pc}
+0x0040019b:	ldr.w	ip, [pc, #0x28]
+0x0040019f:	ldr.w	r2, [r2, ip]
+0x004001a3:	str	r2, [r3]
+0x004001a5:	ldr	r3, [r2, #8]
+0x004001a7:	cmp	r3, #0
+0x004001a9:	beq	#0x400185
+0x004001ab:	strd	r0, r1, [sp]
+0x004001af:	blx	r3
+0x004001b1:	ldrd	r0, r1, [sp]
+0x004001b5:	b	#0x400185
 
-00000174 <randombytes_buf>:
- 174:	4b10      	ldr	r3, [pc, #64]	; (1b8 <randombytes_buf+0x44>)
- 176:	b510      	push	{r4, lr}
- 178:	447b      	add	r3, pc
- 17a:	4a10      	ldr	r2, [pc, #64]	; (1bc <randombytes_buf+0x48>)
- 17c:	b082      	sub	sp, #8
- 17e:	681c      	ldr	r4, [r3, #0]
- 180:	447a      	add	r2, pc
- 182:	b154      	cbz	r4, 19a <randombytes_buf+0x26>
- 184:	b139      	cbz	r1, 196 <randombytes_buf+0x22>
- 186:	4b0e      	ldr	r3, [pc, #56]	; (1c0 <randombytes_buf+0x4c>)
- 188:	447b      	add	r3, pc
- 18a:	681b      	ldr	r3, [r3, #0]
- 18c:	691b      	ldr	r3, [r3, #16]
- 18e:	b002      	add	sp, #8
- 190:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
- 194:	4718      	bx	r3
- 196:	b002      	add	sp, #8
- 198:	bd10      	pop	{r4, pc}
- 19a:	f8df c028 	ldr.w	ip, [pc, #40]	; 1c4 <randombytes_buf+0x50>
- 19e:	f852 200c 	ldr.w	r2, [r2, ip]
- 1a2:	601a      	str	r2, [r3, #0]
- 1a4:	6893      	ldr	r3, [r2, #8]
- 1a6:	2b00      	cmp	r3, #0
- 1a8:	d0ec      	beq.n	184 <randombytes_buf+0x10>
- 1aa:	e9cd 0100 	strd	r0, r1, [sp]
- 1ae:	4798      	blx	r3
- 1b0:	e9dd 0100 	ldrd	r0, r1, [sp]
- 1b4:	e7e6      	b.n	184 <randombytes_buf+0x10>
- 1b6:	bf00      	nop
- 1b8:	0000003c 	.word	0x0000003c
- 1bc:	00000038 	.word	0x00000038
- 1c0:	00000034 	.word	0x00000034
- 1c4:	00000000 	.word	0x00000000
+Function sub_4001b7 @ 0x004001b7
+0x004001b7:	nop	
+0x004001b9:	lsls	r4, r0, #4
+0x004001bb:	movs	r0, r0
+0x004001bd:	movs	r0, r7
+0x004001bf:	movs	r0, r0
+0x004001c1:	lsls	r4, r6, #3
+0x004001c3:	movs	r0, r0
+0x004001c5:	movs	r0, r0
+0x004001c7:	movs	r0, r0
+0x004001c9:	push	{r4, lr}
+0x004001cb:	movs	r3, #0
+0x004001cd:	ldr.w	ip, [pc, #0x18]
+0x004001d1:	sub	sp, #8
+0x004001d3:	mov	r4, r2
+0x004001d5:	add	ip, pc
+0x004001d7:	mov	r2, r1
+0x004001d9:	str	r4, [sp, #4]
+0x004001db:	str.w	ip, [sp]
+0x004001df:	bl	#0x50000d
 
-000001c8 <randombytes_buf_deterministic>:
- 1c8:	b510      	push	{r4, lr}
- 1ca:	2300      	movs	r3, #0
- 1cc:	f8df c018 	ldr.w	ip, [pc, #24]	; 1e8 <randombytes_buf_deterministic+0x20>
- 1d0:	b082      	sub	sp, #8
- 1d2:	4614      	mov	r4, r2
- 1d4:	44fc      	add	ip, pc
- 1d6:	460a      	mov	r2, r1
- 1d8:	9401      	str	r4, [sp, #4]
- 1da:	f8cd c000 	str.w	ip, [sp]
- 1de:	f7ff fffe 	bl	0 <crypto_stream_chacha20_ietf>
- 1e2:	b002      	add	sp, #8
- 1e4:	bd10      	pop	{r4, pc}
- 1e6:	bf00      	nop
- 1e8:	00000010 	.word	0x00000010
+Function randombytes_buf_deterministic @ 0x004001c9
+0x004001c9:	push	{r4, lr}
+0x004001cb:	movs	r3, #0
+0x004001cd:	ldr.w	ip, [pc, #0x18]
+0x004001d1:	sub	sp, #8
+0x004001d3:	mov	r4, r2
+0x004001d5:	add	ip, pc
+0x004001d7:	mov	r2, r1
+0x004001d9:	str	r4, [sp, #4]
+0x004001db:	str.w	ip, [sp]
+0x004001df:	bl	#0x50000d
+0x004001e3:	add	sp, #8
+0x004001e5:	pop	{r4, pc}
 
-000001ec <randombytes_seedbytes>:
- 1ec:	2020      	movs	r0, #32
- 1ee:	4770      	bx	lr
+Function sub_4001e7 @ 0x004001e7
+0x004001e7:	nop	
+0x004001e9:	lsls	r4, r0, #4
+0x004001eb:	movs	r0, r0
+0x004001ed:	movs	r0, #0x20
+0x004001ef:	bx	lr
 
-000001f0 <randombytes_close>:
- 1f0:	4b04      	ldr	r3, [pc, #16]	; (204 <randombytes_close+0x14>)
- 1f2:	447b      	add	r3, pc
- 1f4:	681b      	ldr	r3, [r3, #0]
- 1f6:	b113      	cbz	r3, 1fe <randombytes_close+0xe>
- 1f8:	695b      	ldr	r3, [r3, #20]
- 1fa:	b103      	cbz	r3, 1fe <randombytes_close+0xe>
- 1fc:	4718      	bx	r3
- 1fe:	2000      	movs	r0, #0
- 200:	4770      	bx	lr
- 202:	bf00      	nop
- 204:	0000000e 	.word	0x0000000e
+Function randombytes_seedbytes @ 0x004001ed
+0x004001ed:	movs	r0, #0x20
+0x004001ef:	bx	lr
 
-00000208 <randombytes>:
- 208:	b510      	push	{r4, lr}
- 20a:	4916      	ldr	r1, [pc, #88]	; (264 <randombytes+0x5c>)
- 20c:	b082      	sub	sp, #8
- 20e:	4479      	add	r1, pc
- 210:	b9f3      	cbnz	r3, 250 <randombytes+0x48>
- 212:	4b15      	ldr	r3, [pc, #84]	; (268 <randombytes+0x60>)
- 214:	4614      	mov	r4, r2
- 216:	447b      	add	r3, pc
- 218:	681a      	ldr	r2, [r3, #0]
- 21a:	b15a      	cbz	r2, 234 <randombytes+0x2c>
- 21c:	b144      	cbz	r4, 230 <randombytes+0x28>
- 21e:	4b13      	ldr	r3, [pc, #76]	; (26c <randombytes+0x64>)
- 220:	4621      	mov	r1, r4
- 222:	447b      	add	r3, pc
- 224:	681b      	ldr	r3, [r3, #0]
- 226:	691b      	ldr	r3, [r3, #16]
- 228:	b002      	add	sp, #8
- 22a:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
- 22e:	4718      	bx	r3
- 230:	b002      	add	sp, #8
- 232:	bd10      	pop	{r4, pc}
- 234:	f8df c038 	ldr.w	ip, [pc, #56]	; 270 <randombytes+0x68>
- 238:	f851 100c 	ldr.w	r1, [r1, ip]
- 23c:	6019      	str	r1, [r3, #0]
- 23e:	688b      	ldr	r3, [r1, #8]
- 240:	2b00      	cmp	r3, #0
- 242:	d0eb      	beq.n	21c <randombytes+0x14>
- 244:	9001      	str	r0, [sp, #4]
- 246:	4798      	blx	r3
- 248:	9801      	ldr	r0, [sp, #4]
- 24a:	2c00      	cmp	r4, #0
- 24c:	d0f0      	beq.n	230 <randombytes+0x28>
- 24e:	e7e6      	b.n	21e <randombytes+0x16>
- 250:	4b08      	ldr	r3, [pc, #32]	; (274 <randombytes+0x6c>)
- 252:	22d6      	movs	r2, #214	; 0xd6
- 254:	4908      	ldr	r1, [pc, #32]	; (278 <randombytes+0x70>)
- 256:	4809      	ldr	r0, [pc, #36]	; (27c <randombytes+0x74>)
- 258:	447b      	add	r3, pc
- 25a:	4479      	add	r1, pc
- 25c:	330c      	adds	r3, #12
- 25e:	4478      	add	r0, pc
- 260:	f7ff fffe 	bl	0 <__assert_fail>
- 264:	00000052 	.word	0x00000052
- 268:	0000004e 	.word	0x0000004e
- 26c:	00000046 	.word	0x00000046
- 270:	00000000 	.word	0x00000000
- 274:	00000018 	.word	0x00000018
- 278:	0000001a 	.word	0x0000001a
- 27c:	0000001a 	.word	0x0000001a
+Function randombytes_close @ 0x004001f1
+0x004001f1:	ldr	r3, [pc, #0x10]
+0x004001f3:	add	r3, pc
+0x004001f5:	ldr	r3, [r3]
+0x004001f7:	cbz	r3, #0x4001ff
+0x004001f9:	ldr	r3, [r3, #0x14]
+0x004001fb:	cbz	r3, #0x4001ff
+0x004001fd:	bx	r3
+0x004001f9:	ldr	r3, [r3, #0x14]
+0x004001fb:	cbz	r3, #0x4001ff
+0x004001fd:	bx	r3
+0x004001fd:	bx	r3
+0x004001ff:	movs	r0, #0
+0x00400201:	bx	lr
+
+Function sub_400203 @ 0x00400203
+0x00400203:	nop	
+0x00400205:	lsls	r2, r1, #2
+0x00400207:	movs	r0, r0
+0x00400209:	push	{r4, lr}
+0x0040020b:	ldr	r1, [pc, #0x58]
+0x0040020d:	sub	sp, #8
+0x0040020f:	add	r1, pc
+0x00400211:	cbnz	r3, #0x400251
+0x00400213:	ldr	r3, [pc, #0x54]
+0x00400215:	mov	r4, r2
+0x00400217:	add	r3, pc
+0x00400219:	ldr	r2, [r3]
+0x0040021b:	cbz	r2, #0x400235
+0x0040021d:	cbz	r4, #0x400231
+0x0040021f:	ldr	r3, [pc, #0x4c]
+0x00400221:	mov	r1, r4
+0x00400223:	add	r3, pc
+0x00400225:	ldr	r3, [r3]
+0x00400227:	ldr	r3, [r3, #0x10]
+0x00400229:	add	sp, #8
+0x0040022b:	pop.w	{r4, lr}
+0x0040022f:	bx	r3
+
+Function randombytes @ 0x00400209
+0x00400209:	push	{r4, lr}
+0x0040020b:	ldr	r1, [pc, #0x58]
+0x0040020d:	sub	sp, #8
+0x0040020f:	add	r1, pc
+0x00400211:	cbnz	r3, #0x400251
+0x00400213:	ldr	r3, [pc, #0x54]
+0x00400215:	mov	r4, r2
+0x00400217:	add	r3, pc
+0x00400219:	ldr	r2, [r3]
+0x0040021b:	cbz	r2, #0x400235
+0x0040021d:	cbz	r4, #0x400231
+0x0040021f:	ldr	r3, [pc, #0x4c]
+0x00400221:	mov	r1, r4
+0x00400223:	add	r3, pc
+0x00400225:	ldr	r3, [r3]
+0x00400227:	ldr	r3, [r3, #0x10]
+0x00400229:	add	sp, #8
+0x0040022b:	pop.w	{r4, lr}
+0x0040022f:	bx	r3
+0x00400213:	ldr	r3, [pc, #0x54]
+0x00400215:	mov	r4, r2
+0x00400217:	add	r3, pc
+0x00400219:	ldr	r2, [r3]
+0x0040021b:	cbz	r2, #0x400235
+0x0040021d:	cbz	r4, #0x400231
+0x0040021f:	ldr	r3, [pc, #0x4c]
+0x00400221:	mov	r1, r4
+0x00400223:	add	r3, pc
+0x00400225:	ldr	r3, [r3]
+0x00400227:	ldr	r3, [r3, #0x10]
+0x00400229:	add	sp, #8
+0x0040022b:	pop.w	{r4, lr}
+0x0040022f:	bx	r3
+0x0040021d:	cbz	r4, #0x400231
+0x0040021f:	ldr	r3, [pc, #0x4c]
+0x00400221:	mov	r1, r4
+0x00400223:	add	r3, pc
+0x00400225:	ldr	r3, [r3]
+0x00400227:	ldr	r3, [r3, #0x10]
+0x00400229:	add	sp, #8
+0x0040022b:	pop.w	{r4, lr}
+0x0040022f:	bx	r3
+0x0040021f:	ldr	r3, [pc, #0x4c]
+0x00400221:	mov	r1, r4
+0x00400223:	add	r3, pc
+0x00400225:	ldr	r3, [r3]
+0x00400227:	ldr	r3, [r3, #0x10]
+0x00400229:	add	sp, #8
+0x0040022b:	pop.w	{r4, lr}
+0x0040022f:	bx	r3
+0x00400231:	add	sp, #8
+0x00400233:	pop	{r4, pc}
+0x00400235:	ldr.w	ip, [pc, #0x38]
+0x00400239:	ldr.w	r1, [r1, ip]
+0x0040023d:	str	r1, [r3]
+0x0040023f:	ldr	r3, [r1, #8]
+0x00400241:	cmp	r3, #0
+0x00400243:	beq	#0x40021d
+0x00400245:	str	r0, [sp, #4]
+0x00400247:	blx	r3
+0x00400249:	ldr	r0, [sp, #4]
+0x0040024b:	cmp	r4, #0
+0x0040024d:	beq	#0x400231
+0x0040024f:	b	#0x40021f
+0x00400251:	ldr	r3, [pc, #0x20]
+0x00400253:	movs	r2, #0xd6
+0x00400255:	ldr	r1, [pc, #0x20]
+0x00400257:	ldr	r0, [pc, #0x24]
+0x00400259:	add	r3, pc
+0x0040025b:	add	r1, pc
+0x0040025d:	adds	r3, #0xc
+0x0040025f:	add	r0, pc
+0x00400261:	bl	#0x500019
+
+Function __aeabi_uidivmod @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function crypto_stream_chacha20_ietf @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __assert_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0
+
+Function UnresolvableCallTarget @ 0x00601050
+0x00601050:	andeq	r0, r0, r0
+0x00601054:	andeq	r0, r0, r0
+0x00601058:	andeq	r0, r0, r0
+0x0060105c:	andeq	r0, r0, r0
+0x00601060:	andeq	r0, r0, r0
+0x00601064:	andeq	r0, r0, r0
+0x00601068:	andeq	r0, r0, r0
+0x0060106c:	andeq	r0, r0, r0
+0x00601070:	andeq	r0, r0, r0
+0x00601074:	andeq	r0, r0, r0
+0x00601078:	andeq	r0, r0, r0
+0x0060107c:	andeq	r0, r0, r0
+0x00601080:	andeq	r0, r0, r0
+0x00601084:	andeq	r0, r0, r0
+0x00601088:	andeq	r0, r0, r0
+0x0060108c:	andeq	r0, r0, r0
+0x00601090:	andeq	r0, r0, r0
+0x00601094:	andeq	r0, r0, r0
+0x00601098:	andeq	r0, r0, r0
+0x0060109c:	andeq	r0, r0, r0
+0x006010a0:	andeq	r0, r0, r0
+0x006010a4:	andeq	r0, r0, r0
+0x006010a8:	andeq	r0, r0, r0
+0x006010ac:	andeq	r0, r0, r0
+0x006010b0:	andeq	r0, r0, r0
+0x006010b4:	andeq	r0, r0, r0
+0x006010b8:	andeq	r0, r0, r0
+0x006010bc:	andeq	r0, r0, r0
+0x006010c0:	andeq	r0, r0, r0
+0x006010c4:	andeq	r0, r0, r0
+0x006010c8:	andeq	r0, r0, r0
+0x006010cc:	andeq	r0, r0, r0
+0x006010d0:	andeq	r0, r0, r0
+0x006010d4:	andeq	r0, r0, r0
+0x006010d8:	andeq	r0, r0, r0
+0x006010dc:	andeq	r0, r0, r0
+0x006010e0:	andeq	r0, r0, r0
+0x006010e4:	andeq	r0, r0, r0
+0x006010e8:	andeq	r0, r0, r0
+0x006010ec:	andeq	r0, r0, r0
+0x006010f0:	andeq	r0, r0, r0
+0x006010f4:	andeq	r0, r0, r0
+0x006010f8:	andeq	r0, r0, r0
+0x006010fc:	andeq	r0, r0, r0
+0x00601100:	andeq	r0, r0, r0
+0x00601104:	andeq	r0, r0, r0
+0x00601108:	andeq	r0, r0, r0
+0x0060110c:	andeq	r0, r0, r0
+0x00601110:	andeq	r0, r0, r0
+0x00601114:	andeq	r0, r0, r0
+0x00601118:	andeq	r0, r0, r0
+0x0060111c:	andeq	r0, r0, r0
+0x00601120:	andeq	r0, r0, r0
+0x00601124:	andeq	r0, r0, r0
+0x00601128:	andeq	r0, r0, r0
+0x0060112c:	andeq	r0, r0, r0
+0x00601130:	andeq	r0, r0, r0
+0x00601134:	andeq	r0, r0, r0
+0x00601138:	andeq	r0, r0, r0
+0x0060113c:	andeq	r0, r0, r0
+0x00601140:	andeq	r0, r0, r0
+0x00601144:	andeq	r0, r0, r0
+0x00601148:	andeq	r0, r0, r0
+0x0060114c:	andeq	r0, r0, r0
+0x00601150:	andeq	r0, r0, r0
+0x00601154:	andeq	r0, r0, r0
+0x00601158:	andeq	r0, r0, r0
+0x0060115c:	andeq	r0, r0, r0
+0x00601160:	andeq	r0, r0, r0
+0x00601164:	andeq	r0, r0, r0
+0x00601168:	andeq	r0, r0, r0
+0x0060116c:	andeq	r0, r0, r0
+0x00601170:	andeq	r0, r0, r0
+0x00601174:	andeq	r0, r0, r0
+0x00601178:	andeq	r0, r0, r0
+0x0060117c:	andeq	r0, r0, r0
+0x00601180:	andeq	r0, r0, r0
+0x00601184:	andeq	r0, r0, r0
+0x00601188:	andeq	r0, r0, r0
+0x0060118c:	andeq	r0, r0, r0
+0x00601190:	andeq	r0, r0, r0
+0x00601194:	andeq	r0, r0, r0
+0x00601198:	andeq	r0, r0, r0
+0x0060119c:	andeq	r0, r0, r0
+0x006011a0:	andeq	r0, r0, r0
+0x006011a4:	andeq	r0, r0, r0
+0x006011a8:	andeq	r0, r0, r0
+0x006011ac:	andeq	r0, r0, r0
+0x006011b0:	andeq	r0, r0, r0
+0x006011b4:	andeq	r0, r0, r0
+0x006011b8:	andeq	r0, r0, r0
+0x006011bc:	andeq	r0, r0, r0
+0x006011c0:	andeq	r0, r0, r0
+0x006011c4:	andeq	r0, r0, r0
+0x006011c8:	andeq	r0, r0, r0
+0x006011cc:	andeq	r0, r0, r0
+0x006011d0:	andeq	r0, r0, r0
+0x006011d4:	andeq	r0, r0, r0
+0x006011d8:	andeq	r0, r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

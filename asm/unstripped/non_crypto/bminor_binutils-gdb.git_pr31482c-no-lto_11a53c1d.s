@@ -1,19 +1,29 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr31482c-no-lto_11a53c1d.o:     file format elf32-littlearm
+Function abort @ 0x00400009
+0x00400009:	ldr	r0, [pc, #0xc]
+0x0040000b:	push	{r3, lr}
+0x0040000d:	add	r0, pc
+0x0040000f:	bl	#0x500001
+0x00400013:	movs	r0, #0
+0x00400015:	bl	#0x50000d
 
+Function foo @ 0x0040001d
+0x0040001d:	push	{r3, lr}
+0x0040001f:	bl	#0x400009
 
-Disassembly of section .text.unlikely:
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
 
-00000000 <abort>:
-   0:	4803      	ldr	r0, [pc, #12]	; (10 <abort+0x10>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <puts>
-   a:	2000      	movs	r0, #0
-   c:	f7ff fffe 	bl	0 <exit>
-  10:	00000008 	.word	0x00000008
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000014 <foo>:
-  14:	b508      	push	{r3, lr}
-  16:	f7ff fffe 	bl	0 <abort>
-  1a:	bf00      	nop
+Function exit @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

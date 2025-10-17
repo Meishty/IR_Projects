@@ -1,17 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pie-fork_7512864c.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrhs	fp, [lr], #-0x510
 
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r0, #1
+0x0040000b:	bl	#0x50000d
+0x0040000f:	subs	r4, #1
+0x00400011:	bne	#0x400009
+0x00400013:	mov	r0, r4
+0x00400015:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	241e      	movs	r4, #30
-   4:	f7ff fffe 	bl	0 <fork>
-   8:	2001      	movs	r0, #1
-   a:	f7ff fffe 	bl	0 <sleep>
-   e:	3c01      	subs	r4, #1
-  10:	d1fa      	bne.n	8 <main+0x8>
-  12:	4620      	mov	r0, r4
-  14:	bd10      	pop	{r4, pc}
-  16:	bf00      	nop
+Function sleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

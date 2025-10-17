@@ -1,14 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watch-notconst2_3234966b.o:     file format elf32-littlearm
+Function f @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r0
+0x00400005:	movs	r0, #2
+0x00400007:	bl	#0x500001
+0x0040000b:	mov	r0, r4
+0x0040000d:	pop.w	{r4, lr}
+0x00400011:	b.w	#0x500001
 
-
-Disassembly of section .text:
-
-00000000 <f>:
-   0:	b510      	push	{r4, lr}
-   2:	4604      	mov	r4, r0
-   4:	2002      	movs	r0, #2
-   6:	f7ff fffe 	bl	0 <g>
-   a:	4620      	mov	r0, r4
-   c:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  10:	f7ff bffe 	b.w	0 <g>
+Function g @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

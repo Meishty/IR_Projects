@@ -1,32 +1,44 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ifuncvar3_f2b14308.o:     file format elf32-littlearm
+Function main @ 0x00400045
+0x00400045:	push	{r3, lr}
+0x00400047:	bl	#0x500001
+0x0040004b:	ldr	r3, [pc, #0x24]
+0x0040004d:	ldr	r2, [pc, #0x24]
+0x0040004f:	add	r3, pc
+0x00400051:	ldr	r3, [r3, r2]
+0x00400053:	ldr	r3, [r3]
+0x00400055:	cmp	r3, #1
+0x00400057:	bne	#0x40005d
+0x00400059:	movs	r0, #0
+0x0040005b:	pop	{r3, pc}
+0x0040005d:	ldr	r3, [pc, #0x18]
+0x0040005f:	movs	r2, #0xc
+0x00400061:	ldr	r1, [pc, #0x18]
+0x00400063:	ldr	r0, [pc, #0x1c]
+0x00400065:	add	r3, pc
+0x00400067:	add	r1, pc
+0x00400069:	add	r0, pc
+0x0040006b:	bl	#0x50000d
 
+Function sub_40006f @ 0x0040006f
+0x0040006f:	nop	
+0x00400071:	movs	r6, r3
+0x00400073:	movs	r0, r0
+0x00400075:	movs	r0, r0
+0x00400077:	movs	r0, r0
+0x00400079:	movs	r4, r3
+0x0040007b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function bar @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <bar>
-   6:	4b09      	ldr	r3, [pc, #36]	; (2c <main+0x2c>)
-   8:	4a09      	ldr	r2, [pc, #36]	; (30 <main+0x30>)
-   a:	447b      	add	r3, pc
-   c:	589b      	ldr	r3, [r3, r2]
-   e:	681b      	ldr	r3, [r3, #0]
-  10:	2b01      	cmp	r3, #1
-  12:	d101      	bne.n	18 <main+0x18>
-  14:	2000      	movs	r0, #0
-  16:	bd08      	pop	{r3, pc}
-  18:	4b06      	ldr	r3, [pc, #24]	; (34 <main+0x34>)
-  1a:	220c      	movs	r2, #12
-  1c:	4906      	ldr	r1, [pc, #24]	; (38 <main+0x38>)
-  1e:	4807      	ldr	r0, [pc, #28]	; (3c <main+0x3c>)
-  20:	447b      	add	r3, pc
-  22:	4479      	add	r1, pc
-  24:	4478      	add	r0, pc
-  26:	f7ff fffe 	bl	0 <__assert_fail>
-  2a:	bf00      	nop
-  2c:	0000001e 	.word	0x0000001e
-  30:	00000000 	.word	0x00000000
-  34:	00000010 	.word	0x00000010
-  38:	00000012 	.word	0x00000012
-  3c:	00000014 	.word	0x00000014
+Function __assert_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

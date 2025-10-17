@@ -1,21 +1,44 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_strndup_9af5bf4c.o:     file format elf32-littlearm
+Function strndup @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	mov	r5, r0
+0x00400005:	bl	#0x500001
+0x00400009:	mov	r4, r0
+0x0040000b:	adds	r0, #1
+0x0040000d:	bl	#0x50000d
+0x00400011:	cbz	r0, #0x400023
+0x00400013:	movs	r2, #0
+0x00400015:	strb	r2, [r0, r4]
+0x00400017:	mov	r1, r5
+0x00400019:	mov	r2, r4
+0x0040001b:	pop.w	{r3, r4, r5, lr}
+0x0040001f:	b.w	#0x500019
+0x00400013:	movs	r2, #0
+0x00400015:	strb	r2, [r0, r4]
+0x00400017:	mov	r1, r5
+0x00400019:	mov	r2, r4
+0x0040001b:	pop.w	{r3, r4, r5, lr}
+0x0040001f:	b.w	#0x500019
+0x00400023:	pop	{r3, r4, r5, pc}
 
+Function strnlen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
+Function malloc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <strndup>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	4605      	mov	r5, r0
-   4:	f7ff fffe 	bl	0 <strnlen>
-   8:	4604      	mov	r4, r0
-   a:	3001      	adds	r0, #1
-   c:	f7ff fffe 	bl	0 <malloc>
-  10:	b138      	cbz	r0, 22 <strndup+0x22>
-  12:	2200      	movs	r2, #0
-  14:	5502      	strb	r2, [r0, r4]
-  16:	4629      	mov	r1, r5
-  18:	4622      	mov	r2, r4
-  1a:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
-  1e:	f7ff bffe 	b.w	0 <memcpy>
-  22:	bd38      	pop	{r3, r4, r5, pc}
+Function memcpy @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

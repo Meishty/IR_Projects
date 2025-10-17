@@ -1,21 +1,30 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_py-missing-objfile_c0327c99.o:     file format elf32-littlearm
+Function dump_core @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x500001
 
+Function main @ 0x00400013
+0x00400013:	push	{r3, lr}
+0x00400015:	bl	#0x50000d
+0x00400019:	ldr	r3, [pc, #0xc]
+0x0040001b:	add	r3, pc
+0x0040001d:	ldr	r2, [r3]
+0x0040001f:	ldr	r2, [r3, #4]
+0x00400021:	ldr	r3, [r3, #8]
+0x00400023:	bl	#0x500001
 
-Disassembly of section .text.unlikely:
+Function sub_400027 @ 0x00400027
 
-00000000 <dump_core>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <abort>
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000006 <main>:
-   6:	b508      	push	{r3, lr}
-   8:	f7ff fffe 	bl	0 <foo>
-   c:	4b03      	ldr	r3, [pc, #12]	; (1c <main+0x16>)
-   e:	447b      	add	r3, pc
-  10:	681a      	ldr	r2, [r3, #0]
-  12:	685a      	ldr	r2, [r3, #4]
-  14:	689b      	ldr	r3, [r3, #8]
-  16:	f7ff fffe 	bl	0 <abort>
-  1a:	bf00      	nop
-  1c:	0000000a 	.word	0x0000000a
+Function foo @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

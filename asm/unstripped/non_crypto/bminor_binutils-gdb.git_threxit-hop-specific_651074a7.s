@@ -1,42 +1,60 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_threxit-hop-specific_651074a7.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0]
 
+Function hop_me @ 0x00400009
+0x00400009:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
 
-00000000 <thread_function>:
-   0:	2000      	movs	r0, #0
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <pthread_exit>
+Function main @ 0x0040000d
+0x0040000d:	push	{lr}
+0x0040000f:	movs	r3, #0
+0x00400011:	ldr.w	lr, [pc, #0x34]
+0x00400015:	ldr.w	ip, [pc, #0x34]
+0x00400019:	sub	sp, #0xc
+0x0040001b:	add	lr, pc
+0x0040001d:	ldr	r2, [pc, #0x30]
+0x0040001f:	mov	r1, r3
+0x00400021:	mov	r0, sp
+0x00400023:	add	r2, pc
+0x00400025:	ldr.w	ip, [lr, ip]
+0x00400029:	ldr.w	ip, [ip]
+0x0040002d:	str.w	ip, [sp, #4]
+0x00400031:	mov.w	ip, #0
+0x00400035:	bl	#0x50000d
+0x00400039:	ldr	r0, [sp]
+0x0040003b:	movs	r1, #0
+0x0040003d:	bl	#0x500019
+0x00400041:	movs	r0, #0
+0x00400043:	bl	#0x500025
 
-00000008 <hop_me>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	movs	r2, r5
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function pthread_create @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b500      	push	{lr}
-   2:	2300      	movs	r3, #0
-   4:	f8df e034 	ldr.w	lr, [pc, #52]	; 3c <main+0x3c>
-   8:	f8df c034 	ldr.w	ip, [pc, #52]	; 40 <main+0x40>
-   c:	b083      	sub	sp, #12
-   e:	44fe      	add	lr, pc
-  10:	4a0c      	ldr	r2, [pc, #48]	; (44 <main+0x44>)
-  12:	4619      	mov	r1, r3
-  14:	4668      	mov	r0, sp
-  16:	447a      	add	r2, pc
-  18:	f85e c00c 	ldr.w	ip, [lr, ip]
-  1c:	f8dc c000 	ldr.w	ip, [ip]
-  20:	f8cd c004 	str.w	ip, [sp, #4]
-  24:	f04f 0c00 	mov.w	ip, #0
-  28:	f7ff fffe 	bl	0 <pthread_create>
-  2c:	9800      	ldr	r0, [sp, #0]
-  2e:	2100      	movs	r1, #0
-  30:	f7ff fffe 	bl	0 <pthread_join>
-  34:	2000      	movs	r0, #0
-  36:	f7ff fffe 	bl	0 <exit>
-  3a:	bf00      	nop
-  3c:	0000002a 	.word	0x0000002a
-  40:	00000000 	.word	0x00000000
-  44:	0000002a 	.word	0x0000002a
+Function pthread_join @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

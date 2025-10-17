@@ -1,21 +1,46 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_readlink10_e89fa0c2_stripped.o:     file format elf32-littlearm
+Function sub_400018 @ 0x00400018
+0x00400018:	vst2.8	{d20, d21}, [pc], fp
 
+Function sub_40001d @ 0x0040001d
+0x0040001d:	strh	r0, [r0, r2]
+0x0040001f:	movs	r1, #0
+0x00400021:	push	{r3, lr}
+0x00400023:	add	r0, pc
+0x00400025:	bl	#0x400025
 
-Disassembly of section .text.startup:
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
 
-00000000 <.text.startup>:
-   0:	f44f480b 	vst2.8	{d20-d21}, [pc], fp
-   4:	21005280 	smlabbcs	r0, r0, r2, r5
-   8:	4478b508 	ldrbtmi	fp, [r8], #-1288	; 0xfffffaf8
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	d10b3001 	tstle	fp, r1
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	2b0e6803 	blcs	0x39a02c
-  1c:	4805d106 	stmdami	r5, {r1, r2, r8, ip, lr, pc}
-  20:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  24:	2000fffe 	strdcs	pc, [r0], -lr
-  28:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	00000022 	andeq	r0, r0, r2, lsr #32
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400029 @ 0x00400029
+0x00400029:	adds	r0, #1
+0x0040002b:	bne	#0x400045
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	ldr	r3, [r0]
+0x00400033:	cmp	r3, #0xe
+0x00400035:	bne	#0x400045
+0x00400037:	ldr	r0, [pc, #0x14]
+0x00400039:	add	r0, pc
+0x0040003b:	bl	#0x40003b
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	bl	#0x40003b
+
+Function sub_40003f @ 0x0040003f
+0x0040003f:	movs	r0, #0
+0x00400041:	bl	#0x400041
+
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041
+
+Function sub_400045 @ 0x00400045
+0x00400045:	bl	#0x400045
+0x00400049:	movs	r2, r4
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r2
+0x0040004f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

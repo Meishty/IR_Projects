@@ -1,27 +1,19 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_scm-frame-inline_6e09aa89.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	addlt	r4, r2, r6, lsl #22
+0x00400004:	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	ldmdavs	sl, {r0, sb, ip, pc}
+0x00400008:	ldmdavs	sl, {r0, sb, ip, pc}
+0x0040000c:	andsvs	r3, sl, r1, lsl #4
+0x00400010:	andlo	r6, r1, #0x1a0000
+0x00400014:	ldmdavs	r8, {r1, r3, r4, sp, lr}
+0x00400018:	ldrbmi	fp, [r0, -r2]!
+0x0040001c:	andeq	r0, r0, r8, lsl r0
+0x00400018:	ldrbmi	fp, [r0, -r2]!
+0x0040001c:	andeq	r0, r0, r8, lsl r0
 
+Function main @ 0x00400025
+0x00400025:	b.w	#0x400001
 
-Disassembly of section .text:
-
-00000000 <g>:
-   0:	4b06      	ldr	r3, [pc, #24]	; (1c <g+0x1c>)
-   2:	b082      	sub	sp, #8
-   4:	447b      	add	r3, pc
-   6:	681a      	ldr	r2, [r3, #0]
-   8:	9201      	str	r2, [sp, #4]
-   a:	681a      	ldr	r2, [r3, #0]
-   c:	3201      	adds	r2, #1
-   e:	601a      	str	r2, [r3, #0]
-  10:	681a      	ldr	r2, [r3, #0]
-  12:	3201      	adds	r2, #1
-  14:	601a      	str	r2, [r3, #0]
-  16:	6818      	ldr	r0, [r3, #0]
-  18:	b002      	add	sp, #8
-  1a:	4770      	bx	lr
-  1c:	00000014 	.word	0x00000014
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	f7ff bffe 	b.w	0 <main>
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

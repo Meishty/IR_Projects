@@ -1,71 +1,114 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_compress_dbcec20b.o:     file format elf32-littlearm
+Function compress @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r5, r1
+0x00400005:	movs	r1, #0
+0x00400007:	sub	sp, #0x40
+0x00400009:	vldr	d7, [pc, #0x84]
+0x0040000d:	mov	r6, sp
+0x0040000f:	str	r1, [sp, #0x28]
+0x00400011:	str	r0, [sp, #0xc]
+0x00400013:	ldr	r1, [r5]
+0x00400015:	ldr	r0, [pc, #0x80]
+0x00400017:	str	r1, [sp, #0x10]
+0x00400019:	ldr	r1, [pc, #0x80]
+0x0040001b:	add	r0, pc
+0x0040001d:	strd	r2, r3, [sp]
+0x00400021:	movs	r3, #0x38
+0x00400023:	vstr	d7, [sp, #0x20]
+0x00400027:	ldr	r2, [pc, #0x78]
+0x00400029:	ldr	r1, [r0, r1]
+0x0040002b:	mov	r0, r6
+0x0040002d:	add	r2, pc
+0x0040002f:	ldr	r1, [r1]
+0x00400031:	str	r1, [sp, #0x3c]
+0x00400033:	mov.w	r1, #0
+0x00400037:	mov.w	r1, #-1
+0x0040003b:	bl	#0x500001
+0x0040003f:	mov	r4, r0
+0x00400041:	cbz	r0, #0x40005d
+0x00400043:	ldr	r2, [pc, #0x60]
+0x00400045:	ldr	r3, [pc, #0x54]
+0x00400047:	add	r2, pc
+0x00400049:	ldr	r3, [r2, r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	ldr	r3, [sp, #0x3c]
+0x0040004f:	eors	r2, r3
+0x00400051:	mov.w	r3, #0
+0x00400055:	bne	#0x400089
+0x00400043:	ldr	r2, [pc, #0x60]
+0x00400045:	ldr	r3, [pc, #0x54]
+0x00400047:	add	r2, pc
+0x00400049:	ldr	r3, [r2, r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	ldr	r3, [sp, #0x3c]
+0x0040004f:	eors	r2, r3
+0x00400051:	mov.w	r3, #0
+0x00400055:	bne	#0x400089
+0x00400057:	mov	r0, r4
+0x00400059:	add	sp, #0x40
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x0040005d:	movs	r1, #4
+0x0040005f:	mov	r0, r6
+0x00400061:	bl	#0x50000d
+0x00400065:	mov	r4, r0
+0x00400067:	cmp	r0, #1
+0x00400069:	beq	#0x40007b
+0x0040006b:	mov	r0, r6
+0x0040006d:	bl	#0x500019
+0x00400071:	cmp	r4, #0
+0x00400073:	it	eq
+0x00400075:	mvneq	r4, #4
+0x00400079:	b	#0x400043
+0x0040007b:	ldr	r3, [sp, #0x14]
+0x0040007d:	mov	r0, r6
+0x0040007f:	str	r3, [r5]
+0x00400081:	bl	#0x500019
+0x00400085:	mov	r4, r0
+0x00400087:	b	#0x400043
+0x00400089:	bl	#0x500025
 
+Function sub_40008d @ 0x0040008d
+0x0040008d:	nop.w	
+0x00400091:	movs	r0, r0
+0x00400093:	movs	r0, r0
+0x00400095:	movs	r0, r0
+0x00400097:	movs	r0, r0
+0x00400099:	lsls	r2, r7, #1
+0x0040009b:	movs	r0, r0
+0x0040009d:	movs	r0, r0
+0x0040009f:	movs	r0, r0
+0x004000a1:	lsls	r0, r7, #1
+0x004000a3:	movs	r0, r0
+0x004000a5:	lsls	r2, r3, #1
+0x004000a7:	movs	r0, r0
 
-Disassembly of section .text:
+Function deflateInit_ @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <compress>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	460d      	mov	r5, r1
-   4:	2100      	movs	r1, #0
-   6:	b090      	sub	sp, #64	; 0x40
-   8:	ed9f 7b21 	vldr	d7, [pc, #132]	; 90 <compress+0x90>
-   c:	466e      	mov	r6, sp
-   e:	910a      	str	r1, [sp, #40]	; 0x28
-  10:	9003      	str	r0, [sp, #12]
-  12:	6829      	ldr	r1, [r5, #0]
-  14:	4820      	ldr	r0, [pc, #128]	; (98 <compress+0x98>)
-  16:	9104      	str	r1, [sp, #16]
-  18:	4920      	ldr	r1, [pc, #128]	; (9c <compress+0x9c>)
-  1a:	4478      	add	r0, pc
-  1c:	e9cd 2300 	strd	r2, r3, [sp]
-  20:	2338      	movs	r3, #56	; 0x38
-  22:	ed8d 7b08 	vstr	d7, [sp, #32]
-  26:	4a1e      	ldr	r2, [pc, #120]	; (a0 <compress+0xa0>)
-  28:	5841      	ldr	r1, [r0, r1]
-  2a:	4630      	mov	r0, r6
-  2c:	447a      	add	r2, pc
-  2e:	6809      	ldr	r1, [r1, #0]
-  30:	910f      	str	r1, [sp, #60]	; 0x3c
-  32:	f04f 0100 	mov.w	r1, #0
-  36:	f04f 31ff 	mov.w	r1, #4294967295	; 0xffffffff
-  3a:	f7ff fffe 	bl	0 <deflateInit_>
-  3e:	4604      	mov	r4, r0
-  40:	b160      	cbz	r0, 5c <compress+0x5c>
-  42:	4a18      	ldr	r2, [pc, #96]	; (a4 <compress+0xa4>)
-  44:	4b15      	ldr	r3, [pc, #84]	; (9c <compress+0x9c>)
-  46:	447a      	add	r2, pc
-  48:	58d3      	ldr	r3, [r2, r3]
-  4a:	681a      	ldr	r2, [r3, #0]
-  4c:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
-  4e:	405a      	eors	r2, r3
-  50:	f04f 0300 	mov.w	r3, #0
-  54:	d118      	bne.n	88 <compress+0x88>
-  56:	4620      	mov	r0, r4
-  58:	b010      	add	sp, #64	; 0x40
-  5a:	bd70      	pop	{r4, r5, r6, pc}
-  5c:	2104      	movs	r1, #4
-  5e:	4630      	mov	r0, r6
-  60:	f7ff fffe 	bl	0 <deflate>
-  64:	4604      	mov	r4, r0
-  66:	2801      	cmp	r0, #1
-  68:	d007      	beq.n	7a <compress+0x7a>
-  6a:	4630      	mov	r0, r6
-  6c:	f7ff fffe 	bl	0 <deflateEnd>
-  70:	2c00      	cmp	r4, #0
-  72:	bf08      	it	eq
-  74:	f06f 0404 	mvneq.w	r4, #4
-  78:	e7e3      	b.n	42 <compress+0x42>
-  7a:	9b05      	ldr	r3, [sp, #20]
-  7c:	4630      	mov	r0, r6
-  7e:	602b      	str	r3, [r5, #0]
-  80:	f7ff fffe 	bl	0 <deflateEnd>
-  84:	4604      	mov	r4, r0
-  86:	e7dc      	b.n	42 <compress+0x42>
-  88:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  8c:	f3af 8000 	nop.w
-	...
-  98:	0000007a 	.word	0x0000007a
-  9c:	00000000 	.word	0x00000000
-  a0:	00000070 	.word	0x00000070
-  a4:	0000005a 	.word	0x0000005a
+Function deflate @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function deflateEnd @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

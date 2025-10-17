@@ -1,88 +1,124 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_freopen2_50a29608.o:     file format elf32-littlearm
+Function main @ 0x00400061
+0x00400061:	ldr	r2, [pc, #0xb0]
+0x00400063:	ldr	r3, [pc, #0xb4]
+0x00400065:	push	{r4, r5, r6, r7, lr}
+0x00400067:	add	r2, pc
+0x00400069:	ldr.w	lr, [pc, #0xb0]
+0x0040006d:	sub	sp, #0x44
+0x0040006f:	ldr	r5, [pc, #0xb0]
+0x00400071:	add	lr, pc
+0x00400073:	ldr	r3, [r2, r3]
+0x00400075:	mov	r6, sp
+0x00400077:	ldr	r4, [pc, #0xac]
+0x00400079:	ldr	r3, [r3]
+0x0040007b:	str	r3, [sp, #0x3c]
+0x0040007d:	mov.w	r3, #0
+0x00400081:	mov	ip, r6
+0x00400083:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400087:	add	r5, pc
+0x00400089:	stm.w	ip!, {r0, r1, r2, r3}
+0x0040008d:	ldr	r7, [pc, #0x98]
+0x0040008f:	add	r7, pc
+0x00400091:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400095:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400099:	ldm.w	lr!, {r0, r1, r2, r3}
+0x0040009d:	stm.w	ip!, {r0, r1, r2, r3}
+0x004000a1:	ldm.w	lr, {r0, r1, r2}
+0x004000a5:	stm.w	ip!, {r0, r1}
+0x004000a9:	ldr	r1, [pc, #0x80]
+0x004000ab:	mov	r0, r7
+0x004000ad:	strh.w	r2, [ip]
+0x004000b1:	add	r1, pc
+0x004000b3:	ldr	r4, [r5, r4]
+0x004000b5:	ldr	r2, [r4]
+0x004000b7:	bl	#0x500001
+0x004000bb:	cbz	r0, #0x4000cd
+0x004000bd:	ldr	r3, [r4]
+0x004000bf:	mov	r0, r6
+0x004000c1:	movs	r2, #0x39
+0x004000c3:	movs	r1, #1
+0x004000c5:	bl	#0x50000d
+0x004000bd:	ldr	r3, [r4]
+0x004000bf:	mov	r0, r6
+0x004000c1:	movs	r2, #0x39
+0x004000c3:	movs	r1, #1
+0x004000c5:	bl	#0x50000d
+0x004000c9:	cmp	r0, #0x39
+0x004000cb:	beq	#0x4000db
+0x004000cd:	ldr	r0, [pc, #0x60]
+0x004000cf:	add	r0, pc
+0x004000d1:	bl	#0x500019
+0x004000d5:	movs	r0, #1
+0x004000d7:	bl	#0x500025
+0x004000db:	ldr	r0, [r4]
+0x004000dd:	bl	#0x500031
+0x004000e1:	mov	r4, r0
+0x004000e3:	cmp	r0, #0
+0x004000e5:	bne	#0x4000cd
+0x004000e7:	ldr	r3, [pc, #0x4c]
+0x004000e9:	mov	r0, r7
+0x004000eb:	ldr	r1, [pc, #0x4c]
+0x004000ed:	add	r1, pc
+0x004000ef:	ldr	r3, [r5, r3]
+0x004000f1:	ldr	r2, [r3]
+0x004000f3:	bl	#0x500001
+0x004000f7:	cmp	r0, #0
+0x004000f9:	beq	#0x4000cd
+0x004000fb:	bl	#0x50003d
+0x004000ff:	uxtb	r0, r0
+0x00400101:	cmp	r0, #0x41
+0x00400103:	bne	#0x4000cd
+0x00400105:	ldr	r0, [pc, #0x34]
+0x00400107:	add	r0, pc
+0x00400109:	bl	#0x500019
+0x0040010d:	mov	r0, r4
+0x0040010f:	bl	#0x500025
 
+Function sub_400113 @ 0x00400113
 
-Disassembly of section .text.startup:
+Function freopen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4a2c      	ldr	r2, [pc, #176]	; (b4 <main+0xb4>)
-   2:	4b2d      	ldr	r3, [pc, #180]	; (b8 <main+0xb8>)
-   4:	b5f0      	push	{r4, r5, r6, r7, lr}
-   6:	447a      	add	r2, pc
-   8:	f8df e0b0 	ldr.w	lr, [pc, #176]	; bc <main+0xbc>
-   c:	b091      	sub	sp, #68	; 0x44
-   e:	4d2c      	ldr	r5, [pc, #176]	; (c0 <main+0xc0>)
-  10:	44fe      	add	lr, pc
-  12:	58d3      	ldr	r3, [r2, r3]
-  14:	466e      	mov	r6, sp
-  16:	4c2b      	ldr	r4, [pc, #172]	; (c4 <main+0xc4>)
-  18:	681b      	ldr	r3, [r3, #0]
-  1a:	930f      	str	r3, [sp, #60]	; 0x3c
-  1c:	f04f 0300 	mov.w	r3, #0
-  20:	46b4      	mov	ip, r6
-  22:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
-  26:	447d      	add	r5, pc
-  28:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
-  2c:	4f26      	ldr	r7, [pc, #152]	; (c8 <main+0xc8>)
-  2e:	447f      	add	r7, pc
-  30:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
-  34:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
-  38:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
-  3c:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
-  40:	e89e 0007 	ldmia.w	lr, {r0, r1, r2}
-  44:	e8ac 0003 	stmia.w	ip!, {r0, r1}
-  48:	4920      	ldr	r1, [pc, #128]	; (cc <main+0xcc>)
-  4a:	4638      	mov	r0, r7
-  4c:	f8ac 2000 	strh.w	r2, [ip]
-  50:	4479      	add	r1, pc
-  52:	592c      	ldr	r4, [r5, r4]
-  54:	6822      	ldr	r2, [r4, #0]
-  56:	f7ff fffe 	bl	0 <freopen>
-  5a:	b138      	cbz	r0, 6c <main+0x6c>
-  5c:	6823      	ldr	r3, [r4, #0]
-  5e:	4630      	mov	r0, r6
-  60:	2239      	movs	r2, #57	; 0x39
-  62:	2101      	movs	r1, #1
-  64:	f7ff fffe 	bl	0 <fwrite>
-  68:	2839      	cmp	r0, #57	; 0x39
-  6a:	d006      	beq.n	7a <main+0x7a>
-  6c:	4818      	ldr	r0, [pc, #96]	; (d0 <main+0xd0>)
-  6e:	4478      	add	r0, pc
-  70:	f7ff fffe 	bl	0 <puts>
-  74:	2001      	movs	r0, #1
-  76:	f7ff fffe 	bl	0 <exit>
-  7a:	6820      	ldr	r0, [r4, #0]
-  7c:	f7ff fffe 	bl	0 <fclose>
-  80:	4604      	mov	r4, r0
-  82:	2800      	cmp	r0, #0
-  84:	d1f2      	bne.n	6c <main+0x6c>
-  86:	4b13      	ldr	r3, [pc, #76]	; (d4 <main+0xd4>)
-  88:	4638      	mov	r0, r7
-  8a:	4913      	ldr	r1, [pc, #76]	; (d8 <main+0xd8>)
-  8c:	4479      	add	r1, pc
-  8e:	58eb      	ldr	r3, [r5, r3]
-  90:	681a      	ldr	r2, [r3, #0]
-  92:	f7ff fffe 	bl	0 <freopen>
-  96:	2800      	cmp	r0, #0
-  98:	d0e8      	beq.n	6c <main+0x6c>
-  9a:	f7ff fffe 	bl	0 <getc>
-  9e:	b2c0      	uxtb	r0, r0
-  a0:	2841      	cmp	r0, #65	; 0x41
-  a2:	d1e3      	bne.n	6c <main+0x6c>
-  a4:	480d      	ldr	r0, [pc, #52]	; (dc <main+0xdc>)
-  a6:	4478      	add	r0, pc
-  a8:	f7ff fffe 	bl	0 <puts>
-  ac:	4620      	mov	r0, r4
-  ae:	f7ff fffe 	bl	0 <exit>
-  b2:	bf00      	nop
-  b4:	000000aa 	.word	0x000000aa
-  b8:	00000000 	.word	0x00000000
-  bc:	000000a8 	.word	0x000000a8
-  c0:	00000096 	.word	0x00000096
-  c4:	00000000 	.word	0x00000000
-  c8:	00000096 	.word	0x00000096
-  cc:	00000078 	.word	0x00000078
-  d0:	0000005e 	.word	0x0000005e
-  d4:	00000000 	.word	0x00000000
-  d8:	00000048 	.word	0x00000048
-  dc:	00000032 	.word	0x00000032
+Function fwrite @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function fclose @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function getc @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

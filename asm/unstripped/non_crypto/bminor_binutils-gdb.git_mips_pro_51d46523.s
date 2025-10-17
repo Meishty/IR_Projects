@@ -1,31 +1,33 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mips_pro_51d46523.o:     file format elf32-littlearm
+Function inner @ 0x00400001
+0x00400001:	lsls	r0, r0, #1
+0x00400003:	bx	lr
 
+Function middle @ 0x00400005
+0x00400005:	cmp	r0, #0
+0x00400007:	ite	eq
+0x00400009:	moveq	r0, #0xa
+0x0040000b:	movne	r0, #0xc
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	adds	r3, r0, #1
+0x00400013:	ite	eq
+0x00400015:	moveq	r0, #0xa
+0x00400017:	movne	r0, #0xc
+0x00400019:	bx	lr
 
-00000000 <inner>:
-   0:	0040      	lsls	r0, r0, #1
-   2:	4770      	bx	lr
+Function top @ 0x00400011
+0x00400011:	adds	r3, r0, #1
+0x00400013:	ite	eq
+0x00400015:	moveq	r0, #0xa
+0x00400017:	movne	r0, #0xc
+0x00400019:	bx	lr
 
-00000004 <middle>:
-   4:	2800      	cmp	r0, #0
-   6:	bf0c      	ite	eq
-   8:	200a      	moveq	r0, #10
-   a:	200c      	movne	r0, #12
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
 
-00000010 <top>:
-  10:	1c43      	adds	r3, r0, #1
-  12:	bf0c      	ite	eq
-  14:	200a      	moveq	r0, #10
-  16:	200c      	movne	r0, #12
-  18:	4770      	bx	lr
-  1a:	bf00      	nop
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2016      	movs	r0, #22
-   2:	4770      	bx	lr
+Function main @ 0x0040001d
+0x0040001d:	movs	r0, #0x16
+0x0040001f:	bx	lr

@@ -1,19 +1,48 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_generichash_blake2_185c31aa_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0x40
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r0, #0x20
+0x0040000b:	bx	lr
 
-00000000 <.text>:
-   0:	47702010 			; <UNDEFINED> instruction: 0x47702010
-   4:	47702040 	ldrbmi	r2, [r0, -r0, asr #32]!
-   8:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   c:	47702010 			; <UNDEFINED> instruction: 0x47702010
-  10:	47702040 	ldrbmi	r2, [r0, -r0, asr #32]!
-  14:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-  18:	47702010 			; <UNDEFINED> instruction: 0x47702010
-  1c:	47702010 			; <UNDEFINED> instruction: 0x47702010
-  20:	70c0f44f 	sbcvc	pc, r0, pc, asr #8
-  24:	bf004770 	svclt	0x00004770
-  28:	f7ff2120 			; <UNDEFINED> instruction: 0xf7ff2120
-  2c:	bf00bffe 	svclt	0x0000bffe
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r0, #0x10
+0x0040000f:	bx	lr
+
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r0, #0x40
+0x00400013:	bx	lr
+
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r0, #0x20
+0x00400017:	bx	lr
+
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r0, #0x10
+0x0040001b:	bx	lr
+
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, #0x10
+0x0040001f:	bx	lr
+
+Function sub_400021 @ 0x00400021
+0x00400021:	mov.w	r0, #0x180
+0x00400025:	bx	lr
+
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r1, #0x20
+0x0040002b:	b.w	#0x40002b
+
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r1, #0x20
+0x0040002b:	b.w	#0x40002b
+0x0040002b:	b.w	#0x40002b
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	

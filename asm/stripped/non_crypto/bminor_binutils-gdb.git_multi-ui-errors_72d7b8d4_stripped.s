@@ -1,19 +1,34 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_multi-ui-errors_72d7b8d4_stripped.o:     file format elf32-littlearm
+Function sub_400025 @ 0x00400025
+0x00400025:	push	{r4, lr}
+0x00400027:	movs	r4, #0x78
+0x00400029:	bl	#0x400029
 
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
+0x0040002d:	ldr	r3, [pc, #0x1c]
+0x0040002f:	mov	r2, r0
+0x00400031:	ldr	r0, [pc, #0x1c]
+0x00400033:	add	r3, pc
+0x00400035:	add	r0, pc
+0x00400037:	str	r2, [r3]
+0x00400039:	bl	#0x400039
 
-Disassembly of section .text.startup:
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039
+0x0040003d:	movs	r0, #1
+0x0040003f:	bl	#0x40003f
 
-00000000 <.text.startup>:
-   0:	2478b510 	ldrbtcs	fp, [r8], #-1296	; 0xfffffaf0
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	46024b07 	strmi	r4, [r2], -r7, lsl #22
-   c:	447b4807 	ldrbtmi	r4, [fp], #-2055	; 0xfffff7f9
-  10:	601a4478 	andsvs	r4, sl, r8, ror r4
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  1c:	3c01fffe 	stccc	15, cr15, [r1], {254}	; 0xfe
-  20:	4620d1fa 			; <UNDEFINED> instruction: 0x4620d1fa
-  24:	bf00bd10 	svclt	0x0000bd10
-  28:	00000016 	andeq	r0, r0, r6, lsl r0
-  2c:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_40003f @ 0x0040003f
+0x0040003f:	bl	#0x40003f
+0x00400043:	subs	r4, #1
+0x00400045:	bne	#0x40003d
+0x00400047:	mov	r0, r4
+0x00400049:	pop	{r4, pc}
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
+0x0040004d:	movs	r6, r2
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r0, r3
+0x00400053:	movs	r0, r0

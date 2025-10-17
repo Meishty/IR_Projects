@@ -1,13 +1,13 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_attach-deleted-exec_60531b37_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0x3c]
+0x00400004:	strtvs	pc, [r0], #0x248
+0x00400008:	streq	pc, [r1], #-0x2c0
 
+Function sub_400011 @ 0x00400011
+0x00400011:	mov	r0, r4
+0x00400013:	bl	#0x400013
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	b508203c 	strlt	r2, [r8, #-60]	; 0xffffffc4
-   4:	64a0f248 	strtvs	pc, [r0], #584	; 0x248
-   8:	0401f2c0 	streq	pc, [r1], #-704	; 0xfffffd40
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
-  14:	e7fbfffe 	udf	#49150	; 0xbffe
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+0x00400017:	b	#0x400011

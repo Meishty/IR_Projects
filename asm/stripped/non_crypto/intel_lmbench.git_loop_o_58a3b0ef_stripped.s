@@ -1,14 +1,17 @@
 
-/root/projects/compiled/non_crypto/stripped/intel_lmbench.git_loop_o_58a3b0ef_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	push	{r3, lr}
+0x0040000b:	bl	#0x40000b
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	ldr	r1, [pc, #0x10]
+0x00400011:	vmov	r2, r3, d0
+0x00400015:	movs	r0, #1
+0x00400017:	add	r1, pc
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4904fffe 	stmdbmi	r4, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   8:	2b10ec53 	blcs	0x43b15c
-   c:	44792001 	ldrbtmi	r2, [r9], #-1
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	bd082000 	stclt	0, cr2, [r8, #-0]
-  18:	00000006 	andeq	r0, r0, r6
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	movs	r0, #0
+0x0040001f:	pop	{r3, pc}

@@ -1,24 +1,43 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_choose-temp_82062723_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	addlt	fp, r3, r0, lsr r5
 
+Function sub_400007 @ 0x00400007
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	mov	r5, r0
+0x00400011:	adds	r0, #9
+0x00400013:	bl	#0x400013
 
-00000000 <.text>:
-   0:	b083b530 	addlt	fp, r3, r0, lsr r5
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	f7ff9001 			; <UNDEFINED> instruction: 0xf7ff9001
-   c:	4605fffe 			; <UNDEFINED> instruction: 0x4605fffe
-  10:	f7ff3009 			; <UNDEFINED> instruction: 0xf7ff3009
-  14:	9901fffe 	stmdbls	r1, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  18:	f7ff4604 			; <UNDEFINED> instruction: 0xf7ff4604
-  1c:	4b08fffe 	blmi	0x24001c
-  20:	447b1962 	ldrbtmi	r1, [fp], #-2402	; 0xfffff69e
-  24:	5160cb03 	cmnpl	r0, r3, lsl #22
-  28:	60514620 	subsvs	r4, r1, r0, lsr #12
-  2c:	7213781b 	andsvc	r7, r3, #1769472	; 0x1b0000
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	4620b110 			; <UNDEFINED> instruction: 0x4620b110
-  38:	bd30b003 	ldclt	0, cr11, [r0, #-12]!
-  3c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  40:	0000001a 	andeq	r0, r0, sl, lsl r0
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+0x00400017:	ldr	r1, [sp, #4]
+0x00400019:	mov	r4, r0
+0x0040001b:	bl	#0x40001b
+
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	ldr	r3, [pc, #0x20]
+0x00400021:	adds	r2, r4, r5
+0x00400023:	add	r3, pc
+0x00400025:	ldm	r3!, {r0, r1}
+0x00400027:	str	r0, [r4, r5]
+0x00400029:	mov	r0, r4
+0x0040002b:	str	r1, [r2, #4]
+0x0040002d:	ldrb	r3, [r3]
+0x0040002f:	strb	r3, [r2, #8]
+0x00400031:	bl	#0x400031
+
+Function sub_400031 @ 0x00400031
+0x00400031:	bl	#0x400031
+0x00400035:	cbz	r0, #0x40003d
+0x00400037:	mov	r0, r4
+0x00400039:	add	sp, #0xc
+0x0040003b:	pop	{r4, r5, pc}
+0x00400037:	mov	r0, r4
+0x00400039:	add	sp, #0xc
+0x0040003b:	pop	{r4, r5, pc}
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d

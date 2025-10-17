@@ -1,32 +1,80 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dw2-inline-many-frames_93f5b73c_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r2, r0
+0x0040000b:	movs	r0, r0
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x40000f
 
-00000000 <.text>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706818 			; <UNDEFINED> instruction: 0x47706818
-   8:	00000002 	andeq	r0, r0, r2
-   c:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  10:	3001fffe 	strdcc	pc, [r1], -lr
-  14:	bf00bd08 	svclt	0x0000bd08
-  18:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  1c:	3004fffe 	strdcc	pc, [r4], -lr
-  20:	bf00bd08 	svclt	0x0000bd08
-  24:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  28:	3001fffe 	strdcc	pc, [r1], -lr
-  2c:	bf00bd08 	svclt	0x0000bd08
-  30:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  34:	3001fffe 	strdcc	pc, [r1], -lr
-  38:	bf00bd08 	svclt	0x0000bd08
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	adds	r0, #1
+0x00400015:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	push	{r3, lr}
+0x0040001b:	bl	#0x40001b
 
-00000000 <.text.startup>:
-   0:	4b04b508 	blmi	0x12d428
-   4:	447b2200 	ldrbtmi	r2, [fp], #-512	; 0xfffffe00
-   8:	f7ff601a 			; <UNDEFINED> instruction: 0xf7ff601a
-   c:	3004fffe 	strdcc	pc, [r4], -lr
-  10:	bf00bd08 	svclt	0x0000bd08
-  14:	0000000a 	andeq	r0, r0, sl
+Function sub_400019 @ 0x00400019
+0x00400019:	push	{r3, lr}
+0x0040001b:	bl	#0x40001b
+
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	adds	r0, #4
+0x00400021:	pop	{r3, pc}
+
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x400027
+
+Function sub_400025 @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x400027
+
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	adds	r0, #1
+0x0040002d:	pop	{r3, pc}
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	push	{r3, lr}
+0x00400033:	bl	#0x400033
+
+Function sub_400031 @ 0x00400031
+0x00400031:	push	{r3, lr}
+0x00400033:	bl	#0x400033
+
+Function sub_400033 @ 0x00400033
+0x00400033:	bl	#0x400033
+0x00400037:	adds	r0, #1
+0x00400039:	pop	{r3, pc}
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+
+Function sub_400041 @ 0x00400041
+0x00400041:	push	{r3, lr}
+0x00400043:	ldr	r3, [pc, #0x10]
+0x00400045:	movs	r2, #0
+0x00400047:	add	r3, pc
+0x00400049:	str	r2, [r3]
+0x0040004b:	bl	#0x40004b
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	bl	#0x40004b
+0x0040004f:	adds	r0, #4
+0x00400051:	pop	{r3, pc}
+
+Function sub_400053 @ 0x00400053
+0x00400053:	nop	
+0x00400055:	movs	r2, r1
+0x00400057:	movs	r0, r0

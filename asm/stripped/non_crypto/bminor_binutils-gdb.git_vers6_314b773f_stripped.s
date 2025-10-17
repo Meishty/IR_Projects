@@ -1,29 +1,61 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_vers6_314b773f_stripped.o:     file format elf32-littlearm
+Function sub_400061 @ 0x00400061
+0x00400061:	push	{r3, lr}
+0x00400063:	bl	#0x400063
 
+Function sub_400063 @ 0x00400063
+0x00400063:	bl	#0x400063
+0x00400067:	ldr	r1, [pc, #0x40]
+0x00400069:	mov	r2, r0
+0x0040006b:	movs	r0, #1
+0x0040006d:	add	r1, pc
+0x0040006f:	bl	#0x40006f
 
-Disassembly of section .text.startup:
+Function sub_40006f @ 0x0040006f
+0x0040006f:	bl	#0x40006f
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4910fffe 	ldmdbmi	r0, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   8:	20014602 	andcs	r4, r1, r2, lsl #12
-   c:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  10:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  14:	490dfffe 	stmdbmi	sp, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  18:	20014602 	andcs	r4, r1, r2, lsl #12
-  1c:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  20:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  24:	490afffe 	stmdbmi	sl, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  28:	20014602 	andcs	r4, r1, r2, lsl #12
-  2c:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  30:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  34:	4907fffe 	stmdbmi	r7, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  38:	20014602 	andcs	r4, r1, r2, lsl #12
-  3c:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  40:	2000fffe 	strdcs	pc, [r0], -lr
-  44:	bf00bd08 	svclt	0x0000bd08
-  48:	00000038 	andeq	r0, r0, r8, lsr r0
-  4c:	0000002c 	andeq	r0, r0, ip, lsr #32
-  50:	00000020 	andeq	r0, r0, r0, lsr #32
-  54:	00000014 	andeq	r0, r0, r4, lsl r0
+Function sub_400073 @ 0x00400073
+0x00400073:	bl	#0x400073
+0x00400077:	ldr	r1, [pc, #0x34]
+0x00400079:	mov	r2, r0
+0x0040007b:	movs	r0, #1
+0x0040007d:	add	r1, pc
+0x0040007f:	bl	#0x40007f
+
+Function sub_40007f @ 0x0040007f
+0x0040007f:	bl	#0x40007f
+
+Function sub_400083 @ 0x00400083
+0x00400083:	bl	#0x400083
+0x00400087:	ldr	r1, [pc, #0x28]
+0x00400089:	mov	r2, r0
+0x0040008b:	movs	r0, #1
+0x0040008d:	add	r1, pc
+0x0040008f:	bl	#0x40008f
+
+Function sub_40008f @ 0x0040008f
+0x0040008f:	bl	#0x40008f
+
+Function sub_400093 @ 0x00400093
+0x00400093:	bl	#0x400093
+0x00400097:	ldr	r1, [pc, #0x1c]
+0x00400099:	mov	r2, r0
+0x0040009b:	movs	r0, #1
+0x0040009d:	add	r1, pc
+0x0040009f:	bl	#0x40009f
+
+Function sub_40009f @ 0x0040009f
+0x0040009f:	bl	#0x40009f
+0x004000a3:	movs	r0, #0
+0x004000a5:	pop	{r3, pc}
+
+Function sub_4000a7 @ 0x004000a7
+0x004000a7:	nop	
+0x004000a9:	movs	r0, r7
+0x004000ab:	movs	r0, r0
+0x004000ad:	movs	r4, r5
+0x004000af:	movs	r0, r0
+0x004000b1:	movs	r0, r4
+0x004000b3:	movs	r0, r0
+0x004000b5:	movs	r4, r2
+0x004000b7:	movs	r0, r0

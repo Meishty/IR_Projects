@@ -1,647 +1,945 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_argon2_0a1704cc.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0xf528b8
+0x00400004:	push	{r1, r3, r4, r5, r6, sl, lr}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	mov	r6, r0
+0x0040000d:	sub	sp, #0x30
+0x0040000f:	mov	r4, r1
+0x00400011:	ldr	r3, [r2, r3]
+0x00400013:	ldr	r3, [r3]
+0x00400015:	str	r3, [sp, #0x2c]
+0x00400017:	mov.w	r3, #0
+0x0040001b:	bl	#0x500001
+0x0040001f:	mov	r5, r0
+0x00400021:	cmp	r0, #0
+0x00400023:	bne	#0x40008f
+0x00400025:	subs	r3, r4, #1
+0x00400027:	cmp	r3, #1
+0x00400029:	bhi	#0x4000ab
+0x0040002b:	ldr	r7, [r6, #0x30]
+0x0040002d:	ldr	r3, [r6, #0x2c]
+0x0040002f:	lsls	r0, r7, #3
+0x00400031:	lsl.w	r8, r7, #2
+0x00400035:	cmp	r0, r3
+0x00400037:	mov	r1, r8
+0x00400039:	it	lo
+0x0040003b:	movlo	r0, r3
+0x0040003d:	bl	#0x50000d
+0x00400041:	mov	r3, r0
+0x00400043:	mul	r1, r0, r8
+0x00400047:	str	r7, [sp, #0x1c]
+0x00400049:	mov	r7, sp
+0x0040004b:	ldr	r2, [r6, #0x34]
+0x0040004d:	lsls	r3, r3, #2
+0x0040004f:	str	r0, [sp, #0x14]
+0x00400051:	str	r1, [sp, #0x10]
+0x00400053:	mov	r0, r7
+0x00400055:	str	r3, [sp, #0x18]
+0x00400057:	mov	r1, r6
+0x00400059:	ldr	r3, [r6, #0x28]
+0x0040005b:	str	r5, [sp]
+0x0040005d:	str	r3, [sp, #8]
+0x0040005f:	mov.w	r3, #-1
+0x00400063:	str	r2, [sp, #0x20]
+0x00400065:	str	r4, [sp, #0x24]
+0x00400067:	str	r3, [sp, #0xc]
+0x00400069:	bl	#0x500019
+0x0040006d:	mov	r5, r0
+0x0040006f:	cbnz	r0, #0x40008f
+0x00400071:	ldr	r3, [sp, #8]
+0x00400073:	mov	r4, r0
+0x00400075:	cbz	r3, #0x400087
+0x00400077:	mov	r1, r4
+0x00400079:	mov	r0, r7
+0x0040007b:	bl	#0x500025
+0x00400071:	ldr	r3, [sp, #8]
+0x00400073:	mov	r4, r0
+0x00400075:	cbz	r3, #0x400087
+0x00400077:	mov	r1, r4
+0x00400079:	mov	r0, r7
+0x0040007b:	bl	#0x500025
+0x00400077:	mov	r1, r4
+0x00400079:	mov	r0, r7
+0x0040007b:	bl	#0x500025
+0x0040007f:	ldr	r3, [sp, #8]
+0x00400081:	adds	r4, #1
+0x00400083:	cmp	r4, r3
+0x00400085:	blo	#0x400077
+0x00400087:	mov	r1, r7
+0x00400089:	mov	r0, r6
+0x0040008b:	bl	#0x500031
+0x0040008f:	ldr	r2, [pc, #0x2c]
+0x00400091:	ldr	r3, [pc, #0x24]
+0x00400093:	add	r2, pc
+0x00400095:	ldr	r3, [r2, r3]
+0x00400097:	ldr	r2, [r3]
+0x00400099:	ldr	r3, [sp, #0x2c]
+0x0040009b:	eors	r2, r3
+0x0040009d:	mov.w	r3, #0
+0x004000a1:	bne	#0x4000b1
+0x004000a3:	mov	r0, r5
+0x004000a5:	add	sp, #0x30
+0x004000a7:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x004000ab:	mvn	r5, #0x19
+0x004000af:	b	#0x40008f
+0x004000b1:	bl	#0x50003d
 
-Disassembly of section .text:
+Function sub_4000b5 @ 0x004000b5
+0x004000b5:	lsls	r4, r5, #2
+0x004000b7:	movs	r0, r0
+0x004000b9:	movs	r0, r0
+0x004000bb:	movs	r0, r0
+0x004000bd:	movs	r6, r4
+0x004000bf:	movs	r0, r0
+0x004000c1:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004000c5:	mov	r5, r2
+0x004000c7:	ldr	r2, [pc, #0xf0]
+0x004000c9:	sub	sp, #0x4c
+0x004000cb:	mov	r8, r3
+0x004000cd:	ldr	r3, [pc, #0xec]
+0x004000cf:	add	r2, pc
+0x004000d1:	mov	r7, r0
+0x004000d3:	mov	fp, r1
+0x004000d5:	ldr	r4, [sp, #0x74]
+0x004000d7:	str	r4, [sp, #4]
+0x004000d9:	ldrd	sb, r6, [sp, #0x7c]
+0x004000dd:	ldr	r3, [r2, r3]
+0x004000df:	ldr.w	sl, [sp, #0x84]
+0x004000e3:	ldr	r3, [r3]
+0x004000e5:	str	r3, [sp, #0x44]
+0x004000e7:	mov.w	r3, #0
+0x004000eb:	cmp.w	sb, #0
+0x004000ef:	beq	#0x4000f9
 
-00000000 <_sodium_argon2_ctx>:
-   0:	4a2c      	ldr	r2, [pc, #176]	; (b4 <_sodium_argon2_ctx+0xb4>)
-   2:	4b2d      	ldr	r3, [pc, #180]	; (b8 <_sodium_argon2_ctx+0xb8>)
-   4:	447a      	add	r2, pc
-   6:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-   a:	4606      	mov	r6, r0
-   c:	b08c      	sub	sp, #48	; 0x30
-   e:	460c      	mov	r4, r1
-  10:	58d3      	ldr	r3, [r2, r3]
-  12:	681b      	ldr	r3, [r3, #0]
-  14:	930b      	str	r3, [sp, #44]	; 0x2c
-  16:	f04f 0300 	mov.w	r3, #0
-  1a:	f7ff fffe 	bl	0 <_sodium_argon2_validate_inputs>
-  1e:	4605      	mov	r5, r0
-  20:	2800      	cmp	r0, #0
-  22:	d134      	bne.n	8e <_sodium_argon2_ctx+0x8e>
-  24:	1e63      	subs	r3, r4, #1
-  26:	2b01      	cmp	r3, #1
-  28:	d83f      	bhi.n	aa <_sodium_argon2_ctx+0xaa>
-  2a:	6b37      	ldr	r7, [r6, #48]	; 0x30
-  2c:	6af3      	ldr	r3, [r6, #44]	; 0x2c
-  2e:	00f8      	lsls	r0, r7, #3
-  30:	ea4f 0887 	mov.w	r8, r7, lsl #2
-  34:	4298      	cmp	r0, r3
-  36:	4641      	mov	r1, r8
-  38:	bf38      	it	cc
-  3a:	4618      	movcc	r0, r3
-  3c:	f7ff fffe 	bl	0 <__aeabi_uidiv>
-  40:	4603      	mov	r3, r0
-  42:	fb00 f108 	mul.w	r1, r0, r8
-  46:	9707      	str	r7, [sp, #28]
-  48:	466f      	mov	r7, sp
-  4a:	6b72      	ldr	r2, [r6, #52]	; 0x34
-  4c:	009b      	lsls	r3, r3, #2
-  4e:	9005      	str	r0, [sp, #20]
-  50:	9104      	str	r1, [sp, #16]
-  52:	4638      	mov	r0, r7
-  54:	9306      	str	r3, [sp, #24]
-  56:	4631      	mov	r1, r6
-  58:	6ab3      	ldr	r3, [r6, #40]	; 0x28
-  5a:	9500      	str	r5, [sp, #0]
-  5c:	9302      	str	r3, [sp, #8]
-  5e:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
-  62:	9208      	str	r2, [sp, #32]
-  64:	9409      	str	r4, [sp, #36]	; 0x24
-  66:	9303      	str	r3, [sp, #12]
-  68:	f7ff fffe 	bl	0 <_sodium_argon2_initialize>
-  6c:	4605      	mov	r5, r0
-  6e:	b970      	cbnz	r0, 8e <_sodium_argon2_ctx+0x8e>
-  70:	9b02      	ldr	r3, [sp, #8]
-  72:	4604      	mov	r4, r0
-  74:	b13b      	cbz	r3, 86 <_sodium_argon2_ctx+0x86>
-  76:	4621      	mov	r1, r4
-  78:	4638      	mov	r0, r7
-  7a:	f7ff fffe 	bl	0 <_sodium_argon2_fill_memory_blocks>
-  7e:	9b02      	ldr	r3, [sp, #8]
-  80:	3401      	adds	r4, #1
-  82:	429c      	cmp	r4, r3
-  84:	d3f7      	bcc.n	76 <_sodium_argon2_ctx+0x76>
-  86:	4639      	mov	r1, r7
-  88:	4630      	mov	r0, r6
-  8a:	f7ff fffe 	bl	0 <_sodium_argon2_finalize>
-  8e:	4a0b      	ldr	r2, [pc, #44]	; (bc <_sodium_argon2_ctx+0xbc>)
-  90:	4b09      	ldr	r3, [pc, #36]	; (b8 <_sodium_argon2_ctx+0xb8>)
-  92:	447a      	add	r2, pc
-  94:	58d3      	ldr	r3, [r2, r3]
-  96:	681a      	ldr	r2, [r3, #0]
-  98:	9b0b      	ldr	r3, [sp, #44]	; 0x2c
-  9a:	405a      	eors	r2, r3
-  9c:	f04f 0300 	mov.w	r3, #0
-  a0:	d106      	bne.n	b0 <_sodium_argon2_ctx+0xb0>
-  a2:	4628      	mov	r0, r5
-  a4:	b00c      	add	sp, #48	; 0x30
-  a6:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  aa:	f06f 0519 	mvn.w	r5, #25
-  ae:	e7ee      	b.n	8e <_sodium_argon2_ctx+0x8e>
-  b0:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  b4:	000000ac 	.word	0x000000ac
-  b8:	00000000 	.word	0x00000000
-  bc:	00000026 	.word	0x00000026
+Function _sodium_argon2_hash @ 0x004000c1
+0x004000c1:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004000c5:	mov	r5, r2
+0x004000c7:	ldr	r2, [pc, #0xf0]
+0x004000c9:	sub	sp, #0x4c
+0x004000cb:	mov	r8, r3
+0x004000cd:	ldr	r3, [pc, #0xec]
+0x004000cf:	add	r2, pc
+0x004000d1:	mov	r7, r0
+0x004000d3:	mov	fp, r1
+0x004000d5:	ldr	r4, [sp, #0x74]
+0x004000d7:	str	r4, [sp, #4]
+0x004000d9:	ldrd	sb, r6, [sp, #0x7c]
+0x004000dd:	ldr	r3, [r2, r3]
+0x004000df:	ldr.w	sl, [sp, #0x84]
+0x004000e3:	ldr	r3, [r3]
+0x004000e5:	str	r3, [sp, #0x44]
+0x004000e7:	mov.w	r3, #0
+0x004000eb:	cmp.w	sb, #0
+0x004000ef:	beq	#0x4000f9
+0x004000f1:	mov	r1, r6
+0x004000f3:	mov	r0, sb
+0x004000f5:	bl	#0x500049
+0x004000f9:	mov	r0, r6
+0x004000fb:	bl	#0x500055
+0x004000ff:	mov	r4, r0
+0x00400101:	cmp	r0, #0
+0x00400103:	beq	#0x4001ad
+0x00400105:	ldr	r3, [sp, #4]
+0x00400107:	str	r3, [sp, #0x18]
+0x00400109:	strd	r7, fp, [sp, #0x30]
+0x0040010d:	add	r7, sp, #8
+0x0040010f:	ldr	r3, [sp, #0x70]
+0x00400111:	strd	r0, r6, [sp, #8]
+0x00400115:	mov	r0, r7
+0x00400117:	str	r3, [sp, #0x14]
+0x00400119:	ldr	r1, [sp, #0x8c]
+0x0040011b:	ldr	r3, [sp, #0x78]
+0x0040011d:	str	r3, [sp, #0x1c]
+0x0040011f:	movs	r3, #0
+0x00400121:	strd	r5, r5, [sp, #0x38]
+0x00400125:	str.w	r8, [sp, #0x10]
+0x00400129:	strd	r3, r3, [sp, #0x20]
+0x0040012d:	strd	r3, r3, [sp, #0x28]
+0x00400131:	str	r3, [sp, #0x40]
+0x00400133:	bl	#0x400001
+0x00400165:	ldr	r2, [pc, #0x58]
+0x00400167:	ldr	r3, [pc, #0x54]
+0x00400169:	add	r2, pc
+0x0040016b:	ldr	r3, [r2, r3]
+0x0040016d:	ldr	r2, [r3]
+0x0040016f:	ldr	r3, [sp, #0x44]
+0x00400171:	eors	r2, r3
+0x00400173:	mov.w	r3, #0
+0x00400177:	bne	#0x4001b3
+0x00400179:	mov	r0, r5
+0x0040017b:	add	sp, #0x4c
+0x0040017d:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004001ad:	mvn	r5, #0x15
+0x004001b1:	b	#0x400165
+0x004001b3:	bl	#0x50003d
 
-000000c0 <_sodium_argon2_hash>:
-  c0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-  c4:	4615      	mov	r5, r2
-  c6:	4a3c      	ldr	r2, [pc, #240]	; (1b8 <_sodium_argon2_hash+0xf8>)
-  c8:	b093      	sub	sp, #76	; 0x4c
-  ca:	4698      	mov	r8, r3
-  cc:	4b3b      	ldr	r3, [pc, #236]	; (1bc <_sodium_argon2_hash+0xfc>)
-  ce:	447a      	add	r2, pc
-  d0:	4607      	mov	r7, r0
-  d2:	468b      	mov	fp, r1
-  d4:	9c1d      	ldr	r4, [sp, #116]	; 0x74
-  d6:	9401      	str	r4, [sp, #4]
-  d8:	e9dd 961f 	ldrd	r9, r6, [sp, #124]	; 0x7c
-  dc:	58d3      	ldr	r3, [r2, r3]
-  de:	f8dd a084 	ldr.w	sl, [sp, #132]	; 0x84
-  e2:	681b      	ldr	r3, [r3, #0]
-  e4:	9311      	str	r3, [sp, #68]	; 0x44
-  e6:	f04f 0300 	mov.w	r3, #0
-  ea:	f1b9 0f00 	cmp.w	r9, #0
-  ee:	d003      	beq.n	f8 <_sodium_argon2_hash+0x38>
-  f0:	4631      	mov	r1, r6
-  f2:	4648      	mov	r0, r9
-  f4:	f7ff fffe 	bl	0 <randombytes_buf>
-  f8:	4630      	mov	r0, r6
-  fa:	f7ff fffe 	bl	0 <malloc>
-  fe:	4604      	mov	r4, r0
- 100:	2800      	cmp	r0, #0
- 102:	d053      	beq.n	1ac <_sodium_argon2_hash+0xec>
- 104:	9b01      	ldr	r3, [sp, #4]
- 106:	9306      	str	r3, [sp, #24]
- 108:	e9cd 7b0c 	strd	r7, fp, [sp, #48]	; 0x30
- 10c:	af02      	add	r7, sp, #8
- 10e:	9b1c      	ldr	r3, [sp, #112]	; 0x70
- 110:	e9cd 0602 	strd	r0, r6, [sp, #8]
- 114:	4638      	mov	r0, r7
- 116:	9305      	str	r3, [sp, #20]
- 118:	9923      	ldr	r1, [sp, #140]	; 0x8c
- 11a:	9b1e      	ldr	r3, [sp, #120]	; 0x78
- 11c:	9307      	str	r3, [sp, #28]
- 11e:	2300      	movs	r3, #0
- 120:	e9cd 550e 	strd	r5, r5, [sp, #56]	; 0x38
- 124:	f8cd 8010 	str.w	r8, [sp, #16]
- 128:	e9cd 3308 	strd	r3, r3, [sp, #32]
- 12c:	e9cd 330a 	strd	r3, r3, [sp, #40]	; 0x28
- 130:	9310      	str	r3, [sp, #64]	; 0x40
- 132:	f7ff fffe 	bl	0 <_sodium_argon2_ctx>
- 136:	4605      	mov	r5, r0
- 138:	b968      	cbnz	r0, 156 <_sodium_argon2_hash+0x96>
- 13a:	9b22      	ldr	r3, [sp, #136]	; 0x88
- 13c:	f1ba 0f00 	cmp.w	sl, #0
- 140:	bf18      	it	ne
- 142:	2b00      	cmpne	r3, #0
- 144:	d11c      	bne.n	180 <_sodium_argon2_hash+0xc0>
- 146:	f1b9 0f00 	cmp.w	r9, #0
- 14a:	d004      	beq.n	156 <_sodium_argon2_hash+0x96>
- 14c:	4632      	mov	r2, r6
- 14e:	4648      	mov	r0, r9
- 150:	4621      	mov	r1, r4
- 152:	f7ff fffe 	bl	0 <memcpy>
- 156:	4620      	mov	r0, r4
- 158:	4631      	mov	r1, r6
- 15a:	f7ff fffe 	bl	0 <sodium_memzero>
- 15e:	4620      	mov	r0, r4
- 160:	f7ff fffe 	bl	0 <free>
- 164:	4a16      	ldr	r2, [pc, #88]	; (1c0 <_sodium_argon2_hash+0x100>)
- 166:	4b15      	ldr	r3, [pc, #84]	; (1bc <_sodium_argon2_hash+0xfc>)
- 168:	447a      	add	r2, pc
- 16a:	58d3      	ldr	r3, [r2, r3]
- 16c:	681a      	ldr	r2, [r3, #0]
- 16e:	9b11      	ldr	r3, [sp, #68]	; 0x44
- 170:	405a      	eors	r2, r3
- 172:	f04f 0300 	mov.w	r3, #0
- 176:	d11c      	bne.n	1b2 <_sodium_argon2_hash+0xf2>
- 178:	4628      	mov	r0, r5
- 17a:	b013      	add	sp, #76	; 0x4c
- 17c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 180:	4619      	mov	r1, r3
- 182:	463a      	mov	r2, r7
- 184:	9b23      	ldr	r3, [sp, #140]	; 0x8c
- 186:	4650      	mov	r0, sl
- 188:	f7ff fffe 	bl	0 <_sodium_argon2_encode_string>
- 18c:	2800      	cmp	r0, #0
- 18e:	d0da      	beq.n	146 <_sodium_argon2_hash+0x86>
- 190:	4631      	mov	r1, r6
- 192:	4620      	mov	r0, r4
- 194:	f7ff fffe 	bl	0 <sodium_memzero>
- 198:	4650      	mov	r0, sl
- 19a:	9922      	ldr	r1, [sp, #136]	; 0x88
- 19c:	f06f 051e 	mvn.w	r5, #30
- 1a0:	f7ff fffe 	bl	0 <sodium_memzero>
- 1a4:	4620      	mov	r0, r4
- 1a6:	f7ff fffe 	bl	0 <free>
- 1aa:	e7db      	b.n	164 <_sodium_argon2_hash+0xa4>
- 1ac:	f06f 0515 	mvn.w	r5, #21
- 1b0:	e7d8      	b.n	164 <_sodium_argon2_hash+0xa4>
- 1b2:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 1b6:	bf00      	nop
- 1b8:	000000e6 	.word	0x000000e6
- 1bc:	00000000 	.word	0x00000000
- 1c0:	00000054 	.word	0x00000054
+Function sub_400137 @ 0x00400137
+0x00400137:	mov	r5, r0
+0x00400139:	cbnz	r0, #0x400157
+0x0040013b:	ldr	r3, [sp, #0x88]
+0x0040013d:	cmp.w	sl, #0
+0x00400141:	it	ne
+0x00400143:	cmpne	r3, #0
+0x00400145:	bne	#0x400181
+0x0040013b:	ldr	r3, [sp, #0x88]
+0x0040013d:	cmp.w	sl, #0
+0x00400141:	it	ne
+0x00400143:	cmpne	r3, #0
+0x00400145:	bne	#0x400181
+0x00400147:	cmp.w	sb, #0
+0x0040014b:	beq	#0x400157
+0x0040014d:	mov	r2, r6
+0x0040014f:	mov	r0, sb
+0x00400151:	mov	r1, r4
+0x00400153:	bl	#0x500061
+0x00400157:	mov	r0, r4
+0x00400159:	mov	r1, r6
+0x0040015b:	bl	#0x50006d
+0x0040015f:	mov	r0, r4
+0x00400161:	bl	#0x500079
+0x00400181:	mov	r1, r3
+0x00400183:	mov	r2, r7
+0x00400185:	ldr	r3, [sp, #0x8c]
+0x00400187:	mov	r0, sl
+0x00400189:	bl	#0x500085
+0x0040018d:	cmp	r0, #0
+0x0040018f:	beq	#0x400147
+0x00400191:	mov	r1, r6
+0x00400193:	mov	r0, r4
+0x00400195:	bl	#0x50006d
+0x00400199:	mov	r0, sl
+0x0040019b:	ldr	r1, [sp, #0x88]
+0x0040019d:	mvn	r5, #0x1e
+0x004001a1:	bl	#0x50006d
+0x004001a5:	mov	r0, r4
+0x004001a7:	bl	#0x500079
+0x004001ab:	b	#0x400165
 
-000001c4 <_sodium_argon2i_hash_encoded>:
- 1c4:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 1c8:	460d      	mov	r5, r1
- 1ca:	4933      	ldr	r1, [pc, #204]	; (298 <_sodium_argon2i_hash_encoded+0xd4>)
- 1cc:	b091      	sub	sp, #68	; 0x44
- 1ce:	461f      	mov	r7, r3
- 1d0:	4b32      	ldr	r3, [pc, #200]	; (29c <_sodium_argon2i_hash_encoded+0xd8>)
- 1d2:	4479      	add	r1, pc
- 1d4:	4606      	mov	r6, r0
- 1d6:	4692      	mov	sl, r2
- 1d8:	e9dd 891d 	ldrd	r8, r9, [sp, #116]	; 0x74
- 1dc:	58cb      	ldr	r3, [r1, r3]
- 1de:	4640      	mov	r0, r8
- 1e0:	f8dd b06c 	ldr.w	fp, [sp, #108]	; 0x6c
- 1e4:	681b      	ldr	r3, [r3, #0]
- 1e6:	930f      	str	r3, [sp, #60]	; 0x3c
- 1e8:	f04f 0300 	mov.w	r3, #0
- 1ec:	f7ff fffe 	bl	0 <malloc>
- 1f0:	2800      	cmp	r0, #0
- 1f2:	d04b      	beq.n	28c <_sodium_argon2i_hash_encoded+0xc8>
- 1f4:	9b1a      	ldr	r3, [sp, #104]	; 0x68
- 1f6:	4604      	mov	r4, r0
- 1f8:	e9cd 650a 	strd	r6, r5, [sp, #40]	; 0x28
- 1fc:	466e      	mov	r6, sp
- 1fe:	e9cd 0800 	strd	r0, r8, [sp]
- 202:	2101      	movs	r1, #1
- 204:	9303      	str	r3, [sp, #12]
- 206:	4630      	mov	r0, r6
- 208:	9b1c      	ldr	r3, [sp, #112]	; 0x70
- 20a:	9305      	str	r3, [sp, #20]
- 20c:	2300      	movs	r3, #0
- 20e:	9702      	str	r7, [sp, #8]
- 210:	f8cd b010 	str.w	fp, [sp, #16]
- 214:	e9cd aa0c 	strd	sl, sl, [sp, #48]	; 0x30
- 218:	e9cd 3306 	strd	r3, r3, [sp, #24]
- 21c:	e9cd 3308 	strd	r3, r3, [sp, #32]
- 220:	930e      	str	r3, [sp, #56]	; 0x38
- 222:	f7ff fffe 	bl	0 <_sodium_argon2_ctx>
- 226:	4605      	mov	r5, r0
- 228:	b928      	cbnz	r0, 236 <_sodium_argon2i_hash_encoded+0x72>
- 22a:	9b1f      	ldr	r3, [sp, #124]	; 0x7c
- 22c:	f1b9 0f00 	cmp.w	r9, #0
- 230:	bf18      	it	ne
- 232:	2b00      	cmpne	r3, #0
- 234:	d114      	bne.n	260 <_sodium_argon2i_hash_encoded+0x9c>
- 236:	4620      	mov	r0, r4
- 238:	4641      	mov	r1, r8
- 23a:	f7ff fffe 	bl	0 <sodium_memzero>
- 23e:	4620      	mov	r0, r4
- 240:	f7ff fffe 	bl	0 <free>
- 244:	4a16      	ldr	r2, [pc, #88]	; (2a0 <_sodium_argon2i_hash_encoded+0xdc>)
- 246:	4b15      	ldr	r3, [pc, #84]	; (29c <_sodium_argon2i_hash_encoded+0xd8>)
- 248:	447a      	add	r2, pc
- 24a:	58d3      	ldr	r3, [r2, r3]
- 24c:	681a      	ldr	r2, [r3, #0]
- 24e:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
- 250:	405a      	eors	r2, r3
- 252:	f04f 0300 	mov.w	r3, #0
- 256:	d11c      	bne.n	292 <_sodium_argon2i_hash_encoded+0xce>
- 258:	4628      	mov	r0, r5
- 25a:	b011      	add	sp, #68	; 0x44
- 25c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 260:	4619      	mov	r1, r3
- 262:	4632      	mov	r2, r6
- 264:	2301      	movs	r3, #1
- 266:	4648      	mov	r0, r9
- 268:	f7ff fffe 	bl	0 <_sodium_argon2_encode_string>
- 26c:	2800      	cmp	r0, #0
- 26e:	d0e2      	beq.n	236 <_sodium_argon2i_hash_encoded+0x72>
- 270:	4641      	mov	r1, r8
- 272:	4620      	mov	r0, r4
- 274:	f7ff fffe 	bl	0 <sodium_memzero>
- 278:	4648      	mov	r0, r9
- 27a:	991f      	ldr	r1, [sp, #124]	; 0x7c
- 27c:	f06f 051e 	mvn.w	r5, #30
- 280:	f7ff fffe 	bl	0 <sodium_memzero>
- 284:	4620      	mov	r0, r4
- 286:	f7ff fffe 	bl	0 <free>
- 28a:	e7db      	b.n	244 <_sodium_argon2i_hash_encoded+0x80>
- 28c:	f06f 0515 	mvn.w	r5, #21
- 290:	e7d8      	b.n	244 <_sodium_argon2i_hash_encoded+0x80>
- 292:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 296:	bf00      	nop
- 298:	000000c2 	.word	0x000000c2
- 29c:	00000000 	.word	0x00000000
- 2a0:	00000054 	.word	0x00000054
+Function sub_4001b7 @ 0x004001b7
+0x004001b7:	nop	
+0x004001b9:	lsls	r6, r4, #3
+0x004001bb:	movs	r0, r0
+0x004001bd:	movs	r0, r0
+0x004001bf:	movs	r0, r0
+0x004001c1:	lsls	r4, r2, #1
+0x004001c3:	movs	r0, r0
+0x004001c5:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004001c9:	mov	r5, r1
+0x004001cb:	ldr	r1, [pc, #0xcc]
+0x004001cd:	sub	sp, #0x44
+0x004001cf:	mov	r7, r3
+0x004001d1:	ldr	r3, [pc, #0xc8]
+0x004001d3:	add	r1, pc
+0x004001d5:	mov	r6, r0
+0x004001d7:	mov	sl, r2
+0x004001d9:	ldrd	r8, sb, [sp, #0x74]
+0x004001dd:	ldr	r3, [r1, r3]
+0x004001df:	mov	r0, r8
+0x004001e1:	ldr.w	fp, [sp, #0x6c]
+0x004001e5:	ldr	r3, [r3]
+0x004001e7:	str	r3, [sp, #0x3c]
+0x004001e9:	mov.w	r3, #0
+0x004001ed:	bl	#0x500055
 
-000002a4 <_sodium_argon2i_hash_raw>:
- 2a4:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 2a8:	4615      	mov	r5, r2
- 2aa:	4a2d      	ldr	r2, [pc, #180]	; (360 <_sodium_argon2i_hash_raw+0xbc>)
- 2ac:	b091      	sub	sp, #68	; 0x44
- 2ae:	469a      	mov	sl, r3
- 2b0:	4b2c      	ldr	r3, [pc, #176]	; (364 <_sodium_argon2i_hash_raw+0xc0>)
- 2b2:	447a      	add	r2, pc
- 2b4:	4681      	mov	r9, r0
- 2b6:	460f      	mov	r7, r1
- 2b8:	e9dd 861d 	ldrd	r8, r6, [sp, #116]	; 0x74
- 2bc:	58d3      	ldr	r3, [r2, r3]
- 2be:	f8dd b06c 	ldr.w	fp, [sp, #108]	; 0x6c
- 2c2:	681b      	ldr	r3, [r3, #0]
- 2c4:	930f      	str	r3, [sp, #60]	; 0x3c
- 2c6:	f04f 0300 	mov.w	r3, #0
- 2ca:	f1b8 0f00 	cmp.w	r8, #0
- 2ce:	d003      	beq.n	2d8 <_sodium_argon2i_hash_raw+0x34>
- 2d0:	4631      	mov	r1, r6
- 2d2:	4640      	mov	r0, r8
- 2d4:	f7ff fffe 	bl	0 <randombytes_buf>
- 2d8:	4630      	mov	r0, r6
- 2da:	f7ff fffe 	bl	0 <malloc>
- 2de:	4604      	mov	r4, r0
- 2e0:	2800      	cmp	r0, #0
- 2e2:	d037      	beq.n	354 <_sodium_argon2i_hash_raw+0xb0>
- 2e4:	9b1a      	ldr	r3, [sp, #104]	; 0x68
- 2e6:	2101      	movs	r1, #1
- 2e8:	e9cd 0600 	strd	r0, r6, [sp]
- 2ec:	4668      	mov	r0, sp
- 2ee:	9303      	str	r3, [sp, #12]
- 2f0:	9b1c      	ldr	r3, [sp, #112]	; 0x70
- 2f2:	9305      	str	r3, [sp, #20]
- 2f4:	2300      	movs	r3, #0
- 2f6:	e9cd 550c 	strd	r5, r5, [sp, #48]	; 0x30
- 2fa:	f8cd a008 	str.w	sl, [sp, #8]
- 2fe:	f8cd b010 	str.w	fp, [sp, #16]
- 302:	f8cd 9028 	str.w	r9, [sp, #40]	; 0x28
- 306:	970b      	str	r7, [sp, #44]	; 0x2c
- 308:	e9cd 3306 	strd	r3, r3, [sp, #24]
- 30c:	e9cd 3308 	strd	r3, r3, [sp, #32]
- 310:	930e      	str	r3, [sp, #56]	; 0x38
- 312:	f7ff fffe 	bl	0 <_sodium_argon2_ctx>
- 316:	4605      	mov	r5, r0
- 318:	b938      	cbnz	r0, 32a <_sodium_argon2i_hash_raw+0x86>
- 31a:	f1b8 0f00 	cmp.w	r8, #0
- 31e:	d004      	beq.n	32a <_sodium_argon2i_hash_raw+0x86>
- 320:	4632      	mov	r2, r6
- 322:	4640      	mov	r0, r8
- 324:	4621      	mov	r1, r4
- 326:	f7ff fffe 	bl	0 <memcpy>
- 32a:	4620      	mov	r0, r4
- 32c:	4631      	mov	r1, r6
- 32e:	f7ff fffe 	bl	0 <sodium_memzero>
- 332:	4620      	mov	r0, r4
- 334:	f7ff fffe 	bl	0 <free>
- 338:	4a0b      	ldr	r2, [pc, #44]	; (368 <_sodium_argon2i_hash_raw+0xc4>)
- 33a:	4b0a      	ldr	r3, [pc, #40]	; (364 <_sodium_argon2i_hash_raw+0xc0>)
- 33c:	447a      	add	r2, pc
- 33e:	58d3      	ldr	r3, [r2, r3]
- 340:	681a      	ldr	r2, [r3, #0]
- 342:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
- 344:	405a      	eors	r2, r3
- 346:	f04f 0300 	mov.w	r3, #0
- 34a:	d106      	bne.n	35a <_sodium_argon2i_hash_raw+0xb6>
- 34c:	4628      	mov	r0, r5
- 34e:	b011      	add	sp, #68	; 0x44
- 350:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 354:	f06f 0515 	mvn.w	r5, #21
- 358:	e7ee      	b.n	338 <_sodium_argon2i_hash_raw+0x94>
- 35a:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 35e:	bf00      	nop
- 360:	000000aa 	.word	0x000000aa
- 364:	00000000 	.word	0x00000000
- 368:	00000028 	.word	0x00000028
+Function _sodium_argon2i_hash_encoded @ 0x004001c5
+0x004001c5:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004001c9:	mov	r5, r1
+0x004001cb:	ldr	r1, [pc, #0xcc]
+0x004001cd:	sub	sp, #0x44
+0x004001cf:	mov	r7, r3
+0x004001d1:	ldr	r3, [pc, #0xc8]
+0x004001d3:	add	r1, pc
+0x004001d5:	mov	r6, r0
+0x004001d7:	mov	sl, r2
+0x004001d9:	ldrd	r8, sb, [sp, #0x74]
+0x004001dd:	ldr	r3, [r1, r3]
+0x004001df:	mov	r0, r8
+0x004001e1:	ldr.w	fp, [sp, #0x6c]
+0x004001e5:	ldr	r3, [r3]
+0x004001e7:	str	r3, [sp, #0x3c]
+0x004001e9:	mov.w	r3, #0
+0x004001ed:	bl	#0x500055
+0x004001f1:	cmp	r0, #0
+0x004001f3:	beq	#0x40028d
+0x004001f5:	ldr	r3, [sp, #0x68]
+0x004001f7:	mov	r4, r0
+0x004001f9:	strd	r6, r5, [sp, #0x28]
+0x004001fd:	mov	r6, sp
+0x004001ff:	strd	r0, r8, [sp]
+0x00400203:	movs	r1, #1
+0x00400205:	str	r3, [sp, #0xc]
+0x00400207:	mov	r0, r6
+0x00400209:	ldr	r3, [sp, #0x70]
+0x0040020b:	str	r3, [sp, #0x14]
+0x0040020d:	movs	r3, #0
+0x0040020f:	str	r7, [sp, #8]
+0x00400211:	str.w	fp, [sp, #0x10]
+0x00400215:	strd	sl, sl, [sp, #0x30]
+0x00400219:	strd	r3, r3, [sp, #0x18]
+0x0040021d:	strd	r3, r3, [sp, #0x20]
+0x00400221:	str	r3, [sp, #0x38]
+0x00400223:	bl	#0x400001
+0x00400245:	ldr	r2, [pc, #0x58]
+0x00400247:	ldr	r3, [pc, #0x54]
+0x00400249:	add	r2, pc
+0x0040024b:	ldr	r3, [r2, r3]
+0x0040024d:	ldr	r2, [r3]
+0x0040024f:	ldr	r3, [sp, #0x3c]
+0x00400251:	eors	r2, r3
+0x00400253:	mov.w	r3, #0
+0x00400257:	bne	#0x400293
+0x00400259:	mov	r0, r5
+0x0040025b:	add	sp, #0x44
+0x0040025d:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x0040028d:	mvn	r5, #0x15
+0x00400291:	b	#0x400245
+0x00400293:	bl	#0x50003d
 
-0000036c <_sodium_argon2id_hash_encoded>:
- 36c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 370:	460d      	mov	r5, r1
- 372:	4933      	ldr	r1, [pc, #204]	; (440 <_sodium_argon2id_hash_encoded+0xd4>)
- 374:	b091      	sub	sp, #68	; 0x44
- 376:	461f      	mov	r7, r3
- 378:	4b32      	ldr	r3, [pc, #200]	; (444 <_sodium_argon2id_hash_encoded+0xd8>)
- 37a:	4479      	add	r1, pc
- 37c:	4606      	mov	r6, r0
- 37e:	4692      	mov	sl, r2
- 380:	e9dd 891d 	ldrd	r8, r9, [sp, #116]	; 0x74
- 384:	58cb      	ldr	r3, [r1, r3]
- 386:	4640      	mov	r0, r8
- 388:	f8dd b06c 	ldr.w	fp, [sp, #108]	; 0x6c
- 38c:	681b      	ldr	r3, [r3, #0]
- 38e:	930f      	str	r3, [sp, #60]	; 0x3c
- 390:	f04f 0300 	mov.w	r3, #0
- 394:	f7ff fffe 	bl	0 <malloc>
- 398:	2800      	cmp	r0, #0
- 39a:	d04b      	beq.n	434 <_sodium_argon2id_hash_encoded+0xc8>
- 39c:	9b1a      	ldr	r3, [sp, #104]	; 0x68
- 39e:	4604      	mov	r4, r0
- 3a0:	e9cd 650a 	strd	r6, r5, [sp, #40]	; 0x28
- 3a4:	466e      	mov	r6, sp
- 3a6:	e9cd 0800 	strd	r0, r8, [sp]
- 3aa:	2102      	movs	r1, #2
- 3ac:	9303      	str	r3, [sp, #12]
- 3ae:	4630      	mov	r0, r6
- 3b0:	9b1c      	ldr	r3, [sp, #112]	; 0x70
- 3b2:	9305      	str	r3, [sp, #20]
- 3b4:	2300      	movs	r3, #0
- 3b6:	9702      	str	r7, [sp, #8]
- 3b8:	f8cd b010 	str.w	fp, [sp, #16]
- 3bc:	e9cd aa0c 	strd	sl, sl, [sp, #48]	; 0x30
- 3c0:	e9cd 3306 	strd	r3, r3, [sp, #24]
- 3c4:	e9cd 3308 	strd	r3, r3, [sp, #32]
- 3c8:	930e      	str	r3, [sp, #56]	; 0x38
- 3ca:	f7ff fffe 	bl	0 <_sodium_argon2_ctx>
- 3ce:	4605      	mov	r5, r0
- 3d0:	b928      	cbnz	r0, 3de <_sodium_argon2id_hash_encoded+0x72>
- 3d2:	9b1f      	ldr	r3, [sp, #124]	; 0x7c
- 3d4:	f1b9 0f00 	cmp.w	r9, #0
- 3d8:	bf18      	it	ne
- 3da:	2b00      	cmpne	r3, #0
- 3dc:	d114      	bne.n	408 <_sodium_argon2id_hash_encoded+0x9c>
- 3de:	4620      	mov	r0, r4
- 3e0:	4641      	mov	r1, r8
- 3e2:	f7ff fffe 	bl	0 <sodium_memzero>
- 3e6:	4620      	mov	r0, r4
- 3e8:	f7ff fffe 	bl	0 <free>
- 3ec:	4a16      	ldr	r2, [pc, #88]	; (448 <_sodium_argon2id_hash_encoded+0xdc>)
- 3ee:	4b15      	ldr	r3, [pc, #84]	; (444 <_sodium_argon2id_hash_encoded+0xd8>)
- 3f0:	447a      	add	r2, pc
- 3f2:	58d3      	ldr	r3, [r2, r3]
- 3f4:	681a      	ldr	r2, [r3, #0]
- 3f6:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
- 3f8:	405a      	eors	r2, r3
- 3fa:	f04f 0300 	mov.w	r3, #0
- 3fe:	d11c      	bne.n	43a <_sodium_argon2id_hash_encoded+0xce>
- 400:	4628      	mov	r0, r5
- 402:	b011      	add	sp, #68	; 0x44
- 404:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 408:	4619      	mov	r1, r3
- 40a:	4632      	mov	r2, r6
- 40c:	2302      	movs	r3, #2
- 40e:	4648      	mov	r0, r9
- 410:	f7ff fffe 	bl	0 <_sodium_argon2_encode_string>
- 414:	2800      	cmp	r0, #0
- 416:	d0e2      	beq.n	3de <_sodium_argon2id_hash_encoded+0x72>
- 418:	4641      	mov	r1, r8
- 41a:	4620      	mov	r0, r4
- 41c:	f7ff fffe 	bl	0 <sodium_memzero>
- 420:	4648      	mov	r0, r9
- 422:	991f      	ldr	r1, [sp, #124]	; 0x7c
- 424:	f06f 051e 	mvn.w	r5, #30
- 428:	f7ff fffe 	bl	0 <sodium_memzero>
- 42c:	4620      	mov	r0, r4
- 42e:	f7ff fffe 	bl	0 <free>
- 432:	e7db      	b.n	3ec <_sodium_argon2id_hash_encoded+0x80>
- 434:	f06f 0515 	mvn.w	r5, #21
- 438:	e7d8      	b.n	3ec <_sodium_argon2id_hash_encoded+0x80>
- 43a:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 43e:	bf00      	nop
- 440:	000000c2 	.word	0x000000c2
- 444:	00000000 	.word	0x00000000
- 448:	00000054 	.word	0x00000054
+Function sub_400227 @ 0x00400227
+0x00400227:	mov	r5, r0
+0x00400229:	cbnz	r0, #0x400237
+0x0040022b:	ldr	r3, [sp, #0x7c]
+0x0040022d:	cmp.w	sb, #0
+0x00400231:	it	ne
+0x00400233:	cmpne	r3, #0
+0x00400235:	bne	#0x400261
+0x0040022b:	ldr	r3, [sp, #0x7c]
+0x0040022d:	cmp.w	sb, #0
+0x00400231:	it	ne
+0x00400233:	cmpne	r3, #0
+0x00400235:	bne	#0x400261
+0x00400237:	mov	r0, r4
+0x00400239:	mov	r1, r8
+0x0040023b:	bl	#0x50006d
+0x0040023f:	mov	r0, r4
+0x00400241:	bl	#0x500079
+0x00400261:	mov	r1, r3
+0x00400263:	mov	r2, r6
+0x00400265:	movs	r3, #1
+0x00400267:	mov	r0, sb
+0x00400269:	bl	#0x500085
+0x0040026d:	cmp	r0, #0
+0x0040026f:	beq	#0x400237
+0x00400271:	mov	r1, r8
+0x00400273:	mov	r0, r4
+0x00400275:	bl	#0x50006d
+0x00400279:	mov	r0, sb
+0x0040027b:	ldr	r1, [sp, #0x7c]
+0x0040027d:	mvn	r5, #0x1e
+0x00400281:	bl	#0x50006d
+0x00400285:	mov	r0, r4
+0x00400287:	bl	#0x500079
+0x0040028b:	b	#0x400245
 
-0000044c <_sodium_argon2id_hash_raw>:
- 44c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 450:	4615      	mov	r5, r2
- 452:	4a2d      	ldr	r2, [pc, #180]	; (508 <_sodium_argon2id_hash_raw+0xbc>)
- 454:	b091      	sub	sp, #68	; 0x44
- 456:	469a      	mov	sl, r3
- 458:	4b2c      	ldr	r3, [pc, #176]	; (50c <_sodium_argon2id_hash_raw+0xc0>)
- 45a:	447a      	add	r2, pc
- 45c:	4681      	mov	r9, r0
- 45e:	460f      	mov	r7, r1
- 460:	e9dd 861d 	ldrd	r8, r6, [sp, #116]	; 0x74
- 464:	58d3      	ldr	r3, [r2, r3]
- 466:	f8dd b06c 	ldr.w	fp, [sp, #108]	; 0x6c
- 46a:	681b      	ldr	r3, [r3, #0]
- 46c:	930f      	str	r3, [sp, #60]	; 0x3c
- 46e:	f04f 0300 	mov.w	r3, #0
- 472:	f1b8 0f00 	cmp.w	r8, #0
- 476:	d003      	beq.n	480 <_sodium_argon2id_hash_raw+0x34>
- 478:	4631      	mov	r1, r6
- 47a:	4640      	mov	r0, r8
- 47c:	f7ff fffe 	bl	0 <randombytes_buf>
- 480:	4630      	mov	r0, r6
- 482:	f7ff fffe 	bl	0 <malloc>
- 486:	4604      	mov	r4, r0
- 488:	2800      	cmp	r0, #0
- 48a:	d037      	beq.n	4fc <_sodium_argon2id_hash_raw+0xb0>
- 48c:	9b1a      	ldr	r3, [sp, #104]	; 0x68
- 48e:	2102      	movs	r1, #2
- 490:	e9cd 0600 	strd	r0, r6, [sp]
- 494:	4668      	mov	r0, sp
- 496:	9303      	str	r3, [sp, #12]
- 498:	9b1c      	ldr	r3, [sp, #112]	; 0x70
- 49a:	9305      	str	r3, [sp, #20]
- 49c:	2300      	movs	r3, #0
- 49e:	e9cd 550c 	strd	r5, r5, [sp, #48]	; 0x30
- 4a2:	f8cd a008 	str.w	sl, [sp, #8]
- 4a6:	f8cd b010 	str.w	fp, [sp, #16]
- 4aa:	f8cd 9028 	str.w	r9, [sp, #40]	; 0x28
- 4ae:	970b      	str	r7, [sp, #44]	; 0x2c
- 4b0:	e9cd 3306 	strd	r3, r3, [sp, #24]
- 4b4:	e9cd 3308 	strd	r3, r3, [sp, #32]
- 4b8:	930e      	str	r3, [sp, #56]	; 0x38
- 4ba:	f7ff fffe 	bl	0 <_sodium_argon2_ctx>
- 4be:	4605      	mov	r5, r0
- 4c0:	b938      	cbnz	r0, 4d2 <_sodium_argon2id_hash_raw+0x86>
- 4c2:	f1b8 0f00 	cmp.w	r8, #0
- 4c6:	d004      	beq.n	4d2 <_sodium_argon2id_hash_raw+0x86>
- 4c8:	4632      	mov	r2, r6
- 4ca:	4640      	mov	r0, r8
- 4cc:	4621      	mov	r1, r4
- 4ce:	f7ff fffe 	bl	0 <memcpy>
- 4d2:	4620      	mov	r0, r4
- 4d4:	4631      	mov	r1, r6
- 4d6:	f7ff fffe 	bl	0 <sodium_memzero>
- 4da:	4620      	mov	r0, r4
- 4dc:	f7ff fffe 	bl	0 <free>
- 4e0:	4a0b      	ldr	r2, [pc, #44]	; (510 <_sodium_argon2id_hash_raw+0xc4>)
- 4e2:	4b0a      	ldr	r3, [pc, #40]	; (50c <_sodium_argon2id_hash_raw+0xc0>)
- 4e4:	447a      	add	r2, pc
- 4e6:	58d3      	ldr	r3, [r2, r3]
- 4e8:	681a      	ldr	r2, [r3, #0]
- 4ea:	9b0f      	ldr	r3, [sp, #60]	; 0x3c
- 4ec:	405a      	eors	r2, r3
- 4ee:	f04f 0300 	mov.w	r3, #0
- 4f2:	d106      	bne.n	502 <_sodium_argon2id_hash_raw+0xb6>
- 4f4:	4628      	mov	r0, r5
- 4f6:	b011      	add	sp, #68	; 0x44
- 4f8:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 4fc:	f06f 0515 	mvn.w	r5, #21
- 500:	e7ee      	b.n	4e0 <_sodium_argon2id_hash_raw+0x94>
- 502:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 506:	bf00      	nop
- 508:	000000aa 	.word	0x000000aa
- 50c:	00000000 	.word	0x00000000
- 510:	00000028 	.word	0x00000028
+Function sub_400297 @ 0x00400297
+0x00400297:	nop	
+0x00400299:	lsls	r2, r0, #3
+0x0040029b:	movs	r0, r0
+0x0040029d:	movs	r0, r0
+0x0040029f:	movs	r0, r0
+0x004002a1:	lsls	r4, r2, #1
+0x004002a3:	movs	r0, r0
+0x004002a5:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004002a9:	mov	r5, r2
+0x004002ab:	ldr	r2, [pc, #0xb4]
+0x004002ad:	sub	sp, #0x44
+0x004002af:	mov	sl, r3
+0x004002b1:	ldr	r3, [pc, #0xb0]
+0x004002b3:	add	r2, pc
+0x004002b5:	mov	sb, r0
+0x004002b7:	mov	r7, r1
+0x004002b9:	ldrd	r8, r6, [sp, #0x74]
+0x004002bd:	ldr	r3, [r2, r3]
+0x004002bf:	ldr.w	fp, [sp, #0x6c]
+0x004002c3:	ldr	r3, [r3]
+0x004002c5:	str	r3, [sp, #0x3c]
+0x004002c7:	mov.w	r3, #0
+0x004002cb:	cmp.w	r8, #0
+0x004002cf:	beq	#0x4002d9
 
-00000514 <_sodium_argon2_verify>:
- 514:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 518:	461f      	mov	r7, r3
- 51a:	4b4a      	ldr	r3, [pc, #296]	; (644 <_sodium_argon2_verify+0x130>)
- 51c:	b09b      	sub	sp, #108	; 0x6c
- 51e:	4682      	mov	sl, r0
- 520:	4689      	mov	r9, r1
- 522:	a80c      	add	r0, sp, #48	; 0x30
- 524:	2100      	movs	r1, #0
- 526:	9209      	str	r2, [sp, #36]	; 0x24
- 528:	4a47      	ldr	r2, [pc, #284]	; (648 <_sodium_argon2_verify+0x134>)
- 52a:	447a      	add	r2, pc
- 52c:	58d3      	ldr	r3, [r2, r3]
- 52e:	2234      	movs	r2, #52	; 0x34
- 530:	681b      	ldr	r3, [r3, #0]
- 532:	9319      	str	r3, [sp, #100]	; 0x64
- 534:	f04f 0300 	mov.w	r3, #0
- 538:	f7ff fffe 	bl	0 <memset>
- 53c:	4650      	mov	r0, sl
- 53e:	f7ff fffe 	bl	0 <strlen>
- 542:	4605      	mov	r5, r0
- 544:	9013      	str	r0, [sp, #76]	; 0x4c
- 546:	900f      	str	r0, [sp, #60]	; 0x3c
- 548:	900b      	str	r0, [sp, #44]	; 0x2c
- 54a:	f7ff fffe 	bl	0 <malloc>
- 54e:	4604      	mov	r4, r0
- 550:	9012      	str	r0, [sp, #72]	; 0x48
- 552:	4628      	mov	r0, r5
- 554:	f7ff fffe 	bl	0 <malloc>
- 558:	4606      	mov	r6, r0
- 55a:	900e      	str	r0, [sp, #56]	; 0x38
- 55c:	4628      	mov	r0, r5
- 55e:	f7ff fffe 	bl	0 <malloc>
- 562:	2800      	cmp	r0, #0
- 564:	bf18      	it	ne
- 566:	2e00      	cmpne	r6, #0
- 568:	bf0c      	ite	eq
- 56a:	2201      	moveq	r2, #1
- 56c:	2200      	movne	r2, #0
- 56e:	4680      	mov	r8, r0
- 570:	2c00      	cmp	r4, #0
- 572:	bf08      	it	eq
- 574:	f042 0201 	orreq.w	r2, r2, #1
- 578:	900a      	str	r0, [sp, #40]	; 0x28
- 57a:	2a00      	cmp	r2, #0
- 57c:	d154      	bne.n	628 <_sodium_argon2_verify+0x114>
- 57e:	4628      	mov	r0, r5
- 580:	f7ff fffe 	bl	0 <malloc>
- 584:	4605      	mov	r5, r0
- 586:	2800      	cmp	r0, #0
- 588:	d04e      	beq.n	628 <_sodium_argon2_verify+0x114>
- 58a:	f10d 0b28 	add.w	fp, sp, #40	; 0x28
- 58e:	4651      	mov	r1, sl
- 590:	4658      	mov	r0, fp
- 592:	463a      	mov	r2, r7
- 594:	f7ff fffe 	bl	0 <_sodium_argon2_decode_string>
- 598:	4604      	mov	r4, r0
- 59a:	2800      	cmp	r0, #0
- 59c:	d137      	bne.n	60e <_sodium_argon2_verify+0xfa>
- 59e:	9a0b      	ldr	r2, [sp, #44]	; 0x2c
- 5a0:	464b      	mov	r3, r9
- 5a2:	e9cd 0005 	strd	r0, r0, [sp, #20]
- 5a6:	9204      	str	r2, [sp, #16]
- 5a8:	9809      	ldr	r0, [sp, #36]	; 0x24
- 5aa:	e9dd 210e 	ldrd	r2, r1, [sp, #56]	; 0x38
- 5ae:	e9cd 1502 	strd	r1, r5, [sp, #8]
- 5b2:	9201      	str	r2, [sp, #4]
- 5b4:	9915      	ldr	r1, [sp, #84]	; 0x54
- 5b6:	9a17      	ldr	r2, [sp, #92]	; 0x5c
- 5b8:	9000      	str	r0, [sp, #0]
- 5ba:	9707      	str	r7, [sp, #28]
- 5bc:	9814      	ldr	r0, [sp, #80]	; 0x50
- 5be:	f7ff fffe 	bl	c0 <_sodium_argon2_hash>
- 5c2:	4604      	mov	r4, r0
- 5c4:	9812      	ldr	r0, [sp, #72]	; 0x48
- 5c6:	f7ff fffe 	bl	0 <free>
- 5ca:	980e      	ldr	r0, [sp, #56]	; 0x38
- 5cc:	f7ff fffe 	bl	0 <free>
- 5d0:	b19c      	cbz	r4, 5fa <_sodium_argon2_verify+0xe6>
- 5d2:	4628      	mov	r0, r5
- 5d4:	f7ff fffe 	bl	0 <free>
- 5d8:	980a      	ldr	r0, [sp, #40]	; 0x28
- 5da:	f7ff fffe 	bl	0 <free>
- 5de:	4a1b      	ldr	r2, [pc, #108]	; (64c <_sodium_argon2_verify+0x138>)
- 5e0:	4b18      	ldr	r3, [pc, #96]	; (644 <_sodium_argon2_verify+0x130>)
- 5e2:	447a      	add	r2, pc
- 5e4:	58d3      	ldr	r3, [r2, r3]
- 5e6:	681a      	ldr	r2, [r3, #0]
- 5e8:	9b19      	ldr	r3, [sp, #100]	; 0x64
- 5ea:	405a      	eors	r2, r3
- 5ec:	f04f 0300 	mov.w	r3, #0
- 5f0:	d126      	bne.n	640 <_sodium_argon2_verify+0x12c>
- 5f2:	4620      	mov	r0, r4
- 5f4:	b01b      	add	sp, #108	; 0x6c
- 5f6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 5fa:	e9dd 120a 	ldrd	r1, r2, [sp, #40]	; 0x28
- 5fe:	4628      	mov	r0, r5
- 600:	f7ff fffe 	bl	0 <sodium_memcmp>
- 604:	1e04      	subs	r4, r0, #0
- 606:	bf18      	it	ne
- 608:	f06f 0422 	mvnne.w	r4, #34	; 0x22
- 60c:	e7e1      	b.n	5d2 <_sodium_argon2_verify+0xbe>
- 60e:	9812      	ldr	r0, [sp, #72]	; 0x48
- 610:	f7ff fffe 	bl	0 <free>
- 614:	980e      	ldr	r0, [sp, #56]	; 0x38
- 616:	f7ff fffe 	bl	0 <free>
- 61a:	980a      	ldr	r0, [sp, #40]	; 0x28
- 61c:	f7ff fffe 	bl	0 <free>
- 620:	4628      	mov	r0, r5
- 622:	f7ff fffe 	bl	0 <free>
- 626:	e7da      	b.n	5de <_sodium_argon2_verify+0xca>
- 628:	4620      	mov	r0, r4
- 62a:	f06f 0415 	mvn.w	r4, #21
- 62e:	f7ff fffe 	bl	0 <free>
- 632:	4630      	mov	r0, r6
- 634:	f7ff fffe 	bl	0 <free>
- 638:	4640      	mov	r0, r8
- 63a:	f7ff fffe 	bl	0 <free>
- 63e:	e7ce      	b.n	5de <_sodium_argon2_verify+0xca>
- 640:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 644:	00000000 	.word	0x00000000
- 648:	0000011a 	.word	0x0000011a
- 64c:	00000066 	.word	0x00000066
+Function _sodium_argon2i_hash_raw @ 0x004002a5
+0x004002a5:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004002a9:	mov	r5, r2
+0x004002ab:	ldr	r2, [pc, #0xb4]
+0x004002ad:	sub	sp, #0x44
+0x004002af:	mov	sl, r3
+0x004002b1:	ldr	r3, [pc, #0xb0]
+0x004002b3:	add	r2, pc
+0x004002b5:	mov	sb, r0
+0x004002b7:	mov	r7, r1
+0x004002b9:	ldrd	r8, r6, [sp, #0x74]
+0x004002bd:	ldr	r3, [r2, r3]
+0x004002bf:	ldr.w	fp, [sp, #0x6c]
+0x004002c3:	ldr	r3, [r3]
+0x004002c5:	str	r3, [sp, #0x3c]
+0x004002c7:	mov.w	r3, #0
+0x004002cb:	cmp.w	r8, #0
+0x004002cf:	beq	#0x4002d9
+0x004002d1:	mov	r1, r6
+0x004002d3:	mov	r0, r8
+0x004002d5:	bl	#0x500049
+0x004002d9:	mov	r0, r6
+0x004002db:	bl	#0x500055
+0x004002df:	mov	r4, r0
+0x004002e1:	cmp	r0, #0
+0x004002e3:	beq	#0x400355
+0x004002e5:	ldr	r3, [sp, #0x68]
+0x004002e7:	movs	r1, #1
+0x004002e9:	strd	r0, r6, [sp]
+0x004002ed:	mov	r0, sp
+0x004002ef:	str	r3, [sp, #0xc]
+0x004002f1:	ldr	r3, [sp, #0x70]
+0x004002f3:	str	r3, [sp, #0x14]
+0x004002f5:	movs	r3, #0
+0x004002f7:	strd	r5, r5, [sp, #0x30]
+0x004002fb:	str.w	sl, [sp, #8]
+0x004002ff:	str.w	fp, [sp, #0x10]
+0x00400303:	str.w	sb, [sp, #0x28]
+0x00400307:	str	r7, [sp, #0x2c]
+0x00400309:	strd	r3, r3, [sp, #0x18]
+0x0040030d:	strd	r3, r3, [sp, #0x20]
+0x00400311:	str	r3, [sp, #0x38]
+0x00400313:	bl	#0x400001
+0x00400339:	ldr	r2, [pc, #0x2c]
+0x0040033b:	ldr	r3, [pc, #0x28]
+0x0040033d:	add	r2, pc
+0x0040033f:	ldr	r3, [r2, r3]
+0x00400341:	ldr	r2, [r3]
+0x00400343:	ldr	r3, [sp, #0x3c]
+0x00400345:	eors	r2, r3
+0x00400347:	mov.w	r3, #0
+0x0040034b:	bne	#0x40035b
+0x0040034d:	mov	r0, r5
+0x0040034f:	add	sp, #0x44
+0x00400351:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400355:	mvn	r5, #0x15
+0x00400359:	b	#0x400339
+0x0040035b:	bl	#0x50003d
 
-00000650 <_sodium_argon2i_verify>:
- 650:	2301      	movs	r3, #1
- 652:	f7ff bffe 	b.w	514 <_sodium_argon2_verify>
- 656:	bf00      	nop
+Function sub_400317 @ 0x00400317
+0x00400317:	mov	r5, r0
+0x00400319:	cbnz	r0, #0x40032b
+0x0040031b:	cmp.w	r8, #0
+0x0040031f:	beq	#0x40032b
+0x0040031b:	cmp.w	r8, #0
+0x0040031f:	beq	#0x40032b
+0x00400321:	mov	r2, r6
+0x00400323:	mov	r0, r8
+0x00400325:	mov	r1, r4
+0x00400327:	bl	#0x500061
+0x0040032b:	mov	r0, r4
+0x0040032d:	mov	r1, r6
+0x0040032f:	bl	#0x50006d
+0x00400333:	mov	r0, r4
+0x00400335:	bl	#0x500079
 
-00000658 <_sodium_argon2id_verify>:
- 658:	2302      	movs	r3, #2
- 65a:	f7ff bffe 	b.w	514 <_sodium_argon2_verify>
- 65e:	bf00      	nop
+Function sub_40035f @ 0x0040035f
+0x0040035f:	nop	
+0x00400361:	lsls	r2, r5, #2
+0x00400363:	movs	r0, r0
+0x00400365:	movs	r0, r0
+0x00400367:	movs	r0, r0
+0x00400369:	movs	r0, r5
+0x0040036b:	movs	r0, r0
+0x0040036d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400371:	mov	r5, r1
+0x00400373:	ldr	r1, [pc, #0xcc]
+0x00400375:	sub	sp, #0x44
+0x00400377:	mov	r7, r3
+0x00400379:	ldr	r3, [pc, #0xc8]
+0x0040037b:	add	r1, pc
+0x0040037d:	mov	r6, r0
+0x0040037f:	mov	sl, r2
+0x00400381:	ldrd	r8, sb, [sp, #0x74]
+0x00400385:	ldr	r3, [r1, r3]
+0x00400387:	mov	r0, r8
+0x00400389:	ldr.w	fp, [sp, #0x6c]
+0x0040038d:	ldr	r3, [r3]
+0x0040038f:	str	r3, [sp, #0x3c]
+0x00400391:	mov.w	r3, #0
+0x00400395:	bl	#0x500055
+
+Function _sodium_argon2id_hash_encoded @ 0x0040036d
+0x0040036d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400371:	mov	r5, r1
+0x00400373:	ldr	r1, [pc, #0xcc]
+0x00400375:	sub	sp, #0x44
+0x00400377:	mov	r7, r3
+0x00400379:	ldr	r3, [pc, #0xc8]
+0x0040037b:	add	r1, pc
+0x0040037d:	mov	r6, r0
+0x0040037f:	mov	sl, r2
+0x00400381:	ldrd	r8, sb, [sp, #0x74]
+0x00400385:	ldr	r3, [r1, r3]
+0x00400387:	mov	r0, r8
+0x00400389:	ldr.w	fp, [sp, #0x6c]
+0x0040038d:	ldr	r3, [r3]
+0x0040038f:	str	r3, [sp, #0x3c]
+0x00400391:	mov.w	r3, #0
+0x00400395:	bl	#0x500055
+0x00400399:	cmp	r0, #0
+0x0040039b:	beq	#0x400435
+0x0040039d:	ldr	r3, [sp, #0x68]
+0x0040039f:	mov	r4, r0
+0x004003a1:	strd	r6, r5, [sp, #0x28]
+0x004003a5:	mov	r6, sp
+0x004003a7:	strd	r0, r8, [sp]
+0x004003ab:	movs	r1, #2
+0x004003ad:	str	r3, [sp, #0xc]
+0x004003af:	mov	r0, r6
+0x004003b1:	ldr	r3, [sp, #0x70]
+0x004003b3:	str	r3, [sp, #0x14]
+0x004003b5:	movs	r3, #0
+0x004003b7:	str	r7, [sp, #8]
+0x004003b9:	str.w	fp, [sp, #0x10]
+0x004003bd:	strd	sl, sl, [sp, #0x30]
+0x004003c1:	strd	r3, r3, [sp, #0x18]
+0x004003c5:	strd	r3, r3, [sp, #0x20]
+0x004003c9:	str	r3, [sp, #0x38]
+0x004003cb:	bl	#0x400001
+0x004003ed:	ldr	r2, [pc, #0x58]
+0x004003ef:	ldr	r3, [pc, #0x54]
+0x004003f1:	add	r2, pc
+0x004003f3:	ldr	r3, [r2, r3]
+0x004003f5:	ldr	r2, [r3]
+0x004003f7:	ldr	r3, [sp, #0x3c]
+0x004003f9:	eors	r2, r3
+0x004003fb:	mov.w	r3, #0
+0x004003ff:	bne	#0x40043b
+0x00400401:	mov	r0, r5
+0x00400403:	add	sp, #0x44
+0x00400405:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400435:	mvn	r5, #0x15
+0x00400439:	b	#0x4003ed
+0x0040043b:	bl	#0x50003d
+
+Function sub_4003cf @ 0x004003cf
+0x004003cf:	mov	r5, r0
+0x004003d1:	cbnz	r0, #0x4003df
+0x004003d3:	ldr	r3, [sp, #0x7c]
+0x004003d5:	cmp.w	sb, #0
+0x004003d9:	it	ne
+0x004003db:	cmpne	r3, #0
+0x004003dd:	bne	#0x400409
+0x004003d3:	ldr	r3, [sp, #0x7c]
+0x004003d5:	cmp.w	sb, #0
+0x004003d9:	it	ne
+0x004003db:	cmpne	r3, #0
+0x004003dd:	bne	#0x400409
+0x004003df:	mov	r0, r4
+0x004003e1:	mov	r1, r8
+0x004003e3:	bl	#0x50006d
+0x004003e7:	mov	r0, r4
+0x004003e9:	bl	#0x500079
+0x00400409:	mov	r1, r3
+0x0040040b:	mov	r2, r6
+0x0040040d:	movs	r3, #2
+0x0040040f:	mov	r0, sb
+0x00400411:	bl	#0x500085
+0x00400415:	cmp	r0, #0
+0x00400417:	beq	#0x4003df
+0x00400419:	mov	r1, r8
+0x0040041b:	mov	r0, r4
+0x0040041d:	bl	#0x50006d
+0x00400421:	mov	r0, sb
+0x00400423:	ldr	r1, [sp, #0x7c]
+0x00400425:	mvn	r5, #0x1e
+0x00400429:	bl	#0x50006d
+0x0040042d:	mov	r0, r4
+0x0040042f:	bl	#0x500079
+0x00400433:	b	#0x4003ed
+
+Function sub_40043f @ 0x0040043f
+0x0040043f:	nop	
+0x00400441:	lsls	r2, r0, #3
+0x00400443:	movs	r0, r0
+0x00400445:	movs	r0, r0
+0x00400447:	movs	r0, r0
+0x00400449:	lsls	r4, r2, #1
+0x0040044b:	movs	r0, r0
+0x0040044d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400451:	mov	r5, r2
+0x00400453:	ldr	r2, [pc, #0xb4]
+0x00400455:	sub	sp, #0x44
+0x00400457:	mov	sl, r3
+0x00400459:	ldr	r3, [pc, #0xb0]
+0x0040045b:	add	r2, pc
+0x0040045d:	mov	sb, r0
+0x0040045f:	mov	r7, r1
+0x00400461:	ldrd	r8, r6, [sp, #0x74]
+0x00400465:	ldr	r3, [r2, r3]
+0x00400467:	ldr.w	fp, [sp, #0x6c]
+0x0040046b:	ldr	r3, [r3]
+0x0040046d:	str	r3, [sp, #0x3c]
+0x0040046f:	mov.w	r3, #0
+0x00400473:	cmp.w	r8, #0
+0x00400477:	beq	#0x400481
+
+Function _sodium_argon2id_hash_raw @ 0x0040044d
+0x0040044d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400451:	mov	r5, r2
+0x00400453:	ldr	r2, [pc, #0xb4]
+0x00400455:	sub	sp, #0x44
+0x00400457:	mov	sl, r3
+0x00400459:	ldr	r3, [pc, #0xb0]
+0x0040045b:	add	r2, pc
+0x0040045d:	mov	sb, r0
+0x0040045f:	mov	r7, r1
+0x00400461:	ldrd	r8, r6, [sp, #0x74]
+0x00400465:	ldr	r3, [r2, r3]
+0x00400467:	ldr.w	fp, [sp, #0x6c]
+0x0040046b:	ldr	r3, [r3]
+0x0040046d:	str	r3, [sp, #0x3c]
+0x0040046f:	mov.w	r3, #0
+0x00400473:	cmp.w	r8, #0
+0x00400477:	beq	#0x400481
+0x00400479:	mov	r1, r6
+0x0040047b:	mov	r0, r8
+0x0040047d:	bl	#0x500049
+0x00400481:	mov	r0, r6
+0x00400483:	bl	#0x500055
+0x00400487:	mov	r4, r0
+0x00400489:	cmp	r0, #0
+0x0040048b:	beq	#0x4004fd
+0x0040048d:	ldr	r3, [sp, #0x68]
+0x0040048f:	movs	r1, #2
+0x00400491:	strd	r0, r6, [sp]
+0x00400495:	mov	r0, sp
+0x00400497:	str	r3, [sp, #0xc]
+0x00400499:	ldr	r3, [sp, #0x70]
+0x0040049b:	str	r3, [sp, #0x14]
+0x0040049d:	movs	r3, #0
+0x0040049f:	strd	r5, r5, [sp, #0x30]
+0x004004a3:	str.w	sl, [sp, #8]
+0x004004a7:	str.w	fp, [sp, #0x10]
+0x004004ab:	str.w	sb, [sp, #0x28]
+0x004004af:	str	r7, [sp, #0x2c]
+0x004004b1:	strd	r3, r3, [sp, #0x18]
+0x004004b5:	strd	r3, r3, [sp, #0x20]
+0x004004b9:	str	r3, [sp, #0x38]
+0x004004bb:	bl	#0x400001
+0x004004e1:	ldr	r2, [pc, #0x2c]
+0x004004e3:	ldr	r3, [pc, #0x28]
+0x004004e5:	add	r2, pc
+0x004004e7:	ldr	r3, [r2, r3]
+0x004004e9:	ldr	r2, [r3]
+0x004004eb:	ldr	r3, [sp, #0x3c]
+0x004004ed:	eors	r2, r3
+0x004004ef:	mov.w	r3, #0
+0x004004f3:	bne	#0x400503
+0x004004f5:	mov	r0, r5
+0x004004f7:	add	sp, #0x44
+0x004004f9:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004004fd:	mvn	r5, #0x15
+0x00400501:	b	#0x4004e1
+0x00400503:	bl	#0x50003d
+
+Function sub_4004bf @ 0x004004bf
+0x004004bf:	mov	r5, r0
+0x004004c1:	cbnz	r0, #0x4004d3
+0x004004c3:	cmp.w	r8, #0
+0x004004c7:	beq	#0x4004d3
+0x004004c3:	cmp.w	r8, #0
+0x004004c7:	beq	#0x4004d3
+0x004004c9:	mov	r2, r6
+0x004004cb:	mov	r0, r8
+0x004004cd:	mov	r1, r4
+0x004004cf:	bl	#0x500061
+0x004004d3:	mov	r0, r4
+0x004004d5:	mov	r1, r6
+0x004004d7:	bl	#0x50006d
+0x004004db:	mov	r0, r4
+0x004004dd:	bl	#0x500079
+
+Function sub_400507 @ 0x00400507
+0x00400507:	nop	
+0x00400509:	lsls	r2, r5, #2
+0x0040050b:	movs	r0, r0
+0x0040050d:	movs	r0, r0
+0x0040050f:	movs	r0, r0
+0x00400511:	movs	r0, r5
+0x00400513:	movs	r0, r0
+0x00400515:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400519:	mov	r7, r3
+0x0040051b:	ldr	r3, [pc, #0x128]
+0x0040051d:	sub	sp, #0x6c
+0x0040051f:	mov	sl, r0
+0x00400521:	mov	sb, r1
+0x00400523:	add	r0, sp, #0x30
+0x00400525:	movs	r1, #0
+0x00400527:	str	r2, [sp, #0x24]
+0x00400529:	ldr	r2, [pc, #0x11c]
+0x0040052b:	add	r2, pc
+0x0040052d:	ldr	r3, [r2, r3]
+0x0040052f:	movs	r2, #0x34
+0x00400531:	ldr	r3, [r3]
+0x00400533:	str	r3, [sp, #0x64]
+0x00400535:	mov.w	r3, #0
+0x00400539:	bl	#0x500091
+
+Function _sodium_argon2_verify @ 0x00400515
+0x00400515:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400519:	mov	r7, r3
+0x0040051b:	ldr	r3, [pc, #0x128]
+0x0040051d:	sub	sp, #0x6c
+0x0040051f:	mov	sl, r0
+0x00400521:	mov	sb, r1
+0x00400523:	add	r0, sp, #0x30
+0x00400525:	movs	r1, #0
+0x00400527:	str	r2, [sp, #0x24]
+0x00400529:	ldr	r2, [pc, #0x11c]
+0x0040052b:	add	r2, pc
+0x0040052d:	ldr	r3, [r2, r3]
+0x0040052f:	movs	r2, #0x34
+0x00400531:	ldr	r3, [r3]
+0x00400533:	str	r3, [sp, #0x64]
+0x00400535:	mov.w	r3, #0
+0x00400539:	bl	#0x500091
+0x0040053d:	mov	r0, sl
+0x0040053f:	bl	#0x50009d
+0x00400543:	mov	r5, r0
+0x00400545:	str	r0, [sp, #0x4c]
+0x00400547:	str	r0, [sp, #0x3c]
+0x00400549:	str	r0, [sp, #0x2c]
+0x0040054b:	bl	#0x500055
+0x0040054f:	mov	r4, r0
+0x00400551:	str	r0, [sp, #0x48]
+0x00400553:	mov	r0, r5
+0x00400555:	bl	#0x500055
+0x00400559:	mov	r6, r0
+0x0040055b:	str	r0, [sp, #0x38]
+0x0040055d:	mov	r0, r5
+0x0040055f:	bl	#0x500055
+0x00400563:	cmp	r0, #0
+0x00400565:	it	ne
+0x00400567:	cmpne	r6, #0
+0x00400569:	ite	eq
+0x0040056b:	moveq	r2, #1
+0x0040056d:	movne	r2, #0
+0x0040056f:	mov	r8, r0
+0x00400571:	cmp	r4, #0
+0x00400573:	it	eq
+0x00400575:	orreq	r2, r2, #1
+0x00400579:	str	r0, [sp, #0x28]
+0x0040057b:	cmp	r2, #0
+0x0040057d:	bne	#0x400629
+0x0040057f:	mov	r0, r5
+0x00400581:	bl	#0x500055
+0x00400585:	mov	r5, r0
+0x00400587:	cmp	r0, #0
+0x00400589:	beq	#0x400629
+0x0040058b:	add.w	fp, sp, #0x28
+0x0040058f:	mov	r1, sl
+0x00400591:	mov	r0, fp
+0x00400593:	mov	r2, r7
+0x00400595:	bl	#0x5000a9
+0x00400599:	mov	r4, r0
+0x0040059b:	cmp	r0, #0
+0x0040059d:	bne	#0x40060f
+0x0040059f:	ldr	r2, [sp, #0x2c]
+0x004005a1:	mov	r3, sb
+0x004005a3:	strd	r0, r0, [sp, #0x14]
+0x004005a7:	str	r2, [sp, #0x10]
+0x004005a9:	ldr	r0, [sp, #0x24]
+0x004005ab:	ldrd	r2, r1, [sp, #0x38]
+0x004005af:	strd	r1, r5, [sp, #8]
+0x004005b3:	str	r2, [sp, #4]
+0x004005b5:	ldr	r1, [sp, #0x54]
+0x004005b7:	ldr	r2, [sp, #0x5c]
+0x004005b9:	str	r0, [sp]
+0x004005bb:	str	r7, [sp, #0x1c]
+0x004005bd:	ldr	r0, [sp, #0x50]
+0x004005bf:	bl	#0x4000c1
+0x004005c3:	mov	r4, r0
+0x004005c5:	ldr	r0, [sp, #0x48]
+0x004005c7:	bl	#0x500079
+0x004005cb:	ldr	r0, [sp, #0x38]
+0x004005cd:	bl	#0x500079
+0x004005d1:	cbz	r4, #0x4005fb
+0x004005d3:	mov	r0, r5
+0x004005d5:	bl	#0x500079
+0x004005d3:	mov	r0, r5
+0x004005d5:	bl	#0x500079
+0x004005d9:	ldr	r0, [sp, #0x28]
+0x004005db:	bl	#0x500079
+0x004005df:	ldr	r2, [pc, #0x6c]
+0x004005e1:	ldr	r3, [pc, #0x60]
+0x004005e3:	add	r2, pc
+0x004005e5:	ldr	r3, [r2, r3]
+0x004005e7:	ldr	r2, [r3]
+0x004005e9:	ldr	r3, [sp, #0x64]
+0x004005eb:	eors	r2, r3
+0x004005ed:	mov.w	r3, #0
+0x004005f1:	bne	#0x400641
+0x004005f3:	mov	r0, r4
+0x004005f5:	add	sp, #0x6c
+0x004005f7:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004005fb:	ldrd	r1, r2, [sp, #0x28]
+0x004005ff:	mov	r0, r5
+0x00400601:	bl	#0x5000b5
+0x00400605:	subs	r4, r0, #0
+0x00400607:	it	ne
+0x00400609:	mvnne	r4, #0x22
+0x0040060d:	b	#0x4005d3
+0x0040060f:	ldr	r0, [sp, #0x48]
+0x00400611:	bl	#0x500079
+0x00400615:	ldr	r0, [sp, #0x38]
+0x00400617:	bl	#0x500079
+0x0040061b:	ldr	r0, [sp, #0x28]
+0x0040061d:	bl	#0x500079
+0x00400621:	mov	r0, r5
+0x00400623:	bl	#0x500079
+0x00400627:	b	#0x4005df
+0x00400629:	mov	r0, r4
+0x0040062b:	mvn	r4, #0x15
+0x0040062f:	bl	#0x500079
+0x00400633:	mov	r0, r6
+0x00400635:	bl	#0x500079
+0x00400639:	mov	r0, r8
+0x0040063b:	bl	#0x500079
+0x0040063f:	b	#0x4005df
+0x00400641:	bl	#0x50003d
+
+Function _sodium_argon2i_verify @ 0x00400651
+0x00400651:	movs	r3, #1
+0x00400653:	b.w	#0x400515
+
+Function sub_400657 @ 0x00400657
+0x00400657:	nop	
+0x00400659:	movs	r3, #2
+0x0040065b:	b.w	#0x400515
+
+Function _sodium_argon2id_verify @ 0x00400659
+0x00400659:	movs	r3, #2
+0x0040065b:	b.w	#0x400515
+
+Function sub_40065f @ 0x0040065f
+0x0040065f:	nop	
+
+Function _sodium_argon2_validate_inputs @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __aeabi_uidiv @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function _sodium_argon2_initialize @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function _sodium_argon2_fill_memory_blocks @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function _sodium_argon2_finalize @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function randombytes_buf @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function malloc @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function memcpy @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function sodium_memzero @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function free @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function _sodium_argon2_encode_string @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function memset @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function strlen @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0
+0x005000a5:	movs	r0, r0
+0x005000a7:	movs	r0, r0
+
+Function _sodium_argon2_decode_string @ 0x005000a9
+0x005000a9:	movs	r0, r0
+0x005000ab:	movs	r0, r0
+0x005000ad:	movs	r0, r0
+0x005000af:	movs	r0, r0
+0x005000b1:	movs	r0, r0
+0x005000b3:	movs	r0, r0
+
+Function sodium_memcmp @ 0x005000b5
+0x005000b5:	movs	r0, r0
+0x005000b7:	movs	r0, r0
+0x005000b9:	movs	r0, r0
+0x005000bb:	movs	r0, r0

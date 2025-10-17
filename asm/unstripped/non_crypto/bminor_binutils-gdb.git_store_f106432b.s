@@ -1,346 +1,544 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_store_f106432b.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	sublt	r4, r0, #8, #8
+0x00400004:	svclt	#0x4770
 
+Function add_short @ 0x00400009
+0x00400009:	add	r0, r1
+0x0040000b:	sxth	r0, r0
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	add	r0, r1
+0x00400013:	bx	lr
 
-00000000 <add_charest>:
-   0:	4408      	add	r0, r1
-   2:	b240      	sxtb	r0, r0
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function add_int @ 0x00400011
+0x00400011:	add	r0, r1
+0x00400013:	bx	lr
 
-00000008 <add_short>:
-   8:	4408      	add	r0, r1
-   a:	b200      	sxth	r0, r0
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function add_long @ 0x00400015
+0x00400015:	add	r0, r1
+0x00400017:	bx	lr
 
-00000010 <add_int>:
-  10:	4408      	add	r0, r1
-  12:	4770      	bx	lr
+Function add_longest @ 0x00400019
+0x00400019:	adds	r0, r0, r2
+0x0040001b:	adc.w	r1, r1, r3
+0x0040001f:	bx	lr
 
-00000014 <add_long>:
-  14:	4408      	add	r0, r1
-  16:	4770      	bx	lr
+Function add_float @ 0x00400021
+0x00400021:	vadd.f32	s0, s0, s1
+0x00400025:	bx	lr
 
-00000018 <add_longest>:
-  18:	1880      	adds	r0, r0, r2
-  1a:	eb41 0103 	adc.w	r1, r1, r3
-  1e:	4770      	bx	lr
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	vadd.f64	d0, d0, d1
+0x0040002d:	bx	lr
 
-00000020 <add_float>:
-  20:	ee30 0a20 	vadd.f32	s0, s0, s1
-  24:	4770      	bx	lr
-  26:	bf00      	nop
+Function add_double @ 0x00400029
+0x00400029:	vadd.f64	d0, d0, d1
+0x0040002d:	bx	lr
 
-00000028 <add_double>:
-  28:	ee30 0b01 	vadd.f64	d0, d0, d1
-  2c:	4770      	bx	lr
-  2e:	bf00      	nop
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	vadd.f64	d0, d0, d1
+0x00400035:	bx	lr
 
-00000030 <add_doublest>:
-  30:	ee30 0b01 	vadd.f64	d0, d0, d1
-  34:	4770      	bx	lr
-  36:	bf00      	nop
+Function add_doublest @ 0x00400031
+0x00400031:	vadd.f64	d0, d0, d1
+0x00400035:	bx	lr
 
-00000038 <wack_charest>:
-  38:	eb00 0041 	add.w	r0, r0, r1, lsl #1
-  3c:	b240      	sxtb	r0, r0
-  3e:	4770      	bx	lr
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	add.w	r0, r0, r1, lsl #1
+0x0040003d:	sxtb	r0, r0
+0x0040003f:	bx	lr
 
-00000040 <wack_short>:
-  40:	eb00 0041 	add.w	r0, r0, r1, lsl #1
-  44:	b200      	sxth	r0, r0
-  46:	4770      	bx	lr
+Function wack_charest @ 0x00400039
+0x00400039:	add.w	r0, r0, r1, lsl #1
+0x0040003d:	sxtb	r0, r0
+0x0040003f:	bx	lr
 
-00000048 <wack_int>:
-  48:	eb00 0041 	add.w	r0, r0, r1, lsl #1
-  4c:	4770      	bx	lr
-  4e:	bf00      	nop
+Function wack_short @ 0x00400041
+0x00400041:	add.w	r0, r0, r1, lsl #1
+0x00400045:	sxth	r0, r0
+0x00400047:	bx	lr
 
-00000050 <wack_long>:
-  50:	eb00 0041 	add.w	r0, r0, r1, lsl #1
-  54:	4770      	bx	lr
-  56:	bf00      	nop
+Function wack_int @ 0x00400049
+0x00400049:	add.w	r0, r0, r1, lsl #1
+0x0040004d:	bx	lr
 
-00000058 <wack_longest>:
-  58:	eb00 0042 	add.w	r0, r0, r2, lsl #1
-  5c:	4770      	bx	lr
-  5e:	bf00      	nop
+Function sub_40004f @ 0x0040004f
+0x0040004f:	nop	
+0x00400051:	add.w	r0, r0, r1, lsl #1
+0x00400055:	bx	lr
 
-00000060 <wack_float>:
-  60:	ee30 0a20 	vadd.f32	s0, s0, s1
-  64:	ee30 0a20 	vadd.f32	s0, s0, s1
-  68:	4770      	bx	lr
-  6a:	bf00      	nop
+Function wack_long @ 0x00400051
+0x00400051:	add.w	r0, r0, r1, lsl #1
+0x00400055:	bx	lr
 
-0000006c <wack_double>:
-  6c:	ee30 0b01 	vadd.f64	d0, d0, d1
-  70:	ee30 0b01 	vadd.f64	d0, d0, d1
-  74:	4770      	bx	lr
-  76:	bf00      	nop
+Function sub_400057 @ 0x00400057
+0x00400057:	nop	
+0x00400059:	add.w	r0, r0, r2, lsl #1
+0x0040005d:	bx	lr
 
-00000078 <wack_doublest>:
-  78:	ee30 0b01 	vadd.f64	d0, d0, d1
-  7c:	ee30 0b01 	vadd.f64	d0, d0, d1
-  80:	4770      	bx	lr
-  82:	bf00      	nop
+Function wack_longest @ 0x00400059
+0x00400059:	add.w	r0, r0, r2, lsl #1
+0x0040005d:	bx	lr
 
-00000084 <add_struct_1>:
-  84:	0040      	lsls	r0, r0, #1
-  86:	4770      	bx	lr
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	vadd.f32	s0, s0, s1
+0x00400065:	vadd.f32	s0, s0, s1
+0x00400069:	bx	lr
 
-00000088 <add_struct_2>:
-  88:	b500      	push	{lr}
-  8a:	0043      	lsls	r3, r0, #1
-  8c:	4684      	mov	ip, r0
-  8e:	b085      	sub	sp, #20
-  90:	f340 30cf 	sbfx	r0, r0, #15, #16
-  94:	b29b      	uxth	r3, r3
-  96:	2200      	movs	r2, #0
-  98:	f64f 71fe 	movw	r1, #65534	; 0xfffe
-  9c:	4001      	ands	r1, r0
-  9e:	f8cd c004 	str.w	ip, [sp, #4]
-  a2:	f363 020f 	bfi	r2, r3, #0, #16
-  a6:	f8df c038 	ldr.w	ip, [pc, #56]	; e0 <add_struct_2+0x58>
-  aa:	480e      	ldr	r0, [pc, #56]	; (e4 <add_struct_2+0x5c>)
-  ac:	f361 421f 	bfi	r2, r1, #16, #16
-  b0:	44fc      	add	ip, pc
-  b2:	490d      	ldr	r1, [pc, #52]	; (e8 <add_struct_2+0x60>)
-  b4:	4b0b      	ldr	r3, [pc, #44]	; (e4 <add_struct_2+0x5c>)
-  b6:	4479      	add	r1, pc
-  b8:	f85c 0000 	ldr.w	r0, [ip, r0]
-  bc:	6800      	ldr	r0, [r0, #0]
-  be:	9003      	str	r0, [sp, #12]
-  c0:	f04f 0000 	mov.w	r0, #0
-  c4:	58cb      	ldr	r3, [r1, r3]
-  c6:	6819      	ldr	r1, [r3, #0]
-  c8:	9b03      	ldr	r3, [sp, #12]
-  ca:	4059      	eors	r1, r3
-  cc:	f04f 0300 	mov.w	r3, #0
-  d0:	d103      	bne.n	da <add_struct_2+0x52>
-  d2:	4610      	mov	r0, r2
-  d4:	b005      	add	sp, #20
-  d6:	f85d fb04 	ldr.w	pc, [sp], #4
-  da:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  de:	bf00      	nop
-  e0:	0000002c 	.word	0x0000002c
-  e4:	00000000 	.word	0x00000000
-  e8:	0000002e 	.word	0x0000002e
+Function wack_float @ 0x00400061
+0x00400061:	vadd.f32	s0, s0, s1
+0x00400065:	vadd.f32	s0, s0, s1
+0x00400069:	bx	lr
 
-000000ec <add_struct_3>:
-  ec:	b082      	sub	sp, #8
-  ee:	ab02      	add	r3, sp, #8
-  f0:	e903 0006 	stmdb	r3, {r1, r2}
-  f4:	f8bd c002 	ldrh.w	ip, [sp, #2]
-  f8:	f8bd 2004 	ldrh.w	r2, [sp, #4]
-  fc:	f8bd 1000 	ldrh.w	r1, [sp]
- 100:	ea4f 0c4c 	mov.w	ip, ip, lsl #1
- 104:	f8a0 c002 	strh.w	ip, [r0, #2]
- 108:	0052      	lsls	r2, r2, #1
- 10a:	8082      	strh	r2, [r0, #4]
- 10c:	0049      	lsls	r1, r1, #1
- 10e:	8001      	strh	r1, [r0, #0]
- 110:	b002      	add	sp, #8
- 112:	4770      	bx	lr
+Function sub_40006b @ 0x0040006b
+0x0040006b:	nop	
+0x0040006d:	vadd.f64	d0, d0, d1
+0x00400071:	vadd.f64	d0, d0, d1
+0x00400075:	bx	lr
 
-00000114 <add_struct_4>:
- 114:	b500      	push	{lr}
- 116:	4603      	mov	r3, r0
- 118:	b083      	sub	sp, #12
- 11a:	46ec      	mov	ip, sp
- 11c:	46e6      	mov	lr, ip
- 11e:	e88c 0006 	stmia.w	ip, {r1, r2}
- 122:	f8bd 2002 	ldrh.w	r2, [sp, #2]
- 126:	f8bd 0000 	ldrh.w	r0, [sp]
- 12a:	f8bd 1004 	ldrh.w	r1, [sp, #4]
- 12e:	0052      	lsls	r2, r2, #1
- 130:	f8ad 2002 	strh.w	r2, [sp, #2]
- 134:	f8bd 2006 	ldrh.w	r2, [sp, #6]
- 138:	0040      	lsls	r0, r0, #1
- 13a:	0049      	lsls	r1, r1, #1
- 13c:	f8ad 0000 	strh.w	r0, [sp]
- 140:	f8ad 1004 	strh.w	r1, [sp, #4]
- 144:	0052      	lsls	r2, r2, #1
- 146:	f8ad 2006 	strh.w	r2, [sp, #6]
- 14a:	e8be 0003 	ldmia.w	lr!, {r0, r1}
- 14e:	6018      	str	r0, [r3, #0]
- 150:	6059      	str	r1, [r3, #4]
- 152:	4618      	mov	r0, r3
- 154:	b003      	add	sp, #12
- 156:	f85d fb04 	ldr.w	pc, [sp], #4
- 15a:	bf00      	nop
+Function wack_double @ 0x0040006d
+0x0040006d:	vadd.f64	d0, d0, d1
+0x00400071:	vadd.f64	d0, d0, d1
+0x00400075:	bx	lr
 
-0000015c <wack_struct_1>:
- 15c:	4b03      	ldr	r3, [pc, #12]	; (16c <wack_struct_1+0x10>)
- 15e:	2201      	movs	r2, #1
- 160:	447b      	add	r3, pc
- 162:	f9b3 0000 	ldrsh.w	r0, [r3]
- 166:	809a      	strh	r2, [r3, #4]
- 168:	4090      	lsls	r0, r2
- 16a:	4770      	bx	lr
- 16c:	00000008 	.word	0x00000008
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	vadd.f64	d0, d0, d1
+0x0040007d:	vadd.f64	d0, d0, d1
+0x00400081:	bx	lr
 
-00000170 <wack_struct_2>:
- 170:	4915      	ldr	r1, [pc, #84]	; (1c8 <wack_struct_2+0x58>)
- 172:	2000      	movs	r0, #0
- 174:	4a15      	ldr	r2, [pc, #84]	; (1cc <wack_struct_2+0x5c>)
- 176:	4b16      	ldr	r3, [pc, #88]	; (1d0 <wack_struct_2+0x60>)
- 178:	4479      	add	r1, pc
- 17a:	447a      	add	r2, pc
- 17c:	b510      	push	{r4, lr}
- 17e:	2401      	movs	r4, #1
- 180:	f2c0 0402 	movt	r4, #2
- 184:	b082      	sub	sp, #8
- 186:	58d3      	ldr	r3, [r2, r3]
- 188:	f9b1 2008 	ldrsh.w	r2, [r1, #8]
- 18c:	681b      	ldr	r3, [r3, #0]
- 18e:	9301      	str	r3, [sp, #4]
- 190:	f04f 0300 	mov.w	r3, #0
- 194:	f9b1 300a 	ldrsh.w	r3, [r1, #10]
- 198:	60cc      	str	r4, [r1, #12]
- 19a:	0052      	lsls	r2, r2, #1
- 19c:	005b      	lsls	r3, r3, #1
- 19e:	b292      	uxth	r2, r2
- 1a0:	b29b      	uxth	r3, r3
- 1a2:	f362 000f 	bfi	r0, r2, #0, #16
- 1a6:	4a0b      	ldr	r2, [pc, #44]	; (1d4 <wack_struct_2+0x64>)
- 1a8:	f363 401f 	bfi	r0, r3, #16, #16
- 1ac:	4b08      	ldr	r3, [pc, #32]	; (1d0 <wack_struct_2+0x60>)
- 1ae:	447a      	add	r2, pc
- 1b0:	58d3      	ldr	r3, [r2, r3]
- 1b2:	681a      	ldr	r2, [r3, #0]
- 1b4:	9b01      	ldr	r3, [sp, #4]
- 1b6:	405a      	eors	r2, r3
- 1b8:	f04f 0300 	mov.w	r3, #0
- 1bc:	d101      	bne.n	1c2 <wack_struct_2+0x52>
- 1be:	b002      	add	sp, #8
- 1c0:	bd10      	pop	{r4, pc}
- 1c2:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 1c6:	bf00      	nop
- 1c8:	0000004c 	.word	0x0000004c
- 1cc:	0000004e 	.word	0x0000004e
- 1d0:	00000000 	.word	0x00000000
- 1d4:	00000022 	.word	0x00000022
+Function wack_doublest @ 0x00400079
+0x00400079:	vadd.f64	d0, d0, d1
+0x0040007d:	vadd.f64	d0, d0, d1
+0x00400081:	bx	lr
 
-000001d8 <wack_struct_3>:
- 1d8:	4b0c      	ldr	r3, [pc, #48]	; (20c <wack_struct_3+0x34>)
- 1da:	b410      	push	{r4}
- 1dc:	2401      	movs	r4, #1
- 1de:	f2c0 0402 	movt	r4, #2
- 1e2:	447b      	add	r3, pc
- 1e4:	f9b3 1012 	ldrsh.w	r1, [r3, #18]
- 1e8:	f9b3 c010 	ldrsh.w	ip, [r3, #16]
- 1ec:	619c      	str	r4, [r3, #24]
- 1ee:	2403      	movs	r4, #3
- 1f0:	0049      	lsls	r1, r1, #1
- 1f2:	8041      	strh	r1, [r0, #2]
- 1f4:	f9b3 1014 	ldrsh.w	r1, [r3, #20]
- 1f8:	ea4f 0c4c 	mov.w	ip, ip, lsl #1
- 1fc:	839c      	strh	r4, [r3, #28]
- 1fe:	f8a0 c000 	strh.w	ip, [r0]
- 202:	004b      	lsls	r3, r1, #1
- 204:	f85d 4b04 	ldr.w	r4, [sp], #4
- 208:	8083      	strh	r3, [r0, #4]
- 20a:	4770      	bx	lr
- 20c:	00000026 	.word	0x00000026
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	lsls	r0, r0, #1
+0x00400087:	bx	lr
 
-00000210 <wack_struct_4>:
- 210:	4b0f      	ldr	r3, [pc, #60]	; (250 <wack_struct_4+0x40>)
- 212:	2203      	movs	r2, #3
- 214:	f2c0 0204 	movt	r2, #4
- 218:	447b      	add	r3, pc
- 21a:	f9b3 c020 	ldrsh.w	ip, [r3, #32]
- 21e:	f9b3 1022 	ldrsh.w	r1, [r3, #34]	; 0x22
- 222:	ea4f 0c4c 	mov.w	ip, ip, lsl #1
- 226:	f8a0 c000 	strh.w	ip, [r0]
- 22a:	0049      	lsls	r1, r1, #1
- 22c:	f9b3 c024 	ldrsh.w	ip, [r3, #36]	; 0x24
- 230:	8041      	strh	r1, [r0, #2]
- 232:	f9b3 1026 	ldrsh.w	r1, [r3, #38]	; 0x26
- 236:	ea4f 0c4c 	mov.w	ip, ip, lsl #1
- 23a:	f8a0 c004 	strh.w	ip, [r0, #4]
- 23e:	0049      	lsls	r1, r1, #1
- 240:	80c1      	strh	r1, [r0, #6]
- 242:	2101      	movs	r1, #1
- 244:	f2c0 0102 	movt	r1, #2
- 248:	e9c3 120a 	strd	r1, r2, [r3, #40]	; 0x28
- 24c:	4770      	bx	lr
- 24e:	bf00      	nop
- 250:	00000034 	.word	0x00000034
+Function add_struct_1 @ 0x00400085
+0x00400085:	lsls	r0, r0, #1
+0x00400087:	bx	lr
 
-00000254 <wack_field_1>:
- 254:	4b01      	ldr	r3, [pc, #4]	; (25c <wack_field_1+0x8>)
- 256:	447b      	add	r3, pc
- 258:	6818      	ldr	r0, [r3, #0]
- 25a:	4770      	bx	lr
- 25c:	00000002 	.word	0x00000002
+Function add_struct_2 @ 0x00400089
+0x00400089:	push	{lr}
+0x0040008b:	lsls	r3, r0, #1
+0x0040008d:	mov	ip, r0
+0x0040008f:	sub	sp, #0x14
+0x00400091:	sbfx	r0, r0, #0xf, #0x10
+0x00400095:	uxth	r3, r3
+0x00400097:	movs	r2, #0
+0x00400099:	movw	r1, #0xfffe
+0x0040009d:	ands	r1, r0
+0x0040009f:	str.w	ip, [sp, #4]
+0x004000a3:	bfi	r2, r3, #0, #0x10
+0x004000a7:	ldr.w	ip, [pc, #0x38]
+0x004000ab:	ldr	r0, [pc, #0x38]
+0x004000ad:	bfi	r2, r1, #0x10, #0x10
+0x004000b1:	add	ip, pc
+0x004000b3:	ldr	r1, [pc, #0x34]
+0x004000b5:	ldr	r3, [pc, #0x2c]
+0x004000b7:	add	r1, pc
+0x004000b9:	ldr.w	r0, [ip, r0]
+0x004000bd:	ldr	r0, [r0]
+0x004000bf:	str	r0, [sp, #0xc]
+0x004000c1:	mov.w	r0, #0
+0x004000c5:	ldr	r3, [r1, r3]
+0x004000c7:	ldr	r1, [r3]
+0x004000c9:	ldr	r3, [sp, #0xc]
+0x004000cb:	eors	r1, r3
+0x004000cd:	mov.w	r3, #0
+0x004000d1:	bne	#0x4000db
+0x004000d3:	mov	r0, r2
+0x004000d5:	add	sp, #0x14
+0x004000d7:	ldr	pc, [sp], #4
+0x004000db:	bl	#0x500001
 
-00000260 <wack_field_2>:
- 260:	4b01      	ldr	r3, [pc, #4]	; (268 <wack_field_2+0x8>)
- 262:	447b      	add	r3, pc
- 264:	6858      	ldr	r0, [r3, #4]
- 266:	4770      	bx	lr
- 268:	00000002 	.word	0x00000002
+Function sub_4000df @ 0x004000df
+0x004000df:	nop	
+0x004000e1:	movs	r4, r5
+0x004000e3:	movs	r0, r0
+0x004000e5:	movs	r0, r0
+0x004000e7:	movs	r0, r0
+0x004000e9:	movs	r6, r5
+0x004000eb:	movs	r0, r0
+0x004000ed:	sub	sp, #8
+0x004000ef:	add	r3, sp, #8
+0x004000f1:	stmdb	r3, {r1, r2}
+0x004000f5:	ldrh.w	ip, [sp, #2]
+0x004000f9:	ldrh.w	r2, [sp, #4]
+0x004000fd:	ldrh.w	r1, [sp]
+0x00400101:	lsl.w	ip, ip, #1
+0x00400105:	strh.w	ip, [r0, #2]
+0x00400109:	lsls	r2, r2, #1
+0x0040010b:	strh	r2, [r0, #4]
+0x0040010d:	lsls	r1, r1, #1
+0x0040010f:	strh	r1, [r0]
+0x00400111:	add	sp, #8
+0x00400113:	bx	lr
 
-0000026c <wack_field_3>:
- 26c:	4b01      	ldr	r3, [pc, #4]	; (274 <wack_field_3+0x8>)
- 26e:	447b      	add	r3, pc
- 270:	6898      	ldr	r0, [r3, #8]
- 272:	4770      	bx	lr
- 274:	00000002 	.word	0x00000002
+Function add_struct_3 @ 0x004000ed
+0x004000ed:	sub	sp, #8
+0x004000ef:	add	r3, sp, #8
+0x004000f1:	stmdb	r3, {r1, r2}
+0x004000f5:	ldrh.w	ip, [sp, #2]
+0x004000f9:	ldrh.w	r2, [sp, #4]
+0x004000fd:	ldrh.w	r1, [sp]
+0x00400101:	lsl.w	ip, ip, #1
+0x00400105:	strh.w	ip, [r0, #2]
+0x00400109:	lsls	r2, r2, #1
+0x0040010b:	strh	r2, [r0, #4]
+0x0040010d:	lsls	r1, r1, #1
+0x0040010f:	strh	r1, [r0]
+0x00400111:	add	sp, #8
+0x00400113:	bx	lr
 
-00000278 <wack_field_4>:
- 278:	4b01      	ldr	r3, [pc, #4]	; (280 <wack_field_4+0x8>)
- 27a:	447b      	add	r3, pc
- 27c:	68d8      	ldr	r0, [r3, #12]
- 27e:	4770      	bx	lr
- 280:	00000002 	.word	0x00000002
+Function add_struct_4 @ 0x00400115
+0x00400115:	push	{lr}
+0x00400117:	mov	r3, r0
+0x00400119:	sub	sp, #0xc
+0x0040011b:	mov	ip, sp
+0x0040011d:	mov	lr, ip
+0x0040011f:	stm.w	ip, {r1, r2}
+0x00400123:	ldrh.w	r2, [sp, #2]
+0x00400127:	ldrh.w	r0, [sp]
+0x0040012b:	ldrh.w	r1, [sp, #4]
+0x0040012f:	lsls	r2, r2, #1
+0x00400131:	strh.w	r2, [sp, #2]
+0x00400135:	ldrh.w	r2, [sp, #6]
+0x00400139:	lsls	r0, r0, #1
+0x0040013b:	lsls	r1, r1, #1
+0x0040013d:	strh.w	r0, [sp]
+0x00400141:	strh.w	r1, [sp, #4]
+0x00400145:	lsls	r2, r2, #1
+0x00400147:	strh.w	r2, [sp, #6]
+0x0040014b:	ldm.w	lr!, {r0, r1}
+0x0040014f:	str	r0, [r3]
+0x00400151:	str	r1, [r3, #4]
+0x00400153:	mov	r0, r3
+0x00400155:	add	sp, #0xc
+0x00400157:	ldr	pc, [sp], #4
 
-Disassembly of section .text.startup:
+Function sub_40015b @ 0x0040015b
+0x0040015b:	nop	
+0x0040015d:	ldr	r3, [pc, #0xc]
+0x0040015f:	movs	r2, #1
+0x00400161:	add	r3, pc
+0x00400163:	ldrsh.w	r0, [r3]
+0x00400167:	strh	r2, [r3, #4]
+0x00400169:	lsls	r0, r2
+0x0040016b:	bx	lr
 
-00000000 <main>:
-   0:	4a17      	ldr	r2, [pc, #92]	; (60 <main+0x60>)
-   2:	4b18      	ldr	r3, [pc, #96]	; (64 <main+0x64>)
-   4:	447a      	add	r2, pc
-   6:	b530      	push	{r4, r5, lr}
-   8:	b087      	sub	sp, #28
-   a:	58d3      	ldr	r3, [r2, r3]
-   c:	ad02      	add	r5, sp, #8
-   e:	466c      	mov	r4, sp
-  10:	681b      	ldr	r3, [r3, #0]
-  12:	9305      	str	r3, [sp, #20]
-  14:	f04f 0300 	mov.w	r3, #0
-  18:	f7ff fffe 	bl	170 <wack_struct_2>
-  1c:	4628      	mov	r0, r5
-  1e:	f7ff fffe 	bl	1d8 <wack_struct_3>
-  22:	4620      	mov	r0, r4
-  24:	f7ff fffe 	bl	210 <wack_struct_4>
-  28:	4b0f      	ldr	r3, [pc, #60]	; (68 <main+0x68>)
-  2a:	2201      	movs	r2, #1
-  2c:	447b      	add	r3, pc
-  2e:	809a      	strh	r2, [r3, #4]
-  30:	f7ff fffe 	bl	170 <wack_struct_2>
-  34:	4628      	mov	r0, r5
-  36:	f7ff fffe 	bl	1d8 <wack_struct_3>
-  3a:	4620      	mov	r0, r4
-  3c:	f7ff fffe 	bl	210 <wack_struct_4>
-  40:	4a0a      	ldr	r2, [pc, #40]	; (6c <main+0x6c>)
-  42:	4b08      	ldr	r3, [pc, #32]	; (64 <main+0x64>)
-  44:	447a      	add	r2, pc
-  46:	58d3      	ldr	r3, [r2, r3]
-  48:	681a      	ldr	r2, [r3, #0]
-  4a:	9b05      	ldr	r3, [sp, #20]
-  4c:	405a      	eors	r2, r3
-  4e:	f04f 0300 	mov.w	r3, #0
-  52:	d102      	bne.n	5a <main+0x5a>
-  54:	2000      	movs	r0, #0
-  56:	b007      	add	sp, #28
-  58:	bd30      	pop	{r4, r5, pc}
-  5a:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  5e:	bf00      	nop
-  60:	00000058 	.word	0x00000058
-  64:	00000000 	.word	0x00000000
-  68:	00000038 	.word	0x00000038
-  6c:	00000024 	.word	0x00000024
+Function wack_struct_1 @ 0x0040015d
+0x0040015d:	ldr	r3, [pc, #0xc]
+0x0040015f:	movs	r2, #1
+0x00400161:	add	r3, pc
+0x00400163:	ldrsh.w	r0, [r3]
+0x00400167:	strh	r2, [r3, #4]
+0x00400169:	lsls	r0, r2
+0x0040016b:	bx	lr
+
+Function wack_struct_2 @ 0x00400171
+0x00400171:	ldr	r1, [pc, #0x54]
+0x00400173:	movs	r0, #0
+0x00400175:	ldr	r2, [pc, #0x54]
+0x00400177:	ldr	r3, [pc, #0x58]
+0x00400179:	add	r1, pc
+0x0040017b:	add	r2, pc
+0x0040017d:	push	{r4, lr}
+0x0040017f:	movs	r4, #1
+0x00400181:	movt	r4, #2
+0x00400185:	sub	sp, #8
+0x00400187:	ldr	r3, [r2, r3]
+0x00400189:	ldrsh.w	r2, [r1, #8]
+0x0040018d:	ldr	r3, [r3]
+0x0040018f:	str	r3, [sp, #4]
+0x00400191:	mov.w	r3, #0
+0x00400195:	ldrsh.w	r3, [r1, #0xa]
+0x00400199:	str	r4, [r1, #0xc]
+0x0040019b:	lsls	r2, r2, #1
+0x0040019d:	lsls	r3, r3, #1
+0x0040019f:	uxth	r2, r2
+0x004001a1:	uxth	r3, r3
+0x004001a3:	bfi	r0, r2, #0, #0x10
+0x004001a7:	ldr	r2, [pc, #0x2c]
+0x004001a9:	bfi	r0, r3, #0x10, #0x10
+0x004001ad:	ldr	r3, [pc, #0x20]
+0x004001af:	add	r2, pc
+0x004001b1:	ldr	r3, [r2, r3]
+0x004001b3:	ldr	r2, [r3]
+0x004001b5:	ldr	r3, [sp, #4]
+0x004001b7:	eors	r2, r3
+0x004001b9:	mov.w	r3, #0
+0x004001bd:	bne	#0x4001c3
+0x004001bf:	add	sp, #8
+0x004001c1:	pop	{r4, pc}
+0x004001c3:	bl	#0x500001
+
+Function sub_4001c7 @ 0x004001c7
+0x004001c7:	nop	
+0x004001c9:	lsls	r0, r3, #4
+0x004001cb:	movs	r0, r0
+0x004001cd:	lsls	r6, r1, #1
+0x004001cf:	movs	r0, r0
+0x004001d1:	movs	r0, r0
+0x004001d3:	movs	r0, r0
+0x004001d5:	movs	r2, r4
+0x004001d7:	movs	r0, r0
+0x004001d9:	ldr	r3, [pc, #0x30]
+0x004001db:	push	{r4}
+0x004001dd:	movs	r4, #1
+0x004001df:	movt	r4, #2
+0x004001e3:	add	r3, pc
+0x004001e5:	ldrsh.w	r1, [r3, #0x12]
+0x004001e9:	ldrsh.w	ip, [r3, #0x10]
+0x004001ed:	str	r4, [r3, #0x18]
+0x004001ef:	movs	r4, #3
+0x004001f1:	lsls	r1, r1, #1
+0x004001f3:	strh	r1, [r0, #2]
+0x004001f5:	ldrsh.w	r1, [r3, #0x14]
+0x004001f9:	lsl.w	ip, ip, #1
+0x004001fd:	strh	r4, [r3, #0x1c]
+0x004001ff:	strh.w	ip, [r0]
+0x00400203:	lsls	r3, r1, #1
+0x00400205:	ldr	r4, [sp], #4
+0x00400209:	strh	r3, [r0, #4]
+0x0040020b:	bx	lr
+
+Function wack_struct_3 @ 0x004001d9
+0x004001d9:	ldr	r3, [pc, #0x30]
+0x004001db:	push	{r4}
+0x004001dd:	movs	r4, #1
+0x004001df:	movt	r4, #2
+0x004001e3:	add	r3, pc
+0x004001e5:	ldrsh.w	r1, [r3, #0x12]
+0x004001e9:	ldrsh.w	ip, [r3, #0x10]
+0x004001ed:	str	r4, [r3, #0x18]
+0x004001ef:	movs	r4, #3
+0x004001f1:	lsls	r1, r1, #1
+0x004001f3:	strh	r1, [r0, #2]
+0x004001f5:	ldrsh.w	r1, [r3, #0x14]
+0x004001f9:	lsl.w	ip, ip, #1
+0x004001fd:	strh	r4, [r3, #0x1c]
+0x004001ff:	strh.w	ip, [r0]
+0x00400203:	lsls	r3, r1, #1
+0x00400205:	ldr	r4, [sp], #4
+0x00400209:	strh	r3, [r0, #4]
+0x0040020b:	bx	lr
+
+Function wack_struct_4 @ 0x00400211
+0x00400211:	ldr	r3, [pc, #0x3c]
+0x00400213:	movs	r2, #3
+0x00400215:	movt	r2, #4
+0x00400219:	add	r3, pc
+0x0040021b:	ldrsh.w	ip, [r3, #0x20]
+0x0040021f:	ldrsh.w	r1, [r3, #0x22]
+0x00400223:	lsl.w	ip, ip, #1
+0x00400227:	strh.w	ip, [r0]
+0x0040022b:	lsls	r1, r1, #1
+0x0040022d:	ldrsh.w	ip, [r3, #0x24]
+0x00400231:	strh	r1, [r0, #2]
+0x00400233:	ldrsh.w	r1, [r3, #0x26]
+0x00400237:	lsl.w	ip, ip, #1
+0x0040023b:	strh.w	ip, [r0, #4]
+0x0040023f:	lsls	r1, r1, #1
+0x00400241:	strh	r1, [r0, #6]
+0x00400243:	movs	r1, #1
+0x00400245:	movt	r1, #2
+0x00400249:	strd	r1, r2, [r3, #0x28]
+0x0040024d:	bx	lr
+
+Function sub_40024f @ 0x0040024f
+0x0040024f:	nop	
+0x00400251:	lsls	r0, r7, #1
+0x00400253:	movs	r0, r0
+0x00400255:	ldr	r3, [pc, #4]
+0x00400257:	add	r3, pc
+0x00400259:	ldr	r0, [r3]
+0x0040025b:	bx	lr
+
+Function wack_field_1 @ 0x00400255
+0x00400255:	ldr	r3, [pc, #4]
+0x00400257:	add	r3, pc
+0x00400259:	ldr	r0, [r3]
+0x0040025b:	bx	lr
+
+Function wack_field_2 @ 0x00400261
+0x00400261:	ldr	r3, [pc, #4]
+0x00400263:	add	r3, pc
+0x00400265:	ldr	r0, [r3, #4]
+0x00400267:	bx	lr
+
+Function wack_field_3 @ 0x0040026d
+0x0040026d:	ldr	r3, [pc, #4]
+0x0040026f:	add	r3, pc
+0x00400271:	ldr	r0, [r3, #8]
+0x00400273:	bx	lr
+
+Function wack_field_4 @ 0x00400279
+0x00400279:	ldr	r3, [pc, #4]
+0x0040027b:	add	r3, pc
+0x0040027d:	ldr	r0, [r3, #0xc]
+0x0040027f:	bx	lr
+
+Function main @ 0x004002d5
+0x004002d5:	ldr	r2, [pc, #0x5c]
+0x004002d7:	ldr	r3, [pc, #0x60]
+0x004002d9:	add	r2, pc
+0x004002db:	push	{r4, r5, lr}
+0x004002dd:	sub	sp, #0x1c
+0x004002df:	ldr	r3, [r2, r3]
+0x004002e1:	add	r5, sp, #8
+0x004002e3:	mov	r4, sp
+0x004002e5:	ldr	r3, [r3]
+0x004002e7:	str	r3, [sp, #0x14]
+0x004002e9:	mov.w	r3, #0
+0x004002ed:	bl	#0x400171
+0x004002f1:	mov	r0, r5
+0x004002f3:	bl	#0x4001d9
+0x004002f7:	mov	r0, r4
+0x004002f9:	bl	#0x400211
+0x004002fd:	ldr	r3, [pc, #0x3c]
+0x004002ff:	movs	r2, #1
+0x00400301:	add	r3, pc
+0x00400303:	strh	r2, [r3, #4]
+0x00400305:	bl	#0x400171
+0x00400309:	mov	r0, r5
+0x0040030b:	bl	#0x4001d9
+0x0040030f:	mov	r0, r4
+0x00400311:	bl	#0x400211
+0x00400315:	ldr	r2, [pc, #0x28]
+0x00400317:	ldr	r3, [pc, #0x20]
+0x00400319:	add	r2, pc
+0x0040031b:	ldr	r3, [r2, r3]
+0x0040031d:	ldr	r2, [r3]
+0x0040031f:	ldr	r3, [sp, #0x14]
+0x00400321:	eors	r2, r3
+0x00400323:	mov.w	r3, #0
+0x00400327:	bne	#0x40032f
+0x00400329:	movs	r0, #0
+0x0040032b:	add	sp, #0x1c
+0x0040032d:	pop	{r4, r5, pc}
+0x0040032f:	bl	#0x500001
+
+Function sub_400333 @ 0x00400333
+0x00400333:	nop	
+0x00400335:	lsls	r0, r3, #1
+0x00400337:	movs	r0, r0
+0x00400339:	movs	r0, r0
+0x0040033b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

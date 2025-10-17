@@ -1,44 +1,83 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_multi-forks_5dce259d_stripped.o:     file format elf32-littlearm
+Function sub_400029 @ 0x00400029
+0x00400029:	push	{r3, r4, r5, lr}
+0x0040002b:	ldr	r5, [pc, #0x78]
+0x0040002d:	ldr	r3, [pc, #0x78]
+0x0040002f:	add	r5, pc
+0x00400031:	ldr	r3, [r5, r3]
+0x00400033:	ldr	r0, [r3]
+0x00400035:	bl	#0x400035
 
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
 
-Disassembly of section .text.startup:
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039
+0x0040003d:	cbz	r0, #0x40007d
+0x0040003f:	ldr	r4, [pc, #0x6c]
+0x00400041:	add	r4, pc
+0x00400043:	add.w	r5, r4, #0x10
+0x00400047:	bl	#0x400047
+0x0040003f:	ldr	r4, [pc, #0x6c]
+0x00400041:	add	r4, pc
+0x00400043:	add.w	r5, r4, #0x10
+0x00400047:	bl	#0x400047
+0x0040007d:	ldr	r1, [pc, #0x38]
+0x0040007f:	mov	r4, r0
+0x00400081:	mov.w	r3, #0x2000
+0x00400085:	movs	r2, #2
+0x00400087:	ldr	r1, [r5, r1]
+0x00400089:	ldr	r0, [r1]
+0x0040008b:	mov	r1, r4
+0x0040008d:	bl	#0x40008d
 
-00000000 <.text.startup>:
-   0:	4d1eb538 	cfldr32mi	mvfx11, [lr, #-224]	; 0xffffff20
-   4:	447d4b1e 	ldrbtmi	r4, [sp], #-2846	; 0xfffff4e2
-   8:	681858eb 	ldmdavs	r8, {r0, r1, r3, r5, r6, r7, fp, ip, lr}
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	4c1bb1f0 	ldfmid	f3, [fp], {240}	; 0xf0
-  18:	f104447c 			; <UNDEFINED> instruction: 0xf104447c
-  1c:	f7ff0510 			; <UNDEFINED> instruction: 0xf7ff0510
-  20:	f844fffe 			; <UNDEFINED> instruction: 0xf844fffe
-  24:	42ac0b04 	adcmi	r0, ip, #4, 22	; 0x1000
-  28:	f7ffd1f9 			; <UNDEFINED> instruction: 0xf7ffd1f9
-  2c:	4916fffe 	ldmdbmi	r6, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  30:	20014602 	andcs	r4, r1, r2, lsl #12
-  34:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  38:	2002fffe 	strdcs	pc, [r2], -lr
-  3c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  40:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  44:	46024911 			; <UNDEFINED> instruction: 0x46024911
-  48:	44792001 	ldrbtmi	r2, [r9], #-1
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	bd382000 	ldclt	0, cr2, [r8, #-0]
-  54:	4604490e 	strmi	r4, [r4], -lr, lsl #18
-  58:	5300f44f 	movwpl	pc, #1103	; 0x44f	; <UNPREDICTABLE>
-  5c:	58692202 	stmdapl	r9!, {r1, r9, sp}^
-  60:	46216808 	strtmi	r6, [r1], -r8, lsl #16
-  64:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  68:	f44f480a 	vst2.8	{d20-d21}, [pc], sl
-  6c:	22025300 	andcs	r5, r2, #0, 6
-  70:	58284621 	stmdapl	r8!, {r0, r5, r9, sl, lr}
-  74:	f7ff6800 			; <UNDEFINED> instruction: 0xf7ff6800
-  78:	e7ccfffe 			; <UNDEFINED> instruction: 0xe7ccfffe
-  7c:	00000072 	andeq	r0, r0, r2, ror r0
-  80:	00000000 	andeq	r0, r0, r0
-  84:	00000068 	andeq	r0, r0, r8, rrx
-  88:	00000050 	andeq	r0, r0, r0, asr r0
-  8c:	0000003e 	andeq	r0, r0, lr, lsr r0
-	...
+Function sub_400047 @ 0x00400047
+0x00400047:	bl	#0x400047
+0x0040004b:	str	r0, [r4], #4
+0x0040004f:	cmp	r4, r5
+0x00400051:	bne	#0x400047
+
+Function sub_400053 @ 0x00400053
+0x00400053:	bl	#0x400053
+0x00400057:	ldr	r1, [pc, #0x58]
+0x00400059:	mov	r2, r0
+0x0040005b:	movs	r0, #1
+0x0040005d:	add	r1, pc
+0x0040005f:	bl	#0x40005f
+
+Function sub_40005f @ 0x0040005f
+0x0040005f:	bl	#0x40005f
+0x00400063:	movs	r0, #2
+0x00400065:	bl	#0x400065
+
+Function sub_400065 @ 0x00400065
+0x00400065:	bl	#0x400065
+
+Function sub_400069 @ 0x00400069
+0x00400069:	bl	#0x400069
+0x0040006d:	ldr	r1, [pc, #0x44]
+0x0040006f:	mov	r2, r0
+0x00400071:	movs	r0, #1
+0x00400073:	add	r1, pc
+0x00400075:	bl	#0x400075
+
+Function sub_400075 @ 0x00400075
+0x00400075:	bl	#0x400075
+0x00400079:	movs	r0, #0
+0x0040007b:	pop	{r3, r4, r5, pc}
+
+Function sub_40008d @ 0x0040008d
+0x0040008d:	bl	#0x40008d
+
+Function sub_400091 @ 0x00400091
+0x00400091:	ldr	r0, [pc, #0x28]
+0x00400093:	mov.w	r3, #0x2000
+0x00400097:	movs	r2, #2
+0x00400099:	mov	r1, r4
+0x0040009b:	ldr	r0, [r5, r0]
+0x0040009d:	ldr	r0, [r0]
+0x0040009f:	bl	#0x40009f
+
+Function sub_40009f @ 0x0040009f
+0x0040009f:	bl	#0x40009f
+0x004000a3:	b	#0x40003f

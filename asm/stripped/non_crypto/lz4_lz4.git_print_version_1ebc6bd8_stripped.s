@@ -1,14 +1,22 @@
 
-/root/projects/compiled/non_crypto/stripped/lz4_lz4.git_print_version_1ebc6bd8_stripped.o:     file format elf32-littlearm
+Function sub_400029 @ 0x00400029
+0x00400029:	push	{r3, lr}
+0x0040002b:	bl	#0x40002b
 
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
+0x0040002f:	ldr	r1, [pc, #0x10]
+0x00400031:	mov	r2, r0
+0x00400033:	movs	r0, #1
+0x00400035:	add	r1, pc
+0x00400037:	bl	#0x400037
 
-Disassembly of section .text.startup:
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400037
+0x0040003b:	movs	r0, #0
+0x0040003d:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4904fffe 	stmdbmi	r4, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   8:	20014602 	andcs	r4, r1, r2, lsl #12
-   c:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  10:	2000fffe 	strdcs	pc, [r0], -lr
-  14:	bf00bd08 	svclt	0x0000bd08
-  18:	00000008 	andeq	r0, r0, r8
+Function sub_40003f @ 0x0040003f
+0x0040003f:	nop	
+0x00400041:	movs	r0, r1
+0x00400043:	movs	r0, r0

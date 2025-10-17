@@ -1,15 +1,12 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_backtrace_7617ec81_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	b.w	#0x400005
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	b.w	#0x400009
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
-   4:	bffef7ff 	svclt	0x00fef7ff
-   8:	bffef7ff 	svclt	0x00fef7ff
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	bffef7ff 	svclt	0x00fef7ff
+Function sub_40000d @ 0x0040000d
+0x0040000d:	b.w	#0x40000d

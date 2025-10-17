@@ -1,27 +1,39 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sig1_5cd5256d.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0]
 
+Function main @ 0x00400011
+0x00400011:	ldr	r1, [pc, #0x18]
+0x00400013:	movs	r0, #8
+0x00400015:	push	{r3, lr}
+0x00400017:	add	r1, pc
+0x00400019:	bl	#0x50000d
+0x0040001d:	ldr	r0, [pc, #0x10]
+0x0040001f:	add	r0, pc
+0x00400021:	bl	#0x500019
+0x00400025:	movs	r0, #0
+0x00400027:	bl	#0x500001
 
-Disassembly of section .text:
+Function sub_40002b @ 0x0040002b
 
-00000000 <leave>:
-   0:	2000      	movs	r0, #0
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <exit>
+Function exit @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function signal @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	4906      	ldr	r1, [pc, #24]	; (1c <main+0x1c>)
-   2:	2008      	movs	r0, #8
-   4:	b508      	push	{r3, lr}
-   6:	4479      	add	r1, pc
-   8:	f7ff fffe 	bl	0 <signal>
-   c:	4804      	ldr	r0, [pc, #16]	; (20 <main+0x20>)
-   e:	4478      	add	r0, pc
-  10:	f7ff fffe 	bl	0 <puts>
-  14:	2000      	movs	r0, #0
-  16:	f7ff fffe 	bl	0 <exit>
-  1a:	bf00      	nop
-  1c:	00000012 	.word	0x00000012
-  20:	0000000e 	.word	0x0000000e
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

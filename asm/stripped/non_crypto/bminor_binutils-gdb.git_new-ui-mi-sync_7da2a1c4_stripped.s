@@ -1,10 +1,5 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_new-ui-mi-sync_7da2a1c4_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	adcshs	fp, r4, r8, lsl #10
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	20b4b508 	adcscs	fp, r4, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bd082000 	stclt	0, cr2, [r8, #-0]
+Function sub_400007 @ 0x00400007

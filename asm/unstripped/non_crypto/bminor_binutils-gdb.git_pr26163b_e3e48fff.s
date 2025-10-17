@@ -1,36 +1,43 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr26163b_e3e48fff.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	movwlo	r6, #0x1813
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r1
+0x0040000f:	movs	r0, r0
 
-00000000 <real_g>:
-   0:	4a02      	ldr	r2, [pc, #8]	; (c <real_g+0xc>)
-   2:	447a      	add	r2, pc
-   4:	6813      	ldr	r3, [r2, #0]
-   6:	3301      	adds	r3, #1
-   8:	6013      	str	r3, [r2, #0]
-   a:	4770      	bx	lr
-   c:	00000006 	.word	0x00000006
+Function main @ 0x0040001d
+0x0040001d:	push	{r4, lr}
+0x0040001f:	ldr	r4, [pc, #0x20]
+0x00400021:	add	r4, pc
+0x00400023:	ldr	r3, [r4]
+0x00400025:	adds	r3, #1
+0x00400027:	str	r3, [r4]
+0x00400029:	bl	#0x500001
+0x0040002d:	ldr	r3, [r4]
+0x0040002f:	cmp	r3, #3
+0x00400031:	beq	#0x400037
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r4, pc}
+0x00400037:	ldr	r0, [pc, #0xc]
+0x00400039:	add	r0, pc
+0x0040003b:	bl	#0x50000d
+0x0040003f:	b	#0x400033
 
-Disassembly of section .text.startup:
+Function f @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	4c08      	ldr	r4, [pc, #32]	; (24 <main+0x24>)
-   4:	447c      	add	r4, pc
-   6:	6823      	ldr	r3, [r4, #0]
-   8:	3301      	adds	r3, #1
-   a:	6023      	str	r3, [r4, #0]
-   c:	f7ff fffe 	bl	0 <f>
-  10:	6823      	ldr	r3, [r4, #0]
-  12:	2b03      	cmp	r3, #3
-  14:	d001      	beq.n	1a <main+0x1a>
-  16:	2000      	movs	r0, #0
-  18:	bd10      	pop	{r4, pc}
-  1a:	4803      	ldr	r0, [pc, #12]	; (28 <main+0x28>)
-  1c:	4478      	add	r0, pc
-  1e:	f7ff fffe 	bl	0 <puts>
-  22:	e7f8      	b.n	16 <main+0x16>
-  24:	0000001c 	.word	0x0000001c
-  28:	00000008 	.word	0x00000008
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

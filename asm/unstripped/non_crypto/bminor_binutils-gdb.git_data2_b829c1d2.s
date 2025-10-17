@@ -1,13 +1,7 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_data2_b829c1d2.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <bar>:
-   0:	4b02      	ldr	r3, [pc, #8]	; (c <bar+0xc>)
-   2:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
-   6:	447b      	add	r3, pc
-   8:	601a      	str	r2, [r3, #0]
-   a:	4770      	bx	lr
-   c:	00000002 	.word	0x00000002
+Function bar @ 0x00400001
+0x00400001:	ldr	r3, [pc, #8]
+0x00400003:	mov.w	r2, #-1
+0x00400007:	add	r3, pc
+0x00400009:	str	r2, [r3]
+0x0040000b:	bx	lr

@@ -1,306 +1,425 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_crypto_kx_f204c5db.o:     file format elf32-littlearm
+Function crypto_kx_seed_keypair @ 0x00400001
+0x00400001:	push	{r4, r5, lr}
+0x00400003:	mov	r4, r1
+0x00400005:	movs	r3, #0
+0x00400007:	sub	sp, #0x14
+0x00400009:	mov	r5, r0
+0x0040000b:	movs	r1, #0
+0x0040000d:	movs	r0, #0x20
+0x0040000f:	strd	r3, r3, [sp, #8]
+0x00400013:	strd	r0, r1, [sp]
+0x00400017:	movs	r1, #0x20
+0x00400019:	mov	r0, r4
+0x0040001b:	bl	#0x500001
+0x0040001f:	mov	r1, r4
+0x00400021:	mov	r0, r5
+0x00400023:	add	sp, #0x14
+0x00400025:	pop.w	{r4, r5, lr}
+0x00400029:	b.w	#0x50006d
 
+Function crypto_kx_keypair @ 0x0040002d
+0x0040002d:	push	{r3, r4, r5, lr}
+0x0040002f:	mov	r4, r1
+0x00400031:	mov	r5, r0
+0x00400033:	movs	r1, #0x20
+0x00400035:	mov	r0, r4
+0x00400037:	bl	#0x50000d
+0x0040003b:	mov	r1, r4
+0x0040003d:	mov	r0, r5
+0x0040003f:	pop.w	{r3, r4, r5, lr}
+0x00400043:	b.w	#0x50006d
 
-Disassembly of section .text:
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0040004d:	mov	sb, r2
+0x0040004f:	ldr	r2, [pc, #0x12c]
+0x00400051:	mov	r4, r1
+0x00400053:	mov	r1, r3
+0x00400055:	ldr	r3, [pc, #0x128]
+0x00400057:	add	r2, pc
+0x00400059:	sub.w	sp, sp, #0x224
+0x0040005d:	add.w	r6, sp, #0x3f
+0x00400061:	bic	r6, r6, #0x3f
+0x00400065:	ldr	r3, [r2, r3]
+0x00400067:	ldr.w	sl, [sp, #0x248]
+0x0040006b:	ldr	r3, [r3]
+0x0040006d:	str	r3, [sp, #0x21c]
+0x0040006f:	mov.w	r3, #0
+0x00400073:	cmp	r0, #0
+0x00400075:	beq	#0x400147
 
-00000000 <crypto_kx_seed_keypair>:
-   0:	b530      	push	{r4, r5, lr}
-   2:	460c      	mov	r4, r1
-   4:	2300      	movs	r3, #0
-   6:	b085      	sub	sp, #20
-   8:	4605      	mov	r5, r0
-   a:	2100      	movs	r1, #0
-   c:	2020      	movs	r0, #32
-   e:	e9cd 3302 	strd	r3, r3, [sp, #8]
-  12:	e9cd 0100 	strd	r0, r1, [sp]
-  16:	2120      	movs	r1, #32
-  18:	4620      	mov	r0, r4
-  1a:	f7ff fffe 	bl	0 <crypto_generichash>
-  1e:	4621      	mov	r1, r4
-  20:	4628      	mov	r0, r5
-  22:	b005      	add	sp, #20
-  24:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
-  28:	f7ff bffe 	b.w	0 <crypto_scalarmult_base>
+Function crypto_kx_client_session_keys @ 0x00400049
+0x00400049:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0040004d:	mov	sb, r2
+0x0040004f:	ldr	r2, [pc, #0x12c]
+0x00400051:	mov	r4, r1
+0x00400053:	mov	r1, r3
+0x00400055:	ldr	r3, [pc, #0x128]
+0x00400057:	add	r2, pc
+0x00400059:	sub.w	sp, sp, #0x224
+0x0040005d:	add.w	r6, sp, #0x3f
+0x00400061:	bic	r6, r6, #0x3f
+0x00400065:	ldr	r3, [r2, r3]
+0x00400067:	ldr.w	sl, [sp, #0x248]
+0x0040006b:	ldr	r3, [r3]
+0x0040006d:	str	r3, [sp, #0x21c]
+0x0040006f:	mov.w	r3, #0
+0x00400073:	cmp	r0, #0
+0x00400075:	beq	#0x400147
+0x00400077:	mov	r5, r0
+0x00400079:	cmp	r4, #0
+0x0040007b:	it	eq
+0x0040007d:	moveq	r4, r0
+0x0040007f:	add.w	fp, sp, #0x1bc
+0x00400083:	mov	r2, sl
+0x00400085:	mov	r0, fp
+0x00400087:	bl	#0x500019
+0x0040007f:	add.w	fp, sp, #0x1bc
+0x00400083:	mov	r2, sl
+0x00400085:	mov	r0, fp
+0x00400087:	bl	#0x500019
+0x0040008b:	mov	r7, r0
+0x0040008d:	cmp	r0, #0
+0x0040008f:	bne	#0x40016f
+0x00400091:	mov	r2, r0
+0x00400093:	mov	r1, r0
+0x00400095:	movs	r3, #0x40
+0x00400097:	mov	r0, r6
+0x00400099:	bl	#0x500025
+0x0040009d:	movs	r2, #0x20
+0x0040009f:	movs	r3, #0
+0x004000a1:	mov	r1, fp
+0x004000a3:	mov	r0, r6
+0x004000a5:	add.w	r8, sp, #0x1dc
+0x004000a9:	bl	#0x500031
+0x004000ad:	mov	r0, fp
+0x004000af:	movs	r1, #0x20
+0x004000b1:	bl	#0x50003d
+0x004000b5:	mov	r1, sb
+0x004000b7:	movs	r2, #0x20
+0x004000b9:	movs	r3, #0
+0x004000bb:	mov	r0, r6
+0x004000bd:	bl	#0x500031
+0x004000c1:	movs	r3, #0
+0x004000c3:	mov	r1, sl
+0x004000c5:	movs	r2, #0x20
+0x004000c7:	mov	r0, r6
+0x004000c9:	bl	#0x500031
+0x004000cd:	movs	r2, #0x40
+0x004000cf:	mov	r1, r8
+0x004000d1:	mov	r0, r6
+0x004000d3:	bl	#0x500049
+0x004000d7:	mov	r0, r6
+0x004000d9:	mov.w	r1, #0x180
+0x004000dd:	bl	#0x50003d
+0x004000e1:	add.w	r3, r4, #0x1f
+0x004000e5:	subs	r3, r3, r5
+0x004000e7:	cmp	r3, #0x3e
+0x004000e9:	bls	#0x40014d
+0x004000eb:	mov	lr, r8
+0x004000ed:	add.w	ip, sp, #0x1fc
+0x004000f1:	ldm.w	lr!, {r0, r1, r2, r3}
+0x004000f5:	str	r0, [r5]
+0x004000f7:	str	r1, [r5, #4]
+0x004000f9:	str	r2, [r5, #8]
+0x004000fb:	str	r3, [r5, #0xc]
+0x004000fd:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400101:	str	r0, [r5, #0x10]
+0x00400103:	str	r1, [r5, #0x14]
+0x00400105:	str	r2, [r5, #0x18]
+0x00400107:	str	r3, [r5, #0x1c]
+0x00400109:	ldm.w	ip!, {r0, r1, r2, r3}
+0x0040010d:	str	r0, [r4]
+0x0040010f:	str	r1, [r4, #4]
+0x00400111:	str	r2, [r4, #8]
+0x00400113:	str	r3, [r4, #0xc]
+0x00400115:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400119:	str	r0, [r4, #0x10]
+0x0040011b:	str	r1, [r4, #0x14]
+0x0040011d:	str	r2, [r4, #0x18]
+0x0040011f:	str	r3, [r4, #0x1c]
+0x00400121:	movs	r1, #0x40
+0x00400123:	mov	r0, r8
+0x00400125:	bl	#0x50003d
+0x00400121:	movs	r1, #0x40
+0x00400123:	mov	r0, r8
+0x00400125:	bl	#0x50003d
+0x00400129:	ldr	r2, [pc, #0x58]
+0x0040012b:	ldr	r3, [pc, #0x54]
+0x0040012d:	add	r2, pc
+0x0040012f:	ldr	r3, [r2, r3]
+0x00400131:	ldr	r2, [r3]
+0x00400133:	ldr	r3, [sp, #0x21c]
+0x00400135:	eors	r2, r3
+0x00400137:	mov.w	r3, #0
+0x0040013b:	bne	#0x400175
+0x0040013d:	mov	r0, r7
+0x0040013f:	add.w	sp, sp, #0x224
+0x00400143:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400147:	cbz	r4, #0x400179
+0x00400149:	mov	r5, r4
+0x0040014b:	b	#0x40007f
+0x00400149:	mov	r5, r4
+0x0040014b:	b	#0x40007f
+0x0040014d:	addw	r3, sp, #0x1db
+0x00400151:	subs	r5, #1
+0x00400153:	subs	r4, #1
+0x00400155:	addw	r1, sp, #0x1fb
+0x00400159:	ldrb	r2, [r3, #1]!
+0x0040015d:	strb	r2, [r5, #1]!
+0x00400161:	cmp	r3, r1
+0x00400163:	ldrb.w	r2, [r3, #0x20]
+0x00400167:	strb	r2, [r4, #1]!
+0x0040016b:	bne	#0x400159
+0x00400159:	ldrb	r2, [r3, #1]!
+0x0040015d:	strb	r2, [r5, #1]!
+0x00400161:	cmp	r3, r1
+0x00400163:	ldrb.w	r2, [r3, #0x20]
+0x00400167:	strb	r2, [r4, #1]!
+0x0040016b:	bne	#0x400159
+0x0040016d:	b	#0x400121
+0x0040016f:	mov.w	r7, #-1
+0x00400173:	b	#0x400129
+0x00400175:	bl	#0x500055
+0x00400179:	bl	#0x500061
 
-0000002c <crypto_kx_keypair>:
-  2c:	b538      	push	{r3, r4, r5, lr}
-  2e:	460c      	mov	r4, r1
-  30:	4605      	mov	r5, r0
-  32:	2120      	movs	r1, #32
-  34:	4620      	mov	r0, r4
-  36:	f7ff fffe 	bl	0 <randombytes_buf>
-  3a:	4621      	mov	r1, r4
-  3c:	4628      	mov	r0, r5
-  3e:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
-  42:	f7ff bffe 	b.w	0 <crypto_scalarmult_base>
-  46:	bf00      	nop
+Function crypto_kx_server_session_keys @ 0x00400189
+0x00400189:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0040018d:	mov	sb, r2
+0x0040018f:	ldr	r2, [pc, #0x12c]
+0x00400191:	mov	r4, r1
+0x00400193:	mov	r1, r3
+0x00400195:	ldr	r3, [pc, #0x128]
+0x00400197:	add	r2, pc
+0x00400199:	sub.w	sp, sp, #0x224
+0x0040019d:	add.w	r6, sp, #0x3f
+0x004001a1:	bic	r6, r6, #0x3f
+0x004001a5:	ldr	r3, [r2, r3]
+0x004001a7:	ldr.w	sl, [sp, #0x248]
+0x004001ab:	ldr	r3, [r3]
+0x004001ad:	str	r3, [sp, #0x21c]
+0x004001af:	mov.w	r3, #0
+0x004001b3:	cmp	r0, #0
+0x004001b5:	beq	#0x400287
+0x004001b7:	mov	r5, r0
+0x004001b9:	cmp	r4, #0
+0x004001bb:	it	eq
+0x004001bd:	moveq	r4, r0
+0x004001bf:	add.w	fp, sp, #0x1bc
+0x004001c3:	mov	r2, sl
+0x004001c5:	mov	r0, fp
+0x004001c7:	bl	#0x500019
+0x004001bf:	add.w	fp, sp, #0x1bc
+0x004001c3:	mov	r2, sl
+0x004001c5:	mov	r0, fp
+0x004001c7:	bl	#0x500019
+0x004001cb:	mov	r7, r0
+0x004001cd:	cmp	r0, #0
+0x004001cf:	bne	#0x4002af
+0x004001d1:	mov	r2, r0
+0x004001d3:	mov	r1, r0
+0x004001d5:	movs	r3, #0x40
+0x004001d7:	mov	r0, r6
+0x004001d9:	bl	#0x500025
+0x004001dd:	movs	r2, #0x20
+0x004001df:	movs	r3, #0
+0x004001e1:	mov	r1, fp
+0x004001e3:	mov	r0, r6
+0x004001e5:	add.w	r8, sp, #0x1dc
+0x004001e9:	bl	#0x500031
+0x004001ed:	mov	r0, fp
+0x004001ef:	movs	r1, #0x20
+0x004001f1:	bl	#0x50003d
+0x004001f5:	mov	r1, sl
+0x004001f7:	movs	r2, #0x20
+0x004001f9:	movs	r3, #0
+0x004001fb:	mov	r0, r6
+0x004001fd:	bl	#0x500031
+0x00400201:	movs	r3, #0
+0x00400203:	mov	r1, sb
+0x00400205:	movs	r2, #0x20
+0x00400207:	mov	r0, r6
+0x00400209:	bl	#0x500031
+0x0040020d:	movs	r2, #0x40
+0x0040020f:	mov	r1, r8
+0x00400211:	mov	r0, r6
+0x00400213:	bl	#0x500049
+0x00400217:	mov	r0, r6
+0x00400219:	mov.w	r1, #0x180
+0x0040021d:	bl	#0x50003d
+0x00400221:	add.w	r3, r4, #0x1f
+0x00400225:	subs	r3, r3, r5
+0x00400227:	cmp	r3, #0x3e
+0x00400229:	bls	#0x40028d
+0x0040022b:	mov	lr, r8
+0x0040022d:	add.w	ip, sp, #0x1fc
+0x00400231:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400235:	str	r0, [r4]
+0x00400237:	str	r1, [r4, #4]
+0x00400239:	str	r2, [r4, #8]
+0x0040023b:	str	r3, [r4, #0xc]
+0x0040023d:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400241:	str	r0, [r4, #0x10]
+0x00400243:	str	r1, [r4, #0x14]
+0x00400245:	str	r2, [r4, #0x18]
+0x00400247:	str	r3, [r4, #0x1c]
+0x00400249:	ldm.w	ip!, {r0, r1, r2, r3}
+0x0040024d:	str	r0, [r5]
+0x0040024f:	str	r1, [r5, #4]
+0x00400251:	str	r2, [r5, #8]
+0x00400253:	str	r3, [r5, #0xc]
+0x00400255:	ldm.w	ip!, {r0, r1, r2, r3}
+0x00400259:	str	r0, [r5, #0x10]
+0x0040025b:	str	r1, [r5, #0x14]
+0x0040025d:	str	r2, [r5, #0x18]
+0x0040025f:	str	r3, [r5, #0x1c]
+0x00400261:	movs	r1, #0x40
+0x00400263:	mov	r0, r8
+0x00400265:	bl	#0x50003d
+0x00400261:	movs	r1, #0x40
+0x00400263:	mov	r0, r8
+0x00400265:	bl	#0x50003d
+0x00400269:	ldr	r2, [pc, #0x58]
+0x0040026b:	ldr	r3, [pc, #0x54]
+0x0040026d:	add	r2, pc
+0x0040026f:	ldr	r3, [r2, r3]
+0x00400271:	ldr	r2, [r3]
+0x00400273:	ldr	r3, [sp, #0x21c]
+0x00400275:	eors	r2, r3
+0x00400277:	mov.w	r3, #0
+0x0040027b:	bne	#0x4002b5
+0x0040027d:	mov	r0, r7
+0x0040027f:	add.w	sp, sp, #0x224
+0x00400283:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400287:	cbz	r4, #0x4002b9
+0x00400289:	mov	r5, r4
+0x0040028b:	b	#0x4001bf
+0x00400289:	mov	r5, r4
+0x0040028b:	b	#0x4001bf
+0x0040028d:	addw	r3, sp, #0x1db
+0x00400291:	subs	r4, #1
+0x00400293:	subs	r5, #1
+0x00400295:	addw	r1, sp, #0x1fb
+0x00400299:	ldrb	r2, [r3, #1]!
+0x0040029d:	strb	r2, [r4, #1]!
+0x004002a1:	cmp	r3, r1
+0x004002a3:	ldrb.w	r2, [r3, #0x20]
+0x004002a7:	strb	r2, [r5, #1]!
+0x004002ab:	bne	#0x400299
+0x00400299:	ldrb	r2, [r3, #1]!
+0x0040029d:	strb	r2, [r4, #1]!
+0x004002a1:	cmp	r3, r1
+0x004002a3:	ldrb.w	r2, [r3, #0x20]
+0x004002a7:	strb	r2, [r5, #1]!
+0x004002ab:	bne	#0x400299
+0x004002ad:	b	#0x400261
+0x004002af:	mov.w	r7, #-1
+0x004002b3:	b	#0x400269
+0x004002b5:	bl	#0x500055
+0x004002b9:	bl	#0x500061
 
-00000048 <crypto_kx_client_session_keys>:
-  48:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-  4c:	4691      	mov	r9, r2
-  4e:	4a4b      	ldr	r2, [pc, #300]	; (17c <crypto_kx_client_session_keys+0x134>)
-  50:	460c      	mov	r4, r1
-  52:	4619      	mov	r1, r3
-  54:	4b4a      	ldr	r3, [pc, #296]	; (180 <crypto_kx_client_session_keys+0x138>)
-  56:	447a      	add	r2, pc
-  58:	f5ad 7d09 	sub.w	sp, sp, #548	; 0x224
-  5c:	f10d 063f 	add.w	r6, sp, #63	; 0x3f
-  60:	f026 063f 	bic.w	r6, r6, #63	; 0x3f
-  64:	58d3      	ldr	r3, [r2, r3]
-  66:	f8dd a248 	ldr.w	sl, [sp, #584]	; 0x248
-  6a:	681b      	ldr	r3, [r3, #0]
-  6c:	9387      	str	r3, [sp, #540]	; 0x21c
-  6e:	f04f 0300 	mov.w	r3, #0
-  72:	2800      	cmp	r0, #0
-  74:	d067      	beq.n	146 <crypto_kx_client_session_keys+0xfe>
-  76:	4605      	mov	r5, r0
-  78:	2c00      	cmp	r4, #0
-  7a:	bf08      	it	eq
-  7c:	4604      	moveq	r4, r0
-  7e:	f50d 7bde 	add.w	fp, sp, #444	; 0x1bc
-  82:	4652      	mov	r2, sl
-  84:	4658      	mov	r0, fp
-  86:	f7ff fffe 	bl	0 <crypto_scalarmult>
-  8a:	4607      	mov	r7, r0
-  8c:	2800      	cmp	r0, #0
-  8e:	d16e      	bne.n	16e <crypto_kx_client_session_keys+0x126>
-  90:	4602      	mov	r2, r0
-  92:	4601      	mov	r1, r0
-  94:	2340      	movs	r3, #64	; 0x40
-  96:	4630      	mov	r0, r6
-  98:	f7ff fffe 	bl	0 <crypto_generichash_init>
-  9c:	2220      	movs	r2, #32
-  9e:	2300      	movs	r3, #0
-  a0:	4659      	mov	r1, fp
-  a2:	4630      	mov	r0, r6
-  a4:	f50d 78ee 	add.w	r8, sp, #476	; 0x1dc
-  a8:	f7ff fffe 	bl	0 <crypto_generichash_update>
-  ac:	4658      	mov	r0, fp
-  ae:	2120      	movs	r1, #32
-  b0:	f7ff fffe 	bl	0 <sodium_memzero>
-  b4:	4649      	mov	r1, r9
-  b6:	2220      	movs	r2, #32
-  b8:	2300      	movs	r3, #0
-  ba:	4630      	mov	r0, r6
-  bc:	f7ff fffe 	bl	0 <crypto_generichash_update>
-  c0:	2300      	movs	r3, #0
-  c2:	4651      	mov	r1, sl
-  c4:	2220      	movs	r2, #32
-  c6:	4630      	mov	r0, r6
-  c8:	f7ff fffe 	bl	0 <crypto_generichash_update>
-  cc:	2240      	movs	r2, #64	; 0x40
-  ce:	4641      	mov	r1, r8
-  d0:	4630      	mov	r0, r6
-  d2:	f7ff fffe 	bl	0 <crypto_generichash_final>
-  d6:	4630      	mov	r0, r6
-  d8:	f44f 71c0 	mov.w	r1, #384	; 0x180
-  dc:	f7ff fffe 	bl	0 <sodium_memzero>
-  e0:	f104 031f 	add.w	r3, r4, #31
-  e4:	1b5b      	subs	r3, r3, r5
-  e6:	2b3e      	cmp	r3, #62	; 0x3e
-  e8:	d930      	bls.n	14c <crypto_kx_client_session_keys+0x104>
-  ea:	46c6      	mov	lr, r8
-  ec:	f50d 7cfe 	add.w	ip, sp, #508	; 0x1fc
-  f0:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
-  f4:	6028      	str	r0, [r5, #0]
-  f6:	6069      	str	r1, [r5, #4]
-  f8:	60aa      	str	r2, [r5, #8]
-  fa:	60eb      	str	r3, [r5, #12]
-  fc:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 100:	6128      	str	r0, [r5, #16]
- 102:	6169      	str	r1, [r5, #20]
- 104:	61aa      	str	r2, [r5, #24]
- 106:	61eb      	str	r3, [r5, #28]
- 108:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 10c:	6020      	str	r0, [r4, #0]
- 10e:	6061      	str	r1, [r4, #4]
- 110:	60a2      	str	r2, [r4, #8]
- 112:	60e3      	str	r3, [r4, #12]
- 114:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 118:	6120      	str	r0, [r4, #16]
- 11a:	6161      	str	r1, [r4, #20]
- 11c:	61a2      	str	r2, [r4, #24]
- 11e:	61e3      	str	r3, [r4, #28]
- 120:	2140      	movs	r1, #64	; 0x40
- 122:	4640      	mov	r0, r8
- 124:	f7ff fffe 	bl	0 <sodium_memzero>
- 128:	4a16      	ldr	r2, [pc, #88]	; (184 <crypto_kx_client_session_keys+0x13c>)
- 12a:	4b15      	ldr	r3, [pc, #84]	; (180 <crypto_kx_client_session_keys+0x138>)
- 12c:	447a      	add	r2, pc
- 12e:	58d3      	ldr	r3, [r2, r3]
- 130:	681a      	ldr	r2, [r3, #0]
- 132:	9b87      	ldr	r3, [sp, #540]	; 0x21c
- 134:	405a      	eors	r2, r3
- 136:	f04f 0300 	mov.w	r3, #0
- 13a:	d11b      	bne.n	174 <crypto_kx_client_session_keys+0x12c>
- 13c:	4638      	mov	r0, r7
- 13e:	f50d 7d09 	add.w	sp, sp, #548	; 0x224
- 142:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 146:	b1bc      	cbz	r4, 178 <crypto_kx_client_session_keys+0x130>
- 148:	4625      	mov	r5, r4
- 14a:	e798      	b.n	7e <crypto_kx_client_session_keys+0x36>
- 14c:	f20d 13db 	addw	r3, sp, #475	; 0x1db
- 150:	3d01      	subs	r5, #1
- 152:	3c01      	subs	r4, #1
- 154:	f20d 11fb 	addw	r1, sp, #507	; 0x1fb
- 158:	f813 2f01 	ldrb.w	r2, [r3, #1]!
- 15c:	f805 2f01 	strb.w	r2, [r5, #1]!
- 160:	428b      	cmp	r3, r1
- 162:	f893 2020 	ldrb.w	r2, [r3, #32]
- 166:	f804 2f01 	strb.w	r2, [r4, #1]!
- 16a:	d1f5      	bne.n	158 <crypto_kx_client_session_keys+0x110>
- 16c:	e7d8      	b.n	120 <crypto_kx_client_session_keys+0xd8>
- 16e:	f04f 37ff 	mov.w	r7, #4294967295	; 0xffffffff
- 172:	e7d9      	b.n	128 <crypto_kx_client_session_keys+0xe0>
- 174:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 178:	f7ff fffe 	bl	0 <sodium_misuse>
- 17c:	00000122 	.word	0x00000122
- 180:	00000000 	.word	0x00000000
- 184:	00000054 	.word	0x00000054
+Function crypto_kx_publickeybytes @ 0x004002c9
+0x004002c9:	movs	r0, #0x20
+0x004002cb:	bx	lr
 
-00000188 <crypto_kx_server_session_keys>:
- 188:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 18c:	4691      	mov	r9, r2
- 18e:	4a4b      	ldr	r2, [pc, #300]	; (2bc <crypto_kx_server_session_keys+0x134>)
- 190:	460c      	mov	r4, r1
- 192:	4619      	mov	r1, r3
- 194:	4b4a      	ldr	r3, [pc, #296]	; (2c0 <crypto_kx_server_session_keys+0x138>)
- 196:	447a      	add	r2, pc
- 198:	f5ad 7d09 	sub.w	sp, sp, #548	; 0x224
- 19c:	f10d 063f 	add.w	r6, sp, #63	; 0x3f
- 1a0:	f026 063f 	bic.w	r6, r6, #63	; 0x3f
- 1a4:	58d3      	ldr	r3, [r2, r3]
- 1a6:	f8dd a248 	ldr.w	sl, [sp, #584]	; 0x248
- 1aa:	681b      	ldr	r3, [r3, #0]
- 1ac:	9387      	str	r3, [sp, #540]	; 0x21c
- 1ae:	f04f 0300 	mov.w	r3, #0
- 1b2:	2800      	cmp	r0, #0
- 1b4:	d067      	beq.n	286 <crypto_kx_server_session_keys+0xfe>
- 1b6:	4605      	mov	r5, r0
- 1b8:	2c00      	cmp	r4, #0
- 1ba:	bf08      	it	eq
- 1bc:	4604      	moveq	r4, r0
- 1be:	f50d 7bde 	add.w	fp, sp, #444	; 0x1bc
- 1c2:	4652      	mov	r2, sl
- 1c4:	4658      	mov	r0, fp
- 1c6:	f7ff fffe 	bl	0 <crypto_scalarmult>
- 1ca:	4607      	mov	r7, r0
- 1cc:	2800      	cmp	r0, #0
- 1ce:	d16e      	bne.n	2ae <crypto_kx_server_session_keys+0x126>
- 1d0:	4602      	mov	r2, r0
- 1d2:	4601      	mov	r1, r0
- 1d4:	2340      	movs	r3, #64	; 0x40
- 1d6:	4630      	mov	r0, r6
- 1d8:	f7ff fffe 	bl	0 <crypto_generichash_init>
- 1dc:	2220      	movs	r2, #32
- 1de:	2300      	movs	r3, #0
- 1e0:	4659      	mov	r1, fp
- 1e2:	4630      	mov	r0, r6
- 1e4:	f50d 78ee 	add.w	r8, sp, #476	; 0x1dc
- 1e8:	f7ff fffe 	bl	0 <crypto_generichash_update>
- 1ec:	4658      	mov	r0, fp
- 1ee:	2120      	movs	r1, #32
- 1f0:	f7ff fffe 	bl	0 <sodium_memzero>
- 1f4:	4651      	mov	r1, sl
- 1f6:	2220      	movs	r2, #32
- 1f8:	2300      	movs	r3, #0
- 1fa:	4630      	mov	r0, r6
- 1fc:	f7ff fffe 	bl	0 <crypto_generichash_update>
- 200:	2300      	movs	r3, #0
- 202:	4649      	mov	r1, r9
- 204:	2220      	movs	r2, #32
- 206:	4630      	mov	r0, r6
- 208:	f7ff fffe 	bl	0 <crypto_generichash_update>
- 20c:	2240      	movs	r2, #64	; 0x40
- 20e:	4641      	mov	r1, r8
- 210:	4630      	mov	r0, r6
- 212:	f7ff fffe 	bl	0 <crypto_generichash_final>
- 216:	4630      	mov	r0, r6
- 218:	f44f 71c0 	mov.w	r1, #384	; 0x180
- 21c:	f7ff fffe 	bl	0 <sodium_memzero>
- 220:	f104 031f 	add.w	r3, r4, #31
- 224:	1b5b      	subs	r3, r3, r5
- 226:	2b3e      	cmp	r3, #62	; 0x3e
- 228:	d930      	bls.n	28c <crypto_kx_server_session_keys+0x104>
- 22a:	46c6      	mov	lr, r8
- 22c:	f50d 7cfe 	add.w	ip, sp, #508	; 0x1fc
- 230:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 234:	6020      	str	r0, [r4, #0]
- 236:	6061      	str	r1, [r4, #4]
- 238:	60a2      	str	r2, [r4, #8]
- 23a:	60e3      	str	r3, [r4, #12]
- 23c:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 240:	6120      	str	r0, [r4, #16]
- 242:	6161      	str	r1, [r4, #20]
- 244:	61a2      	str	r2, [r4, #24]
- 246:	61e3      	str	r3, [r4, #28]
- 248:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 24c:	6028      	str	r0, [r5, #0]
- 24e:	6069      	str	r1, [r5, #4]
- 250:	60aa      	str	r2, [r5, #8]
- 252:	60eb      	str	r3, [r5, #12]
- 254:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 258:	6128      	str	r0, [r5, #16]
- 25a:	6169      	str	r1, [r5, #20]
- 25c:	61aa      	str	r2, [r5, #24]
- 25e:	61eb      	str	r3, [r5, #28]
- 260:	2140      	movs	r1, #64	; 0x40
- 262:	4640      	mov	r0, r8
- 264:	f7ff fffe 	bl	0 <sodium_memzero>
- 268:	4a16      	ldr	r2, [pc, #88]	; (2c4 <crypto_kx_server_session_keys+0x13c>)
- 26a:	4b15      	ldr	r3, [pc, #84]	; (2c0 <crypto_kx_server_session_keys+0x138>)
- 26c:	447a      	add	r2, pc
- 26e:	58d3      	ldr	r3, [r2, r3]
- 270:	681a      	ldr	r2, [r3, #0]
- 272:	9b87      	ldr	r3, [sp, #540]	; 0x21c
- 274:	405a      	eors	r2, r3
- 276:	f04f 0300 	mov.w	r3, #0
- 27a:	d11b      	bne.n	2b4 <crypto_kx_server_session_keys+0x12c>
- 27c:	4638      	mov	r0, r7
- 27e:	f50d 7d09 	add.w	sp, sp, #548	; 0x224
- 282:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 286:	b1bc      	cbz	r4, 2b8 <crypto_kx_server_session_keys+0x130>
- 288:	4625      	mov	r5, r4
- 28a:	e798      	b.n	1be <crypto_kx_server_session_keys+0x36>
- 28c:	f20d 13db 	addw	r3, sp, #475	; 0x1db
- 290:	3c01      	subs	r4, #1
- 292:	3d01      	subs	r5, #1
- 294:	f20d 11fb 	addw	r1, sp, #507	; 0x1fb
- 298:	f813 2f01 	ldrb.w	r2, [r3, #1]!
- 29c:	f804 2f01 	strb.w	r2, [r4, #1]!
- 2a0:	428b      	cmp	r3, r1
- 2a2:	f893 2020 	ldrb.w	r2, [r3, #32]
- 2a6:	f805 2f01 	strb.w	r2, [r5, #1]!
- 2aa:	d1f5      	bne.n	298 <crypto_kx_server_session_keys+0x110>
- 2ac:	e7d8      	b.n	260 <crypto_kx_server_session_keys+0xd8>
- 2ae:	f04f 37ff 	mov.w	r7, #4294967295	; 0xffffffff
- 2b2:	e7d9      	b.n	268 <crypto_kx_server_session_keys+0xe0>
- 2b4:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 2b8:	f7ff fffe 	bl	0 <sodium_misuse>
- 2bc:	00000122 	.word	0x00000122
- 2c0:	00000000 	.word	0x00000000
- 2c4:	00000054 	.word	0x00000054
+Function crypto_kx_secretkeybytes @ 0x004002cd
+0x004002cd:	movs	r0, #0x20
+0x004002cf:	bx	lr
 
-000002c8 <crypto_kx_publickeybytes>:
- 2c8:	2020      	movs	r0, #32
- 2ca:	4770      	bx	lr
+Function crypto_kx_seedbytes @ 0x004002d1
+0x004002d1:	movs	r0, #0x20
+0x004002d3:	bx	lr
 
-000002cc <crypto_kx_secretkeybytes>:
- 2cc:	2020      	movs	r0, #32
- 2ce:	4770      	bx	lr
+Function crypto_kx_sessionkeybytes @ 0x004002d5
+0x004002d5:	movs	r0, #0x20
+0x004002d7:	bx	lr
 
-000002d0 <crypto_kx_seedbytes>:
- 2d0:	2020      	movs	r0, #32
- 2d2:	4770      	bx	lr
+Function crypto_kx_primitive @ 0x004002d9
+0x004002d9:	ldr	r0, [pc, #4]
+0x004002db:	add	r0, pc
+0x004002dd:	bx	lr
 
-000002d4 <crypto_kx_sessionkeybytes>:
- 2d4:	2020      	movs	r0, #32
- 2d6:	4770      	bx	lr
+Function sub_4002df @ 0x004002df
+0x004002df:	nop	
+0x004002e1:	movs	r6, r0
+0x004002e3:	movs	r0, r0
 
-000002d8 <crypto_kx_primitive>:
- 2d8:	4801      	ldr	r0, [pc, #4]	; (2e0 <crypto_kx_primitive+0x8>)
- 2da:	4478      	add	r0, pc
- 2dc:	4770      	bx	lr
- 2de:	bf00      	nop
- 2e0:	00000002 	.word	0x00000002
+Function crypto_generichash @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function randombytes_buf @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function crypto_scalarmult @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function crypto_generichash_init @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function crypto_generichash_update @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function sodium_memzero @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function crypto_generichash_final @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function crypto_scalarmult_base @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0

@@ -1,28 +1,48 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_bitcnt_4_eb3fff84_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	stm	r0!, {r2, r5}
+0x00400005:	and	r2, r0, #0xf
+0x00400009:	mov	r3, r0
+0x0040000b:	add	ip, pc
+0x0040000d:	asrs	r3, r3, #4
+0x0040000f:	ldrb.w	r0, [ip, r2]
+0x00400013:	beq	#0x400027
+0x00400015:	movs	r2, #0
+0x00400017:	and	r1, r3, #0xf
+0x0040001b:	add	r2, r0
+0x0040001d:	asrs	r3, r3, #4
+0x0040001f:	ldrb.w	r0, [ip, r1]
+0x00400023:	bne	#0x400017
+0x00400017:	and	r1, r3, #0xf
+0x0040001b:	add	r2, r0
+0x0040001d:	asrs	r3, r3, #4
+0x0040001f:	ldrb.w	r0, [ip, r1]
+0x00400023:	bne	#0x400017
+0x00400025:	add	r0, r2
+0x00400027:	bx	lr
+0x00400027:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	c024f8df 	ldrdgt	pc, [r4], -pc	; <UNPREDICTABLE>
-   4:	020ff000 	andeq	pc, pc, #0
-   8:	44fc4603 	ldrbtmi	r4, [ip], #1539	; 0x603
-   c:	f81c111b 			; <UNDEFINED> instruction: 0xf81c111b
-  10:	d0080002 	andle	r0, r8, r2
-  14:	f0032200 			; <UNDEFINED> instruction: 0xf0032200
-  18:	4402010f 	strmi	r0, [r2], #-271	; 0xfffffef1
-  1c:	f81c111b 			; <UNDEFINED> instruction: 0xf81c111b
-  20:	d1f80001 	mvnsle	r0, r1
-  24:	47704410 			; <UNDEFINED> instruction: 0x47704410
-  28:	0000001a 	andeq	r0, r0, sl, lsl r0
-  2c:	c020f8df 	ldrdgt	pc, [r0], -pc	; <UNPREDICTABLE>
-  30:	4603b2c2 	strmi	fp, [r3], -r2, asr #5
-  34:	121b44fc 	andsne	r4, fp, #252, 8	; 0xfc000000
-  38:	0002f81c 	andeq	pc, r2, ip, lsl r8	; <UNPREDICTABLE>
-  3c:	2200d007 	andcs	sp, r0, #7
-  40:	4402b2d9 	strmi	fp, [r2], #-729	; 0xfffffd27
-  44:	f81c121b 			; <UNDEFINED> instruction: 0xf81c121b
-  48:	d1f90001 	mvnsle	r0, r1
-  4c:	47704410 			; <UNDEFINED> instruction: 0x47704410
-  50:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r2, r3
+0x0040002b:	movs	r0, r0
+0x0040002d:	ldr.w	ip, [pc, #0x20]
+0x00400031:	uxtb	r2, r0
+0x00400033:	mov	r3, r0
+0x00400035:	add	ip, pc
+0x00400037:	asrs	r3, r3, #8
+0x00400039:	ldrb.w	r0, [ip, r2]
+0x0040003d:	beq	#0x40004f
+0x0040003f:	movs	r2, #0
+0x00400041:	uxtb	r1, r3
+0x00400043:	add	r2, r0
+0x00400045:	asrs	r3, r3, #8
+0x00400047:	ldrb.w	r0, [ip, r1]
+0x0040004b:	bne	#0x400041
+0x00400041:	uxtb	r1, r3
+0x00400043:	add	r2, r0
+0x00400045:	asrs	r3, r3, #8
+0x00400047:	ldrb.w	r0, [ip, r1]
+0x0040004b:	bne	#0x400041
+0x0040004d:	add	r0, r2
+0x0040004f:	bx	lr
+0x0040004f:	bx	lr

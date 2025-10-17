@@ -1,133 +1,168 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ptype_75fa0b03.o:     file format elf32-littlearm
+Function v_char_func @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function v_signed_char_func @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function v_unsigned_char_func @ 0x00400009
+0x00400009:	movs	r0, #0
+0x0040000b:	bx	lr
 
-00000000 <v_char_func>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function v_short_func @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-00000004 <v_signed_char_func>:
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
+Function v_signed_short_func @ 0x00400011
+0x00400011:	movs	r0, #0
+0x00400013:	bx	lr
 
-00000008 <v_unsigned_char_func>:
-   8:	2000      	movs	r0, #0
-   a:	4770      	bx	lr
+Function v_unsigned_short_func @ 0x00400015
+0x00400015:	movs	r0, #0
+0x00400017:	bx	lr
 
-0000000c <v_short_func>:
-   c:	2000      	movs	r0, #0
-   e:	4770      	bx	lr
+Function v_int_func @ 0x00400019
+0x00400019:	movs	r0, #0
+0x0040001b:	bx	lr
 
-00000010 <v_signed_short_func>:
-  10:	2000      	movs	r0, #0
-  12:	4770      	bx	lr
+Function v_signed_int_func @ 0x0040001d
+0x0040001d:	movs	r0, #0
+0x0040001f:	bx	lr
 
-00000014 <v_unsigned_short_func>:
-  14:	2000      	movs	r0, #0
-  16:	4770      	bx	lr
+Function v_unsigned_int_func @ 0x00400021
+0x00400021:	movs	r0, #0
+0x00400023:	bx	lr
 
-00000018 <v_int_func>:
-  18:	2000      	movs	r0, #0
-  1a:	4770      	bx	lr
+Function v_long_func @ 0x00400025
+0x00400025:	movs	r0, #0
+0x00400027:	bx	lr
 
-0000001c <v_signed_int_func>:
-  1c:	2000      	movs	r0, #0
-  1e:	4770      	bx	lr
+Function v_signed_long_func @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr
 
-00000020 <v_unsigned_int_func>:
-  20:	2000      	movs	r0, #0
-  22:	4770      	bx	lr
+Function v_unsigned_long_func @ 0x0040002d
+0x0040002d:	movs	r0, #0
+0x0040002f:	bx	lr
 
-00000024 <v_long_func>:
-  24:	2000      	movs	r0, #0
-  26:	4770      	bx	lr
+Function v_float_func @ 0x00400031
+0x00400031:	vldr	s0, [pc, #4]
+0x00400035:	bx	lr
 
-00000028 <v_signed_long_func>:
-  28:	2000      	movs	r0, #0
-  2a:	4770      	bx	lr
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r0, r0
+0x0040003b:	movs	r0, r0
+0x0040003d:	vldr	d0, [pc, #8]
+0x00400041:	bx	lr
 
-0000002c <v_unsigned_long_func>:
-  2c:	2000      	movs	r0, #0
-  2e:	4770      	bx	lr
+Function v_double_func @ 0x0040003d
+0x0040003d:	vldr	d0, [pc, #8]
+0x00400041:	bx	lr
 
-00000030 <v_float_func>:
-  30:	ed9f 0a01 	vldr	s0, [pc, #4]	; 38 <v_float_func+0x8>
-  34:	4770      	bx	lr
-  36:	bf00      	nop
-  38:	00000000 	.word	0x00000000
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	nop.w	
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	push	{r4, lr}
+0x00400053:	mov	r4, r0
+0x00400055:	bl	#0x500001
 
-0000003c <v_double_func>:
-  3c:	ed9f 0b02 	vldr	d0, [pc, #8]	; 48 <v_double_func+0xc>
-  40:	4770      	bx	lr
-  42:	bf00      	nop
-  44:	f3af 8000 	nop.w
-	...
+Function sub_400045 @ 0x00400045
+0x00400045:	nop.w	
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	push	{r4, lr}
+0x00400053:	mov	r4, r0
+0x00400055:	bl	#0x500001
 
-00000050 <intfoo>:
-  50:	b510      	push	{r4, lr}
-  52:	4604      	mov	r4, r0
-  54:	f7ff fffe 	bl	0 <charfoo>
-  58:	0060      	lsls	r0, r4, #1
-  5a:	bd10      	pop	{r4, pc}
+Function intfoo @ 0x00400051
+0x00400051:	push	{r4, lr}
+0x00400053:	mov	r4, r0
+0x00400055:	bl	#0x500001
+0x00400059:	lsls	r0, r4, #1
+0x0040005b:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function main @ 0x00400289
+0x00400289:	ldr	r3, [pc, #0xbc]
+0x0040028b:	movs	r0, #0
+0x0040028d:	vldr	d7, [pc, #0xb0]
+0x00400291:	movs	r1, #0
+0x00400293:	add	r3, pc
+0x00400295:	movs	r2, #2
+0x00400297:	strb.w	r0, [r3, #0x58]
+0x0040029b:	strd	r2, r2, [r3]
+0x0040029f:	str	r2, [r3, #8]
+0x004002a1:	movs	r2, #1
+0x004002a3:	strb.w	r0, [r3, #0x59]
+0x004002a7:	strd	r2, r2, [r3, #0xc]
+0x004002ab:	movs	r2, #5
+0x004002ad:	strb.w	r0, [r3, #0x5a]
+0x004002b1:	str	r2, [r3, #0x1c]
+0x004002b3:	movs	r2, #6
+0x004002b5:	strh.w	r0, [r3, #0x5c]
+0x004002b9:	str	r2, [r3, #0x34]
+0x004002bb:	movs	r2, #7
+0x004002bd:	strh.w	r0, [r3, #0x5e]
+0x004002c1:	strh.w	r0, [r3, #0x60]
+0x004002c5:	strd	r0, r0, [r3, #0x64]
+0x004002c9:	strd	r0, r0, [r3, #0x6c]
+0x004002cd:	strd	r0, r0, [r3, #0x74]
+0x004002d1:	strb.w	r0, [r3, #0x88]
+0x004002d5:	strb.w	r0, [r3, #0x8c]
+0x004002d9:	strb.w	r0, [r3, #0x90]
+0x004002dd:	strh.w	r0, [r3, #0x94]
+0x004002e1:	strh.w	r0, [r3, #0x98]
+0x004002e5:	strh.w	r0, [r3, #0x9c]
+0x004002e9:	str.w	r0, [r3, #0xa0]
+0x004002ed:	str.w	r0, [r3, #0xa8]
+0x004002f1:	str.w	r0, [r3, #0xb0]
+0x004002f5:	str.w	r0, [r3, #0xb8]
+0x004002f9:	str	r1, [r3, #0x7c]
+0x004002fb:	str	r2, [r3, #0x50]
+0x004002fd:	vstr	d7, [r3, #0x80]
+0x00400301:	str.w	r0, [r3, #0xc0]
+0x00400305:	str.w	r0, [r3, #0xc8]
+0x00400309:	str.w	r1, [r3, #0xd0]
+0x0040030d:	strd	r0, r0, [r3, #0xe8]
+0x00400311:	strd	r0, r0, [r3, #0xf0]
+0x00400315:	strd	r0, r0, [r3, #0xf8]
+0x00400319:	strd	r0, r0, [r3, #0x100]
+0x0040031d:	strd	r0, r0, [r3, #0x108]
+0x00400321:	strd	r0, r0, [r3, #0x110]
+0x00400325:	strd	r0, r0, [r3, #0x118]
+0x00400329:	str.w	r0, [r3, #0x120]
+0x0040032d:	strd	r0, r0, [r3, #0x134]
+0x00400331:	strd	r0, r0, [r3, #0x144]
+0x00400335:	vstr	d7, [r3, #0xd8]
+0x00400339:	bx	lr
 
-00000000 <main>:
-   0:	4b2f      	ldr	r3, [pc, #188]	; (c0 <main+0xc0>)
-   2:	2000      	movs	r0, #0
-   4:	ed9f 7b2c 	vldr	d7, [pc, #176]	; b8 <main+0xb8>
-   8:	2100      	movs	r1, #0
-   a:	447b      	add	r3, pc
-   c:	2202      	movs	r2, #2
-   e:	f883 0058 	strb.w	r0, [r3, #88]	; 0x58
-  12:	e9c3 2200 	strd	r2, r2, [r3]
-  16:	609a      	str	r2, [r3, #8]
-  18:	2201      	movs	r2, #1
-  1a:	f883 0059 	strb.w	r0, [r3, #89]	; 0x59
-  1e:	e9c3 2203 	strd	r2, r2, [r3, #12]
-  22:	2205      	movs	r2, #5
-  24:	f883 005a 	strb.w	r0, [r3, #90]	; 0x5a
-  28:	61da      	str	r2, [r3, #28]
-  2a:	2206      	movs	r2, #6
-  2c:	f8a3 005c 	strh.w	r0, [r3, #92]	; 0x5c
-  30:	635a      	str	r2, [r3, #52]	; 0x34
-  32:	2207      	movs	r2, #7
-  34:	f8a3 005e 	strh.w	r0, [r3, #94]	; 0x5e
-  38:	f8a3 0060 	strh.w	r0, [r3, #96]	; 0x60
-  3c:	e9c3 0019 	strd	r0, r0, [r3, #100]	; 0x64
-  40:	e9c3 001b 	strd	r0, r0, [r3, #108]	; 0x6c
-  44:	e9c3 001d 	strd	r0, r0, [r3, #116]	; 0x74
-  48:	f883 0088 	strb.w	r0, [r3, #136]	; 0x88
-  4c:	f883 008c 	strb.w	r0, [r3, #140]	; 0x8c
-  50:	f883 0090 	strb.w	r0, [r3, #144]	; 0x90
-  54:	f8a3 0094 	strh.w	r0, [r3, #148]	; 0x94
-  58:	f8a3 0098 	strh.w	r0, [r3, #152]	; 0x98
-  5c:	f8a3 009c 	strh.w	r0, [r3, #156]	; 0x9c
-  60:	f8c3 00a0 	str.w	r0, [r3, #160]	; 0xa0
-  64:	f8c3 00a8 	str.w	r0, [r3, #168]	; 0xa8
-  68:	f8c3 00b0 	str.w	r0, [r3, #176]	; 0xb0
-  6c:	f8c3 00b8 	str.w	r0, [r3, #184]	; 0xb8
-  70:	67d9      	str	r1, [r3, #124]	; 0x7c
-  72:	651a      	str	r2, [r3, #80]	; 0x50
-  74:	ed83 7b20 	vstr	d7, [r3, #128]	; 0x80
-  78:	f8c3 00c0 	str.w	r0, [r3, #192]	; 0xc0
-  7c:	f8c3 00c8 	str.w	r0, [r3, #200]	; 0xc8
-  80:	f8c3 10d0 	str.w	r1, [r3, #208]	; 0xd0
-  84:	e9c3 003a 	strd	r0, r0, [r3, #232]	; 0xe8
-  88:	e9c3 003c 	strd	r0, r0, [r3, #240]	; 0xf0
-  8c:	e9c3 003e 	strd	r0, r0, [r3, #248]	; 0xf8
-  90:	e9c3 0040 	strd	r0, r0, [r3, #256]	; 0x100
-  94:	e9c3 0042 	strd	r0, r0, [r3, #264]	; 0x108
-  98:	e9c3 0044 	strd	r0, r0, [r3, #272]	; 0x110
-  9c:	e9c3 0046 	strd	r0, r0, [r3, #280]	; 0x118
-  a0:	f8c3 0120 	str.w	r0, [r3, #288]	; 0x120
-  a4:	e9c3 004d 	strd	r0, r0, [r3, #308]	; 0x134
-  a8:	e9c3 0051 	strd	r0, r0, [r3, #324]	; 0x144
-  ac:	ed83 7b36 	vstr	d7, [r3, #216]	; 0xd8
-  b0:	4770      	bx	lr
-  b2:	bf00      	nop
-  b4:	f3af 8000 	nop.w
-	...
-  c0:	000000b2 	.word	0x000000b2
+Function sub_40033b @ 0x0040033b
+0x0040033b:	nop	
+0x0040033d:	nop.w	
+0x00400341:	movs	r0, r0
+0x00400343:	movs	r0, r0
+0x00400345:	movs	r0, r0
+0x00400347:	movs	r0, r0
+0x00400349:	stc2l	p15, c15, [sl, #0x3fc]
+
+Function sub_40033d @ 0x0040033d
+0x0040033d:	nop.w	
+0x00400341:	movs	r0, r0
+0x00400343:	movs	r0, r0
+0x00400345:	movs	r0, r0
+0x00400347:	movs	r0, r0
+0x00400349:	stc2l	p15, c15, [sl, #0x3fc]
+
+Function charfoo @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

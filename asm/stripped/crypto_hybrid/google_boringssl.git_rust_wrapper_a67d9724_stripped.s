@@ -1,14 +1,29 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/google_boringssl.git_rust_wrapper_a67d9724_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	ubfx	r0, r0, #0, #0xc
+0x00400009:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-00000000 <.text>:
-   0:	47700e00 	ldrbmi	r0, [r0, -r0, lsl #28]!
-   4:	000bf3c0 	andeq	pc, fp, r0, asr #7
-   8:	bf004770 	svclt	0x00004770
-   c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  10:	1200e9c0 	andne	lr, r0, #192, 18	; 0x300000
-  14:	bf004770 	svclt	0x00004770
-  18:	47706840 	ldrbmi	r6, [r0, -r0, asr #16]!
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
+
+Function sub_400011 @ 0x00400011
+0x00400011:	strd	r1, r2, [r0]
+0x00400015:	bx	lr
+
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	ldr	r0, [r0, #4]
+0x0040001b:	bx	lr
+
+Function sub_400019 @ 0x00400019
+0x00400019:	ldr	r0, [r0, #4]
+0x0040001b:	bx	lr

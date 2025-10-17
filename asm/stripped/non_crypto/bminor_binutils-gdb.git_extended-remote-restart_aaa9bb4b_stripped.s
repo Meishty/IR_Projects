@@ -1,15 +1,23 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_extended-remote-restart_aaa9bb4b_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	adds	r3, r0, #1
+0x00400009:	beq	#0x40001d
+0x0040000b:	cbnz	r0, #0x400015
+0x0040000d:	movs	r0, #1
+0x0040000f:	bl	#0x40000f
+0x0040000d:	movs	r0, #1
+0x0040000f:	bl	#0x40000f
+0x00400015:	movs	r0, #1
+0x00400017:	bl	#0x400017
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
+0x00400013:	b	#0x40000d
 
-Disassembly of section .text.startup:
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	b	#0x400015
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	1c43fffe 	mcrrne	15, 15, pc, r3, cr14	; <UNPREDICTABLE>
-   8:	b918d008 	ldmdblt	r8, {r3, ip, lr, pc}
-   c:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  10:	e7fbfffe 	udf	#49150	; 0xbffe
-  14:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  18:	e7fbfffe 	udf	#49150	; 0xbffe
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
+Function sub_40001d @ 0x0040001d
+0x0040001d:	bl	#0x40001d

@@ -1,25 +1,27 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watchpoint-running_41d5c0bd.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	push	{r3, r4, r5, lr}
+0x0040000b:	movw	r5, #0x86a0
+0x0040000f:	movt	r5, #1
+0x00400013:	ldr	r4, [pc, #0x24]
+0x00400015:	add	r4, pc
+0x00400017:	mov	r0, r5
+0x00400019:	bl	#0x500001
+0x00400017:	mov	r0, r5
+0x00400019:	bl	#0x500001
+0x0040001d:	ldrd	r3, r2, [r4]
+0x00400021:	adds	r3, #1
+0x00400023:	str	r3, [r4]
+0x00400025:	adc	r2, r2, #0
+0x00400029:	cmp.w	r3, #0x12c
+0x0040002d:	str	r2, [r4, #4]
+0x0040002f:	sbcs	r2, r2, #0
+0x00400033:	blo	#0x400017
+0x00400035:	movs	r0, #1
+0x00400037:	pop	{r3, r4, r5, pc}
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	f248 65a0 	movw	r5, #34464	; 0x86a0
-   6:	f2c0 0501 	movt	r5, #1
-   a:	4c09      	ldr	r4, [pc, #36]	; (30 <main+0x30>)
-   c:	447c      	add	r4, pc
-   e:	4628      	mov	r0, r5
-  10:	f7ff fffe 	bl	0 <usleep>
-  14:	e9d4 3200 	ldrd	r3, r2, [r4]
-  18:	3301      	adds	r3, #1
-  1a:	6023      	str	r3, [r4, #0]
-  1c:	f142 0200 	adc.w	r2, r2, #0
-  20:	f5b3 7f96 	cmp.w	r3, #300	; 0x12c
-  24:	6062      	str	r2, [r4, #4]
-  26:	f172 0200 	sbcs.w	r2, r2, #0
-  2a:	d3f0      	bcc.n	e <main+0xe>
-  2c:	2001      	movs	r0, #1
-  2e:	bd38      	pop	{r3, r4, r5, pc}
-  30:	00000020 	.word	0x00000020
+Function usleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

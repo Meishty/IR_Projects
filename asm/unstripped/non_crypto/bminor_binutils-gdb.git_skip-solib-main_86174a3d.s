@@ -1,10 +1,13 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_skip-solib-main_86174a3d.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	b.w	#0x500001
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	f7ff bffe 	b.w	0 <square>
-   6:	bf00      	nop
+Function square @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

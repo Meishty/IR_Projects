@@ -1,41 +1,53 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr21964-5_f3b1b705.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r0, r7, lsl #18
+0x00400004:	ldrbtmi	fp, [sb], #-0x508
 
+Function sub_40000b @ 0x0040000b
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	subs	r0, #6
+0x00400013:	it	ne
+0x00400015:	movne.w	r0, #-1
+0x00400019:	pop	{r3, pc}
 
-00000000 <bar>:
-   0:	4907      	ldr	r1, [pc, #28]	; (20 <bar+0x20>)
-   2:	2000      	movs	r0, #0
-   4:	b508      	push	{r3, lr}
-   6:	4479      	add	r1, pc
-   8:	f7ff fffe 	bl	0 <dlsym>
-   c:	b128      	cbz	r0, 1a <bar+0x1a>
-   e:	6800      	ldr	r0, [r0, #0]
-  10:	3806      	subs	r0, #6
-  12:	bf18      	it	ne
-  14:	f04f 30ff 	movne.w	r0, #4294967295	; 0xffffffff
-  18:	bd08      	pop	{r3, pc}
-  1a:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  1e:	bd08      	pop	{r3, pc}
-  20:	00000016 	.word	0x00000016
+Function sub_40001b @ 0x0040001b
+0x0040001b:	mov.w	r0, #-1
+0x0040001f:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400021 @ 0x00400021
+0x00400021:	movs	r2, r3
+0x00400023:	movs	r0, r0
 
-00000000 <main>:
-   0:	4907      	ldr	r1, [pc, #28]	; (20 <main+0x20>)
-   2:	2000      	movs	r0, #0
-   4:	b508      	push	{r3, lr}
-   6:	4479      	add	r1, pc
-   8:	f7ff fffe 	bl	0 <dlsym>
-   c:	b130      	cbz	r0, 1c <main+0x1c>
-   e:	6803      	ldr	r3, [r0, #0]
-  10:	2b06      	cmp	r3, #6
-  12:	d103      	bne.n	1c <main+0x1c>
-  14:	4803      	ldr	r0, [pc, #12]	; (24 <main+0x24>)
-  16:	4478      	add	r0, pc
-  18:	f7ff fffe 	bl	0 <puts>
-  1c:	2000      	movs	r0, #0
-  1e:	bd08      	pop	{r3, pc}
-  20:	00000016 	.word	0x00000016
-  24:	0000000a 	.word	0x0000000a
+Function main @ 0x00400041
+0x00400041:	ldr	r1, [pc, #0x1c]
+0x00400043:	movs	r0, #0
+0x00400045:	push	{r3, lr}
+0x00400047:	add	r1, pc
+0x00400049:	bl	#0x500001
+0x0040004d:	cbz	r0, #0x40005d
+0x0040004f:	ldr	r3, [r0]
+0x00400051:	cmp	r3, #6
+0x00400053:	bne	#0x40005d
+0x0040004f:	ldr	r3, [r0]
+0x00400051:	cmp	r3, #6
+0x00400053:	bne	#0x40005d
+0x00400055:	ldr	r0, [pc, #0xc]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x50000d
+0x0040005d:	movs	r0, #0
+0x0040005f:	pop	{r3, pc}
+
+Function dlsym @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

@@ -1,25 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watchpoint-stops-at-right-insn_498186ea.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r6, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <set_global>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <set_global+0x8>)
-   2:	447b      	add	r3, pc
-   4:	6018      	str	r0, [r3, #0]
-   6:	4770      	bx	lr
-   8:	00000002 	.word	0x00000002
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b03      	ldr	r3, [pc, #12]	; (10 <main+0x10>)
-   2:	2101      	movs	r1, #1
-   4:	2202      	movs	r2, #2
-   6:	2000      	movs	r0, #0
-   8:	447b      	add	r3, pc
-   a:	6019      	str	r1, [r3, #0]
-   c:	601a      	str	r2, [r3, #0]
-   e:	4770      	bx	lr
-  10:	00000004 	.word	0x00000004
+Function main @ 0x00400011
+0x00400011:	ldr	r3, [pc, #0xc]
+0x00400013:	movs	r1, #1
+0x00400015:	movs	r2, #2
+0x00400017:	movs	r0, #0
+0x00400019:	add	r3, pc
+0x0040001b:	str	r1, [r3]
+0x0040001d:	str	r2, [r3]
+0x0040001f:	bx	lr

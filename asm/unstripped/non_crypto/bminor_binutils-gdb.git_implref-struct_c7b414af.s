@@ -1,9 +1,4 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_implref-struct_c7b414af.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400019
+0x00400019:	movs	r0, #0
+0x0040001b:	bx	lr

@@ -1,28 +1,42 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_crypto_shorthash_22751eeb.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r8]!
 
+Function crypto_shorthash_keybytes @ 0x00400005
+0x00400005:	movs	r0, #0x10
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_shorthash_primitive @ 0x00400009
+0x00400009:	ldr	r0, [pc, #4]
+0x0040000b:	add	r0, pc
+0x0040000d:	bx	lr
 
-00000000 <crypto_shorthash_bytes>:
-   0:	2008      	movs	r0, #8
-   2:	4770      	bx	lr
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r2, r2
+0x00400013:	movs	r0, r0
+0x00400015:	b.w	#0x500001
 
-00000004 <crypto_shorthash_keybytes>:
-   4:	2010      	movs	r0, #16
-   6:	4770      	bx	lr
+Function crypto_shorthash @ 0x00400015
+0x00400015:	b.w	#0x500001
 
-00000008 <crypto_shorthash_primitive>:
-   8:	4801      	ldr	r0, [pc, #4]	; (10 <crypto_shorthash_primitive+0x8>)
-   a:	4478      	add	r0, pc
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-  10:	00000002 	.word	0x00000002
+Function crypto_shorthash_keygen @ 0x00400019
+0x00400019:	movs	r1, #0x10
+0x0040001b:	b.w	#0x50000d
 
-00000014 <crypto_shorthash>:
-  14:	f7ff bffe 	b.w	0 <crypto_shorthash_siphash24>
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
 
-00000018 <crypto_shorthash_keygen>:
-  18:	2110      	movs	r1, #16
-  1a:	f7ff bffe 	b.w	0 <randombytes_buf>
-  1e:	bf00      	nop
+Function crypto_shorthash_siphash24 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function randombytes_buf @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

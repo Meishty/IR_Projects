@@ -1,66 +1,104 @@
 
-/root/projects/compiled/non_crypto/unstripped/intel_lmbench.git_clock_8271f8ca.o:     file format elf32-littlearm
+Function main @ 0x00400059
+0x00400059:	push	{r4, r5, r6, lr}
+0x0040005b:	movs	r0, #0xf
+0x0040005d:	ldr	r5, [pc, #0x84]
+0x0040005f:	sub	sp, #8
+0x00400061:	bl	#0x500001
+0x00400065:	ldr	r1, [pc, #0x80]
+0x00400067:	mov	r4, r0
+0x00400069:	mov	r2, r0
+0x0040006b:	add	r1, pc
+0x0040006d:	movs	r0, #1
+0x0040006f:	bl	#0x50000d
+0x00400073:	ldr	r2, [pc, #0x78]
+0x00400075:	add	r5, pc
+0x00400077:	asrs	r6, r4, #0x1f
+0x00400079:	mov	r3, r5
+0x0040007b:	ldr	r5, [r5, r2]
+0x0040007d:	ldr	r0, [r5]
+0x0040007f:	bl	#0x500019
+0x00400083:	mov	r1, r6
+0x00400085:	mov	r0, r4
+0x00400087:	bl	#0x500025
+0x0040008b:	vmov	s15, r0
+0x0040008f:	ldr	r1, [pc, #0x60]
+0x00400091:	movs	r0, #1
+0x00400093:	vcvt.f64.s32	d0, s15
+0x00400097:	add	r1, pc
+0x00400099:	vmov	r2, r3, d0
+0x0040009d:	vstr	d0, [sp]
+0x004000a1:	bl	#0x50000d
+0x004000a5:	ldr	r0, [r5]
+0x004000a7:	bl	#0x500019
+0x004000ab:	vldr	d0, [sp]
+0x004000af:	mov	r1, r6
+0x004000b1:	mov	r0, r4
+0x004000b3:	bl	#0x500031
+0x004000b7:	vmov	s15, r0
+0x004000bb:	ldr	r1, [pc, #0x38]
+0x004000bd:	movs	r0, #1
+0x004000bf:	vcvt.f64.s32	d7, s15
+0x004000c3:	add	r1, pc
+0x004000c5:	vmov	r2, r3, d7
+0x004000c9:	bl	#0x50000d
+0x004000cd:	ldr	r3, [pc, #0x28]
+0x004000cf:	ldr	r1, [pc, #0x2c]
+0x004000d1:	movs	r0, #1
+0x004000d3:	add	r3, pc
+0x004000d5:	add	r1, pc
+0x004000d7:	ldr	r2, [r3]
+0x004000d9:	bl	#0x50000d
+0x004000dd:	movs	r0, #0
+0x004000df:	bl	#0x50003d
 
+Function sub_4000e3 @ 0x004000e3
+0x004000e3:	nop	
+0x004000e5:	lsls	r4, r5, #1
+0x004000e7:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function compute_enough @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	200f      	movs	r0, #15
-   4:	4d21      	ldr	r5, [pc, #132]	; (8c <main+0x8c>)
-   6:	b082      	sub	sp, #8
-   8:	f7ff fffe 	bl	0 <compute_enough>
-   c:	4920      	ldr	r1, [pc, #128]	; (90 <main+0x90>)
-   e:	4604      	mov	r4, r0
-  10:	4602      	mov	r2, r0
-  12:	4479      	add	r1, pc
-  14:	2001      	movs	r0, #1
-  16:	f7ff fffe 	bl	0 <__printf_chk>
-  1a:	4a1e      	ldr	r2, [pc, #120]	; (94 <main+0x94>)
-  1c:	447d      	add	r5, pc
-  1e:	17e6      	asrs	r6, r4, #31
-  20:	462b      	mov	r3, r5
-  22:	58ad      	ldr	r5, [r5, r2]
-  24:	6828      	ldr	r0, [r5, #0]
-  26:	f7ff fffe 	bl	0 <fflush>
-  2a:	4631      	mov	r1, r6
-  2c:	4620      	mov	r0, r4
-  2e:	f7ff fffe 	bl	0 <timing_overhead>
-  32:	ee07 0a90 	vmov	s15, r0
-  36:	4918      	ldr	r1, [pc, #96]	; (98 <main+0x98>)
-  38:	2001      	movs	r0, #1
-  3a:	eeb8 0be7 	vcvt.f64.s32	d0, s15
-  3e:	4479      	add	r1, pc
-  40:	ec53 2b10 	vmov	r2, r3, d0
-  44:	ed8d 0b00 	vstr	d0, [sp]
-  48:	f7ff fffe 	bl	0 <__printf_chk>
-  4c:	6828      	ldr	r0, [r5, #0]
-  4e:	f7ff fffe 	bl	0 <fflush>
-  52:	ed9d 0b00 	vldr	d0, [sp]
-  56:	4631      	mov	r1, r6
-  58:	4620      	mov	r0, r4
-  5a:	f7ff fffe 	bl	0 <loop_overhead>
-  5e:	ee07 0a90 	vmov	s15, r0
-  62:	490e      	ldr	r1, [pc, #56]	; (9c <main+0x9c>)
-  64:	2001      	movs	r0, #1
-  66:	eeb8 7be7 	vcvt.f64.s32	d7, s15
-  6a:	4479      	add	r1, pc
-  6c:	ec53 2b17 	vmov	r2, r3, d7
-  70:	f7ff fffe 	bl	0 <__printf_chk>
-  74:	4b0a      	ldr	r3, [pc, #40]	; (a0 <main+0xa0>)
-  76:	490b      	ldr	r1, [pc, #44]	; (a4 <main+0xa4>)
-  78:	2001      	movs	r0, #1
-  7a:	447b      	add	r3, pc
-  7c:	4479      	add	r1, pc
-  7e:	681a      	ldr	r2, [r3, #0]
-  80:	f7ff fffe 	bl	0 <__printf_chk>
-  84:	2000      	movs	r0, #0
-  86:	f7ff fffe 	bl	0 <exit>
-  8a:	bf00      	nop
-  8c:	0000006c 	.word	0x0000006c
-  90:	0000007a 	.word	0x0000007a
-  94:	00000000 	.word	0x00000000
-  98:	00000056 	.word	0x00000056
-  9c:	0000002e 	.word	0x0000002e
-  a0:	00000022 	.word	0x00000022
-  a4:	00000024 	.word	0x00000024
+Function __printf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function fflush @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function timing_overhead @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function loop_overhead @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function exit @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

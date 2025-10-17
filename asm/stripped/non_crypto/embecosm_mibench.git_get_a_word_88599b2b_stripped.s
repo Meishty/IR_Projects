@@ -1,34 +1,85 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_get_a_word_88599b2b_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push.w	{r3, r4, r5, r6, r7, r8, sb, lr}
+0x00400005:	mov	r4, r0
+0x00400007:	mov	r6, r1
+0x00400009:	uxtb	r5, r2
+0x0040000b:	bl	#0x40000b
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	mov	ip, r4
+0x00400011:	ldr	r4, [r0]
+0x00400013:	ldrb	r3, [ip], #1
+0x00400017:	cmp	r3, r5
+0x00400019:	beq	#0x400013
+0x00400013:	ldrb	r3, [ip], #1
+0x00400017:	cmp	r3, r5
+0x00400019:	beq	#0x400013
+0x0040001b:	ldrh.w	r2, [r4, r3, lsl #1]
+0x0040001f:	lsls	r2, r2, #0x12
+0x00400021:	bmi	#0x400013
+0x00400023:	cbz	r3, #0x400065
+0x00400025:	subs	r7, r6, #1
+0x00400027:	rsb.w	sb, r6, #2
+0x0040002b:	ldrb	r3, [ip, #-0x1]
+0x0040002f:	add.w	r8, sb, r7
+0x00400033:	strb	r3, [r7, #1]!
+0x00400037:	mov	r3, ip
+0x00400039:	add.w	ip, ip, #1
+0x0040003d:	ldrb	r2, [ip, #-0x1]
+0x00400041:	ldr	r1, [r0]
+0x00400043:	cmp	r2, #0
+0x00400045:	it	ne
+0x00400047:	cmpne	r2, r5
+0x00400049:	ite	ne
+0x0040004b:	movne.w	lr, #1
+0x0040004f:	moveq.w	lr, #0
+0x00400053:	ldrh.w	r4, [r1, r2, lsl #1]
+0x00400057:	eor	r4, r4, #0x2000
+0x0040005b:	ands.w	lr, lr, r4, lsr #13
+0x0040005f:	bne	#0x40002b
+0x00400025:	subs	r7, r6, #1
+0x00400027:	rsb.w	sb, r6, #2
+0x0040002b:	ldrb	r3, [ip, #-0x1]
+0x0040002f:	add.w	r8, sb, r7
+0x00400033:	strb	r3, [r7, #1]!
+0x00400037:	mov	r3, ip
+0x00400039:	add.w	ip, ip, #1
+0x0040003d:	ldrb	r2, [ip, #-0x1]
+0x00400041:	ldr	r1, [r0]
+0x00400043:	cmp	r2, #0
+0x00400045:	it	ne
+0x00400047:	cmpne	r2, r5
+0x00400049:	ite	ne
+0x0040004b:	movne.w	lr, #1
+0x0040004f:	moveq.w	lr, #0
+0x00400053:	ldrh.w	r4, [r1, r2, lsl #1]
+0x00400057:	eor	r4, r4, #0x2000
+0x0040005b:	ands.w	lr, lr, r4, lsr #13
+0x0040005f:	bne	#0x40002b
+0x0040002b:	ldrb	r3, [ip, #-0x1]
+0x0040002f:	add.w	r8, sb, r7
+0x00400033:	strb	r3, [r7, #1]!
+0x00400037:	mov	r3, ip
+0x00400039:	add.w	ip, ip, #1
+0x0040003d:	ldrb	r2, [ip, #-0x1]
+0x00400041:	ldr	r1, [r0]
+0x00400043:	cmp	r2, #0
+0x00400045:	it	ne
+0x00400047:	cmpne	r2, r5
+0x00400049:	ite	ne
+0x0040004b:	movne.w	lr, #1
+0x0040004f:	moveq.w	lr, #0
+0x00400053:	ldrh.w	r4, [r1, r2, lsl #1]
+0x00400057:	eor	r4, r4, #0x2000
+0x0040005b:	ands.w	lr, lr, r4, lsr #13
+0x0040005f:	bne	#0x40002b
+0x00400061:	strb.w	lr, [r6, r8]
+0x00400065:	mov	r0, r3
+0x00400067:	pop.w	{r3, r4, r5, r6, r7, r8, sb, pc}
+0x00400065:	mov	r0, r3
+0x00400067:	pop.w	{r3, r4, r5, r6, r7, r8, sb, pc}
 
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	43f8e92d 	mvnsmi	lr, #737280	; 0xb4000
-   4:	460e4604 	strmi	r4, [lr], -r4, lsl #12
-   8:	f7ffb2d5 			; <UNDEFINED> instruction: 0xf7ffb2d5
-   c:	46a4fffe 			; <UNDEFINED> instruction: 0x46a4fffe
-  10:	f81c6804 			; <UNDEFINED> instruction: 0xf81c6804
-  14:	42ab3b01 	adcmi	r3, fp, #1024	; 0x400
-  18:	f834d0fb 			; <UNDEFINED> instruction: 0xf834d0fb
-  1c:	04922013 	ldreq	r2, [r2], #19
-  20:	b1fbd4f7 	ldrshlt	sp, [fp, #71]!	; 0x47
-  24:	f1c61e77 			; <UNDEFINED> instruction: 0xf1c61e77
-  28:	f81c0902 			; <UNDEFINED> instruction: 0xf81c0902
-  2c:	eb093c01 	bl	0x24f038
-  30:	f8070807 			; <UNDEFINED> instruction: 0xf8070807
-  34:	46633f01 	strbtmi	r3, [r3], -r1, lsl #30
-  38:	0c01f10c 	stfeqd	f7, [r1], {12}
-  3c:	2c01f81c 	stccs	8, cr15, [r1], {28}
-  40:	2a006801 	bcs	0x1a04c
-  44:	42aabf18 	adcmi	fp, sl, #24, 30	; 0x60
-  48:	f04fbf14 			; <UNDEFINED> instruction: 0xf04fbf14
-  4c:	f04f0e01 			; <UNDEFINED> instruction: 0xf04f0e01
-  50:	f8310e00 			; <UNDEFINED> instruction: 0xf8310e00
-  54:	f4844012 	vst1.8			; <UNDEFINED> instruction: 0xf4844012
-  58:	ea1e5400 	b	0x795060
-  5c:	d1e43e54 	mvnle	r3, r4, asr lr
-  60:	e008f806 	and	pc, r8, r6, lsl #16
-  64:	e8bd4618 	pop	{r3, r4, r9, sl, lr}
-  68:	bf0083f8 	svclt	0x000083f8
+Function sub_40006b @ 0x0040006b
+0x0040006b:	nop	

@@ -1,36 +1,50 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_inline-frame-cycle-unwind_fb3dbf67_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400008:	eorvs	r3, r3, r1, lsl #6
+0x0040000c:	bllo	#0x45a1a0
+0x00400010:	stmdavs	r3!, {r0, r1, r5, r6, sp, lr} ^
+0x00400020:	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr} ^
+0x00400024:	subsvs	r3, sl, r1, lsl #4
+0x00400028:	andlo	r6, r1, #0x1a0000
+0x0040002c:	ldclt	p0, c6, [r0, #-0x68]
+0x00400030:	bllo	#0x45a1c4
 
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400001
 
-Disassembly of section .text:
+Function sub_40003b @ 0x0040003b
+0x0040003b:	ldr	r3, [r4, #4]
+0x0040003d:	adds	r3, #1
+0x0040003f:	str	r3, [r4, #4]
+0x00400041:	b	#0x40001f
 
-00000000 <.text>:
-   0:	4c10b510 	cfldr32mi	mvfx11, [r0], {16}
-   4:	6823447c 	stmdavs	r3!, {r2, r3, r4, r5, r6, sl, lr}
-   8:	60233301 	eorvs	r3, r3, r1, lsl #6
-   c:	3b016863 	blcc	0x5a1a0
-  10:	68636063 	stmdavs	r3!, {r0, r1, r5, r6, sp, lr}^
-  14:	dc0b2b01 			; <UNDEFINED> instruction: 0xdc0b2b01
-  18:	33016823 	movwcc	r6, #6179	; 0x1823
-  1c:	4b0a6023 	blmi	0x2980b0
-  20:	685a447b 	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}^
-  24:	605a3201 	subsvs	r3, sl, r1, lsl #4
-  28:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  2c:	bd10601a 	ldclt	0, cr6, [r0, #-104]	; 0xffffff98
-  30:	3b016863 	blcc	0x5a1c4
-  34:	f7ff6063 			; <UNDEFINED> instruction: 0xf7ff6063
-  38:	6863ffe3 	stmdavs	r3!, {r0, r1, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}^
-  3c:	60633301 	rsbvs	r3, r3, r1, lsl #6
-  40:	bf00e7ed 	svclt	0x0000e7ed
-  44:	0000003c 	andeq	r0, r0, ip, lsr r0
-  48:	00000024 	andeq	r0, r0, r4, lsr #32
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	movs	r4, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r4, r4
+0x0040004b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sub_400045 @ 0x00400045
+0x00400045:	movs	r4, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r4, r4
+0x0040004b:	movs	r0, r0
 
-00000000 <.text.startup>:
-   0:	2206b508 	andcs	fp, r6, #8, 10	; 0x2000000
-   4:	20004b03 	andcs	r4, r0, r3, lsl #22
-   8:	605a447b 	subsvs	r4, sl, fp, ror r4
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	bf00bd08 	svclt	0x0000bd08
-  14:	00000008 	andeq	r0, r0, r8
+Function sub_400055 @ 0x00400055
+0x00400055:	push	{r3, lr}
+0x00400057:	movs	r2, #6
+0x00400059:	ldr	r3, [pc, #0xc]
+0x0040005b:	movs	r0, #0
+0x0040005d:	add	r3, pc
+0x0040005f:	str	r2, [r3, #4]
+0x00400061:	bl	#0x400061
+
+Function sub_400061 @ 0x00400061
+0x00400061:	bl	#0x400061
+0x00400065:	pop	{r3, pc}
+
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	movs	r0, r1
+0x0040006b:	movs	r0, r0

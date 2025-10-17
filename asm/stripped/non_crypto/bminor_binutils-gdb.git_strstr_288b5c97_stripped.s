@@ -1,21 +1,42 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_strstr_288b5c97_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r3, r4, r5, r6, r7, lr}
+0x00400003:	mov	r6, r0
+0x00400005:	mov	r0, r1
+0x00400007:	mov	r5, r1
+0x00400009:	bl	#0x400009
 
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x400009
+0x0040000d:	mov	r7, r0
+0x0040000f:	cbnz	r0, #0x40001b
+0x00400011:	b	#0x400031
+0x00400011:	b	#0x400031
+0x0040001b:	ldrb	r1, [r5]
+0x0040001d:	mov	r0, r6
+0x0040001f:	bl	#0x40001f
+0x00400031:	mov	r4, r6
+0x00400033:	mov	r0, r4
+0x00400035:	pop	{r3, r4, r5, r6, r7, pc}
 
-Disassembly of section .text:
+Function sub_400015 @ 0x00400015
+0x00400015:	bl	#0x400015
+0x00400019:	cbz	r0, #0x40002d
+0x0040001b:	ldrb	r1, [r5]
+0x0040001d:	mov	r0, r6
+0x0040001f:	bl	#0x40001f
 
-00000000 <.text>:
-   0:	4606b5f8 			; <UNDEFINED> instruction: 0x4606b5f8
-   4:	460d4608 	strmi	r4, [sp], -r8, lsl #12
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	b9204607 	stmdblt	r0!, {r0, r1, r2, r9, sl, lr}
-  10:	1c66e00e 	stclne	0, cr14, [r6], #-56	; 0xffffffc8
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	7829b140 	stmdavc	r9!, {r6, r8, ip, sp, pc}
-  1c:	f7ff4630 			; <UNDEFINED> instruction: 0xf7ff4630
-  20:	463afffe 	shsub8mi	pc, sl, lr	; <UNPREDICTABLE>
-  24:	46044629 	strmi	r4, [r4], -r9, lsr #12
-  28:	d1f22800 	mvnsle	r2, r0, lsl #16
-  2c:	bdf84620 	ldcllt	6, cr4, [r8, #128]!	; 0x80
-  30:	46204634 			; <UNDEFINED> instruction: 0x46204634
-  34:	bf00bdf8 	svclt	0x0000bdf8
+Function sub_40001f @ 0x0040001f
+0x00400013:	adds	r6, r4, #1
+0x00400015:	bl	#0x400015
+0x0040001f:	bl	#0x40001f
+0x00400023:	mov	r2, r7
+0x00400025:	mov	r1, r5
+0x00400027:	mov	r4, r0
+0x00400029:	cmp	r0, #0
+0x0040002b:	bne	#0x400013
+0x0040002d:	mov	r0, r4
+0x0040002f:	pop	{r3, r4, r5, r6, r7, pc}
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	

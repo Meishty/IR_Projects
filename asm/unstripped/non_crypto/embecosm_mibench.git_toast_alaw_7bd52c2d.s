@@ -1,65 +1,102 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_toast_alaw_7bd52c2d.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mcrne	p5, #4, fp, c5, c8, #7
+0x00400004:	bmi	#0x7d2c44
+0x00400008:	ldrbtmi	r2, [fp], #-0x400
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	add	r7, pc
+0x00400011:	ldr	r6, [r3, r2]
+0x00400013:	b	#0x400025
+0x00400015:	uxtb	r0, r0
+0x00400017:	adds	r4, #1
+0x00400019:	cmp	r4, #0xa0
+0x0040001b:	ldrh.w	r3, [r7, r0, lsl #1]
+0x0040001f:	strh	r3, [r5, #2]!
+0x00400023:	beq	#0x40003d
+0x00400025:	ldr	r0, [r6]
+0x00400027:	bl	#0x500001
+0x0040002b:	adds	r3, r0, #1
+0x0040002d:	bne	#0x400015
+0x0040002f:	ldr	r0, [r6]
+0x00400031:	bl	#0x50000d
+0x00400035:	cmp	r0, #0
+0x00400037:	it	ne
+0x00400039:	movne.w	r4, #-1
+0x0040003d:	mov	r0, r4
+0x0040003f:	pop	{r3, r4, r5, r6, r7, pc}
+0x0040003d:	mov	r0, r4
+0x0040003f:	pop	{r3, r4, r5, r6, r7, pc}
 
-Disassembly of section .text:
+Function sub_400041 @ 0x00400041
+0x00400041:	movs	r2, r6
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r0, r0
+0x00400047:	movs	r0, r0
+0x00400049:	lsls	r2, r7, #1
+0x0040004b:	movs	r0, r0
+0x0040004d:	push	{r3, r4, r5, r6, r7, lr}
+0x0040004f:	subs	r4, r0, #2
+0x00400051:	ldr	r3, [pc, #0x2c]
+0x00400053:	ldr	r2, [pc, #0x30]
+0x00400055:	add.w	r5, r0, #0x13e
+0x00400059:	add	r3, pc
+0x0040005b:	ldr	r7, [pc, #0x2c]
+0x0040005d:	add	r7, pc
+0x0040005f:	ldr	r6, [r3, r2]
+0x00400061:	b	#0x400067
 
-00000000 <alaw_input>:
-   0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-   2:	1e85      	subs	r5, r0, #2
-   4:	4b0e      	ldr	r3, [pc, #56]	; (40 <alaw_input+0x40>)
-   6:	4a0f      	ldr	r2, [pc, #60]	; (44 <alaw_input+0x44>)
-   8:	2400      	movs	r4, #0
-   a:	447b      	add	r3, pc
-   c:	4f0e      	ldr	r7, [pc, #56]	; (48 <alaw_input+0x48>)
-   e:	447f      	add	r7, pc
-  10:	589e      	ldr	r6, [r3, r2]
-  12:	e007      	b.n	24 <alaw_input+0x24>
-  14:	b2c0      	uxtb	r0, r0
-  16:	3401      	adds	r4, #1
-  18:	2ca0      	cmp	r4, #160	; 0xa0
-  1a:	f837 3010 	ldrh.w	r3, [r7, r0, lsl #1]
-  1e:	f825 3f02 	strh.w	r3, [r5, #2]!
-  22:	d00b      	beq.n	3c <alaw_input+0x3c>
-  24:	6830      	ldr	r0, [r6, #0]
-  26:	f7ff fffe 	bl	0 <fgetc>
-  2a:	1c43      	adds	r3, r0, #1
-  2c:	d1f2      	bne.n	14 <alaw_input+0x14>
-  2e:	6830      	ldr	r0, [r6, #0]
-  30:	f7ff fffe 	bl	0 <ferror>
-  34:	2800      	cmp	r0, #0
-  36:	bf18      	it	ne
-  38:	f04f 34ff 	movne.w	r4, #4294967295	; 0xffffffff
-  3c:	4620      	mov	r0, r4
-  3e:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  40:	00000032 	.word	0x00000032
-  44:	00000000 	.word	0x00000000
-  48:	00000036 	.word	0x00000036
+Function alaw_output @ 0x0040004d
+0x0040004d:	push	{r3, r4, r5, r6, r7, lr}
+0x0040004f:	subs	r4, r0, #2
+0x00400051:	ldr	r3, [pc, #0x2c]
+0x00400053:	ldr	r2, [pc, #0x30]
+0x00400055:	add.w	r5, r0, #0x13e
+0x00400059:	add	r3, pc
+0x0040005b:	ldr	r7, [pc, #0x2c]
+0x0040005d:	add	r7, pc
+0x0040005f:	ldr	r6, [r3, r2]
+0x00400061:	b	#0x400067
+0x00400063:	cmp	r5, r4
+0x00400065:	beq	#0x40007b
+0x00400067:	ldrh	r3, [r4, #2]!
+0x0040006b:	ldr	r1, [r6]
+0x0040006d:	lsrs	r3, r3, #4
+0x0040006f:	ldrb	r0, [r7, r3]
+0x00400071:	bl	#0x500019
+0x00400075:	adds	r3, r0, #1
+0x00400077:	bne	#0x400063
+0x00400079:	pop	{r3, r4, r5, r6, r7, pc}
+0x0040007b:	movs	r0, #0
+0x0040007d:	pop	{r3, r4, r5, r6, r7, pc}
 
-0000004c <alaw_output>:
-  4c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  4e:	1e84      	subs	r4, r0, #2
-  50:	4b0b      	ldr	r3, [pc, #44]	; (80 <alaw_output+0x34>)
-  52:	4a0c      	ldr	r2, [pc, #48]	; (84 <alaw_output+0x38>)
-  54:	f500 759f 	add.w	r5, r0, #318	; 0x13e
-  58:	447b      	add	r3, pc
-  5a:	4f0b      	ldr	r7, [pc, #44]	; (88 <alaw_output+0x3c>)
-  5c:	447f      	add	r7, pc
-  5e:	589e      	ldr	r6, [r3, r2]
-  60:	e001      	b.n	66 <alaw_output+0x1a>
-  62:	42a5      	cmp	r5, r4
-  64:	d009      	beq.n	7a <alaw_output+0x2e>
-  66:	f834 3f02 	ldrh.w	r3, [r4, #2]!
-  6a:	6831      	ldr	r1, [r6, #0]
-  6c:	091b      	lsrs	r3, r3, #4
-  6e:	5cf8      	ldrb	r0, [r7, r3]
-  70:	f7ff fffe 	bl	0 <fputc>
-  74:	1c43      	adds	r3, r0, #1
-  76:	d1f4      	bne.n	62 <alaw_output+0x16>
-  78:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  7a:	2000      	movs	r0, #0
-  7c:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  7e:	bf00      	nop
-  80:	00000024 	.word	0x00000024
-  84:	00000000 	.word	0x00000000
-  88:	00000228 	.word	0x00000228
+Function sub_40007f @ 0x0040007f
+0x0040007f:	nop	
+0x00400081:	movs	r4, r4
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	lsls	r4, r5, #8
+0x0040008b:	movs	r0, r0
+
+Function fgetc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function ferror @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function fputc @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

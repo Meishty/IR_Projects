@@ -1,33 +1,72 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_stat8_30c594c2.o:     file format elf32-littlearm
+Function main @ 0x00400015
+0x00400015:	ldr	r1, [pc, #0x38]
+0x00400017:	movs	r2, #0
+0x00400019:	movs	r0, #0xc4
+0x0040001b:	push	{r4, lr}
+0x0040001d:	add	r1, pc
+0x0040001f:	bl	#0x500001
+0x00400023:	adds	r0, #1
+0x00400025:	bne	#0x400043
+0x00400027:	bl	#0x50000d
+0x0040002b:	ldr	r0, [r0]
+0x0040002d:	subs	r0, #0xe
+0x0040002f:	bics	r4, r0, #8
+0x00400033:	bne	#0x400043
+0x00400035:	ldr	r0, [pc, #0x1c]
+0x00400037:	add	r0, pc
+0x00400039:	bl	#0x500019
+0x0040003d:	mov	r0, r4
+0x0040003f:	bl	#0x500025
+0x00400043:	ldr	r0, [pc, #0x14]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500031
+0x0040004b:	bl	#0x50003d
 
+Function sub_40004f @ 0x0040004f
 
-Disassembly of section .text.startup:
+Function syscall @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	490e      	ldr	r1, [pc, #56]	; (3c <main+0x3c>)
-   2:	2200      	movs	r2, #0
-   4:	20c4      	movs	r0, #196	; 0xc4
-   6:	b510      	push	{r4, lr}
-   8:	4479      	add	r1, pc
-   a:	f7ff fffe 	bl	0 <syscall>
-   e:	3001      	adds	r0, #1
-  10:	d10d      	bne.n	2e <main+0x2e>
-  12:	f7ff fffe 	bl	0 <__errno_location>
-  16:	6800      	ldr	r0, [r0, #0]
-  18:	380e      	subs	r0, #14
-  1a:	f030 0408 	bics.w	r4, r0, #8
-  1e:	d106      	bne.n	2e <main+0x2e>
-  20:	4807      	ldr	r0, [pc, #28]	; (40 <main+0x40>)
-  22:	4478      	add	r0, pc
-  24:	f7ff fffe 	bl	0 <puts>
-  28:	4620      	mov	r0, r4
-  2a:	f7ff fffe 	bl	0 <exit>
-  2e:	4805      	ldr	r0, [pc, #20]	; (44 <main+0x44>)
-  30:	4478      	add	r0, pc
-  32:	f7ff fffe 	bl	0 <perror>
-  36:	f7ff fffe 	bl	0 <abort>
-  3a:	bf00      	nop
-  3c:	00000030 	.word	0x00000030
-  40:	0000001a 	.word	0x0000001a
-  44:	00000010 	.word	0x00000010
+Function __errno_location @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function perror @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function abort @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

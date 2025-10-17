@@ -1,16 +1,16 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_remote_7b4f3f18_stripped.o:     file format elf32-littlearm
+Function sub_40c005 @ 0x0040c005
+0x0040c005:	push	{r3, lr}
+0x0040c007:	movs	r0, #1
+0x0040c009:	ldr	r3, [pc, #0x14]
+0x0040c00b:	ldr	r1, [pc, #0x18]
+0x0040c00d:	add	r3, pc
+0x0040c00f:	add.w	r3, r3, #0xb000
+0x0040c013:	add	r1, pc
+0x0040c015:	ldrb.w	r2, [r3, #0xfff]
+0x0040c019:	bl	#0x40c019
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	2001b508 	andcs	fp, r1, r8, lsl #10
-   4:	49064b05 	stmdbmi	r6, {r0, r2, r8, r9, fp, lr}
-   8:	f503447b 			; <UNDEFINED> instruction: 0xf503447b
-   c:	44794330 	ldrbtmi	r4, [r9], #-816	; 0xfffffcd0
-  10:	2ffff893 	svccs	0x00fff893
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	bd082000 	stclt	0, cr2, [r8, #-0]
-  1c:	00000010 	andeq	r0, r0, r0, lsl r0
-  20:	0000000e 	andeq	r0, r0, lr
+Function sub_40c019 @ 0x0040c019
+0x0040c019:	bl	#0x40c019
+0x0040c01d:	movs	r0, #0
+0x0040c01f:	pop	{r3, pc}

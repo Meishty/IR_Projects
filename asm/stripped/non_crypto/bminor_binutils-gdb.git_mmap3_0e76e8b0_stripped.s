@@ -1,31 +1,55 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mmap3_0e76e8b0_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	push	{r4, r5, r6, lr}
+0x0040000b:	movs	r5, #0
+0x0040000d:	mov.w	r0, #-1
+0x00400011:	sub	sp, #8
+0x00400013:	movs	r3, #0x22
+0x00400015:	movs	r2, #7
+0x00400017:	movs	r1, #0x4c
+0x00400019:	strd	r0, r5, [sp]
+0x0040001d:	mov	r0, r5
+0x0040001f:	bl	#0x40001f
 
+Function sub_40001f @ 0x0040001f
+0x0040001f:	bl	#0x40001f
 
-Disassembly of section .text.startup:
+Function sub_400023 @ 0x00400023
+0x00400023:	subs	r3, r0, #1
+0x00400025:	adds	r3, #3
+0x00400027:	bhi	#0x400061
+0x00400029:	add.w	r6, r0, #0x1000
+0x0040002d:	mov	r4, r0
+0x0040002f:	movs	r3, #0xef
+0x00400031:	movs	r2, #0xbe
+0x00400033:	mov	r1, r5
+0x00400035:	strb	r2, [r0]
+0x00400037:	strb.w	r3, [r6, #0xfff]
+0x0040003b:	adds	r0, #1
+0x0040003d:	movw	r2, #0x1ffe
+0x00400041:	bl	#0x400041
 
-00000000 <.text.startup>:
-   0:	2500b570 	strcs	fp, [r0, #-1392]	; 0xfffffa90
-   4:	30fff04f 	rscscc	pc, pc, pc, asr #32
-   8:	2322b082 			; <UNDEFINED> instruction: 0x2322b082
-   c:	214c2207 	cmpcs	ip, r7, lsl #4
-  10:	0500e9cd 	streq	lr, [r0, #-2509]	; 0xfffff633
-  14:	f7ff4628 			; <UNDEFINED> instruction: 0xf7ff4628
-  18:	1e43fffe 	mcrne	15, 2, pc, cr3, cr14, {7}	; <UNPREDICTABLE>
-  1c:	d81b3303 	ldmdale	fp, {r0, r1, r8, r9, ip, sp}
-  20:	5680f500 	strpl	pc, [r0], r0, lsl #10
-  24:	23ef4604 	mvncs	r4, #4, 12	; 0x400000
-  28:	462922be 			; <UNDEFINED> instruction: 0x462922be
-  2c:	f8867002 			; <UNDEFINED> instruction: 0xf8867002
-  30:	30013fff 	strdcc	r3, [r1], -pc	; <UNPREDICTABLE>
-  34:	72fef641 	rscsvc	pc, lr, #68157440	; 0x4100000
-  38:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  3c:	2bbe7823 	blcs	0xfef9e0d0
-  40:	f896d10a 			; <UNDEFINED> instruction: 0xf896d10a
-  44:	2bef3fff 	blcs	0xffbd0048
-  48:	4804d106 	stmdami	r4, {r1, r2, r8, ip, lr, pc}
-  4c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  50:	4628fffe 	qsub8mi	pc, r8, lr	; <UNPREDICTABLE>
-  54:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  58:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  5c:	0000000c 	andeq	r0, r0, ip
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041
+0x00400045:	ldrb	r3, [r4]
+0x00400047:	cmp	r3, #0xbe
+0x00400049:	bne	#0x400061
+0x0040004b:	ldrb.w	r3, [r6, #0xfff]
+0x0040004f:	cmp	r3, #0xef
+0x00400051:	bne	#0x400061
+0x00400053:	ldr	r0, [pc, #0x10]
+0x00400055:	add	r0, pc
+0x00400057:	bl	#0x400057
+
+Function sub_400057 @ 0x00400057
+0x00400057:	bl	#0x400057
+
+Function sub_40005b @ 0x0040005b
+0x0040005b:	mov	r0, r5
+0x0040005d:	bl	#0x40005d
+
+Function sub_40005d @ 0x0040005d
+0x0040005d:	bl	#0x40005d
+
+Function sub_400061 @ 0x00400061
+0x00400061:	bl	#0x400061

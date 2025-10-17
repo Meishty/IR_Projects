@@ -1,19 +1,22 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_strcasecmp_9bb87857_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r0, #-0xa0a]
+0x00400004:	and	r4, r0, sl, ror r4
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	ldrb	r3, [r0], #1
+0x0040000f:	ldrb	ip, [r1], #1
+0x00400013:	ldrb.w	lr, [r2, r3]
+0x00400017:	ldrb.w	ip, [r2, ip]
+0x0040001b:	cmp	lr, ip
+0x0040001d:	beq	#0x400009
+0x0040001f:	sub.w	r0, lr, ip
+0x00400023:	ldr	pc, [sp], #4
 
-Disassembly of section .text:
+Function sub_400027 @ 0x00400027
+0x00400027:	mov	r0, r3
+0x00400029:	ldr	pc, [sp], #4
 
-00000000 <.text>:
-   0:	b5004a0a 	strlt	r4, [r0, #-2570]	; 0xfffff5f6
-   4:	e000447a 	and	r4, r0, sl, ror r4
-   8:	f810b16b 			; <UNDEFINED> instruction: 0xf810b16b
-   c:	f8113b01 			; <UNDEFINED> instruction: 0xf8113b01
-  10:	f812cb01 			; <UNDEFINED> instruction: 0xf812cb01
-  14:	f812e003 			; <UNDEFINED> instruction: 0xf812e003
-  18:	45e6c00c 	strbmi	ip, [r6, #12]!
-  1c:	ebaed0f4 	bl	0xfebb43f4
-  20:	f85d000c 			; <UNDEFINED> instruction: 0xf85d000c
-  24:	4618fb04 	ldrmi	pc, [r8], -r4, lsl #22
-  28:	fb04f85d 	blx	0x13e1a6
-  2c:	00000024 	andeq	r0, r0, r4, lsr #32
+Function sub_40002d @ 0x0040002d
+0x0040002d:	movs	r4, r4
+0x0040002f:	movs	r0, r0

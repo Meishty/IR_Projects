@@ -1,13 +1,14 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_solib-intra-step-lib_d3462fd4.o:     file format elf32-littlearm
+Function shlib_second @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
 
+Function shlib_first @ 0x00400007
+0x00400007:	push	{r3, lr}
+0x00400009:	bl	#0x500001
 
-Disassembly of section .text.unlikely:
-
-00000000 <shlib_second>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <abort>
-
-00000006 <shlib_first>:
-   6:	b508      	push	{r3, lr}
-   8:	f7ff fffe 	bl	0 <abort>
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,13 +1,26 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_find_375c8ba0_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vst3.8	{d27, d29, d31}, [pc], r8
 
+Function sub_400005 @ 0x00400005
+0x00400005:	lsrs	r2, r7
+0x00400007:	bl	#0x400007
 
-Disassembly of section .text.startup:
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	cbz	r0, #0x400011
+0x0040000d:	movs	r0, #0
+0x0040000f:	pop	{r3, pc}
+0x0040000d:	movs	r0, #0
+0x0040000f:	pop	{r3, pc}
+0x00400011:	movs	r0, #1
+0x00400013:	bl	#0x400013
 
-00000000 <.text.startup>:
-   0:	f44fb508 	vst3.8	{d27,d29,d31}, [pc], r8
-   4:	f7ff40fa 			; <UNDEFINED> instruction: 0xf7ff40fa
-   8:	b108fffe 	strdlt	pc, [r8, -lr]
-   c:	bd082000 	stclt	0, cr2, [r8, #-0]
-  10:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  14:	bf00fffe 	svclt	0x0000fffe
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

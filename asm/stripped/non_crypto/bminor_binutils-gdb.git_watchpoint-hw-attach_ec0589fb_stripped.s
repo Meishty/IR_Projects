@@ -1,27 +1,52 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_watchpoint-hw-attach_ec0589fb_stripped.o:     file format elf32-littlearm
+Function sub_40001d @ 0x0040001d
+0x0040001d:	push	{r3, r4, r5, lr}
+0x0040001f:	ldr	r5, [pc, #0x40]
+0x00400021:	bl	#0x400021
 
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
+0x00400025:	add	r5, pc
+0x00400027:	ldr	r4, [r5]
+0x00400029:	cbnz	r4, #0x400047
+0x0040002b:	movs	r0, #1
+0x0040002d:	add	r4, r0
+0x0040002f:	bl	#0x40002f
+0x0040002b:	movs	r0, #1
+0x0040002d:	add	r4, r0
+0x0040002f:	bl	#0x40002f
+0x00400047:	ldr	r3, [pc, #0x1c]
+0x00400049:	movs	r2, #4
+0x0040004b:	ldr	r1, [pc, #0x1c]
+0x0040004d:	movs	r0, #1
+0x0040004f:	add	r3, pc
+0x00400051:	add	r1, pc
+0x00400053:	str	r2, [r3, #4]
+0x00400055:	ldr	r2, [r3, #4]
+0x00400057:	bl	#0x400057
 
-Disassembly of section .text.startup:
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bl	#0x40002f
+0x00400033:	ldr	r2, [r5]
+0x00400035:	subs.w	r3, r4, #0x64
+0x00400039:	it	ne
+0x0040003b:	movne	r3, #1
+0x0040003d:	cmp	r2, #0
+0x0040003f:	it	ne
+0x00400041:	movne	r3, #0
+0x00400043:	cmp	r3, #0
+0x00400045:	bne	#0x40002b
 
-00000000 <.text.startup>:
-   0:	4d10b538 	cfldr32mi	mvfx11, [r0, #-224]	; 0xffffff20
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	682c447d 	stmdavs	ip!, {r0, r2, r3, r4, r5, r6, sl, lr}
-   c:	2001b96c 	andcs	fp, r1, ip, ror #18
-  10:	f7ff4404 			; <UNDEFINED> instruction: 0xf7ff4404
-  14:	682afffe 	stmdavs	sl!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  18:	0364f1b4 	msreq	SPSR_s, #180, 2	; 0x2d
-  1c:	2301bf18 	movwcs	fp, #7960	; 0x1f18
-  20:	bf182a00 	svclt	0x00182a00
-  24:	2b002300 	blcs	0x8c2c
-  28:	4b07d1f1 	blmi	0x1f47f4
-  2c:	49072204 	stmdbmi	r7, {r2, r9, sp}
-  30:	447b2001 	ldrbtmi	r2, [fp], #-1
-  34:	605a4479 	subsvs	r4, sl, r9, ror r4
-  38:	f7ff685a 			; <UNDEFINED> instruction: 0xf7ff685a
-  3c:	2000fffe 	strdcs	pc, [r0], -lr
-  40:	bf00bd38 	svclt	0x0000bd38
-  44:	00000038 	andeq	r0, r0, r8, lsr r0
-  48:	00000012 	andeq	r0, r0, r2, lsl r0
-  4c:	00000014 	andeq	r0, r0, r4, lsl r0
+Function sub_400057 @ 0x00400057
+0x00400057:	bl	#0x400057
+0x0040005b:	movs	r0, #0
+0x0040005d:	pop	{r3, r4, r5, pc}
+
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	movs	r0, r7
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r2, r2
+0x00400067:	movs	r0, r0
+0x00400069:	movs	r4, r2
+0x0040006b:	movs	r0, r0

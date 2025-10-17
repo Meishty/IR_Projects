@@ -1,19 +1,44 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_startup-with-shell_9f826cc0_stripped.o:     file format elf32-littlearm
+Function sub_400011 @ 0x00400011
+0x00400011:	ldr	r3, [r1]
+0x00400013:	cbz	r3, #0x400037
+0x00400015:	push	{r4, r5, r6, lr}
+0x00400017:	mov	r5, r1
+0x00400019:	ldr	r6, [pc, #0x20]
+0x0040001b:	movs	r4, #0
+0x0040001d:	add	r6, pc
+0x0040001f:	mov	r2, r4
+0x00400021:	mov	r1, r6
+0x00400023:	movs	r0, #1
+0x00400025:	adds	r4, #1
+0x00400027:	bl	#0x400027
+0x00400015:	push	{r4, r5, r6, lr}
+0x00400017:	mov	r5, r1
+0x00400019:	ldr	r6, [pc, #0x20]
+0x0040001b:	movs	r4, #0
+0x0040001d:	add	r6, pc
+0x0040001f:	mov	r2, r4
+0x00400021:	mov	r1, r6
+0x00400023:	movs	r0, #1
+0x00400025:	adds	r4, #1
+0x00400027:	bl	#0x400027
+0x0040001f:	mov	r2, r4
+0x00400021:	mov	r1, r6
+0x00400023:	movs	r0, #1
+0x00400025:	adds	r4, #1
+0x00400027:	bl	#0x400027
+0x00400037:	movs	r0, #0
+0x00400039:	bx	lr
 
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	ldr	r3, [r5, #4]!
+0x0040002f:	cmp	r3, #0
+0x00400031:	bne	#0x40001f
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r4, r5, r6, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	b183680b 	orrlt	r6, r3, fp, lsl #16
-   4:	460db570 			; <UNDEFINED> instruction: 0x460db570
-   8:	24004e08 	strcs	r4, [r0], #-3592	; 0xfffff1f8
-   c:	4622447e 			; <UNDEFINED> instruction: 0x4622447e
-  10:	20014631 	andcs	r4, r1, r1, lsr r6
-  14:	f7ff3401 			; <UNDEFINED> instruction: 0xf7ff3401
-  18:	f855fffe 			; <UNDEFINED> instruction: 0xf855fffe
-  1c:	2b003f04 	blcs	0xfc34
-  20:	2000d1f5 	strdcs	sp, [r0], -r5
-  24:	2000bd70 	andcs	fp, r0, r0, ror sp
-  28:	bf004770 	svclt	0x00004770
-  2c:	0000001c 	andeq	r0, r0, ip, lsl r0
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r4, r3
+0x0040003f:	movs	r0, r0

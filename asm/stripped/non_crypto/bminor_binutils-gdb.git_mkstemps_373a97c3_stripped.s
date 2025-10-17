@@ -1,211 +1,359 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mkstemps_373a97c3_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svcmi	#0xf0e92d
+0x00400004:	strmi	r4, [r5], -ip, lsl #12
+0x00400008:	blhi	#0x4bb4c4
+0x0040000c:	cdp	p0, #0, c11, c8, c5, #4
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
+0x00400017:	adds	r3, r4, #5
+0x00400019:	cmp	r3, r0
+0x0040001b:	bge.w	#0x40031b
+0x0040001f:	subs	r0, r0, r4
+0x00400021:	ldr	r1, [pc, #0x2fc]
+0x00400023:	subs	r0, #6
+0x00400025:	mov	r3, r5
+0x00400027:	add	r3, r0
+0x00400029:	add	r1, pc
+0x0040002b:	movs	r2, #6
+0x0040002d:	mov	r0, r3
+0x0040002f:	str	r3, [sp, #0xc]
+0x00400031:	bl	#0x400031
+0x004002fb:	add	sp, #0x14
+0x004002fd:	vpop	{d8}
+0x00400301:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x0040031b:	mov.w	r0, #-1
+0x0040031f:	b	#0x4002fb
 
-Disassembly of section .text:
+Function sub_400031 @ 0x00400031
+0x00400031:	bl	#0x400031
+0x00400035:	cmp	r0, #0
+0x00400037:	bne.w	#0x40031b
 
-00000000 <.text>:
-   0:	4ff0e92d 	svcmi	0x00f0e92d
-   4:	4605460c 	strmi	r4, [r5], -ip, lsl #12
-   8:	8b02ed2d 	blhi	0xbb4c4
-   c:	ee08b085 	cdp	0, 0, cr11, cr8, cr5, {4}
-  10:	f7ff0a10 			; <UNDEFINED> instruction: 0xf7ff0a10
-  14:	1d63fffe 	stclne	15, cr15, [r3, #-1016]!	; 0xfffffc08
-  18:	f2804283 	vsubl.s8	q2, d16, d3
-  1c:	1b00817e 	blne	0x2061c
-  20:	380649bf 	stmdacc	r6, {r0, r1, r2, r3, r4, r5, r7, r8, fp, lr}
-  24:	4403462b 	strmi	r4, [r3], #-1579	; 0xfffff9d5
-  28:	22064479 	andcs	r4, r6, #2030043136	; 0x79000000
-  2c:	93034618 	movwls	r4, #13848	; 0x3618
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	f0402800 			; <UNDEFINED> instruction: 0xf0402800
-  38:	f7ff8170 			; <UNDEFINED> instruction: 0xf7ff8170
-  3c:	4ab9fffe 	bmi	0xfee8003c
-  40:	66f7f64d 	ldrbtvs	pc, [r7], sp, asr #12	; <UNPREDICTABLE>
-  44:	767bf6ce 	ldrbtvc	pc, [fp], -lr, asr #13	; <UNPREDICTABLE>
-  48:	f241447a 	vqshl.s8	q10, q13, <illegal reg q0.5>
-  4c:	f6c00785 			; <UNDEFINED> instruction: 0xf6c00785
-  50:	f6470742 			; <UNDEFINED> instruction: 0xf6470742
-  54:	f6cb34df 			; <UNDEFINED> instruction: 0xf6cb34df
-  58:	970054ef 	strls	r5, [r0, -pc, ror #9]
-  5c:	46376813 			; <UNDEFINED> instruction: 0x46376813
-  60:	18c36851 	stmiane	r3, {r0, r4, r6, fp, sp, lr}^
-  64:	eb416013 	bl	0x10580b8
-  68:	605070e0 	subsvs	r7, r0, r0, ror #1
-  6c:	22f8f24a 	rscscs	pc, r8, #-1610612732	; 0xa0000004
-  70:	0203f2c0 	andeq	pc, r3, #192, 4
-  74:	e0179202 	ands	r9, r7, r2, lsl #4
-  78:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  7c:	f0236803 			; <UNDEFINED> instruction: 0xf0236803
-  80:	2b110304 	blcs	0x440c98
-  84:	813ef040 	teqhi	lr, r0, asr #32	; <UNPREDICTABLE>
-  88:	f6414aa7 			; <UNDEFINED> instruction: 0xf6414aa7
-  8c:	447a6361 	ldrbtmi	r6, [sl], #-865	; 0xfffffc9f
-  90:	1000e9d2 	ldrdne	lr, [r0], -r2
-  94:	6013185b 	andsvs	r1, r3, fp, asr r8
-  98:	0000f140 	andeq	pc, r0, r0, asr #2
-  9c:	9a026050 	bls	0x981e4
-  a0:	92023a01 	andls	r3, r2, #4096	; 0x1000
-  a4:	812ef000 	msrhi	CPSR_fsx, r0
-  a8:	f0230f9a 			; <UNDEFINED> instruction: 0xf0230f9a
-  ac:	ea424140 	b	0x10905b4
-  b0:	f04f0280 			; <UNDEFINED> instruction: 0xf04f0280
-  b4:	f0220c1f 			; <UNDEFINED> instruction: 0xf0220c1f
-  b8:	9e034240 	cdpls	2, 0, cr4, cr3, cr0, {2}
-  bc:	9a004411 	bls	0x11108
-  c0:	7110eb01 	tstvc	r0, r1, lsl #22
-  c4:	fba29601 	blx	0xfe8a58d2
-  c8:	1a8d5201 	bne	0xfe3548d4
-  cc:	0255eb02 	subseq	lr, r5, #2048	; 0x800
-  d0:	ebc20912 	bl	0xff082520
-  d4:	1a891242 	bne	0xfe2449e4
-  d8:	f1601a5b 			; <UNDEFINED> instruction: 0xf1601a5b
-  dc:	fb070000 	blx	0x1c00e6
-  e0:	fba3fe03 	blx	0xfe8ff8f6
-  e4:	fb042304 	blx	0x108cfe
-  e8:	f002ee00 			; <UNDEFINED> instruction: 0xf002ee00
-  ec:	449e0501 	ldrmi	r0, [lr], #1281	; 0x501
-  f0:	ea430853 	b	0x10c2244
-  f4:	fba573ce 	blx	0xfe95d036
-  f8:	ea4f580c 	b	0x13d6130
-  fc:	f023005e 			; <UNDEFINED> instruction: 0xf023005e
- 100:	186d4240 	stmdane	sp!, {r6, r9, lr}^
- 104:	ea410f99 	b	0x1043f70
- 108:	f0210180 			; <UNDEFINED> instruction: 0xf0210180
- 10c:	440a4140 	strmi	r4, [sl], #-320	; 0xfffffec0
- 110:	eb029900 	bl	0xa6518
- 114:	fba1725e 	blx	0xfe85ca96
- 118:	eba2e102 	bl	0xfe8b8528
- 11c:	eb010e01 	bl	0x43928
- 120:	0909015e 	stmdbeq	r9, {r1, r2, r3, r4, r6, r8}
- 124:	1141ebc1 	smlalbtne	lr, r1, r1, fp
- 128:	1a9b1a52 	bne	0xfe6c6a78
- 12c:	0100f160 	tsteq	r0, r0, ror #2	; <UNPREDICTABLE>
- 130:	f803fb07 			; <UNDEFINED> instruction: 0xf803fb07
- 134:	0304fba3 	movweq	pc, #19363	; 0x4ba3	; <UNPREDICTABLE>
- 138:	8801fb04 	stmdahi	r1, {r2, r8, r9, fp, ip, sp, lr, pc}
- 13c:	08434498 	stmdaeq	r3, {r3, r4, r7, sl, lr}^
- 140:	0001f000 	andeq	pc, r1, r0
- 144:	73c8ea43 	bicvc	lr, r8, #274432	; 0x43000
- 148:	0e58ea4f 	vnmlaeq.f32	s29, s16, s30
- 14c:	010cfba0 	smlatbeq	ip, r0, fp, pc	; <UNPREDICTABLE>
- 150:	4140f023 	cmpmi	r0, r3, lsr #32	; <UNPREDICTABLE>
- 154:	0f9a1880 	svceq	0x009a1880
- 158:	028eea42 	addeq	lr, lr, #270336	; 0x42000
- 15c:	4240f022 	submi	pc, r0, #34	; 0x22
- 160:	9a004411 	bls	0x111ac
- 164:	7158eb01 	cmpvc	r8, r1, lsl #22
- 168:	8201fba2 	andhi	pc, r1, #165888	; 0x28800
- 16c:	81bcf8df 			; <UNDEFINED> instruction: 0x81bcf8df
- 170:	0902eba1 	stmdbeq	r2, {r0, r5, r7, r8, r9, fp, sp, lr, pc}
- 174:	eb0244f8 	bl	0x9155c
- 178:	f04f0259 			; <UNDEFINED> instruction: 0xf04f0259
- 17c:	f8180900 			; <UNDEFINED> instruction: 0xf8180900
- 180:	09125005 	ldmdbeq	r2, {r0, r2, ip, lr}
- 184:	0000f818 	andeq	pc, r0, r8, lsl r8	; <UNPREDICTABLE>
- 188:	1242ebc2 	subne	lr, r2, #198656	; 0x30800
- 18c:	0907f365 	stmdbeq	r7, {r0, r2, r5, r6, r8, r9, ip, sp, lr, pc}
- 190:	1a9b1a8a 	bne	0xfe6c6bc0
- 194:	290ff360 	stmdbcs	pc, {r5, r6, r8, r9, ip, sp, lr, pc}	; <UNPREDICTABLE>
- 198:	0e00f16e 	mvfeqsz	f7, #0.5
- 19c:	f003fb07 			; <UNDEFINED> instruction: 0xf003fb07
- 1a0:	5304fba3 	movwpl	pc, #19363	; 0x4ba3	; <UNPREDICTABLE>
- 1a4:	000efb04 	andeq	pc, lr, r4, lsl #22
- 1a8:	0101f005 	tsteq	r1, r5	; <UNPREDICTABLE>
- 1ac:	086b4418 	stmdaeq	fp!, {r3, r4, sl, lr}^
- 1b0:	150cfba1 	strne	pc, [ip, #-2977]	; 0xfffff45f
- 1b4:	73c0ea43 	bicvc	lr, r0, #274432	; 0x43000
- 1b8:	0a50ea4f 	beq	0x143aafc
- 1bc:	0f9d1889 	svceq	0x009d1889
- 1c0:	058aea45 	streq	lr, [sl, #2629]	; 0xa45
- 1c4:	4540f025 	strbmi	pc, [r0, #-37]	; 0xffffffdb	; <UNPREDICTABLE>
- 1c8:	2001f818 	andcs	pc, r1, r8, lsl r8	; <UNPREDICTABLE>
- 1cc:	f36221c2 	vrhadd.u32	q9, q9, q1
- 1d0:	f0234917 			; <UNDEFINED> instruction: 0xf0234917
- 1d4:	44154240 	ldrmi	r4, [r5], #-576	; 0xfffffdc0
- 1d8:	eb059a00 	bl	0x1669e0
- 1dc:	ee187550 	mrc	5, 0, r7, cr8, cr0, {2}
- 1e0:	fba20a10 	blx	0xfe882a2a
- 1e4:	f44f2e05 			; <UNDEFINED> instruction: 0xf44f2e05
- 1e8:	eba572c0 	bl	0xfe95ccf0
- 1ec:	eb0e0b0e 	bl	0x382e2c
- 1f0:	ea4f0e5b 	b	0x13c3b64
- 1f4:	ebce1e1e 	bl	0xff387a74
- 1f8:	eba51e4e 	bl	0xfe947b38
- 1fc:	1b5b050e 	blne	0x16c163c
- 200:	0e00f16a 	mvfeqsz	f7, #2.0
- 204:	fa03fb07 	blx	0xfee28
- 208:	b304fba3 	movwlt	pc, #19363	; 0x4ba3	; <UNPREDICTABLE>
- 20c:	aa0efb04 	bge	0x3bee24
- 210:	0e01f00b 	cdpeq	0, 0, cr15, cr1, cr11, {0}
- 214:	ea4f449a 	b	0x13d1484
- 218:	fbae035b 	blx	0xfeb80f8e
- 21c:	ea43eb0c 	b	0x10fae54
- 220:	eb1e73ca 	bl	0x79d150
- 224:	f8180e05 			; <UNDEFINED> instruction: 0xf8180e05
- 228:	f023500e 			; <UNDEFINED> instruction: 0xf023500e
- 22c:	f3654e40 	vcgt.f32	q10, <illegal reg q2.5>, q0
- 230:	f8c6691f 			; <UNDEFINED> instruction: 0xf8c6691f
- 234:	ea4f9000 	b	0x13e423c
- 238:	0f9d095a 	svceq	0x009d095a
- 23c:	0589ea45 	streq	lr, [r9, #2629]	; 0xa45
- 240:	4540f025 	strbmi	pc, [r0, #-37]	; 0xffffffdb	; <UNPREDICTABLE>
- 244:	9d0044ae 	cfstrsls	mvf4, [r0, #-696]	; 0xfffffd48
- 248:	7e5aeb0e 	vnmlsvc.f64	d30, d10, d14
- 24c:	a50efba5 	strge	pc, [lr, #-2981]	; 0xfffff45b
- 250:	0a05ebae 	beq	0x17b110
- 254:	055aeb05 	ldrbeq	lr, [sl, #-2821]	; 0xfffff4fb
- 258:	ebc5092d 	bl	0xff142714
- 25c:	ebae1545 	bl	0xfeb85778
- 260:	1b5b0505 	blne	0x16c167c
- 264:	0900f169 	stmdbeq	r0, {r0, r3, r5, r6, r8, ip, sp, lr, pc}
- 268:	fe03fb07 	vseleq.f64	d15, d3, d7
- 26c:	a304fba3 	movwge	pc, #19363	; 0x4ba3	; <UNPREDICTABLE>
- 270:	ee09fb04 	vmla.f64	d15, d9, d4
- 274:	0901f00a 	stmdbeq	r1, {r1, r3, ip, sp, lr, pc}
- 278:	fba9449e 	blx	0xfea514fa
- 27c:	ea4f9c0c 	b	0x13e72b4
- 280:	eb190c5e 	bl	0x643400
- 284:	ea4f0905 	b	0x13c26a0
- 288:	ea45055a 	b	0x11417f8
- 28c:	f81875ce 			; <UNDEFINED> instruction: 0xf81875ce
- 290:	ea4f3009 	b	0x13cc2bc
- 294:	ea497995 	b	0x125e8f0
- 298:	7133098c 	teqvc	r3, ip, lsl #19
- 29c:	4940f029 	stmdbmi	r0, {r0, r3, r5, ip, sp, lr, pc}^
- 2a0:	4340f025 	movtmi	pc, #37	; 0x25	; <UNPREDICTABLE>
- 2a4:	444b9e00 	strbmi	r9, [fp], #-3584	; 0xfffff200
- 2a8:	735eeb03 	cmpvc	lr, #3072	; 0xc00
- 2ac:	9e03fba6 	vmlals.f64	d15, d19, d22
- 2b0:	eba39e01 	bl	0xfe8e7abc
- 2b4:	eb0e090e 	bl	0x3826f4
- 2b8:	ea4f0e59 	b	0x13c3c24
- 2bc:	ebce1e1e 	bl	0xff387b3c
- 2c0:	eba31e4e 	bl	0xfe8c7c00
- 2c4:	1aeb030e 	bne	0xffac0f04
- 2c8:	0c00f16c 	stfeqd	f7, [r0], {108}	; 0x6c
- 2cc:	fe03fb07 	vseleq.f64	d15, d3, d7
- 2d0:	ee0cfb04 	vmla.f64	d15, d12, d4
- 2d4:	c304fba3 	movwgt	pc, #19363	; 0x4ba3	; <UNPREDICTABLE>
- 2d8:	ea4f449e 	b	0x13d1558
- 2dc:	ea4c0c5c 	b	0x1303454
- 2e0:	ebcc7cce 	bl	0xff31f620
- 2e4:	eba51c4c 	bl	0xfe94741c
- 2e8:	f818054c 			; <UNDEFINED> instruction: 0xf818054c
- 2ec:	71733005 	cmnvc	r3, r5
- 2f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2f4:	f6ff2800 			; <UNDEFINED> instruction: 0xf6ff2800
- 2f8:	b005aebf 			; <UNDEFINED> instruction: 0xb005aebf
- 2fc:	8b02ecbd 	blhi	0xbb5f8
- 300:	8ff0e8bd 	svchi	0x00f0e8bd
- 304:	2a10ee18 	bcs	0x43bb6c
- 308:	f04f2300 			; <UNDEFINED> instruction: 0xf04f2300
- 30c:	701330ff 	ldrshvc	r3, [r3], -pc	; <UNPREDICTABLE>
- 310:	ecbdb005 	ldc	0, cr11, [sp], #20
- 314:	e8bd8b02 	pop	{r1, r8, r9, fp, pc}
- 318:	f04f8ff0 			; <UNDEFINED> instruction: 0xf04f8ff0
- 31c:	e7ec30ff 			; <UNDEFINED> instruction: 0xe7ec30ff
- 320:	000002f4 	strdeq	r0, [r0], -r4
- 324:	000002d8 	ldrdeq	r0, [r0], -r8
- 328:	00000296 	muleq	r0, r6, r2
- 32c:	000001b4 			; <UNDEFINED> instruction: 0x000001b4
+Function sub_40003b @ 0x0040003b
+0x0040003b:	bl	#0x40003b
+0x0040003f:	ldr	r2, [pc, #0x2e4]
+0x00400041:	movw	r6, #0xdef7
+0x00400045:	movt	r6, #0xef7b
+0x00400049:	add	r2, pc
+0x0040004b:	movw	r7, #0x1085
+0x0040004f:	movt	r7, #0x842
+0x00400053:	movw	r4, #0x7bdf
+0x00400057:	movt	r4, #0xbdef
+0x0040005b:	str	r7, [sp]
+0x0040005d:	ldr	r3, [r2]
+0x0040005f:	mov	r7, r6
+0x00400061:	ldr	r1, [r2, #4]
+0x00400063:	adds	r3, r0, r3
+0x00400065:	str	r3, [r2]
+0x00400067:	adc.w	r0, r1, r0, asr #31
+0x0040006b:	str	r0, [r2, #4]
+0x0040006d:	movw	r2, #0xa2f8
+0x00400071:	movt	r2, #3
+0x00400075:	str	r2, [sp, #8]
+0x00400077:	b	#0x4000a9
+0x004000a9:	lsrs	r2, r3, #0x1e
+0x004000ab:	bic	r1, r3, #0xc0000000
+0x004000af:	orr.w	r2, r2, r0, lsl #2
+0x004000b3:	mov.w	ip, #0x1f
+0x004000b7:	bic	r2, r2, #0xc0000000
+0x004000bb:	ldr	r6, [sp, #0xc]
+0x004000bd:	add	r1, r2
+0x004000bf:	ldr	r2, [sp]
+0x004000c1:	add.w	r1, r1, r0, lsr #28
+0x004000c5:	str	r6, [sp, #4]
+0x004000c7:	umull	r5, r2, r2, r1
+0x004000cb:	subs	r5, r1, r2
+0x004000cd:	add.w	r2, r2, r5, lsr #1
+0x004000d1:	lsrs	r2, r2, #4
+0x004000d3:	rsb	r2, r2, r2, lsl #5
+0x004000d7:	subs	r1, r1, r2
+0x004000d9:	subs	r3, r3, r1
+0x004000db:	sbc	r0, r0, #0
+0x004000df:	mul	lr, r7, r3
+0x004000e3:	umull	r2, r3, r3, r4
+0x004000e7:	mla	lr, r4, r0, lr
+0x004000eb:	and	r5, r2, #1
+0x004000ef:	add	lr, r3
+0x004000f1:	lsrs	r3, r2, #1
+0x004000f3:	orr.w	r3, r3, lr, lsl #31
+0x004000f7:	umull	r5, r8, r5, ip
+0x004000fb:	lsr.w	r0, lr, #1
+0x004000ff:	bic	r2, r3, #0xc0000000
+0x00400103:	adds	r5, r5, r1
+0x00400105:	lsrs	r1, r3, #0x1e
+0x00400107:	orr.w	r1, r1, r0, lsl #2
+0x0040010b:	bic	r1, r1, #0xc0000000
+0x0040010f:	add	r2, r1
+0x00400111:	ldr	r1, [sp]
+0x00400113:	add.w	r2, r2, lr, lsr #29
+0x00400117:	umull	lr, r1, r1, r2
+0x0040011b:	sub.w	lr, r2, r1
+0x0040011f:	add.w	r1, r1, lr, lsr #1
+0x00400123:	lsrs	r1, r1, #4
+0x00400125:	rsb	r1, r1, r1, lsl #5
+0x00400129:	subs	r2, r2, r1
+0x0040012b:	subs	r3, r3, r2
+0x0040012d:	sbc	r1, r0, #0
+0x00400131:	mul	r8, r7, r3
+0x00400135:	umull	r0, r3, r3, r4
+0x00400139:	mla	r8, r4, r1, r8
+0x0040013d:	add	r8, r3
+0x0040013f:	lsrs	r3, r0, #1
+0x00400141:	and	r0, r0, #1
+0x00400145:	orr.w	r3, r3, r8, lsl #31
+0x00400149:	lsr.w	lr, r8, #1
+0x0040014d:	umull	r0, r1, r0, ip
+0x00400151:	bic	r1, r3, #0xc0000000
+0x00400155:	adds	r0, r0, r2
+0x00400157:	lsrs	r2, r3, #0x1e
+0x00400159:	orr.w	r2, r2, lr, lsl #2
+0x0040015d:	bic	r2, r2, #0xc0000000
+0x00400161:	add	r1, r2
+0x00400163:	ldr	r2, [sp]
+0x00400165:	add.w	r1, r1, r8, lsr #29
+0x00400169:	umull	r8, r2, r2, r1
+0x0040016d:	ldr.w	r8, [pc, #0x1bc]
+0x00400171:	sub.w	sb, r1, r2
+0x00400175:	add	r8, pc
+0x00400177:	add.w	r2, r2, sb, lsr #1
+0x0040017b:	mov.w	sb, #0
+0x0040017f:	ldrb.w	r5, [r8, r5]
+0x00400183:	lsrs	r2, r2, #4
+0x00400185:	ldrb.w	r0, [r8, r0]
+0x00400189:	rsb	r2, r2, r2, lsl #5
+0x0040018d:	bfi	sb, r5, #0, #8
+0x00400191:	subs	r2, r1, r2
+0x00400193:	subs	r3, r3, r2
+0x00400195:	bfi	sb, r0, #8, #8
+0x00400199:	sbc	lr, lr, #0
+0x0040019d:	mul	r0, r7, r3
+0x004001a1:	umull	r5, r3, r3, r4
+0x004001a5:	mla	r0, r4, lr, r0
+0x004001a9:	and	r1, r5, #1
+0x004001ad:	add	r0, r3
+0x004001af:	lsrs	r3, r5, #1
+0x004001b1:	umull	r1, r5, r1, ip
+0x004001b5:	orr.w	r3, r3, r0, lsl #31
+0x004001b9:	lsr.w	sl, r0, #1
+0x004001bd:	adds	r1, r1, r2
+0x004001bf:	lsrs	r5, r3, #0x1e
+0x004001c1:	orr.w	r5, r5, sl, lsl #2
+0x004001c5:	bic	r5, r5, #0xc0000000
+0x004001c9:	ldrb.w	r2, [r8, r1]
+0x004001cd:	movs	r1, #0xc2
+0x004001cf:	bfi	sb, r2, #0x10, #8
+0x004001d3:	bic	r2, r3, #0xc0000000
+0x004001d7:	add	r5, r2
+0x004001d9:	ldr	r2, [sp]
+0x004001db:	add.w	r5, r5, r0, lsr #29
+0x004001df:	vmov	r0, s16
+0x004001e3:	umull	r2, lr, r2, r5
+0x004001e7:	mov.w	r2, #0x180
+0x004001eb:	sub.w	fp, r5, lr
+0x004001ef:	add.w	lr, lr, fp, lsr #1
+0x004001f3:	lsr.w	lr, lr, #4
+0x004001f7:	rsb	lr, lr, lr, lsl #5
+0x004001fb:	sub.w	r5, r5, lr
+0x004001ff:	subs	r3, r3, r5
+0x00400201:	sbc	lr, sl, #0
+0x00400205:	mul	sl, r7, r3
+0x00400209:	umull	fp, r3, r3, r4
+0x0040020d:	mla	sl, r4, lr, sl
+0x00400211:	and	lr, fp, #1
+0x00400215:	add	sl, r3
+0x00400217:	lsr.w	r3, fp, #1
+0x0040021b:	umull	lr, fp, lr, ip
+0x0040021f:	orr.w	r3, r3, sl, lsl #31
+0x00400223:	adds.w	lr, lr, r5
+0x00400227:	ldrb.w	r5, [r8, lr]
+0x0040022b:	bic	lr, r3, #0xc0000000
+0x0040022f:	bfi	sb, r5, #0x18, #8
+0x00400233:	str.w	sb, [r6]
+0x00400237:	lsr.w	sb, sl, #1
+0x0040023b:	lsrs	r5, r3, #0x1e
+0x0040023d:	orr.w	r5, r5, sb, lsl #2
+0x00400241:	bic	r5, r5, #0xc0000000
+0x00400245:	add	lr, r5
+0x00400247:	ldr	r5, [sp]
+0x00400249:	add.w	lr, lr, sl, lsr #29
+0x0040024d:	umull	sl, r5, r5, lr
+0x00400251:	sub.w	sl, lr, r5
+0x00400255:	add.w	r5, r5, sl, lsr #1
+0x00400259:	lsrs	r5, r5, #4
+0x0040025b:	rsb	r5, r5, r5, lsl #5
+0x0040025f:	sub.w	r5, lr, r5
+0x00400263:	subs	r3, r3, r5
+0x00400265:	sbc	sb, sb, #0
+0x00400269:	mul	lr, r7, r3
+0x0040026d:	umull	sl, r3, r3, r4
+0x00400271:	mla	lr, r4, sb, lr
+0x00400275:	and	sb, sl, #1
+0x00400279:	add	lr, r3
+0x0040027b:	umull	sb, ip, sb, ip
+0x0040027f:	lsr.w	ip, lr, #1
+0x00400283:	adds.w	sb, sb, r5
+0x00400287:	lsr.w	r5, sl, #1
+0x0040028b:	orr.w	r5, r5, lr, lsl #31
+0x0040028f:	ldrb.w	r3, [r8, sb]
+0x00400293:	lsr.w	sb, r5, #0x1e
+0x00400297:	orr.w	sb, sb, ip, lsl #2
+0x0040029b:	strb	r3, [r6, #4]
+0x0040029d:	bic	sb, sb, #0xc0000000
+0x004002a1:	bic	r3, r5, #0xc0000000
+0x004002a5:	ldr	r6, [sp]
+0x004002a7:	add	r3, sb
+0x004002a9:	add.w	r3, r3, lr, lsr #29
+0x004002ad:	umull	sb, lr, r6, r3
+0x004002b1:	ldr	r6, [sp, #4]
+0x004002b3:	sub.w	sb, r3, lr
+0x004002b7:	add.w	lr, lr, sb, lsr #1
+0x004002bb:	lsr.w	lr, lr, #4
+0x004002bf:	rsb	lr, lr, lr, lsl #5
+0x004002c3:	sub.w	r3, r3, lr
+0x004002c7:	subs	r3, r5, r3
+0x004002c9:	sbc	ip, ip, #0
+0x004002cd:	mul	lr, r7, r3
+0x004002d1:	mla	lr, r4, ip, lr
+0x004002d5:	umull	ip, r3, r3, r4
+0x004002d9:	add	lr, r3
+0x004002db:	lsr.w	ip, ip, #1
+0x004002df:	orr.w	ip, ip, lr, lsl #31
+0x004002e3:	rsb	ip, ip, ip, lsl #5
+0x004002e7:	sub.w	r5, r5, ip, lsl #1
+0x004002eb:	ldrb.w	r3, [r8, r5]
+0x004002ef:	strb	r3, [r6, #5]
+0x004002f1:	bl	#0x4002f1
+
+Function sub_400079 @ 0x00400079
+0x00400079:	bl	#0x400079
+0x0040007d:	ldr	r3, [r0]
+0x0040007f:	bic	r3, r3, #4
+0x00400083:	cmp	r3, #0x11
+0x00400085:	bne.w	#0x400305
+0x00400089:	ldr	r2, [pc, #0x29c]
+0x0040008b:	movw	r3, #0x1e61
+0x0040008f:	add	r2, pc
+0x00400091:	ldrd	r1, r0, [r2]
+0x00400095:	adds	r3, r3, r1
+0x00400097:	str	r3, [r2]
+0x00400099:	adc	r0, r0, #0
+0x0040009d:	str	r0, [r2, #4]
+0x0040009f:	ldr	r2, [sp, #8]
+0x004000a1:	subs	r2, #1
+0x004000a3:	str	r2, [sp, #8]
+0x004000a5:	beq.w	#0x400305
+0x00400305:	vmov	r2, s16
+0x00400309:	movs	r3, #0
+0x0040030b:	mov.w	r0, #-1
+0x0040030f:	strb	r3, [r2]
+0x00400311:	add	sp, #0x14
+0x00400313:	vpop	{d8}
+0x00400317:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+
+Function sub_4002f1 @ 0x004002f1
+0x004002f1:	bl	#0x4002f1
+0x004002f5:	cmp	r0, #0
+0x004002f7:	blt.w	#0x400079
+
+Function sys_380 @ 0x007002f8
+0x007002f8:	andeq	r0, r0, r0
+0x007002fc:	andeq	r0, r0, r0
+0x00700300:	andeq	r0, r0, r0
+0x00700304:	andeq	r0, r0, r0
+0x00700308:	andeq	r0, r0, r0
+0x0070030c:	andeq	r0, r0, r0
+0x00700310:	andeq	r0, r0, r0
+0x00700314:	andeq	r0, r0, r0
+0x00700318:	andeq	r0, r0, r0
+0x0070031c:	andeq	r0, r0, r0
+0x00700320:	andeq	r0, r0, r0
+0x00700324:	andeq	r0, r0, r0
+0x00700328:	andeq	r0, r0, r0
+0x0070032c:	andeq	r0, r0, r0
+0x00700330:	andeq	r0, r0, r0
+0x00700334:	andeq	r0, r0, r0
+0x00700338:	andeq	r0, r0, r0
+0x0070033c:	andeq	r0, r0, r0
+0x00700340:	andeq	r0, r0, r0
+0x00700344:	andeq	r0, r0, r0
+0x00700348:	andeq	r0, r0, r0
+0x0070034c:	andeq	r0, r0, r0
+0x00700350:	andeq	r0, r0, r0
+0x00700354:	andeq	r0, r0, r0
+0x00700358:	andeq	r0, r0, r0
+0x0070035c:	andeq	r0, r0, r0
+0x00700360:	andeq	r0, r0, r0
+0x00700364:	andeq	r0, r0, r0
+0x00700368:	andeq	r0, r0, r0
+0x0070036c:	andeq	r0, r0, r0
+0x00700370:	andeq	r0, r0, r0
+0x00700374:	andeq	r0, r0, r0
+0x00700378:	andeq	r0, r0, r0
+0x0070037c:	andeq	r0, r0, r0
+0x00700380:	andeq	r0, r0, r0
+0x00700384:	andeq	r0, r0, r0
+0x00700388:	andeq	r0, r0, r0
+0x0070038c:	andeq	r0, r0, r0
+0x00700390:	andeq	r0, r0, r0
+0x00700394:	andeq	r0, r0, r0
+0x00700398:	andeq	r0, r0, r0
+0x0070039c:	andeq	r0, r0, r0
+0x007003a0:	andeq	r0, r0, r0
+0x007003a4:	andeq	r0, r0, r0
+0x007003a8:	andeq	r0, r0, r0
+0x007003ac:	andeq	r0, r0, r0
+0x007003b0:	andeq	r0, r0, r0
+0x007003b4:	andeq	r0, r0, r0
+0x007003b8:	andeq	r0, r0, r0
+0x007003bc:	andeq	r0, r0, r0
+0x007003c0:	andeq	r0, r0, r0
+0x007003c4:	andeq	r0, r0, r0
+0x007003c8:	andeq	r0, r0, r0
+0x007003cc:	andeq	r0, r0, r0
+0x007003d0:	andeq	r0, r0, r0
+0x007003d4:	andeq	r0, r0, r0
+0x007003d8:	andeq	r0, r0, r0
+0x007003dc:	andeq	r0, r0, r0
+0x007003e0:	andeq	r0, r0, r0
+0x007003e4:	andeq	r0, r0, r0
+0x007003e8:	andeq	r0, r0, r0
+0x007003ec:	andeq	r0, r0, r0
+0x007003f0:	andeq	r0, r0, r0
+0x007003f4:	andeq	r0, r0, r0
+0x007003f8:	andeq	r0, r0, r0
+0x007003fc:	andeq	r0, r0, r0
+0x00700400:	andeq	r0, r0, r0
+0x00700404:	andeq	r0, r0, r0
+0x00700408:	andeq	r0, r0, r0
+0x0070040c:	andeq	r0, r0, r0
+0x00700410:	andeq	r0, r0, r0
+0x00700414:	andeq	r0, r0, r0
+0x00700418:	andeq	r0, r0, r0
+0x0070041c:	andeq	r0, r0, r0
+0x00700420:	andeq	r0, r0, r0
+0x00700424:	andeq	r0, r0, r0
+0x00700428:	andeq	r0, r0, r0
+0x0070042c:	andeq	r0, r0, r0
+0x00700430:	andeq	r0, r0, r0
+0x00700434:	andeq	r0, r0, r0
+0x00700438:	andeq	r0, r0, r0
+0x0070043c:	andeq	r0, r0, r0
+0x00700440:	andeq	r0, r0, r0
+0x00700444:	andeq	r0, r0, r0
+0x00700448:	andeq	r0, r0, r0
+0x0070044c:	andeq	r0, r0, r0
+0x00700450:	andeq	r0, r0, r0
+0x00700454:	andeq	r0, r0, r0
+0x00700458:	andeq	r0, r0, r0
+0x0070045c:	andeq	r0, r0, r0
+0x00700460:	andeq	r0, r0, r0
+0x00700464:	andeq	r0, r0, r0
+0x00700468:	andeq	r0, r0, r0
+0x0070046c:	andeq	r0, r0, r0
+0x00700470:	andeq	r0, r0, r0
+0x00700474:	andeq	r0, r0, r0
+0x00700478:	andeq	r0, r0, r0
+0x0070047c:	andeq	r0, r0, r0
+0x00700480:	andeq	r0, r0, r0

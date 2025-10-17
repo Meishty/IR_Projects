@@ -1,31 +1,50 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mips16-thunks-sin_a3d2814a_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bmi	#0x692c2c
+0x00400004:	ldrlt	r4, [r0, #-0x47b]
+0x00400008:	stmdavs	r3!, {r2, r3, r4, r7, fp, ip, lr}
+0x0040000c:	eorvs	r3, r3, r1, lsl #6
+0x0040000c:	eorvs	r3, r3, r1, lsl #6
 
+Function sub_400012 @ 0x00400012
 
-Disassembly of section .text:
+Function sub_400016 @ 0x00400016
 
-00000000 <.text>:
-   0:	4a0a4b09 	bmi	0x292c2c
-   4:	b510447b 	ldrlt	r4, [r0, #-1147]	; 0xfffffb85
-   8:	6823589c 	stmdavs	r3!, {r2, r3, r4, r7, fp, ip, lr}
-   c:	60233301 	eorvs	r3, r3, r1, lsl #6
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	33016823 	movwcc	r6, #6179	; 0x1823
-  24:	bd106023 	ldclt	0, cr6, [r0, #-140]	; 0xffffff74
-  28:	00000020 	andeq	r0, r0, r0, lsr #32
-  2c:	00000000 	andeq	r0, r0, r0
-  30:	4a0a4b09 	bmi	0x292c5c
-  34:	b510447b 	ldrlt	r4, [r0, #-1147]	; 0xfffffb85
-  38:	6823589c 	stmdavs	r3!, {r2, r3, r4, r7, fp, ip, lr}
-  3c:	60233301 	eorvs	r3, r3, r1, lsl #6
-  40:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	33016823 	movwcc	r6, #6179	; 0x1823
-  54:	bd106023 	ldclt	0, cr6, [r0, #-140]	; 0xffffff74
-  58:	00000020 	andeq	r0, r0, r0, lsr #32
-  5c:	00000000 	andeq	r0, r0, r0
+Function sub_40001a @ 0x0040001a
+
+Function sub_40001f @ 0x0040001f
+0x0040001f:	vtbl.8	d22, {d14}, d19
+0x00400023:	adds	r3, #1
+0x00400025:	str	r3, [r4]
+0x00400027:	pop	{r4, pc}
+
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r0, r4
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	ldr	r3, [pc, #0x24]
+0x00400033:	ldr	r2, [pc, #0x28]
+0x00400035:	add	r3, pc
+0x00400037:	push	{r4, lr}
+0x00400039:	ldr	r4, [r3, r2]
+0x0040003b:	ldr	r3, [r4]
+0x0040003d:	adds	r3, #1
+0x0040003f:	str	r3, [r4]
+0x00400041:	bl	#0x400041
+
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041
+
+Function sub_400045 @ 0x00400045
+0x00400045:	bl	#0x400045
+
+Function sub_400049 @ 0x00400049
+0x00400049:	bl	#0x400049
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	bl	#0x40004d
+0x00400051:	ldr	r3, [r4]
+0x00400053:	adds	r3, #1
+0x00400055:	str	r3, [r4]
+0x00400057:	pop	{r4, pc}

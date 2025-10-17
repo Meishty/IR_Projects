@@ -1,84 +1,63 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ifuncdep2_8a12c882.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r1]!
+0x00400004:	rscslo	pc, pc, pc, asr #32
+0x00400008:	svclt	#0x4770
 
+Function zero @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-Disassembly of section .text:
+Function foo1 @ 0x00400011
+0x00400011:	ldr	r3, [pc, #0x1c]
+0x00400013:	add	r3, pc
+0x00400015:	ldr	r3, [r3]
+0x00400017:	adds	r2, r3, #1
+0x00400019:	beq	#0x40002b
+0x0040001b:	cmp	r3, #1
+0x0040001d:	bne	#0x400025
+0x0040001f:	ldr	r0, [pc, #0x14]
+0x00400021:	add	r0, pc
+0x00400023:	bx	lr
+0x00400025:	ldr	r0, [pc, #0x10]
+0x00400027:	add	r0, pc
+0x00400029:	bx	lr
+0x0040002b:	ldr	r0, [pc, #0x10]
+0x0040002d:	add	r0, pc
+0x0040002f:	bx	lr
 
-00000000 <one>:
-   0:	2001      	movs	r0, #1
-   2:	4770      	bx	lr
+Function foo2 @ 0x00400041
+0x00400041:	ldr	r3, [pc, #0x1c]
+0x00400043:	add	r3, pc
+0x00400045:	ldr	r3, [r3]
+0x00400047:	adds	r2, r3, #1
+0x00400049:	beq	#0x40005b
+0x0040004b:	cmp	r3, #1
+0x0040004d:	bne	#0x400055
+0x0040004f:	ldr	r0, [pc, #0x14]
+0x00400051:	add	r0, pc
+0x00400053:	bx	lr
+0x00400055:	ldr	r0, [pc, #0x10]
+0x00400057:	add	r0, pc
+0x00400059:	bx	lr
+0x0040005b:	ldr	r0, [pc, #0x10]
+0x0040005d:	add	r0, pc
+0x0040005f:	bx	lr
 
-00000004 <minus_one>:
-   4:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-   8:	4770      	bx	lr
-   a:	bf00      	nop
-
-0000000c <zero>:
-   c:	2000      	movs	r0, #0
-   e:	4770      	bx	lr
-
-00000010 <foo1>:
-  10:	4b07      	ldr	r3, [pc, #28]	; (30 <foo1+0x20>)
-  12:	447b      	add	r3, pc
-  14:	681b      	ldr	r3, [r3, #0]
-  16:	1c5a      	adds	r2, r3, #1
-  18:	d007      	beq.n	2a <foo1+0x1a>
-  1a:	2b01      	cmp	r3, #1
-  1c:	d102      	bne.n	24 <foo1+0x14>
-  1e:	4805      	ldr	r0, [pc, #20]	; (34 <foo1+0x24>)
-  20:	4478      	add	r0, pc
-  22:	4770      	bx	lr
-  24:	4804      	ldr	r0, [pc, #16]	; (38 <foo1+0x28>)
-  26:	4478      	add	r0, pc
-  28:	4770      	bx	lr
-  2a:	4804      	ldr	r0, [pc, #16]	; (3c <foo1+0x2c>)
-  2c:	4478      	add	r0, pc
-  2e:	4770      	bx	lr
-  30:	0000001a 	.word	0x0000001a
-  34:	00000010 	.word	0x00000010
-  38:	0000000e 	.word	0x0000000e
-  3c:	0000000c 	.word	0x0000000c
-
-00000040 <foo2>:
-  40:	4b07      	ldr	r3, [pc, #28]	; (60 <foo2+0x20>)
-  42:	447b      	add	r3, pc
-  44:	681b      	ldr	r3, [r3, #0]
-  46:	1c5a      	adds	r2, r3, #1
-  48:	d007      	beq.n	5a <foo2+0x1a>
-  4a:	2b01      	cmp	r3, #1
-  4c:	d102      	bne.n	54 <foo2+0x14>
-  4e:	4805      	ldr	r0, [pc, #20]	; (64 <foo2+0x24>)
-  50:	4478      	add	r0, pc
-  52:	4770      	bx	lr
-  54:	4804      	ldr	r0, [pc, #16]	; (68 <foo2+0x28>)
-  56:	4478      	add	r0, pc
-  58:	4770      	bx	lr
-  5a:	4804      	ldr	r0, [pc, #16]	; (6c <foo2+0x2c>)
-  5c:	4478      	add	r0, pc
-  5e:	4770      	bx	lr
-  60:	0000001a 	.word	0x0000001a
-  64:	00000010 	.word	0x00000010
-  68:	0000000e 	.word	0x0000000e
-  6c:	0000000c 	.word	0x0000000c
-
-00000070 <foo3>:
-  70:	4b07      	ldr	r3, [pc, #28]	; (90 <foo3+0x20>)
-  72:	447b      	add	r3, pc
-  74:	681b      	ldr	r3, [r3, #0]
-  76:	1c5a      	adds	r2, r3, #1
-  78:	d007      	beq.n	8a <foo3+0x1a>
-  7a:	2b01      	cmp	r3, #1
-  7c:	d102      	bne.n	84 <foo3+0x14>
-  7e:	4805      	ldr	r0, [pc, #20]	; (94 <foo3+0x24>)
-  80:	4478      	add	r0, pc
-  82:	4770      	bx	lr
-  84:	4804      	ldr	r0, [pc, #16]	; (98 <foo3+0x28>)
-  86:	4478      	add	r0, pc
-  88:	4770      	bx	lr
-  8a:	4804      	ldr	r0, [pc, #16]	; (9c <foo3+0x2c>)
-  8c:	4478      	add	r0, pc
-  8e:	4770      	bx	lr
-  90:	0000001a 	.word	0x0000001a
-  94:	00000010 	.word	0x00000010
-  98:	0000000e 	.word	0x0000000e
-  9c:	0000000c 	.word	0x0000000c
+Function foo3 @ 0x00400071
+0x00400071:	ldr	r3, [pc, #0x1c]
+0x00400073:	add	r3, pc
+0x00400075:	ldr	r3, [r3]
+0x00400077:	adds	r2, r3, #1
+0x00400079:	beq	#0x40008b
+0x0040007b:	cmp	r3, #1
+0x0040007d:	bne	#0x400085
+0x0040007f:	ldr	r0, [pc, #0x14]
+0x00400081:	add	r0, pc
+0x00400083:	bx	lr
+0x00400085:	ldr	r0, [pc, #0x10]
+0x00400087:	add	r0, pc
+0x00400089:	bx	lr
+0x0040008b:	ldr	r0, [pc, #0x10]
+0x0040008d:	add	r0, pc
+0x0040008f:	bx	lr

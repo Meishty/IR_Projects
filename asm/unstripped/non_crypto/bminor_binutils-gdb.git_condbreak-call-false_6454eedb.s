@@ -1,23 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_condbreak-call-false_6454eedb.o:     file format elf32-littlearm
+Function zero @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function foo @ 0x00400005
+0x00400005:	movs	r0, #0x17
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function bar @ 0x00400009
+0x00400009:	bx	lr
 
-00000000 <zero>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
 
-00000004 <foo>:
-   4:	2017      	movs	r0, #23
-   6:	4770      	bx	lr
-
-00000008 <bar>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr

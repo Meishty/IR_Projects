@@ -1,25 +1,57 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_shr1_edcbf772_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vqrshl.s8	d27, d24, d3
+0x00400004:	vbic.i32	d19, #0x43
+0x00400008:	blmi	#0x64075c
+0x0040000c:	strhs	r4, [r8, #-0x604]
 
+Function sub_400013 @ 0x00400013
+0x00400013:	mov	r2, r3
+0x00400015:	ldr	r0, [r3, #4]
+0x00400017:	str	r1, [r3]
+0x00400019:	ldr	r1, [pc, #0x18]
+0x0040001b:	adds	r0, #1
+0x0040001d:	str	r5, [r2, #8]!
+0x00400021:	str	r0, [r3, #4]
+0x00400023:	add	r1, pc
+0x00400025:	movs	r0, #1
+0x00400027:	bl	#0x400027
 
-Disassembly of section .text:
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	lsls	r0, r4, #1
+0x0040002d:	pop	{r3, r4, r5, pc}
 
-00000000 <.text>:
-   0:	f243b538 	vqrshl.s8	d27, d24, d3
-   4:	f2c43133 	vbic.i32	d19, #67	; 0x00000043
-   8:	4b0901d3 	blmi	0x24075c
-   c:	25084604 	strcs	r4, [r8, #-1540]	; 0xfffff9fc
-  10:	461a447b 			; <UNDEFINED> instruction: 0x461a447b
-  14:	60196858 	andsvs	r6, r9, r8, asr r8
-  18:	30014906 	andcc	r4, r1, r6, lsl #18
-  1c:	5f08f842 	svcpl	0x0008f842
-  20:	44796058 	ldrbtmi	r6, [r9], #-88	; 0xffffffa8
-  24:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  28:	0060fffe 	strdeq	pc, [r0], #-254	; 0xffffff02	; <UNPREDICTABLE>
-  2c:	bf00bd38 	svclt	0x0000bd38
-  30:	0000001c 	andeq	r0, r0, ip, lsl r0
-  34:	0000000e 	andeq	r0, r0, lr
-  38:	ab02b082 	blge	0xac248
-  3c:	0003e903 	andeq	lr, r3, r3, lsl #18
-  40:	4770b002 	ldrbmi	fp, [r0, -r2]!
-  44:	47706800 	ldrbmi	r6, [r0, -r0, lsl #16]!
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r4, r3
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r6, r1
+0x00400037:	movs	r0, r0
+0x00400039:	sub	sp, #8
+0x0040003b:	add	r3, sp, #8
+0x0040003d:	stmdb	r3, {r0, r1}
+0x00400041:	add	sp, #8
+0x00400043:	bx	lr
+
+Function sub_400031 @ 0x00400031
+0x00400031:	movs	r4, r3
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r6, r1
+0x00400037:	movs	r0, r0
+0x00400039:	sub	sp, #8
+0x0040003b:	add	r3, sp, #8
+0x0040003d:	stmdb	r3, {r0, r1}
+0x00400041:	add	sp, #8
+0x00400043:	bx	lr
+
+Function sub_400039 @ 0x00400039
+0x00400039:	sub	sp, #8
+0x0040003b:	add	r3, sp, #8
+0x0040003d:	stmdb	r3, {r0, r1}
+0x00400041:	add	sp, #8
+0x00400043:	bx	lr
+
+Function sub_400045 @ 0x00400045
+0x00400045:	ldr	r0, [r0]
+0x00400047:	bx	lr

@@ -1,54 +1,155 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr26580-a_52b6286d.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwmi	r4, #0x8311
+0x00400004:	andsmi	r4, r8, r3, asr #4
+0x00400008:	svclt	#0x4770
 
+Function main @ 0x00400041
+0x00400041:	push	{r3, lr}
+0x00400043:	ldr	r3, [pc, #0x40]
+0x00400045:	ldr	r2, [pc, #0x40]
+0x00400047:	add	r3, pc
+0x00400049:	ldr	r3, [r3, r2]
+0x0040004b:	cbz	r3, #0x40007d
+0x0040004d:	ldr	r2, [pc, #0x3c]
+0x0040004f:	add	r2, pc
+0x00400051:	ldr	r1, [pc, #0x3c]
+0x00400053:	movs	r0, #1
+0x00400055:	add	r1, pc
+0x00400057:	bl	#0x500001
+0x0040004d:	ldr	r2, [pc, #0x3c]
+0x0040004f:	add	r2, pc
+0x00400051:	ldr	r1, [pc, #0x3c]
+0x00400053:	movs	r0, #1
+0x00400055:	add	r1, pc
+0x00400057:	bl	#0x500001
+0x00400051:	ldr	r1, [pc, #0x3c]
+0x00400053:	movs	r0, #1
+0x00400055:	add	r1, pc
+0x00400057:	bl	#0x500001
+0x0040005b:	ldr	r2, [pc, #0x38]
+0x0040005d:	movs	r0, #1
+0x0040005f:	ldr	r1, [pc, #0x38]
+0x00400061:	add	r2, pc
+0x00400063:	add.w	ip, r2, r0
+0x00400067:	adds	r3, r2, #2
+0x00400069:	orr.w	r2, r2, ip
+0x0040006d:	add	r1, pc
+0x0040006f:	orrs	r2, r3
+0x00400071:	rsbs	r3, r2, #0
+0x00400073:	ands	r2, r3
+0x00400075:	bl	#0x500001
+0x00400079:	movs	r0, #0
+0x0040007b:	pop	{r3, pc}
+0x0040007d:	ldr	r2, [pc, #0x1c]
+0x0040007f:	add	r2, pc
+0x00400081:	b	#0x400051
 
-Disassembly of section .text:
+Function sub_400083 @ 0x00400083
 
-00000000 <lowest_align>:
-   0:	4311      	orrs	r1, r2
-   2:	4308      	orrs	r0, r1
-   4:	4243      	negs	r3, r0
-   6:	4018      	ands	r0, r3
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b10      	ldr	r3, [pc, #64]	; (44 <main+0x44>)
-   4:	4a10      	ldr	r2, [pc, #64]	; (48 <main+0x48>)
-   6:	447b      	add	r3, pc
-   8:	589b      	ldr	r3, [r3, r2]
-   a:	b1bb      	cbz	r3, 3c <main+0x3c>
-   c:	4a0f      	ldr	r2, [pc, #60]	; (4c <main+0x4c>)
-   e:	447a      	add	r2, pc
-  10:	490f      	ldr	r1, [pc, #60]	; (50 <main+0x50>)
-  12:	2001      	movs	r0, #1
-  14:	4479      	add	r1, pc
-  16:	f7ff fffe 	bl	0 <__printf_chk>
-  1a:	4a0e      	ldr	r2, [pc, #56]	; (54 <main+0x54>)
-  1c:	2001      	movs	r0, #1
-  1e:	490e      	ldr	r1, [pc, #56]	; (58 <main+0x58>)
-  20:	447a      	add	r2, pc
-  22:	eb02 0c00 	add.w	ip, r2, r0
-  26:	1c93      	adds	r3, r2, #2
-  28:	ea42 020c 	orr.w	r2, r2, ip
-  2c:	4479      	add	r1, pc
-  2e:	431a      	orrs	r2, r3
-  30:	4253      	negs	r3, r2
-  32:	401a      	ands	r2, r3
-  34:	f7ff fffe 	bl	0 <__printf_chk>
-  38:	2000      	movs	r0, #0
-  3a:	bd08      	pop	{r3, pc}
-  3c:	4a07      	ldr	r2, [pc, #28]	; (5c <main+0x5c>)
-  3e:	447a      	add	r2, pc
-  40:	e7e6      	b.n	10 <main+0x10>
-  42:	bf00      	nop
-  44:	0000003a 	.word	0x0000003a
-  48:	00000000 	.word	0x00000000
-  4c:	0000003a 	.word	0x0000003a
-  50:	00000038 	.word	0x00000038
-  54:	00000030 	.word	0x00000030
-  58:	00000028 	.word	0x00000028
-  5c:	0000001a 	.word	0x0000001a
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

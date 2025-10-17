@@ -1,20 +1,30 @@
 
-/root/projects/compiled/non_crypto/stripped/intel_lmbench.git_enough_16645301_stripped.o:     file format elf32-littlearm
+Function sub_400021 @ 0x00400021
+0x00400021:	ldr	r0, [pc, #0x24]
+0x00400023:	push	{r3, lr}
+0x00400025:	add	r0, pc
+0x00400027:	bl	#0x400027
 
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
+0x0040002b:	ldr	r0, [pc, #0x20]
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x40002f
 
-Disassembly of section .text.startup:
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bl	#0x40002f
+0x00400033:	movs	r0, #0
+0x00400035:	bl	#0x400035
 
-00000000 <.text.startup>:
-   0:	b5084809 	strlt	r4, [r8, #-2057]	; 0xfffff7f7
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	4808fffe 	stmdami	r8, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  10:	2000fffe 	strdcs	pc, [r0], -lr
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	46024905 	strmi	r4, [r2], -r5, lsl #18
-  1c:	44792001 	ldrbtmi	r2, [r9], #-1
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	bd082000 	stclt	0, cr2, [r8, #-0]
-  28:	00000020 	andeq	r0, r0, r0, lsr #32
-  2c:	0000001c 	andeq	r0, r0, ip, lsl r0
-  30:	0000000e 	andeq	r0, r0, lr
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
+0x00400039:	ldr	r1, [pc, #0x14]
+0x0040003b:	mov	r2, r0
+0x0040003d:	movs	r0, #1
+0x0040003f:	add	r1, pc
+0x00400041:	bl	#0x400041
+
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041
+0x00400045:	movs	r0, #0
+0x00400047:	pop	{r3, pc}

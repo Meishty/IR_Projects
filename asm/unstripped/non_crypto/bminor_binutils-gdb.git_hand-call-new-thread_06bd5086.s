@@ -1,64 +1,103 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_hand-call-new-thread_06bd5086.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r1, r8, lsl #10
 
+Function sub_400006 @ 0x00400006
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	push	{lr}
+0x0040000f:	movs	r3, #0
+0x00400011:	ldr.w	lr, [pc, #0x58]
+0x00400015:	ldr.w	ip, [pc, #0x58]
+0x00400019:	sub	sp, #0xc
+0x0040001b:	add	lr, pc
+0x0040001d:	ldr	r2, [pc, #0x54]
+0x0040001f:	mov	r1, r3
+0x00400021:	mov	r0, sp
+0x00400023:	add	r2, pc
+0x00400025:	ldr.w	ip, [lr, ip]
+0x00400029:	ldr.w	ip, [ip]
+0x0040002d:	str.w	ip, [sp, #4]
+0x00400031:	mov.w	ip, #0
+0x00400035:	bl	#0x50000d
 
-00000000 <thread_function>:
-   0:	b508      	push	{r3, lr}
-   2:	2001      	movs	r0, #1
-   4:	f7ff fffe 	bl	0 <usleep>
-   8:	e7fb      	b.n	2 <thread_function+0x2>
-   a:	bf00      	nop
+Function new_thread @ 0x0040000d
+0x0040000d:	push	{lr}
+0x0040000f:	movs	r3, #0
+0x00400011:	ldr.w	lr, [pc, #0x58]
+0x00400015:	ldr.w	ip, [pc, #0x58]
+0x00400019:	sub	sp, #0xc
+0x0040001b:	add	lr, pc
+0x0040001d:	ldr	r2, [pc, #0x54]
+0x0040001f:	mov	r1, r3
+0x00400021:	mov	r0, sp
+0x00400023:	add	r2, pc
+0x00400025:	ldr.w	ip, [lr, ip]
+0x00400029:	ldr.w	ip, [ip]
+0x0040002d:	str.w	ip, [sp, #4]
+0x00400031:	mov.w	ip, #0
+0x00400035:	bl	#0x50000d
+0x00400039:	cbnz	r0, #0x400055
+0x0040003b:	ldr	r2, [pc, #0x3c]
+0x0040003d:	ldr	r3, [pc, #0x30]
+0x0040003f:	add	r2, pc
+0x00400041:	ldr	r3, [r2, r3]
+0x00400043:	ldr	r2, [r3]
+0x00400045:	ldr	r3, [sp, #4]
+0x00400047:	eors	r2, r3
+0x00400049:	mov.w	r3, #0
+0x0040004d:	bne	#0x400067
+0x0040003b:	ldr	r2, [pc, #0x3c]
+0x0040003d:	ldr	r3, [pc, #0x30]
+0x0040003f:	add	r2, pc
+0x00400041:	ldr	r3, [r2, r3]
+0x00400043:	ldr	r2, [r3]
+0x00400045:	ldr	r3, [sp, #4]
+0x00400047:	eors	r2, r3
+0x00400049:	mov.w	r3, #0
+0x0040004d:	bne	#0x400067
+0x0040004f:	add	sp, #0xc
+0x00400051:	ldr	pc, [sp], #4
+0x00400055:	ldr	r3, [pc, #0x24]
+0x00400057:	movs	r2, #0x2c
+0x00400059:	ldr	r1, [pc, #0x24]
+0x0040005b:	ldr	r0, [pc, #0x28]
+0x0040005d:	add	r3, pc
+0x0040005f:	add	r1, pc
+0x00400061:	add	r0, pc
+0x00400063:	bl	#0x500019
+0x00400067:	bl	#0x500025
 
-0000000c <new_thread>:
-   c:	b500      	push	{lr}
-   e:	2300      	movs	r3, #0
-  10:	f8df e058 	ldr.w	lr, [pc, #88]	; 6c <new_thread+0x60>
-  14:	f8df c058 	ldr.w	ip, [pc, #88]	; 70 <new_thread+0x64>
-  18:	b083      	sub	sp, #12
-  1a:	44fe      	add	lr, pc
-  1c:	4a15      	ldr	r2, [pc, #84]	; (74 <new_thread+0x68>)
-  1e:	4619      	mov	r1, r3
-  20:	4668      	mov	r0, sp
-  22:	447a      	add	r2, pc
-  24:	f85e c00c 	ldr.w	ip, [lr, ip]
-  28:	f8dc c000 	ldr.w	ip, [ip]
-  2c:	f8cd c004 	str.w	ip, [sp, #4]
-  30:	f04f 0c00 	mov.w	ip, #0
-  34:	f7ff fffe 	bl	0 <pthread_create>
-  38:	b960      	cbnz	r0, 54 <new_thread+0x48>
-  3a:	4a0f      	ldr	r2, [pc, #60]	; (78 <new_thread+0x6c>)
-  3c:	4b0c      	ldr	r3, [pc, #48]	; (70 <new_thread+0x64>)
-  3e:	447a      	add	r2, pc
-  40:	58d3      	ldr	r3, [r2, r3]
-  42:	681a      	ldr	r2, [r3, #0]
-  44:	9b01      	ldr	r3, [sp, #4]
-  46:	405a      	eors	r2, r3
-  48:	f04f 0300 	mov.w	r3, #0
-  4c:	d10b      	bne.n	66 <new_thread+0x5a>
-  4e:	b003      	add	sp, #12
-  50:	f85d fb04 	ldr.w	pc, [sp], #4
-  54:	4b09      	ldr	r3, [pc, #36]	; (7c <new_thread+0x70>)
-  56:	222c      	movs	r2, #44	; 0x2c
-  58:	4909      	ldr	r1, [pc, #36]	; (80 <new_thread+0x74>)
-  5a:	480a      	ldr	r0, [pc, #40]	; (84 <new_thread+0x78>)
-  5c:	447b      	add	r3, pc
-  5e:	4479      	add	r1, pc
-  60:	4478      	add	r0, pc
-  62:	f7ff fffe 	bl	0 <__assert_fail>
-  66:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  6a:	bf00      	nop
-  6c:	0000004e 	.word	0x0000004e
-  70:	00000000 	.word	0x00000000
-  74:	0000004e 	.word	0x0000004e
-  78:	00000036 	.word	0x00000036
-  7c:	0000001c 	.word	0x0000001c
-  80:	0000001e 	.word	0x0000001e
-  84:	00000020 	.word	0x00000020
+Function sub_40006b @ 0x0040006b
+0x0040006b:	nop	
+0x0040006d:	lsls	r6, r1, #1
+0x0040006f:	movs	r0, r0
+0x00400071:	movs	r0, r0
+0x00400073:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x004000e5
+0x004000e5:	movs	r0, #0
+0x004000e7:	bx	lr
 
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function pthread_create @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __assert_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

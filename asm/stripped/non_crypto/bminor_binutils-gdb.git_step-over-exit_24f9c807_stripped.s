@@ -1,13 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_step-over-exit_24f9c807_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	cbz	r0, #0x400013
+0x00400009:	bl	#0x400009
+0x00400013:	movs	r0, #0
+0x00400015:	bl	#0x400015
 
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x400009
+0x0040000d:	cbz	r0, #0x400013
+0x0040000f:	movs	r0, #0
+0x00400011:	pop	{r3, pc}
+0x0040000f:	movs	r0, #0
+0x00400011:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	b120fffe 	strdlt	pc, [r0, -lr]!
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	2000b108 	andcs	fp, r0, r8, lsl #2
-  10:	2000bd08 	andcs	fp, r0, r8, lsl #26
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
+Function sub_400015 @ 0x00400015
+0x00400015:	bl	#0x400015

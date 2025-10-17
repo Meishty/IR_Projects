@@ -1,13 +1,21 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_run-after-attach_f9019290.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vst3.8	{d27, d29, d31}, [pc], r8
 
+Function sub_400005 @ 0x00400005
+0x00400005:	strb	r6, [r2]
+0x00400007:	bl	#0x500001
+0x0040000b:	movs	r0, #0
+0x0040000d:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f44f 7016 	mov.w	r0, #600	; 0x258
-   6:	f7ff fffe 	bl	0 <sleep>
-   a:	2000      	movs	r0, #0
-   c:	bd08      	pop	{r3, pc}
-   e:	bf00      	nop
+Function sleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

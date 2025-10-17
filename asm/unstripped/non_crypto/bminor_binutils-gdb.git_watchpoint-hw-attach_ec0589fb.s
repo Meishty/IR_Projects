@@ -1,40 +1,59 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watchpoint-hw-attach_ec0589fb.o:     file format elf32-littlearm
+Function main @ 0x0040001d
+0x0040001d:	push	{r3, r4, r5, lr}
+0x0040001f:	ldr	r5, [pc, #0x40]
+0x00400021:	bl	#0x500001
+0x00400025:	add	r5, pc
+0x00400027:	ldr	r4, [r5]
+0x00400029:	cbnz	r4, #0x400047
+0x0040002b:	movs	r0, #1
+0x0040002d:	add	r4, r0
+0x0040002f:	bl	#0x50000d
+0x0040002b:	movs	r0, #1
+0x0040002d:	add	r4, r0
+0x0040002f:	bl	#0x50000d
+0x00400033:	ldr	r2, [r5]
+0x00400035:	subs.w	r3, r4, #0x64
+0x00400039:	it	ne
+0x0040003b:	movne	r3, #1
+0x0040003d:	cmp	r2, #0
+0x0040003f:	it	ne
+0x00400041:	movne	r3, #0
+0x00400043:	cmp	r3, #0
+0x00400045:	bne	#0x40002b
+0x00400047:	ldr	r3, [pc, #0x1c]
+0x00400049:	movs	r2, #4
+0x0040004b:	ldr	r1, [pc, #0x1c]
+0x0040004d:	movs	r0, #1
+0x0040004f:	add	r3, pc
+0x00400051:	add	r1, pc
+0x00400053:	str	r2, [r3, #4]
+0x00400055:	ldr	r2, [r3, #4]
+0x00400057:	bl	#0x500019
+0x0040005b:	movs	r0, #0
+0x0040005d:	pop	{r3, r4, r5, pc}
 
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
 
-Disassembly of section .text.startup:
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	4d10      	ldr	r5, [pc, #64]	; (44 <main+0x44>)
-   4:	f7ff fffe 	bl	0 <getpid>
-   8:	447d      	add	r5, pc
-   a:	682c      	ldr	r4, [r5, #0]
-   c:	b96c      	cbnz	r4, 2a <main+0x2a>
-   e:	2001      	movs	r0, #1
-  10:	4404      	add	r4, r0
-  12:	f7ff fffe 	bl	0 <sleep>
-  16:	682a      	ldr	r2, [r5, #0]
-  18:	f1b4 0364 	subs.w	r3, r4, #100	; 0x64
-  1c:	bf18      	it	ne
-  1e:	2301      	movne	r3, #1
-  20:	2a00      	cmp	r2, #0
-  22:	bf18      	it	ne
-  24:	2300      	movne	r3, #0
-  26:	2b00      	cmp	r3, #0
-  28:	d1f1      	bne.n	e <main+0xe>
-  2a:	4b07      	ldr	r3, [pc, #28]	; (48 <main+0x48>)
-  2c:	2204      	movs	r2, #4
-  2e:	4907      	ldr	r1, [pc, #28]	; (4c <main+0x4c>)
-  30:	2001      	movs	r0, #1
-  32:	447b      	add	r3, pc
-  34:	4479      	add	r1, pc
-  36:	605a      	str	r2, [r3, #4]
-  38:	685a      	ldr	r2, [r3, #4]
-  3a:	f7ff fffe 	bl	0 <__printf_chk>
-  3e:	2000      	movs	r0, #0
-  40:	bd38      	pop	{r3, r4, r5, pc}
-  42:	bf00      	nop
-  44:	00000038 	.word	0x00000038
-  48:	00000012 	.word	0x00000012
-  4c:	00000014 	.word	0x00000014
+Function sleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __printf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

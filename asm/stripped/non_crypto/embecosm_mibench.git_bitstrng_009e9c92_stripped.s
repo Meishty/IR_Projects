@@ -1,30 +1,58 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_bitstrng_009e9c92_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov	r4, r2
+0x00400005:	mov	r6, r1
+0x00400007:	add.w	r2, r2, r2, asr #2
+0x0040000b:	ubfx	r1, r4, #0, #2
+0x0040000f:	cmp	r1, #0
+0x00400011:	it	eq
+0x00400013:	subeq	r2, #1
+0x00400015:	mov	r5, r0
+0x00400017:	subs	r2, r3, r2
+0x00400019:	cmp	r2, #0
+0x0040001b:	ble	#0x400025
+0x0040001d:	movs	r1, #0x20
+0x0040001f:	add	r5, r2
+0x00400021:	bl	#0x400021
+0x00400025:	subs	r2, r4, #1
+0x00400027:	bmi	#0x40004d
+0x00400029:	movs	r1, #0x20
+0x0040002b:	mov	r4, r5
+0x0040002d:	asr.w	r3, r6, r2
+0x00400031:	and	r3, r3, #1
+0x00400035:	adds	r3, #0x30
+0x00400037:	strb	r3, [r4], #1
+0x0040003b:	lsls	r3, r2, #0x1e
+0x0040003d:	bne	#0x400047
+0x0040002b:	mov	r4, r5
+0x0040002d:	asr.w	r3, r6, r2
+0x00400031:	and	r3, r3, #1
+0x00400035:	adds	r3, #0x30
+0x00400037:	strb	r3, [r4], #1
+0x0040003b:	lsls	r3, r2, #0x1e
+0x0040003d:	bne	#0x400047
+0x0040003f:	cbnz	r2, #0x400055
+0x00400041:	movs	r3, #0
+0x00400043:	strb	r3, [r4]
+0x00400045:	pop	{r4, r5, r6, pc}
+0x00400041:	movs	r3, #0
+0x00400043:	strb	r3, [r4]
+0x00400045:	pop	{r4, r5, r6, pc}
+0x00400047:	mov	r5, r4
+0x00400049:	subs	r2, #1
+0x0040004b:	bhs	#0x40002b
+0x00400049:	subs	r2, #1
+0x0040004b:	bhs	#0x40002b
+0x0040004d:	mov	r4, r5
+0x0040004f:	movs	r3, #0
+0x00400051:	strb	r3, [r4]
+0x00400053:	pop	{r4, r5, r6, pc}
+0x00400055:	strb	r1, [r5, #1]
+0x00400057:	adds	r5, #2
+0x00400059:	b	#0x400049
 
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
 
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	4614b570 			; <UNDEFINED> instruction: 0x4614b570
-   4:	eb02460e 	bl	0x91844
-   8:	f3c402a2 	vsubl.u8	q8, d20, d18
-   c:	29000101 	stmdbcs	r0, {r0, r8}
-  10:	3a01bf08 	bcc	0x6fc38
-  14:	1a9a4605 	bne	0xfe691830
-  18:	dd032a00 	vstrle	s4, [r3, #-0]
-  1c:	44152120 	ldrmi	r2, [r5], #-288	; 0xfffffee0
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	d4111e62 	ldrle	r1, [r1], #-3682	; 0xfffff19e
-  28:	462c2120 	strtmi	r2, [ip], -r0, lsr #2
-  2c:	f302fa46 	vpmax.u8	<illegal reg q7.5>, q1, q3
-  30:	0301f003 	movweq	pc, #4099	; 0x1003	; <UNPREDICTABLE>
-  34:	f8043330 			; <UNDEFINED> instruction: 0xf8043330
-  38:	07933b01 	ldreq	r3, [r3, r1, lsl #22]
-  3c:	b94ad103 	stmdblt	sl, {r0, r1, r8, ip, lr, pc}^
-  40:	70232300 	eorvc	r2, r3, r0, lsl #6
-  44:	4625bd70 			; <UNDEFINED> instruction: 0x4625bd70
-  48:	d2ee3a01 	rscle	r3, lr, #4096	; 0x1000
-  4c:	2300462c 	movwcs	r4, #1580	; 0x62c
-  50:	bd707023 	ldcllt	0, cr7, [r0, #-140]!	; 0xffffff74
-  54:	35027069 	strcc	r7, [r2, #-105]	; 0xffffff97
-  58:	bf00e7f6 	svclt	0x0000e7f6
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	

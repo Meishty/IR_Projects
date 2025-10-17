@@ -1,88 +1,176 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_ldirname_58276870.o:     file format elf32-littlearm
+Function dos_ldirname @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r6, r0
+0x00400005:	bl	#0x500001
+0x00400009:	subs	r4, r0, r6
+0x0040000b:	adds	r0, r4, #1
+0x0040000d:	bl	#0x50000d
+0x00400011:	mov	r5, r0
+0x00400013:	cbz	r0, #0x40001d
+0x00400015:	cbnz	r4, #0x400021
+0x00400017:	mov	r4, r0
+0x00400019:	movs	r3, #0
+0x0040001b:	strb	r3, [r4]
+0x0040001d:	mov	r0, r5
+0x0040001f:	pop	{r4, r5, r6, pc}
+0x00400015:	cbnz	r4, #0x400021
+0x00400017:	mov	r4, r0
+0x00400019:	movs	r3, #0
+0x0040001b:	strb	r3, [r4]
+0x0040001d:	mov	r0, r5
+0x0040001f:	pop	{r4, r5, r6, pc}
+0x00400017:	mov	r4, r0
+0x00400019:	movs	r3, #0
+0x0040001b:	strb	r3, [r4]
+0x0040001d:	mov	r0, r5
+0x0040001f:	pop	{r4, r5, r6, pc}
+0x00400019:	movs	r3, #0
+0x0040001b:	strb	r3, [r4]
+0x0040001d:	mov	r0, r5
+0x0040001f:	pop	{r4, r5, r6, pc}
+0x0040001d:	mov	r0, r5
+0x0040001f:	pop	{r4, r5, r6, pc}
+0x00400021:	subs	r3, r4, #1
+0x00400023:	mov	r1, r6
+0x00400025:	ldrb	r2, [r6, r3]
+0x00400027:	cmp	r2, #0x5c
+0x00400029:	it	ne
+0x0040002b:	cmpne	r2, #0x2f
+0x0040002d:	it	eq
+0x0040002f:	moveq	r4, r3
+0x00400031:	mov	r2, r4
+0x00400033:	add	r4, r5
+0x00400035:	bl	#0x500019
+0x00400039:	b	#0x400019
 
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	push	{r4, r5, r6, lr}
+0x0040003f:	mov	r6, r0
+0x00400041:	bl	#0x500025
 
-Disassembly of section .text:
+Function unix_ldirname @ 0x0040003d
+0x0040003d:	push	{r4, r5, r6, lr}
+0x0040003f:	mov	r6, r0
+0x00400041:	bl	#0x500025
+0x00400045:	subs	r4, r0, r6
+0x00400047:	adds	r0, r4, #1
+0x00400049:	bl	#0x50000d
+0x0040004d:	mov	r5, r0
+0x0040004f:	cbz	r0, #0x400059
+0x00400051:	cbnz	r4, #0x40005d
+0x00400053:	mov	r4, r0
+0x00400055:	movs	r3, #0
+0x00400057:	strb	r3, [r4]
+0x00400059:	mov	r0, r5
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x00400051:	cbnz	r4, #0x40005d
+0x00400053:	mov	r4, r0
+0x00400055:	movs	r3, #0
+0x00400057:	strb	r3, [r4]
+0x00400059:	mov	r0, r5
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x00400053:	mov	r4, r0
+0x00400055:	movs	r3, #0
+0x00400057:	strb	r3, [r4]
+0x00400059:	mov	r0, r5
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x00400055:	movs	r3, #0
+0x00400057:	strb	r3, [r4]
+0x00400059:	mov	r0, r5
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x00400059:	mov	r0, r5
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x0040005d:	subs	r3, r4, #1
+0x0040005f:	mov	r1, r6
+0x00400061:	ldrb	r2, [r6, r3]
+0x00400063:	cmp	r2, #0x2f
+0x00400065:	it	eq
+0x00400067:	moveq	r4, r3
+0x00400069:	mov	r2, r4
+0x0040006b:	add	r4, r5
+0x0040006d:	bl	#0x500019
+0x00400071:	b	#0x400055
 
-00000000 <dos_ldirname>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	4606      	mov	r6, r0
-   4:	f7ff fffe 	bl	0 <dos_lbasename>
-   8:	1b84      	subs	r4, r0, r6
-   a:	1c60      	adds	r0, r4, #1
-   c:	f7ff fffe 	bl	0 <malloc>
-  10:	4605      	mov	r5, r0
-  12:	b118      	cbz	r0, 1c <dos_ldirname+0x1c>
-  14:	b924      	cbnz	r4, 20 <dos_ldirname+0x20>
-  16:	4604      	mov	r4, r0
-  18:	2300      	movs	r3, #0
-  1a:	7023      	strb	r3, [r4, #0]
-  1c:	4628      	mov	r0, r5
-  1e:	bd70      	pop	{r4, r5, r6, pc}
-  20:	1e63      	subs	r3, r4, #1
-  22:	4631      	mov	r1, r6
-  24:	5cf2      	ldrb	r2, [r6, r3]
-  26:	2a5c      	cmp	r2, #92	; 0x5c
-  28:	bf18      	it	ne
-  2a:	2a2f      	cmpne	r2, #47	; 0x2f
-  2c:	bf08      	it	eq
-  2e:	461c      	moveq	r4, r3
-  30:	4622      	mov	r2, r4
-  32:	442c      	add	r4, r5
-  34:	f7ff fffe 	bl	0 <memcpy>
-  38:	e7ee      	b.n	18 <dos_ldirname+0x18>
-  3a:	bf00      	nop
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+0x00400075:	push	{r4, r5, r6, lr}
+0x00400077:	mov	r6, r0
+0x00400079:	bl	#0x500025
 
-0000003c <unix_ldirname>:
-  3c:	b570      	push	{r4, r5, r6, lr}
-  3e:	4606      	mov	r6, r0
-  40:	f7ff fffe 	bl	0 <unix_lbasename>
-  44:	1b84      	subs	r4, r0, r6
-  46:	1c60      	adds	r0, r4, #1
-  48:	f7ff fffe 	bl	0 <malloc>
-  4c:	4605      	mov	r5, r0
-  4e:	b118      	cbz	r0, 58 <unix_ldirname+0x1c>
-  50:	b924      	cbnz	r4, 5c <unix_ldirname+0x20>
-  52:	4604      	mov	r4, r0
-  54:	2300      	movs	r3, #0
-  56:	7023      	strb	r3, [r4, #0]
-  58:	4628      	mov	r0, r5
-  5a:	bd70      	pop	{r4, r5, r6, pc}
-  5c:	1e63      	subs	r3, r4, #1
-  5e:	4631      	mov	r1, r6
-  60:	5cf2      	ldrb	r2, [r6, r3]
-  62:	2a2f      	cmp	r2, #47	; 0x2f
-  64:	bf08      	it	eq
-  66:	461c      	moveq	r4, r3
-  68:	4622      	mov	r2, r4
-  6a:	442c      	add	r4, r5
-  6c:	f7ff fffe 	bl	0 <memcpy>
-  70:	e7f0      	b.n	54 <unix_ldirname+0x18>
-  72:	bf00      	nop
+Function ldirname @ 0x00400075
+0x00400075:	push	{r4, r5, r6, lr}
+0x00400077:	mov	r6, r0
+0x00400079:	bl	#0x500025
+0x0040007d:	subs	r4, r0, r6
+0x0040007f:	adds	r0, r4, #1
+0x00400081:	bl	#0x50000d
+0x00400085:	mov	r5, r0
+0x00400087:	cbz	r0, #0x400091
+0x00400089:	cbnz	r4, #0x400095
+0x0040008b:	mov	r4, r0
+0x0040008d:	movs	r3, #0
+0x0040008f:	strb	r3, [r4]
+0x00400091:	mov	r0, r5
+0x00400093:	pop	{r4, r5, r6, pc}
+0x00400089:	cbnz	r4, #0x400095
+0x0040008b:	mov	r4, r0
+0x0040008d:	movs	r3, #0
+0x0040008f:	strb	r3, [r4]
+0x00400091:	mov	r0, r5
+0x00400093:	pop	{r4, r5, r6, pc}
+0x0040008b:	mov	r4, r0
+0x0040008d:	movs	r3, #0
+0x0040008f:	strb	r3, [r4]
+0x00400091:	mov	r0, r5
+0x00400093:	pop	{r4, r5, r6, pc}
+0x0040008d:	movs	r3, #0
+0x0040008f:	strb	r3, [r4]
+0x00400091:	mov	r0, r5
+0x00400093:	pop	{r4, r5, r6, pc}
+0x00400091:	mov	r0, r5
+0x00400093:	pop	{r4, r5, r6, pc}
+0x00400095:	subs	r3, r4, #1
+0x00400097:	mov	r1, r6
+0x00400099:	ldrb	r2, [r6, r3]
+0x0040009b:	cmp	r2, #0x2f
+0x0040009d:	it	eq
+0x0040009f:	moveq	r4, r3
+0x004000a1:	mov	r2, r4
+0x004000a3:	add	r4, r5
+0x004000a5:	bl	#0x500019
+0x004000a9:	b	#0x40008d
 
-00000074 <ldirname>:
-  74:	b570      	push	{r4, r5, r6, lr}
-  76:	4606      	mov	r6, r0
-  78:	f7ff fffe 	bl	0 <unix_lbasename>
-  7c:	1b84      	subs	r4, r0, r6
-  7e:	1c60      	adds	r0, r4, #1
-  80:	f7ff fffe 	bl	0 <malloc>
-  84:	4605      	mov	r5, r0
-  86:	b118      	cbz	r0, 90 <ldirname+0x1c>
-  88:	b924      	cbnz	r4, 94 <ldirname+0x20>
-  8a:	4604      	mov	r4, r0
-  8c:	2300      	movs	r3, #0
-  8e:	7023      	strb	r3, [r4, #0]
-  90:	4628      	mov	r0, r5
-  92:	bd70      	pop	{r4, r5, r6, pc}
-  94:	1e63      	subs	r3, r4, #1
-  96:	4631      	mov	r1, r6
-  98:	5cf2      	ldrb	r2, [r6, r3]
-  9a:	2a2f      	cmp	r2, #47	; 0x2f
-  9c:	bf08      	it	eq
-  9e:	461c      	moveq	r4, r3
-  a0:	4622      	mov	r2, r4
-  a2:	442c      	add	r4, r5
-  a4:	f7ff fffe 	bl	0 <memcpy>
-  a8:	e7f0      	b.n	8c <ldirname+0x18>
-  aa:	bf00      	nop
+Function sub_4000ab @ 0x004000ab
+0x004000ab:	nop	
+
+Function dos_lbasename @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function malloc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function memcpy @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function unix_lbasename @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

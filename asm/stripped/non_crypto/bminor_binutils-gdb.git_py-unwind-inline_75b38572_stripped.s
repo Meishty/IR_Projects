@@ -1,18 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-unwind-inline_75b38572_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r2, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706818 			; <UNDEFINED> instruction: 0x47706818
-   8:	00000002 	andeq	r0, r0, r2
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	22004b02 	andcs	r4, r0, #2048	; 0x800
-   4:	601a447b 	andsvs	r4, sl, fp, ror r4
-   8:	bffef7ff 	svclt	0x00fef7ff
-   c:	00000004 	andeq	r0, r0, r4
+Function sub_400011 @ 0x00400011
+0x00400011:	ldr	r3, [pc, #8]
+0x00400013:	movs	r2, #0
+0x00400015:	add	r3, pc
+0x00400017:	str	r2, [r3]
+0x00400019:	b.w	#0x400019
+0x00400019:	b.w	#0x400019

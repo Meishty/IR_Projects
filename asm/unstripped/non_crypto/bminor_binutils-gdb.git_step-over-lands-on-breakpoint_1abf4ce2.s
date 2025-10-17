@@ -1,54 +1,100 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_step-over-lands-on-breakpoint_1abf4ce2.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdami	ip, {r0, r1, r3, sl, fp, lr}
+0x00400004:	strlt	r4, [r8, #-0x47c]
+0x00400004:	strlt	r4, [r8, #-0x47c]
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x500001
+0x0040000f:	ldr	r3, [r4]
+0x00400011:	cbz	r3, #0x400029
+0x00400013:	ldr	r3, [r4]
+0x00400015:	adds	r3, #1
+0x00400017:	str	r3, [r4]
+0x00400019:	nop	
+0x0040001b:	nop	
+0x0040001d:	movs	r0, #1
+0x0040001f:	bl	#0x50000d
+0x00400013:	ldr	r3, [r4]
+0x00400015:	adds	r3, #1
+0x00400017:	str	r3, [r4]
+0x00400019:	nop	
+0x0040001b:	nop	
+0x0040001d:	movs	r0, #1
+0x0040001f:	bl	#0x50000d
+0x00400023:	ldr	r3, [r4]
+0x00400025:	cmp	r3, #0
+0x00400027:	bne	#0x400013
+0x00400029:	movs	r0, #0
+0x0040002b:	bl	#0x500019
+0x0040002f:	nop	
+0x00400031:	movs	r0, r6
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r6
+0x00400037:	movs	r0, r0
 
-Disassembly of section .text:
+Function main @ 0x00400055
+0x00400055:	push	{r4, lr}
+0x00400057:	mov.w	r0, #0x12c
+0x0040005b:	ldr	r4, [pc, #0x28]
+0x0040005d:	bl	#0x500025
+0x00400061:	movs	r2, #2
+0x00400063:	add	r4, pc
+0x00400065:	movs	r1, #0
+0x00400067:	mov	r0, r4
+0x00400069:	bl	#0x500031
+0x0040006d:	ldr	r2, [pc, #0x18]
+0x0040006f:	movs	r3, #0
+0x00400071:	add.w	r0, r4, #0x14
+0x00400075:	add	r2, pc
+0x00400077:	mov	r1, r3
+0x00400079:	bl	#0x50003d
+0x0040007d:	mov	r0, r4
+0x0040007f:	bl	#0x500001
+0x00400083:	b	#0x400083
 
-00000000 <child_function>:
-   0:	4c0b      	ldr	r4, [pc, #44]	; (30 <child_function+0x30>)
-   2:	480c      	ldr	r0, [pc, #48]	; (34 <child_function+0x34>)
-   4:	447c      	add	r4, pc
-   6:	b508      	push	{r3, lr}
-   8:	4478      	add	r0, pc
-   a:	f7ff fffe 	bl	0 <pthread_barrier_wait>
-   e:	6823      	ldr	r3, [r4, #0]
-  10:	b153      	cbz	r3, 28 <child_function+0x28>
-  12:	6823      	ldr	r3, [r4, #0]
-  14:	3301      	adds	r3, #1
-  16:	6023      	str	r3, [r4, #0]
-  18:	bf00      	nop
-  1a:	bf00      	nop
-  1c:	2001      	movs	r0, #1
-  1e:	f7ff fffe 	bl	0 <usleep>
-  22:	6823      	ldr	r3, [r4, #0]
-  24:	2b00      	cmp	r3, #0
-  26:	d1f4      	bne.n	12 <child_function+0x12>
-  28:	2000      	movs	r0, #0
-  2a:	f7ff fffe 	bl	0 <pthread_exit>
-  2e:	bf00      	nop
-  30:	00000028 	.word	0x00000028
-  34:	00000028 	.word	0x00000028
+Function pthread_barrier_wait @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function usleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	f44f 7096 	mov.w	r0, #300	; 0x12c
-   6:	4c0a      	ldr	r4, [pc, #40]	; (30 <main+0x30>)
-   8:	f7ff fffe 	bl	0 <alarm>
-   c:	2202      	movs	r2, #2
-   e:	447c      	add	r4, pc
-  10:	2100      	movs	r1, #0
-  12:	4620      	mov	r0, r4
-  14:	f7ff fffe 	bl	0 <pthread_barrier_init>
-  18:	4a06      	ldr	r2, [pc, #24]	; (34 <main+0x34>)
-  1a:	2300      	movs	r3, #0
-  1c:	f104 0014 	add.w	r0, r4, #20
-  20:	447a      	add	r2, pc
-  22:	4619      	mov	r1, r3
-  24:	f7ff fffe 	bl	0 <pthread_create>
-  28:	4620      	mov	r0, r4
-  2a:	f7ff fffe 	bl	0 <pthread_barrier_wait>
-  2e:	e7fe      	b.n	2e <main+0x2e>
-  30:	0000001e 	.word	0x0000001e
-  34:	00000010 	.word	0x00000010
+Function pthread_exit @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function alarm @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function pthread_barrier_init @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function pthread_create @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

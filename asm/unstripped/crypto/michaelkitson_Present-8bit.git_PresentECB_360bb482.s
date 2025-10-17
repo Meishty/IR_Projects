@@ -1,91 +1,326 @@
 
-/root/projects/compiled/crypto/unstripped/michaelkitson_Present-8bit.git_PresentECB_360bb482.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	push	{r1, r4, r5, r6, r8, ip, sp, pc}
 
+Function sub_400007 @ 0x00400007
+0x00400007:	mov	r6, r0
+0x00400009:	mov	r7, r1
+0x0040000b:	mov	r8, r3
+0x0040000d:	mov	r5, r2
+0x0040000f:	movs	r4, #0
+0x00400011:	adds	r0, r7, r4
+0x00400013:	mov	r1, r8
+0x00400015:	adds	r4, #8
+0x00400017:	blx	r6
+0x00400011:	adds	r0, r7, r4
+0x00400013:	mov	r1, r8
+0x00400015:	adds	r4, #8
+0x00400017:	blx	r6
+0x00400019:	cmp	r5, r4
+0x0040001b:	bhi	#0x400011
+0x0040001d:	pop.w	{r4, r5, r6, r7, r8, pc}
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	bx	lr
 
-00000000 <performBlockFunction>:
-   0:	b172      	cbz	r2, 20 <performBlockFunction+0x20>
-   2:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-   6:	4606      	mov	r6, r0
-   8:	460f      	mov	r7, r1
-   a:	4698      	mov	r8, r3
-   c:	4615      	mov	r5, r2
-   e:	2400      	movs	r4, #0
-  10:	1938      	adds	r0, r7, r4
-  12:	4641      	mov	r1, r8
-  14:	3408      	adds	r4, #8
-  16:	47b0      	blx	r6
-  18:	42a5      	cmp	r5, r4
-  1a:	d8f9      	bhi.n	10 <performBlockFunction+0x10>
-  1c:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  20:	4770      	bx	lr
-  22:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	cbz	r1, #0x400041
+0x00400027:	push	{r3, r4, r5, r6, r7, lr}
+0x00400029:	mov	r6, r0
+0x0040002b:	mov	r7, r2
+0x0040002d:	mov	r5, r1
+0x0040002f:	movs	r4, #0
+0x00400031:	adds	r0, r6, r4
+0x00400033:	mov	r1, r7
+0x00400035:	adds	r4, #8
+0x00400037:	bl	#0x500001
 
-00000024 <present80ECB_encrypt>:
-  24:	b161      	cbz	r1, 40 <present80ECB_encrypt+0x1c>
-  26:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  28:	4606      	mov	r6, r0
-  2a:	4617      	mov	r7, r2
-  2c:	460d      	mov	r5, r1
-  2e:	2400      	movs	r4, #0
-  30:	1930      	adds	r0, r6, r4
-  32:	4639      	mov	r1, r7
-  34:	3408      	adds	r4, #8
-  36:	f7ff fffe 	bl	0 <present80_encryptBlock>
-  3a:	42a5      	cmp	r5, r4
-  3c:	d8f8      	bhi.n	30 <present80ECB_encrypt+0xc>
-  3e:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  40:	4770      	bx	lr
-  42:	bf00      	nop
+Function present80ECB_encrypt @ 0x00400025
+0x00400025:	cbz	r1, #0x400041
+0x00400027:	push	{r3, r4, r5, r6, r7, lr}
+0x00400029:	mov	r6, r0
+0x0040002b:	mov	r7, r2
+0x0040002d:	mov	r5, r1
+0x0040002f:	movs	r4, #0
+0x00400031:	adds	r0, r6, r4
+0x00400033:	mov	r1, r7
+0x00400035:	adds	r4, #8
+0x00400037:	bl	#0x500001
+0x00400027:	push	{r3, r4, r5, r6, r7, lr}
+0x00400029:	mov	r6, r0
+0x0040002b:	mov	r7, r2
+0x0040002d:	mov	r5, r1
+0x0040002f:	movs	r4, #0
+0x00400031:	adds	r0, r6, r4
+0x00400033:	mov	r1, r7
+0x00400035:	adds	r4, #8
+0x00400037:	bl	#0x500001
+0x00400031:	adds	r0, r6, r4
+0x00400033:	mov	r1, r7
+0x00400035:	adds	r4, #8
+0x00400037:	bl	#0x500001
+0x0040003b:	cmp	r5, r4
+0x0040003d:	bhi	#0x400031
+0x0040003f:	pop	{r3, r4, r5, r6, r7, pc}
+0x00400041:	bx	lr
 
-00000044 <present80ECB_decrypt>:
-  44:	b161      	cbz	r1, 60 <present80ECB_decrypt+0x1c>
-  46:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  48:	4606      	mov	r6, r0
-  4a:	4617      	mov	r7, r2
-  4c:	460d      	mov	r5, r1
-  4e:	2400      	movs	r4, #0
-  50:	1930      	adds	r0, r6, r4
-  52:	4639      	mov	r1, r7
-  54:	3408      	adds	r4, #8
-  56:	f7ff fffe 	bl	0 <present80_decryptBlock>
-  5a:	42a5      	cmp	r5, r4
-  5c:	d8f8      	bhi.n	50 <present80ECB_decrypt+0xc>
-  5e:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  60:	4770      	bx	lr
-  62:	bf00      	nop
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	cbz	r1, #0x400061
+0x00400047:	push	{r3, r4, r5, r6, r7, lr}
+0x00400049:	mov	r6, r0
+0x0040004b:	mov	r7, r2
+0x0040004d:	mov	r5, r1
+0x0040004f:	movs	r4, #0
+0x00400051:	adds	r0, r6, r4
+0x00400053:	mov	r1, r7
+0x00400055:	adds	r4, #8
+0x00400057:	bl	#0x50000d
 
-00000064 <present128ECB_encrypt>:
-  64:	b161      	cbz	r1, 80 <present128ECB_encrypt+0x1c>
-  66:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  68:	4606      	mov	r6, r0
-  6a:	4617      	mov	r7, r2
-  6c:	460d      	mov	r5, r1
-  6e:	2400      	movs	r4, #0
-  70:	1930      	adds	r0, r6, r4
-  72:	4639      	mov	r1, r7
-  74:	3408      	adds	r4, #8
-  76:	f7ff fffe 	bl	0 <present128_encryptBlock>
-  7a:	42a5      	cmp	r5, r4
-  7c:	d8f8      	bhi.n	70 <present128ECB_encrypt+0xc>
-  7e:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  80:	4770      	bx	lr
-  82:	bf00      	nop
+Function present80ECB_decrypt @ 0x00400045
+0x00400045:	cbz	r1, #0x400061
+0x00400047:	push	{r3, r4, r5, r6, r7, lr}
+0x00400049:	mov	r6, r0
+0x0040004b:	mov	r7, r2
+0x0040004d:	mov	r5, r1
+0x0040004f:	movs	r4, #0
+0x00400051:	adds	r0, r6, r4
+0x00400053:	mov	r1, r7
+0x00400055:	adds	r4, #8
+0x00400057:	bl	#0x50000d
+0x00400047:	push	{r3, r4, r5, r6, r7, lr}
+0x00400049:	mov	r6, r0
+0x0040004b:	mov	r7, r2
+0x0040004d:	mov	r5, r1
+0x0040004f:	movs	r4, #0
+0x00400051:	adds	r0, r6, r4
+0x00400053:	mov	r1, r7
+0x00400055:	adds	r4, #8
+0x00400057:	bl	#0x50000d
+0x00400051:	adds	r0, r6, r4
+0x00400053:	mov	r1, r7
+0x00400055:	adds	r4, #8
+0x00400057:	bl	#0x50000d
+0x0040005b:	cmp	r5, r4
+0x0040005d:	bhi	#0x400051
+0x0040005f:	pop	{r3, r4, r5, r6, r7, pc}
+0x00400061:	bx	lr
 
-00000084 <present128ECB_decrypt>:
-  84:	b161      	cbz	r1, a0 <present128ECB_decrypt+0x1c>
-  86:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-  88:	4606      	mov	r6, r0
-  8a:	4617      	mov	r7, r2
-  8c:	460d      	mov	r5, r1
-  8e:	2400      	movs	r4, #0
-  90:	1930      	adds	r0, r6, r4
-  92:	4639      	mov	r1, r7
-  94:	3408      	adds	r4, #8
-  96:	f7ff fffe 	bl	0 <present128_decryptBlock>
-  9a:	42a5      	cmp	r5, r4
-  9c:	d8f8      	bhi.n	90 <present128ECB_decrypt+0xc>
-  9e:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  a0:	4770      	bx	lr
-  a2:	bf00      	nop
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	cbz	r1, #0x400081
+0x00400067:	push	{r3, r4, r5, r6, r7, lr}
+0x00400069:	mov	r6, r0
+0x0040006b:	mov	r7, r2
+0x0040006d:	mov	r5, r1
+0x0040006f:	movs	r4, #0
+0x00400071:	adds	r0, r6, r4
+0x00400073:	mov	r1, r7
+0x00400075:	adds	r4, #8
+0x00400077:	bl	#0x500019
+
+Function present128ECB_encrypt @ 0x00400065
+0x00400065:	cbz	r1, #0x400081
+0x00400067:	push	{r3, r4, r5, r6, r7, lr}
+0x00400069:	mov	r6, r0
+0x0040006b:	mov	r7, r2
+0x0040006d:	mov	r5, r1
+0x0040006f:	movs	r4, #0
+0x00400071:	adds	r0, r6, r4
+0x00400073:	mov	r1, r7
+0x00400075:	adds	r4, #8
+0x00400077:	bl	#0x500019
+0x00400067:	push	{r3, r4, r5, r6, r7, lr}
+0x00400069:	mov	r6, r0
+0x0040006b:	mov	r7, r2
+0x0040006d:	mov	r5, r1
+0x0040006f:	movs	r4, #0
+0x00400071:	adds	r0, r6, r4
+0x00400073:	mov	r1, r7
+0x00400075:	adds	r4, #8
+0x00400077:	bl	#0x500019
+0x00400071:	adds	r0, r6, r4
+0x00400073:	mov	r1, r7
+0x00400075:	adds	r4, #8
+0x00400077:	bl	#0x500019
+0x0040007b:	cmp	r5, r4
+0x0040007d:	bhi	#0x400071
+0x0040007f:	pop	{r3, r4, r5, r6, r7, pc}
+0x00400081:	bx	lr
+
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	cbz	r1, #0x4000a1
+0x00400087:	push	{r3, r4, r5, r6, r7, lr}
+0x00400089:	mov	r6, r0
+0x0040008b:	mov	r7, r2
+0x0040008d:	mov	r5, r1
+0x0040008f:	movs	r4, #0
+0x00400091:	adds	r0, r6, r4
+0x00400093:	mov	r1, r7
+0x00400095:	adds	r4, #8
+0x00400097:	bl	#0x500025
+
+Function present128ECB_decrypt @ 0x00400085
+0x00400085:	cbz	r1, #0x4000a1
+0x00400087:	push	{r3, r4, r5, r6, r7, lr}
+0x00400089:	mov	r6, r0
+0x0040008b:	mov	r7, r2
+0x0040008d:	mov	r5, r1
+0x0040008f:	movs	r4, #0
+0x00400091:	adds	r0, r6, r4
+0x00400093:	mov	r1, r7
+0x00400095:	adds	r4, #8
+0x00400097:	bl	#0x500025
+0x00400087:	push	{r3, r4, r5, r6, r7, lr}
+0x00400089:	mov	r6, r0
+0x0040008b:	mov	r7, r2
+0x0040008d:	mov	r5, r1
+0x0040008f:	movs	r4, #0
+0x00400091:	adds	r0, r6, r4
+0x00400093:	mov	r1, r7
+0x00400095:	adds	r4, #8
+0x00400097:	bl	#0x500025
+0x00400091:	adds	r0, r6, r4
+0x00400093:	mov	r1, r7
+0x00400095:	adds	r4, #8
+0x00400097:	bl	#0x500025
+0x0040009b:	cmp	r5, r4
+0x0040009d:	bhi	#0x400091
+0x0040009f:	pop	{r3, r4, r5, r6, r7, pc}
+0x004000a1:	bx	lr
+
+Function sub_4000a3 @ 0x004000a3
+0x004000a3:	nop	
+
+Function present80_encryptBlock @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function present80_decryptBlock @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function present128_encryptBlock @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function present128_decryptBlock @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+
+Function UnresolvableCallTarget @ 0x00601050
+0x00601050:	andeq	r0, r0, r0
+0x00601054:	andeq	r0, r0, r0
+0x00601058:	andeq	r0, r0, r0
+0x0060105c:	andeq	r0, r0, r0
+0x00601060:	andeq	r0, r0, r0
+0x00601064:	andeq	r0, r0, r0
+0x00601068:	andeq	r0, r0, r0
+0x0060106c:	andeq	r0, r0, r0
+0x00601070:	andeq	r0, r0, r0
+0x00601074:	andeq	r0, r0, r0
+0x00601078:	andeq	r0, r0, r0
+0x0060107c:	andeq	r0, r0, r0
+0x00601080:	andeq	r0, r0, r0
+0x00601084:	andeq	r0, r0, r0
+0x00601088:	andeq	r0, r0, r0
+0x0060108c:	andeq	r0, r0, r0
+0x00601090:	andeq	r0, r0, r0
+0x00601094:	andeq	r0, r0, r0
+0x00601098:	andeq	r0, r0, r0
+0x0060109c:	andeq	r0, r0, r0
+0x006010a0:	andeq	r0, r0, r0
+0x006010a4:	andeq	r0, r0, r0
+0x006010a8:	andeq	r0, r0, r0
+0x006010ac:	andeq	r0, r0, r0
+0x006010b0:	andeq	r0, r0, r0
+0x006010b4:	andeq	r0, r0, r0
+0x006010b8:	andeq	r0, r0, r0
+0x006010bc:	andeq	r0, r0, r0
+0x006010c0:	andeq	r0, r0, r0
+0x006010c4:	andeq	r0, r0, r0
+0x006010c8:	andeq	r0, r0, r0
+0x006010cc:	andeq	r0, r0, r0
+0x006010d0:	andeq	r0, r0, r0
+0x006010d4:	andeq	r0, r0, r0
+0x006010d8:	andeq	r0, r0, r0
+0x006010dc:	andeq	r0, r0, r0
+0x006010e0:	andeq	r0, r0, r0
+0x006010e4:	andeq	r0, r0, r0
+0x006010e8:	andeq	r0, r0, r0
+0x006010ec:	andeq	r0, r0, r0
+0x006010f0:	andeq	r0, r0, r0
+0x006010f4:	andeq	r0, r0, r0
+0x006010f8:	andeq	r0, r0, r0
+0x006010fc:	andeq	r0, r0, r0
+0x00601100:	andeq	r0, r0, r0
+0x00601104:	andeq	r0, r0, r0
+0x00601108:	andeq	r0, r0, r0
+0x0060110c:	andeq	r0, r0, r0
+0x00601110:	andeq	r0, r0, r0
+0x00601114:	andeq	r0, r0, r0
+0x00601118:	andeq	r0, r0, r0
+0x0060111c:	andeq	r0, r0, r0
+0x00601120:	andeq	r0, r0, r0
+0x00601124:	andeq	r0, r0, r0
+0x00601128:	andeq	r0, r0, r0
+0x0060112c:	andeq	r0, r0, r0
+0x00601130:	andeq	r0, r0, r0
+0x00601134:	andeq	r0, r0, r0
+0x00601138:	andeq	r0, r0, r0
+0x0060113c:	andeq	r0, r0, r0
+0x00601140:	andeq	r0, r0, r0
+0x00601144:	andeq	r0, r0, r0
+0x00601148:	andeq	r0, r0, r0
+0x0060114c:	andeq	r0, r0, r0
+0x00601150:	andeq	r0, r0, r0
+0x00601154:	andeq	r0, r0, r0
+0x00601158:	andeq	r0, r0, r0
+0x0060115c:	andeq	r0, r0, r0
+0x00601160:	andeq	r0, r0, r0
+0x00601164:	andeq	r0, r0, r0
+0x00601168:	andeq	r0, r0, r0
+0x0060116c:	andeq	r0, r0, r0
+0x00601170:	andeq	r0, r0, r0
+0x00601174:	andeq	r0, r0, r0
+0x00601178:	andeq	r0, r0, r0
+0x0060117c:	andeq	r0, r0, r0
+0x00601180:	andeq	r0, r0, r0
+0x00601184:	andeq	r0, r0, r0
+0x00601188:	andeq	r0, r0, r0
+0x0060118c:	andeq	r0, r0, r0
+0x00601190:	andeq	r0, r0, r0
+0x00601194:	andeq	r0, r0, r0
+0x00601198:	andeq	r0, r0, r0
+0x0060119c:	andeq	r0, r0, r0
+0x006011a0:	andeq	r0, r0, r0
+0x006011a4:	andeq	r0, r0, r0
+0x006011a8:	andeq	r0, r0, r0
+0x006011ac:	andeq	r0, r0, r0
+0x006011b0:	andeq	r0, r0, r0
+0x006011b4:	andeq	r0, r0, r0
+0x006011b8:	andeq	r0, r0, r0
+0x006011bc:	andeq	r0, r0, r0
+0x006011c0:	andeq	r0, r0, r0
+0x006011c4:	andeq	r0, r0, r0
+0x006011c8:	andeq	r0, r0, r0
+0x006011cc:	andeq	r0, r0, r0
+0x006011d0:	andeq	r0, r0, r0
+0x006011d4:	andeq	r0, r0, r0
+0x006011d8:	andeq	r0, r0, r0

@@ -1,350 +1,457 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_toast_audio_519d94e2.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mvnsmi	lr, #0xb4000
+0x00400004:	blmi	#0x1cd3594
+0x00400008:	ldrbtmi	fp, [sp], #-0x83
+0x0040000c:	ldmdavs	r0!, {r1, r2, r3, r5, r6, r7, fp, ip, lr}
 
+Function sub_400013 @ 0x00400013
+0x00400013:	vtbl.8	d18, {d6}, d30
+0x00400017:	bne.w	#0x400139
+0x0040001b:	ldr	r0, [r6]
+0x0040001d:	bl	#0x500001
+0x00400021:	cmp	r0, #0x73
+0x00400023:	bne.w	#0x400139
+0x00400027:	ldr	r0, [r6]
+0x00400029:	bl	#0x500001
+0x0040002d:	cmp	r0, #0x6e
+0x0040002f:	bne.w	#0x400139
+0x00400033:	ldr	r0, [r6]
+0x00400035:	bl	#0x500001
+0x00400039:	cmp	r0, #0x64
+0x0040003b:	bne	#0x400139
+0x0040003d:	ldr	r7, [r6]
+0x0040003f:	mov	r0, r7
+0x00400041:	bl	#0x50000d
+0x00400045:	mov	r4, r0
+0x00400047:	adds	r1, r0, #1
+0x00400049:	beq	#0x400139
+0x0040004b:	mov	r0, r7
+0x0040004d:	bl	#0x50000d
+0x00400051:	adds	r2, r0, #1
+0x00400053:	beq	#0x400139
+0x00400055:	lsls	r4, r4, #8
+0x00400057:	uxtb	r0, r0
+0x00400059:	uxth	r4, r4
+0x0040005b:	orrs	r4, r0
+0x0040005d:	mov	r0, r7
+0x0040005f:	bl	#0x50000d
+0x00400063:	adds	r3, r0, #1
+0x00400065:	beq	#0x400139
+0x00400067:	uxtb	r3, r0
+0x00400069:	mov	r0, r7
+0x0040006b:	orr.w	r7, r3, r4, lsl #8
+0x0040006f:	bl	#0x50000d
+0x00400073:	adds	r4, r0, #1
+0x00400075:	beq	#0x400139
+0x00400077:	ldr.w	r8, [r6]
+0x0040007b:	uxtb	r0, r0
+0x0040007d:	orr.w	r7, r0, r7, lsl #8
+0x00400081:	mov	r0, r8
+0x00400083:	bl	#0x50000d
+0x00400087:	adds	r0, #1
+0x00400089:	beq	#0x400139
+0x0040008b:	mov	r0, r8
+0x0040008d:	bl	#0x50000d
+0x00400091:	adds	r0, #1
+0x00400093:	beq	#0x400139
+0x00400095:	mov	r0, r8
+0x00400097:	bl	#0x50000d
+0x0040009b:	adds	r0, #1
+0x0040009d:	beq	#0x400139
+0x0040009f:	mov	r0, r8
+0x004000a1:	bl	#0x50000d
+0x004000a5:	adds	r0, #1
+0x004000a7:	beq	#0x400139
+0x004000a9:	ldr.w	r8, [r6]
+0x004000ad:	mov	r0, r8
+0x004000af:	bl	#0x50000d
+0x004000b3:	mov	r4, r0
+0x004000b5:	adds	r0, r4, #1
+0x004000b7:	beq	#0x400139
+0x004000b9:	mov	r0, r8
+0x004000bb:	bl	#0x50000d
+0x004000bf:	adds	r1, r0, #1
+0x004000c1:	beq	#0x400139
+0x004000c3:	lsls	r4, r4, #8
+0x004000c5:	uxtb	r0, r0
+0x004000c7:	uxth	r4, r4
+0x004000c9:	orrs	r4, r0
+0x004000cb:	mov	r0, r8
+0x004000cd:	bl	#0x50000d
+0x004000d1:	adds	r2, r0, #1
+0x004000d3:	beq	#0x400139
+0x004000d5:	uxtb	r0, r0
+0x004000d7:	orr.w	sb, r0, r4, lsl #8
+0x004000db:	mov	r0, r8
+0x004000dd:	bl	#0x50000d
+0x004000e1:	adds	r3, r0, #1
+0x004000e3:	beq	#0x400139
+0x004000e5:	uxtb	r4, r0
+0x004000e7:	sub.w	r1, r7, #0x10
+0x004000eb:	ldr	r0, [r6]
+0x004000ed:	movs	r2, #1
+0x004000ef:	bl	#0x500019
+0x004000f3:	orr.w	r4, r4, sb, lsl #8
+0x004000f7:	cmp	r0, #0
+0x004000f9:	blt	#0x400139
+0x004000fb:	cmp	r4, #2
+0x004000fd:	beq	#0x40016b
+0x004000ff:	cmp	r4, #3
+0x00400101:	beq	#0x40017d
+0x00400103:	cmp	r4, #1
+0x00400105:	beq	#0x400127
+0x00400107:	ldr	r2, [pc, #0x90]
+0x00400109:	ldr	r3, [pc, #0x90]
+0x0040010b:	ldr	r1, [pc, #0x94]
+0x0040010d:	ldr	r0, [r5, r2]
+0x0040010f:	ldr	r2, [r5, r3]
+0x00400111:	ldr	r1, [r5, r1]
+0x00400113:	str	r4, [sp]
+0x00400115:	ldr	r2, [r2]
+0x00400117:	ldr	r3, [r1]
+0x00400119:	movs	r1, #1
+0x0040011b:	ldr	r0, [r0]
+0x0040011d:	str	r2, [sp, #4]
+0x0040011f:	ldr	r2, [pc, #0x84]
+0x00400121:	add	r2, pc
+0x00400123:	bl	#0x500025
+0x00400127:	ldr	r2, [pc, #0x80]
+0x00400129:	movs	r0, #0
+0x0040012b:	ldr	r3, [pc, #0x80]
+0x0040012d:	ldr	r2, [r5, r2]
+0x0040012f:	ldr	r3, [r5, r3]
+0x00400131:	str	r3, [r2]
+0x00400133:	add	sp, #0xc
+0x00400135:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x00400139:	ldr	r1, [pc, #0x60]
+0x0040013b:	ldr	r2, [pc, #0x5c]
+0x0040013d:	ldr	r3, [pc, #0x60]
+0x0040013f:	ldr	r1, [r5, r1]
+0x00400141:	ldr	r2, [r5, r2]
+0x00400143:	ldr	r3, [r5, r3]
+0x00400145:	ldr	r4, [r1]
+0x00400147:	ldr	r0, [r2]
+0x00400149:	ldr	r3, [r3]
+0x0040014b:	cbz	r4, #0x400165
+0x0040014d:	ldr	r2, [pc, #0x60]
+0x0040014f:	movs	r1, #1
+0x00400151:	str	r3, [sp, #4]
+0x00400153:	add	r2, pc
+0x00400155:	str	r4, [sp]
+0x00400157:	bl	#0x500025
+0x0040014d:	ldr	r2, [pc, #0x60]
+0x0040014f:	movs	r1, #1
+0x00400151:	str	r3, [sp, #4]
+0x00400153:	add	r2, pc
+0x00400155:	str	r4, [sp]
+0x00400157:	bl	#0x500025
+0x0040015b:	mov.w	r0, #-1
+0x0040015f:	add	sp, #0xc
+0x00400161:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x00400165:	ldr	r4, [pc, #0x4c]
+0x00400167:	add	r4, pc
+0x00400169:	b	#0x40014d
+0x0040016b:	ldr	r2, [pc, #0x3c]
+0x0040016d:	movs	r0, #0
+0x0040016f:	ldr	r3, [pc, #0x48]
+0x00400171:	ldr	r2, [r5, r2]
+0x00400173:	ldr	r3, [r5, r3]
+0x00400175:	str	r3, [r2]
+0x00400177:	add	sp, #0xc
+0x00400179:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x0040017d:	ldr	r2, [pc, #0x28]
+0x0040017f:	movs	r0, #0
+0x00400181:	ldr	r3, [pc, #0x38]
+0x00400183:	ldr	r2, [r5, r2]
+0x00400185:	ldr	r3, [r5, r3]
+0x00400187:	str	r3, [r2]
+0x00400189:	add	sp, #0xc
+0x0040018b:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
 
-Disassembly of section .text:
+Function sub_40018f @ 0x0040018f
+0x0040018f:	nop	
+0x00400191:	lsls	r2, r0, #6
+0x00400193:	movs	r0, r0
+0x00400195:	movs	r0, r0
+0x00400197:	movs	r0, r0
+0x00400199:	movs	r0, r0
+0x0040019b:	movs	r0, r0
+0x0040019d:	movs	r0, r0
+0x0040019f:	movs	r0, r0
+0x004001a1:	movs	r0, r0
+0x004001a3:	movs	r0, r0
+0x004001a5:	lsls	r0, r6, #0xa
+0x004001a7:	movs	r0, r0
+0x004001a9:	movs	r0, r0
+0x004001ab:	movs	r0, r0
+0x004001ad:	movs	r0, r0
+0x004001af:	movs	r0, r0
+0x004001b1:	lsls	r2, r3, #8
+0x004001b3:	movs	r0, r0
+0x004001b5:	lsls	r6, r7, #7
+0x004001b7:	movs	r0, r0
+0x004001b9:	movs	r0, r0
+0x004001bb:	movs	r0, r0
+0x004001bd:	movs	r0, r0
+0x004001bf:	movs	r0, r0
+0x004001c1:	ldr	r3, [pc, #0x198]
+0x004001c3:	ldr	r2, [pc, #0x19c]
+0x004001c5:	add	r3, pc
+0x004001c7:	push	{r4, lr}
+0x004001c9:	ldr	r0, [pc, #0x198]
+0x004001cb:	sub	sp, #8
+0x004001cd:	ldr	r4, [r3, r2]
+0x004001cf:	add	r0, pc
+0x004001d1:	ldr	r1, [r4]
+0x004001d3:	bl	#0x500031
 
-00000000 <audio_init_input>:
-   0:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
-   4:	4d62      	ldr	r5, [pc, #392]	; (190 <audio_init_input+0x190>)
-   6:	4b63      	ldr	r3, [pc, #396]	; (194 <audio_init_input+0x194>)
-   8:	b083      	sub	sp, #12
-   a:	447d      	add	r5, pc
-   c:	58ee      	ldr	r6, [r5, r3]
-   e:	6830      	ldr	r0, [r6, #0]
-  10:	f7ff fffe 	bl	0 <fgetc>
-  14:	282e      	cmp	r0, #46	; 0x2e
-  16:	f040 808f 	bne.w	138 <audio_init_input+0x138>
-  1a:	6830      	ldr	r0, [r6, #0]
-  1c:	f7ff fffe 	bl	0 <fgetc>
-  20:	2873      	cmp	r0, #115	; 0x73
-  22:	f040 8089 	bne.w	138 <audio_init_input+0x138>
-  26:	6830      	ldr	r0, [r6, #0]
-  28:	f7ff fffe 	bl	0 <fgetc>
-  2c:	286e      	cmp	r0, #110	; 0x6e
-  2e:	f040 8083 	bne.w	138 <audio_init_input+0x138>
-  32:	6830      	ldr	r0, [r6, #0]
-  34:	f7ff fffe 	bl	0 <fgetc>
-  38:	2864      	cmp	r0, #100	; 0x64
-  3a:	d17d      	bne.n	138 <audio_init_input+0x138>
-  3c:	6837      	ldr	r7, [r6, #0]
-  3e:	4638      	mov	r0, r7
-  40:	f7ff fffe 	bl	0 <getc>
-  44:	4604      	mov	r4, r0
-  46:	1c41      	adds	r1, r0, #1
-  48:	d076      	beq.n	138 <audio_init_input+0x138>
-  4a:	4638      	mov	r0, r7
-  4c:	f7ff fffe 	bl	0 <getc>
-  50:	1c42      	adds	r2, r0, #1
-  52:	d071      	beq.n	138 <audio_init_input+0x138>
-  54:	0224      	lsls	r4, r4, #8
-  56:	b2c0      	uxtb	r0, r0
-  58:	b2a4      	uxth	r4, r4
-  5a:	4304      	orrs	r4, r0
-  5c:	4638      	mov	r0, r7
-  5e:	f7ff fffe 	bl	0 <getc>
-  62:	1c43      	adds	r3, r0, #1
-  64:	d068      	beq.n	138 <audio_init_input+0x138>
-  66:	b2c3      	uxtb	r3, r0
-  68:	4638      	mov	r0, r7
-  6a:	ea43 2704 	orr.w	r7, r3, r4, lsl #8
-  6e:	f7ff fffe 	bl	0 <getc>
-  72:	1c44      	adds	r4, r0, #1
-  74:	d060      	beq.n	138 <audio_init_input+0x138>
-  76:	f8d6 8000 	ldr.w	r8, [r6]
-  7a:	b2c0      	uxtb	r0, r0
-  7c:	ea40 2707 	orr.w	r7, r0, r7, lsl #8
-  80:	4640      	mov	r0, r8
-  82:	f7ff fffe 	bl	0 <getc>
-  86:	3001      	adds	r0, #1
-  88:	d056      	beq.n	138 <audio_init_input+0x138>
-  8a:	4640      	mov	r0, r8
-  8c:	f7ff fffe 	bl	0 <getc>
-  90:	3001      	adds	r0, #1
-  92:	d051      	beq.n	138 <audio_init_input+0x138>
-  94:	4640      	mov	r0, r8
-  96:	f7ff fffe 	bl	0 <getc>
-  9a:	3001      	adds	r0, #1
-  9c:	d04c      	beq.n	138 <audio_init_input+0x138>
-  9e:	4640      	mov	r0, r8
-  a0:	f7ff fffe 	bl	0 <getc>
-  a4:	3001      	adds	r0, #1
-  a6:	d047      	beq.n	138 <audio_init_input+0x138>
-  a8:	f8d6 8000 	ldr.w	r8, [r6]
-  ac:	4640      	mov	r0, r8
-  ae:	f7ff fffe 	bl	0 <getc>
-  b2:	4604      	mov	r4, r0
-  b4:	1c60      	adds	r0, r4, #1
-  b6:	d03f      	beq.n	138 <audio_init_input+0x138>
-  b8:	4640      	mov	r0, r8
-  ba:	f7ff fffe 	bl	0 <getc>
-  be:	1c41      	adds	r1, r0, #1
-  c0:	d03a      	beq.n	138 <audio_init_input+0x138>
-  c2:	0224      	lsls	r4, r4, #8
-  c4:	b2c0      	uxtb	r0, r0
-  c6:	b2a4      	uxth	r4, r4
-  c8:	4304      	orrs	r4, r0
-  ca:	4640      	mov	r0, r8
-  cc:	f7ff fffe 	bl	0 <getc>
-  d0:	1c42      	adds	r2, r0, #1
-  d2:	d031      	beq.n	138 <audio_init_input+0x138>
-  d4:	b2c0      	uxtb	r0, r0
-  d6:	ea40 2904 	orr.w	r9, r0, r4, lsl #8
-  da:	4640      	mov	r0, r8
-  dc:	f7ff fffe 	bl	0 <getc>
-  e0:	1c43      	adds	r3, r0, #1
-  e2:	d029      	beq.n	138 <audio_init_input+0x138>
-  e4:	b2c4      	uxtb	r4, r0
-  e6:	f1a7 0110 	sub.w	r1, r7, #16
-  ea:	6830      	ldr	r0, [r6, #0]
-  ec:	2201      	movs	r2, #1
-  ee:	f7ff fffe 	bl	0 <fseek>
-  f2:	ea44 2409 	orr.w	r4, r4, r9, lsl #8
-  f6:	2800      	cmp	r0, #0
-  f8:	db1e      	blt.n	138 <audio_init_input+0x138>
-  fa:	2c02      	cmp	r4, #2
-  fc:	d035      	beq.n	16a <audio_init_input+0x16a>
-  fe:	2c03      	cmp	r4, #3
- 100:	d03c      	beq.n	17c <audio_init_input+0x17c>
- 102:	2c01      	cmp	r4, #1
- 104:	d00f      	beq.n	126 <audio_init_input+0x126>
- 106:	4a24      	ldr	r2, [pc, #144]	; (198 <audio_init_input+0x198>)
- 108:	4b24      	ldr	r3, [pc, #144]	; (19c <audio_init_input+0x19c>)
- 10a:	4925      	ldr	r1, [pc, #148]	; (1a0 <audio_init_input+0x1a0>)
- 10c:	58a8      	ldr	r0, [r5, r2]
- 10e:	58ea      	ldr	r2, [r5, r3]
- 110:	5869      	ldr	r1, [r5, r1]
- 112:	9400      	str	r4, [sp, #0]
- 114:	6812      	ldr	r2, [r2, #0]
- 116:	680b      	ldr	r3, [r1, #0]
- 118:	2101      	movs	r1, #1
- 11a:	6800      	ldr	r0, [r0, #0]
- 11c:	9201      	str	r2, [sp, #4]
- 11e:	4a21      	ldr	r2, [pc, #132]	; (1a4 <audio_init_input+0x1a4>)
- 120:	447a      	add	r2, pc
- 122:	f7ff fffe 	bl	0 <__fprintf_chk>
- 126:	4a20      	ldr	r2, [pc, #128]	; (1a8 <audio_init_input+0x1a8>)
- 128:	2000      	movs	r0, #0
- 12a:	4b20      	ldr	r3, [pc, #128]	; (1ac <audio_init_input+0x1ac>)
- 12c:	58aa      	ldr	r2, [r5, r2]
- 12e:	58eb      	ldr	r3, [r5, r3]
- 130:	6013      	str	r3, [r2, #0]
- 132:	b003      	add	sp, #12
- 134:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 138:	4918      	ldr	r1, [pc, #96]	; (19c <audio_init_input+0x19c>)
- 13a:	4a17      	ldr	r2, [pc, #92]	; (198 <audio_init_input+0x198>)
- 13c:	4b18      	ldr	r3, [pc, #96]	; (1a0 <audio_init_input+0x1a0>)
- 13e:	5869      	ldr	r1, [r5, r1]
- 140:	58aa      	ldr	r2, [r5, r2]
- 142:	58eb      	ldr	r3, [r5, r3]
- 144:	680c      	ldr	r4, [r1, #0]
- 146:	6810      	ldr	r0, [r2, #0]
- 148:	681b      	ldr	r3, [r3, #0]
- 14a:	b15c      	cbz	r4, 164 <audio_init_input+0x164>
- 14c:	4a18      	ldr	r2, [pc, #96]	; (1b0 <audio_init_input+0x1b0>)
- 14e:	2101      	movs	r1, #1
- 150:	9301      	str	r3, [sp, #4]
- 152:	447a      	add	r2, pc
- 154:	9400      	str	r4, [sp, #0]
- 156:	f7ff fffe 	bl	0 <__fprintf_chk>
- 15a:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 15e:	b003      	add	sp, #12
- 160:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 164:	4c13      	ldr	r4, [pc, #76]	; (1b4 <audio_init_input+0x1b4>)
- 166:	447c      	add	r4, pc
- 168:	e7f0      	b.n	14c <audio_init_input+0x14c>
- 16a:	4a0f      	ldr	r2, [pc, #60]	; (1a8 <audio_init_input+0x1a8>)
- 16c:	2000      	movs	r0, #0
- 16e:	4b12      	ldr	r3, [pc, #72]	; (1b8 <audio_init_input+0x1b8>)
- 170:	58aa      	ldr	r2, [r5, r2]
- 172:	58eb      	ldr	r3, [r5, r3]
- 174:	6013      	str	r3, [r2, #0]
- 176:	b003      	add	sp, #12
- 178:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 17c:	4a0a      	ldr	r2, [pc, #40]	; (1a8 <audio_init_input+0x1a8>)
- 17e:	2000      	movs	r0, #0
- 180:	4b0e      	ldr	r3, [pc, #56]	; (1bc <audio_init_input+0x1bc>)
- 182:	58aa      	ldr	r2, [r5, r2]
- 184:	58eb      	ldr	r3, [r5, r3]
- 186:	6013      	str	r3, [r2, #0]
- 188:	b003      	add	sp, #12
- 18a:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 18e:	bf00      	nop
- 190:	00000182 	.word	0x00000182
-	...
- 1a4:	00000080 	.word	0x00000080
-	...
- 1b0:	0000005a 	.word	0x0000005a
- 1b4:	0000004a 	.word	0x0000004a
-	...
+Function sub_400191 @ 0x00400191
+0x00400191:	lsls	r2, r0, #6
+0x00400193:	movs	r0, r0
+0x00400195:	movs	r0, r0
+0x00400197:	movs	r0, r0
+0x00400199:	movs	r0, r0
+0x0040019b:	movs	r0, r0
+0x0040019d:	movs	r0, r0
+0x0040019f:	movs	r0, r0
+0x004001a1:	movs	r0, r0
+0x004001a3:	movs	r0, r0
+0x004001a5:	lsls	r0, r6, #0xa
+0x004001a7:	movs	r0, r0
+0x004001a9:	movs	r0, r0
+0x004001ab:	movs	r0, r0
+0x004001ad:	movs	r0, r0
+0x004001af:	movs	r0, r0
+0x004001b1:	lsls	r2, r3, #8
+0x004001b3:	movs	r0, r0
+0x004001b5:	lsls	r6, r7, #7
+0x004001b7:	movs	r0, r0
+0x004001b9:	movs	r0, r0
+0x004001bb:	movs	r0, r0
+0x004001bd:	movs	r0, r0
+0x004001bf:	movs	r0, r0
+0x004001c1:	ldr	r3, [pc, #0x198]
+0x004001c3:	ldr	r2, [pc, #0x19c]
+0x004001c5:	add	r3, pc
+0x004001c7:	push	{r4, lr}
+0x004001c9:	ldr	r0, [pc, #0x198]
+0x004001cb:	sub	sp, #8
+0x004001cd:	ldr	r4, [r3, r2]
+0x004001cf:	add	r0, pc
+0x004001d1:	ldr	r1, [r4]
+0x004001d3:	bl	#0x500031
 
-000001c0 <audio_init_output>:
- 1c0:	4b66      	ldr	r3, [pc, #408]	; (35c <audio_init_output+0x19c>)
- 1c2:	4a67      	ldr	r2, [pc, #412]	; (360 <audio_init_output+0x1a0>)
- 1c4:	447b      	add	r3, pc
- 1c6:	b510      	push	{r4, lr}
- 1c8:	4866      	ldr	r0, [pc, #408]	; (364 <audio_init_output+0x1a4>)
- 1ca:	b082      	sub	sp, #8
- 1cc:	589c      	ldr	r4, [r3, r2]
- 1ce:	4478      	add	r0, pc
- 1d0:	6821      	ldr	r1, [r4, #0]
- 1d2:	f7ff fffe 	bl	0 <fputs>
- 1d6:	3001      	adds	r0, #1
- 1d8:	f000 80bc 	beq.w	354 <audio_init_output+0x194>
- 1dc:	6821      	ldr	r1, [r4, #0]
- 1de:	2000      	movs	r0, #0
- 1e0:	9101      	str	r1, [sp, #4]
- 1e2:	f7ff fffe 	bl	0 <putc>
- 1e6:	3001      	adds	r0, #1
- 1e8:	f000 80b4 	beq.w	354 <audio_init_output+0x194>
- 1ec:	9901      	ldr	r1, [sp, #4]
- 1ee:	2000      	movs	r0, #0
- 1f0:	f7ff fffe 	bl	0 <putc>
- 1f4:	3001      	adds	r0, #1
- 1f6:	f000 80ad 	beq.w	354 <audio_init_output+0x194>
- 1fa:	9901      	ldr	r1, [sp, #4]
- 1fc:	2000      	movs	r0, #0
- 1fe:	f7ff fffe 	bl	0 <putc>
- 202:	3001      	adds	r0, #1
- 204:	f000 80a6 	beq.w	354 <audio_init_output+0x194>
- 208:	9901      	ldr	r1, [sp, #4]
- 20a:	2020      	movs	r0, #32
- 20c:	f7ff fffe 	bl	0 <putc>
- 210:	3001      	adds	r0, #1
- 212:	f000 809f 	beq.w	354 <audio_init_output+0x194>
- 216:	6821      	ldr	r1, [r4, #0]
- 218:	20ff      	movs	r0, #255	; 0xff
- 21a:	9101      	str	r1, [sp, #4]
- 21c:	f7ff fffe 	bl	0 <putc>
- 220:	3001      	adds	r0, #1
- 222:	f000 8097 	beq.w	354 <audio_init_output+0x194>
- 226:	9901      	ldr	r1, [sp, #4]
- 228:	20ff      	movs	r0, #255	; 0xff
- 22a:	f7ff fffe 	bl	0 <putc>
- 22e:	3001      	adds	r0, #1
- 230:	f000 8090 	beq.w	354 <audio_init_output+0x194>
- 234:	9901      	ldr	r1, [sp, #4]
- 236:	20ff      	movs	r0, #255	; 0xff
- 238:	f7ff fffe 	bl	0 <putc>
- 23c:	3001      	adds	r0, #1
- 23e:	f000 8089 	beq.w	354 <audio_init_output+0x194>
- 242:	9901      	ldr	r1, [sp, #4]
- 244:	20ff      	movs	r0, #255	; 0xff
- 246:	f7ff fffe 	bl	0 <putc>
- 24a:	3001      	adds	r0, #1
- 24c:	f000 8082 	beq.w	354 <audio_init_output+0x194>
- 250:	6821      	ldr	r1, [r4, #0]
- 252:	2000      	movs	r0, #0
- 254:	9101      	str	r1, [sp, #4]
- 256:	f7ff fffe 	bl	0 <putc>
- 25a:	3001      	adds	r0, #1
- 25c:	d07a      	beq.n	354 <audio_init_output+0x194>
- 25e:	9901      	ldr	r1, [sp, #4]
- 260:	2000      	movs	r0, #0
- 262:	f7ff fffe 	bl	0 <putc>
- 266:	3001      	adds	r0, #1
- 268:	d074      	beq.n	354 <audio_init_output+0x194>
- 26a:	9901      	ldr	r1, [sp, #4]
- 26c:	2000      	movs	r0, #0
- 26e:	f7ff fffe 	bl	0 <putc>
- 272:	3001      	adds	r0, #1
- 274:	d06e      	beq.n	354 <audio_init_output+0x194>
- 276:	9901      	ldr	r1, [sp, #4]
- 278:	2001      	movs	r0, #1
- 27a:	f7ff fffe 	bl	0 <putc>
- 27e:	3001      	adds	r0, #1
- 280:	d068      	beq.n	354 <audio_init_output+0x194>
- 282:	6821      	ldr	r1, [r4, #0]
- 284:	2000      	movs	r0, #0
- 286:	9101      	str	r1, [sp, #4]
- 288:	f7ff fffe 	bl	0 <putc>
- 28c:	3001      	adds	r0, #1
- 28e:	d061      	beq.n	354 <audio_init_output+0x194>
- 290:	9901      	ldr	r1, [sp, #4]
- 292:	2000      	movs	r0, #0
- 294:	f7ff fffe 	bl	0 <putc>
- 298:	3001      	adds	r0, #1
- 29a:	d05b      	beq.n	354 <audio_init_output+0x194>
- 29c:	9901      	ldr	r1, [sp, #4]
- 29e:	201f      	movs	r0, #31
- 2a0:	f7ff fffe 	bl	0 <putc>
- 2a4:	3001      	adds	r0, #1
- 2a6:	d055      	beq.n	354 <audio_init_output+0x194>
- 2a8:	9901      	ldr	r1, [sp, #4]
- 2aa:	2040      	movs	r0, #64	; 0x40
- 2ac:	f7ff fffe 	bl	0 <putc>
- 2b0:	3001      	adds	r0, #1
- 2b2:	d04f      	beq.n	354 <audio_init_output+0x194>
- 2b4:	6821      	ldr	r1, [r4, #0]
- 2b6:	2000      	movs	r0, #0
- 2b8:	9101      	str	r1, [sp, #4]
- 2ba:	f7ff fffe 	bl	0 <putc>
- 2be:	3001      	adds	r0, #1
- 2c0:	d048      	beq.n	354 <audio_init_output+0x194>
- 2c2:	9901      	ldr	r1, [sp, #4]
- 2c4:	2000      	movs	r0, #0
- 2c6:	f7ff fffe 	bl	0 <putc>
- 2ca:	3001      	adds	r0, #1
- 2cc:	d042      	beq.n	354 <audio_init_output+0x194>
- 2ce:	9901      	ldr	r1, [sp, #4]
- 2d0:	2000      	movs	r0, #0
- 2d2:	f7ff fffe 	bl	0 <putc>
- 2d6:	3001      	adds	r0, #1
- 2d8:	d03c      	beq.n	354 <audio_init_output+0x194>
- 2da:	9901      	ldr	r1, [sp, #4]
- 2dc:	2001      	movs	r0, #1
- 2de:	f7ff fffe 	bl	0 <putc>
- 2e2:	3001      	adds	r0, #1
- 2e4:	d036      	beq.n	354 <audio_init_output+0x194>
- 2e6:	6821      	ldr	r1, [r4, #0]
- 2e8:	2000      	movs	r0, #0
- 2ea:	9101      	str	r1, [sp, #4]
- 2ec:	f7ff fffe 	bl	0 <putc>
- 2f0:	3001      	adds	r0, #1
- 2f2:	d02f      	beq.n	354 <audio_init_output+0x194>
- 2f4:	9901      	ldr	r1, [sp, #4]
- 2f6:	2000      	movs	r0, #0
- 2f8:	f7ff fffe 	bl	0 <putc>
- 2fc:	3001      	adds	r0, #1
- 2fe:	d029      	beq.n	354 <audio_init_output+0x194>
- 300:	9901      	ldr	r1, [sp, #4]
- 302:	2000      	movs	r0, #0
- 304:	f7ff fffe 	bl	0 <putc>
- 308:	3001      	adds	r0, #1
- 30a:	d023      	beq.n	354 <audio_init_output+0x194>
- 30c:	9901      	ldr	r1, [sp, #4]
- 30e:	2000      	movs	r0, #0
- 310:	f7ff fffe 	bl	0 <putc>
- 314:	3001      	adds	r0, #1
- 316:	d01d      	beq.n	354 <audio_init_output+0x194>
- 318:	6821      	ldr	r1, [r4, #0]
- 31a:	2000      	movs	r0, #0
- 31c:	9101      	str	r1, [sp, #4]
- 31e:	f7ff fffe 	bl	0 <putc>
- 322:	3001      	adds	r0, #1
- 324:	d016      	beq.n	354 <audio_init_output+0x194>
- 326:	9901      	ldr	r1, [sp, #4]
- 328:	2000      	movs	r0, #0
- 32a:	f7ff fffe 	bl	0 <putc>
- 32e:	3001      	adds	r0, #1
- 330:	d010      	beq.n	354 <audio_init_output+0x194>
- 332:	9901      	ldr	r1, [sp, #4]
- 334:	2000      	movs	r0, #0
- 336:	f7ff fffe 	bl	0 <putc>
- 33a:	3001      	adds	r0, #1
- 33c:	d00a      	beq.n	354 <audio_init_output+0x194>
- 33e:	9901      	ldr	r1, [sp, #4]
- 340:	2000      	movs	r0, #0
- 342:	f7ff fffe 	bl	0 <putc>
- 346:	3001      	adds	r0, #1
- 348:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 34c:	bf18      	it	ne
- 34e:	2000      	movne	r0, #0
- 350:	b002      	add	sp, #8
- 352:	bd10      	pop	{r4, pc}
- 354:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 358:	b002      	add	sp, #8
- 35a:	bd10      	pop	{r4, pc}
- 35c:	00000194 	.word	0x00000194
- 360:	00000000 	.word	0x00000000
- 364:	00000192 	.word	0x00000192
+Function audio_init_output @ 0x004001c1
+0x004001c1:	ldr	r3, [pc, #0x198]
+0x004001c3:	ldr	r2, [pc, #0x19c]
+0x004001c5:	add	r3, pc
+0x004001c7:	push	{r4, lr}
+0x004001c9:	ldr	r0, [pc, #0x198]
+0x004001cb:	sub	sp, #8
+0x004001cd:	ldr	r4, [r3, r2]
+0x004001cf:	add	r0, pc
+0x004001d1:	ldr	r1, [r4]
+0x004001d3:	bl	#0x500031
+0x004001d7:	adds	r0, #1
+0x004001d9:	beq.w	#0x400355
+0x004001dd:	ldr	r1, [r4]
+0x004001df:	movs	r0, #0
+0x004001e1:	str	r1, [sp, #4]
+0x004001e3:	bl	#0x50003d
+0x004001e7:	adds	r0, #1
+0x004001e9:	beq.w	#0x400355
+0x004001ed:	ldr	r1, [sp, #4]
+0x004001ef:	movs	r0, #0
+0x004001f1:	bl	#0x50003d
+0x004001f5:	adds	r0, #1
+0x004001f7:	beq.w	#0x400355
+0x004001fb:	ldr	r1, [sp, #4]
+0x004001fd:	movs	r0, #0
+0x004001ff:	bl	#0x50003d
+0x00400203:	adds	r0, #1
+0x00400205:	beq.w	#0x400355
+0x00400209:	ldr	r1, [sp, #4]
+0x0040020b:	movs	r0, #0x20
+0x0040020d:	bl	#0x50003d
+0x00400211:	adds	r0, #1
+0x00400213:	beq.w	#0x400355
+0x00400217:	ldr	r1, [r4]
+0x00400219:	movs	r0, #0xff
+0x0040021b:	str	r1, [sp, #4]
+0x0040021d:	bl	#0x50003d
+0x00400221:	adds	r0, #1
+0x00400223:	beq.w	#0x400355
+0x00400227:	ldr	r1, [sp, #4]
+0x00400229:	movs	r0, #0xff
+0x0040022b:	bl	#0x50003d
+0x0040022f:	adds	r0, #1
+0x00400231:	beq.w	#0x400355
+0x00400235:	ldr	r1, [sp, #4]
+0x00400237:	movs	r0, #0xff
+0x00400239:	bl	#0x50003d
+0x0040023d:	adds	r0, #1
+0x0040023f:	beq.w	#0x400355
+0x00400243:	ldr	r1, [sp, #4]
+0x00400245:	movs	r0, #0xff
+0x00400247:	bl	#0x50003d
+0x0040024b:	adds	r0, #1
+0x0040024d:	beq.w	#0x400355
+0x00400251:	ldr	r1, [r4]
+0x00400253:	movs	r0, #0
+0x00400255:	str	r1, [sp, #4]
+0x00400257:	bl	#0x50003d
+0x0040025b:	adds	r0, #1
+0x0040025d:	beq	#0x400355
+0x0040025f:	ldr	r1, [sp, #4]
+0x00400261:	movs	r0, #0
+0x00400263:	bl	#0x50003d
+0x00400267:	adds	r0, #1
+0x00400269:	beq	#0x400355
+0x0040026b:	ldr	r1, [sp, #4]
+0x0040026d:	movs	r0, #0
+0x0040026f:	bl	#0x50003d
+0x00400273:	adds	r0, #1
+0x00400275:	beq	#0x400355
+0x00400277:	ldr	r1, [sp, #4]
+0x00400279:	movs	r0, #1
+0x0040027b:	bl	#0x50003d
+0x0040027f:	adds	r0, #1
+0x00400281:	beq	#0x400355
+0x00400283:	ldr	r1, [r4]
+0x00400285:	movs	r0, #0
+0x00400287:	str	r1, [sp, #4]
+0x00400289:	bl	#0x50003d
+0x0040028d:	adds	r0, #1
+0x0040028f:	beq	#0x400355
+0x00400291:	ldr	r1, [sp, #4]
+0x00400293:	movs	r0, #0
+0x00400295:	bl	#0x50003d
+0x00400299:	adds	r0, #1
+0x0040029b:	beq	#0x400355
+0x0040029d:	ldr	r1, [sp, #4]
+0x0040029f:	movs	r0, #0x1f
+0x004002a1:	bl	#0x50003d
+0x004002a5:	adds	r0, #1
+0x004002a7:	beq	#0x400355
+0x004002a9:	ldr	r1, [sp, #4]
+0x004002ab:	movs	r0, #0x40
+0x004002ad:	bl	#0x50003d
+0x004002b1:	adds	r0, #1
+0x004002b3:	beq	#0x400355
+0x004002b5:	ldr	r1, [r4]
+0x004002b7:	movs	r0, #0
+0x004002b9:	str	r1, [sp, #4]
+0x004002bb:	bl	#0x50003d
+0x004002bf:	adds	r0, #1
+0x004002c1:	beq	#0x400355
+0x004002c3:	ldr	r1, [sp, #4]
+0x004002c5:	movs	r0, #0
+0x004002c7:	bl	#0x50003d
+0x004002cb:	adds	r0, #1
+0x004002cd:	beq	#0x400355
+0x004002cf:	ldr	r1, [sp, #4]
+0x004002d1:	movs	r0, #0
+0x004002d3:	bl	#0x50003d
+0x004002d7:	adds	r0, #1
+0x004002d9:	beq	#0x400355
+0x004002db:	ldr	r1, [sp, #4]
+0x004002dd:	movs	r0, #1
+0x004002df:	bl	#0x50003d
+0x004002e3:	adds	r0, #1
+0x004002e5:	beq	#0x400355
+0x004002e7:	ldr	r1, [r4]
+0x004002e9:	movs	r0, #0
+0x004002eb:	str	r1, [sp, #4]
+0x004002ed:	bl	#0x50003d
+0x004002f1:	adds	r0, #1
+0x004002f3:	beq	#0x400355
+0x004002f5:	ldr	r1, [sp, #4]
+0x004002f7:	movs	r0, #0
+0x004002f9:	bl	#0x50003d
+0x004002fd:	adds	r0, #1
+0x004002ff:	beq	#0x400355
+0x00400301:	ldr	r1, [sp, #4]
+0x00400303:	movs	r0, #0
+0x00400305:	bl	#0x50003d
+0x00400309:	adds	r0, #1
+0x0040030b:	beq	#0x400355
+0x0040030d:	ldr	r1, [sp, #4]
+0x0040030f:	movs	r0, #0
+0x00400311:	bl	#0x50003d
+0x00400315:	adds	r0, #1
+0x00400317:	beq	#0x400355
+0x00400319:	ldr	r1, [r4]
+0x0040031b:	movs	r0, #0
+0x0040031d:	str	r1, [sp, #4]
+0x0040031f:	bl	#0x50003d
+0x00400323:	adds	r0, #1
+0x00400325:	beq	#0x400355
+0x00400327:	ldr	r1, [sp, #4]
+0x00400329:	movs	r0, #0
+0x0040032b:	bl	#0x50003d
+0x0040032f:	adds	r0, #1
+0x00400331:	beq	#0x400355
+0x00400333:	ldr	r1, [sp, #4]
+0x00400335:	movs	r0, #0
+0x00400337:	bl	#0x50003d
+0x0040033b:	adds	r0, #1
+0x0040033d:	beq	#0x400355
+0x0040033f:	ldr	r1, [sp, #4]
+0x00400341:	movs	r0, #0
+0x00400343:	bl	#0x50003d
+0x00400347:	adds	r0, #1
+0x00400349:	mov.w	r0, #-1
+0x0040034d:	it	ne
+0x0040034f:	movne	r0, #0
+0x00400351:	add	sp, #8
+0x00400353:	pop	{r4, pc}
+0x00400355:	mov.w	r0, #-1
+0x00400359:	add	sp, #8
+0x0040035b:	pop	{r4, pc}
+
+Function fgetc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function getc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function fseek @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __fprintf_chk @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function fputs @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function putc @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

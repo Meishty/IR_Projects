@@ -1,13 +1,8 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_hash_sha256_ae00fa78.o:     file format elf32-littlearm
+Function crypto_hash_sha256_bytes @ 0x00400001
+0x00400001:	movs	r0, #0x20
+0x00400003:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <crypto_hash_sha256_bytes>:
-   0:	2020      	movs	r0, #32
-   2:	4770      	bx	lr
-
-00000004 <crypto_hash_sha256_statebytes>:
-   4:	2068      	movs	r0, #104	; 0x68
-   6:	4770      	bx	lr
+Function crypto_hash_sha256_statebytes @ 0x00400005
+0x00400005:	movs	r0, #0x68
+0x00400007:	bx	lr

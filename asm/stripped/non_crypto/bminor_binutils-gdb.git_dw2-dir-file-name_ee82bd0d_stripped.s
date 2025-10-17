@@ -1,61 +1,108 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dw2-dir-file-name_ee82bd0d_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	447b4b34 	ldrbtmi	r4, [fp], #-2868	; 0xfffff4cc
-   4:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-   8:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-   c:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  10:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  14:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  18:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  1c:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  20:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  24:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  28:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  2c:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  30:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  34:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  38:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  3c:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  40:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  44:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  48:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  4c:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  50:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  54:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  58:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  5c:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  60:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  64:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  68:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  6c:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  70:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  74:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  78:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  7c:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  80:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  84:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  88:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  8c:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  90:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  94:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  98:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  9c:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  a0:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  a4:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  a8:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  ac:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  b0:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  b4:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  b8:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  bc:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  c0:	601a3201 	andsvs	r3, sl, r1, lsl #4
-  c4:	3201681a 	andcc	r6, r1, #1703936	; 0x1a0000
-  c8:	681a601a 	ldmdavs	sl, {r1, r3, r4, sp, lr}
-  cc:	32012000 	andcc	r2, r1, #0
-  d0:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-  d4:	000000ce 	andeq	r0, r0, lr, asr #1
+Function sub_400005 @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0xd0]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r2, [r3]
+0x0040000b:	adds	r2, #1
+0x0040000d:	str	r2, [r3]
+0x0040000f:	ldr	r2, [r3]
+0x00400011:	adds	r2, #1
+0x00400013:	str	r2, [r3]
+0x00400015:	ldr	r2, [r3]
+0x00400017:	adds	r2, #1
+0x00400019:	str	r2, [r3]
+0x0040001b:	ldr	r2, [r3]
+0x0040001d:	adds	r2, #1
+0x0040001f:	str	r2, [r3]
+0x00400021:	ldr	r2, [r3]
+0x00400023:	adds	r2, #1
+0x00400025:	str	r2, [r3]
+0x00400027:	ldr	r2, [r3]
+0x00400029:	adds	r2, #1
+0x0040002b:	str	r2, [r3]
+0x0040002d:	ldr	r2, [r3]
+0x0040002f:	adds	r2, #1
+0x00400031:	str	r2, [r3]
+0x00400033:	ldr	r2, [r3]
+0x00400035:	adds	r2, #1
+0x00400037:	str	r2, [r3]
+0x00400039:	ldr	r2, [r3]
+0x0040003b:	adds	r2, #1
+0x0040003d:	str	r2, [r3]
+0x0040003f:	ldr	r2, [r3]
+0x00400041:	adds	r2, #1
+0x00400043:	str	r2, [r3]
+0x00400045:	ldr	r2, [r3]
+0x00400047:	adds	r2, #1
+0x00400049:	str	r2, [r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	adds	r2, #1
+0x0040004f:	str	r2, [r3]
+0x00400051:	ldr	r2, [r3]
+0x00400053:	adds	r2, #1
+0x00400055:	str	r2, [r3]
+0x00400057:	ldr	r2, [r3]
+0x00400059:	adds	r2, #1
+0x0040005b:	str	r2, [r3]
+0x0040005d:	ldr	r2, [r3]
+0x0040005f:	adds	r2, #1
+0x00400061:	str	r2, [r3]
+0x00400063:	ldr	r2, [r3]
+0x00400065:	adds	r2, #1
+0x00400067:	str	r2, [r3]
+0x00400069:	ldr	r2, [r3]
+0x0040006b:	adds	r2, #1
+0x0040006d:	str	r2, [r3]
+0x0040006f:	ldr	r2, [r3]
+0x00400071:	adds	r2, #1
+0x00400073:	str	r2, [r3]
+0x00400075:	ldr	r2, [r3]
+0x00400077:	adds	r2, #1
+0x00400079:	str	r2, [r3]
+0x0040007b:	ldr	r2, [r3]
+0x0040007d:	adds	r2, #1
+0x0040007f:	str	r2, [r3]
+0x00400081:	ldr	r2, [r3]
+0x00400083:	adds	r2, #1
+0x00400085:	str	r2, [r3]
+0x00400087:	ldr	r2, [r3]
+0x00400089:	adds	r2, #1
+0x0040008b:	str	r2, [r3]
+0x0040008d:	ldr	r2, [r3]
+0x0040008f:	adds	r2, #1
+0x00400091:	str	r2, [r3]
+0x00400093:	ldr	r2, [r3]
+0x00400095:	adds	r2, #1
+0x00400097:	str	r2, [r3]
+0x00400099:	ldr	r2, [r3]
+0x0040009b:	adds	r2, #1
+0x0040009d:	str	r2, [r3]
+0x0040009f:	ldr	r2, [r3]
+0x004000a1:	adds	r2, #1
+0x004000a3:	str	r2, [r3]
+0x004000a5:	ldr	r2, [r3]
+0x004000a7:	adds	r2, #1
+0x004000a9:	str	r2, [r3]
+0x004000ab:	ldr	r2, [r3]
+0x004000ad:	adds	r2, #1
+0x004000af:	str	r2, [r3]
+0x004000b1:	ldr	r2, [r3]
+0x004000b3:	adds	r2, #1
+0x004000b5:	str	r2, [r3]
+0x004000b7:	ldr	r2, [r3]
+0x004000b9:	adds	r2, #1
+0x004000bb:	str	r2, [r3]
+0x004000bd:	ldr	r2, [r3]
+0x004000bf:	adds	r2, #1
+0x004000c1:	str	r2, [r3]
+0x004000c3:	ldr	r2, [r3]
+0x004000c5:	adds	r2, #1
+0x004000c7:	str	r2, [r3]
+0x004000c9:	ldr	r2, [r3]
+0x004000cb:	adds	r2, #1
+0x004000cd:	str	r2, [r3]
+0x004000cf:	ldr	r2, [r3]
+0x004000d1:	movs	r0, #0
+0x004000d3:	adds	r2, #1
+0x004000d5:	str	r2, [r3]
+0x004000d7:	bx	lr

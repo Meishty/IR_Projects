@@ -1,21 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_step-through-epilogue_48ce3d9b.o:     file format elf32-littlearm
+Function multiply @ 0x00400001
+0x00400001:	mul	r0, r1, r0
+0x00400005:	bx	lr
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	mul	r0, r0, r0
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function square @ 0x00400009
+0x00400009:	mul	r0, r0, r0
+0x0040000d:	bx	lr
 
-00000000 <multiply>:
-   0:	fb01 f000 	mul.w	r0, r1, r0
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-00000008 <square>:
-   8:	fb00 f000 	mul.w	r0, r0, r0
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400011
+0x00400011:	movs	r0, #0
+0x00400013:	bx	lr

@@ -1,20 +1,35 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mi-stack_245a985e_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
-   4:	bf004770 	svclt	0x00004770
-   8:	bf004770 	svclt	0x00004770
-   c:	bf004770 	svclt	0x00004770
+Function sub_400009 @ 0x00400009
+0x00400009:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000000 <.text.startup>:
-   0:	20014903 	andcs	r4, r1, r3, lsl #18
-   4:	4479b508 	ldrbtmi	fp, [r9], #-1288	; 0xfffffaf8
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	bd082000 	stclt	0, cr2, [r8, #-0]
-  10:	00000006 	andeq	r0, r0, r6
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bx	lr
+
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+
+Function sub_400021 @ 0x00400021
+0x00400021:	ldr	r1, [pc, #0xc]
+0x00400023:	movs	r0, #1
+0x00400025:	push	{r3, lr}
+0x00400027:	add	r1, pc
+0x00400029:	bl	#0x400029
+
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
+0x0040002d:	movs	r0, #0
+0x0040002f:	pop	{r3, pc}

@@ -1,10 +1,6 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_aarch64-non-address-bits_2c7e1a09_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706818 			; <UNDEFINED> instruction: 0x47706818
-   8:	00000002 	andeq	r0, r0, r2
+Function sub_400005 @ 0x00400005
+0x00400005:	ldr	r3, [pc, #4]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r0, [r3]
+0x0040000b:	bx	lr

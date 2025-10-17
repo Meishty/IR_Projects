@@ -1,23 +1,30 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_retval-large-struct_ea648c81.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	subhs	r4, r8, #4, #18
 
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r4, lr}
+0x00400007:	mov	r4, r0
+0x00400009:	add	r1, pc
+0x0040000b:	bl	#0x500001
+0x0040000f:	mov	r0, r4
+0x00400011:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-00000000 <return_large_struct>:
-   0:	4904      	ldr	r1, [pc, #16]	; (14 <return_large_struct+0x14>)
-   2:	2248      	movs	r2, #72	; 0x48
-   4:	b510      	push	{r4, lr}
-   6:	4604      	mov	r4, r0
-   8:	4479      	add	r1, pc
-   a:	f7ff fffe 	bl	0 <memcpy>
-   e:	4620      	mov	r0, r4
-  10:	bd10      	pop	{r4, pc}
-  12:	bf00      	nop
-  14:	00000008 	.word	0x00000008
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x00400061
+0x00400061:	movs	r0, #0
+0x00400063:	bx	lr
 
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function memcpy @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

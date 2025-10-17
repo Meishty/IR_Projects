@@ -1,181 +1,252 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_main_e1fe93fe.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r6]!
+0x00400004:	ldrbmi	r2, [r0, -r8]!
 
+Function main @ 0x004001f1
+0x004001f1:	push	{r3, r4, r5, lr}
+0x004001f3:	movs	r0, #1
+0x004001f5:	ldr	r4, [pc, #0x14c]
+0x004001f7:	ldr	r1, [pc, #0x150]
+0x004001f9:	add	r4, pc
+0x004001fb:	ldr	r5, [pc, #0x150]
+0x004001fd:	add	r1, pc
+0x004001ff:	add	r5, pc
+0x00400201:	ldr	r2, [r4]
+0x00400203:	bl	#0x500001
+0x00400207:	ldr	r1, [pc, #0x148]
+0x00400209:	ldr	r2, [r4, #4]
+0x0040020b:	movs	r0, #1
+0x0040020d:	add	r1, pc
+0x0040020f:	bl	#0x500001
+0x00400213:	ldr	r3, [pc, #0x140]
+0x00400215:	ldr	r1, [pc, #0x140]
+0x00400217:	movs	r0, #1
+0x00400219:	add	r1, pc
+0x0040021b:	ldr	r3, [r5, r3]
+0x0040021d:	ldr	r2, [r3]
+0x0040021f:	bl	#0x500001
+0x00400223:	bl	#0x50000d
+0x00400227:	ldr	r1, [pc, #0x134]
+0x00400229:	mov	r2, r0
+0x0040022b:	movs	r0, #1
+0x0040022d:	add	r1, pc
+0x0040022f:	bl	#0x500001
+0x00400233:	bl	#0x500019
+0x00400237:	ldr	r1, [pc, #0x128]
+0x00400239:	mov	r2, r0
+0x0040023b:	movs	r0, #1
+0x0040023d:	add	r1, pc
+0x0040023f:	bl	#0x500001
+0x00400243:	bl	#0x500025
+0x00400247:	ldr	r1, [pc, #0x11c]
+0x00400249:	mov	r2, r0
+0x0040024b:	movs	r0, #1
+0x0040024d:	add	r1, pc
+0x0040024f:	bl	#0x500001
+0x00400253:	bl	#0x500031
+0x00400257:	ldr	r1, [pc, #0x110]
+0x00400259:	mov	r2, r0
+0x0040025b:	movs	r0, #1
+0x0040025d:	add	r1, pc
+0x0040025f:	bl	#0x500001
+0x00400263:	bl	#0x50003d
+0x00400267:	ldr	r1, [pc, #0x104]
+0x00400269:	mov	r2, r0
+0x0040026b:	movs	r0, #1
+0x0040026d:	add	r1, pc
+0x0040026f:	bl	#0x500001
+0x00400273:	bl	#0x500049
+0x00400277:	ldr	r1, [pc, #0xf8]
+0x00400279:	mov	r2, r0
+0x0040027b:	movs	r0, #1
+0x0040027d:	add	r1, pc
+0x0040027f:	bl	#0x500001
+0x00400283:	bl	#0x500055
+0x00400287:	ldr	r1, [pc, #0xec]
+0x00400289:	mov	r2, r0
+0x0040028b:	movs	r0, #1
+0x0040028d:	add	r1, pc
+0x0040028f:	bl	#0x500001
+0x00400293:	ldr	r1, [pc, #0xe4]
+0x00400295:	movs	r2, #6
+0x00400297:	movs	r0, #1
+0x00400299:	add	r1, pc
+0x0040029b:	bl	#0x500001
+0x0040029f:	ldr	r3, [pc, #0xdc]
+0x004002a1:	ldr	r5, [r5, r3]
+0x004002a3:	mov	r0, r5
+0x004002a5:	bl	#0x500061
+0x004002a9:	ldr	r1, [pc, #0xd4]
+0x004002ab:	mov	r2, r0
+0x004002ad:	movs	r0, #1
+0x004002af:	add	r1, pc
+0x004002b1:	bl	#0x500001
+0x004002b5:	ldr	r0, [pc, #0xcc]
+0x004002b7:	add	r0, pc
+0x004002b9:	bl	#0x50006d
+0x004002bd:	ldr	r1, [pc, #0xc8]
+0x004002bf:	mov	r2, r0
+0x004002c1:	movs	r0, #1
+0x004002c3:	add	r1, pc
+0x004002c5:	bl	#0x500001
+0x004002c9:	bl	#0x500079
+0x004002cd:	ldr	r1, [pc, #0xbc]
+0x004002cf:	mov	r4, r0
+0x004002d1:	movs	r0, #1
+0x004002d3:	add	r1, pc
+0x004002d5:	bl	#0x500001
+0x004002d9:	cmp	r4, r5
+0x004002db:	beq	#0x40032d
+0x004002dd:	ldr	r1, [pc, #0xb0]
+0x004002df:	movs	r0, #1
+0x004002e1:	add	r1, pc
+0x004002e3:	bl	#0x500001
+0x004002e7:	ldr	r0, [pc, #0xac]
+0x004002e9:	add	r0, pc
+0x004002eb:	bl	#0x500085
+0x004002ef:	bl	#0x500091
+0x004002f3:	ldr	r1, [pc, #0xa4]
+0x004002f5:	mov	r4, r0
+0x004002f7:	movs	r0, #1
+0x004002f9:	add	r1, pc
+0x004002fb:	bl	#0x500001
+0x004002ff:	ldr	r3, [pc, #0x9c]
+0x00400301:	add	r3, pc
+0x00400303:	cmp	r4, r3
+0x00400305:	beq	#0x400339
+0x00400307:	ldr	r1, [pc, #0x98]
+0x00400309:	movs	r0, #1
+0x0040030b:	add	r1, pc
+0x0040030d:	bl	#0x500001
+0x00400311:	ldr	r0, [pc, #0x90]
+0x00400313:	add	r0, pc
+0x00400315:	bl	#0x500085
+0x00400319:	bl	#0x50009d
+0x0040031d:	ldr	r1, [pc, #0x88]
+0x0040031f:	mov	r2, r0
+0x00400321:	movs	r0, #1
+0x00400323:	add	r1, pc
+0x00400325:	bl	#0x500001
+0x00400329:	movs	r0, #0
+0x0040032b:	pop	{r3, r4, r5, pc}
+0x0040032d:	ldr	r1, [pc, #0x7c]
+0x0040032f:	movs	r0, #1
+0x00400331:	add	r1, pc
+0x00400333:	bl	#0x500001
+0x00400337:	b	#0x4002e7
+0x00400339:	ldr	r1, [pc, #0x74]
+0x0040033b:	movs	r0, #1
+0x0040033d:	add	r1, pc
+0x0040033f:	bl	#0x500001
+0x00400343:	b	#0x400311
 
-Disassembly of section .text:
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main_called>:
-   0:	2006      	movs	r0, #6
-   2:	4770      	bx	lr
+Function shlib_mainvar @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000004 <shlib_overriddencall2>:
-   4:	2008      	movs	r0, #8
-   6:	4770      	bx	lr
+Function shlib_overriddenvar @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function shlib_shlibvar1 @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	2001      	movs	r0, #1
-   4:	4c53      	ldr	r4, [pc, #332]	; (154 <main+0x154>)
-   6:	4954      	ldr	r1, [pc, #336]	; (158 <main+0x158>)
-   8:	447c      	add	r4, pc
-   a:	4d54      	ldr	r5, [pc, #336]	; (15c <main+0x15c>)
-   c:	4479      	add	r1, pc
-   e:	447d      	add	r5, pc
-  10:	6822      	ldr	r2, [r4, #0]
-  12:	f7ff fffe 	bl	0 <__printf_chk>
-  16:	4952      	ldr	r1, [pc, #328]	; (160 <main+0x160>)
-  18:	6862      	ldr	r2, [r4, #4]
-  1a:	2001      	movs	r0, #1
-  1c:	4479      	add	r1, pc
-  1e:	f7ff fffe 	bl	0 <__printf_chk>
-  22:	4b50      	ldr	r3, [pc, #320]	; (164 <main+0x164>)
-  24:	4950      	ldr	r1, [pc, #320]	; (168 <main+0x168>)
-  26:	2001      	movs	r0, #1
-  28:	4479      	add	r1, pc
-  2a:	58eb      	ldr	r3, [r5, r3]
-  2c:	681a      	ldr	r2, [r3, #0]
-  2e:	f7ff fffe 	bl	0 <__printf_chk>
-  32:	f7ff fffe 	bl	0 <shlib_mainvar>
-  36:	494d      	ldr	r1, [pc, #308]	; (16c <main+0x16c>)
-  38:	4602      	mov	r2, r0
-  3a:	2001      	movs	r0, #1
-  3c:	4479      	add	r1, pc
-  3e:	f7ff fffe 	bl	0 <__printf_chk>
-  42:	f7ff fffe 	bl	0 <shlib_overriddenvar>
-  46:	494a      	ldr	r1, [pc, #296]	; (170 <main+0x170>)
-  48:	4602      	mov	r2, r0
-  4a:	2001      	movs	r0, #1
-  4c:	4479      	add	r1, pc
-  4e:	f7ff fffe 	bl	0 <__printf_chk>
-  52:	f7ff fffe 	bl	0 <shlib_shlibvar1>
-  56:	4947      	ldr	r1, [pc, #284]	; (174 <main+0x174>)
-  58:	4602      	mov	r2, r0
-  5a:	2001      	movs	r0, #1
-  5c:	4479      	add	r1, pc
-  5e:	f7ff fffe 	bl	0 <__printf_chk>
-  62:	f7ff fffe 	bl	0 <shlib_shlibvar2>
-  66:	4944      	ldr	r1, [pc, #272]	; (178 <main+0x178>)
-  68:	4602      	mov	r2, r0
-  6a:	2001      	movs	r0, #1
-  6c:	4479      	add	r1, pc
-  6e:	f7ff fffe 	bl	0 <__printf_chk>
-  72:	f7ff fffe 	bl	0 <shlib_shlibcall>
-  76:	4941      	ldr	r1, [pc, #260]	; (17c <main+0x17c>)
-  78:	4602      	mov	r2, r0
-  7a:	2001      	movs	r0, #1
-  7c:	4479      	add	r1, pc
-  7e:	f7ff fffe 	bl	0 <__printf_chk>
-  82:	f7ff fffe 	bl	0 <shlib_shlibcall2>
-  86:	493e      	ldr	r1, [pc, #248]	; (180 <main+0x180>)
-  88:	4602      	mov	r2, r0
-  8a:	2001      	movs	r0, #1
-  8c:	4479      	add	r1, pc
-  8e:	f7ff fffe 	bl	0 <__printf_chk>
-  92:	f7ff fffe 	bl	0 <shlib_maincall>
-  96:	493b      	ldr	r1, [pc, #236]	; (184 <main+0x184>)
-  98:	4602      	mov	r2, r0
-  9a:	2001      	movs	r0, #1
-  9c:	4479      	add	r1, pc
-  9e:	f7ff fffe 	bl	0 <__printf_chk>
-  a2:	4939      	ldr	r1, [pc, #228]	; (188 <main+0x188>)
-  a4:	2206      	movs	r2, #6
-  a6:	2001      	movs	r0, #1
-  a8:	4479      	add	r1, pc
-  aa:	f7ff fffe 	bl	0 <__printf_chk>
-  ae:	4b37      	ldr	r3, [pc, #220]	; (18c <main+0x18c>)
-  b0:	58ed      	ldr	r5, [r5, r3]
-  b2:	4628      	mov	r0, r5
-  b4:	f7ff fffe 	bl	0 <shlib_checkfunptr1>
-  b8:	4935      	ldr	r1, [pc, #212]	; (190 <main+0x190>)
-  ba:	4602      	mov	r2, r0
-  bc:	2001      	movs	r0, #1
-  be:	4479      	add	r1, pc
-  c0:	f7ff fffe 	bl	0 <__printf_chk>
-  c4:	4833      	ldr	r0, [pc, #204]	; (194 <main+0x194>)
-  c6:	4478      	add	r0, pc
-  c8:	f7ff fffe 	bl	0 <shlib_checkfunptr2>
-  cc:	4932      	ldr	r1, [pc, #200]	; (198 <main+0x198>)
-  ce:	4602      	mov	r2, r0
-  d0:	2001      	movs	r0, #1
-  d2:	4479      	add	r1, pc
-  d4:	f7ff fffe 	bl	0 <__printf_chk>
-  d8:	f7ff fffe 	bl	0 <shlib_getfunptr1>
-  dc:	492f      	ldr	r1, [pc, #188]	; (19c <main+0x19c>)
-  de:	4604      	mov	r4, r0
-  e0:	2001      	movs	r0, #1
-  e2:	4479      	add	r1, pc
-  e4:	f7ff fffe 	bl	0 <__printf_chk>
-  e8:	42ac      	cmp	r4, r5
-  ea:	d027      	beq.n	13c <main+0x13c>
-  ec:	492c      	ldr	r1, [pc, #176]	; (1a0 <main+0x1a0>)
-  ee:	2001      	movs	r0, #1
-  f0:	4479      	add	r1, pc
-  f2:	f7ff fffe 	bl	0 <__printf_chk>
-  f6:	482b      	ldr	r0, [pc, #172]	; (1a4 <main+0x1a4>)
-  f8:	4478      	add	r0, pc
-  fa:	f7ff fffe 	bl	0 <puts>
-  fe:	f7ff fffe 	bl	0 <shlib_getfunptr2>
- 102:	4929      	ldr	r1, [pc, #164]	; (1a8 <main+0x1a8>)
- 104:	4604      	mov	r4, r0
- 106:	2001      	movs	r0, #1
- 108:	4479      	add	r1, pc
- 10a:	f7ff fffe 	bl	0 <__printf_chk>
- 10e:	4b27      	ldr	r3, [pc, #156]	; (1ac <main+0x1ac>)
- 110:	447b      	add	r3, pc
- 112:	429c      	cmp	r4, r3
- 114:	d018      	beq.n	148 <main+0x148>
- 116:	4926      	ldr	r1, [pc, #152]	; (1b0 <main+0x1b0>)
- 118:	2001      	movs	r0, #1
- 11a:	4479      	add	r1, pc
- 11c:	f7ff fffe 	bl	0 <__printf_chk>
- 120:	4824      	ldr	r0, [pc, #144]	; (1b4 <main+0x1b4>)
- 122:	4478      	add	r0, pc
- 124:	f7ff fffe 	bl	0 <puts>
- 128:	f7ff fffe 	bl	0 <shlib_check>
- 12c:	4922      	ldr	r1, [pc, #136]	; (1b8 <main+0x1b8>)
- 12e:	4602      	mov	r2, r0
- 130:	2001      	movs	r0, #1
- 132:	4479      	add	r1, pc
- 134:	f7ff fffe 	bl	0 <__printf_chk>
- 138:	2000      	movs	r0, #0
- 13a:	bd38      	pop	{r3, r4, r5, pc}
- 13c:	491f      	ldr	r1, [pc, #124]	; (1bc <main+0x1bc>)
- 13e:	2001      	movs	r0, #1
- 140:	4479      	add	r1, pc
- 142:	f7ff fffe 	bl	0 <__printf_chk>
- 146:	e7d6      	b.n	f6 <main+0xf6>
- 148:	491d      	ldr	r1, [pc, #116]	; (1c0 <main+0x1c0>)
- 14a:	2001      	movs	r0, #1
- 14c:	4479      	add	r1, pc
- 14e:	f7ff fffe 	bl	0 <__printf_chk>
- 152:	e7e5      	b.n	120 <main+0x120>
- 154:	00000148 	.word	0x00000148
- 158:	00000148 	.word	0x00000148
- 15c:	0000014a 	.word	0x0000014a
- 160:	00000140 	.word	0x00000140
- 164:	00000000 	.word	0x00000000
- 168:	0000013c 	.word	0x0000013c
- 16c:	0000012c 	.word	0x0000012c
- 170:	00000120 	.word	0x00000120
- 174:	00000114 	.word	0x00000114
- 178:	00000108 	.word	0x00000108
- 17c:	000000fc 	.word	0x000000fc
- 180:	000000f0 	.word	0x000000f0
- 184:	000000e4 	.word	0x000000e4
- 188:	000000dc 	.word	0x000000dc
- 18c:	00000000 	.word	0x00000000
- 190:	000000ce 	.word	0x000000ce
- 194:	000000ca 	.word	0x000000ca
- 198:	000000c2 	.word	0x000000c2
- 19c:	000000b6 	.word	0x000000b6
- 1a0:	000000ac 	.word	0x000000ac
- 1a4:	000000a8 	.word	0x000000a8
- 1a8:	0000009c 	.word	0x0000009c
- 1ac:	00000098 	.word	0x00000098
- 1b0:	00000092 	.word	0x00000092
- 1b4:	0000008e 	.word	0x0000008e
- 1b8:	00000082 	.word	0x00000082
- 1bc:	00000078 	.word	0x00000078
- 1c0:	00000070 	.word	0x00000070
+Function shlib_shlibvar2 @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function shlib_shlibcall @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function shlib_shlibcall2 @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function shlib_maincall @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function shlib_checkfunptr1 @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function shlib_checkfunptr2 @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function shlib_getfunptr1 @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function puts @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function shlib_getfunptr2 @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function shlib_check @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0

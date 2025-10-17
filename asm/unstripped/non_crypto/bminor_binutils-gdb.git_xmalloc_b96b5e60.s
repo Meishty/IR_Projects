@@ -1,50 +1,90 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_xmalloc_b96b5e60.o:     file format elf32-littlearm
+Function memory_error_and_abort @ 0x00400001
+0x00400001:	ldr.w	ip, [pc, #0x24]
+0x00400005:	movs	r1, #1
+0x00400007:	push	{r3, lr}
+0x00400009:	mov	r3, r0
+0x0040000b:	ldr.w	lr, [pc, #0x20]
+0x0040000f:	add	ip, pc
+0x00400011:	ldr	r2, [pc, #0x1c]
+0x00400013:	mov	r0, ip
+0x00400015:	add	r2, pc
+0x00400017:	ldr.w	r0, [ip, lr]
+0x0040001b:	ldr	r0, [r0]
+0x0040001d:	bl	#0x500001
+0x00400021:	movs	r0, #2
+0x00400023:	bl	#0x50000d
 
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r6, r2
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	lsls	r4, r2, #1
+0x00400033:	movs	r0, r0
+0x00400035:	push	{r3, lr}
+0x00400037:	bl	#0x500019
 
-Disassembly of section .text:
+Function xmalloc @ 0x00400035
+0x00400035:	push	{r3, lr}
+0x00400037:	bl	#0x500019
+0x0040003b:	cbz	r0, #0x40003f
+0x0040003d:	pop	{r3, pc}
+0x0040003d:	pop	{r3, pc}
+0x0040003f:	ldr	r0, [pc, #8]
+0x00400041:	add	r0, pc
+0x00400043:	bl	#0x400001
 
-00000000 <memory_error_and_abort>:
-   0:	f8df c024 	ldr.w	ip, [pc, #36]	; 28 <memory_error_and_abort+0x28>
-   4:	2101      	movs	r1, #1
-   6:	b508      	push	{r3, lr}
-   8:	4603      	mov	r3, r0
-   a:	f8df e020 	ldr.w	lr, [pc, #32]	; 2c <memory_error_and_abort+0x2c>
-   e:	44fc      	add	ip, pc
-  10:	4a07      	ldr	r2, [pc, #28]	; (30 <memory_error_and_abort+0x30>)
-  12:	4660      	mov	r0, ip
-  14:	447a      	add	r2, pc
-  16:	f85c 000e 	ldr.w	r0, [ip, lr]
-  1a:	6800      	ldr	r0, [r0, #0]
-  1c:	f7ff fffe 	bl	0 <__fprintf_chk>
-  20:	2002      	movs	r0, #2
-  22:	f7ff fffe 	bl	0 <exit>
-  26:	bf00      	nop
-  28:	00000016 	.word	0x00000016
-  2c:	00000000 	.word	0x00000000
-  30:	00000018 	.word	0x00000018
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	lsls	r4, r0, #1
+0x0040004b:	movs	r0, r0
+0x0040004d:	push	{r3, lr}
+0x0040004f:	cbz	r0, #0x400059
+0x00400051:	bl	#0x500025
 
-00000034 <xmalloc>:
-  34:	b508      	push	{r3, lr}
-  36:	f7ff fffe 	bl	0 <malloc>
-  3a:	b100      	cbz	r0, 3e <xmalloc+0xa>
-  3c:	bd08      	pop	{r3, pc}
-  3e:	4802      	ldr	r0, [pc, #8]	; (48 <xmalloc+0x14>)
-  40:	4478      	add	r0, pc
-  42:	f7ff ffdd 	bl	0 <memory_error_and_abort>
-  46:	bf00      	nop
-  48:	00000004 	.word	0x00000004
+Function xrealloc @ 0x0040004d
+0x0040004d:	push	{r3, lr}
+0x0040004f:	cbz	r0, #0x400059
+0x00400051:	bl	#0x500025
+0x00400051:	bl	#0x500025
+0x00400055:	cbz	r0, #0x400061
+0x00400057:	pop	{r3, pc}
+0x00400057:	pop	{r3, pc}
+0x00400059:	mov	r0, r1
+0x0040005b:	bl	#0x500019
+0x0040005f:	b	#0x400055
+0x00400061:	ldr	r0, [pc, #4]
+0x00400063:	add	r0, pc
+0x00400065:	bl	#0x400001
 
-0000004c <xrealloc>:
-  4c:	b508      	push	{r3, lr}
-  4e:	b118      	cbz	r0, 58 <xrealloc+0xc>
-  50:	f7ff fffe 	bl	0 <realloc>
-  54:	b120      	cbz	r0, 60 <xrealloc+0x14>
-  56:	bd08      	pop	{r3, pc}
-  58:	4608      	mov	r0, r1
-  5a:	f7ff fffe 	bl	0 <malloc>
-  5e:	e7f9      	b.n	54 <xrealloc+0x8>
-  60:	4801      	ldr	r0, [pc, #4]	; (68 <xrealloc+0x1c>)
-  62:	4478      	add	r0, pc
-  64:	f7ff ffcc 	bl	0 <memory_error_and_abort>
-  68:	00000002 	.word	0x00000002
+Function __fprintf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function exit @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function malloc @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function realloc @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

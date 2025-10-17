@@ -1,43 +1,52 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_killed-outside_f435bf41_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrlt	r4, [r0, #-0x806]
+0x00400004:	ldrbtmi	r2, [r8], #-0x4b4
 
+Function sub_40000b @ 0x0040000b
+0x0040000d:	movs	r0, #1
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
 
-00000000 <.text>:
-   0:	b5104806 	ldrlt	r4, [r0, #-2054]	; 0xfffff7fa
-   4:	447824b4 	ldrbtmi	r2, [r8], #-1204	; 0xfffffb4c
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  10:	3c01fffe 	stccc	15, cr15, [r1], {254}	; 0xfe
-  14:	4620d1fa 			; <UNDEFINED> instruction: 0x4620d1fa
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	00000012 	andeq	r0, r0, r2, lsl r0
+Function sub_400013 @ 0x00400013
+0x00400013:	subs	r4, #1
+0x00400015:	bne	#0x40000d
+0x00400017:	mov	r0, r4
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text.startup:
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
 
-00000000 <.text.startup>:
-   0:	4b144a13 	blmi	0x512854
-   4:	b510447a 	ldrlt	r4, [r0, #-1146]	; 0xfffffb86
-   8:	b0824c13 	addlt	r4, r2, r3, lsl ip
-   c:	447c58d3 	ldrbtmi	r5, [ip], #-2259	; 0xfffff72d
-  10:	9301681b 	movwls	r6, #6171	; 0x181b
-  14:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	46032202 	strmi	r2, [r3], -r2, lsl #4
-  20:	46202100 	strtmi	r2, [r0], -r0, lsl #2
-  24:	f7ff6163 			; <UNDEFINED> instruction: 0xf7ff6163
-  28:	4a0cfffe 	bmi	0x340028
-  2c:	46192300 	ldrmi	r2, [r9], -r0, lsl #6
-  30:	447a4668 	ldrbtmi	r4, [sl], #-1640	; 0xfffff998
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	24b44620 	ldrtcs	r4, [r4], #1568	; 0x620
-  3c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  40:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  44:	3c01fffe 	stccc	15, cr15, [r1], {254}	; 0xfe
-  48:	4620d1fa 			; <UNDEFINED> instruction: 0x4620d1fa
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	00000048 	andeq	r0, r0, r8, asr #32
-  54:	00000000 	andeq	r0, r0, r0
-  58:	00000046 	andeq	r0, r0, r6, asr #32
-  5c:	00000026 	andeq	r0, r0, r6, lsr #32
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r2, r2
+0x0040001f:	movs	r0, r0
+
+Function sub_400038 @ 0x00400038
+0x00400038:	blmi	#0x91288c
+0x0040003c:	ldrlt	r4, [r0, #-0x47a]
+0x00400040:	addlt	r4, r2, r3, lsl ip
+0x00400044:	ldrbtmi	r5, [ip], #-0x8d3
+0x00400048:	movwls	r6, #0x181b
+
+Function sub_40003e @ 0x0040003e
+
+Function sub_400048 @ 0x00400048
+0x00400048:	movwls	r6, #0x181b
+
+Function sub_400054 @ 0x00400054
+0x00400054:	strmi	r2, [r3], -r2, lsl #4
+0x00400058:	strtmi	r2, [r0], -r0, lsl #2
+
+Function sub_400060 @ 0x00400060
+0x00400060:	bmi	#0x740060
+0x00400064:	ldrmi	r2, [sb], -r0, lsl #6
+0x00400068:	ldrbtmi	r4, [sl], #-0x668
+
+Function sub_400068 @ 0x00400068
+0x00400068:	ldrbtmi	r4, [sl], #-0x668
+
+Function sub_40007c @ 0x0040007c
+
+Function sub_400087 @ 0x00400087

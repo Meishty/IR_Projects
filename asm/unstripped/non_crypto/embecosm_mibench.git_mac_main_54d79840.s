@@ -1,36 +1,65 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_mac_main_54d79840.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x812844
+0x00400004:	strlt	r4, [r0, #-0x47a]
+0x00400008:	ldmpl	r3, {r0, r1, r7, ip, sp, pc} ^
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	mov	r0, sp
+0x0040000f:	ldr	r3, [r3]
+0x00400011:	str	r3, [sp, #4]
+0x00400013:	mov.w	r3, #0
+0x00400017:	bl	#0x500001
+0x0040001b:	ldr	r1, [sp]
+0x0040001d:	bl	#0x50000d
+0x00400021:	ldr	r2, [pc, #0x24]
+0x00400023:	ldr	r3, [pc, #0x20]
+0x00400025:	add	r2, pc
+0x00400027:	ldr	r3, [r2, r3]
+0x00400029:	ldr	r2, [r3]
+0x0040002b:	ldr	r3, [sp, #4]
+0x0040002d:	eors	r2, r3
+0x0040002f:	mov.w	r3, #0
+0x00400033:	bne	#0x40003b
+0x00400035:	add	sp, #0xc
+0x00400037:	ldr	pc, [sp], #4
+0x0040003b:	bl	#0x500019
 
-Disassembly of section .text.startup:
+Function sub_40003f @ 0x0040003f
+0x0040003f:	nop	
+0x00400041:	movs	r0, r7
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r0, r0
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r4
+0x0040004b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4a0f      	ldr	r2, [pc, #60]	; (40 <main+0x40>)
-   2:	4b10      	ldr	r3, [pc, #64]	; (44 <main+0x44>)
-   4:	447a      	add	r2, pc
-   6:	b500      	push	{lr}
-   8:	b083      	sub	sp, #12
-   a:	58d3      	ldr	r3, [r2, r3]
-   c:	4668      	mov	r0, sp
-   e:	681b      	ldr	r3, [r3, #0]
-  10:	9301      	str	r3, [sp, #4]
-  12:	f04f 0300 	mov.w	r3, #0
-  16:	f7ff fffe 	bl	0 <ccommand>
-  1a:	9900      	ldr	r1, [sp, #0]
-  1c:	f7ff fffe 	bl	0 <tool_main>
-  20:	4a09      	ldr	r2, [pc, #36]	; (48 <main+0x48>)
-  22:	4b08      	ldr	r3, [pc, #32]	; (44 <main+0x44>)
-  24:	447a      	add	r2, pc
-  26:	58d3      	ldr	r3, [r2, r3]
-  28:	681a      	ldr	r2, [r3, #0]
-  2a:	9b01      	ldr	r3, [sp, #4]
-  2c:	405a      	eors	r2, r3
-  2e:	f04f 0300 	mov.w	r3, #0
-  32:	d102      	bne.n	3a <main+0x3a>
-  34:	b003      	add	sp, #12
-  36:	f85d fb04 	ldr.w	pc, [sp], #4
-  3a:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  3e:	bf00      	nop
-  40:	00000038 	.word	0x00000038
-  44:	00000000 	.word	0x00000000
-  48:	00000020 	.word	0x00000020
+Function sub_400041 @ 0x00400041
+0x00400041:	movs	r0, r7
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r0, r0
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r4
+0x0040004b:	movs	r0, r0
+
+Function ccommand @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function tool_main @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

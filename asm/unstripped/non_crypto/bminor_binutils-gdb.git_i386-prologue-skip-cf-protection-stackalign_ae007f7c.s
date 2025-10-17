@@ -1,42 +1,49 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_i386-prologue-skip-cf-protection-stackalign_ae007f7c.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r0, #0x30c]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	stm	r0!, {r3, r6}
+0x00400009:	ldr	r1, [pc, #0x48]
+0x0040000b:	sub	sp, #8
+0x0040000d:	mul	r0, r3, r0
+0x00400011:	add	ip, pc
+0x00400013:	add	r7, sp, #0
+0x00400015:	adds	r0, #7
+0x00400017:	movs	r2, #0x62
+0x00400019:	bic	r0, r0, #7
+0x0040001d:	ldr.w	r1, [ip, r1]
+0x00400021:	sub.w	sp, sp, r0
+0x00400025:	mov	r3, sp
+0x00400027:	ldr	r1, [r1]
+0x00400029:	str	r1, [r7, #4]
+0x0040002b:	mov.w	r1, #0
+0x0040002f:	strb	r2, [r3, #2]
+0x00400031:	ldr	r2, [pc, #0x24]
+0x00400033:	ldr	r3, [pc, #0x20]
+0x00400035:	add	r2, pc
+0x00400037:	ldr	r3, [r2, r3]
+0x00400039:	ldr	r2, [r3]
+0x0040003b:	ldr	r3, [r7, #4]
+0x0040003d:	eors	r2, r3
+0x0040003f:	mov.w	r3, #0
+0x00400043:	bne	#0x40004d
+0x00400045:	movs	r0, #1
+0x00400047:	adds	r7, #8
+0x00400049:	mov	sp, r7
+0x0040004b:	pop	{r7, pc}
+0x0040004d:	bl	#0x500001
 
-Disassembly of section .text.startup:
+Function sub_400051 @ 0x00400051
+0x00400051:	movs	r4, r7
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r0, r4
+0x0040005b:	movs	r0, r0
 
-00000000 <main>:
-   0:	230c      	movs	r3, #12
-   2:	b580      	push	{r7, lr}
-   4:	f8df c048 	ldr.w	ip, [pc, #72]	; 50 <main+0x50>
-   8:	4912      	ldr	r1, [pc, #72]	; (54 <main+0x54>)
-   a:	b082      	sub	sp, #8
-   c:	fb03 f000 	mul.w	r0, r3, r0
-  10:	44fc      	add	ip, pc
-  12:	af00      	add	r7, sp, #0
-  14:	3007      	adds	r0, #7
-  16:	2262      	movs	r2, #98	; 0x62
-  18:	f020 0007 	bic.w	r0, r0, #7
-  1c:	f85c 1001 	ldr.w	r1, [ip, r1]
-  20:	ebad 0d00 	sub.w	sp, sp, r0
-  24:	466b      	mov	r3, sp
-  26:	6809      	ldr	r1, [r1, #0]
-  28:	6079      	str	r1, [r7, #4]
-  2a:	f04f 0100 	mov.w	r1, #0
-  2e:	709a      	strb	r2, [r3, #2]
-  30:	4a09      	ldr	r2, [pc, #36]	; (58 <main+0x58>)
-  32:	4b08      	ldr	r3, [pc, #32]	; (54 <main+0x54>)
-  34:	447a      	add	r2, pc
-  36:	58d3      	ldr	r3, [r2, r3]
-  38:	681a      	ldr	r2, [r3, #0]
-  3a:	687b      	ldr	r3, [r7, #4]
-  3c:	405a      	eors	r2, r3
-  3e:	f04f 0300 	mov.w	r3, #0
-  42:	d103      	bne.n	4c <main+0x4c>
-  44:	2001      	movs	r0, #1
-  46:	3708      	adds	r7, #8
-  48:	46bd      	mov	sp, r7
-  4a:	bd80      	pop	{r7, pc}
-  4c:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  50:	0000003c 	.word	0x0000003c
-  54:	00000000 	.word	0x00000000
-  58:	00000020 	.word	0x00000020
+Function __stack_chk_fail @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,47 +1,87 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_longjmp-until-in-main_2059a529.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x852848
+0x00400004:	strlt	r4, [r0, #-0x47a]
+0x00400008:	ldmpl	r3, {r0, r2, r5, r6, r7, ip, sp, pc} ^
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	mov	r0, sp
+0x0040000f:	ldr	r3, [r3]
+0x00400011:	str	r3, [sp, #0x18c]
+0x00400013:	mov.w	r3, #0
+0x00400017:	bl	#0x500001
+0x0040001b:	cbz	r0, #0x400037
+0x0040001d:	ldr	r2, [pc, #0x2c]
+0x0040001f:	ldr	r3, [pc, #0x28]
+0x00400021:	add	r2, pc
+0x00400023:	ldr	r3, [r2, r3]
+0x00400025:	ldr	r2, [r3]
+0x00400027:	ldr	r3, [sp, #0x18c]
+0x00400029:	eors	r2, r3
+0x0040002b:	mov.w	r3, #0
+0x0040002f:	bne	#0x40003f
+0x0040001d:	ldr	r2, [pc, #0x2c]
+0x0040001f:	ldr	r3, [pc, #0x28]
+0x00400021:	add	r2, pc
+0x00400023:	ldr	r3, [r2, r3]
+0x00400025:	ldr	r2, [r3]
+0x00400027:	ldr	r3, [sp, #0x18c]
+0x00400029:	eors	r2, r3
+0x0040002b:	mov.w	r3, #0
+0x0040002f:	bne	#0x40003f
+0x00400031:	add	sp, #0x194
+0x00400033:	ldr	pc, [sp], #4
+0x00400037:	movs	r1, #1
+0x00400039:	mov	r0, sp
+0x0040003b:	bl	#0x50000d
+0x0040003f:	bl	#0x500019
 
-Disassembly of section .text:
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	movs	r4, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r5
+0x0040004f:	movs	r0, r0
 
-00000000 <func>:
-   0:	4a10      	ldr	r2, [pc, #64]	; (44 <func+0x44>)
-   2:	4b11      	ldr	r3, [pc, #68]	; (48 <func+0x48>)
-   4:	447a      	add	r2, pc
-   6:	b500      	push	{lr}
-   8:	b0e5      	sub	sp, #404	; 0x194
-   a:	58d3      	ldr	r3, [r2, r3]
-   c:	4668      	mov	r0, sp
-   e:	681b      	ldr	r3, [r3, #0]
-  10:	9363      	str	r3, [sp, #396]	; 0x18c
-  12:	f04f 0300 	mov.w	r3, #0
-  16:	f7ff fffe 	bl	0 <_setjmp>
-  1a:	b160      	cbz	r0, 36 <func+0x36>
-  1c:	4a0b      	ldr	r2, [pc, #44]	; (4c <func+0x4c>)
-  1e:	4b0a      	ldr	r3, [pc, #40]	; (48 <func+0x48>)
-  20:	447a      	add	r2, pc
-  22:	58d3      	ldr	r3, [r2, r3]
-  24:	681a      	ldr	r2, [r3, #0]
-  26:	9b63      	ldr	r3, [sp, #396]	; 0x18c
-  28:	405a      	eors	r2, r3
-  2a:	f04f 0300 	mov.w	r3, #0
-  2e:	d106      	bne.n	3e <func+0x3e>
-  30:	b065      	add	sp, #404	; 0x194
-  32:	f85d fb04 	ldr.w	pc, [sp], #4
-  36:	2101      	movs	r1, #1
-  38:	4668      	mov	r0, sp
-  3a:	f7ff fffe 	bl	0 <__longjmp_chk>
-  3e:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  42:	bf00      	nop
-  44:	0000003c 	.word	0x0000003c
-  48:	00000000 	.word	0x00000000
-  4c:	00000028 	.word	0x00000028
+Function sub_400045 @ 0x00400045
+0x00400045:	movs	r4, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r5
+0x0040004f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x00400051
+0x00400051:	push	{r3, lr}
+0x00400053:	bl	#0x400001
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <main>
-   6:	2000      	movs	r0, #0
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function sub_400057 @ 0x00400057
+0x00400057:	movs	r0, #0
+0x00400059:	pop	{r3, pc}
+
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	
+
+Function _setjmp @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __longjmp_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

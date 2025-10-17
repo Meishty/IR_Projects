@@ -1,108 +1,181 @@
 
-/root/projects/compiled/non_crypto/unstripped/nih-at_libzip.git_fuzz_main_6f1a6303.o:     file format elf32-littlearm
+Function main @ 0x00400079
+0x00400079:	push	{r3, r4, r5, r6, r7, lr}
+0x0040007b:	cmp	r0, #1
+0x0040007d:	ldr	r7, [pc, #0xd0]
+0x0040007f:	add	r7, pc
+0x00400081:	ble	#0x4000fb
+0x00400083:	mov	r5, r1
+0x00400085:	ldr	r1, [pc, #0xcc]
+0x00400087:	add	r1, pc
+0x00400089:	ldr	r0, [r5, #4]
+0x0040008b:	bl	#0x500001
+0x0040008f:	mov	r4, r0
+0x00400091:	cmp	r0, #0
+0x00400093:	beq	#0x400127
+0x00400095:	movs	r2, #2
+0x00400097:	movs	r1, #0
+0x00400099:	bl	#0x50000d
+0x0040009d:	mov	r0, r4
+0x0040009f:	bl	#0x500019
+0x004000a3:	mov	r5, r0
+0x004000a5:	mov	r0, r4
+0x004000a7:	bl	#0x500025
+0x004000ab:	cmp	r5, #0
+0x004000ad:	ble	#0x400111
+0x004000af:	mov	r0, r5
+0x004000b1:	bl	#0x500031
+0x004000b5:	mov	r6, r0
+0x004000b7:	cmp	r0, #0
+0x004000b9:	beq	#0x40013d
+0x004000bb:	mov	r3, r4
+0x004000bd:	movs	r2, #1
+0x004000bf:	mov	r1, r5
+0x004000c1:	bl	#0x50003d
+0x004000c5:	cmp	r0, #1
+0x004000c7:	beq	#0x4000e3
+0x004000c9:	ldr	r3, [pc, #0x8c]
+0x004000cb:	movs	r2, #0xf
+0x004000cd:	ldr	r0, [pc, #0x8c]
+0x004000cf:	movs	r1, #1
+0x004000d1:	add	r0, pc
+0x004000d3:	ldr	r3, [r7, r3]
+0x004000d5:	ldr	r3, [r3]
+0x004000d7:	bl	#0x500049
+0x004000db:	mov	r0, r4
+0x004000dd:	bl	#0x500055
+0x004000e1:	b	#0x4000f1
+0x004000e3:	mov	r0, r4
+0x004000e5:	bl	#0x500055
+0x004000e9:	mov	r1, r5
+0x004000eb:	mov	r0, r6
+0x004000ed:	bl	#0x500061
+0x004000f1:	mov	r0, r6
+0x004000f3:	bl	#0x50006d
+0x004000f7:	movs	r0, #0
+0x004000f9:	pop	{r3, r4, r5, r6, r7, pc}
+0x004000fb:	ldr	r3, [pc, #0x5c]
+0x004000fd:	movs	r2, #0xe
+0x004000ff:	ldr	r0, [pc, #0x60]
+0x00400101:	movs	r1, #1
+0x00400103:	movs	r6, #0
+0x00400105:	add	r0, pc
+0x00400107:	ldr	r3, [r7, r3]
+0x00400109:	ldr	r3, [r3]
+0x0040010b:	bl	#0x500049
+0x0040010f:	b	#0x4000f1
+0x00400111:	ldr	r3, [pc, #0x44]
+0x00400113:	movs	r2, #0x1d
+0x00400115:	ldr	r0, [pc, #0x4c]
+0x00400117:	movs	r1, #1
+0x00400119:	movs	r6, #0
+0x0040011b:	add	r0, pc
+0x0040011d:	ldr	r3, [r7, r3]
+0x0040011f:	ldr	r3, [r3]
+0x00400121:	bl	#0x500049
+0x00400125:	b	#0x4000db
+0x00400127:	ldr	r1, [pc, #0x30]
+0x00400129:	mov	r6, r0
+0x0040012b:	ldr	r2, [pc, #0x3c]
+0x0040012d:	ldr	r3, [r5, #4]
+0x0040012f:	add	r2, pc
+0x00400131:	ldr	r1, [r7, r1]
+0x00400133:	ldr	r0, [r1]
+0x00400135:	movs	r1, #1
+0x00400137:	bl	#0x500079
+0x0040013b:	b	#0x4000f1
+0x0040013d:	ldr	r3, [pc, #0x18]
+0x0040013f:	movs	r2, #0x10
+0x00400141:	ldr	r0, [pc, #0x28]
+0x00400143:	movs	r1, #1
+0x00400145:	add	r0, pc
+0x00400147:	ldr	r3, [r7, r3]
+0x00400149:	ldr	r3, [r3]
+0x0040014b:	bl	#0x500049
+0x0040014f:	b	#0x4000db
 
+Function fopen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function fseek @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-   2:	2801      	cmp	r0, #1
-   4:	4f34      	ldr	r7, [pc, #208]	; (d8 <main+0xd8>)
-   6:	447f      	add	r7, pc
-   8:	dd3b      	ble.n	82 <main+0x82>
-   a:	460d      	mov	r5, r1
-   c:	4933      	ldr	r1, [pc, #204]	; (dc <main+0xdc>)
-   e:	4479      	add	r1, pc
-  10:	6868      	ldr	r0, [r5, #4]
-  12:	f7ff fffe 	bl	0 <fopen>
-  16:	4604      	mov	r4, r0
-  18:	2800      	cmp	r0, #0
-  1a:	d048      	beq.n	ae <main+0xae>
-  1c:	2202      	movs	r2, #2
-  1e:	2100      	movs	r1, #0
-  20:	f7ff fffe 	bl	0 <fseek>
-  24:	4620      	mov	r0, r4
-  26:	f7ff fffe 	bl	0 <ftell>
-  2a:	4605      	mov	r5, r0
-  2c:	4620      	mov	r0, r4
-  2e:	f7ff fffe 	bl	0 <rewind>
-  32:	2d00      	cmp	r5, #0
-  34:	dd30      	ble.n	98 <main+0x98>
-  36:	4628      	mov	r0, r5
-  38:	f7ff fffe 	bl	0 <malloc>
-  3c:	4606      	mov	r6, r0
-  3e:	2800      	cmp	r0, #0
-  40:	d040      	beq.n	c4 <main+0xc4>
-  42:	4623      	mov	r3, r4
-  44:	2201      	movs	r2, #1
-  46:	4629      	mov	r1, r5
-  48:	f7ff fffe 	bl	0 <fread>
-  4c:	2801      	cmp	r0, #1
-  4e:	d00c      	beq.n	6a <main+0x6a>
-  50:	4b23      	ldr	r3, [pc, #140]	; (e0 <main+0xe0>)
-  52:	220f      	movs	r2, #15
-  54:	4823      	ldr	r0, [pc, #140]	; (e4 <main+0xe4>)
-  56:	2101      	movs	r1, #1
-  58:	4478      	add	r0, pc
-  5a:	58fb      	ldr	r3, [r7, r3]
-  5c:	681b      	ldr	r3, [r3, #0]
-  5e:	f7ff fffe 	bl	0 <fwrite>
-  62:	4620      	mov	r0, r4
-  64:	f7ff fffe 	bl	0 <fclose>
-  68:	e006      	b.n	78 <main+0x78>
-  6a:	4620      	mov	r0, r4
-  6c:	f7ff fffe 	bl	0 <fclose>
-  70:	4629      	mov	r1, r5
-  72:	4630      	mov	r0, r6
-  74:	f7ff fffe 	bl	0 <LLVMFuzzerTestOneInput>
-  78:	4630      	mov	r0, r6
-  7a:	f7ff fffe 	bl	0 <free>
-  7e:	2000      	movs	r0, #0
-  80:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-  82:	4b17      	ldr	r3, [pc, #92]	; (e0 <main+0xe0>)
-  84:	220e      	movs	r2, #14
-  86:	4818      	ldr	r0, [pc, #96]	; (e8 <main+0xe8>)
-  88:	2101      	movs	r1, #1
-  8a:	2600      	movs	r6, #0
-  8c:	4478      	add	r0, pc
-  8e:	58fb      	ldr	r3, [r7, r3]
-  90:	681b      	ldr	r3, [r3, #0]
-  92:	f7ff fffe 	bl	0 <fwrite>
-  96:	e7ef      	b.n	78 <main+0x78>
-  98:	4b11      	ldr	r3, [pc, #68]	; (e0 <main+0xe0>)
-  9a:	221d      	movs	r2, #29
-  9c:	4813      	ldr	r0, [pc, #76]	; (ec <main+0xec>)
-  9e:	2101      	movs	r1, #1
-  a0:	2600      	movs	r6, #0
-  a2:	4478      	add	r0, pc
-  a4:	58fb      	ldr	r3, [r7, r3]
-  a6:	681b      	ldr	r3, [r3, #0]
-  a8:	f7ff fffe 	bl	0 <fwrite>
-  ac:	e7d9      	b.n	62 <main+0x62>
-  ae:	490c      	ldr	r1, [pc, #48]	; (e0 <main+0xe0>)
-  b0:	4606      	mov	r6, r0
-  b2:	4a0f      	ldr	r2, [pc, #60]	; (f0 <main+0xf0>)
-  b4:	686b      	ldr	r3, [r5, #4]
-  b6:	447a      	add	r2, pc
-  b8:	5879      	ldr	r1, [r7, r1]
-  ba:	6808      	ldr	r0, [r1, #0]
-  bc:	2101      	movs	r1, #1
-  be:	f7ff fffe 	bl	0 <__fprintf_chk>
-  c2:	e7d9      	b.n	78 <main+0x78>
-  c4:	4b06      	ldr	r3, [pc, #24]	; (e0 <main+0xe0>)
-  c6:	2210      	movs	r2, #16
-  c8:	480a      	ldr	r0, [pc, #40]	; (f4 <main+0xf4>)
-  ca:	2101      	movs	r1, #1
-  cc:	4478      	add	r0, pc
-  ce:	58fb      	ldr	r3, [r7, r3]
-  d0:	681b      	ldr	r3, [r3, #0]
-  d2:	f7ff fffe 	bl	0 <fwrite>
-  d6:	e7c4      	b.n	62 <main+0x62>
-  d8:	000000ce 	.word	0x000000ce
-  dc:	000000ca 	.word	0x000000ca
-  e0:	00000000 	.word	0x00000000
-  e4:	00000088 	.word	0x00000088
-  e8:	00000058 	.word	0x00000058
-  ec:	00000046 	.word	0x00000046
-  f0:	00000036 	.word	0x00000036
-  f4:	00000024 	.word	0x00000024
+Function ftell @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function rewind @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function malloc @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function fread @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function fwrite @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function fclose @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function LLVMFuzzerTestOneInput @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function free @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function __fprintf_chk @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0

@@ -1,40 +1,63 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_kill1_714a005b.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	movs	r1, #0xf
+0x00400013:	movs	r0, #1
+0x00400015:	push	{r3, lr}
+0x00400017:	bl	#0x500001
+0x0040001b:	adds	r0, #1
+0x0040001d:	bne	#0x40002b
+0x0040001f:	bl	#0x50000d
+0x00400023:	mov	r4, r0
+0x00400025:	ldr	r0, [r0]
+0x00400027:	cmp	r0, #1
+0x00400029:	beq	#0x400039
+0x0040002b:	ldr	r0, [pc, #0x30]
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x500019
+0x00400033:	movs	r0, #1
+0x00400035:	bl	#0x500025
+0x00400039:	movs	r5, #0
+0x0040003b:	movs	r1, #6
+0x0040003d:	str	r5, [r4]
+0x0040003f:	bl	#0x500001
+0x00400043:	adds	r0, #1
+0x00400045:	bne	#0x40002b
+0x00400047:	ldr	r3, [r4]
+0x00400049:	cmp	r3, #1
+0x0040004b:	bne	#0x40002b
+0x0040004d:	ldr	r0, [pc, #0x10]
+0x0040004f:	str	r5, [r4]
+0x00400051:	add	r0, pc
+0x00400053:	bl	#0x500019
+0x00400057:	mov	r0, r5
+0x00400059:	bl	#0x500025
 
+Function kill @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function __errno_location @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	210f      	movs	r1, #15
-   2:	2001      	movs	r0, #1
-   4:	b508      	push	{r3, lr}
-   6:	f7ff fffe 	bl	0 <kill>
-   a:	3001      	adds	r0, #1
-   c:	d105      	bne.n	1a <main+0x1a>
-   e:	f7ff fffe 	bl	0 <__errno_location>
-  12:	4604      	mov	r4, r0
-  14:	6800      	ldr	r0, [r0, #0]
-  16:	2801      	cmp	r0, #1
-  18:	d006      	beq.n	28 <main+0x28>
-  1a:	480c      	ldr	r0, [pc, #48]	; (4c <main+0x4c>)
-  1c:	4478      	add	r0, pc
-  1e:	f7ff fffe 	bl	0 <puts>
-  22:	2001      	movs	r0, #1
-  24:	f7ff fffe 	bl	0 <exit>
-  28:	2500      	movs	r5, #0
-  2a:	2106      	movs	r1, #6
-  2c:	6025      	str	r5, [r4, #0]
-  2e:	f7ff fffe 	bl	0 <kill>
-  32:	3001      	adds	r0, #1
-  34:	d1f1      	bne.n	1a <main+0x1a>
-  36:	6823      	ldr	r3, [r4, #0]
-  38:	2b01      	cmp	r3, #1
-  3a:	d1ee      	bne.n	1a <main+0x1a>
-  3c:	4804      	ldr	r0, [pc, #16]	; (50 <main+0x50>)
-  3e:	6025      	str	r5, [r4, #0]
-  40:	4478      	add	r0, pc
-  42:	f7ff fffe 	bl	0 <puts>
-  46:	4628      	mov	r0, r5
-  48:	f7ff fffe 	bl	0 <exit>
-  4c:	0000002c 	.word	0x0000002c
-  50:	0000000c 	.word	0x0000000c
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

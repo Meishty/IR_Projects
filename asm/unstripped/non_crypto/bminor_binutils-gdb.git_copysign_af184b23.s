@@ -1,22 +1,16 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_copysign_af184b23.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bleq	#0xff43badc
+0x00400004:	blx	#0x83bbd0
+0x00400008:	cdp	p4, #0xb, c13, c5, c10, #0
+0x0040000c:	vsqrt.f64	d16, d0
+0x00400010:	vstrle	s30, [r4, #-0x40]
+0x00400014:	blne	#0xff43baf0
+0x00400018:	blx	#0x83bbe4
+0x0040001c:	ldrbmi	sp, [r0, -r5, lsl #8]!
+0x00400020:	blne	#0xff43bafc
+0x00400024:	blx	#0x83bbf0
+0x00400028:	cdp	p13, #0xb, c13, c1, c15, #7
 
-
-Disassembly of section .text:
-
-00000000 <copysign>:
-   0:	eeb5 0bc0 	vcmpe.f64	d0, #0.0
-   4:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
-   8:	d40a      	bmi.n	20 <copysign+0x20>
-   a:	eeb5 0bc0 	vcmpe.f64	d0, #0.0
-   e:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
-  12:	dd04      	ble.n	1e <copysign+0x1e>
-  14:	eeb5 1bc0 	vcmpe.f64	d1, #0.0
-  18:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
-  1c:	d405      	bmi.n	2a <copysign+0x2a>
-  1e:	4770      	bx	lr
-  20:	eeb5 1bc0 	vcmpe.f64	d1, #0.0
-  24:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
-  28:	ddef      	ble.n	a <copysign+0xa>
-  2a:	eeb1 0b40 	vneg.f64	d0, d0
-  2e:	4770      	bx	lr
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bx	lr

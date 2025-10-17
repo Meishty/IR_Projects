@@ -1,8 +1,3 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_info-threads-cur-sal-2_994104b0_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr

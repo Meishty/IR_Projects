@@ -1,31 +1,40 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_bg-execution-repeat_9d5e6609.o:     file format elf32-littlearm
+Function foo @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function main @ 0x00400009
+0x00400009:	push	{r4, lr}
+0x0040000b:	movs	r0, #0x3c
+0x0040000d:	ldr	r4, [pc, #0x20]
+0x0040000f:	bl	#0x500001
+0x00400013:	movs	r3, #1
+0x00400015:	add	r4, pc
+0x00400017:	str	r3, [r4]
+0x00400019:	ldr	r3, [r4]
+0x0040001b:	cbz	r3, #0x40002b
+0x0040001d:	movw	r0, #0x2710
+0x00400021:	bl	#0x50000d
+0x0040001d:	movw	r0, #0x2710
+0x00400021:	bl	#0x50000d
+0x00400025:	ldr	r3, [r4]
+0x00400027:	cmp	r3, #0
+0x00400029:	bne	#0x40001d
+0x0040002b:	movs	r0, #0
+0x0040002d:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40002f @ 0x0040002f
 
-00000000 <foo>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function alarm @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	203c      	movs	r0, #60	; 0x3c
-   4:	4c08      	ldr	r4, [pc, #32]	; (28 <main+0x28>)
-   6:	f7ff fffe 	bl	0 <alarm>
-   a:	2301      	movs	r3, #1
-   c:	447c      	add	r4, pc
-   e:	6023      	str	r3, [r4, #0]
-  10:	6823      	ldr	r3, [r4, #0]
-  12:	b133      	cbz	r3, 22 <main+0x22>
-  14:	f242 7010 	movw	r0, #10000	; 0x2710
-  18:	f7ff fffe 	bl	0 <usleep>
-  1c:	6823      	ldr	r3, [r4, #0]
-  1e:	2b00      	cmp	r3, #0
-  20:	d1f8      	bne.n	14 <main+0x14>
-  22:	2000      	movs	r0, #0
-  24:	bd10      	pop	{r4, pc}
-  26:	bf00      	nop
-  28:	00000018 	.word	0x00000018
+Function usleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

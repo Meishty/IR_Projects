@@ -1,39 +1,71 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_protected-func-1b_f25e9444_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r3]!
 
+Function sub_400099 @ 0x00400099
+0x00400099:	push	{r3, lr}
+0x0040009b:	bl	#0x40009b
 
-Disassembly of section .text:
+Function sub_40009b @ 0x0040009b
+0x0040009b:	bl	#0x40009b
+0x0040009f:	ldr	r3, [pc, #0x48]
+0x004000a1:	ldr	r2, [pc, #0x48]
+0x004000a3:	add	r3, pc
+0x004000a5:	ldr	r3, [r3, r2]
+0x004000a7:	cmp	r3, r0
+0x004000a9:	beq	#0x4000c3
+0x004000ab:	ldr	r0, [pc, #0x44]
+0x004000ad:	add	r0, pc
+0x004000af:	bl	#0x4000af
 
-00000000 <.text>:
-   0:	47702003 	ldrbmi	r2, [r0, -r3]!
+Function sub_4000af @ 0x004000af
+0x004000af:	bl	#0x4000af
 
-Disassembly of section .text.startup:
+Function sub_4000b3 @ 0x004000b3
+0x004000b3:	bl	#0x4000b3
+0x004000b7:	ldr	r3, [pc, #0x3c]
+0x004000b9:	add	r3, pc
+0x004000bb:	cmp	r3, r0
+0x004000bd:	beq	#0x4000db
+0x004000bf:	movs	r0, #1
+0x004000c1:	pop	{r3, pc}
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4b12fffe 	blmi	0x4c0004
-   8:	447b4a12 	ldrbtmi	r4, [fp], #-2578	; 0xfffff5ee
-   c:	4283589b 	addmi	r5, r3, #10158080	; 0x9b0000
-  10:	4811d00b 	ldmdami	r1, {r0, r1, r3, ip, lr, pc}
-  14:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  18:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  1c:	4b0ffffe 	blmi	0x40001c
-  20:	4283447b 	addmi	r4, r3, #2063597568	; 0x7b000000
-  24:	2001d00d 	andcs	sp, r1, sp
-  28:	f7ffbd08 			; <UNDEFINED> instruction: 0xf7ffbd08
-  2c:	4b0cfffe 	blmi	0x34002c
-  30:	4283447b 	addmi	r4, r3, #2063597568	; 0x7b000000
-  34:	480bd005 	stmdami	fp, {r0, r2, ip, lr, pc}
-  38:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  3c:	2000fffe 	strdcs	pc, [r0], -lr
-  40:	4809bd08 	stmdami	r9, {r3, r8, sl, fp, ip, sp, pc}
-  44:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  48:	2001fffe 	strdcs	pc, [r1], -lr
-  4c:	bf00bd08 	svclt	0x0000bd08
-  50:	00000042 	andeq	r0, r0, r2, asr #32
-  54:	00000000 	andeq	r0, r0, r0
-  58:	00000040 	andeq	r0, r0, r0, asr #32
-  5c:	00000038 	andeq	r0, r0, r8, lsr r0
-  60:	0000002c 	andeq	r0, r0, ip, lsr #32
-  64:	00000028 	andeq	r0, r0, r8, lsr #32
-  68:	00000020 	andeq	r0, r0, r0, lsr #32
+Function sub_4000c3 @ 0x004000c3
+0x004000c3:	bl	#0x4000c3
+0x004000c7:	ldr	r3, [pc, #0x30]
+0x004000c9:	add	r3, pc
+0x004000cb:	cmp	r3, r0
+0x004000cd:	beq	#0x4000db
+0x004000cf:	ldr	r0, [pc, #0x2c]
+0x004000d1:	add	r0, pc
+0x004000d3:	bl	#0x4000d3
+0x004000db:	ldr	r0, [pc, #0x24]
+0x004000dd:	add	r0, pc
+0x004000df:	bl	#0x4000df
+
+Function sub_4000d3 @ 0x004000d3
+0x004000d3:	bl	#0x4000d3
+0x004000d7:	movs	r0, #0
+0x004000d9:	pop	{r3, pc}
+
+Function sub_4000df @ 0x004000df
+0x004000df:	bl	#0x4000df
+0x004000e3:	movs	r0, #1
+0x004000e5:	pop	{r3, pc}
+
+Function sub_4000e7 @ 0x004000e7
+0x004000e7:	nop	
+0x004000e9:	lsls	r2, r0, #1
+0x004000eb:	movs	r0, r0
+0x004000ed:	movs	r0, r0
+0x004000ef:	movs	r0, r0
+0x004000f1:	lsls	r0, r0, #1
+0x004000f3:	movs	r0, r0
+0x004000f5:	movs	r0, r7
+0x004000f7:	movs	r0, r0
+0x004000f9:	movs	r4, r5
+0x004000fb:	movs	r0, r0
+0x004000fd:	movs	r0, r5
+0x004000ff:	movs	r0, r0
+0x00400101:	movs	r0, r4
+0x00400103:	movs	r0, r0

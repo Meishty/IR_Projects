@@ -1,18 +1,28 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_print_version_1ebc6bd8.o:     file format elf32-littlearm
+Function main @ 0x00400029
+0x00400029:	push	{r3, lr}
+0x0040002b:	bl	#0x500001
+0x0040002f:	ldr	r1, [pc, #0x10]
+0x00400031:	mov	r2, r0
+0x00400033:	movs	r0, #1
+0x00400035:	add	r1, pc
+0x00400037:	bl	#0x50000d
+0x0040003b:	movs	r0, #0
+0x0040003d:	pop	{r3, pc}
 
+Function sub_40003f @ 0x0040003f
+0x0040003f:	nop	
 
-Disassembly of section .text.startup:
+Function LZ4_versionNumber @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <LZ4_versionNumber>
-   6:	4904      	ldr	r1, [pc, #16]	; (18 <main+0x18>)
-   8:	4602      	mov	r2, r0
-   a:	2001      	movs	r0, #1
-   c:	4479      	add	r1, pc
-   e:	f7ff fffe 	bl	0 <__printf_chk>
-  12:	2000      	movs	r0, #0
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
-  18:	00000008 	.word	0x00000008
+Function __printf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

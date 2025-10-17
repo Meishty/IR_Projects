@@ -1,17 +1,24 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_info-shared-solib1_a37c0f38.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strmi	r4, [r2], -r4, lsl #18
+0x00400004:	andhs	fp, r1, r8, lsl #10
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x500001
+0x0040000f:	movs	r0, #0
+0x00400011:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
 
-00000000 <foo>:
-   0:	4904      	ldr	r1, [pc, #16]	; (14 <foo+0x14>)
-   2:	4602      	mov	r2, r0
-   4:	b508      	push	{r3, lr}
-   6:	2001      	movs	r0, #1
-   8:	4479      	add	r1, pc
-   a:	f7ff fffe 	bl	0 <__printf_chk>
-   e:	2000      	movs	r0, #0
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
-  14:	00000008 	.word	0x00000008
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
+
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

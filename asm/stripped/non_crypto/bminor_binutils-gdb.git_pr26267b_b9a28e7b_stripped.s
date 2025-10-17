@@ -1,20 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr26267b_b9a28e7b_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bmi	#0x512c14
+0x00400004:	ldmpl	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	movwlo	r6, #0x1813
+0x00400008:	movwlo	r6, #0x1813
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bx	lr
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r0, r1
+0x00400013:	movs	r0, r0
+0x00400015:	movs	r0, r0
+0x00400017:	movs	r0, r0
 
-00000000 <.text>:
-   0:	4a044b03 	bmi	0x112c14
-   4:	589a447b 	ldmpl	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
-   8:	33016813 	movwcc	r6, #6163	; 0x1813
-   c:	47706013 			; <UNDEFINED> instruction: 0x47706013
-  10:	00000008 	andeq	r0, r0, r8
-  14:	00000000 	andeq	r0, r0, r0
-
-Disassembly of section .text.unlikely:
-
-00000000 <.text.unlikely>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	Address 0x0000000000000004 is out of bounds.
-
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b

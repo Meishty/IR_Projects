@@ -1,359 +1,614 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_secretbox_xchacha20poly1305_4b6eaf05.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svcmi	#0xf0e92d
+0x00400004:	bmi	#0x1e91864
+0x00400008:	strmi	r4, [r4], -sl, ror #22
+0x0040000c:	blhi	#0x4bb4c8
+0x00400010:	rsclt	r4, sb, sl, ror r4
+0x00400014:	bne	#0xfe83b83c
+0x00400018:	blvc	#0xfebbd454
 
+Function sub_40001f @ 0x0040001f
+0x0040001f:	lsrs	r7, r7, #0x20
+0x00400021:	ldr	r3, [r2, r3]
+0x00400023:	mov	r0, fp
+0x00400025:	ldr.w	sl, [sp, #0x1d8]
+0x00400029:	bic	r8, r8, #0xf
+0x0040002d:	ldr	r3, [r3]
+0x0040002f:	str	r3, [sp, #0x19c]
+0x00400031:	mov.w	r3, #0
+0x00400035:	ldr	r2, [sp, #0x1dc]
+0x00400037:	movs	r3, #0
+0x00400039:	mov	r1, sl
+0x0040003b:	ldrd	r5, r7, [sp, #0x1d0]
+0x0040003f:	bl	#0x500001
+0x00400043:	cmp	r4, r6
+0x00400045:	bls.w	#0x40015f
+0x00400049:	subs	r3, r4, r6
+0x0040004b:	movs	r2, #0
+0x0040004d:	cmp	r3, r5
+0x0040004f:	sbcs	r2, r7
+0x00400051:	bhs.w	#0x40015f
+0x00400055:	mov	r1, r6
+0x00400057:	mov	r2, r5
+0x00400059:	mov	r0, r4
+0x0040005b:	mov	r6, r4
+0x0040005d:	bl	#0x50000d
+0x00400061:	add.w	sb, sp, #0x15c
+0x00400065:	movs	r2, #0x20
+0x00400067:	movs	r1, #0
+0x00400069:	mov	r0, sb
+0x0040006b:	bl	#0x500019
+0x0040006f:	cmp	r5, #0x21
+0x00400071:	sbcs	r3, r7, #0
+0x00400075:	strd	r5, r7, [sp, #0x1c]
+0x00400079:	ittt	hs
+0x0040007b:	movhs	r3, #0
+0x0040007d:	movhs	r2, #0x20
+0x0040007f:	strdhs	r2, r3, [sp, #0x1c]
+0x00400083:	add.w	r3, sl, #0x10
+0x00400087:	str	r3, [sp, #0x24]
+0x00400089:	ldr	r1, [sp, #0x1c]
+0x0040008b:	ldr	r0, [sp, #0x20]
+0x0040008d:	adds.w	r2, r1, #0x20
+0x00400091:	str	r2, [sp, #0x28]
+0x00400093:	adc	r3, r0, #0
+0x00400097:	orrs.w	r2, r5, r7
+0x0040009b:	beq	#0x40017f
+0x0040009d:	ite	ne
+0x0040009f:	movne	ip, r1
+0x004000a1:	moveq.w	ip, #1
+0x004000a5:	add.w	sl, sp, #0x17c
+0x004000a9:	mov	r2, ip
+0x004000ab:	mov	r1, r6
+0x004000ad:	mov	r0, sl
+0x004000af:	vmov	s16, ip
+0x004000b3:	str	r3, [sp, #0x2c]
+0x004000b5:	bl	#0x500025
+0x004000b9:	ldr	r0, [sp, #0x24]
+0x004000bb:	ldrd	r2, r3, [sp, #0x28]
+0x004000bf:	mov	r1, sb
+0x004000c1:	str	r0, [sp]
+0x004000c3:	mov	r0, sb
+0x004000c5:	str.w	fp, [sp, #4]
+0x004000c9:	bl	#0x500031
+0x004000cd:	mov	r1, sb
+0x004000cf:	mov	r0, r8
+0x004000d1:	bl	#0x50003d
+0x004000d5:	vmov	r2, s16
+0x004000d9:	mov	r1, sl
+0x004000db:	mov	r0, r4
+0x004000dd:	bl	#0x500025
+0x004000e1:	mov	r0, sb
+0x004000e3:	movs	r1, #0x40
+0x004000e5:	bl	#0x500049
+0x004000e9:	ldr	r1, [sp, #0x1c]
+0x004000eb:	ldr	r0, [sp, #0x20]
+0x004000ed:	cmp	r1, r5
+0x004000ef:	sbcs.w	r3, r0, r7
+0x004000f3:	bhs	#0x400117
+0x004000f5:	ldr	r3, [sp, #0x24]
+0x004000f7:	mov	r0, r1
+0x004000f9:	vldr	d7, [pc, #0xac]
+0x004000fd:	subs	r2, r5, r0
+0x004000ff:	str	r3, [sp]
+0x00400101:	add	r1, r6
+0x00400103:	ldr	r3, [sp, #0x20]
+0x00400105:	add	r0, r4
+0x00400107:	str.w	fp, [sp, #0x10]
+0x0040010b:	sbc.w	r3, r7, r3
+0x0040010f:	vstr	d7, [sp, #8]
+0x00400113:	bl	#0x500055
+0x00400117:	mov	r0, fp
+0x00400119:	movs	r1, #0x20
+0x0040011b:	bl	#0x500049
+0x0040011f:	mov	r2, r5
+0x00400121:	mov	r3, r7
+0x00400123:	mov	r1, r4
+0x00400125:	mov	r0, r8
+0x00400127:	bl	#0x500061
+0x0040012b:	vmov	r1, s17
+0x0040012f:	mov	r0, r8
+0x00400131:	bl	#0x50006d
+0x00400135:	mov.w	r1, #0x100
+0x00400139:	mov	r0, r8
+0x0040013b:	bl	#0x500049
+0x0040013f:	ldr	r2, [pc, #0x78]
+0x00400141:	ldr	r3, [pc, #0x70]
+0x00400143:	add	r2, pc
+0x00400145:	ldr	r3, [r2, r3]
+0x00400147:	ldr	r2, [r3]
+0x00400149:	ldr	r3, [sp, #0x19c]
+0x0040014b:	eors	r2, r3
+0x0040014d:	mov.w	r3, #0
+0x00400151:	bne	#0x4001a3
+0x00400153:	movs	r0, #0
+0x00400155:	add	sp, #0x1a4
+0x00400157:	vpop	{d8}
+0x0040015b:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x0040015f:	cmp	r4, r6
+0x00400161:	bhs.w	#0x400061
+0x00400165:	subs	r3, r6, r4
+0x00400167:	movs	r2, #0
+0x00400169:	cmp	r3, r5
+0x0040016b:	sbcs	r2, r7
+0x0040016d:	bhs.w	#0x400061
+0x00400171:	mov	r1, r6
+0x00400173:	mov	r2, r5
+0x00400175:	mov	r0, r4
+0x00400177:	mov	r6, r4
+0x00400179:	bl	#0x50000d
+0x0040017d:	b	#0x400061
+0x0040017f:	ldr	r2, [sp, #0x24]
+0x00400181:	mov	r1, sb
+0x00400183:	str	r2, [sp]
+0x00400185:	mov	r0, sb
+0x00400187:	ldr	r2, [sp, #0x28]
+0x00400189:	str.w	fp, [sp, #4]
+0x0040018d:	bl	#0x500031
+0x00400191:	mov	r1, sb
+0x00400193:	mov	r0, r8
+0x00400195:	bl	#0x50003d
+0x00400199:	mov	r0, sb
+0x0040019b:	movs	r1, #0x40
+0x0040019d:	bl	#0x500049
+0x004001a1:	b	#0x400117
+0x004001a3:	bl	#0x500079
 
-Disassembly of section .text:
+Function sub_4001a7 @ 0x004001a7
+0x004001a7:	nop	
+0x004001a9:	movs	r1, r0
+0x004001ab:	movs	r0, r0
+0x004001ad:	movs	r0, r0
+0x004001af:	movs	r0, r0
+0x004001b1:	lsls	r4, r3, #6
+0x004001b3:	movs	r0, r0
+0x004001b5:	movs	r0, r0
+0x004001b7:	movs	r0, r0
+0x004001b9:	lsls	r2, r6, #1
+0x004001bb:	movs	r0, r0
+0x004001bd:	push	{r4, r5, lr}
+0x004001bf:	mvn	ip, #0x10
+0x004001c3:	mov	r4, r2
+0x004001c5:	cmp	ip, r4
+0x004001c7:	mov	r2, r1
+0x004001c9:	mov.w	r1, #0
+0x004001cd:	sub	sp, #0x14
+0x004001cf:	sbcs	r1, r3
+0x004001d1:	blo	#0x4001eb
 
-00000000 <crypto_secretbox_xchacha20poly1305_detached>:
-   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	4616      	mov	r6, r2
-   6:	4a6a      	ldr	r2, [pc, #424]	; (1b0 <crypto_secretbox_xchacha20poly1305_detached+0x1b0>)
-   8:	4b6a      	ldr	r3, [pc, #424]	; (1b4 <crypto_secretbox_xchacha20poly1305_detached+0x1b4>)
-   a:	4604      	mov	r4, r0
-   c:	ed2d 8b02 	vpush	{d8}
-  10:	447a      	add	r2, pc
-  12:	b0e9      	sub	sp, #420	; 0x1a4
-  14:	ee08 1a90 	vmov	s17, r1
-  18:	f50d 7b9e 	add.w	fp, sp, #316	; 0x13c
-  1c:	f10d 083f 	add.w	r8, sp, #63	; 0x3f
-  20:	58d3      	ldr	r3, [r2, r3]
-  22:	4658      	mov	r0, fp
-  24:	f8dd a1d8 	ldr.w	sl, [sp, #472]	; 0x1d8
-  28:	f028 080f 	bic.w	r8, r8, #15
-  2c:	681b      	ldr	r3, [r3, #0]
-  2e:	9367      	str	r3, [sp, #412]	; 0x19c
-  30:	f04f 0300 	mov.w	r3, #0
-  34:	9a77      	ldr	r2, [sp, #476]	; 0x1dc
-  36:	2300      	movs	r3, #0
-  38:	4651      	mov	r1, sl
-  3a:	e9dd 5774 	ldrd	r5, r7, [sp, #464]	; 0x1d0
-  3e:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
-  42:	42b4      	cmp	r4, r6
-  44:	f240 808b 	bls.w	15e <crypto_secretbox_xchacha20poly1305_detached+0x15e>
-  48:	1ba3      	subs	r3, r4, r6
-  4a:	2200      	movs	r2, #0
-  4c:	42ab      	cmp	r3, r5
-  4e:	41ba      	sbcs	r2, r7
-  50:	f080 8085 	bcs.w	15e <crypto_secretbox_xchacha20poly1305_detached+0x15e>
-  54:	4631      	mov	r1, r6
-  56:	462a      	mov	r2, r5
-  58:	4620      	mov	r0, r4
-  5a:	4626      	mov	r6, r4
-  5c:	f7ff fffe 	bl	0 <memmove>
-  60:	f50d 79ae 	add.w	r9, sp, #348	; 0x15c
-  64:	2220      	movs	r2, #32
-  66:	2100      	movs	r1, #0
-  68:	4648      	mov	r0, r9
-  6a:	f7ff fffe 	bl	0 <memset>
-  6e:	2d21      	cmp	r5, #33	; 0x21
-  70:	f177 0300 	sbcs.w	r3, r7, #0
-  74:	e9cd 5707 	strd	r5, r7, [sp, #28]
-  78:	bf22      	ittt	cs
-  7a:	2300      	movcs	r3, #0
-  7c:	2220      	movcs	r2, #32
-  7e:	e9cd 2307 	strdcs	r2, r3, [sp, #28]
-  82:	f10a 0310 	add.w	r3, sl, #16
-  86:	9309      	str	r3, [sp, #36]	; 0x24
-  88:	9907      	ldr	r1, [sp, #28]
-  8a:	9808      	ldr	r0, [sp, #32]
-  8c:	f111 0220 	adds.w	r2, r1, #32
-  90:	920a      	str	r2, [sp, #40]	; 0x28
-  92:	f140 0300 	adc.w	r3, r0, #0
-  96:	ea55 0207 	orrs.w	r2, r5, r7
-  9a:	d070      	beq.n	17e <crypto_secretbox_xchacha20poly1305_detached+0x17e>
-  9c:	bf14      	ite	ne
-  9e:	468c      	movne	ip, r1
-  a0:	f04f 0c01 	moveq.w	ip, #1
-  a4:	f50d 7abe 	add.w	sl, sp, #380	; 0x17c
-  a8:	4662      	mov	r2, ip
-  aa:	4631      	mov	r1, r6
-  ac:	4650      	mov	r0, sl
-  ae:	ee08 ca10 	vmov	s16, ip
-  b2:	930b      	str	r3, [sp, #44]	; 0x2c
-  b4:	f7ff fffe 	bl	0 <memcpy>
-  b8:	9809      	ldr	r0, [sp, #36]	; 0x24
-  ba:	e9dd 230a 	ldrd	r2, r3, [sp, #40]	; 0x28
-  be:	4649      	mov	r1, r9
-  c0:	9000      	str	r0, [sp, #0]
-  c2:	4648      	mov	r0, r9
-  c4:	f8cd b004 	str.w	fp, [sp, #4]
-  c8:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor>
-  cc:	4649      	mov	r1, r9
-  ce:	4640      	mov	r0, r8
-  d0:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_init>
-  d4:	ee18 2a10 	vmov	r2, s16
-  d8:	4651      	mov	r1, sl
-  da:	4620      	mov	r0, r4
-  dc:	f7ff fffe 	bl	0 <memcpy>
-  e0:	4648      	mov	r0, r9
-  e2:	2140      	movs	r1, #64	; 0x40
-  e4:	f7ff fffe 	bl	0 <sodium_memzero>
-  e8:	9907      	ldr	r1, [sp, #28]
-  ea:	9808      	ldr	r0, [sp, #32]
-  ec:	42a9      	cmp	r1, r5
-  ee:	eb70 0307 	sbcs.w	r3, r0, r7
-  f2:	d210      	bcs.n	116 <crypto_secretbox_xchacha20poly1305_detached+0x116>
-  f4:	9b09      	ldr	r3, [sp, #36]	; 0x24
-  f6:	4608      	mov	r0, r1
-  f8:	ed9f 7b2b 	vldr	d7, [pc, #172]	; 1a8 <crypto_secretbox_xchacha20poly1305_detached+0x1a8>
-  fc:	1a2a      	subs	r2, r5, r0
-  fe:	9300      	str	r3, [sp, #0]
- 100:	4431      	add	r1, r6
- 102:	9b08      	ldr	r3, [sp, #32]
- 104:	4420      	add	r0, r4
- 106:	f8cd b010 	str.w	fp, [sp, #16]
- 10a:	eb67 0303 	sbc.w	r3, r7, r3
- 10e:	ed8d 7b02 	vstr	d7, [sp, #8]
- 112:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor_ic>
- 116:	4658      	mov	r0, fp
- 118:	2120      	movs	r1, #32
- 11a:	f7ff fffe 	bl	0 <sodium_memzero>
- 11e:	462a      	mov	r2, r5
- 120:	463b      	mov	r3, r7
- 122:	4621      	mov	r1, r4
- 124:	4640      	mov	r0, r8
- 126:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_update>
- 12a:	ee18 1a90 	vmov	r1, s17
- 12e:	4640      	mov	r0, r8
- 130:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_final>
- 134:	f44f 7180 	mov.w	r1, #256	; 0x100
- 138:	4640      	mov	r0, r8
- 13a:	f7ff fffe 	bl	0 <sodium_memzero>
- 13e:	4a1e      	ldr	r2, [pc, #120]	; (1b8 <crypto_secretbox_xchacha20poly1305_detached+0x1b8>)
- 140:	4b1c      	ldr	r3, [pc, #112]	; (1b4 <crypto_secretbox_xchacha20poly1305_detached+0x1b4>)
- 142:	447a      	add	r2, pc
- 144:	58d3      	ldr	r3, [r2, r3]
- 146:	681a      	ldr	r2, [r3, #0]
- 148:	9b67      	ldr	r3, [sp, #412]	; 0x19c
- 14a:	405a      	eors	r2, r3
- 14c:	f04f 0300 	mov.w	r3, #0
- 150:	d127      	bne.n	1a2 <crypto_secretbox_xchacha20poly1305_detached+0x1a2>
- 152:	2000      	movs	r0, #0
- 154:	b069      	add	sp, #420	; 0x1a4
- 156:	ecbd 8b02 	vpop	{d8}
- 15a:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 15e:	42b4      	cmp	r4, r6
- 160:	f4bf af7e 	bcs.w	60 <crypto_secretbox_xchacha20poly1305_detached+0x60>
- 164:	1b33      	subs	r3, r6, r4
- 166:	2200      	movs	r2, #0
- 168:	42ab      	cmp	r3, r5
- 16a:	41ba      	sbcs	r2, r7
- 16c:	f4bf af78 	bcs.w	60 <crypto_secretbox_xchacha20poly1305_detached+0x60>
- 170:	4631      	mov	r1, r6
- 172:	462a      	mov	r2, r5
- 174:	4620      	mov	r0, r4
- 176:	4626      	mov	r6, r4
- 178:	f7ff fffe 	bl	0 <memmove>
- 17c:	e770      	b.n	60 <crypto_secretbox_xchacha20poly1305_detached+0x60>
- 17e:	9a09      	ldr	r2, [sp, #36]	; 0x24
- 180:	4649      	mov	r1, r9
- 182:	9200      	str	r2, [sp, #0]
- 184:	4648      	mov	r0, r9
- 186:	9a0a      	ldr	r2, [sp, #40]	; 0x28
- 188:	f8cd b004 	str.w	fp, [sp, #4]
- 18c:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor>
- 190:	4649      	mov	r1, r9
- 192:	4640      	mov	r0, r8
- 194:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_init>
- 198:	4648      	mov	r0, r9
- 19a:	2140      	movs	r1, #64	; 0x40
- 19c:	f7ff fffe 	bl	0 <sodium_memzero>
- 1a0:	e7b9      	b.n	116 <crypto_secretbox_xchacha20poly1305_detached+0x116>
- 1a2:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 1a6:	bf00      	nop
- 1a8:	00000001 	.word	0x00000001
- 1ac:	00000000 	.word	0x00000000
- 1b0:	0000019c 	.word	0x0000019c
- 1b4:	00000000 	.word	0x00000000
- 1b8:	00000072 	.word	0x00000072
+Function sub_4001b1 @ 0x004001b1
+0x004001b1:	lsls	r4, r3, #6
+0x004001b3:	movs	r0, r0
+0x004001b5:	movs	r0, r0
+0x004001b7:	movs	r0, r0
+0x004001b9:	lsls	r2, r6, #1
+0x004001bb:	movs	r0, r0
+0x004001bd:	push	{r4, r5, lr}
+0x004001bf:	mvn	ip, #0x10
+0x004001c3:	mov	r4, r2
+0x004001c5:	cmp	ip, r4
+0x004001c7:	mov	r2, r1
+0x004001c9:	mov.w	r1, #0
+0x004001cd:	sub	sp, #0x14
+0x004001cf:	sbcs	r1, r3
+0x004001d1:	blo	#0x4001eb
 
-000001bc <crypto_secretbox_xchacha20poly1305_easy>:
- 1bc:	b530      	push	{r4, r5, lr}
- 1be:	f06f 0c10 	mvn.w	ip, #16
- 1c2:	4614      	mov	r4, r2
- 1c4:	45a4      	cmp	ip, r4
- 1c6:	460a      	mov	r2, r1
- 1c8:	f04f 0100 	mov.w	r1, #0
- 1cc:	b085      	sub	sp, #20
- 1ce:	4199      	sbcs	r1, r3
- 1d0:	d30b      	bcc.n	1ea <crypto_secretbox_xchacha20poly1305_easy+0x2e>
- 1d2:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 1d4:	4601      	mov	r1, r0
- 1d6:	9503      	str	r5, [sp, #12]
- 1d8:	3010      	adds	r0, #16
- 1da:	9d08      	ldr	r5, [sp, #32]
- 1dc:	9502      	str	r5, [sp, #8]
- 1de:	e9cd 4300 	strd	r4, r3, [sp]
- 1e2:	f7ff fffe 	bl	0 <crypto_secretbox_xchacha20poly1305_detached>
- 1e6:	b005      	add	sp, #20
- 1e8:	bd30      	pop	{r4, r5, pc}
- 1ea:	f7ff fffe 	bl	0 <sodium_misuse>
- 1ee:	bf00      	nop
+Function crypto_secretbox_xchacha20poly1305_easy @ 0x004001bd
+0x004001bd:	push	{r4, r5, lr}
+0x004001bf:	mvn	ip, #0x10
+0x004001c3:	mov	r4, r2
+0x004001c5:	cmp	ip, r4
+0x004001c7:	mov	r2, r1
+0x004001c9:	mov.w	r1, #0
+0x004001cd:	sub	sp, #0x14
+0x004001cf:	sbcs	r1, r3
+0x004001d1:	blo	#0x4001eb
+0x004001d3:	ldr	r5, [sp, #0x24]
+0x004001d5:	mov	r1, r0
+0x004001d7:	str	r5, [sp, #0xc]
+0x004001d9:	adds	r0, #0x10
+0x004001db:	ldr	r5, [sp, #0x20]
+0x004001dd:	str	r5, [sp, #8]
+0x004001df:	strd	r4, r3, [sp]
+0x004001e3:	bl	#0x400001
+0x004001eb:	bl	#0x500085
+0x004001ef:	nop	
+0x004001f1:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004001f5:	mov	r6, r0
+0x004001f7:	ldr	r3, [pc, #0x140]
+0x004001f9:	vpush	{d8}
+0x004001fd:	vmov	s16, r2
+0x00400201:	ldr	r2, [pc, #0x138]
+0x00400203:	sub	sp, #0x8c
+0x00400205:	add.w	sb, sp, #0x24
+0x00400209:	mov	r5, r1
+0x0040020b:	add	r2, pc
+0x0040020d:	mov	r0, sb
+0x0040020f:	ldrd	r7, fp, [sp, #0xbc]
+0x00400213:	add.w	r8, sp, #0x44
+0x00400217:	ldr	r3, [r2, r3]
+0x00400219:	ldr	r4, [sp, #0xb8]
+0x0040021b:	mov	r1, fp
+0x0040021d:	ldr	r2, [sp, #0xc4]
+0x0040021f:	ldr	r3, [r3]
+0x00400221:	str	r3, [sp, #0x84]
+0x00400223:	mov.w	r3, #0
+0x00400227:	movs	r3, #0
+0x00400229:	bl	#0x500001
 
-000001f0 <crypto_secretbox_xchacha20poly1305_open_detached>:
- 1f0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 1f4:	4606      	mov	r6, r0
- 1f6:	4b50      	ldr	r3, [pc, #320]	; (338 <crypto_secretbox_xchacha20poly1305_open_detached+0x148>)
- 1f8:	ed2d 8b02 	vpush	{d8}
- 1fc:	ee08 2a10 	vmov	s16, r2
- 200:	4a4e      	ldr	r2, [pc, #312]	; (33c <crypto_secretbox_xchacha20poly1305_open_detached+0x14c>)
- 202:	b0a3      	sub	sp, #140	; 0x8c
- 204:	f10d 0924 	add.w	r9, sp, #36	; 0x24
- 208:	460d      	mov	r5, r1
- 20a:	447a      	add	r2, pc
- 20c:	4648      	mov	r0, r9
- 20e:	e9dd 7b2f 	ldrd	r7, fp, [sp, #188]	; 0xbc
- 212:	f10d 0844 	add.w	r8, sp, #68	; 0x44
- 216:	58d3      	ldr	r3, [r2, r3]
- 218:	9c2e      	ldr	r4, [sp, #184]	; 0xb8
- 21a:	4659      	mov	r1, fp
- 21c:	9a31      	ldr	r2, [sp, #196]	; 0xc4
- 21e:	681b      	ldr	r3, [r3, #0]
- 220:	9321      	str	r3, [sp, #132]	; 0x84
- 222:	f04f 0300 	mov.w	r3, #0
- 226:	2300      	movs	r3, #0
- 228:	f7ff fffe 	bl	0 <crypto_core_hchacha20>
- 22c:	2220      	movs	r2, #32
- 22e:	2100      	movs	r1, #0
- 230:	4640      	mov	r0, r8
- 232:	f7ff fffe 	bl	0 <memset>
- 236:	2c21      	cmp	r4, #33	; 0x21
- 238:	f177 0300 	sbcs.w	r3, r7, #0
- 23c:	9707      	str	r7, [sp, #28]
- 23e:	bf25      	ittet	cs
- 240:	2300      	movcs	r3, #0
- 242:	f04f 0a20 	movcs.w	sl, #32
- 246:	46a2      	movcc	sl, r4
- 248:	9307      	strcs	r3, [sp, #28]
- 24a:	ea54 0307 	orrs.w	r3, r4, r7
- 24e:	d006      	beq.n	25e <crypto_secretbox_xchacha20poly1305_open_detached+0x6e>
- 250:	bf14      	ite	ne
- 252:	4652      	movne	r2, sl
- 254:	2201      	moveq	r2, #1
- 256:	4629      	mov	r1, r5
- 258:	a819      	add	r0, sp, #100	; 0x64
- 25a:	f7ff fffe 	bl	0 <memcpy>
- 25e:	4641      	mov	r1, r8
- 260:	4640      	mov	r0, r8
- 262:	2240      	movs	r2, #64	; 0x40
- 264:	2300      	movs	r3, #0
- 266:	f10b 0b10 	add.w	fp, fp, #16
- 26a:	e9cd b900 	strd	fp, r9, [sp]
- 26e:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor>
- 272:	f8cd 8000 	str.w	r8, [sp]
- 276:	ee18 0a10 	vmov	r0, s16
- 27a:	4622      	mov	r2, r4
- 27c:	463b      	mov	r3, r7
- 27e:	4629      	mov	r1, r5
- 280:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_verify>
- 284:	4680      	mov	r8, r0
- 286:	2800      	cmp	r0, #0
- 288:	d14d      	bne.n	326 <crypto_secretbox_xchacha20poly1305_open_detached+0x136>
- 28a:	b1f6      	cbz	r6, 2ca <crypto_secretbox_xchacha20poly1305_open_detached+0xda>
- 28c:	42b5      	cmp	r5, r6
- 28e:	d92c      	bls.n	2ea <crypto_secretbox_xchacha20poly1305_open_detached+0xfa>
- 290:	1bab      	subs	r3, r5, r6
- 292:	42a3      	cmp	r3, r4
- 294:	eb70 0307 	sbcs.w	r3, r0, r7
- 298:	d227      	bcs.n	2ea <crypto_secretbox_xchacha20poly1305_open_detached+0xfa>
- 29a:	4629      	mov	r1, r5
- 29c:	4622      	mov	r2, r4
- 29e:	4630      	mov	r0, r6
- 2a0:	4635      	mov	r5, r6
- 2a2:	f7ff fffe 	bl	0 <memmove>
- 2a6:	ea54 0307 	orrs.w	r3, r4, r7
- 2aa:	d00a      	beq.n	2c2 <crypto_secretbox_xchacha20poly1305_open_detached+0xd2>
- 2ac:	bf14      	ite	ne
- 2ae:	4652      	movne	r2, sl
- 2b0:	2201      	moveq	r2, #1
- 2b2:	a919      	add	r1, sp, #100	; 0x64
- 2b4:	4630      	mov	r0, r6
- 2b6:	f7ff fffe 	bl	0 <memcpy>
- 2ba:	9b07      	ldr	r3, [sp, #28]
- 2bc:	45a2      	cmp	sl, r4
- 2be:	41bb      	sbcs	r3, r7
- 2c0:	d31b      	bcc.n	2fa <crypto_secretbox_xchacha20poly1305_open_detached+0x10a>
- 2c2:	2120      	movs	r1, #32
- 2c4:	4648      	mov	r0, r9
- 2c6:	f7ff fffe 	bl	0 <sodium_memzero>
- 2ca:	4a1d      	ldr	r2, [pc, #116]	; (340 <crypto_secretbox_xchacha20poly1305_open_detached+0x150>)
- 2cc:	4b1a      	ldr	r3, [pc, #104]	; (338 <crypto_secretbox_xchacha20poly1305_open_detached+0x148>)
- 2ce:	447a      	add	r2, pc
- 2d0:	58d3      	ldr	r3, [r2, r3]
- 2d2:	681a      	ldr	r2, [r3, #0]
- 2d4:	9b21      	ldr	r3, [sp, #132]	; 0x84
- 2d6:	405a      	eors	r2, r3
- 2d8:	f04f 0300 	mov.w	r3, #0
- 2dc:	d12a      	bne.n	334 <crypto_secretbox_xchacha20poly1305_open_detached+0x144>
- 2de:	4640      	mov	r0, r8
- 2e0:	b023      	add	sp, #140	; 0x8c
- 2e2:	ecbd 8b02 	vpop	{d8}
- 2e6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 2ea:	42b5      	cmp	r5, r6
- 2ec:	d2db      	bcs.n	2a6 <crypto_secretbox_xchacha20poly1305_open_detached+0xb6>
- 2ee:	1b73      	subs	r3, r6, r5
- 2f0:	2200      	movs	r2, #0
- 2f2:	42a3      	cmp	r3, r4
- 2f4:	41ba      	sbcs	r2, r7
- 2f6:	d2d6      	bcs.n	2a6 <crypto_secretbox_xchacha20poly1305_open_detached+0xb6>
- 2f8:	e7cf      	b.n	29a <crypto_secretbox_xchacha20poly1305_open_detached+0xaa>
- 2fa:	9b07      	ldr	r3, [sp, #28]
- 2fc:	ebb4 020a 	subs.w	r2, r4, sl
- 300:	eb05 010a 	add.w	r1, r5, sl
- 304:	f04f 0401 	mov.w	r4, #1
- 308:	f04f 0500 	mov.w	r5, #0
- 30c:	eb67 0303 	sbc.w	r3, r7, r3
- 310:	eb06 000a 	add.w	r0, r6, sl
- 314:	f8cd b000 	str.w	fp, [sp]
- 318:	f8cd 9010 	str.w	r9, [sp, #16]
- 31c:	e9cd 4502 	strd	r4, r5, [sp, #8]
- 320:	f7ff fffe 	bl	0 <crypto_stream_chacha20_xor_ic>
- 324:	e7cd      	b.n	2c2 <crypto_secretbox_xchacha20poly1305_open_detached+0xd2>
- 326:	2120      	movs	r1, #32
- 328:	4648      	mov	r0, r9
- 32a:	f04f 38ff 	mov.w	r8, #4294967295	; 0xffffffff
- 32e:	f7ff fffe 	bl	0 <sodium_memzero>
- 332:	e7ca      	b.n	2ca <crypto_secretbox_xchacha20poly1305_open_detached+0xda>
- 334:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 338:	00000000 	.word	0x00000000
- 33c:	0000012e 	.word	0x0000012e
- 340:	0000006e 	.word	0x0000006e
+Function sub_4001e7 @ 0x004001e7
+0x004001e7:	add	sp, #0x14
+0x004001e9:	pop	{r4, r5, pc}
 
-00000344 <crypto_secretbox_xchacha20poly1305_open_easy>:
- 344:	4694      	mov	ip, r2
- 346:	460a      	mov	r2, r1
- 348:	f1bc 0f10 	cmp.w	ip, #16
- 34c:	f173 0100 	sbcs.w	r1, r3, #0
- 350:	d311      	bcc.n	376 <crypto_secretbox_xchacha20poly1305_open_easy+0x32>
- 352:	b530      	push	{r4, r5, lr}
- 354:	f1bc 0410 	subs.w	r4, ip, #16
- 358:	f143 33ff 	adc.w	r3, r3, #4294967295	; 0xffffffff
- 35c:	b085      	sub	sp, #20
- 35e:	f102 0110 	add.w	r1, r2, #16
- 362:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 364:	9503      	str	r5, [sp, #12]
- 366:	9d08      	ldr	r5, [sp, #32]
- 368:	9502      	str	r5, [sp, #8]
- 36a:	e9cd 4300 	strd	r4, r3, [sp]
- 36e:	f7ff fffe 	bl	1f0 <crypto_secretbox_xchacha20poly1305_open_detached>
- 372:	b005      	add	sp, #20
- 374:	bd30      	pop	{r4, r5, pc}
- 376:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 37a:	4770      	bx	lr
+Function crypto_secretbox_xchacha20poly1305_open_detached @ 0x004001f1
+0x004001f1:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004001f5:	mov	r6, r0
+0x004001f7:	ldr	r3, [pc, #0x140]
+0x004001f9:	vpush	{d8}
+0x004001fd:	vmov	s16, r2
+0x00400201:	ldr	r2, [pc, #0x138]
+0x00400203:	sub	sp, #0x8c
+0x00400205:	add.w	sb, sp, #0x24
+0x00400209:	mov	r5, r1
+0x0040020b:	add	r2, pc
+0x0040020d:	mov	r0, sb
+0x0040020f:	ldrd	r7, fp, [sp, #0xbc]
+0x00400213:	add.w	r8, sp, #0x44
+0x00400217:	ldr	r3, [r2, r3]
+0x00400219:	ldr	r4, [sp, #0xb8]
+0x0040021b:	mov	r1, fp
+0x0040021d:	ldr	r2, [sp, #0xc4]
+0x0040021f:	ldr	r3, [r3]
+0x00400221:	str	r3, [sp, #0x84]
+0x00400223:	mov.w	r3, #0
+0x00400227:	movs	r3, #0
+0x00400229:	bl	#0x500001
+0x0040022d:	movs	r2, #0x20
+0x0040022f:	movs	r1, #0
+0x00400231:	mov	r0, r8
+0x00400233:	bl	#0x500019
+0x00400237:	cmp	r4, #0x21
+0x00400239:	sbcs	r3, r7, #0
+0x0040023d:	str	r7, [sp, #0x1c]
+0x0040023f:	ittet	hs
+0x00400241:	movhs	r3, #0
+0x00400243:	movhs.w	sl, #0x20
+0x00400247:	movlo	sl, r4
+0x00400249:	strhs	r3, [sp, #0x1c]
+0x0040024b:	orrs.w	r3, r4, r7
+0x0040024f:	beq	#0x40025f
+0x00400251:	ite	ne
+0x00400253:	movne	r2, sl
+0x00400255:	moveq	r2, #1
+0x00400257:	mov	r1, r5
+0x00400259:	add	r0, sp, #0x64
+0x0040025b:	bl	#0x500025
+0x0040025f:	mov	r1, r8
+0x00400261:	mov	r0, r8
+0x00400263:	movs	r2, #0x40
+0x00400265:	movs	r3, #0
+0x00400267:	add.w	fp, fp, #0x10
+0x0040026b:	strd	fp, sb, [sp]
+0x0040026f:	bl	#0x500031
+0x00400273:	str.w	r8, [sp]
+0x00400277:	vmov	r0, s16
+0x0040027b:	mov	r2, r4
+0x0040027d:	mov	r3, r7
+0x0040027f:	mov	r1, r5
+0x00400281:	bl	#0x500091
+0x00400285:	mov	r8, r0
+0x00400287:	cmp	r0, #0
+0x00400289:	bne	#0x400327
+0x0040028b:	cbz	r6, #0x4002cb
+0x0040028d:	cmp	r5, r6
+0x0040028f:	bls	#0x4002eb
+0x0040028d:	cmp	r5, r6
+0x0040028f:	bls	#0x4002eb
+0x00400291:	subs	r3, r5, r6
+0x00400293:	cmp	r3, r4
+0x00400295:	sbcs.w	r3, r0, r7
+0x00400299:	bhs	#0x4002eb
+0x0040029b:	mov	r1, r5
+0x0040029d:	mov	r2, r4
+0x0040029f:	mov	r0, r6
+0x004002a1:	mov	r5, r6
+0x004002a3:	bl	#0x50000d
+0x004002a7:	orrs.w	r3, r4, r7
+0x004002ab:	beq	#0x4002c3
+0x004002ad:	ite	ne
+0x004002af:	movne	r2, sl
+0x004002b1:	moveq	r2, #1
+0x004002b3:	add	r1, sp, #0x64
+0x004002b5:	mov	r0, r6
+0x004002b7:	bl	#0x500025
+0x004002bb:	ldr	r3, [sp, #0x1c]
+0x004002bd:	cmp	sl, r4
+0x004002bf:	sbcs	r3, r7
+0x004002c1:	blo	#0x4002fb
+0x004002c3:	movs	r1, #0x20
+0x004002c5:	mov	r0, sb
+0x004002c7:	bl	#0x500049
+0x004002cb:	ldr	r2, [pc, #0x74]
+0x004002cd:	ldr	r3, [pc, #0x68]
+0x004002cf:	add	r2, pc
+0x004002d1:	ldr	r3, [r2, r3]
+0x004002d3:	ldr	r2, [r3]
+0x004002d5:	ldr	r3, [sp, #0x84]
+0x004002d7:	eors	r2, r3
+0x004002d9:	mov.w	r3, #0
+0x004002dd:	bne	#0x400335
+0x004002df:	mov	r0, r8
+0x004002e1:	add	sp, #0x8c
+0x004002e3:	vpop	{d8}
+0x004002e7:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004002eb:	cmp	r5, r6
+0x004002ed:	bhs	#0x4002a7
+0x004002ef:	subs	r3, r6, r5
+0x004002f1:	movs	r2, #0
+0x004002f3:	cmp	r3, r4
+0x004002f5:	sbcs	r2, r7
+0x004002f7:	bhs	#0x4002a7
+0x004002f9:	b	#0x40029b
+0x004002fb:	ldr	r3, [sp, #0x1c]
+0x004002fd:	subs.w	r2, r4, sl
+0x00400301:	add.w	r1, r5, sl
+0x00400305:	mov.w	r4, #1
+0x00400309:	mov.w	r5, #0
+0x0040030d:	sbc.w	r3, r7, r3
+0x00400311:	add.w	r0, r6, sl
+0x00400315:	str.w	fp, [sp]
+0x00400319:	str.w	sb, [sp, #0x10]
+0x0040031d:	strd	r4, r5, [sp, #8]
+0x00400321:	bl	#0x500055
+0x00400325:	b	#0x4002c3
+0x00400327:	movs	r1, #0x20
+0x00400329:	mov	r0, sb
+0x0040032b:	mov.w	r8, #-1
+0x0040032f:	bl	#0x500049
+0x00400333:	b	#0x4002cb
+0x00400335:	bl	#0x500079
 
-0000037c <crypto_secretbox_xchacha20poly1305_keybytes>:
- 37c:	2020      	movs	r0, #32
- 37e:	4770      	bx	lr
+Function crypto_secretbox_xchacha20poly1305_open_easy @ 0x00400345
+0x00400345:	mov	ip, r2
+0x00400347:	mov	r2, r1
+0x00400349:	cmp.w	ip, #0x10
+0x0040034d:	sbcs	r1, r3, #0
+0x00400351:	blo	#0x400377
+0x00400353:	push	{r4, r5, lr}
+0x00400355:	subs.w	r4, ip, #0x10
+0x00400359:	adc	r3, r3, #-1
+0x0040035d:	sub	sp, #0x14
+0x0040035f:	add.w	r1, r2, #0x10
+0x00400363:	ldr	r5, [sp, #0x24]
+0x00400365:	str	r5, [sp, #0xc]
+0x00400367:	ldr	r5, [sp, #0x20]
+0x00400369:	str	r5, [sp, #8]
+0x0040036b:	strd	r4, r3, [sp]
+0x0040036f:	bl	#0x4001f1
+0x00400373:	add	sp, #0x14
+0x00400375:	pop	{r4, r5, pc}
+0x00400377:	mov.w	r0, #-1
+0x0040037b:	bx	lr
 
-00000380 <crypto_secretbox_xchacha20poly1305_noncebytes>:
- 380:	2018      	movs	r0, #24
- 382:	4770      	bx	lr
+Function crypto_secretbox_xchacha20poly1305_keybytes @ 0x0040037d
+0x0040037d:	movs	r0, #0x20
+0x0040037f:	bx	lr
 
-00000384 <crypto_secretbox_xchacha20poly1305_macbytes>:
- 384:	2010      	movs	r0, #16
- 386:	4770      	bx	lr
+Function crypto_secretbox_xchacha20poly1305_noncebytes @ 0x00400381
+0x00400381:	movs	r0, #0x18
+0x00400383:	bx	lr
 
-00000388 <crypto_secretbox_xchacha20poly1305_messagebytes_max>:
- 388:	f06f 0010 	mvn.w	r0, #16
- 38c:	4770      	bx	lr
- 38e:	bf00      	nop
+Function crypto_secretbox_xchacha20poly1305_macbytes @ 0x00400385
+0x00400385:	movs	r0, #0x10
+0x00400387:	bx	lr
+
+Function crypto_secretbox_xchacha20poly1305_messagebytes_max @ 0x00400389
+0x00400389:	mvn	r0, #0x10
+0x0040038d:	bx	lr
+
+Function sub_40038f @ 0x0040038f
+0x0040038f:	nop	
+
+Function crypto_core_hchacha20 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function memmove @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function memset @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function memcpy @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function crypto_stream_chacha20_xor @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_init @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function sodium_memzero @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function crypto_stream_chacha20_xor_ic @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_update @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_final @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_verify @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

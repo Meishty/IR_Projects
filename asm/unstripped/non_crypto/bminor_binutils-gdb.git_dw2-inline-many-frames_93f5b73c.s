@@ -1,76 +1,72 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dw2-inline-many-frames_93f5b73c.o:     file format elf32-littlearm
+Function kkk_label @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r6, r6
+0x0040000b:	movs	r0, r0
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x400001
 
-00000000 <kkk>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <kkk+0x8>)
-   2:	447b      	add	r3, pc
-   4:	6818      	ldr	r0, [r3, #0]
-   6:	4770      	bx	lr
-   8:	00000002 	.word	0x00000002
+Function jjj @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x400001
 
-0000000c <jjj>:
-   c:	b508      	push	{r3, lr}
+Function sub_400013 @ 0x00400013
+0x00400013:	adds	r0, #1
+0x00400015:	pop	{r3, pc}
 
-0000000e <jjj_label>:
-   e:	f7ff fffe 	bl	0 <kkk>
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	push	{r3, lr}
+0x0040001b:	bl	#0x40000d
 
-00000012 <jjj_label2>:
-  12:	3001      	adds	r0, #1
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
+Function fff @ 0x00400019
+0x00400019:	push	{r3, lr}
+0x0040001b:	bl	#0x40000d
 
-00000018 <fff>:
-  18:	b508      	push	{r3, lr}
+Function sub_40001f @ 0x0040001f
+0x0040001f:	adds	r0, #4
+0x00400021:	pop	{r3, pc}
 
-0000001a <fff_label>:
-  1a:	f7ff fffe 	bl	c <jjj>
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x400019
 
-0000001e <fff_label2>:
-  1e:	3004      	adds	r0, #4
-  20:	bd08      	pop	{r3, pc}
-  22:	bf00      	nop
+Function eee @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x400019
 
-00000024 <eee>:
-  24:	b508      	push	{r3, lr}
+Function sub_40002b @ 0x0040002b
+0x0040002b:	adds	r0, #1
+0x0040002d:	pop	{r3, pc}
 
-00000026 <eee_label>:
-  26:	f7ff fffe 	bl	18 <fff>
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	push	{r3, lr}
+0x00400033:	bl	#0x400025
 
-0000002a <eee_label2>:
-  2a:	3001      	adds	r0, #1
-  2c:	bd08      	pop	{r3, pc}
-  2e:	bf00      	nop
+Function ddd @ 0x00400031
+0x00400031:	push	{r3, lr}
+0x00400033:	bl	#0x400025
+0x00400037:	adds	r0, #1
+0x00400039:	pop	{r3, pc}
 
-00000030 <ddd>:
-  30:	b508      	push	{r3, lr}
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
 
-00000032 <ddd_label>:
-  32:	f7ff fffe 	bl	24 <eee>
+Function main @ 0x00400041
+0x00400041:	push	{r3, lr}
+0x00400043:	ldr	r3, [pc, #0x10]
+0x00400045:	movs	r2, #0
+0x00400047:	add	r3, pc
+0x00400049:	str	r2, [r3]
+0x0040004b:	bl	#0x400031
+0x0040004f:	adds	r0, #4
+0x00400051:	pop	{r3, pc}
 
-00000036 <ddd_label2>:
-  36:	3001      	adds	r0, #1
-  38:	bd08      	pop	{r3, pc}
-  3a:	bf00      	nop
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-
-00000002 <main_label>:
-   2:	4b04      	ldr	r3, [pc, #16]	; (14 <main_label3+0x6>)
-   4:	2200      	movs	r2, #0
-   6:	447b      	add	r3, pc
-   8:	601a      	str	r2, [r3, #0]
-
-0000000a <aaa_label>:
-   a:	f7ff fffe 	bl	30 <ddd>
-
-0000000e <main_label3>:
-   e:	3004      	adds	r0, #4
-  10:	bd08      	pop	{r3, pc}
-  12:	bf00      	nop
-  14:	0000000a 	.word	0x0000000a
+Function sub_400053 @ 0x00400053

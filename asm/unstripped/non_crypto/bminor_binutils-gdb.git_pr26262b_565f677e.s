@@ -1,23 +1,25 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr26262b_565f677e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bmi	#0x512c14
+0x00400004:	ldmpl	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	movwlo	r6, #0x1813
+0x00400008:	movwlo	r6, #0x1813
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bx	lr
 
-Disassembly of section .text:
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r0, r1
+0x00400013:	movs	r0, r0
+0x00400015:	movs	r0, r0
+0x00400017:	movs	r0, r0
 
-00000000 <foo>:
-   0:	4b03      	ldr	r3, [pc, #12]	; (10 <foo+0x10>)
-   2:	4a04      	ldr	r2, [pc, #16]	; (14 <foo+0x14>)
-   4:	447b      	add	r3, pc
-   6:	589a      	ldr	r2, [r3, r2]
-   8:	6813      	ldr	r3, [r2, #0]
-   a:	3301      	adds	r3, #1
-   c:	6013      	str	r3, [r2, #0]
-   e:	4770      	bx	lr
-  10:	00000008 	.word	0x00000008
-  14:	00000000 	.word	0x00000000
+Function bar @ 0x00400019
+0x00400019:	push	{r3, lr}
+0x0040001b:	bl	#0x500001
 
-Disassembly of section .text.unlikely:
-
-00000000 <bar>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <abort>
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

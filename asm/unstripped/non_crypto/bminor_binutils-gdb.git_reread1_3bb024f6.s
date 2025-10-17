@@ -1,29 +1,29 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_reread1_3bb024f6.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	bllo	#0x45a058
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r2, r3
+0x0040000f:	movs	r0, r0
+0x00400011:	ldr	r2, [pc, #8]
+0x00400013:	add	r2, pc
+0x00400015:	ldr	r3, [r2]
+0x00400017:	adds	r3, #1
+0x00400019:	str	r3, [r2]
+0x0040001b:	bx	lr
 
-00000000 <bar>:
-   0:	4a02      	ldr	r2, [pc, #8]	; (c <bar+0xc>)
-   2:	447a      	add	r2, pc
-   4:	6813      	ldr	r3, [r2, #0]
-   6:	3b01      	subs	r3, #1
-   8:	6013      	str	r3, [r2, #0]
-   a:	4770      	bx	lr
-   c:	00000006 	.word	0x00000006
+Function foo @ 0x00400011
+0x00400011:	ldr	r2, [pc, #8]
+0x00400013:	add	r2, pc
+0x00400015:	ldr	r3, [r2]
+0x00400017:	adds	r3, #1
+0x00400019:	str	r3, [r2]
+0x0040001b:	bx	lr
 
-00000010 <foo>:
-  10:	4a02      	ldr	r2, [pc, #8]	; (1c <foo+0xc>)
-  12:	447a      	add	r2, pc
-  14:	6813      	ldr	r3, [r2, #0]
-  16:	3301      	adds	r3, #1
-  18:	6013      	str	r3, [r2, #0]
-  1a:	4770      	bx	lr
-  1c:	00000006 	.word	0x00000006
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400025
+0x00400025:	movs	r0, #0
+0x00400027:	bx	lr

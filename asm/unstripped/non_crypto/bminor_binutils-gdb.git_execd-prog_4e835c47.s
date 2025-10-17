@@ -1,31 +1,46 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_execd-prog_4e835c47.o:     file format elf32-littlearm
+Function main @ 0x00400059
+0x00400059:	push	{r3, r4, r5, lr}
+0x0040005b:	mov	r4, r0
+0x0040005d:	ldr	r0, [pc, #0x2c]
+0x0040005f:	mov	r5, r1
+0x00400061:	add	r0, pc
+0x00400063:	bl	#0x500001
+0x00400067:	cmp	r4, #2
+0x00400069:	bne	#0x40007b
+0x0040006b:	ldr	r1, [pc, #0x24]
+0x0040006d:	movs	r0, #1
+0x0040006f:	ldr	r2, [r5, #4]
+0x00400071:	add	r1, pc
+0x00400073:	bl	#0x50000d
+0x00400077:	movs	r0, #0
+0x00400079:	pop	{r3, r4, r5, pc}
+0x0040007b:	ldr	r0, [pc, #0x18]
+0x0040007d:	add	r0, pc
+0x0040007f:	bl	#0x500001
+0x00400083:	mov.w	r0, #-1
+0x00400087:	bl	#0x500019
 
+Function sub_40008b @ 0x0040008b
 
-Disassembly of section .text.startup:
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	4604      	mov	r4, r0
-   4:	480b      	ldr	r0, [pc, #44]	; (34 <main+0x34>)
-   6:	460d      	mov	r5, r1
-   8:	4478      	add	r0, pc
-   a:	f7ff fffe 	bl	0 <puts>
-   e:	2c02      	cmp	r4, #2
-  10:	d107      	bne.n	22 <main+0x22>
-  12:	4909      	ldr	r1, [pc, #36]	; (38 <main+0x38>)
-  14:	2001      	movs	r0, #1
-  16:	686a      	ldr	r2, [r5, #4]
-  18:	4479      	add	r1, pc
-  1a:	f7ff fffe 	bl	0 <__printf_chk>
-  1e:	2000      	movs	r0, #0
-  20:	bd38      	pop	{r3, r4, r5, pc}
-  22:	4806      	ldr	r0, [pc, #24]	; (3c <main+0x3c>)
-  24:	4478      	add	r0, pc
-  26:	f7ff fffe 	bl	0 <puts>
-  2a:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
-  2e:	f7ff fffe 	bl	0 <exit>
-  32:	bf00      	nop
-  34:	00000028 	.word	0x00000028
-  38:	0000001c 	.word	0x0000001c
-  3c:	00000014 	.word	0x00000014
+Function __printf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function exit @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

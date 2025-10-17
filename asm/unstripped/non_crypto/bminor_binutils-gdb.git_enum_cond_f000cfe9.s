@@ -1,28 +1,23 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_enum_cond_f000cfe9.o:     file format elf32-littlearm
+Function _start_1 @ 0x00400000
+0x00400000:	blge	#0x52c218
+0x00400004:	andeq	lr, r7, r3, lsl #18
+0x00400008:	andlt	r4, r4, r8, lsl #12
+0x0040000c:	svclt	#0x4770
 
+Function exit @ 0x00400011
+0x00400011:	b	#0x400011
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	b	#0x400015
 
-00000000 <call_me>:
-   0:	b084      	sub	sp, #16
-   2:	ab04      	add	r3, sp, #16
-   4:	e903 0007 	stmdb	r3, {r0, r1, r2}
-   8:	4608      	mov	r0, r1
-   a:	b004      	add	sp, #16
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function _start @ 0x00400015
+0x00400015:	b	#0x400015
 
-00000010 <exit>:
-  10:	e7fe      	b.n	10 <exit>
-  12:	bf00      	nop
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
 
-00000014 <_start>:
-  14:	e7fe      	b.n	14 <_start>
-  16:	bf00      	nop
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400019
+0x00400019:	movs	r0, #0
+0x0040001b:	bx	lr

@@ -1,14 +1,11 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_py-missing-objfile-lib_6bf027b4.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	r4, r0, r2, lsl #22
+0x00400004:	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <foo>:
-   0:	4b02      	ldr	r3, [pc, #8]	; (c <foo+0xc>)
-   2:	2000      	movs	r0, #0
-   4:	447b      	add	r3, pc
-   6:	681a      	ldr	r2, [r3, #0]
-   8:	685b      	ldr	r3, [r3, #4]
-   a:	4770      	bx	lr
-   c:	00000004 	.word	0x00000004
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r0, r1
+0x0040000f:	movs	r0, r0

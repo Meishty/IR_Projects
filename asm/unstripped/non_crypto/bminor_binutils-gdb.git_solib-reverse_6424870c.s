@@ -1,32 +1,37 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_solib-reverse_6424870c.o:     file format elf32-littlearm
+Function main @ 0x00400029
+0x00400029:	ldr	r0, [pc, #0x34]
+0x0040002b:	push	{r3, lr}
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x500001
+0x00400033:	movs	r0, #0
+0x00400035:	bl	#0x50000d
+0x00400039:	movs	r0, #0xc
+0x0040003b:	bl	#0x50000d
+0x0040003f:	movs	r0, #0x11
+0x00400041:	bl	#0x50000d
+0x00400045:	ldr	r0, [pc, #0x1c]
+0x00400047:	add	r0, pc
+0x00400049:	bl	#0x500001
+0x0040004d:	ldr	r0, [pc, #0x18]
+0x0040004f:	add	r0, pc
+0x00400051:	bl	#0x500001
+0x00400055:	ldr	r0, [pc, #0x14]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x500001
+0x0040005d:	movs	r0, #0
+0x0040005f:	pop	{r3, pc}
 
+Function shr1 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	480d      	ldr	r0, [pc, #52]	; (38 <main+0x38>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <shr1>
-   a:	2000      	movs	r0, #0
-   c:	f7ff fffe 	bl	0 <shr2>
-  10:	200c      	movs	r0, #12
-  12:	f7ff fffe 	bl	0 <shr2>
-  16:	2011      	movs	r0, #17
-  18:	f7ff fffe 	bl	0 <shr2>
-  1c:	4807      	ldr	r0, [pc, #28]	; (3c <main+0x3c>)
-  1e:	4478      	add	r0, pc
-  20:	f7ff fffe 	bl	0 <shr1>
-  24:	4806      	ldr	r0, [pc, #24]	; (40 <main+0x40>)
-  26:	4478      	add	r0, pc
-  28:	f7ff fffe 	bl	0 <shr1>
-  2c:	4805      	ldr	r0, [pc, #20]	; (44 <main+0x44>)
-  2e:	4478      	add	r0, pc
-  30:	f7ff fffe 	bl	0 <shr1>
-  34:	2000      	movs	r0, #0
-  36:	bd08      	pop	{r3, pc}
-  38:	00000030 	.word	0x00000030
-  3c:	0000001a 	.word	0x0000001a
-  40:	00000016 	.word	0x00000016
-  44:	00000012 	.word	0x00000012
+Function shr2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

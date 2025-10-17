@@ -1,39 +1,37 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_rawcaudio_d8d2dcd9_stripped.o:     file format elf32-littlearm
+Function sub_4009f0 @ 0x004009f0
 
+Function sub_400a00 @ 0x00400a00
+0x00400a00:	andsle	lr, fp, sp
+0x00400a04:	bicsvc	pc, r4, r4, lsl #4
 
-Disassembly of section .text.startup:
+Function sub_400a04 @ 0x00400a04
+0x00400a04:	bicsvc	pc, r4, r4, lsl #4
+0x00400a08:	strtmi	r1, [r0], -sl, rrx
 
-00000000 <.text.startup>:
-   0:	4c1ab5f0 	cfldr32mi	mvfx11, [sl], {240}	; 0xf0
-   4:	b0854f1a 	addlt	r4, r5, sl, lsl pc
-   8:	447f447c 	ldrbtmi	r4, [pc], #-1148	; 0x10
-   c:	66faf504 	ldrbtvs	pc, [sl], r4, lsl #10	; <UNPREDICTABLE>
-  10:	d01be00d 	andsle	lr, fp, sp
-  14:	71d4f204 	bicsvc	pc, r4, r4, lsl #4
-  18:	4620106a 	strtmi	r1, [r0], -sl, rrx
-  1c:	91034633 	tstls	r3, r3, lsr r6
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	10aa9903 	adcne	r9, sl, r3, lsl #18
-  28:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  2c:	f44ffffe 			; <UNDEFINED> instruction: 0xf44ffffe
-  30:	462162fa 			; <UNDEFINED> instruction: 0x462162fa
-  34:	f7ff2000 			; <UNDEFINED> instruction: 0xf7ff2000
-  38:	1e05fffe 	mcrne	15, 0, pc, cr5, cr14, {7}	; <UNPREDICTABLE>
-  3c:	480ddae9 	stmdami	sp, {r0, r3, r5, r6, r7, r9, fp, ip, lr, pc}
-  40:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  44:	2001fffe 	strdcs	pc, [r1], -lr
-  48:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  4c:	f8944a0a 			; <UNDEFINED> instruction: 0xf8944a0a
-  50:	f9b407d2 			; <UNDEFINED> instruction: 0xf9b407d2
-  54:	58b937d0 	ldmpl	r9!, {r4, r6, r7, r8, r9, sl, ip, sp}
-  58:	4a089000 	bmi	0x224060
-  5c:	21016808 	tstcs	r1, r8, lsl #16
-  60:	f7ff447a 			; <UNDEFINED> instruction: 0xf7ff447a
-  64:	4628fffe 	qsub8mi	pc, r8, lr	; <UNPREDICTABLE>
-  68:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  6c:	00000060 	andeq	r0, r0, r0, rrx
-  70:	00000062 	andeq	r0, r0, r2, rrx
-  74:	00000030 	andeq	r0, r0, r0, lsr r0
-  78:	00000000 	andeq	r0, r0, r0
-  7c:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_400a0f @ 0x00400a0f
+0x00400a0f:	str	r1, [sp, #0xc]
+0x00400a11:	bl	#0x400a11
+0x00400a15:	ldr	r1, [sp, #0xc]
+0x00400a17:	asrs	r2, r5, #2
+0x00400a19:	movs	r0, #1
+0x00400a1b:	bl	#0x400a1b
+
+Function sub_400a13 @ 0x00400a13
+0x00400a13:	vtbl.8	d25, {d14, d15}, d3
+0x00400a17:	asrs	r2, r5, #2
+0x00400a19:	movs	r0, #1
+0x00400a1b:	bl	#0x400a1b
+
+Function sub_400a1b @ 0x00400a1b
+0x00400a1b:	bl	#0x400a1b
+
+Function sub_400a29 @ 0x00400a29
+
+Function sub_400a59 @ 0x00400a59
+0x00400a59:	bl	#0x400a59
+
+Function sub_400a5b @ 0x00400a5b
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

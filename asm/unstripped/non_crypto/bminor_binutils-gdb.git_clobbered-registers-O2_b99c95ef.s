@@ -1,39 +1,60 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_clobbered-registers-O2_b99c95ef.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x852848
+0x00400004:	ldrbtmi	fp, [sl], #-0x500
+0x00400008:	ldmpl	r3, {r0, r2, r7, ip, sp, pc} ^
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	add	r1, sp, #8
+0x0040000f:	add	r0, sp, #4
+0x00400011:	movs	r2, #0xd
+0x00400013:	ldr	r3, [r3]
+0x00400015:	str	r3, [sp, #0xc]
+0x00400017:	mov.w	r3, #0
+0x0040001b:	movs	r3, #0xe
+0x0040001d:	str	r2, [sp, #4]
+0x0040001f:	str	r3, [sp, #8]
+0x00400021:	bl	#0x500001
+0x00400025:	ldr	r2, [pc, #0x24]
+0x00400027:	ldr	r3, [pc, #0x20]
+0x00400029:	add	r2, pc
+0x0040002b:	ldr	r3, [r2, r3]
+0x0040002d:	ldr	r2, [r3]
+0x0040002f:	ldr	r3, [sp, #0xc]
+0x00400031:	eors	r2, r3
+0x00400033:	mov.w	r3, #0
+0x00400037:	bne	#0x40003f
+0x00400039:	add	sp, #0x14
+0x0040003b:	ldr	pc, [sp], #4
+0x0040003f:	bl	#0x50000d
 
-Disassembly of section .text.startup:
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	movs	r2, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r4
+0x0040004f:	movs	r0, r0
 
-00000000 <main>:
-   0:	4a10      	ldr	r2, [pc, #64]	; (44 <main+0x44>)
-   2:	4b11      	ldr	r3, [pc, #68]	; (48 <main+0x48>)
-   4:	b500      	push	{lr}
-   6:	447a      	add	r2, pc
-   8:	b085      	sub	sp, #20
-   a:	58d3      	ldr	r3, [r2, r3]
-   c:	a902      	add	r1, sp, #8
-   e:	a801      	add	r0, sp, #4
-  10:	220d      	movs	r2, #13
-  12:	681b      	ldr	r3, [r3, #0]
-  14:	9303      	str	r3, [sp, #12]
-  16:	f04f 0300 	mov.w	r3, #0
-  1a:	230e      	movs	r3, #14
-  1c:	9201      	str	r2, [sp, #4]
-  1e:	9302      	str	r3, [sp, #8]
-  20:	f7ff fffe 	bl	0 <gen_movsd>
-  24:	4a09      	ldr	r2, [pc, #36]	; (4c <main+0x4c>)
-  26:	4b08      	ldr	r3, [pc, #32]	; (48 <main+0x48>)
-  28:	447a      	add	r2, pc
-  2a:	58d3      	ldr	r3, [r2, r3]
-  2c:	681a      	ldr	r2, [r3, #0]
-  2e:	9b03      	ldr	r3, [sp, #12]
-  30:	405a      	eors	r2, r3
-  32:	f04f 0300 	mov.w	r3, #0
-  36:	d102      	bne.n	3e <main+0x3e>
-  38:	b005      	add	sp, #20
-  3a:	f85d fb04 	ldr.w	pc, [sp], #4
-  3e:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  42:	bf00      	nop
-  44:	0000003a 	.word	0x0000003a
-  48:	00000000 	.word	0x00000000
-  4c:	00000020 	.word	0x00000020
+Function sub_400045 @ 0x00400045
+0x00400045:	movs	r2, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r4
+0x0040004f:	movs	r0, r0
+
+Function gen_movsd @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

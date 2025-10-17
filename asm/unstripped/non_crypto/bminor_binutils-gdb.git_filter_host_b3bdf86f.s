@@ -1,23 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_filter_host_b3bdf86f.o:     file format elf32-littlearm
+Function filter_filename @ 0x00400001
+0x00400001:	mov	r2, r0
+0x00400003:	ldrb	r3, [r2], #1
+0x00400007:	cmp	r3, #0x3a
+0x00400009:	it	ne
+0x0040000b:	cmpne	r3, #0
+0x0040000d:	beq	#0x400021
+0x0040000f:	cmp	r3, #0x2f
+0x00400011:	it	eq
+0x00400013:	moveq	r0, r2
+0x00400015:	ldrb	r3, [r2], #1
+0x00400019:	cmp	r3, #0x3a
+0x0040001b:	it	ne
+0x0040001d:	cmpne	r3, #0
+0x0040001f:	bne	#0x40000f
+0x00400021:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <filter_filename>:
-   0:	4602      	mov	r2, r0
-   2:	f812 3b01 	ldrb.w	r3, [r2], #1
-   6:	2b3a      	cmp	r3, #58	; 0x3a
-   8:	bf18      	it	ne
-   a:	2b00      	cmpne	r3, #0
-   c:	d008      	beq.n	20 <filter_filename+0x20>
-   e:	2b2f      	cmp	r3, #47	; 0x2f
-  10:	bf08      	it	eq
-  12:	4610      	moveq	r0, r2
-  14:	f812 3b01 	ldrb.w	r3, [r2], #1
-  18:	2b3a      	cmp	r3, #58	; 0x3a
-  1a:	bf18      	it	ne
-  1c:	2b00      	cmpne	r3, #0
-  1e:	d1f6      	bne.n	e <filter_filename+0xe>
-  20:	4770      	bx	lr
-  22:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	

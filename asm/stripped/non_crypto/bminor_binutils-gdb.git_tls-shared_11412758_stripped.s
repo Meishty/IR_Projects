@@ -1,12 +1,7 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_tls-shared_11412758_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	4a02fffe 	bmi	0xc0004
-   8:	3f70ee1d 	svccc	0x0070ee1d
-   c:	bd0858d0 	stclt	8, cr5, [r8, #-832]	; 0xfffffcc0
-  10:	00000000 	andeq	r0, r0, r0
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	ldr	r2, [pc, #8]
+0x00400009:	mrc	p15, #0, r3, c13, c0, #3
+0x0040000d:	ldr	r0, [r2, r3]
+0x0040000f:	pop	{r3, pc}

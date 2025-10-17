@@ -1,20 +1,32 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_attach-wait-input_b29179c9_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	push	{r3, r4, r5, lr}
+0x0040000b:	ldr	r5, [pc, #0x2c]
+0x0040000d:	bl	#0x40000d
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bl	#0x40000d
+0x00400011:	add	r5, pc
+0x00400013:	ldr	r4, [r5, #4]
+0x00400015:	str	r0, [r5]
+0x00400017:	cbnz	r4, #0x400035
+0x00400019:	movs	r0, #1
+0x0040001b:	add	r4, r0
+0x0040001d:	bl	#0x40001d
+0x00400019:	movs	r0, #1
+0x0040001b:	add	r4, r0
+0x0040001d:	bl	#0x40001d
+0x00400035:	movs	r0, #0
+0x00400037:	pop	{r3, r4, r5, pc}
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	4d0bb538 	cfstr32mi	mvfx11, [fp, #-224]	; 0xffffff20
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	686c447d 	stmdavs	ip!, {r0, r2, r3, r4, r5, r6, sl, lr}^
-   c:	b96c6028 	stmdblt	ip!, {r3, r5, sp, lr}^
-  10:	44042001 	strmi	r2, [r4], #-1
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	f1b4686a 			; <UNDEFINED> instruction: 0xf1b4686a
-  1c:	bf180364 	svclt	0x00180364
-  20:	2a002301 	bcs	0x8c2c
-  24:	2300bf18 	movwcs	fp, #3864	; 0xf18
-  28:	d1f12b00 	mvnsle	r2, r0, lsl #22
-  2c:	bd382000 	ldclt	0, cr2, [r8, #-0]
-  30:	00000024 	andeq	r0, r0, r4, lsr #32
+Function sub_40001d @ 0x0040001d
+0x0040001d:	bl	#0x40001d
+0x00400021:	ldr	r2, [r5, #4]
+0x00400023:	subs.w	r3, r4, #0x64
+0x00400027:	it	ne
+0x00400029:	movne	r3, #1
+0x0040002b:	cmp	r2, #0
+0x0040002d:	it	ne
+0x0040002f:	movne	r3, #0
+0x00400031:	cmp	r3, #0
+0x00400033:	bne	#0x400019

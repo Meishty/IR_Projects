@@ -1,20 +1,24 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_watchpoint-running_41d5c0bd_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	push	{r3, r4, r5, lr}
+0x0040000b:	movw	r5, #0x86a0
+0x0040000f:	movt	r5, #1
+0x00400013:	ldr	r4, [pc, #0x24]
+0x00400015:	add	r4, pc
+0x00400017:	mov	r0, r5
+0x00400019:	bl	#0x400019
+0x00400017:	mov	r0, r5
+0x00400019:	bl	#0x400019
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f248b538 	vqrshl.s8	d27, d24, d8
-   4:	f2c065a0 	vabal.s8	q11, d16, d16
-   8:	4c090501 	cfstr32mi	mvfx0, [r9], {1}
-   c:	4628447c 			; <UNDEFINED> instruction: 0x4628447c
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	3200e9d4 	andcc	lr, r0, #212, 18	; 0x350000
-  18:	60233301 	eorvs	r3, r3, r1, lsl #6
-  1c:	0200f142 	andeq	pc, r0, #-2147483632	; 0x80000010
-  20:	7f96f5b3 	svcvc	0x0096f5b3
-  24:	f1726062 			; <UNDEFINED> instruction: 0xf1726062
-  28:	d3f00200 	mvnsle	r0, #0, 4
-  2c:	bd382001 	ldclt	0, cr2, [r8, #-4]!
-  30:	00000020 	andeq	r0, r0, r0, lsr #32
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	ldrd	r3, r2, [r4]
+0x00400021:	adds	r3, #1
+0x00400023:	str	r3, [r4]
+0x00400025:	adc	r2, r2, #0
+0x00400029:	cmp.w	r3, #0x12c
+0x0040002d:	str	r2, [r4, #4]
+0x0040002f:	sbcs	r2, r2, #0
+0x00400033:	blo	#0x400017
+0x00400035:	movs	r0, #1
+0x00400037:	pop	{r3, r4, r5, pc}

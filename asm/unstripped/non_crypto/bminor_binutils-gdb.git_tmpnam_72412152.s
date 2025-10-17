@@ -1,52 +1,63 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_tmpnam_72412152.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	lr, [r0, sp, lsr #18]!
+0x00400004:	addlt	r4, r4, r6, lsl #12
 
+Function sub_40000b @ 0x0040000b
+0x00400011:	ldr.w	sb, [pc, #0x50]
+0x00400015:	ldr	r5, [pc, #0x50]
+0x00400017:	ldr.w	r8, [pc, #0x54]
+0x0040001b:	add	sb, pc
+0x0040001d:	add	r5, pc
+0x0040001f:	add	r8, pc
+0x00400021:	b	#0x40002d
+0x00400023:	ldr	r3, [r5, #0x14]
+0x00400025:	adds	r3, #1
+0x00400027:	str	r3, [r5, #0x14]
+0x00400029:	bl	#0x50000d
+0x0040002d:	ldr	r4, [pc, #0x40]
+0x0040002f:	movs	r1, #1
+0x00400031:	ldr	r7, [r5, #0x14]
+0x00400033:	mov	r3, sb
+0x00400035:	add	r4, pc
+0x00400037:	mov.w	r2, #-1
+0x0040003b:	mov	r0, r6
+0x0040003d:	strd	sl, r7, [sp, #8]
+0x00400041:	strd	r4, r8, [sp]
+0x00400045:	bl	#0x500019
+0x00400049:	ldr	r1, [pc, #0x28]
+0x0040004b:	mov	r0, r6
+0x0040004d:	add	r1, pc
+0x0040004f:	bl	#0x500025
+0x00400053:	cmp	r0, #0
+0x00400055:	bne	#0x400023
+0x00400057:	mov	r0, r6
+0x00400059:	add	sp, #0x10
+0x0040005b:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
 
-Disassembly of section .text:
+Function sub_40005f @ 0x0040005f
+0x0040005f:	ldr	r6, [pc, #0x18]
+0x00400061:	add	r6, pc
+0x00400063:	b	#0x400011
 
-00000000 <tmpnam>:
-   0:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
-   4:	4606      	mov	r6, r0
-   6:	b084      	sub	sp, #16
-   8:	f7ff fffe 	bl	0 <getpid>
-   c:	4682      	mov	sl, r0
-   e:	b336      	cbz	r6, 5e <tmpnam+0x5e>
-  10:	f8df 9050 	ldr.w	r9, [pc, #80]	; 64 <tmpnam+0x64>
-  14:	4d14      	ldr	r5, [pc, #80]	; (68 <tmpnam+0x68>)
-  16:	f8df 8054 	ldr.w	r8, [pc, #84]	; 6c <tmpnam+0x6c>
-  1a:	44f9      	add	r9, pc
-  1c:	447d      	add	r5, pc
-  1e:	44f8      	add	r8, pc
-  20:	e004      	b.n	2c <tmpnam+0x2c>
-  22:	696b      	ldr	r3, [r5, #20]
-  24:	3301      	adds	r3, #1
-  26:	616b      	str	r3, [r5, #20]
-  28:	f7ff fffe 	bl	0 <fclose>
-  2c:	4c10      	ldr	r4, [pc, #64]	; (70 <tmpnam+0x70>)
-  2e:	2101      	movs	r1, #1
-  30:	696f      	ldr	r7, [r5, #20]
-  32:	464b      	mov	r3, r9
-  34:	447c      	add	r4, pc
-  36:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
-  3a:	4630      	mov	r0, r6
-  3c:	e9cd a702 	strd	sl, r7, [sp, #8]
-  40:	e9cd 4800 	strd	r4, r8, [sp]
-  44:	f7ff fffe 	bl	0 <__sprintf_chk>
-  48:	490a      	ldr	r1, [pc, #40]	; (74 <tmpnam+0x74>)
-  4a:	4630      	mov	r0, r6
-  4c:	4479      	add	r1, pc
-  4e:	f7ff fffe 	bl	0 <fopen>
-  52:	2800      	cmp	r0, #0
-  54:	d1e5      	bne.n	22 <tmpnam+0x22>
-  56:	4630      	mov	r0, r6
-  58:	b004      	add	sp, #16
-  5a:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
-  5e:	4e06      	ldr	r6, [pc, #24]	; (78 <tmpnam+0x78>)
-  60:	447e      	add	r6, pc
-  62:	e7d5      	b.n	10 <tmpnam+0x10>
-  64:	00000046 	.word	0x00000046
-  68:	00000048 	.word	0x00000048
-  6c:	0000004a 	.word	0x0000004a
-  70:	00000038 	.word	0x00000038
-  74:	00000024 	.word	0x00000024
-  78:	00000014 	.word	0x00000014
+Function fclose @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __sprintf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function fopen @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

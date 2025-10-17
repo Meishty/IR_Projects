@@ -1,60 +1,92 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_zip_59420a52.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdahs	r4, {r0, r4, r8, sb, fp, lr}
+0x00400004:	ldrbtmi	r4, [fp], #-0xa11
+0x00400008:	ldmpl	fp, {r4, r8, sl, ip, sp, pc}
+0x00400004:	ldrbtmi	r4, [fp], #-0xa11
+0x00400008:	ldmpl	fp, {r4, r8, sl, ip, sp, pc}
+0x0040000c:	andle	r6, sp, ip, lsl r8
+0x00400010:	ldrbtmi	r4, [r8], #-0x80f
 
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r1, #1
+0x0040001b:	mov	r2, r0
+0x0040001d:	mov	r0, r4
+0x0040001f:	bl	#0x50000d
+0x00400023:	movs	r0, #0x17
+0x00400025:	pop.w	{r4, lr}
+0x00400029:	b.w	#0x500019
 
-Disassembly of section .text:
+Function sub_40002d @ 0x0040002d
+0x0040002d:	ldr	r0, [pc, #0x24]
+0x0040002f:	add	r0, pc
+0x00400031:	bl	#0x500001
+0x00400035:	movs	r1, #1
+0x00400037:	mov	r2, r0
+0x00400039:	mov	r0, r4
+0x0040003b:	bl	#0x50000d
+0x0040003f:	movs	r0, #7
+0x00400041:	pop.w	{r4, lr}
+0x00400045:	b.w	#0x500019
 
-00000000 <err>:
-   0:	4b11      	ldr	r3, [pc, #68]	; (48 <err+0x48>)
-   2:	2804      	cmp	r0, #4
-   4:	4a11      	ldr	r2, [pc, #68]	; (4c <err+0x4c>)
-   6:	447b      	add	r3, pc
-   8:	b510      	push	{r4, lr}
-   a:	589b      	ldr	r3, [r3, r2]
-   c:	681c      	ldr	r4, [r3, #0]
-   e:	d00d      	beq.n	2c <err+0x2c>
-  10:	480f      	ldr	r0, [pc, #60]	; (50 <err+0x50>)
-  12:	4478      	add	r0, pc
-  14:	f7ff fffe 	bl	0 <LANG>
-  18:	2101      	movs	r1, #1
-  1a:	4602      	mov	r2, r0
-  1c:	4620      	mov	r0, r4
-  1e:	f7ff fffe 	bl	0 <__fprintf_chk>
-  22:	2017      	movs	r0, #23
-  24:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  28:	f7ff bffe 	b.w	0 <exitPGP>
-  2c:	4809      	ldr	r0, [pc, #36]	; (54 <err+0x54>)
-  2e:	4478      	add	r0, pc
-  30:	f7ff fffe 	bl	0 <LANG>
-  34:	2101      	movs	r1, #1
-  36:	4602      	mov	r2, r0
-  38:	4620      	mov	r0, r4
-  3a:	f7ff fffe 	bl	0 <__fprintf_chk>
-  3e:	2007      	movs	r0, #7
-  40:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  44:	f7ff bffe 	b.w	0 <exitPGP>
-  48:	0000003e 	.word	0x0000003e
-  4c:	00000000 	.word	0x00000000
-  50:	0000003a 	.word	0x0000003a
-  54:	00000022 	.word	0x00000022
+Function sub_400049 @ 0x00400049
+0x00400049:	movs	r6, r7
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	lsls	r6, r0, #2
+0x00400053:	movs	r0, r0
+0x00400055:	lsls	r2, r3, #1
+0x00400057:	movs	r0, r0
+0x00400059:	ldr	r3, [pc, #0x24]
+0x0040005b:	ldr	r2, [pc, #0x28]
+0x0040005d:	add	r3, pc
+0x0040005f:	push	{r4, lr}
+0x00400061:	ldr	r0, [pc, #0x24]
+0x00400063:	ldr	r3, [r3, r2]
+0x00400065:	add	r0, pc
+0x00400067:	ldr	r4, [r3]
+0x00400069:	bl	#0x500001
 
-00000058 <error>:
-  58:	4b09      	ldr	r3, [pc, #36]	; (80 <error+0x28>)
-  5a:	4a0a      	ldr	r2, [pc, #40]	; (84 <error+0x2c>)
-  5c:	447b      	add	r3, pc
-  5e:	b510      	push	{r4, lr}
-  60:	4809      	ldr	r0, [pc, #36]	; (88 <error+0x30>)
-  62:	589b      	ldr	r3, [r3, r2]
-  64:	4478      	add	r0, pc
-  66:	681c      	ldr	r4, [r3, #0]
-  68:	f7ff fffe 	bl	0 <LANG>
-  6c:	2101      	movs	r1, #1
-  6e:	4602      	mov	r2, r0
-  70:	4620      	mov	r0, r4
-  72:	f7ff fffe 	bl	0 <__fprintf_chk>
-  76:	2017      	movs	r0, #23
-  78:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  7c:	f7ff bffe 	b.w	0 <exitPGP>
-  80:	00000020 	.word	0x00000020
-  84:	00000000 	.word	0x00000000
-  88:	00000020 	.word	0x00000020
+Function error @ 0x00400059
+0x00400059:	ldr	r3, [pc, #0x24]
+0x0040005b:	ldr	r2, [pc, #0x28]
+0x0040005d:	add	r3, pc
+0x0040005f:	push	{r4, lr}
+0x00400061:	ldr	r0, [pc, #0x24]
+0x00400063:	ldr	r3, [r3, r2]
+0x00400065:	add	r0, pc
+0x00400067:	ldr	r4, [r3]
+0x00400069:	bl	#0x500001
+0x0040006d:	movs	r1, #1
+0x0040006f:	mov	r2, r0
+0x00400071:	mov	r0, r4
+0x00400073:	bl	#0x50000d
+0x00400077:	movs	r0, #0x17
+0x00400079:	pop.w	{r4, lr}
+0x0040007d:	b.w	#0x500019
+
+Function LANG @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __fprintf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function exitPGP @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

@@ -1,46 +1,57 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_basic-dap_f81442e8.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	movwlo	r6, #0x2813
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r4
+0x0040000f:	movs	r0, r0
+0x00400011:	bx	lr
 
-00000000 <function_breakpoint_here>:
-   0:	4a02      	ldr	r2, [pc, #8]	; (c <function_breakpoint_here+0xc>)
-   2:	447a      	add	r2, pc
-   4:	6813      	ldr	r3, [r2, #0]
-   6:	3302      	adds	r3, #2
-   8:	6013      	str	r3, [r2, #0]
-   a:	4770      	bx	lr
-   c:	00000006 	.word	0x00000006
+Function do_not_stop_here @ 0x00400011
+0x00400011:	bx	lr
 
-00000010 <do_not_stop_here>:
-  10:	4770      	bx	lr
-  12:	bf00      	nop
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	bx	lr
 
-00000014 <address_breakpoint_here>:
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function address_breakpoint_here @ 0x00400015
+0x00400015:	bx	lr
 
-00000018 <line_breakpoint_here>:
-  18:	4a03      	ldr	r2, [pc, #12]	; (28 <line_breakpoint_here+0x10>)
-  1a:	2000      	movs	r0, #0
-  1c:	447a      	add	r2, pc
-  1e:	6813      	ldr	r3, [r2, #0]
-  20:	3302      	adds	r3, #2
-  22:	6013      	str	r3, [r2, #0]
-  24:	4770      	bx	lr
-  26:	bf00      	nop
-  28:	00000008 	.word	0x00000008
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	ldr	r2, [pc, #0xc]
+0x0040001b:	movs	r0, #0
+0x0040001d:	add	r2, pc
+0x0040001f:	ldr	r3, [r2]
+0x00400021:	adds	r3, #2
+0x00400023:	str	r3, [r2]
+0x00400025:	bx	lr
 
-Disassembly of section .text.startup:
+Function line_breakpoint_here @ 0x00400019
+0x00400019:	ldr	r2, [pc, #0xc]
+0x0040001b:	movs	r0, #0
+0x0040001d:	add	r2, pc
+0x0040001f:	ldr	r3, [r2]
+0x00400021:	adds	r3, #2
+0x00400023:	str	r3, [r2]
+0x00400025:	bx	lr
 
-00000000 <main>:
-   0:	4a03      	ldr	r2, [pc, #12]	; (10 <main+0x10>)
-   2:	2000      	movs	r0, #0
-   4:	447a      	add	r2, pc
-   6:	6813      	ldr	r3, [r2, #0]
-   8:	3302      	adds	r3, #2
-   a:	6013      	str	r3, [r2, #0]
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-  10:	00000008 	.word	0x00000008
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r4, r1
+0x0040002b:	movs	r0, r0
+
+Function main @ 0x00400031
+0x00400031:	ldr	r2, [pc, #0xc]
+0x00400033:	movs	r0, #0
+0x00400035:	add	r2, pc
+0x00400037:	ldr	r3, [r2]
+0x00400039:	adds	r3, #2
+0x0040003b:	str	r3, [r2]
+0x0040003d:	bx	lr
+
+Function sub_40003f @ 0x0040003f

@@ -1,24 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_breakpoint-in-ro-region_d9b44e72.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b07      	ldr	r3, [pc, #28]	; (20 <main+0x20>)
-   2:	2000      	movs	r0, #0
-   4:	447b      	add	r3, pc
-   6:	6018      	str	r0, [r3, #0]
-   8:	6018      	str	r0, [r3, #0]
-   a:	6018      	str	r0, [r3, #0]
-   c:	6018      	str	r0, [r3, #0]
-   e:	6018      	str	r0, [r3, #0]
-  10:	6018      	str	r0, [r3, #0]
-  12:	6018      	str	r0, [r3, #0]
-  14:	6018      	str	r0, [r3, #0]
-  16:	6018      	str	r0, [r3, #0]
-  18:	6018      	str	r0, [r3, #0]
-  1a:	6018      	str	r0, [r3, #0]
-  1c:	6018      	str	r0, [r3, #0]
-  1e:	4770      	bx	lr
-  20:	00000018 	.word	0x00000018
+Function main @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0x1c]
+0x00400007:	movs	r0, #0
+0x00400009:	add	r3, pc
+0x0040000b:	str	r0, [r3]
+0x0040000d:	str	r0, [r3]
+0x0040000f:	str	r0, [r3]
+0x00400011:	str	r0, [r3]
+0x00400013:	str	r0, [r3]
+0x00400015:	str	r0, [r3]
+0x00400017:	str	r0, [r3]
+0x00400019:	str	r0, [r3]
+0x0040001b:	str	r0, [r3]
+0x0040001d:	str	r0, [r3]
+0x0040001f:	str	r0, [r3]
+0x00400021:	str	r0, [r3]
+0x00400023:	bx	lr

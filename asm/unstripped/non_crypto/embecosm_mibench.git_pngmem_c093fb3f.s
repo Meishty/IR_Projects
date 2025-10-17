@@ -1,129 +1,178 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_pngmem_c093fb3f.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrlt	r2, [r8, #-0x802]!
+0x00400004:	stmdahs	r1, {r1, r4, ip, lr, pc}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	mov.w	r5, #0x2f8
+0x0040000f:	bne	#0x400027
+0x00400011:	mov	r0, r5
+0x00400013:	bl	#0x500001
+0x00400017:	mov	r4, r0
+0x00400019:	cbz	r0, #0x400023
+0x0040001b:	mov	r2, r5
+0x0040001d:	movs	r1, #0
+0x0040001f:	bl	#0x50000d
+0x0040001b:	mov	r2, r5
+0x0040001d:	movs	r1, #0
+0x0040001f:	bl	#0x50000d
+0x00400023:	mov	r0, r4
+0x00400025:	pop	{r3, r4, r5, pc}
+0x00400027:	movs	r4, #0
+0x00400029:	mov	r0, r4
+0x0040002b:	pop	{r3, r4, r5, pc}
 
-Disassembly of section .text:
+Function sub_40002d @ 0x0040002d
+0x0040002d:	movs	r5, #0x94
+0x0040002f:	b	#0x400011
 
-00000000 <png_create_struct>:
-   0:	2802      	cmp	r0, #2
-   2:	b538      	push	{r3, r4, r5, lr}
-   4:	d012      	beq.n	2c <png_create_struct+0x2c>
-   6:	2801      	cmp	r0, #1
-   8:	bf08      	it	eq
-   a:	f44f 753e 	moveq.w	r5, #760	; 0x2f8
-   e:	d10a      	bne.n	26 <png_create_struct+0x26>
-  10:	4628      	mov	r0, r5
-  12:	f7ff fffe 	bl	0 <malloc>
-  16:	4604      	mov	r4, r0
-  18:	b118      	cbz	r0, 22 <png_create_struct+0x22>
-  1a:	462a      	mov	r2, r5
-  1c:	2100      	movs	r1, #0
-  1e:	f7ff fffe 	bl	0 <memset>
-  22:	4620      	mov	r0, r4
-  24:	bd38      	pop	{r3, r4, r5, pc}
-  26:	2400      	movs	r4, #0
-  28:	4620      	mov	r0, r4
-  2a:	bd38      	pop	{r3, r4, r5, pc}
-  2c:	2594      	movs	r5, #148	; 0x94
-  2e:	e7ef      	b.n	10 <png_create_struct+0x10>
+Function png_destroy_struct @ 0x00400031
+0x00400031:	cbz	r0, #0x400037
+0x00400033:	b.w	#0x500031
+0x00400033:	b.w	#0x500031
+0x00400037:	bx	lr
 
-00000030 <png_destroy_struct>:
-  30:	b108      	cbz	r0, 36 <png_destroy_struct+0x6>
-  32:	f7ff bffe 	b.w	0 <free>
-  36:	4770      	bx	lr
+Function png_large_malloc @ 0x00400039
+0x00400039:	cmp	r1, #0
+0x0040003b:	it	ne
+0x0040003d:	cmpne	r0, #0
+0x0040003f:	push	{r3, r4, r5, lr}
+0x00400041:	mov	r4, r0
+0x00400043:	it	eq
+0x00400045:	moveq	r5, #0
+0x00400047:	beq	#0x400053
+0x00400049:	mov	r0, r1
+0x0040004b:	bl	#0x500001
+0x0040004f:	mov	r5, r0
+0x00400051:	cbz	r0, #0x400057
+0x00400053:	mov	r0, r5
+0x00400055:	pop	{r3, r4, r5, pc}
+0x00400053:	mov	r0, r5
+0x00400055:	pop	{r3, r4, r5, pc}
+0x00400057:	ldr	r1, [pc, #0xc]
+0x00400059:	mov	r0, r4
+0x0040005b:	add	r1, pc
+0x0040005d:	bl	#0x500019
+0x00400061:	mov	r0, r5
+0x00400063:	pop	{r3, r4, r5, pc}
 
-00000038 <png_large_malloc>:
-  38:	2900      	cmp	r1, #0
-  3a:	bf18      	it	ne
-  3c:	2800      	cmpne	r0, #0
-  3e:	b538      	push	{r3, r4, r5, lr}
-  40:	4604      	mov	r4, r0
-  42:	bf08      	it	eq
-  44:	2500      	moveq	r5, #0
-  46:	d004      	beq.n	52 <png_large_malloc+0x1a>
-  48:	4608      	mov	r0, r1
-  4a:	f7ff fffe 	bl	0 <malloc>
-  4e:	4605      	mov	r5, r0
-  50:	b108      	cbz	r0, 56 <png_large_malloc+0x1e>
-  52:	4628      	mov	r0, r5
-  54:	bd38      	pop	{r3, r4, r5, pc}
-  56:	4903      	ldr	r1, [pc, #12]	; (64 <png_large_malloc+0x2c>)
-  58:	4620      	mov	r0, r4
-  5a:	4479      	add	r1, pc
-  5c:	f7ff fffe 	bl	0 <png_error>
-  60:	4628      	mov	r0, r5
-  62:	bd38      	pop	{r3, r4, r5, pc}
-  64:	00000006 	.word	0x00000006
+Function png_large_free @ 0x00400069
+0x00400069:	cmp	r1, #0
+0x0040006b:	it	ne
+0x0040006d:	cmpne	r0, #0
+0x0040006f:	bne	#0x400073
+0x00400071:	bx	lr
+0x00400073:	mov	r0, r1
+0x00400075:	b.w	#0x500031
 
-00000068 <png_large_free>:
-  68:	2900      	cmp	r1, #0
-  6a:	bf18      	it	ne
-  6c:	2800      	cmpne	r0, #0
-  6e:	d100      	bne.n	72 <png_large_free+0xa>
-  70:	4770      	bx	lr
-  72:	4608      	mov	r0, r1
-  74:	f7ff bffe 	b.w	0 <free>
+Function png_malloc @ 0x00400079
+0x00400079:	cmp	r1, #0
+0x0040007b:	it	ne
+0x0040007d:	cmpne	r0, #0
+0x0040007f:	push	{r3, r4, r5, lr}
+0x00400081:	mov	r4, r0
+0x00400083:	it	eq
+0x00400085:	moveq	r5, #0
+0x00400087:	beq	#0x400093
+0x00400089:	mov	r0, r1
+0x0040008b:	bl	#0x500001
+0x0040008f:	mov	r5, r0
+0x00400091:	cbz	r0, #0x400097
+0x00400093:	mov	r0, r5
+0x00400095:	pop	{r3, r4, r5, pc}
+0x00400093:	mov	r0, r5
+0x00400095:	pop	{r3, r4, r5, pc}
+0x00400097:	ldr	r1, [pc, #0xc]
+0x00400099:	mov	r0, r4
+0x0040009b:	add	r1, pc
+0x0040009d:	bl	#0x500019
+0x004000a1:	mov	r0, r5
+0x004000a3:	pop	{r3, r4, r5, pc}
 
-00000078 <png_malloc>:
-  78:	2900      	cmp	r1, #0
-  7a:	bf18      	it	ne
-  7c:	2800      	cmpne	r0, #0
-  7e:	b538      	push	{r3, r4, r5, lr}
-  80:	4604      	mov	r4, r0
-  82:	bf08      	it	eq
-  84:	2500      	moveq	r5, #0
-  86:	d004      	beq.n	92 <png_malloc+0x1a>
-  88:	4608      	mov	r0, r1
-  8a:	f7ff fffe 	bl	0 <malloc>
-  8e:	4605      	mov	r5, r0
-  90:	b108      	cbz	r0, 96 <png_malloc+0x1e>
-  92:	4628      	mov	r0, r5
-  94:	bd38      	pop	{r3, r4, r5, pc}
-  96:	4903      	ldr	r1, [pc, #12]	; (a4 <png_malloc+0x2c>)
-  98:	4620      	mov	r0, r4
-  9a:	4479      	add	r1, pc
-  9c:	f7ff fffe 	bl	0 <png_error>
-  a0:	4628      	mov	r0, r5
-  a2:	bd38      	pop	{r3, r4, r5, pc}
-  a4:	00000006 	.word	0x00000006
+Function png_realloc @ 0x004000a9
+0x004000a9:	cmp	r3, #0
+0x004000ab:	it	ne
+0x004000ad:	cmpne	r0, #0
+0x004000af:	push	{r3, r4, r5, lr}
+0x004000b1:	itet	eq
+0x004000b3:	moveq	r4, #1
+0x004000b5:	movne	r4, #0
+0x004000b7:	moveq	r4, #0
+0x004000b9:	beq	#0x4000d5
+0x004000bb:	mov	ip, r1
+0x004000bd:	mov	r1, r2
+0x004000bf:	cmp	r2, #0
+0x004000c1:	it	ne
+0x004000c3:	cmpne.w	ip, #0
+0x004000c7:	beq	#0x4000d5
+0x004000c9:	mov	r5, r0
+0x004000cb:	mov	r0, ip
+0x004000cd:	bl	#0x500025
+0x004000d1:	mov	r4, r0
+0x004000d3:	cbz	r0, #0x4000d9
+0x004000d5:	mov	r0, r4
+0x004000d7:	pop	{r3, r4, r5, pc}
+0x004000d5:	mov	r0, r4
+0x004000d7:	pop	{r3, r4, r5, pc}
+0x004000d9:	ldr	r1, [pc, #0xc]
+0x004000db:	mov	r0, r5
+0x004000dd:	add	r1, pc
+0x004000df:	bl	#0x500019
+0x004000e3:	mov	r0, r4
+0x004000e5:	pop	{r3, r4, r5, pc}
 
-000000a8 <png_realloc>:
-  a8:	2b00      	cmp	r3, #0
-  aa:	bf18      	it	ne
-  ac:	2800      	cmpne	r0, #0
-  ae:	b538      	push	{r3, r4, r5, lr}
-  b0:	bf0a      	itet	eq
-  b2:	2401      	moveq	r4, #1
-  b4:	2400      	movne	r4, #0
-  b6:	2400      	moveq	r4, #0
-  b8:	d00c      	beq.n	d4 <png_realloc+0x2c>
-  ba:	468c      	mov	ip, r1
-  bc:	4611      	mov	r1, r2
-  be:	2a00      	cmp	r2, #0
-  c0:	bf18      	it	ne
-  c2:	f1bc 0f00 	cmpne.w	ip, #0
-  c6:	d005      	beq.n	d4 <png_realloc+0x2c>
-  c8:	4605      	mov	r5, r0
-  ca:	4660      	mov	r0, ip
-  cc:	f7ff fffe 	bl	0 <realloc>
-  d0:	4604      	mov	r4, r0
-  d2:	b108      	cbz	r0, d8 <png_realloc+0x30>
-  d4:	4620      	mov	r0, r4
-  d6:	bd38      	pop	{r3, r4, r5, pc}
-  d8:	4903      	ldr	r1, [pc, #12]	; (e8 <png_realloc+0x40>)
-  da:	4628      	mov	r0, r5
-  dc:	4479      	add	r1, pc
-  de:	f7ff fffe 	bl	0 <png_error>
-  e2:	4620      	mov	r0, r4
-  e4:	bd38      	pop	{r3, r4, r5, pc}
-  e6:	bf00      	nop
-  e8:	00000008 	.word	0x00000008
+Function sub_4000e7 @ 0x004000e7
+0x004000e7:	nop	
+0x004000e9:	movs	r4, r5
+0x004000eb:	movs	r0, r0
+0x004000ed:	cmp	r1, #0
+0x004000ef:	it	ne
+0x004000f1:	cmpne	r0, #0
+0x004000f3:	bne	#0x4000f7
 
-000000ec <png_free>:
-  ec:	2900      	cmp	r1, #0
-  ee:	bf18      	it	ne
-  f0:	2800      	cmpne	r0, #0
-  f2:	d100      	bne.n	f6 <png_free+0xa>
-  f4:	4770      	bx	lr
-  f6:	4608      	mov	r0, r1
-  f8:	f7ff bffe 	b.w	0 <free>
+Function png_free @ 0x004000ed
+0x004000ed:	cmp	r1, #0
+0x004000ef:	it	ne
+0x004000f1:	cmpne	r0, #0
+0x004000f3:	bne	#0x4000f7
+0x004000f5:	bx	lr
+0x004000f7:	mov	r0, r1
+0x004000f9:	b.w	#0x500031
+
+Function malloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function memset @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function png_error @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function realloc @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function free @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

@@ -1,14 +1,17 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dmsym_main_96be2cdd.o:     file format elf32-littlearm
+Function main @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	subs	r0, #0x7c
+0x00400009:	it	ne
+0x0040000b:	movne	r0, #1
+0x0040000d:	pop	{r3, pc}
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <get_test_minsym>
-   6:	387c      	subs	r0, #124	; 0x7c
-   8:	bf18      	it	ne
-   a:	2001      	movne	r0, #1
-   c:	bd08      	pop	{r3, pc}
-   e:	bf00      	nop
+Function get_test_minsym @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,15 +1,7 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr9676-2_4a2c683f.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r1]!
 
-
-Disassembly of section .text:
-
-00000000 <foo2>:
-   0:	2001      	movs	r0, #1
-   2:	4770      	bx	lr
-
-Disassembly of section .gnu.linkonce.t.1:
-
-00000000 <foo>:
-   0:	2001      	movs	r0, #1
-   2:	4770      	bx	lr
+Function foo @ 0x00400005
+0x00400005:	movs	r0, #1
+0x00400007:	bx	lr

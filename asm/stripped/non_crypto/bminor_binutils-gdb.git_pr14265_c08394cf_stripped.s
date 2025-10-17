@@ -1,24 +1,46 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr14265_c08394cf_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_400007 @ 0x00400007
+0x00400007:	ldr	r0, [pc, #0x3c]
+0x00400009:	add	r2, pc
+0x0040000b:	ldr	r1, [pc, #0x3c]
+0x0040000d:	push	{r4, r5}
+0x0040000f:	ldr	r3, [pc, #0x3c]
+0x00400011:	ldr.w	r4, [r2, ip]
+0x00400015:	ldr	r0, [r2, r0]
+0x00400017:	ldr	r1, [r2, r1]
+0x00400019:	ldr	r5, [r2, r3]
+0x0040001b:	ldr	r0, [r0]
+0x0040001d:	ldr	r3, [r4]
+0x0040001f:	ldr	r1, [r1]
+0x00400021:	add	r3, r0
+0x00400023:	ldr	r0, [pc, #0x2c]
+0x00400025:	add	r3, r1
+0x00400027:	ldr	r1, [pc, #0x2c]
+0x00400029:	ldr	r4, [r5]
+0x0040002b:	ldr	r0, [r2, r0]
+0x0040002d:	subs	r3, r3, r4
+0x0040002f:	ldr	r1, [r2, r1]
+0x00400031:	pop	{r4, r5}
+0x00400033:	ldr	r2, [r0]
+0x00400035:	ldr	r0, [r1]
+0x00400037:	subs	r3, r3, r2
+0x00400039:	subs	r0, r3, r0
+0x0040003b:	bx	lr
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	f8df4a0e 			; <UNDEFINED> instruction: 0xf8df4a0e
-   4:	480fc03c 	stmdami	pc, {r2, r3, r4, r5, lr, pc}	; <UNPREDICTABLE>
-   8:	490f447a 	stmdbmi	pc, {r1, r3, r4, r5, r6, sl, lr}	; <UNPREDICTABLE>
-   c:	4b0fb430 	blmi	0x3ed0d4
-  10:	400cf852 	andmi	pc, ip, r2, asr r8	; <UNPREDICTABLE>
-  14:	58515810 	ldmdapl	r1, {r4, fp, ip, lr}^
-  18:	680058d5 	stmdavs	r0, {r0, r2, r4, r6, r7, fp, ip, lr}
-  1c:	68096823 	stmdavs	r9, {r0, r1, r5, fp, sp, lr}
-  20:	480b4403 	stmdami	fp, {r0, r1, sl, lr}
-  24:	490b440b 	stmdbmi	fp, {r0, r1, r3, sl, lr}
-  28:	5810682c 	ldmdapl	r0, {r2, r3, r5, fp, sp, lr}
-  2c:	58511b1b 	ldmdapl	r1, {r0, r1, r3, r4, r8, r9, fp, ip}^
-  30:	6802bc30 	stmdavs	r2, {r4, r5, sl, fp, ip, sp, pc}
-  34:	1a9b6808 	bne	0xfe6da05c
-  38:	47701a18 			; <UNDEFINED> instruction: 0x47701a18
-  3c:	00000030 	andeq	r0, r0, r0, lsr r0
-	...
+Function sub_40003d @ 0x0040003d
+0x0040003d:	movs	r0, r6
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r0, r0
+0x00400043:	movs	r0, r0
+0x00400045:	movs	r0, r0
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r0, r0
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0

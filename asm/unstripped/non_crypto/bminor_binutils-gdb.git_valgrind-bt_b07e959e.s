@@ -1,20 +1,25 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_valgrind-bt_b07e959e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r1, r0, lsl r5
 
+Function sub_400007 @ 0x00400007
+0x00400007:	vsra.u32	d27, d24, #4
+0x0040000b:	mov	r4, r0
+0x0040000d:	bl	#0x50000d
+0x00400011:	mov	r0, r4
+0x00400013:	bl	#0x50000d
+0x00400017:	movs	r0, #0
+0x00400019:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	movs	r0, #1
+0x0040001d:	pop	{r4, pc}
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2001      	movs	r0, #1
-   4:	f7ff fffe 	bl	0 <malloc>
-   8:	b138      	cbz	r0, 1a <main+0x1a>
-   a:	4604      	mov	r4, r0
-   c:	f7ff fffe 	bl	0 <free>
-  10:	4620      	mov	r0, r4
-  12:	f7ff fffe 	bl	0 <free>
-  16:	2000      	movs	r0, #0
-  18:	bd10      	pop	{r4, pc}
-  1a:	2001      	movs	r0, #1
-  1c:	bd10      	pop	{r4, pc}
-  1e:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+
+Function free @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

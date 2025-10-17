@@ -1,31 +1,44 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mixed-lang-stack_98447fb1_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mrc	p5, #5, fp, c7, c0, #0
+0x00400004:	vcvt.f64.f32	d5, s5
+0x00400008:	vcvt.f64.f32	d6, s4
+0x0040000c:	addlt	r7, lr, r0, asr #21
 
+Function sub_400013 @ 0x00400013
+0x00400013:	mov	r2, r0
+0x00400015:	movs	r4, #0x17
+0x00400017:	str	r0, [sp, #0x34]
+0x00400019:	add	r1, pc
+0x0040001b:	vstr	d1, [sp, #8]
+0x0040001f:	movs	r0, #1
+0x00400021:	vstr	d5, [sp, #0x18]
+0x00400025:	vstr	d6, [sp, #0x10]
+0x00400029:	vstr	d7, [sp]
+0x0040002d:	vstr	s0, [sp, #0x30]
+0x00400031:	vstr	d1, [sp, #0x28]
+0x00400035:	vstr	s4, [sp, #0x20]
+0x00400039:	vstr	s5, [sp, #0x24]
+0x0040003d:	bl	#0x40003d
 
-Disassembly of section .text:
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+0x00400041:	ldr	r0, [pc, #0x18]
+0x00400043:	add	r3, sp, #0x20
+0x00400045:	add	r2, sp, #0x28
+0x00400047:	add	r1, sp, #0x30
+0x00400049:	add	r0, pc
+0x0040004b:	strd	r0, r4, [sp]
+0x0040004f:	add	r0, sp, #0x34
+0x00400051:	bl	#0x400051
 
-00000000 <.text>:
-   0:	eeb7b510 	mrc	5, 5, fp, cr7, cr0, {0}
-   4:	eeb75ae2 	vcvt.f64.f32	d5, s5
-   8:	eeb76ac2 	vcvt.f64.f32	d6, s4
-   c:	b08e7ac0 	addlt	r7, lr, r0, asr #21
-  10:	46024911 			; <UNDEFINED> instruction: 0x46024911
-  14:	900d2417 	andls	r2, sp, r7, lsl r4
-  18:	ed8d4479 	cfstrs	mvf4, [sp, #484]	; 0x1e4
-  1c:	20011b02 	andcs	r1, r1, r2, lsl #22
-  20:	5b06ed8d 	blpl	0x1bb65c
-  24:	6b04ed8d 	blvs	0x13b660
-  28:	7b00ed8d 	blvc	0x3b664
-  2c:	0a0ced8d 	beq	0x33b668
-  30:	1b0aed8d 	blne	0x2bb66c
-  34:	2a08ed8d 	bcs	0x23b670
-  38:	2a09edcd 	bcs	0x27b774
-  3c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  40:	ab084806 	blge	0x212060
-  44:	a90caa0a 	stmdbge	ip, {r1, r3, r9, fp, sp, pc}
-  48:	e9cd4478 	stmib	sp, {r3, r4, r5, r6, sl, lr}^
-  4c:	a80d0400 	stmdage	sp, {sl}
-  50:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  54:	bd10b00e 	ldclt	0, cr11, [r0, #-56]	; 0xffffffc8
-  58:	0000003c 	andeq	r0, r0, ip, lsr r0
-  5c:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+0x00400055:	add	sp, #0x38
+0x00400057:	pop	{r4, pc}
+
+Function sub_400059 @ 0x00400059
+0x00400059:	movs	r4, r7
+0x0040005b:	movs	r0, r0
+0x0040005d:	movs	r0, r2
+0x0040005f:	movs	r0, r0

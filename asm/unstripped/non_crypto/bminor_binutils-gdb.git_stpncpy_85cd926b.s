@@ -1,25 +1,34 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_stpncpy_85cd926b.o:     file format elf32-littlearm
+Function stpncpy @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r4, r2
+0x00400005:	mov	r6, r0
+0x00400007:	sub	sp, #8
+0x00400009:	mov	r0, r1
+0x0040000b:	str	r1, [sp, #4]
+0x0040000d:	bl	#0x500001
+0x00400011:	ldr	r1, [sp, #4]
+0x00400013:	mov	r5, r0
+0x00400015:	mov	r2, r4
+0x00400017:	mov	r0, r6
+0x00400019:	bl	#0x50000d
+0x0040001d:	cmp	r5, r4
+0x0040001f:	ite	ls
+0x00400021:	addls	r0, r0, r5
+0x00400023:	addhi	r0, r0, r4
+0x00400025:	add	sp, #8
+0x00400027:	pop	{r4, r5, r6, pc}
 
+Function strlen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
-
-00000000 <stpncpy>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	4614      	mov	r4, r2
-   4:	4606      	mov	r6, r0
-   6:	b082      	sub	sp, #8
-   8:	4608      	mov	r0, r1
-   a:	9101      	str	r1, [sp, #4]
-   c:	f7ff fffe 	bl	0 <strlen>
-  10:	9901      	ldr	r1, [sp, #4]
-  12:	4605      	mov	r5, r0
-  14:	4622      	mov	r2, r4
-  16:	4630      	mov	r0, r6
-  18:	f7ff fffe 	bl	0 <strncpy>
-  1c:	42a5      	cmp	r5, r4
-  1e:	bf94      	ite	ls
-  20:	1940      	addls	r0, r0, r5
-  22:	1900      	addhi	r0, r0, r4
-  24:	b002      	add	sp, #8
-  26:	bd70      	pop	{r4, r5, r6, pc}
+Function strncpy @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

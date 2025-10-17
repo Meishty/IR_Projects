@@ -1,20 +1,28 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_set-cwd_9b6b2b6f.o:     file format elf32-littlearm
+Function main @ 0x00401009
+0x00401009:	ldr	r0, [pc, #0x18]
+0x0040100b:	push	{r3, lr}
+0x0040100d:	add	r0, pc
+0x0040100f:	bl	#0x500001
+0x00401013:	ldr	r0, [pc, #0x14]
+0x00401015:	mov.w	r1, #0x1000
+0x00401019:	add	r0, pc
+0x0040101b:	bl	#0x50000d
+0x0040101f:	movs	r0, #0
+0x00401021:	pop	{r3, pc}
 
+Function sub_401023 @ 0x00401023
 
-Disassembly of section .text.startup:
+Function getenv @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4806      	ldr	r0, [pc, #24]	; (1c <main+0x1c>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <getenv>
-   a:	4805      	ldr	r0, [pc, #20]	; (20 <main+0x20>)
-   c:	f44f 5180 	mov.w	r1, #4096	; 0x1000
-  10:	4478      	add	r0, pc
-  12:	f7ff fffe 	bl	0 <getcwd>
-  16:	2000      	movs	r0, #0
-  18:	bd08      	pop	{r3, pc}
-  1a:	bf00      	nop
-  1c:	00000014 	.word	0x00000014
-  20:	0000000c 	.word	0x0000000c
+Function getcwd @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

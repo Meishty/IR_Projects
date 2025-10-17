@@ -1,19 +1,8 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_aarch64-pauth_204c6ceb.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r3, [r0, -r1, lsl #16]!
+0x00400004:	ldrbmi	r3, [r0, -r8]!
 
-
-Disassembly of section .text:
-
-00000000 <bar>:
-   0:	3801      	subs	r0, #1
-   2:	4770      	bx	lr
-
-00000004 <foo>:
-   4:	3008      	adds	r0, #8
-   6:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400009
+0x00400009:	movs	r0, #0
+0x0040000b:	bx	lr

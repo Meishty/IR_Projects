@@ -1,8 +1,4 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_fission-absolute-dwo_eb6f176f_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_400191 @ 0x00400191
+0x00400191:	movs	r0, #0
+0x00400193:	bx	lr

@@ -1,21 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pendshr_ed98c03b.o:     file format elf32-littlearm
+Function pendfunc1 @ 0x00400001
+0x00400001:	ldr	r1, [pc, #8]
+0x00400003:	mov	r2, r0
+0x00400005:	movs	r0, #1
+0x00400007:	add	r1, pc
+0x00400009:	b.w	#0x500001
 
+Function pendfunc @ 0x00400011
+0x00400011:	ldr	r1, [pc, #8]
+0x00400013:	mov	r2, r0
+0x00400015:	movs	r0, #1
+0x00400017:	add	r1, pc
+0x00400019:	b.w	#0x500001
 
-Disassembly of section .text:
-
-00000000 <pendfunc1>:
-   0:	4902      	ldr	r1, [pc, #8]	; (c <pendfunc1+0xc>)
-   2:	4602      	mov	r2, r0
-   4:	2001      	movs	r0, #1
-   6:	4479      	add	r1, pc
-   8:	f7ff bffe 	b.w	0 <__printf_chk>
-   c:	00000002 	.word	0x00000002
-
-00000010 <pendfunc>:
-  10:	4902      	ldr	r1, [pc, #8]	; (1c <pendfunc+0xc>)
-  12:	4602      	mov	r2, r0
-  14:	2001      	movs	r0, #1
-  16:	4479      	add	r1, pc
-  18:	f7ff bffe 	b.w	0 <__printf_chk>
-  1c:	00000002 	.word	0x00000002
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

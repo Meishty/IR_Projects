@@ -1,500 +1,840 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_rsaglue1_1b961f75.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svcmi	#0xf0e92d
+0x00400004:	bmi	#0x1311864
+0x00400008:	ldrmi	fp, [r8], r5, asr #1
+0x0040000c:	ldrbtmi	r4, [sl], #-0xb3b
+0x00400010:	strmi	r4, [sb], r7, lsl #12
 
+Function sub_400017 @ 0x00400017
+0x00400017:	adr	r1, #0xe0
+0x00400019:	add	r5, sp, #8
+0x0040001b:	ldr	r3, [r2, r3]
+0x0040001d:	mov	r0, sl
+0x0040001f:	ldr	r3, [r3]
+0x00400021:	str	r3, [sp, #0x10c]
+0x00400023:	mov.w	r3, #0
+0x00400027:	bl	#0x500001
+0x0040002b:	ldr	r3, [pc, #0xd4]
+0x0040002d:	adds	r4, r0, #7
+0x0040002f:	ldr	r2, [pc, #0xd4]
+0x00400031:	add	r3, pc
+0x00400033:	asrs	r4, r4, #3
+0x00400035:	subs	r4, #1
+0x00400037:	ldr	r3, [r3, r2]
+0x00400039:	str	r3, [sp, #4]
+0x0040003b:	ldrsh.w	r2, [r3]
+0x0040003f:	rsb	fp, r4, r2, lsl #1
+0x00400043:	cmp.w	fp, #0
+0x00400047:	ble	#0x4000e9
+0x00400049:	mov	r2, fp
+0x0040004b:	movs	r1, #0
+0x0040004d:	mov	r0, r5
+0x0040004f:	bl	#0x50000d
+0x00400053:	add.w	r3, r5, fp
+0x00400057:	subs	r4, r4, r6
+0x00400059:	subs	r4, #2
+0x0040005b:	cmp	r4, #0
+0x0040005d:	ble	#0x4000ed
+0x00400057:	subs	r4, r4, r6
+0x00400059:	subs	r4, #2
+0x0040005b:	cmp	r4, #0
+0x0040005d:	ble	#0x4000ed
+0x0040005f:	mov	fp, r3
+0x00400061:	movs	r2, #2
+0x00400063:	strb	r2, [fp], #1
+0x00400067:	bl	#0x500019
+0x00400067:	bl	#0x500019
+0x0040006b:	strb.w	r0, [fp]
+0x0040006f:	cmp	r0, #0
+0x00400071:	beq	#0x400067
+0x00400073:	add.w	r2, fp, #1
+0x00400077:	subs	r4, #1
+0x00400079:	beq	#0x400091
+0x0040007b:	mov	fp, r2
+0x0040007d:	bl	#0x500019
+0x00400081:	strb.w	r0, [fp]
+0x00400085:	cmp	r0, #0
+0x00400087:	beq	#0x400067
+0x00400089:	add.w	r2, fp, #1
+0x0040008d:	subs	r4, #1
+0x0040008f:	bne	#0x40007b
+0x00400091:	mov	r2, r6
+0x00400093:	mov	r1, sb
+0x00400095:	mov.w	r3, #0x102
+0x00400099:	add.w	r0, fp, #2
+0x0040009d:	strb.w	r4, [fp, #1]
+0x004000a1:	bl	#0x500025
+0x004000a5:	ldr	r3, [sp, #4]
+0x004000a7:	mov	r0, r5
+0x004000a9:	ldrsh.w	r1, [r3]
+0x004000ad:	lsls	r1, r1, #1
+0x004000af:	sxth	r1, r1
+0x004000b1:	bl	#0x500031
+0x004000b5:	mov	r3, sl
+0x004000b7:	mov	r2, r8
+0x004000b9:	mov	r1, r5
+0x004000bb:	mov	r0, r7
+0x004000bd:	bl	#0x50003d
+0x004000c1:	mov	r1, r4
+0x004000c3:	mov	r6, r0
+0x004000c5:	mov	r0, r5
+0x004000c7:	bl	#0x500049
+0x004000cb:	ssat	r0, #1, r6
+0x004000cf:	ldr	r2, [pc, #0x38]
+0x004000d1:	ldr	r3, [pc, #0x28]
+0x004000d3:	add	r2, pc
+0x004000d5:	ldr	r3, [r2, r3]
+0x004000d7:	ldr	r2, [r3]
+0x004000d9:	ldr	r3, [sp, #0x10c]
+0x004000db:	eors	r2, r3
+0x004000dd:	mov.w	r3, #0
+0x004000e1:	bne	#0x4000f3
+0x004000cf:	ldr	r2, [pc, #0x38]
+0x004000d1:	ldr	r3, [pc, #0x28]
+0x004000d3:	add	r2, pc
+0x004000d5:	ldr	r3, [r2, r3]
+0x004000d7:	ldr	r2, [r3]
+0x004000d9:	ldr	r3, [sp, #0x10c]
+0x004000db:	eors	r2, r3
+0x004000dd:	mov.w	r3, #0
+0x004000e1:	bne	#0x4000f3
+0x004000e3:	add	sp, #0x114
+0x004000e5:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004000e9:	mov	r3, r5
+0x004000eb:	b	#0x400057
+0x004000ed:	mvn	r0, #3
+0x004000f1:	b	#0x4000cf
+0x004000f3:	bl	#0x500055
 
-Disassembly of section .text:
+Function sub_4000f7 @ 0x004000f7
+0x004000f7:	nop	
+0x004000f9:	lsls	r6, r4, #3
+0x004000fb:	movs	r0, r0
+0x004000fd:	movs	r0, r0
+0x004000ff:	movs	r0, r0
+0x00400101:	lsls	r4, r1, #3
+0x00400103:	movs	r0, r0
+0x00400105:	movs	r0, r0
+0x00400107:	movs	r0, r0
+0x00400109:	movs	r2, r6
+0x0040010b:	movs	r0, r0
+0x0040010d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400111:	mov	r6, r2
+0x00400113:	ldr	r4, [pc, #0x154]
+0x00400115:	ldr	r3, [pc, #0x154]
+0x00400117:	add	r4, pc
+0x00400119:	vpush	{d8}
+0x0040011d:	sub.w	sp, sp, #0x334
+0x00400121:	ldr	r2, [pc, #0x14c]
+0x00400123:	add	r5, sp, #0x20
+0x00400125:	add.w	r8, sp, #0x124
+0x00400129:	ldr	r3, [r4, r3]
+0x0040012b:	ldrd	fp, sb, [sp, #0x360]
+0x0040012f:	ldr	r3, [r3]
+0x00400131:	str	r3, [sp, #0x32c]
+0x00400133:	mov.w	r3, #0
+0x00400137:	ldr	r3, [pc, #0x13c]
+0x00400139:	strd	r0, r1, [sp, #0x10]
+0x0040013d:	mov	r1, sb
+0x0040013f:	add	r3, pc
+0x00400141:	ldr	r4, [sp, #0x36c]
+0x00400143:	mov	r0, r5
+0x00400145:	ldr.w	sl, [sp, #0x368]
+0x00400149:	vldr	s16, [sp, #0x370]
+0x0040014d:	ldr	r7, [r3, r2]
+0x0040014f:	mov.w	r3, #0x104
+0x00400153:	str	r4, [sp, #0x18]
+0x00400155:	ldrsh.w	r2, [r7]
+0x00400159:	lsls	r2, r2, #1
+0x0040015b:	bl	#0x500025
 
-00000000 <rsa_public_encrypt>:
-   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	4616      	mov	r6, r2
-   6:	4a3c      	ldr	r2, [pc, #240]	; (f8 <rsa_public_encrypt+0xf8>)
-   8:	b0c5      	sub	sp, #276	; 0x114
-   a:	4698      	mov	r8, r3
-   c:	4b3b      	ldr	r3, [pc, #236]	; (fc <rsa_public_encrypt+0xfc>)
-   e:	447a      	add	r2, pc
-  10:	4607      	mov	r7, r0
-  12:	4689      	mov	r9, r1
-  14:	f8dd a138 	ldr.w	sl, [sp, #312]	; 0x138
-  18:	ad02      	add	r5, sp, #8
-  1a:	58d3      	ldr	r3, [r2, r3]
-  1c:	4650      	mov	r0, sl
-  1e:	681b      	ldr	r3, [r3, #0]
-  20:	9343      	str	r3, [sp, #268]	; 0x10c
-  22:	f04f 0300 	mov.w	r3, #0
-  26:	f7ff fffe 	bl	0 <countbits>
-  2a:	4b35      	ldr	r3, [pc, #212]	; (100 <rsa_public_encrypt+0x100>)
-  2c:	1dc4      	adds	r4, r0, #7
-  2e:	4a35      	ldr	r2, [pc, #212]	; (104 <rsa_public_encrypt+0x104>)
-  30:	447b      	add	r3, pc
-  32:	10e4      	asrs	r4, r4, #3
-  34:	3c01      	subs	r4, #1
-  36:	589b      	ldr	r3, [r3, r2]
-  38:	9301      	str	r3, [sp, #4]
-  3a:	f9b3 2000 	ldrsh.w	r2, [r3]
-  3e:	ebc4 0b42 	rsb	fp, r4, r2, lsl #1
-  42:	f1bb 0f00 	cmp.w	fp, #0
-  46:	dd4f      	ble.n	e8 <rsa_public_encrypt+0xe8>
-  48:	465a      	mov	r2, fp
-  4a:	2100      	movs	r1, #0
-  4c:	4628      	mov	r0, r5
-  4e:	f7ff fffe 	bl	0 <memset>
-  52:	eb05 030b 	add.w	r3, r5, fp
-  56:	1ba4      	subs	r4, r4, r6
-  58:	3c02      	subs	r4, #2
-  5a:	2c00      	cmp	r4, #0
-  5c:	dd46      	ble.n	ec <rsa_public_encrypt+0xec>
-  5e:	469b      	mov	fp, r3
-  60:	2202      	movs	r2, #2
-  62:	f80b 2b01 	strb.w	r2, [fp], #1
-  66:	f7ff fffe 	bl	0 <cryptRandByte>
-  6a:	f88b 0000 	strb.w	r0, [fp]
-  6e:	2800      	cmp	r0, #0
-  70:	d0f9      	beq.n	66 <rsa_public_encrypt+0x66>
-  72:	f10b 0201 	add.w	r2, fp, #1
-  76:	3c01      	subs	r4, #1
-  78:	d00a      	beq.n	90 <rsa_public_encrypt+0x90>
-  7a:	4693      	mov	fp, r2
-  7c:	f7ff fffe 	bl	0 <cryptRandByte>
-  80:	f88b 0000 	strb.w	r0, [fp]
-  84:	2800      	cmp	r0, #0
-  86:	d0ee      	beq.n	66 <rsa_public_encrypt+0x66>
-  88:	f10b 0201 	add.w	r2, fp, #1
-  8c:	3c01      	subs	r4, #1
-  8e:	d1f4      	bne.n	7a <rsa_public_encrypt+0x7a>
-  90:	4632      	mov	r2, r6
-  92:	4649      	mov	r1, r9
-  94:	f44f 7381 	mov.w	r3, #258	; 0x102
-  98:	f10b 0002 	add.w	r0, fp, #2
-  9c:	f88b 4001 	strb.w	r4, [fp, #1]
-  a0:	f7ff fffe 	bl	0 <__memcpy_chk>
-  a4:	9b01      	ldr	r3, [sp, #4]
-  a6:	4628      	mov	r0, r5
-  a8:	f9b3 1000 	ldrsh.w	r1, [r3]
-  ac:	0049      	lsls	r1, r1, #1
-  ae:	b209      	sxth	r1, r1
-  b0:	f7ff fffe 	bl	0 <hiloswap>
-  b4:	4653      	mov	r3, sl
-  b6:	4642      	mov	r2, r8
-  b8:	4629      	mov	r1, r5
-  ba:	4638      	mov	r0, r7
-  bc:	f7ff fffe 	bl	0 <mp_modexp>
-  c0:	4621      	mov	r1, r4
-  c2:	4606      	mov	r6, r0
-  c4:	4628      	mov	r0, r5
-  c6:	f7ff fffe 	bl	0 <mp_init>
-  ca:	f306 0000 	ssat	r0, #1, r6
-  ce:	4a0e      	ldr	r2, [pc, #56]	; (108 <rsa_public_encrypt+0x108>)
-  d0:	4b0a      	ldr	r3, [pc, #40]	; (fc <rsa_public_encrypt+0xfc>)
-  d2:	447a      	add	r2, pc
-  d4:	58d3      	ldr	r3, [r2, r3]
-  d6:	681a      	ldr	r2, [r3, #0]
-  d8:	9b43      	ldr	r3, [sp, #268]	; 0x10c
-  da:	405a      	eors	r2, r3
-  dc:	f04f 0300 	mov.w	r3, #0
-  e0:	d107      	bne.n	f2 <rsa_public_encrypt+0xf2>
-  e2:	b045      	add	sp, #276	; 0x114
-  e4:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
-  e8:	462b      	mov	r3, r5
-  ea:	e7b4      	b.n	56 <rsa_public_encrypt+0x56>
-  ec:	f06f 0003 	mvn.w	r0, #3
-  f0:	e7ed      	b.n	ce <rsa_public_encrypt+0xce>
-  f2:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  f6:	bf00      	nop
-  f8:	000000e6 	.word	0x000000e6
-  fc:	00000000 	.word	0x00000000
- 100:	000000cc 	.word	0x000000cc
- 104:	00000000 	.word	0x00000000
- 108:	00000032 	.word	0x00000032
+Function sub_4000f9 @ 0x004000f9
+0x004000f9:	lsls	r6, r4, #3
+0x004000fb:	movs	r0, r0
+0x004000fd:	movs	r0, r0
+0x004000ff:	movs	r0, r0
+0x00400101:	lsls	r4, r1, #3
+0x00400103:	movs	r0, r0
+0x00400105:	movs	r0, r0
+0x00400107:	movs	r0, r0
+0x00400109:	movs	r2, r6
+0x0040010b:	movs	r0, r0
+0x0040010d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400111:	mov	r6, r2
+0x00400113:	ldr	r4, [pc, #0x154]
+0x00400115:	ldr	r3, [pc, #0x154]
+0x00400117:	add	r4, pc
+0x00400119:	vpush	{d8}
+0x0040011d:	sub.w	sp, sp, #0x334
+0x00400121:	ldr	r2, [pc, #0x14c]
+0x00400123:	add	r5, sp, #0x20
+0x00400125:	add.w	r8, sp, #0x124
+0x00400129:	ldr	r3, [r4, r3]
+0x0040012b:	ldrd	fp, sb, [sp, #0x360]
+0x0040012f:	ldr	r3, [r3]
+0x00400131:	str	r3, [sp, #0x32c]
+0x00400133:	mov.w	r3, #0
+0x00400137:	ldr	r3, [pc, #0x13c]
+0x00400139:	strd	r0, r1, [sp, #0x10]
+0x0040013d:	mov	r1, sb
+0x0040013f:	add	r3, pc
+0x00400141:	ldr	r4, [sp, #0x36c]
+0x00400143:	mov	r0, r5
+0x00400145:	ldr.w	sl, [sp, #0x368]
+0x00400149:	vldr	s16, [sp, #0x370]
+0x0040014d:	ldr	r7, [r3, r2]
+0x0040014f:	mov.w	r3, #0x104
+0x00400153:	str	r4, [sp, #0x18]
+0x00400155:	ldrsh.w	r2, [r7]
+0x00400159:	lsls	r2, r2, #1
+0x0040015b:	bl	#0x500025
 
-0000010c <rsa_private_encrypt>:
- 10c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 110:	4616      	mov	r6, r2
- 112:	4c55      	ldr	r4, [pc, #340]	; (268 <rsa_private_encrypt+0x15c>)
- 114:	4b55      	ldr	r3, [pc, #340]	; (26c <rsa_private_encrypt+0x160>)
- 116:	447c      	add	r4, pc
- 118:	ed2d 8b02 	vpush	{d8}
- 11c:	f5ad 7d4d 	sub.w	sp, sp, #820	; 0x334
- 120:	4a53      	ldr	r2, [pc, #332]	; (270 <rsa_private_encrypt+0x164>)
- 122:	ad08      	add	r5, sp, #32
- 124:	f50d 7892 	add.w	r8, sp, #292	; 0x124
- 128:	58e3      	ldr	r3, [r4, r3]
- 12a:	e9dd b9d8 	ldrd	fp, r9, [sp, #864]	; 0x360
- 12e:	681b      	ldr	r3, [r3, #0]
- 130:	93cb      	str	r3, [sp, #812]	; 0x32c
- 132:	f04f 0300 	mov.w	r3, #0
- 136:	4b4f      	ldr	r3, [pc, #316]	; (274 <rsa_private_encrypt+0x168>)
- 138:	e9cd 0104 	strd	r0, r1, [sp, #16]
- 13c:	4649      	mov	r1, r9
- 13e:	447b      	add	r3, pc
- 140:	9cdb      	ldr	r4, [sp, #876]	; 0x36c
- 142:	4628      	mov	r0, r5
- 144:	f8dd a368 	ldr.w	sl, [sp, #872]	; 0x368
- 148:	ed9d 8adc 	vldr	s16, [sp, #880]	; 0x370
- 14c:	589f      	ldr	r7, [r3, r2]
- 14e:	f44f 7382 	mov.w	r3, #260	; 0x104
- 152:	9406      	str	r4, [sp, #24]
- 154:	f9b7 2000 	ldrsh.w	r2, [r7]
- 158:	0052      	lsls	r2, r2, #1
- 15a:	f7ff fffe 	bl	0 <__memcpy_chk>
- 15e:	4628      	mov	r0, r5
- 160:	f7ff fffe 	bl	0 <mp_dec>
- 164:	4659      	mov	r1, fp
- 166:	462a      	mov	r2, r5
- 168:	4640      	mov	r0, r8
- 16a:	f7ff fffe 	bl	0 <mp_mod>
- 16e:	f9b7 2000 	ldrsh.w	r2, [r7]
- 172:	f44f 7382 	mov.w	r3, #260	; 0x104
- 176:	4651      	mov	r1, sl
- 178:	4628      	mov	r0, r5
- 17a:	0052      	lsls	r2, r2, #1
- 17c:	f7ff fffe 	bl	0 <__memcpy_chk>
- 180:	4628      	mov	r0, r5
- 182:	f7ff fffe 	bl	0 <mp_dec>
- 186:	4659      	mov	r1, fp
- 188:	f50d 7b0a 	add.w	fp, sp, #552	; 0x228
- 18c:	462a      	mov	r2, r5
- 18e:	4658      	mov	r0, fp
- 190:	f7ff fffe 	bl	0 <mp_mod>
- 194:	ee18 0a10 	vmov	r0, s16
- 198:	f7ff fffe 	bl	0 <countbits>
- 19c:	1dc4      	adds	r4, r0, #7
- 19e:	f9b7 2000 	ldrsh.w	r2, [r7]
- 1a2:	10e4      	asrs	r4, r4, #3
- 1a4:	3c01      	subs	r4, #1
- 1a6:	ebc4 0242 	rsb	r2, r4, r2, lsl #1
- 1aa:	2a00      	cmp	r2, #0
- 1ac:	dd54      	ble.n	258 <rsa_private_encrypt+0x14c>
- 1ae:	2100      	movs	r1, #0
- 1b0:	4628      	mov	r0, r5
- 1b2:	9207      	str	r2, [sp, #28]
- 1b4:	f7ff fffe 	bl	0 <memset>
- 1b8:	9a07      	ldr	r2, [sp, #28]
- 1ba:	18ab      	adds	r3, r5, r2
- 1bc:	1ba2      	subs	r2, r4, r6
- 1be:	3a14      	subs	r2, #20
- 1c0:	d44c      	bmi.n	25c <rsa_private_encrypt+0x150>
- 1c2:	461c      	mov	r4, r3
- 1c4:	2301      	movs	r3, #1
- 1c6:	f04f 31ff 	mov.w	r1, #4294967295	; 0xffffffff
- 1ca:	9207      	str	r2, [sp, #28]
- 1cc:	f804 3b01 	strb.w	r3, [r4], #1
- 1d0:	f240 1303 	movw	r3, #259	; 0x103
- 1d4:	4620      	mov	r0, r4
- 1d6:	f7ff fffe 	bl	0 <__memset_chk>
- 1da:	9a07      	ldr	r2, [sp, #28]
- 1dc:	f8df c098 	ldr.w	ip, [pc, #152]	; 278 <rsa_private_encrypt+0x16c>
- 1e0:	2300      	movs	r3, #0
- 1e2:	44fc      	add	ip, pc
- 1e4:	54a3      	strb	r3, [r4, r2]
- 1e6:	4414      	add	r4, r2
- 1e8:	e8bc 000f 	ldmia.w	ip!, {r0, r1, r2, r3}
- 1ec:	f8c4 0001 	str.w	r0, [r4, #1]
- 1f0:	f8c4 1005 	str.w	r1, [r4, #5]
- 1f4:	f104 0013 	add.w	r0, r4, #19
- 1f8:	f8c4 2009 	str.w	r2, [r4, #9]
- 1fc:	4632      	mov	r2, r6
- 1fe:	f8c4 300d 	str.w	r3, [r4, #13]
- 202:	9905      	ldr	r1, [sp, #20]
- 204:	f8bc 3000 	ldrh.w	r3, [ip]
- 208:	f8a4 3011 	strh.w	r3, [r4, #17]
- 20c:	f7ff fffe 	bl	0 <memcpy>
- 210:	f9b7 1000 	ldrsh.w	r1, [r7]
- 214:	4628      	mov	r0, r5
- 216:	0049      	lsls	r1, r1, #1
- 218:	b209      	sxth	r1, r1
- 21a:	f7ff fffe 	bl	0 <hiloswap>
- 21e:	9b06      	ldr	r3, [sp, #24]
- 220:	e9cd b301 	strd	fp, r3, [sp, #4]
- 224:	464a      	mov	r2, r9
- 226:	9804      	ldr	r0, [sp, #16]
- 228:	4653      	mov	r3, sl
- 22a:	4629      	mov	r1, r5
- 22c:	f8cd 8000 	str.w	r8, [sp]
- 230:	f7ff fffe 	bl	0 <mp_modexp_crt>
- 234:	ea40 70e0 	orr.w	r0, r0, r0, asr #31
- 238:	4a10      	ldr	r2, [pc, #64]	; (27c <rsa_private_encrypt+0x170>)
- 23a:	4b0c      	ldr	r3, [pc, #48]	; (26c <rsa_private_encrypt+0x160>)
- 23c:	447a      	add	r2, pc
- 23e:	58d3      	ldr	r3, [r2, r3]
- 240:	681a      	ldr	r2, [r3, #0]
- 242:	9bcb      	ldr	r3, [sp, #812]	; 0x32c
- 244:	405a      	eors	r2, r3
- 246:	f04f 0300 	mov.w	r3, #0
- 24a:	d10a      	bne.n	262 <rsa_private_encrypt+0x156>
- 24c:	f50d 7d4d 	add.w	sp, sp, #820	; 0x334
- 250:	ecbd 8b02 	vpop	{d8}
- 254:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 258:	462b      	mov	r3, r5
- 25a:	e7af      	b.n	1bc <rsa_private_encrypt+0xb0>
- 25c:	f06f 0003 	mvn.w	r0, #3
- 260:	e7ea      	b.n	238 <rsa_private_encrypt+0x12c>
- 262:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 266:	bf00      	nop
- 268:	0000014e 	.word	0x0000014e
-	...
- 274:	00000132 	.word	0x00000132
- 278:	00000092 	.word	0x00000092
- 27c:	0000003c 	.word	0x0000003c
+Function rsa_private_encrypt @ 0x0040010d
+0x0040010d:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400111:	mov	r6, r2
+0x00400113:	ldr	r4, [pc, #0x154]
+0x00400115:	ldr	r3, [pc, #0x154]
+0x00400117:	add	r4, pc
+0x00400119:	vpush	{d8}
+0x0040011d:	sub.w	sp, sp, #0x334
+0x00400121:	ldr	r2, [pc, #0x14c]
+0x00400123:	add	r5, sp, #0x20
+0x00400125:	add.w	r8, sp, #0x124
+0x00400129:	ldr	r3, [r4, r3]
+0x0040012b:	ldrd	fp, sb, [sp, #0x360]
+0x0040012f:	ldr	r3, [r3]
+0x00400131:	str	r3, [sp, #0x32c]
+0x00400133:	mov.w	r3, #0
+0x00400137:	ldr	r3, [pc, #0x13c]
+0x00400139:	strd	r0, r1, [sp, #0x10]
+0x0040013d:	mov	r1, sb
+0x0040013f:	add	r3, pc
+0x00400141:	ldr	r4, [sp, #0x36c]
+0x00400143:	mov	r0, r5
+0x00400145:	ldr.w	sl, [sp, #0x368]
+0x00400149:	vldr	s16, [sp, #0x370]
+0x0040014d:	ldr	r7, [r3, r2]
+0x0040014f:	mov.w	r3, #0x104
+0x00400153:	str	r4, [sp, #0x18]
+0x00400155:	ldrsh.w	r2, [r7]
+0x00400159:	lsls	r2, r2, #1
+0x0040015b:	bl	#0x500025
+0x0040015f:	mov	r0, r5
+0x00400161:	bl	#0x500061
+0x00400165:	mov	r1, fp
+0x00400167:	mov	r2, r5
+0x00400169:	mov	r0, r8
+0x0040016b:	bl	#0x50006d
+0x0040016f:	ldrsh.w	r2, [r7]
+0x00400173:	mov.w	r3, #0x104
+0x00400177:	mov	r1, sl
+0x00400179:	mov	r0, r5
+0x0040017b:	lsls	r2, r2, #1
+0x0040017d:	bl	#0x500025
+0x00400181:	mov	r0, r5
+0x00400183:	bl	#0x500061
+0x00400187:	mov	r1, fp
+0x00400189:	add.w	fp, sp, #0x228
+0x0040018d:	mov	r2, r5
+0x0040018f:	mov	r0, fp
+0x00400191:	bl	#0x50006d
+0x00400195:	vmov	r0, s16
+0x00400199:	bl	#0x500001
+0x0040019d:	adds	r4, r0, #7
+0x0040019f:	ldrsh.w	r2, [r7]
+0x004001a3:	asrs	r4, r4, #3
+0x004001a5:	subs	r4, #1
+0x004001a7:	rsb	r2, r4, r2, lsl #1
+0x004001ab:	cmp	r2, #0
+0x004001ad:	ble	#0x400259
+0x004001af:	movs	r1, #0
+0x004001b1:	mov	r0, r5
+0x004001b3:	str	r2, [sp, #0x1c]
+0x004001b5:	bl	#0x50000d
+0x004001b9:	ldr	r2, [sp, #0x1c]
+0x004001bb:	adds	r3, r5, r2
+0x004001bd:	subs	r2, r4, r6
+0x004001bf:	subs	r2, #0x14
+0x004001c1:	bmi	#0x40025d
+0x004001bd:	subs	r2, r4, r6
+0x004001bf:	subs	r2, #0x14
+0x004001c1:	bmi	#0x40025d
+0x004001c3:	mov	r4, r3
+0x004001c5:	movs	r3, #1
+0x004001c7:	mov.w	r1, #-1
+0x004001cb:	str	r2, [sp, #0x1c]
+0x004001cd:	strb	r3, [r4], #1
+0x004001d1:	movw	r3, #0x103
+0x004001d5:	mov	r0, r4
+0x004001d7:	bl	#0x500079
+0x004001db:	ldr	r2, [sp, #0x1c]
+0x004001dd:	ldr.w	ip, [pc, #0x98]
+0x004001e1:	movs	r3, #0
+0x004001e3:	add	ip, pc
+0x004001e5:	strb	r3, [r4, r2]
+0x004001e7:	add	r4, r2
+0x004001e9:	ldm.w	ip!, {r0, r1, r2, r3}
+0x004001ed:	str.w	r0, [r4, #1]
+0x004001f1:	str.w	r1, [r4, #5]
+0x004001f5:	add.w	r0, r4, #0x13
+0x004001f9:	str.w	r2, [r4, #9]
+0x004001fd:	mov	r2, r6
+0x004001ff:	str.w	r3, [r4, #0xd]
+0x00400203:	ldr	r1, [sp, #0x14]
+0x00400205:	ldrh.w	r3, [ip]
+0x00400209:	strh.w	r3, [r4, #0x11]
+0x0040020d:	bl	#0x500085
+0x00400211:	ldrsh.w	r1, [r7]
+0x00400215:	mov	r0, r5
+0x00400217:	lsls	r1, r1, #1
+0x00400219:	sxth	r1, r1
+0x0040021b:	bl	#0x500031
+0x0040021f:	ldr	r3, [sp, #0x18]
+0x00400221:	strd	fp, r3, [sp, #4]
+0x00400225:	mov	r2, sb
+0x00400227:	ldr	r0, [sp, #0x10]
+0x00400229:	mov	r3, sl
+0x0040022b:	mov	r1, r5
+0x0040022d:	str.w	r8, [sp]
+0x00400231:	bl	#0x500091
+0x00400235:	orr.w	r0, r0, r0, asr #31
+0x00400239:	ldr	r2, [pc, #0x40]
+0x0040023b:	ldr	r3, [pc, #0x30]
+0x0040023d:	add	r2, pc
+0x0040023f:	ldr	r3, [r2, r3]
+0x00400241:	ldr	r2, [r3]
+0x00400243:	ldr	r3, [sp, #0x32c]
+0x00400245:	eors	r2, r3
+0x00400247:	mov.w	r3, #0
+0x0040024b:	bne	#0x400263
+0x00400239:	ldr	r2, [pc, #0x40]
+0x0040023b:	ldr	r3, [pc, #0x30]
+0x0040023d:	add	r2, pc
+0x0040023f:	ldr	r3, [r2, r3]
+0x00400241:	ldr	r2, [r3]
+0x00400243:	ldr	r3, [sp, #0x32c]
+0x00400245:	eors	r2, r3
+0x00400247:	mov.w	r3, #0
+0x0040024b:	bne	#0x400263
+0x0040024d:	add.w	sp, sp, #0x334
+0x00400251:	vpop	{d8}
+0x00400255:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400259:	mov	r3, r5
+0x0040025b:	b	#0x4001bd
+0x0040025d:	mvn	r0, #3
+0x00400261:	b	#0x400239
+0x00400263:	bl	#0x500055
 
-00000280 <rsa_public_decrypt>:
- 280:	b5f0      	push	{r4, r5, r6, r7, lr}
- 282:	4605      	mov	r5, r0
- 284:	4c43      	ldr	r4, [pc, #268]	; (394 <rsa_public_decrypt+0x114>)
- 286:	4844      	ldr	r0, [pc, #272]	; (398 <rsa_public_decrypt+0x118>)
- 288:	b0c3      	sub	sp, #268	; 0x10c
- 28a:	447c      	add	r4, pc
- 28c:	461f      	mov	r7, r3
- 28e:	5820      	ldr	r0, [r4, r0]
- 290:	466c      	mov	r4, sp
- 292:	6800      	ldr	r0, [r0, #0]
- 294:	9041      	str	r0, [sp, #260]	; 0x104
- 296:	f04f 0000 	mov.w	r0, #0
- 29a:	4620      	mov	r0, r4
- 29c:	f7ff fffe 	bl	0 <mp_modexp>
- 2a0:	4b3e      	ldr	r3, [pc, #248]	; (39c <rsa_public_decrypt+0x11c>)
- 2a2:	2800      	cmp	r0, #0
- 2a4:	447b      	add	r3, pc
- 2a6:	db65      	blt.n	374 <rsa_public_decrypt+0xf4>
- 2a8:	4a3d      	ldr	r2, [pc, #244]	; (3a0 <rsa_public_decrypt+0x120>)
- 2aa:	4620      	mov	r0, r4
- 2ac:	589e      	ldr	r6, [r3, r2]
- 2ae:	f9b6 1000 	ldrsh.w	r1, [r6]
- 2b2:	0049      	lsls	r1, r1, #1
- 2b4:	b209      	sxth	r1, r1
- 2b6:	f7ff fffe 	bl	0 <hiloswap>
- 2ba:	4638      	mov	r0, r7
- 2bc:	f7ff fffe 	bl	0 <countbits>
- 2c0:	4638      	mov	r0, r7
- 2c2:	f9b6 6000 	ldrsh.w	r6, [r6]
- 2c6:	f7ff fffe 	bl	0 <countbits>
- 2ca:	1dc3      	adds	r3, r0, #7
- 2cc:	10db      	asrs	r3, r3, #3
- 2ce:	0076      	lsls	r6, r6, #1
- 2d0:	3b01      	subs	r3, #1
- 2d2:	1af3      	subs	r3, r6, r3
- 2d4:	d43b      	bmi.n	34e <rsa_public_decrypt+0xce>
- 2d6:	3301      	adds	r3, #1
- 2d8:	4621      	mov	r1, r4
- 2da:	4423      	add	r3, r4
- 2dc:	e000      	b.n	2e0 <rsa_public_decrypt+0x60>
- 2de:	bbb2      	cbnz	r2, 34e <rsa_public_decrypt+0xce>
- 2e0:	f811 2b01 	ldrb.w	r2, [r1], #1
- 2e4:	428b      	cmp	r3, r1
- 2e6:	d1fa      	bne.n	2de <rsa_public_decrypt+0x5e>
- 2e8:	4426      	add	r6, r4
- 2ea:	f816 3c01 	ldrb.w	r3, [r6, #-1]
- 2ee:	2b01      	cmp	r3, #1
- 2f0:	d01c      	beq.n	32c <rsa_public_decrypt+0xac>
- 2f2:	2a01      	cmp	r2, #1
- 2f4:	d12b      	bne.n	34e <rsa_public_decrypt+0xce>
- 2f6:	460f      	mov	r7, r1
- 2f8:	f811 3b01 	ldrb.w	r3, [r1], #1
- 2fc:	2bff      	cmp	r3, #255	; 0xff
- 2fe:	d0fa      	beq.n	2f6 <rsa_public_decrypt+0x76>
- 300:	bb2b      	cbnz	r3, 34e <rsa_public_decrypt+0xce>
- 302:	4608      	mov	r0, r1
- 304:	4927      	ldr	r1, [pc, #156]	; (3a4 <rsa_public_decrypt+0x124>)
- 306:	2212      	movs	r2, #18
- 308:	4479      	add	r1, pc
- 30a:	f7ff fffe 	bl	0 <memcmp>
- 30e:	bbc0      	cbnz	r0, 382 <rsa_public_decrypt+0x102>
- 310:	f107 0113 	add.w	r1, r7, #19
- 314:	42b1      	cmp	r1, r6
- 316:	d81a      	bhi.n	34e <rsa_public_decrypt+0xce>
- 318:	1a76      	subs	r6, r6, r1
- 31a:	4628      	mov	r0, r5
- 31c:	4632      	mov	r2, r6
- 31e:	f7ff fffe 	bl	0 <memcpy>
- 322:	2100      	movs	r1, #0
- 324:	4620      	mov	r0, r4
- 326:	f7ff fffe 	bl	0 <mp_init>
- 32a:	e016      	b.n	35a <rsa_public_decrypt+0xda>
- 32c:	f816 3c11 	ldrb.w	r3, [r6, #-17]
- 330:	2bff      	cmp	r3, #255	; 0xff
- 332:	d1de      	bne.n	2f2 <rsa_public_decrypt+0x72>
- 334:	f816 3c12 	ldrb.w	r3, [r6, #-18]
- 338:	2bff      	cmp	r3, #255	; 0xff
- 33a:	d1da      	bne.n	2f2 <rsa_public_decrypt+0x72>
- 33c:	3e01      	subs	r6, #1
- 33e:	2a01      	cmp	r2, #1
- 340:	d11f      	bne.n	382 <rsa_public_decrypt+0x102>
- 342:	f816 3d01 	ldrb.w	r3, [r6, #-1]!
- 346:	2bff      	cmp	r3, #255	; 0xff
- 348:	d0fb      	beq.n	342 <rsa_public_decrypt+0xc2>
- 34a:	2b00      	cmp	r3, #0
- 34c:	d0e2      	beq.n	314 <rsa_public_decrypt+0x94>
- 34e:	2100      	movs	r1, #0
- 350:	4620      	mov	r0, r4
- 352:	f06f 0608 	mvn.w	r6, #8
- 356:	f7ff fffe 	bl	0 <mp_init>
- 35a:	4a13      	ldr	r2, [pc, #76]	; (3a8 <rsa_public_decrypt+0x128>)
- 35c:	4b0e      	ldr	r3, [pc, #56]	; (398 <rsa_public_decrypt+0x118>)
- 35e:	447a      	add	r2, pc
- 360:	58d3      	ldr	r3, [r2, r3]
- 362:	681a      	ldr	r2, [r3, #0]
- 364:	9b41      	ldr	r3, [sp, #260]	; 0x104
- 366:	405a      	eors	r2, r3
- 368:	f04f 0300 	mov.w	r3, #0
- 36c:	d110      	bne.n	390 <rsa_public_decrypt+0x110>
- 36e:	4630      	mov	r0, r6
- 370:	b043      	add	sp, #268	; 0x10c
- 372:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 374:	2100      	movs	r1, #0
- 376:	4620      	mov	r0, r4
- 378:	f04f 36ff 	mov.w	r6, #4294967295	; 0xffffffff
- 37c:	f7ff fffe 	bl	0 <mp_init>
- 380:	e7eb      	b.n	35a <rsa_public_decrypt+0xda>
- 382:	2100      	movs	r1, #0
- 384:	4620      	mov	r0, r4
- 386:	f06f 0606 	mvn.w	r6, #6
- 38a:	f7ff fffe 	bl	0 <mp_init>
- 38e:	e7e4      	b.n	35a <rsa_public_decrypt+0xda>
- 390:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 394:	00000106 	.word	0x00000106
- 398:	00000000 	.word	0x00000000
- 39c:	000000f4 	.word	0x000000f4
- 3a0:	00000000 	.word	0x00000000
- 3a4:	00000098 	.word	0x00000098
- 3a8:	00000046 	.word	0x00000046
+Function sub_400267 @ 0x00400267
+0x00400267:	nop	
+0x00400269:	lsls	r6, r1, #5
+0x0040026b:	movs	r0, r0
+0x0040026d:	movs	r0, r0
+0x0040026f:	movs	r0, r0
+0x00400271:	movs	r0, r0
+0x00400273:	movs	r0, r0
+0x00400275:	lsls	r2, r6, #4
+0x00400277:	movs	r0, r0
+0x00400279:	lsls	r2, r6, #0xc
+0x0040027b:	movs	r0, r0
+0x0040027d:	movs	r4, r7
+0x0040027f:	movs	r0, r0
+0x00400281:	push	{r4, r5, r6, r7, lr}
+0x00400283:	mov	r5, r0
+0x00400285:	ldr	r4, [pc, #0x10c]
+0x00400287:	ldr	r0, [pc, #0x110]
+0x00400289:	sub	sp, #0x10c
+0x0040028b:	add	r4, pc
+0x0040028d:	mov	r7, r3
+0x0040028f:	ldr	r0, [r4, r0]
+0x00400291:	mov	r4, sp
+0x00400293:	ldr	r0, [r0]
+0x00400295:	str	r0, [sp, #0x104]
+0x00400297:	mov.w	r0, #0
+0x0040029b:	mov	r0, r4
+0x0040029d:	bl	#0x50003d
 
-000003ac <rsa_private_decrypt>:
- 3ac:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 3b0:	461d      	mov	r5, r3
- 3b2:	4c54      	ldr	r4, [pc, #336]	; (504 <rsa_private_decrypt+0x158>)
- 3b4:	4a54      	ldr	r2, [pc, #336]	; (508 <rsa_private_decrypt+0x15c>)
- 3b6:	f5ad 7d4b 	sub.w	sp, sp, #812	; 0x32c
- 3ba:	447c      	add	r4, pc
- 3bc:	4b53      	ldr	r3, [pc, #332]	; (50c <rsa_private_decrypt+0x160>)
- 3be:	4688      	mov	r8, r1
- 3c0:	447b      	add	r3, pc
- 3c2:	9ed6      	ldr	r6, [sp, #856]	; 0x358
- 3c4:	58a2      	ldr	r2, [r4, r2]
- 3c6:	ac06      	add	r4, sp, #24
- 3c8:	e9dd 9ad4 	ldrd	r9, sl, [sp, #848]	; 0x350
- 3cc:	6812      	ldr	r2, [r2, #0]
- 3ce:	92c9      	str	r2, [sp, #804]	; 0x324
- 3d0:	f04f 0200 	mov.w	r2, #0
- 3d4:	4a4e      	ldr	r2, [pc, #312]	; (510 <rsa_private_decrypt+0x164>)
- 3d6:	9005      	str	r0, [sp, #20]
- 3d8:	4649      	mov	r1, r9
- 3da:	4620      	mov	r0, r4
- 3dc:	f8dd b35c 	ldr.w	fp, [sp, #860]	; 0x35c
- 3e0:	589f      	ldr	r7, [r3, r2]
- 3e2:	f44f 7382 	mov.w	r3, #260	; 0x104
- 3e6:	9604      	str	r6, [sp, #16]
- 3e8:	ae47      	add	r6, sp, #284	; 0x11c
- 3ea:	f9b7 2000 	ldrsh.w	r2, [r7]
- 3ee:	0052      	lsls	r2, r2, #1
- 3f0:	f7ff fffe 	bl	0 <__memcpy_chk>
- 3f4:	4620      	mov	r0, r4
- 3f6:	f7ff fffe 	bl	0 <mp_dec>
- 3fa:	4629      	mov	r1, r5
- 3fc:	4622      	mov	r2, r4
- 3fe:	4630      	mov	r0, r6
- 400:	f7ff fffe 	bl	0 <mp_mod>
- 404:	f9b7 2000 	ldrsh.w	r2, [r7]
- 408:	f44f 7382 	mov.w	r3, #260	; 0x104
- 40c:	4651      	mov	r1, sl
- 40e:	4620      	mov	r0, r4
- 410:	0052      	lsls	r2, r2, #1
- 412:	f7ff fffe 	bl	0 <__memcpy_chk>
- 416:	4620      	mov	r0, r4
- 418:	f7ff fffe 	bl	0 <mp_dec>
- 41c:	4629      	mov	r1, r5
- 41e:	ad88      	add	r5, sp, #544	; 0x220
- 420:	4622      	mov	r2, r4
- 422:	4628      	mov	r0, r5
- 424:	f7ff fffe 	bl	0 <mp_mod>
- 428:	9b04      	ldr	r3, [sp, #16]
- 42a:	464a      	mov	r2, r9
- 42c:	4641      	mov	r1, r8
- 42e:	9302      	str	r3, [sp, #8]
- 430:	4620      	mov	r0, r4
- 432:	4653      	mov	r3, sl
- 434:	e9cd 6500 	strd	r6, r5, [sp]
- 438:	f7ff fffe 	bl	0 <mp_modexp_crt>
- 43c:	2100      	movs	r1, #0
- 43e:	4603      	mov	r3, r0
- 440:	4630      	mov	r0, r6
- 442:	461e      	mov	r6, r3
- 444:	f7ff fffe 	bl	0 <mp_init>
- 448:	4628      	mov	r0, r5
- 44a:	2100      	movs	r1, #0
- 44c:	f7ff fffe 	bl	0 <mp_init>
- 450:	2e00      	cmp	r6, #0
- 452:	db4e      	blt.n	4f2 <rsa_private_decrypt+0x146>
- 454:	f9b7 1000 	ldrsh.w	r1, [r7]
- 458:	4620      	mov	r0, r4
- 45a:	0049      	lsls	r1, r1, #1
- 45c:	b209      	sxth	r1, r1
- 45e:	f7ff fffe 	bl	0 <hiloswap>
- 462:	4658      	mov	r0, fp
- 464:	f9b7 6000 	ldrsh.w	r6, [r7]
- 468:	f7ff fffe 	bl	0 <countbits>
- 46c:	1dc3      	adds	r3, r0, #7
- 46e:	10db      	asrs	r3, r3, #3
- 470:	0076      	lsls	r6, r6, #1
- 472:	3b01      	subs	r3, #1
- 474:	1af1      	subs	r1, r6, r3
- 476:	d411      	bmi.n	49c <rsa_private_decrypt+0xf0>
- 478:	f10d 0219 	add.w	r2, sp, #25
- 47c:	4623      	mov	r3, r4
- 47e:	440a      	add	r2, r1
- 480:	e000      	b.n	484 <rsa_private_decrypt+0xd8>
- 482:	b95d      	cbnz	r5, 49c <rsa_private_decrypt+0xf0>
- 484:	781d      	ldrb	r5, [r3, #0]
- 486:	4619      	mov	r1, r3
- 488:	3301      	adds	r3, #1
- 48a:	4293      	cmp	r3, r2
- 48c:	d1f9      	bne.n	482 <rsa_private_decrypt+0xd6>
- 48e:	19a0      	adds	r0, r4, r6
- 490:	2d02      	cmp	r5, #2
- 492:	d028      	beq.n	4e6 <rsa_private_decrypt+0x13a>
- 494:	f810 3c01 	ldrb.w	r3, [r0, #-1]
- 498:	2b02      	cmp	r3, #2
- 49a:	d014      	beq.n	4c6 <rsa_private_decrypt+0x11a>
- 49c:	2100      	movs	r1, #0
- 49e:	4620      	mov	r0, r4
- 4a0:	f06f 0608 	mvn.w	r6, #8
- 4a4:	f7ff fffe 	bl	0 <mp_init>
- 4a8:	4a1a      	ldr	r2, [pc, #104]	; (514 <rsa_private_decrypt+0x168>)
- 4aa:	4b17      	ldr	r3, [pc, #92]	; (508 <rsa_private_decrypt+0x15c>)
- 4ac:	447a      	add	r2, pc
- 4ae:	58d3      	ldr	r3, [r2, r3]
- 4b0:	681a      	ldr	r2, [r3, #0]
- 4b2:	9bc9      	ldr	r3, [sp, #804]	; 0x324
- 4b4:	405a      	eors	r2, r3
- 4b6:	f04f 0300 	mov.w	r3, #0
- 4ba:	d121      	bne.n	500 <rsa_private_decrypt+0x154>
- 4bc:	4630      	mov	r0, r6
- 4be:	f50d 7d4b 	add.w	sp, sp, #812	; 0x32c
- 4c2:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 4c6:	f810 3d01 	ldrb.w	r3, [r0, #-1]!
- 4ca:	2b00      	cmp	r3, #0
- 4cc:	d1fb      	bne.n	4c6 <rsa_private_decrypt+0x11a>
- 4ce:	4288      	cmp	r0, r1
- 4d0:	d9e4      	bls.n	49c <rsa_private_decrypt+0xf0>
- 4d2:	1a46      	subs	r6, r0, r1
- 4d4:	9805      	ldr	r0, [sp, #20]
- 4d6:	4632      	mov	r2, r6
- 4d8:	f7ff fffe 	bl	0 <memcpy>
- 4dc:	2100      	movs	r1, #0
- 4de:	4620      	mov	r0, r4
- 4e0:	f7ff fffe 	bl	0 <mp_init>
- 4e4:	e7e0      	b.n	4a8 <rsa_private_decrypt+0xfc>
- 4e6:	4619      	mov	r1, r3
- 4e8:	f811 3b01 	ldrb.w	r3, [r1], #1
- 4ec:	2b00      	cmp	r3, #0
- 4ee:	d1fb      	bne.n	4e8 <rsa_private_decrypt+0x13c>
- 4f0:	e7ed      	b.n	4ce <rsa_private_decrypt+0x122>
- 4f2:	2100      	movs	r1, #0
- 4f4:	4620      	mov	r0, r4
- 4f6:	f04f 36ff 	mov.w	r6, #4294967295	; 0xffffffff
- 4fa:	f7ff fffe 	bl	0 <mp_init>
- 4fe:	e7d3      	b.n	4a8 <rsa_private_decrypt+0xfc>
- 500:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 504:	00000146 	.word	0x00000146
- 508:	00000000 	.word	0x00000000
- 50c:	00000148 	.word	0x00000148
- 510:	00000000 	.word	0x00000000
- 514:	00000064 	.word	0x00000064
+Function rsa_public_decrypt @ 0x00400281
+0x00400281:	push	{r4, r5, r6, r7, lr}
+0x00400283:	mov	r5, r0
+0x00400285:	ldr	r4, [pc, #0x10c]
+0x00400287:	ldr	r0, [pc, #0x110]
+0x00400289:	sub	sp, #0x10c
+0x0040028b:	add	r4, pc
+0x0040028d:	mov	r7, r3
+0x0040028f:	ldr	r0, [r4, r0]
+0x00400291:	mov	r4, sp
+0x00400293:	ldr	r0, [r0]
+0x00400295:	str	r0, [sp, #0x104]
+0x00400297:	mov.w	r0, #0
+0x0040029b:	mov	r0, r4
+0x0040029d:	bl	#0x50003d
+0x004002a1:	ldr	r3, [pc, #0xf8]
+0x004002a3:	cmp	r0, #0
+0x004002a5:	add	r3, pc
+0x004002a7:	blt	#0x400375
+0x004002a9:	ldr	r2, [pc, #0xf4]
+0x004002ab:	mov	r0, r4
+0x004002ad:	ldr	r6, [r3, r2]
+0x004002af:	ldrsh.w	r1, [r6]
+0x004002b3:	lsls	r1, r1, #1
+0x004002b5:	sxth	r1, r1
+0x004002b7:	bl	#0x500031
+0x004002bb:	mov	r0, r7
+0x004002bd:	bl	#0x500001
+0x004002c1:	mov	r0, r7
+0x004002c3:	ldrsh.w	r6, [r6]
+0x004002c7:	bl	#0x500001
+0x004002cb:	adds	r3, r0, #7
+0x004002cd:	asrs	r3, r3, #3
+0x004002cf:	lsls	r6, r6, #1
+0x004002d1:	subs	r3, #1
+0x004002d3:	subs	r3, r6, r3
+0x004002d5:	bmi	#0x40034f
+0x004002d7:	adds	r3, #1
+0x004002d9:	mov	r1, r4
+0x004002db:	add	r3, r4
+0x004002dd:	b	#0x4002e1
+0x004002df:	cbnz	r2, #0x40034f
+0x004002e1:	ldrb	r2, [r1], #1
+0x004002e5:	cmp	r3, r1
+0x004002e7:	bne	#0x4002df
+0x004002e1:	ldrb	r2, [r1], #1
+0x004002e5:	cmp	r3, r1
+0x004002e7:	bne	#0x4002df
+0x004002e9:	add	r6, r4
+0x004002eb:	ldrb	r3, [r6, #-0x1]
+0x004002ef:	cmp	r3, #1
+0x004002f1:	beq	#0x40032d
+0x004002f3:	cmp	r2, #1
+0x004002f5:	bne	#0x40034f
+0x004002f7:	mov	r7, r1
+0x004002f9:	ldrb	r3, [r1], #1
+0x004002fd:	cmp	r3, #0xff
+0x004002ff:	beq	#0x4002f7
+0x00400301:	cbnz	r3, #0x40034f
+0x00400303:	mov	r0, r1
+0x00400305:	ldr	r1, [pc, #0x9c]
+0x00400307:	movs	r2, #0x12
+0x00400309:	add	r1, pc
+0x0040030b:	bl	#0x50009d
+0x00400303:	mov	r0, r1
+0x00400305:	ldr	r1, [pc, #0x9c]
+0x00400307:	movs	r2, #0x12
+0x00400309:	add	r1, pc
+0x0040030b:	bl	#0x50009d
+0x0040030f:	cbnz	r0, #0x400383
+0x00400311:	add.w	r1, r7, #0x13
+0x00400315:	cmp	r1, r6
+0x00400317:	bhi	#0x40034f
+0x00400311:	add.w	r1, r7, #0x13
+0x00400315:	cmp	r1, r6
+0x00400317:	bhi	#0x40034f
+0x00400315:	cmp	r1, r6
+0x00400317:	bhi	#0x40034f
+0x00400319:	subs	r6, r6, r1
+0x0040031b:	mov	r0, r5
+0x0040031d:	mov	r2, r6
+0x0040031f:	bl	#0x500085
+0x00400323:	movs	r1, #0
+0x00400325:	mov	r0, r4
+0x00400327:	bl	#0x500049
+0x0040032b:	b	#0x40035b
+0x0040032d:	ldrb	r3, [r6, #-0x11]
+0x00400331:	cmp	r3, #0xff
+0x00400333:	bne	#0x4002f3
+0x00400335:	ldrb	r3, [r6, #-0x12]
+0x00400339:	cmp	r3, #0xff
+0x0040033b:	bne	#0x4002f3
+0x0040033d:	subs	r6, #1
+0x0040033f:	cmp	r2, #1
+0x00400341:	bne	#0x400383
+0x00400343:	ldrb	r3, [r6, #-0x1]!
+0x00400347:	cmp	r3, #0xff
+0x00400349:	beq	#0x400343
+0x0040034b:	cmp	r3, #0
+0x0040034d:	beq	#0x400315
+0x0040034f:	movs	r1, #0
+0x00400351:	mov	r0, r4
+0x00400353:	mvn	r6, #8
+0x00400357:	bl	#0x500049
+0x0040035b:	ldr	r2, [pc, #0x4c]
+0x0040035d:	ldr	r3, [pc, #0x38]
+0x0040035f:	add	r2, pc
+0x00400361:	ldr	r3, [r2, r3]
+0x00400363:	ldr	r2, [r3]
+0x00400365:	ldr	r3, [sp, #0x104]
+0x00400367:	eors	r2, r3
+0x00400369:	mov.w	r3, #0
+0x0040036d:	bne	#0x400391
+0x0040036f:	mov	r0, r6
+0x00400371:	add	sp, #0x10c
+0x00400373:	pop	{r4, r5, r6, r7, pc}
+0x00400375:	movs	r1, #0
+0x00400377:	mov	r0, r4
+0x00400379:	mov.w	r6, #-1
+0x0040037d:	bl	#0x500049
+0x00400381:	b	#0x40035b
+0x00400383:	movs	r1, #0
+0x00400385:	mov	r0, r4
+0x00400387:	mvn	r6, #6
+0x0040038b:	bl	#0x500049
+0x0040038f:	b	#0x40035b
+0x00400391:	bl	#0x500055
+
+Function rsa_private_decrypt @ 0x004003ad
+0x004003ad:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004003b1:	mov	r5, r3
+0x004003b3:	ldr	r4, [pc, #0x150]
+0x004003b5:	ldr	r2, [pc, #0x150]
+0x004003b7:	sub.w	sp, sp, #0x32c
+0x004003bb:	add	r4, pc
+0x004003bd:	ldr	r3, [pc, #0x14c]
+0x004003bf:	mov	r8, r1
+0x004003c1:	add	r3, pc
+0x004003c3:	ldr	r6, [sp, #0x358]
+0x004003c5:	ldr	r2, [r4, r2]
+0x004003c7:	add	r4, sp, #0x18
+0x004003c9:	ldrd	sb, sl, [sp, #0x350]
+0x004003cd:	ldr	r2, [r2]
+0x004003cf:	str	r2, [sp, #0x324]
+0x004003d1:	mov.w	r2, #0
+0x004003d5:	ldr	r2, [pc, #0x138]
+0x004003d7:	str	r0, [sp, #0x14]
+0x004003d9:	mov	r1, sb
+0x004003db:	mov	r0, r4
+0x004003dd:	ldr.w	fp, [sp, #0x35c]
+0x004003e1:	ldr	r7, [r3, r2]
+0x004003e3:	mov.w	r3, #0x104
+0x004003e7:	str	r6, [sp, #0x10]
+0x004003e9:	add	r6, sp, #0x11c
+0x004003eb:	ldrsh.w	r2, [r7]
+0x004003ef:	lsls	r2, r2, #1
+0x004003f1:	bl	#0x500025
+0x004003f5:	mov	r0, r4
+0x004003f7:	bl	#0x500061
+0x004003fb:	mov	r1, r5
+0x004003fd:	mov	r2, r4
+0x004003ff:	mov	r0, r6
+0x00400401:	bl	#0x50006d
+0x00400405:	ldrsh.w	r2, [r7]
+0x00400409:	mov.w	r3, #0x104
+0x0040040d:	mov	r1, sl
+0x0040040f:	mov	r0, r4
+0x00400411:	lsls	r2, r2, #1
+0x00400413:	bl	#0x500025
+0x00400417:	mov	r0, r4
+0x00400419:	bl	#0x500061
+0x0040041d:	mov	r1, r5
+0x0040041f:	add	r5, sp, #0x220
+0x00400421:	mov	r2, r4
+0x00400423:	mov	r0, r5
+0x00400425:	bl	#0x50006d
+0x00400429:	ldr	r3, [sp, #0x10]
+0x0040042b:	mov	r2, sb
+0x0040042d:	mov	r1, r8
+0x0040042f:	str	r3, [sp, #8]
+0x00400431:	mov	r0, r4
+0x00400433:	mov	r3, sl
+0x00400435:	strd	r6, r5, [sp]
+0x00400439:	bl	#0x500091
+0x0040043d:	movs	r1, #0
+0x0040043f:	mov	r3, r0
+0x00400441:	mov	r0, r6
+0x00400443:	mov	r6, r3
+0x00400445:	bl	#0x500049
+0x00400449:	mov	r0, r5
+0x0040044b:	movs	r1, #0
+0x0040044d:	bl	#0x500049
+0x00400451:	cmp	r6, #0
+0x00400453:	blt	#0x4004f3
+0x00400455:	ldrsh.w	r1, [r7]
+0x00400459:	mov	r0, r4
+0x0040045b:	lsls	r1, r1, #1
+0x0040045d:	sxth	r1, r1
+0x0040045f:	bl	#0x500031
+0x00400463:	mov	r0, fp
+0x00400465:	ldrsh.w	r6, [r7]
+0x00400469:	bl	#0x500001
+0x0040046d:	adds	r3, r0, #7
+0x0040046f:	asrs	r3, r3, #3
+0x00400471:	lsls	r6, r6, #1
+0x00400473:	subs	r3, #1
+0x00400475:	subs	r1, r6, r3
+0x00400477:	bmi	#0x40049d
+0x00400479:	add.w	r2, sp, #0x19
+0x0040047d:	mov	r3, r4
+0x0040047f:	add	r2, r1
+0x00400481:	b	#0x400485
+0x00400483:	cbnz	r5, #0x40049d
+0x00400485:	ldrb	r5, [r3]
+0x00400487:	mov	r1, r3
+0x00400489:	adds	r3, #1
+0x0040048b:	cmp	r3, r2
+0x0040048d:	bne	#0x400483
+0x00400485:	ldrb	r5, [r3]
+0x00400487:	mov	r1, r3
+0x00400489:	adds	r3, #1
+0x0040048b:	cmp	r3, r2
+0x0040048d:	bne	#0x400483
+0x0040048f:	adds	r0, r4, r6
+0x00400491:	cmp	r5, #2
+0x00400493:	beq	#0x4004e7
+0x00400495:	ldrb	r3, [r0, #-0x1]
+0x00400499:	cmp	r3, #2
+0x0040049b:	beq	#0x4004c7
+0x0040049d:	movs	r1, #0
+0x0040049f:	mov	r0, r4
+0x004004a1:	mvn	r6, #8
+0x004004a5:	bl	#0x500049
+0x004004a9:	ldr	r2, [pc, #0x68]
+0x004004ab:	ldr	r3, [pc, #0x5c]
+0x004004ad:	add	r2, pc
+0x004004af:	ldr	r3, [r2, r3]
+0x004004b1:	ldr	r2, [r3]
+0x004004b3:	ldr	r3, [sp, #0x324]
+0x004004b5:	eors	r2, r3
+0x004004b7:	mov.w	r3, #0
+0x004004bb:	bne	#0x400501
+0x004004bd:	mov	r0, r6
+0x004004bf:	add.w	sp, sp, #0x32c
+0x004004c3:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004004c7:	ldrb	r3, [r0, #-0x1]!
+0x004004cb:	cmp	r3, #0
+0x004004cd:	bne	#0x4004c7
+0x004004cf:	cmp	r0, r1
+0x004004d1:	bls	#0x40049d
+0x004004d3:	subs	r6, r0, r1
+0x004004d5:	ldr	r0, [sp, #0x14]
+0x004004d7:	mov	r2, r6
+0x004004d9:	bl	#0x500085
+0x004004dd:	movs	r1, #0
+0x004004df:	mov	r0, r4
+0x004004e1:	bl	#0x500049
+0x004004e5:	b	#0x4004a9
+0x004004e7:	mov	r1, r3
+0x004004e9:	ldrb	r3, [r1], #1
+0x004004ed:	cmp	r3, #0
+0x004004ef:	bne	#0x4004e9
+0x004004e9:	ldrb	r3, [r1], #1
+0x004004ed:	cmp	r3, #0
+0x004004ef:	bne	#0x4004e9
+0x004004f1:	b	#0x4004cf
+0x004004f3:	movs	r1, #0
+0x004004f5:	mov	r0, r4
+0x004004f7:	mov.w	r6, #-1
+0x004004fb:	bl	#0x500049
+0x004004ff:	b	#0x4004a9
+0x00400501:	bl	#0x500055
+
+Function countbits @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function memset @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function cryptRandByte @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __memcpy_chk @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function hiloswap @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function mp_modexp @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function mp_init @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function mp_dec @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function mp_mod @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function __memset_chk @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function memcpy @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function mp_modexp_crt @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function memcmp @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

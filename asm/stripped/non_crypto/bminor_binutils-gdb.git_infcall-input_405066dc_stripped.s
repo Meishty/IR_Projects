@@ -1,17 +1,15 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_infcall-input_405066dc_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andhs	fp, r1, r8, lsl #10
 
+Function sub_400007 @ 0x00400007
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	movs	r0, #1
+0x00400011:	bl	#0x400011
 
-00000000 <.text>:
-   0:	2001b508 	andcs	fp, r1, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bd082001 	stclt	0, cr2, [r8, #-4]
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	2001b508 	andcs	fp, r1, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bd082000 	stclt	0, cr2, [r8, #-0]
+Function sub_400011 @ 0x00400011
+0x00400011:	bl	#0x400011
+0x00400015:	movs	r0, #0
+0x00400017:	pop	{r3, pc}

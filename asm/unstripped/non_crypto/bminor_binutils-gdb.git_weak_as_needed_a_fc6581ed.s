@@ -1,12 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_weak_as_needed_a_fc6581ed.o:     file format elf32-littlearm
+Function foo @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x400003
 
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
+0x00400007:	pop.w	{r3, lr}
+0x0040000b:	b.w	#0x500001
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-00000000 <foo>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <bar>
-   6:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-   a:	f7ff bffe 	b.w	0 <t4>
-   e:	bf00      	nop
+Function t4 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

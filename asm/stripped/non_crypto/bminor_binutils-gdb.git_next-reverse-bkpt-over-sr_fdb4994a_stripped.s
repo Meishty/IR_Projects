@@ -1,18 +1,25 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_next-reverse-bkpt-over-sr_fdb4994a_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb02
+0x00400004:	mcrrne	p8, #1, r6, r2, c8
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r0
+0x0040000f:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b02 	ldrbtmi	r4, [fp], #-2818	; 0xfffff4fe
-   4:	1c426818 	mcrrne	8, 1, r6, r2, cr8
-   8:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-   c:	00000006 	andeq	r0, r0, r6
+Function sub_400015 @ 0x00400015
+0x00400015:	push	{r3, lr}
+0x00400017:	bl	#0x400017
 
-Disassembly of section .text.startup:
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	2000fffe 	strdcs	pc, [r0], -lr
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
+Function sub_40001b @ 0x0040001b
+0x0040001b:	movs	r0, #0
+0x0040001d:	bl	#0x40001d
+
+Function sub_40001d @ 0x0040001d
+0x0040001d:	bl	#0x40001d

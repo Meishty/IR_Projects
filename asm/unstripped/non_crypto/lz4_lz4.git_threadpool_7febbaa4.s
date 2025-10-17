@@ -1,62 +1,170 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_threadpool_7febbaa4.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [r8], #-0x801
+0x00400004:	svclt	#0x4770
+0x00400008:	andeq	r0, r0, r2, ror r0
+0x0040000c:	blmi	#0x62d434
 
+Function TPool_free @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	ldr	r3, [pc, #0x20]
+0x00400011:	add	r3, pc
+0x00400013:	cmp	r0, #0
+0x00400015:	it	ne
+0x00400017:	cmpne	r3, r0
+0x00400019:	bne	#0x40001d
+0x0040001b:	pop	{r3, pc}
+0x0040001d:	ldr	r3, [pc, #0x14]
+0x0040001f:	movs	r2, #0x38
+0x00400021:	ldr	r1, [pc, #0x14]
+0x00400023:	ldr	r0, [pc, #0x18]
+0x00400025:	add	r3, pc
+0x00400027:	add	r1, pc
+0x00400029:	add	r0, pc
+0x0040002b:	bl	#0x500001
 
-Disassembly of section .text:
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	lsls	r4, r4, #1
+0x00400033:	movs	r0, r0
+0x00400035:	lsls	r0, r3, #2
+0x00400037:	movs	r0, r0
+0x00400039:	lsls	r2, r2, #1
+0x0040003b:	movs	r0, r0
+0x0040003d:	lsls	r0, r7, #1
+0x0040003f:	movs	r0, r0
+0x00400041:	mov	r0, r2
+0x00400043:	bx	r1
 
-00000000 <TPool_create>:
-   0:	4801      	ldr	r0, [pc, #4]	; (8 <TPool_create+0x8>)
-   2:	4478      	add	r0, pc
-   4:	4770      	bx	lr
-   6:	bf00      	nop
-   8:	00000002 	.word	0x00000002
+Function TPool_submitJob @ 0x00400041
+0x00400041:	mov	r0, r2
+0x00400043:	bx	r1
 
-0000000c <TPool_free>:
-   c:	b508      	push	{r3, lr}
-   e:	4b08      	ldr	r3, [pc, #32]	; (30 <TPool_free+0x24>)
-  10:	447b      	add	r3, pc
-  12:	2800      	cmp	r0, #0
-  14:	bf18      	it	ne
-  16:	4283      	cmpne	r3, r0
-  18:	d100      	bne.n	1c <TPool_free+0x10>
-  1a:	bd08      	pop	{r3, pc}
-  1c:	4b05      	ldr	r3, [pc, #20]	; (34 <TPool_free+0x28>)
-  1e:	2238      	movs	r2, #56	; 0x38
-  20:	4905      	ldr	r1, [pc, #20]	; (38 <TPool_free+0x2c>)
-  22:	4806      	ldr	r0, [pc, #24]	; (3c <TPool_free+0x30>)
-  24:	447b      	add	r3, pc
-  26:	4479      	add	r1, pc
-  28:	4478      	add	r0, pc
-  2a:	f7ff fffe 	bl	0 <__assert_fail>
-  2e:	bf00      	nop
-  30:	0000001c 	.word	0x0000001c
-  34:	0000000c 	.word	0x0000000c
-  38:	0000000e 	.word	0x0000000e
-  3c:	00000010 	.word	0x00000010
+Function TPool_jobsCompleted @ 0x00400045
+0x00400045:	push	{r3, lr}
+0x00400047:	ldr	r3, [pc, #0x20]
+0x00400049:	add	r3, pc
+0x0040004b:	cmp	r0, #0
+0x0040004d:	it	ne
+0x0040004f:	cmpne	r3, r0
+0x00400051:	bne	#0x400055
+0x00400053:	pop	{r3, pc}
+0x00400055:	ldr	r3, [pc, #0x14]
+0x00400057:	movs	r2, #0x42
+0x00400059:	ldr	r1, [pc, #0x14]
+0x0040005b:	ldr	r0, [pc, #0x18]
+0x0040005d:	add	r3, pc
+0x0040005f:	add	r1, pc
+0x00400061:	adds	r3, #0xc
+0x00400063:	add	r0, pc
+0x00400065:	bl	#0x500001
 
-00000040 <TPool_submitJob>:
-  40:	4610      	mov	r0, r2
-  42:	4708      	bx	r1
+Function __assert_fail @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
 
-00000044 <TPool_jobsCompleted>:
-  44:	b508      	push	{r3, lr}
-  46:	4b08      	ldr	r3, [pc, #32]	; (68 <TPool_jobsCompleted+0x24>)
-  48:	447b      	add	r3, pc
-  4a:	2800      	cmp	r0, #0
-  4c:	bf18      	it	ne
-  4e:	4283      	cmpne	r3, r0
-  50:	d100      	bne.n	54 <TPool_jobsCompleted+0x10>
-  52:	bd08      	pop	{r3, pc}
-  54:	4b05      	ldr	r3, [pc, #20]	; (6c <TPool_jobsCompleted+0x28>)
-  56:	2242      	movs	r2, #66	; 0x42
-  58:	4905      	ldr	r1, [pc, #20]	; (70 <TPool_jobsCompleted+0x2c>)
-  5a:	4806      	ldr	r0, [pc, #24]	; (74 <TPool_jobsCompleted+0x30>)
-  5c:	447b      	add	r3, pc
-  5e:	4479      	add	r1, pc
-  60:	330c      	adds	r3, #12
-  62:	4478      	add	r0, pc
-  64:	f7ff fffe 	bl	0 <__assert_fail>
-  68:	0000001c 	.word	0x0000001c
-  6c:	0000000c 	.word	0x0000000c
-  70:	0000000e 	.word	0x0000000e
-  74:	0000000e 	.word	0x0000000e
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

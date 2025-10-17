@@ -1,21 +1,28 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_pr20267a_e81dd16b.o:     file format elf32-littlearm
+Function main @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	ldr	r3, [pc, #0x18]
+0x00400011:	add	r3, pc
+0x00400013:	ldr	r3, [r3]
+0x00400015:	cmp	r3, #0x14
+0x00400017:	bne	#0x400025
+0x00400019:	ldr	r0, [pc, #0x10]
+0x0040001b:	add	r0, pc
+0x0040001d:	bl	#0x500001
+0x00400021:	movs	r0, #0
+0x00400023:	pop	{r3, pc}
+0x00400025:	bl	#0x50000d
 
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b06      	ldr	r3, [pc, #24]	; (1c <main+0x1c>)
-   4:	447b      	add	r3, pc
-   6:	681b      	ldr	r3, [r3, #0]
-   8:	2b14      	cmp	r3, #20
-   a:	d105      	bne.n	18 <main+0x18>
-   c:	4804      	ldr	r0, [pc, #16]	; (20 <main+0x20>)
-   e:	4478      	add	r0, pc
-  10:	f7ff fffe 	bl	0 <puts>
-  14:	2000      	movs	r0, #0
-  16:	bd08      	pop	{r3, pc}
-  18:	f7ff fffe 	bl	0 <abort>
-  1c:	00000014 	.word	0x00000014
-  20:	0000000e 	.word	0x0000000e
+Function abort @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

@@ -1,655 +1,945 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_linux-dp_550527f5.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldmdbmi	r8, {r0, r1, r2, r3, sl, ip, sp, pc}
+0x00400004:	ldrlt	r4, [r0, #-0xa18]!
+0x00400018:	andls	r6, r1, #0x120000
+0x0040001c:	andeq	pc, r0, #0x4f
 
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x500001
+0x00400027:	ldr	r0, [pc, #0x4c]
+0x00400029:	add	r5, pc
+0x0040002b:	ldr	r2, [pc, #0x4c]
+0x0040002d:	mov	r1, r5
+0x0040002f:	ldr	r3, [sp]
+0x00400031:	add	r2, pc
+0x00400033:	ldr	r1, [r5, r0]
+0x00400035:	ldr	r0, [r1]
+0x00400037:	movs	r1, #1
+0x00400039:	bl	#0x50000d
+0x0040003d:	mov	r0, r4
+0x0040003f:	bl	#0x500019
+0x00400043:	ldr	r2, [pc, #0x38]
+0x00400045:	ldr	r3, [pc, #0x20]
+0x00400047:	add	r2, pc
+0x00400049:	ldr	r3, [r2, r3]
+0x0040004b:	ldr	r2, [r3]
+0x0040004d:	ldr	r3, [sp, #4]
+0x0040004f:	eors	r2, r3
+0x00400051:	mov.w	r3, #0
+0x00400055:	bne	#0x400061
+0x00400057:	add	sp, #0xc
+0x00400059:	pop.w	{r4, r5, lr}
+0x0040005d:	add	sp, #0x10
+0x0040005f:	bx	lr
+0x00400061:	bl	#0x500025
 
-Disassembly of section .text:
+Function sub_400065 @ 0x00400065
+0x00400065:	lsls	r0, r3, #1
+0x00400067:	movs	r0, r0
+0x00400069:	movs	r0, r0
+0x0040006b:	movs	r0, r0
+0x0040006d:	lsls	r6, r7, #0x16
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r4, r0, #1
+0x00400073:	movs	r0, r0
+0x00400075:	movs	r0, r0
+0x00400077:	movs	r0, r0
+0x00400079:	lsls	r4, r3, #0x17
+0x0040007b:	movs	r0, r0
+0x0040007d:	movs	r2, r6
+0x0040007f:	movs	r0, r0
+0x00400081:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400085:	mov	r1, r0
+0x00400087:	ldr	r4, [pc, #0x320]
+0x00400089:	vpush	{d8}
+0x0040008d:	sub	sp, #0x34
+0x0040008f:	ldr	r5, [r1]
+0x00400091:	add	r4, pc
+0x00400093:	ldr	r1, [pc, #0x318]
+0x00400095:	movs	r3, #0x5f
+0x00400097:	str	r5, [sp, #0xc]
+0x00400099:	strd	r5, r3, [sp]
+0x0040009d:	ldr	r2, [pc, #0x310]
+0x0040009f:	ldr	r1, [r4, r1]
+0x004000a1:	mov	r4, r5
+0x004000a3:	ldr	r0, [pc, #0x310]
+0x004000a5:	add	r2, pc
+0x004000a7:	ldr	r1, [r1]
+0x004000a9:	str	r1, [sp, #0x2c]
+0x004000ab:	mov.w	r1, #0
+0x004000af:	lsls	r1, r5, #2
+0x004000b1:	adds	r1, #2
+0x004000b3:	ldr.w	sl, [pc, #0x304]
+0x004000b7:	add	r0, pc
+0x004000b9:	mov	r6, r1
+0x004000bb:	mov	fp, r1
+0x004000bd:	bl	#0x400001
 
-00000000 <shared_printf.constprop.0>:
-   0:	b40f      	push	{r0, r1, r2, r3}
-   2:	4918      	ldr	r1, [pc, #96]	; (64 <shared_printf.constprop.0+0x64>)
-   4:	4a18      	ldr	r2, [pc, #96]	; (68 <shared_printf.constprop.0+0x68>)
-   6:	b530      	push	{r4, r5, lr}
-   8:	4479      	add	r1, pc
-   a:	4c18      	ldr	r4, [pc, #96]	; (6c <shared_printf.constprop.0+0x6c>)
-   c:	b083      	sub	sp, #12
-   e:	4d18      	ldr	r5, [pc, #96]	; (70 <shared_printf.constprop.0+0x70>)
-  10:	588a      	ldr	r2, [r1, r2]
-  12:	447c      	add	r4, pc
-  14:	4620      	mov	r0, r4
-  16:	ab07      	add	r3, sp, #28
-  18:	6812      	ldr	r2, [r2, #0]
-  1a:	9201      	str	r2, [sp, #4]
-  1c:	f04f 0200 	mov.w	r2, #0
-  20:	9300      	str	r3, [sp, #0]
-  22:	f7ff fffe 	bl	0 <pthread_mutex_lock>
-  26:	4813      	ldr	r0, [pc, #76]	; (74 <shared_printf.constprop.0+0x74>)
-  28:	447d      	add	r5, pc
-  2a:	4a13      	ldr	r2, [pc, #76]	; (78 <shared_printf.constprop.0+0x78>)
-  2c:	4629      	mov	r1, r5
-  2e:	9b00      	ldr	r3, [sp, #0]
-  30:	447a      	add	r2, pc
-  32:	5829      	ldr	r1, [r5, r0]
-  34:	6808      	ldr	r0, [r1, #0]
-  36:	2101      	movs	r1, #1
-  38:	f7ff fffe 	bl	0 <__vfprintf_chk>
-  3c:	4620      	mov	r0, r4
-  3e:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
-  42:	4a0e      	ldr	r2, [pc, #56]	; (7c <shared_printf.constprop.0+0x7c>)
-  44:	4b08      	ldr	r3, [pc, #32]	; (68 <shared_printf.constprop.0+0x68>)
-  46:	447a      	add	r2, pc
-  48:	58d3      	ldr	r3, [r2, r3]
-  4a:	681a      	ldr	r2, [r3, #0]
-  4c:	9b01      	ldr	r3, [sp, #4]
-  4e:	405a      	eors	r2, r3
-  50:	f04f 0300 	mov.w	r3, #0
-  54:	d104      	bne.n	60 <shared_printf.constprop.0+0x60>
-  56:	b003      	add	sp, #12
-  58:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
-  5c:	b004      	add	sp, #16
-  5e:	4770      	bx	lr
-  60:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  64:	00000058 	.word	0x00000058
-  68:	00000000 	.word	0x00000000
-  6c:	00000056 	.word	0x00000056
-  70:	00000044 	.word	0x00000044
-  74:	00000000 	.word	0x00000000
-  78:	00000044 	.word	0x00000044
-  7c:	00000032 	.word	0x00000032
+Function sub_40006d @ 0x0040006d
+0x0040006d:	lsls	r6, r7, #0x16
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r4, r0, #1
+0x00400073:	movs	r0, r0
+0x00400075:	movs	r0, r0
+0x00400077:	movs	r0, r0
+0x00400079:	lsls	r4, r3, #0x17
+0x0040007b:	movs	r0, r0
+0x0040007d:	movs	r2, r6
+0x0040007f:	movs	r0, r0
+0x00400081:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400085:	mov	r1, r0
+0x00400087:	ldr	r4, [pc, #0x320]
+0x00400089:	vpush	{d8}
+0x0040008d:	sub	sp, #0x34
+0x0040008f:	ldr	r5, [r1]
+0x00400091:	add	r4, pc
+0x00400093:	ldr	r1, [pc, #0x318]
+0x00400095:	movs	r3, #0x5f
+0x00400097:	str	r5, [sp, #0xc]
+0x00400099:	strd	r5, r3, [sp]
+0x0040009d:	ldr	r2, [pc, #0x310]
+0x0040009f:	ldr	r1, [r4, r1]
+0x004000a1:	mov	r4, r5
+0x004000a3:	ldr	r0, [pc, #0x310]
+0x004000a5:	add	r2, pc
+0x004000a7:	ldr	r1, [r1]
+0x004000a9:	str	r1, [sp, #0x2c]
+0x004000ab:	mov.w	r1, #0
+0x004000af:	lsls	r1, r5, #2
+0x004000b1:	adds	r1, #2
+0x004000b3:	ldr.w	sl, [pc, #0x304]
+0x004000b7:	add	r0, pc
+0x004000b9:	mov	r6, r1
+0x004000bb:	mov	fp, r1
+0x004000bd:	bl	#0x400001
 
-00000080 <philosopher>:
-  80:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-  84:	4601      	mov	r1, r0
-  86:	4cc8      	ldr	r4, [pc, #800]	; (3a8 <philosopher+0x328>)
-  88:	ed2d 8b02 	vpush	{d8}
-  8c:	b08d      	sub	sp, #52	; 0x34
-  8e:	680d      	ldr	r5, [r1, #0]
-  90:	447c      	add	r4, pc
-  92:	49c6      	ldr	r1, [pc, #792]	; (3ac <philosopher+0x32c>)
-  94:	235f      	movs	r3, #95	; 0x5f
-  96:	9503      	str	r5, [sp, #12]
-  98:	e9cd 5300 	strd	r5, r3, [sp]
-  9c:	4ac4      	ldr	r2, [pc, #784]	; (3b0 <philosopher+0x330>)
-  9e:	5861      	ldr	r1, [r4, r1]
-  a0:	462c      	mov	r4, r5
-  a2:	48c4      	ldr	r0, [pc, #784]	; (3b4 <philosopher+0x334>)
-  a4:	447a      	add	r2, pc
-  a6:	6809      	ldr	r1, [r1, #0]
-  a8:	910b      	str	r1, [sp, #44]	; 0x2c
-  aa:	f04f 0100 	mov.w	r1, #0
-  ae:	00a9      	lsls	r1, r5, #2
-  b0:	3102      	adds	r1, #2
-  b2:	f8df a304 	ldr.w	sl, [pc, #772]	; 3b8 <philosopher+0x338>
-  b6:	4478      	add	r0, pc
-  b8:	460e      	mov	r6, r1
-  ba:	468b      	mov	fp, r1
-  bc:	f7ff ffa0 	bl	0 <shared_printf.constprop.0>
-  c0:	2318      	movs	r3, #24
-  c2:	44fa      	add	sl, pc
-  c4:	3501      	adds	r5, #1
-  c6:	ee08 5a10 	vmov	s16, r5
-  ca:	fb03 f304 	mul.w	r3, r3, r4
-  ce:	9305      	str	r3, [sp, #20]
-  d0:	f8da 3018 	ldr.w	r3, [sl, #24]
-  d4:	3b01      	subs	r3, #1
-  d6:	42a3      	cmp	r3, r4
-  d8:	f644 53d3 	movw	r3, #19923	; 0x4dd3
-  dc:	f2c1 0362 	movt	r3, #4194	; 0x1062
-  e0:	bf18      	it	ne
-  e2:	f10a 0520 	addne.w	r5, sl, #32
-  e6:	9306      	str	r3, [sp, #24]
-  e8:	ab09      	add	r3, sp, #36	; 0x24
-  ea:	9304      	str	r3, [sp, #16]
-  ec:	f000 80ae 	beq.w	24c <philosopher+0x1cc>
-  f0:	9b05      	ldr	r3, [sp, #20]
-  f2:	f04f 095f 	mov.w	r9, #95	; 0x5f
-  f6:	f8da 001c 	ldr.w	r0, [sl, #28]
-  fa:	2400      	movs	r4, #0
-  fc:	4faf      	ldr	r7, [pc, #700]	; (3bc <philosopher+0x33c>)
-  fe:	4eb0      	ldr	r6, [pc, #704]	; (3c0 <philosopher+0x340>)
- 100:	4418      	add	r0, r3
- 102:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 106:	447f      	add	r7, pc
- 108:	9903      	ldr	r1, [sp, #12]
- 10a:	447e      	add	r6, pc
- 10c:	463a      	mov	r2, r7
- 10e:	2321      	movs	r3, #33	; 0x21
- 110:	4630      	mov	r0, r6
- 112:	9100      	str	r1, [sp, #0]
- 114:	f8cd 9004 	str.w	r9, [sp, #4]
- 118:	4659      	mov	r1, fp
- 11a:	f7ff ff71 	bl	0 <shared_printf.constprop.0>
- 11e:	4628      	mov	r0, r5
- 120:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 124:	f7ff fffe 	bl	0 <rand>
- 128:	4680      	mov	r8, r0
- 12a:	4628      	mov	r0, r5
- 12c:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 130:	9a06      	ldr	r2, [sp, #24]
- 132:	9b04      	ldr	r3, [sp, #16]
- 134:	f44f 6cfa 	mov.w	ip, #2000	; 0x7d0
- 138:	9300      	str	r3, [sp, #0]
- 13a:	ea4f 73e8 	mov.w	r3, r8, asr #31
- 13e:	4620      	mov	r0, r4
- 140:	9409      	str	r4, [sp, #36]	; 0x24
- 142:	fb82 1208 	smull	r1, r2, r2, r8
- 146:	4621      	mov	r1, r4
- 148:	ebc3 13e2 	rsb	r3, r3, r2, asr #7
- 14c:	4622      	mov	r2, r4
- 14e:	fb0c 8313 	mls	r3, ip, r3, r8
- 152:	f04f 0864 	mov.w	r8, #100	; 0x64
- 156:	fb08 f303 	mul.w	r3, r8, r3
- 15a:	930a      	str	r3, [sp, #40]	; 0x28
- 15c:	4623      	mov	r3, r4
- 15e:	f7ff fffe 	bl	0 <select>
- 162:	f8da 1018 	ldr.w	r1, [sl, #24]
- 166:	ee18 0a10 	vmov	r0, s16
- 16a:	f7ff fffe 	bl	0 <__aeabi_idivmod>
- 16e:	f8da 001c 	ldr.w	r0, [sl, #28]
- 172:	f04f 0e18 	mov.w	lr, #24
- 176:	fb0e 0001 	mla	r0, lr, r1, r0
- 17a:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 17e:	9903      	ldr	r1, [sp, #12]
- 180:	2321      	movs	r3, #33	; 0x21
- 182:	463a      	mov	r2, r7
- 184:	9301      	str	r3, [sp, #4]
- 186:	4630      	mov	r0, r6
- 188:	9100      	str	r1, [sp, #0]
- 18a:	4659      	mov	r1, fp
- 18c:	f7ff ff38 	bl	0 <shared_printf.constprop.0>
- 190:	4628      	mov	r0, r5
- 192:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 196:	f7ff fffe 	bl	0 <rand>
- 19a:	9007      	str	r0, [sp, #28]
- 19c:	4628      	mov	r0, r5
- 19e:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 1a2:	9b04      	ldr	r3, [sp, #16]
- 1a4:	9806      	ldr	r0, [sp, #24]
- 1a6:	f44f 6cfa 	mov.w	ip, #2000	; 0x7d0
- 1aa:	9300      	str	r3, [sp, #0]
- 1ac:	9b07      	ldr	r3, [sp, #28]
- 1ae:	9409      	str	r4, [sp, #36]	; 0x24
- 1b0:	17da      	asrs	r2, r3, #31
- 1b2:	fb80 0103 	smull	r0, r1, r0, r3
- 1b6:	4620      	mov	r0, r4
- 1b8:	ebc2 12e1 	rsb	r2, r2, r1, asr #7
- 1bc:	4621      	mov	r1, r4
- 1be:	fb0c 3312 	mls	r3, ip, r2, r3
- 1c2:	4622      	mov	r2, r4
- 1c4:	fb08 f303 	mul.w	r3, r8, r3
- 1c8:	930a      	str	r3, [sp, #40]	; 0x28
- 1ca:	4623      	mov	r3, r4
- 1cc:	f7ff fffe 	bl	0 <select>
- 1d0:	9903      	ldr	r1, [sp, #12]
- 1d2:	463a      	mov	r2, r7
- 1d4:	464b      	mov	r3, r9
- 1d6:	4630      	mov	r0, r6
- 1d8:	9100      	str	r1, [sp, #0]
- 1da:	f8cd 9004 	str.w	r9, [sp, #4]
- 1de:	4659      	mov	r1, fp
- 1e0:	f7ff ff0e 	bl	0 <shared_printf.constprop.0>
- 1e4:	9905      	ldr	r1, [sp, #20]
- 1e6:	f8da 001c 	ldr.w	r0, [sl, #28]
- 1ea:	4408      	add	r0, r1
- 1ec:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 1f0:	f8da 1018 	ldr.w	r1, [sl, #24]
- 1f4:	ee18 0a10 	vmov	r0, s16
- 1f8:	f7ff fffe 	bl	0 <__aeabi_idivmod>
- 1fc:	f8da 001c 	ldr.w	r0, [sl, #28]
- 200:	f04f 0e18 	mov.w	lr, #24
- 204:	fb0e 0001 	mla	r0, lr, r1, r0
- 208:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 20c:	4628      	mov	r0, r5
- 20e:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 212:	f7ff fffe 	bl	0 <rand>
- 216:	4606      	mov	r6, r0
- 218:	4628      	mov	r0, r5
- 21a:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 21e:	9806      	ldr	r0, [sp, #24]
- 220:	9b04      	ldr	r3, [sp, #16]
- 222:	f44f 6cfa 	mov.w	ip, #2000	; 0x7d0
- 226:	9300      	str	r3, [sp, #0]
- 228:	4621      	mov	r1, r4
- 22a:	9409      	str	r4, [sp, #36]	; 0x24
- 22c:	fb80 3206 	smull	r3, r2, r0, r6
- 230:	17f3      	asrs	r3, r6, #31
- 232:	4620      	mov	r0, r4
- 234:	ebc3 13e2 	rsb	r3, r3, r2, asr #7
- 238:	4622      	mov	r2, r4
- 23a:	fb0c 6613 	mls	r6, ip, r3, r6
- 23e:	4623      	mov	r3, r4
- 240:	fb08 f606 	mul.w	r6, r8, r6
- 244:	960a      	str	r6, [sp, #40]	; 0x28
- 246:	f7ff fffe 	bl	0 <select>
- 24a:	e751      	b.n	f0 <philosopher+0x70>
- 24c:	f10a 0b20 	add.w	fp, sl, #32
- 250:	46b1      	mov	r9, r6
- 252:	f8da 1018 	ldr.w	r1, [sl, #24]
- 256:	ee18 0a10 	vmov	r0, s16
- 25a:	f7ff fffe 	bl	0 <__aeabi_idivmod>
- 25e:	f8da 001c 	ldr.w	r0, [sl, #28]
- 262:	2318      	movs	r3, #24
- 264:	4e57      	ldr	r6, [pc, #348]	; (3c4 <philosopher+0x344>)
- 266:	4d58      	ldr	r5, [pc, #352]	; (3c8 <philosopher+0x348>)
- 268:	f04f 0821 	mov.w	r8, #33	; 0x21
- 26c:	447e      	add	r6, pc
- 26e:	fb03 0001 	mla	r0, r3, r1, r0
- 272:	447d      	add	r5, pc
- 274:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 278:	9a03      	ldr	r2, [sp, #12]
- 27a:	4649      	mov	r1, r9
- 27c:	235f      	movs	r3, #95	; 0x5f
- 27e:	4628      	mov	r0, r5
- 280:	f8cd 8004 	str.w	r8, [sp, #4]
- 284:	9200      	str	r2, [sp, #0]
- 286:	4632      	mov	r2, r6
- 288:	f7ff feba 	bl	0 <shared_printf.constprop.0>
- 28c:	4658      	mov	r0, fp
- 28e:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 292:	f7ff fffe 	bl	0 <rand>
- 296:	4604      	mov	r4, r0
- 298:	4658      	mov	r0, fp
- 29a:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 29e:	9f06      	ldr	r7, [sp, #24]
- 2a0:	9904      	ldr	r1, [sp, #16]
- 2a2:	17e3      	asrs	r3, r4, #31
- 2a4:	9100      	str	r1, [sp, #0]
- 2a6:	f44f 6cfa 	mov.w	ip, #2000	; 0x7d0
- 2aa:	fb87 1204 	smull	r1, r2, r7, r4
- 2ae:	2764      	movs	r7, #100	; 0x64
- 2b0:	ebc3 13e2 	rsb	r3, r3, r2, asr #7
- 2b4:	fb0c 4413 	mls	r4, ip, r3, r4
- 2b8:	fb07 f404 	mul.w	r4, r7, r4
- 2bc:	940a      	str	r4, [sp, #40]	; 0x28
- 2be:	2400      	movs	r4, #0
- 2c0:	4622      	mov	r2, r4
- 2c2:	4621      	mov	r1, r4
- 2c4:	4623      	mov	r3, r4
- 2c6:	4620      	mov	r0, r4
- 2c8:	9409      	str	r4, [sp, #36]	; 0x24
- 2ca:	f7ff fffe 	bl	0 <select>
- 2ce:	9b05      	ldr	r3, [sp, #20]
- 2d0:	f8da 001c 	ldr.w	r0, [sl, #28]
- 2d4:	4418      	add	r0, r3
- 2d6:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 2da:	9a03      	ldr	r2, [sp, #12]
- 2dc:	4643      	mov	r3, r8
- 2de:	4649      	mov	r1, r9
- 2e0:	4628      	mov	r0, r5
- 2e2:	f8cd 8004 	str.w	r8, [sp, #4]
- 2e6:	9200      	str	r2, [sp, #0]
- 2e8:	4632      	mov	r2, r6
- 2ea:	f7ff fe89 	bl	0 <shared_printf.constprop.0>
- 2ee:	4658      	mov	r0, fp
- 2f0:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 2f4:	f7ff fffe 	bl	0 <rand>
- 2f8:	4680      	mov	r8, r0
- 2fa:	4658      	mov	r0, fp
- 2fc:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 300:	9a06      	ldr	r2, [sp, #24]
- 302:	9904      	ldr	r1, [sp, #16]
- 304:	ea4f 73e8 	mov.w	r3, r8, asr #31
- 308:	9100      	str	r1, [sp, #0]
- 30a:	f44f 6cfa 	mov.w	ip, #2000	; 0x7d0
- 30e:	4620      	mov	r0, r4
- 310:	9409      	str	r4, [sp, #36]	; 0x24
- 312:	fb82 1208 	smull	r1, r2, r2, r8
- 316:	4621      	mov	r1, r4
- 318:	ebc3 13e2 	rsb	r3, r3, r2, asr #7
- 31c:	4622      	mov	r2, r4
- 31e:	fb0c 8813 	mls	r8, ip, r3, r8
- 322:	fb07 f308 	mul.w	r3, r7, r8
- 326:	930a      	str	r3, [sp, #40]	; 0x28
- 328:	4623      	mov	r3, r4
- 32a:	f7ff fffe 	bl	0 <select>
- 32e:	9b03      	ldr	r3, [sp, #12]
- 330:	4632      	mov	r2, r6
- 332:	4649      	mov	r1, r9
- 334:	4628      	mov	r0, r5
- 336:	9300      	str	r3, [sp, #0]
- 338:	235f      	movs	r3, #95	; 0x5f
- 33a:	9301      	str	r3, [sp, #4]
- 33c:	f7ff fe60 	bl	0 <shared_printf.constprop.0>
- 340:	9b05      	ldr	r3, [sp, #20]
- 342:	f8da 001c 	ldr.w	r0, [sl, #28]
- 346:	4418      	add	r0, r3
- 348:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 34c:	f8da 1018 	ldr.w	r1, [sl, #24]
- 350:	ee18 0a10 	vmov	r0, s16
- 354:	f7ff fffe 	bl	0 <__aeabi_idivmod>
- 358:	f8da 001c 	ldr.w	r0, [sl, #28]
- 35c:	2318      	movs	r3, #24
- 35e:	fb03 0001 	mla	r0, r3, r1, r0
- 362:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 366:	4658      	mov	r0, fp
- 368:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 36c:	f7ff fffe 	bl	0 <rand>
- 370:	4605      	mov	r5, r0
- 372:	4658      	mov	r0, fp
- 374:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 378:	9a06      	ldr	r2, [sp, #24]
- 37a:	f44f 6cfa 	mov.w	ip, #2000	; 0x7d0
- 37e:	9904      	ldr	r1, [sp, #16]
- 380:	9100      	str	r1, [sp, #0]
- 382:	4620      	mov	r0, r4
- 384:	4621      	mov	r1, r4
- 386:	9409      	str	r4, [sp, #36]	; 0x24
- 388:	fb82 3205 	smull	r3, r2, r2, r5
- 38c:	17eb      	asrs	r3, r5, #31
- 38e:	ebc3 13e2 	rsb	r3, r3, r2, asr #7
- 392:	4622      	mov	r2, r4
- 394:	fb0c 5513 	mls	r5, ip, r3, r5
- 398:	4623      	mov	r3, r4
- 39a:	fb07 f505 	mul.w	r5, r7, r5
- 39e:	950a      	str	r5, [sp, #40]	; 0x28
- 3a0:	f7ff fffe 	bl	0 <select>
- 3a4:	e755      	b.n	252 <philosopher+0x1d2>
- 3a6:	bf00      	nop
- 3a8:	00000314 	.word	0x00000314
- 3ac:	00000000 	.word	0x00000000
- 3b0:	00000308 	.word	0x00000308
- 3b4:	000002fa 	.word	0x000002fa
- 3b8:	000002f2 	.word	0x000002f2
- 3bc:	000002b2 	.word	0x000002b2
- 3c0:	000002b2 	.word	0x000002b2
- 3c4:	00000154 	.word	0x00000154
- 3c8:	00000152 	.word	0x00000152
+Function philosopher @ 0x00400081
+0x00400081:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00400085:	mov	r1, r0
+0x00400087:	ldr	r4, [pc, #0x320]
+0x00400089:	vpush	{d8}
+0x0040008d:	sub	sp, #0x34
+0x0040008f:	ldr	r5, [r1]
+0x00400091:	add	r4, pc
+0x00400093:	ldr	r1, [pc, #0x318]
+0x00400095:	movs	r3, #0x5f
+0x00400097:	str	r5, [sp, #0xc]
+0x00400099:	strd	r5, r3, [sp]
+0x0040009d:	ldr	r2, [pc, #0x310]
+0x0040009f:	ldr	r1, [r4, r1]
+0x004000a1:	mov	r4, r5
+0x004000a3:	ldr	r0, [pc, #0x310]
+0x004000a5:	add	r2, pc
+0x004000a7:	ldr	r1, [r1]
+0x004000a9:	str	r1, [sp, #0x2c]
+0x004000ab:	mov.w	r1, #0
+0x004000af:	lsls	r1, r5, #2
+0x004000b1:	adds	r1, #2
+0x004000b3:	ldr.w	sl, [pc, #0x304]
+0x004000b7:	add	r0, pc
+0x004000b9:	mov	r6, r1
+0x004000bb:	mov	fp, r1
+0x004000bd:	bl	#0x400001
 
-000003cc <xmalloc>:
- 3cc:	b510      	push	{r4, lr}
- 3ce:	4c09      	ldr	r4, [pc, #36]	; (3f4 <xmalloc+0x28>)
- 3d0:	447c      	add	r4, pc
- 3d2:	f7ff fffe 	bl	0 <malloc>
- 3d6:	b100      	cbz	r0, 3da <xmalloc+0xe>
- 3d8:	bd10      	pop	{r4, pc}
- 3da:	4b07      	ldr	r3, [pc, #28]	; (3f8 <xmalloc+0x2c>)
- 3dc:	220e      	movs	r2, #14
- 3de:	4807      	ldr	r0, [pc, #28]	; (3fc <xmalloc+0x30>)
- 3e0:	2101      	movs	r1, #1
- 3e2:	4478      	add	r0, pc
- 3e4:	58e3      	ldr	r3, [r4, r3]
- 3e6:	681b      	ldr	r3, [r3, #0]
- 3e8:	f7ff fffe 	bl	0 <fwrite>
- 3ec:	2002      	movs	r0, #2
- 3ee:	f7ff fffe 	bl	0 <exit>
- 3f2:	bf00      	nop
- 3f4:	00000020 	.word	0x00000020
- 3f8:	00000000 	.word	0x00000000
- 3fc:	00000016 	.word	0x00000016
+Function sub_4000c1 @ 0x004000c1
+0x004000c1:	movs	r3, #0x18
+0x004000c3:	add	sl, pc
+0x004000c5:	adds	r5, #1
+0x004000c7:	vmov	s16, r5
+0x004000cb:	mul	r3, r3, r4
+0x004000cf:	str	r3, [sp, #0x14]
+0x004000d1:	ldr.w	r3, [sl, #0x18]
+0x004000d5:	subs	r3, #1
+0x004000d7:	cmp	r3, r4
+0x004000d9:	movw	r3, #0x4dd3
+0x004000dd:	movt	r3, #0x1062
+0x004000e1:	it	ne
+0x004000e3:	addne.w	r5, sl, #0x20
+0x004000e7:	str	r3, [sp, #0x18]
+0x004000e9:	add	r3, sp, #0x24
+0x004000eb:	str	r3, [sp, #0x10]
+0x004000ed:	beq.w	#0x40024d
+0x004000f1:	ldr	r3, [sp, #0x14]
+0x004000f3:	mov.w	sb, #0x5f
+0x004000f7:	ldr.w	r0, [sl, #0x1c]
+0x004000fb:	movs	r4, #0
+0x004000fd:	ldr	r7, [pc, #0x2bc]
+0x004000ff:	ldr	r6, [pc, #0x2c0]
+0x00400101:	add	r0, r3
+0x00400103:	bl	#0x500001
+0x00400107:	add	r7, pc
+0x00400109:	ldr	r1, [sp, #0xc]
+0x0040010b:	add	r6, pc
+0x0040010d:	mov	r2, r7
+0x0040010f:	movs	r3, #0x21
+0x00400111:	mov	r0, r6
+0x00400113:	str	r1, [sp]
+0x00400115:	str.w	sb, [sp, #4]
+0x00400119:	mov	r1, fp
+0x0040011b:	bl	#0x400001
+0x0040024d:	add.w	fp, sl, #0x20
+0x00400251:	mov	sb, r6
+0x00400253:	ldr.w	r1, [sl, #0x18]
+0x00400257:	vmov	r0, s16
+0x0040025b:	bl	#0x500049
+0x00400253:	ldr.w	r1, [sl, #0x18]
+0x00400257:	vmov	r0, s16
+0x0040025b:	bl	#0x500049
+0x0040025f:	ldr.w	r0, [sl, #0x1c]
+0x00400263:	movs	r3, #0x18
+0x00400265:	ldr	r6, [pc, #0x15c]
+0x00400267:	ldr	r5, [pc, #0x160]
+0x00400269:	mov.w	r8, #0x21
+0x0040026d:	add	r6, pc
+0x0040026f:	mla	r0, r3, r1, r0
+0x00400273:	add	r5, pc
+0x00400275:	bl	#0x500001
+0x00400279:	ldr	r2, [sp, #0xc]
+0x0040027b:	mov	r1, sb
+0x0040027d:	movs	r3, #0x5f
+0x0040027f:	mov	r0, r5
+0x00400281:	str.w	r8, [sp, #4]
+0x00400285:	str	r2, [sp]
+0x00400287:	mov	r2, r6
+0x00400289:	bl	#0x400001
 
-00000400 <shared_printf>:
- 400:	b40f      	push	{r0, r1, r2, r3}
- 402:	4919      	ldr	r1, [pc, #100]	; (468 <shared_printf+0x68>)
- 404:	b530      	push	{r4, r5, lr}
- 406:	4a19      	ldr	r2, [pc, #100]	; (46c <shared_printf+0x6c>)
- 408:	4479      	add	r1, pc
- 40a:	b085      	sub	sp, #20
- 40c:	ab08      	add	r3, sp, #32
- 40e:	4c18      	ldr	r4, [pc, #96]	; (470 <shared_printf+0x70>)
- 410:	4d18      	ldr	r5, [pc, #96]	; (474 <shared_printf+0x74>)
- 412:	588a      	ldr	r2, [r1, r2]
- 414:	447c      	add	r4, pc
- 416:	4620      	mov	r0, r4
- 418:	447d      	add	r5, pc
- 41a:	6812      	ldr	r2, [r2, #0]
- 41c:	9203      	str	r2, [sp, #12]
- 41e:	f04f 0200 	mov.w	r2, #0
- 422:	f853 2b04 	ldr.w	r2, [r3], #4
- 426:	e9cd 2301 	strd	r2, r3, [sp, #4]
- 42a:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 42e:	4912      	ldr	r1, [pc, #72]	; (478 <shared_printf+0x78>)
- 430:	e9dd 2301 	ldrd	r2, r3, [sp, #4]
- 434:	5869      	ldr	r1, [r5, r1]
- 436:	6808      	ldr	r0, [r1, #0]
- 438:	2101      	movs	r1, #1
- 43a:	f7ff fffe 	bl	0 <__vfprintf_chk>
- 43e:	4620      	mov	r0, r4
- 440:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 444:	4a0d      	ldr	r2, [pc, #52]	; (47c <shared_printf+0x7c>)
- 446:	4b09      	ldr	r3, [pc, #36]	; (46c <shared_printf+0x6c>)
- 448:	447a      	add	r2, pc
- 44a:	58d3      	ldr	r3, [r2, r3]
- 44c:	681a      	ldr	r2, [r3, #0]
- 44e:	9b03      	ldr	r3, [sp, #12]
- 450:	405a      	eors	r2, r3
- 452:	f04f 0300 	mov.w	r3, #0
- 456:	d104      	bne.n	462 <shared_printf+0x62>
- 458:	b005      	add	sp, #20
- 45a:	e8bd 4030 	ldmia.w	sp!, {r4, r5, lr}
- 45e:	b004      	add	sp, #16
- 460:	4770      	bx	lr
- 462:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 466:	bf00      	nop
- 468:	0000005c 	.word	0x0000005c
- 46c:	00000000 	.word	0x00000000
- 470:	00000058 	.word	0x00000058
- 474:	00000058 	.word	0x00000058
- 478:	00000000 	.word	0x00000000
- 47c:	00000030 	.word	0x00000030
+Function sub_40011f @ 0x0040011f
+0x0040011f:	mov	r0, r5
+0x00400121:	bl	#0x500001
+0x00400125:	bl	#0x500031
+0x00400129:	mov	r8, r0
+0x0040012b:	mov	r0, r5
+0x0040012d:	bl	#0x500019
+0x00400131:	ldr	r2, [sp, #0x18]
+0x00400133:	ldr	r3, [sp, #0x10]
+0x00400135:	mov.w	ip, #0x7d0
+0x00400139:	str	r3, [sp]
+0x0040013b:	asr.w	r3, r8, #0x1f
+0x0040013f:	mov	r0, r4
+0x00400141:	str	r4, [sp, #0x24]
+0x00400143:	smull	r1, r2, r2, r8
+0x00400147:	mov	r1, r4
+0x00400149:	rsb	r3, r3, r2, asr #7
+0x0040014d:	mov	r2, r4
+0x0040014f:	mls	r3, ip, r3, r8
+0x00400153:	mov.w	r8, #0x64
+0x00400157:	mul	r3, r8, r3
+0x0040015b:	str	r3, [sp, #0x28]
+0x0040015d:	mov	r3, r4
+0x0040015f:	bl	#0x50003d
+0x00400163:	ldr.w	r1, [sl, #0x18]
+0x00400167:	vmov	r0, s16
+0x0040016b:	bl	#0x500049
+0x0040016f:	ldr.w	r0, [sl, #0x1c]
+0x00400173:	mov.w	lr, #0x18
+0x00400177:	mla	r0, lr, r1, r0
+0x0040017b:	bl	#0x500001
+0x0040017f:	ldr	r1, [sp, #0xc]
+0x00400181:	movs	r3, #0x21
+0x00400183:	mov	r2, r7
+0x00400185:	str	r3, [sp, #4]
+0x00400187:	mov	r0, r6
+0x00400189:	str	r1, [sp]
+0x0040018b:	mov	r1, fp
+0x0040018d:	bl	#0x400001
 
-00000480 <shared_random>:
- 480:	b510      	push	{r4, lr}
- 482:	4c07      	ldr	r4, [pc, #28]	; (4a0 <shared_random+0x20>)
- 484:	447c      	add	r4, pc
- 486:	3420      	adds	r4, #32
- 488:	4620      	mov	r0, r4
- 48a:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 48e:	f7ff fffe 	bl	0 <rand>
- 492:	4603      	mov	r3, r0
- 494:	4620      	mov	r0, r4
- 496:	461c      	mov	r4, r3
- 498:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 49c:	4620      	mov	r0, r4
- 49e:	bd10      	pop	{r4, pc}
- 4a0:	00000018 	.word	0x00000018
+Function sub_400191 @ 0x00400191
+0x00400191:	mov	r0, r5
+0x00400193:	bl	#0x500001
+0x00400197:	bl	#0x500031
+0x0040019b:	str	r0, [sp, #0x1c]
+0x0040019d:	mov	r0, r5
+0x0040019f:	bl	#0x500019
+0x004001a3:	ldr	r3, [sp, #0x10]
+0x004001a5:	ldr	r0, [sp, #0x18]
+0x004001a7:	mov.w	ip, #0x7d0
+0x004001ab:	str	r3, [sp]
+0x004001ad:	ldr	r3, [sp, #0x1c]
+0x004001af:	str	r4, [sp, #0x24]
+0x004001b1:	asrs	r2, r3, #0x1f
+0x004001b3:	smull	r0, r1, r0, r3
+0x004001b7:	mov	r0, r4
+0x004001b9:	rsb	r2, r2, r1, asr #7
+0x004001bd:	mov	r1, r4
+0x004001bf:	mls	r3, ip, r2, r3
+0x004001c3:	mov	r2, r4
+0x004001c5:	mul	r3, r8, r3
+0x004001c9:	str	r3, [sp, #0x28]
+0x004001cb:	mov	r3, r4
+0x004001cd:	bl	#0x50003d
+0x004001d1:	ldr	r1, [sp, #0xc]
+0x004001d3:	mov	r2, r7
+0x004001d5:	mov	r3, sb
+0x004001d7:	mov	r0, r6
+0x004001d9:	str	r1, [sp]
+0x004001db:	str.w	sb, [sp, #4]
+0x004001df:	mov	r1, fp
+0x004001e1:	bl	#0x400001
 
-000004a4 <my_usleep>:
- 4a4:	b530      	push	{r4, r5, lr}
- 4a6:	f64d 6183 	movw	r1, #56963	; 0xde83
- 4aa:	f2c4 311b 	movt	r1, #17179	; 0x431b
- 4ae:	b087      	sub	sp, #28
- 4b0:	f8df c058 	ldr.w	ip, [pc, #88]	; 50c <my_usleep+0x68>
- 4b4:	17c2      	asrs	r2, r0, #31
- 4b6:	f244 2440 	movw	r4, #16960	; 0x4240
- 4ba:	f2c0 040f 	movt	r4, #15
- 4be:	fb81 5100 	smull	r5, r1, r1, r0
- 4c2:	ad03      	add	r5, sp, #12
- 4c4:	9500      	str	r5, [sp, #0]
- 4c6:	4d12      	ldr	r5, [pc, #72]	; (510 <my_usleep+0x6c>)
- 4c8:	44fc      	add	ip, pc
- 4ca:	ebc2 42a1 	rsb	r2, r2, r1, asr #18
- 4ce:	2300      	movs	r3, #0
- 4d0:	4619      	mov	r1, r3
- 4d2:	f85c 5005 	ldr.w	r5, [ip, r5]
- 4d6:	fb04 0412 	mls	r4, r4, r2, r0
- 4da:	4618      	mov	r0, r3
- 4dc:	682d      	ldr	r5, [r5, #0]
- 4de:	9505      	str	r5, [sp, #20]
- 4e0:	f04f 0500 	mov.w	r5, #0
- 4e4:	9203      	str	r2, [sp, #12]
- 4e6:	461a      	mov	r2, r3
- 4e8:	9404      	str	r4, [sp, #16]
- 4ea:	f7ff fffe 	bl	0 <select>
- 4ee:	4a09      	ldr	r2, [pc, #36]	; (514 <my_usleep+0x70>)
- 4f0:	4b07      	ldr	r3, [pc, #28]	; (510 <my_usleep+0x6c>)
- 4f2:	447a      	add	r2, pc
- 4f4:	58d3      	ldr	r3, [r2, r3]
- 4f6:	681a      	ldr	r2, [r3, #0]
- 4f8:	9b05      	ldr	r3, [sp, #20]
- 4fa:	405a      	eors	r2, r3
- 4fc:	f04f 0300 	mov.w	r3, #0
- 500:	d101      	bne.n	506 <my_usleep+0x62>
- 502:	b007      	add	sp, #28
- 504:	bd30      	pop	{r4, r5, pc}
- 506:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 50a:	bf00      	nop
- 50c:	00000040 	.word	0x00000040
- 510:	00000000 	.word	0x00000000
- 514:	0000001e 	.word	0x0000001e
+Function sub_4001e5 @ 0x004001e5
+0x004001e5:	ldr	r1, [sp, #0x14]
+0x004001e7:	ldr.w	r0, [sl, #0x1c]
+0x004001eb:	add	r0, r1
+0x004001ed:	bl	#0x500019
+0x004001f1:	ldr.w	r1, [sl, #0x18]
+0x004001f5:	vmov	r0, s16
+0x004001f9:	bl	#0x500049
+0x004001fd:	ldr.w	r0, [sl, #0x1c]
+0x00400201:	mov.w	lr, #0x18
+0x00400205:	mla	r0, lr, r1, r0
+0x00400209:	bl	#0x500019
+0x0040020d:	mov	r0, r5
+0x0040020f:	bl	#0x500001
+0x00400213:	bl	#0x500031
+0x00400217:	mov	r6, r0
+0x00400219:	mov	r0, r5
+0x0040021b:	bl	#0x500019
+0x0040021f:	ldr	r0, [sp, #0x18]
+0x00400221:	ldr	r3, [sp, #0x10]
+0x00400223:	mov.w	ip, #0x7d0
+0x00400227:	str	r3, [sp]
+0x00400229:	mov	r1, r4
+0x0040022b:	str	r4, [sp, #0x24]
+0x0040022d:	smull	r3, r2, r0, r6
+0x00400231:	asrs	r3, r6, #0x1f
+0x00400233:	mov	r0, r4
+0x00400235:	rsb	r3, r3, r2, asr #7
+0x00400239:	mov	r2, r4
+0x0040023b:	mls	r6, ip, r3, r6
+0x0040023f:	mov	r3, r4
+0x00400241:	mul	r6, r8, r6
+0x00400245:	str	r6, [sp, #0x28]
+0x00400247:	bl	#0x50003d
+0x0040024b:	b	#0x4000f1
 
-00000518 <random_delay>:
- 518:	4a1e      	ldr	r2, [pc, #120]	; (594 <random_delay+0x7c>)
- 51a:	4b1f      	ldr	r3, [pc, #124]	; (598 <random_delay+0x80>)
- 51c:	b530      	push	{r4, r5, lr}
- 51e:	447a      	add	r2, pc
- 520:	4d1e      	ldr	r5, [pc, #120]	; (59c <random_delay+0x84>)
- 522:	b087      	sub	sp, #28
- 524:	447d      	add	r5, pc
- 526:	58d3      	ldr	r3, [r2, r3]
- 528:	3520      	adds	r5, #32
- 52a:	4628      	mov	r0, r5
- 52c:	681b      	ldr	r3, [r3, #0]
- 52e:	9305      	str	r3, [sp, #20]
- 530:	f04f 0300 	mov.w	r3, #0
- 534:	f7ff fffe 	bl	0 <pthread_mutex_lock>
- 538:	f7ff fffe 	bl	0 <rand>
- 53c:	4604      	mov	r4, r0
- 53e:	4628      	mov	r0, r5
- 540:	f44f 65fa 	mov.w	r5, #2000	; 0x7d0
- 544:	f7ff fffe 	bl	0 <pthread_mutex_unlock>
- 548:	f644 52d3 	movw	r2, #19923	; 0x4dd3
- 54c:	f2c1 0262 	movt	r2, #4194	; 0x1062
- 550:	17e1      	asrs	r1, r4, #31
- 552:	2064      	movs	r0, #100	; 0x64
- 554:	2300      	movs	r3, #0
- 556:	9303      	str	r3, [sp, #12]
- 558:	fb82 c204 	smull	ip, r2, r2, r4
- 55c:	ebc1 12e2 	rsb	r2, r1, r2, asr #7
- 560:	4619      	mov	r1, r3
- 562:	fb05 4412 	mls	r4, r5, r2, r4
- 566:	aa03      	add	r2, sp, #12
- 568:	9200      	str	r2, [sp, #0]
- 56a:	461a      	mov	r2, r3
- 56c:	fb00 f404 	mul.w	r4, r0, r4
- 570:	4618      	mov	r0, r3
- 572:	9404      	str	r4, [sp, #16]
- 574:	f7ff fffe 	bl	0 <select>
- 578:	4a09      	ldr	r2, [pc, #36]	; (5a0 <random_delay+0x88>)
- 57a:	4b07      	ldr	r3, [pc, #28]	; (598 <random_delay+0x80>)
- 57c:	447a      	add	r2, pc
- 57e:	58d3      	ldr	r3, [r2, r3]
- 580:	681a      	ldr	r2, [r3, #0]
- 582:	9b05      	ldr	r3, [sp, #20]
- 584:	405a      	eors	r2, r3
- 586:	f04f 0300 	mov.w	r3, #0
- 58a:	d101      	bne.n	590 <random_delay+0x78>
- 58c:	b007      	add	sp, #28
- 58e:	bd30      	pop	{r4, r5, pc}
- 590:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 594:	00000072 	.word	0x00000072
- 598:	00000000 	.word	0x00000000
- 59c:	00000074 	.word	0x00000074
- 5a0:	00000020 	.word	0x00000020
+Function sub_40028d @ 0x0040028d
+0x0040028d:	mov	r0, fp
+0x0040028f:	bl	#0x500001
+0x00400293:	bl	#0x500031
+0x00400297:	mov	r4, r0
+0x00400299:	mov	r0, fp
+0x0040029b:	bl	#0x500019
+0x0040029f:	ldr	r7, [sp, #0x18]
+0x004002a1:	ldr	r1, [sp, #0x10]
+0x004002a3:	asrs	r3, r4, #0x1f
+0x004002a5:	str	r1, [sp]
+0x004002a7:	mov.w	ip, #0x7d0
+0x004002ab:	smull	r1, r2, r7, r4
+0x004002af:	movs	r7, #0x64
+0x004002b1:	rsb	r3, r3, r2, asr #7
+0x004002b5:	mls	r4, ip, r3, r4
+0x004002b9:	mul	r4, r7, r4
+0x004002bd:	str	r4, [sp, #0x28]
+0x004002bf:	movs	r4, #0
+0x004002c1:	mov	r2, r4
+0x004002c3:	mov	r1, r4
+0x004002c5:	mov	r3, r4
+0x004002c7:	mov	r0, r4
+0x004002c9:	str	r4, [sp, #0x24]
+0x004002cb:	bl	#0x50003d
+0x004002cf:	ldr	r3, [sp, #0x14]
+0x004002d1:	ldr.w	r0, [sl, #0x1c]
+0x004002d5:	add	r0, r3
+0x004002d7:	bl	#0x500001
+0x004002db:	ldr	r2, [sp, #0xc]
+0x004002dd:	mov	r3, r8
+0x004002df:	mov	r1, sb
+0x004002e1:	mov	r0, r5
+0x004002e3:	str.w	r8, [sp, #4]
+0x004002e7:	str	r2, [sp]
+0x004002e9:	mov	r2, r6
+0x004002eb:	bl	#0x400001
 
-000005a4 <print_philosopher>:
- 5a4:	b510      	push	{r4, lr}
- 5a6:	4604      	mov	r4, r0
- 5a8:	460b      	mov	r3, r1
- 5aa:	b082      	sub	sp, #8
- 5ac:	4611      	mov	r1, r2
- 5ae:	4807      	ldr	r0, [pc, #28]	; (5cc <print_philosopher+0x28>)
- 5b0:	ea4f 0c84 	mov.w	ip, r4, lsl #2
- 5b4:	4a06      	ldr	r2, [pc, #24]	; (5d0 <print_philosopher+0x2c>)
- 5b6:	9101      	str	r1, [sp, #4]
- 5b8:	4478      	add	r0, pc
- 5ba:	447a      	add	r2, pc
- 5bc:	f10c 0102 	add.w	r1, ip, #2
- 5c0:	9400      	str	r4, [sp, #0]
- 5c2:	f7ff fd1d 	bl	0 <shared_printf.constprop.0>
- 5c6:	b002      	add	sp, #8
- 5c8:	bd10      	pop	{r4, pc}
- 5ca:	bf00      	nop
- 5cc:	00000010 	.word	0x00000010
- 5d0:	00000012 	.word	0x00000012
+Function sub_4002ef @ 0x004002ef
+0x004002ef:	mov	r0, fp
+0x004002f1:	bl	#0x500001
+0x004002f5:	bl	#0x500031
+0x004002f9:	mov	r8, r0
+0x004002fb:	mov	r0, fp
+0x004002fd:	bl	#0x500019
+0x00400301:	ldr	r2, [sp, #0x18]
+0x00400303:	ldr	r1, [sp, #0x10]
+0x00400305:	asr.w	r3, r8, #0x1f
+0x00400309:	str	r1, [sp]
+0x0040030b:	mov.w	ip, #0x7d0
+0x0040030f:	mov	r0, r4
+0x00400311:	str	r4, [sp, #0x24]
+0x00400313:	smull	r1, r2, r2, r8
+0x00400317:	mov	r1, r4
+0x00400319:	rsb	r3, r3, r2, asr #7
+0x0040031d:	mov	r2, r4
+0x0040031f:	mls	r8, ip, r3, r8
+0x00400323:	mul	r3, r7, r8
+0x00400327:	str	r3, [sp, #0x28]
+0x00400329:	mov	r3, r4
+0x0040032b:	bl	#0x50003d
+0x0040032f:	ldr	r3, [sp, #0xc]
+0x00400331:	mov	r2, r6
+0x00400333:	mov	r1, sb
+0x00400335:	mov	r0, r5
+0x00400337:	str	r3, [sp]
+0x00400339:	movs	r3, #0x5f
+0x0040033b:	str	r3, [sp, #4]
+0x0040033d:	bl	#0x400001
 
-Disassembly of section .text.startup:
+Function sub_400341 @ 0x00400341
+0x00400341:	ldr	r3, [sp, #0x14]
+0x00400343:	ldr.w	r0, [sl, #0x1c]
+0x00400347:	add	r0, r3
+0x00400349:	bl	#0x500019
+0x0040034d:	ldr.w	r1, [sl, #0x18]
+0x00400351:	vmov	r0, s16
+0x00400355:	bl	#0x500049
+0x00400359:	ldr.w	r0, [sl, #0x1c]
+0x0040035d:	movs	r3, #0x18
+0x0040035f:	mla	r0, r3, r1, r0
+0x00400363:	bl	#0x500019
+0x00400367:	mov	r0, fp
+0x00400369:	bl	#0x500001
+0x0040036d:	bl	#0x500031
+0x00400371:	mov	r5, r0
+0x00400373:	mov	r0, fp
+0x00400375:	bl	#0x500019
+0x00400379:	ldr	r2, [sp, #0x18]
+0x0040037b:	mov.w	ip, #0x7d0
+0x0040037f:	ldr	r1, [sp, #0x10]
+0x00400381:	str	r1, [sp]
+0x00400383:	mov	r0, r4
+0x00400385:	mov	r1, r4
+0x00400387:	str	r4, [sp, #0x24]
+0x00400389:	smull	r3, r2, r2, r5
+0x0040038d:	asrs	r3, r5, #0x1f
+0x0040038f:	rsb	r3, r3, r2, asr #7
+0x00400393:	mov	r2, r4
+0x00400395:	mls	r5, ip, r3, r5
+0x00400399:	mov	r3, r4
+0x0040039b:	mul	r5, r7, r5
+0x0040039f:	str	r5, [sp, #0x28]
+0x004003a1:	bl	#0x50003d
+0x004003a5:	b	#0x400253
 
-00000000 <main>:
-   0:	4935      	ldr	r1, [pc, #212]	; (d8 <main+0xd8>)
-   2:	2305      	movs	r3, #5
-   4:	4a35      	ldr	r2, [pc, #212]	; (dc <main+0xdc>)
-   6:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-   a:	4479      	add	r1, pc
-   c:	4f34      	ldr	r7, [pc, #208]	; (e0 <main+0xe0>)
-   e:	b08a      	sub	sp, #40	; 0x28
-  10:	447f      	add	r7, pc
-  12:	588a      	ldr	r2, [r1, r2]
-  14:	466e      	mov	r6, sp
-  16:	4630      	mov	r0, r6
-  18:	6812      	ldr	r2, [r2, #0]
-  1a:	9209      	str	r2, [sp, #36]	; 0x24
-  1c:	f04f 0200 	mov.w	r2, #0
-  20:	61bb      	str	r3, [r7, #24]
-  22:	f7ff fffe 	bl	0 <pthread_mutexattr_init>
-  26:	4631      	mov	r1, r6
-  28:	4638      	mov	r0, r7
-  2a:	f7ff fffe 	bl	0 <pthread_mutex_init>
-  2e:	4631      	mov	r1, r6
-  30:	f107 0020 	add.w	r0, r7, #32
-  34:	f7ff fffe 	bl	0 <pthread_mutex_init>
-  38:	69bb      	ldr	r3, [r7, #24]
-  3a:	2018      	movs	r0, #24
-  3c:	fb03 f000 	mul.w	r0, r3, r0
-  40:	f7ff fffe 	bl	3cc <xmalloc>
-  44:	69bb      	ldr	r3, [r7, #24]
-  46:	61f8      	str	r0, [r7, #28]
-  48:	2b00      	cmp	r3, #0
-  4a:	dd0c      	ble.n	66 <main+0x66>
-  4c:	2400      	movs	r4, #0
-  4e:	4625      	mov	r5, r4
-  50:	e000      	b.n	54 <main+0x54>
-  52:	69f8      	ldr	r0, [r7, #28]
-  54:	4420      	add	r0, r4
-  56:	4631      	mov	r1, r6
-  58:	f7ff fffe 	bl	0 <pthread_mutex_init>
-  5c:	69bb      	ldr	r3, [r7, #24]
-  5e:	3501      	adds	r5, #1
-  60:	3418      	adds	r4, #24
-  62:	42ab      	cmp	r3, r5
-  64:	dcf5      	bgt.n	52 <main+0x52>
-  66:	4f1f      	ldr	r7, [pc, #124]	; (e4 <main+0xe4>)
-  68:	4630      	mov	r0, r6
-  6a:	f7ff fffe 	bl	0 <pthread_mutexattr_destroy>
-  6e:	447f      	add	r7, pc
-  70:	69b8      	ldr	r0, [r7, #24]
-  72:	0080      	lsls	r0, r0, #2
-  74:	f7ff fffe 	bl	3cc <xmalloc>
-  78:	69bb      	ldr	r3, [r7, #24]
-  7a:	4605      	mov	r5, r0
-  7c:	0098      	lsls	r0, r3, #2
-  7e:	f7ff fffe 	bl	3cc <xmalloc>
-  82:	4603      	mov	r3, r0
-  84:	4630      	mov	r0, r6
-  86:	63bb      	str	r3, [r7, #56]	; 0x38
-  88:	f7ff fffe 	bl	0 <pthread_attr_init>
-  8c:	69bb      	ldr	r3, [r7, #24]
-  8e:	2b00      	cmp	r3, #0
-  90:	dd11      	ble.n	b6 <main+0xb6>
-  92:	f8df 8054 	ldr.w	r8, [pc, #84]	; e8 <main+0xe8>
-  96:	2400      	movs	r4, #0
-  98:	44f8      	add	r8, pc
-  9a:	6bb8      	ldr	r0, [r7, #56]	; 0x38
-  9c:	462b      	mov	r3, r5
-  9e:	4642      	mov	r2, r8
-  a0:	f845 4b04 	str.w	r4, [r5], #4
-  a4:	4631      	mov	r1, r6
-  a6:	eb00 0084 	add.w	r0, r0, r4, lsl #2
-  aa:	3401      	adds	r4, #1
-  ac:	f7ff fffe 	bl	0 <pthread_create>
-  b0:	69bb      	ldr	r3, [r7, #24]
-  b2:	42a3      	cmp	r3, r4
-  b4:	dcf1      	bgt.n	9a <main+0x9a>
-  b6:	4630      	mov	r0, r6
-  b8:	f244 2440 	movw	r4, #16960	; 0x4240
-  bc:	f2c0 040f 	movt	r4, #15
-  c0:	f7ff fffe 	bl	0 <pthread_attr_destroy>
-  c4:	f244 2040 	movw	r0, #16960	; 0x4240
-  c8:	f2c0 000f 	movt	r0, #15
-  cc:	f7ff fffe 	bl	0 <sleep>
-  d0:	4620      	mov	r0, r4
-  d2:	f7ff fffe 	bl	0 <sleep>
-  d6:	e7fb      	b.n	d0 <main+0xd0>
-  d8:	000000ca 	.word	0x000000ca
-  dc:	00000000 	.word	0x00000000
-  e0:	000000cc 	.word	0x000000cc
-  e4:	00000072 	.word	0x00000072
-  e8:	0000004c 	.word	0x0000004c
+Function sub_4003a7 @ 0x004003a7
+0x004003a7:	nop	
+0x004003a9:	lsls	r4, r2, #0xc
+0x004003ab:	movs	r0, r0
+0x004003ad:	movs	r0, r0
+0x004003af:	movs	r0, r0
+0x004003b1:	lsls	r0, r7, #0x15
+0x004003b3:	movs	r0, r0
+0x004003b5:	lsls	r6, r2, #0x15
+0x004003b7:	movs	r0, r0
+0x004003b9:	lsls	r6, r1, #0x14
+0x004003bb:	movs	r0, r0
+0x004003bd:	lsls	r6, r2, #0x14
+0x004003bf:	movs	r0, r0
+0x004003c1:	lsls	r2, r0, #0x14
+0x004003c3:	movs	r0, r0
+0x004003c5:	lsls	r0, r6, #0xe
+0x004003c7:	movs	r0, r0
+0x004003c9:	lsls	r2, r3, #0xe
+0x004003cb:	movs	r0, r0
+0x004003cd:	push	{r4, lr}
+0x004003cf:	ldr	r4, [pc, #0x24]
+0x004003d1:	add	r4, pc
+0x004003d3:	bl	#0x500055
+
+Function xmalloc @ 0x004003cd
+0x004003cd:	push	{r4, lr}
+0x004003cf:	ldr	r4, [pc, #0x24]
+0x004003d1:	add	r4, pc
+0x004003d3:	bl	#0x500055
+0x004003d7:	cbz	r0, #0x4003db
+0x004003d9:	pop	{r4, pc}
+0x004003d9:	pop	{r4, pc}
+0x004003db:	ldr	r3, [pc, #0x1c]
+0x004003dd:	movs	r2, #0xe
+0x004003df:	ldr	r0, [pc, #0x1c]
+0x004003e1:	movs	r1, #1
+0x004003e3:	add	r0, pc
+0x004003e5:	ldr	r3, [r4, r3]
+0x004003e7:	ldr	r3, [r3]
+0x004003e9:	bl	#0x500061
+0x004003ed:	movs	r0, #2
+0x004003ef:	bl	#0x50006d
+
+Function sub_4003f3 @ 0x004003f3
+0x004003f3:	nop	
+0x004003f5:	movs	r0, r4
+0x004003f7:	movs	r0, r0
+0x004003f9:	movs	r0, r0
+0x004003fb:	movs	r0, r0
+0x004003fd:	lsls	r6, r7, #8
+0x004003ff:	movs	r0, r0
+0x00400401:	push	{r0, r1, r2, r3}
+0x00400403:	ldr	r1, [pc, #0x64]
+0x00400405:	push	{r4, r5, lr}
+0x00400407:	ldr	r2, [pc, #0x64]
+0x00400409:	add	r1, pc
+0x0040040b:	sub	sp, #0x14
+0x0040040d:	add	r3, sp, #0x20
+0x0040040f:	ldr	r4, [pc, #0x60]
+0x00400411:	ldr	r5, [pc, #0x60]
+0x00400413:	ldr	r2, [r1, r2]
+0x00400415:	add	r4, pc
+0x00400417:	mov	r0, r4
+0x00400419:	add	r5, pc
+0x0040041b:	ldr	r2, [r2]
+0x0040041d:	str	r2, [sp, #0xc]
+0x0040041f:	mov.w	r2, #0
+0x00400423:	ldr	r2, [r3], #4
+0x00400427:	strd	r2, r3, [sp, #4]
+0x0040042b:	bl	#0x500001
+
+Function shared_printf @ 0x00400401
+0x00400401:	push	{r0, r1, r2, r3}
+0x00400403:	ldr	r1, [pc, #0x64]
+0x00400405:	push	{r4, r5, lr}
+0x00400407:	ldr	r2, [pc, #0x64]
+0x00400409:	add	r1, pc
+0x0040040b:	sub	sp, #0x14
+0x0040040d:	add	r3, sp, #0x20
+0x0040040f:	ldr	r4, [pc, #0x60]
+0x00400411:	ldr	r5, [pc, #0x60]
+0x00400413:	ldr	r2, [r1, r2]
+0x00400415:	add	r4, pc
+0x00400417:	mov	r0, r4
+0x00400419:	add	r5, pc
+0x0040041b:	ldr	r2, [r2]
+0x0040041d:	str	r2, [sp, #0xc]
+0x0040041f:	mov.w	r2, #0
+0x00400423:	ldr	r2, [r3], #4
+0x00400427:	strd	r2, r3, [sp, #4]
+0x0040042b:	bl	#0x500001
+0x0040042f:	ldr	r1, [pc, #0x48]
+0x00400431:	ldrd	r2, r3, [sp, #4]
+0x00400435:	ldr	r1, [r5, r1]
+0x00400437:	ldr	r0, [r1]
+0x00400439:	movs	r1, #1
+0x0040043b:	bl	#0x50000d
+0x0040043f:	mov	r0, r4
+0x00400441:	bl	#0x500019
+0x00400445:	ldr	r2, [pc, #0x34]
+0x00400447:	ldr	r3, [pc, #0x24]
+0x00400449:	add	r2, pc
+0x0040044b:	ldr	r3, [r2, r3]
+0x0040044d:	ldr	r2, [r3]
+0x0040044f:	ldr	r3, [sp, #0xc]
+0x00400451:	eors	r2, r3
+0x00400453:	mov.w	r3, #0
+0x00400457:	bne	#0x400463
+0x00400459:	add	sp, #0x14
+0x0040045b:	pop.w	{r4, r5, lr}
+0x0040045f:	add	sp, #0x10
+0x00400461:	bx	lr
+0x00400463:	bl	#0x500025
+
+Function sub_400467 @ 0x00400467
+0x00400467:	nop	
+0x00400469:	lsls	r4, r3, #1
+0x0040046b:	movs	r0, r0
+0x0040046d:	movs	r0, r0
+0x0040046f:	movs	r0, r0
+0x00400471:	lsls	r4, r7, #6
+0x00400473:	movs	r0, r0
+0x00400475:	lsls	r0, r3, #1
+0x00400477:	movs	r0, r0
+0x00400479:	movs	r0, r0
+0x0040047b:	movs	r0, r0
+0x0040047d:	movs	r0, r6
+0x0040047f:	movs	r0, r0
+0x00400481:	push	{r4, lr}
+0x00400483:	ldr	r4, [pc, #0x1c]
+0x00400485:	add	r4, pc
+0x00400487:	adds	r4, #0x20
+0x00400489:	mov	r0, r4
+0x0040048b:	bl	#0x500001
+
+Function shared_random @ 0x00400481
+0x00400481:	push	{r4, lr}
+0x00400483:	ldr	r4, [pc, #0x1c]
+0x00400485:	add	r4, pc
+0x00400487:	adds	r4, #0x20
+0x00400489:	mov	r0, r4
+0x0040048b:	bl	#0x500001
+0x0040048f:	bl	#0x500031
+0x00400493:	mov	r3, r0
+0x00400495:	mov	r0, r4
+0x00400497:	mov	r4, r3
+0x00400499:	bl	#0x500019
+0x0040049d:	mov	r0, r4
+0x0040049f:	pop	{r4, pc}
+
+Function my_usleep @ 0x004004a5
+0x004004a5:	push	{r4, r5, lr}
+0x004004a7:	movw	r1, #0xde83
+0x004004ab:	movt	r1, #0x431b
+0x004004af:	sub	sp, #0x1c
+0x004004b1:	ldr.w	ip, [pc, #0x58]
+0x004004b5:	asrs	r2, r0, #0x1f
+0x004004b7:	movw	r4, #0x4240
+0x004004bb:	movt	r4, #0xf
+0x004004bf:	smull	r5, r1, r1, r0
+0x004004c3:	add	r5, sp, #0xc
+0x004004c5:	str	r5, [sp]
+0x004004c7:	ldr	r5, [pc, #0x48]
+0x004004c9:	add	ip, pc
+0x004004cb:	rsb	r2, r2, r1, asr #18
+0x004004cf:	movs	r3, #0
+0x004004d1:	mov	r1, r3
+0x004004d3:	ldr.w	r5, [ip, r5]
+0x004004d7:	mls	r4, r4, r2, r0
+0x004004db:	mov	r0, r3
+0x004004dd:	ldr	r5, [r5]
+0x004004df:	str	r5, [sp, #0x14]
+0x004004e1:	mov.w	r5, #0
+0x004004e5:	str	r2, [sp, #0xc]
+0x004004e7:	mov	r2, r3
+0x004004e9:	str	r4, [sp, #0x10]
+0x004004eb:	bl	#0x50003d
+0x004004ef:	ldr	r2, [pc, #0x24]
+0x004004f1:	ldr	r3, [pc, #0x1c]
+0x004004f3:	add	r2, pc
+0x004004f5:	ldr	r3, [r2, r3]
+0x004004f7:	ldr	r2, [r3]
+0x004004f9:	ldr	r3, [sp, #0x14]
+0x004004fb:	eors	r2, r3
+0x004004fd:	mov.w	r3, #0
+0x00400501:	bne	#0x400507
+0x00400503:	add	sp, #0x1c
+0x00400505:	pop	{r4, r5, pc}
+0x00400507:	bl	#0x500025
+
+Function sub_40050b @ 0x0040050b
+0x0040050b:	nop	
+0x0040050d:	lsls	r0, r0, #1
+0x0040050f:	movs	r0, r0
+0x00400511:	movs	r0, r0
+0x00400513:	movs	r0, r0
+0x00400515:	movs	r6, r3
+0x00400517:	movs	r0, r0
+0x00400519:	ldr	r2, [pc, #0x78]
+0x0040051b:	ldr	r3, [pc, #0x7c]
+0x0040051d:	push	{r4, r5, lr}
+0x0040051f:	add	r2, pc
+0x00400521:	ldr	r5, [pc, #0x78]
+0x00400523:	sub	sp, #0x1c
+0x00400525:	add	r5, pc
+0x00400527:	ldr	r3, [r2, r3]
+0x00400529:	adds	r5, #0x20
+0x0040052b:	mov	r0, r5
+0x0040052d:	ldr	r3, [r3]
+0x0040052f:	str	r3, [sp, #0x14]
+0x00400531:	mov.w	r3, #0
+0x00400535:	bl	#0x500001
+
+Function random_delay @ 0x00400519
+0x00400519:	ldr	r2, [pc, #0x78]
+0x0040051b:	ldr	r3, [pc, #0x7c]
+0x0040051d:	push	{r4, r5, lr}
+0x0040051f:	add	r2, pc
+0x00400521:	ldr	r5, [pc, #0x78]
+0x00400523:	sub	sp, #0x1c
+0x00400525:	add	r5, pc
+0x00400527:	ldr	r3, [r2, r3]
+0x00400529:	adds	r5, #0x20
+0x0040052b:	mov	r0, r5
+0x0040052d:	ldr	r3, [r3]
+0x0040052f:	str	r3, [sp, #0x14]
+0x00400531:	mov.w	r3, #0
+0x00400535:	bl	#0x500001
+0x00400539:	bl	#0x500031
+0x0040053d:	mov	r4, r0
+0x0040053f:	mov	r0, r5
+0x00400541:	mov.w	r5, #0x7d0
+0x00400545:	bl	#0x500019
+0x00400549:	movw	r2, #0x4dd3
+0x0040054d:	movt	r2, #0x1062
+0x00400551:	asrs	r1, r4, #0x1f
+0x00400553:	movs	r0, #0x64
+0x00400555:	movs	r3, #0
+0x00400557:	str	r3, [sp, #0xc]
+0x00400559:	smull	ip, r2, r2, r4
+0x0040055d:	rsb	r2, r1, r2, asr #7
+0x00400561:	mov	r1, r3
+0x00400563:	mls	r4, r5, r2, r4
+0x00400567:	add	r2, sp, #0xc
+0x00400569:	str	r2, [sp]
+0x0040056b:	mov	r2, r3
+0x0040056d:	mul	r4, r0, r4
+0x00400571:	mov	r0, r3
+0x00400573:	str	r4, [sp, #0x10]
+0x00400575:	bl	#0x50003d
+0x00400579:	ldr	r2, [pc, #0x24]
+0x0040057b:	ldr	r3, [pc, #0x1c]
+0x0040057d:	add	r2, pc
+0x0040057f:	ldr	r3, [r2, r3]
+0x00400581:	ldr	r2, [r3]
+0x00400583:	ldr	r3, [sp, #0x14]
+0x00400585:	eors	r2, r3
+0x00400587:	mov.w	r3, #0
+0x0040058b:	bne	#0x400591
+0x0040058d:	add	sp, #0x1c
+0x0040058f:	pop	{r4, r5, pc}
+0x00400591:	bl	#0x500025
+
+Function print_philosopher @ 0x004005a5
+0x004005a5:	push	{r4, lr}
+0x004005a7:	mov	r4, r0
+0x004005a9:	mov	r3, r1
+0x004005ab:	sub	sp, #8
+0x004005ad:	mov	r1, r2
+0x004005af:	ldr	r0, [pc, #0x1c]
+0x004005b1:	lsl.w	ip, r4, #2
+0x004005b5:	ldr	r2, [pc, #0x18]
+0x004005b7:	str	r1, [sp, #4]
+0x004005b9:	add	r0, pc
+0x004005bb:	add	r2, pc
+0x004005bd:	add.w	r1, ip, #2
+0x004005c1:	str	r4, [sp]
+0x004005c3:	bl	#0x400001
+
+Function sub_4005c7 @ 0x004005c7
+0x004005c7:	add	sp, #8
+0x004005c9:	pop	{r4, pc}
+
+Function sub_4005cb @ 0x004005cb
+0x004005cb:	nop	
+0x004005cd:	lsls	r4, r2, #1
+0x004005cf:	movs	r0, r0
+0x004005d1:	lsls	r2, r4, #1
+0x004005d3:	movs	r0, r0
+
+Function main @ 0x00400635
+0x00400635:	ldr	r1, [pc, #0xd4]
+0x00400637:	movs	r3, #5
+0x00400639:	ldr	r2, [pc, #0xd4]
+0x0040063b:	push.w	{r4, r5, r6, r7, r8, lr}
+0x0040063f:	add	r1, pc
+0x00400641:	ldr	r7, [pc, #0xd0]
+0x00400643:	sub	sp, #0x28
+0x00400645:	add	r7, pc
+0x00400647:	ldr	r2, [r1, r2]
+0x00400649:	mov	r6, sp
+0x0040064b:	mov	r0, r6
+0x0040064d:	ldr	r2, [r2]
+0x0040064f:	str	r2, [sp, #0x24]
+0x00400651:	mov.w	r2, #0
+0x00400655:	str	r3, [r7, #0x18]
+0x00400657:	bl	#0x500079
+0x0040065b:	mov	r1, r6
+0x0040065d:	mov	r0, r7
+0x0040065f:	bl	#0x500085
+0x00400663:	mov	r1, r6
+0x00400665:	add.w	r0, r7, #0x20
+0x00400669:	bl	#0x500085
+0x0040066d:	ldr	r3, [r7, #0x18]
+0x0040066f:	movs	r0, #0x18
+0x00400671:	mul	r0, r3, r0
+0x00400675:	bl	#0x4003cd
+0x00400679:	ldr	r3, [r7, #0x18]
+0x0040067b:	str	r0, [r7, #0x1c]
+0x0040067d:	cmp	r3, #0
+0x0040067f:	ble	#0x40069b
+0x00400681:	movs	r4, #0
+0x00400683:	mov	r5, r4
+0x00400685:	b	#0x400689
+0x00400687:	ldr	r0, [r7, #0x1c]
+0x00400689:	add	r0, r4
+0x0040068b:	mov	r1, r6
+0x0040068d:	bl	#0x500085
+0x00400689:	add	r0, r4
+0x0040068b:	mov	r1, r6
+0x0040068d:	bl	#0x500085
+0x00400691:	ldr	r3, [r7, #0x18]
+0x00400693:	adds	r5, #1
+0x00400695:	adds	r4, #0x18
+0x00400697:	cmp	r3, r5
+0x00400699:	bgt	#0x400687
+0x0040069b:	ldr	r7, [pc, #0x7c]
+0x0040069d:	mov	r0, r6
+0x0040069f:	bl	#0x500091
+0x004006a3:	add	r7, pc
+0x004006a5:	ldr	r0, [r7, #0x18]
+0x004006a7:	lsls	r0, r0, #2
+0x004006a9:	bl	#0x4003cd
+0x004006ad:	ldr	r3, [r7, #0x18]
+0x004006af:	mov	r5, r0
+0x004006b1:	lsls	r0, r3, #2
+0x004006b3:	bl	#0x4003cd
+0x004006b7:	mov	r3, r0
+0x004006b9:	mov	r0, r6
+0x004006bb:	str	r3, [r7, #0x38]
+0x004006bd:	bl	#0x50009d
+0x004006c1:	ldr	r3, [r7, #0x18]
+0x004006c3:	cmp	r3, #0
+0x004006c5:	ble	#0x4006eb
+0x004006c7:	ldr.w	r8, [pc, #0x54]
+0x004006cb:	movs	r4, #0
+0x004006cd:	add	r8, pc
+0x004006cf:	ldr	r0, [r7, #0x38]
+0x004006d1:	mov	r3, r5
+0x004006d3:	mov	r2, r8
+0x004006d5:	str	r4, [r5], #4
+0x004006d9:	mov	r1, r6
+0x004006db:	add.w	r0, r0, r4, lsl #2
+0x004006df:	adds	r4, #1
+0x004006e1:	bl	#0x5000a9
+0x004006cf:	ldr	r0, [r7, #0x38]
+0x004006d1:	mov	r3, r5
+0x004006d3:	mov	r2, r8
+0x004006d5:	str	r4, [r5], #4
+0x004006d9:	mov	r1, r6
+0x004006db:	add.w	r0, r0, r4, lsl #2
+0x004006df:	adds	r4, #1
+0x004006e1:	bl	#0x5000a9
+0x004006e5:	ldr	r3, [r7, #0x18]
+0x004006e7:	cmp	r3, r4
+0x004006e9:	bgt	#0x4006cf
+0x004006eb:	mov	r0, r6
+0x004006ed:	movw	r4, #0x4240
+0x004006f1:	movt	r4, #0xf
+0x004006f5:	bl	#0x5000b5
+0x004006f9:	movw	r0, #0x4240
+0x004006fd:	movt	r0, #0xf
+0x00400701:	bl	#0x5000c1
+0x00400705:	mov	r0, r4
+0x00400707:	bl	#0x5000c1
+0x0040070b:	b	#0x400705
+
+Function pthread_mutex_lock @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __vfprintf_chk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function pthread_mutex_unlock @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function rand @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function select @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function __aeabi_idivmod @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function malloc @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function fwrite @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function exit @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function pthread_mutexattr_init @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function pthread_mutex_init @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function pthread_mutexattr_destroy @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function pthread_attr_init @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0
+0x005000a5:	movs	r0, r0
+0x005000a7:	movs	r0, r0
+
+Function pthread_create @ 0x005000a9
+0x005000a9:	movs	r0, r0
+0x005000ab:	movs	r0, r0
+0x005000ad:	movs	r0, r0
+0x005000af:	movs	r0, r0
+0x005000b1:	movs	r0, r0
+0x005000b3:	movs	r0, r0
+
+Function pthread_attr_destroy @ 0x005000b5
+0x005000b5:	movs	r0, r0
+0x005000b7:	movs	r0, r0
+0x005000b9:	movs	r0, r0
+0x005000bb:	movs	r0, r0
+0x005000bd:	movs	r0, r0
+0x005000bf:	movs	r0, r0
+
+Function sleep @ 0x005000c1
+0x005000c1:	movs	r0, r0
+0x005000c3:	movs	r0, r0
+0x005000c5:	movs	r0, r0
+0x005000c7:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

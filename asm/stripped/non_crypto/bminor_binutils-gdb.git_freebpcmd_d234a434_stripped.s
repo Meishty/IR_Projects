@@ -1,15 +1,23 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_freebpcmd_d234a434_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	push	{r3, r4, r5, lr}
+0x0040000b:	movs	r4, #0
+0x0040000d:	ldr	r5, [pc, #0x14]
+0x0040000f:	add	r5, pc
+0x00400011:	movs	r0, #1
+0x00400013:	mov	r2, r4
+0x00400015:	mov	r1, r5
+0x00400017:	add	r4, r0
+0x00400019:	bl	#0x400019
+0x00400011:	movs	r0, #1
+0x00400013:	mov	r2, r4
+0x00400015:	mov	r1, r5
+0x00400017:	add	r4, r0
+0x00400019:	bl	#0x400019
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	2400b538 	strcs	fp, [r0], #-1336	; 0xfffffac8
-   4:	447d4d05 	ldrbtmi	r4, [sp], #-3333	; 0xfffff2fb
-   8:	46222001 	strtmi	r2, [r2], -r1
-   c:	44044629 	strmi	r4, [r4], #-1577	; 0xfffff9d7
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	d1f72c64 	mvnsle	r2, r4, ror #24
-  18:	bd382000 	ldclt	0, cr2, [r8, #-0]
-  1c:	00000012 	andeq	r0, r0, r2, lsl r0
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	cmp	r4, #0x64
+0x0040001f:	bne	#0x400011
+0x00400021:	movs	r0, #0
+0x00400023:	pop	{r3, r4, r5, pc}

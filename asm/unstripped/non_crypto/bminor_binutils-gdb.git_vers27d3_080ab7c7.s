@@ -1,26 +1,45 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_vers27d3_080ab7c7.o:     file format elf32-littlearm
+Function _start @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	pop.w	{r3, lr}
+0x0040000b:	b.w	#0x50000d
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	push	{r3, lr}
+0x00400013:	bl	#0x500001
 
-Disassembly of section .text:
+Function __start @ 0x00400011
+0x00400011:	push	{r3, lr}
+0x00400013:	bl	#0x500001
+0x00400017:	pop.w	{r3, lr}
+0x0040001b:	b.w	#0x50000d
 
-00000000 <_start>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <foo>
-   6:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-   a:	f7ff bffe 	b.w	0 <ref>
-   e:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x500001
 
-00000010 <__start>:
-  10:	b508      	push	{r3, lr}
-  12:	f7ff fffe 	bl	0 <foo>
-  16:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  1a:	f7ff bffe 	b.w	0 <ref>
-  1e:	bf00      	nop
+Function start @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x500001
+0x00400027:	pop.w	{r3, lr}
+0x0040002b:	b.w	#0x50000d
 
-00000020 <start>:
-  20:	b508      	push	{r3, lr}
-  22:	f7ff fffe 	bl	0 <foo>
-  26:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  2a:	f7ff bffe 	b.w	0 <ref>
-  2e:	bf00      	nop
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+
+Function foo @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function ref @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

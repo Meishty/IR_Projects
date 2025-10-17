@@ -1,43 +1,67 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_catch-gdb-caused-signals_e2f4115f.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r1]!
 
+Function main @ 0x00400005
+0x00400005:	push	{r3, r4, r5, lr}
+0x00400007:	ldr	r5, [pc, #0x40]
+0x00400009:	ldr	r3, [pc, #0x40]
+0x0040000b:	add	r5, pc
+0x0040000d:	ldr	r3, [r5, r3]
+0x0040000f:	ldr	r0, [r3]
+0x00400011:	bl	#0x500001
+0x00400015:	bl	#0x50000d
+0x00400019:	cbz	r0, #0x40001f
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r3, r4, r5, pc}
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r3, r4, r5, pc}
+0x0040001f:	ldr	r1, [pc, #0x30]
+0x00400021:	mov	r4, r0
+0x00400023:	mov.w	r3, #0x2000
+0x00400027:	movs	r2, #2
+0x00400029:	ldr	r1, [r5, r1]
+0x0040002b:	ldr	r0, [r1]
+0x0040002d:	mov	r1, r4
+0x0040002f:	bl	#0x500019
+0x00400033:	ldr	r0, [pc, #0x20]
+0x00400035:	mov.w	r3, #0x2000
+0x00400039:	movs	r2, #2
+0x0040003b:	mov	r1, r4
+0x0040003d:	ldr	r0, [r5, r0]
+0x0040003f:	ldr	r0, [r0]
+0x00400041:	bl	#0x500019
+0x00400045:	b	#0x40001b
 
-Disassembly of section .text:
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	movs	r2, r7
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r0, r0
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0
 
-00000000 <return_one>:
-   0:	2001      	movs	r0, #1
-   2:	4770      	bx	lr
+Function fileno @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function isatty @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	4d10      	ldr	r5, [pc, #64]	; (44 <main+0x44>)
-   4:	4b10      	ldr	r3, [pc, #64]	; (48 <main+0x48>)
-   6:	447d      	add	r5, pc
-   8:	58eb      	ldr	r3, [r5, r3]
-   a:	6818      	ldr	r0, [r3, #0]
-   c:	f7ff fffe 	bl	0 <fileno>
-  10:	f7ff fffe 	bl	0 <isatty>
-  14:	b108      	cbz	r0, 1a <main+0x1a>
-  16:	2000      	movs	r0, #0
-  18:	bd38      	pop	{r3, r4, r5, pc}
-  1a:	490c      	ldr	r1, [pc, #48]	; (4c <main+0x4c>)
-  1c:	4604      	mov	r4, r0
-  1e:	f44f 5300 	mov.w	r3, #8192	; 0x2000
-  22:	2202      	movs	r2, #2
-  24:	5869      	ldr	r1, [r5, r1]
-  26:	6808      	ldr	r0, [r1, #0]
-  28:	4621      	mov	r1, r4
-  2a:	f7ff fffe 	bl	0 <setvbuf>
-  2e:	4808      	ldr	r0, [pc, #32]	; (50 <main+0x50>)
-  30:	f44f 5300 	mov.w	r3, #8192	; 0x2000
-  34:	2202      	movs	r2, #2
-  36:	4621      	mov	r1, r4
-  38:	5828      	ldr	r0, [r5, r0]
-  3a:	6800      	ldr	r0, [r0, #0]
-  3c:	f7ff fffe 	bl	0 <setvbuf>
-  40:	e7e9      	b.n	16 <main+0x16>
-  42:	bf00      	nop
-  44:	0000003a 	.word	0x0000003a
-	...
+Function setvbuf @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

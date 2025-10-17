@@ -1,38 +1,51 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_xasprintf_3daa46d4.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	bmi	#0x82d044
+0x00400004:	blmi	#0x82d40c
+0x00400008:	ldrbtmi	fp, [sl], #-0x83
+0x0040000c:	ldmpl	r3, {r2, r8, fp, sp, pc} ^
 
+Function sub_400010 @ 0x00400010
+0x00400010:	bleq	#0x53e15c
+0x00400014:	movwls	r6, #0x181b
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	mov.w	r3, #0
+0x0040001d:	str	r1, [sp]
+0x0040001f:	bl	#0x500001
+0x00400023:	ldr	r2, [pc, #0x28]
+0x00400025:	ldr	r3, [pc, #0x20]
+0x00400027:	add	r2, pc
+0x00400029:	ldr	r3, [r2, r3]
+0x0040002b:	ldr	r2, [r3]
+0x0040002d:	ldr	r3, [sp, #4]
+0x0040002f:	eors	r2, r3
+0x00400031:	mov.w	r3, #0
+0x00400035:	bne	#0x400041
+0x00400037:	add	sp, #0xc
+0x00400039:	ldr	lr, [sp], #4
+0x0040003d:	add	sp, #0x10
+0x0040003f:	bx	lr
+0x00400041:	bl	#0x50000d
 
-00000000 <xasprintf>:
-   0:	b40f      	push	{r0, r1, r2, r3}
-   2:	4a10      	ldr	r2, [pc, #64]	; (44 <xasprintf+0x44>)
-   4:	b500      	push	{lr}
-   6:	4b10      	ldr	r3, [pc, #64]	; (48 <xasprintf+0x48>)
-   8:	b083      	sub	sp, #12
-   a:	447a      	add	r2, pc
-   c:	a904      	add	r1, sp, #16
-   e:	58d3      	ldr	r3, [r2, r3]
-  10:	f851 0b04 	ldr.w	r0, [r1], #4
-  14:	681b      	ldr	r3, [r3, #0]
-  16:	9301      	str	r3, [sp, #4]
-  18:	f04f 0300 	mov.w	r3, #0
-  1c:	9100      	str	r1, [sp, #0]
-  1e:	f7ff fffe 	bl	0 <xvasprintf>
-  22:	4a0a      	ldr	r2, [pc, #40]	; (4c <xasprintf+0x4c>)
-  24:	4b08      	ldr	r3, [pc, #32]	; (48 <xasprintf+0x48>)
-  26:	447a      	add	r2, pc
-  28:	58d3      	ldr	r3, [r2, r3]
-  2a:	681a      	ldr	r2, [r3, #0]
-  2c:	9b01      	ldr	r3, [sp, #4]
-  2e:	405a      	eors	r2, r3
-  30:	f04f 0300 	mov.w	r3, #0
-  34:	d104      	bne.n	40 <xasprintf+0x40>
-  36:	b003      	add	sp, #12
-  38:	f85d eb04 	ldr.w	lr, [sp], #4
-  3c:	b004      	add	sp, #16
-  3e:	4770      	bx	lr
-  40:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  44:	00000036 	.word	0x00000036
-  48:	00000000 	.word	0x00000000
-  4c:	00000022 	.word	0x00000022
+Function sub_400045 @ 0x00400045
+0x00400045:	movs	r6, r6
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r2, r4
+0x0040004f:	movs	r0, r0
+
+Function xvasprintf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

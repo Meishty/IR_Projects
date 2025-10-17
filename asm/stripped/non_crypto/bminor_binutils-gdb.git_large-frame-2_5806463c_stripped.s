@@ -1,30 +1,43 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_large-frame-2_5806463c_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r0, #-0xa13]
+0x00400004:	ldrbtmi	r4, [sl], #-0xb13
+0x00400008:	stcmi	p5, c15, [r0, #0x2b4]
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	add.w	r1, sp, #0x4000
+0x00400013:	add	r0, sp, #4
+0x00400015:	ldr	r3, [r2, r3]
+0x00400017:	adds	r1, #4
+0x00400019:	ldr	r3, [r3]
+0x0040001b:	str	r3, [r1]
+0x0040001d:	mov.w	r3, #0
+0x00400021:	bl	#0x400021
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
+0x00400025:	ldr	r2, [pc, #0x30]
+0x00400027:	add.w	r1, sp, #0x4000
+0x0040002b:	ldr	r3, [pc, #0x28]
+0x0040002d:	adds	r1, #4
+0x0040002f:	add	r2, pc
+0x00400031:	ldr	r3, [r2, r3]
+0x00400033:	ldr	r2, [r3]
+0x00400035:	ldr	r3, [r1]
+0x00400037:	eors	r2, r3
+0x00400039:	mov.w	r3, #0
+0x0040003d:	bne	#0x40004b
+0x0040003f:	movs	r0, #0
+0x00400041:	add.w	sp, sp, #0x4000
+0x00400045:	add	sp, #0xc
+0x00400047:	ldr	pc, [sp], #4
 
-00000000 <.text>:
-   0:	b5004a13 	strlt	r4, [r0, #-2579]	; 0xfffff5ed
-   4:	447a4b13 	ldrbtmi	r4, [sl], #-2835	; 0xfffff4ed
-   8:	4d80f5ad 	cfstr32mi	mvfx15, [r0, #692]	; 0x2b4
-   c:	f50db083 			; <UNDEFINED> instruction: 0xf50db083
-  10:	a8014180 	stmdage	r1, {r7, r8, lr}
-  14:	310458d3 	ldrdcc	r5, [r4, -r3]
-  18:	600b681b 	andvs	r6, fp, fp, lsl r8
-  1c:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	f50d4a0c 			; <UNDEFINED> instruction: 0xf50d4a0c
-  28:	4b0a4180 	blmi	0x290630
-  2c:	447a3104 	ldrbtmi	r3, [sl], #-260	; 0xfffffefc
-  30:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
-  34:	405a680b 	subsmi	r6, sl, fp, lsl #16
-  38:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  3c:	2000d105 	andcs	sp, r0, r5, lsl #2
-  40:	4d80f50d 	cfstr32mi	mvfx15, [r0, #52]	; 0x34
-  44:	f85db003 			; <UNDEFINED> instruction: 0xf85db003
-  48:	f7fffb04 			; <UNDEFINED> instruction: 0xf7fffb04
-  4c:	bf00fffe 	svclt	0x0000fffe
-  50:	00000046 	andeq	r0, r0, r6, asr #32
-  54:	00000000 	andeq	r0, r0, r0
-  58:	00000026 	andeq	r0, r0, r6, lsr #32
+Function sub_40004b @ 0x0040004b
+0x0040004b:	bl	#0x40004b
+0x0040004f:	nop	
+0x00400051:	lsls	r6, r0, #1
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r0
+0x00400057:	movs	r0, r0
+0x00400059:	movs	r6, r4
+0x0040005b:	movs	r0, r0

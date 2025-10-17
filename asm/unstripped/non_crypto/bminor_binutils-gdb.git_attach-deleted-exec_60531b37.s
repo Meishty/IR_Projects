@@ -1,15 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_attach-deleted-exec_60531b37.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0x3c]
+0x00400004:	strtvs	pc, [r0], #0x248
+0x00400008:	streq	pc, [r1], #-0x2c0
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	vpadal.s32	d20, d16
+0x00400013:	bl	#0x50000d
+0x00400011:	mov	r0, r4
+0x00400013:	bl	#0x50000d
+0x00400017:	b	#0x400011
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	203c      	movs	r0, #60	; 0x3c
-   2:	b508      	push	{r3, lr}
-   4:	f248 64a0 	movw	r4, #34464	; 0x86a0
-   8:	f2c0 0401 	movt	r4, #1
-   c:	f7ff fffe 	bl	0 <alarm>
-  10:	4620      	mov	r0, r4
-  12:	f7ff fffe 	bl	0 <usleep>
-  16:	e7fb      	b.n	10 <main+0x10>
+Function usleep @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

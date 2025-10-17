@@ -1,33 +1,66 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_size-4a_cd87edc6.o:     file format elf32-littlearm
+Function main @ 0x00400025
+0x00400025:	push	{r3, lr}
+0x00400027:	bl	#0x500001
+0x0040002b:	cmp	r0, #0xa
+0x0040002d:	beq	#0x40003b
+0x0040002f:	bl	#0x50000d
+0x00400033:	cmp	r0, #0x14
+0x00400035:	beq	#0x40004d
+0x00400037:	movs	r0, #0
+0x00400039:	pop	{r3, pc}
+0x0040003b:	bl	#0x500019
+0x0040003f:	cmp	r0, #0xa
+0x00400041:	bne	#0x40002f
+0x00400043:	ldr	r0, [pc, #0x1c]
+0x00400045:	add	r0, pc
+0x00400047:	bl	#0x500025
+0x0040004b:	b	#0x40002f
+0x0040004d:	bl	#0x500031
+0x00400051:	cmp	r0, #0x14
+0x00400053:	bne	#0x400037
+0x00400055:	ldr	r0, [pc, #0xc]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x500025
+0x0040005d:	b	#0x400037
 
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
 
-Disassembly of section .text.startup:
+Function bar_size1 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <bar_size1>
-   6:	280a      	cmp	r0, #10
-   8:	d005      	beq.n	16 <main+0x16>
-   a:	f7ff fffe 	bl	0 <foo_size1>
-   e:	2814      	cmp	r0, #20
-  10:	d00a      	beq.n	28 <main+0x28>
-  12:	2000      	movs	r0, #0
-  14:	bd08      	pop	{r3, pc}
-  16:	f7ff fffe 	bl	0 <bar_size2>
-  1a:	280a      	cmp	r0, #10
-  1c:	d1f5      	bne.n	a <main+0xa>
-  1e:	4807      	ldr	r0, [pc, #28]	; (3c <main+0x3c>)
-  20:	4478      	add	r0, pc
-  22:	f7ff fffe 	bl	0 <puts>
-  26:	e7f0      	b.n	a <main+0xa>
-  28:	f7ff fffe 	bl	0 <foo_size2>
-  2c:	2814      	cmp	r0, #20
-  2e:	d1f0      	bne.n	12 <main+0x12>
-  30:	4803      	ldr	r0, [pc, #12]	; (40 <main+0x40>)
-  32:	4478      	add	r0, pc
-  34:	f7ff fffe 	bl	0 <puts>
-  38:	e7eb      	b.n	12 <main+0x12>
-  3a:	bf00      	nop
-  3c:	00000018 	.word	0x00000018
-  40:	0000000a 	.word	0x0000000a
+Function foo_size1 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function bar_size2 @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function puts @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function foo_size2 @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

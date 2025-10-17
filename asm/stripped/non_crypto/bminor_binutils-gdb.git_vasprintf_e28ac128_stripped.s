@@ -1,20 +1,35 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_vasprintf_e28ac128_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov	r3, r1
+0x00400005:	mov	r6, r0
+0x00400007:	sub	sp, #0x10
+0x00400009:	mov	r1, r2
+0x0040000b:	mov	r0, r3
+0x0040000d:	mov	r5, r2
+0x0040000f:	str	r3, [sp, #0xc]
+0x00400011:	bl	#0x400011
 
+Function sub_400011 @ 0x00400011
+0x00400011:	bl	#0x400011
 
-Disassembly of section .text:
+Function sub_400015 @ 0x00400015
+0x00400015:	bl	#0x400015
+0x00400019:	str	r0, [r6]
+0x0040001b:	cbz	r0, #0x40002f
+0x0040001d:	ldr	r3, [sp, #0xc]
+0x0040001f:	mov.w	r2, #-1
+0x00400023:	movs	r1, #1
+0x00400025:	str	r5, [sp]
+0x00400027:	bl	#0x400027
+0x0040001d:	ldr	r3, [sp, #0xc]
+0x0040001f:	mov.w	r2, #-1
+0x00400023:	movs	r1, #1
+0x00400025:	str	r5, [sp]
+0x00400027:	bl	#0x400027
+0x0040002b:	add	sp, #0x10
+0x0040002d:	pop	{r4, r5, r6, pc}
+0x0040002f:	mov.w	r0, #-1
+0x00400033:	b	#0x40002b
 
-00000000 <.text>:
-   0:	460bb570 			; <UNDEFINED> instruction: 0x460bb570
-   4:	b0844606 	addlt	r4, r4, r6, lsl #12
-   8:	46184611 			; <UNDEFINED> instruction: 0x46184611
-   c:	93034615 	movwls	r4, #13845	; 0x3615
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	b1406030 	cmplt	r0, r0, lsr r0
-  1c:	f04f9b03 			; <UNDEFINED> instruction: 0xf04f9b03
-  20:	210132ff 	strdcs	r3, [r1, -pc]
-  24:	f7ff9500 			; <UNDEFINED> instruction: 0xf7ff9500
-  28:	b004fffe 	strdlt	pc, [r4], -lr
-  2c:	f04fbd70 			; <UNDEFINED> instruction: 0xf04fbd70
-  30:	e7fa30ff 	udf	#41743	; 0xa30f
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027

@@ -1,27 +1,32 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_amd64-tailcall-noret_e3f4efa0_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x52d428
+0x00400004:	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	vstrlt.16	s22, [r8, #-6]
+0x00400008:	vstrlt.16	s22, [r8, #-6]
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x40000f
 
-Disassembly of section .text:
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r0, #1
+0x0040001b:	b	#0x400001
 
-00000000 <.text>:
-   0:	4b04b508 	blmi	0x12d428
-   4:	681b447b 	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
-   8:	bd08b903 	vstrlt.16	s22, [r8, #-6]	; <UNPREDICTABLE>
-   c:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  10:	bf00fffe 	svclt	0x0000fffe
-  14:	0000000c 	andeq	r0, r0, ip
-  18:	e7f12001 	ldrb	r2, [r1, r1]!
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r0, r1, r2, r3}
+0x00400023:	push	{r3, lr}
+0x00400025:	bl	#0x400025
 
-Disassembly of section .text.unlikely:
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+0x00400029:	push	{r3, lr}
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x40002d
 
-00000000 <.text.unlikely>:
-   0:	b508b40f 	strlt	fp, [r8, #-1039]	; 0xfffffbf1
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	2001b508 	andcs	fp, r1, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bd082000 	stclt	0, cr2, [r8, #-0]
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	movs	r0, #0
+0x00400033:	pop	{r3, pc}

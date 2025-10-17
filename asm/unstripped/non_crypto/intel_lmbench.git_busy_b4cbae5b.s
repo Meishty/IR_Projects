@@ -1,13 +1,24 @@
 
-/root/projects/compiled/non_crypto/unstripped/intel_lmbench.git_busy_b4cbae5b.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	movs	r0, #0xa
+0x00400007:	push	{r3, lr}
+0x00400009:	bl	#0x500001
+0x0040000d:	bl	#0x50000d
+0x00400011:	b	#0x40000d
 
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
 
-Disassembly of section .text.startup:
+Function nice @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	200a      	movs	r0, #10
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <nice>
-   8:	f7ff fffe 	bl	0 <getppid>
-   c:	e7fc      	b.n	8 <main+0x8>
-   e:	bf00      	nop
+Function getppid @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

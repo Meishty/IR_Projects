@@ -1,15 +1,18 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr14323-2_5145333e_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov.w	r0, #-1
+0x00400007:	ldr	r3, [pc, #0x10]
+0x00400009:	add	r1, pc
+0x0040000b:	ldr	r2, [pc, #0x10]
+0x0040000d:	add	r3, pc
+0x0040000f:	str	r0, [r1]
+0x00400011:	ldr	r0, [r3, r2]
+0x00400013:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	f04f4904 			; <UNDEFINED> instruction: 0xf04f4904
-   4:	4b0430ff 	blmi	0x10c408
-   8:	4a044479 	bmi	0x1111f4
-   c:	6008447b 	andvs	r4, r8, fp, ror r4
-  10:	47705898 			; <UNDEFINED> instruction: 0x47705898
-  14:	00000008 	andeq	r0, r0, r8
-  18:	00000008 	andeq	r0, r0, r8
-  1c:	00000000 	andeq	r0, r0, r0
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r0, r1
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r0, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r0
+0x0040001f:	movs	r0, r0

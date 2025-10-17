@@ -1,58 +1,87 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_prog_34fa5c05.o:     file format elf32-littlearm
+Function main @ 0x00400089
+0x00400089:	push	{r4, lr}
+0x0040008b:	bl	#0x500001
+0x0040008f:	subs	r4, r0, #1
+0x00400091:	bl	#0x50000d
+0x00400095:	ldr	r3, [pc, #0x58]
+0x00400097:	add	r4, r0
+0x00400099:	cmp	r4, #1
+0x0040009b:	add	r3, pc
+0x0040009d:	beq	#0x4000b3
+0x0040009f:	cmp	r4, #4
+0x004000a1:	beq	#0x4000d9
+0x004000a3:	cbz	r4, #0x4000c5
+0x004000a5:	ldr	r0, [pc, #0x4c]
+0x004000a7:	mov	r1, r4
+0x004000a9:	add	r0, pc
+0x004000ab:	bl	#0x500019
+0x004000a5:	ldr	r0, [pc, #0x4c]
+0x004000a7:	mov	r1, r4
+0x004000a9:	add	r0, pc
+0x004000ab:	bl	#0x500019
+0x004000af:	mov	r0, r4
+0x004000b1:	pop	{r4, pc}
+0x004000b3:	ldr	r2, [pc, #0x44]
+0x004000b5:	ldr	r3, [r3, r2]
+0x004000b7:	ldr	r3, [r3]
+0x004000b9:	cbz	r3, #0x4000cd
+0x004000bb:	ldr	r0, [pc, #0x40]
+0x004000bd:	add	r0, pc
+0x004000bf:	bl	#0x500025
+0x004000bb:	ldr	r0, [pc, #0x40]
+0x004000bd:	add	r0, pc
+0x004000bf:	bl	#0x500025
+0x004000c3:	b	#0x4000af
+0x004000c5:	ldr	r2, [pc, #0x30]
+0x004000c7:	ldr	r3, [r3, r2]
+0x004000c9:	ldr	r3, [r3]
+0x004000cb:	cbz	r3, #0x4000e3
+0x004000cd:	ldr	r0, [pc, #0x30]
+0x004000cf:	movs	r4, #0
+0x004000d1:	add	r0, pc
+0x004000d3:	bl	#0x500025
+0x004000cd:	ldr	r0, [pc, #0x30]
+0x004000cf:	movs	r4, #0
+0x004000d1:	add	r0, pc
+0x004000d3:	bl	#0x500025
+0x004000d7:	b	#0x4000af
+0x004000d9:	ldr	r0, [pc, #0x28]
+0x004000db:	add	r0, pc
+0x004000dd:	bl	#0x500025
+0x004000e1:	b	#0x4000af
+0x004000e3:	ldr	r0, [pc, #0x24]
+0x004000e5:	mov.w	r4, #-1
+0x004000e9:	add	r0, pc
+0x004000eb:	bl	#0x500025
+0x004000ef:	b	#0x4000af
 
+Function library_func1 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function library_func2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	f7ff fffe 	bl	0 <library_func1>
-   6:	1e44      	subs	r4, r0, #1
-   8:	f7ff fffe 	bl	0 <library_func2>
-   c:	4b16      	ldr	r3, [pc, #88]	; (68 <main+0x68>)
-   e:	4404      	add	r4, r0
-  10:	2c01      	cmp	r4, #1
-  12:	447b      	add	r3, pc
-  14:	d009      	beq.n	2a <main+0x2a>
-  16:	2c04      	cmp	r4, #4
-  18:	d01a      	beq.n	50 <main+0x50>
-  1a:	b17c      	cbz	r4, 3c <main+0x3c>
-  1c:	4813      	ldr	r0, [pc, #76]	; (6c <main+0x6c>)
-  1e:	4621      	mov	r1, r4
-  20:	4478      	add	r0, pc
-  22:	f7ff fffe 	bl	0 <printf>
-  26:	4620      	mov	r0, r4
-  28:	bd10      	pop	{r4, pc}
-  2a:	4a11      	ldr	r2, [pc, #68]	; (70 <main+0x70>)
-  2c:	589b      	ldr	r3, [r3, r2]
-  2e:	681b      	ldr	r3, [r3, #0]
-  30:	b143      	cbz	r3, 44 <main+0x44>
-  32:	4810      	ldr	r0, [pc, #64]	; (74 <main+0x74>)
-  34:	4478      	add	r0, pc
-  36:	f7ff fffe 	bl	0 <puts>
-  3a:	e7f4      	b.n	26 <main+0x26>
-  3c:	4a0c      	ldr	r2, [pc, #48]	; (70 <main+0x70>)
-  3e:	589b      	ldr	r3, [r3, r2]
-  40:	681b      	ldr	r3, [r3, #0]
-  42:	b153      	cbz	r3, 5a <main+0x5a>
-  44:	480c      	ldr	r0, [pc, #48]	; (78 <main+0x78>)
-  46:	2400      	movs	r4, #0
-  48:	4478      	add	r0, pc
-  4a:	f7ff fffe 	bl	0 <puts>
-  4e:	e7ea      	b.n	26 <main+0x26>
-  50:	480a      	ldr	r0, [pc, #40]	; (7c <main+0x7c>)
-  52:	4478      	add	r0, pc
-  54:	f7ff fffe 	bl	0 <puts>
-  58:	e7e5      	b.n	26 <main+0x26>
-  5a:	4809      	ldr	r0, [pc, #36]	; (80 <main+0x80>)
-  5c:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
-  60:	4478      	add	r0, pc
-  62:	f7ff fffe 	bl	0 <puts>
-  66:	e7de      	b.n	26 <main+0x26>
-  68:	00000052 	.word	0x00000052
-  6c:	00000048 	.word	0x00000048
-  70:	00000000 	.word	0x00000000
-  74:	0000003c 	.word	0x0000003c
-  78:	0000002c 	.word	0x0000002c
-  7c:	00000026 	.word	0x00000026
-  80:	0000001c 	.word	0x0000001c
+Function printf @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function puts @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

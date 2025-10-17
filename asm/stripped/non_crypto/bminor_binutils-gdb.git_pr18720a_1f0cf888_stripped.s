@@ -1,30 +1,47 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr18720a_1f0cf888_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	movw	r1, #0x5678
+0x00400007:	movt	r1, #0x1234
+0x0040000b:	ldr	r2, [pc, #0x14]
+0x0040000d:	add	r3, pc
+0x0040000f:	ldr	r0, [r3, r2]
+0x00400011:	subs	r0, r0, r1
+0x00400013:	clz	r0, r0
+0x00400017:	lsrs	r0, r0, #5
+0x00400019:	bx	lr
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r4, r1
+0x0040001f:	movs	r0, r0
+0x00400021:	movs	r0, r0
+0x00400023:	movs	r0, r0
 
-Disassembly of section .text:
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r4, r1
+0x0040001f:	movs	r0, r0
+0x00400021:	movs	r0, r0
+0x00400023:	movs	r0, r0
 
-00000000 <.text>:
-   0:	f2454b06 	vqdmulh.s<illegal width 8>	d20, d5, d6
-   4:	f2c16178 	vbic.i32	q11, #24	; 0x00000018
-   8:	4a052134 	bmi	0x1484e0
-   c:	5898447b 	ldmpl	r8, {r0, r1, r3, r4, r5, r6, sl, lr}
-  10:	fab01a40 	blx	0xfec06918
-  14:	0940f080 	stmdbeq	r0, {r7, ip, sp, lr, pc}^
-  18:	bf004770 	svclt	0x00004770
-  1c:	0000000c 	andeq	r0, r0, ip
-  20:	00000000 	andeq	r0, r0, r0
+Function sub_400025 @ 0x00400025
+0x00400025:	push	{r4, lr}
+0x00400027:	ldr	r4, [pc, #0x1c]
+0x00400029:	bl	#0x400029
 
-Disassembly of section .text.startup:
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
 
-00000000 <.text.startup>:
-   0:	4c07b510 	cfstr32mi	mvfx11, [r7], {16}
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	49064a05 	stmdbmi	r6, {r0, r2, r9, fp, lr}
-  10:	4623447c 			; <UNDEFINED> instruction: 0x4623447c
-  14:	586158a0 	stmdapl	r1!, {r5, r7, fp, ip, lr}^
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	bd102000 	ldclt	0, cr2, [r0, #-0]
-  20:	0000000c 	andeq	r0, r0, ip
-	...
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	ldr	r2, [pc, #0x14]
+0x00400033:	ldr	r1, [pc, #0x18]
+0x00400035:	add	r4, pc
+0x00400037:	mov	r3, r4
+0x00400039:	ldr	r0, [r4, r2]
+0x0040003b:	ldr	r1, [r4, r1]
+0x0040003d:	bl	#0x40003d
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+0x00400041:	movs	r0, #0
+0x00400043:	pop	{r4, pc}

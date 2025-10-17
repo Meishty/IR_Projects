@@ -1,122 +1,182 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_tiff-bi_6f310445.o:     file format elf32-littlearm
+Function main @ 0x0040003d
+0x0040003d:	push	{r3, r4, r5, r6, r7, lr}
+0x0040003f:	cmp	r0, #2
+0x00400041:	ldr	r6, [pc, #0x120]
+0x00400043:	mov	r4, r1
+0x00400045:	add	r6, pc
+0x00400047:	beq	#0x400061
+0x00400049:	ldr	r0, [pc, #0x11c]
+0x0040004b:	ldr	r2, [pc, #0x120]
+0x0040004d:	ldr	r3, [r1]
+0x0040004f:	movs	r1, #1
+0x00400051:	add	r2, pc
+0x00400053:	ldr	r0, [r6, r0]
+0x00400055:	ldr	r0, [r0]
+0x00400057:	bl	#0x500001
+0x0040005b:	movs	r0, #0
+0x0040005d:	bl	#0x50000d
+0x00400061:	ldr	r1, [pc, #0x10c]
+0x00400063:	ldr	r0, [r4, #4]
+0x00400065:	add	r1, pc
+0x00400067:	bl	#0x500019
+0x0040006b:	mov	r5, r0
+0x0040006d:	cmp	r0, #0
+0x0040006f:	beq	#0x40014d
+0x00400071:	mov.w	r2, #0x200
+0x00400075:	mov.w	r1, #0x100
+0x00400079:	bl	#0x500025
+0x0040007d:	mov.w	r2, #0x200
+0x00400081:	movw	r1, #0x101
+0x00400085:	mov	r0, r5
+0x00400087:	bl	#0x500025
+0x0040008b:	movs	r2, #1
+0x0040008d:	mov.w	r1, #0x102
+0x00400091:	mov	r0, r5
+0x00400093:	bl	#0x500025
+0x00400097:	movs	r2, #1
+0x00400099:	movw	r1, #0x103
+0x0040009d:	mov	r0, r5
+0x0040009f:	bl	#0x500025
+0x004000a3:	movs	r2, #1
+0x004000a5:	mov.w	r1, #0x106
+0x004000a9:	mov	r0, r5
+0x004000ab:	bl	#0x500025
+0x004000af:	movs	r2, #1
+0x004000b1:	movw	r1, #0x115
+0x004000b5:	mov	r0, r5
+0x004000b7:	bl	#0x500025
+0x004000bb:	movs	r2, #1
+0x004000bd:	mov.w	r1, #0x116
+0x004000c1:	mov	r0, r5
+0x004000c3:	bl	#0x500025
+0x004000c7:	movs	r2, #1
+0x004000c9:	mov.w	r1, #0x11c
+0x004000cd:	mov	r0, r5
+0x004000cf:	bl	#0x500025
+0x004000d3:	movs	r2, #1
+0x004000d5:	mov.w	r1, #0x128
+0x004000d9:	mov	r0, r5
+0x004000db:	bl	#0x500025
+0x004000df:	movs	r0, #0x40
+0x004000e1:	bl	#0x500031
+0x004000e5:	mov	r6, r0
+0x004000e7:	movs	r2, #0x20
+0x004000e9:	movs	r1, #0
+0x004000eb:	add.w	r7, r6, #0x20
+0x004000ef:	bl	#0x50003d
+0x004000f3:	movs	r2, #0x20
+0x004000f5:	movs	r1, #0xff
+0x004000f7:	mov	r0, r7
+0x004000f9:	movs	r4, #0
+0x004000fb:	bl	#0x50003d
+0x004000ff:	mov	r2, r4
+0x00400101:	movs	r3, #0
+0x00400103:	mov	r1, r6
+0x00400105:	mov	r0, r5
+0x00400107:	adds	r4, #1
+0x00400109:	bl	#0x500049
+0x0040010d:	cmp.w	r4, #0x100
+0x00400111:	bne	#0x4000ff
+0x00400113:	movs	r2, #0x20
+0x00400115:	movs	r1, #0xff
+0x00400117:	mov	r0, r6
+0x00400119:	bl	#0x50003d
+0x0040011d:	movs	r2, #0x20
+0x0040011f:	mov	r0, r7
+0x00400121:	movs	r1, #0
+0x00400123:	bl	#0x50003d
+0x00400127:	mov	r2, r4
+0x00400129:	movs	r3, #0
+0x0040012b:	mov	r1, r6
+0x0040012d:	mov	r0, r5
+0x0040012f:	adds	r4, #1
+0x00400131:	bl	#0x500049
+0x00400135:	cmp.w	r4, #0x200
+0x00400139:	bne	#0x400127
+0x0040013b:	mov	r0, r6
+0x0040013d:	bl	#0x500055
+0x00400141:	mov	r0, r5
+0x00400143:	bl	#0x500061
+0x00400147:	movs	r0, #0
+0x00400149:	bl	#0x50000d
+0x0040014d:	ldr	r1, [pc, #0x18]
+0x0040014f:	ldr	r2, [pc, #0x24]
+0x00400151:	ldr	r3, [r4, #4]
+0x00400153:	add	r2, pc
+0x00400155:	ldr	r1, [r6, r1]
+0x00400157:	ldr	r0, [r1]
+0x00400159:	movs	r1, #1
+0x0040015b:	bl	#0x500001
+0x0040015f:	mov	r0, r5
+0x00400161:	bl	#0x50000d
 
+Function __fprintf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function exit @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-   2:	2802      	cmp	r0, #2
-   4:	4e48      	ldr	r6, [pc, #288]	; (128 <main+0x128>)
-   6:	460c      	mov	r4, r1
-   8:	447e      	add	r6, pc
-   a:	d00b      	beq.n	24 <main+0x24>
-   c:	4847      	ldr	r0, [pc, #284]	; (12c <main+0x12c>)
-   e:	4a48      	ldr	r2, [pc, #288]	; (130 <main+0x130>)
-  10:	680b      	ldr	r3, [r1, #0]
-  12:	2101      	movs	r1, #1
-  14:	447a      	add	r2, pc
-  16:	5830      	ldr	r0, [r6, r0]
-  18:	6800      	ldr	r0, [r0, #0]
-  1a:	f7ff fffe 	bl	0 <__fprintf_chk>
-  1e:	2000      	movs	r0, #0
-  20:	f7ff fffe 	bl	0 <exit>
-  24:	4943      	ldr	r1, [pc, #268]	; (134 <main+0x134>)
-  26:	6860      	ldr	r0, [r4, #4]
-  28:	4479      	add	r1, pc
-  2a:	f7ff fffe 	bl	0 <TIFFOpen>
-  2e:	4605      	mov	r5, r0
-  30:	2800      	cmp	r0, #0
-  32:	d06d      	beq.n	110 <main+0x110>
-  34:	f44f 7200 	mov.w	r2, #512	; 0x200
-  38:	f44f 7180 	mov.w	r1, #256	; 0x100
-  3c:	f7ff fffe 	bl	0 <TIFFSetField>
-  40:	f44f 7200 	mov.w	r2, #512	; 0x200
-  44:	f240 1101 	movw	r1, #257	; 0x101
-  48:	4628      	mov	r0, r5
-  4a:	f7ff fffe 	bl	0 <TIFFSetField>
-  4e:	2201      	movs	r2, #1
-  50:	f44f 7181 	mov.w	r1, #258	; 0x102
-  54:	4628      	mov	r0, r5
-  56:	f7ff fffe 	bl	0 <TIFFSetField>
-  5a:	2201      	movs	r2, #1
-  5c:	f240 1103 	movw	r1, #259	; 0x103
-  60:	4628      	mov	r0, r5
-  62:	f7ff fffe 	bl	0 <TIFFSetField>
-  66:	2201      	movs	r2, #1
-  68:	f44f 7183 	mov.w	r1, #262	; 0x106
-  6c:	4628      	mov	r0, r5
-  6e:	f7ff fffe 	bl	0 <TIFFSetField>
-  72:	2201      	movs	r2, #1
-  74:	f240 1115 	movw	r1, #277	; 0x115
-  78:	4628      	mov	r0, r5
-  7a:	f7ff fffe 	bl	0 <TIFFSetField>
-  7e:	2201      	movs	r2, #1
-  80:	f44f 718b 	mov.w	r1, #278	; 0x116
-  84:	4628      	mov	r0, r5
-  86:	f7ff fffe 	bl	0 <TIFFSetField>
-  8a:	2201      	movs	r2, #1
-  8c:	f44f 718e 	mov.w	r1, #284	; 0x11c
-  90:	4628      	mov	r0, r5
-  92:	f7ff fffe 	bl	0 <TIFFSetField>
-  96:	2201      	movs	r2, #1
-  98:	f44f 7194 	mov.w	r1, #296	; 0x128
-  9c:	4628      	mov	r0, r5
-  9e:	f7ff fffe 	bl	0 <TIFFSetField>
-  a2:	2040      	movs	r0, #64	; 0x40
-  a4:	f7ff fffe 	bl	0 <malloc>
-  a8:	4606      	mov	r6, r0
-  aa:	2220      	movs	r2, #32
-  ac:	2100      	movs	r1, #0
-  ae:	f106 0720 	add.w	r7, r6, #32
-  b2:	f7ff fffe 	bl	0 <memset>
-  b6:	2220      	movs	r2, #32
-  b8:	21ff      	movs	r1, #255	; 0xff
-  ba:	4638      	mov	r0, r7
-  bc:	2400      	movs	r4, #0
-  be:	f7ff fffe 	bl	0 <memset>
-  c2:	4622      	mov	r2, r4
-  c4:	2300      	movs	r3, #0
-  c6:	4631      	mov	r1, r6
-  c8:	4628      	mov	r0, r5
-  ca:	3401      	adds	r4, #1
-  cc:	f7ff fffe 	bl	0 <TIFFWriteScanline>
-  d0:	f5b4 7f80 	cmp.w	r4, #256	; 0x100
-  d4:	d1f5      	bne.n	c2 <main+0xc2>
-  d6:	2220      	movs	r2, #32
-  d8:	21ff      	movs	r1, #255	; 0xff
-  da:	4630      	mov	r0, r6
-  dc:	f7ff fffe 	bl	0 <memset>
-  e0:	2220      	movs	r2, #32
-  e2:	4638      	mov	r0, r7
-  e4:	2100      	movs	r1, #0
-  e6:	f7ff fffe 	bl	0 <memset>
-  ea:	4622      	mov	r2, r4
-  ec:	2300      	movs	r3, #0
-  ee:	4631      	mov	r1, r6
-  f0:	4628      	mov	r0, r5
-  f2:	3401      	adds	r4, #1
-  f4:	f7ff fffe 	bl	0 <TIFFWriteScanline>
-  f8:	f5b4 7f00 	cmp.w	r4, #512	; 0x200
-  fc:	d1f5      	bne.n	ea <main+0xea>
-  fe:	4630      	mov	r0, r6
- 100:	f7ff fffe 	bl	0 <free>
- 104:	4628      	mov	r0, r5
- 106:	f7ff fffe 	bl	0 <TIFFClose>
- 10a:	2000      	movs	r0, #0
- 10c:	f7ff fffe 	bl	0 <exit>
- 110:	4906      	ldr	r1, [pc, #24]	; (12c <main+0x12c>)
- 112:	4a09      	ldr	r2, [pc, #36]	; (138 <main+0x138>)
- 114:	6863      	ldr	r3, [r4, #4]
- 116:	447a      	add	r2, pc
- 118:	5871      	ldr	r1, [r6, r1]
- 11a:	6808      	ldr	r0, [r1, #0]
- 11c:	2101      	movs	r1, #1
- 11e:	f7ff fffe 	bl	0 <__fprintf_chk>
- 122:	4628      	mov	r0, r5
- 124:	f7ff fffe 	bl	0 <exit>
- 128:	0000011c 	.word	0x0000011c
- 12c:	00000000 	.word	0x00000000
- 130:	00000118 	.word	0x00000118
- 134:	00000108 	.word	0x00000108
- 138:	0000001e 	.word	0x0000001e
+Function TIFFOpen @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function TIFFSetField @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function malloc @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function memset @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function TIFFWriteScanline @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function free @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function TIFFClose @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0

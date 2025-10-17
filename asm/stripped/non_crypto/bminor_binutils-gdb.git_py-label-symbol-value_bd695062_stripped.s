@@ -1,19 +1,20 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-label-symbol-value_bd695062_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r2, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706818 			; <UNDEFINED> instruction: 0x47706818
-   8:	00000002 	andeq	r0, r0, r2
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	447b4b03 	ldrbtmi	r4, [fp], #-2819	; 0xfffff4fd
-   4:	28006818 	stmdacs	r0, {r3, r4, fp, sp, lr}
-   8:	2000bfcc 	andcs	fp, r0, ip, asr #31
-   c:	47702001 	ldrbmi	r2, [r0, -r1]!
-  10:	0000000a 	andeq	r0, r0, sl
+Function sub_400011 @ 0x00400011
+0x00400011:	ldr	r3, [pc, #0xc]
+0x00400013:	add	r3, pc
+0x00400015:	ldr	r0, [r3]
+0x00400017:	cmp	r0, #0
+0x00400019:	ite	gt
+0x0040001b:	movgt	r0, #0
+0x0040001d:	movle	r0, #1
+0x0040001f:	bx	lr

@@ -1,26 +1,43 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_multi-ui-errors_72d7b8d4.o:     file format elf32-littlearm
+Function main @ 0x00400025
+0x00400025:	push	{r4, lr}
+0x00400027:	movs	r4, #0x78
+0x00400029:	bl	#0x500001
+0x0040002d:	ldr	r3, [pc, #0x1c]
+0x0040002f:	mov	r2, r0
+0x00400031:	ldr	r0, [pc, #0x1c]
+0x00400033:	add	r3, pc
+0x00400035:	add	r0, pc
+0x00400037:	str	r2, [r3]
+0x00400039:	bl	#0x50000d
+0x0040003d:	movs	r0, #1
+0x0040003f:	bl	#0x500019
+0x00400043:	subs	r4, #1
+0x00400045:	bne	#0x40003d
+0x00400047:	mov	r0, r4
+0x00400049:	pop	{r4, pc}
 
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
 
-Disassembly of section .text.startup:
+Function getppid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2478      	movs	r4, #120	; 0x78
-   4:	f7ff fffe 	bl	0 <getppid>
-   8:	4b07      	ldr	r3, [pc, #28]	; (28 <main+0x28>)
-   a:	4602      	mov	r2, r0
-   c:	4807      	ldr	r0, [pc, #28]	; (2c <main+0x2c>)
-   e:	447b      	add	r3, pc
-  10:	4478      	add	r0, pc
-  12:	601a      	str	r2, [r3, #0]
-  14:	f7ff fffe 	bl	0 <puts>
-  18:	2001      	movs	r0, #1
-  1a:	f7ff fffe 	bl	0 <sleep>
-  1e:	3c01      	subs	r4, #1
-  20:	d1fa      	bne.n	18 <main+0x18>
-  22:	4620      	mov	r0, r4
-  24:	bd10      	pop	{r4, pc}
-  26:	bf00      	nop
-  28:	00000016 	.word	0x00000016
-  2c:	00000018 	.word	0x00000018
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function sleep @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

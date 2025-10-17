@@ -1,24 +1,50 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dl2_4dd584f6_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x72d428
+0x00400004:	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
+0x00400008:	andle	r2, lr, r1, lsl #22
+0x0040000c:	blmi	#0x6ac520
+0x00400008:	andle	r2, lr, r1, lsl #22
+0x0040000c:	blmi	#0x6ac520
+0x00400010:	rscslo	pc, pc, #0x4f
+0x00400014:	andsvs	r4, sl, fp, ror r4
 
+Function sub_40001b @ 0x0040001b
+0x0040001b:	ands	r0, r1
+0x0040001d:	b.w	#0x40001d
+0x0040001d:	b.w	#0x40001d
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	ldr	r0, [pc, #0x18]
+0x00400023:	add	r0, pc
+0x00400025:	bl	#0x400025
 
-00000000 <.text>:
-   0:	4b0cb508 	blmi	0x32d428
-   4:	681b447b 	ldmdavs	fp, {r0, r1, r3, r4, r5, r6, sl, lr}
-   8:	d00e2b01 	andle	r2, lr, r1, lsl #22
-   c:	4b0ab143 	blmi	0x2ac520
-  10:	32fff04f 	rscscc	pc, pc, #79	; 0x4f
-  14:	601a447b 	andsvs	r4, sl, fp, ror r4
-  18:	4008e8bd 			; <UNDEFINED> instruction: 0x4008e8bd
-  1c:	bffef7ff 	svclt	0x00fef7ff
-  20:	44784806 	ldrbtmi	r4, [r8], #-2054	; 0xfffff7fa
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	4805e7f1 	stmdami	r5, {r0, r4, r5, r6, r7, r8, r9, sl, sp, lr, pc}
-  2c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  30:	e7ecfffe 			; <UNDEFINED> instruction: 0xe7ecfffe
-  34:	0000002c 	andeq	r0, r0, ip, lsr #32
-  38:	00000020 	andeq	r0, r0, r0, lsr #32
-  3c:	00000016 	andeq	r0, r0, r6, lsl r0
-  40:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+
+Function sub_400029 @ 0x00400029
+0x00400029:	b	#0x40000f
+
+Function sub_40002b @ 0x0040002b
+0x0040002b:	ldr	r0, [pc, #0x14]
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x40002f
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bl	#0x40002f
+
+Function sub_400033 @ 0x00400033
+0x00400033:	b	#0x40000f
+
+Function sub_400035 @ 0x00400035
+0x00400035:	movs	r4, r5
+0x00400037:	movs	r0, r0
+0x00400039:	movs	r0, r4
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r6, r2
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r0, r2
+0x00400043:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

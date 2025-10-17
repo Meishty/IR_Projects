@@ -1,19 +1,32 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_mips_pro_51d46523_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	cmp	r0, #0
+0x00400007:	ite	eq
+0x00400009:	moveq	r0, #0xa
+0x0040000b:	movne	r0, #0xc
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	adds	r3, r0, #1
+0x00400013:	ite	eq
+0x00400015:	moveq	r0, #0xa
+0x00400017:	movne	r0, #0xc
+0x00400019:	bx	lr
 
-00000000 <.text>:
-   0:	47700040 	ldrbmi	r0, [r0, -r0, asr #32]!
-   4:	bf0c2800 	svclt	0x000c2800
-   8:	200c200a 	andcs	r2, ip, sl
-   c:	bf004770 	svclt	0x00004770
-  10:	bf0c1c43 	svclt	0x000c1c43
-  14:	200c200a 	andcs	r2, ip, sl
-  18:	bf004770 	svclt	0x00004770
+Function sub_400011 @ 0x00400011
+0x00400011:	adds	r3, r0, #1
+0x00400013:	ite	eq
+0x00400015:	moveq	r0, #0xa
+0x00400017:	movne	r0, #0xc
+0x00400019:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
 
-00000000 <.text.startup>:
-   0:	47702016 			; <UNDEFINED> instruction: 0x47702016
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, #0x16
+0x0040001f:	bx	lr

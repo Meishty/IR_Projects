@@ -1,33 +1,62 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-auto-load-chaining_f17a4302_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andshs	fp, lr, r0, lsr #10
 
+Function sub_400007 @ 0x00400007
+0x00400007:	adds	r5, #0xff
+0x00400009:	sub	sp, #8
+0x0040000b:	bl	#0x40000b
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
+0x0040000f:	movs	r3, #0x22
+0x00400011:	mov	r1, r0
+0x00400013:	movs	r2, #7
+0x00400015:	movs	r0, #0
+0x00400017:	strd	r5, r0, [sp]
+0x0040001b:	bl	#0x40001b
 
-00000000 <.text>:
-   0:	201eb520 	andscs	fp, lr, r0, lsr #10
-   4:	35fff04f 	ldrbcc	pc, [pc, #79]!	; 0x5b	; <UNPREDICTABLE>
-   8:	f7ffb082 			; <UNDEFINED> instruction: 0xf7ffb082
-   c:	2322fffe 	msrcs	CPSR_x, #1016	; 0x3f8
-  10:	22074601 	andcs	r4, r7, #1048576	; 0x100000
-  14:	e9cd2000 	stmib	sp, {sp}^
-  18:	f7ff5000 			; <UNDEFINED> instruction: 0xf7ff5000
-  1c:	42a8fffe 	adcmi	pc, r8, #1016	; 0x3f8
-  20:	b002d001 	andlt	sp, r2, r1
-  24:	4803bd20 	stmdami	r3, {r5, r8, sl, fp, ip, sp, pc}
-  28:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  2c:	b002fffe 	strdlt	pc, [r2], -lr
-  30:	bf00bd20 	svclt	0x0000bd20
-  34:	00000008 	andeq	r0, r0, r8
-  38:	bf004770 	svclt	0x00004770
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	cmp	r0, r5
+0x00400021:	beq	#0x400027
+0x00400023:	add	sp, #8
+0x00400025:	pop	{r5, pc}
+0x00400027:	ldr	r0, [pc, #0xc]
+0x00400029:	add	r0, pc
+0x0040002b:	bl	#0x40002b
 
-Disassembly of section .text.startup:
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
+0x0040002f:	add	sp, #8
+0x00400031:	pop	{r5, pc}
 
-00000000 <.text.startup>:
-   0:	4c05b510 	cfstr32mi	mvfx11, [r5], {16}
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	6020447c 	eorvs	r4, r0, ip, ror r4
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	20004603 	andcs	r4, r0, r3, lsl #12
-  14:	bd106063 	ldclt	0, cr6, [r0, #-396]	; 0xfffffe74
-  18:	0000000c 	andeq	r0, r0, ip
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	movs	r0, r1
+0x00400037:	movs	r0, r0
+0x00400039:	bx	lr
+
+Function sub_400039 @ 0x00400039
+0x00400039:	bx	lr
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	push	{r4, lr}
+0x0040004f:	ldr	r4, [pc, #0x14]
+0x00400051:	bl	#0x400051
+
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+0x00400055:	add	r4, pc
+0x00400057:	str	r0, [r4]
+0x00400059:	bl	#0x400059
+
+Function sub_400059 @ 0x00400059
+0x00400059:	bl	#0x400059
+0x0040005d:	mov	r3, r0
+0x0040005f:	movs	r0, #0
+0x00400061:	str	r3, [r4, #4]
+0x00400063:	pop	{r4, pc}

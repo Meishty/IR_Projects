@@ -1,27 +1,41 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_clobbered-registers-O2_b99c95ef_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x852848
+0x00400004:	ldrbtmi	fp, [sl], #-0x500
+0x00400008:	ldmpl	r3, {r0, r2, r7, ip, sp, pc} ^
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	add	r1, sp, #8
+0x0040000f:	add	r0, sp, #4
+0x00400011:	movs	r2, #0xd
+0x00400013:	ldr	r3, [r3]
+0x00400015:	str	r3, [sp, #0xc]
+0x00400017:	mov.w	r3, #0
+0x0040001b:	movs	r3, #0xe
+0x0040001d:	str	r2, [sp, #4]
+0x0040001f:	str	r3, [sp, #8]
+0x00400021:	bl	#0x400021
 
-Disassembly of section .text.startup:
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
+0x00400025:	ldr	r2, [pc, #0x24]
+0x00400027:	ldr	r3, [pc, #0x20]
+0x00400029:	add	r2, pc
+0x0040002b:	ldr	r3, [r2, r3]
+0x0040002d:	ldr	r2, [r3]
+0x0040002f:	ldr	r3, [sp, #0xc]
+0x00400031:	eors	r2, r3
+0x00400033:	mov.w	r3, #0
+0x00400037:	bne	#0x40003f
+0x00400039:	add	sp, #0x14
+0x0040003b:	ldr	pc, [sp], #4
 
-00000000 <.text.startup>:
-   0:	4b114a10 	blmi	0x452848
-   4:	447ab500 	ldrbtmi	fp, [sl], #-1280	; 0xfffffb00
-   8:	58d3b085 	ldmpl	r3, {r0, r2, r7, ip, sp, pc}^
-   c:	a801a902 	stmdage	r1, {r1, r8, fp, sp, pc}
-  10:	681b220d 	ldmdavs	fp, {r0, r2, r3, r9, sp}
-  14:	f04f9303 			; <UNDEFINED> instruction: 0xf04f9303
-  18:	230e0300 	movwcs	r0, #58112	; 0xe300
-  1c:	93029201 	movwls	r9, #8705	; 0x2201
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	4b084a09 	blmi	0x212850
-  28:	58d3447a 	ldmpl	r3, {r1, r3, r4, r5, r6, sl, lr}^
-  2c:	9b03681a 	blls	0xda09c
-  30:	f04f405a 			; <UNDEFINED> instruction: 0xf04f405a
-  34:	d1020300 	mrsle	r0, LR_svc
-  38:	f85db005 			; <UNDEFINED> instruction: 0xf85db005
-  3c:	f7fffb04 			; <UNDEFINED> instruction: 0xf7fffb04
-  40:	bf00fffe 	svclt	0x0000fffe
-  44:	0000003a 	andeq	r0, r0, sl, lsr r0
-  48:	00000000 	andeq	r0, r0, r0
-  4c:	00000020 	andeq	r0, r0, r0, lsr #32
+Function sub_40003f @ 0x0040003f
+0x0040003f:	bl	#0x40003f
+0x00400043:	nop	
+0x00400045:	movs	r2, r7
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r4
+0x0040004f:	movs	r0, r0

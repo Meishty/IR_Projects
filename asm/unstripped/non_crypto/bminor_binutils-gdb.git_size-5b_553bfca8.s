@@ -1,55 +1,73 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_size-5b_553bfca8.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vnmls.f16	s8, s26, s10
+0x00400004:	bmi	#0x54fdcc
+0x00400008:	ldrbtmi	r2, [sb], #-3
+0x0040000c:	strmi	r6, [fp], #-0x809
+0x00400010:	addsvc	r4, r8, sl, ror r4
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bx	lr
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	lsls	r4, r2, #1
+0x0040001f:	movs	r0, r0
+0x00400021:	ldr	r3, [pc, #8]
+0x00400023:	ldr	r2, [pc, #0xc]
+0x00400025:	add	r3, pc
+0x00400027:	ldr	r0, [r3, r2]
+0x00400029:	bx	lr
 
-00000000 <bar_size1>:
-   0:	4905      	ldr	r1, [pc, #20]	; (18 <bar_size1+0x18>)
-   2:	ee1d 3f70 	mrc	15, 0, r3, cr13, cr0, {3}
-   6:	4a05      	ldr	r2, [pc, #20]	; (1c <bar_size1+0x1c>)
-   8:	2003      	movs	r0, #3
-   a:	4479      	add	r1, pc
-   c:	6809      	ldr	r1, [r1, #0]
-   e:	440b      	add	r3, r1
-  10:	447a      	add	r2, pc
-  12:	7098      	strb	r0, [r3, #2]
-  14:	6810      	ldr	r0, [r2, #0]
-  16:	4770      	bx	lr
-  18:	0000000a 	.word	0x0000000a
-  1c:	00000008 	.word	0x00000008
+Function bar_size2 @ 0x00400021
+0x00400021:	ldr	r3, [pc, #8]
+0x00400023:	ldr	r2, [pc, #0xc]
+0x00400025:	add	r3, pc
+0x00400027:	ldr	r0, [r3, r2]
+0x00400029:	bx	lr
 
-00000020 <bar_size2>:
-  20:	4b02      	ldr	r3, [pc, #8]	; (2c <bar_size2+0xc>)
-  22:	4a03      	ldr	r2, [pc, #12]	; (30 <bar_size2+0x10>)
-  24:	447b      	add	r3, pc
-  26:	5898      	ldr	r0, [r3, r2]
-  28:	4770      	bx	lr
-  2a:	bf00      	nop
-  2c:	00000004 	.word	0x00000004
-  30:	00000000 	.word	0x00000000
+Function sub_40002b @ 0x0040002b
+0x0040002b:	nop	
+0x0040002d:	movs	r4, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r0, r0
+0x00400033:	movs	r0, r0
+0x00400035:	ldr	r1, [pc, #0x14]
+0x00400037:	mrc	p15, #0, r3, c13, c0, #3
+0x0040003b:	ldr	r2, [pc, #0x14]
+0x0040003d:	movs	r0, #4
+0x0040003f:	add	r1, pc
+0x00400041:	ldr	r1, [r1]
+0x00400043:	add	r3, r1
+0x00400045:	add	r2, pc
+0x00400047:	strb	r0, [r3, #3]
+0x00400049:	ldr	r0, [r2, #4]
+0x0040004b:	bx	lr
 
-00000034 <foo_size1>:
-  34:	4905      	ldr	r1, [pc, #20]	; (4c <foo_size1+0x18>)
-  36:	ee1d 3f70 	mrc	15, 0, r3, cr13, cr0, {3}
-  3a:	4a05      	ldr	r2, [pc, #20]	; (50 <foo_size1+0x1c>)
-  3c:	2004      	movs	r0, #4
-  3e:	4479      	add	r1, pc
-  40:	6809      	ldr	r1, [r1, #0]
-  42:	440b      	add	r3, r1
-  44:	447a      	add	r2, pc
-  46:	70d8      	strb	r0, [r3, #3]
-  48:	6850      	ldr	r0, [r2, #4]
-  4a:	4770      	bx	lr
-  4c:	0000000a 	.word	0x0000000a
-  50:	00000008 	.word	0x00000008
+Function foo_size1 @ 0x00400035
+0x00400035:	ldr	r1, [pc, #0x14]
+0x00400037:	mrc	p15, #0, r3, c13, c0, #3
+0x0040003b:	ldr	r2, [pc, #0x14]
+0x0040003d:	movs	r0, #4
+0x0040003f:	add	r1, pc
+0x00400041:	ldr	r1, [r1]
+0x00400043:	add	r3, r1
+0x00400045:	add	r2, pc
+0x00400047:	strb	r0, [r3, #3]
+0x00400049:	ldr	r0, [r2, #4]
+0x0040004b:	bx	lr
 
-00000054 <foo_size2>:
-  54:	4b02      	ldr	r3, [pc, #8]	; (60 <foo_size2+0xc>)
-  56:	4a03      	ldr	r2, [pc, #12]	; (64 <foo_size2+0x10>)
-  58:	447b      	add	r3, pc
-  5a:	5898      	ldr	r0, [r3, r2]
-  5c:	4770      	bx	lr
-  5e:	bf00      	nop
-  60:	00000004 	.word	0x00000004
-  64:	00000000 	.word	0x00000000
+Function foo_size2 @ 0x00400055
+0x00400055:	ldr	r3, [pc, #8]
+0x00400057:	ldr	r2, [pc, #0xc]
+0x00400059:	add	r3, pc
+0x0040005b:	ldr	r0, [r3, r2]
+0x0040005d:	bx	lr
+
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	
+0x00400061:	movs	r4, r0
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r0, r1
+0x00400067:	movs	r0, r0

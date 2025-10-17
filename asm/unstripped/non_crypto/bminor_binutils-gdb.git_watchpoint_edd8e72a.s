@@ -1,162 +1,380 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_watchpoint_edd8e72a.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svclt	#0x4770
 
+Function marker2 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <marker1>:
-   0:	4770      	bx	lr
-   2:	bf00      	nop
+Function marker4 @ 0x00400009
+0x00400009:	bx	lr
 
-00000004 <marker2>:
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000008 <marker4>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function marker5 @ 0x0040000d
+0x0040000d:	bx	lr
 
-0000000c <marker5>:
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	bx	lr
 
-00000010 <marker6>:
-  10:	4770      	bx	lr
-  12:	bf00      	nop
+Function marker6 @ 0x00400011
+0x00400011:	bx	lr
 
-00000014 <recurser>:
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	bx	lr
 
-00000018 <func2>:
-  18:	4a02      	ldr	r2, [pc, #8]	; (24 <func2+0xc>)
-  1a:	447a      	add	r2, pc
-  1c:	6813      	ldr	r3, [r2, #0]
-  1e:	3301      	adds	r3, #1
-  20:	6013      	str	r3, [r2, #0]
-  22:	4770      	bx	lr
-  24:	00000006 	.word	0x00000006
+Function recurser @ 0x00400015
+0x00400015:	bx	lr
 
-00000028 <func3>:
-  28:	4b02      	ldr	r3, [pc, #8]	; (34 <func3+0xc>)
-  2a:	2203      	movs	r2, #3
-  2c:	447b      	add	r3, pc
-  2e:	779a      	strb	r2, [r3, #30]
-  30:	4770      	bx	lr
-  32:	bf00      	nop
-  34:	00000004 	.word	0x00000004
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	ldr	r2, [pc, #8]
+0x0040001b:	add	r2, pc
+0x0040001d:	ldr	r3, [r2]
+0x0040001f:	adds	r3, #1
+0x00400021:	str	r3, [r2]
+0x00400023:	bx	lr
 
-00000038 <func1>:
-  38:	4a03      	ldr	r2, [pc, #12]	; (48 <func1+0x10>)
-  3a:	2049      	movs	r0, #73	; 0x49
-  3c:	447a      	add	r2, pc
-  3e:	6813      	ldr	r3, [r2, #0]
-  40:	3301      	adds	r3, #1
-  42:	6013      	str	r3, [r2, #0]
-  44:	4770      	bx	lr
-  46:	bf00      	nop
-  48:	00000008 	.word	0x00000008
+Function func2 @ 0x00400019
+0x00400019:	ldr	r2, [pc, #8]
+0x0040001b:	add	r2, pc
+0x0040001d:	ldr	r3, [r2]
+0x0040001f:	adds	r3, #1
+0x00400021:	str	r3, [r2]
+0x00400023:	bx	lr
 
-0000004c <func4>:
-  4c:	4a07      	ldr	r2, [pc, #28]	; (6c <func4+0x20>)
-  4e:	f240 5009 	movw	r0, #1289	; 0x509
-  52:	4b07      	ldr	r3, [pc, #28]	; (70 <func4+0x24>)
-  54:	447a      	add	r2, pc
-  56:	b410      	push	{r4}
-  58:	447b      	add	r3, pc
-  5a:	1d1c      	adds	r4, r3, #4
-  5c:	1d51      	adds	r1, r2, #5
-  5e:	8090      	strh	r0, [r2, #4]
-  60:	601c      	str	r4, [r3, #0]
-  62:	6059      	str	r1, [r3, #4]
-  64:	f85d 4b04 	ldr.w	r4, [sp], #4
-  68:	4770      	bx	lr
-  6a:	bf00      	nop
-  6c:	00000014 	.word	0x00000014
-  70:	00000014 	.word	0x00000014
+Function func3 @ 0x00400029
+0x00400029:	ldr	r3, [pc, #8]
+0x0040002b:	movs	r2, #3
+0x0040002d:	add	r3, pc
+0x0040002f:	strb	r2, [r3, #0x1e]
+0x00400031:	bx	lr
 
-00000074 <func5>:
-  74:	4770      	bx	lr
-  76:	bf00      	nop
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	lsls	r0, r5, #1
+0x00400037:	movs	r0, r0
+0x00400039:	ldr	r2, [pc, #0xc]
+0x0040003b:	movs	r0, #0x49
+0x0040003d:	add	r2, pc
+0x0040003f:	ldr	r3, [r2]
+0x00400041:	adds	r3, #1
+0x00400043:	str	r3, [r2]
+0x00400045:	bx	lr
 
-00000078 <func6>:
-  78:	4b02      	ldr	r3, [pc, #8]	; (84 <func6+0xc>)
-  7a:	220b      	movs	r2, #11
-  7c:	447b      	add	r3, pc
-  7e:	60da      	str	r2, [r3, #12]
-  80:	4770      	bx	lr
-  82:	bf00      	nop
-  84:	00000004 	.word	0x00000004
+Function func1 @ 0x00400039
+0x00400039:	ldr	r2, [pc, #0xc]
+0x0040003b:	movs	r0, #0x49
+0x0040003d:	add	r2, pc
+0x0040003f:	ldr	r3, [r2]
+0x00400041:	adds	r3, #1
+0x00400043:	str	r3, [r2]
+0x00400045:	bx	lr
 
-00000088 <func7>:
-  88:	4b02      	ldr	r3, [pc, #8]	; (94 <func7+0xc>)
-  8a:	2221      	movs	r2, #33	; 0x21
-  8c:	447b      	add	r3, pc
-  8e:	61da      	str	r2, [r3, #28]
-  90:	4770      	bx	lr
-  92:	bf00      	nop
-  94:	00000004 	.word	0x00000004
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	lsls	r0, r3, #1
+0x0040004b:	movs	r0, r0
+0x0040004d:	ldr	r2, [pc, #0x1c]
+0x0040004f:	movw	r0, #0x509
+0x00400053:	ldr	r3, [pc, #0x1c]
+0x00400055:	add	r2, pc
+0x00400057:	push	{r4}
+0x00400059:	add	r3, pc
+0x0040005b:	adds	r4, r3, #4
+0x0040005d:	adds	r1, r2, #5
+0x0040005f:	strh	r0, [r2, #4]
+0x00400061:	str	r4, [r3]
+0x00400063:	str	r1, [r3, #4]
+0x00400065:	ldr	r4, [sp], #4
+0x00400069:	bx	lr
 
-Disassembly of section .text.startup:
+Function func4 @ 0x0040004d
+0x0040004d:	ldr	r2, [pc, #0x1c]
+0x0040004f:	movw	r0, #0x509
+0x00400053:	ldr	r3, [pc, #0x1c]
+0x00400055:	add	r2, pc
+0x00400057:	push	{r4}
+0x00400059:	add	r3, pc
+0x0040005b:	adds	r4, r3, #4
+0x0040005d:	adds	r1, r2, #5
+0x0040005f:	strh	r0, [r2, #4]
+0x00400061:	str	r4, [r3]
+0x00400063:	str	r1, [r3, #4]
+0x00400065:	ldr	r4, [sp], #4
+0x00400069:	bx	lr
 
-00000000 <main>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	2304      	movs	r3, #4
-   4:	4d1e      	ldr	r5, [pc, #120]	; (80 <main+0x80>)
-   6:	4c1f      	ldr	r4, [pc, #124]	; (84 <main+0x84>)
-   8:	2202      	movs	r2, #2
-   a:	447d      	add	r5, pc
-   c:	2001      	movs	r0, #1
-   e:	447c      	add	r4, pc
-  10:	f105 0120 	add.w	r1, r5, #32
-  14:	e9c5 2008 	strd	r2, r0, [r5, #32]
-  18:	f105 0224 	add.w	r2, r5, #36	; 0x24
-  1c:	6263      	str	r3, [r4, #36]	; 0x24
-  1e:	62a3      	str	r3, [r4, #40]	; 0x28
-  20:	e9c4 330b 	strd	r3, r3, [r4, #44]	; 0x2c
-  24:	6363      	str	r3, [r4, #52]	; 0x34
-  26:	6b2b      	ldr	r3, [r5, #48]	; 0x30
-  28:	62aa      	str	r2, [r5, #40]	; 0x28
-  2a:	6822      	ldr	r2, [r4, #0]
-  2c:	62e9      	str	r1, [r5, #44]	; 0x2c
-  2e:	4402      	add	r2, r0
-  30:	6022      	str	r2, [r4, #0]
-  32:	b9c3      	cbnz	r3, 66 <main+0x66>
-  34:	4608      	mov	r0, r1
-  36:	4914      	ldr	r1, [pc, #80]	; (88 <main+0x88>)
-  38:	3203      	adds	r2, #3
-  3a:	4b14      	ldr	r3, [pc, #80]	; (8c <main+0x8c>)
-  3c:	2403      	movs	r4, #3
-  3e:	4479      	add	r1, pc
-  40:	2505      	movs	r5, #5
-  42:	447b      	add	r3, pc
-  44:	600a      	str	r2, [r1, #0]
-  46:	f240 5209 	movw	r2, #1289	; 0x509
-  4a:	778c      	strb	r4, [r1, #30]
-  4c:	808a      	strh	r2, [r1, #4]
-  4e:	2221      	movs	r2, #33	; 0x21
-  50:	6298      	str	r0, [r3, #40]	; 0x28
-  52:	1d18      	adds	r0, r3, #4
-  54:	625d      	str	r5, [r3, #36]	; 0x24
-  56:	194d      	adds	r5, r1, r5
-  58:	6018      	str	r0, [r3, #0]
-  5a:	210b      	movs	r1, #11
-  5c:	2000      	movs	r0, #0
-  5e:	605d      	str	r5, [r3, #4]
-  60:	60d9      	str	r1, [r3, #12]
-  62:	61da      	str	r2, [r3, #28]
-  64:	bd38      	pop	{r3, r4, r5, pc}
-  66:	2217      	movs	r2, #23
-  68:	f104 0138 	add.w	r1, r4, #56	; 0x38
-  6c:	f7ff fffe 	bl	0 <write>
-  70:	2205      	movs	r2, #5
-  72:	1d21      	adds	r1, r4, #4
-  74:	2000      	movs	r0, #0
-  76:	f7ff fffe 	bl	0 <read>
-  7a:	6ae8      	ldr	r0, [r5, #44]	; 0x2c
-  7c:	6822      	ldr	r2, [r4, #0]
-  7e:	e7da      	b.n	36 <main+0x36>
-  80:	00000072 	.word	0x00000072
-  84:	00000072 	.word	0x00000072
-  88:	00000046 	.word	0x00000046
-  8c:	00000046 	.word	0x00000046
+Function sub_40006b @ 0x0040006b
+0x0040006b:	nop	
+0x0040006d:	lsls	r0, r0, #1
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r4, r1, #2
+0x00400073:	movs	r0, r0
+0x00400075:	bx	lr
+
+Function func5 @ 0x00400075
+0x00400075:	bx	lr
+
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	ldr	r3, [pc, #8]
+0x0040007b:	movs	r2, #0xb
+0x0040007d:	add	r3, pc
+0x0040007f:	str	r2, [r3, #0xc]
+0x00400081:	bx	lr
+
+Function func6 @ 0x00400079
+0x00400079:	ldr	r3, [pc, #8]
+0x0040007b:	movs	r2, #0xb
+0x0040007d:	add	r3, pc
+0x0040007f:	str	r2, [r3, #0xc]
+0x00400081:	bx	lr
+
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	lsls	r0, r5, #1
+0x00400087:	movs	r0, r0
+0x00400089:	ldr	r3, [pc, #8]
+0x0040008b:	movs	r2, #0x21
+0x0040008d:	add	r3, pc
+0x0040008f:	str	r2, [r3, #0x1c]
+0x00400091:	bx	lr
+
+Function func7 @ 0x00400089
+0x00400089:	ldr	r3, [pc, #8]
+0x0040008b:	movs	r2, #0x21
+0x0040008d:	add	r3, pc
+0x0040008f:	str	r2, [r3, #0x1c]
+0x00400091:	bx	lr
+
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+0x00400095:	lsls	r0, r3, #1
+0x00400097:	movs	r0, r0
+
+Function main @ 0x00400121
+0x00400121:	push	{r3, r4, r5, lr}
+0x00400123:	movs	r3, #4
+0x00400125:	ldr	r5, [pc, #0x78]
+0x00400127:	ldr	r4, [pc, #0x7c]
+0x00400129:	movs	r2, #2
+0x0040012b:	add	r5, pc
+0x0040012d:	movs	r0, #1
+0x0040012f:	add	r4, pc
+0x00400131:	add.w	r1, r5, #0x20
+0x00400135:	strd	r2, r0, [r5, #0x20]
+0x00400139:	add.w	r2, r5, #0x24
+0x0040013d:	str	r3, [r4, #0x24]
+0x0040013f:	str	r3, [r4, #0x28]
+0x00400141:	strd	r3, r3, [r4, #0x2c]
+0x00400145:	str	r3, [r4, #0x34]
+0x00400147:	ldr	r3, [r5, #0x30]
+0x00400149:	str	r2, [r5, #0x28]
+0x0040014b:	ldr	r2, [r4]
+0x0040014d:	str	r1, [r5, #0x2c]
+0x0040014f:	add	r2, r0
+0x00400151:	str	r2, [r4]
+0x00400153:	cbnz	r3, #0x400187
+0x00400155:	mov	r0, r1
+0x00400157:	ldr	r1, [pc, #0x50]
+0x00400159:	adds	r2, #3
+0x0040015b:	ldr	r3, [pc, #0x50]
+0x0040015d:	movs	r4, #3
+0x0040015f:	add	r1, pc
+0x00400161:	movs	r5, #5
+0x00400163:	add	r3, pc
+0x00400165:	str	r2, [r1]
+0x00400167:	movw	r2, #0x509
+0x0040016b:	strb	r4, [r1, #0x1e]
+0x0040016d:	strh	r2, [r1, #4]
+0x0040016f:	movs	r2, #0x21
+0x00400171:	str	r0, [r3, #0x28]
+0x00400173:	adds	r0, r3, #4
+0x00400175:	str	r5, [r3, #0x24]
+0x00400177:	adds	r5, r1, r5
+0x00400179:	str	r0, [r3]
+0x0040017b:	movs	r1, #0xb
+0x0040017d:	movs	r0, #0
+0x0040017f:	str	r5, [r3, #4]
+0x00400181:	str	r1, [r3, #0xc]
+0x00400183:	str	r2, [r3, #0x1c]
+0x00400185:	pop	{r3, r4, r5, pc}
+0x00400155:	mov	r0, r1
+0x00400157:	ldr	r1, [pc, #0x50]
+0x00400159:	adds	r2, #3
+0x0040015b:	ldr	r3, [pc, #0x50]
+0x0040015d:	movs	r4, #3
+0x0040015f:	add	r1, pc
+0x00400161:	movs	r5, #5
+0x00400163:	add	r3, pc
+0x00400165:	str	r2, [r1]
+0x00400167:	movw	r2, #0x509
+0x0040016b:	strb	r4, [r1, #0x1e]
+0x0040016d:	strh	r2, [r1, #4]
+0x0040016f:	movs	r2, #0x21
+0x00400171:	str	r0, [r3, #0x28]
+0x00400173:	adds	r0, r3, #4
+0x00400175:	str	r5, [r3, #0x24]
+0x00400177:	adds	r5, r1, r5
+0x00400179:	str	r0, [r3]
+0x0040017b:	movs	r1, #0xb
+0x0040017d:	movs	r0, #0
+0x0040017f:	str	r5, [r3, #4]
+0x00400181:	str	r1, [r3, #0xc]
+0x00400183:	str	r2, [r3, #0x1c]
+0x00400185:	pop	{r3, r4, r5, pc}
+0x00400157:	ldr	r1, [pc, #0x50]
+0x00400159:	adds	r2, #3
+0x0040015b:	ldr	r3, [pc, #0x50]
+0x0040015d:	movs	r4, #3
+0x0040015f:	add	r1, pc
+0x00400161:	movs	r5, #5
+0x00400163:	add	r3, pc
+0x00400165:	str	r2, [r1]
+0x00400167:	movw	r2, #0x509
+0x0040016b:	strb	r4, [r1, #0x1e]
+0x0040016d:	strh	r2, [r1, #4]
+0x0040016f:	movs	r2, #0x21
+0x00400171:	str	r0, [r3, #0x28]
+0x00400173:	adds	r0, r3, #4
+0x00400175:	str	r5, [r3, #0x24]
+0x00400177:	adds	r5, r1, r5
+0x00400179:	str	r0, [r3]
+0x0040017b:	movs	r1, #0xb
+0x0040017d:	movs	r0, #0
+0x0040017f:	str	r5, [r3, #4]
+0x00400181:	str	r1, [r3, #0xc]
+0x00400183:	str	r2, [r3, #0x1c]
+0x00400185:	pop	{r3, r4, r5, pc}
+0x00400187:	movs	r2, #0x17
+0x00400189:	add.w	r1, r4, #0x38
+0x0040018d:	bl	#0x500001
+0x00400191:	movs	r2, #5
+0x00400193:	adds	r1, r4, #4
+0x00400195:	movs	r0, #0
+0x00400197:	bl	#0x50000d
+0x0040019b:	ldr	r0, [r5, #0x2c]
+0x0040019d:	ldr	r2, [r4]
+0x0040019f:	b	#0x400157
+
+Function write @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function read @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

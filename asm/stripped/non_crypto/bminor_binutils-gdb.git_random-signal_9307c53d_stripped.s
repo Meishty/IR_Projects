@@ -1,10 +1,14 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_random-signal_9307c53d_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0x3c
+0x00400007:	push	{r3, lr}
+0x00400009:	bl	#0x400009
 
+Function sub_400009 @ 0x00400009
+0x00400009:	bl	#0x400009
 
-Disassembly of section .text.startup:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	b	#0x40000d
 
-00000000 <.text.startup>:
-   0:	b508203c 	strlt	r2, [r8, #-60]	; 0xffffffc4
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bf00e7fe 	svclt	0x0000e7fe
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	

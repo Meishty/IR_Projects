@@ -1,62 +1,156 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_break-interp-lib_19967c69.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0xd19]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	cbz	r0, #0x400055
+0x00400009:	ldr	r1, [pc, #0x60]
+0x0040000b:	mov	r4, r0
+0x0040000d:	add	r1, pc
+0x0040000f:	bl	#0x500001
+0x00400009:	ldr	r1, [pc, #0x60]
+0x0040000b:	mov	r4, r0
+0x0040000d:	add	r1, pc
+0x0040000f:	bl	#0x500001
+0x00400013:	cbz	r0, #0x400033
+0x00400015:	ldr	r1, [pc, #0x58]
+0x00400017:	mov	r0, r4
+0x00400019:	add	r1, pc
+0x0040001b:	bl	#0x500001
+0x00400015:	ldr	r1, [pc, #0x58]
+0x00400017:	mov	r0, r4
+0x00400019:	add	r1, pc
+0x0040001b:	bl	#0x500001
+0x0040001f:	cbz	r0, #0x40003b
+0x00400021:	ldr	r3, [pc, #0x50]
+0x00400023:	movs	r2, #0x2c
+0x00400025:	ldr	r1, [pc, #0x50]
+0x00400027:	ldr	r0, [pc, #0x54]
+0x00400029:	add	r3, pc
+0x0040002b:	add	r1, pc
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x50000d
+0x00400021:	ldr	r3, [pc, #0x50]
+0x00400023:	movs	r2, #0x2c
+0x00400025:	ldr	r1, [pc, #0x50]
+0x00400027:	ldr	r0, [pc, #0x54]
+0x00400029:	add	r3, pc
+0x0040002b:	add	r1, pc
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x50000d
+0x00400033:	movs	r0, #0xb
+0x00400035:	bl	#0x500019
+0x00400039:	b	#0x400015
+0x0040003b:	ldr	r0, [pc, #0x44]
+0x0040003d:	add	r0, pc
+0x0040003f:	bl	#0x500025
+0x00400043:	ldr	r3, [pc, #0x40]
+0x00400045:	ldr	r3, [r5, r3]
+0x00400047:	ldr	r0, [r3]
+0x00400049:	bl	#0x500031
+0x0040004d:	movs	r0, #0x3c
+0x0040004f:	bl	#0x50003d
+0x00400053:	b	#0x400021
+0x00400055:	ldr	r3, [pc, #0x30]
+0x00400057:	movs	r2, #0x1f
+0x00400059:	ldr	r1, [pc, #0x30]
+0x0040005b:	ldr	r0, [pc, #0x34]
+0x0040005d:	add	r3, pc
+0x0040005f:	add	r1, pc
+0x00400061:	add	r0, pc
+0x00400063:	bl	#0x50000d
 
-Disassembly of section .text:
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	lsls	r0, r4, #1
+0x0040006b:	movs	r0, r0
+0x0040006d:	lsls	r4, r4, #3
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r0, r4, #3
+0x00400073:	movs	r0, r0
+0x00400075:	lsls	r0, r5, #3
+0x00400077:	movs	r0, r0
+0x00400079:	lsls	r6, r5, #1
+0x0040007b:	movs	r0, r0
+0x0040007d:	lsls	r0, r4, #3
+0x0040007f:	movs	r0, r0
+0x00400081:	lsls	r4, r0, #3
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	lsls	r4, r6, #2
+0x0040008b:	movs	r0, r0
+0x0040008d:	movs	r2, r7
+0x0040008f:	movs	r0, r0
+0x00400091:	lsls	r0, r0, #2
+0x00400093:	movs	r0, r0
 
-00000000 <libfunc>:
-   0:	4d19      	ldr	r5, [pc, #100]	; (68 <libfunc+0x68>)
-   2:	b508      	push	{r3, lr}
-   4:	447d      	add	r5, pc
-   6:	b328      	cbz	r0, 54 <libfunc+0x54>
-   8:	4918      	ldr	r1, [pc, #96]	; (6c <libfunc+0x6c>)
-   a:	4604      	mov	r4, r0
-   c:	4479      	add	r1, pc
-   e:	f7ff fffe 	bl	0 <strcmp>
-  12:	b170      	cbz	r0, 32 <libfunc+0x32>
-  14:	4916      	ldr	r1, [pc, #88]	; (70 <libfunc+0x70>)
-  16:	4620      	mov	r0, r4
-  18:	4479      	add	r1, pc
-  1a:	f7ff fffe 	bl	0 <strcmp>
-  1e:	b160      	cbz	r0, 3a <libfunc+0x3a>
-  20:	4b14      	ldr	r3, [pc, #80]	; (74 <libfunc+0x74>)
-  22:	222c      	movs	r2, #44	; 0x2c
-  24:	4914      	ldr	r1, [pc, #80]	; (78 <libfunc+0x78>)
-  26:	4815      	ldr	r0, [pc, #84]	; (7c <libfunc+0x7c>)
-  28:	447b      	add	r3, pc
-  2a:	4479      	add	r1, pc
-  2c:	4478      	add	r0, pc
-  2e:	f7ff fffe 	bl	0 <__assert_fail>
-  32:	200b      	movs	r0, #11
-  34:	f7ff fffe 	bl	0 <raise>
-  38:	e7ec      	b.n	14 <libfunc+0x14>
-  3a:	4811      	ldr	r0, [pc, #68]	; (80 <libfunc+0x80>)
-  3c:	4478      	add	r0, pc
-  3e:	f7ff fffe 	bl	0 <puts>
-  42:	4b10      	ldr	r3, [pc, #64]	; (84 <libfunc+0x84>)
-  44:	58eb      	ldr	r3, [r5, r3]
-  46:	6818      	ldr	r0, [r3, #0]
-  48:	f7ff fffe 	bl	0 <fflush>
-  4c:	203c      	movs	r0, #60	; 0x3c
-  4e:	f7ff fffe 	bl	0 <sleep>
-  52:	e7e5      	b.n	20 <libfunc+0x20>
-  54:	4b0c      	ldr	r3, [pc, #48]	; (88 <libfunc+0x88>)
-  56:	221f      	movs	r2, #31
-  58:	490c      	ldr	r1, [pc, #48]	; (8c <libfunc+0x8c>)
-  5a:	480d      	ldr	r0, [pc, #52]	; (90 <libfunc+0x90>)
-  5c:	447b      	add	r3, pc
-  5e:	4479      	add	r1, pc
-  60:	4478      	add	r0, pc
-  62:	f7ff fffe 	bl	0 <__assert_fail>
-  66:	bf00      	nop
-  68:	00000060 	.word	0x00000060
-  6c:	0000005c 	.word	0x0000005c
-  70:	00000054 	.word	0x00000054
-  74:	00000048 	.word	0x00000048
-  78:	0000004a 	.word	0x0000004a
-  7c:	0000004c 	.word	0x0000004c
-  80:	00000040 	.word	0x00000040
-  84:	00000000 	.word	0x00000000
-  88:	00000028 	.word	0x00000028
-  8c:	0000002a 	.word	0x0000002a
-  90:	0000002c 	.word	0x0000002c
+Function sub_400069 @ 0x00400069
+0x00400069:	lsls	r0, r4, #1
+0x0040006b:	movs	r0, r0
+0x0040006d:	lsls	r4, r4, #3
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r0, r4, #3
+0x00400073:	movs	r0, r0
+0x00400075:	lsls	r0, r5, #3
+0x00400077:	movs	r0, r0
+0x00400079:	lsls	r6, r5, #1
+0x0040007b:	movs	r0, r0
+0x0040007d:	lsls	r0, r4, #3
+0x0040007f:	movs	r0, r0
+0x00400081:	lsls	r4, r0, #3
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	lsls	r4, r6, #2
+0x0040008b:	movs	r0, r0
+0x0040008d:	movs	r2, r7
+0x0040008f:	movs	r0, r0
+0x00400091:	lsls	r0, r0, #2
+0x00400093:	movs	r0, r0
+
+Function strcmp @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __assert_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function raise @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function puts @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function fflush @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function sleep @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0

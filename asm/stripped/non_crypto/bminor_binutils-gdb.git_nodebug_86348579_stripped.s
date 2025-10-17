@@ -1,56 +1,122 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_nodebug_86348579_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x552818
+0x00400004:	ldrbtmi	r4, [fp], #-0x47a
+0x00400008:	ldmdavs	fp, {r1, r4, fp, sp, lr}
+0x0040000c:	andlo	r4, r4, r0, lsl r4
+0x0040000c:	andlo	r4, r4, r0, lsl r4
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bx	lr
 
-Disassembly of section .text:
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r4, r1
+0x00400017:	movs	r0, r0
+0x00400019:	movs	r6, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	ldr	r2, [pc, #0x14]
+0x0040001f:	ldr	r3, [pc, #0x18]
+0x00400021:	add	r2, pc
+0x00400023:	add	r3, pc
+0x00400025:	ldr	r2, [r2]
+0x00400027:	ldr	r3, [r3]
+0x00400029:	add	r0, r2
+0x0040002b:	adds	r0, #4
+0x0040002d:	add	r0, r3
+0x0040002f:	lsls	r0, r0, #2
+0x00400031:	sxth	r0, r0
+0x00400033:	bx	lr
 
-00000000 <.text>:
-   0:	4b054a04 	blmi	0x152818
-   4:	447b447a 	ldrbtmi	r4, [fp], #-1146	; 0xfffffb86
-   8:	681b6812 	ldmdavs	fp, {r1, r4, fp, sp, lr}
-   c:	30044410 	andcc	r4, r4, r0, lsl r4
-  10:	47704418 			; <UNDEFINED> instruction: 0x47704418
-  14:	0000000c 	andeq	r0, r0, ip
-  18:	0000000e 	andeq	r0, r0, lr
-  1c:	4b064a05 	blmi	0x192838
-  20:	447b447a 	ldrbtmi	r4, [fp], #-1146	; 0xfffffb86
-  24:	681b6812 	ldmdavs	fp, {r1, r4, fp, sp, lr}
-  28:	30044410 	andcc	r4, r4, r0, lsl r4
-  2c:	00804418 	addeq	r4, r0, r8, lsl r4
-  30:	4770b200 	ldrbmi	fp, [r0, -r0, lsl #4]!
-  34:	00000010 	andeq	r0, r0, r0, lsl r0
-  38:	00000012 	andeq	r0, r0, r2, lsl r0
-  3c:	4605b538 			; <UNDEFINED> instruction: 0x4605b538
-  40:	460c2004 	strmi	r2, [ip], -r4
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	447b4b03 	ldrbtmi	r4, [fp], #-2819	; 0xfffff4fd
-  4c:	5d2c6058 	stcpl	0, cr6, [ip, #-352]!	; 0xfffffea0
-  50:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  54:	bd384620 	ldclt	6, cr4, [r8, #-128]!	; 0xffffff80
-  58:	0000000a 	andeq	r0, r0, sl
-  5c:	0a20ee20 	beq	0x83b8e4
-  60:	bf004770 	svclt	0x00004770
-  64:	0bc0eeb7 	bleq	0xff03bb48
-  68:	1bc1eeb7 	blne	0xff07bb4c
-  6c:	0a01ee20 	beq	0x7b8f4
-  70:	bf004770 	svclt	0x00004770
-  74:	0b01ee20 	bleq	0x7b8fc
-  78:	bf004770 	svclt	0x00004770
-  7c:	0b01ee20 	bleq	0x7b904
-  80:	bf004770 	svclt	0x00004770
-  84:	b2c04408 	sbclt	r4, r0, #8, 8	; 0x8000000
-  88:	bf004770 	svclt	0x00004770
-  8c:	b2c04408 	sbclt	r4, r0, #8, 8	; 0x8000000
-  90:	bf004770 	svclt	0x00004770
+Function sub_40003d @ 0x0040003d
+0x0040003d:	push	{r3, r4, r5, lr}
+0x0040003f:	mov	r5, r0
+0x00400041:	movs	r0, #4
+0x00400043:	mov	r4, r1
+0x00400045:	bl	#0x400045
 
-Disassembly of section .text.startup:
+Function sub_400045 @ 0x00400045
+0x00400045:	bl	#0x400045
+0x00400049:	ldr	r3, [pc, #0xc]
+0x0040004b:	add	r3, pc
+0x0040004d:	str	r0, [r3, #4]
+0x0040004f:	ldrb	r4, [r5, r4]
+0x00400051:	bl	#0x400051
 
-00000000 <.text.startup>:
-   0:	4b064a05 	blmi	0x19281c
-   4:	447b447a 	ldrbtmi	r4, [fp], #-1146	; 0xfffffb86
-   8:	681b6812 	ldmdavs	fp, {r1, r4, fp, sp, lr}
-   c:	30044410 	andcc	r4, r4, r0, lsl r4
-  10:	00804418 	addeq	r4, r0, r8, lsl r4
-  14:	4770b200 	ldrbmi	fp, [r0, -r0, lsl #4]!
-  18:	00000010 	andeq	r0, r0, r0, lsl r0
-  1c:	00000012 	andeq	r0, r0, r2, lsl r0
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+0x00400055:	mov	r0, r4
+0x00400057:	pop	{r3, r4, r5, pc}
+
+Function sub_40005d @ 0x0040005d
+0x0040005d:	vmul.f32	s0, s0, s1
+0x00400061:	bx	lr
+
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	vcvt.f32.f64	s0, d0
+0x00400069:	vcvt.f32.f64	s2, d1
+0x0040006d:	vmul.f32	s0, s0, s2
+0x00400071:	bx	lr
+
+Function sub_400065 @ 0x00400065
+0x00400065:	vcvt.f32.f64	s0, d0
+0x00400069:	vcvt.f32.f64	s2, d1
+0x0040006d:	vmul.f32	s0, s0, s2
+0x00400071:	bx	lr
+
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+0x00400075:	vmul.f64	d0, d0, d1
+0x00400079:	bx	lr
+
+Function sub_400075 @ 0x00400075
+0x00400075:	vmul.f64	d0, d0, d1
+0x00400079:	bx	lr
+
+Function sub_40007b @ 0x0040007b
+0x0040007b:	nop	
+0x0040007d:	vmul.f64	d0, d0, d1
+0x00400081:	bx	lr
+
+Function sub_40007d @ 0x0040007d
+0x0040007d:	vmul.f64	d0, d0, d1
+0x00400081:	bx	lr
+
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	add	r0, r1
+0x00400087:	uxtb	r0, r0
+0x00400089:	bx	lr
+
+Function sub_400085 @ 0x00400085
+0x00400085:	add	r0, r1
+0x00400087:	uxtb	r0, r0
+0x00400089:	bx	lr
+
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	add	r0, r1
+0x0040008f:	uxtb	r0, r0
+0x00400091:	bx	lr
+
+Function sub_40008d @ 0x0040008d
+0x0040008d:	add	r0, r1
+0x0040008f:	uxtb	r0, r0
+0x00400091:	bx	lr
+
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+
+Function sub_4000c5 @ 0x004000c5
+0x004000c5:	ldr	r2, [pc, #0x14]
+0x004000c7:	ldr	r3, [pc, #0x18]
+0x004000c9:	add	r2, pc
+0x004000cb:	add	r3, pc
+0x004000cd:	ldr	r2, [r2]
+0x004000cf:	ldr	r3, [r3]
+0x004000d1:	add	r0, r2
+0x004000d3:	adds	r0, #4
+0x004000d5:	add	r0, r3
+0x004000d7:	lsls	r0, r0, #2
+0x004000d9:	sxth	r0, r0
+0x004000db:	bx	lr

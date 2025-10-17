@@ -1,33 +1,39 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mi-stack_245a985e.o:     file format elf32-littlearm
+Function callee4 @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function callee3 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <callee4>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function callee2 @ 0x00400009
+0x00400009:	bx	lr
 
-00000004 <callee3>:
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000008 <callee2>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function callee1 @ 0x0040000d
+0x0040000d:	bx	lr
 
-0000000c <callee1>:
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-Disassembly of section .text.startup:
+Function main @ 0x00400021
+0x00400021:	ldr	r1, [pc, #0xc]
+0x00400023:	movs	r0, #1
+0x00400025:	push	{r3, lr}
+0x00400027:	add	r1, pc
+0x00400029:	bl	#0x500001
+0x0040002d:	movs	r0, #0
+0x0040002f:	pop	{r3, pc}
 
-00000000 <main>:
-   0:	4903      	ldr	r1, [pc, #12]	; (10 <main+0x10>)
-   2:	2001      	movs	r0, #1
-   4:	b508      	push	{r3, lr}
-   6:	4479      	add	r1, pc
-   8:	f7ff fffe 	bl	0 <__printf_chk>
-   c:	2000      	movs	r0, #0
-   e:	bd08      	pop	{r3, pc}
-  10:	00000006 	.word	0x00000006
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

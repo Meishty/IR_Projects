@@ -1,37 +1,30 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_utf8-identifiers_64376ef7.o:     file format elf32-littlearm
+Function função1 @ 0x00400001
+0x00400001:	ldr	r3, [pc, #8]
+0x00400003:	mov.w	r2, #0x3e8
+0x00400007:	add	r3, pc
+0x00400009:	str	r2, [r3]
+0x0040000b:	bx	lr
 
+Function função2 @ 0x00400011
+0x00400011:	ldr	r3, [pc, #8]
+0x00400013:	mov.w	r2, #0x3e8
+0x00400017:	add	r3, pc
+0x00400019:	str	r2, [r3]
+0x0040001b:	bx	lr
 
-Disassembly of section .text:
+Function my_função @ 0x00400021
+0x00400021:	bx	lr
 
-00000000 <função1>:
-   0:	4b02      	ldr	r3, [pc, #8]	; (c <função1+0xc>)
-   2:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
-   6:	447b      	add	r3, pc
-   8:	601a      	str	r2, [r3, #0]
-   a:	4770      	bx	lr
-   c:	00000002 	.word	0x00000002
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
 
-00000010 <função2>:
-  10:	4b02      	ldr	r3, [pc, #8]	; (1c <função2+0xc>)
-  12:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
-  16:	447b      	add	r3, pc
-  18:	601a      	str	r2, [r3, #0]
-  1a:	4770      	bx	lr
-  1c:	00000002 	.word	0x00000002
+Function main @ 0x0040002d
+0x0040002d:	ldr	r3, [pc, #0xc]
+0x0040002f:	mov.w	r2, #0x3e8
+0x00400033:	movs	r0, #0
+0x00400035:	add	r3, pc
+0x00400037:	str	r2, [r3]
+0x00400039:	bx	lr
 
-00000020 <my_função>:
-  20:	4770      	bx	lr
-  22:	bf00      	nop
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b03      	ldr	r3, [pc, #12]	; (10 <main+0x10>)
-   2:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
-   6:	2000      	movs	r0, #0
-   8:	447b      	add	r3, pc
-   a:	601a      	str	r2, [r3, #0]
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-  10:	00000004 	.word	0x00000004
+Function sub_40003b @ 0x0040003b

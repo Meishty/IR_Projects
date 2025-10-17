@@ -1,32 +1,63 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_flexible-array-member_ec54e3c2_stripped.o:     file format elf32-littlearm
+Function sub_400011 @ 0x00400011
+0x00400011:	push	{r4, r5, r6, lr}
+0x00400013:	movs	r0, #0x10
+0x00400015:	ldr	r6, [pc, #0x58]
+0x00400017:	bl	#0x400017
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	mov	r4, r0
+0x0040001d:	add	r6, pc
+0x0040001f:	movs	r0, #0x10
+0x00400021:	str	r4, [r6]
+0x00400023:	bl	#0x400023
 
-Disassembly of section .text.startup:
+Function sub_400023 @ 0x00400023
+0x00400023:	bl	#0x400023
+0x00400027:	mov	r5, r0
+0x00400029:	movs	r0, #0xc
+0x0040002b:	str	r5, [r6, #4]
+0x0040002d:	bl	#0x40002d
 
-00000000 <.text.startup>:
-   0:	2010b570 	andscs	fp, r0, r0, ror r5
-   4:	f7ff4e16 			; <UNDEFINED> instruction: 0xf7ff4e16
-   8:	4604fffe 			; <UNDEFINED> instruction: 0x4604fffe
-   c:	2010447e 	andscs	r4, r0, lr, ror r4
-  10:	f7ff6034 			; <UNDEFINED> instruction: 0xf7ff6034
-  14:	4605fffe 			; <UNDEFINED> instruction: 0x4605fffe
-  18:	6075200c 	rsbsvs	r2, r5, ip
-  1c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  20:	7b0ded9f 	blvc	0x37b6a4
-  24:	22c92303 	sbccs	r2, r9, #201326592	; 0xc000000
-  28:	60b02165 	adcsvs	r2, r0, r5, ror #2
-  2c:	602b6023 	eorvs	r6, fp, r3, lsr #32
-  30:	ed8023ca 	stc	3, cr2, [r0, #808]	; 0x328
-  34:	e9c57b00 	stmib	r5, {r8, r9, fp, ip, sp, lr}^
-  38:	23cb2301 	biccs	r2, fp, #67108864	; 0x4000000
-  3c:	60eb2266 	rscvs	r2, fp, r6, ror #4
-  40:	1201e9c4 	andne	lr, r1, #196, 18	; 0x310000
-  44:	132ff240 	msrne	CPSR_fsxc, #64, 4
-  48:	23676083 	cmncs	r7, #131	; 0x83
-  4c:	60e32000 	rscvs	r2, r3, r0
-  50:	bf00bd70 	svclt	0x0000bd70
-  54:	8000f3af 	andhi	pc, r0, pc, lsr #7
-  58:	0000012d 	andeq	r0, r0, sp, lsr #2
-  5c:	0000012e 	andeq	r0, r0, lr, lsr #2
-  60:	00000050 	andeq	r0, r0, r0, asr r0
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	vldr	d7, [pc, #0x34]
+0x00400035:	movs	r3, #3
+0x00400037:	movs	r2, #0xc9
+0x00400039:	movs	r1, #0x65
+0x0040003b:	str	r0, [r6, #8]
+0x0040003d:	str	r3, [r4]
+0x0040003f:	str	r3, [r5]
+0x00400041:	movs	r3, #0xca
+0x00400043:	vstr	d7, [r0]
+0x00400047:	strd	r2, r3, [r5, #4]
+0x0040004b:	movs	r3, #0xcb
+0x0040004d:	movs	r2, #0x66
+0x0040004f:	str	r3, [r5, #0xc]
+0x00400051:	strd	r1, r2, [r4, #4]
+0x00400055:	movw	r3, #0x12f
+0x00400059:	str	r3, [r0, #8]
+0x0040005b:	movs	r3, #0x67
+0x0040005d:	movs	r0, #0
+0x0040005f:	str	r3, [r4, #0xc]
+0x00400061:	pop	{r4, r5, r6, pc}
+
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	nop.w	
+0x00400069:	lsls	r5, r5, #4
+0x0040006b:	movs	r0, r0
+0x0040006d:	lsls	r6, r5, #4
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r0, r2, #1
+0x00400073:	movs	r0, r0
+
+Function sub_400065 @ 0x00400065
+0x00400065:	nop.w	
+0x00400069:	lsls	r5, r5, #4
+0x0040006b:	movs	r0, r0
+0x0040006d:	lsls	r6, r5, #4
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r0, r2, #1
+0x00400073:	movs	r0, r0

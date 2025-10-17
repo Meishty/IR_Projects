@@ -1,62 +1,134 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_fork-running-state_9352e752.o:     file format elf32-littlearm
+Function main @ 0x00400019
+0x00400019:	push	{r4, lr}
+0x0040001b:	ldr	r4, [pc, #0x80]
+0x0040001d:	bl	#0x500001
+0x00400021:	add	r4, pc
+0x00400023:	str	r0, [r4]
+0x00400025:	bl	#0x50000d
+0x00400029:	cmp	r0, #0
+0x0040002b:	bgt	#0x40006d
+0x0040002d:	bne	#0x40005b
+0x0040002f:	movs	r0, #0xb4
+0x00400031:	bl	#0x500019
+0x00400035:	ldr	r3, [r4, #4]
+0x00400037:	movs	r0, #1
+0x00400039:	cbz	r3, #0x400067
+0x0040003b:	bl	#0x500025
+0x0040003b:	bl	#0x500025
+0x0040003f:	bl	#0x500031
+0x00400043:	ldr	r3, [r4]
+0x00400045:	cmp	r0, r3
+0x00400047:	bne	#0x400057
+0x00400049:	bl	#0x500031
+0x0040004d:	movs	r1, #0
+0x0040004f:	bl	#0x50003d
+0x00400053:	cmp	r0, #0
+0x00400055:	beq	#0x400035
+0x00400057:	movs	r0, #0
+0x00400059:	pop	{r4, pc}
+0x0040005b:	ldr	r0, [pc, #0x44]
+0x0040005d:	add	r0, pc
+0x0040005f:	bl	#0x500049
+0x00400063:	movs	r0, #1
+0x00400065:	pop	{r4, pc}
+0x00400067:	bl	#0x500055
+0x0040006b:	b	#0x400035
+0x0040006d:	movs	r0, #0xb4
+0x0040006f:	bl	#0x500019
+0x00400073:	ldr	r3, [r4, #4]
+0x00400075:	movs	r0, #0
+0x00400077:	cbz	r3, #0x400097
+0x00400079:	bl	#0x500061
+0x00400079:	bl	#0x500061
+0x0040007d:	adds	r0, #1
+0x0040007f:	bne	#0x400057
+0x00400081:	bl	#0x50006d
+0x00400085:	ldr	r3, [r0]
+0x00400087:	cmp	r3, #4
+0x00400089:	beq	#0x400073
+0x0040008b:	ldr	r0, [pc, #0x18]
+0x0040008d:	add	r0, pc
+0x0040008f:	bl	#0x500049
+0x00400093:	movs	r0, #1
+0x00400095:	pop	{r4, pc}
+0x00400097:	bl	#0x500055
+0x0040009b:	b	#0x400073
 
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function fork @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	4c20      	ldr	r4, [pc, #128]	; (84 <main+0x84>)
-   4:	f7ff fffe 	bl	0 <getpid>
-   8:	447c      	add	r4, pc
-   a:	6020      	str	r0, [r4, #0]
-   c:	f7ff fffe 	bl	0 <fork>
-  10:	2800      	cmp	r0, #0
-  12:	dc1f      	bgt.n	54 <main+0x54>
-  14:	d115      	bne.n	42 <main+0x42>
-  16:	20b4      	movs	r0, #180	; 0xb4
-  18:	f7ff fffe 	bl	0 <alarm>
-  1c:	6863      	ldr	r3, [r4, #4]
-  1e:	2001      	movs	r0, #1
-  20:	b1ab      	cbz	r3, 4e <main+0x4e>
-  22:	f7ff fffe 	bl	0 <sleep>
-  26:	f7ff fffe 	bl	0 <getppid>
-  2a:	6823      	ldr	r3, [r4, #0]
-  2c:	4298      	cmp	r0, r3
-  2e:	d106      	bne.n	3e <main+0x3e>
-  30:	f7ff fffe 	bl	0 <getppid>
-  34:	2100      	movs	r1, #0
-  36:	f7ff fffe 	bl	0 <kill>
-  3a:	2800      	cmp	r0, #0
-  3c:	d0ee      	beq.n	1c <main+0x1c>
-  3e:	2000      	movs	r0, #0
-  40:	bd10      	pop	{r4, pc}
-  42:	4811      	ldr	r0, [pc, #68]	; (88 <main+0x88>)
-  44:	4478      	add	r0, pc
-  46:	f7ff fffe 	bl	0 <perror>
-  4a:	2001      	movs	r0, #1
-  4c:	bd10      	pop	{r4, pc}
-  4e:	f7ff fffe 	bl	0 <pause>
-  52:	e7e3      	b.n	1c <main+0x1c>
-  54:	20b4      	movs	r0, #180	; 0xb4
-  56:	f7ff fffe 	bl	0 <alarm>
-  5a:	6863      	ldr	r3, [r4, #4]
-  5c:	2000      	movs	r0, #0
-  5e:	b173      	cbz	r3, 7e <main+0x7e>
-  60:	f7ff fffe 	bl	0 <wait>
-  64:	3001      	adds	r0, #1
-  66:	d1ea      	bne.n	3e <main+0x3e>
-  68:	f7ff fffe 	bl	0 <__errno_location>
-  6c:	6803      	ldr	r3, [r0, #0]
-  6e:	2b04      	cmp	r3, #4
-  70:	d0f3      	beq.n	5a <main+0x5a>
-  72:	4806      	ldr	r0, [pc, #24]	; (8c <main+0x8c>)
-  74:	4478      	add	r0, pc
-  76:	f7ff fffe 	bl	0 <perror>
-  7a:	2001      	movs	r0, #1
-  7c:	bd10      	pop	{r4, pc}
-  7e:	f7ff fffe 	bl	0 <pause>
-  82:	e7ea      	b.n	5a <main+0x5a>
-  84:	00000078 	.word	0x00000078
-  88:	00000040 	.word	0x00000040
-  8c:	00000014 	.word	0x00000014
+Function alarm @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function sleep @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function getppid @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function kill @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function perror @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function pause @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function wait @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function __errno_location @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0

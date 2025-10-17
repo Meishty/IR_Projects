@@ -1,76 +1,288 @@
 
-/root/projects/compiled/non_crypto/stripped/embench_embench-iot.git_dummy-libc_04d0b8e9_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r1, r2, r3}
+0x00400007:	movs	r0, #0
+0x00400009:	add	sp, #0xc
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r1, r2, r3}
+0x0040000f:	movs	r0, #0
+0x00400011:	add	sp, #0xc
+0x00400013:	bx	lr
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
-   4:	2000b40e 	andcs	fp, r0, lr, lsl #8
-   8:	4770b003 	ldrbmi	fp, [r0, -r3]!
-   c:	2000b40e 	andcs	fp, r0, lr, lsl #8
-  10:	4770b003 	ldrbmi	fp, [r0, -r3]!
-  14:	2000b40f 	andcs	fp, r0, pc, lsl #8
-  18:	4770b004 	ldrbmi	fp, [r0, -r4]!
-  1c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  20:	47702000 	ldrbmi	r2, [r0, -r0]!
-  24:	47702000 	ldrbmi	r2, [r0, -r0]!
-  28:	47702000 	ldrbmi	r2, [r0, -r0]!
-  2c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  30:	47702000 	ldrbmi	r2, [r0, -r0]!
-  34:	47702000 	ldrbmi	r2, [r0, -r0]!
-  38:	bf004770 	svclt	0x00004770
-  3c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  40:	47702000 	ldrbmi	r2, [r0, -r0]!
-  44:	bf004770 	svclt	0x00004770
-  48:	bf00e7fe 	svclt	0x0000e7fe
-  4c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  50:	47702000 	ldrbmi	r2, [r0, -r0]!
-  54:	47702000 	ldrbmi	r2, [r0, -r0]!
-  58:	47702000 	ldrbmi	r2, [r0, -r0]!
-  5c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  60:	47702000 	ldrbmi	r2, [r0, -r0]!
-  64:	47702000 	ldrbmi	r2, [r0, -r0]!
-  68:	47702000 	ldrbmi	r2, [r0, -r0]!
-  6c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  70:	47702000 	ldrbmi	r2, [r0, -r0]!
-  74:	0b02ed9f 	bleq	0xbb6f8
-  78:	bf004770 	svclt	0x00004770
-  7c:	8000f3af 	andhi	pc, r0, pc, lsr #7
-	...
-  88:	47702000 	ldrbmi	r2, [r0, -r0]!
-  8c:	47702000 	ldrbmi	r2, [r0, -r0]!
-  90:	47702000 	ldrbmi	r2, [r0, -r0]!
-  94:	47702000 	ldrbmi	r2, [r0, -r0]!
-  98:	2000b40e 	andcs	fp, r0, lr, lsl #8
-  9c:	4770b003 	ldrbmi	fp, [r0, -r3]!
-  a0:	2000b40e 	andcs	fp, r0, lr, lsl #8
-  a4:	4770b003 	ldrbmi	fp, [r0, -r3]!
-  a8:	bf004770 	svclt	0x00004770
-  ac:	47702000 	ldrbmi	r2, [r0, -r0]!
-  b0:	47702000 	ldrbmi	r2, [r0, -r0]!
-  b4:	47702000 	ldrbmi	r2, [r0, -r0]!
-  b8:	47702000 	ldrbmi	r2, [r0, -r0]!
-  bc:	47702000 	ldrbmi	r2, [r0, -r0]!
-  c0:	47702000 	ldrbmi	r2, [r0, -r0]!
-  c4:	47702000 	ldrbmi	r2, [r0, -r0]!
-  c8:	47702000 	ldrbmi	r2, [r0, -r0]!
-  cc:	bf00e7fe 	svclt	0x0000e7fe
-  d0:	47702000 	ldrbmi	r2, [r0, -r0]!
-  d4:	47702000 	ldrbmi	r2, [r0, -r0]!
-  d8:	47702000 	ldrbmi	r2, [r0, -r0]!
-  dc:	47702000 	ldrbmi	r2, [r0, -r0]!
-  e0:	47702000 	ldrbmi	r2, [r0, -r0]!
-  e4:	bf004770 	svclt	0x00004770
-  e8:	bf004770 	svclt	0x00004770
-  ec:	bf004770 	svclt	0x00004770
-  f0:	bf004770 	svclt	0x00004770
-  f4:	bf004770 	svclt	0x00004770
-  f8:	bf004770 	svclt	0x00004770
-  fc:	bf004770 	svclt	0x00004770
+Function sub_400015 @ 0x00400015
+0x00400015:	push	{r0, r1, r2, r3}
+0x00400017:	movs	r0, #0
+0x00400019:	add	sp, #0x10
+0x0040001b:	bx	lr
 
-Disassembly of section .text.unlikely:
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, #0
+0x0040001f:	bx	lr
 
-00000000 <.text.unlikely>:
-   0:	Address 0x0000000000000000 is out of bounds.
+Function sub_400021 @ 0x00400021
+0x00400021:	movs	r0, #0
+0x00400023:	bx	lr
 
+Function sub_400025 @ 0x00400025
+0x00400025:	movs	r0, #0
+0x00400027:	bx	lr
+
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	movs	r0, #0
+0x0040002f:	bx	lr
+
+Function sub_400031 @ 0x00400031
+0x00400031:	movs	r0, #0
+0x00400033:	bx	lr
+
+Function sub_400035 @ 0x00400035
+0x00400035:	movs	r0, #0
+0x00400037:	bx	lr
+
+Function sub_400039 @ 0x00400039
+0x00400039:	bx	lr
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r0, #0
+0x0040003f:	bx	lr
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	movs	r0, #0
+0x0040003f:	bx	lr
+
+Function sub_400041 @ 0x00400041
+0x00400041:	movs	r0, #0
+0x00400043:	bx	lr
+
+Function sub_400045 @ 0x00400045
+0x00400045:	bx	lr
+
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	b	#0x400049
+0x00400049:	b	#0x400049
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
+0x0040004d:	movs	r0, #0
+0x0040004f:	bx	lr
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	movs	r0, #0
+0x0040004f:	bx	lr
+
+Function sub_400051 @ 0x00400051
+0x00400051:	movs	r0, #0
+0x00400053:	bx	lr
+
+Function sub_400055 @ 0x00400055
+0x00400055:	movs	r0, #0
+0x00400057:	bx	lr
+
+Function sub_400059 @ 0x00400059
+0x00400059:	movs	r0, #0
+0x0040005b:	bx	lr
+
+Function sub_40005d @ 0x0040005d
+0x0040005d:	movs	r0, #0
+0x0040005f:	bx	lr
+
+Function sub_400061 @ 0x00400061
+0x00400061:	movs	r0, #0
+0x00400063:	bx	lr
+
+Function sub_400065 @ 0x00400065
+0x00400065:	movs	r0, #0
+0x00400067:	bx	lr
+
+Function sub_400069 @ 0x00400069
+0x00400069:	movs	r0, #0
+0x0040006b:	bx	lr
+
+Function sub_40006d @ 0x0040006d
+0x0040006d:	movs	r0, #0
+0x0040006f:	bx	lr
+
+Function sub_400071 @ 0x00400071
+0x00400071:	movs	r0, #0
+0x00400073:	bx	lr
+
+Function sub_400075 @ 0x00400075
+0x00400075:	vldr	d0, [pc, #8]
+0x00400079:	bx	lr
+
+Function sub_40007b @ 0x0040007b
+0x0040007b:	nop	
+0x0040007d:	nop.w	
+0x00400081:	movs	r0, r0
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	movs	r0, #0
+0x0040008b:	bx	lr
+
+Function sub_40007d @ 0x0040007d
+0x0040007d:	nop.w	
+0x00400081:	movs	r0, r0
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r0, r0
+0x00400087:	movs	r0, r0
+0x00400089:	movs	r0, #0
+0x0040008b:	bx	lr
+
+Function sub_400089 @ 0x00400089
+0x00400089:	movs	r0, #0
+0x0040008b:	bx	lr
+
+Function sub_40008d @ 0x0040008d
+0x0040008d:	movs	r0, #0
+0x0040008f:	bx	lr
+
+Function sub_400091 @ 0x00400091
+0x00400091:	movs	r0, #0
+0x00400093:	bx	lr
+
+Function sub_400095 @ 0x00400095
+0x00400095:	movs	r0, #0
+0x00400097:	bx	lr
+
+Function sub_400099 @ 0x00400099
+0x00400099:	push	{r1, r2, r3}
+0x0040009b:	movs	r0, #0
+0x0040009d:	add	sp, #0xc
+0x0040009f:	bx	lr
+
+Function sub_4000a1 @ 0x004000a1
+0x004000a1:	push	{r1, r2, r3}
+0x004000a3:	movs	r0, #0
+0x004000a5:	add	sp, #0xc
+0x004000a7:	bx	lr
+
+Function sub_4000a9 @ 0x004000a9
+0x004000a9:	bx	lr
+
+Function sub_4000ab @ 0x004000ab
+0x004000ab:	nop	
+0x004000ad:	movs	r0, #0
+0x004000af:	bx	lr
+
+Function sub_4000ad @ 0x004000ad
+0x004000ad:	movs	r0, #0
+0x004000af:	bx	lr
+
+Function sub_4000b1 @ 0x004000b1
+0x004000b1:	movs	r0, #0
+0x004000b3:	bx	lr
+
+Function sub_4000b5 @ 0x004000b5
+0x004000b5:	movs	r0, #0
+0x004000b7:	bx	lr
+
+Function sub_4000b9 @ 0x004000b9
+0x004000b9:	movs	r0, #0
+0x004000bb:	bx	lr
+
+Function sub_4000bd @ 0x004000bd
+0x004000bd:	movs	r0, #0
+0x004000bf:	bx	lr
+
+Function sub_4000c1 @ 0x004000c1
+0x004000c1:	movs	r0, #0
+0x004000c3:	bx	lr
+
+Function sub_4000c5 @ 0x004000c5
+0x004000c5:	movs	r0, #0
+0x004000c7:	bx	lr
+
+Function sub_4000c9 @ 0x004000c9
+0x004000c9:	movs	r0, #0
+0x004000cb:	bx	lr
+
+Function sub_4000cd @ 0x004000cd
+0x004000cd:	b	#0x4000cd
+
+Function sub_4000cf @ 0x004000cf
+0x004000cf:	nop	
+0x004000d1:	movs	r0, #0
+0x004000d3:	bx	lr
+
+Function sub_4000d1 @ 0x004000d1
+0x004000d1:	movs	r0, #0
+0x004000d3:	bx	lr
+
+Function sub_4000d5 @ 0x004000d5
+0x004000d5:	movs	r0, #0
+0x004000d7:	bx	lr
+
+Function sub_4000d9 @ 0x004000d9
+0x004000d9:	movs	r0, #0
+0x004000db:	bx	lr
+
+Function sub_4000dd @ 0x004000dd
+0x004000dd:	movs	r0, #0
+0x004000df:	bx	lr
+
+Function sub_4000e1 @ 0x004000e1
+0x004000e1:	movs	r0, #0
+0x004000e3:	bx	lr
+
+Function sub_4000e5 @ 0x004000e5
+0x004000e5:	bx	lr
+
+Function sub_4000e7 @ 0x004000e7
+0x004000e7:	nop	
+0x004000e9:	bx	lr
+
+Function sub_4000e9 @ 0x004000e9
+0x004000e9:	bx	lr
+
+Function sub_4000eb @ 0x004000eb
+0x004000eb:	nop	
+0x004000ed:	bx	lr
+
+Function sub_4000ed @ 0x004000ed
+0x004000ed:	bx	lr
+
+Function sub_4000ef @ 0x004000ef
+0x004000ef:	nop	
+0x004000f1:	bx	lr
+
+Function sub_4000f1 @ 0x004000f1
+0x004000f1:	bx	lr
+
+Function sub_4000f3 @ 0x004000f3
+0x004000f3:	nop	
+0x004000f5:	bx	lr
+
+Function sub_4000f5 @ 0x004000f5
+0x004000f5:	bx	lr
+
+Function sub_4000f7 @ 0x004000f7
+0x004000f7:	nop	
+0x004000f9:	bx	lr
+
+Function sub_4000f9 @ 0x004000f9
+0x004000f9:	bx	lr
+
+Function sub_4000fb @ 0x004000fb
+0x004000fb:	nop	
+0x004000fd:	bx	lr
+
+Function sub_4000fd @ 0x004000fd
+0x004000fd:	bx	lr
+
+Function sub_4000ff @ 0x004000ff
+0x004000ff:	nop	
+
+Function sub_400115 @ 0x00400115
+0x00400115:	b	#0x400115

@@ -1,20 +1,25 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_signed-builtin-types-lib_ca353dac.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x500001
+0x0040000f:	ldrsh.w	r2, [r4, #0xc]
+0x00400013:	ldr	r3, [r4, #8]
+0x00400015:	subs	r3, r3, r2
+0x00400017:	subs	r0, r0, r3
+0x00400019:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r0, r3
+0x0040001f:	movs	r0, r0
 
-00000000 <foo>:
-   0:	b510      	push	{r4, lr}
-   2:	4c06      	ldr	r4, [pc, #24]	; (1c <foo+0x1c>)
-   4:	447c      	add	r4, pc
-   6:	6861      	ldr	r1, [r4, #4]
-   8:	7820      	ldrb	r0, [r4, #0]
-   a:	f7ff fffe 	bl	0 <__aeabi_idiv>
-   e:	f9b4 200c 	ldrsh.w	r2, [r4, #12]
-  12:	68a3      	ldr	r3, [r4, #8]
-  14:	1a9b      	subs	r3, r3, r2
-  16:	1ac0      	subs	r0, r0, r3
-  18:	bd10      	pop	{r4, pc}
-  1a:	bf00      	nop
-  1c:	00000014 	.word	0x00000014
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, r3
+0x0040001f:	movs	r0, r0
+
+Function __aeabi_idiv @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

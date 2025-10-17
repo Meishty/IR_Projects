@@ -1,12 +1,6 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dw2-unusual-field-names_e74bdb89.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <main+0x8>)
-   2:	447b      	add	r3, pc
-   4:	6818      	ldr	r0, [r3, #0]
-   6:	4770      	bx	lr
-   8:	00000002 	.word	0x00000002
+Function main @ 0x00400005
+0x00400005:	ldr	r3, [pc, #4]
+0x00400007:	add	r3, pc
+0x00400009:	ldr	r0, [r3]
+0x0040000b:	bx	lr

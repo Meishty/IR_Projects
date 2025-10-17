@@ -1,36 +1,58 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_sig2_27a5b04d_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
 
+Function sub_400011 @ 0x00400011
+0x00400011:	push	{lr}
+0x00400013:	movs	r2, #4
+0x00400015:	movt	r2, #0x1000
+0x00400019:	sub	sp, #0x94
+0x0040001b:	ldr	r3, [pc, #0x3c]
+0x0040001d:	add	r0, sp, #4
+0x0040001f:	add	r3, pc
+0x00400021:	str	r2, [sp, #0x84]
+0x00400023:	ldr	r2, [pc, #0x38]
+0x00400025:	str	r3, [sp]
+0x00400027:	ldr	r3, [pc, #0x38]
+0x00400029:	add	r2, pc
+0x0040002b:	ldr	r3, [r2, r3]
+0x0040002d:	ldr	r3, [r3]
+0x0040002f:	str	r3, [sp, #0x8c]
+0x00400031:	mov.w	r3, #0
+0x00400035:	bl	#0x400035
 
-Disassembly of section .text.unlikely:
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
 
-00000000 <.text.unlikely>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	Address 0x0000000000000004 is out of bounds.
+Function sub_400039 @ 0x00400039
+0x00400039:	movs	r2, #0
+0x0040003b:	mov	r1, sp
+0x0040003d:	movs	r0, #8
+0x0040003f:	bl	#0x40003f
 
+Function sub_40003f @ 0x0040003f
+0x0040003f:	bl	#0x40003f
 
-Disassembly of section .text.startup:
+Function sub_400043 @ 0x00400043
+0x00400043:	cbnz	r0, #0x400055
+0x00400045:	mov	r4, r0
+0x00400047:	ldr	r0, [pc, #0x1c]
+0x00400049:	add	r0, pc
+0x0040004b:	bl	#0x40004b
+0x00400045:	mov	r4, r0
+0x00400047:	ldr	r0, [pc, #0x1c]
+0x00400049:	add	r0, pc
+0x0040004b:	bl	#0x40004b
 
-00000000 <.text.startup>:
-   0:	2204b500 	andcs	fp, r4, #0, 10
-   4:	0200f2c1 	andeq	pc, r0, #268435468	; 0x1000000c
-   8:	4b0fb0a5 	blmi	0x3ec2a4
-   c:	447ba801 	ldrbtmi	sl, [fp], #-2049	; 0xfffff7ff
-  10:	4a0e9221 	bmi	0x3a489c
-  14:	4b0e9300 	blmi	0x3a4c1c
-  18:	58d3447a 	ldmpl	r3, {r1, r3, r4, r5, r6, sl, lr}^
-  1c:	9323681b 			; <UNDEFINED> instruction: 0x9323681b
-  20:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  24:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  28:	46692200 	strbtmi	r2, [r9], -r0, lsl #4
-  2c:	f7ff2008 			; <UNDEFINED> instruction: 0xf7ff2008
-  30:	b938fffe 	ldmdblt	r8!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  34:	48074604 	stmdami	r7, {r2, r9, sl, lr}
-  38:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  3c:	4620fffe 	qsub8mi	pc, r0, lr	; <UNPREDICTABLE>
-  40:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  44:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  48:	00000036 	andeq	r0, r0, r6, lsr r0
-  4c:	00000030 	andeq	r0, r0, r0, lsr r0
-  50:	00000000 	andeq	r0, r0, r0
-  54:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_40004b @ 0x0040004b
+0x0040004b:	bl	#0x40004b
+
+Function sub_40004f @ 0x0040004f
+0x0040004f:	mov	r0, r4
+0x00400051:	bl	#0x400051
+
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+
+Function sub_400055 @ 0x00400055
+0x00400055:	bl	#0x400055

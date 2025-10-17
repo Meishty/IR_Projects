@@ -1,22 +1,13 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_asmlabel_ac16b955.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0x10]
+0x00400007:	movs	r0, #0
+0x00400009:	add	r3, pc
+0x0040000b:	str	r0, [r3]
+0x0040000d:	movs	r2, #1
+0x0040000f:	str	r2, [r3]
+0x00400011:	movs	r2, #2
+0x00400013:	str	r2, [r3]
+0x00400015:	bx	lr
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b04      	ldr	r3, [pc, #16]	; (14 <L2+0x8>)
-   2:	2000      	movs	r0, #0
-   4:	447b      	add	r3, pc
-   6:	6018      	str	r0, [r3, #0]
-
-00000008 <L1>:
-   8:	2201      	movs	r2, #1
-   a:	601a      	str	r2, [r3, #0]
-
-0000000c <L2>:
-   c:	2202      	movs	r2, #2
-   e:	601a      	str	r2, [r3, #0]
-  10:	4770      	bx	lr
-  12:	bf00      	nop
-  14:	0000000c 	.word	0x0000000c
+Function sub_400017 @ 0x00400017

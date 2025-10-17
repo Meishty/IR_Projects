@@ -1,27 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_py-block_6c29d51d.o:     file format elf32-littlearm
+Function block_func @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function no_locals_func @ 0x00400005
+0x00400005:	movs	r0, #0
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function few_locals_func @ 0x00400009
+0x00400009:	movs	r0, #0
+0x0040000b:	bx	lr
 
-00000000 <block_func>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function many_locals_func @ 0x0040000d
+0x0040000d:	movs	r0, #0
+0x0040000f:	bx	lr
 
-00000004 <no_locals_func>:
-   4:	2000      	movs	r0, #0
-   6:	4770      	bx	lr
-
-00000008 <few_locals_func>:
-   8:	2000      	movs	r0, #0
-   a:	4770      	bx	lr
-
-0000000c <many_locals_func>:
-   c:	2000      	movs	r0, #0
-   e:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400011
+0x00400011:	movs	r0, #0
+0x00400013:	bx	lr

@@ -1,50 +1,53 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_gnu-ifunc_65c5b027.o:     file format elf32-littlearm
+Function init_stub @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr
 
+Function main @ 0x0040006d
+0x0040006d:	ldr	r3, [pc, #0x40]
+0x0040006f:	push	{r4, lr}
+0x00400071:	add	r3, pc
+0x00400073:	ldr	r4, [r3]
+0x00400075:	cbnz	r4, #0x40008b
+0x00400077:	movs	r0, #1
+0x00400079:	str	r0, [r3]
+0x0040007b:	bl	#0x500001
+0x00400077:	movs	r0, #1
+0x00400079:	str	r0, [r3]
+0x0040007b:	bl	#0x500001
+0x0040007f:	cmp	r0, #2
+0x00400081:	bne	#0x40009d
+0x00400083:	bl	#0x500001
+0x00400087:	mov	r0, r4
+0x00400089:	pop	{r4, pc}
+0x0040008b:	ldr	r3, [pc, #0x28]
+0x0040008d:	movs	r2, #0x27
+0x0040008f:	ldr	r1, [pc, #0x28]
+0x00400091:	ldr	r0, [pc, #0x28]
+0x00400093:	add	r3, pc
+0x00400095:	add	r1, pc
+0x00400097:	add	r0, pc
+0x00400099:	bl	#0x50000d
+0x0040009d:	ldr	r3, [pc, #0x20]
+0x0040009f:	movs	r2, #0x36
+0x004000a1:	ldr	r1, [pc, #0x20]
+0x004000a3:	ldr	r0, [pc, #0x24]
+0x004000a5:	add	r3, pc
+0x004000a7:	add	r1, pc
+0x004000a9:	adds	r3, #0x10
+0x004000ab:	add	r0, pc
+0x004000ad:	bl	#0x50000d
 
-Disassembly of section .text:
+Function gnu_ifunc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <init_stub>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b10      	ldr	r3, [pc, #64]	; (44 <main+0x44>)
-   2:	b510      	push	{r4, lr}
-   4:	447b      	add	r3, pc
-   6:	681c      	ldr	r4, [r3, #0]
-   8:	b94c      	cbnz	r4, 1e <main+0x1e>
-   a:	2001      	movs	r0, #1
-   c:	6018      	str	r0, [r3, #0]
-   e:	f7ff fffe 	bl	0 <gnu_ifunc>
-  12:	2802      	cmp	r0, #2
-  14:	d10c      	bne.n	30 <main+0x30>
-  16:	f7ff fffe 	bl	0 <gnu_ifunc>
-  1a:	4620      	mov	r0, r4
-  1c:	bd10      	pop	{r4, pc}
-  1e:	4b0a      	ldr	r3, [pc, #40]	; (48 <main+0x48>)
-  20:	2227      	movs	r2, #39	; 0x27
-  22:	490a      	ldr	r1, [pc, #40]	; (4c <main+0x4c>)
-  24:	480a      	ldr	r0, [pc, #40]	; (50 <main+0x50>)
-  26:	447b      	add	r3, pc
-  28:	4479      	add	r1, pc
-  2a:	4478      	add	r0, pc
-  2c:	f7ff fffe 	bl	0 <__assert_fail>
-  30:	4b08      	ldr	r3, [pc, #32]	; (54 <main+0x54>)
-  32:	2236      	movs	r2, #54	; 0x36
-  34:	4908      	ldr	r1, [pc, #32]	; (58 <main+0x58>)
-  36:	4809      	ldr	r0, [pc, #36]	; (5c <main+0x5c>)
-  38:	447b      	add	r3, pc
-  3a:	4479      	add	r1, pc
-  3c:	3310      	adds	r3, #16
-  3e:	4478      	add	r0, pc
-  40:	f7ff fffe 	bl	0 <__assert_fail>
-  44:	0000003c 	.word	0x0000003c
-  48:	0000001e 	.word	0x0000001e
-  4c:	00000020 	.word	0x00000020
-  50:	00000022 	.word	0x00000022
-  54:	00000018 	.word	0x00000018
-  58:	0000001a 	.word	0x0000001a
-  5c:	0000001a 	.word	0x0000001a
+Function __assert_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

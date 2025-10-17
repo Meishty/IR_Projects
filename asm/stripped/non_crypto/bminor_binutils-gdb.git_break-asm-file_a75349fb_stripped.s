@@ -1,19 +1,26 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_break-asm-file_a75349fb_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bl	#0x400003
 
+Function sub_400007 @ 0x00400007
+0x00400007:	pop.w	{r3, lr}
+0x0040000b:	b.w	#0x40000b
+0x0040000b:	b.w	#0x40000b
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-00000000 <.text>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	e8bdfffe 	pop	{r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-   8:	f7ff4008 			; <UNDEFINED> instruction: 0xf7ff4008
-   c:	bf00bffe 	svclt	0x0000bffe
+Function sub_400011 @ 0x00400011
+0x00400011:	push	{r3, lr}
+0x00400013:	bl	#0x400013
 
-Disassembly of section .text.startup:
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-   8:	2000fffe 	strdcs	pc, [r0], -lr
-   c:	bf00bd08 	svclt	0x0000bd08
+Function sub_400017 @ 0x00400017
+0x00400017:	bl	#0x400017
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r3, pc}
+
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	

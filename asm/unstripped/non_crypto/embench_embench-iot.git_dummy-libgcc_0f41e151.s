@@ -1,161 +1,280 @@
 
-/root/projects/compiled/non_crypto/unstripped/embench_embench-iot.git_dummy-libgcc_0f41e151.o:     file format elf32-littlearm
+Function __aeabi_ui2d @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	movs	r1, #0
+0x00400005:	bx	lr
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	vldr	s0, [pc, #4]
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function __aeabi_ui2f @ 0x00400009
+0x00400009:	vldr	s0, [pc, #4]
+0x0040000d:	bx	lr
 
-00000000 <__aeabi_ui2d>:
-   0:	2000      	movs	r0, #0
-   2:	2100      	movs	r1, #0
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	movs	r0, r0
+0x00400013:	movs	r0, r0
+0x00400015:	vldr	d0, [pc, #8]
+0x00400019:	bx	lr
 
-00000008 <__aeabi_ui2f>:
-   8:	ed9f 0a01 	vldr	s0, [pc, #4]	; 10 <__aeabi_ui2f+0x8>
-   c:	4770      	bx	lr
-   e:	bf00      	nop
-  10:	00000000 	.word	0x00000000
+Function __aeabi_dmul @ 0x00400015
+0x00400015:	vldr	d0, [pc, #8]
+0x00400019:	bx	lr
 
-00000014 <__aeabi_dmul>:
-  14:	ed9f 0b02 	vldr	d0, [pc, #8]	; 20 <__aeabi_dmul+0xc>
-  18:	4770      	bx	lr
-  1a:	bf00      	nop
-  1c:	f3af 8000 	nop.w
-	...
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	nop.w	
+0x00400021:	movs	r0, r0
+0x00400023:	movs	r0, r0
+0x00400025:	movs	r0, r0
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr
 
-00000028 <__aeabi_d2uiz>:
-  28:	2000      	movs	r0, #0
-  2a:	4770      	bx	lr
+Function sub_40001d @ 0x0040001d
+0x0040001d:	nop.w	
+0x00400021:	movs	r0, r0
+0x00400023:	movs	r0, r0
+0x00400025:	movs	r0, r0
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr
 
-0000002c <__aeabi_dadd>:
-  2c:	ed9f 0b02 	vldr	d0, [pc, #8]	; 38 <__aeabi_dadd+0xc>
-  30:	4770      	bx	lr
-  32:	bf00      	nop
-  34:	f3af 8000 	nop.w
-	...
+Function __aeabi_d2uiz @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bx	lr
 
-00000040 <__aeabi_dsub>:
-  40:	ed9f 0b01 	vldr	d0, [pc, #4]	; 48 <__aeabi_dsub+0x8>
-  44:	4770      	bx	lr
-  46:	bf00      	nop
-	...
+Function __aeabi_dadd @ 0x0040002d
+0x0040002d:	vldr	d0, [pc, #8]
+0x00400031:	bx	lr
 
-00000050 <__aeabi_d2iz>:
-  50:	2000      	movs	r0, #0
-  52:	4770      	bx	lr
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	nop.w	
+0x00400039:	movs	r0, r0
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r0, r0
+0x0040003f:	movs	r0, r0
+0x00400041:	vldr	d0, [pc, #4]
+0x00400045:	bx	lr
 
-00000054 <__aeabi_ddiv>:
-  54:	ed9f 0b02 	vldr	d0, [pc, #8]	; 60 <__aeabi_ddiv+0xc>
-  58:	4770      	bx	lr
-  5a:	bf00      	nop
-  5c:	f3af 8000 	nop.w
-	...
+Function sub_400035 @ 0x00400035
+0x00400035:	nop.w	
+0x00400039:	movs	r0, r0
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r0, r0
+0x0040003f:	movs	r0, r0
+0x00400041:	vldr	d0, [pc, #4]
+0x00400045:	bx	lr
 
-00000068 <__aeabi_dcmplt>:
-  68:	2000      	movs	r0, #0
-  6a:	4770      	bx	lr
+Function __aeabi_dsub @ 0x00400041
+0x00400041:	vldr	d0, [pc, #4]
+0x00400045:	bx	lr
 
-0000006c <__aeabi_dcmpeq>:
-  6c:	2000      	movs	r0, #0
-  6e:	4770      	bx	lr
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r0, #0
+0x00400053:	bx	lr
 
-00000070 <__aeabi_dcmpge>:
-  70:	2000      	movs	r0, #0
-  72:	4770      	bx	lr
+Function __aeabi_d2iz @ 0x00400051
+0x00400051:	movs	r0, #0
+0x00400053:	bx	lr
 
-00000074 <__aeabi_dcmple>:
-  74:	2000      	movs	r0, #0
-  76:	4770      	bx	lr
+Function __aeabi_ddiv @ 0x00400055
+0x00400055:	vldr	d0, [pc, #8]
+0x00400059:	bx	lr
 
-00000078 <__aeabi_dcmpun>:
-  78:	2000      	movs	r0, #0
-  7a:	4770      	bx	lr
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	
+0x0040005d:	nop.w	
+0x00400061:	movs	r0, r0
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r0, r0
+0x00400067:	movs	r0, r0
+0x00400069:	movs	r0, #0
+0x0040006b:	bx	lr
 
-0000007c <__aeabi_i2d>:
-  7c:	ed9f 0b02 	vldr	d0, [pc, #8]	; 88 <__aeabi_i2d+0xc>
-  80:	4770      	bx	lr
-  82:	bf00      	nop
-  84:	f3af 8000 	nop.w
-	...
+Function sub_40005d @ 0x0040005d
+0x0040005d:	nop.w	
+0x00400061:	movs	r0, r0
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r0, r0
+0x00400067:	movs	r0, r0
+0x00400069:	movs	r0, #0
+0x0040006b:	bx	lr
 
-00000090 <__aeabi_dcmpgt>:
-  90:	2000      	movs	r0, #0
-  92:	4770      	bx	lr
+Function __aeabi_dcmplt @ 0x00400069
+0x00400069:	movs	r0, #0
+0x0040006b:	bx	lr
 
-00000094 <__aeabi_fadd>:
-  94:	ed9f 0a01 	vldr	s0, [pc, #4]	; 9c <__aeabi_fadd+0x8>
-  98:	4770      	bx	lr
-  9a:	bf00      	nop
-  9c:	00000000 	.word	0x00000000
+Function __aeabi_dcmpeq @ 0x0040006d
+0x0040006d:	movs	r0, #0
+0x0040006f:	bx	lr
 
-000000a0 <__aeabi_fcmpeq>:
-  a0:	2000      	movs	r0, #0
-  a2:	4770      	bx	lr
+Function __aeabi_dcmpge @ 0x00400071
+0x00400071:	movs	r0, #0
+0x00400073:	bx	lr
 
-000000a4 <__aeabi_fcmpge>:
-  a4:	2000      	movs	r0, #0
-  a6:	4770      	bx	lr
+Function __aeabi_dcmple @ 0x00400075
+0x00400075:	movs	r0, #0
+0x00400077:	bx	lr
 
-000000a8 <__aeabi_fcmple>:
-  a8:	2000      	movs	r0, #0
-  aa:	4770      	bx	lr
+Function __aeabi_dcmpun @ 0x00400079
+0x00400079:	movs	r0, #0
+0x0040007b:	bx	lr
 
-000000ac <__aeabi_fcmpgt>:
-  ac:	2000      	movs	r0, #0
-  ae:	4770      	bx	lr
+Function __aeabi_i2d @ 0x0040007d
+0x0040007d:	vldr	d0, [pc, #8]
+0x00400081:	bx	lr
 
-000000b0 <__aeabi_fcmplt>:
-  b0:	2000      	movs	r0, #0
-  b2:	4770      	bx	lr
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	nop.w	
+0x00400089:	movs	r0, r0
+0x0040008b:	movs	r0, r0
+0x0040008d:	movs	r0, r0
+0x0040008f:	movs	r0, r0
+0x00400091:	movs	r0, #0
+0x00400093:	bx	lr
 
-000000b4 <__aeabi_fsub>:
-  b4:	ed9f 0a01 	vldr	s0, [pc, #4]	; bc <__aeabi_fsub+0x8>
-  b8:	4770      	bx	lr
-  ba:	bf00      	nop
-  bc:	00000000 	.word	0x00000000
+Function sub_400085 @ 0x00400085
+0x00400085:	nop.w	
+0x00400089:	movs	r0, r0
+0x0040008b:	movs	r0, r0
+0x0040008d:	movs	r0, r0
+0x0040008f:	movs	r0, r0
+0x00400091:	movs	r0, #0
+0x00400093:	bx	lr
 
-000000c0 <__aeabi_i2f>:
-  c0:	ed9f 0a01 	vldr	s0, [pc, #4]	; c8 <__aeabi_i2f+0x8>
-  c4:	4770      	bx	lr
-  c6:	bf00      	nop
-  c8:	00000000 	.word	0x00000000
+Function __aeabi_dcmpgt @ 0x00400091
+0x00400091:	movs	r0, #0
+0x00400093:	bx	lr
 
-000000cc <__aeabi_fmul>:
-  cc:	ed9f 0a01 	vldr	s0, [pc, #4]	; d4 <__aeabi_fmul+0x8>
-  d0:	4770      	bx	lr
-  d2:	bf00      	nop
-  d4:	00000000 	.word	0x00000000
+Function __aeabi_fadd @ 0x00400095
+0x00400095:	vldr	s0, [pc, #4]
+0x00400099:	bx	lr
 
-000000d8 <__aeabi_fdiv>:
-  d8:	ed9f 0a01 	vldr	s0, [pc, #4]	; e0 <__aeabi_fdiv+0x8>
-  dc:	4770      	bx	lr
-  de:	bf00      	nop
-  e0:	00000000 	.word	0x00000000
+Function sub_40009b @ 0x0040009b
+0x0040009b:	nop	
+0x0040009d:	movs	r0, r0
+0x0040009f:	movs	r0, r0
+0x004000a1:	movs	r0, #0
+0x004000a3:	bx	lr
 
-000000e4 <__aeabi_f2iz>:
-  e4:	2000      	movs	r0, #0
-  e6:	4770      	bx	lr
+Function __aeabi_fcmpeq @ 0x004000a1
+0x004000a1:	movs	r0, #0
+0x004000a3:	bx	lr
 
-000000e8 <__aeabi_f2uiz>:
-  e8:	2000      	movs	r0, #0
-  ea:	4770      	bx	lr
+Function __aeabi_fcmpge @ 0x004000a5
+0x004000a5:	movs	r0, #0
+0x004000a7:	bx	lr
 
-000000ec <__aeabi_d2f>:
-  ec:	ed9f 0a01 	vldr	s0, [pc, #4]	; f4 <__aeabi_d2f+0x8>
-  f0:	4770      	bx	lr
-  f2:	bf00      	nop
-  f4:	00000000 	.word	0x00000000
+Function __aeabi_fcmple @ 0x004000a9
+0x004000a9:	movs	r0, #0
+0x004000ab:	bx	lr
 
-000000f8 <__aeabi_f2d>:
-  f8:	ed9f 0b01 	vldr	d0, [pc, #4]	; 100 <__aeabi_f2d+0x8>
-  fc:	4770      	bx	lr
-  fe:	bf00      	nop
-	...
+Function __aeabi_fcmpgt @ 0x004000ad
+0x004000ad:	movs	r0, #0
+0x004000af:	bx	lr
 
-00000108 <__aeabi_uldivmod>:
- 108:	ed9f 7b03 	vldr	d7, [pc, #12]	; 118 <__aeabi_uldivmod+0x10>
- 10c:	ed80 7b00 	vstr	d7, [r0]
- 110:	ed80 7b02 	vstr	d7, [r0, #8]
- 114:	4770      	bx	lr
- 116:	bf00      	nop
-	...
+Function __aeabi_fcmplt @ 0x004000b1
+0x004000b1:	movs	r0, #0
+0x004000b3:	bx	lr
+
+Function __aeabi_fsub @ 0x004000b5
+0x004000b5:	vldr	s0, [pc, #4]
+0x004000b9:	bx	lr
+
+Function sub_4000bb @ 0x004000bb
+0x004000bb:	nop	
+0x004000bd:	movs	r0, r0
+0x004000bf:	movs	r0, r0
+0x004000c1:	vldr	s0, [pc, #4]
+0x004000c5:	bx	lr
+
+Function __aeabi_i2f @ 0x004000c1
+0x004000c1:	vldr	s0, [pc, #4]
+0x004000c5:	bx	lr
+
+Function sub_4000c7 @ 0x004000c7
+0x004000c7:	nop	
+0x004000c9:	movs	r0, r0
+0x004000cb:	movs	r0, r0
+0x004000cd:	vldr	s0, [pc, #4]
+0x004000d1:	bx	lr
+
+Function __aeabi_fmul @ 0x004000cd
+0x004000cd:	vldr	s0, [pc, #4]
+0x004000d1:	bx	lr
+
+Function sub_4000d3 @ 0x004000d3
+0x004000d3:	nop	
+0x004000d5:	movs	r0, r0
+0x004000d7:	movs	r0, r0
+0x004000d9:	vldr	s0, [pc, #4]
+0x004000dd:	bx	lr
+
+Function __aeabi_fdiv @ 0x004000d9
+0x004000d9:	vldr	s0, [pc, #4]
+0x004000dd:	bx	lr
+
+Function sub_4000df @ 0x004000df
+0x004000df:	nop	
+0x004000e1:	movs	r0, r0
+0x004000e3:	movs	r0, r0
+0x004000e5:	movs	r0, #0
+0x004000e7:	bx	lr
+
+Function __aeabi_f2iz @ 0x004000e5
+0x004000e5:	movs	r0, #0
+0x004000e7:	bx	lr
+
+Function __aeabi_f2uiz @ 0x004000e9
+0x004000e9:	movs	r0, #0
+0x004000eb:	bx	lr
+
+Function __aeabi_d2f @ 0x004000ed
+0x004000ed:	vldr	s0, [pc, #4]
+0x004000f1:	bx	lr
+
+Function sub_4000f3 @ 0x004000f3
+0x004000f3:	nop	
+0x004000f5:	movs	r0, r0
+0x004000f7:	movs	r0, r0
+0x004000f9:	vldr	d0, [pc, #4]
+0x004000fd:	bx	lr
+
+Function __aeabi_f2d @ 0x004000f9
+0x004000f9:	vldr	d0, [pc, #4]
+0x004000fd:	bx	lr
+
+Function sub_4000ff @ 0x004000ff
+0x004000ff:	nop	
+0x00400101:	movs	r0, r0
+0x00400103:	movs	r0, r0
+0x00400105:	movs	r0, r0
+0x00400107:	movs	r0, r0
+0x00400109:	vldr	d7, [pc, #0xc]
+0x0040010d:	vstr	d7, [r0]
+0x00400111:	vstr	d7, [r0, #8]
+0x00400115:	bx	lr
+
+Function __aeabi_uldivmod @ 0x00400109
+0x00400109:	vldr	d7, [pc, #0xc]
+0x0040010d:	vstr	d7, [r0]
+0x00400111:	vstr	d7, [r0, #8]
+0x00400115:	bx	lr
+
+Function sub_400117 @ 0x00400117
+0x00400117:	nop	
+0x00400119:	movs	r0, r0
+0x0040011b:	movs	r0, r0
+0x0040011d:	movs	r0, r0
+0x0040011f:	movs	r0, r0

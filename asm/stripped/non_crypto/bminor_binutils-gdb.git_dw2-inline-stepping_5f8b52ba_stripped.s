@@ -1,19 +1,22 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dw2-inline-stepping_5f8b52ba_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r2, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b01 	ldrbtmi	r4, [fp], #-2817	; 0xfffff4ff
-   4:	47706818 			; <UNDEFINED> instruction: 0x47706818
-   8:	00000002 	andeq	r0, r0, r2
+Function sub_400011 @ 0x00400011
+0x00400011:	push	{r3, lr}
+0x00400013:	ldr	r3, [pc, #0xc]
+0x00400015:	movs	r2, #0
+0x00400017:	add	r3, pc
+0x00400019:	str	r2, [r3]
+0x0040001b:	bl	#0x40001b
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	4b03b508 	blmi	0xed428
-   4:	447b2200 	ldrbtmi	r2, [fp], #-512	; 0xfffffe00
-   8:	f7ff601a 			; <UNDEFINED> instruction: 0xf7ff601a
-   c:	bd08fffe 	stclt	15, cr15, [r8, #-1016]	; 0xfffffc08
-  10:	00000006 	andeq	r0, r0, r6
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	pop	{r3, pc}

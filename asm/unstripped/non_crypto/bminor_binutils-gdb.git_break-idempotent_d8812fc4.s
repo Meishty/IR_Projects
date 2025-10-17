@@ -1,39 +1,41 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_break-idempotent_d8812fc4.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [sl], #-0xa02
+0x00400004:	movwlo	r6, #0x1813
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r3
+0x0040000f:	movs	r0, r0
+0x00400011:	bx	lr
 
-00000000 <foo>:
-   0:	4a02      	ldr	r2, [pc, #8]	; (c <foo+0xc>)
-   2:	447a      	add	r2, pc
-   4:	6813      	ldr	r3, [r2, #0]
-   6:	3301      	adds	r3, #1
-   8:	6013      	str	r3, [r2, #0]
-   a:	4770      	bx	lr
-   c:	00000006 	.word	0x00000006
+Function bar @ 0x00400011
+0x00400011:	bx	lr
 
-00000010 <bar>:
-  10:	4770      	bx	lr
-  12:	bf00      	nop
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	ldr	r2, [pc, #8]
+0x00400017:	add	r2, pc
+0x00400019:	ldr	r3, [r2]
+0x0040001b:	adds	r3, #2
+0x0040001d:	str	r3, [r2]
+0x0040001f:	bx	lr
 
-00000014 <test>:
-  14:	4a02      	ldr	r2, [pc, #8]	; (20 <test+0xc>)
-  16:	447a      	add	r2, pc
-  18:	6813      	ldr	r3, [r2, #0]
-  1a:	3302      	adds	r3, #2
-  1c:	6013      	str	r3, [r2, #0]
-  1e:	4770      	bx	lr
-  20:	00000006 	.word	0x00000006
+Function test @ 0x00400015
+0x00400015:	ldr	r2, [pc, #8]
+0x00400017:	add	r2, pc
+0x00400019:	ldr	r3, [r2]
+0x0040001b:	adds	r3, #2
+0x0040001d:	str	r3, [r2]
+0x0040001f:	bx	lr
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4a03      	ldr	r2, [pc, #12]	; (10 <main+0x10>)
-   2:	2000      	movs	r0, #0
-   4:	447a      	add	r2, pc
-   6:	6813      	ldr	r3, [r2, #0]
-   8:	f503 63fa 	add.w	r3, r3, #2000	; 0x7d0
-   c:	6013      	str	r3, [r2, #0]
-   e:	4770      	bx	lr
-  10:	00000008 	.word	0x00000008
+Function main @ 0x0040002d
+0x0040002d:	ldr	r2, [pc, #0xc]
+0x0040002f:	movs	r0, #0
+0x00400031:	add	r2, pc
+0x00400033:	ldr	r3, [r2]
+0x00400035:	add.w	r3, r3, #0x7d0
+0x00400039:	str	r3, [r2]
+0x0040003b:	bx	lr

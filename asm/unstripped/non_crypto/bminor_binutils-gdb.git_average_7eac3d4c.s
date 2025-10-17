@@ -1,40 +1,63 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_average_7eac3d4c.o:     file format elf32-littlearm
+Function print_average @ 0x00400001
+0x00400001:	push	{r3, r4, r5, lr}
+0x00400003:	mov	r5, r2
+0x00400005:	mov	r4, r1
+0x00400007:	bl	#0x500001
+0x0040000b:	subs	r1, r5, r4
+0x0040000d:	bl	#0x50000d
+0x00400011:	ldr	r1, [pc, #0xc]
+0x00400013:	mov	r2, r0
+0x00400015:	movs	r0, #1
+0x00400017:	pop.w	{r3, r4, r5, lr}
+0x0040001b:	add	r1, pc
+0x0040001d:	b.w	#0x500019
 
+Function main @ 0x00400055
+0x00400055:	push	{lr}
+0x00400057:	movs	r2, #9
+0x00400059:	ldr	r0, [pc, #0x1c]
+0x0040005b:	sub	sp, #0xc
+0x0040005d:	movs	r1, #0
+0x0040005f:	add	r0, pc
+0x00400061:	str	r0, [sp, #4]
+0x00400063:	bl	#0x400001
+0x00400067:	ldr	r0, [sp, #4]
+0x00400069:	movs	r2, #6
+0x0040006b:	movs	r1, #0
+0x0040006d:	bl	#0x400001
+0x00400071:	movs	r0, #0
+0x00400073:	bl	#0x500025
 
-Disassembly of section .text:
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
 
-00000000 <print_average>:
-   0:	b538      	push	{r3, r4, r5, lr}
-   2:	4615      	mov	r5, r2
-   4:	460c      	mov	r4, r1
-   6:	f7ff fffe 	bl	0 <sum>
-   a:	1b29      	subs	r1, r5, r4
-   c:	f7ff fffe 	bl	0 <__aeabi_idiv>
-  10:	4903      	ldr	r1, [pc, #12]	; (20 <print_average+0x20>)
-  12:	4602      	mov	r2, r0
-  14:	2001      	movs	r0, #1
-  16:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
-  1a:	4479      	add	r1, pc
-  1c:	f7ff bffe 	b.w	0 <__printf_chk>
-  20:	00000002 	.word	0x00000002
+Function sum @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function __aeabi_idiv @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	b500      	push	{lr}
-   2:	2209      	movs	r2, #9
-   4:	4807      	ldr	r0, [pc, #28]	; (24 <main+0x24>)
-   6:	b083      	sub	sp, #12
-   8:	2100      	movs	r1, #0
-   a:	4478      	add	r0, pc
-   c:	9001      	str	r0, [sp, #4]
-   e:	f7ff fffe 	bl	0 <main>
-  12:	9801      	ldr	r0, [sp, #4]
-  14:	2206      	movs	r2, #6
-  16:	2100      	movs	r1, #0
-  18:	f7ff fffe 	bl	0 <main>
-  1c:	2000      	movs	r0, #0
-  1e:	f7ff fffe 	bl	0 <exit>
-  22:	bf00      	nop
-  24:	00000016 	.word	0x00000016
+Function __printf_chk @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

@@ -1,19 +1,28 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_new-ui_f7c62f1c_stripped.o:     file format elf32-littlearm
+Function sub_400005 @ 0x00400005
+0x00400005:	ldr	r3, [pc, #0x28]
+0x00400007:	movs	r2, #1
+0x00400009:	movs	r0, #0
+0x0040000b:	add	r3, pc
+0x0040000d:	str	r2, [r3]
+0x0040000f:	str	r2, [r3]
+0x00400011:	str	r2, [r3]
+0x00400013:	str	r2, [r3]
+0x00400015:	str	r2, [r3]
+0x00400017:	str	r2, [r3]
+0x00400019:	str	r2, [r3]
+0x0040001b:	str	r2, [r3]
+0x0040001d:	str	r2, [r3]
+0x0040001f:	str	r2, [r3]
+0x00400021:	str	r2, [r3]
+0x00400023:	str	r2, [r3]
+0x00400025:	str	r2, [r3]
+0x00400027:	str	r2, [r3]
+0x00400029:	str	r2, [r3]
+0x0040002b:	str	r2, [r3]
+0x0040002d:	bx	lr
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	22014b0a 	andcs	r4, r1, #10240	; 0x2800
-   4:	447b2000 	ldrbtmi	r2, [fp], #-0
-   8:	601a601a 	andsvs	r6, sl, sl, lsl r0
-   c:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  10:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  14:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  18:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  1c:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  20:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  24:	601a601a 	andsvs	r6, sl, sl, lsl r0
-  28:	bf004770 	svclt	0x00004770
-  2c:	00000022 	andeq	r0, r0, r2, lsr #32
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r2, r4
+0x00400033:	movs	r0, r0

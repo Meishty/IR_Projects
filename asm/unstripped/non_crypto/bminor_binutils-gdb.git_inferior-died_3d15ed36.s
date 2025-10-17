@@ -1,23 +1,31 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_inferior-died_3d15ed36.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r2, [r8, #-0]
 
+Function main @ 0x00400009
+0x00400009:	push	{r3, lr}
+0x0040000b:	bl	#0x50000d
+0x0040000f:	cbz	r0, #0x40001d
+0x00400011:	movs	r2, #0
+0x00400013:	mov	r1, r2
+0x00400015:	bl	#0x500019
+0x00400011:	movs	r2, #0
+0x00400013:	mov	r1, r2
+0x00400015:	bl	#0x500019
+0x00400019:	movs	r0, #0
+0x0040001b:	pop	{r3, pc}
+0x0040001d:	bl	#0x400001
 
-Disassembly of section .text:
+Function fork @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <function>:
-   0:	2000      	movs	r0, #0
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <exit>
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <fork>
-   6:	b128      	cbz	r0, 14 <main+0x14>
-   8:	2200      	movs	r2, #0
-   a:	4611      	mov	r1, r2
-   c:	f7ff fffe 	bl	0 <waitpid>
-  10:	2000      	movs	r0, #0
-  12:	bd08      	pop	{r3, pc}
-  14:	f7ff fffe 	bl	0 <main>
+Function waitpid @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

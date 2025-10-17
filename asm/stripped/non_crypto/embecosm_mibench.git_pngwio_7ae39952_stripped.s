@@ -1,44 +1,98 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_pngwio_7ae39952_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	lsls	r4, r3, #6
+0x00400005:	cbz	r0, #0x40000b
+0x00400007:	b.w	#0x400007
+0x00400007:	b.w	#0x400007
+0x0040000b:	bx	lr
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	push	{r3, r4, r5, lr}
+0x0040000f:	mov	r4, r0
+0x00400011:	mov	r5, r2
+0x00400013:	mov	r0, r1
+0x00400015:	movs	r1, #1
+0x00400017:	ldr.w	r3, [r4, #0x19c]
+0x0040001b:	bl	#0x40001b
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	bl	#0x40001b
+0x0040001f:	cmp	r5, r0
+0x00400021:	bne	#0x400025
+0x00400023:	pop	{r3, r4, r5, pc}
+0x00400025:	ldr	r1, [pc, #0xc]
+0x00400027:	mov	r0, r4
+0x00400029:	pop.w	{r3, r4, r5, lr}
+0x0040002d:	add	r1, pc
+0x0040002f:	b.w	#0x40002f
+0x0040002f:	b.w	#0x40002f
 
-00000000 <.text>:
-   0:	019cf8d0 			; <UNDEFINED> instruction: 0x019cf8d0
-   4:	f7ffb108 			; <UNDEFINED> instruction: 0xf7ffb108
-   8:	4770bffe 			; <UNDEFINED> instruction: 0x4770bffe
-   c:	4604b538 			; <UNDEFINED> instruction: 0x4604b538
-  10:	46084615 			; <UNDEFINED> instruction: 0x46084615
-  14:	f8d42101 			; <UNDEFINED> instruction: 0xf8d42101
-  18:	f7ff319c 			; <UNDEFINED> instruction: 0xf7ff319c
-  1c:	4285fffe 	addmi	pc, r5, #1016	; 0x3f8
-  20:	bd38d100 	ldfltd	f5, [r8, #-0]
-  24:	46204903 	strtmi	r4, [r0], -r3, lsl #18
-  28:	4038e8bd 	ldrhtmi	lr, [r8], -sp
-  2c:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-  30:	bf00bffe 	svclt	0x0000bffe
-  34:	00000004 	andeq	r0, r0, r4
-  38:	3194f8d0 			; <UNDEFINED> instruction: 0x3194f8d0
-  3c:	4718b103 	ldrmi	fp, [r8, -r3, lsl #2]
-  40:	44794901 	ldrbtmi	r4, [r9], #-2305	; 0xfffff6ff
-  44:	bffef7ff 	svclt	0x00fef7ff
-  48:	00000002 	andeq	r0, r0, r2
-  4c:	324cf8d0 	subcc	pc, ip, #208, 16	; 0xd00000
-  50:	4718b103 	ldrmi	fp, [r8, -r3, lsl #2]
-  54:	bf004770 	svclt	0x00004770
-  58:	119cf8c0 	orrsne	pc, ip, r0, asr #17
-  5c:	f8c0b142 			; <UNDEFINED> instruction: 0xf8c0b142
-  60:	b15b2194 			; <UNDEFINED> instruction: 0xb15b2194
-  64:	f8c02200 			; <UNDEFINED> instruction: 0xf8c02200
-  68:	f8c0324c 			; <UNDEFINED> instruction: 0xf8c0324c
-  6c:	47702198 			; <UNDEFINED> instruction: 0x47702198
-  70:	447a4a06 	ldrbtmi	r4, [sl], #-2566	; 0xfffff5fa
-  74:	2194f8c0 	orrscs	pc, r4, r0, asr #17
-  78:	d1f32b00 	mvnsle	r2, r0, lsl #22
-  7c:	22004b04 	andcs	r4, r0, #4, 22	; 0x1000
-  80:	2198f8c0 	orrscs	pc, r8, r0, asr #17
-  84:	f8c0447b 			; <UNDEFINED> instruction: 0xf8c0447b
-  88:	4770324c 	ldrbmi	r3, [r0, -ip, asr #4]!
-  8c:	00000016 	andeq	r0, r0, r6, lsl r0
-  90:	00000008 	andeq	r0, r0, r8
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	movs	r4, r0
+0x00400037:	movs	r0, r0
+0x00400039:	ldr.w	r3, [r0, #0x194]
+0x0040003d:	cbz	r3, #0x400041
+0x0040003f:	bx	r3
+
+Function sub_400039 @ 0x00400039
+0x00400039:	ldr.w	r3, [r0, #0x194]
+0x0040003d:	cbz	r3, #0x400041
+0x0040003f:	bx	r3
+0x0040003f:	bx	r3
+0x00400041:	ldr	r1, [pc, #4]
+0x00400043:	add	r1, pc
+0x00400045:	b.w	#0x400045
+0x00400045:	b.w	#0x400045
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	ldr.w	r3, [r0, #0x24c]
+0x00400051:	cbz	r3, #0x400055
+0x00400053:	bx	r3
+0x00400053:	bx	r3
+0x00400055:	bx	lr
+
+Function sub_400057 @ 0x00400057
+0x00400057:	nop	
+0x00400059:	str.w	r1, [r0, #0x19c]
+0x0040005d:	cbz	r2, #0x400071
+0x0040005f:	str.w	r2, [r0, #0x194]
+0x00400063:	cbz	r3, #0x40007d
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+
+Function sub_400059 @ 0x00400059
+0x00400059:	str.w	r1, [r0, #0x19c]
+0x0040005d:	cbz	r2, #0x400071
+0x0040005f:	str.w	r2, [r0, #0x194]
+0x00400063:	cbz	r3, #0x40007d
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+0x0040005f:	str.w	r2, [r0, #0x194]
+0x00400063:	cbz	r3, #0x40007d
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+0x00400065:	movs	r2, #0
+0x00400067:	str.w	r3, [r0, #0x24c]
+0x0040006b:	str.w	r2, [r0, #0x198]
+0x0040006f:	bx	lr
+0x00400071:	ldr	r2, [pc, #0x18]
+0x00400073:	add	r2, pc
+0x00400075:	str.w	r2, [r0, #0x194]
+0x00400079:	cmp	r3, #0
+0x0040007b:	bne	#0x400065
+0x0040007d:	ldr	r3, [pc, #0x10]
+0x0040007f:	movs	r2, #0
+0x00400081:	str.w	r2, [r0, #0x198]
+0x00400085:	add	r3, pc
+0x00400087:	str.w	r3, [r0, #0x24c]
+0x0040008b:	bx	lr
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

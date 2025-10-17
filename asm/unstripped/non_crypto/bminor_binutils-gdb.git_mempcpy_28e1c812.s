@@ -1,12 +1,13 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mempcpy_28e1c812.o:     file format elf32-littlearm
+Function mempcpy @ 0x00400001
+0x00400001:	push	{r4, lr}
+0x00400003:	mov	r4, r2
+0x00400005:	bl	#0x500001
+0x00400009:	add	r0, r4
+0x0040000b:	pop	{r4, pc}
 
-
-Disassembly of section .text:
-
-00000000 <mempcpy>:
-   0:	b510      	push	{r4, lr}
-   2:	4614      	mov	r4, r2
-   4:	f7ff fffe 	bl	0 <memcpy>
-   8:	4420      	add	r0, r4
-   a:	bd10      	pop	{r4, pc}
+Function memcpy @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

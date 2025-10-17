@@ -1,15 +1,19 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_attach-stopped_0ab11327.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vrshl.s8	d27, d8, d2
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x500001
+0x0040000b:	movw	r0, #0x2710
+0x0040000f:	bl	#0x500001
+0x00400013:	movs	r0, #0
+0x00400015:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f242 7010 	movw	r0, #10000	; 0x2710
-   6:	f7ff fffe 	bl	0 <sleep>
-   a:	f242 7010 	movw	r0, #10000	; 0x2710
-   e:	f7ff fffe 	bl	0 <sleep>
-  12:	2000      	movs	r0, #0
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
+Function sleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,15 +1,7 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mi2-cli-display_d6120ae9.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r3, [r0, -r4]!
 
-
-Disassembly of section .text:
-
-00000000 <do_tests>:
-   0:	3004      	adds	r0, #4
-   2:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	201b      	movs	r0, #27
-   2:	4770      	bx	lr
+Function main @ 0x00400005
+0x00400005:	movs	r0, #0x1b
+0x00400007:	bx	lr

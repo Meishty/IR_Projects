@@ -1,19 +1,19 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_args-env_5b0ed591.o:     file format elf32-littlearm
+Function main @ 0x00400015
+0x00400015:	ldr	r0, [pc, #0x14]
+0x00400017:	push	{r3, lr}
+0x00400019:	add	r0, pc
+0x0040001b:	bl	#0x500001
+0x0040001f:	ldr	r0, [pc, #0x10]
+0x00400021:	add	r0, pc
+0x00400023:	bl	#0x500001
+0x00400027:	movs	r0, #0
+0x00400029:	pop	{r3, pc}
 
+Function sub_40002b @ 0x0040002b
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4805      	ldr	r0, [pc, #20]	; (18 <main+0x18>)
-   2:	b508      	push	{r3, lr}
-   4:	4478      	add	r0, pc
-   6:	f7ff fffe 	bl	0 <getenv>
-   a:	4804      	ldr	r0, [pc, #16]	; (1c <main+0x1c>)
-   c:	4478      	add	r0, pc
-   e:	f7ff fffe 	bl	0 <getenv>
-  12:	2000      	movs	r0, #0
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
-  18:	00000010 	.word	0x00000010
-  1c:	0000000c 	.word	0x0000000c
+Function getenv @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,23 +1,17 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_recpar_53a62d42.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwhs	fp, #0x128
+0x00400004:	stmdalo	r1, {r0, r1, sl, lr}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	mov	r0, r3
+0x0040000d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000f @ 0x0040000f
+0x0040000f:	mov	r3, r0
+0x00400011:	mov	r0, r3
+0x00400013:	bx	lr
 
-00000000 <foo>:
-   0:	b128      	cbz	r0, e <foo+0xe>
-   2:	2300      	movs	r3, #0
-   4:	4403      	add	r3, r0
-   6:	3801      	subs	r0, #1
-   8:	d1fc      	bne.n	4 <foo+0x4>
-   a:	4618      	mov	r0, r3
-   c:	4770      	bx	lr
-   e:	4603      	mov	r3, r0
-  10:	4618      	mov	r0, r3
-  12:	4770      	bx	lr
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function main @ 0x00400015
+0x00400015:	movs	r0, #0
+0x00400017:	bx	lr

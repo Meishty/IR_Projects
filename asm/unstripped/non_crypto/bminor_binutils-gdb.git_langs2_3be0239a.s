@@ -1,17 +1,25 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_langs2_3be0239a.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	sbcsvc	lr, r0, r0, lsl #22
 
+Function sub_400007 @ 0x00400007
+0x00400007:	b.w	#0x500001
 
-Disassembly of section .text:
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	ldr	r0, [r0]
+0x0040000f:	add.w	r0, r0, r0, lsr #31
+0x00400013:	asrs	r0, r0, #1
+0x00400015:	b.w	#0x500001
 
-00000000 <foo__Fi>:
-   0:	eb00 70d0 	add.w	r0, r0, r0, lsr #31
-   4:	1040      	asrs	r0, r0, #1
-   6:	f7ff bffe 	b.w	0 <csub>
-   a:	bf00      	nop
+Function cppsub_ @ 0x0040000d
+0x0040000d:	ldr	r0, [r0]
+0x0040000f:	add.w	r0, r0, r0, lsr #31
+0x00400013:	asrs	r0, r0, #1
+0x00400015:	b.w	#0x500001
 
-0000000c <cppsub_>:
-   c:	6800      	ldr	r0, [r0, #0]
-   e:	eb00 70d0 	add.w	r0, r0, r0, lsr #31
-  12:	1040      	asrs	r0, r0, #1
-  14:	f7ff bffe 	b.w	0 <csub>
+Function csub @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

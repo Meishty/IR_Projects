@@ -1,13 +1,27 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_basename_2a562f87_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	cbz	r3, #0x400015
+0x00400005:	adds	r2, r0, #1
+0x00400007:	cmp	r3, #0x2f
+0x00400009:	it	eq
+0x0040000b:	moveq	r0, r2
+0x0040000d:	ldrb	r3, [r2], #1
+0x00400011:	cmp	r3, #0
+0x00400013:	bne	#0x400007
+0x00400005:	adds	r2, r0, #1
+0x00400007:	cmp	r3, #0x2f
+0x00400009:	it	eq
+0x0040000b:	moveq	r0, r2
+0x0040000d:	ldrb	r3, [r2], #1
+0x00400011:	cmp	r3, #0
+0x00400013:	bne	#0x400007
+0x00400007:	cmp	r3, #0x2f
+0x00400009:	it	eq
+0x0040000b:	moveq	r0, r2
+0x0040000d:	ldrb	r3, [r2], #1
+0x00400011:	cmp	r3, #0
+0x00400013:	bne	#0x400007
+0x00400015:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	b13b7803 	teqlt	fp, r3, lsl #16
-   4:	2b2f1c42 	blcs	0xbc7114
-   8:	4610bf08 	ldrmi	fp, [r0], -r8, lsl #30
-   c:	3b01f812 	blcc	0x7e05c
-  10:	d1f82b00 	mvnsle	r2, r0, lsl #22
-  14:	bf004770 	svclt	0x00004770
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	

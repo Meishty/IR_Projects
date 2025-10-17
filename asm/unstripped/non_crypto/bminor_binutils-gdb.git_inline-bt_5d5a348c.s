@@ -1,27 +1,27 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_inline-bt_5d5a348c.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	push	{r4, lr}
+0x00400013:	movs	r2, #7
+0x00400015:	ldr	r4, [pc, #0x30]
+0x00400017:	movs	r3, #8
+0x00400019:	add	r4, pc
+0x0040001b:	strd	r2, r3, [r4]
+0x0040001f:	bl	#0x500001
+0x00400023:	bl	#0x500001
+0x00400027:	ldrd	r3, r2, [r4]
+0x0040002b:	mul	r3, r2, r3
+0x0040002f:	adds	r3, #2
+0x00400031:	str	r3, [r4, #8]
+0x00400033:	bl	#0x500001
+0x00400037:	movs	r0, #0
+0x00400039:	ldrd	r3, r2, [r4]
+0x0040003d:	mul	r2, r3, r2
+0x00400041:	mla	r3, r2, r3, r3
+0x00400045:	str	r3, [r4, #8]
+0x00400047:	pop	{r4, pc}
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2207      	movs	r2, #7
-   4:	4c0c      	ldr	r4, [pc, #48]	; (38 <main+0x38>)
-   6:	2308      	movs	r3, #8
-   8:	447c      	add	r4, pc
-   a:	e9c4 2300 	strd	r2, r3, [r4]
-   e:	f7ff fffe 	bl	0 <bar>
-  12:	f7ff fffe 	bl	0 <bar>
-  16:	e9d4 3200 	ldrd	r3, r2, [r4]
-  1a:	fb02 f303 	mul.w	r3, r2, r3
-  1e:	3302      	adds	r3, #2
-  20:	60a3      	str	r3, [r4, #8]
-  22:	f7ff fffe 	bl	0 <bar>
-  26:	2000      	movs	r0, #0
-  28:	e9d4 3200 	ldrd	r3, r2, [r4]
-  2c:	fb03 f202 	mul.w	r2, r3, r2
-  30:	fb02 3303 	mla	r3, r2, r3, r3
-  34:	60a3      	str	r3, [r4, #8]
-  36:	bd10      	pop	{r4, pc}
-  38:	0000002c 	.word	0x0000002c
+Function bar @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

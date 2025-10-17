@@ -1,391 +1,8990 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_threadcrash_302ba75e_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	addshs	r4, ip, #4, #18
+0x00400004:	strlt	r4, [r8, #-0x804]
+0x00400008:	blmi	#0x5111f4
+0x0040000c:	ldrbtmi	r4, [fp], #-0x478
 
+Function sub_400013 @ 0x00400013
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	movs	r2, #0xde
+0x00400025:	ldr	r3, [pc, #0x10]
+0x00400027:	ldr	r1, [pc, #0x14]
+0x00400029:	ldr	r0, [pc, #0x14]
+0x0040002b:	add	r3, pc
+0x0040002d:	add	r1, pc
+0x0040002f:	adds	r3, #0x10
+0x00400031:	add	r0, pc
+0x00400033:	bl	#0x400033
 
-00000000 <.text>:
-   0:	229c4904 	addscs	r4, ip, #4, 18	; 0x10000
-   4:	b5084804 	strlt	r4, [r8, #-2052]	; 0xfffff7fc
-   8:	4b044479 	blmi	0x1111f4
-   c:	447b4478 	ldrbtmi	r4, [fp], #-1144	; 0xfffffb88
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	00000008 	andeq	r0, r0, r8
-  18:	00000008 	andeq	r0, r0, r8
-  1c:	0000000a 	andeq	r0, r0, sl
-  20:	22deb508 	sbcscs	fp, lr, #8, 10	; 0x2000000
-  24:	49054b04 	stmdbmi	r5, {r2, r8, r9, fp, lr}
-  28:	447b4805 	ldrbtmi	r4, [fp], #-2053	; 0xfffff7fb
-  2c:	33104479 	tstcc	r0, #2030043136	; 0x79000000
-  30:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  34:	bf00fffe 	svclt	0x0000fffe
-  38:	0000000a 	andeq	r0, r0, sl
-  3c:	0000000c 	andeq	r0, r0, ip
-  40:	0000000c 	andeq	r0, r0, ip
-  44:	4604b510 			; <UNDEFINED> instruction: 0x4604b510
-  48:	f7ff2048 			; <UNDEFINED> instruction: 0xf7ff2048
-  4c:	b1b8fffe 			; <UNDEFINED> instruction: 0xb1b8fffe
-  50:	7b11ed9f 	blvc	0x47b6d4
-  54:	21002201 	tstcs	r0, r1, lsl #4
-  58:	e9c063c2 	stmib	r0, {r1, r6, r7, r8, r9, sp, lr}^
-  5c:	ed801203 	sfm	f1, 4, [r0, #12]
-  60:	ed9f7b00 	vldr	d7, [pc]	; 0x68
-  64:	e9c07b0f 	stmib	r0, {r0, r1, r2, r3, r8, r9, fp, ip, sp, lr}^
-  68:	21022109 	tstcs	r2, r9, lsl #2
-  6c:	64012206 	strvs	r2, [r1], #-518	; 0xfffffdfa
-  70:	7b0ced80 	blvc	0x33b678
-  74:	7b0ced9f 	blvc	0x33b6f8
-  78:	ed806022 	stc	0, cr6, [r0, #136]	; 0x88
-  7c:	bd107b06 	vldrlt	d7, [r0, #-24]	; 0xffffffe8
-  80:	22654b0b 	rsbcs	r4, r5, #11264	; 0x2c00
-  84:	480c490b 	stmdami	ip, {r0, r1, r3, r8, fp, lr}
-  88:	4479447b 	ldrbtmi	r4, [r9], #-1147	; 0xfffffb85
-  8c:	44783320 	ldrbtmi	r3, [r8], #-800	; 0xfffffce0
-  90:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  94:	8000f3af 	andhi	pc, r0, pc, lsr #7
-	...
-  a0:	00000001 	andeq	r0, r0, r1
-  a4:	00000001 	andeq	r0, r0, r1
-  a8:	00000000 	andeq	r0, r0, r0
-  ac:	00000002 	andeq	r0, r0, r2
-  b0:	00000024 	andeq	r0, r0, r4, lsr #32
-  b4:	00000026 	andeq	r0, r0, r6, lsr #32
-  b8:	00000026 	andeq	r0, r0, r6, lsr #32
-  bc:	227bb508 	rsbscs	fp, fp, #8, 10	; 0x2000000
-  c0:	49054b04 	stmdbmi	r5, {r2, r8, r9, fp, lr}
-  c4:	447b4805 	ldrbtmi	r4, [fp], #-2053	; 0xfffff7fb
-  c8:	33304479 	teqcc	r0, #2030043136	; 0x79000000
-  cc:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  d0:	bf00fffe 	svclt	0x0000fffe
-  d4:	0000000a 	andeq	r0, r0, sl
-  d8:	0000000c 	andeq	r0, r0, ip
-  dc:	0000000c 	andeq	r0, r0, ip
-  e0:	b5084809 	strlt	r4, [r8, #-2057]	; 0xfffff7f7
-  e4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  e8:	3001fffe 	strdcc	pc, [r1], -lr
-  ec:	d8002801 	stmdale	r0, {r0, fp, sp}
-  f0:	4b06e7fe 	blmi	0x1ba0f0
-  f4:	49062289 	stmdbmi	r6, {r0, r3, r7, r9, sp}
-  f8:	447b4806 	ldrbtmi	r4, [fp], #-2054	; 0xfffff7fa
-  fc:	33444479 	movtcc	r4, #17529	; 0x4479
- 100:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 104:	bf00fffe 	svclt	0x0000fffe
- 108:	00000020 	andeq	r0, r0, r0, lsr #32
- 10c:	0000000e 	andeq	r0, r0, lr
- 110:	00000010 	andeq	r0, r0, r0, lsl r0
- 114:	00000010 	andeq	r0, r0, r0, lsl r0
- 118:	4b4d4a4c 	blmi	0x1352a50
- 11c:	b5f0447a 	ldrblt	r4, [r0, #1146]!	; 0x47a
- 120:	b0a96844 	adclt	r6, r9, r4, asr #16
- 124:	58d34605 	ldmpl	r3, {r0, r2, r9, sl, lr}^
- 128:	681b2c01 	ldmdavs	fp, {r0, sl, fp, sp}
- 12c:	f04f9327 			; <UNDEFINED> instruction: 0xf04f9327
- 130:	d0040300 	andle	r0, r4, r0, lsl #6
- 134:	d0402c02 	suble	r2, r0, r2, lsl #24
- 138:	f7ffb374 			; <UNDEFINED> instruction: 0xf7ffb374
- 13c:	2400fffe 	strcs	pc, [r0], #-4094	; 0xfffff002
- 140:	682b4627 	stmdavs	fp!, {r0, r1, r2, r5, r9, sl, lr}
- 144:	260abb23 	strcs	fp, [sl], -r3, lsr #22
- 148:	a8054b42 	stmdage	r5, {r1, r6, r8, r9, fp, lr}
- 14c:	9304447b 	movwls	r4, #17531	; 0x447b
- 150:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 154:	2200a904 	andcs	sl, r0, #4, 18	; 0x10000
- 158:	97254630 			; <UNDEFINED> instruction: 0x97254630
- 15c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 160:	d1592800 	cmple	r9, r0, lsl #16
- 164:	463168a8 	ldrtmi	r6, [r1], -r8, lsr #17
- 168:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 16c:	d1482800 	cmple	r8, r0, lsl #16
- 170:	f7ff4620 			; <UNDEFINED> instruction: 0xf7ff4620
- 174:	4a38fffe 	bmi	0xe40174
- 178:	447a4b35 	ldrbtmi	r4, [sl], #-2869	; 0xfffff4cb
- 17c:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
- 180:	405a9b27 	subsmi	r9, sl, r7, lsr #22
- 184:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
- 188:	2000d139 	andcs	sp, r0, r9, lsr r1
- 18c:	bdf0b029 	ldcllt	0, cr11, [r0, #164]!	; 0xa4
- 190:	d1d22b01 	bicsle	r2, r2, r1, lsl #22
- 194:	e7d7260c 	ldrb	r2, [r7, ip, lsl #12]
- 198:	28006800 	stmdacs	r0, {fp, sp, lr}
- 19c:	2801d047 	stmdacs	r1, {r0, r1, r2, r6, ip, lr, pc}
- 1a0:	482ed1cb 	stmdami	lr!, {r0, r1, r3, r6, r7, r8, ip, lr, pc}
- 1a4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 1a8:	3001fffe 	strdcc	pc, [r1], -lr
- 1ac:	d8402801 	stmdale	r0, {r0, fp, sp}^
- 1b0:	7016f44f 	andsvc	pc, r6, pc, asr #8
- 1b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 1b8:	f7ffe7da 			; <UNDEFINED> instruction: 0xf7ffe7da
- 1bc:	f5b0fffe 			; <UNDEFINED> instruction: 0xf5b0fffe
- 1c0:	bf385f00 	svclt	0x00385f00
- 1c4:	5000f44f 	andpl	pc, r0, pc, asr #8
- 1c8:	f7ff4606 			; <UNDEFINED> instruction: 0xf7ff4606
- 1cc:	2100fffe 	strdcs	pc, [r0, -lr]
- 1d0:	e9cd4604 	stmib	sp, {r2, r9, sl, lr}^
- 1d4:	a8010101 	stmdage	r1, {r0, r8}
- 1d8:	f7ff9603 			; <UNDEFINED> instruction: 0xf7ff9603
- 1dc:	bb50fffe 	bllt	0x14401dc
- 1e0:	6700f04f 	strvs	pc, [r0, -pc, asr #32]
- 1e4:	d1ac2c00 			; <UNDEFINED> instruction: 0xd1ac2c00
- 1e8:	f44f4b1d 			; <UNDEFINED> instruction: 0xf44f4b1d
- 1ec:	491d7291 	ldmdbmi	sp, {r0, r4, r7, r9, ip, sp, lr}
- 1f0:	447b481d 	ldrbtmi	r4, [fp], #-2077	; 0xfffff7e3
- 1f4:	33644479 	cmncc	r4, #2030043136	; 0x79000000
- 1f8:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 1fc:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
- 200:	4b1afffe 	blmi	0x6c0200
- 204:	1247f240 	subne	pc, r7, #64, 4
- 208:	481a4919 	ldmdami	sl, {r0, r3, r4, r8, fp, lr}
- 20c:	4479447b 	ldrbtmi	r4, [r9], #-1147	; 0xfffffb85
- 210:	44783364 	ldrbtmi	r3, [r8], #-868	; 0xfffffc9c
- 214:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 218:	f2404b17 	vpadd.i8	d20, d0, d7
- 21c:	49171243 	ldmdbmi	r7, {r0, r1, r6, r9, ip}
- 220:	447b4817 	ldrbtmi	r4, [fp], #-2071	; 0xfffff7e9
- 224:	33644479 	cmncc	r4, #2030043136	; 0x79000000
- 228:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 22c:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
- 230:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
- 234:	4b13fee5 	blmi	0x4ffdd0
- 238:	491322cd 	ldmdbmi	r3, {r0, r2, r3, r6, r7, r9, sp}
- 23c:	447b4813 	ldrbtmi	r4, [fp], #-2067	; 0xfffff7ed
- 240:	33544479 	cmpcc	r4, #2030043136	; 0x79000000
- 244:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 248:	bf00fffe 	svclt	0x0000fffe
- 24c:	0000012c 	andeq	r0, r0, ip, lsr #2
- 250:	00000000 	andeq	r0, r0, r0
- 254:	00000104 	andeq	r0, r0, r4, lsl #2
- 258:	000000da 	ldrdeq	r0, [r0], -sl
- 25c:	000000b4 	strheq	r0, [r0], -r4
- 260:	0000006a 	andeq	r0, r0, sl, rrx
- 264:	0000006c 	andeq	r0, r0, ip, rrx
- 268:	0000006c 	andeq	r0, r0, ip, rrx
- 26c:	0000005c 	andeq	r0, r0, ip, asr r0
- 270:	0000005e 	andeq	r0, r0, lr, asr r0
- 274:	0000005e 	andeq	r0, r0, lr, asr r0
- 278:	00000052 	andeq	r0, r0, r2, asr r0
- 27c:	00000054 	andeq	r0, r0, r4, asr r0
- 280:	00000054 	andeq	r0, r0, r4, asr r0
- 284:	00000042 	andeq	r0, r0, r2, asr #32
- 288:	00000044 	andeq	r0, r0, r4, asr #32
- 28c:	00000044 	andeq	r0, r0, r4, asr #32
- 290:	4b1d4a1c 	blmi	0x752b08
- 294:	b510447a 	ldrlt	r4, [r0, #-1146]	; 0xfffffb86
- 298:	b0844604 	addlt	r4, r4, r4, lsl #12
- 29c:	58d32000 	ldmpl	r3, {sp}^
- 2a0:	681b4669 	ldmdavs	fp, {r0, r3, r5, r6, r9, sl, lr}
- 2a4:	f04f9303 			; <UNDEFINED> instruction: 0xf04f9303
- 2a8:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
- 2ac:	bb28fffe 	bllt	0xa402ac
- 2b0:	2c0a9b01 			; <UNDEFINED> instruction: 0x2c0a9b01
- 2b4:	2c0cd019 	stccs	0, cr13, [ip], {25}
- 2b8:	4814d11c 	ldmdami	r4, {r2, r3, r4, r8, ip, lr, pc}
- 2bc:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 2c0:	3001fffe 	strdcc	pc, [r1], -lr
- 2c4:	d8172801 	ldmdale	r7, {r0, fp, sp}
- 2c8:	4b0f4a11 	blmi	0x3d2b14
- 2cc:	58d3447a 	ldmpl	r3, {r1, r3, r4, r5, r6, sl, lr}^
- 2d0:	9b03681a 	blls	0xda340
- 2d4:	f04f405a 			; <UNDEFINED> instruction: 0xf04f405a
- 2d8:	d1110300 	tstle	r1, r0, lsl #6
- 2dc:	7016f44f 	andsvc	pc, r6, pc, asr #8
- 2e0:	e8bdb004 	pop	{r2, ip, sp, pc}
- 2e4:	f7ff4010 			; <UNDEFINED> instruction: 0xf7ff4010
- 2e8:	f003bffe 			; <UNDEFINED> instruction: 0xf003bffe
- 2ec:	1c580301 	mrrcne	3, 0, r0, r8, cr1
- 2f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2f4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 2f8:	fe82f7ff 	mcr2	7, 4, pc, cr2, cr15, {7}	; <UNPREDICTABLE>
- 2fc:	fe90f7ff 	mrc2	7, 4, pc, cr0, cr15, {7}
- 300:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 304:	0000006c 	andeq	r0, r0, ip, rrx
- 308:	00000000 	andeq	r0, r0, r0
- 30c:	0000004c 	andeq	r0, r0, ip, asr #32
- 310:	00000040 	andeq	r0, r0, r0, asr #32
- 314:	b5084807 	strlt	r4, [r8, #-2055]	; 0xfffff7f9
- 318:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 31c:	3001fffe 	strdcc	pc, [r1], -lr
- 320:	d8052801 	stmdale	r5, {r0, fp, sp}
- 324:	4008e8bd 			; <UNDEFINED> instruction: 0x4008e8bd
- 328:	7016f44f 	andsvc	pc, r6, pc, asr #8
- 32c:	bffef7ff 	svclt	0x00fef7ff
- 330:	fe66f7ff 	mcr2	7, 3, pc, cr6, cr15, {7}	; <UNPREDICTABLE>
- 334:	00000018 	andeq	r0, r0, r8, lsl r0
- 338:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
- 33c:	f5b0fffe 			; <UNDEFINED> instruction: 0xf5b0fffe
- 340:	bf385f00 	svclt	0x00385f00
- 344:	5000f44f 	andpl	pc, r0, pc, asr #8
- 348:	bf00bd08 	svclt	0x0000bd08
- 34c:	4b1d4a1c 	blmi	0x752bc4
- 350:	b570447a 	ldrblt	r4, [r0, #-1146]!	; 0xfffffb86
- 354:	b0844605 	addlt	r4, r4, r5, lsl #12
- 358:	681b58d3 	ldmdavs	fp, {r0, r1, r4, r6, r7, fp, ip, lr}
- 35c:	f04f9303 			; <UNDEFINED> instruction: 0xf04f9303
- 360:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
- 364:	f5b0fffe 			; <UNDEFINED> instruction: 0xf5b0fffe
- 368:	bf385f00 	svclt	0x00385f00
- 36c:	5000f44f 	andpl	pc, r0, pc, asr #8
- 370:	f7ff4604 			; <UNDEFINED> instruction: 0xf7ff4604
- 374:	2100fffe 	strdcs	pc, [r0, -lr]
- 378:	e9cd4606 	stmib	sp, {r1, r2, r9, sl, lr}^
- 37c:	46680100 	strbtmi	r0, [r8], -r0, lsl #2
- 380:	f7ff9402 			; <UNDEFINED> instruction: 0xf7ff9402
- 384:	b970fffe 	ldmdblt	r0!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}^
- 388:	4b0e4a0f 	blmi	0x392bcc
- 38c:	e9c5447a 	stmib	r5, {r1, r3, r4, r5, r6, sl, lr}^
- 390:	58d36400 	ldmpl	r3, {sl, sp, lr}^
- 394:	9b03681a 	blls	0xda404
- 398:	f04f405a 			; <UNDEFINED> instruction: 0xf04f405a
- 39c:	d10c0300 	mrsle	r0, LR_mon
- 3a0:	b0044628 	andlt	r4, r4, r8, lsr #12
- 3a4:	4b09bd70 	blmi	0x26f96c
- 3a8:	490922cd 	stmdbmi	r9, {r0, r2, r3, r6, r7, r9, sp}
- 3ac:	447b4809 	ldrbtmi	r4, [fp], #-2057	; 0xfffff7f7
- 3b0:	33544479 	cmpcc	r4, #2030043136	; 0x79000000
- 3b4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 3b8:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
- 3bc:	bf00fffe 	svclt	0x0000fffe
- 3c0:	0000006c 	andeq	r0, r0, ip, rrx
- 3c4:	00000000 	andeq	r0, r0, r0
- 3c8:	00000038 	andeq	r0, r0, r8, lsr r0
- 3cc:	0000001a 	andeq	r0, r0, sl, lsl r0
- 3d0:	0000001c 	andeq	r0, r0, ip, lsl r0
- 3d4:	0000001c 	andeq	r0, r0, ip, lsl r0
- 3d8:	20004a11 	andcs	r4, r0, r1, lsl sl
- 3dc:	447a4b11 	ldrbtmi	r4, [sl], #-2833	; 0xfffff4ef
- 3e0:	b085b500 	addlt	fp, r5, r0, lsl #10
- 3e4:	466958d3 			; <UNDEFINED> instruction: 0x466958d3
- 3e8:	9303681b 	movwls	r6, #14363	; 0x381b
- 3ec:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
- 3f0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 3f4:	4a0cb978 	bmi	0x32e9dc
- 3f8:	447a4b0a 	ldrbtmi	r4, [sl], #-2826	; 0xfffff4f6
- 3fc:	f0009801 			; <UNDEFINED> instruction: 0xf0009801
- 400:	58d30001 	ldmpl	r3, {r0}^
- 404:	9b03681a 	blls	0xda474
- 408:	f04f405a 			; <UNDEFINED> instruction: 0xf04f405a
- 40c:	d1040300 	mrsle	r0, LR_abt
- 410:	f85db005 			; <UNDEFINED> instruction: 0xf85db005
- 414:	f7fffb04 			; <UNDEFINED> instruction: 0xf7fffb04
- 418:	f7fffe03 			; <UNDEFINED> instruction: 0xf7fffe03
- 41c:	bf00fffe 	svclt	0x0000fffe
- 420:	0000003e 	andeq	r0, r0, lr, lsr r0
- 424:	00000000 	andeq	r0, r0, r0
- 428:	0000002a 	andeq	r0, r0, sl, lsr #32
- 42c:	21004a0a 	tstcs	r0, sl, lsl #20
- 430:	4603b508 	strmi	fp, [r3], -r8, lsl #10
- 434:	3008447a 	andcc	r4, r8, sl, ror r4
- 438:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 43c:	bd08b900 	vstrlt.16	s22, [r8, #-0]	; <UNPREDICTABLE>
- 440:	f2404b06 	vqdmulh.s<illegal width 8>	d20, d0, d6
- 444:	4906125d 	stmdbmi	r6, {r0, r2, r3, r4, r6, r9, ip}
- 448:	447b4806 	ldrbtmi	r4, [fp], #-2054	; 0xfffff7fa
- 44c:	33744479 	cmncc	r4, #2030043136	; 0x79000000
- 450:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 454:	bf00fffe 	svclt	0x0000fffe
- 458:	00000020 	andeq	r0, r0, r0, lsr #32
- 45c:	0000000e 	andeq	r0, r0, lr
- 460:	00000010 	andeq	r0, r0, r0, lsl r0
- 464:	00000010 	andeq	r0, r0, r0, lsl r0
- 468:	4b1b4a1a 	blmi	0x6d2cd8
- 46c:	b500447a 	strlt	r4, [r0, #-1146]	; 0xfffffb86
- 470:	b0836880 	addlt	r6, r3, r0, lsl #17
- 474:	466958d3 			; <UNDEFINED> instruction: 0x466958d3
- 478:	9301681b 	movwls	r6, #6171	; 0x181b
- 47c:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
- 480:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 484:	9b00b970 	blls	0x2ea4c
- 488:	4a14b9cb 	bmi	0x52ebbc
- 48c:	447a4b12 	ldrbtmi	r4, [sl], #-2834	; 0xfffff4ee
- 490:	681a58d3 	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
- 494:	405a9b01 	subsmi	r9, sl, r1, lsl #22
- 498:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
- 49c:	b003d10d 	andlt	sp, r3, sp, lsl #2
- 4a0:	fb04f85d 	blx	0x13e61e
- 4a4:	f44f4b0e 			; <UNDEFINED> instruction: 0xf44f4b0e
- 4a8:	490e72b5 	stmdbmi	lr, {r0, r2, r4, r5, r7, r9, ip, sp, lr}
- 4ac:	447b480e 	ldrbtmi	r4, [fp], #-2062	; 0xfffff7f2
- 4b0:	33804479 	orrcc	r4, r0, #2030043136	; 0x79000000
- 4b4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
- 4b8:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
- 4bc:	4b0bfffe 	blmi	0x3004bc
- 4c0:	126bf240 	rsbne	pc, fp, #64, 4
- 4c4:	480b490a 	stmdami	fp, {r1, r3, r8, fp, lr}
- 4c8:	4479447b 	ldrbtmi	r4, [r9], #-1147	; 0xfffffb85
- 4cc:	44783380 	ldrbtmi	r3, [r8], #-896	; 0xfffffc80
- 4d0:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
- 4d4:	00000064 	andeq	r0, r0, r4, rrx
- 4d8:	00000000 	andeq	r0, r0, r0
- 4dc:	0000004a 	andeq	r0, r0, sl, asr #32
- 4e0:	0000002e 	andeq	r0, r0, lr, lsr #32
- 4e4:	00000030 	andeq	r0, r0, r0, lsr r0
- 4e8:	00000030 	andeq	r0, r0, r0, lsr r0
- 4ec:	00000020 	andeq	r0, r0, r0, lsr #32
- 4f0:	00000022 	andeq	r0, r0, r2, lsr #32
- 4f4:	00000022 	andeq	r0, r0, r2, lsr #32
- 4f8:	bf004770 	svclt	0x00004770
- 4fc:	681b2300 	ldmdavs	fp, {r8, r9, sp}
- 500:	bf00deff 	svclt	0x0000deff
+Function sub_400033 @ 0x00400033
+0x00400033:	bl	#0x400033
 
-Disassembly of section .text.startup:
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r2, r1
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r4, r1
+0x0040003f:	movs	r0, r0
+0x00400041:	movs	r4, r1
+0x00400043:	movs	r0, r0
+0x00400045:	push	{r4, lr}
+0x00400047:	mov	r4, r0
+0x00400049:	movs	r0, #0x48
+0x0040004b:	bl	#0x40004b
 
-00000000 <.text.startup>:
-   0:	4b2e4a2d 	blmi	0xb928bc
-   4:	b570447a 	ldrblt	r4, [r0, #-1146]!	; 0xfffffb86
-   8:	58d3b082 	ldmpl	r3, {r1, r7, ip, sp, pc}^
-   c:	681b4668 	ldmdavs	fp, {r3, r5, r6, r9, sl, lr}
-  10:	f04f9301 			; <UNDEFINED> instruction: 0xf04f9301
-  14:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
-  18:	4604fffe 			; <UNDEFINED> instruction: 0x4604fffe
-  1c:	7016f44f 	andsvc	pc, r6, pc, asr #8
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	48269a00 	stmdami	r6!, {r9, fp, ip, pc}
-  28:	32012100 	andcc	r2, r1, #0, 2
-  2c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  30:	bb58fffe 	bllt	0x1640030
-  34:	2b009b00 	blcs	0x26c3c
-  38:	4e22dd10 	mcrmi	13, 1, sp, cr2, cr0, {0}
-  3c:	34084605 	strcc	r4, [r8], #-1541	; 0xfffff9fb
-  40:	f1a4447e 			; <UNDEFINED> instruction: 0xf1a4447e
-  44:	46320308 	ldrtmi	r0, [r2], -r8, lsl #6
-  48:	46202100 	strtmi	r2, [r0], -r0, lsl #2
-  4c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  50:	9b00b988 	blls	0x2e678
-  54:	340c3501 	strcc	r3, [ip], #-1281	; 0xfffffaff
-  58:	dcf242ab 	lfmle	f4, 2, [r2], #684	; 0x2ac
-  5c:	4478481a 	ldrbtmi	r4, [r8], #-2074	; 0xfffff7e6
-  60:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  64:	28013001 	stmdacs	r1, {r0, ip, sp}
-  68:	2002d81b 	andcs	sp, r2, fp, lsl r8
-  6c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  70:	681b2300 	ldmdavs	fp, {r8, r9, sp}
-  74:	4b15deff 	blmi	0x577c78
-  78:	125df240 	subsne	pc, sp, #64, 4
-  7c:	48154914 	ldmdami	r5, {r2, r4, r8, fp, lr}
-  80:	4479447b 	ldrbtmi	r4, [r9], #-1147	; 0xfffffb85
-  84:	44783374 	ldrbtmi	r3, [r8], #-884	; 0xfffffc8c
-  88:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  8c:	f2404b12 	vpadd.i8	d20, d0, d2
-  90:	49121291 	ldmdbmi	r2, {r0, r4, r7, r9, ip}
-  94:	447b4812 	ldrbtmi	r4, [fp], #-2066	; 0xfffff7ee
-  98:	33904479 	orrscc	r4, r0, #2030043136	; 0x79000000
-  9c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  a0:	4b10fffe 	blmi	0x4400a0
-  a4:	1299f240 	addsne	pc, r9, #64, 4
-  a8:	4810490f 	ldmdami	r0, {r0, r1, r2, r3, r8, fp, lr}
-  ac:	4479447b 	ldrbtmi	r4, [r9], #-1147	; 0xfffffb85
-  b0:	44783390 	ldrbtmi	r3, [r8], #-912	; 0xfffffc70
-  b4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  b8:	000000b0 	strheq	r0, [r0], -r0	; <UNPREDICTABLE>
-  bc:	00000000 	andeq	r0, r0, r0
-  c0:	00000090 	muleq	r0, r0, r0
-  c4:	00000080 	andeq	r0, r0, r0, lsl #1
-  c8:	00000066 	andeq	r0, r0, r6, rrx
-  cc:	00000048 	andeq	r0, r0, r8, asr #32
-  d0:	0000004a 	andeq	r0, r0, sl, asr #32
-  d4:	0000004a 	andeq	r0, r0, sl, asr #32
-  d8:	0000003e 	andeq	r0, r0, lr, lsr r0
-  dc:	00000040 	andeq	r0, r0, r0, asr #32
-  e0:	00000040 	andeq	r0, r0, r0, asr #32
-  e4:	00000034 	andeq	r0, r0, r4, lsr r0
-  e8:	00000036 	andeq	r0, r0, r6, lsr r0
-  ec:	00000036 	andeq	r0, r0, r6, lsr r0
+Function sub_400045 @ 0x00400045
+0x00400045:	push	{r4, lr}
+0x00400047:	mov	r4, r0
+0x00400049:	movs	r0, #0x48
+0x0040004b:	bl	#0x40004b
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	bl	#0x40004b
+0x0040004f:	cbz	r0, #0x400081
+0x00400051:	vldr	d7, [pc, #0x44]
+0x00400055:	movs	r2, #1
+0x00400057:	movs	r1, #0
+0x00400059:	str	r2, [r0, #0x3c]
+0x0040005b:	strd	r1, r2, [r0, #0xc]
+0x0040005f:	vstr	d7, [r0]
+0x00400063:	vldr	d7, [pc, #0x3c]
+0x00400067:	strd	r2, r1, [r0, #0x24]
+0x0040006b:	movs	r1, #2
+0x0040006d:	movs	r2, #6
+0x0040006f:	str	r1, [r0, #0x40]
+0x00400071:	vstr	d7, [r0, #0x30]
+0x00400075:	vldr	d7, [pc, #0x30]
+0x00400079:	str	r2, [r4]
+0x0040007b:	vstr	d7, [r0, #0x18]
+0x0040007f:	pop	{r4, pc}
+0x00400051:	vldr	d7, [pc, #0x44]
+0x00400055:	movs	r2, #1
+0x00400057:	movs	r1, #0
+0x00400059:	str	r2, [r0, #0x3c]
+0x0040005b:	strd	r1, r2, [r0, #0xc]
+0x0040005f:	vstr	d7, [r0]
+0x00400063:	vldr	d7, [pc, #0x3c]
+0x00400067:	strd	r2, r1, [r0, #0x24]
+0x0040006b:	movs	r1, #2
+0x0040006d:	movs	r2, #6
+0x0040006f:	str	r1, [r0, #0x40]
+0x00400071:	vstr	d7, [r0, #0x30]
+0x00400075:	vldr	d7, [pc, #0x30]
+0x00400079:	str	r2, [r4]
+0x0040007b:	vstr	d7, [r0, #0x18]
+0x0040007f:	pop	{r4, pc}
+0x00400081:	ldr	r3, [pc, #0x2c]
+0x00400083:	movs	r2, #0x65
+0x00400085:	ldr	r1, [pc, #0x2c]
+0x00400087:	ldr	r0, [pc, #0x30]
+0x00400089:	add	r3, pc
+0x0040008b:	add	r1, pc
+0x0040008d:	adds	r3, #0x20
+0x0040008f:	add	r0, pc
+0x00400091:	bl	#0x400091
+
+Function sub_400091 @ 0x00400091
+0x00400091:	bl	#0x400091
+
+Function sub_400095 @ 0x00400095
+0x00400095:	nop.w	
+0x00400099:	movs	r0, r0
+0x0040009b:	movs	r0, r0
+0x0040009d:	movs	r0, r0
+0x0040009f:	movs	r0, r0
+0x004000a1:	movs	r1, r0
+0x004000a3:	movs	r0, r0
+0x004000a5:	movs	r1, r0
+0x004000a7:	movs	r0, r0
+0x004000a9:	movs	r0, r0
+0x004000ab:	movs	r0, r0
+0x004000ad:	movs	r2, r0
+0x004000af:	movs	r0, r0
+0x004000b1:	movs	r4, r4
+0x004000b3:	movs	r0, r0
+0x004000b5:	movs	r6, r4
+0x004000b7:	movs	r0, r0
+0x004000b9:	movs	r6, r4
+0x004000bb:	movs	r0, r0
+0x004000bd:	push	{r3, lr}
+0x004000bf:	movs	r2, #0x7b
+0x004000c1:	ldr	r3, [pc, #0x10]
+0x004000c3:	ldr	r1, [pc, #0x14]
+0x004000c5:	ldr	r0, [pc, #0x14]
+0x004000c7:	add	r3, pc
+0x004000c9:	add	r1, pc
+0x004000cb:	adds	r3, #0x30
+0x004000cd:	add	r0, pc
+0x004000cf:	bl	#0x4000cf
+
+Function sub_4000bd @ 0x004000bd
+0x004000bd:	push	{r3, lr}
+0x004000bf:	movs	r2, #0x7b
+0x004000c1:	ldr	r3, [pc, #0x10]
+0x004000c3:	ldr	r1, [pc, #0x14]
+0x004000c5:	ldr	r0, [pc, #0x14]
+0x004000c7:	add	r3, pc
+0x004000c9:	add	r1, pc
+0x004000cb:	adds	r3, #0x30
+0x004000cd:	add	r0, pc
+0x004000cf:	bl	#0x4000cf
+
+Function sub_4000cf @ 0x004000cf
+0x004000cf:	bl	#0x4000cf
+
+Function sub_4000d3 @ 0x004000d3
+0x004000d3:	nop	
+0x004000d5:	movs	r2, r1
+0x004000d7:	movs	r0, r0
+0x004000d9:	movs	r4, r1
+0x004000db:	movs	r0, r0
+0x004000dd:	movs	r4, r1
+0x004000df:	movs	r0, r0
+0x004000e1:	ldr	r0, [pc, #0x24]
+0x004000e3:	push	{r3, lr}
+0x004000e5:	add	r0, pc
+0x004000e7:	bl	#0x4000e7
+
+Function sub_4000e1 @ 0x004000e1
+0x004000e1:	ldr	r0, [pc, #0x24]
+0x004000e3:	push	{r3, lr}
+0x004000e5:	add	r0, pc
+0x004000e7:	bl	#0x4000e7
+
+Function sub_4000e7 @ 0x004000e7
+0x004000e7:	bl	#0x4000e7
+
+Function sub_4000eb @ 0x004000eb
+0x004000eb:	adds	r0, #1
+0x004000ed:	cmp	r0, #1
+0x004000ef:	bhi	#0x4000f3
+0x004000f1:	b	#0x4000f1
+0x004000f3:	ldr	r3, [pc, #0x18]
+0x004000f5:	movs	r2, #0x89
+0x004000f7:	ldr	r1, [pc, #0x18]
+0x004000f9:	ldr	r0, [pc, #0x18]
+0x004000fb:	add	r3, pc
+0x004000fd:	add	r1, pc
+0x004000ff:	adds	r3, #0x44
+0x00400101:	add	r0, pc
+0x00400103:	bl	#0x400103
+
+Function sub_400103 @ 0x00400103
+0x00400103:	bl	#0x400103
+
+Function sub_400107 @ 0x00400107
+0x00400107:	nop	
+0x00400109:	movs	r0, r4
+0x0040010b:	movs	r0, r0
+0x0040010d:	movs	r6, r1
+0x0040010f:	movs	r0, r0
+0x00400111:	movs	r0, r2
+0x00400113:	movs	r0, r0
+0x00400115:	movs	r0, r2
+0x00400117:	movs	r0, r0
+0x00400119:	ldr	r2, [pc, #0x130]
+0x0040011b:	ldr	r3, [pc, #0x134]
+0x0040011d:	add	r2, pc
+0x0040011f:	push	{r4, r5, r6, r7, lr}
+0x00400121:	ldr	r4, [r0, #4]
+0x00400123:	sub	sp, #0xa4
+0x00400125:	mov	r5, r0
+0x00400127:	ldr	r3, [r2, r3]
+0x00400129:	cmp	r4, #1
+0x0040012b:	ldr	r3, [r3]
+0x0040012d:	str	r3, [sp, #0x9c]
+0x0040012f:	mov.w	r3, #0
+0x00400133:	beq	#0x40013f
+
+Function sub_400119 @ 0x00400119
+0x00400119:	ldr	r2, [pc, #0x130]
+0x0040011b:	ldr	r3, [pc, #0x134]
+0x0040011d:	add	r2, pc
+0x0040011f:	push	{r4, r5, r6, r7, lr}
+0x00400121:	ldr	r4, [r0, #4]
+0x00400123:	sub	sp, #0xa4
+0x00400125:	mov	r5, r0
+0x00400127:	ldr	r3, [r2, r3]
+0x00400129:	cmp	r4, #1
+0x0040012b:	ldr	r3, [r3]
+0x0040012d:	str	r3, [sp, #0x9c]
+0x0040012f:	mov.w	r3, #0
+0x00400133:	beq	#0x40013f
+0x00400135:	cmp	r4, #2
+0x00400137:	beq	#0x4001bb
+0x00400139:	cbz	r4, #0x400199
+0x0040013b:	bl	#0x40013b
+0x0040013f:	movs	r4, #0
+0x00400141:	mov	r7, r4
+0x00400143:	ldr	r3, [r5]
+0x00400145:	cbnz	r3, #0x400191
+0x00400147:	movs	r6, #0xa
+0x00400149:	ldr	r3, [pc, #0x108]
+0x0040014b:	add	r0, sp, #0x14
+0x0040014d:	add	r3, pc
+0x0040014f:	str	r3, [sp, #0x10]
+0x00400151:	bl	#0x400151
+0x00400143:	ldr	r3, [r5]
+0x00400145:	cbnz	r3, #0x400191
+0x00400147:	movs	r6, #0xa
+0x00400149:	ldr	r3, [pc, #0x108]
+0x0040014b:	add	r0, sp, #0x14
+0x0040014d:	add	r3, pc
+0x0040014f:	str	r3, [sp, #0x10]
+0x00400151:	bl	#0x400151
+0x00400147:	movs	r6, #0xa
+0x00400149:	ldr	r3, [pc, #0x108]
+0x0040014b:	add	r0, sp, #0x14
+0x0040014d:	add	r3, pc
+0x0040014f:	str	r3, [sp, #0x10]
+0x00400151:	bl	#0x400151
+0x00400149:	ldr	r3, [pc, #0x108]
+0x0040014b:	add	r0, sp, #0x14
+0x0040014d:	add	r3, pc
+0x0040014f:	str	r3, [sp, #0x10]
+0x00400151:	bl	#0x400151
+0x00400191:	cmp	r3, #1
+0x00400193:	bne	#0x40013b
+0x00400195:	movs	r6, #0xc
+0x00400197:	b	#0x400149
+0x00400199:	ldr	r0, [r0]
+0x0040019b:	cmp	r0, #0
+0x0040019d:	beq	#0x40022f
+0x0040019f:	cmp	r0, #1
+0x004001a1:	bne	#0x40013b
+0x004001a3:	ldr	r0, [pc, #0xb8]
+0x004001a5:	add	r0, pc
+0x004001a7:	bl	#0x4001a7
+
+Function sub_40013b @ 0x0040013b
+0x0040013b:	bl	#0x40013b
+
+Function sub_400151 @ 0x00400151
+0x00400151:	bl	#0x400151
+
+Function sub_400155 @ 0x00400155
+0x00400155:	add	r1, sp, #0x10
+0x00400157:	movs	r2, #0
+0x00400159:	mov	r0, r6
+0x0040015b:	str	r7, [sp, #0x94]
+0x0040015d:	bl	#0x40015d
+
+Function sub_40015d @ 0x0040015d
+0x0040015d:	bl	#0x40015d
+0x00400161:	cmp	r0, #0
+0x00400163:	bne	#0x400219
+0x00400165:	ldr	r0, [r5, #8]
+0x00400167:	mov	r1, r6
+0x00400169:	bl	#0x400169
+
+Function sub_400169 @ 0x00400169
+0x00400169:	bl	#0x400169
+0x0040016d:	cmp	r0, #0
+0x0040016f:	bne	#0x400203
+
+Function sub_400173 @ 0x00400173
+0x00400173:	bl	#0x400173
+0x00400177:	ldr	r2, [pc, #0xe0]
+0x00400179:	ldr	r3, [pc, #0xd4]
+0x0040017b:	add	r2, pc
+0x0040017d:	ldr	r3, [r2, r3]
+0x0040017f:	ldr	r2, [r3]
+0x00400181:	ldr	r3, [sp, #0x9c]
+0x00400183:	eors	r2, r3
+0x00400185:	mov.w	r3, #0
+0x00400189:	bne	#0x4001ff
+0x0040018b:	movs	r0, #0
+0x0040018d:	add	sp, #0xa4
+0x0040018f:	pop	{r4, r5, r6, r7, pc}
+
+Function sub_4001a7 @ 0x004001a7
+0x004001a7:	bl	#0x4001a7
+0x004001ab:	adds	r0, #1
+0x004001ad:	cmp	r0, #1
+0x004001af:	bhi	#0x400233
+0x004001b1:	mov.w	r0, #0x258
+0x004001b5:	bl	#0x4001b5
+
+Function sub_4001b5 @ 0x004001b5
+0x00400171:	mov	r0, r4
+0x00400173:	bl	#0x400173
+0x004001b5:	bl	#0x4001b5
+0x004001b9:	b	#0x400171
+
+Function sub_4001bb @ 0x004001bb
+0x004001bb:	bl	#0x4001bb
+0x004001bf:	cmp.w	r0, #0x2000
+0x004001c3:	it	lo
+0x004001c5:	movlo.w	r0, #0x2000
+0x004001c9:	mov	r6, r0
+0x004001cb:	bl	#0x4001cb
+
+Function sub_4001cb @ 0x004001cb
+0x004001cb:	bl	#0x4001cb
+0x004001cf:	movs	r1, #0
+0x004001d1:	mov	r4, r0
+0x004001d3:	strd	r0, r1, [sp, #4]
+0x004001d7:	add	r0, sp, #4
+0x004001d9:	str	r6, [sp, #0xc]
+0x004001db:	bl	#0x4001db
+
+Function sub_4001db @ 0x004001db
+0x004001db:	bl	#0x4001db
+0x004001df:	cbnz	r0, #0x400237
+0x004001e1:	mov.w	r7, #0x8000000
+0x004001e5:	cmp	r4, #0
+0x004001e7:	bne	#0x400143
+0x004001e1:	mov.w	r7, #0x8000000
+0x004001e5:	cmp	r4, #0
+0x004001e7:	bne	#0x400143
+0x004001e9:	ldr	r3, [pc, #0x74]
+0x004001eb:	mov.w	r2, #0x122
+0x004001ef:	ldr	r1, [pc, #0x74]
+0x004001f1:	ldr	r0, [pc, #0x74]
+0x004001f3:	add	r3, pc
+0x004001f5:	add	r1, pc
+0x004001f7:	adds	r3, #0x64
+0x004001f9:	add	r0, pc
+0x004001fb:	bl	#0x4001fb
+0x00400237:	ldr	r3, [pc, #0x4c]
+0x00400239:	movs	r2, #0xcd
+0x0040023b:	ldr	r1, [pc, #0x4c]
+0x0040023d:	ldr	r0, [pc, #0x4c]
+0x0040023f:	add	r3, pc
+0x00400241:	add	r1, pc
+0x00400243:	adds	r3, #0x54
+0x00400245:	add	r0, pc
+0x00400247:	bl	#0x400247
+
+Function sub_4001fb @ 0x004001fb
+0x004001fb:	bl	#0x4001fb
+
+Function sub_4001ff @ 0x004001ff
+0x004001ff:	bl	#0x4001ff
+0x00400203:	ldr	r3, [pc, #0x68]
+0x00400205:	movw	r2, #0x147
+0x00400209:	ldr	r1, [pc, #0x64]
+0x0040020b:	ldr	r0, [pc, #0x68]
+0x0040020d:	add	r3, pc
+0x0040020f:	add	r1, pc
+0x00400211:	adds	r3, #0x64
+0x00400213:	add	r0, pc
+0x00400215:	bl	#0x400215
+
+Function sub_400215 @ 0x00400215
+0x00400215:	bl	#0x400215
+0x00400219:	ldr	r3, [pc, #0x5c]
+0x0040021b:	movw	r2, #0x143
+0x0040021f:	ldr	r1, [pc, #0x5c]
+0x00400221:	ldr	r0, [pc, #0x5c]
+0x00400223:	add	r3, pc
+0x00400225:	add	r1, pc
+0x00400227:	adds	r3, #0x64
+0x00400229:	add	r0, pc
+0x0040022b:	bl	#0x40022b
+
+Function sub_40022b @ 0x0040022b
+0x0040022b:	bl	#0x40022b
+
+Function sub_40022f @ 0x0040022f
+0x0040022f:	bl	#0x40022f
+0x00400233:	bl	#0x400001
+
+Function sub_400247 @ 0x00400247
+0x00400247:	bl	#0x400247
+
+Function sub_40024b @ 0x0040024b
+0x0040024b:	nop	
+0x0040024d:	lsls	r4, r5, #4
+0x0040024f:	movs	r0, r0
+0x00400251:	movs	r0, r0
+0x00400253:	movs	r0, r0
+0x00400255:	lsls	r4, r0, #4
+0x00400257:	movs	r0, r0
+0x00400259:	lsls	r2, r3, #3
+0x0040025b:	movs	r0, r0
+0x0040025d:	lsls	r4, r6, #2
+0x0040025f:	movs	r0, r0
+0x00400261:	lsls	r2, r5, #1
+0x00400263:	movs	r0, r0
+0x00400265:	lsls	r4, r5, #1
+0x00400267:	movs	r0, r0
+0x00400269:	lsls	r4, r5, #1
+0x0040026b:	movs	r0, r0
+0x0040026d:	lsls	r4, r3, #1
+0x0040026f:	movs	r0, r0
+0x00400271:	lsls	r6, r3, #1
+0x00400273:	movs	r0, r0
+0x00400275:	lsls	r6, r3, #1
+0x00400277:	movs	r0, r0
+0x00400279:	lsls	r2, r2, #1
+0x0040027b:	movs	r0, r0
+0x0040027d:	lsls	r4, r2, #1
+0x0040027f:	movs	r0, r0
+0x00400281:	lsls	r4, r2, #1
+0x00400283:	movs	r0, r0
+0x00400285:	lsls	r2, r0, #1
+0x00400287:	movs	r0, r0
+0x00400289:	lsls	r4, r0, #1
+0x0040028b:	movs	r0, r0
+0x0040028d:	lsls	r4, r0, #1
+0x0040028f:	movs	r0, r0
+0x00400291:	ldr	r2, [pc, #0x70]
+0x00400293:	ldr	r3, [pc, #0x74]
+0x00400295:	add	r2, pc
+0x00400297:	push	{r4, lr}
+0x00400299:	mov	r4, r0
+0x0040029b:	sub	sp, #0x10
+0x0040029d:	movs	r0, #0
+0x0040029f:	ldr	r3, [r2, r3]
+0x004002a1:	mov	r1, sp
+0x004002a3:	ldr	r3, [r3]
+0x004002a5:	str	r3, [sp, #0xc]
+0x004002a7:	mov.w	r3, #0
+0x004002ab:	bl	#0x4002ab
+
+Function sub_400291 @ 0x00400291
+0x00400291:	ldr	r2, [pc, #0x70]
+0x00400293:	ldr	r3, [pc, #0x74]
+0x00400295:	add	r2, pc
+0x00400297:	push	{r4, lr}
+0x00400299:	mov	r4, r0
+0x0040029b:	sub	sp, #0x10
+0x0040029d:	movs	r0, #0
+0x0040029f:	ldr	r3, [r2, r3]
+0x004002a1:	mov	r1, sp
+0x004002a3:	ldr	r3, [r3]
+0x004002a5:	str	r3, [sp, #0xc]
+0x004002a7:	mov.w	r3, #0
+0x004002ab:	bl	#0x4002ab
+
+Function sub_4002ab @ 0x004002ab
+0x004002ab:	bl	#0x4002ab
+
+Function sub_4002af @ 0x004002af
+0x004002af:	cbnz	r0, #0x4002fd
+0x004002b1:	ldr	r3, [sp, #4]
+0x004002b3:	cmp	r4, #0xa
+0x004002b5:	beq	#0x4002eb
+0x004002b1:	ldr	r3, [sp, #4]
+0x004002b3:	cmp	r4, #0xa
+0x004002b5:	beq	#0x4002eb
+0x004002b7:	cmp	r4, #0xc
+0x004002b9:	bne	#0x4002f5
+0x004002bb:	ldr	r0, [pc, #0x50]
+0x004002bd:	add	r0, pc
+0x004002bf:	bl	#0x4002bf
+0x004002eb:	and	r3, r3, #1
+0x004002ef:	adds	r0, r3, #1
+0x004002f1:	bl	#0x4002f1
+0x004002fd:	bl	#0x400021
+
+Function sub_4002bf @ 0x004002bf
+0x004002bf:	bl	#0x4002bf
+
+Function sub_4002c3 @ 0x004002c3
+0x004002c3:	adds	r0, #1
+0x004002c5:	cmp	r0, #1
+0x004002c7:	bhi	#0x4002f9
+0x004002c9:	ldr	r2, [pc, #0x44]
+0x004002cb:	ldr	r3, [pc, #0x3c]
+0x004002cd:	add	r2, pc
+0x004002cf:	ldr	r3, [r2, r3]
+0x004002d1:	ldr	r2, [r3]
+0x004002d3:	ldr	r3, [sp, #0xc]
+0x004002d5:	eors	r2, r3
+0x004002d7:	mov.w	r3, #0
+0x004002db:	bne	#0x400301
+0x004002dd:	mov.w	r0, #0x258
+0x004002e1:	add	sp, #0x10
+0x004002e3:	pop.w	{r4, lr}
+0x004002e7:	b.w	#0x4002e7
+0x004002e7:	b.w	#0x4002e7
+
+Function sub_4002f1 @ 0x004002f1
+0x004002f1:	bl	#0x4002f1
+
+Function sub_4002f5 @ 0x004002f5
+0x004002f5:	bl	#0x4002f5
+0x004002f9:	bl	#0x400001
+
+Function sub_400301 @ 0x00400301
+0x00400301:	bl	#0x400301
+0x00400305:	lsls	r4, r5, #1
+0x00400307:	movs	r0, r0
+0x00400309:	movs	r0, r0
+0x0040030b:	movs	r0, r0
+0x0040030d:	lsls	r4, r1, #1
+0x0040030f:	movs	r0, r0
+0x00400311:	lsls	r0, r0, #1
+0x00400313:	movs	r0, r0
+0x00400315:	ldr	r0, [pc, #0x1c]
+0x00400317:	push	{r3, lr}
+0x00400319:	add	r0, pc
+0x0040031b:	bl	#0x40031b
+
+Function sub_400315 @ 0x00400315
+0x00400315:	ldr	r0, [pc, #0x1c]
+0x00400317:	push	{r3, lr}
+0x00400319:	add	r0, pc
+0x0040031b:	bl	#0x40031b
+
+Function sub_40031b @ 0x0040031b
+0x0040031b:	bl	#0x40031b
+
+Function sub_40031f @ 0x0040031f
+0x0040031f:	adds	r0, #1
+0x00400321:	cmp	r0, #1
+0x00400323:	bhi	#0x400331
+0x00400325:	pop.w	{r3, lr}
+0x00400329:	mov.w	r0, #0x258
+0x0040032d:	b.w	#0x40032d
+0x0040032d:	b.w	#0x40032d
+0x00400331:	bl	#0x400001
+
+Function sub_400339 @ 0x00400339
+0x00400339:	push	{r3, lr}
+0x0040033b:	bl	#0x40033b
+
+Function sub_40033b @ 0x0040033b
+0x0040033b:	bl	#0x40033b
+0x0040033f:	cmp.w	r0, #0x2000
+0x00400343:	it	lo
+0x00400345:	movlo.w	r0, #0x2000
+0x00400349:	pop	{r3, pc}
+
+Function sub_40034b @ 0x0040034b
+0x0040034b:	nop	
+0x0040034d:	ldr	r2, [pc, #0x70]
+0x0040034f:	ldr	r3, [pc, #0x74]
+0x00400351:	add	r2, pc
+0x00400353:	push	{r4, r5, r6, lr}
+0x00400355:	mov	r5, r0
+0x00400357:	sub	sp, #0x10
+0x00400359:	ldr	r3, [r2, r3]
+0x0040035b:	ldr	r3, [r3]
+0x0040035d:	str	r3, [sp, #0xc]
+0x0040035f:	mov.w	r3, #0
+0x00400363:	bl	#0x400363
+
+Function sub_40034d @ 0x0040034d
+0x0040034d:	ldr	r2, [pc, #0x70]
+0x0040034f:	ldr	r3, [pc, #0x74]
+0x00400351:	add	r2, pc
+0x00400353:	push	{r4, r5, r6, lr}
+0x00400355:	mov	r5, r0
+0x00400357:	sub	sp, #0x10
+0x00400359:	ldr	r3, [r2, r3]
+0x0040035b:	ldr	r3, [r3]
+0x0040035d:	str	r3, [sp, #0xc]
+0x0040035f:	mov.w	r3, #0
+0x00400363:	bl	#0x400363
+
+Function sub_400363 @ 0x00400363
+0x00400363:	bl	#0x400363
+0x00400367:	cmp.w	r0, #0x2000
+0x0040036b:	it	lo
+0x0040036d:	movlo.w	r0, #0x2000
+0x00400371:	mov	r4, r0
+0x00400373:	bl	#0x400373
+
+Function sub_400373 @ 0x00400373
+0x00400373:	bl	#0x400373
+0x00400377:	movs	r1, #0
+0x00400379:	mov	r6, r0
+0x0040037b:	strd	r0, r1, [sp]
+0x0040037f:	mov	r0, sp
+0x00400381:	str	r4, [sp, #8]
+0x00400383:	bl	#0x400383
+
+Function sub_400383 @ 0x00400383
+0x00400383:	bl	#0x400383
+0x00400387:	cbnz	r0, #0x4003a7
+0x00400389:	ldr	r2, [pc, #0x3c]
+0x0040038b:	ldr	r3, [pc, #0x38]
+0x0040038d:	add	r2, pc
+0x0040038f:	strd	r6, r4, [r5]
+0x00400393:	ldr	r3, [r2, r3]
+0x00400395:	ldr	r2, [r3]
+0x00400397:	ldr	r3, [sp, #0xc]
+0x00400399:	eors	r2, r3
+0x0040039b:	mov.w	r3, #0
+0x0040039f:	bne	#0x4003bb
+0x00400389:	ldr	r2, [pc, #0x3c]
+0x0040038b:	ldr	r3, [pc, #0x38]
+0x0040038d:	add	r2, pc
+0x0040038f:	strd	r6, r4, [r5]
+0x00400393:	ldr	r3, [r2, r3]
+0x00400395:	ldr	r2, [r3]
+0x00400397:	ldr	r3, [sp, #0xc]
+0x00400399:	eors	r2, r3
+0x0040039b:	mov.w	r3, #0
+0x0040039f:	bne	#0x4003bb
+0x004003a1:	mov	r0, r5
+0x004003a3:	add	sp, #0x10
+0x004003a5:	pop	{r4, r5, r6, pc}
+0x004003a7:	ldr	r3, [pc, #0x24]
+0x004003a9:	movs	r2, #0xcd
+0x004003ab:	ldr	r1, [pc, #0x24]
+0x004003ad:	ldr	r0, [pc, #0x24]
+0x004003af:	add	r3, pc
+0x004003b1:	add	r1, pc
+0x004003b3:	adds	r3, #0x54
+0x004003b5:	add	r0, pc
+0x004003b7:	bl	#0x4003b7
+
+Function sub_4003b7 @ 0x004003b7
+0x004003b7:	bl	#0x4003b7
+
+Function sub_4003bb @ 0x004003bb
+0x004003bb:	bl	#0x4003bb
+0x004003bf:	nop	
+0x004003c1:	lsls	r4, r5, #1
+0x004003c3:	movs	r0, r0
+0x004003c5:	movs	r0, r0
+0x004003c7:	movs	r0, r0
+0x004003c9:	movs	r0, r7
+0x004003cb:	movs	r0, r0
+0x004003cd:	movs	r2, r3
+0x004003cf:	movs	r0, r0
+0x004003d1:	movs	r4, r3
+0x004003d3:	movs	r0, r0
+0x004003d5:	movs	r4, r3
+0x004003d7:	movs	r0, r0
+0x004003d9:	ldr	r2, [pc, #0x44]
+0x004003db:	movs	r0, #0
+0x004003dd:	ldr	r3, [pc, #0x44]
+0x004003df:	add	r2, pc
+0x004003e1:	push	{lr}
+0x004003e3:	sub	sp, #0x14
+0x004003e5:	ldr	r3, [r2, r3]
+0x004003e7:	mov	r1, sp
+0x004003e9:	ldr	r3, [r3]
+0x004003eb:	str	r3, [sp, #0xc]
+0x004003ed:	mov.w	r3, #0
+0x004003f1:	bl	#0x4003f1
+
+Function sub_4003d9 @ 0x004003d9
+0x004003d9:	ldr	r2, [pc, #0x44]
+0x004003db:	movs	r0, #0
+0x004003dd:	ldr	r3, [pc, #0x44]
+0x004003df:	add	r2, pc
+0x004003e1:	push	{lr}
+0x004003e3:	sub	sp, #0x14
+0x004003e5:	ldr	r3, [r2, r3]
+0x004003e7:	mov	r1, sp
+0x004003e9:	ldr	r3, [r3]
+0x004003eb:	str	r3, [sp, #0xc]
+0x004003ed:	mov.w	r3, #0
+0x004003f1:	bl	#0x4003f1
+
+Function sub_4003f1 @ 0x004003f1
+0x004003f1:	bl	#0x4003f1
+0x004003f5:	cbnz	r0, #0x400417
+0x004003f7:	ldr	r2, [pc, #0x30]
+0x004003f9:	ldr	r3, [pc, #0x28]
+0x004003fb:	add	r2, pc
+0x004003fd:	ldr	r0, [sp, #4]
+0x004003ff:	and	r0, r0, #1
+0x00400403:	ldr	r3, [r2, r3]
+0x00400405:	ldr	r2, [r3]
+0x00400407:	ldr	r3, [sp, #0xc]
+0x00400409:	eors	r2, r3
+0x0040040b:	mov.w	r3, #0
+0x0040040f:	bne	#0x40041b
+0x004003f7:	ldr	r2, [pc, #0x30]
+0x004003f9:	ldr	r3, [pc, #0x28]
+0x004003fb:	add	r2, pc
+0x004003fd:	ldr	r0, [sp, #4]
+0x004003ff:	and	r0, r0, #1
+0x00400403:	ldr	r3, [r2, r3]
+0x00400405:	ldr	r2, [r3]
+0x00400407:	ldr	r3, [sp, #0xc]
+0x00400409:	eors	r2, r3
+0x0040040b:	mov.w	r3, #0
+0x0040040f:	bne	#0x40041b
+0x00400411:	add	sp, #0x14
+0x00400413:	ldr	pc, [sp], #4
+0x00400417:	bl	#0x400021
+
+Function sub_40041b @ 0x0040041b
+0x0040041b:	bl	#0x40041b
+0x0040041f:	nop	
+0x00400421:	movs	r6, r7
+0x00400423:	movs	r0, r0
+0x00400425:	movs	r0, r0
+0x00400427:	movs	r0, r0
+0x00400429:	movs	r2, r5
+0x0040042b:	movs	r0, r0
+0x0040042d:	ldr	r2, [pc, #0x28]
+0x0040042f:	movs	r1, #0
+0x00400431:	push	{r3, lr}
+0x00400433:	mov	r3, r0
+0x00400435:	add	r2, pc
+0x00400437:	adds	r0, #8
+0x00400439:	bl	#0x400439
+
+Function sub_40042d @ 0x0040042d
+0x0040042d:	ldr	r2, [pc, #0x28]
+0x0040042f:	movs	r1, #0
+0x00400431:	push	{r3, lr}
+0x00400433:	mov	r3, r0
+0x00400435:	add	r2, pc
+0x00400437:	adds	r0, #8
+0x00400439:	bl	#0x400439
+
+Function sub_400439 @ 0x00400439
+0x00400439:	bl	#0x400439
+0x0040043d:	cbnz	r0, #0x400441
+0x0040043f:	pop	{r3, pc}
+0x0040043f:	pop	{r3, pc}
+0x00400441:	ldr	r3, [pc, #0x18]
+0x00400443:	movw	r2, #0x15d
+0x00400447:	ldr	r1, [pc, #0x18]
+0x00400449:	ldr	r0, [pc, #0x18]
+0x0040044b:	add	r3, pc
+0x0040044d:	add	r1, pc
+0x0040044f:	adds	r3, #0x74
+0x00400451:	add	r0, pc
+0x00400453:	bl	#0x400453
+
+Function sub_400453 @ 0x00400453
+0x00400453:	bl	#0x400453
+
+Function sub_400457 @ 0x00400457
+0x00400457:	nop	
+0x00400459:	movs	r0, r4
+0x0040045b:	movs	r0, r0
+0x0040045d:	movs	r6, r1
+0x0040045f:	movs	r0, r0
+0x00400461:	movs	r0, r2
+0x00400463:	movs	r0, r0
+0x00400465:	movs	r0, r2
+0x00400467:	movs	r0, r0
+0x00400469:	ldr	r2, [pc, #0x68]
+0x0040046b:	ldr	r3, [pc, #0x6c]
+0x0040046d:	add	r2, pc
+0x0040046f:	push	{lr}
+0x00400471:	ldr	r0, [r0, #8]
+0x00400473:	sub	sp, #0xc
+0x00400475:	ldr	r3, [r2, r3]
+0x00400477:	mov	r1, sp
+0x00400479:	ldr	r3, [r3]
+0x0040047b:	str	r3, [sp, #4]
+0x0040047d:	mov.w	r3, #0
+0x00400481:	bl	#0x400481
+
+Function sub_400469 @ 0x00400469
+0x00400469:	ldr	r2, [pc, #0x68]
+0x0040046b:	ldr	r3, [pc, #0x6c]
+0x0040046d:	add	r2, pc
+0x0040046f:	push	{lr}
+0x00400471:	ldr	r0, [r0, #8]
+0x00400473:	sub	sp, #0xc
+0x00400475:	ldr	r3, [r2, r3]
+0x00400477:	mov	r1, sp
+0x00400479:	ldr	r3, [r3]
+0x0040047b:	str	r3, [sp, #4]
+0x0040047d:	mov.w	r3, #0
+0x00400481:	bl	#0x400481
+
+Function sub_400482 @ 0x00400482
+0x00400482:	ldmdblt	r0!, {r1, r2, r3, r4, r5, r6, r7, r8, sb, sl, fp, ip, sp, lr, pc} ^
+
+Function sub_400486 @ 0x00400486
+0x00400486:	stmiblt	fp, {r8, sb, fp, ip, pc} ^
+
+Function sub_40048c @ 0x0040048c
+0x0040048c:	ldrbtmi	r4, [sl], #-0xb12
+0x00400490:	ldmdavs	sl, {r0, r1, r4, r6, r7, fp, ip, lr}
+0x00400494:	subsmi	sb, sl, r1, lsl #22
+0x00400494:	subsmi	sb, sl, r1, lsl #22
+
+Function sub_40049e @ 0x0040049e
+
+Function sub_4004bc @ 0x004004bc
+0x004004bc:	blmi	#0x7004bc
+0x004004c0:	rsbne	pc, fp, #64, #4
+0x004004c4:	stmdami	fp, {r1, r3, r8, fp, lr}
+0x004004c8:	ldrbtmi	r4, [sb], #-0x47b
+0x004004cc:	ldrbtmi	r3, [r8], #-0x380
+0x004004c8:	ldrbtmi	r4, [sb], #-0x47b
+0x004004cc:	ldrbtmi	r3, [r8], #-0x380
+
+Function sub_4004dd @ 0x004004dd
+0x004004dd:	lsls	r2, r1, #1
+0x004004df:	movs	r0, r0
+0x004004e1:	movs	r6, r5
+0x004004e3:	movs	r0, r0
+0x004004e5:	movs	r0, r6
+0x004004e7:	movs	r0, r0
+0x004004e9:	movs	r0, r6
+0x004004eb:	movs	r0, r0
+0x004004ed:	movs	r0, r4
+0x004004ef:	movs	r0, r0
+0x004004f1:	movs	r2, r4
+0x004004f3:	movs	r0, r0
+0x004004f5:	movs	r2, r4
+0x004004f7:	movs	r0, r0
+0x004004f9:	bx	lr
+
+Function sub_4004fc @ 0x004004fc
+0x004004fc:	ldmdavs	fp, {r8, sb, sp}
+0x00400500:	svclt	#0xdeff
+0x00400500:	svclt	#0xdeff
+
+Function sub_4005d9 @ 0x004005d9
+0x004005d9:	ldr	r2, [pc, #0xb4]
+0x004005db:	ldr	r3, [pc, #0xb8]
+0x004005dd:	add	r2, pc
+0x004005df:	push	{r4, r5, r6, lr}
+0x004005e1:	sub	sp, #8
+0x004005e3:	ldr	r3, [r2, r3]
+0x004005e5:	mov	r0, sp
+0x004005e7:	ldr	r3, [r3]
+0x004005e9:	str	r3, [sp, #4]
+0x004005eb:	mov.w	r3, #0
+0x004005ef:	bl	#0x4005ef
+
+Function sub_4005ef @ 0x004005ef
+0x004005ef:	bl	#0x4005ef
+
+Function sub_4005f3 @ 0x004005f3
+0x004005f3:	mov	r4, r0
+0x004005f5:	mov.w	r0, #0x258
+0x004005f9:	bl	#0x4005f9
+
+Function sub_4005f9 @ 0x004005f9
+0x004005f9:	bl	#0x4005f9
+
+Function sub_4005fd @ 0x004005fd
+0x004005fd:	ldr	r2, [sp]
+0x004005ff:	ldr	r0, [pc, #0x98]
+0x00400601:	movs	r1, #0
+0x00400603:	adds	r2, #1
+0x00400605:	add	r0, pc
+0x00400607:	bl	#0x400607
+
+Function sub_400607 @ 0x00400607
+0x00400607:	bl	#0x400607
+
+Function sub_40060b @ 0x0040060b
+0x0040060b:	cbnz	r0, #0x400665
+0x0040060d:	ldr	r3, [sp]
+0x0040060f:	cmp	r3, #0
+0x00400611:	ble	#0x400635
+0x0040060d:	ldr	r3, [sp]
+0x0040060f:	cmp	r3, #0
+0x00400611:	ble	#0x400635
+0x00400613:	ldr	r6, [pc, #0x88]
+0x00400615:	mov	r5, r0
+0x00400617:	adds	r4, #8
+0x00400619:	add	r6, pc
+0x0040061b:	sub.w	r3, r4, #8
+0x0040061f:	mov	r2, r6
+0x00400621:	movs	r1, #0
+0x00400623:	mov	r0, r4
+0x00400625:	bl	#0x400625
+
+Function sub_400625 @ 0x00400625
+0x0040061b:	sub.w	r3, r4, #8
+0x0040061f:	mov	r2, r6
+0x00400621:	movs	r1, #0
+0x00400623:	mov	r0, r4
+0x00400625:	bl	#0x400625
+0x00400625:	bl	#0x400625
+0x00400629:	cbnz	r0, #0x40064f
+0x0040062b:	ldr	r3, [sp]
+0x0040062d:	adds	r5, #1
+0x0040062f:	adds	r4, #0xc
+0x00400631:	cmp	r3, r5
+0x00400633:	bgt	#0x40061b
+0x0040062b:	ldr	r3, [sp]
+0x0040062d:	adds	r5, #1
+0x0040062f:	adds	r4, #0xc
+0x00400631:	cmp	r3, r5
+0x00400633:	bgt	#0x40061b
+0x00400635:	ldr	r0, [pc, #0x68]
+0x00400637:	add	r0, pc
+0x00400639:	bl	#0x400639
+0x0040064f:	ldr	r3, [pc, #0x54]
+0x00400651:	movw	r2, #0x15d
+0x00400655:	ldr	r1, [pc, #0x50]
+0x00400657:	ldr	r0, [pc, #0x54]
+0x00400659:	add	r3, pc
+0x0040065b:	add	r1, pc
+0x0040065d:	adds	r3, #0x74
+0x0040065f:	add	r0, pc
+0x00400661:	bl	#0x400661
+
+Function sub_400639 @ 0x00400639
+0x00400639:	bl	#0x400639
+
+Function sub_40063d @ 0x0040063d
+0x0040063d:	adds	r0, #1
+0x0040063f:	cmp	r0, #1
+0x00400641:	bhi	#0x40067b
+0x00400643:	movs	r0, #2
+0x00400645:	bl	#0x400645
+0x0040067b:	ldr	r3, [pc, #0x40]
+0x0040067d:	movw	r2, #0x199
+0x00400681:	ldr	r1, [pc, #0x3c]
+0x00400683:	ldr	r0, [pc, #0x40]
+0x00400685:	add	r3, pc
+0x00400687:	add	r1, pc
+0x00400689:	adds	r3, #0x90
+0x0040068b:	add	r0, pc
+0x0040068d:	bl	#0x40068d
+
+Function sub_400645 @ 0x00400645
+0x00400645:	bl	#0x400645
+
+Function sub_400649 @ 0x00400649
+0x00400649:	movs	r3, #0
+0x0040064b:	ldr	r3, [r3]
+
+Function sub_400661 @ 0x00400661
+0x00400661:	bl	#0x400661
+0x00400665:	ldr	r3, [pc, #0x48]
+0x00400667:	movw	r2, #0x191
+0x0040066b:	ldr	r1, [pc, #0x48]
+0x0040066d:	ldr	r0, [pc, #0x48]
+0x0040066f:	add	r3, pc
+0x00400671:	add	r1, pc
+0x00400673:	adds	r3, #0x90
+0x00400675:	add	r0, pc
+0x00400677:	bl	#0x400677
+
+Function sub_400677 @ 0x00400677
+0x00400677:	bl	#0x400677
+
+Function sub_40068d @ 0x0040068d
+0x0040068d:	bl	#0x40068d
+
+Function sub_400691 @ 0x00400691
+0x00400691:	lsls	r0, r6, #2
+0x00400693:	movs	r0, r0
+0x00400695:	movs	r0, r0
+0x00400697:	movs	r0, r0
+0x00400699:	lsls	r0, r2, #2
+0x0040069b:	movs	r0, r0
+0x0040069d:	lsls	r0, r0, #2
+0x0040069f:	movs	r0, r0
+0x004006a1:	lsls	r6, r4, #1
+0x004006a3:	movs	r0, r0
+0x004006a5:	lsls	r0, r1, #1
+0x004006a7:	movs	r0, r0
+0x004006a9:	lsls	r2, r1, #1
+0x004006ab:	movs	r0, r0
+0x004006ad:	lsls	r2, r1, #1
+0x004006af:	movs	r0, r0
+0x004006b1:	movs	r6, r7
+0x004006b3:	movs	r0, r0
+0x004006b5:	lsls	r0, r0, #1
+0x004006b7:	movs	r0, r0
+0x004006b9:	lsls	r0, r0, #1
+0x004006bb:	movs	r0, r0
+0x004006bd:	movs	r4, r6
+0x004006bf:	movs	r0, r0
+0x004006c1:	movs	r6, r6
+0x004006c3:	movs	r0, r0
+0x004006c5:	movs	r6, r6
+0x004006c7:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0
+
+Function sys_380 @ 0x007002f8
+0x007002f8:	andeq	r0, r0, r0
+0x007002fc:	andeq	r0, r0, r0
+0x00700300:	andeq	r0, r0, r0
+0x00700304:	andeq	r0, r0, r0
+0x00700308:	andeq	r0, r0, r0
+0x0070030c:	andeq	r0, r0, r0
+0x00700310:	andeq	r0, r0, r0
+0x00700314:	andeq	r0, r0, r0
+0x00700318:	andeq	r0, r0, r0
+0x0070031c:	andeq	r0, r0, r0
+0x00700320:	andeq	r0, r0, r0
+0x00700324:	andeq	r0, r0, r0
+0x00700328:	andeq	r0, r0, r0
+0x0070032c:	andeq	r0, r0, r0
+0x00700330:	andeq	r0, r0, r0
+0x00700334:	andeq	r0, r0, r0
+0x00700338:	andeq	r0, r0, r0
+0x0070033c:	andeq	r0, r0, r0
+0x00700340:	andeq	r0, r0, r0
+0x00700344:	andeq	r0, r0, r0
+0x00700348:	andeq	r0, r0, r0
+0x0070034c:	andeq	r0, r0, r0
+0x00700350:	andeq	r0, r0, r0
+0x00700354:	andeq	r0, r0, r0
+0x00700358:	andeq	r0, r0, r0
+0x0070035c:	andeq	r0, r0, r0
+0x00700360:	andeq	r0, r0, r0
+0x00700364:	andeq	r0, r0, r0
+0x00700368:	andeq	r0, r0, r0
+0x0070036c:	andeq	r0, r0, r0
+0x00700370:	andeq	r0, r0, r0
+0x00700374:	andeq	r0, r0, r0
+0x00700378:	andeq	r0, r0, r0
+0x0070037c:	andeq	r0, r0, r0
+0x00700380:	andeq	r0, r0, r0
+0x00700384:	andeq	r0, r0, r0
+0x00700388:	andeq	r0, r0, r0
+0x0070038c:	andeq	r0, r0, r0
+0x00700390:	andeq	r0, r0, r0
+0x00700394:	andeq	r0, r0, r0
+0x00700398:	andeq	r0, r0, r0
+0x0070039c:	andeq	r0, r0, r0
+0x007003a0:	andeq	r0, r0, r0
+0x007003a4:	andeq	r0, r0, r0
+0x007003a8:	andeq	r0, r0, r0
+0x007003ac:	andeq	r0, r0, r0
+0x007003b0:	andeq	r0, r0, r0
+0x007003b4:	andeq	r0, r0, r0
+0x007003b8:	andeq	r0, r0, r0
+0x007003bc:	andeq	r0, r0, r0
+0x007003c0:	andeq	r0, r0, r0
+0x007003c4:	andeq	r0, r0, r0
+0x007003c8:	andeq	r0, r0, r0
+0x007003cc:	andeq	r0, r0, r0
+0x007003d0:	andeq	r0, r0, r0
+0x007003d4:	andeq	r0, r0, r0
+0x007003d8:	andeq	r0, r0, r0
+0x007003dc:	andeq	r0, r0, r0
+0x007003e0:	andeq	r0, r0, r0
+0x007003e4:	andeq	r0, r0, r0
+0x007003e8:	andeq	r0, r0, r0
+0x007003ec:	andeq	r0, r0, r0
+0x007003f0:	andeq	r0, r0, r0
+0x007003f4:	andeq	r0, r0, r0
+0x007003f8:	andeq	r0, r0, r0
+0x007003fc:	andeq	r0, r0, r0
+0x00700400:	andeq	r0, r0, r0
+0x00700404:	andeq	r0, r0, r0
+0x00700408:	andeq	r0, r0, r0
+0x0070040c:	andeq	r0, r0, r0
+0x00700410:	andeq	r0, r0, r0
+0x00700414:	andeq	r0, r0, r0
+0x00700418:	andeq	r0, r0, r0
+0x0070041c:	andeq	r0, r0, r0
+0x00700420:	andeq	r0, r0, r0
+0x00700424:	andeq	r0, r0, r0
+0x00700428:	andeq	r0, r0, r0
+0x0070042c:	andeq	r0, r0, r0
+0x00700430:	andeq	r0, r0, r0
+0x00700434:	andeq	r0, r0, r0
+0x00700438:	andeq	r0, r0, r0
+0x0070043c:	andeq	r0, r0, r0
+0x00700440:	andeq	r0, r0, r0
+0x00700444:	andeq	r0, r0, r0
+0x00700448:	andeq	r0, r0, r0
+0x0070044c:	andeq	r0, r0, r0
+0x00700450:	andeq	r0, r0, r0
+0x00700454:	andeq	r0, r0, r0
+0x00700458:	andeq	r0, r0, r0
+0x0070045c:	andeq	r0, r0, r0
+0x00700460:	andeq	r0, r0, r0
+0x00700464:	andeq	r0, r0, r0
+0x00700468:	andeq	r0, r0, r0
+0x0070046c:	andeq	r0, r0, r0
+0x00700470:	andeq	r0, r0, r0
+0x00700474:	andeq	r0, r0, r0
+0x00700478:	andeq	r0, r0, r0
+0x0070047c:	andeq	r0, r0, r0
+0x00700480:	andeq	r0, r0, r0
+
+Function sub_7004bc @ 0x007004bc
+0x007004bc:	andeq	r0, r0, r0
+0x007004c0:	andeq	r0, r0, r0
+0x007004c4:	andeq	r0, r0, r0
+0x007004c8:	andeq	r0, r0, r0
+0x007004cc:	andeq	r0, r0, r0
+0x007004d0:	andeq	r0, r0, r0
+0x007004d4:	andeq	r0, r0, r0
+0x007004d8:	andeq	r0, r0, r0
+0x007004dc:	andeq	r0, r0, r0
+0x007004e0:	andeq	r0, r0, r0
+0x007004e4:	andeq	r0, r0, r0
+0x007004e8:	andeq	r0, r0, r0
+0x007004ec:	andeq	r0, r0, r0
+0x007004f0:	andeq	r0, r0, r0
+0x007004f4:	andeq	r0, r0, r0
+0x007004f8:	andeq	r0, r0, r0
+0x007004fc:	andeq	r0, r0, r0
+0x00700500:	andeq	r0, r0, r0
+0x00700504:	andeq	r0, r0, r0
+0x00700508:	andeq	r0, r0, r0
+0x0070050c:	andeq	r0, r0, r0
+0x00700510:	andeq	r0, r0, r0
+0x00700514:	andeq	r0, r0, r0
+0x00700518:	andeq	r0, r0, r0
+0x0070051c:	andeq	r0, r0, r0
+0x00700520:	andeq	r0, r0, r0
+0x00700524:	andeq	r0, r0, r0
+0x00700528:	andeq	r0, r0, r0
+0x0070052c:	andeq	r0, r0, r0
+0x00700530:	andeq	r0, r0, r0
+0x00700534:	andeq	r0, r0, r0
+0x00700538:	andeq	r0, r0, r0
+0x0070053c:	andeq	r0, r0, r0
+0x00700540:	andeq	r0, r0, r0
+0x00700544:	andeq	r0, r0, r0
+0x00700548:	andeq	r0, r0, r0
+0x0070054c:	andeq	r0, r0, r0
+0x00700550:	andeq	r0, r0, r0
+0x00700554:	andeq	r0, r0, r0
+0x00700558:	andeq	r0, r0, r0
+0x0070055c:	andeq	r0, r0, r0
+0x00700560:	andeq	r0, r0, r0
+0x00700564:	andeq	r0, r0, r0
+0x00700568:	andeq	r0, r0, r0
+0x0070056c:	andeq	r0, r0, r0
+0x00700570:	andeq	r0, r0, r0
+0x00700574:	andeq	r0, r0, r0
+0x00700578:	andeq	r0, r0, r0
+0x0070057c:	andeq	r0, r0, r0
+0x00700580:	andeq	r0, r0, r0
+0x00700584:	andeq	r0, r0, r0
+0x00700588:	andeq	r0, r0, r0
+0x0070058c:	andeq	r0, r0, r0
+0x00700590:	andeq	r0, r0, r0
+0x00700594:	andeq	r0, r0, r0
+0x00700598:	andeq	r0, r0, r0
+0x0070059c:	andeq	r0, r0, r0
+0x007005a0:	andeq	r0, r0, r0
+0x007005a4:	andeq	r0, r0, r0
+0x007005a8:	andeq	r0, r0, r0
+0x007005ac:	andeq	r0, r0, r0
+0x007005b0:	andeq	r0, r0, r0
+0x007005b4:	andeq	r0, r0, r0
+0x007005b8:	andeq	r0, r0, r0
+0x007005bc:	andeq	r0, r0, r0
+0x007005c0:	andeq	r0, r0, r0
+0x007005c4:	andeq	r0, r0, r0
+0x007005c8:	andeq	r0, r0, r0
+0x007005cc:	andeq	r0, r0, r0
+0x007005d0:	andeq	r0, r0, r0
+0x007005d4:	andeq	r0, r0, r0
+0x007005d8:	andeq	r0, r0, r0
+0x007005dc:	andeq	r0, r0, r0
+0x007005e0:	andeq	r0, r0, r0
+0x007005e4:	andeq	r0, r0, r0
+0x007005e8:	andeq	r0, r0, r0
+0x007005ec:	andeq	r0, r0, r0
+0x007005f0:	andeq	r0, r0, r0
+0x007005f4:	andeq	r0, r0, r0
+0x007005f8:	andeq	r0, r0, r0
+0x007005fc:	andeq	r0, r0, r0
+0x00700600:	andeq	r0, r0, r0
+0x00700604:	andeq	r0, r0, r0
+0x00700608:	andeq	r0, r0, r0
+0x0070060c:	andeq	r0, r0, r0
+0x00700610:	andeq	r0, r0, r0
+0x00700614:	andeq	r0, r0, r0
+0x00700618:	andeq	r0, r0, r0
+0x0070061c:	andeq	r0, r0, r0
+0x00700620:	andeq	r0, r0, r0
+0x00700624:	andeq	r0, r0, r0
+0x00700628:	andeq	r0, r0, r0
+0x0070062c:	andeq	r0, r0, r0
+0x00700630:	andeq	r0, r0, r0
+0x00700634:	andeq	r0, r0, r0
+0x00700638:	andeq	r0, r0, r0
+0x0070063c:	andeq	r0, r0, r0
+0x00700640:	andeq	r0, r0, r0
+0x00700644:	andeq	r0, r0, r0
+0x00700648:	andeq	r0, r0, r0
+0x0070064c:	andeq	r0, r0, r0
+0x00700650:	andeq	r0, r0, r0
+0x00700654:	andeq	r0, r0, r0
+0x00700658:	andeq	r0, r0, r0
+0x0070065c:	andeq	r0, r0, r0
+0x00700660:	andeq	r0, r0, r0
+0x00700664:	andeq	r0, r0, r0
+0x00700668:	andeq	r0, r0, r0
+0x0070066c:	andeq	r0, r0, r0
+0x00700670:	andeq	r0, r0, r0
+0x00700674:	andeq	r0, r0, r0
+0x00700678:	andeq	r0, r0, r0
+0x0070067c:	andeq	r0, r0, r0
+0x00700680:	andeq	r0, r0, r0
+0x00700684:	andeq	r0, r0, r0
+0x00700688:	andeq	r0, r0, r0
+0x0070068c:	andeq	r0, r0, r0
+0x00700690:	andeq	r0, r0, r0
+0x00700694:	andeq	r0, r0, r0
+0x00700698:	andeq	r0, r0, r0
+0x0070069c:	andeq	r0, r0, r0
+0x007006a0:	andeq	r0, r0, r0
+0x007006a4:	andeq	r0, r0, r0
+0x007006a8:	andeq	r0, r0, r0
+0x007006ac:	andeq	r0, r0, r0
+0x007006b0:	andeq	r0, r0, r0
+0x007006b4:	andeq	r0, r0, r0
+0x007006b8:	andeq	r0, r0, r0
+0x007006bc:	andeq	r0, r0, r0
+0x007006c0:	andeq	r0, r0, r0
+0x007006c4:	andeq	r0, r0, r0
+0x007006c8:	andeq	r0, r0, r0
+0x007006cc:	andeq	r0, r0, r0
+0x007006d0:	andeq	r0, r0, r0
+0x007006d4:	andeq	r0, r0, r0
+0x007006d8:	andeq	r0, r0, r0
+0x007006dc:	andeq	r0, r0, r0
+0x007006e0:	andeq	r0, r0, r0
+0x007006e4:	andeq	r0, r0, r0
+0x007006e8:	andeq	r0, r0, r0
+0x007006ec:	andeq	r0, r0, r0
+0x007006f0:	andeq	r0, r0, r0
+0x007006f4:	andeq	r0, r0, r0
+0x007006f8:	andeq	r0, r0, r0
+0x007006fc:	andeq	r0, r0, r0
+0x00700700:	andeq	r0, r0, r0
+0x00700704:	andeq	r0, r0, r0
+0x00700708:	andeq	r0, r0, r0
+0x0070070c:	andeq	r0, r0, r0
+0x00700710:	andeq	r0, r0, r0
+0x00700714:	andeq	r0, r0, r0
+0x00700718:	andeq	r0, r0, r0
+0x0070071c:	andeq	r0, r0, r0
+0x00700720:	andeq	r0, r0, r0
+0x00700724:	andeq	r0, r0, r0
+0x00700728:	andeq	r0, r0, r0
+0x0070072c:	andeq	r0, r0, r0
+0x00700730:	andeq	r0, r0, r0
+0x00700734:	andeq	r0, r0, r0
+0x00700738:	andeq	r0, r0, r0
+0x0070073c:	andeq	r0, r0, r0
+0x00700740:	andeq	r0, r0, r0
+0x00700744:	andeq	r0, r0, r0
+0x00700748:	andeq	r0, r0, r0
+0x0070074c:	andeq	r0, r0, r0
+0x00700750:	andeq	r0, r0, r0
+0x00700754:	andeq	r0, r0, r0
+0x00700758:	andeq	r0, r0, r0
+0x0070075c:	andeq	r0, r0, r0
+0x00700760:	andeq	r0, r0, r0
+0x00700764:	andeq	r0, r0, r0
+0x00700768:	andeq	r0, r0, r0
+0x0070076c:	andeq	r0, r0, r0
+0x00700770:	andeq	r0, r0, r0
+0x00700774:	andeq	r0, r0, r0
+0x00700778:	andeq	r0, r0, r0
+0x0070077c:	andeq	r0, r0, r0
+0x00700780:	andeq	r0, r0, r0
+0x00700784:	andeq	r0, r0, r0
+0x00700788:	andeq	r0, r0, r0
+0x0070078c:	andeq	r0, r0, r0
+0x00700790:	andeq	r0, r0, r0
+0x00700794:	andeq	r0, r0, r0
+0x00700798:	andeq	r0, r0, r0
+0x0070079c:	andeq	r0, r0, r0
+0x007007a0:	andeq	r0, r0, r0
+0x007007a4:	andeq	r0, r0, r0
+0x007007a8:	andeq	r0, r0, r0
+0x007007ac:	andeq	r0, r0, r0
+0x007007b0:	andeq	r0, r0, r0
+0x007007b4:	andeq	r0, r0, r0
+0x007007b8:	andeq	r0, r0, r0
+0x007007bc:	andeq	r0, r0, r0
+0x007007c0:	andeq	r0, r0, r0
+0x007007c4:	andeq	r0, r0, r0
+0x007007c8:	andeq	r0, r0, r0
+0x007007cc:	andeq	r0, r0, r0
+0x007007d0:	andeq	r0, r0, r0
+0x007007d4:	andeq	r0, r0, r0
+0x007007d8:	andeq	r0, r0, r0
+0x007007dc:	andeq	r0, r0, r0
+0x007007e0:	andeq	r0, r0, r0
+0x007007e4:	andeq	r0, r0, r0
+0x007007e8:	andeq	r0, r0, r0
+0x007007ec:	andeq	r0, r0, r0
+0x007007f0:	andeq	r0, r0, r0
+0x007007f4:	andeq	r0, r0, r0
+0x007007f8:	andeq	r0, r0, r0
+0x007007fc:	andeq	r0, r0, r0
+0x00700800:	andeq	r0, r0, r0
+0x00700804:	andeq	r0, r0, r0
+0x00700808:	andeq	r0, r0, r0
+0x0070080c:	andeq	r0, r0, r0
+0x00700810:	andeq	r0, r0, r0
+0x00700814:	andeq	r0, r0, r0
+0x00700818:	andeq	r0, r0, r0
+0x0070081c:	andeq	r0, r0, r0
+0x00700820:	andeq	r0, r0, r0
+0x00700824:	andeq	r0, r0, r0
+0x00700828:	andeq	r0, r0, r0
+0x0070082c:	andeq	r0, r0, r0
+0x00700830:	andeq	r0, r0, r0
+0x00700834:	andeq	r0, r0, r0
+0x00700838:	andeq	r0, r0, r0
+0x0070083c:	andeq	r0, r0, r0
+0x00700840:	andeq	r0, r0, r0
+0x00700844:	andeq	r0, r0, r0
+0x00700848:	andeq	r0, r0, r0
+0x0070084c:	andeq	r0, r0, r0
+0x00700850:	andeq	r0, r0, r0
+0x00700854:	andeq	r0, r0, r0
+0x00700858:	andeq	r0, r0, r0
+0x0070085c:	andeq	r0, r0, r0
+0x00700860:	andeq	r0, r0, r0
+0x00700864:	andeq	r0, r0, r0
+0x00700868:	andeq	r0, r0, r0
+0x0070086c:	andeq	r0, r0, r0
+0x00700870:	andeq	r0, r0, r0
+0x00700874:	andeq	r0, r0, r0
+0x00700878:	andeq	r0, r0, r0
+0x0070087c:	andeq	r0, r0, r0
+0x00700880:	andeq	r0, r0, r0
+0x00700884:	andeq	r0, r0, r0
+0x00700888:	andeq	r0, r0, r0
+0x0070088c:	andeq	r0, r0, r0
+0x00700890:	andeq	r0, r0, r0
+0x00700894:	andeq	r0, r0, r0
+0x00700898:	andeq	r0, r0, r0
+0x0070089c:	andeq	r0, r0, r0
+0x007008a0:	andeq	r0, r0, r0
+0x007008a4:	andeq	r0, r0, r0
+0x007008a8:	andeq	r0, r0, r0
+0x007008ac:	andeq	r0, r0, r0
+0x007008b0:	andeq	r0, r0, r0
+0x007008b4:	andeq	r0, r0, r0
+0x007008b8:	andeq	r0, r0, r0
+0x007008bc:	andeq	r0, r0, r0
+0x007008c0:	andeq	r0, r0, r0
+0x007008c4:	andeq	r0, r0, r0
+0x007008c8:	andeq	r0, r0, r0
+0x007008cc:	andeq	r0, r0, r0
+0x007008d0:	andeq	r0, r0, r0
+0x007008d4:	andeq	r0, r0, r0
+0x007008d8:	andeq	r0, r0, r0
+0x007008dc:	andeq	r0, r0, r0
+0x007008e0:	andeq	r0, r0, r0
+0x007008e4:	andeq	r0, r0, r0
+0x007008e8:	andeq	r0, r0, r0
+0x007008ec:	andeq	r0, r0, r0
+0x007008f0:	andeq	r0, r0, r0
+0x007008f4:	andeq	r0, r0, r0
+0x007008f8:	andeq	r0, r0, r0
+0x007008fc:	andeq	r0, r0, r0
+0x00700900:	andeq	r0, r0, r0
+0x00700904:	andeq	r0, r0, r0
+0x00700908:	andeq	r0, r0, r0
+0x0070090c:	andeq	r0, r0, r0
+0x00700910:	andeq	r0, r0, r0
+0x00700914:	andeq	r0, r0, r0
+0x00700918:	andeq	r0, r0, r0
+0x0070091c:	andeq	r0, r0, r0
+0x00700920:	andeq	r0, r0, r0
+0x00700924:	andeq	r0, r0, r0
+0x00700928:	andeq	r0, r0, r0
+0x0070092c:	andeq	r0, r0, r0
+0x00700930:	andeq	r0, r0, r0
+0x00700934:	andeq	r0, r0, r0
+0x00700938:	andeq	r0, r0, r0
+0x0070093c:	andeq	r0, r0, r0
+0x00700940:	andeq	r0, r0, r0
+0x00700944:	andeq	r0, r0, r0
+0x00700948:	andeq	r0, r0, r0
+0x0070094c:	andeq	r0, r0, r0
+0x00700950:	andeq	r0, r0, r0
+0x00700954:	andeq	r0, r0, r0
+0x00700958:	andeq	r0, r0, r0
+0x0070095c:	andeq	r0, r0, r0
+0x00700960:	andeq	r0, r0, r0
+0x00700964:	andeq	r0, r0, r0
+0x00700968:	andeq	r0, r0, r0
+0x0070096c:	andeq	r0, r0, r0
+0x00700970:	andeq	r0, r0, r0
+0x00700974:	andeq	r0, r0, r0
+0x00700978:	andeq	r0, r0, r0
+0x0070097c:	andeq	r0, r0, r0
+0x00700980:	andeq	r0, r0, r0
+0x00700984:	andeq	r0, r0, r0
+0x00700988:	andeq	r0, r0, r0
+0x0070098c:	andeq	r0, r0, r0
+0x00700990:	andeq	r0, r0, r0
+0x00700994:	andeq	r0, r0, r0
+0x00700998:	andeq	r0, r0, r0
+0x0070099c:	andeq	r0, r0, r0
+0x007009a0:	andeq	r0, r0, r0
+0x007009a4:	andeq	r0, r0, r0
+0x007009a8:	andeq	r0, r0, r0
+0x007009ac:	andeq	r0, r0, r0
+0x007009b0:	andeq	r0, r0, r0
+0x007009b4:	andeq	r0, r0, r0
+0x007009b8:	andeq	r0, r0, r0
+0x007009bc:	andeq	r0, r0, r0
+0x007009c0:	andeq	r0, r0, r0
+0x007009c4:	andeq	r0, r0, r0
+0x007009c8:	andeq	r0, r0, r0
+0x007009cc:	andeq	r0, r0, r0
+0x007009d0:	andeq	r0, r0, r0
+0x007009d4:	andeq	r0, r0, r0
+0x007009d8:	andeq	r0, r0, r0
+0x007009dc:	andeq	r0, r0, r0
+0x007009e0:	andeq	r0, r0, r0
+0x007009e4:	andeq	r0, r0, r0
+0x007009e8:	andeq	r0, r0, r0
+0x007009ec:	andeq	r0, r0, r0
+0x007009f0:	andeq	r0, r0, r0
+0x007009f4:	andeq	r0, r0, r0
+0x007009f8:	andeq	r0, r0, r0
+0x007009fc:	andeq	r0, r0, r0
+0x00700a00:	andeq	r0, r0, r0
+0x00700a04:	andeq	r0, r0, r0
+0x00700a08:	andeq	r0, r0, r0
+0x00700a0c:	andeq	r0, r0, r0
+0x00700a10:	andeq	r0, r0, r0
+0x00700a14:	andeq	r0, r0, r0
+0x00700a18:	andeq	r0, r0, r0
+0x00700a1c:	andeq	r0, r0, r0
+0x00700a20:	andeq	r0, r0, r0
+0x00700a24:	andeq	r0, r0, r0
+0x00700a28:	andeq	r0, r0, r0
+0x00700a2c:	andeq	r0, r0, r0
+0x00700a30:	andeq	r0, r0, r0
+0x00700a34:	andeq	r0, r0, r0
+0x00700a38:	andeq	r0, r0, r0
+0x00700a3c:	andeq	r0, r0, r0
+0x00700a40:	andeq	r0, r0, r0
+0x00700a44:	andeq	r0, r0, r0
+0x00700a48:	andeq	r0, r0, r0
+0x00700a4c:	andeq	r0, r0, r0
+0x00700a50:	andeq	r0, r0, r0
+0x00700a54:	andeq	r0, r0, r0
+0x00700a58:	andeq	r0, r0, r0
+0x00700a5c:	andeq	r0, r0, r0
+0x00700a60:	andeq	r0, r0, r0
+0x00700a64:	andeq	r0, r0, r0
+0x00700a68:	andeq	r0, r0, r0
+0x00700a6c:	andeq	r0, r0, r0
+0x00700a70:	andeq	r0, r0, r0
+0x00700a74:	andeq	r0, r0, r0
+0x00700a78:	andeq	r0, r0, r0
+0x00700a7c:	andeq	r0, r0, r0
+0x00700a80:	andeq	r0, r0, r0
+0x00700a84:	andeq	r0, r0, r0
+0x00700a88:	andeq	r0, r0, r0
+0x00700a8c:	andeq	r0, r0, r0
+0x00700a90:	andeq	r0, r0, r0
+0x00700a94:	andeq	r0, r0, r0
+0x00700a98:	andeq	r0, r0, r0
+0x00700a9c:	andeq	r0, r0, r0
+0x00700aa0:	andeq	r0, r0, r0
+0x00700aa4:	andeq	r0, r0, r0
+0x00700aa8:	andeq	r0, r0, r0
+0x00700aac:	andeq	r0, r0, r0
+0x00700ab0:	andeq	r0, r0, r0
+0x00700ab4:	andeq	r0, r0, r0
+0x00700ab8:	andeq	r0, r0, r0
+0x00700abc:	andeq	r0, r0, r0
+0x00700ac0:	andeq	r0, r0, r0
+0x00700ac4:	andeq	r0, r0, r0
+0x00700ac8:	andeq	r0, r0, r0
+0x00700acc:	andeq	r0, r0, r0
+0x00700ad0:	andeq	r0, r0, r0
+0x00700ad4:	andeq	r0, r0, r0
+0x00700ad8:	andeq	r0, r0, r0
+0x00700adc:	andeq	r0, r0, r0
+0x00700ae0:	andeq	r0, r0, r0
+0x00700ae4:	andeq	r0, r0, r0
+0x00700ae8:	andeq	r0, r0, r0
+0x00700aec:	andeq	r0, r0, r0
+0x00700af0:	andeq	r0, r0, r0
+0x00700af4:	andeq	r0, r0, r0
+0x00700af8:	andeq	r0, r0, r0
+0x00700afc:	andeq	r0, r0, r0
+0x00700b00:	andeq	r0, r0, r0
+0x00700b04:	andeq	r0, r0, r0
+0x00700b08:	andeq	r0, r0, r0
+0x00700b0c:	andeq	r0, r0, r0
+0x00700b10:	andeq	r0, r0, r0
+0x00700b14:	andeq	r0, r0, r0
+0x00700b18:	andeq	r0, r0, r0
+0x00700b1c:	andeq	r0, r0, r0
+0x00700b20:	andeq	r0, r0, r0
+0x00700b24:	andeq	r0, r0, r0
+0x00700b28:	andeq	r0, r0, r0
+0x00700b2c:	andeq	r0, r0, r0
+0x00700b30:	andeq	r0, r0, r0
+0x00700b34:	andeq	r0, r0, r0
+0x00700b38:	andeq	r0, r0, r0
+0x00700b3c:	andeq	r0, r0, r0
+0x00700b40:	andeq	r0, r0, r0
+0x00700b44:	andeq	r0, r0, r0
+0x00700b48:	andeq	r0, r0, r0
+0x00700b4c:	andeq	r0, r0, r0
+0x00700b50:	andeq	r0, r0, r0
+0x00700b54:	andeq	r0, r0, r0
+0x00700b58:	andeq	r0, r0, r0
+0x00700b5c:	andeq	r0, r0, r0
+0x00700b60:	andeq	r0, r0, r0
+0x00700b64:	andeq	r0, r0, r0
+0x00700b68:	andeq	r0, r0, r0
+0x00700b6c:	andeq	r0, r0, r0
+0x00700b70:	andeq	r0, r0, r0
+0x00700b74:	andeq	r0, r0, r0
+0x00700b78:	andeq	r0, r0, r0
+0x00700b7c:	andeq	r0, r0, r0
+0x00700b80:	andeq	r0, r0, r0
+0x00700b84:	andeq	r0, r0, r0
+0x00700b88:	andeq	r0, r0, r0
+0x00700b8c:	andeq	r0, r0, r0
+0x00700b90:	andeq	r0, r0, r0
+0x00700b94:	andeq	r0, r0, r0
+0x00700b98:	andeq	r0, r0, r0
+0x00700b9c:	andeq	r0, r0, r0
+0x00700ba0:	andeq	r0, r0, r0
+0x00700ba4:	andeq	r0, r0, r0
+0x00700ba8:	andeq	r0, r0, r0
+0x00700bac:	andeq	r0, r0, r0
+0x00700bb0:	andeq	r0, r0, r0
+0x00700bb4:	andeq	r0, r0, r0
+0x00700bb8:	andeq	r0, r0, r0
+0x00700bbc:	andeq	r0, r0, r0
+0x00700bc0:	andeq	r0, r0, r0
+0x00700bc4:	andeq	r0, r0, r0
+0x00700bc8:	andeq	r0, r0, r0
+0x00700bcc:	andeq	r0, r0, r0
+0x00700bd0:	andeq	r0, r0, r0
+0x00700bd4:	andeq	r0, r0, r0
+0x00700bd8:	andeq	r0, r0, r0
+0x00700bdc:	andeq	r0, r0, r0
+0x00700be0:	andeq	r0, r0, r0
+0x00700be4:	andeq	r0, r0, r0
+0x00700be8:	andeq	r0, r0, r0
+0x00700bec:	andeq	r0, r0, r0
+0x00700bf0:	andeq	r0, r0, r0
+0x00700bf4:	andeq	r0, r0, r0
+0x00700bf8:	andeq	r0, r0, r0
+0x00700bfc:	andeq	r0, r0, r0
+0x00700c00:	andeq	r0, r0, r0
+0x00700c04:	andeq	r0, r0, r0
+0x00700c08:	andeq	r0, r0, r0
+0x00700c0c:	andeq	r0, r0, r0
+0x00700c10:	andeq	r0, r0, r0
+0x00700c14:	andeq	r0, r0, r0
+0x00700c18:	andeq	r0, r0, r0
+0x00700c1c:	andeq	r0, r0, r0
+0x00700c20:	andeq	r0, r0, r0
+0x00700c24:	andeq	r0, r0, r0
+0x00700c28:	andeq	r0, r0, r0
+0x00700c2c:	andeq	r0, r0, r0
+0x00700c30:	andeq	r0, r0, r0
+0x00700c34:	andeq	r0, r0, r0
+0x00700c38:	andeq	r0, r0, r0
+0x00700c3c:	andeq	r0, r0, r0
+0x00700c40:	andeq	r0, r0, r0
+0x00700c44:	andeq	r0, r0, r0
+0x00700c48:	andeq	r0, r0, r0
+0x00700c4c:	andeq	r0, r0, r0
+0x00700c50:	andeq	r0, r0, r0
+0x00700c54:	andeq	r0, r0, r0
+0x00700c58:	andeq	r0, r0, r0
+0x00700c5c:	andeq	r0, r0, r0
+0x00700c60:	andeq	r0, r0, r0
+0x00700c64:	andeq	r0, r0, r0
+0x00700c68:	andeq	r0, r0, r0
+0x00700c6c:	andeq	r0, r0, r0
+0x00700c70:	andeq	r0, r0, r0
+0x00700c74:	andeq	r0, r0, r0
+0x00700c78:	andeq	r0, r0, r0
+0x00700c7c:	andeq	r0, r0, r0
+0x00700c80:	andeq	r0, r0, r0
+0x00700c84:	andeq	r0, r0, r0
+0x00700c88:	andeq	r0, r0, r0
+0x00700c8c:	andeq	r0, r0, r0
+0x00700c90:	andeq	r0, r0, r0
+0x00700c94:	andeq	r0, r0, r0
+0x00700c98:	andeq	r0, r0, r0
+0x00700c9c:	andeq	r0, r0, r0
+0x00700ca0:	andeq	r0, r0, r0
+0x00700ca4:	andeq	r0, r0, r0
+0x00700ca8:	andeq	r0, r0, r0
+0x00700cac:	andeq	r0, r0, r0
+0x00700cb0:	andeq	r0, r0, r0
+0x00700cb4:	andeq	r0, r0, r0
+0x00700cb8:	andeq	r0, r0, r0
+0x00700cbc:	andeq	r0, r0, r0
+0x00700cc0:	andeq	r0, r0, r0
+0x00700cc4:	andeq	r0, r0, r0
+0x00700cc8:	andeq	r0, r0, r0
+0x00700ccc:	andeq	r0, r0, r0
+0x00700cd0:	andeq	r0, r0, r0
+0x00700cd4:	andeq	r0, r0, r0
+0x00700cd8:	andeq	r0, r0, r0
+0x00700cdc:	andeq	r0, r0, r0
+0x00700ce0:	andeq	r0, r0, r0
+0x00700ce4:	andeq	r0, r0, r0
+0x00700ce8:	andeq	r0, r0, r0
+0x00700cec:	andeq	r0, r0, r0
+0x00700cf0:	andeq	r0, r0, r0
+0x00700cf4:	andeq	r0, r0, r0
+0x00700cf8:	andeq	r0, r0, r0
+0x00700cfc:	andeq	r0, r0, r0
+0x00700d00:	andeq	r0, r0, r0
+0x00700d04:	andeq	r0, r0, r0
+0x00700d08:	andeq	r0, r0, r0
+0x00700d0c:	andeq	r0, r0, r0
+0x00700d10:	andeq	r0, r0, r0
+0x00700d14:	andeq	r0, r0, r0
+0x00700d18:	andeq	r0, r0, r0
+0x00700d1c:	andeq	r0, r0, r0
+0x00700d20:	andeq	r0, r0, r0
+0x00700d24:	andeq	r0, r0, r0
+0x00700d28:	andeq	r0, r0, r0
+0x00700d2c:	andeq	r0, r0, r0
+0x00700d30:	andeq	r0, r0, r0
+0x00700d34:	andeq	r0, r0, r0
+0x00700d38:	andeq	r0, r0, r0
+0x00700d3c:	andeq	r0, r0, r0
+0x00700d40:	andeq	r0, r0, r0
+0x00700d44:	andeq	r0, r0, r0
+0x00700d48:	andeq	r0, r0, r0
+0x00700d4c:	andeq	r0, r0, r0
+0x00700d50:	andeq	r0, r0, r0
+0x00700d54:	andeq	r0, r0, r0
+0x00700d58:	andeq	r0, r0, r0
+0x00700d5c:	andeq	r0, r0, r0
+0x00700d60:	andeq	r0, r0, r0
+0x00700d64:	andeq	r0, r0, r0
+0x00700d68:	andeq	r0, r0, r0
+0x00700d6c:	andeq	r0, r0, r0
+0x00700d70:	andeq	r0, r0, r0
+0x00700d74:	andeq	r0, r0, r0
+0x00700d78:	andeq	r0, r0, r0
+0x00700d7c:	andeq	r0, r0, r0
+0x00700d80:	andeq	r0, r0, r0
+0x00700d84:	andeq	r0, r0, r0
+0x00700d88:	andeq	r0, r0, r0
+0x00700d8c:	andeq	r0, r0, r0
+0x00700d90:	andeq	r0, r0, r0
+0x00700d94:	andeq	r0, r0, r0
+0x00700d98:	andeq	r0, r0, r0
+0x00700d9c:	andeq	r0, r0, r0
+0x00700da0:	andeq	r0, r0, r0
+0x00700da4:	andeq	r0, r0, r0
+0x00700da8:	andeq	r0, r0, r0
+0x00700dac:	andeq	r0, r0, r0
+0x00700db0:	andeq	r0, r0, r0
+0x00700db4:	andeq	r0, r0, r0
+0x00700db8:	andeq	r0, r0, r0
+0x00700dbc:	andeq	r0, r0, r0
+0x00700dc0:	andeq	r0, r0, r0
+0x00700dc4:	andeq	r0, r0, r0
+0x00700dc8:	andeq	r0, r0, r0
+0x00700dcc:	andeq	r0, r0, r0
+0x00700dd0:	andeq	r0, r0, r0
+0x00700dd4:	andeq	r0, r0, r0
+0x00700dd8:	andeq	r0, r0, r0
+0x00700ddc:	andeq	r0, r0, r0
+0x00700de0:	andeq	r0, r0, r0
+0x00700de4:	andeq	r0, r0, r0
+0x00700de8:	andeq	r0, r0, r0
+0x00700dec:	andeq	r0, r0, r0
+0x00700df0:	andeq	r0, r0, r0
+0x00700df4:	andeq	r0, r0, r0
+0x00700df8:	andeq	r0, r0, r0
+0x00700dfc:	andeq	r0, r0, r0
+0x00700e00:	andeq	r0, r0, r0
+0x00700e04:	andeq	r0, r0, r0
+0x00700e08:	andeq	r0, r0, r0
+0x00700e0c:	andeq	r0, r0, r0
+0x00700e10:	andeq	r0, r0, r0
+0x00700e14:	andeq	r0, r0, r0
+0x00700e18:	andeq	r0, r0, r0
+0x00700e1c:	andeq	r0, r0, r0
+0x00700e20:	andeq	r0, r0, r0
+0x00700e24:	andeq	r0, r0, r0
+0x00700e28:	andeq	r0, r0, r0
+0x00700e2c:	andeq	r0, r0, r0
+0x00700e30:	andeq	r0, r0, r0
+0x00700e34:	andeq	r0, r0, r0
+0x00700e38:	andeq	r0, r0, r0
+0x00700e3c:	andeq	r0, r0, r0
+0x00700e40:	andeq	r0, r0, r0
+0x00700e44:	andeq	r0, r0, r0
+0x00700e48:	andeq	r0, r0, r0
+0x00700e4c:	andeq	r0, r0, r0
+0x00700e50:	andeq	r0, r0, r0
+0x00700e54:	andeq	r0, r0, r0
+0x00700e58:	andeq	r0, r0, r0
+0x00700e5c:	andeq	r0, r0, r0
+0x00700e60:	andeq	r0, r0, r0
+0x00700e64:	andeq	r0, r0, r0
+0x00700e68:	andeq	r0, r0, r0
+0x00700e6c:	andeq	r0, r0, r0
+0x00700e70:	andeq	r0, r0, r0
+0x00700e74:	andeq	r0, r0, r0
+0x00700e78:	andeq	r0, r0, r0
+0x00700e7c:	andeq	r0, r0, r0
+0x00700e80:	andeq	r0, r0, r0
+0x00700e84:	andeq	r0, r0, r0
+0x00700e88:	andeq	r0, r0, r0
+0x00700e8c:	andeq	r0, r0, r0
+0x00700e90:	andeq	r0, r0, r0
+0x00700e94:	andeq	r0, r0, r0
+0x00700e98:	andeq	r0, r0, r0
+0x00700e9c:	andeq	r0, r0, r0
+0x00700ea0:	andeq	r0, r0, r0
+0x00700ea4:	andeq	r0, r0, r0
+0x00700ea8:	andeq	r0, r0, r0
+0x00700eac:	andeq	r0, r0, r0
+0x00700eb0:	andeq	r0, r0, r0
+0x00700eb4:	andeq	r0, r0, r0
+0x00700eb8:	andeq	r0, r0, r0
+0x00700ebc:	andeq	r0, r0, r0
+0x00700ec0:	andeq	r0, r0, r0
+0x00700ec4:	andeq	r0, r0, r0
+0x00700ec8:	andeq	r0, r0, r0
+0x00700ecc:	andeq	r0, r0, r0
+0x00700ed0:	andeq	r0, r0, r0
+0x00700ed4:	andeq	r0, r0, r0
+0x00700ed8:	andeq	r0, r0, r0
+0x00700edc:	andeq	r0, r0, r0
+0x00700ee0:	andeq	r0, r0, r0
+0x00700ee4:	andeq	r0, r0, r0
+0x00700ee8:	andeq	r0, r0, r0
+0x00700eec:	andeq	r0, r0, r0
+0x00700ef0:	andeq	r0, r0, r0
+0x00700ef4:	andeq	r0, r0, r0
+0x00700ef8:	andeq	r0, r0, r0
+0x00700efc:	andeq	r0, r0, r0
+0x00700f00:	andeq	r0, r0, r0
+0x00700f04:	andeq	r0, r0, r0
+0x00700f08:	andeq	r0, r0, r0
+0x00700f0c:	andeq	r0, r0, r0
+0x00700f10:	andeq	r0, r0, r0
+0x00700f14:	andeq	r0, r0, r0
+0x00700f18:	andeq	r0, r0, r0
+0x00700f1c:	andeq	r0, r0, r0
+0x00700f20:	andeq	r0, r0, r0
+0x00700f24:	andeq	r0, r0, r0
+0x00700f28:	andeq	r0, r0, r0
+0x00700f2c:	andeq	r0, r0, r0
+0x00700f30:	andeq	r0, r0, r0
+0x00700f34:	andeq	r0, r0, r0
+0x00700f38:	andeq	r0, r0, r0
+0x00700f3c:	andeq	r0, r0, r0
+0x00700f40:	andeq	r0, r0, r0
+0x00700f44:	andeq	r0, r0, r0
+0x00700f48:	andeq	r0, r0, r0
+0x00700f4c:	andeq	r0, r0, r0
+0x00700f50:	andeq	r0, r0, r0
+0x00700f54:	andeq	r0, r0, r0
+0x00700f58:	andeq	r0, r0, r0
+0x00700f5c:	andeq	r0, r0, r0
+0x00700f60:	andeq	r0, r0, r0
+0x00700f64:	andeq	r0, r0, r0
+0x00700f68:	andeq	r0, r0, r0
+0x00700f6c:	andeq	r0, r0, r0
+0x00700f70:	andeq	r0, r0, r0
+0x00700f74:	andeq	r0, r0, r0
+0x00700f78:	andeq	r0, r0, r0
+0x00700f7c:	andeq	r0, r0, r0
+0x00700f80:	andeq	r0, r0, r0
+0x00700f84:	andeq	r0, r0, r0
+0x00700f88:	andeq	r0, r0, r0
+0x00700f8c:	andeq	r0, r0, r0
+0x00700f90:	andeq	r0, r0, r0
+0x00700f94:	andeq	r0, r0, r0
+0x00700f98:	andeq	r0, r0, r0
+0x00700f9c:	andeq	r0, r0, r0
+0x00700fa0:	andeq	r0, r0, r0
+0x00700fa4:	andeq	r0, r0, r0
+0x00700fa8:	andeq	r0, r0, r0
+0x00700fac:	andeq	r0, r0, r0
+0x00700fb0:	andeq	r0, r0, r0
+0x00700fb4:	andeq	r0, r0, r0
+0x00700fb8:	andeq	r0, r0, r0
+0x00700fbc:	andeq	r0, r0, r0
+0x00700fc0:	andeq	r0, r0, r0
+0x00700fc4:	andeq	r0, r0, r0
+0x00700fc8:	andeq	r0, r0, r0
+0x00700fcc:	andeq	r0, r0, r0
+0x00700fd0:	andeq	r0, r0, r0
+0x00700fd4:	andeq	r0, r0, r0
+0x00700fd8:	andeq	r0, r0, r0
+0x00700fdc:	andeq	r0, r0, r0
+0x00700fe0:	andeq	r0, r0, r0
+0x00700fe4:	andeq	r0, r0, r0
+0x00700fe8:	andeq	r0, r0, r0
+0x00700fec:	andeq	r0, r0, r0
+0x00700ff0:	andeq	r0, r0, r0
+0x00700ff4:	andeq	r0, r0, r0
+0x00700ff8:	andeq	r0, r0, r0
+0x00700ffc:	andeq	r0, r0, r0
+0x00701000:	andeq	r0, r0, r0
+0x00701004:	andeq	r0, r0, r0
+0x00701008:	andeq	r0, r0, r0
+0x0070100c:	andeq	r0, r0, r0
+0x00701010:	andeq	r0, r0, r0
+0x00701014:	andeq	r0, r0, r0
+0x00701018:	andeq	r0, r0, r0
+0x0070101c:	andeq	r0, r0, r0
+0x00701020:	andeq	r0, r0, r0
+0x00701024:	andeq	r0, r0, r0
+0x00701028:	andeq	r0, r0, r0
+0x0070102c:	andeq	r0, r0, r0
+0x00701030:	andeq	r0, r0, r0
+0x00701034:	andeq	r0, r0, r0
+0x00701038:	andeq	r0, r0, r0
+0x0070103c:	andeq	r0, r0, r0
+0x00701040:	andeq	r0, r0, r0
+0x00701044:	andeq	r0, r0, r0
+0x00701048:	andeq	r0, r0, r0
+0x0070104c:	andeq	r0, r0, r0
+0x00701050:	andeq	r0, r0, r0
+0x00701054:	andeq	r0, r0, r0
+0x00701058:	andeq	r0, r0, r0
+0x0070105c:	andeq	r0, r0, r0
+0x00701060:	andeq	r0, r0, r0
+0x00701064:	andeq	r0, r0, r0
+0x00701068:	andeq	r0, r0, r0
+0x0070106c:	andeq	r0, r0, r0
+0x00701070:	andeq	r0, r0, r0
+0x00701074:	andeq	r0, r0, r0
+0x00701078:	andeq	r0, r0, r0
+0x0070107c:	andeq	r0, r0, r0
+0x00701080:	andeq	r0, r0, r0
+0x00701084:	andeq	r0, r0, r0
+0x00701088:	andeq	r0, r0, r0
+0x0070108c:	andeq	r0, r0, r0
+0x00701090:	andeq	r0, r0, r0
+0x00701094:	andeq	r0, r0, r0
+0x00701098:	andeq	r0, r0, r0
+0x0070109c:	andeq	r0, r0, r0
+0x007010a0:	andeq	r0, r0, r0
+0x007010a4:	andeq	r0, r0, r0
+0x007010a8:	andeq	r0, r0, r0
+0x007010ac:	andeq	r0, r0, r0
+0x007010b0:	andeq	r0, r0, r0
+0x007010b4:	andeq	r0, r0, r0
+0x007010b8:	andeq	r0, r0, r0
+0x007010bc:	andeq	r0, r0, r0
+0x007010c0:	andeq	r0, r0, r0
+0x007010c4:	andeq	r0, r0, r0
+0x007010c8:	andeq	r0, r0, r0
+0x007010cc:	andeq	r0, r0, r0
+0x007010d0:	andeq	r0, r0, r0
+0x007010d4:	andeq	r0, r0, r0
+0x007010d8:	andeq	r0, r0, r0
+0x007010dc:	andeq	r0, r0, r0
+0x007010e0:	andeq	r0, r0, r0
+0x007010e4:	andeq	r0, r0, r0
+0x007010e8:	andeq	r0, r0, r0
+0x007010ec:	andeq	r0, r0, r0
+0x007010f0:	andeq	r0, r0, r0
+0x007010f4:	andeq	r0, r0, r0
+0x007010f8:	andeq	r0, r0, r0
+0x007010fc:	andeq	r0, r0, r0
+0x00701100:	andeq	r0, r0, r0
+0x00701104:	andeq	r0, r0, r0
+0x00701108:	andeq	r0, r0, r0
+0x0070110c:	andeq	r0, r0, r0
+0x00701110:	andeq	r0, r0, r0
+0x00701114:	andeq	r0, r0, r0
+0x00701118:	andeq	r0, r0, r0
+0x0070111c:	andeq	r0, r0, r0
+0x00701120:	andeq	r0, r0, r0
+0x00701124:	andeq	r0, r0, r0
+0x00701128:	andeq	r0, r0, r0
+0x0070112c:	andeq	r0, r0, r0
+0x00701130:	andeq	r0, r0, r0
+0x00701134:	andeq	r0, r0, r0
+0x00701138:	andeq	r0, r0, r0
+0x0070113c:	andeq	r0, r0, r0
+0x00701140:	andeq	r0, r0, r0
+0x00701144:	andeq	r0, r0, r0
+0x00701148:	andeq	r0, r0, r0
+0x0070114c:	andeq	r0, r0, r0
+0x00701150:	andeq	r0, r0, r0
+0x00701154:	andeq	r0, r0, r0
+0x00701158:	andeq	r0, r0, r0
+0x0070115c:	andeq	r0, r0, r0
+0x00701160:	andeq	r0, r0, r0
+0x00701164:	andeq	r0, r0, r0
+0x00701168:	andeq	r0, r0, r0
+0x0070116c:	andeq	r0, r0, r0
+0x00701170:	andeq	r0, r0, r0
+0x00701174:	andeq	r0, r0, r0
+0x00701178:	andeq	r0, r0, r0
+0x0070117c:	andeq	r0, r0, r0
+0x00701180:	andeq	r0, r0, r0
+0x00701184:	andeq	r0, r0, r0
+0x00701188:	andeq	r0, r0, r0
+0x0070118c:	andeq	r0, r0, r0
+0x00701190:	andeq	r0, r0, r0
+0x00701194:	andeq	r0, r0, r0
+0x00701198:	andeq	r0, r0, r0
+0x0070119c:	andeq	r0, r0, r0
+0x007011a0:	andeq	r0, r0, r0
+0x007011a4:	andeq	r0, r0, r0
+0x007011a8:	andeq	r0, r0, r0
+0x007011ac:	andeq	r0, r0, r0
+0x007011b0:	andeq	r0, r0, r0
+0x007011b4:	andeq	r0, r0, r0
+0x007011b8:	andeq	r0, r0, r0
+0x007011bc:	andeq	r0, r0, r0
+0x007011c0:	andeq	r0, r0, r0
+0x007011c4:	andeq	r0, r0, r0
+0x007011c8:	andeq	r0, r0, r0
+0x007011cc:	andeq	r0, r0, r0
+0x007011d0:	andeq	r0, r0, r0
+0x007011d4:	andeq	r0, r0, r0
+0x007011d8:	andeq	r0, r0, r0
+0x007011dc:	andeq	r0, r0, r0
+0x007011e0:	andeq	r0, r0, r0
+0x007011e4:	andeq	r0, r0, r0
+0x007011e8:	andeq	r0, r0, r0
+0x007011ec:	andeq	r0, r0, r0
+0x007011f0:	andeq	r0, r0, r0
+0x007011f4:	andeq	r0, r0, r0
+0x007011f8:	andeq	r0, r0, r0
+0x007011fc:	andeq	r0, r0, r0
+0x00701200:	andeq	r0, r0, r0
+0x00701204:	andeq	r0, r0, r0
+0x00701208:	andeq	r0, r0, r0
+0x0070120c:	andeq	r0, r0, r0
+0x00701210:	andeq	r0, r0, r0
+0x00701214:	andeq	r0, r0, r0
+0x00701218:	andeq	r0, r0, r0
+0x0070121c:	andeq	r0, r0, r0
+0x00701220:	andeq	r0, r0, r0
+0x00701224:	andeq	r0, r0, r0
+0x00701228:	andeq	r0, r0, r0
+0x0070122c:	andeq	r0, r0, r0
+0x00701230:	andeq	r0, r0, r0
+0x00701234:	andeq	r0, r0, r0
+0x00701238:	andeq	r0, r0, r0
+0x0070123c:	andeq	r0, r0, r0
+0x00701240:	andeq	r0, r0, r0
+0x00701244:	andeq	r0, r0, r0
+0x00701248:	andeq	r0, r0, r0
+0x0070124c:	andeq	r0, r0, r0
+0x00701250:	andeq	r0, r0, r0
+0x00701254:	andeq	r0, r0, r0
+0x00701258:	andeq	r0, r0, r0
+0x0070125c:	andeq	r0, r0, r0
+0x00701260:	andeq	r0, r0, r0
+0x00701264:	andeq	r0, r0, r0
+0x00701268:	andeq	r0, r0, r0
+0x0070126c:	andeq	r0, r0, r0
+0x00701270:	andeq	r0, r0, r0
+0x00701274:	andeq	r0, r0, r0
+0x00701278:	andeq	r0, r0, r0
+0x0070127c:	andeq	r0, r0, r0
+0x00701280:	andeq	r0, r0, r0
+0x00701284:	andeq	r0, r0, r0
+0x00701288:	andeq	r0, r0, r0
+0x0070128c:	andeq	r0, r0, r0
+0x00701290:	andeq	r0, r0, r0
+0x00701294:	andeq	r0, r0, r0
+0x00701298:	andeq	r0, r0, r0
+0x0070129c:	andeq	r0, r0, r0
+0x007012a0:	andeq	r0, r0, r0
+0x007012a4:	andeq	r0, r0, r0
+0x007012a8:	andeq	r0, r0, r0
+0x007012ac:	andeq	r0, r0, r0
+0x007012b0:	andeq	r0, r0, r0
+0x007012b4:	andeq	r0, r0, r0
+0x007012b8:	andeq	r0, r0, r0
+0x007012bc:	andeq	r0, r0, r0
+0x007012c0:	andeq	r0, r0, r0
+0x007012c4:	andeq	r0, r0, r0
+0x007012c8:	andeq	r0, r0, r0
+0x007012cc:	andeq	r0, r0, r0
+0x007012d0:	andeq	r0, r0, r0
+0x007012d4:	andeq	r0, r0, r0
+0x007012d8:	andeq	r0, r0, r0
+0x007012dc:	andeq	r0, r0, r0
+0x007012e0:	andeq	r0, r0, r0
+0x007012e4:	andeq	r0, r0, r0
+0x007012e8:	andeq	r0, r0, r0
+0x007012ec:	andeq	r0, r0, r0
+0x007012f0:	andeq	r0, r0, r0
+0x007012f4:	andeq	r0, r0, r0
+0x007012f8:	andeq	r0, r0, r0
+0x007012fc:	andeq	r0, r0, r0
+0x00701300:	andeq	r0, r0, r0
+0x00701304:	andeq	r0, r0, r0
+0x00701308:	andeq	r0, r0, r0
+0x0070130c:	andeq	r0, r0, r0
+0x00701310:	andeq	r0, r0, r0
+0x00701314:	andeq	r0, r0, r0
+0x00701318:	andeq	r0, r0, r0
+0x0070131c:	andeq	r0, r0, r0
+0x00701320:	andeq	r0, r0, r0
+0x00701324:	andeq	r0, r0, r0
+0x00701328:	andeq	r0, r0, r0
+0x0070132c:	andeq	r0, r0, r0
+0x00701330:	andeq	r0, r0, r0
+0x00701334:	andeq	r0, r0, r0
+0x00701338:	andeq	r0, r0, r0
+0x0070133c:	andeq	r0, r0, r0
+0x00701340:	andeq	r0, r0, r0
+0x00701344:	andeq	r0, r0, r0
+0x00701348:	andeq	r0, r0, r0
+0x0070134c:	andeq	r0, r0, r0
+0x00701350:	andeq	r0, r0, r0
+0x00701354:	andeq	r0, r0, r0
+0x00701358:	andeq	r0, r0, r0
+0x0070135c:	andeq	r0, r0, r0
+0x00701360:	andeq	r0, r0, r0
+0x00701364:	andeq	r0, r0, r0
+0x00701368:	andeq	r0, r0, r0
+0x0070136c:	andeq	r0, r0, r0
+0x00701370:	andeq	r0, r0, r0
+0x00701374:	andeq	r0, r0, r0
+0x00701378:	andeq	r0, r0, r0
+0x0070137c:	andeq	r0, r0, r0
+0x00701380:	andeq	r0, r0, r0
+0x00701384:	andeq	r0, r0, r0
+0x00701388:	andeq	r0, r0, r0
+0x0070138c:	andeq	r0, r0, r0
+0x00701390:	andeq	r0, r0, r0
+0x00701394:	andeq	r0, r0, r0
+0x00701398:	andeq	r0, r0, r0
+0x0070139c:	andeq	r0, r0, r0
+0x007013a0:	andeq	r0, r0, r0
+0x007013a4:	andeq	r0, r0, r0
+0x007013a8:	andeq	r0, r0, r0
+0x007013ac:	andeq	r0, r0, r0
+0x007013b0:	andeq	r0, r0, r0
+0x007013b4:	andeq	r0, r0, r0
+0x007013b8:	andeq	r0, r0, r0
+0x007013bc:	andeq	r0, r0, r0
+0x007013c0:	andeq	r0, r0, r0
+0x007013c4:	andeq	r0, r0, r0
+0x007013c8:	andeq	r0, r0, r0
+0x007013cc:	andeq	r0, r0, r0
+0x007013d0:	andeq	r0, r0, r0
+0x007013d4:	andeq	r0, r0, r0
+0x007013d8:	andeq	r0, r0, r0
+0x007013dc:	andeq	r0, r0, r0
+0x007013e0:	andeq	r0, r0, r0
+0x007013e4:	andeq	r0, r0, r0
+0x007013e8:	andeq	r0, r0, r0
+0x007013ec:	andeq	r0, r0, r0
+0x007013f0:	andeq	r0, r0, r0
+0x007013f4:	andeq	r0, r0, r0
+0x007013f8:	andeq	r0, r0, r0
+0x007013fc:	andeq	r0, r0, r0
+0x00701400:	andeq	r0, r0, r0
+0x00701404:	andeq	r0, r0, r0
+0x00701408:	andeq	r0, r0, r0
+0x0070140c:	andeq	r0, r0, r0
+0x00701410:	andeq	r0, r0, r0
+0x00701414:	andeq	r0, r0, r0
+0x00701418:	andeq	r0, r0, r0
+0x0070141c:	andeq	r0, r0, r0
+0x00701420:	andeq	r0, r0, r0
+0x00701424:	andeq	r0, r0, r0
+0x00701428:	andeq	r0, r0, r0
+0x0070142c:	andeq	r0, r0, r0
+0x00701430:	andeq	r0, r0, r0
+0x00701434:	andeq	r0, r0, r0
+0x00701438:	andeq	r0, r0, r0
+0x0070143c:	andeq	r0, r0, r0
+0x00701440:	andeq	r0, r0, r0
+0x00701444:	andeq	r0, r0, r0
+0x00701448:	andeq	r0, r0, r0
+0x0070144c:	andeq	r0, r0, r0
+0x00701450:	andeq	r0, r0, r0
+0x00701454:	andeq	r0, r0, r0
+0x00701458:	andeq	r0, r0, r0
+0x0070145c:	andeq	r0, r0, r0
+0x00701460:	andeq	r0, r0, r0
+0x00701464:	andeq	r0, r0, r0
+0x00701468:	andeq	r0, r0, r0
+0x0070146c:	andeq	r0, r0, r0
+0x00701470:	andeq	r0, r0, r0
+0x00701474:	andeq	r0, r0, r0
+0x00701478:	andeq	r0, r0, r0
+0x0070147c:	andeq	r0, r0, r0
+0x00701480:	andeq	r0, r0, r0
+0x00701484:	andeq	r0, r0, r0
+0x00701488:	andeq	r0, r0, r0
+0x0070148c:	andeq	r0, r0, r0
+0x00701490:	andeq	r0, r0, r0
+0x00701494:	andeq	r0, r0, r0
+0x00701498:	andeq	r0, r0, r0
+0x0070149c:	andeq	r0, r0, r0
+0x007014a0:	andeq	r0, r0, r0
+0x007014a4:	andeq	r0, r0, r0
+0x007014a8:	andeq	r0, r0, r0
+0x007014ac:	andeq	r0, r0, r0
+0x007014b0:	andeq	r0, r0, r0
+0x007014b4:	andeq	r0, r0, r0
+0x007014b8:	andeq	r0, r0, r0
+0x007014bc:	andeq	r0, r0, r0
+0x007014c0:	andeq	r0, r0, r0
+0x007014c4:	andeq	r0, r0, r0
+0x007014c8:	andeq	r0, r0, r0
+0x007014cc:	andeq	r0, r0, r0
+0x007014d0:	andeq	r0, r0, r0
+0x007014d4:	andeq	r0, r0, r0
+0x007014d8:	andeq	r0, r0, r0
+0x007014dc:	andeq	r0, r0, r0
+0x007014e0:	andeq	r0, r0, r0
+0x007014e4:	andeq	r0, r0, r0
+0x007014e8:	andeq	r0, r0, r0
+0x007014ec:	andeq	r0, r0, r0
+0x007014f0:	andeq	r0, r0, r0
+0x007014f4:	andeq	r0, r0, r0
+0x007014f8:	andeq	r0, r0, r0
+0x007014fc:	andeq	r0, r0, r0
+0x00701500:	andeq	r0, r0, r0
+0x00701504:	andeq	r0, r0, r0
+0x00701508:	andeq	r0, r0, r0
+0x0070150c:	andeq	r0, r0, r0
+0x00701510:	andeq	r0, r0, r0
+0x00701514:	andeq	r0, r0, r0
+0x00701518:	andeq	r0, r0, r0
+0x0070151c:	andeq	r0, r0, r0
+0x00701520:	andeq	r0, r0, r0
+0x00701524:	andeq	r0, r0, r0
+0x00701528:	andeq	r0, r0, r0
+0x0070152c:	andeq	r0, r0, r0
+0x00701530:	andeq	r0, r0, r0
+0x00701534:	andeq	r0, r0, r0
+0x00701538:	andeq	r0, r0, r0
+0x0070153c:	andeq	r0, r0, r0
+0x00701540:	andeq	r0, r0, r0
+0x00701544:	andeq	r0, r0, r0
+0x00701548:	andeq	r0, r0, r0
+0x0070154c:	andeq	r0, r0, r0
+0x00701550:	andeq	r0, r0, r0
+0x00701554:	andeq	r0, r0, r0
+0x00701558:	andeq	r0, r0, r0
+0x0070155c:	andeq	r0, r0, r0
+0x00701560:	andeq	r0, r0, r0
+0x00701564:	andeq	r0, r0, r0
+0x00701568:	andeq	r0, r0, r0
+0x0070156c:	andeq	r0, r0, r0
+0x00701570:	andeq	r0, r0, r0
+0x00701574:	andeq	r0, r0, r0
+0x00701578:	andeq	r0, r0, r0
+0x0070157c:	andeq	r0, r0, r0
+0x00701580:	andeq	r0, r0, r0
+0x00701584:	andeq	r0, r0, r0
+0x00701588:	andeq	r0, r0, r0
+0x0070158c:	andeq	r0, r0, r0
+0x00701590:	andeq	r0, r0, r0
+0x00701594:	andeq	r0, r0, r0
+0x00701598:	andeq	r0, r0, r0
+0x0070159c:	andeq	r0, r0, r0
+0x007015a0:	andeq	r0, r0, r0
+0x007015a4:	andeq	r0, r0, r0
+0x007015a8:	andeq	r0, r0, r0
+0x007015ac:	andeq	r0, r0, r0
+0x007015b0:	andeq	r0, r0, r0
+0x007015b4:	andeq	r0, r0, r0
+0x007015b8:	andeq	r0, r0, r0
+0x007015bc:	andeq	r0, r0, r0
+0x007015c0:	andeq	r0, r0, r0
+0x007015c4:	andeq	r0, r0, r0
+0x007015c8:	andeq	r0, r0, r0
+0x007015cc:	andeq	r0, r0, r0
+0x007015d0:	andeq	r0, r0, r0
+0x007015d4:	andeq	r0, r0, r0
+0x007015d8:	andeq	r0, r0, r0
+0x007015dc:	andeq	r0, r0, r0
+0x007015e0:	andeq	r0, r0, r0
+0x007015e4:	andeq	r0, r0, r0
+0x007015e8:	andeq	r0, r0, r0
+0x007015ec:	andeq	r0, r0, r0
+0x007015f0:	andeq	r0, r0, r0
+0x007015f4:	andeq	r0, r0, r0
+0x007015f8:	andeq	r0, r0, r0
+0x007015fc:	andeq	r0, r0, r0
+0x00701600:	andeq	r0, r0, r0
+0x00701604:	andeq	r0, r0, r0
+0x00701608:	andeq	r0, r0, r0
+0x0070160c:	andeq	r0, r0, r0
+0x00701610:	andeq	r0, r0, r0
+0x00701614:	andeq	r0, r0, r0
+0x00701618:	andeq	r0, r0, r0
+0x0070161c:	andeq	r0, r0, r0
+0x00701620:	andeq	r0, r0, r0
+0x00701624:	andeq	r0, r0, r0
+0x00701628:	andeq	r0, r0, r0
+0x0070162c:	andeq	r0, r0, r0
+0x00701630:	andeq	r0, r0, r0
+0x00701634:	andeq	r0, r0, r0
+0x00701638:	andeq	r0, r0, r0
+0x0070163c:	andeq	r0, r0, r0
+0x00701640:	andeq	r0, r0, r0
+0x00701644:	andeq	r0, r0, r0
+0x00701648:	andeq	r0, r0, r0
+0x0070164c:	andeq	r0, r0, r0
+0x00701650:	andeq	r0, r0, r0
+0x00701654:	andeq	r0, r0, r0
+0x00701658:	andeq	r0, r0, r0
+0x0070165c:	andeq	r0, r0, r0
+0x00701660:	andeq	r0, r0, r0
+0x00701664:	andeq	r0, r0, r0
+0x00701668:	andeq	r0, r0, r0
+0x0070166c:	andeq	r0, r0, r0
+0x00701670:	andeq	r0, r0, r0
+0x00701674:	andeq	r0, r0, r0
+0x00701678:	andeq	r0, r0, r0
+0x0070167c:	andeq	r0, r0, r0
+0x00701680:	andeq	r0, r0, r0
+0x00701684:	andeq	r0, r0, r0
+0x00701688:	andeq	r0, r0, r0
+0x0070168c:	andeq	r0, r0, r0
+0x00701690:	andeq	r0, r0, r0
+0x00701694:	andeq	r0, r0, r0
+0x00701698:	andeq	r0, r0, r0
+0x0070169c:	andeq	r0, r0, r0
+0x007016a0:	andeq	r0, r0, r0
+0x007016a4:	andeq	r0, r0, r0
+0x007016a8:	andeq	r0, r0, r0
+0x007016ac:	andeq	r0, r0, r0
+0x007016b0:	andeq	r0, r0, r0
+0x007016b4:	andeq	r0, r0, r0
+0x007016b8:	andeq	r0, r0, r0
+0x007016bc:	andeq	r0, r0, r0
+0x007016c0:	andeq	r0, r0, r0
+0x007016c4:	andeq	r0, r0, r0
+0x007016c8:	andeq	r0, r0, r0
+0x007016cc:	andeq	r0, r0, r0
+0x007016d0:	andeq	r0, r0, r0
+0x007016d4:	andeq	r0, r0, r0
+0x007016d8:	andeq	r0, r0, r0
+0x007016dc:	andeq	r0, r0, r0
+0x007016e0:	andeq	r0, r0, r0
+0x007016e4:	andeq	r0, r0, r0
+0x007016e8:	andeq	r0, r0, r0
+0x007016ec:	andeq	r0, r0, r0
+0x007016f0:	andeq	r0, r0, r0
+0x007016f4:	andeq	r0, r0, r0
+0x007016f8:	andeq	r0, r0, r0
+0x007016fc:	andeq	r0, r0, r0
+0x00701700:	andeq	r0, r0, r0
+0x00701704:	andeq	r0, r0, r0
+0x00701708:	andeq	r0, r0, r0
+0x0070170c:	andeq	r0, r0, r0
+0x00701710:	andeq	r0, r0, r0
+0x00701714:	andeq	r0, r0, r0
+0x00701718:	andeq	r0, r0, r0
+0x0070171c:	andeq	r0, r0, r0
+0x00701720:	andeq	r0, r0, r0
+0x00701724:	andeq	r0, r0, r0
+0x00701728:	andeq	r0, r0, r0
+0x0070172c:	andeq	r0, r0, r0
+0x00701730:	andeq	r0, r0, r0
+0x00701734:	andeq	r0, r0, r0
+0x00701738:	andeq	r0, r0, r0
+0x0070173c:	andeq	r0, r0, r0
+0x00701740:	andeq	r0, r0, r0
+0x00701744:	andeq	r0, r0, r0
+0x00701748:	andeq	r0, r0, r0
+0x0070174c:	andeq	r0, r0, r0
+0x00701750:	andeq	r0, r0, r0
+0x00701754:	andeq	r0, r0, r0
+0x00701758:	andeq	r0, r0, r0
+0x0070175c:	andeq	r0, r0, r0
+0x00701760:	andeq	r0, r0, r0
+0x00701764:	andeq	r0, r0, r0
+0x00701768:	andeq	r0, r0, r0
+0x0070176c:	andeq	r0, r0, r0
+0x00701770:	andeq	r0, r0, r0
+0x00701774:	andeq	r0, r0, r0
+0x00701778:	andeq	r0, r0, r0
+0x0070177c:	andeq	r0, r0, r0
+0x00701780:	andeq	r0, r0, r0
+0x00701784:	andeq	r0, r0, r0
+0x00701788:	andeq	r0, r0, r0
+0x0070178c:	andeq	r0, r0, r0
+0x00701790:	andeq	r0, r0, r0
+0x00701794:	andeq	r0, r0, r0
+0x00701798:	andeq	r0, r0, r0
+0x0070179c:	andeq	r0, r0, r0
+0x007017a0:	andeq	r0, r0, r0
+0x007017a4:	andeq	r0, r0, r0
+0x007017a8:	andeq	r0, r0, r0
+0x007017ac:	andeq	r0, r0, r0
+0x007017b0:	andeq	r0, r0, r0
+0x007017b4:	andeq	r0, r0, r0
+0x007017b8:	andeq	r0, r0, r0
+0x007017bc:	andeq	r0, r0, r0
+0x007017c0:	andeq	r0, r0, r0
+0x007017c4:	andeq	r0, r0, r0
+0x007017c8:	andeq	r0, r0, r0
+0x007017cc:	andeq	r0, r0, r0
+0x007017d0:	andeq	r0, r0, r0
+0x007017d4:	andeq	r0, r0, r0
+0x007017d8:	andeq	r0, r0, r0
+0x007017dc:	andeq	r0, r0, r0
+0x007017e0:	andeq	r0, r0, r0
+0x007017e4:	andeq	r0, r0, r0
+0x007017e8:	andeq	r0, r0, r0
+0x007017ec:	andeq	r0, r0, r0
+0x007017f0:	andeq	r0, r0, r0
+0x007017f4:	andeq	r0, r0, r0
+0x007017f8:	andeq	r0, r0, r0
+0x007017fc:	andeq	r0, r0, r0
+0x00701800:	andeq	r0, r0, r0
+0x00701804:	andeq	r0, r0, r0
+0x00701808:	andeq	r0, r0, r0
+0x0070180c:	andeq	r0, r0, r0
+0x00701810:	andeq	r0, r0, r0
+0x00701814:	andeq	r0, r0, r0
+0x00701818:	andeq	r0, r0, r0
+0x0070181c:	andeq	r0, r0, r0
+0x00701820:	andeq	r0, r0, r0
+0x00701824:	andeq	r0, r0, r0
+0x00701828:	andeq	r0, r0, r0
+0x0070182c:	andeq	r0, r0, r0
+0x00701830:	andeq	r0, r0, r0
+0x00701834:	andeq	r0, r0, r0
+0x00701838:	andeq	r0, r0, r0
+0x0070183c:	andeq	r0, r0, r0
+0x00701840:	andeq	r0, r0, r0
+0x00701844:	andeq	r0, r0, r0
+0x00701848:	andeq	r0, r0, r0
+0x0070184c:	andeq	r0, r0, r0
+0x00701850:	andeq	r0, r0, r0
+0x00701854:	andeq	r0, r0, r0
+0x00701858:	andeq	r0, r0, r0
+0x0070185c:	andeq	r0, r0, r0
+0x00701860:	andeq	r0, r0, r0
+0x00701864:	andeq	r0, r0, r0
+0x00701868:	andeq	r0, r0, r0
+0x0070186c:	andeq	r0, r0, r0
+0x00701870:	andeq	r0, r0, r0
+0x00701874:	andeq	r0, r0, r0
+0x00701878:	andeq	r0, r0, r0
+0x0070187c:	andeq	r0, r0, r0
+0x00701880:	andeq	r0, r0, r0
+0x00701884:	andeq	r0, r0, r0
+0x00701888:	andeq	r0, r0, r0
+0x0070188c:	andeq	r0, r0, r0
+0x00701890:	andeq	r0, r0, r0
+0x00701894:	andeq	r0, r0, r0
+0x00701898:	andeq	r0, r0, r0
+0x0070189c:	andeq	r0, r0, r0
+0x007018a0:	andeq	r0, r0, r0
+0x007018a4:	andeq	r0, r0, r0
+0x007018a8:	andeq	r0, r0, r0
+0x007018ac:	andeq	r0, r0, r0
+0x007018b0:	andeq	r0, r0, r0
+0x007018b4:	andeq	r0, r0, r0
+0x007018b8:	andeq	r0, r0, r0
+0x007018bc:	andeq	r0, r0, r0
+0x007018c0:	andeq	r0, r0, r0
+0x007018c4:	andeq	r0, r0, r0
+0x007018c8:	andeq	r0, r0, r0
+0x007018cc:	andeq	r0, r0, r0
+0x007018d0:	andeq	r0, r0, r0
+0x007018d4:	andeq	r0, r0, r0
+0x007018d8:	andeq	r0, r0, r0
+0x007018dc:	andeq	r0, r0, r0
+0x007018e0:	andeq	r0, r0, r0
+0x007018e4:	andeq	r0, r0, r0
+0x007018e8:	andeq	r0, r0, r0
+0x007018ec:	andeq	r0, r0, r0
+0x007018f0:	andeq	r0, r0, r0
+0x007018f4:	andeq	r0, r0, r0
+0x007018f8:	andeq	r0, r0, r0
+0x007018fc:	andeq	r0, r0, r0
+0x00701900:	andeq	r0, r0, r0
+0x00701904:	andeq	r0, r0, r0
+0x00701908:	andeq	r0, r0, r0
+0x0070190c:	andeq	r0, r0, r0
+0x00701910:	andeq	r0, r0, r0
+0x00701914:	andeq	r0, r0, r0
+0x00701918:	andeq	r0, r0, r0
+0x0070191c:	andeq	r0, r0, r0
+0x00701920:	andeq	r0, r0, r0
+0x00701924:	andeq	r0, r0, r0
+0x00701928:	andeq	r0, r0, r0
+0x0070192c:	andeq	r0, r0, r0
+0x00701930:	andeq	r0, r0, r0
+0x00701934:	andeq	r0, r0, r0
+0x00701938:	andeq	r0, r0, r0
+0x0070193c:	andeq	r0, r0, r0
+0x00701940:	andeq	r0, r0, r0
+0x00701944:	andeq	r0, r0, r0
+0x00701948:	andeq	r0, r0, r0
+0x0070194c:	andeq	r0, r0, r0
+0x00701950:	andeq	r0, r0, r0
+0x00701954:	andeq	r0, r0, r0
+0x00701958:	andeq	r0, r0, r0
+0x0070195c:	andeq	r0, r0, r0
+0x00701960:	andeq	r0, r0, r0
+0x00701964:	andeq	r0, r0, r0
+0x00701968:	andeq	r0, r0, r0
+0x0070196c:	andeq	r0, r0, r0
+0x00701970:	andeq	r0, r0, r0
+0x00701974:	andeq	r0, r0, r0
+0x00701978:	andeq	r0, r0, r0
+0x0070197c:	andeq	r0, r0, r0
+0x00701980:	andeq	r0, r0, r0
+0x00701984:	andeq	r0, r0, r0
+0x00701988:	andeq	r0, r0, r0
+0x0070198c:	andeq	r0, r0, r0
+0x00701990:	andeq	r0, r0, r0
+0x00701994:	andeq	r0, r0, r0
+0x00701998:	andeq	r0, r0, r0
+0x0070199c:	andeq	r0, r0, r0
+0x007019a0:	andeq	r0, r0, r0
+0x007019a4:	andeq	r0, r0, r0
+0x007019a8:	andeq	r0, r0, r0
+0x007019ac:	andeq	r0, r0, r0
+0x007019b0:	andeq	r0, r0, r0
+0x007019b4:	andeq	r0, r0, r0
+0x007019b8:	andeq	r0, r0, r0
+0x007019bc:	andeq	r0, r0, r0
+0x007019c0:	andeq	r0, r0, r0
+0x007019c4:	andeq	r0, r0, r0
+0x007019c8:	andeq	r0, r0, r0
+0x007019cc:	andeq	r0, r0, r0
+0x007019d0:	andeq	r0, r0, r0
+0x007019d4:	andeq	r0, r0, r0
+0x007019d8:	andeq	r0, r0, r0
+0x007019dc:	andeq	r0, r0, r0
+0x007019e0:	andeq	r0, r0, r0
+0x007019e4:	andeq	r0, r0, r0
+0x007019e8:	andeq	r0, r0, r0
+0x007019ec:	andeq	r0, r0, r0
+0x007019f0:	andeq	r0, r0, r0
+0x007019f4:	andeq	r0, r0, r0
+0x007019f8:	andeq	r0, r0, r0
+0x007019fc:	andeq	r0, r0, r0
+0x00701a00:	andeq	r0, r0, r0
+0x00701a04:	andeq	r0, r0, r0
+0x00701a08:	andeq	r0, r0, r0
+0x00701a0c:	andeq	r0, r0, r0
+0x00701a10:	andeq	r0, r0, r0
+0x00701a14:	andeq	r0, r0, r0
+0x00701a18:	andeq	r0, r0, r0
+0x00701a1c:	andeq	r0, r0, r0
+0x00701a20:	andeq	r0, r0, r0
+0x00701a24:	andeq	r0, r0, r0
+0x00701a28:	andeq	r0, r0, r0
+0x00701a2c:	andeq	r0, r0, r0
+0x00701a30:	andeq	r0, r0, r0
+0x00701a34:	andeq	r0, r0, r0
+0x00701a38:	andeq	r0, r0, r0
+0x00701a3c:	andeq	r0, r0, r0
+0x00701a40:	andeq	r0, r0, r0
+0x00701a44:	andeq	r0, r0, r0
+0x00701a48:	andeq	r0, r0, r0
+0x00701a4c:	andeq	r0, r0, r0
+0x00701a50:	andeq	r0, r0, r0
+0x00701a54:	andeq	r0, r0, r0
+0x00701a58:	andeq	r0, r0, r0
+0x00701a5c:	andeq	r0, r0, r0
+0x00701a60:	andeq	r0, r0, r0
+0x00701a64:	andeq	r0, r0, r0
+0x00701a68:	andeq	r0, r0, r0
+0x00701a6c:	andeq	r0, r0, r0
+0x00701a70:	andeq	r0, r0, r0
+0x00701a74:	andeq	r0, r0, r0
+0x00701a78:	andeq	r0, r0, r0
+0x00701a7c:	andeq	r0, r0, r0
+0x00701a80:	andeq	r0, r0, r0
+0x00701a84:	andeq	r0, r0, r0
+0x00701a88:	andeq	r0, r0, r0
+0x00701a8c:	andeq	r0, r0, r0
+0x00701a90:	andeq	r0, r0, r0
+0x00701a94:	andeq	r0, r0, r0
+0x00701a98:	andeq	r0, r0, r0
+0x00701a9c:	andeq	r0, r0, r0
+0x00701aa0:	andeq	r0, r0, r0
+0x00701aa4:	andeq	r0, r0, r0
+0x00701aa8:	andeq	r0, r0, r0
+0x00701aac:	andeq	r0, r0, r0
+0x00701ab0:	andeq	r0, r0, r0
+0x00701ab4:	andeq	r0, r0, r0
+0x00701ab8:	andeq	r0, r0, r0
+0x00701abc:	andeq	r0, r0, r0
+0x00701ac0:	andeq	r0, r0, r0
+0x00701ac4:	andeq	r0, r0, r0
+0x00701ac8:	andeq	r0, r0, r0
+0x00701acc:	andeq	r0, r0, r0
+0x00701ad0:	andeq	r0, r0, r0
+0x00701ad4:	andeq	r0, r0, r0
+0x00701ad8:	andeq	r0, r0, r0
+0x00701adc:	andeq	r0, r0, r0
+0x00701ae0:	andeq	r0, r0, r0
+0x00701ae4:	andeq	r0, r0, r0
+0x00701ae8:	andeq	r0, r0, r0
+0x00701aec:	andeq	r0, r0, r0
+0x00701af0:	andeq	r0, r0, r0
+0x00701af4:	andeq	r0, r0, r0
+0x00701af8:	andeq	r0, r0, r0
+0x00701afc:	andeq	r0, r0, r0
+0x00701b00:	andeq	r0, r0, r0
+0x00701b04:	andeq	r0, r0, r0
+0x00701b08:	andeq	r0, r0, r0
+0x00701b0c:	andeq	r0, r0, r0
+0x00701b10:	andeq	r0, r0, r0
+0x00701b14:	andeq	r0, r0, r0
+0x00701b18:	andeq	r0, r0, r0
+0x00701b1c:	andeq	r0, r0, r0
+0x00701b20:	andeq	r0, r0, r0
+0x00701b24:	andeq	r0, r0, r0
+0x00701b28:	andeq	r0, r0, r0
+0x00701b2c:	andeq	r0, r0, r0
+0x00701b30:	andeq	r0, r0, r0
+0x00701b34:	andeq	r0, r0, r0
+0x00701b38:	andeq	r0, r0, r0
+0x00701b3c:	andeq	r0, r0, r0
+0x00701b40:	andeq	r0, r0, r0
+0x00701b44:	andeq	r0, r0, r0
+0x00701b48:	andeq	r0, r0, r0
+0x00701b4c:	andeq	r0, r0, r0
+0x00701b50:	andeq	r0, r0, r0
+0x00701b54:	andeq	r0, r0, r0
+0x00701b58:	andeq	r0, r0, r0
+0x00701b5c:	andeq	r0, r0, r0
+0x00701b60:	andeq	r0, r0, r0
+0x00701b64:	andeq	r0, r0, r0
+0x00701b68:	andeq	r0, r0, r0
+0x00701b6c:	andeq	r0, r0, r0
+0x00701b70:	andeq	r0, r0, r0
+0x00701b74:	andeq	r0, r0, r0
+0x00701b78:	andeq	r0, r0, r0
+0x00701b7c:	andeq	r0, r0, r0
+0x00701b80:	andeq	r0, r0, r0
+0x00701b84:	andeq	r0, r0, r0
+0x00701b88:	andeq	r0, r0, r0
+0x00701b8c:	andeq	r0, r0, r0
+0x00701b90:	andeq	r0, r0, r0
+0x00701b94:	andeq	r0, r0, r0
+0x00701b98:	andeq	r0, r0, r0
+0x00701b9c:	andeq	r0, r0, r0
+0x00701ba0:	andeq	r0, r0, r0
+0x00701ba4:	andeq	r0, r0, r0
+0x00701ba8:	andeq	r0, r0, r0
+0x00701bac:	andeq	r0, r0, r0
+0x00701bb0:	andeq	r0, r0, r0
+0x00701bb4:	andeq	r0, r0, r0
+0x00701bb8:	andeq	r0, r0, r0
+0x00701bbc:	andeq	r0, r0, r0
+0x00701bc0:	andeq	r0, r0, r0
+0x00701bc4:	andeq	r0, r0, r0
+0x00701bc8:	andeq	r0, r0, r0
+0x00701bcc:	andeq	r0, r0, r0
+0x00701bd0:	andeq	r0, r0, r0
+0x00701bd4:	andeq	r0, r0, r0
+0x00701bd8:	andeq	r0, r0, r0
+0x00701bdc:	andeq	r0, r0, r0
+0x00701be0:	andeq	r0, r0, r0
+0x00701be4:	andeq	r0, r0, r0
+0x00701be8:	andeq	r0, r0, r0
+0x00701bec:	andeq	r0, r0, r0
+0x00701bf0:	andeq	r0, r0, r0
+0x00701bf4:	andeq	r0, r0, r0
+0x00701bf8:	andeq	r0, r0, r0
+0x00701bfc:	andeq	r0, r0, r0
+0x00701c00:	andeq	r0, r0, r0
+0x00701c04:	andeq	r0, r0, r0
+0x00701c08:	andeq	r0, r0, r0
+0x00701c0c:	andeq	r0, r0, r0
+0x00701c10:	andeq	r0, r0, r0
+0x00701c14:	andeq	r0, r0, r0
+0x00701c18:	andeq	r0, r0, r0
+0x00701c1c:	andeq	r0, r0, r0
+0x00701c20:	andeq	r0, r0, r0
+0x00701c24:	andeq	r0, r0, r0
+0x00701c28:	andeq	r0, r0, r0
+0x00701c2c:	andeq	r0, r0, r0
+0x00701c30:	andeq	r0, r0, r0
+0x00701c34:	andeq	r0, r0, r0
+0x00701c38:	andeq	r0, r0, r0
+0x00701c3c:	andeq	r0, r0, r0
+0x00701c40:	andeq	r0, r0, r0
+0x00701c44:	andeq	r0, r0, r0
+0x00701c48:	andeq	r0, r0, r0
+0x00701c4c:	andeq	r0, r0, r0
+0x00701c50:	andeq	r0, r0, r0
+0x00701c54:	andeq	r0, r0, r0
+0x00701c58:	andeq	r0, r0, r0
+0x00701c5c:	andeq	r0, r0, r0
+0x00701c60:	andeq	r0, r0, r0
+0x00701c64:	andeq	r0, r0, r0
+0x00701c68:	andeq	r0, r0, r0
+0x00701c6c:	andeq	r0, r0, r0
+0x00701c70:	andeq	r0, r0, r0
+0x00701c74:	andeq	r0, r0, r0
+0x00701c78:	andeq	r0, r0, r0
+0x00701c7c:	andeq	r0, r0, r0
+0x00701c80:	andeq	r0, r0, r0
+0x00701c84:	andeq	r0, r0, r0
+0x00701c88:	andeq	r0, r0, r0
+0x00701c8c:	andeq	r0, r0, r0
+0x00701c90:	andeq	r0, r0, r0
+0x00701c94:	andeq	r0, r0, r0
+0x00701c98:	andeq	r0, r0, r0
+0x00701c9c:	andeq	r0, r0, r0
+0x00701ca0:	andeq	r0, r0, r0
+0x00701ca4:	andeq	r0, r0, r0
+0x00701ca8:	andeq	r0, r0, r0
+0x00701cac:	andeq	r0, r0, r0
+0x00701cb0:	andeq	r0, r0, r0
+0x00701cb4:	andeq	r0, r0, r0
+0x00701cb8:	andeq	r0, r0, r0
+0x00701cbc:	andeq	r0, r0, r0
+0x00701cc0:	andeq	r0, r0, r0
+0x00701cc4:	andeq	r0, r0, r0
+0x00701cc8:	andeq	r0, r0, r0
+0x00701ccc:	andeq	r0, r0, r0
+0x00701cd0:	andeq	r0, r0, r0
+0x00701cd4:	andeq	r0, r0, r0
+0x00701cd8:	andeq	r0, r0, r0
+0x00701cdc:	andeq	r0, r0, r0
+0x00701ce0:	andeq	r0, r0, r0
+0x00701ce4:	andeq	r0, r0, r0
+0x00701ce8:	andeq	r0, r0, r0
+0x00701cec:	andeq	r0, r0, r0
+0x00701cf0:	andeq	r0, r0, r0
+0x00701cf4:	andeq	r0, r0, r0
+0x00701cf8:	andeq	r0, r0, r0
+0x00701cfc:	andeq	r0, r0, r0
+0x00701d00:	andeq	r0, r0, r0
+0x00701d04:	andeq	r0, r0, r0
+0x00701d08:	andeq	r0, r0, r0
+0x00701d0c:	andeq	r0, r0, r0
+0x00701d10:	andeq	r0, r0, r0
+0x00701d14:	andeq	r0, r0, r0
+0x00701d18:	andeq	r0, r0, r0
+0x00701d1c:	andeq	r0, r0, r0
+0x00701d20:	andeq	r0, r0, r0
+0x00701d24:	andeq	r0, r0, r0
+0x00701d28:	andeq	r0, r0, r0
+0x00701d2c:	andeq	r0, r0, r0
+0x00701d30:	andeq	r0, r0, r0
+0x00701d34:	andeq	r0, r0, r0
+0x00701d38:	andeq	r0, r0, r0
+0x00701d3c:	andeq	r0, r0, r0
+0x00701d40:	andeq	r0, r0, r0
+0x00701d44:	andeq	r0, r0, r0
+0x00701d48:	andeq	r0, r0, r0
+0x00701d4c:	andeq	r0, r0, r0
+0x00701d50:	andeq	r0, r0, r0
+0x00701d54:	andeq	r0, r0, r0
+0x00701d58:	andeq	r0, r0, r0
+0x00701d5c:	andeq	r0, r0, r0
+0x00701d60:	andeq	r0, r0, r0
+0x00701d64:	andeq	r0, r0, r0
+0x00701d68:	andeq	r0, r0, r0
+0x00701d6c:	andeq	r0, r0, r0
+0x00701d70:	andeq	r0, r0, r0
+0x00701d74:	andeq	r0, r0, r0
+0x00701d78:	andeq	r0, r0, r0
+0x00701d7c:	andeq	r0, r0, r0
+0x00701d80:	andeq	r0, r0, r0
+0x00701d84:	andeq	r0, r0, r0
+0x00701d88:	andeq	r0, r0, r0
+0x00701d8c:	andeq	r0, r0, r0
+0x00701d90:	andeq	r0, r0, r0
+0x00701d94:	andeq	r0, r0, r0
+0x00701d98:	andeq	r0, r0, r0
+0x00701d9c:	andeq	r0, r0, r0
+0x00701da0:	andeq	r0, r0, r0
+0x00701da4:	andeq	r0, r0, r0
+0x00701da8:	andeq	r0, r0, r0
+0x00701dac:	andeq	r0, r0, r0
+0x00701db0:	andeq	r0, r0, r0
+0x00701db4:	andeq	r0, r0, r0
+0x00701db8:	andeq	r0, r0, r0
+0x00701dbc:	andeq	r0, r0, r0
+0x00701dc0:	andeq	r0, r0, r0
+0x00701dc4:	andeq	r0, r0, r0
+0x00701dc8:	andeq	r0, r0, r0
+0x00701dcc:	andeq	r0, r0, r0
+0x00701dd0:	andeq	r0, r0, r0
+0x00701dd4:	andeq	r0, r0, r0
+0x00701dd8:	andeq	r0, r0, r0
+0x00701ddc:	andeq	r0, r0, r0
+0x00701de0:	andeq	r0, r0, r0
+0x00701de4:	andeq	r0, r0, r0
+0x00701de8:	andeq	r0, r0, r0
+0x00701dec:	andeq	r0, r0, r0
+0x00701df0:	andeq	r0, r0, r0
+0x00701df4:	andeq	r0, r0, r0
+0x00701df8:	andeq	r0, r0, r0
+0x00701dfc:	andeq	r0, r0, r0
+0x00701e00:	andeq	r0, r0, r0
+0x00701e04:	andeq	r0, r0, r0
+0x00701e08:	andeq	r0, r0, r0
+0x00701e0c:	andeq	r0, r0, r0
+0x00701e10:	andeq	r0, r0, r0
+0x00701e14:	andeq	r0, r0, r0
+0x00701e18:	andeq	r0, r0, r0
+0x00701e1c:	andeq	r0, r0, r0
+0x00701e20:	andeq	r0, r0, r0
+0x00701e24:	andeq	r0, r0, r0
+0x00701e28:	andeq	r0, r0, r0
+0x00701e2c:	andeq	r0, r0, r0
+0x00701e30:	andeq	r0, r0, r0
+0x00701e34:	andeq	r0, r0, r0
+0x00701e38:	andeq	r0, r0, r0
+0x00701e3c:	andeq	r0, r0, r0
+0x00701e40:	andeq	r0, r0, r0
+0x00701e44:	andeq	r0, r0, r0
+0x00701e48:	andeq	r0, r0, r0
+0x00701e4c:	andeq	r0, r0, r0
+0x00701e50:	andeq	r0, r0, r0
+0x00701e54:	andeq	r0, r0, r0
+0x00701e58:	andeq	r0, r0, r0
+0x00701e5c:	andeq	r0, r0, r0
+0x00701e60:	andeq	r0, r0, r0
+0x00701e64:	andeq	r0, r0, r0
+0x00701e68:	andeq	r0, r0, r0
+0x00701e6c:	andeq	r0, r0, r0
+0x00701e70:	andeq	r0, r0, r0
+0x00701e74:	andeq	r0, r0, r0
+0x00701e78:	andeq	r0, r0, r0
+0x00701e7c:	andeq	r0, r0, r0
+0x00701e80:	andeq	r0, r0, r0
+0x00701e84:	andeq	r0, r0, r0
+0x00701e88:	andeq	r0, r0, r0
+0x00701e8c:	andeq	r0, r0, r0
+0x00701e90:	andeq	r0, r0, r0
+0x00701e94:	andeq	r0, r0, r0
+0x00701e98:	andeq	r0, r0, r0
+0x00701e9c:	andeq	r0, r0, r0
+0x00701ea0:	andeq	r0, r0, r0
+0x00701ea4:	andeq	r0, r0, r0
+0x00701ea8:	andeq	r0, r0, r0
+0x00701eac:	andeq	r0, r0, r0
+0x00701eb0:	andeq	r0, r0, r0
+0x00701eb4:	andeq	r0, r0, r0
+0x00701eb8:	andeq	r0, r0, r0
+0x00701ebc:	andeq	r0, r0, r0
+0x00701ec0:	andeq	r0, r0, r0
+0x00701ec4:	andeq	r0, r0, r0
+0x00701ec8:	andeq	r0, r0, r0
+0x00701ecc:	andeq	r0, r0, r0
+0x00701ed0:	andeq	r0, r0, r0
+0x00701ed4:	andeq	r0, r0, r0
+0x00701ed8:	andeq	r0, r0, r0
+0x00701edc:	andeq	r0, r0, r0
+0x00701ee0:	andeq	r0, r0, r0
+0x00701ee4:	andeq	r0, r0, r0
+0x00701ee8:	andeq	r0, r0, r0
+0x00701eec:	andeq	r0, r0, r0
+0x00701ef0:	andeq	r0, r0, r0
+0x00701ef4:	andeq	r0, r0, r0
+0x00701ef8:	andeq	r0, r0, r0
+0x00701efc:	andeq	r0, r0, r0
+0x00701f00:	andeq	r0, r0, r0
+0x00701f04:	andeq	r0, r0, r0
+0x00701f08:	andeq	r0, r0, r0
+0x00701f0c:	andeq	r0, r0, r0
+0x00701f10:	andeq	r0, r0, r0
+0x00701f14:	andeq	r0, r0, r0
+0x00701f18:	andeq	r0, r0, r0
+0x00701f1c:	andeq	r0, r0, r0
+0x00701f20:	andeq	r0, r0, r0
+0x00701f24:	andeq	r0, r0, r0
+0x00701f28:	andeq	r0, r0, r0
+0x00701f2c:	andeq	r0, r0, r0
+0x00701f30:	andeq	r0, r0, r0
+0x00701f34:	andeq	r0, r0, r0
+0x00701f38:	andeq	r0, r0, r0
+0x00701f3c:	andeq	r0, r0, r0
+0x00701f40:	andeq	r0, r0, r0
+0x00701f44:	andeq	r0, r0, r0
+0x00701f48:	andeq	r0, r0, r0
+0x00701f4c:	andeq	r0, r0, r0
+0x00701f50:	andeq	r0, r0, r0
+0x00701f54:	andeq	r0, r0, r0
+0x00701f58:	andeq	r0, r0, r0
+0x00701f5c:	andeq	r0, r0, r0
+0x00701f60:	andeq	r0, r0, r0
+0x00701f64:	andeq	r0, r0, r0
+0x00701f68:	andeq	r0, r0, r0
+0x00701f6c:	andeq	r0, r0, r0
+0x00701f70:	andeq	r0, r0, r0
+0x00701f74:	andeq	r0, r0, r0
+0x00701f78:	andeq	r0, r0, r0
+0x00701f7c:	andeq	r0, r0, r0
+0x00701f80:	andeq	r0, r0, r0
+0x00701f84:	andeq	r0, r0, r0
+0x00701f88:	andeq	r0, r0, r0
+0x00701f8c:	andeq	r0, r0, r0
+0x00701f90:	andeq	r0, r0, r0
+0x00701f94:	andeq	r0, r0, r0
+0x00701f98:	andeq	r0, r0, r0
+0x00701f9c:	andeq	r0, r0, r0
+0x00701fa0:	andeq	r0, r0, r0
+0x00701fa4:	andeq	r0, r0, r0
+0x00701fa8:	andeq	r0, r0, r0
+0x00701fac:	andeq	r0, r0, r0
+0x00701fb0:	andeq	r0, r0, r0
+0x00701fb4:	andeq	r0, r0, r0
+0x00701fb8:	andeq	r0, r0, r0
+0x00701fbc:	andeq	r0, r0, r0
+0x00701fc0:	andeq	r0, r0, r0
+0x00701fc4:	andeq	r0, r0, r0
+0x00701fc8:	andeq	r0, r0, r0
+0x00701fcc:	andeq	r0, r0, r0
+0x00701fd0:	andeq	r0, r0, r0
+0x00701fd4:	andeq	r0, r0, r0
+0x00701fd8:	andeq	r0, r0, r0
+0x00701fdc:	andeq	r0, r0, r0
+0x00701fe0:	andeq	r0, r0, r0
+0x00701fe4:	andeq	r0, r0, r0
+0x00701fe8:	andeq	r0, r0, r0
+0x00701fec:	andeq	r0, r0, r0
+0x00701ff0:	andeq	r0, r0, r0
+0x00701ff4:	andeq	r0, r0, r0
+0x00701ff8:	andeq	r0, r0, r0
+0x00701ffc:	andeq	r0, r0, r0
+0x00702000:	andeq	r0, r0, r0
+0x00702004:	andeq	r0, r0, r0
+0x00702008:	andeq	r0, r0, r0
+0x0070200c:	andeq	r0, r0, r0
+0x00702010:	andeq	r0, r0, r0
+0x00702014:	andeq	r0, r0, r0
+0x00702018:	andeq	r0, r0, r0
+0x0070201c:	andeq	r0, r0, r0
+0x00702020:	andeq	r0, r0, r0
+0x00702024:	andeq	r0, r0, r0
+0x00702028:	andeq	r0, r0, r0
+0x0070202c:	andeq	r0, r0, r0
+0x00702030:	andeq	r0, r0, r0
+0x00702034:	andeq	r0, r0, r0
+0x00702038:	andeq	r0, r0, r0
+0x0070203c:	andeq	r0, r0, r0
+0x00702040:	andeq	r0, r0, r0
+0x00702044:	andeq	r0, r0, r0
+0x00702048:	andeq	r0, r0, r0
+0x0070204c:	andeq	r0, r0, r0
+0x00702050:	andeq	r0, r0, r0
+0x00702054:	andeq	r0, r0, r0
+0x00702058:	andeq	r0, r0, r0
+0x0070205c:	andeq	r0, r0, r0
+0x00702060:	andeq	r0, r0, r0
+0x00702064:	andeq	r0, r0, r0
+0x00702068:	andeq	r0, r0, r0
+0x0070206c:	andeq	r0, r0, r0
+0x00702070:	andeq	r0, r0, r0
+0x00702074:	andeq	r0, r0, r0
+0x00702078:	andeq	r0, r0, r0
+0x0070207c:	andeq	r0, r0, r0
+0x00702080:	andeq	r0, r0, r0
+0x00702084:	andeq	r0, r0, r0
+0x00702088:	andeq	r0, r0, r0
+0x0070208c:	andeq	r0, r0, r0
+0x00702090:	andeq	r0, r0, r0
+0x00702094:	andeq	r0, r0, r0
+0x00702098:	andeq	r0, r0, r0
+0x0070209c:	andeq	r0, r0, r0
+0x007020a0:	andeq	r0, r0, r0
+0x007020a4:	andeq	r0, r0, r0
+0x007020a8:	andeq	r0, r0, r0
+0x007020ac:	andeq	r0, r0, r0
+0x007020b0:	andeq	r0, r0, r0
+0x007020b4:	andeq	r0, r0, r0
+0x007020b8:	andeq	r0, r0, r0
+0x007020bc:	andeq	r0, r0, r0
+0x007020c0:	andeq	r0, r0, r0
+0x007020c4:	andeq	r0, r0, r0
+0x007020c8:	andeq	r0, r0, r0
+0x007020cc:	andeq	r0, r0, r0
+0x007020d0:	andeq	r0, r0, r0
+0x007020d4:	andeq	r0, r0, r0
+0x007020d8:	andeq	r0, r0, r0
+0x007020dc:	andeq	r0, r0, r0
+0x007020e0:	andeq	r0, r0, r0
+0x007020e4:	andeq	r0, r0, r0
+0x007020e8:	andeq	r0, r0, r0
+0x007020ec:	andeq	r0, r0, r0
+0x007020f0:	andeq	r0, r0, r0
+0x007020f4:	andeq	r0, r0, r0
+0x007020f8:	andeq	r0, r0, r0
+0x007020fc:	andeq	r0, r0, r0
+0x00702100:	andeq	r0, r0, r0
+0x00702104:	andeq	r0, r0, r0
+0x00702108:	andeq	r0, r0, r0
+0x0070210c:	andeq	r0, r0, r0
+0x00702110:	andeq	r0, r0, r0
+0x00702114:	andeq	r0, r0, r0
+0x00702118:	andeq	r0, r0, r0
+0x0070211c:	andeq	r0, r0, r0
+0x00702120:	andeq	r0, r0, r0
+0x00702124:	andeq	r0, r0, r0
+0x00702128:	andeq	r0, r0, r0
+0x0070212c:	andeq	r0, r0, r0
+0x00702130:	andeq	r0, r0, r0
+0x00702134:	andeq	r0, r0, r0
+0x00702138:	andeq	r0, r0, r0
+0x0070213c:	andeq	r0, r0, r0
+0x00702140:	andeq	r0, r0, r0
+0x00702144:	andeq	r0, r0, r0
+0x00702148:	andeq	r0, r0, r0
+0x0070214c:	andeq	r0, r0, r0
+0x00702150:	andeq	r0, r0, r0
+0x00702154:	andeq	r0, r0, r0
+0x00702158:	andeq	r0, r0, r0
+0x0070215c:	andeq	r0, r0, r0
+0x00702160:	andeq	r0, r0, r0
+0x00702164:	andeq	r0, r0, r0
+0x00702168:	andeq	r0, r0, r0
+0x0070216c:	andeq	r0, r0, r0
+0x00702170:	andeq	r0, r0, r0
+0x00702174:	andeq	r0, r0, r0
+0x00702178:	andeq	r0, r0, r0
+0x0070217c:	andeq	r0, r0, r0
+0x00702180:	andeq	r0, r0, r0
+0x00702184:	andeq	r0, r0, r0
+0x00702188:	andeq	r0, r0, r0
+0x0070218c:	andeq	r0, r0, r0
+0x00702190:	andeq	r0, r0, r0
+0x00702194:	andeq	r0, r0, r0
+0x00702198:	andeq	r0, r0, r0
+0x0070219c:	andeq	r0, r0, r0
+0x007021a0:	andeq	r0, r0, r0
+0x007021a4:	andeq	r0, r0, r0
+0x007021a8:	andeq	r0, r0, r0
+0x007021ac:	andeq	r0, r0, r0
+0x007021b0:	andeq	r0, r0, r0
+0x007021b4:	andeq	r0, r0, r0
+0x007021b8:	andeq	r0, r0, r0
+0x007021bc:	andeq	r0, r0, r0
+0x007021c0:	andeq	r0, r0, r0
+0x007021c4:	andeq	r0, r0, r0
+0x007021c8:	andeq	r0, r0, r0
+0x007021cc:	andeq	r0, r0, r0
+0x007021d0:	andeq	r0, r0, r0
+0x007021d4:	andeq	r0, r0, r0
+0x007021d8:	andeq	r0, r0, r0
+0x007021dc:	andeq	r0, r0, r0
+0x007021e0:	andeq	r0, r0, r0
+0x007021e4:	andeq	r0, r0, r0
+0x007021e8:	andeq	r0, r0, r0
+0x007021ec:	andeq	r0, r0, r0
+0x007021f0:	andeq	r0, r0, r0
+0x007021f4:	andeq	r0, r0, r0
+0x007021f8:	andeq	r0, r0, r0
+0x007021fc:	andeq	r0, r0, r0
+0x00702200:	andeq	r0, r0, r0
+0x00702204:	andeq	r0, r0, r0
+0x00702208:	andeq	r0, r0, r0
+0x0070220c:	andeq	r0, r0, r0
+0x00702210:	andeq	r0, r0, r0
+0x00702214:	andeq	r0, r0, r0
+0x00702218:	andeq	r0, r0, r0
+0x0070221c:	andeq	r0, r0, r0
+0x00702220:	andeq	r0, r0, r0
+0x00702224:	andeq	r0, r0, r0
+0x00702228:	andeq	r0, r0, r0
+0x0070222c:	andeq	r0, r0, r0
+0x00702230:	andeq	r0, r0, r0
+0x00702234:	andeq	r0, r0, r0
+0x00702238:	andeq	r0, r0, r0
+0x0070223c:	andeq	r0, r0, r0
+0x00702240:	andeq	r0, r0, r0
+0x00702244:	andeq	r0, r0, r0
+0x00702248:	andeq	r0, r0, r0
+0x0070224c:	andeq	r0, r0, r0
+0x00702250:	andeq	r0, r0, r0
+0x00702254:	andeq	r0, r0, r0
+0x00702258:	andeq	r0, r0, r0
+0x0070225c:	andeq	r0, r0, r0
+0x00702260:	andeq	r0, r0, r0
+0x00702264:	andeq	r0, r0, r0
+0x00702268:	andeq	r0, r0, r0
+0x0070226c:	andeq	r0, r0, r0
+0x00702270:	andeq	r0, r0, r0
+0x00702274:	andeq	r0, r0, r0
+0x00702278:	andeq	r0, r0, r0
+0x0070227c:	andeq	r0, r0, r0
+0x00702280:	andeq	r0, r0, r0
+0x00702284:	andeq	r0, r0, r0
+0x00702288:	andeq	r0, r0, r0
+0x0070228c:	andeq	r0, r0, r0
+0x00702290:	andeq	r0, r0, r0
+0x00702294:	andeq	r0, r0, r0
+0x00702298:	andeq	r0, r0, r0
+0x0070229c:	andeq	r0, r0, r0
+0x007022a0:	andeq	r0, r0, r0
+0x007022a4:	andeq	r0, r0, r0
+0x007022a8:	andeq	r0, r0, r0
+0x007022ac:	andeq	r0, r0, r0
+0x007022b0:	andeq	r0, r0, r0
+0x007022b4:	andeq	r0, r0, r0
+0x007022b8:	andeq	r0, r0, r0
+0x007022bc:	andeq	r0, r0, r0
+0x007022c0:	andeq	r0, r0, r0
+0x007022c4:	andeq	r0, r0, r0
+0x007022c8:	andeq	r0, r0, r0
+0x007022cc:	andeq	r0, r0, r0
+0x007022d0:	andeq	r0, r0, r0
+0x007022d4:	andeq	r0, r0, r0
+0x007022d8:	andeq	r0, r0, r0
+0x007022dc:	andeq	r0, r0, r0
+0x007022e0:	andeq	r0, r0, r0
+0x007022e4:	andeq	r0, r0, r0
+0x007022e8:	andeq	r0, r0, r0
+0x007022ec:	andeq	r0, r0, r0
+0x007022f0:	andeq	r0, r0, r0
+0x007022f4:	andeq	r0, r0, r0
+0x007022f8:	andeq	r0, r0, r0
+0x007022fc:	andeq	r0, r0, r0
+0x00702300:	andeq	r0, r0, r0
+0x00702304:	andeq	r0, r0, r0
+0x00702308:	andeq	r0, r0, r0
+0x0070230c:	andeq	r0, r0, r0
+0x00702310:	andeq	r0, r0, r0
+0x00702314:	andeq	r0, r0, r0
+0x00702318:	andeq	r0, r0, r0
+0x0070231c:	andeq	r0, r0, r0
+0x00702320:	andeq	r0, r0, r0
+0x00702324:	andeq	r0, r0, r0
+0x00702328:	andeq	r0, r0, r0
+0x0070232c:	andeq	r0, r0, r0
+0x00702330:	andeq	r0, r0, r0
+0x00702334:	andeq	r0, r0, r0
+0x00702338:	andeq	r0, r0, r0
+0x0070233c:	andeq	r0, r0, r0
+0x00702340:	andeq	r0, r0, r0
+0x00702344:	andeq	r0, r0, r0
+0x00702348:	andeq	r0, r0, r0
+0x0070234c:	andeq	r0, r0, r0
+0x00702350:	andeq	r0, r0, r0
+0x00702354:	andeq	r0, r0, r0
+0x00702358:	andeq	r0, r0, r0
+0x0070235c:	andeq	r0, r0, r0
+0x00702360:	andeq	r0, r0, r0
+0x00702364:	andeq	r0, r0, r0
+0x00702368:	andeq	r0, r0, r0
+0x0070236c:	andeq	r0, r0, r0
+0x00702370:	andeq	r0, r0, r0
+0x00702374:	andeq	r0, r0, r0
+0x00702378:	andeq	r0, r0, r0
+0x0070237c:	andeq	r0, r0, r0
+0x00702380:	andeq	r0, r0, r0
+0x00702384:	andeq	r0, r0, r0
+0x00702388:	andeq	r0, r0, r0
+0x0070238c:	andeq	r0, r0, r0
+0x00702390:	andeq	r0, r0, r0
+0x00702394:	andeq	r0, r0, r0
+0x00702398:	andeq	r0, r0, r0
+0x0070239c:	andeq	r0, r0, r0
+0x007023a0:	andeq	r0, r0, r0
+0x007023a4:	andeq	r0, r0, r0
+0x007023a8:	andeq	r0, r0, r0
+0x007023ac:	andeq	r0, r0, r0
+0x007023b0:	andeq	r0, r0, r0
+0x007023b4:	andeq	r0, r0, r0
+0x007023b8:	andeq	r0, r0, r0
+0x007023bc:	andeq	r0, r0, r0
+0x007023c0:	andeq	r0, r0, r0
+0x007023c4:	andeq	r0, r0, r0
+0x007023c8:	andeq	r0, r0, r0
+0x007023cc:	andeq	r0, r0, r0
+0x007023d0:	andeq	r0, r0, r0
+0x007023d4:	andeq	r0, r0, r0
+0x007023d8:	andeq	r0, r0, r0
+0x007023dc:	andeq	r0, r0, r0
+0x007023e0:	andeq	r0, r0, r0
+0x007023e4:	andeq	r0, r0, r0
+0x007023e8:	andeq	r0, r0, r0
+0x007023ec:	andeq	r0, r0, r0
+0x007023f0:	andeq	r0, r0, r0
+0x007023f4:	andeq	r0, r0, r0
+0x007023f8:	andeq	r0, r0, r0
+0x007023fc:	andeq	r0, r0, r0
+0x00702400:	andeq	r0, r0, r0
+0x00702404:	andeq	r0, r0, r0
+0x00702408:	andeq	r0, r0, r0
+0x0070240c:	andeq	r0, r0, r0
+0x00702410:	andeq	r0, r0, r0
+0x00702414:	andeq	r0, r0, r0
+0x00702418:	andeq	r0, r0, r0
+0x0070241c:	andeq	r0, r0, r0
+0x00702420:	andeq	r0, r0, r0
+0x00702424:	andeq	r0, r0, r0
+0x00702428:	andeq	r0, r0, r0
+0x0070242c:	andeq	r0, r0, r0
+0x00702430:	andeq	r0, r0, r0
+0x00702434:	andeq	r0, r0, r0
+0x00702438:	andeq	r0, r0, r0
+0x0070243c:	andeq	r0, r0, r0
+0x00702440:	andeq	r0, r0, r0
+0x00702444:	andeq	r0, r0, r0
+0x00702448:	andeq	r0, r0, r0
+0x0070244c:	andeq	r0, r0, r0
+0x00702450:	andeq	r0, r0, r0
+0x00702454:	andeq	r0, r0, r0
+0x00702458:	andeq	r0, r0, r0
+0x0070245c:	andeq	r0, r0, r0
+0x00702460:	andeq	r0, r0, r0
+0x00702464:	andeq	r0, r0, r0
+0x00702468:	andeq	r0, r0, r0
+0x0070246c:	andeq	r0, r0, r0
+0x00702470:	andeq	r0, r0, r0
+0x00702474:	andeq	r0, r0, r0
+0x00702478:	andeq	r0, r0, r0
+0x0070247c:	andeq	r0, r0, r0
+0x00702480:	andeq	r0, r0, r0
+0x00702484:	andeq	r0, r0, r0
+0x00702488:	andeq	r0, r0, r0
+0x0070248c:	andeq	r0, r0, r0
+0x00702490:	andeq	r0, r0, r0
+0x00702494:	andeq	r0, r0, r0
+0x00702498:	andeq	r0, r0, r0
+0x0070249c:	andeq	r0, r0, r0
+0x007024a0:	andeq	r0, r0, r0
+0x007024a4:	andeq	r0, r0, r0
+0x007024a8:	andeq	r0, r0, r0
+0x007024ac:	andeq	r0, r0, r0
+0x007024b0:	andeq	r0, r0, r0
+0x007024b4:	andeq	r0, r0, r0
+0x007024b8:	andeq	r0, r0, r0
+0x007024bc:	andeq	r0, r0, r0
+0x007024c0:	andeq	r0, r0, r0
+0x007024c4:	andeq	r0, r0, r0
+0x007024c8:	andeq	r0, r0, r0
+0x007024cc:	andeq	r0, r0, r0
+0x007024d0:	andeq	r0, r0, r0
+0x007024d4:	andeq	r0, r0, r0
+0x007024d8:	andeq	r0, r0, r0
+0x007024dc:	andeq	r0, r0, r0
+0x007024e0:	andeq	r0, r0, r0
+0x007024e4:	andeq	r0, r0, r0
+0x007024e8:	andeq	r0, r0, r0
+0x007024ec:	andeq	r0, r0, r0
+0x007024f0:	andeq	r0, r0, r0
+0x007024f4:	andeq	r0, r0, r0
+0x007024f8:	andeq	r0, r0, r0
+0x007024fc:	andeq	r0, r0, r0
+0x00702500:	andeq	r0, r0, r0
+0x00702504:	andeq	r0, r0, r0
+0x00702508:	andeq	r0, r0, r0
+0x0070250c:	andeq	r0, r0, r0
+0x00702510:	andeq	r0, r0, r0
+0x00702514:	andeq	r0, r0, r0
+0x00702518:	andeq	r0, r0, r0
+0x0070251c:	andeq	r0, r0, r0
+0x00702520:	andeq	r0, r0, r0
+0x00702524:	andeq	r0, r0, r0
+0x00702528:	andeq	r0, r0, r0
+0x0070252c:	andeq	r0, r0, r0
+0x00702530:	andeq	r0, r0, r0
+0x00702534:	andeq	r0, r0, r0
+0x00702538:	andeq	r0, r0, r0
+0x0070253c:	andeq	r0, r0, r0
+0x00702540:	andeq	r0, r0, r0
+0x00702544:	andeq	r0, r0, r0
+0x00702548:	andeq	r0, r0, r0
+0x0070254c:	andeq	r0, r0, r0
+0x00702550:	andeq	r0, r0, r0
+0x00702554:	andeq	r0, r0, r0
+0x00702558:	andeq	r0, r0, r0
+0x0070255c:	andeq	r0, r0, r0
+0x00702560:	andeq	r0, r0, r0
+0x00702564:	andeq	r0, r0, r0
+0x00702568:	andeq	r0, r0, r0
+0x0070256c:	andeq	r0, r0, r0
+0x00702570:	andeq	r0, r0, r0
+0x00702574:	andeq	r0, r0, r0
+0x00702578:	andeq	r0, r0, r0
+0x0070257c:	andeq	r0, r0, r0
+0x00702580:	andeq	r0, r0, r0
+0x00702584:	andeq	r0, r0, r0
+0x00702588:	andeq	r0, r0, r0
+0x0070258c:	andeq	r0, r0, r0
+0x00702590:	andeq	r0, r0, r0
+0x00702594:	andeq	r0, r0, r0
+0x00702598:	andeq	r0, r0, r0
+0x0070259c:	andeq	r0, r0, r0
+0x007025a0:	andeq	r0, r0, r0
+0x007025a4:	andeq	r0, r0, r0
+0x007025a8:	andeq	r0, r0, r0
+0x007025ac:	andeq	r0, r0, r0
+0x007025b0:	andeq	r0, r0, r0
+0x007025b4:	andeq	r0, r0, r0
+0x007025b8:	andeq	r0, r0, r0
+0x007025bc:	andeq	r0, r0, r0
+0x007025c0:	andeq	r0, r0, r0
+0x007025c4:	andeq	r0, r0, r0
+0x007025c8:	andeq	r0, r0, r0
+0x007025cc:	andeq	r0, r0, r0
+0x007025d0:	andeq	r0, r0, r0
+0x007025d4:	andeq	r0, r0, r0
+0x007025d8:	andeq	r0, r0, r0
+0x007025dc:	andeq	r0, r0, r0
+0x007025e0:	andeq	r0, r0, r0
+0x007025e4:	andeq	r0, r0, r0
+0x007025e8:	andeq	r0, r0, r0
+0x007025ec:	andeq	r0, r0, r0
+0x007025f0:	andeq	r0, r0, r0
+0x007025f4:	andeq	r0, r0, r0
+0x007025f8:	andeq	r0, r0, r0
+0x007025fc:	andeq	r0, r0, r0
+0x00702600:	andeq	r0, r0, r0
+0x00702604:	andeq	r0, r0, r0
+0x00702608:	andeq	r0, r0, r0
+0x0070260c:	andeq	r0, r0, r0
+0x00702610:	andeq	r0, r0, r0
+0x00702614:	andeq	r0, r0, r0
+0x00702618:	andeq	r0, r0, r0
+0x0070261c:	andeq	r0, r0, r0
+0x00702620:	andeq	r0, r0, r0
+0x00702624:	andeq	r0, r0, r0
+0x00702628:	andeq	r0, r0, r0
+0x0070262c:	andeq	r0, r0, r0
+0x00702630:	andeq	r0, r0, r0
+0x00702634:	andeq	r0, r0, r0
+0x00702638:	andeq	r0, r0, r0
+0x0070263c:	andeq	r0, r0, r0
+0x00702640:	andeq	r0, r0, r0
+0x00702644:	andeq	r0, r0, r0
+0x00702648:	andeq	r0, r0, r0
+0x0070264c:	andeq	r0, r0, r0
+0x00702650:	andeq	r0, r0, r0
+0x00702654:	andeq	r0, r0, r0
+0x00702658:	andeq	r0, r0, r0
+0x0070265c:	andeq	r0, r0, r0
+0x00702660:	andeq	r0, r0, r0
+0x00702664:	andeq	r0, r0, r0
+0x00702668:	andeq	r0, r0, r0
+0x0070266c:	andeq	r0, r0, r0
+0x00702670:	andeq	r0, r0, r0
+0x00702674:	andeq	r0, r0, r0
+0x00702678:	andeq	r0, r0, r0
+0x0070267c:	andeq	r0, r0, r0
+0x00702680:	andeq	r0, r0, r0
+0x00702684:	andeq	r0, r0, r0
+0x00702688:	andeq	r0, r0, r0
+0x0070268c:	andeq	r0, r0, r0
+0x00702690:	andeq	r0, r0, r0
+0x00702694:	andeq	r0, r0, r0
+0x00702698:	andeq	r0, r0, r0
+0x0070269c:	andeq	r0, r0, r0
+0x007026a0:	andeq	r0, r0, r0
+0x007026a4:	andeq	r0, r0, r0
+0x007026a8:	andeq	r0, r0, r0
+0x007026ac:	andeq	r0, r0, r0
+0x007026b0:	andeq	r0, r0, r0
+0x007026b4:	andeq	r0, r0, r0
+0x007026b8:	andeq	r0, r0, r0
+0x007026bc:	andeq	r0, r0, r0
+0x007026c0:	andeq	r0, r0, r0
+0x007026c4:	andeq	r0, r0, r0
+0x007026c8:	andeq	r0, r0, r0
+0x007026cc:	andeq	r0, r0, r0
+0x007026d0:	andeq	r0, r0, r0
+0x007026d4:	andeq	r0, r0, r0
+0x007026d8:	andeq	r0, r0, r0
+0x007026dc:	andeq	r0, r0, r0
+0x007026e0:	andeq	r0, r0, r0
+0x007026e4:	andeq	r0, r0, r0
+0x007026e8:	andeq	r0, r0, r0
+0x007026ec:	andeq	r0, r0, r0
+0x007026f0:	andeq	r0, r0, r0
+0x007026f4:	andeq	r0, r0, r0
+0x007026f8:	andeq	r0, r0, r0
+0x007026fc:	andeq	r0, r0, r0
+0x00702700:	andeq	r0, r0, r0
+0x00702704:	andeq	r0, r0, r0
+0x00702708:	andeq	r0, r0, r0
+0x0070270c:	andeq	r0, r0, r0
+0x00702710:	andeq	r0, r0, r0
+0x00702714:	andeq	r0, r0, r0
+0x00702718:	andeq	r0, r0, r0
+0x0070271c:	andeq	r0, r0, r0
+0x00702720:	andeq	r0, r0, r0
+0x00702724:	andeq	r0, r0, r0
+0x00702728:	andeq	r0, r0, r0
+0x0070272c:	andeq	r0, r0, r0
+0x00702730:	andeq	r0, r0, r0
+0x00702734:	andeq	r0, r0, r0
+0x00702738:	andeq	r0, r0, r0
+0x0070273c:	andeq	r0, r0, r0
+0x00702740:	andeq	r0, r0, r0
+0x00702744:	andeq	r0, r0, r0
+0x00702748:	andeq	r0, r0, r0
+0x0070274c:	andeq	r0, r0, r0
+0x00702750:	andeq	r0, r0, r0
+0x00702754:	andeq	r0, r0, r0
+0x00702758:	andeq	r0, r0, r0
+0x0070275c:	andeq	r0, r0, r0
+0x00702760:	andeq	r0, r0, r0
+0x00702764:	andeq	r0, r0, r0
+0x00702768:	andeq	r0, r0, r0
+0x0070276c:	andeq	r0, r0, r0
+0x00702770:	andeq	r0, r0, r0
+0x00702774:	andeq	r0, r0, r0
+0x00702778:	andeq	r0, r0, r0
+0x0070277c:	andeq	r0, r0, r0
+0x00702780:	andeq	r0, r0, r0
+0x00702784:	andeq	r0, r0, r0
+0x00702788:	andeq	r0, r0, r0
+0x0070278c:	andeq	r0, r0, r0
+0x00702790:	andeq	r0, r0, r0
+0x00702794:	andeq	r0, r0, r0
+0x00702798:	andeq	r0, r0, r0
+0x0070279c:	andeq	r0, r0, r0
+0x007027a0:	andeq	r0, r0, r0
+0x007027a4:	andeq	r0, r0, r0
+0x007027a8:	andeq	r0, r0, r0
+0x007027ac:	andeq	r0, r0, r0
+0x007027b0:	andeq	r0, r0, r0
+0x007027b4:	andeq	r0, r0, r0
+0x007027b8:	andeq	r0, r0, r0
+0x007027bc:	andeq	r0, r0, r0
+0x007027c0:	andeq	r0, r0, r0
+0x007027c4:	andeq	r0, r0, r0
+0x007027c8:	andeq	r0, r0, r0
+0x007027cc:	andeq	r0, r0, r0
+0x007027d0:	andeq	r0, r0, r0
+0x007027d4:	andeq	r0, r0, r0
+0x007027d8:	andeq	r0, r0, r0
+0x007027dc:	andeq	r0, r0, r0
+0x007027e0:	andeq	r0, r0, r0
+0x007027e4:	andeq	r0, r0, r0
+0x007027e8:	andeq	r0, r0, r0
+0x007027ec:	andeq	r0, r0, r0
+0x007027f0:	andeq	r0, r0, r0
+0x007027f4:	andeq	r0, r0, r0
+0x007027f8:	andeq	r0, r0, r0
+0x007027fc:	andeq	r0, r0, r0
+0x00702800:	andeq	r0, r0, r0
+0x00702804:	andeq	r0, r0, r0
+0x00702808:	andeq	r0, r0, r0
+0x0070280c:	andeq	r0, r0, r0
+0x00702810:	andeq	r0, r0, r0
+0x00702814:	andeq	r0, r0, r0
+0x00702818:	andeq	r0, r0, r0
+0x0070281c:	andeq	r0, r0, r0
+0x00702820:	andeq	r0, r0, r0
+0x00702824:	andeq	r0, r0, r0
+0x00702828:	andeq	r0, r0, r0
+0x0070282c:	andeq	r0, r0, r0
+0x00702830:	andeq	r0, r0, r0
+0x00702834:	andeq	r0, r0, r0
+0x00702838:	andeq	r0, r0, r0
+0x0070283c:	andeq	r0, r0, r0
+0x00702840:	andeq	r0, r0, r0
+0x00702844:	andeq	r0, r0, r0
+0x00702848:	andeq	r0, r0, r0
+0x0070284c:	andeq	r0, r0, r0
+0x00702850:	andeq	r0, r0, r0
+0x00702854:	andeq	r0, r0, r0
+0x00702858:	andeq	r0, r0, r0
+0x0070285c:	andeq	r0, r0, r0
+0x00702860:	andeq	r0, r0, r0
+0x00702864:	andeq	r0, r0, r0
+0x00702868:	andeq	r0, r0, r0
+0x0070286c:	andeq	r0, r0, r0
+0x00702870:	andeq	r0, r0, r0
+0x00702874:	andeq	r0, r0, r0
+0x00702878:	andeq	r0, r0, r0
+0x0070287c:	andeq	r0, r0, r0
+0x00702880:	andeq	r0, r0, r0
+0x00702884:	andeq	r0, r0, r0
+0x00702888:	andeq	r0, r0, r0
+0x0070288c:	andeq	r0, r0, r0
+0x00702890:	andeq	r0, r0, r0
+0x00702894:	andeq	r0, r0, r0
+0x00702898:	andeq	r0, r0, r0
+0x0070289c:	andeq	r0, r0, r0
+0x007028a0:	andeq	r0, r0, r0
+0x007028a4:	andeq	r0, r0, r0
+0x007028a8:	andeq	r0, r0, r0
+0x007028ac:	andeq	r0, r0, r0
+0x007028b0:	andeq	r0, r0, r0
+0x007028b4:	andeq	r0, r0, r0
+0x007028b8:	andeq	r0, r0, r0
+0x007028bc:	andeq	r0, r0, r0
+0x007028c0:	andeq	r0, r0, r0
+0x007028c4:	andeq	r0, r0, r0
+0x007028c8:	andeq	r0, r0, r0
+0x007028cc:	andeq	r0, r0, r0
+0x007028d0:	andeq	r0, r0, r0
+0x007028d4:	andeq	r0, r0, r0
+0x007028d8:	andeq	r0, r0, r0
+0x007028dc:	andeq	r0, r0, r0
+0x007028e0:	andeq	r0, r0, r0
+0x007028e4:	andeq	r0, r0, r0
+0x007028e8:	andeq	r0, r0, r0
+0x007028ec:	andeq	r0, r0, r0
+0x007028f0:	andeq	r0, r0, r0
+0x007028f4:	andeq	r0, r0, r0
+0x007028f8:	andeq	r0, r0, r0
+0x007028fc:	andeq	r0, r0, r0
+0x00702900:	andeq	r0, r0, r0
+0x00702904:	andeq	r0, r0, r0
+0x00702908:	andeq	r0, r0, r0
+0x0070290c:	andeq	r0, r0, r0
+0x00702910:	andeq	r0, r0, r0
+0x00702914:	andeq	r0, r0, r0
+0x00702918:	andeq	r0, r0, r0
+0x0070291c:	andeq	r0, r0, r0
+0x00702920:	andeq	r0, r0, r0
+0x00702924:	andeq	r0, r0, r0
+0x00702928:	andeq	r0, r0, r0
+0x0070292c:	andeq	r0, r0, r0
+0x00702930:	andeq	r0, r0, r0
+0x00702934:	andeq	r0, r0, r0
+0x00702938:	andeq	r0, r0, r0
+0x0070293c:	andeq	r0, r0, r0
+0x00702940:	andeq	r0, r0, r0
+0x00702944:	andeq	r0, r0, r0
+0x00702948:	andeq	r0, r0, r0
+0x0070294c:	andeq	r0, r0, r0
+0x00702950:	andeq	r0, r0, r0
+0x00702954:	andeq	r0, r0, r0
+0x00702958:	andeq	r0, r0, r0
+0x0070295c:	andeq	r0, r0, r0
+0x00702960:	andeq	r0, r0, r0
+0x00702964:	andeq	r0, r0, r0
+0x00702968:	andeq	r0, r0, r0
+0x0070296c:	andeq	r0, r0, r0
+0x00702970:	andeq	r0, r0, r0
+0x00702974:	andeq	r0, r0, r0
+0x00702978:	andeq	r0, r0, r0
+0x0070297c:	andeq	r0, r0, r0
+0x00702980:	andeq	r0, r0, r0
+0x00702984:	andeq	r0, r0, r0
+0x00702988:	andeq	r0, r0, r0
+0x0070298c:	andeq	r0, r0, r0
+0x00702990:	andeq	r0, r0, r0
+0x00702994:	andeq	r0, r0, r0
+0x00702998:	andeq	r0, r0, r0
+0x0070299c:	andeq	r0, r0, r0
+0x007029a0:	andeq	r0, r0, r0
+0x007029a4:	andeq	r0, r0, r0
+0x007029a8:	andeq	r0, r0, r0
+0x007029ac:	andeq	r0, r0, r0
+0x007029b0:	andeq	r0, r0, r0
+0x007029b4:	andeq	r0, r0, r0
+0x007029b8:	andeq	r0, r0, r0
+0x007029bc:	andeq	r0, r0, r0
+0x007029c0:	andeq	r0, r0, r0
+0x007029c4:	andeq	r0, r0, r0
+0x007029c8:	andeq	r0, r0, r0
+0x007029cc:	andeq	r0, r0, r0
+0x007029d0:	andeq	r0, r0, r0
+0x007029d4:	andeq	r0, r0, r0
+0x007029d8:	andeq	r0, r0, r0
+0x007029dc:	andeq	r0, r0, r0
+0x007029e0:	andeq	r0, r0, r0
+0x007029e4:	andeq	r0, r0, r0
+0x007029e8:	andeq	r0, r0, r0
+0x007029ec:	andeq	r0, r0, r0
+0x007029f0:	andeq	r0, r0, r0
+0x007029f4:	andeq	r0, r0, r0
+0x007029f8:	andeq	r0, r0, r0
+0x007029fc:	andeq	r0, r0, r0
+0x00702a00:	andeq	r0, r0, r0
+0x00702a04:	andeq	r0, r0, r0
+0x00702a08:	andeq	r0, r0, r0
+0x00702a0c:	andeq	r0, r0, r0
+0x00702a10:	andeq	r0, r0, r0
+0x00702a14:	andeq	r0, r0, r0
+0x00702a18:	andeq	r0, r0, r0
+0x00702a1c:	andeq	r0, r0, r0
+0x00702a20:	andeq	r0, r0, r0
+0x00702a24:	andeq	r0, r0, r0
+0x00702a28:	andeq	r0, r0, r0
+0x00702a2c:	andeq	r0, r0, r0
+0x00702a30:	andeq	r0, r0, r0
+0x00702a34:	andeq	r0, r0, r0
+0x00702a38:	andeq	r0, r0, r0
+0x00702a3c:	andeq	r0, r0, r0
+0x00702a40:	andeq	r0, r0, r0
+0x00702a44:	andeq	r0, r0, r0
+0x00702a48:	andeq	r0, r0, r0
+0x00702a4c:	andeq	r0, r0, r0
+0x00702a50:	andeq	r0, r0, r0
+0x00702a54:	andeq	r0, r0, r0
+0x00702a58:	andeq	r0, r0, r0
+0x00702a5c:	andeq	r0, r0, r0
+0x00702a60:	andeq	r0, r0, r0
+0x00702a64:	andeq	r0, r0, r0
+0x00702a68:	andeq	r0, r0, r0
+0x00702a6c:	andeq	r0, r0, r0
+0x00702a70:	andeq	r0, r0, r0
+0x00702a74:	andeq	r0, r0, r0
+0x00702a78:	andeq	r0, r0, r0
+0x00702a7c:	andeq	r0, r0, r0
+0x00702a80:	andeq	r0, r0, r0
+0x00702a84:	andeq	r0, r0, r0
+0x00702a88:	andeq	r0, r0, r0
+0x00702a8c:	andeq	r0, r0, r0
+0x00702a90:	andeq	r0, r0, r0
+0x00702a94:	andeq	r0, r0, r0
+0x00702a98:	andeq	r0, r0, r0
+0x00702a9c:	andeq	r0, r0, r0
+0x00702aa0:	andeq	r0, r0, r0
+0x00702aa4:	andeq	r0, r0, r0
+0x00702aa8:	andeq	r0, r0, r0
+0x00702aac:	andeq	r0, r0, r0
+0x00702ab0:	andeq	r0, r0, r0
+0x00702ab4:	andeq	r0, r0, r0
+0x00702ab8:	andeq	r0, r0, r0
+0x00702abc:	andeq	r0, r0, r0
+0x00702ac0:	andeq	r0, r0, r0
+0x00702ac4:	andeq	r0, r0, r0
+0x00702ac8:	andeq	r0, r0, r0
+0x00702acc:	andeq	r0, r0, r0
+0x00702ad0:	andeq	r0, r0, r0
+0x00702ad4:	andeq	r0, r0, r0
+0x00702ad8:	andeq	r0, r0, r0
+0x00702adc:	andeq	r0, r0, r0
+0x00702ae0:	andeq	r0, r0, r0
+0x00702ae4:	andeq	r0, r0, r0
+0x00702ae8:	andeq	r0, r0, r0
+0x00702aec:	andeq	r0, r0, r0
+0x00702af0:	andeq	r0, r0, r0
+0x00702af4:	andeq	r0, r0, r0
+0x00702af8:	andeq	r0, r0, r0
+0x00702afc:	andeq	r0, r0, r0
+0x00702b00:	andeq	r0, r0, r0
+0x00702b04:	andeq	r0, r0, r0
+0x00702b08:	andeq	r0, r0, r0
+0x00702b0c:	andeq	r0, r0, r0
+0x00702b10:	andeq	r0, r0, r0
+0x00702b14:	andeq	r0, r0, r0
+0x00702b18:	andeq	r0, r0, r0
+0x00702b1c:	andeq	r0, r0, r0
+0x00702b20:	andeq	r0, r0, r0
+0x00702b24:	andeq	r0, r0, r0
+0x00702b28:	andeq	r0, r0, r0
+0x00702b2c:	andeq	r0, r0, r0
+0x00702b30:	andeq	r0, r0, r0
+0x00702b34:	andeq	r0, r0, r0
+0x00702b38:	andeq	r0, r0, r0
+0x00702b3c:	andeq	r0, r0, r0
+0x00702b40:	andeq	r0, r0, r0
+0x00702b44:	andeq	r0, r0, r0
+0x00702b48:	andeq	r0, r0, r0
+0x00702b4c:	andeq	r0, r0, r0
+0x00702b50:	andeq	r0, r0, r0
+0x00702b54:	andeq	r0, r0, r0
+0x00702b58:	andeq	r0, r0, r0
+0x00702b5c:	andeq	r0, r0, r0
+0x00702b60:	andeq	r0, r0, r0
+0x00702b64:	andeq	r0, r0, r0
+0x00702b68:	andeq	r0, r0, r0
+0x00702b6c:	andeq	r0, r0, r0
+0x00702b70:	andeq	r0, r0, r0
+0x00702b74:	andeq	r0, r0, r0
+0x00702b78:	andeq	r0, r0, r0
+0x00702b7c:	andeq	r0, r0, r0
+0x00702b80:	andeq	r0, r0, r0
+0x00702b84:	andeq	r0, r0, r0
+0x00702b88:	andeq	r0, r0, r0
+0x00702b8c:	andeq	r0, r0, r0
+0x00702b90:	andeq	r0, r0, r0
+0x00702b94:	andeq	r0, r0, r0
+0x00702b98:	andeq	r0, r0, r0
+0x00702b9c:	andeq	r0, r0, r0
+0x00702ba0:	andeq	r0, r0, r0
+0x00702ba4:	andeq	r0, r0, r0
+0x00702ba8:	andeq	r0, r0, r0
+0x00702bac:	andeq	r0, r0, r0
+0x00702bb0:	andeq	r0, r0, r0
+0x00702bb4:	andeq	r0, r0, r0
+0x00702bb8:	andeq	r0, r0, r0
+0x00702bbc:	andeq	r0, r0, r0
+0x00702bc0:	andeq	r0, r0, r0
+0x00702bc4:	andeq	r0, r0, r0
+0x00702bc8:	andeq	r0, r0, r0
+0x00702bcc:	andeq	r0, r0, r0
+0x00702bd0:	andeq	r0, r0, r0
+0x00702bd4:	andeq	r0, r0, r0
+0x00702bd8:	andeq	r0, r0, r0
+0x00702bdc:	andeq	r0, r0, r0
+0x00702be0:	andeq	r0, r0, r0
+0x00702be4:	andeq	r0, r0, r0
+0x00702be8:	andeq	r0, r0, r0
+0x00702bec:	andeq	r0, r0, r0
+0x00702bf0:	andeq	r0, r0, r0
+0x00702bf4:	andeq	r0, r0, r0
+0x00702bf8:	andeq	r0, r0, r0
+0x00702bfc:	andeq	r0, r0, r0
+0x00702c00:	andeq	r0, r0, r0
+0x00702c04:	andeq	r0, r0, r0
+0x00702c08:	andeq	r0, r0, r0
+0x00702c0c:	andeq	r0, r0, r0
+0x00702c10:	andeq	r0, r0, r0
+0x00702c14:	andeq	r0, r0, r0
+0x00702c18:	andeq	r0, r0, r0
+0x00702c1c:	andeq	r0, r0, r0
+0x00702c20:	andeq	r0, r0, r0
+0x00702c24:	andeq	r0, r0, r0
+0x00702c28:	andeq	r0, r0, r0
+0x00702c2c:	andeq	r0, r0, r0
+0x00702c30:	andeq	r0, r0, r0
+0x00702c34:	andeq	r0, r0, r0
+0x00702c38:	andeq	r0, r0, r0
+0x00702c3c:	andeq	r0, r0, r0
+0x00702c40:	andeq	r0, r0, r0
+0x00702c44:	andeq	r0, r0, r0
+0x00702c48:	andeq	r0, r0, r0
+0x00702c4c:	andeq	r0, r0, r0
+0x00702c50:	andeq	r0, r0, r0
+0x00702c54:	andeq	r0, r0, r0
+0x00702c58:	andeq	r0, r0, r0
+0x00702c5c:	andeq	r0, r0, r0
+0x00702c60:	andeq	r0, r0, r0
+0x00702c64:	andeq	r0, r0, r0
+0x00702c68:	andeq	r0, r0, r0
+0x00702c6c:	andeq	r0, r0, r0
+0x00702c70:	andeq	r0, r0, r0
+0x00702c74:	andeq	r0, r0, r0
+0x00702c78:	andeq	r0, r0, r0
+0x00702c7c:	andeq	r0, r0, r0
+0x00702c80:	andeq	r0, r0, r0
+0x00702c84:	andeq	r0, r0, r0
+0x00702c88:	andeq	r0, r0, r0
+0x00702c8c:	andeq	r0, r0, r0
+0x00702c90:	andeq	r0, r0, r0
+0x00702c94:	andeq	r0, r0, r0
+0x00702c98:	andeq	r0, r0, r0
+0x00702c9c:	andeq	r0, r0, r0
+0x00702ca0:	andeq	r0, r0, r0
+0x00702ca4:	andeq	r0, r0, r0
+0x00702ca8:	andeq	r0, r0, r0
+0x00702cac:	andeq	r0, r0, r0
+0x00702cb0:	andeq	r0, r0, r0
+0x00702cb4:	andeq	r0, r0, r0
+0x00702cb8:	andeq	r0, r0, r0
+0x00702cbc:	andeq	r0, r0, r0
+0x00702cc0:	andeq	r0, r0, r0
+0x00702cc4:	andeq	r0, r0, r0
+0x00702cc8:	andeq	r0, r0, r0
+0x00702ccc:	andeq	r0, r0, r0
+0x00702cd0:	andeq	r0, r0, r0
+0x00702cd4:	andeq	r0, r0, r0
+0x00702cd8:	andeq	r0, r0, r0
+0x00702cdc:	andeq	r0, r0, r0
+0x00702ce0:	andeq	r0, r0, r0
+0x00702ce4:	andeq	r0, r0, r0
+0x00702ce8:	andeq	r0, r0, r0
+0x00702cec:	andeq	r0, r0, r0
+0x00702cf0:	andeq	r0, r0, r0
+0x00702cf4:	andeq	r0, r0, r0
+0x00702cf8:	andeq	r0, r0, r0
+0x00702cfc:	andeq	r0, r0, r0
+0x00702d00:	andeq	r0, r0, r0
+0x00702d04:	andeq	r0, r0, r0
+0x00702d08:	andeq	r0, r0, r0
+0x00702d0c:	andeq	r0, r0, r0
+0x00702d10:	andeq	r0, r0, r0
+0x00702d14:	andeq	r0, r0, r0
+0x00702d18:	andeq	r0, r0, r0
+0x00702d1c:	andeq	r0, r0, r0
+0x00702d20:	andeq	r0, r0, r0
+0x00702d24:	andeq	r0, r0, r0
+0x00702d28:	andeq	r0, r0, r0
+0x00702d2c:	andeq	r0, r0, r0
+0x00702d30:	andeq	r0, r0, r0
+0x00702d34:	andeq	r0, r0, r0
+0x00702d38:	andeq	r0, r0, r0
+0x00702d3c:	andeq	r0, r0, r0
+0x00702d40:	andeq	r0, r0, r0
+0x00702d44:	andeq	r0, r0, r0
+0x00702d48:	andeq	r0, r0, r0
+0x00702d4c:	andeq	r0, r0, r0
+0x00702d50:	andeq	r0, r0, r0
+0x00702d54:	andeq	r0, r0, r0
+0x00702d58:	andeq	r0, r0, r0
+0x00702d5c:	andeq	r0, r0, r0
+0x00702d60:	andeq	r0, r0, r0
+0x00702d64:	andeq	r0, r0, r0
+0x00702d68:	andeq	r0, r0, r0
+0x00702d6c:	andeq	r0, r0, r0
+0x00702d70:	andeq	r0, r0, r0
+0x00702d74:	andeq	r0, r0, r0
+0x00702d78:	andeq	r0, r0, r0
+0x00702d7c:	andeq	r0, r0, r0
+0x00702d80:	andeq	r0, r0, r0
+0x00702d84:	andeq	r0, r0, r0
+0x00702d88:	andeq	r0, r0, r0
+0x00702d8c:	andeq	r0, r0, r0
+0x00702d90:	andeq	r0, r0, r0
+0x00702d94:	andeq	r0, r0, r0
+0x00702d98:	andeq	r0, r0, r0
+0x00702d9c:	andeq	r0, r0, r0
+0x00702da0:	andeq	r0, r0, r0
+0x00702da4:	andeq	r0, r0, r0
+0x00702da8:	andeq	r0, r0, r0
+0x00702dac:	andeq	r0, r0, r0
+0x00702db0:	andeq	r0, r0, r0
+0x00702db4:	andeq	r0, r0, r0
+0x00702db8:	andeq	r0, r0, r0
+0x00702dbc:	andeq	r0, r0, r0
+0x00702dc0:	andeq	r0, r0, r0
+0x00702dc4:	andeq	r0, r0, r0
+0x00702dc8:	andeq	r0, r0, r0
+0x00702dcc:	andeq	r0, r0, r0
+0x00702dd0:	andeq	r0, r0, r0
+0x00702dd4:	andeq	r0, r0, r0
+0x00702dd8:	andeq	r0, r0, r0
+0x00702ddc:	andeq	r0, r0, r0
+0x00702de0:	andeq	r0, r0, r0
+0x00702de4:	andeq	r0, r0, r0
+0x00702de8:	andeq	r0, r0, r0
+0x00702dec:	andeq	r0, r0, r0
+0x00702df0:	andeq	r0, r0, r0
+0x00702df4:	andeq	r0, r0, r0
+0x00702df8:	andeq	r0, r0, r0
+0x00702dfc:	andeq	r0, r0, r0
+0x00702e00:	andeq	r0, r0, r0
+0x00702e04:	andeq	r0, r0, r0
+0x00702e08:	andeq	r0, r0, r0
+0x00702e0c:	andeq	r0, r0, r0
+0x00702e10:	andeq	r0, r0, r0
+0x00702e14:	andeq	r0, r0, r0
+0x00702e18:	andeq	r0, r0, r0
+0x00702e1c:	andeq	r0, r0, r0
+0x00702e20:	andeq	r0, r0, r0
+0x00702e24:	andeq	r0, r0, r0
+0x00702e28:	andeq	r0, r0, r0
+0x00702e2c:	andeq	r0, r0, r0
+0x00702e30:	andeq	r0, r0, r0
+0x00702e34:	andeq	r0, r0, r0
+0x00702e38:	andeq	r0, r0, r0
+0x00702e3c:	andeq	r0, r0, r0
+0x00702e40:	andeq	r0, r0, r0
+0x00702e44:	andeq	r0, r0, r0
+0x00702e48:	andeq	r0, r0, r0
+0x00702e4c:	andeq	r0, r0, r0
+0x00702e50:	andeq	r0, r0, r0
+0x00702e54:	andeq	r0, r0, r0
+0x00702e58:	andeq	r0, r0, r0
+0x00702e5c:	andeq	r0, r0, r0
+0x00702e60:	andeq	r0, r0, r0
+0x00702e64:	andeq	r0, r0, r0
+0x00702e68:	andeq	r0, r0, r0
+0x00702e6c:	andeq	r0, r0, r0
+0x00702e70:	andeq	r0, r0, r0
+0x00702e74:	andeq	r0, r0, r0
+0x00702e78:	andeq	r0, r0, r0
+0x00702e7c:	andeq	r0, r0, r0
+0x00702e80:	andeq	r0, r0, r0
+0x00702e84:	andeq	r0, r0, r0
+0x00702e88:	andeq	r0, r0, r0
+0x00702e8c:	andeq	r0, r0, r0
+0x00702e90:	andeq	r0, r0, r0
+0x00702e94:	andeq	r0, r0, r0
+0x00702e98:	andeq	r0, r0, r0
+0x00702e9c:	andeq	r0, r0, r0
+0x00702ea0:	andeq	r0, r0, r0
+0x00702ea4:	andeq	r0, r0, r0
+0x00702ea8:	andeq	r0, r0, r0
+0x00702eac:	andeq	r0, r0, r0
+0x00702eb0:	andeq	r0, r0, r0
+0x00702eb4:	andeq	r0, r0, r0
+0x00702eb8:	andeq	r0, r0, r0
+0x00702ebc:	andeq	r0, r0, r0
+0x00702ec0:	andeq	r0, r0, r0
+0x00702ec4:	andeq	r0, r0, r0
+0x00702ec8:	andeq	r0, r0, r0
+0x00702ecc:	andeq	r0, r0, r0
+0x00702ed0:	andeq	r0, r0, r0
+0x00702ed4:	andeq	r0, r0, r0
+0x00702ed8:	andeq	r0, r0, r0
+0x00702edc:	andeq	r0, r0, r0
+0x00702ee0:	andeq	r0, r0, r0
+0x00702ee4:	andeq	r0, r0, r0
+0x00702ee8:	andeq	r0, r0, r0
+0x00702eec:	andeq	r0, r0, r0
+0x00702ef0:	andeq	r0, r0, r0
+0x00702ef4:	andeq	r0, r0, r0
+0x00702ef8:	andeq	r0, r0, r0
+0x00702efc:	andeq	r0, r0, r0
+0x00702f00:	andeq	r0, r0, r0
+0x00702f04:	andeq	r0, r0, r0
+0x00702f08:	andeq	r0, r0, r0
+0x00702f0c:	andeq	r0, r0, r0
+0x00702f10:	andeq	r0, r0, r0
+0x00702f14:	andeq	r0, r0, r0
+0x00702f18:	andeq	r0, r0, r0
+0x00702f1c:	andeq	r0, r0, r0
+0x00702f20:	andeq	r0, r0, r0
+0x00702f24:	andeq	r0, r0, r0
+0x00702f28:	andeq	r0, r0, r0
+0x00702f2c:	andeq	r0, r0, r0
+0x00702f30:	andeq	r0, r0, r0
+0x00702f34:	andeq	r0, r0, r0
+0x00702f38:	andeq	r0, r0, r0
+0x00702f3c:	andeq	r0, r0, r0
+0x00702f40:	andeq	r0, r0, r0
+0x00702f44:	andeq	r0, r0, r0
+0x00702f48:	andeq	r0, r0, r0
+0x00702f4c:	andeq	r0, r0, r0
+0x00702f50:	andeq	r0, r0, r0
+0x00702f54:	andeq	r0, r0, r0
+0x00702f58:	andeq	r0, r0, r0
+0x00702f5c:	andeq	r0, r0, r0
+0x00702f60:	andeq	r0, r0, r0
+0x00702f64:	andeq	r0, r0, r0
+0x00702f68:	andeq	r0, r0, r0
+0x00702f6c:	andeq	r0, r0, r0
+0x00702f70:	andeq	r0, r0, r0
+0x00702f74:	andeq	r0, r0, r0
+0x00702f78:	andeq	r0, r0, r0
+0x00702f7c:	andeq	r0, r0, r0
+0x00702f80:	andeq	r0, r0, r0
+0x00702f84:	andeq	r0, r0, r0
+0x00702f88:	andeq	r0, r0, r0
+0x00702f8c:	andeq	r0, r0, r0
+0x00702f90:	andeq	r0, r0, r0
+0x00702f94:	andeq	r0, r0, r0
+0x00702f98:	andeq	r0, r0, r0
+0x00702f9c:	andeq	r0, r0, r0
+0x00702fa0:	andeq	r0, r0, r0
+0x00702fa4:	andeq	r0, r0, r0
+0x00702fa8:	andeq	r0, r0, r0
+0x00702fac:	andeq	r0, r0, r0
+0x00702fb0:	andeq	r0, r0, r0
+0x00702fb4:	andeq	r0, r0, r0
+0x00702fb8:	andeq	r0, r0, r0
+0x00702fbc:	andeq	r0, r0, r0
+0x00702fc0:	andeq	r0, r0, r0
+0x00702fc4:	andeq	r0, r0, r0
+0x00702fc8:	andeq	r0, r0, r0
+0x00702fcc:	andeq	r0, r0, r0
+0x00702fd0:	andeq	r0, r0, r0
+0x00702fd4:	andeq	r0, r0, r0
+0x00702fd8:	andeq	r0, r0, r0
+0x00702fdc:	andeq	r0, r0, r0
+0x00702fe0:	andeq	r0, r0, r0
+0x00702fe4:	andeq	r0, r0, r0
+0x00702fe8:	andeq	r0, r0, r0
+0x00702fec:	andeq	r0, r0, r0
+0x00702ff0:	andeq	r0, r0, r0
+0x00702ff4:	andeq	r0, r0, r0
+0x00702ff8:	andeq	r0, r0, r0
+0x00702ffc:	andeq	r0, r0, r0
+0x00703000:	andeq	r0, r0, r0
+0x00703004:	andeq	r0, r0, r0
+0x00703008:	andeq	r0, r0, r0
+0x0070300c:	andeq	r0, r0, r0
+0x00703010:	andeq	r0, r0, r0
+0x00703014:	andeq	r0, r0, r0
+0x00703018:	andeq	r0, r0, r0
+0x0070301c:	andeq	r0, r0, r0
+0x00703020:	andeq	r0, r0, r0
+0x00703024:	andeq	r0, r0, r0
+0x00703028:	andeq	r0, r0, r0
+0x0070302c:	andeq	r0, r0, r0
+0x00703030:	andeq	r0, r0, r0
+0x00703034:	andeq	r0, r0, r0
+0x00703038:	andeq	r0, r0, r0
+0x0070303c:	andeq	r0, r0, r0
+0x00703040:	andeq	r0, r0, r0
+0x00703044:	andeq	r0, r0, r0
+0x00703048:	andeq	r0, r0, r0
+0x0070304c:	andeq	r0, r0, r0
+0x00703050:	andeq	r0, r0, r0
+0x00703054:	andeq	r0, r0, r0
+0x00703058:	andeq	r0, r0, r0
+0x0070305c:	andeq	r0, r0, r0
+0x00703060:	andeq	r0, r0, r0
+0x00703064:	andeq	r0, r0, r0
+0x00703068:	andeq	r0, r0, r0
+0x0070306c:	andeq	r0, r0, r0
+0x00703070:	andeq	r0, r0, r0
+0x00703074:	andeq	r0, r0, r0
+0x00703078:	andeq	r0, r0, r0
+0x0070307c:	andeq	r0, r0, r0
+0x00703080:	andeq	r0, r0, r0
+0x00703084:	andeq	r0, r0, r0
+0x00703088:	andeq	r0, r0, r0
+0x0070308c:	andeq	r0, r0, r0
+0x00703090:	andeq	r0, r0, r0
+0x00703094:	andeq	r0, r0, r0
+0x00703098:	andeq	r0, r0, r0
+0x0070309c:	andeq	r0, r0, r0
+0x007030a0:	andeq	r0, r0, r0
+0x007030a4:	andeq	r0, r0, r0
+0x007030a8:	andeq	r0, r0, r0
+0x007030ac:	andeq	r0, r0, r0
+0x007030b0:	andeq	r0, r0, r0
+0x007030b4:	andeq	r0, r0, r0
+0x007030b8:	andeq	r0, r0, r0
+0x007030bc:	andeq	r0, r0, r0
+0x007030c0:	andeq	r0, r0, r0
+0x007030c4:	andeq	r0, r0, r0
+0x007030c8:	andeq	r0, r0, r0
+0x007030cc:	andeq	r0, r0, r0
+0x007030d0:	andeq	r0, r0, r0
+0x007030d4:	andeq	r0, r0, r0
+0x007030d8:	andeq	r0, r0, r0
+0x007030dc:	andeq	r0, r0, r0
+0x007030e0:	andeq	r0, r0, r0
+0x007030e4:	andeq	r0, r0, r0
+0x007030e8:	andeq	r0, r0, r0
+0x007030ec:	andeq	r0, r0, r0
+0x007030f0:	andeq	r0, r0, r0
+0x007030f4:	andeq	r0, r0, r0
+0x007030f8:	andeq	r0, r0, r0
+0x007030fc:	andeq	r0, r0, r0
+0x00703100:	andeq	r0, r0, r0
+0x00703104:	andeq	r0, r0, r0
+0x00703108:	andeq	r0, r0, r0
+0x0070310c:	andeq	r0, r0, r0
+0x00703110:	andeq	r0, r0, r0
+0x00703114:	andeq	r0, r0, r0
+0x00703118:	andeq	r0, r0, r0
+0x0070311c:	andeq	r0, r0, r0
+0x00703120:	andeq	r0, r0, r0
+0x00703124:	andeq	r0, r0, r0
+0x00703128:	andeq	r0, r0, r0
+0x0070312c:	andeq	r0, r0, r0
+0x00703130:	andeq	r0, r0, r0
+0x00703134:	andeq	r0, r0, r0
+0x00703138:	andeq	r0, r0, r0
+0x0070313c:	andeq	r0, r0, r0
+0x00703140:	andeq	r0, r0, r0
+0x00703144:	andeq	r0, r0, r0
+0x00703148:	andeq	r0, r0, r0
+0x0070314c:	andeq	r0, r0, r0
+0x00703150:	andeq	r0, r0, r0
+0x00703154:	andeq	r0, r0, r0
+0x00703158:	andeq	r0, r0, r0
+0x0070315c:	andeq	r0, r0, r0
+0x00703160:	andeq	r0, r0, r0
+0x00703164:	andeq	r0, r0, r0
+0x00703168:	andeq	r0, r0, r0
+0x0070316c:	andeq	r0, r0, r0
+0x00703170:	andeq	r0, r0, r0
+0x00703174:	andeq	r0, r0, r0
+0x00703178:	andeq	r0, r0, r0
+0x0070317c:	andeq	r0, r0, r0
+0x00703180:	andeq	r0, r0, r0
+0x00703184:	andeq	r0, r0, r0
+0x00703188:	andeq	r0, r0, r0
+0x0070318c:	andeq	r0, r0, r0
+0x00703190:	andeq	r0, r0, r0
+0x00703194:	andeq	r0, r0, r0
+0x00703198:	andeq	r0, r0, r0
+0x0070319c:	andeq	r0, r0, r0
+0x007031a0:	andeq	r0, r0, r0
+0x007031a4:	andeq	r0, r0, r0
+0x007031a8:	andeq	r0, r0, r0
+0x007031ac:	andeq	r0, r0, r0
+0x007031b0:	andeq	r0, r0, r0
+0x007031b4:	andeq	r0, r0, r0
+0x007031b8:	andeq	r0, r0, r0
+0x007031bc:	andeq	r0, r0, r0
+0x007031c0:	andeq	r0, r0, r0
+0x007031c4:	andeq	r0, r0, r0
+0x007031c8:	andeq	r0, r0, r0
+0x007031cc:	andeq	r0, r0, r0
+0x007031d0:	andeq	r0, r0, r0
+0x007031d4:	andeq	r0, r0, r0
+0x007031d8:	andeq	r0, r0, r0
+0x007031dc:	andeq	r0, r0, r0
+0x007031e0:	andeq	r0, r0, r0
+0x007031e4:	andeq	r0, r0, r0
+0x007031e8:	andeq	r0, r0, r0
+0x007031ec:	andeq	r0, r0, r0
+0x007031f0:	andeq	r0, r0, r0
+0x007031f4:	andeq	r0, r0, r0
+0x007031f8:	andeq	r0, r0, r0
+0x007031fc:	andeq	r0, r0, r0
+0x00703200:	andeq	r0, r0, r0
+0x00703204:	andeq	r0, r0, r0
+0x00703208:	andeq	r0, r0, r0
+0x0070320c:	andeq	r0, r0, r0
+0x00703210:	andeq	r0, r0, r0
+0x00703214:	andeq	r0, r0, r0
+0x00703218:	andeq	r0, r0, r0
+0x0070321c:	andeq	r0, r0, r0
+0x00703220:	andeq	r0, r0, r0
+0x00703224:	andeq	r0, r0, r0
+0x00703228:	andeq	r0, r0, r0
+0x0070322c:	andeq	r0, r0, r0
+0x00703230:	andeq	r0, r0, r0
+0x00703234:	andeq	r0, r0, r0
+0x00703238:	andeq	r0, r0, r0
+0x0070323c:	andeq	r0, r0, r0
+0x00703240:	andeq	r0, r0, r0
+0x00703244:	andeq	r0, r0, r0
+0x00703248:	andeq	r0, r0, r0
+0x0070324c:	andeq	r0, r0, r0
+0x00703250:	andeq	r0, r0, r0
+0x00703254:	andeq	r0, r0, r0
+0x00703258:	andeq	r0, r0, r0
+0x0070325c:	andeq	r0, r0, r0
+0x00703260:	andeq	r0, r0, r0
+0x00703264:	andeq	r0, r0, r0
+0x00703268:	andeq	r0, r0, r0
+0x0070326c:	andeq	r0, r0, r0
+0x00703270:	andeq	r0, r0, r0
+0x00703274:	andeq	r0, r0, r0
+0x00703278:	andeq	r0, r0, r0
+0x0070327c:	andeq	r0, r0, r0
+0x00703280:	andeq	r0, r0, r0
+0x00703284:	andeq	r0, r0, r0
+0x00703288:	andeq	r0, r0, r0
+0x0070328c:	andeq	r0, r0, r0
+0x00703290:	andeq	r0, r0, r0
+0x00703294:	andeq	r0, r0, r0
+0x00703298:	andeq	r0, r0, r0
+0x0070329c:	andeq	r0, r0, r0
+0x007032a0:	andeq	r0, r0, r0
+0x007032a4:	andeq	r0, r0, r0
+0x007032a8:	andeq	r0, r0, r0
+0x007032ac:	andeq	r0, r0, r0
+0x007032b0:	andeq	r0, r0, r0
+0x007032b4:	andeq	r0, r0, r0
+0x007032b8:	andeq	r0, r0, r0
+0x007032bc:	andeq	r0, r0, r0
+0x007032c0:	andeq	r0, r0, r0
+0x007032c4:	andeq	r0, r0, r0
+0x007032c8:	andeq	r0, r0, r0
+0x007032cc:	andeq	r0, r0, r0
+0x007032d0:	andeq	r0, r0, r0
+0x007032d4:	andeq	r0, r0, r0
+0x007032d8:	andeq	r0, r0, r0
+0x007032dc:	andeq	r0, r0, r0
+0x007032e0:	andeq	r0, r0, r0
+0x007032e4:	andeq	r0, r0, r0
+0x007032e8:	andeq	r0, r0, r0
+0x007032ec:	andeq	r0, r0, r0
+0x007032f0:	andeq	r0, r0, r0
+0x007032f4:	andeq	r0, r0, r0
+0x007032f8:	andeq	r0, r0, r0
+0x007032fc:	andeq	r0, r0, r0
+0x00703300:	andeq	r0, r0, r0
+0x00703304:	andeq	r0, r0, r0
+0x00703308:	andeq	r0, r0, r0
+0x0070330c:	andeq	r0, r0, r0
+0x00703310:	andeq	r0, r0, r0
+0x00703314:	andeq	r0, r0, r0
+0x00703318:	andeq	r0, r0, r0
+0x0070331c:	andeq	r0, r0, r0
+0x00703320:	andeq	r0, r0, r0
+0x00703324:	andeq	r0, r0, r0
+0x00703328:	andeq	r0, r0, r0
+0x0070332c:	andeq	r0, r0, r0
+0x00703330:	andeq	r0, r0, r0
+0x00703334:	andeq	r0, r0, r0
+0x00703338:	andeq	r0, r0, r0
+0x0070333c:	andeq	r0, r0, r0
+0x00703340:	andeq	r0, r0, r0
+0x00703344:	andeq	r0, r0, r0
+0x00703348:	andeq	r0, r0, r0
+0x0070334c:	andeq	r0, r0, r0
+0x00703350:	andeq	r0, r0, r0
+0x00703354:	andeq	r0, r0, r0
+0x00703358:	andeq	r0, r0, r0
+0x0070335c:	andeq	r0, r0, r0
+0x00703360:	andeq	r0, r0, r0
+0x00703364:	andeq	r0, r0, r0
+0x00703368:	andeq	r0, r0, r0
+0x0070336c:	andeq	r0, r0, r0
+0x00703370:	andeq	r0, r0, r0
+0x00703374:	andeq	r0, r0, r0
+0x00703378:	andeq	r0, r0, r0
+0x0070337c:	andeq	r0, r0, r0
+0x00703380:	andeq	r0, r0, r0
+0x00703384:	andeq	r0, r0, r0
+0x00703388:	andeq	r0, r0, r0
+0x0070338c:	andeq	r0, r0, r0
+0x00703390:	andeq	r0, r0, r0
+0x00703394:	andeq	r0, r0, r0
+0x00703398:	andeq	r0, r0, r0
+0x0070339c:	andeq	r0, r0, r0
+0x007033a0:	andeq	r0, r0, r0
+0x007033a4:	andeq	r0, r0, r0
+0x007033a8:	andeq	r0, r0, r0
+0x007033ac:	andeq	r0, r0, r0
+0x007033b0:	andeq	r0, r0, r0
+0x007033b4:	andeq	r0, r0, r0
+0x007033b8:	andeq	r0, r0, r0
+0x007033bc:	andeq	r0, r0, r0
+0x007033c0:	andeq	r0, r0, r0
+0x007033c4:	andeq	r0, r0, r0
+0x007033c8:	andeq	r0, r0, r0
+0x007033cc:	andeq	r0, r0, r0
+0x007033d0:	andeq	r0, r0, r0
+0x007033d4:	andeq	r0, r0, r0
+0x007033d8:	andeq	r0, r0, r0
+0x007033dc:	andeq	r0, r0, r0
+0x007033e0:	andeq	r0, r0, r0
+0x007033e4:	andeq	r0, r0, r0
+0x007033e8:	andeq	r0, r0, r0
+0x007033ec:	andeq	r0, r0, r0
+0x007033f0:	andeq	r0, r0, r0
+0x007033f4:	andeq	r0, r0, r0
+0x007033f8:	andeq	r0, r0, r0
+0x007033fc:	andeq	r0, r0, r0
+0x00703400:	andeq	r0, r0, r0
+0x00703404:	andeq	r0, r0, r0
+0x00703408:	andeq	r0, r0, r0
+0x0070340c:	andeq	r0, r0, r0
+0x00703410:	andeq	r0, r0, r0
+0x00703414:	andeq	r0, r0, r0
+0x00703418:	andeq	r0, r0, r0
+0x0070341c:	andeq	r0, r0, r0
+0x00703420:	andeq	r0, r0, r0
+0x00703424:	andeq	r0, r0, r0
+0x00703428:	andeq	r0, r0, r0
+0x0070342c:	andeq	r0, r0, r0
+0x00703430:	andeq	r0, r0, r0
+0x00703434:	andeq	r0, r0, r0
+0x00703438:	andeq	r0, r0, r0
+0x0070343c:	andeq	r0, r0, r0
+0x00703440:	andeq	r0, r0, r0
+0x00703444:	andeq	r0, r0, r0
+0x00703448:	andeq	r0, r0, r0
+0x0070344c:	andeq	r0, r0, r0
+0x00703450:	andeq	r0, r0, r0
+0x00703454:	andeq	r0, r0, r0
+0x00703458:	andeq	r0, r0, r0
+0x0070345c:	andeq	r0, r0, r0
+0x00703460:	andeq	r0, r0, r0
+0x00703464:	andeq	r0, r0, r0
+0x00703468:	andeq	r0, r0, r0
+0x0070346c:	andeq	r0, r0, r0
+0x00703470:	andeq	r0, r0, r0
+0x00703474:	andeq	r0, r0, r0
+0x00703478:	andeq	r0, r0, r0
+0x0070347c:	andeq	r0, r0, r0
+0x00703480:	andeq	r0, r0, r0
+0x00703484:	andeq	r0, r0, r0
+0x00703488:	andeq	r0, r0, r0
+0x0070348c:	andeq	r0, r0, r0
+0x00703490:	andeq	r0, r0, r0
+0x00703494:	andeq	r0, r0, r0
+0x00703498:	andeq	r0, r0, r0
+0x0070349c:	andeq	r0, r0, r0
+0x007034a0:	andeq	r0, r0, r0
+0x007034a4:	andeq	r0, r0, r0
+0x007034a8:	andeq	r0, r0, r0
+0x007034ac:	andeq	r0, r0, r0
+0x007034b0:	andeq	r0, r0, r0
+0x007034b4:	andeq	r0, r0, r0
+0x007034b8:	andeq	r0, r0, r0
+0x007034bc:	andeq	r0, r0, r0
+0x007034c0:	andeq	r0, r0, r0
+0x007034c4:	andeq	r0, r0, r0
+0x007034c8:	andeq	r0, r0, r0
+0x007034cc:	andeq	r0, r0, r0
+0x007034d0:	andeq	r0, r0, r0
+0x007034d4:	andeq	r0, r0, r0
+0x007034d8:	andeq	r0, r0, r0
+0x007034dc:	andeq	r0, r0, r0
+0x007034e0:	andeq	r0, r0, r0
+0x007034e4:	andeq	r0, r0, r0
+0x007034e8:	andeq	r0, r0, r0
+0x007034ec:	andeq	r0, r0, r0
+0x007034f0:	andeq	r0, r0, r0
+0x007034f4:	andeq	r0, r0, r0
+0x007034f8:	andeq	r0, r0, r0
+0x007034fc:	andeq	r0, r0, r0
+0x00703500:	andeq	r0, r0, r0
+0x00703504:	andeq	r0, r0, r0
+0x00703508:	andeq	r0, r0, r0
+0x0070350c:	andeq	r0, r0, r0
+0x00703510:	andeq	r0, r0, r0
+0x00703514:	andeq	r0, r0, r0
+0x00703518:	andeq	r0, r0, r0
+0x0070351c:	andeq	r0, r0, r0
+0x00703520:	andeq	r0, r0, r0
+0x00703524:	andeq	r0, r0, r0
+0x00703528:	andeq	r0, r0, r0
+0x0070352c:	andeq	r0, r0, r0
+0x00703530:	andeq	r0, r0, r0
+0x00703534:	andeq	r0, r0, r0
+0x00703538:	andeq	r0, r0, r0
+0x0070353c:	andeq	r0, r0, r0
+0x00703540:	andeq	r0, r0, r0
+0x00703544:	andeq	r0, r0, r0
+0x00703548:	andeq	r0, r0, r0
+0x0070354c:	andeq	r0, r0, r0
+0x00703550:	andeq	r0, r0, r0
+0x00703554:	andeq	r0, r0, r0
+0x00703558:	andeq	r0, r0, r0
+0x0070355c:	andeq	r0, r0, r0
+0x00703560:	andeq	r0, r0, r0
+0x00703564:	andeq	r0, r0, r0
+0x00703568:	andeq	r0, r0, r0
+0x0070356c:	andeq	r0, r0, r0
+0x00703570:	andeq	r0, r0, r0
+0x00703574:	andeq	r0, r0, r0
+0x00703578:	andeq	r0, r0, r0
+0x0070357c:	andeq	r0, r0, r0
+0x00703580:	andeq	r0, r0, r0
+0x00703584:	andeq	r0, r0, r0
+0x00703588:	andeq	r0, r0, r0
+0x0070358c:	andeq	r0, r0, r0
+0x00703590:	andeq	r0, r0, r0
+0x00703594:	andeq	r0, r0, r0
+0x00703598:	andeq	r0, r0, r0
+0x0070359c:	andeq	r0, r0, r0
+0x007035a0:	andeq	r0, r0, r0
+0x007035a4:	andeq	r0, r0, r0
+0x007035a8:	andeq	r0, r0, r0
+0x007035ac:	andeq	r0, r0, r0
+0x007035b0:	andeq	r0, r0, r0
+0x007035b4:	andeq	r0, r0, r0
+0x007035b8:	andeq	r0, r0, r0
+0x007035bc:	andeq	r0, r0, r0
+0x007035c0:	andeq	r0, r0, r0
+0x007035c4:	andeq	r0, r0, r0
+0x007035c8:	andeq	r0, r0, r0
+0x007035cc:	andeq	r0, r0, r0
+0x007035d0:	andeq	r0, r0, r0
+0x007035d4:	andeq	r0, r0, r0
+0x007035d8:	andeq	r0, r0, r0
+0x007035dc:	andeq	r0, r0, r0
+0x007035e0:	andeq	r0, r0, r0
+0x007035e4:	andeq	r0, r0, r0
+0x007035e8:	andeq	r0, r0, r0
+0x007035ec:	andeq	r0, r0, r0
+0x007035f0:	andeq	r0, r0, r0
+0x007035f4:	andeq	r0, r0, r0
+0x007035f8:	andeq	r0, r0, r0
+0x007035fc:	andeq	r0, r0, r0
+0x00703600:	andeq	r0, r0, r0
+0x00703604:	andeq	r0, r0, r0
+0x00703608:	andeq	r0, r0, r0
+0x0070360c:	andeq	r0, r0, r0
+0x00703610:	andeq	r0, r0, r0
+0x00703614:	andeq	r0, r0, r0
+0x00703618:	andeq	r0, r0, r0
+0x0070361c:	andeq	r0, r0, r0
+0x00703620:	andeq	r0, r0, r0
+0x00703624:	andeq	r0, r0, r0
+0x00703628:	andeq	r0, r0, r0
+0x0070362c:	andeq	r0, r0, r0
+0x00703630:	andeq	r0, r0, r0
+0x00703634:	andeq	r0, r0, r0
+0x00703638:	andeq	r0, r0, r0
+0x0070363c:	andeq	r0, r0, r0
+0x00703640:	andeq	r0, r0, r0
+0x00703644:	andeq	r0, r0, r0
+0x00703648:	andeq	r0, r0, r0
+0x0070364c:	andeq	r0, r0, r0
+0x00703650:	andeq	r0, r0, r0
+0x00703654:	andeq	r0, r0, r0
+0x00703658:	andeq	r0, r0, r0
+0x0070365c:	andeq	r0, r0, r0
+0x00703660:	andeq	r0, r0, r0
+0x00703664:	andeq	r0, r0, r0
+0x00703668:	andeq	r0, r0, r0
+0x0070366c:	andeq	r0, r0, r0
+0x00703670:	andeq	r0, r0, r0
+0x00703674:	andeq	r0, r0, r0
+0x00703678:	andeq	r0, r0, r0
+0x0070367c:	andeq	r0, r0, r0
+0x00703680:	andeq	r0, r0, r0
+0x00703684:	andeq	r0, r0, r0
+0x00703688:	andeq	r0, r0, r0
+0x0070368c:	andeq	r0, r0, r0
+0x00703690:	andeq	r0, r0, r0
+0x00703694:	andeq	r0, r0, r0
+0x00703698:	andeq	r0, r0, r0
+0x0070369c:	andeq	r0, r0, r0
+0x007036a0:	andeq	r0, r0, r0
+0x007036a4:	andeq	r0, r0, r0
+0x007036a8:	andeq	r0, r0, r0
+0x007036ac:	andeq	r0, r0, r0
+0x007036b0:	andeq	r0, r0, r0
+0x007036b4:	andeq	r0, r0, r0
+0x007036b8:	andeq	r0, r0, r0
+0x007036bc:	andeq	r0, r0, r0
+0x007036c0:	andeq	r0, r0, r0
+0x007036c4:	andeq	r0, r0, r0
+0x007036c8:	andeq	r0, r0, r0
+0x007036cc:	andeq	r0, r0, r0
+0x007036d0:	andeq	r0, r0, r0
+0x007036d4:	andeq	r0, r0, r0
+0x007036d8:	andeq	r0, r0, r0
+0x007036dc:	andeq	r0, r0, r0
+0x007036e0:	andeq	r0, r0, r0
+0x007036e4:	andeq	r0, r0, r0
+0x007036e8:	andeq	r0, r0, r0
+0x007036ec:	andeq	r0, r0, r0
+0x007036f0:	andeq	r0, r0, r0
+0x007036f4:	andeq	r0, r0, r0
+0x007036f8:	andeq	r0, r0, r0
+0x007036fc:	andeq	r0, r0, r0
+0x00703700:	andeq	r0, r0, r0
+0x00703704:	andeq	r0, r0, r0
+0x00703708:	andeq	r0, r0, r0
+0x0070370c:	andeq	r0, r0, r0
+0x00703710:	andeq	r0, r0, r0
+0x00703714:	andeq	r0, r0, r0
+0x00703718:	andeq	r0, r0, r0
+0x0070371c:	andeq	r0, r0, r0
+0x00703720:	andeq	r0, r0, r0
+0x00703724:	andeq	r0, r0, r0
+0x00703728:	andeq	r0, r0, r0
+0x0070372c:	andeq	r0, r0, r0
+0x00703730:	andeq	r0, r0, r0
+0x00703734:	andeq	r0, r0, r0
+0x00703738:	andeq	r0, r0, r0
+0x0070373c:	andeq	r0, r0, r0
+0x00703740:	andeq	r0, r0, r0
+0x00703744:	andeq	r0, r0, r0
+0x00703748:	andeq	r0, r0, r0
+0x0070374c:	andeq	r0, r0, r0
+0x00703750:	andeq	r0, r0, r0
+0x00703754:	andeq	r0, r0, r0
+0x00703758:	andeq	r0, r0, r0
+0x0070375c:	andeq	r0, r0, r0
+0x00703760:	andeq	r0, r0, r0
+0x00703764:	andeq	r0, r0, r0
+0x00703768:	andeq	r0, r0, r0
+0x0070376c:	andeq	r0, r0, r0
+0x00703770:	andeq	r0, r0, r0
+0x00703774:	andeq	r0, r0, r0
+0x00703778:	andeq	r0, r0, r0
+0x0070377c:	andeq	r0, r0, r0
+0x00703780:	andeq	r0, r0, r0
+0x00703784:	andeq	r0, r0, r0
+0x00703788:	andeq	r0, r0, r0
+0x0070378c:	andeq	r0, r0, r0
+0x00703790:	andeq	r0, r0, r0
+0x00703794:	andeq	r0, r0, r0
+0x00703798:	andeq	r0, r0, r0
+0x0070379c:	andeq	r0, r0, r0
+0x007037a0:	andeq	r0, r0, r0
+0x007037a4:	andeq	r0, r0, r0
+0x007037a8:	andeq	r0, r0, r0
+0x007037ac:	andeq	r0, r0, r0
+0x007037b0:	andeq	r0, r0, r0
+0x007037b4:	andeq	r0, r0, r0
+0x007037b8:	andeq	r0, r0, r0
+0x007037bc:	andeq	r0, r0, r0
+0x007037c0:	andeq	r0, r0, r0
+0x007037c4:	andeq	r0, r0, r0
+0x007037c8:	andeq	r0, r0, r0
+0x007037cc:	andeq	r0, r0, r0
+0x007037d0:	andeq	r0, r0, r0
+0x007037d4:	andeq	r0, r0, r0
+0x007037d8:	andeq	r0, r0, r0
+0x007037dc:	andeq	r0, r0, r0
+0x007037e0:	andeq	r0, r0, r0
+0x007037e4:	andeq	r0, r0, r0
+0x007037e8:	andeq	r0, r0, r0
+0x007037ec:	andeq	r0, r0, r0
+0x007037f0:	andeq	r0, r0, r0
+0x007037f4:	andeq	r0, r0, r0
+0x007037f8:	andeq	r0, r0, r0
+0x007037fc:	andeq	r0, r0, r0
+0x00703800:	andeq	r0, r0, r0
+0x00703804:	andeq	r0, r0, r0
+0x00703808:	andeq	r0, r0, r0
+0x0070380c:	andeq	r0, r0, r0
+0x00703810:	andeq	r0, r0, r0
+0x00703814:	andeq	r0, r0, r0
+0x00703818:	andeq	r0, r0, r0
+0x0070381c:	andeq	r0, r0, r0
+0x00703820:	andeq	r0, r0, r0
+0x00703824:	andeq	r0, r0, r0
+0x00703828:	andeq	r0, r0, r0
+0x0070382c:	andeq	r0, r0, r0
+0x00703830:	andeq	r0, r0, r0
+0x00703834:	andeq	r0, r0, r0
+0x00703838:	andeq	r0, r0, r0
+0x0070383c:	andeq	r0, r0, r0
+0x00703840:	andeq	r0, r0, r0
+0x00703844:	andeq	r0, r0, r0
+0x00703848:	andeq	r0, r0, r0
+0x0070384c:	andeq	r0, r0, r0
+0x00703850:	andeq	r0, r0, r0
+0x00703854:	andeq	r0, r0, r0
+0x00703858:	andeq	r0, r0, r0
+0x0070385c:	andeq	r0, r0, r0
+0x00703860:	andeq	r0, r0, r0
+0x00703864:	andeq	r0, r0, r0
+0x00703868:	andeq	r0, r0, r0
+0x0070386c:	andeq	r0, r0, r0
+0x00703870:	andeq	r0, r0, r0
+0x00703874:	andeq	r0, r0, r0
+0x00703878:	andeq	r0, r0, r0
+0x0070387c:	andeq	r0, r0, r0
+0x00703880:	andeq	r0, r0, r0
+0x00703884:	andeq	r0, r0, r0
+0x00703888:	andeq	r0, r0, r0
+0x0070388c:	andeq	r0, r0, r0
+0x00703890:	andeq	r0, r0, r0
+0x00703894:	andeq	r0, r0, r0
+0x00703898:	andeq	r0, r0, r0
+0x0070389c:	andeq	r0, r0, r0
+0x007038a0:	andeq	r0, r0, r0
+0x007038a4:	andeq	r0, r0, r0
+0x007038a8:	andeq	r0, r0, r0
+0x007038ac:	andeq	r0, r0, r0
+0x007038b0:	andeq	r0, r0, r0
+0x007038b4:	andeq	r0, r0, r0
+0x007038b8:	andeq	r0, r0, r0
+0x007038bc:	andeq	r0, r0, r0
+0x007038c0:	andeq	r0, r0, r0
+0x007038c4:	andeq	r0, r0, r0
+0x007038c8:	andeq	r0, r0, r0
+0x007038cc:	andeq	r0, r0, r0
+0x007038d0:	andeq	r0, r0, r0
+0x007038d4:	andeq	r0, r0, r0
+0x007038d8:	andeq	r0, r0, r0
+0x007038dc:	andeq	r0, r0, r0
+0x007038e0:	andeq	r0, r0, r0
+0x007038e4:	andeq	r0, r0, r0
+0x007038e8:	andeq	r0, r0, r0
+0x007038ec:	andeq	r0, r0, r0
+0x007038f0:	andeq	r0, r0, r0
+0x007038f4:	andeq	r0, r0, r0
+0x007038f8:	andeq	r0, r0, r0
+0x007038fc:	andeq	r0, r0, r0
+0x00703900:	andeq	r0, r0, r0
+0x00703904:	andeq	r0, r0, r0
+0x00703908:	andeq	r0, r0, r0
+0x0070390c:	andeq	r0, r0, r0
+0x00703910:	andeq	r0, r0, r0
+0x00703914:	andeq	r0, r0, r0
+0x00703918:	andeq	r0, r0, r0
+0x0070391c:	andeq	r0, r0, r0
+0x00703920:	andeq	r0, r0, r0
+0x00703924:	andeq	r0, r0, r0
+0x00703928:	andeq	r0, r0, r0
+0x0070392c:	andeq	r0, r0, r0
+0x00703930:	andeq	r0, r0, r0
+0x00703934:	andeq	r0, r0, r0
+0x00703938:	andeq	r0, r0, r0
+0x0070393c:	andeq	r0, r0, r0
+0x00703940:	andeq	r0, r0, r0
+0x00703944:	andeq	r0, r0, r0
+0x00703948:	andeq	r0, r0, r0
+0x0070394c:	andeq	r0, r0, r0
+0x00703950:	andeq	r0, r0, r0
+0x00703954:	andeq	r0, r0, r0
+0x00703958:	andeq	r0, r0, r0
+0x0070395c:	andeq	r0, r0, r0
+0x00703960:	andeq	r0, r0, r0
+0x00703964:	andeq	r0, r0, r0
+0x00703968:	andeq	r0, r0, r0
+0x0070396c:	andeq	r0, r0, r0
+0x00703970:	andeq	r0, r0, r0
+0x00703974:	andeq	r0, r0, r0
+0x00703978:	andeq	r0, r0, r0
+0x0070397c:	andeq	r0, r0, r0
+0x00703980:	andeq	r0, r0, r0
+0x00703984:	andeq	r0, r0, r0
+0x00703988:	andeq	r0, r0, r0
+0x0070398c:	andeq	r0, r0, r0
+0x00703990:	andeq	r0, r0, r0
+0x00703994:	andeq	r0, r0, r0
+0x00703998:	andeq	r0, r0, r0
+0x0070399c:	andeq	r0, r0, r0
+0x007039a0:	andeq	r0, r0, r0
+0x007039a4:	andeq	r0, r0, r0
+0x007039a8:	andeq	r0, r0, r0
+0x007039ac:	andeq	r0, r0, r0
+0x007039b0:	andeq	r0, r0, r0
+0x007039b4:	andeq	r0, r0, r0
+0x007039b8:	andeq	r0, r0, r0
+0x007039bc:	andeq	r0, r0, r0
+0x007039c0:	andeq	r0, r0, r0
+0x007039c4:	andeq	r0, r0, r0
+0x007039c8:	andeq	r0, r0, r0
+0x007039cc:	andeq	r0, r0, r0
+0x007039d0:	andeq	r0, r0, r0
+0x007039d4:	andeq	r0, r0, r0
+0x007039d8:	andeq	r0, r0, r0
+0x007039dc:	andeq	r0, r0, r0
+0x007039e0:	andeq	r0, r0, r0
+0x007039e4:	andeq	r0, r0, r0
+0x007039e8:	andeq	r0, r0, r0
+0x007039ec:	andeq	r0, r0, r0
+0x007039f0:	andeq	r0, r0, r0
+0x007039f4:	andeq	r0, r0, r0
+0x007039f8:	andeq	r0, r0, r0
+0x007039fc:	andeq	r0, r0, r0
+0x00703a00:	andeq	r0, r0, r0
+0x00703a04:	andeq	r0, r0, r0
+0x00703a08:	andeq	r0, r0, r0
+0x00703a0c:	andeq	r0, r0, r0
+0x00703a10:	andeq	r0, r0, r0
+0x00703a14:	andeq	r0, r0, r0
+0x00703a18:	andeq	r0, r0, r0
+0x00703a1c:	andeq	r0, r0, r0
+0x00703a20:	andeq	r0, r0, r0
+0x00703a24:	andeq	r0, r0, r0
+0x00703a28:	andeq	r0, r0, r0
+0x00703a2c:	andeq	r0, r0, r0
+0x00703a30:	andeq	r0, r0, r0
+0x00703a34:	andeq	r0, r0, r0
+0x00703a38:	andeq	r0, r0, r0
+0x00703a3c:	andeq	r0, r0, r0
+0x00703a40:	andeq	r0, r0, r0
+0x00703a44:	andeq	r0, r0, r0
+0x00703a48:	andeq	r0, r0, r0
+0x00703a4c:	andeq	r0, r0, r0
+0x00703a50:	andeq	r0, r0, r0
+0x00703a54:	andeq	r0, r0, r0
+0x00703a58:	andeq	r0, r0, r0
+0x00703a5c:	andeq	r0, r0, r0
+0x00703a60:	andeq	r0, r0, r0
+0x00703a64:	andeq	r0, r0, r0
+0x00703a68:	andeq	r0, r0, r0
+0x00703a6c:	andeq	r0, r0, r0
+0x00703a70:	andeq	r0, r0, r0
+0x00703a74:	andeq	r0, r0, r0
+0x00703a78:	andeq	r0, r0, r0
+0x00703a7c:	andeq	r0, r0, r0
+0x00703a80:	andeq	r0, r0, r0
+0x00703a84:	andeq	r0, r0, r0
+0x00703a88:	andeq	r0, r0, r0
+0x00703a8c:	andeq	r0, r0, r0
+0x00703a90:	andeq	r0, r0, r0
+0x00703a94:	andeq	r0, r0, r0
+0x00703a98:	andeq	r0, r0, r0
+0x00703a9c:	andeq	r0, r0, r0
+0x00703aa0:	andeq	r0, r0, r0
+0x00703aa4:	andeq	r0, r0, r0
+0x00703aa8:	andeq	r0, r0, r0
+0x00703aac:	andeq	r0, r0, r0
+0x00703ab0:	andeq	r0, r0, r0
+0x00703ab4:	andeq	r0, r0, r0
+0x00703ab8:	andeq	r0, r0, r0
+0x00703abc:	andeq	r0, r0, r0
+0x00703ac0:	andeq	r0, r0, r0
+0x00703ac4:	andeq	r0, r0, r0
+0x00703ac8:	andeq	r0, r0, r0
+0x00703acc:	andeq	r0, r0, r0
+0x00703ad0:	andeq	r0, r0, r0
+0x00703ad4:	andeq	r0, r0, r0
+0x00703ad8:	andeq	r0, r0, r0
+0x00703adc:	andeq	r0, r0, r0
+0x00703ae0:	andeq	r0, r0, r0
+0x00703ae4:	andeq	r0, r0, r0
+0x00703ae8:	andeq	r0, r0, r0
+0x00703aec:	andeq	r0, r0, r0
+0x00703af0:	andeq	r0, r0, r0
+0x00703af4:	andeq	r0, r0, r0
+0x00703af8:	andeq	r0, r0, r0
+0x00703afc:	andeq	r0, r0, r0
+0x00703b00:	andeq	r0, r0, r0
+0x00703b04:	andeq	r0, r0, r0
+0x00703b08:	andeq	r0, r0, r0
+0x00703b0c:	andeq	r0, r0, r0
+0x00703b10:	andeq	r0, r0, r0
+0x00703b14:	andeq	r0, r0, r0
+0x00703b18:	andeq	r0, r0, r0
+0x00703b1c:	andeq	r0, r0, r0
+0x00703b20:	andeq	r0, r0, r0
+0x00703b24:	andeq	r0, r0, r0
+0x00703b28:	andeq	r0, r0, r0
+0x00703b2c:	andeq	r0, r0, r0
+0x00703b30:	andeq	r0, r0, r0
+0x00703b34:	andeq	r0, r0, r0
+0x00703b38:	andeq	r0, r0, r0
+0x00703b3c:	andeq	r0, r0, r0
+0x00703b40:	andeq	r0, r0, r0
+0x00703b44:	andeq	r0, r0, r0
+0x00703b48:	andeq	r0, r0, r0
+0x00703b4c:	andeq	r0, r0, r0
+0x00703b50:	andeq	r0, r0, r0
+0x00703b54:	andeq	r0, r0, r0
+0x00703b58:	andeq	r0, r0, r0
+0x00703b5c:	andeq	r0, r0, r0
+0x00703b60:	andeq	r0, r0, r0
+0x00703b64:	andeq	r0, r0, r0
+0x00703b68:	andeq	r0, r0, r0
+0x00703b6c:	andeq	r0, r0, r0
+0x00703b70:	andeq	r0, r0, r0
+0x00703b74:	andeq	r0, r0, r0
+0x00703b78:	andeq	r0, r0, r0
+0x00703b7c:	andeq	r0, r0, r0
+0x00703b80:	andeq	r0, r0, r0
+0x00703b84:	andeq	r0, r0, r0
+0x00703b88:	andeq	r0, r0, r0
+0x00703b8c:	andeq	r0, r0, r0
+0x00703b90:	andeq	r0, r0, r0
+0x00703b94:	andeq	r0, r0, r0
+0x00703b98:	andeq	r0, r0, r0
+0x00703b9c:	andeq	r0, r0, r0
+0x00703ba0:	andeq	r0, r0, r0
+0x00703ba4:	andeq	r0, r0, r0
+0x00703ba8:	andeq	r0, r0, r0
+0x00703bac:	andeq	r0, r0, r0
+0x00703bb0:	andeq	r0, r0, r0
+0x00703bb4:	andeq	r0, r0, r0
+0x00703bb8:	andeq	r0, r0, r0
+0x00703bbc:	andeq	r0, r0, r0
+0x00703bc0:	andeq	r0, r0, r0
+0x00703bc4:	andeq	r0, r0, r0
+0x00703bc8:	andeq	r0, r0, r0
+0x00703bcc:	andeq	r0, r0, r0
+0x00703bd0:	andeq	r0, r0, r0
+0x00703bd4:	andeq	r0, r0, r0
+0x00703bd8:	andeq	r0, r0, r0
+0x00703bdc:	andeq	r0, r0, r0
+0x00703be0:	andeq	r0, r0, r0
+0x00703be4:	andeq	r0, r0, r0
+0x00703be8:	andeq	r0, r0, r0
+0x00703bec:	andeq	r0, r0, r0
+0x00703bf0:	andeq	r0, r0, r0
+0x00703bf4:	andeq	r0, r0, r0
+0x00703bf8:	andeq	r0, r0, r0
+0x00703bfc:	andeq	r0, r0, r0
+0x00703c00:	andeq	r0, r0, r0
+0x00703c04:	andeq	r0, r0, r0
+0x00703c08:	andeq	r0, r0, r0
+0x00703c0c:	andeq	r0, r0, r0
+0x00703c10:	andeq	r0, r0, r0
+0x00703c14:	andeq	r0, r0, r0
+0x00703c18:	andeq	r0, r0, r0
+0x00703c1c:	andeq	r0, r0, r0
+0x00703c20:	andeq	r0, r0, r0
+0x00703c24:	andeq	r0, r0, r0
+0x00703c28:	andeq	r0, r0, r0
+0x00703c2c:	andeq	r0, r0, r0
+0x00703c30:	andeq	r0, r0, r0
+0x00703c34:	andeq	r0, r0, r0
+0x00703c38:	andeq	r0, r0, r0
+0x00703c3c:	andeq	r0, r0, r0
+0x00703c40:	andeq	r0, r0, r0
+0x00703c44:	andeq	r0, r0, r0
+0x00703c48:	andeq	r0, r0, r0
+0x00703c4c:	andeq	r0, r0, r0
+0x00703c50:	andeq	r0, r0, r0
+0x00703c54:	andeq	r0, r0, r0
+0x00703c58:	andeq	r0, r0, r0
+0x00703c5c:	andeq	r0, r0, r0
+0x00703c60:	andeq	r0, r0, r0
+0x00703c64:	andeq	r0, r0, r0
+0x00703c68:	andeq	r0, r0, r0
+0x00703c6c:	andeq	r0, r0, r0
+0x00703c70:	andeq	r0, r0, r0
+0x00703c74:	andeq	r0, r0, r0
+0x00703c78:	andeq	r0, r0, r0
+0x00703c7c:	andeq	r0, r0, r0
+0x00703c80:	andeq	r0, r0, r0
+0x00703c84:	andeq	r0, r0, r0
+0x00703c88:	andeq	r0, r0, r0
+0x00703c8c:	andeq	r0, r0, r0
+0x00703c90:	andeq	r0, r0, r0
+0x00703c94:	andeq	r0, r0, r0
+0x00703c98:	andeq	r0, r0, r0
+0x00703c9c:	andeq	r0, r0, r0
+0x00703ca0:	andeq	r0, r0, r0
+0x00703ca4:	andeq	r0, r0, r0
+0x00703ca8:	andeq	r0, r0, r0
+0x00703cac:	andeq	r0, r0, r0
+0x00703cb0:	andeq	r0, r0, r0
+0x00703cb4:	andeq	r0, r0, r0
+0x00703cb8:	andeq	r0, r0, r0
+0x00703cbc:	andeq	r0, r0, r0
+0x00703cc0:	andeq	r0, r0, r0
+0x00703cc4:	andeq	r0, r0, r0
+0x00703cc8:	andeq	r0, r0, r0
+0x00703ccc:	andeq	r0, r0, r0
+0x00703cd0:	andeq	r0, r0, r0
+0x00703cd4:	andeq	r0, r0, r0
+0x00703cd8:	andeq	r0, r0, r0
+0x00703cdc:	andeq	r0, r0, r0
+0x00703ce0:	andeq	r0, r0, r0
+0x00703ce4:	andeq	r0, r0, r0
+0x00703ce8:	andeq	r0, r0, r0
+0x00703cec:	andeq	r0, r0, r0
+0x00703cf0:	andeq	r0, r0, r0
+0x00703cf4:	andeq	r0, r0, r0
+0x00703cf8:	andeq	r0, r0, r0
+0x00703cfc:	andeq	r0, r0, r0
+0x00703d00:	andeq	r0, r0, r0
+0x00703d04:	andeq	r0, r0, r0
+0x00703d08:	andeq	r0, r0, r0
+0x00703d0c:	andeq	r0, r0, r0
+0x00703d10:	andeq	r0, r0, r0
+0x00703d14:	andeq	r0, r0, r0
+0x00703d18:	andeq	r0, r0, r0
+0x00703d1c:	andeq	r0, r0, r0
+0x00703d20:	andeq	r0, r0, r0
+0x00703d24:	andeq	r0, r0, r0
+0x00703d28:	andeq	r0, r0, r0
+0x00703d2c:	andeq	r0, r0, r0
+0x00703d30:	andeq	r0, r0, r0
+0x00703d34:	andeq	r0, r0, r0
+0x00703d38:	andeq	r0, r0, r0
+0x00703d3c:	andeq	r0, r0, r0
+0x00703d40:	andeq	r0, r0, r0
+0x00703d44:	andeq	r0, r0, r0
+0x00703d48:	andeq	r0, r0, r0
+0x00703d4c:	andeq	r0, r0, r0
+0x00703d50:	andeq	r0, r0, r0
+0x00703d54:	andeq	r0, r0, r0
+0x00703d58:	andeq	r0, r0, r0
+0x00703d5c:	andeq	r0, r0, r0
+0x00703d60:	andeq	r0, r0, r0
+0x00703d64:	andeq	r0, r0, r0
+0x00703d68:	andeq	r0, r0, r0
+0x00703d6c:	andeq	r0, r0, r0
+0x00703d70:	andeq	r0, r0, r0
+0x00703d74:	andeq	r0, r0, r0
+0x00703d78:	andeq	r0, r0, r0
+0x00703d7c:	andeq	r0, r0, r0
+0x00703d80:	andeq	r0, r0, r0
+0x00703d84:	andeq	r0, r0, r0
+0x00703d88:	andeq	r0, r0, r0
+0x00703d8c:	andeq	r0, r0, r0
+0x00703d90:	andeq	r0, r0, r0
+0x00703d94:	andeq	r0, r0, r0
+0x00703d98:	andeq	r0, r0, r0
+0x00703d9c:	andeq	r0, r0, r0
+0x00703da0:	andeq	r0, r0, r0
+0x00703da4:	andeq	r0, r0, r0
+0x00703da8:	andeq	r0, r0, r0
+0x00703dac:	andeq	r0, r0, r0
+0x00703db0:	andeq	r0, r0, r0
+0x00703db4:	andeq	r0, r0, r0
+0x00703db8:	andeq	r0, r0, r0
+0x00703dbc:	andeq	r0, r0, r0
+0x00703dc0:	andeq	r0, r0, r0
+0x00703dc4:	andeq	r0, r0, r0
+0x00703dc8:	andeq	r0, r0, r0
+0x00703dcc:	andeq	r0, r0, r0
+0x00703dd0:	andeq	r0, r0, r0
+0x00703dd4:	andeq	r0, r0, r0
+0x00703dd8:	andeq	r0, r0, r0
+0x00703ddc:	andeq	r0, r0, r0
+0x00703de0:	andeq	r0, r0, r0
+0x00703de4:	andeq	r0, r0, r0
+0x00703de8:	andeq	r0, r0, r0
+0x00703dec:	andeq	r0, r0, r0
+0x00703df0:	andeq	r0, r0, r0
+0x00703df4:	andeq	r0, r0, r0
+0x00703df8:	andeq	r0, r0, r0
+0x00703dfc:	andeq	r0, r0, r0
+0x00703e00:	andeq	r0, r0, r0
+0x00703e04:	andeq	r0, r0, r0
+0x00703e08:	andeq	r0, r0, r0
+0x00703e0c:	andeq	r0, r0, r0
+0x00703e10:	andeq	r0, r0, r0
+0x00703e14:	andeq	r0, r0, r0
+0x00703e18:	andeq	r0, r0, r0
+0x00703e1c:	andeq	r0, r0, r0
+0x00703e20:	andeq	r0, r0, r0
+0x00703e24:	andeq	r0, r0, r0
+0x00703e28:	andeq	r0, r0, r0
+0x00703e2c:	andeq	r0, r0, r0
+0x00703e30:	andeq	r0, r0, r0
+0x00703e34:	andeq	r0, r0, r0
+0x00703e38:	andeq	r0, r0, r0
+0x00703e3c:	andeq	r0, r0, r0
+0x00703e40:	andeq	r0, r0, r0
+0x00703e44:	andeq	r0, r0, r0
+0x00703e48:	andeq	r0, r0, r0
+0x00703e4c:	andeq	r0, r0, r0
+0x00703e50:	andeq	r0, r0, r0
+0x00703e54:	andeq	r0, r0, r0
+0x00703e58:	andeq	r0, r0, r0
+0x00703e5c:	andeq	r0, r0, r0
+0x00703e60:	andeq	r0, r0, r0
+0x00703e64:	andeq	r0, r0, r0
+0x00703e68:	andeq	r0, r0, r0
+0x00703e6c:	andeq	r0, r0, r0
+0x00703e70:	andeq	r0, r0, r0
+0x00703e74:	andeq	r0, r0, r0
+0x00703e78:	andeq	r0, r0, r0
+0x00703e7c:	andeq	r0, r0, r0
+0x00703e80:	andeq	r0, r0, r0
+0x00703e84:	andeq	r0, r0, r0
+0x00703e88:	andeq	r0, r0, r0
+0x00703e8c:	andeq	r0, r0, r0
+0x00703e90:	andeq	r0, r0, r0
+0x00703e94:	andeq	r0, r0, r0
+0x00703e98:	andeq	r0, r0, r0
+0x00703e9c:	andeq	r0, r0, r0
+0x00703ea0:	andeq	r0, r0, r0
+0x00703ea4:	andeq	r0, r0, r0
+0x00703ea8:	andeq	r0, r0, r0
+0x00703eac:	andeq	r0, r0, r0
+0x00703eb0:	andeq	r0, r0, r0
+0x00703eb4:	andeq	r0, r0, r0
+0x00703eb8:	andeq	r0, r0, r0
+0x00703ebc:	andeq	r0, r0, r0
+0x00703ec0:	andeq	r0, r0, r0
+0x00703ec4:	andeq	r0, r0, r0
+0x00703ec8:	andeq	r0, r0, r0
+0x00703ecc:	andeq	r0, r0, r0
+0x00703ed0:	andeq	r0, r0, r0
+0x00703ed4:	andeq	r0, r0, r0
+0x00703ed8:	andeq	r0, r0, r0
+0x00703edc:	andeq	r0, r0, r0
+0x00703ee0:	andeq	r0, r0, r0
+0x00703ee4:	andeq	r0, r0, r0
+0x00703ee8:	andeq	r0, r0, r0
+0x00703eec:	andeq	r0, r0, r0
+0x00703ef0:	andeq	r0, r0, r0
+0x00703ef4:	andeq	r0, r0, r0
+0x00703ef8:	andeq	r0, r0, r0
+0x00703efc:	andeq	r0, r0, r0
+0x00703f00:	andeq	r0, r0, r0
+0x00703f04:	andeq	r0, r0, r0
+0x00703f08:	andeq	r0, r0, r0
+0x00703f0c:	andeq	r0, r0, r0
+0x00703f10:	andeq	r0, r0, r0
+0x00703f14:	andeq	r0, r0, r0
+0x00703f18:	andeq	r0, r0, r0
+0x00703f1c:	andeq	r0, r0, r0
+0x00703f20:	andeq	r0, r0, r0
+0x00703f24:	andeq	r0, r0, r0
+0x00703f28:	andeq	r0, r0, r0
+0x00703f2c:	andeq	r0, r0, r0
+0x00703f30:	andeq	r0, r0, r0
+0x00703f34:	andeq	r0, r0, r0
+0x00703f38:	andeq	r0, r0, r0
+0x00703f3c:	andeq	r0, r0, r0
+0x00703f40:	andeq	r0, r0, r0
+0x00703f44:	andeq	r0, r0, r0
+0x00703f48:	andeq	r0, r0, r0
+0x00703f4c:	andeq	r0, r0, r0
+0x00703f50:	andeq	r0, r0, r0
+0x00703f54:	andeq	r0, r0, r0
+0x00703f58:	andeq	r0, r0, r0
+0x00703f5c:	andeq	r0, r0, r0
+0x00703f60:	andeq	r0, r0, r0
+0x00703f64:	andeq	r0, r0, r0
+0x00703f68:	andeq	r0, r0, r0
+0x00703f6c:	andeq	r0, r0, r0
+0x00703f70:	andeq	r0, r0, r0
+0x00703f74:	andeq	r0, r0, r0
+0x00703f78:	andeq	r0, r0, r0
+0x00703f7c:	andeq	r0, r0, r0
+0x00703f80:	andeq	r0, r0, r0
+0x00703f84:	andeq	r0, r0, r0
+0x00703f88:	andeq	r0, r0, r0
+0x00703f8c:	andeq	r0, r0, r0
+0x00703f90:	andeq	r0, r0, r0
+0x00703f94:	andeq	r0, r0, r0
+0x00703f98:	andeq	r0, r0, r0
+0x00703f9c:	andeq	r0, r0, r0
+0x00703fa0:	andeq	r0, r0, r0
+0x00703fa4:	andeq	r0, r0, r0
+0x00703fa8:	andeq	r0, r0, r0
+0x00703fac:	andeq	r0, r0, r0
+0x00703fb0:	andeq	r0, r0, r0
+0x00703fb4:	andeq	r0, r0, r0
+0x00703fb8:	andeq	r0, r0, r0
+0x00703fbc:	andeq	r0, r0, r0
+0x00703fc0:	andeq	r0, r0, r0
+0x00703fc4:	andeq	r0, r0, r0
+0x00703fc8:	andeq	r0, r0, r0
+0x00703fcc:	andeq	r0, r0, r0
+0x00703fd0:	andeq	r0, r0, r0
+0x00703fd4:	andeq	r0, r0, r0
+0x00703fd8:	andeq	r0, r0, r0
+0x00703fdc:	andeq	r0, r0, r0
+0x00703fe0:	andeq	r0, r0, r0
+0x00703fe4:	andeq	r0, r0, r0
+0x00703fe8:	andeq	r0, r0, r0
+0x00703fec:	andeq	r0, r0, r0
+0x00703ff0:	andeq	r0, r0, r0
+0x00703ff4:	andeq	r0, r0, r0
+0x00703ff8:	andeq	r0, r0, r0
+0x00703ffc:	andeq	r0, r0, r0
+0x00704000:	andeq	r0, r0, r0
+0x00704004:	andeq	r0, r0, r0
+0x00704008:	andeq	r0, r0, r0
+0x0070400c:	andeq	r0, r0, r0
+0x00704010:	andeq	r0, r0, r0
+0x00704014:	andeq	r0, r0, r0
+0x00704018:	andeq	r0, r0, r0
+0x0070401c:	andeq	r0, r0, r0
+0x00704020:	andeq	r0, r0, r0
+0x00704024:	andeq	r0, r0, r0
+0x00704028:	andeq	r0, r0, r0
+0x0070402c:	andeq	r0, r0, r0
+0x00704030:	andeq	r0, r0, r0
+0x00704034:	andeq	r0, r0, r0
+0x00704038:	andeq	r0, r0, r0
+0x0070403c:	andeq	r0, r0, r0
+0x00704040:	andeq	r0, r0, r0
+0x00704044:	andeq	r0, r0, r0
+0x00704048:	andeq	r0, r0, r0
+0x0070404c:	andeq	r0, r0, r0
+0x00704050:	andeq	r0, r0, r0
+0x00704054:	andeq	r0, r0, r0
+0x00704058:	andeq	r0, r0, r0
+0x0070405c:	andeq	r0, r0, r0
+0x00704060:	andeq	r0, r0, r0
+0x00704064:	andeq	r0, r0, r0
+0x00704068:	andeq	r0, r0, r0
+0x0070406c:	andeq	r0, r0, r0
+0x00704070:	andeq	r0, r0, r0
+0x00704074:	andeq	r0, r0, r0
+0x00704078:	andeq	r0, r0, r0
+0x0070407c:	andeq	r0, r0, r0
+0x00704080:	andeq	r0, r0, r0
+0x00704084:	andeq	r0, r0, r0
+0x00704088:	andeq	r0, r0, r0
+0x0070408c:	andeq	r0, r0, r0
+0x00704090:	andeq	r0, r0, r0
+0x00704094:	andeq	r0, r0, r0
+0x00704098:	andeq	r0, r0, r0
+0x0070409c:	andeq	r0, r0, r0
+0x007040a0:	andeq	r0, r0, r0
+0x007040a4:	andeq	r0, r0, r0
+0x007040a8:	andeq	r0, r0, r0
+0x007040ac:	andeq	r0, r0, r0
+0x007040b0:	andeq	r0, r0, r0
+0x007040b4:	andeq	r0, r0, r0
+0x007040b8:	andeq	r0, r0, r0
+0x007040bc:	andeq	r0, r0, r0
+0x007040c0:	andeq	r0, r0, r0
+0x007040c4:	andeq	r0, r0, r0
+0x007040c8:	andeq	r0, r0, r0
+0x007040cc:	andeq	r0, r0, r0
+0x007040d0:	andeq	r0, r0, r0
+0x007040d4:	andeq	r0, r0, r0
+0x007040d8:	andeq	r0, r0, r0
+0x007040dc:	andeq	r0, r0, r0
+0x007040e0:	andeq	r0, r0, r0
+0x007040e4:	andeq	r0, r0, r0
+0x007040e8:	andeq	r0, r0, r0
+0x007040ec:	andeq	r0, r0, r0
+0x007040f0:	andeq	r0, r0, r0
+0x007040f4:	andeq	r0, r0, r0
+0x007040f8:	andeq	r0, r0, r0
+0x007040fc:	andeq	r0, r0, r0
+0x00704100:	andeq	r0, r0, r0
+0x00704104:	andeq	r0, r0, r0
+0x00704108:	andeq	r0, r0, r0
+0x0070410c:	andeq	r0, r0, r0
+0x00704110:	andeq	r0, r0, r0
+0x00704114:	andeq	r0, r0, r0
+0x00704118:	andeq	r0, r0, r0
+0x0070411c:	andeq	r0, r0, r0
+0x00704120:	andeq	r0, r0, r0
+0x00704124:	andeq	r0, r0, r0
+0x00704128:	andeq	r0, r0, r0
+0x0070412c:	andeq	r0, r0, r0
+0x00704130:	andeq	r0, r0, r0
+0x00704134:	andeq	r0, r0, r0
+0x00704138:	andeq	r0, r0, r0
+0x0070413c:	andeq	r0, r0, r0
+0x00704140:	andeq	r0, r0, r0
+0x00704144:	andeq	r0, r0, r0
+0x00704148:	andeq	r0, r0, r0
+0x0070414c:	andeq	r0, r0, r0
+0x00704150:	andeq	r0, r0, r0
+0x00704154:	andeq	r0, r0, r0
+0x00704158:	andeq	r0, r0, r0
+0x0070415c:	andeq	r0, r0, r0
+0x00704160:	andeq	r0, r0, r0
+0x00704164:	andeq	r0, r0, r0
+0x00704168:	andeq	r0, r0, r0
+0x0070416c:	andeq	r0, r0, r0
+0x00704170:	andeq	r0, r0, r0
+0x00704174:	andeq	r0, r0, r0
+0x00704178:	andeq	r0, r0, r0
+0x0070417c:	andeq	r0, r0, r0
+0x00704180:	andeq	r0, r0, r0
+0x00704184:	andeq	r0, r0, r0
+0x00704188:	andeq	r0, r0, r0
+0x0070418c:	andeq	r0, r0, r0
+0x00704190:	andeq	r0, r0, r0
+0x00704194:	andeq	r0, r0, r0
+0x00704198:	andeq	r0, r0, r0
+0x0070419c:	andeq	r0, r0, r0
+0x007041a0:	andeq	r0, r0, r0
+0x007041a4:	andeq	r0, r0, r0
+0x007041a8:	andeq	r0, r0, r0
+0x007041ac:	andeq	r0, r0, r0
+0x007041b0:	andeq	r0, r0, r0
+0x007041b4:	andeq	r0, r0, r0
+0x007041b8:	andeq	r0, r0, r0
+0x007041bc:	andeq	r0, r0, r0
+0x007041c0:	andeq	r0, r0, r0
+0x007041c4:	andeq	r0, r0, r0
+0x007041c8:	andeq	r0, r0, r0
+0x007041cc:	andeq	r0, r0, r0
+0x007041d0:	andeq	r0, r0, r0
+0x007041d4:	andeq	r0, r0, r0
+0x007041d8:	andeq	r0, r0, r0
+0x007041dc:	andeq	r0, r0, r0
+0x007041e0:	andeq	r0, r0, r0
+0x007041e4:	andeq	r0, r0, r0
+0x007041e8:	andeq	r0, r0, r0
+0x007041ec:	andeq	r0, r0, r0
+0x007041f0:	andeq	r0, r0, r0
+0x007041f4:	andeq	r0, r0, r0
+0x007041f8:	andeq	r0, r0, r0
+0x007041fc:	andeq	r0, r0, r0
+0x00704200:	andeq	r0, r0, r0
+0x00704204:	andeq	r0, r0, r0
+0x00704208:	andeq	r0, r0, r0
+0x0070420c:	andeq	r0, r0, r0
+0x00704210:	andeq	r0, r0, r0
+0x00704214:	andeq	r0, r0, r0
+0x00704218:	andeq	r0, r0, r0
+0x0070421c:	andeq	r0, r0, r0
+0x00704220:	andeq	r0, r0, r0
+0x00704224:	andeq	r0, r0, r0
+0x00704228:	andeq	r0, r0, r0
+0x0070422c:	andeq	r0, r0, r0
+0x00704230:	andeq	r0, r0, r0
+0x00704234:	andeq	r0, r0, r0
+0x00704238:	andeq	r0, r0, r0
+0x0070423c:	andeq	r0, r0, r0
+0x00704240:	andeq	r0, r0, r0
+0x00704244:	andeq	r0, r0, r0
+0x00704248:	andeq	r0, r0, r0
+0x0070424c:	andeq	r0, r0, r0
+0x00704250:	andeq	r0, r0, r0
+0x00704254:	andeq	r0, r0, r0
+0x00704258:	andeq	r0, r0, r0
+0x0070425c:	andeq	r0, r0, r0
+0x00704260:	andeq	r0, r0, r0
+0x00704264:	andeq	r0, r0, r0
+0x00704268:	andeq	r0, r0, r0
+0x0070426c:	andeq	r0, r0, r0
+0x00704270:	andeq	r0, r0, r0
+0x00704274:	andeq	r0, r0, r0
+0x00704278:	andeq	r0, r0, r0
+0x0070427c:	andeq	r0, r0, r0
+0x00704280:	andeq	r0, r0, r0
+0x00704284:	andeq	r0, r0, r0
+0x00704288:	andeq	r0, r0, r0
+0x0070428c:	andeq	r0, r0, r0
+0x00704290:	andeq	r0, r0, r0
+0x00704294:	andeq	r0, r0, r0
+0x00704298:	andeq	r0, r0, r0
+0x0070429c:	andeq	r0, r0, r0
+0x007042a0:	andeq	r0, r0, r0
+0x007042a4:	andeq	r0, r0, r0
+0x007042a8:	andeq	r0, r0, r0
+0x007042ac:	andeq	r0, r0, r0
+0x007042b0:	andeq	r0, r0, r0
+0x007042b4:	andeq	r0, r0, r0
+0x007042b8:	andeq	r0, r0, r0
+0x007042bc:	andeq	r0, r0, r0
+0x007042c0:	andeq	r0, r0, r0
+0x007042c4:	andeq	r0, r0, r0
+0x007042c8:	andeq	r0, r0, r0
+0x007042cc:	andeq	r0, r0, r0
+0x007042d0:	andeq	r0, r0, r0
+0x007042d4:	andeq	r0, r0, r0
+0x007042d8:	andeq	r0, r0, r0
+0x007042dc:	andeq	r0, r0, r0
+0x007042e0:	andeq	r0, r0, r0
+0x007042e4:	andeq	r0, r0, r0
+0x007042e8:	andeq	r0, r0, r0
+0x007042ec:	andeq	r0, r0, r0
+0x007042f0:	andeq	r0, r0, r0
+0x007042f4:	andeq	r0, r0, r0
+0x007042f8:	andeq	r0, r0, r0
+0x007042fc:	andeq	r0, r0, r0
+0x00704300:	andeq	r0, r0, r0
+0x00704304:	andeq	r0, r0, r0
+0x00704308:	andeq	r0, r0, r0
+0x0070430c:	andeq	r0, r0, r0
+0x00704310:	andeq	r0, r0, r0
+0x00704314:	andeq	r0, r0, r0
+0x00704318:	andeq	r0, r0, r0
+0x0070431c:	andeq	r0, r0, r0
+0x00704320:	andeq	r0, r0, r0
+0x00704324:	andeq	r0, r0, r0
+0x00704328:	andeq	r0, r0, r0
+0x0070432c:	andeq	r0, r0, r0
+0x00704330:	andeq	r0, r0, r0
+0x00704334:	andeq	r0, r0, r0
+0x00704338:	andeq	r0, r0, r0
+0x0070433c:	andeq	r0, r0, r0
+0x00704340:	andeq	r0, r0, r0
+0x00704344:	andeq	r0, r0, r0
+0x00704348:	andeq	r0, r0, r0
+0x0070434c:	andeq	r0, r0, r0
+0x00704350:	andeq	r0, r0, r0
+0x00704354:	andeq	r0, r0, r0
+0x00704358:	andeq	r0, r0, r0
+0x0070435c:	andeq	r0, r0, r0
+0x00704360:	andeq	r0, r0, r0
+0x00704364:	andeq	r0, r0, r0
+0x00704368:	andeq	r0, r0, r0
+0x0070436c:	andeq	r0, r0, r0
+0x00704370:	andeq	r0, r0, r0
+0x00704374:	andeq	r0, r0, r0
+0x00704378:	andeq	r0, r0, r0
+0x0070437c:	andeq	r0, r0, r0
+0x00704380:	andeq	r0, r0, r0
+0x00704384:	andeq	r0, r0, r0
+0x00704388:	andeq	r0, r0, r0
+0x0070438c:	andeq	r0, r0, r0
+0x00704390:	andeq	r0, r0, r0
+0x00704394:	andeq	r0, r0, r0
+0x00704398:	andeq	r0, r0, r0
+0x0070439c:	andeq	r0, r0, r0
+0x007043a0:	andeq	r0, r0, r0
+0x007043a4:	andeq	r0, r0, r0
+0x007043a8:	andeq	r0, r0, r0
+0x007043ac:	andeq	r0, r0, r0
+0x007043b0:	andeq	r0, r0, r0
+0x007043b4:	andeq	r0, r0, r0
+0x007043b8:	andeq	r0, r0, r0
+0x007043bc:	andeq	r0, r0, r0
+0x007043c0:	andeq	r0, r0, r0
+0x007043c4:	andeq	r0, r0, r0
+0x007043c8:	andeq	r0, r0, r0
+0x007043cc:	andeq	r0, r0, r0
+0x007043d0:	andeq	r0, r0, r0
+0x007043d4:	andeq	r0, r0, r0
+0x007043d8:	andeq	r0, r0, r0
+0x007043dc:	andeq	r0, r0, r0
+0x007043e0:	andeq	r0, r0, r0
+0x007043e4:	andeq	r0, r0, r0
+0x007043e8:	andeq	r0, r0, r0
+0x007043ec:	andeq	r0, r0, r0
+0x007043f0:	andeq	r0, r0, r0
+0x007043f4:	andeq	r0, r0, r0
+0x007043f8:	andeq	r0, r0, r0
+0x007043fc:	andeq	r0, r0, r0
+0x00704400:	andeq	r0, r0, r0
+0x00704404:	andeq	r0, r0, r0
+0x00704408:	andeq	r0, r0, r0
+0x0070440c:	andeq	r0, r0, r0
+0x00704410:	andeq	r0, r0, r0
+0x00704414:	andeq	r0, r0, r0
+0x00704418:	andeq	r0, r0, r0
+0x0070441c:	andeq	r0, r0, r0
+0x00704420:	andeq	r0, r0, r0
+0x00704424:	andeq	r0, r0, r0
+0x00704428:	andeq	r0, r0, r0
+0x0070442c:	andeq	r0, r0, r0
+0x00704430:	andeq	r0, r0, r0
+0x00704434:	andeq	r0, r0, r0
+0x00704438:	andeq	r0, r0, r0
+0x0070443c:	andeq	r0, r0, r0
+0x00704440:	andeq	r0, r0, r0
+0x00704444:	andeq	r0, r0, r0
+0x00704448:	andeq	r0, r0, r0
+0x0070444c:	andeq	r0, r0, r0
+0x00704450:	andeq	r0, r0, r0
+0x00704454:	andeq	r0, r0, r0
+0x00704458:	andeq	r0, r0, r0
+0x0070445c:	andeq	r0, r0, r0
+0x00704460:	andeq	r0, r0, r0
+0x00704464:	andeq	r0, r0, r0
+0x00704468:	andeq	r0, r0, r0
+0x0070446c:	andeq	r0, r0, r0
+0x00704470:	andeq	r0, r0, r0
+0x00704474:	andeq	r0, r0, r0
+0x00704478:	andeq	r0, r0, r0
+0x0070447c:	andeq	r0, r0, r0
+0x00704480:	andeq	r0, r0, r0
+0x00704484:	andeq	r0, r0, r0
+0x00704488:	andeq	r0, r0, r0
+0x0070448c:	andeq	r0, r0, r0
+0x00704490:	andeq	r0, r0, r0
+0x00704494:	andeq	r0, r0, r0
+0x00704498:	andeq	r0, r0, r0
+0x0070449c:	andeq	r0, r0, r0
+0x007044a0:	andeq	r0, r0, r0
+0x007044a4:	andeq	r0, r0, r0
+0x007044a8:	andeq	r0, r0, r0
+0x007044ac:	andeq	r0, r0, r0
+0x007044b0:	andeq	r0, r0, r0
+0x007044b4:	andeq	r0, r0, r0
+0x007044b8:	andeq	r0, r0, r0
+0x007044bc:	andeq	r0, r0, r0
+0x007044c0:	andeq	r0, r0, r0
+0x007044c4:	andeq	r0, r0, r0
+0x007044c8:	andeq	r0, r0, r0
+0x007044cc:	andeq	r0, r0, r0
+0x007044d0:	andeq	r0, r0, r0
+0x007044d4:	andeq	r0, r0, r0
+0x007044d8:	andeq	r0, r0, r0
+0x007044dc:	andeq	r0, r0, r0
+0x007044e0:	andeq	r0, r0, r0
+0x007044e4:	andeq	r0, r0, r0
+0x007044e8:	andeq	r0, r0, r0
+0x007044ec:	andeq	r0, r0, r0
+0x007044f0:	andeq	r0, r0, r0
+0x007044f4:	andeq	r0, r0, r0
+0x007044f8:	andeq	r0, r0, r0
+0x007044fc:	andeq	r0, r0, r0
+0x00704500:	andeq	r0, r0, r0
+0x00704504:	andeq	r0, r0, r0
+0x00704508:	andeq	r0, r0, r0
+0x0070450c:	andeq	r0, r0, r0
+0x00704510:	andeq	r0, r0, r0
+0x00704514:	andeq	r0, r0, r0
+0x00704518:	andeq	r0, r0, r0
+0x0070451c:	andeq	r0, r0, r0
+0x00704520:	andeq	r0, r0, r0
+0x00704524:	andeq	r0, r0, r0
+0x00704528:	andeq	r0, r0, r0
+0x0070452c:	andeq	r0, r0, r0
+0x00704530:	andeq	r0, r0, r0
+0x00704534:	andeq	r0, r0, r0
+0x00704538:	andeq	r0, r0, r0
+0x0070453c:	andeq	r0, r0, r0
+0x00704540:	andeq	r0, r0, r0
+0x00704544:	andeq	r0, r0, r0
+0x00704548:	andeq	r0, r0, r0
+0x0070454c:	andeq	r0, r0, r0
+0x00704550:	andeq	r0, r0, r0
+0x00704554:	andeq	r0, r0, r0
+0x00704558:	andeq	r0, r0, r0
+0x0070455c:	andeq	r0, r0, r0
+0x00704560:	andeq	r0, r0, r0
+0x00704564:	andeq	r0, r0, r0
+0x00704568:	andeq	r0, r0, r0
+0x0070456c:	andeq	r0, r0, r0
+0x00704570:	andeq	r0, r0, r0
+0x00704574:	andeq	r0, r0, r0
+0x00704578:	andeq	r0, r0, r0
+0x0070457c:	andeq	r0, r0, r0
+0x00704580:	andeq	r0, r0, r0
+0x00704584:	andeq	r0, r0, r0
+0x00704588:	andeq	r0, r0, r0
+0x0070458c:	andeq	r0, r0, r0
+0x00704590:	andeq	r0, r0, r0
+0x00704594:	andeq	r0, r0, r0
+0x00704598:	andeq	r0, r0, r0
+0x0070459c:	andeq	r0, r0, r0
+0x007045a0:	andeq	r0, r0, r0
+0x007045a4:	andeq	r0, r0, r0
+0x007045a8:	andeq	r0, r0, r0
+0x007045ac:	andeq	r0, r0, r0
+0x007045b0:	andeq	r0, r0, r0
+0x007045b4:	andeq	r0, r0, r0
+0x007045b8:	andeq	r0, r0, r0
+0x007045bc:	andeq	r0, r0, r0
+0x007045c0:	andeq	r0, r0, r0
+0x007045c4:	andeq	r0, r0, r0
+0x007045c8:	andeq	r0, r0, r0
+0x007045cc:	andeq	r0, r0, r0
+0x007045d0:	andeq	r0, r0, r0
+0x007045d4:	andeq	r0, r0, r0
+0x007045d8:	andeq	r0, r0, r0
+0x007045dc:	andeq	r0, r0, r0
+0x007045e0:	andeq	r0, r0, r0
+0x007045e4:	andeq	r0, r0, r0
+0x007045e8:	andeq	r0, r0, r0
+0x007045ec:	andeq	r0, r0, r0
+0x007045f0:	andeq	r0, r0, r0
+0x007045f4:	andeq	r0, r0, r0
+0x007045f8:	andeq	r0, r0, r0
+0x007045fc:	andeq	r0, r0, r0
+0x00704600:	andeq	r0, r0, r0
+0x00704604:	andeq	r0, r0, r0
+0x00704608:	andeq	r0, r0, r0
+0x0070460c:	andeq	r0, r0, r0
+0x00704610:	andeq	r0, r0, r0
+0x00704614:	andeq	r0, r0, r0
+0x00704618:	andeq	r0, r0, r0
+0x0070461c:	andeq	r0, r0, r0
+0x00704620:	andeq	r0, r0, r0
+0x00704624:	andeq	r0, r0, r0
+0x00704628:	andeq	r0, r0, r0
+0x0070462c:	andeq	r0, r0, r0
+0x00704630:	andeq	r0, r0, r0
+0x00704634:	andeq	r0, r0, r0
+0x00704638:	andeq	r0, r0, r0
+0x0070463c:	andeq	r0, r0, r0
+0x00704640:	andeq	r0, r0, r0
+0x00704644:	andeq	r0, r0, r0
+0x00704648:	andeq	r0, r0, r0
+0x0070464c:	andeq	r0, r0, r0
+0x00704650:	andeq	r0, r0, r0
+0x00704654:	andeq	r0, r0, r0
+0x00704658:	andeq	r0, r0, r0
+0x0070465c:	andeq	r0, r0, r0
+0x00704660:	andeq	r0, r0, r0
+0x00704664:	andeq	r0, r0, r0
+0x00704668:	andeq	r0, r0, r0
+0x0070466c:	andeq	r0, r0, r0
+0x00704670:	andeq	r0, r0, r0
+0x00704674:	andeq	r0, r0, r0
+0x00704678:	andeq	r0, r0, r0
+0x0070467c:	andeq	r0, r0, r0
+0x00704680:	andeq	r0, r0, r0
+0x00704684:	andeq	r0, r0, r0
+0x00704688:	andeq	r0, r0, r0
+0x0070468c:	andeq	r0, r0, r0
+0x00704690:	andeq	r0, r0, r0
+0x00704694:	andeq	r0, r0, r0
+0x00704698:	andeq	r0, r0, r0
+0x0070469c:	andeq	r0, r0, r0
+0x007046a0:	andeq	r0, r0, r0
+0x007046a4:	andeq	r0, r0, r0
+0x007046a8:	andeq	r0, r0, r0
+0x007046ac:	andeq	r0, r0, r0
+0x007046b0:	andeq	r0, r0, r0
+0x007046b4:	andeq	r0, r0, r0
+0x007046b8:	andeq	r0, r0, r0
+0x007046bc:	andeq	r0, r0, r0
+0x007046c0:	andeq	r0, r0, r0
+0x007046c4:	andeq	r0, r0, r0
+0x007046c8:	andeq	r0, r0, r0
+0x007046cc:	andeq	r0, r0, r0
+0x007046d0:	andeq	r0, r0, r0
+0x007046d4:	andeq	r0, r0, r0
+0x007046d8:	andeq	r0, r0, r0
+0x007046dc:	andeq	r0, r0, r0
+0x007046e0:	andeq	r0, r0, r0
+0x007046e4:	andeq	r0, r0, r0
+0x007046e8:	andeq	r0, r0, r0
+0x007046ec:	andeq	r0, r0, r0
+0x007046f0:	andeq	r0, r0, r0
+0x007046f4:	andeq	r0, r0, r0
+0x007046f8:	andeq	r0, r0, r0
+0x007046fc:	andeq	r0, r0, r0
+0x00704700:	andeq	r0, r0, r0
+0x00704704:	andeq	r0, r0, r0
+0x00704708:	andeq	r0, r0, r0
+0x0070470c:	andeq	r0, r0, r0
+0x00704710:	andeq	r0, r0, r0
+0x00704714:	andeq	r0, r0, r0
+0x00704718:	andeq	r0, r0, r0
+0x0070471c:	andeq	r0, r0, r0
+0x00704720:	andeq	r0, r0, r0
+0x00704724:	andeq	r0, r0, r0
+0x00704728:	andeq	r0, r0, r0
+0x0070472c:	andeq	r0, r0, r0
+0x00704730:	andeq	r0, r0, r0
+0x00704734:	andeq	r0, r0, r0
+0x00704738:	andeq	r0, r0, r0
+0x0070473c:	andeq	r0, r0, r0
+0x00704740:	andeq	r0, r0, r0
+0x00704744:	andeq	r0, r0, r0
+0x00704748:	andeq	r0, r0, r0
+0x0070474c:	andeq	r0, r0, r0
+0x00704750:	andeq	r0, r0, r0
+0x00704754:	andeq	r0, r0, r0
+0x00704758:	andeq	r0, r0, r0
+0x0070475c:	andeq	r0, r0, r0
+0x00704760:	andeq	r0, r0, r0
+0x00704764:	andeq	r0, r0, r0
+0x00704768:	andeq	r0, r0, r0
+0x0070476c:	andeq	r0, r0, r0
+0x00704770:	andeq	r0, r0, r0
+0x00704774:	andeq	r0, r0, r0
+0x00704778:	andeq	r0, r0, r0
+0x0070477c:	andeq	r0, r0, r0
+0x00704780:	andeq	r0, r0, r0
+0x00704784:	andeq	r0, r0, r0
+0x00704788:	andeq	r0, r0, r0
+0x0070478c:	andeq	r0, r0, r0
+0x00704790:	andeq	r0, r0, r0
+0x00704794:	andeq	r0, r0, r0
+0x00704798:	andeq	r0, r0, r0
+0x0070479c:	andeq	r0, r0, r0
+0x007047a0:	andeq	r0, r0, r0
+0x007047a4:	andeq	r0, r0, r0
+0x007047a8:	andeq	r0, r0, r0
+0x007047ac:	andeq	r0, r0, r0
+0x007047b0:	andeq	r0, r0, r0
+0x007047b4:	andeq	r0, r0, r0
+0x007047b8:	andeq	r0, r0, r0
+0x007047bc:	andeq	r0, r0, r0
+0x007047c0:	andeq	r0, r0, r0
+0x007047c4:	andeq	r0, r0, r0
+0x007047c8:	andeq	r0, r0, r0
+0x007047cc:	andeq	r0, r0, r0
+0x007047d0:	andeq	r0, r0, r0
+0x007047d4:	andeq	r0, r0, r0
+0x007047d8:	andeq	r0, r0, r0
+0x007047dc:	andeq	r0, r0, r0
+0x007047e0:	andeq	r0, r0, r0
+0x007047e4:	andeq	r0, r0, r0
+0x007047e8:	andeq	r0, r0, r0
+0x007047ec:	andeq	r0, r0, r0
+0x007047f0:	andeq	r0, r0, r0
+0x007047f4:	andeq	r0, r0, r0
+0x007047f8:	andeq	r0, r0, r0
+0x007047fc:	andeq	r0, r0, r0
+0x00704800:	andeq	r0, r0, r0
+0x00704804:	andeq	r0, r0, r0
+0x00704808:	andeq	r0, r0, r0
+0x0070480c:	andeq	r0, r0, r0
+0x00704810:	andeq	r0, r0, r0
+0x00704814:	andeq	r0, r0, r0
+0x00704818:	andeq	r0, r0, r0
+0x0070481c:	andeq	r0, r0, r0
+0x00704820:	andeq	r0, r0, r0
+0x00704824:	andeq	r0, r0, r0
+0x00704828:	andeq	r0, r0, r0
+0x0070482c:	andeq	r0, r0, r0
+0x00704830:	andeq	r0, r0, r0
+0x00704834:	andeq	r0, r0, r0
+0x00704838:	andeq	r0, r0, r0
+0x0070483c:	andeq	r0, r0, r0
+0x00704840:	andeq	r0, r0, r0
+0x00704844:	andeq	r0, r0, r0
+0x00704848:	andeq	r0, r0, r0
+0x0070484c:	andeq	r0, r0, r0
+0x00704850:	andeq	r0, r0, r0
+0x00704854:	andeq	r0, r0, r0
+0x00704858:	andeq	r0, r0, r0
+0x0070485c:	andeq	r0, r0, r0
+0x00704860:	andeq	r0, r0, r0
+0x00704864:	andeq	r0, r0, r0
+0x00704868:	andeq	r0, r0, r0
+0x0070486c:	andeq	r0, r0, r0
+0x00704870:	andeq	r0, r0, r0
+0x00704874:	andeq	r0, r0, r0
+0x00704878:	andeq	r0, r0, r0
+0x0070487c:	andeq	r0, r0, r0
+0x00704880:	andeq	r0, r0, r0
+0x00704884:	andeq	r0, r0, r0
+0x00704888:	andeq	r0, r0, r0
+0x0070488c:	andeq	r0, r0, r0
+0x00704890:	andeq	r0, r0, r0
+0x00704894:	andeq	r0, r0, r0
+0x00704898:	andeq	r0, r0, r0
+0x0070489c:	andeq	r0, r0, r0
+0x007048a0:	andeq	r0, r0, r0
+0x007048a4:	andeq	r0, r0, r0
+0x007048a8:	andeq	r0, r0, r0
+0x007048ac:	andeq	r0, r0, r0
+0x007048b0:	andeq	r0, r0, r0
+0x007048b4:	andeq	r0, r0, r0
+0x007048b8:	andeq	r0, r0, r0
+0x007048bc:	andeq	r0, r0, r0
+0x007048c0:	andeq	r0, r0, r0
+0x007048c4:	andeq	r0, r0, r0
+0x007048c8:	andeq	r0, r0, r0
+0x007048cc:	andeq	r0, r0, r0
+0x007048d0:	andeq	r0, r0, r0
+0x007048d4:	andeq	r0, r0, r0
+0x007048d8:	andeq	r0, r0, r0
+0x007048dc:	andeq	r0, r0, r0
+0x007048e0:	andeq	r0, r0, r0
+0x007048e4:	andeq	r0, r0, r0
+0x007048e8:	andeq	r0, r0, r0
+0x007048ec:	andeq	r0, r0, r0
+0x007048f0:	andeq	r0, r0, r0
+0x007048f4:	andeq	r0, r0, r0
+0x007048f8:	andeq	r0, r0, r0
+0x007048fc:	andeq	r0, r0, r0
+0x00704900:	andeq	r0, r0, r0
+0x00704904:	andeq	r0, r0, r0
+0x00704908:	andeq	r0, r0, r0
+0x0070490c:	andeq	r0, r0, r0
+0x00704910:	andeq	r0, r0, r0
+0x00704914:	andeq	r0, r0, r0
+0x00704918:	andeq	r0, r0, r0
+0x0070491c:	andeq	r0, r0, r0
+0x00704920:	andeq	r0, r0, r0
+0x00704924:	andeq	r0, r0, r0
+0x00704928:	andeq	r0, r0, r0
+0x0070492c:	andeq	r0, r0, r0
+0x00704930:	andeq	r0, r0, r0
+0x00704934:	andeq	r0, r0, r0
+0x00704938:	andeq	r0, r0, r0
+0x0070493c:	andeq	r0, r0, r0
+0x00704940:	andeq	r0, r0, r0
+0x00704944:	andeq	r0, r0, r0
+0x00704948:	andeq	r0, r0, r0
+0x0070494c:	andeq	r0, r0, r0
+0x00704950:	andeq	r0, r0, r0
+0x00704954:	andeq	r0, r0, r0
+0x00704958:	andeq	r0, r0, r0
+0x0070495c:	andeq	r0, r0, r0
+0x00704960:	andeq	r0, r0, r0
+0x00704964:	andeq	r0, r0, r0
+0x00704968:	andeq	r0, r0, r0
+0x0070496c:	andeq	r0, r0, r0
+0x00704970:	andeq	r0, r0, r0
+0x00704974:	andeq	r0, r0, r0
+0x00704978:	andeq	r0, r0, r0
+0x0070497c:	andeq	r0, r0, r0
+0x00704980:	andeq	r0, r0, r0
+0x00704984:	andeq	r0, r0, r0
+0x00704988:	andeq	r0, r0, r0
+0x0070498c:	andeq	r0, r0, r0
+0x00704990:	andeq	r0, r0, r0
+0x00704994:	andeq	r0, r0, r0
+0x00704998:	andeq	r0, r0, r0
+0x0070499c:	andeq	r0, r0, r0
+0x007049a0:	andeq	r0, r0, r0
+0x007049a4:	andeq	r0, r0, r0
+0x007049a8:	andeq	r0, r0, r0
+0x007049ac:	andeq	r0, r0, r0
+0x007049b0:	andeq	r0, r0, r0
+0x007049b4:	andeq	r0, r0, r0
+0x007049b8:	andeq	r0, r0, r0
+0x007049bc:	andeq	r0, r0, r0
+0x007049c0:	andeq	r0, r0, r0
+0x007049c4:	andeq	r0, r0, r0
+0x007049c8:	andeq	r0, r0, r0
+0x007049cc:	andeq	r0, r0, r0
+0x007049d0:	andeq	r0, r0, r0
+0x007049d4:	andeq	r0, r0, r0
+0x007049d8:	andeq	r0, r0, r0
+0x007049dc:	andeq	r0, r0, r0
+0x007049e0:	andeq	r0, r0, r0
+0x007049e4:	andeq	r0, r0, r0
+0x007049e8:	andeq	r0, r0, r0
+0x007049ec:	andeq	r0, r0, r0
+0x007049f0:	andeq	r0, r0, r0
+0x007049f4:	andeq	r0, r0, r0
+0x007049f8:	andeq	r0, r0, r0
+0x007049fc:	andeq	r0, r0, r0
+0x00704a00:	andeq	r0, r0, r0
+0x00704a04:	andeq	r0, r0, r0
+0x00704a08:	andeq	r0, r0, r0
+0x00704a0c:	andeq	r0, r0, r0
+0x00704a10:	andeq	r0, r0, r0
+0x00704a14:	andeq	r0, r0, r0
+0x00704a18:	andeq	r0, r0, r0
+0x00704a1c:	andeq	r0, r0, r0
+0x00704a20:	andeq	r0, r0, r0
+0x00704a24:	andeq	r0, r0, r0
+0x00704a28:	andeq	r0, r0, r0
+0x00704a2c:	andeq	r0, r0, r0
+0x00704a30:	andeq	r0, r0, r0
+0x00704a34:	andeq	r0, r0, r0
+0x00704a38:	andeq	r0, r0, r0
+0x00704a3c:	andeq	r0, r0, r0
+0x00704a40:	andeq	r0, r0, r0
+0x00704a44:	andeq	r0, r0, r0
+0x00704a48:	andeq	r0, r0, r0
+0x00704a4c:	andeq	r0, r0, r0
+0x00704a50:	andeq	r0, r0, r0
+0x00704a54:	andeq	r0, r0, r0
+0x00704a58:	andeq	r0, r0, r0
+0x00704a5c:	andeq	r0, r0, r0
+0x00704a60:	andeq	r0, r0, r0
+0x00704a64:	andeq	r0, r0, r0
+0x00704a68:	andeq	r0, r0, r0
+0x00704a6c:	andeq	r0, r0, r0
+0x00704a70:	andeq	r0, r0, r0
+0x00704a74:	andeq	r0, r0, r0
+0x00704a78:	andeq	r0, r0, r0
+0x00704a7c:	andeq	r0, r0, r0
+0x00704a80:	andeq	r0, r0, r0
+0x00704a84:	andeq	r0, r0, r0
+0x00704a88:	andeq	r0, r0, r0
+0x00704a8c:	andeq	r0, r0, r0
+0x00704a90:	andeq	r0, r0, r0
+0x00704a94:	andeq	r0, r0, r0
+0x00704a98:	andeq	r0, r0, r0
+0x00704a9c:	andeq	r0, r0, r0
+0x00704aa0:	andeq	r0, r0, r0
+0x00704aa4:	andeq	r0, r0, r0
+0x00704aa8:	andeq	r0, r0, r0
+0x00704aac:	andeq	r0, r0, r0
+0x00704ab0:	andeq	r0, r0, r0
+0x00704ab4:	andeq	r0, r0, r0
+0x00704ab8:	andeq	r0, r0, r0
+0x00704abc:	andeq	r0, r0, r0
+0x00704ac0:	andeq	r0, r0, r0
+0x00704ac4:	andeq	r0, r0, r0
+0x00704ac8:	andeq	r0, r0, r0
+0x00704acc:	andeq	r0, r0, r0
+0x00704ad0:	andeq	r0, r0, r0
+0x00704ad4:	andeq	r0, r0, r0
+0x00704ad8:	andeq	r0, r0, r0
+0x00704adc:	andeq	r0, r0, r0
+0x00704ae0:	andeq	r0, r0, r0
+0x00704ae4:	andeq	r0, r0, r0
+0x00704ae8:	andeq	r0, r0, r0
+0x00704aec:	andeq	r0, r0, r0
+0x00704af0:	andeq	r0, r0, r0
+0x00704af4:	andeq	r0, r0, r0
+0x00704af8:	andeq	r0, r0, r0
+0x00704afc:	andeq	r0, r0, r0
+0x00704b00:	andeq	r0, r0, r0
+0x00704b04:	andeq	r0, r0, r0
+0x00704b08:	andeq	r0, r0, r0
+0x00704b0c:	andeq	r0, r0, r0
+0x00704b10:	andeq	r0, r0, r0
+0x00704b14:	andeq	r0, r0, r0
+0x00704b18:	andeq	r0, r0, r0
+0x00704b1c:	andeq	r0, r0, r0
+0x00704b20:	andeq	r0, r0, r0
+0x00704b24:	andeq	r0, r0, r0
+0x00704b28:	andeq	r0, r0, r0
+0x00704b2c:	andeq	r0, r0, r0
+0x00704b30:	andeq	r0, r0, r0
+0x00704b34:	andeq	r0, r0, r0
+0x00704b38:	andeq	r0, r0, r0
+0x00704b3c:	andeq	r0, r0, r0
+0x00704b40:	andeq	r0, r0, r0
+0x00704b44:	andeq	r0, r0, r0
+0x00704b48:	andeq	r0, r0, r0
+0x00704b4c:	andeq	r0, r0, r0
+0x00704b50:	andeq	r0, r0, r0
+0x00704b54:	andeq	r0, r0, r0
+0x00704b58:	andeq	r0, r0, r0
+0x00704b5c:	andeq	r0, r0, r0
+0x00704b60:	andeq	r0, r0, r0
+0x00704b64:	andeq	r0, r0, r0
+0x00704b68:	andeq	r0, r0, r0
+0x00704b6c:	andeq	r0, r0, r0
+0x00704b70:	andeq	r0, r0, r0
+0x00704b74:	andeq	r0, r0, r0
+0x00704b78:	andeq	r0, r0, r0
+0x00704b7c:	andeq	r0, r0, r0
+0x00704b80:	andeq	r0, r0, r0
+0x00704b84:	andeq	r0, r0, r0
+0x00704b88:	andeq	r0, r0, r0
+0x00704b8c:	andeq	r0, r0, r0
+0x00704b90:	andeq	r0, r0, r0
+0x00704b94:	andeq	r0, r0, r0
+0x00704b98:	andeq	r0, r0, r0
+0x00704b9c:	andeq	r0, r0, r0
+0x00704ba0:	andeq	r0, r0, r0
+0x00704ba4:	andeq	r0, r0, r0
+0x00704ba8:	andeq	r0, r0, r0
+0x00704bac:	andeq	r0, r0, r0
+0x00704bb0:	andeq	r0, r0, r0
+0x00704bb4:	andeq	r0, r0, r0
+0x00704bb8:	andeq	r0, r0, r0
+0x00704bbc:	andeq	r0, r0, r0
+0x00704bc0:	andeq	r0, r0, r0
+0x00704bc4:	andeq	r0, r0, r0
+0x00704bc8:	andeq	r0, r0, r0
+0x00704bcc:	andeq	r0, r0, r0
+0x00704bd0:	andeq	r0, r0, r0
+0x00704bd4:	andeq	r0, r0, r0
+0x00704bd8:	andeq	r0, r0, r0
+0x00704bdc:	andeq	r0, r0, r0
+0x00704be0:	andeq	r0, r0, r0
+0x00704be4:	andeq	r0, r0, r0
+0x00704be8:	andeq	r0, r0, r0
+0x00704bec:	andeq	r0, r0, r0
+0x00704bf0:	andeq	r0, r0, r0
+0x00704bf4:	andeq	r0, r0, r0
+0x00704bf8:	andeq	r0, r0, r0
+0x00704bfc:	andeq	r0, r0, r0
+0x00704c00:	andeq	r0, r0, r0
+0x00704c04:	andeq	r0, r0, r0
+0x00704c08:	andeq	r0, r0, r0
+0x00704c0c:	andeq	r0, r0, r0
+0x00704c10:	andeq	r0, r0, r0
+0x00704c14:	andeq	r0, r0, r0
+0x00704c18:	andeq	r0, r0, r0
+0x00704c1c:	andeq	r0, r0, r0
+0x00704c20:	andeq	r0, r0, r0
+0x00704c24:	andeq	r0, r0, r0
+0x00704c28:	andeq	r0, r0, r0
+0x00704c2c:	andeq	r0, r0, r0
+0x00704c30:	andeq	r0, r0, r0
+0x00704c34:	andeq	r0, r0, r0
+0x00704c38:	andeq	r0, r0, r0
+0x00704c3c:	andeq	r0, r0, r0
+0x00704c40:	andeq	r0, r0, r0
+0x00704c44:	andeq	r0, r0, r0
+0x00704c48:	andeq	r0, r0, r0
+0x00704c4c:	andeq	r0, r0, r0
+0x00704c50:	andeq	r0, r0, r0
+0x00704c54:	andeq	r0, r0, r0
+0x00704c58:	andeq	r0, r0, r0
+0x00704c5c:	andeq	r0, r0, r0
+0x00704c60:	andeq	r0, r0, r0
+0x00704c64:	andeq	r0, r0, r0
+0x00704c68:	andeq	r0, r0, r0
+0x00704c6c:	andeq	r0, r0, r0
+0x00704c70:	andeq	r0, r0, r0
+0x00704c74:	andeq	r0, r0, r0
+0x00704c78:	andeq	r0, r0, r0
+0x00704c7c:	andeq	r0, r0, r0
+0x00704c80:	andeq	r0, r0, r0
+0x00704c84:	andeq	r0, r0, r0
+0x00704c88:	andeq	r0, r0, r0
+0x00704c8c:	andeq	r0, r0, r0
+0x00704c90:	andeq	r0, r0, r0
+0x00704c94:	andeq	r0, r0, r0
+0x00704c98:	andeq	r0, r0, r0
+0x00704c9c:	andeq	r0, r0, r0
+0x00704ca0:	andeq	r0, r0, r0
+0x00704ca4:	andeq	r0, r0, r0
+0x00704ca8:	andeq	r0, r0, r0
+0x00704cac:	andeq	r0, r0, r0
+0x00704cb0:	andeq	r0, r0, r0
+0x00704cb4:	andeq	r0, r0, r0
+0x00704cb8:	andeq	r0, r0, r0
+0x00704cbc:	andeq	r0, r0, r0
+0x00704cc0:	andeq	r0, r0, r0
+0x00704cc4:	andeq	r0, r0, r0
+0x00704cc8:	andeq	r0, r0, r0
+0x00704ccc:	andeq	r0, r0, r0
+0x00704cd0:	andeq	r0, r0, r0
+0x00704cd4:	andeq	r0, r0, r0
+0x00704cd8:	andeq	r0, r0, r0
+0x00704cdc:	andeq	r0, r0, r0
+0x00704ce0:	andeq	r0, r0, r0
+0x00704ce4:	andeq	r0, r0, r0
+0x00704ce8:	andeq	r0, r0, r0
+0x00704cec:	andeq	r0, r0, r0
+0x00704cf0:	andeq	r0, r0, r0
+0x00704cf4:	andeq	r0, r0, r0
+0x00704cf8:	andeq	r0, r0, r0
+0x00704cfc:	andeq	r0, r0, r0
+0x00704d00:	andeq	r0, r0, r0
+0x00704d04:	andeq	r0, r0, r0
+0x00704d08:	andeq	r0, r0, r0
+0x00704d0c:	andeq	r0, r0, r0
+0x00704d10:	andeq	r0, r0, r0
+0x00704d14:	andeq	r0, r0, r0
+0x00704d18:	andeq	r0, r0, r0
+0x00704d1c:	andeq	r0, r0, r0
+0x00704d20:	andeq	r0, r0, r0
+0x00704d24:	andeq	r0, r0, r0
+0x00704d28:	andeq	r0, r0, r0
+0x00704d2c:	andeq	r0, r0, r0
+0x00704d30:	andeq	r0, r0, r0
+0x00704d34:	andeq	r0, r0, r0
+0x00704d38:	andeq	r0, r0, r0
+0x00704d3c:	andeq	r0, r0, r0
+0x00704d40:	andeq	r0, r0, r0
+0x00704d44:	andeq	r0, r0, r0
+0x00704d48:	andeq	r0, r0, r0
+0x00704d4c:	andeq	r0, r0, r0
+0x00704d50:	andeq	r0, r0, r0
+0x00704d54:	andeq	r0, r0, r0
+0x00704d58:	andeq	r0, r0, r0
+0x00704d5c:	andeq	r0, r0, r0
+0x00704d60:	andeq	r0, r0, r0
+0x00704d64:	andeq	r0, r0, r0
+0x00704d68:	andeq	r0, r0, r0
+0x00704d6c:	andeq	r0, r0, r0
+0x00704d70:	andeq	r0, r0, r0
+0x00704d74:	andeq	r0, r0, r0
+0x00704d78:	andeq	r0, r0, r0
+0x00704d7c:	andeq	r0, r0, r0
+0x00704d80:	andeq	r0, r0, r0
+0x00704d84:	andeq	r0, r0, r0
+0x00704d88:	andeq	r0, r0, r0
+0x00704d8c:	andeq	r0, r0, r0
+0x00704d90:	andeq	r0, r0, r0
+0x00704d94:	andeq	r0, r0, r0
+0x00704d98:	andeq	r0, r0, r0
+0x00704d9c:	andeq	r0, r0, r0
+0x00704da0:	andeq	r0, r0, r0
+0x00704da4:	andeq	r0, r0, r0
+0x00704da8:	andeq	r0, r0, r0
+0x00704dac:	andeq	r0, r0, r0
+0x00704db0:	andeq	r0, r0, r0
+0x00704db4:	andeq	r0, r0, r0
+0x00704db8:	andeq	r0, r0, r0
+0x00704dbc:	andeq	r0, r0, r0
+0x00704dc0:	andeq	r0, r0, r0
+0x00704dc4:	andeq	r0, r0, r0
+0x00704dc8:	andeq	r0, r0, r0
+0x00704dcc:	andeq	r0, r0, r0
+0x00704dd0:	andeq	r0, r0, r0
+0x00704dd4:	andeq	r0, r0, r0
+0x00704dd8:	andeq	r0, r0, r0
+0x00704ddc:	andeq	r0, r0, r0
+0x00704de0:	andeq	r0, r0, r0
+0x00704de4:	andeq	r0, r0, r0
+0x00704de8:	andeq	r0, r0, r0
+0x00704dec:	andeq	r0, r0, r0
+0x00704df0:	andeq	r0, r0, r0
+0x00704df4:	andeq	r0, r0, r0
+0x00704df8:	andeq	r0, r0, r0
+0x00704dfc:	andeq	r0, r0, r0
+0x00704e00:	andeq	r0, r0, r0
+0x00704e04:	andeq	r0, r0, r0
+0x00704e08:	andeq	r0, r0, r0
+0x00704e0c:	andeq	r0, r0, r0
+0x00704e10:	andeq	r0, r0, r0
+0x00704e14:	andeq	r0, r0, r0
+0x00704e18:	andeq	r0, r0, r0
+0x00704e1c:	andeq	r0, r0, r0
+0x00704e20:	andeq	r0, r0, r0
+0x00704e24:	andeq	r0, r0, r0
+0x00704e28:	andeq	r0, r0, r0
+0x00704e2c:	andeq	r0, r0, r0
+0x00704e30:	andeq	r0, r0, r0
+0x00704e34:	andeq	r0, r0, r0
+0x00704e38:	andeq	r0, r0, r0
+0x00704e3c:	andeq	r0, r0, r0
+0x00704e40:	andeq	r0, r0, r0
+0x00704e44:	andeq	r0, r0, r0
+0x00704e48:	andeq	r0, r0, r0
+0x00704e4c:	andeq	r0, r0, r0
+0x00704e50:	andeq	r0, r0, r0
+0x00704e54:	andeq	r0, r0, r0
+0x00704e58:	andeq	r0, r0, r0
+0x00704e5c:	andeq	r0, r0, r0
+0x00704e60:	andeq	r0, r0, r0
+0x00704e64:	andeq	r0, r0, r0
+0x00704e68:	andeq	r0, r0, r0
+0x00704e6c:	andeq	r0, r0, r0
+0x00704e70:	andeq	r0, r0, r0
+0x00704e74:	andeq	r0, r0, r0
+0x00704e78:	andeq	r0, r0, r0
+0x00704e7c:	andeq	r0, r0, r0
+0x00704e80:	andeq	r0, r0, r0
+0x00704e84:	andeq	r0, r0, r0
+0x00704e88:	andeq	r0, r0, r0
+0x00704e8c:	andeq	r0, r0, r0
+0x00704e90:	andeq	r0, r0, r0
+0x00704e94:	andeq	r0, r0, r0
+0x00704e98:	andeq	r0, r0, r0
+0x00704e9c:	andeq	r0, r0, r0
+0x00704ea0:	andeq	r0, r0, r0
+0x00704ea4:	andeq	r0, r0, r0
+0x00704ea8:	andeq	r0, r0, r0
+0x00704eac:	andeq	r0, r0, r0
+0x00704eb0:	andeq	r0, r0, r0
+0x00704eb4:	andeq	r0, r0, r0
+0x00704eb8:	andeq	r0, r0, r0
+0x00704ebc:	andeq	r0, r0, r0
+0x00704ec0:	andeq	r0, r0, r0
+0x00704ec4:	andeq	r0, r0, r0
+0x00704ec8:	andeq	r0, r0, r0
+0x00704ecc:	andeq	r0, r0, r0
+0x00704ed0:	andeq	r0, r0, r0
+0x00704ed4:	andeq	r0, r0, r0
+0x00704ed8:	andeq	r0, r0, r0
+0x00704edc:	andeq	r0, r0, r0
+0x00704ee0:	andeq	r0, r0, r0
+0x00704ee4:	andeq	r0, r0, r0
+0x00704ee8:	andeq	r0, r0, r0
+0x00704eec:	andeq	r0, r0, r0
+0x00704ef0:	andeq	r0, r0, r0
+0x00704ef4:	andeq	r0, r0, r0
+0x00704ef8:	andeq	r0, r0, r0
+0x00704efc:	andeq	r0, r0, r0
+0x00704f00:	andeq	r0, r0, r0
+0x00704f04:	andeq	r0, r0, r0
+0x00704f08:	andeq	r0, r0, r0
+0x00704f0c:	andeq	r0, r0, r0
+0x00704f10:	andeq	r0, r0, r0
+0x00704f14:	andeq	r0, r0, r0
+0x00704f18:	andeq	r0, r0, r0
+0x00704f1c:	andeq	r0, r0, r0
+0x00704f20:	andeq	r0, r0, r0
+0x00704f24:	andeq	r0, r0, r0
+0x00704f28:	andeq	r0, r0, r0
+0x00704f2c:	andeq	r0, r0, r0
+0x00704f30:	andeq	r0, r0, r0
+0x00704f34:	andeq	r0, r0, r0
+0x00704f38:	andeq	r0, r0, r0
+0x00704f3c:	andeq	r0, r0, r0
+0x00704f40:	andeq	r0, r0, r0
+0x00704f44:	andeq	r0, r0, r0
+0x00704f48:	andeq	r0, r0, r0
+0x00704f4c:	andeq	r0, r0, r0
+0x00704f50:	andeq	r0, r0, r0
+0x00704f54:	andeq	r0, r0, r0
+0x00704f58:	andeq	r0, r0, r0
+0x00704f5c:	andeq	r0, r0, r0
+0x00704f60:	andeq	r0, r0, r0
+0x00704f64:	andeq	r0, r0, r0
+0x00704f68:	andeq	r0, r0, r0
+0x00704f6c:	andeq	r0, r0, r0
+0x00704f70:	andeq	r0, r0, r0
+0x00704f74:	andeq	r0, r0, r0
+0x00704f78:	andeq	r0, r0, r0
+0x00704f7c:	andeq	r0, r0, r0
+0x00704f80:	andeq	r0, r0, r0
+0x00704f84:	andeq	r0, r0, r0
+0x00704f88:	andeq	r0, r0, r0
+0x00704f8c:	andeq	r0, r0, r0
+0x00704f90:	andeq	r0, r0, r0
+0x00704f94:	andeq	r0, r0, r0
+0x00704f98:	andeq	r0, r0, r0
+0x00704f9c:	andeq	r0, r0, r0
+0x00704fa0:	andeq	r0, r0, r0
+0x00704fa4:	andeq	r0, r0, r0
+0x00704fa8:	andeq	r0, r0, r0
+0x00704fac:	andeq	r0, r0, r0
+0x00704fb0:	andeq	r0, r0, r0
+0x00704fb4:	andeq	r0, r0, r0
+0x00704fb8:	andeq	r0, r0, r0
+0x00704fbc:	andeq	r0, r0, r0
+0x00704fc0:	andeq	r0, r0, r0
+0x00704fc4:	andeq	r0, r0, r0
+0x00704fc8:	andeq	r0, r0, r0
+0x00704fcc:	andeq	r0, r0, r0
+0x00704fd0:	andeq	r0, r0, r0
+0x00704fd4:	andeq	r0, r0, r0
+0x00704fd8:	andeq	r0, r0, r0
+0x00704fdc:	andeq	r0, r0, r0
+0x00704fe0:	andeq	r0, r0, r0
+0x00704fe4:	andeq	r0, r0, r0
+0x00704fe8:	andeq	r0, r0, r0
+0x00704fec:	andeq	r0, r0, r0
+0x00704ff0:	andeq	r0, r0, r0
+0x00704ff4:	andeq	r0, r0, r0
+0x00704ff8:	andeq	r0, r0, r0
+0x00704ffc:	andeq	r0, r0, r0
+0x00705000:	andeq	r0, r0, r0
+0x00705004:	andeq	r0, r0, r0
+0x00705008:	andeq	r0, r0, r0
+0x0070500c:	andeq	r0, r0, r0
+0x00705010:	andeq	r0, r0, r0
+0x00705014:	andeq	r0, r0, r0
+0x00705018:	andeq	r0, r0, r0
+0x0070501c:	andeq	r0, r0, r0
+0x00705020:	andeq	r0, r0, r0
+0x00705024:	andeq	r0, r0, r0
+0x00705028:	andeq	r0, r0, r0
+0x0070502c:	andeq	r0, r0, r0
+0x00705030:	andeq	r0, r0, r0
+0x00705034:	andeq	r0, r0, r0
+0x00705038:	andeq	r0, r0, r0
+0x0070503c:	andeq	r0, r0, r0
+0x00705040:	andeq	r0, r0, r0
+0x00705044:	andeq	r0, r0, r0
+0x00705048:	andeq	r0, r0, r0
+0x0070504c:	andeq	r0, r0, r0
+0x00705050:	andeq	r0, r0, r0
+0x00705054:	andeq	r0, r0, r0
+0x00705058:	andeq	r0, r0, r0
+0x0070505c:	andeq	r0, r0, r0
+0x00705060:	andeq	r0, r0, r0
+0x00705064:	andeq	r0, r0, r0
+0x00705068:	andeq	r0, r0, r0
+0x0070506c:	andeq	r0, r0, r0
+0x00705070:	andeq	r0, r0, r0
+0x00705074:	andeq	r0, r0, r0
+0x00705078:	andeq	r0, r0, r0
+0x0070507c:	andeq	r0, r0, r0
+0x00705080:	andeq	r0, r0, r0
+0x00705084:	andeq	r0, r0, r0
+0x00705088:	andeq	r0, r0, r0
+0x0070508c:	andeq	r0, r0, r0
+0x00705090:	andeq	r0, r0, r0
+0x00705094:	andeq	r0, r0, r0
+0x00705098:	andeq	r0, r0, r0
+0x0070509c:	andeq	r0, r0, r0
+0x007050a0:	andeq	r0, r0, r0
+0x007050a4:	andeq	r0, r0, r0
+0x007050a8:	andeq	r0, r0, r0
+0x007050ac:	andeq	r0, r0, r0
+0x007050b0:	andeq	r0, r0, r0
+0x007050b4:	andeq	r0, r0, r0
+0x007050b8:	andeq	r0, r0, r0
+0x007050bc:	andeq	r0, r0, r0
+0x007050c0:	andeq	r0, r0, r0
+0x007050c4:	andeq	r0, r0, r0
+0x007050c8:	andeq	r0, r0, r0
+0x007050cc:	andeq	r0, r0, r0
+0x007050d0:	andeq	r0, r0, r0
+0x007050d4:	andeq	r0, r0, r0
+0x007050d8:	andeq	r0, r0, r0
+0x007050dc:	andeq	r0, r0, r0
+0x007050e0:	andeq	r0, r0, r0
+0x007050e4:	andeq	r0, r0, r0
+0x007050e8:	andeq	r0, r0, r0
+0x007050ec:	andeq	r0, r0, r0
+0x007050f0:	andeq	r0, r0, r0
+0x007050f4:	andeq	r0, r0, r0
+0x007050f8:	andeq	r0, r0, r0
+0x007050fc:	andeq	r0, r0, r0
+0x00705100:	andeq	r0, r0, r0
+0x00705104:	andeq	r0, r0, r0
+0x00705108:	andeq	r0, r0, r0
+0x0070510c:	andeq	r0, r0, r0
+0x00705110:	andeq	r0, r0, r0
+0x00705114:	andeq	r0, r0, r0
+0x00705118:	andeq	r0, r0, r0
+0x0070511c:	andeq	r0, r0, r0
+0x00705120:	andeq	r0, r0, r0
+0x00705124:	andeq	r0, r0, r0
+0x00705128:	andeq	r0, r0, r0
+0x0070512c:	andeq	r0, r0, r0
+0x00705130:	andeq	r0, r0, r0
+0x00705134:	andeq	r0, r0, r0
+0x00705138:	andeq	r0, r0, r0
+0x0070513c:	andeq	r0, r0, r0
+0x00705140:	andeq	r0, r0, r0
+0x00705144:	andeq	r0, r0, r0
+0x00705148:	andeq	r0, r0, r0
+0x0070514c:	andeq	r0, r0, r0
+0x00705150:	andeq	r0, r0, r0
+0x00705154:	andeq	r0, r0, r0
+0x00705158:	andeq	r0, r0, r0
+0x0070515c:	andeq	r0, r0, r0
+0x00705160:	andeq	r0, r0, r0
+0x00705164:	andeq	r0, r0, r0
+0x00705168:	andeq	r0, r0, r0
+0x0070516c:	andeq	r0, r0, r0
+0x00705170:	andeq	r0, r0, r0
+0x00705174:	andeq	r0, r0, r0
+0x00705178:	andeq	r0, r0, r0
+0x0070517c:	andeq	r0, r0, r0
+0x00705180:	andeq	r0, r0, r0
+0x00705184:	andeq	r0, r0, r0
+0x00705188:	andeq	r0, r0, r0
+0x0070518c:	andeq	r0, r0, r0
+0x00705190:	andeq	r0, r0, r0
+0x00705194:	andeq	r0, r0, r0
+0x00705198:	andeq	r0, r0, r0
+0x0070519c:	andeq	r0, r0, r0
+0x007051a0:	andeq	r0, r0, r0
+0x007051a4:	andeq	r0, r0, r0
+0x007051a8:	andeq	r0, r0, r0
+0x007051ac:	andeq	r0, r0, r0
+0x007051b0:	andeq	r0, r0, r0
+0x007051b4:	andeq	r0, r0, r0
+0x007051b8:	andeq	r0, r0, r0
+0x007051bc:	andeq	r0, r0, r0
+0x007051c0:	andeq	r0, r0, r0
+0x007051c4:	andeq	r0, r0, r0
+0x007051c8:	andeq	r0, r0, r0
+0x007051cc:	andeq	r0, r0, r0
+0x007051d0:	andeq	r0, r0, r0
+0x007051d4:	andeq	r0, r0, r0
+0x007051d8:	andeq	r0, r0, r0
+0x007051dc:	andeq	r0, r0, r0
+0x007051e0:	andeq	r0, r0, r0
+0x007051e4:	andeq	r0, r0, r0
+0x007051e8:	andeq	r0, r0, r0
+0x007051ec:	andeq	r0, r0, r0
+0x007051f0:	andeq	r0, r0, r0
+0x007051f4:	andeq	r0, r0, r0
+0x007051f8:	andeq	r0, r0, r0
+0x007051fc:	andeq	r0, r0, r0
+0x00705200:	andeq	r0, r0, r0
+0x00705204:	andeq	r0, r0, r0
+0x00705208:	andeq	r0, r0, r0
+0x0070520c:	andeq	r0, r0, r0
+0x00705210:	andeq	r0, r0, r0
+0x00705214:	andeq	r0, r0, r0
+0x00705218:	andeq	r0, r0, r0
+0x0070521c:	andeq	r0, r0, r0
+0x00705220:	andeq	r0, r0, r0
+0x00705224:	andeq	r0, r0, r0
+0x00705228:	andeq	r0, r0, r0
+0x0070522c:	andeq	r0, r0, r0
+0x00705230:	andeq	r0, r0, r0
+0x00705234:	andeq	r0, r0, r0
+0x00705238:	andeq	r0, r0, r0
+0x0070523c:	andeq	r0, r0, r0
+0x00705240:	andeq	r0, r0, r0
+0x00705244:	andeq	r0, r0, r0
+0x00705248:	andeq	r0, r0, r0
+0x0070524c:	andeq	r0, r0, r0
+0x00705250:	andeq	r0, r0, r0
+0x00705254:	andeq	r0, r0, r0
+0x00705258:	andeq	r0, r0, r0
+0x0070525c:	andeq	r0, r0, r0
+0x00705260:	andeq	r0, r0, r0
+0x00705264:	andeq	r0, r0, r0
+0x00705268:	andeq	r0, r0, r0
+0x0070526c:	andeq	r0, r0, r0
+0x00705270:	andeq	r0, r0, r0
+0x00705274:	andeq	r0, r0, r0
+0x00705278:	andeq	r0, r0, r0
+0x0070527c:	andeq	r0, r0, r0
+0x00705280:	andeq	r0, r0, r0
+0x00705284:	andeq	r0, r0, r0
+0x00705288:	andeq	r0, r0, r0
+0x0070528c:	andeq	r0, r0, r0
+0x00705290:	andeq	r0, r0, r0
+0x00705294:	andeq	r0, r0, r0
+0x00705298:	andeq	r0, r0, r0
+0x0070529c:	andeq	r0, r0, r0
+0x007052a0:	andeq	r0, r0, r0
+0x007052a4:	andeq	r0, r0, r0
+0x007052a8:	andeq	r0, r0, r0
+0x007052ac:	andeq	r0, r0, r0
+0x007052b0:	andeq	r0, r0, r0
+0x007052b4:	andeq	r0, r0, r0
+0x007052b8:	andeq	r0, r0, r0
+0x007052bc:	andeq	r0, r0, r0
+0x007052c0:	andeq	r0, r0, r0
+0x007052c4:	andeq	r0, r0, r0
+0x007052c8:	andeq	r0, r0, r0
+0x007052cc:	andeq	r0, r0, r0
+0x007052d0:	andeq	r0, r0, r0
+0x007052d4:	andeq	r0, r0, r0
+0x007052d8:	andeq	r0, r0, r0
+0x007052dc:	andeq	r0, r0, r0
+0x007052e0:	andeq	r0, r0, r0
+0x007052e4:	andeq	r0, r0, r0
+0x007052e8:	andeq	r0, r0, r0
+0x007052ec:	andeq	r0, r0, r0
+0x007052f0:	andeq	r0, r0, r0
+0x007052f4:	andeq	r0, r0, r0
+0x007052f8:	andeq	r0, r0, r0
+0x007052fc:	andeq	r0, r0, r0
+0x00705300:	andeq	r0, r0, r0
+0x00705304:	andeq	r0, r0, r0
+0x00705308:	andeq	r0, r0, r0
+0x0070530c:	andeq	r0, r0, r0
+0x00705310:	andeq	r0, r0, r0
+0x00705314:	andeq	r0, r0, r0
+0x00705318:	andeq	r0, r0, r0
+0x0070531c:	andeq	r0, r0, r0
+0x00705320:	andeq	r0, r0, r0
+0x00705324:	andeq	r0, r0, r0
+0x00705328:	andeq	r0, r0, r0
+0x0070532c:	andeq	r0, r0, r0
+0x00705330:	andeq	r0, r0, r0
+0x00705334:	andeq	r0, r0, r0
+0x00705338:	andeq	r0, r0, r0
+0x0070533c:	andeq	r0, r0, r0
+0x00705340:	andeq	r0, r0, r0
+0x00705344:	andeq	r0, r0, r0
+0x00705348:	andeq	r0, r0, r0
+0x0070534c:	andeq	r0, r0, r0
+0x00705350:	andeq	r0, r0, r0
+0x00705354:	andeq	r0, r0, r0
+0x00705358:	andeq	r0, r0, r0
+0x0070535c:	andeq	r0, r0, r0
+0x00705360:	andeq	r0, r0, r0
+0x00705364:	andeq	r0, r0, r0
+0x00705368:	andeq	r0, r0, r0
+0x0070536c:	andeq	r0, r0, r0
+0x00705370:	andeq	r0, r0, r0
+0x00705374:	andeq	r0, r0, r0
+0x00705378:	andeq	r0, r0, r0
+0x0070537c:	andeq	r0, r0, r0
+0x00705380:	andeq	r0, r0, r0
+0x00705384:	andeq	r0, r0, r0
+0x00705388:	andeq	r0, r0, r0
+0x0070538c:	andeq	r0, r0, r0
+0x00705390:	andeq	r0, r0, r0
+0x00705394:	andeq	r0, r0, r0
+0x00705398:	andeq	r0, r0, r0
+0x0070539c:	andeq	r0, r0, r0
+0x007053a0:	andeq	r0, r0, r0
+0x007053a4:	andeq	r0, r0, r0
+0x007053a8:	andeq	r0, r0, r0
+0x007053ac:	andeq	r0, r0, r0
+0x007053b0:	andeq	r0, r0, r0
+0x007053b4:	andeq	r0, r0, r0
+0x007053b8:	andeq	r0, r0, r0
+0x007053bc:	andeq	r0, r0, r0
+0x007053c0:	andeq	r0, r0, r0
+0x007053c4:	andeq	r0, r0, r0
+0x007053c8:	andeq	r0, r0, r0
+0x007053cc:	andeq	r0, r0, r0
+0x007053d0:	andeq	r0, r0, r0
+0x007053d4:	andeq	r0, r0, r0
+0x007053d8:	andeq	r0, r0, r0
+0x007053dc:	andeq	r0, r0, r0
+0x007053e0:	andeq	r0, r0, r0
+0x007053e4:	andeq	r0, r0, r0
+0x007053e8:	andeq	r0, r0, r0
+0x007053ec:	andeq	r0, r0, r0
+0x007053f0:	andeq	r0, r0, r0
+0x007053f4:	andeq	r0, r0, r0
+0x007053f8:	andeq	r0, r0, r0
+0x007053fc:	andeq	r0, r0, r0
+0x00705400:	andeq	r0, r0, r0
+0x00705404:	andeq	r0, r0, r0
+0x00705408:	andeq	r0, r0, r0
+0x0070540c:	andeq	r0, r0, r0
+0x00705410:	andeq	r0, r0, r0
+0x00705414:	andeq	r0, r0, r0
+0x00705418:	andeq	r0, r0, r0
+0x0070541c:	andeq	r0, r0, r0
+0x00705420:	andeq	r0, r0, r0
+0x00705424:	andeq	r0, r0, r0
+0x00705428:	andeq	r0, r0, r0
+0x0070542c:	andeq	r0, r0, r0
+0x00705430:	andeq	r0, r0, r0
+0x00705434:	andeq	r0, r0, r0
+0x00705438:	andeq	r0, r0, r0
+0x0070543c:	andeq	r0, r0, r0
+0x00705440:	andeq	r0, r0, r0
+0x00705444:	andeq	r0, r0, r0
+0x00705448:	andeq	r0, r0, r0
+0x0070544c:	andeq	r0, r0, r0
+0x00705450:	andeq	r0, r0, r0
+0x00705454:	andeq	r0, r0, r0
+0x00705458:	andeq	r0, r0, r0
+0x0070545c:	andeq	r0, r0, r0
+0x00705460:	andeq	r0, r0, r0
+0x00705464:	andeq	r0, r0, r0
+0x00705468:	andeq	r0, r0, r0
+0x0070546c:	andeq	r0, r0, r0
+0x00705470:	andeq	r0, r0, r0
+0x00705474:	andeq	r0, r0, r0
+0x00705478:	andeq	r0, r0, r0
+0x0070547c:	andeq	r0, r0, r0
+0x00705480:	andeq	r0, r0, r0
+0x00705484:	andeq	r0, r0, r0
+0x00705488:	andeq	r0, r0, r0
+0x0070548c:	andeq	r0, r0, r0
+0x00705490:	andeq	r0, r0, r0
+0x00705494:	andeq	r0, r0, r0
+0x00705498:	andeq	r0, r0, r0
+0x0070549c:	andeq	r0, r0, r0
+0x007054a0:	andeq	r0, r0, r0
+0x007054a4:	andeq	r0, r0, r0
+0x007054a8:	andeq	r0, r0, r0
+0x007054ac:	andeq	r0, r0, r0
+0x007054b0:	andeq	r0, r0, r0
+0x007054b4:	andeq	r0, r0, r0
+0x007054b8:	andeq	r0, r0, r0
+0x007054bc:	andeq	r0, r0, r0
+0x007054c0:	andeq	r0, r0, r0
+0x007054c4:	andeq	r0, r0, r0
+0x007054c8:	andeq	r0, r0, r0
+0x007054cc:	andeq	r0, r0, r0
+0x007054d0:	andeq	r0, r0, r0
+0x007054d4:	andeq	r0, r0, r0
+0x007054d8:	andeq	r0, r0, r0
+0x007054dc:	andeq	r0, r0, r0
+0x007054e0:	andeq	r0, r0, r0
+0x007054e4:	andeq	r0, r0, r0
+0x007054e8:	andeq	r0, r0, r0
+0x007054ec:	andeq	r0, r0, r0
+0x007054f0:	andeq	r0, r0, r0
+0x007054f4:	andeq	r0, r0, r0
+0x007054f8:	andeq	r0, r0, r0
+0x007054fc:	andeq	r0, r0, r0
+0x00705500:	andeq	r0, r0, r0
+0x00705504:	andeq	r0, r0, r0
+0x00705508:	andeq	r0, r0, r0
+0x0070550c:	andeq	r0, r0, r0
+0x00705510:	andeq	r0, r0, r0
+0x00705514:	andeq	r0, r0, r0
+0x00705518:	andeq	r0, r0, r0
+0x0070551c:	andeq	r0, r0, r0
+0x00705520:	andeq	r0, r0, r0
+0x00705524:	andeq	r0, r0, r0
+0x00705528:	andeq	r0, r0, r0
+0x0070552c:	andeq	r0, r0, r0
+0x00705530:	andeq	r0, r0, r0
+0x00705534:	andeq	r0, r0, r0
+0x00705538:	andeq	r0, r0, r0
+0x0070553c:	andeq	r0, r0, r0
+0x00705540:	andeq	r0, r0, r0
+0x00705544:	andeq	r0, r0, r0
+0x00705548:	andeq	r0, r0, r0
+0x0070554c:	andeq	r0, r0, r0
+0x00705550:	andeq	r0, r0, r0
+0x00705554:	andeq	r0, r0, r0
+0x00705558:	andeq	r0, r0, r0
+0x0070555c:	andeq	r0, r0, r0
+0x00705560:	andeq	r0, r0, r0
+0x00705564:	andeq	r0, r0, r0
+0x00705568:	andeq	r0, r0, r0
+0x0070556c:	andeq	r0, r0, r0
+0x00705570:	andeq	r0, r0, r0
+0x00705574:	andeq	r0, r0, r0
+0x00705578:	andeq	r0, r0, r0
+0x0070557c:	andeq	r0, r0, r0
+0x00705580:	andeq	r0, r0, r0
+0x00705584:	andeq	r0, r0, r0
+0x00705588:	andeq	r0, r0, r0
+0x0070558c:	andeq	r0, r0, r0
+0x00705590:	andeq	r0, r0, r0
+0x00705594:	andeq	r0, r0, r0
+0x00705598:	andeq	r0, r0, r0
+0x0070559c:	andeq	r0, r0, r0
+0x007055a0:	andeq	r0, r0, r0
+0x007055a4:	andeq	r0, r0, r0
+0x007055a8:	andeq	r0, r0, r0
+0x007055ac:	andeq	r0, r0, r0
+0x007055b0:	andeq	r0, r0, r0
+0x007055b4:	andeq	r0, r0, r0
+0x007055b8:	andeq	r0, r0, r0
+0x007055bc:	andeq	r0, r0, r0
+0x007055c0:	andeq	r0, r0, r0
+0x007055c4:	andeq	r0, r0, r0
+0x007055c8:	andeq	r0, r0, r0
+0x007055cc:	andeq	r0, r0, r0
+0x007055d0:	andeq	r0, r0, r0
+0x007055d4:	andeq	r0, r0, r0
+0x007055d8:	andeq	r0, r0, r0
+0x007055dc:	andeq	r0, r0, r0
+0x007055e0:	andeq	r0, r0, r0
+0x007055e4:	andeq	r0, r0, r0
+0x007055e8:	andeq	r0, r0, r0
+0x007055ec:	andeq	r0, r0, r0
+0x007055f0:	andeq	r0, r0, r0
+0x007055f4:	andeq	r0, r0, r0
+0x007055f8:	andeq	r0, r0, r0
+0x007055fc:	andeq	r0, r0, r0
+0x00705600:	andeq	r0, r0, r0
+0x00705604:	andeq	r0, r0, r0
+0x00705608:	andeq	r0, r0, r0
+0x0070560c:	andeq	r0, r0, r0
+0x00705610:	andeq	r0, r0, r0
+0x00705614:	andeq	r0, r0, r0
+0x00705618:	andeq	r0, r0, r0
+0x0070561c:	andeq	r0, r0, r0
+0x00705620:	andeq	r0, r0, r0
+0x00705624:	andeq	r0, r0, r0
+0x00705628:	andeq	r0, r0, r0
+0x0070562c:	andeq	r0, r0, r0
+0x00705630:	andeq	r0, r0, r0
+0x00705634:	andeq	r0, r0, r0
+0x00705638:	andeq	r0, r0, r0
+0x0070563c:	andeq	r0, r0, r0
+0x00705640:	andeq	r0, r0, r0
+0x00705644:	andeq	r0, r0, r0
+0x00705648:	andeq	r0, r0, r0
+0x0070564c:	andeq	r0, r0, r0
+0x00705650:	andeq	r0, r0, r0
+0x00705654:	andeq	r0, r0, r0
+0x00705658:	andeq	r0, r0, r0
+0x0070565c:	andeq	r0, r0, r0
+0x00705660:	andeq	r0, r0, r0
+0x00705664:	andeq	r0, r0, r0
+0x00705668:	andeq	r0, r0, r0
+0x0070566c:	andeq	r0, r0, r0
+0x00705670:	andeq	r0, r0, r0
+0x00705674:	andeq	r0, r0, r0
+0x00705678:	andeq	r0, r0, r0
+0x0070567c:	andeq	r0, r0, r0
+0x00705680:	andeq	r0, r0, r0
+0x00705684:	andeq	r0, r0, r0
+0x00705688:	andeq	r0, r0, r0
+0x0070568c:	andeq	r0, r0, r0
+0x00705690:	andeq	r0, r0, r0
+0x00705694:	andeq	r0, r0, r0
+0x00705698:	andeq	r0, r0, r0
+0x0070569c:	andeq	r0, r0, r0
+0x007056a0:	andeq	r0, r0, r0
+0x007056a4:	andeq	r0, r0, r0
+0x007056a8:	andeq	r0, r0, r0
+0x007056ac:	andeq	r0, r0, r0
+0x007056b0:	andeq	r0, r0, r0
+0x007056b4:	andeq	r0, r0, r0
+0x007056b8:	andeq	r0, r0, r0
+0x007056bc:	andeq	r0, r0, r0
+0x007056c0:	andeq	r0, r0, r0
+0x007056c4:	andeq	r0, r0, r0
+0x007056c8:	andeq	r0, r0, r0
+0x007056cc:	andeq	r0, r0, r0
+0x007056d0:	andeq	r0, r0, r0
+0x007056d4:	andeq	r0, r0, r0
+0x007056d8:	andeq	r0, r0, r0
+0x007056dc:	andeq	r0, r0, r0
+0x007056e0:	andeq	r0, r0, r0
+0x007056e4:	andeq	r0, r0, r0
+0x007056e8:	andeq	r0, r0, r0
+0x007056ec:	andeq	r0, r0, r0
+0x007056f0:	andeq	r0, r0, r0
+0x007056f4:	andeq	r0, r0, r0
+0x007056f8:	andeq	r0, r0, r0
+0x007056fc:	andeq	r0, r0, r0
+0x00705700:	andeq	r0, r0, r0
+0x00705704:	andeq	r0, r0, r0
+0x00705708:	andeq	r0, r0, r0
+0x0070570c:	andeq	r0, r0, r0
+0x00705710:	andeq	r0, r0, r0
+0x00705714:	andeq	r0, r0, r0
+0x00705718:	andeq	r0, r0, r0
+0x0070571c:	andeq	r0, r0, r0
+0x00705720:	andeq	r0, r0, r0
+0x00705724:	andeq	r0, r0, r0
+0x00705728:	andeq	r0, r0, r0
+0x0070572c:	andeq	r0, r0, r0
+0x00705730:	andeq	r0, r0, r0
+0x00705734:	andeq	r0, r0, r0
+0x00705738:	andeq	r0, r0, r0
+0x0070573c:	andeq	r0, r0, r0
+0x00705740:	andeq	r0, r0, r0
+0x00705744:	andeq	r0, r0, r0
+0x00705748:	andeq	r0, r0, r0
+0x0070574c:	andeq	r0, r0, r0
+0x00705750:	andeq	r0, r0, r0
+0x00705754:	andeq	r0, r0, r0
+0x00705758:	andeq	r0, r0, r0
+0x0070575c:	andeq	r0, r0, r0
+0x00705760:	andeq	r0, r0, r0
+0x00705764:	andeq	r0, r0, r0
+0x00705768:	andeq	r0, r0, r0
+0x0070576c:	andeq	r0, r0, r0
+0x00705770:	andeq	r0, r0, r0
+0x00705774:	andeq	r0, r0, r0
+0x00705778:	andeq	r0, r0, r0
+0x0070577c:	andeq	r0, r0, r0
+0x00705780:	andeq	r0, r0, r0
+0x00705784:	andeq	r0, r0, r0
+0x00705788:	andeq	r0, r0, r0
+0x0070578c:	andeq	r0, r0, r0
+0x00705790:	andeq	r0, r0, r0
+0x00705794:	andeq	r0, r0, r0
+0x00705798:	andeq	r0, r0, r0
+0x0070579c:	andeq	r0, r0, r0
+0x007057a0:	andeq	r0, r0, r0
+0x007057a4:	andeq	r0, r0, r0
+0x007057a8:	andeq	r0, r0, r0
+0x007057ac:	andeq	r0, r0, r0
+0x007057b0:	andeq	r0, r0, r0
+0x007057b4:	andeq	r0, r0, r0
+0x007057b8:	andeq	r0, r0, r0
+0x007057bc:	andeq	r0, r0, r0
+0x007057c0:	andeq	r0, r0, r0
+0x007057c4:	andeq	r0, r0, r0
+0x007057c8:	andeq	r0, r0, r0
+0x007057cc:	andeq	r0, r0, r0
+0x007057d0:	andeq	r0, r0, r0
+0x007057d4:	andeq	r0, r0, r0
+0x007057d8:	andeq	r0, r0, r0
+0x007057dc:	andeq	r0, r0, r0
+0x007057e0:	andeq	r0, r0, r0
+0x007057e4:	andeq	r0, r0, r0
+0x007057e8:	andeq	r0, r0, r0
+0x007057ec:	andeq	r0, r0, r0
+0x007057f0:	andeq	r0, r0, r0
+0x007057f4:	andeq	r0, r0, r0
+0x007057f8:	andeq	r0, r0, r0
+0x007057fc:	andeq	r0, r0, r0
+0x00705800:	andeq	r0, r0, r0
+0x00705804:	andeq	r0, r0, r0
+0x00705808:	andeq	r0, r0, r0
+0x0070580c:	andeq	r0, r0, r0
+0x00705810:	andeq	r0, r0, r0
+0x00705814:	andeq	r0, r0, r0
+0x00705818:	andeq	r0, r0, r0
+0x0070581c:	andeq	r0, r0, r0
+0x00705820:	andeq	r0, r0, r0
+0x00705824:	andeq	r0, r0, r0
+0x00705828:	andeq	r0, r0, r0
+0x0070582c:	andeq	r0, r0, r0
+0x00705830:	andeq	r0, r0, r0
+0x00705834:	andeq	r0, r0, r0
+0x00705838:	andeq	r0, r0, r0
+0x0070583c:	andeq	r0, r0, r0
+0x00705840:	andeq	r0, r0, r0
+0x00705844:	andeq	r0, r0, r0
+0x00705848:	andeq	r0, r0, r0
+0x0070584c:	andeq	r0, r0, r0
+0x00705850:	andeq	r0, r0, r0
+0x00705854:	andeq	r0, r0, r0
+0x00705858:	andeq	r0, r0, r0
+0x0070585c:	andeq	r0, r0, r0
+0x00705860:	andeq	r0, r0, r0
+0x00705864:	andeq	r0, r0, r0
+0x00705868:	andeq	r0, r0, r0
+0x0070586c:	andeq	r0, r0, r0
+0x00705870:	andeq	r0, r0, r0
+0x00705874:	andeq	r0, r0, r0
+0x00705878:	andeq	r0, r0, r0
+0x0070587c:	andeq	r0, r0, r0
+0x00705880:	andeq	r0, r0, r0
+0x00705884:	andeq	r0, r0, r0
+0x00705888:	andeq	r0, r0, r0
+0x0070588c:	andeq	r0, r0, r0
+0x00705890:	andeq	r0, r0, r0
+0x00705894:	andeq	r0, r0, r0
+0x00705898:	andeq	r0, r0, r0
+0x0070589c:	andeq	r0, r0, r0
+0x007058a0:	andeq	r0, r0, r0
+0x007058a4:	andeq	r0, r0, r0
+0x007058a8:	andeq	r0, r0, r0
+0x007058ac:	andeq	r0, r0, r0
+0x007058b0:	andeq	r0, r0, r0
+0x007058b4:	andeq	r0, r0, r0
+0x007058b8:	andeq	r0, r0, r0
+0x007058bc:	andeq	r0, r0, r0
+0x007058c0:	andeq	r0, r0, r0
+0x007058c4:	andeq	r0, r0, r0
+0x007058c8:	andeq	r0, r0, r0
+0x007058cc:	andeq	r0, r0, r0
+0x007058d0:	andeq	r0, r0, r0
+0x007058d4:	andeq	r0, r0, r0
+0x007058d8:	andeq	r0, r0, r0
+0x007058dc:	andeq	r0, r0, r0
+0x007058e0:	andeq	r0, r0, r0
+0x007058e4:	andeq	r0, r0, r0
+0x007058e8:	andeq	r0, r0, r0
+0x007058ec:	andeq	r0, r0, r0
+0x007058f0:	andeq	r0, r0, r0
+0x007058f4:	andeq	r0, r0, r0
+0x007058f8:	andeq	r0, r0, r0
+0x007058fc:	andeq	r0, r0, r0
+0x00705900:	andeq	r0, r0, r0
+0x00705904:	andeq	r0, r0, r0
+0x00705908:	andeq	r0, r0, r0
+0x0070590c:	andeq	r0, r0, r0
+0x00705910:	andeq	r0, r0, r0
+0x00705914:	andeq	r0, r0, r0
+0x00705918:	andeq	r0, r0, r0
+0x0070591c:	andeq	r0, r0, r0
+0x00705920:	andeq	r0, r0, r0
+0x00705924:	andeq	r0, r0, r0
+0x00705928:	andeq	r0, r0, r0
+0x0070592c:	andeq	r0, r0, r0
+0x00705930:	andeq	r0, r0, r0
+0x00705934:	andeq	r0, r0, r0
+0x00705938:	andeq	r0, r0, r0
+0x0070593c:	andeq	r0, r0, r0
+0x00705940:	andeq	r0, r0, r0
+0x00705944:	andeq	r0, r0, r0
+0x00705948:	andeq	r0, r0, r0
+0x0070594c:	andeq	r0, r0, r0
+0x00705950:	andeq	r0, r0, r0
+0x00705954:	andeq	r0, r0, r0
+0x00705958:	andeq	r0, r0, r0
+0x0070595c:	andeq	r0, r0, r0
+0x00705960:	andeq	r0, r0, r0
+0x00705964:	andeq	r0, r0, r0
+0x00705968:	andeq	r0, r0, r0
+0x0070596c:	andeq	r0, r0, r0
+0x00705970:	andeq	r0, r0, r0
+0x00705974:	andeq	r0, r0, r0
+0x00705978:	andeq	r0, r0, r0
+0x0070597c:	andeq	r0, r0, r0
+0x00705980:	andeq	r0, r0, r0
+0x00705984:	andeq	r0, r0, r0
+0x00705988:	andeq	r0, r0, r0
+0x0070598c:	andeq	r0, r0, r0
+0x00705990:	andeq	r0, r0, r0
+0x00705994:	andeq	r0, r0, r0
+0x00705998:	andeq	r0, r0, r0
+0x0070599c:	andeq	r0, r0, r0
+0x007059a0:	andeq	r0, r0, r0
+0x007059a4:	andeq	r0, r0, r0
+0x007059a8:	andeq	r0, r0, r0
+0x007059ac:	andeq	r0, r0, r0
+0x007059b0:	andeq	r0, r0, r0
+0x007059b4:	andeq	r0, r0, r0
+0x007059b8:	andeq	r0, r0, r0
+0x007059bc:	andeq	r0, r0, r0
+0x007059c0:	andeq	r0, r0, r0
+0x007059c4:	andeq	r0, r0, r0
+0x007059c8:	andeq	r0, r0, r0
+0x007059cc:	andeq	r0, r0, r0
+0x007059d0:	andeq	r0, r0, r0
+0x007059d4:	andeq	r0, r0, r0
+0x007059d8:	andeq	r0, r0, r0
+0x007059dc:	andeq	r0, r0, r0
+0x007059e0:	andeq	r0, r0, r0
+0x007059e4:	andeq	r0, r0, r0
+0x007059e8:	andeq	r0, r0, r0
+0x007059ec:	andeq	r0, r0, r0
+0x007059f0:	andeq	r0, r0, r0
+0x007059f4:	andeq	r0, r0, r0
+0x007059f8:	andeq	r0, r0, r0
+0x007059fc:	andeq	r0, r0, r0
+0x00705a00:	andeq	r0, r0, r0
+0x00705a04:	andeq	r0, r0, r0
+0x00705a08:	andeq	r0, r0, r0
+0x00705a0c:	andeq	r0, r0, r0
+0x00705a10:	andeq	r0, r0, r0
+0x00705a14:	andeq	r0, r0, r0
+0x00705a18:	andeq	r0, r0, r0
+0x00705a1c:	andeq	r0, r0, r0
+0x00705a20:	andeq	r0, r0, r0
+0x00705a24:	andeq	r0, r0, r0
+0x00705a28:	andeq	r0, r0, r0
+0x00705a2c:	andeq	r0, r0, r0
+0x00705a30:	andeq	r0, r0, r0
+0x00705a34:	andeq	r0, r0, r0
+0x00705a38:	andeq	r0, r0, r0
+0x00705a3c:	andeq	r0, r0, r0
+0x00705a40:	andeq	r0, r0, r0
+0x00705a44:	andeq	r0, r0, r0
+0x00705a48:	andeq	r0, r0, r0
+0x00705a4c:	andeq	r0, r0, r0
+0x00705a50:	andeq	r0, r0, r0
+0x00705a54:	andeq	r0, r0, r0
+0x00705a58:	andeq	r0, r0, r0
+0x00705a5c:	andeq	r0, r0, r0
+0x00705a60:	andeq	r0, r0, r0
+0x00705a64:	andeq	r0, r0, r0
+0x00705a68:	andeq	r0, r0, r0
+0x00705a6c:	andeq	r0, r0, r0
+0x00705a70:	andeq	r0, r0, r0
+0x00705a74:	andeq	r0, r0, r0
+0x00705a78:	andeq	r0, r0, r0
+0x00705a7c:	andeq	r0, r0, r0
+0x00705a80:	andeq	r0, r0, r0
+0x00705a84:	andeq	r0, r0, r0
+0x00705a88:	andeq	r0, r0, r0
+0x00705a8c:	andeq	r0, r0, r0
+0x00705a90:	andeq	r0, r0, r0
+0x00705a94:	andeq	r0, r0, r0
+0x00705a98:	andeq	r0, r0, r0
+0x00705a9c:	andeq	r0, r0, r0
+0x00705aa0:	andeq	r0, r0, r0
+0x00705aa4:	andeq	r0, r0, r0
+0x00705aa8:	andeq	r0, r0, r0
+0x00705aac:	andeq	r0, r0, r0
+0x00705ab0:	andeq	r0, r0, r0
+0x00705ab4:	andeq	r0, r0, r0
+0x00705ab8:	andeq	r0, r0, r0
+0x00705abc:	andeq	r0, r0, r0
+0x00705ac0:	andeq	r0, r0, r0
+0x00705ac4:	andeq	r0, r0, r0
+0x00705ac8:	andeq	r0, r0, r0
+0x00705acc:	andeq	r0, r0, r0
+0x00705ad0:	andeq	r0, r0, r0
+0x00705ad4:	andeq	r0, r0, r0
+0x00705ad8:	andeq	r0, r0, r0
+0x00705adc:	andeq	r0, r0, r0
+0x00705ae0:	andeq	r0, r0, r0
+0x00705ae4:	andeq	r0, r0, r0
+0x00705ae8:	andeq	r0, r0, r0
+0x00705aec:	andeq	r0, r0, r0
+0x00705af0:	andeq	r0, r0, r0
+0x00705af4:	andeq	r0, r0, r0
+0x00705af8:	andeq	r0, r0, r0
+0x00705afc:	andeq	r0, r0, r0
+0x00705b00:	andeq	r0, r0, r0
+0x00705b04:	andeq	r0, r0, r0
+0x00705b08:	andeq	r0, r0, r0
+0x00705b0c:	andeq	r0, r0, r0
+0x00705b10:	andeq	r0, r0, r0
+0x00705b14:	andeq	r0, r0, r0
+0x00705b18:	andeq	r0, r0, r0
+0x00705b1c:	andeq	r0, r0, r0
+0x00705b20:	andeq	r0, r0, r0
+0x00705b24:	andeq	r0, r0, r0
+0x00705b28:	andeq	r0, r0, r0
+0x00705b2c:	andeq	r0, r0, r0
+0x00705b30:	andeq	r0, r0, r0
+0x00705b34:	andeq	r0, r0, r0
+0x00705b38:	andeq	r0, r0, r0
+0x00705b3c:	andeq	r0, r0, r0
+0x00705b40:	andeq	r0, r0, r0
+0x00705b44:	andeq	r0, r0, r0
+0x00705b48:	andeq	r0, r0, r0
+0x00705b4c:	andeq	r0, r0, r0
+0x00705b50:	andeq	r0, r0, r0
+0x00705b54:	andeq	r0, r0, r0
+0x00705b58:	andeq	r0, r0, r0
+0x00705b5c:	andeq	r0, r0, r0
+0x00705b60:	andeq	r0, r0, r0
+0x00705b64:	andeq	r0, r0, r0
+0x00705b68:	andeq	r0, r0, r0
+0x00705b6c:	andeq	r0, r0, r0
+0x00705b70:	andeq	r0, r0, r0
+0x00705b74:	andeq	r0, r0, r0
+0x00705b78:	andeq	r0, r0, r0
+0x00705b7c:	andeq	r0, r0, r0
+0x00705b80:	andeq	r0, r0, r0
+0x00705b84:	andeq	r0, r0, r0
+0x00705b88:	andeq	r0, r0, r0
+0x00705b8c:	andeq	r0, r0, r0
+0x00705b90:	andeq	r0, r0, r0
+0x00705b94:	andeq	r0, r0, r0
+0x00705b98:	andeq	r0, r0, r0
+0x00705b9c:	andeq	r0, r0, r0
+0x00705ba0:	andeq	r0, r0, r0
+0x00705ba4:	andeq	r0, r0, r0
+0x00705ba8:	andeq	r0, r0, r0
+0x00705bac:	andeq	r0, r0, r0
+0x00705bb0:	andeq	r0, r0, r0
+0x00705bb4:	andeq	r0, r0, r0
+0x00705bb8:	andeq	r0, r0, r0
+0x00705bbc:	andeq	r0, r0, r0
+0x00705bc0:	andeq	r0, r0, r0
+0x00705bc4:	andeq	r0, r0, r0
+0x00705bc8:	andeq	r0, r0, r0
+0x00705bcc:	andeq	r0, r0, r0
+0x00705bd0:	andeq	r0, r0, r0
+0x00705bd4:	andeq	r0, r0, r0
+0x00705bd8:	andeq	r0, r0, r0
+0x00705bdc:	andeq	r0, r0, r0
+0x00705be0:	andeq	r0, r0, r0
+0x00705be4:	andeq	r0, r0, r0
+0x00705be8:	andeq	r0, r0, r0
+0x00705bec:	andeq	r0, r0, r0
+0x00705bf0:	andeq	r0, r0, r0
+0x00705bf4:	andeq	r0, r0, r0
+0x00705bf8:	andeq	r0, r0, r0
+0x00705bfc:	andeq	r0, r0, r0
+0x00705c00:	andeq	r0, r0, r0
+0x00705c04:	andeq	r0, r0, r0
+0x00705c08:	andeq	r0, r0, r0
+0x00705c0c:	andeq	r0, r0, r0
+0x00705c10:	andeq	r0, r0, r0
+0x00705c14:	andeq	r0, r0, r0
+0x00705c18:	andeq	r0, r0, r0
+0x00705c1c:	andeq	r0, r0, r0
+0x00705c20:	andeq	r0, r0, r0
+0x00705c24:	andeq	r0, r0, r0
+0x00705c28:	andeq	r0, r0, r0
+0x00705c2c:	andeq	r0, r0, r0
+0x00705c30:	andeq	r0, r0, r0
+0x00705c34:	andeq	r0, r0, r0
+0x00705c38:	andeq	r0, r0, r0
+0x00705c3c:	andeq	r0, r0, r0
+0x00705c40:	andeq	r0, r0, r0
+0x00705c44:	andeq	r0, r0, r0
+0x00705c48:	andeq	r0, r0, r0
+0x00705c4c:	andeq	r0, r0, r0
+0x00705c50:	andeq	r0, r0, r0
+0x00705c54:	andeq	r0, r0, r0
+0x00705c58:	andeq	r0, r0, r0
+0x00705c5c:	andeq	r0, r0, r0
+0x00705c60:	andeq	r0, r0, r0
+0x00705c64:	andeq	r0, r0, r0
+0x00705c68:	andeq	r0, r0, r0
+0x00705c6c:	andeq	r0, r0, r0
+0x00705c70:	andeq	r0, r0, r0
+0x00705c74:	andeq	r0, r0, r0
+0x00705c78:	andeq	r0, r0, r0
+0x00705c7c:	andeq	r0, r0, r0
+0x00705c80:	andeq	r0, r0, r0
+0x00705c84:	andeq	r0, r0, r0
+0x00705c88:	andeq	r0, r0, r0
+0x00705c8c:	andeq	r0, r0, r0
+0x00705c90:	andeq	r0, r0, r0
+0x00705c94:	andeq	r0, r0, r0
+0x00705c98:	andeq	r0, r0, r0
+0x00705c9c:	andeq	r0, r0, r0
+0x00705ca0:	andeq	r0, r0, r0
+0x00705ca4:	andeq	r0, r0, r0
+0x00705ca8:	andeq	r0, r0, r0
+0x00705cac:	andeq	r0, r0, r0
+0x00705cb0:	andeq	r0, r0, r0
+0x00705cb4:	andeq	r0, r0, r0
+0x00705cb8:	andeq	r0, r0, r0
+0x00705cbc:	andeq	r0, r0, r0
+0x00705cc0:	andeq	r0, r0, r0
+0x00705cc4:	andeq	r0, r0, r0
+0x00705cc8:	andeq	r0, r0, r0
+0x00705ccc:	andeq	r0, r0, r0
+0x00705cd0:	andeq	r0, r0, r0
+0x00705cd4:	andeq	r0, r0, r0
+0x00705cd8:	andeq	r0, r0, r0
+0x00705cdc:	andeq	r0, r0, r0
+0x00705ce0:	andeq	r0, r0, r0
+0x00705ce4:	andeq	r0, r0, r0
+0x00705ce8:	andeq	r0, r0, r0
+0x00705cec:	andeq	r0, r0, r0
+0x00705cf0:	andeq	r0, r0, r0
+0x00705cf4:	andeq	r0, r0, r0
+0x00705cf8:	andeq	r0, r0, r0
+0x00705cfc:	andeq	r0, r0, r0
+0x00705d00:	andeq	r0, r0, r0
+0x00705d04:	andeq	r0, r0, r0
+0x00705d08:	andeq	r0, r0, r0
+0x00705d0c:	andeq	r0, r0, r0
+0x00705d10:	andeq	r0, r0, r0
+0x00705d14:	andeq	r0, r0, r0
+0x00705d18:	andeq	r0, r0, r0
+0x00705d1c:	andeq	r0, r0, r0
+0x00705d20:	andeq	r0, r0, r0
+0x00705d24:	andeq	r0, r0, r0
+0x00705d28:	andeq	r0, r0, r0
+0x00705d2c:	andeq	r0, r0, r0
+0x00705d30:	andeq	r0, r0, r0
+0x00705d34:	andeq	r0, r0, r0
+0x00705d38:	andeq	r0, r0, r0
+0x00705d3c:	andeq	r0, r0, r0
+0x00705d40:	andeq	r0, r0, r0
+0x00705d44:	andeq	r0, r0, r0
+0x00705d48:	andeq	r0, r0, r0
+0x00705d4c:	andeq	r0, r0, r0
+0x00705d50:	andeq	r0, r0, r0
+0x00705d54:	andeq	r0, r0, r0
+0x00705d58:	andeq	r0, r0, r0
+0x00705d5c:	andeq	r0, r0, r0
+0x00705d60:	andeq	r0, r0, r0
+0x00705d64:	andeq	r0, r0, r0
+0x00705d68:	andeq	r0, r0, r0
+0x00705d6c:	andeq	r0, r0, r0
+0x00705d70:	andeq	r0, r0, r0
+0x00705d74:	andeq	r0, r0, r0
+0x00705d78:	andeq	r0, r0, r0
+0x00705d7c:	andeq	r0, r0, r0
+0x00705d80:	andeq	r0, r0, r0
+0x00705d84:	andeq	r0, r0, r0
+0x00705d88:	andeq	r0, r0, r0
+0x00705d8c:	andeq	r0, r0, r0
+0x00705d90:	andeq	r0, r0, r0
+0x00705d94:	andeq	r0, r0, r0
+0x00705d98:	andeq	r0, r0, r0
+0x00705d9c:	andeq	r0, r0, r0
+0x00705da0:	andeq	r0, r0, r0
+0x00705da4:	andeq	r0, r0, r0
+0x00705da8:	andeq	r0, r0, r0
+0x00705dac:	andeq	r0, r0, r0
+0x00705db0:	andeq	r0, r0, r0
+0x00705db4:	andeq	r0, r0, r0
+0x00705db8:	andeq	r0, r0, r0
+0x00705dbc:	andeq	r0, r0, r0
+0x00705dc0:	andeq	r0, r0, r0
+0x00705dc4:	andeq	r0, r0, r0
+0x00705dc8:	andeq	r0, r0, r0
+0x00705dcc:	andeq	r0, r0, r0
+0x00705dd0:	andeq	r0, r0, r0
+0x00705dd4:	andeq	r0, r0, r0
+0x00705dd8:	andeq	r0, r0, r0
+0x00705ddc:	andeq	r0, r0, r0
+0x00705de0:	andeq	r0, r0, r0
+0x00705de4:	andeq	r0, r0, r0
+0x00705de8:	andeq	r0, r0, r0
+0x00705dec:	andeq	r0, r0, r0
+0x00705df0:	andeq	r0, r0, r0
+0x00705df4:	andeq	r0, r0, r0
+0x00705df8:	andeq	r0, r0, r0
+0x00705dfc:	andeq	r0, r0, r0
+0x00705e00:	andeq	r0, r0, r0
+0x00705e04:	andeq	r0, r0, r0
+0x00705e08:	andeq	r0, r0, r0
+0x00705e0c:	andeq	r0, r0, r0
+0x00705e10:	andeq	r0, r0, r0
+0x00705e14:	andeq	r0, r0, r0
+0x00705e18:	andeq	r0, r0, r0
+0x00705e1c:	andeq	r0, r0, r0
+0x00705e20:	andeq	r0, r0, r0
+0x00705e24:	andeq	r0, r0, r0
+0x00705e28:	andeq	r0, r0, r0
+0x00705e2c:	andeq	r0, r0, r0
+0x00705e30:	andeq	r0, r0, r0
+0x00705e34:	andeq	r0, r0, r0
+0x00705e38:	andeq	r0, r0, r0
+0x00705e3c:	andeq	r0, r0, r0
+0x00705e40:	andeq	r0, r0, r0
+0x00705e44:	andeq	r0, r0, r0
+0x00705e48:	andeq	r0, r0, r0
+0x00705e4c:	andeq	r0, r0, r0
+0x00705e50:	andeq	r0, r0, r0
+0x00705e54:	andeq	r0, r0, r0
+0x00705e58:	andeq	r0, r0, r0
+0x00705e5c:	andeq	r0, r0, r0
+0x00705e60:	andeq	r0, r0, r0
+0x00705e64:	andeq	r0, r0, r0
+0x00705e68:	andeq	r0, r0, r0
+0x00705e6c:	andeq	r0, r0, r0
+0x00705e70:	andeq	r0, r0, r0
+0x00705e74:	andeq	r0, r0, r0
+0x00705e78:	andeq	r0, r0, r0
+0x00705e7c:	andeq	r0, r0, r0
+0x00705e80:	andeq	r0, r0, r0
+0x00705e84:	andeq	r0, r0, r0
+0x00705e88:	andeq	r0, r0, r0
+0x00705e8c:	andeq	r0, r0, r0
+0x00705e90:	andeq	r0, r0, r0
+0x00705e94:	andeq	r0, r0, r0
+0x00705e98:	andeq	r0, r0, r0
+0x00705e9c:	andeq	r0, r0, r0
+0x00705ea0:	andeq	r0, r0, r0
+0x00705ea4:	andeq	r0, r0, r0
+0x00705ea8:	andeq	r0, r0, r0
+0x00705eac:	andeq	r0, r0, r0
+0x00705eb0:	andeq	r0, r0, r0
+0x00705eb4:	andeq	r0, r0, r0
+0x00705eb8:	andeq	r0, r0, r0
+0x00705ebc:	andeq	r0, r0, r0
+0x00705ec0:	andeq	r0, r0, r0
+0x00705ec4:	andeq	r0, r0, r0
+0x00705ec8:	andeq	r0, r0, r0
+0x00705ecc:	andeq	r0, r0, r0
+0x00705ed0:	andeq	r0, r0, r0
+0x00705ed4:	andeq	r0, r0, r0
+0x00705ed8:	andeq	r0, r0, r0
+0x00705edc:	andeq	r0, r0, r0
+0x00705ee0:	andeq	r0, r0, r0
+0x00705ee4:	andeq	r0, r0, r0
+0x00705ee8:	andeq	r0, r0, r0
+0x00705eec:	andeq	r0, r0, r0
+0x00705ef0:	andeq	r0, r0, r0
+0x00705ef4:	andeq	r0, r0, r0
+0x00705ef8:	andeq	r0, r0, r0
+0x00705efc:	andeq	r0, r0, r0
+0x00705f00:	andeq	r0, r0, r0
+0x00705f04:	andeq	r0, r0, r0
+0x00705f08:	andeq	r0, r0, r0
+0x00705f0c:	andeq	r0, r0, r0
+0x00705f10:	andeq	r0, r0, r0
+0x00705f14:	andeq	r0, r0, r0
+0x00705f18:	andeq	r0, r0, r0
+0x00705f1c:	andeq	r0, r0, r0
+0x00705f20:	andeq	r0, r0, r0
+0x00705f24:	andeq	r0, r0, r0
+0x00705f28:	andeq	r0, r0, r0
+0x00705f2c:	andeq	r0, r0, r0
+0x00705f30:	andeq	r0, r0, r0
+0x00705f34:	andeq	r0, r0, r0
+0x00705f38:	andeq	r0, r0, r0
+0x00705f3c:	andeq	r0, r0, r0
+0x00705f40:	andeq	r0, r0, r0
+0x00705f44:	andeq	r0, r0, r0
+0x00705f48:	andeq	r0, r0, r0
+0x00705f4c:	andeq	r0, r0, r0
+0x00705f50:	andeq	r0, r0, r0
+0x00705f54:	andeq	r0, r0, r0
+0x00705f58:	andeq	r0, r0, r0
+0x00705f5c:	andeq	r0, r0, r0
+0x00705f60:	andeq	r0, r0, r0
+0x00705f64:	andeq	r0, r0, r0
+0x00705f68:	andeq	r0, r0, r0
+0x00705f6c:	andeq	r0, r0, r0
+0x00705f70:	andeq	r0, r0, r0
+0x00705f74:	andeq	r0, r0, r0
+0x00705f78:	andeq	r0, r0, r0
+0x00705f7c:	andeq	r0, r0, r0
+0x00705f80:	andeq	r0, r0, r0
+0x00705f84:	andeq	r0, r0, r0
+0x00705f88:	andeq	r0, r0, r0
+0x00705f8c:	andeq	r0, r0, r0
+0x00705f90:	andeq	r0, r0, r0
+0x00705f94:	andeq	r0, r0, r0
+0x00705f98:	andeq	r0, r0, r0
+0x00705f9c:	andeq	r0, r0, r0
+0x00705fa0:	andeq	r0, r0, r0
+0x00705fa4:	andeq	r0, r0, r0
+0x00705fa8:	andeq	r0, r0, r0
+0x00705fac:	andeq	r0, r0, r0
+0x00705fb0:	andeq	r0, r0, r0
+0x00705fb4:	andeq	r0, r0, r0
+0x00705fb8:	andeq	r0, r0, r0
+0x00705fbc:	andeq	r0, r0, r0
+0x00705fc0:	andeq	r0, r0, r0
+0x00705fc4:	andeq	r0, r0, r0
+0x00705fc8:	andeq	r0, r0, r0
+0x00705fcc:	andeq	r0, r0, r0
+0x00705fd0:	andeq	r0, r0, r0
+0x00705fd4:	andeq	r0, r0, r0
+0x00705fd8:	andeq	r0, r0, r0
+0x00705fdc:	andeq	r0, r0, r0
+0x00705fe0:	andeq	r0, r0, r0
+0x00705fe4:	andeq	r0, r0, r0
+0x00705fe8:	andeq	r0, r0, r0
+0x00705fec:	andeq	r0, r0, r0
+0x00705ff0:	andeq	r0, r0, r0
+0x00705ff4:	andeq	r0, r0, r0
+0x00705ff8:	andeq	r0, r0, r0
+0x00705ffc:	andeq	r0, r0, r0
+0x00706000:	andeq	r0, r0, r0
+0x00706004:	andeq	r0, r0, r0
+0x00706008:	andeq	r0, r0, r0
+0x0070600c:	andeq	r0, r0, r0
+0x00706010:	andeq	r0, r0, r0
+0x00706014:	andeq	r0, r0, r0
+0x00706018:	andeq	r0, r0, r0
+0x0070601c:	andeq	r0, r0, r0
+0x00706020:	andeq	r0, r0, r0
+0x00706024:	andeq	r0, r0, r0
+0x00706028:	andeq	r0, r0, r0
+0x0070602c:	andeq	r0, r0, r0
+0x00706030:	andeq	r0, r0, r0
+0x00706034:	andeq	r0, r0, r0
+0x00706038:	andeq	r0, r0, r0
+0x0070603c:	andeq	r0, r0, r0
+0x00706040:	andeq	r0, r0, r0
+0x00706044:	andeq	r0, r0, r0
+0x00706048:	andeq	r0, r0, r0
+0x0070604c:	andeq	r0, r0, r0
+0x00706050:	andeq	r0, r0, r0
+0x00706054:	andeq	r0, r0, r0
+0x00706058:	andeq	r0, r0, r0
+0x0070605c:	andeq	r0, r0, r0
+0x00706060:	andeq	r0, r0, r0
+0x00706064:	andeq	r0, r0, r0
+0x00706068:	andeq	r0, r0, r0
+0x0070606c:	andeq	r0, r0, r0
+0x00706070:	andeq	r0, r0, r0
+0x00706074:	andeq	r0, r0, r0
+0x00706078:	andeq	r0, r0, r0
+0x0070607c:	andeq	r0, r0, r0
+0x00706080:	andeq	r0, r0, r0
+0x00706084:	andeq	r0, r0, r0
+0x00706088:	andeq	r0, r0, r0
+0x0070608c:	andeq	r0, r0, r0
+0x00706090:	andeq	r0, r0, r0
+0x00706094:	andeq	r0, r0, r0
+0x00706098:	andeq	r0, r0, r0
+0x0070609c:	andeq	r0, r0, r0
+0x007060a0:	andeq	r0, r0, r0
+0x007060a4:	andeq	r0, r0, r0
+0x007060a8:	andeq	r0, r0, r0
+0x007060ac:	andeq	r0, r0, r0
+0x007060b0:	andeq	r0, r0, r0
+0x007060b4:	andeq	r0, r0, r0
+0x007060b8:	andeq	r0, r0, r0
+0x007060bc:	andeq	r0, r0, r0
+0x007060c0:	andeq	r0, r0, r0
+0x007060c4:	andeq	r0, r0, r0
+0x007060c8:	andeq	r0, r0, r0
+0x007060cc:	andeq	r0, r0, r0
+0x007060d0:	andeq	r0, r0, r0
+0x007060d4:	andeq	r0, r0, r0
+0x007060d8:	andeq	r0, r0, r0
+0x007060dc:	andeq	r0, r0, r0
+0x007060e0:	andeq	r0, r0, r0
+0x007060e4:	andeq	r0, r0, r0
+0x007060e8:	andeq	r0, r0, r0
+0x007060ec:	andeq	r0, r0, r0
+0x007060f0:	andeq	r0, r0, r0
+0x007060f4:	andeq	r0, r0, r0
+0x007060f8:	andeq	r0, r0, r0
+0x007060fc:	andeq	r0, r0, r0
+0x00706100:	andeq	r0, r0, r0
+0x00706104:	andeq	r0, r0, r0
+0x00706108:	andeq	r0, r0, r0
+0x0070610c:	andeq	r0, r0, r0
+0x00706110:	andeq	r0, r0, r0
+0x00706114:	andeq	r0, r0, r0
+0x00706118:	andeq	r0, r0, r0
+0x0070611c:	andeq	r0, r0, r0
+0x00706120:	andeq	r0, r0, r0
+0x00706124:	andeq	r0, r0, r0
+0x00706128:	andeq	r0, r0, r0
+0x0070612c:	andeq	r0, r0, r0
+0x00706130:	andeq	r0, r0, r0
+0x00706134:	andeq	r0, r0, r0
+0x00706138:	andeq	r0, r0, r0
+0x0070613c:	andeq	r0, r0, r0
+0x00706140:	andeq	r0, r0, r0
+0x00706144:	andeq	r0, r0, r0
+0x00706148:	andeq	r0, r0, r0
+0x0070614c:	andeq	r0, r0, r0
+0x00706150:	andeq	r0, r0, r0
+0x00706154:	andeq	r0, r0, r0
+0x00706158:	andeq	r0, r0, r0
+0x0070615c:	andeq	r0, r0, r0
+0x00706160:	andeq	r0, r0, r0
+0x00706164:	andeq	r0, r0, r0
+0x00706168:	andeq	r0, r0, r0
+0x0070616c:	andeq	r0, r0, r0
+0x00706170:	andeq	r0, r0, r0
+0x00706174:	andeq	r0, r0, r0
+0x00706178:	andeq	r0, r0, r0
+0x0070617c:	andeq	r0, r0, r0
+0x00706180:	andeq	r0, r0, r0
+0x00706184:	andeq	r0, r0, r0
+0x00706188:	andeq	r0, r0, r0
+0x0070618c:	andeq	r0, r0, r0
+0x00706190:	andeq	r0, r0, r0
+0x00706194:	andeq	r0, r0, r0
+0x00706198:	andeq	r0, r0, r0
+0x0070619c:	andeq	r0, r0, r0
+0x007061a0:	andeq	r0, r0, r0
+0x007061a4:	andeq	r0, r0, r0
+0x007061a8:	andeq	r0, r0, r0
+0x007061ac:	andeq	r0, r0, r0
+0x007061b0:	andeq	r0, r0, r0
+0x007061b4:	andeq	r0, r0, r0
+0x007061b8:	andeq	r0, r0, r0
+0x007061bc:	andeq	r0, r0, r0
+0x007061c0:	andeq	r0, r0, r0
+0x007061c4:	andeq	r0, r0, r0
+0x007061c8:	andeq	r0, r0, r0
+0x007061cc:	andeq	r0, r0, r0
+0x007061d0:	andeq	r0, r0, r0
+0x007061d4:	andeq	r0, r0, r0
+0x007061d8:	andeq	r0, r0, r0
+0x007061dc:	andeq	r0, r0, r0
+0x007061e0:	andeq	r0, r0, r0
+0x007061e4:	andeq	r0, r0, r0
+0x007061e8:	andeq	r0, r0, r0
+0x007061ec:	andeq	r0, r0, r0
+0x007061f0:	andeq	r0, r0, r0
+0x007061f4:	andeq	r0, r0, r0
+0x007061f8:	andeq	r0, r0, r0
+0x007061fc:	andeq	r0, r0, r0
+0x00706200:	andeq	r0, r0, r0
+0x00706204:	andeq	r0, r0, r0
+0x00706208:	andeq	r0, r0, r0
+0x0070620c:	andeq	r0, r0, r0
+0x00706210:	andeq	r0, r0, r0
+0x00706214:	andeq	r0, r0, r0
+0x00706218:	andeq	r0, r0, r0
+0x0070621c:	andeq	r0, r0, r0
+0x00706220:	andeq	r0, r0, r0
+0x00706224:	andeq	r0, r0, r0
+0x00706228:	andeq	r0, r0, r0
+0x0070622c:	andeq	r0, r0, r0
+0x00706230:	andeq	r0, r0, r0
+0x00706234:	andeq	r0, r0, r0
+0x00706238:	andeq	r0, r0, r0
+0x0070623c:	andeq	r0, r0, r0
+0x00706240:	andeq	r0, r0, r0
+0x00706244:	andeq	r0, r0, r0
+0x00706248:	andeq	r0, r0, r0
+0x0070624c:	andeq	r0, r0, r0
+0x00706250:	andeq	r0, r0, r0
+0x00706254:	andeq	r0, r0, r0
+0x00706258:	andeq	r0, r0, r0
+0x0070625c:	andeq	r0, r0, r0
+0x00706260:	andeq	r0, r0, r0
+0x00706264:	andeq	r0, r0, r0
+0x00706268:	andeq	r0, r0, r0
+0x0070626c:	andeq	r0, r0, r0
+0x00706270:	andeq	r0, r0, r0
+0x00706274:	andeq	r0, r0, r0
+0x00706278:	andeq	r0, r0, r0
+0x0070627c:	andeq	r0, r0, r0
+0x00706280:	andeq	r0, r0, r0
+0x00706284:	andeq	r0, r0, r0
+0x00706288:	andeq	r0, r0, r0
+0x0070628c:	andeq	r0, r0, r0
+0x00706290:	andeq	r0, r0, r0
+0x00706294:	andeq	r0, r0, r0
+0x00706298:	andeq	r0, r0, r0
+0x0070629c:	andeq	r0, r0, r0
+0x007062a0:	andeq	r0, r0, r0
+0x007062a4:	andeq	r0, r0, r0
+0x007062a8:	andeq	r0, r0, r0
+0x007062ac:	andeq	r0, r0, r0
+0x007062b0:	andeq	r0, r0, r0
+0x007062b4:	andeq	r0, r0, r0
+0x007062b8:	andeq	r0, r0, r0
+0x007062bc:	andeq	r0, r0, r0
+0x007062c0:	andeq	r0, r0, r0
+0x007062c4:	andeq	r0, r0, r0
+0x007062c8:	andeq	r0, r0, r0
+0x007062cc:	andeq	r0, r0, r0
+0x007062d0:	andeq	r0, r0, r0
+0x007062d4:	andeq	r0, r0, r0
+0x007062d8:	andeq	r0, r0, r0
+0x007062dc:	andeq	r0, r0, r0
+0x007062e0:	andeq	r0, r0, r0
+0x007062e4:	andeq	r0, r0, r0
+0x007062e8:	andeq	r0, r0, r0
+0x007062ec:	andeq	r0, r0, r0
+0x007062f0:	andeq	r0, r0, r0
+0x007062f4:	andeq	r0, r0, r0
+0x007062f8:	andeq	r0, r0, r0
+0x007062fc:	andeq	r0, r0, r0
+0x00706300:	andeq	r0, r0, r0
+0x00706304:	andeq	r0, r0, r0
+0x00706308:	andeq	r0, r0, r0
+0x0070630c:	andeq	r0, r0, r0
+0x00706310:	andeq	r0, r0, r0
+0x00706314:	andeq	r0, r0, r0
+0x00706318:	andeq	r0, r0, r0
+0x0070631c:	andeq	r0, r0, r0
+0x00706320:	andeq	r0, r0, r0
+0x00706324:	andeq	r0, r0, r0
+0x00706328:	andeq	r0, r0, r0
+0x0070632c:	andeq	r0, r0, r0
+0x00706330:	andeq	r0, r0, r0
+0x00706334:	andeq	r0, r0, r0
+0x00706338:	andeq	r0, r0, r0
+0x0070633c:	andeq	r0, r0, r0
+0x00706340:	andeq	r0, r0, r0
+0x00706344:	andeq	r0, r0, r0
+0x00706348:	andeq	r0, r0, r0
+0x0070634c:	andeq	r0, r0, r0
+0x00706350:	andeq	r0, r0, r0
+0x00706354:	andeq	r0, r0, r0
+0x00706358:	andeq	r0, r0, r0
+0x0070635c:	andeq	r0, r0, r0
+0x00706360:	andeq	r0, r0, r0
+0x00706364:	andeq	r0, r0, r0
+0x00706368:	andeq	r0, r0, r0
+0x0070636c:	andeq	r0, r0, r0
+0x00706370:	andeq	r0, r0, r0
+0x00706374:	andeq	r0, r0, r0
+0x00706378:	andeq	r0, r0, r0
+0x0070637c:	andeq	r0, r0, r0
+0x00706380:	andeq	r0, r0, r0
+0x00706384:	andeq	r0, r0, r0
+0x00706388:	andeq	r0, r0, r0
+0x0070638c:	andeq	r0, r0, r0
+0x00706390:	andeq	r0, r0, r0
+0x00706394:	andeq	r0, r0, r0
+0x00706398:	andeq	r0, r0, r0
+0x0070639c:	andeq	r0, r0, r0
+0x007063a0:	andeq	r0, r0, r0
+0x007063a4:	andeq	r0, r0, r0
+0x007063a8:	andeq	r0, r0, r0
+0x007063ac:	andeq	r0, r0, r0
+0x007063b0:	andeq	r0, r0, r0
+0x007063b4:	andeq	r0, r0, r0
+0x007063b8:	andeq	r0, r0, r0
+0x007063bc:	andeq	r0, r0, r0
+0x007063c0:	andeq	r0, r0, r0
+0x007063c4:	andeq	r0, r0, r0
+0x007063c8:	andeq	r0, r0, r0
+0x007063cc:	andeq	r0, r0, r0
+0x007063d0:	andeq	r0, r0, r0
+0x007063d4:	andeq	r0, r0, r0
+0x007063d8:	andeq	r0, r0, r0
+0x007063dc:	andeq	r0, r0, r0
+0x007063e0:	andeq	r0, r0, r0
+0x007063e4:	andeq	r0, r0, r0
+0x007063e8:	andeq	r0, r0, r0
+0x007063ec:	andeq	r0, r0, r0
+0x007063f0:	andeq	r0, r0, r0
+0x007063f4:	andeq	r0, r0, r0
+0x007063f8:	andeq	r0, r0, r0
+0x007063fc:	andeq	r0, r0, r0
+0x00706400:	andeq	r0, r0, r0
+0x00706404:	andeq	r0, r0, r0
+0x00706408:	andeq	r0, r0, r0
+0x0070640c:	andeq	r0, r0, r0
+0x00706410:	andeq	r0, r0, r0
+0x00706414:	andeq	r0, r0, r0
+0x00706418:	andeq	r0, r0, r0
+0x0070641c:	andeq	r0, r0, r0
+0x00706420:	andeq	r0, r0, r0
+0x00706424:	andeq	r0, r0, r0
+0x00706428:	andeq	r0, r0, r0
+0x0070642c:	andeq	r0, r0, r0
+0x00706430:	andeq	r0, r0, r0
+0x00706434:	andeq	r0, r0, r0
+0x00706438:	andeq	r0, r0, r0
+0x0070643c:	andeq	r0, r0, r0
+0x00706440:	andeq	r0, r0, r0
+0x00706444:	andeq	r0, r0, r0
+0x00706448:	andeq	r0, r0, r0
+0x0070644c:	andeq	r0, r0, r0
+0x00706450:	andeq	r0, r0, r0
+0x00706454:	andeq	r0, r0, r0
+0x00706458:	andeq	r0, r0, r0
+0x0070645c:	andeq	r0, r0, r0
+0x00706460:	andeq	r0, r0, r0
+0x00706464:	andeq	r0, r0, r0
+0x00706468:	andeq	r0, r0, r0
+0x0070646c:	andeq	r0, r0, r0
+0x00706470:	andeq	r0, r0, r0
+0x00706474:	andeq	r0, r0, r0
+0x00706478:	andeq	r0, r0, r0
+0x0070647c:	andeq	r0, r0, r0
+0x00706480:	andeq	r0, r0, r0
+0x00706484:	andeq	r0, r0, r0
+0x00706488:	andeq	r0, r0, r0
+0x0070648c:	andeq	r0, r0, r0
+0x00706490:	andeq	r0, r0, r0
+0x00706494:	andeq	r0, r0, r0
+0x00706498:	andeq	r0, r0, r0
+0x0070649c:	andeq	r0, r0, r0
+0x007064a0:	andeq	r0, r0, r0
+0x007064a4:	andeq	r0, r0, r0
+0x007064a8:	andeq	r0, r0, r0
+0x007064ac:	andeq	r0, r0, r0
+0x007064b0:	andeq	r0, r0, r0
+0x007064b4:	andeq	r0, r0, r0
+0x007064b8:	andeq	r0, r0, r0
+0x007064bc:	andeq	r0, r0, r0
+0x007064c0:	andeq	r0, r0, r0
+0x007064c4:	andeq	r0, r0, r0
+0x007064c8:	andeq	r0, r0, r0
+0x007064cc:	andeq	r0, r0, r0
+0x007064d0:	andeq	r0, r0, r0
+0x007064d4:	andeq	r0, r0, r0
+0x007064d8:	andeq	r0, r0, r0
+0x007064dc:	andeq	r0, r0, r0
+0x007064e0:	andeq	r0, r0, r0
+0x007064e4:	andeq	r0, r0, r0
+0x007064e8:	andeq	r0, r0, r0
+0x007064ec:	andeq	r0, r0, r0
+0x007064f0:	andeq	r0, r0, r0
+0x007064f4:	andeq	r0, r0, r0
+0x007064f8:	andeq	r0, r0, r0
+0x007064fc:	andeq	r0, r0, r0
+0x00706500:	andeq	r0, r0, r0
+0x00706504:	andeq	r0, r0, r0
+0x00706508:	andeq	r0, r0, r0
+0x0070650c:	andeq	r0, r0, r0
+0x00706510:	andeq	r0, r0, r0
+0x00706514:	andeq	r0, r0, r0
+0x00706518:	andeq	r0, r0, r0
+0x0070651c:	andeq	r0, r0, r0
+0x00706520:	andeq	r0, r0, r0
+0x00706524:	andeq	r0, r0, r0
+0x00706528:	andeq	r0, r0, r0
+0x0070652c:	andeq	r0, r0, r0
+0x00706530:	andeq	r0, r0, r0
+0x00706534:	andeq	r0, r0, r0
+0x00706538:	andeq	r0, r0, r0
+0x0070653c:	andeq	r0, r0, r0
+0x00706540:	andeq	r0, r0, r0
+0x00706544:	andeq	r0, r0, r0
+0x00706548:	andeq	r0, r0, r0
+0x0070654c:	andeq	r0, r0, r0
+0x00706550:	andeq	r0, r0, r0
+0x00706554:	andeq	r0, r0, r0
+0x00706558:	andeq	r0, r0, r0
+0x0070655c:	andeq	r0, r0, r0
+0x00706560:	andeq	r0, r0, r0
+0x00706564:	andeq	r0, r0, r0
+0x00706568:	andeq	r0, r0, r0
+0x0070656c:	andeq	r0, r0, r0
+0x00706570:	andeq	r0, r0, r0
+0x00706574:	andeq	r0, r0, r0
+0x00706578:	andeq	r0, r0, r0
+0x0070657c:	andeq	r0, r0, r0
+0x00706580:	andeq	r0, r0, r0
+0x00706584:	andeq	r0, r0, r0
+0x00706588:	andeq	r0, r0, r0
+0x0070658c:	andeq	r0, r0, r0
+0x00706590:	andeq	r0, r0, r0
+0x00706594:	andeq	r0, r0, r0
+0x00706598:	andeq	r0, r0, r0
+0x0070659c:	andeq	r0, r0, r0
+0x007065a0:	andeq	r0, r0, r0
+0x007065a4:	andeq	r0, r0, r0
+0x007065a8:	andeq	r0, r0, r0
+0x007065ac:	andeq	r0, r0, r0
+0x007065b0:	andeq	r0, r0, r0
+0x007065b4:	andeq	r0, r0, r0
+0x007065b8:	andeq	r0, r0, r0
+0x007065bc:	andeq	r0, r0, r0
+0x007065c0:	andeq	r0, r0, r0
+0x007065c4:	andeq	r0, r0, r0
+0x007065c8:	andeq	r0, r0, r0
+0x007065cc:	andeq	r0, r0, r0
+0x007065d0:	andeq	r0, r0, r0
+0x007065d4:	andeq	r0, r0, r0
+0x007065d8:	andeq	r0, r0, r0
+0x007065dc:	andeq	r0, r0, r0
+0x007065e0:	andeq	r0, r0, r0
+0x007065e4:	andeq	r0, r0, r0
+0x007065e8:	andeq	r0, r0, r0
+0x007065ec:	andeq	r0, r0, r0
+0x007065f0:	andeq	r0, r0, r0
+0x007065f4:	andeq	r0, r0, r0
+0x007065f8:	andeq	r0, r0, r0
+0x007065fc:	andeq	r0, r0, r0
+0x00706600:	andeq	r0, r0, r0
+0x00706604:	andeq	r0, r0, r0
+0x00706608:	andeq	r0, r0, r0
+0x0070660c:	andeq	r0, r0, r0
+0x00706610:	andeq	r0, r0, r0
+0x00706614:	andeq	r0, r0, r0
+0x00706618:	andeq	r0, r0, r0
+0x0070661c:	andeq	r0, r0, r0
+0x00706620:	andeq	r0, r0, r0
+0x00706624:	andeq	r0, r0, r0
+0x00706628:	andeq	r0, r0, r0
+0x0070662c:	andeq	r0, r0, r0
+0x00706630:	andeq	r0, r0, r0
+0x00706634:	andeq	r0, r0, r0
+0x00706638:	andeq	r0, r0, r0
+0x0070663c:	andeq	r0, r0, r0
+0x00706640:	andeq	r0, r0, r0
+0x00706644:	andeq	r0, r0, r0
+0x00706648:	andeq	r0, r0, r0
+0x0070664c:	andeq	r0, r0, r0
+0x00706650:	andeq	r0, r0, r0
+0x00706654:	andeq	r0, r0, r0
+0x00706658:	andeq	r0, r0, r0
+0x0070665c:	andeq	r0, r0, r0
+0x00706660:	andeq	r0, r0, r0
+0x00706664:	andeq	r0, r0, r0
+0x00706668:	andeq	r0, r0, r0
+0x0070666c:	andeq	r0, r0, r0
+0x00706670:	andeq	r0, r0, r0
+0x00706674:	andeq	r0, r0, r0
+0x00706678:	andeq	r0, r0, r0
+0x0070667c:	andeq	r0, r0, r0
+0x00706680:	andeq	r0, r0, r0
+0x00706684:	andeq	r0, r0, r0
+0x00706688:	andeq	r0, r0, r0
+0x0070668c:	andeq	r0, r0, r0
+0x00706690:	andeq	r0, r0, r0
+0x00706694:	andeq	r0, r0, r0
+0x00706698:	andeq	r0, r0, r0
+0x0070669c:	andeq	r0, r0, r0
+0x007066a0:	andeq	r0, r0, r0
+0x007066a4:	andeq	r0, r0, r0
+0x007066a8:	andeq	r0, r0, r0
+0x007066ac:	andeq	r0, r0, r0
+0x007066b0:	andeq	r0, r0, r0
+0x007066b4:	andeq	r0, r0, r0
+0x007066b8:	andeq	r0, r0, r0
+0x007066bc:	andeq	r0, r0, r0
+0x007066c0:	andeq	r0, r0, r0
+0x007066c4:	andeq	r0, r0, r0
+0x007066c8:	andeq	r0, r0, r0
+0x007066cc:	andeq	r0, r0, r0
+0x007066d0:	andeq	r0, r0, r0
+0x007066d4:	andeq	r0, r0, r0
+0x007066d8:	andeq	r0, r0, r0
+0x007066dc:	andeq	r0, r0, r0
+0x007066e0:	andeq	r0, r0, r0
+0x007066e4:	andeq	r0, r0, r0
+0x007066e8:	andeq	r0, r0, r0
+0x007066ec:	andeq	r0, r0, r0
+0x007066f0:	andeq	r0, r0, r0
+0x007066f4:	andeq	r0, r0, r0
+0x007066f8:	andeq	r0, r0, r0
+0x007066fc:	andeq	r0, r0, r0
+0x00706700:	andeq	r0, r0, r0
+0x00706704:	andeq	r0, r0, r0
+0x00706708:	andeq	r0, r0, r0
+0x0070670c:	andeq	r0, r0, r0
+0x00706710:	andeq	r0, r0, r0
+0x00706714:	andeq	r0, r0, r0
+0x00706718:	andeq	r0, r0, r0
+0x0070671c:	andeq	r0, r0, r0
+0x00706720:	andeq	r0, r0, r0
+0x00706724:	andeq	r0, r0, r0
+0x00706728:	andeq	r0, r0, r0
+0x0070672c:	andeq	r0, r0, r0
+0x00706730:	andeq	r0, r0, r0
+0x00706734:	andeq	r0, r0, r0
+0x00706738:	andeq	r0, r0, r0
+0x0070673c:	andeq	r0, r0, r0
+0x00706740:	andeq	r0, r0, r0
+0x00706744:	andeq	r0, r0, r0
+0x00706748:	andeq	r0, r0, r0
+0x0070674c:	andeq	r0, r0, r0
+0x00706750:	andeq	r0, r0, r0
+0x00706754:	andeq	r0, r0, r0
+0x00706758:	andeq	r0, r0, r0
+0x0070675c:	andeq	r0, r0, r0
+0x00706760:	andeq	r0, r0, r0
+0x00706764:	andeq	r0, r0, r0
+0x00706768:	andeq	r0, r0, r0
+0x0070676c:	andeq	r0, r0, r0
+0x00706770:	andeq	r0, r0, r0
+0x00706774:	andeq	r0, r0, r0
+0x00706778:	andeq	r0, r0, r0
+0x0070677c:	andeq	r0, r0, r0
+0x00706780:	andeq	r0, r0, r0
+0x00706784:	andeq	r0, r0, r0
+0x00706788:	andeq	r0, r0, r0
+0x0070678c:	andeq	r0, r0, r0
+0x00706790:	andeq	r0, r0, r0
+0x00706794:	andeq	r0, r0, r0
+0x00706798:	andeq	r0, r0, r0
+0x0070679c:	andeq	r0, r0, r0
+0x007067a0:	andeq	r0, r0, r0
+0x007067a4:	andeq	r0, r0, r0
+0x007067a8:	andeq	r0, r0, r0
+0x007067ac:	andeq	r0, r0, r0
+0x007067b0:	andeq	r0, r0, r0
+0x007067b4:	andeq	r0, r0, r0
+0x007067b8:	andeq	r0, r0, r0
+0x007067bc:	andeq	r0, r0, r0
+0x007067c0:	andeq	r0, r0, r0
+0x007067c4:	andeq	r0, r0, r0
+0x007067c8:	andeq	r0, r0, r0
+0x007067cc:	andeq	r0, r0, r0
+0x007067d0:	andeq	r0, r0, r0
+0x007067d4:	andeq	r0, r0, r0
+0x007067d8:	andeq	r0, r0, r0
+0x007067dc:	andeq	r0, r0, r0
+0x007067e0:	andeq	r0, r0, r0
+0x007067e4:	andeq	r0, r0, r0
+0x007067e8:	andeq	r0, r0, r0
+0x007067ec:	andeq	r0, r0, r0
+0x007067f0:	andeq	r0, r0, r0
+0x007067f4:	andeq	r0, r0, r0
+0x007067f8:	andeq	r0, r0, r0
+0x007067fc:	andeq	r0, r0, r0
+0x00706800:	andeq	r0, r0, r0
+0x00706804:	andeq	r0, r0, r0
+0x00706808:	andeq	r0, r0, r0
+0x0070680c:	andeq	r0, r0, r0
+0x00706810:	andeq	r0, r0, r0
+0x00706814:	andeq	r0, r0, r0
+0x00706818:	andeq	r0, r0, r0
+0x0070681c:	andeq	r0, r0, r0
+0x00706820:	andeq	r0, r0, r0
+0x00706824:	andeq	r0, r0, r0
+0x00706828:	andeq	r0, r0, r0
+0x0070682c:	andeq	r0, r0, r0
+0x00706830:	andeq	r0, r0, r0
+0x00706834:	andeq	r0, r0, r0
+0x00706838:	andeq	r0, r0, r0
+0x0070683c:	andeq	r0, r0, r0
+0x00706840:	andeq	r0, r0, r0
+0x00706844:	andeq	r0, r0, r0
+0x00706848:	andeq	r0, r0, r0
+0x0070684c:	andeq	r0, r0, r0
+0x00706850:	andeq	r0, r0, r0
+0x00706854:	andeq	r0, r0, r0
+0x00706858:	andeq	r0, r0, r0
+0x0070685c:	andeq	r0, r0, r0
+0x00706860:	andeq	r0, r0, r0
+0x00706864:	andeq	r0, r0, r0
+0x00706868:	andeq	r0, r0, r0
+0x0070686c:	andeq	r0, r0, r0
+0x00706870:	andeq	r0, r0, r0
+0x00706874:	andeq	r0, r0, r0
+0x00706878:	andeq	r0, r0, r0
+0x0070687c:	andeq	r0, r0, r0
+0x00706880:	andeq	r0, r0, r0
+0x00706884:	andeq	r0, r0, r0
+0x00706888:	andeq	r0, r0, r0
+0x0070688c:	andeq	r0, r0, r0
+0x00706890:	andeq	r0, r0, r0
+0x00706894:	andeq	r0, r0, r0
+0x00706898:	andeq	r0, r0, r0
+0x0070689c:	andeq	r0, r0, r0
+0x007068a0:	andeq	r0, r0, r0
+0x007068a4:	andeq	r0, r0, r0
+0x007068a8:	andeq	r0, r0, r0
+0x007068ac:	andeq	r0, r0, r0
+0x007068b0:	andeq	r0, r0, r0
+0x007068b4:	andeq	r0, r0, r0
+0x007068b8:	andeq	r0, r0, r0
+0x007068bc:	andeq	r0, r0, r0
+0x007068c0:	andeq	r0, r0, r0
+0x007068c4:	andeq	r0, r0, r0
+0x007068c8:	andeq	r0, r0, r0
+0x007068cc:	andeq	r0, r0, r0
+0x007068d0:	andeq	r0, r0, r0
+0x007068d4:	andeq	r0, r0, r0
+0x007068d8:	andeq	r0, r0, r0
+0x007068dc:	andeq	r0, r0, r0
+0x007068e0:	andeq	r0, r0, r0
+0x007068e4:	andeq	r0, r0, r0
+0x007068e8:	andeq	r0, r0, r0
+0x007068ec:	andeq	r0, r0, r0
+0x007068f0:	andeq	r0, r0, r0
+0x007068f4:	andeq	r0, r0, r0
+0x007068f8:	andeq	r0, r0, r0
+0x007068fc:	andeq	r0, r0, r0
+0x00706900:	andeq	r0, r0, r0
+0x00706904:	andeq	r0, r0, r0
+0x00706908:	andeq	r0, r0, r0
+0x0070690c:	andeq	r0, r0, r0
+0x00706910:	andeq	r0, r0, r0
+0x00706914:	andeq	r0, r0, r0
+0x00706918:	andeq	r0, r0, r0
+0x0070691c:	andeq	r0, r0, r0
+0x00706920:	andeq	r0, r0, r0
+0x00706924:	andeq	r0, r0, r0
+0x00706928:	andeq	r0, r0, r0
+0x0070692c:	andeq	r0, r0, r0
+0x00706930:	andeq	r0, r0, r0
+0x00706934:	andeq	r0, r0, r0
+0x00706938:	andeq	r0, r0, r0
+0x0070693c:	andeq	r0, r0, r0
+0x00706940:	andeq	r0, r0, r0
+0x00706944:	andeq	r0, r0, r0
+0x00706948:	andeq	r0, r0, r0
+0x0070694c:	andeq	r0, r0, r0
+0x00706950:	andeq	r0, r0, r0
+0x00706954:	andeq	r0, r0, r0
+0x00706958:	andeq	r0, r0, r0
+0x0070695c:	andeq	r0, r0, r0
+0x00706960:	andeq	r0, r0, r0
+0x00706964:	andeq	r0, r0, r0
+0x00706968:	andeq	r0, r0, r0
+0x0070696c:	andeq	r0, r0, r0
+0x00706970:	andeq	r0, r0, r0
+0x00706974:	andeq	r0, r0, r0
+0x00706978:	andeq	r0, r0, r0
+0x0070697c:	andeq	r0, r0, r0
+0x00706980:	andeq	r0, r0, r0
+0x00706984:	andeq	r0, r0, r0
+0x00706988:	andeq	r0, r0, r0
+0x0070698c:	andeq	r0, r0, r0
+0x00706990:	andeq	r0, r0, r0
+0x00706994:	andeq	r0, r0, r0
+0x00706998:	andeq	r0, r0, r0
+0x0070699c:	andeq	r0, r0, r0
+0x007069a0:	andeq	r0, r0, r0
+0x007069a4:	andeq	r0, r0, r0
+0x007069a8:	andeq	r0, r0, r0
+0x007069ac:	andeq	r0, r0, r0
+0x007069b0:	andeq	r0, r0, r0
+0x007069b4:	andeq	r0, r0, r0
+0x007069b8:	andeq	r0, r0, r0
+0x007069bc:	andeq	r0, r0, r0
+0x007069c0:	andeq	r0, r0, r0
+0x007069c4:	andeq	r0, r0, r0
+0x007069c8:	andeq	r0, r0, r0
+0x007069cc:	andeq	r0, r0, r0
+0x007069d0:	andeq	r0, r0, r0
+0x007069d4:	andeq	r0, r0, r0
+0x007069d8:	andeq	r0, r0, r0
+0x007069dc:	andeq	r0, r0, r0
+0x007069e0:	andeq	r0, r0, r0
+0x007069e4:	andeq	r0, r0, r0
+0x007069e8:	andeq	r0, r0, r0
+0x007069ec:	andeq	r0, r0, r0
+0x007069f0:	andeq	r0, r0, r0
+0x007069f4:	andeq	r0, r0, r0
+0x007069f8:	andeq	r0, r0, r0
+0x007069fc:	andeq	r0, r0, r0
+0x00706a00:	andeq	r0, r0, r0
+0x00706a04:	andeq	r0, r0, r0
+0x00706a08:	andeq	r0, r0, r0
+0x00706a0c:	andeq	r0, r0, r0
+0x00706a10:	andeq	r0, r0, r0
+0x00706a14:	andeq	r0, r0, r0
+0x00706a18:	andeq	r0, r0, r0
+0x00706a1c:	andeq	r0, r0, r0
+0x00706a20:	andeq	r0, r0, r0
+0x00706a24:	andeq	r0, r0, r0
+0x00706a28:	andeq	r0, r0, r0
+0x00706a2c:	andeq	r0, r0, r0
+0x00706a30:	andeq	r0, r0, r0
+0x00706a34:	andeq	r0, r0, r0
+0x00706a38:	andeq	r0, r0, r0
+0x00706a3c:	andeq	r0, r0, r0
+0x00706a40:	andeq	r0, r0, r0
+0x00706a44:	andeq	r0, r0, r0
+0x00706a48:	andeq	r0, r0, r0
+0x00706a4c:	andeq	r0, r0, r0
+0x00706a50:	andeq	r0, r0, r0
+0x00706a54:	andeq	r0, r0, r0
+0x00706a58:	andeq	r0, r0, r0
+0x00706a5c:	andeq	r0, r0, r0
+0x00706a60:	andeq	r0, r0, r0
+0x00706a64:	andeq	r0, r0, r0
+0x00706a68:	andeq	r0, r0, r0
+0x00706a6c:	andeq	r0, r0, r0
+0x00706a70:	andeq	r0, r0, r0
+0x00706a74:	andeq	r0, r0, r0
+0x00706a78:	andeq	r0, r0, r0
+0x00706a7c:	andeq	r0, r0, r0
+0x00706a80:	andeq	r0, r0, r0
+0x00706a84:	andeq	r0, r0, r0
+0x00706a88:	andeq	r0, r0, r0
+0x00706a8c:	andeq	r0, r0, r0
+0x00706a90:	andeq	r0, r0, r0
+0x00706a94:	andeq	r0, r0, r0
+0x00706a98:	andeq	r0, r0, r0
+0x00706a9c:	andeq	r0, r0, r0
+0x00706aa0:	andeq	r0, r0, r0
+0x00706aa4:	andeq	r0, r0, r0
+0x00706aa8:	andeq	r0, r0, r0
+0x00706aac:	andeq	r0, r0, r0
+0x00706ab0:	andeq	r0, r0, r0
+0x00706ab4:	andeq	r0, r0, r0
+0x00706ab8:	andeq	r0, r0, r0
+0x00706abc:	andeq	r0, r0, r0
+0x00706ac0:	andeq	r0, r0, r0
+0x00706ac4:	andeq	r0, r0, r0
+0x00706ac8:	andeq	r0, r0, r0
+0x00706acc:	andeq	r0, r0, r0
+0x00706ad0:	andeq	r0, r0, r0
+0x00706ad4:	andeq	r0, r0, r0
+0x00706ad8:	andeq	r0, r0, r0
+0x00706adc:	andeq	r0, r0, r0
+0x00706ae0:	andeq	r0, r0, r0
+0x00706ae4:	andeq	r0, r0, r0
+0x00706ae8:	andeq	r0, r0, r0
+0x00706aec:	andeq	r0, r0, r0
+0x00706af0:	andeq	r0, r0, r0
+0x00706af4:	andeq	r0, r0, r0
+0x00706af8:	andeq	r0, r0, r0
+0x00706afc:	andeq	r0, r0, r0
+0x00706b00:	andeq	r0, r0, r0
+0x00706b04:	andeq	r0, r0, r0
+0x00706b08:	andeq	r0, r0, r0
+0x00706b0c:	andeq	r0, r0, r0
+0x00706b10:	andeq	r0, r0, r0
+0x00706b14:	andeq	r0, r0, r0
+0x00706b18:	andeq	r0, r0, r0
+0x00706b1c:	andeq	r0, r0, r0
+0x00706b20:	andeq	r0, r0, r0
+0x00706b24:	andeq	r0, r0, r0
+0x00706b28:	andeq	r0, r0, r0
+0x00706b2c:	andeq	r0, r0, r0
+0x00706b30:	andeq	r0, r0, r0
+0x00706b34:	andeq	r0, r0, r0
+0x00706b38:	andeq	r0, r0, r0
+0x00706b3c:	andeq	r0, r0, r0
+0x00706b40:	andeq	r0, r0, r0
+0x00706b44:	andeq	r0, r0, r0
+0x00706b48:	andeq	r0, r0, r0
+0x00706b4c:	andeq	r0, r0, r0
+0x00706b50:	andeq	r0, r0, r0
+0x00706b54:	andeq	r0, r0, r0
+0x00706b58:	andeq	r0, r0, r0
+0x00706b5c:	andeq	r0, r0, r0
+0x00706b60:	andeq	r0, r0, r0
+0x00706b64:	andeq	r0, r0, r0
+0x00706b68:	andeq	r0, r0, r0
+0x00706b6c:	andeq	r0, r0, r0
+0x00706b70:	andeq	r0, r0, r0
+0x00706b74:	andeq	r0, r0, r0
+0x00706b78:	andeq	r0, r0, r0
+0x00706b7c:	andeq	r0, r0, r0
+0x00706b80:	andeq	r0, r0, r0
+0x00706b84:	andeq	r0, r0, r0
+0x00706b88:	andeq	r0, r0, r0
+0x00706b8c:	andeq	r0, r0, r0
+0x00706b90:	andeq	r0, r0, r0
+0x00706b94:	andeq	r0, r0, r0
+0x00706b98:	andeq	r0, r0, r0
+0x00706b9c:	andeq	r0, r0, r0
+0x00706ba0:	andeq	r0, r0, r0
+0x00706ba4:	andeq	r0, r0, r0
+0x00706ba8:	andeq	r0, r0, r0
+0x00706bac:	andeq	r0, r0, r0
+0x00706bb0:	andeq	r0, r0, r0
+0x00706bb4:	andeq	r0, r0, r0
+0x00706bb8:	andeq	r0, r0, r0
+0x00706bbc:	andeq	r0, r0, r0
+0x00706bc0:	andeq	r0, r0, r0
+0x00706bc4:	andeq	r0, r0, r0
+0x00706bc8:	andeq	r0, r0, r0
+0x00706bcc:	andeq	r0, r0, r0
+0x00706bd0:	andeq	r0, r0, r0
+0x00706bd4:	andeq	r0, r0, r0
+0x00706bd8:	andeq	r0, r0, r0
+0x00706bdc:	andeq	r0, r0, r0
+0x00706be0:	andeq	r0, r0, r0
+0x00706be4:	andeq	r0, r0, r0
+0x00706be8:	andeq	r0, r0, r0
+0x00706bec:	andeq	r0, r0, r0
+0x00706bf0:	andeq	r0, r0, r0
+0x00706bf4:	andeq	r0, r0, r0
+0x00706bf8:	andeq	r0, r0, r0
+0x00706bfc:	andeq	r0, r0, r0
+0x00706c00:	andeq	r0, r0, r0
+0x00706c04:	andeq	r0, r0, r0
+0x00706c08:	andeq	r0, r0, r0
+0x00706c0c:	andeq	r0, r0, r0
+0x00706c10:	andeq	r0, r0, r0
+0x00706c14:	andeq	r0, r0, r0
+0x00706c18:	andeq	r0, r0, r0
+0x00706c1c:	andeq	r0, r0, r0
+0x00706c20:	andeq	r0, r0, r0
+0x00706c24:	andeq	r0, r0, r0
+0x00706c28:	andeq	r0, r0, r0
+0x00706c2c:	andeq	r0, r0, r0
+0x00706c30:	andeq	r0, r0, r0
+0x00706c34:	andeq	r0, r0, r0
+0x00706c38:	andeq	r0, r0, r0
+0x00706c3c:	andeq	r0, r0, r0
+0x00706c40:	andeq	r0, r0, r0
+0x00706c44:	andeq	r0, r0, r0
+0x00706c48:	andeq	r0, r0, r0
+0x00706c4c:	andeq	r0, r0, r0
+0x00706c50:	andeq	r0, r0, r0
+0x00706c54:	andeq	r0, r0, r0
+0x00706c58:	andeq	r0, r0, r0
+0x00706c5c:	andeq	r0, r0, r0
+0x00706c60:	andeq	r0, r0, r0
+0x00706c64:	andeq	r0, r0, r0
+0x00706c68:	andeq	r0, r0, r0
+0x00706c6c:	andeq	r0, r0, r0
+0x00706c70:	andeq	r0, r0, r0
+0x00706c74:	andeq	r0, r0, r0
+0x00706c78:	andeq	r0, r0, r0
+0x00706c7c:	andeq	r0, r0, r0
+0x00706c80:	andeq	r0, r0, r0
+0x00706c84:	andeq	r0, r0, r0
+0x00706c88:	andeq	r0, r0, r0
+0x00706c8c:	andeq	r0, r0, r0
+0x00706c90:	andeq	r0, r0, r0
+0x00706c94:	andeq	r0, r0, r0
+0x00706c98:	andeq	r0, r0, r0
+0x00706c9c:	andeq	r0, r0, r0
+0x00706ca0:	andeq	r0, r0, r0
+0x00706ca4:	andeq	r0, r0, r0
+0x00706ca8:	andeq	r0, r0, r0
+0x00706cac:	andeq	r0, r0, r0
+0x00706cb0:	andeq	r0, r0, r0
+0x00706cb4:	andeq	r0, r0, r0
+0x00706cb8:	andeq	r0, r0, r0
+0x00706cbc:	andeq	r0, r0, r0
+0x00706cc0:	andeq	r0, r0, r0
+0x00706cc4:	andeq	r0, r0, r0
+0x00706cc8:	andeq	r0, r0, r0
+0x00706ccc:	andeq	r0, r0, r0
+0x00706cd0:	andeq	r0, r0, r0
+0x00706cd4:	andeq	r0, r0, r0
+0x00706cd8:	andeq	r0, r0, r0
+0x00706cdc:	andeq	r0, r0, r0
+0x00706ce0:	andeq	r0, r0, r0
+0x00706ce4:	andeq	r0, r0, r0
+0x00706ce8:	andeq	r0, r0, r0
+0x00706cec:	andeq	r0, r0, r0
+0x00706cf0:	andeq	r0, r0, r0
+0x00706cf4:	andeq	r0, r0, r0
+0x00706cf8:	andeq	r0, r0, r0
+0x00706cfc:	andeq	r0, r0, r0
+0x00706d00:	andeq	r0, r0, r0
+0x00706d04:	andeq	r0, r0, r0
+0x00706d08:	andeq	r0, r0, r0
+0x00706d0c:	andeq	r0, r0, r0
+0x00706d10:	andeq	r0, r0, r0
+0x00706d14:	andeq	r0, r0, r0
+0x00706d18:	andeq	r0, r0, r0
+0x00706d1c:	andeq	r0, r0, r0
+0x00706d20:	andeq	r0, r0, r0
+0x00706d24:	andeq	r0, r0, r0
+0x00706d28:	andeq	r0, r0, r0
+0x00706d2c:	andeq	r0, r0, r0
+0x00706d30:	andeq	r0, r0, r0
+0x00706d34:	andeq	r0, r0, r0
+0x00706d38:	andeq	r0, r0, r0
+0x00706d3c:	andeq	r0, r0, r0
+0x00706d40:	andeq	r0, r0, r0
+0x00706d44:	andeq	r0, r0, r0
+0x00706d48:	andeq	r0, r0, r0
+0x00706d4c:	andeq	r0, r0, r0
+0x00706d50:	andeq	r0, r0, r0
+0x00706d54:	andeq	r0, r0, r0
+0x00706d58:	andeq	r0, r0, r0
+0x00706d5c:	andeq	r0, r0, r0
+0x00706d60:	andeq	r0, r0, r0
+0x00706d64:	andeq	r0, r0, r0
+0x00706d68:	andeq	r0, r0, r0
+0x00706d6c:	andeq	r0, r0, r0
+0x00706d70:	andeq	r0, r0, r0
+0x00706d74:	andeq	r0, r0, r0
+0x00706d78:	andeq	r0, r0, r0
+0x00706d7c:	andeq	r0, r0, r0
+0x00706d80:	andeq	r0, r0, r0
+0x00706d84:	andeq	r0, r0, r0
+0x00706d88:	andeq	r0, r0, r0
+0x00706d8c:	andeq	r0, r0, r0
+0x00706d90:	andeq	r0, r0, r0
+0x00706d94:	andeq	r0, r0, r0
+0x00706d98:	andeq	r0, r0, r0
+0x00706d9c:	andeq	r0, r0, r0
+0x00706da0:	andeq	r0, r0, r0
+0x00706da4:	andeq	r0, r0, r0
+0x00706da8:	andeq	r0, r0, r0
+0x00706dac:	andeq	r0, r0, r0
+0x00706db0:	andeq	r0, r0, r0
+0x00706db4:	andeq	r0, r0, r0
+0x00706db8:	andeq	r0, r0, r0
+0x00706dbc:	andeq	r0, r0, r0
+0x00706dc0:	andeq	r0, r0, r0
+0x00706dc4:	andeq	r0, r0, r0
+0x00706dc8:	andeq	r0, r0, r0
+0x00706dcc:	andeq	r0, r0, r0
+0x00706dd0:	andeq	r0, r0, r0
+0x00706dd4:	andeq	r0, r0, r0
+0x00706dd8:	andeq	r0, r0, r0
+0x00706ddc:	andeq	r0, r0, r0
+0x00706de0:	andeq	r0, r0, r0
+0x00706de4:	andeq	r0, r0, r0
+0x00706de8:	andeq	r0, r0, r0
+0x00706dec:	andeq	r0, r0, r0
+0x00706df0:	andeq	r0, r0, r0
+0x00706df4:	andeq	r0, r0, r0
+0x00706df8:	andeq	r0, r0, r0
+0x00706dfc:	andeq	r0, r0, r0
+0x00706e00:	andeq	r0, r0, r0
+0x00706e04:	andeq	r0, r0, r0
+0x00706e08:	andeq	r0, r0, r0
+0x00706e0c:	andeq	r0, r0, r0
+0x00706e10:	andeq	r0, r0, r0
+0x00706e14:	andeq	r0, r0, r0
+0x00706e18:	andeq	r0, r0, r0
+0x00706e1c:	andeq	r0, r0, r0
+0x00706e20:	andeq	r0, r0, r0
+0x00706e24:	andeq	r0, r0, r0
+0x00706e28:	andeq	r0, r0, r0
+0x00706e2c:	andeq	r0, r0, r0
+0x00706e30:	andeq	r0, r0, r0
+0x00706e34:	andeq	r0, r0, r0
+0x00706e38:	andeq	r0, r0, r0
+0x00706e3c:	andeq	r0, r0, r0
+0x00706e40:	andeq	r0, r0, r0
+0x00706e44:	andeq	r0, r0, r0
+0x00706e48:	andeq	r0, r0, r0
+0x00706e4c:	andeq	r0, r0, r0
+0x00706e50:	andeq	r0, r0, r0
+0x00706e54:	andeq	r0, r0, r0
+0x00706e58:	andeq	r0, r0, r0
+0x00706e5c:	andeq	r0, r0, r0
+0x00706e60:	andeq	r0, r0, r0
+0x00706e64:	andeq	r0, r0, r0
+0x00706e68:	andeq	r0, r0, r0
+0x00706e6c:	andeq	r0, r0, r0
+0x00706e70:	andeq	r0, r0, r0
+0x00706e74:	andeq	r0, r0, r0
+0x00706e78:	andeq	r0, r0, r0
+0x00706e7c:	andeq	r0, r0, r0
+0x00706e80:	andeq	r0, r0, r0
+0x00706e84:	andeq	r0, r0, r0
+0x00706e88:	andeq	r0, r0, r0
+0x00706e8c:	andeq	r0, r0, r0
+0x00706e90:	andeq	r0, r0, r0
+0x00706e94:	andeq	r0, r0, r0
+0x00706e98:	andeq	r0, r0, r0
+0x00706e9c:	andeq	r0, r0, r0
+0x00706ea0:	andeq	r0, r0, r0
+0x00706ea4:	andeq	r0, r0, r0
+0x00706ea8:	andeq	r0, r0, r0
+0x00706eac:	andeq	r0, r0, r0
+0x00706eb0:	andeq	r0, r0, r0
+0x00706eb4:	andeq	r0, r0, r0
+0x00706eb8:	andeq	r0, r0, r0
+0x00706ebc:	andeq	r0, r0, r0
+0x00706ec0:	andeq	r0, r0, r0
+0x00706ec4:	andeq	r0, r0, r0
+0x00706ec8:	andeq	r0, r0, r0
+0x00706ecc:	andeq	r0, r0, r0
+0x00706ed0:	andeq	r0, r0, r0
+0x00706ed4:	andeq	r0, r0, r0
+0x00706ed8:	andeq	r0, r0, r0
+0x00706edc:	andeq	r0, r0, r0
+0x00706ee0:	andeq	r0, r0, r0
+0x00706ee4:	andeq	r0, r0, r0
+0x00706ee8:	andeq	r0, r0, r0
+0x00706eec:	andeq	r0, r0, r0
+0x00706ef0:	andeq	r0, r0, r0
+0x00706ef4:	andeq	r0, r0, r0
+0x00706ef8:	andeq	r0, r0, r0
+0x00706efc:	andeq	r0, r0, r0
+0x00706f00:	andeq	r0, r0, r0
+0x00706f04:	andeq	r0, r0, r0
+0x00706f08:	andeq	r0, r0, r0
+0x00706f0c:	andeq	r0, r0, r0
+0x00706f10:	andeq	r0, r0, r0
+0x00706f14:	andeq	r0, r0, r0
+0x00706f18:	andeq	r0, r0, r0
+0x00706f1c:	andeq	r0, r0, r0
+0x00706f20:	andeq	r0, r0, r0
+0x00706f24:	andeq	r0, r0, r0
+0x00706f28:	andeq	r0, r0, r0
+0x00706f2c:	andeq	r0, r0, r0
+0x00706f30:	andeq	r0, r0, r0
+0x00706f34:	andeq	r0, r0, r0
+0x00706f38:	andeq	r0, r0, r0
+0x00706f3c:	andeq	r0, r0, r0
+0x00706f40:	andeq	r0, r0, r0
+0x00706f44:	andeq	r0, r0, r0
+0x00706f48:	andeq	r0, r0, r0
+0x00706f4c:	andeq	r0, r0, r0
+0x00706f50:	andeq	r0, r0, r0
+0x00706f54:	andeq	r0, r0, r0
+0x00706f58:	andeq	r0, r0, r0
+0x00706f5c:	andeq	r0, r0, r0
+0x00706f60:	andeq	r0, r0, r0
+0x00706f64:	andeq	r0, r0, r0
+0x00706f68:	andeq	r0, r0, r0
+0x00706f6c:	andeq	r0, r0, r0
+0x00706f70:	andeq	r0, r0, r0
+0x00706f74:	andeq	r0, r0, r0
+0x00706f78:	andeq	r0, r0, r0
+0x00706f7c:	andeq	r0, r0, r0
+0x00706f80:	andeq	r0, r0, r0
+0x00706f84:	andeq	r0, r0, r0
+0x00706f88:	andeq	r0, r0, r0
+0x00706f8c:	andeq	r0, r0, r0
+0x00706f90:	andeq	r0, r0, r0
+0x00706f94:	andeq	r0, r0, r0
+0x00706f98:	andeq	r0, r0, r0
+0x00706f9c:	andeq	r0, r0, r0
+0x00706fa0:	andeq	r0, r0, r0
+0x00706fa4:	andeq	r0, r0, r0
+0x00706fa8:	andeq	r0, r0, r0
+0x00706fac:	andeq	r0, r0, r0
+0x00706fb0:	andeq	r0, r0, r0
+0x00706fb4:	andeq	r0, r0, r0
+0x00706fb8:	andeq	r0, r0, r0
+0x00706fbc:	andeq	r0, r0, r0
+0x00706fc0:	andeq	r0, r0, r0
+0x00706fc4:	andeq	r0, r0, r0
+0x00706fc8:	andeq	r0, r0, r0
+0x00706fcc:	andeq	r0, r0, r0
+0x00706fd0:	andeq	r0, r0, r0
+0x00706fd4:	andeq	r0, r0, r0
+0x00706fd8:	andeq	r0, r0, r0
+0x00706fdc:	andeq	r0, r0, r0
+0x00706fe0:	andeq	r0, r0, r0
+0x00706fe4:	andeq	r0, r0, r0
+0x00706fe8:	andeq	r0, r0, r0
+0x00706fec:	andeq	r0, r0, r0
+0x00706ff0:	andeq	r0, r0, r0
+0x00706ff4:	andeq	r0, r0, r0
+0x00706ff8:	andeq	r0, r0, r0
+0x00706ffc:	andeq	r0, r0, r0
+0x00707000:	andeq	r0, r0, r0
+0x00707004:	andeq	r0, r0, r0
+0x00707008:	andeq	r0, r0, r0
+0x0070700c:	andeq	r0, r0, r0
+0x00707010:	andeq	r0, r0, r0
+0x00707014:	andeq	r0, r0, r0
+0x00707018:	andeq	r0, r0, r0
+0x0070701c:	andeq	r0, r0, r0
+0x00707020:	andeq	r0, r0, r0
+0x00707024:	andeq	r0, r0, r0
+0x00707028:	andeq	r0, r0, r0
+0x0070702c:	andeq	r0, r0, r0
+0x00707030:	andeq	r0, r0, r0
+0x00707034:	andeq	r0, r0, r0
+0x00707038:	andeq	r0, r0, r0
+0x0070703c:	andeq	r0, r0, r0
+0x00707040:	andeq	r0, r0, r0
+0x00707044:	andeq	r0, r0, r0
+0x00707048:	andeq	r0, r0, r0
+0x0070704c:	andeq	r0, r0, r0
+0x00707050:	andeq	r0, r0, r0
+0x00707054:	andeq	r0, r0, r0
+0x00707058:	andeq	r0, r0, r0
+0x0070705c:	andeq	r0, r0, r0
+0x00707060:	andeq	r0, r0, r0
+0x00707064:	andeq	r0, r0, r0
+0x00707068:	andeq	r0, r0, r0
+0x0070706c:	andeq	r0, r0, r0
+0x00707070:	andeq	r0, r0, r0
+0x00707074:	andeq	r0, r0, r0
+0x00707078:	andeq	r0, r0, r0
+0x0070707c:	andeq	r0, r0, r0
+0x00707080:	andeq	r0, r0, r0
+0x00707084:	andeq	r0, r0, r0
+0x00707088:	andeq	r0, r0, r0
+0x0070708c:	andeq	r0, r0, r0
+0x00707090:	andeq	r0, r0, r0
+0x00707094:	andeq	r0, r0, r0
+0x00707098:	andeq	r0, r0, r0
+0x0070709c:	andeq	r0, r0, r0
+0x007070a0:	andeq	r0, r0, r0
+0x007070a4:	andeq	r0, r0, r0
+0x007070a8:	andeq	r0, r0, r0
+0x007070ac:	andeq	r0, r0, r0
+0x007070b0:	andeq	r0, r0, r0
+0x007070b4:	andeq	r0, r0, r0
+0x007070b8:	andeq	r0, r0, r0
+0x007070bc:	andeq	r0, r0, r0
+0x007070c0:	andeq	r0, r0, r0
+0x007070c4:	andeq	r0, r0, r0
+0x007070c8:	andeq	r0, r0, r0
+0x007070cc:	andeq	r0, r0, r0
+0x007070d0:	andeq	r0, r0, r0
+0x007070d4:	andeq	r0, r0, r0
+0x007070d8:	andeq	r0, r0, r0
+0x007070dc:	andeq	r0, r0, r0
+0x007070e0:	andeq	r0, r0, r0
+0x007070e4:	andeq	r0, r0, r0
+0x007070e8:	andeq	r0, r0, r0
+0x007070ec:	andeq	r0, r0, r0
+0x007070f0:	andeq	r0, r0, r0
+0x007070f4:	andeq	r0, r0, r0
+0x007070f8:	andeq	r0, r0, r0
+0x007070fc:	andeq	r0, r0, r0
+0x00707100:	andeq	r0, r0, r0
+0x00707104:	andeq	r0, r0, r0
+0x00707108:	andeq	r0, r0, r0
+0x0070710c:	andeq	r0, r0, r0
+0x00707110:	andeq	r0, r0, r0
+0x00707114:	andeq	r0, r0, r0
+0x00707118:	andeq	r0, r0, r0
+0x0070711c:	andeq	r0, r0, r0
+0x00707120:	andeq	r0, r0, r0
+0x00707124:	andeq	r0, r0, r0
+0x00707128:	andeq	r0, r0, r0
+0x0070712c:	andeq	r0, r0, r0
+0x00707130:	andeq	r0, r0, r0
+0x00707134:	andeq	r0, r0, r0
+0x00707138:	andeq	r0, r0, r0
+0x0070713c:	andeq	r0, r0, r0
+0x00707140:	andeq	r0, r0, r0
+0x00707144:	andeq	r0, r0, r0
+0x00707148:	andeq	r0, r0, r0
+0x0070714c:	andeq	r0, r0, r0
+0x00707150:	andeq	r0, r0, r0
+0x00707154:	andeq	r0, r0, r0
+0x00707158:	andeq	r0, r0, r0
+0x0070715c:	andeq	r0, r0, r0
+0x00707160:	andeq	r0, r0, r0
+0x00707164:	andeq	r0, r0, r0
+0x00707168:	andeq	r0, r0, r0
+0x0070716c:	andeq	r0, r0, r0
+0x00707170:	andeq	r0, r0, r0
+0x00707174:	andeq	r0, r0, r0
+0x00707178:	andeq	r0, r0, r0
+0x0070717c:	andeq	r0, r0, r0
+0x00707180:	andeq	r0, r0, r0
+0x00707184:	andeq	r0, r0, r0
+0x00707188:	andeq	r0, r0, r0
+0x0070718c:	andeq	r0, r0, r0
+0x00707190:	andeq	r0, r0, r0
+0x00707194:	andeq	r0, r0, r0
+0x00707198:	andeq	r0, r0, r0
+0x0070719c:	andeq	r0, r0, r0
+0x007071a0:	andeq	r0, r0, r0
+0x007071a4:	andeq	r0, r0, r0
+0x007071a8:	andeq	r0, r0, r0
+0x007071ac:	andeq	r0, r0, r0
+0x007071b0:	andeq	r0, r0, r0
+0x007071b4:	andeq	r0, r0, r0
+0x007071b8:	andeq	r0, r0, r0
+0x007071bc:	andeq	r0, r0, r0
+0x007071c0:	andeq	r0, r0, r0
+0x007071c4:	andeq	r0, r0, r0
+0x007071c8:	andeq	r0, r0, r0
+0x007071cc:	andeq	r0, r0, r0
+0x007071d0:	andeq	r0, r0, r0
+0x007071d4:	andeq	r0, r0, r0
+0x007071d8:	andeq	r0, r0, r0
+0x007071dc:	andeq	r0, r0, r0
+0x007071e0:	andeq	r0, r0, r0
+0x007071e4:	andeq	r0, r0, r0
+0x007071e8:	andeq	r0, r0, r0
+0x007071ec:	andeq	r0, r0, r0
+0x007071f0:	andeq	r0, r0, r0
+0x007071f4:	andeq	r0, r0, r0
+0x007071f8:	andeq	r0, r0, r0
+0x007071fc:	andeq	r0, r0, r0
+0x00707200:	andeq	r0, r0, r0
+0x00707204:	andeq	r0, r0, r0
+0x00707208:	andeq	r0, r0, r0
+0x0070720c:	andeq	r0, r0, r0
+0x00707210:	andeq	r0, r0, r0
+0x00707214:	andeq	r0, r0, r0
+0x00707218:	andeq	r0, r0, r0
+0x0070721c:	andeq	r0, r0, r0
+0x00707220:	andeq	r0, r0, r0
+0x00707224:	andeq	r0, r0, r0
+0x00707228:	andeq	r0, r0, r0
+0x0070722c:	andeq	r0, r0, r0
+0x00707230:	andeq	r0, r0, r0
+0x00707234:	andeq	r0, r0, r0
+0x00707238:	andeq	r0, r0, r0
+0x0070723c:	andeq	r0, r0, r0
+0x00707240:	andeq	r0, r0, r0
+0x00707244:	andeq	r0, r0, r0
+0x00707248:	andeq	r0, r0, r0
+0x0070724c:	andeq	r0, r0, r0
+0x00707250:	andeq	r0, r0, r0
+0x00707254:	andeq	r0, r0, r0
+0x00707258:	andeq	r0, r0, r0
+0x0070725c:	andeq	r0, r0, r0
+0x00707260:	andeq	r0, r0, r0
+0x00707264:	andeq	r0, r0, r0
+0x00707268:	andeq	r0, r0, r0
+0x0070726c:	andeq	r0, r0, r0
+0x00707270:	andeq	r0, r0, r0
+0x00707274:	andeq	r0, r0, r0
+0x00707278:	andeq	r0, r0, r0
+0x0070727c:	andeq	r0, r0, r0
+0x00707280:	andeq	r0, r0, r0
+0x00707284:	andeq	r0, r0, r0
+0x00707288:	andeq	r0, r0, r0
+0x0070728c:	andeq	r0, r0, r0
+0x00707290:	andeq	r0, r0, r0
+0x00707294:	andeq	r0, r0, r0
+0x00707298:	andeq	r0, r0, r0
+0x0070729c:	andeq	r0, r0, r0
+0x007072a0:	andeq	r0, r0, r0
+0x007072a4:	andeq	r0, r0, r0
+0x007072a8:	andeq	r0, r0, r0
+0x007072ac:	andeq	r0, r0, r0
+0x007072b0:	andeq	r0, r0, r0
+0x007072b4:	andeq	r0, r0, r0
+0x007072b8:	andeq	r0, r0, r0
+0x007072bc:	andeq	r0, r0, r0
+0x007072c0:	andeq	r0, r0, r0
+0x007072c4:	andeq	r0, r0, r0
+0x007072c8:	andeq	r0, r0, r0
+0x007072cc:	andeq	r0, r0, r0
+0x007072d0:	andeq	r0, r0, r0
+0x007072d4:	andeq	r0, r0, r0
+0x007072d8:	andeq	r0, r0, r0
+0x007072dc:	andeq	r0, r0, r0
+0x007072e0:	andeq	r0, r0, r0
+0x007072e4:	andeq	r0, r0, r0
+0x007072e8:	andeq	r0, r0, r0
+0x007072ec:	andeq	r0, r0, r0
+0x007072f0:	andeq	r0, r0, r0
+0x007072f4:	andeq	r0, r0, r0
+0x007072f8:	andeq	r0, r0, r0
+0x007072fc:	andeq	r0, r0, r0
+0x00707300:	andeq	r0, r0, r0
+0x00707304:	andeq	r0, r0, r0
+0x00707308:	andeq	r0, r0, r0
+0x0070730c:	andeq	r0, r0, r0
+0x00707310:	andeq	r0, r0, r0
+0x00707314:	andeq	r0, r0, r0
+0x00707318:	andeq	r0, r0, r0
+0x0070731c:	andeq	r0, r0, r0
+0x00707320:	andeq	r0, r0, r0
+0x00707324:	andeq	r0, r0, r0
+0x00707328:	andeq	r0, r0, r0
+0x0070732c:	andeq	r0, r0, r0
+0x00707330:	andeq	r0, r0, r0
+0x00707334:	andeq	r0, r0, r0
+0x00707338:	andeq	r0, r0, r0
+0x0070733c:	andeq	r0, r0, r0
+0x00707340:	andeq	r0, r0, r0
+0x00707344:	andeq	r0, r0, r0
+0x00707348:	andeq	r0, r0, r0
+0x0070734c:	andeq	r0, r0, r0
+0x00707350:	andeq	r0, r0, r0
+0x00707354:	andeq	r0, r0, r0
+0x00707358:	andeq	r0, r0, r0
+0x0070735c:	andeq	r0, r0, r0
+0x00707360:	andeq	r0, r0, r0
+0x00707364:	andeq	r0, r0, r0
+0x00707368:	andeq	r0, r0, r0
+0x0070736c:	andeq	r0, r0, r0
+0x00707370:	andeq	r0, r0, r0
+0x00707374:	andeq	r0, r0, r0
+0x00707378:	andeq	r0, r0, r0
+0x0070737c:	andeq	r0, r0, r0
+0x00707380:	andeq	r0, r0, r0
+0x00707384:	andeq	r0, r0, r0
+0x00707388:	andeq	r0, r0, r0
+0x0070738c:	andeq	r0, r0, r0
+0x00707390:	andeq	r0, r0, r0
+0x00707394:	andeq	r0, r0, r0
+0x00707398:	andeq	r0, r0, r0
+0x0070739c:	andeq	r0, r0, r0
+0x007073a0:	andeq	r0, r0, r0
+0x007073a4:	andeq	r0, r0, r0
+0x007073a8:	andeq	r0, r0, r0
+0x007073ac:	andeq	r0, r0, r0
+0x007073b0:	andeq	r0, r0, r0
+0x007073b4:	andeq	r0, r0, r0
+0x007073b8:	andeq	r0, r0, r0
+0x007073bc:	andeq	r0, r0, r0
+0x007073c0:	andeq	r0, r0, r0
+0x007073c4:	andeq	r0, r0, r0
+0x007073c8:	andeq	r0, r0, r0
+0x007073cc:	andeq	r0, r0, r0
+0x007073d0:	andeq	r0, r0, r0
+0x007073d4:	andeq	r0, r0, r0
+0x007073d8:	andeq	r0, r0, r0
+0x007073dc:	andeq	r0, r0, r0
+0x007073e0:	andeq	r0, r0, r0
+0x007073e4:	andeq	r0, r0, r0
+0x007073e8:	andeq	r0, r0, r0
+0x007073ec:	andeq	r0, r0, r0
+0x007073f0:	andeq	r0, r0, r0
+0x007073f4:	andeq	r0, r0, r0
+0x007073f8:	andeq	r0, r0, r0
+0x007073fc:	andeq	r0, r0, r0
+0x00707400:	andeq	r0, r0, r0
+0x00707404:	andeq	r0, r0, r0
+0x00707408:	andeq	r0, r0, r0
+0x0070740c:	andeq	r0, r0, r0
+0x00707410:	andeq	r0, r0, r0
+0x00707414:	andeq	r0, r0, r0
+0x00707418:	andeq	r0, r0, r0
+0x0070741c:	andeq	r0, r0, r0
+0x00707420:	andeq	r0, r0, r0
+0x00707424:	andeq	r0, r0, r0
+0x00707428:	andeq	r0, r0, r0
+0x0070742c:	andeq	r0, r0, r0
+0x00707430:	andeq	r0, r0, r0
+0x00707434:	andeq	r0, r0, r0
+0x00707438:	andeq	r0, r0, r0
+0x0070743c:	andeq	r0, r0, r0
+0x00707440:	andeq	r0, r0, r0
+0x00707444:	andeq	r0, r0, r0
+0x00707448:	andeq	r0, r0, r0
+0x0070744c:	andeq	r0, r0, r0
+0x00707450:	andeq	r0, r0, r0
+0x00707454:	andeq	r0, r0, r0
+0x00707458:	andeq	r0, r0, r0
+0x0070745c:	andeq	r0, r0, r0
+0x00707460:	andeq	r0, r0, r0
+0x00707464:	andeq	r0, r0, r0
+0x00707468:	andeq	r0, r0, r0
+0x0070746c:	andeq	r0, r0, r0
+0x00707470:	andeq	r0, r0, r0
+0x00707474:	andeq	r0, r0, r0
+0x00707478:	andeq	r0, r0, r0
+0x0070747c:	andeq	r0, r0, r0
+0x00707480:	andeq	r0, r0, r0
+0x00707484:	andeq	r0, r0, r0
+0x00707488:	andeq	r0, r0, r0
+0x0070748c:	andeq	r0, r0, r0
+0x00707490:	andeq	r0, r0, r0
+0x00707494:	andeq	r0, r0, r0
+0x00707498:	andeq	r0, r0, r0
+0x0070749c:	andeq	r0, r0, r0
+0x007074a0:	andeq	r0, r0, r0
+0x007074a4:	andeq	r0, r0, r0
+0x007074a8:	andeq	r0, r0, r0
+0x007074ac:	andeq	r0, r0, r0
+0x007074b0:	andeq	r0, r0, r0
+0x007074b4:	andeq	r0, r0, r0
+0x007074b8:	andeq	r0, r0, r0
+0x007074bc:	andeq	r0, r0, r0
+0x007074c0:	andeq	r0, r0, r0
+0x007074c4:	andeq	r0, r0, r0
+0x007074c8:	andeq	r0, r0, r0
+0x007074cc:	andeq	r0, r0, r0
+0x007074d0:	andeq	r0, r0, r0
+0x007074d4:	andeq	r0, r0, r0
+0x007074d8:	andeq	r0, r0, r0
+0x007074dc:	andeq	r0, r0, r0
+0x007074e0:	andeq	r0, r0, r0
+0x007074e4:	andeq	r0, r0, r0
+0x007074e8:	andeq	r0, r0, r0
+0x007074ec:	andeq	r0, r0, r0
+0x007074f0:	andeq	r0, r0, r0
+0x007074f4:	andeq	r0, r0, r0
+0x007074f8:	andeq	r0, r0, r0
+0x007074fc:	andeq	r0, r0, r0
+0x00707500:	andeq	r0, r0, r0
+0x00707504:	andeq	r0, r0, r0
+0x00707508:	andeq	r0, r0, r0
+0x0070750c:	andeq	r0, r0, r0
+0x00707510:	andeq	r0, r0, r0
+0x00707514:	andeq	r0, r0, r0
+0x00707518:	andeq	r0, r0, r0
+0x0070751c:	andeq	r0, r0, r0
+0x00707520:	andeq	r0, r0, r0
+0x00707524:	andeq	r0, r0, r0
+0x00707528:	andeq	r0, r0, r0
+0x0070752c:	andeq	r0, r0, r0
+0x00707530:	andeq	r0, r0, r0
+0x00707534:	andeq	r0, r0, r0
+0x00707538:	andeq	r0, r0, r0
+0x0070753c:	andeq	r0, r0, r0
+0x00707540:	andeq	r0, r0, r0
+0x00707544:	andeq	r0, r0, r0
+0x00707548:	andeq	r0, r0, r0
+0x0070754c:	andeq	r0, r0, r0
+0x00707550:	andeq	r0, r0, r0
+0x00707554:	andeq	r0, r0, r0
+0x00707558:	andeq	r0, r0, r0
+0x0070755c:	andeq	r0, r0, r0
+0x00707560:	andeq	r0, r0, r0
+0x00707564:	andeq	r0, r0, r0
+0x00707568:	andeq	r0, r0, r0
+0x0070756c:	andeq	r0, r0, r0
+0x00707570:	andeq	r0, r0, r0
+0x00707574:	andeq	r0, r0, r0
+0x00707578:	andeq	r0, r0, r0
+0x0070757c:	andeq	r0, r0, r0
+0x00707580:	andeq	r0, r0, r0
+0x00707584:	andeq	r0, r0, r0
+0x00707588:	andeq	r0, r0, r0
+0x0070758c:	andeq	r0, r0, r0
+0x00707590:	andeq	r0, r0, r0
+0x00707594:	andeq	r0, r0, r0
+0x00707598:	andeq	r0, r0, r0
+0x0070759c:	andeq	r0, r0, r0
+0x007075a0:	andeq	r0, r0, r0
+0x007075a4:	andeq	r0, r0, r0
+0x007075a8:	andeq	r0, r0, r0
+0x007075ac:	andeq	r0, r0, r0
+0x007075b0:	andeq	r0, r0, r0
+0x007075b4:	andeq	r0, r0, r0
+0x007075b8:	andeq	r0, r0, r0
+0x007075bc:	andeq	r0, r0, r0
+0x007075c0:	andeq	r0, r0, r0
+0x007075c4:	andeq	r0, r0, r0
+0x007075c8:	andeq	r0, r0, r0
+0x007075cc:	andeq	r0, r0, r0
+0x007075d0:	andeq	r0, r0, r0
+0x007075d4:	andeq	r0, r0, r0
+0x007075d8:	andeq	r0, r0, r0
+0x007075dc:	andeq	r0, r0, r0
+0x007075e0:	andeq	r0, r0, r0
+0x007075e4:	andeq	r0, r0, r0
+0x007075e8:	andeq	r0, r0, r0
+0x007075ec:	andeq	r0, r0, r0
+0x007075f0:	andeq	r0, r0, r0
+0x007075f4:	andeq	r0, r0, r0
+0x007075f8:	andeq	r0, r0, r0
+0x007075fc:	andeq	r0, r0, r0
+0x00707600:	andeq	r0, r0, r0
+0x00707604:	andeq	r0, r0, r0
+0x00707608:	andeq	r0, r0, r0
+0x0070760c:	andeq	r0, r0, r0
+0x00707610:	andeq	r0, r0, r0
+0x00707614:	andeq	r0, r0, r0
+0x00707618:	andeq	r0, r0, r0
+0x0070761c:	andeq	r0, r0, r0
+0x00707620:	andeq	r0, r0, r0
+0x00707624:	andeq	r0, r0, r0
+0x00707628:	andeq	r0, r0, r0
+0x0070762c:	andeq	r0, r0, r0
+0x00707630:	andeq	r0, r0, r0
+0x00707634:	andeq	r0, r0, r0
+0x00707638:	andeq	r0, r0, r0
+0x0070763c:	andeq	r0, r0, r0
+0x00707640:	andeq	r0, r0, r0
+0x00707644:	andeq	r0, r0, r0
+0x00707648:	andeq	r0, r0, r0
+0x0070764c:	andeq	r0, r0, r0
+0x00707650:	andeq	r0, r0, r0
+0x00707654:	andeq	r0, r0, r0
+0x00707658:	andeq	r0, r0, r0
+0x0070765c:	andeq	r0, r0, r0
+0x00707660:	andeq	r0, r0, r0
+0x00707664:	andeq	r0, r0, r0
+0x00707668:	andeq	r0, r0, r0
+0x0070766c:	andeq	r0, r0, r0
+0x00707670:	andeq	r0, r0, r0
+0x00707674:	andeq	r0, r0, r0
+0x00707678:	andeq	r0, r0, r0
+0x0070767c:	andeq	r0, r0, r0
+0x00707680:	andeq	r0, r0, r0
+0x00707684:	andeq	r0, r0, r0
+0x00707688:	andeq	r0, r0, r0
+0x0070768c:	andeq	r0, r0, r0
+0x00707690:	andeq	r0, r0, r0
+0x00707694:	andeq	r0, r0, r0
+0x00707698:	andeq	r0, r0, r0
+0x0070769c:	andeq	r0, r0, r0
+0x007076a0:	andeq	r0, r0, r0
+0x007076a4:	andeq	r0, r0, r0
+0x007076a8:	andeq	r0, r0, r0
+0x007076ac:	andeq	r0, r0, r0
+0x007076b0:	andeq	r0, r0, r0
+0x007076b4:	andeq	r0, r0, r0
+0x007076b8:	andeq	r0, r0, r0
+0x007076bc:	andeq	r0, r0, r0
+0x007076c0:	andeq	r0, r0, r0
+0x007076c4:	andeq	r0, r0, r0
+0x007076c8:	andeq	r0, r0, r0
+0x007076cc:	andeq	r0, r0, r0
+0x007076d0:	andeq	r0, r0, r0
+0x007076d4:	andeq	r0, r0, r0
+0x007076d8:	andeq	r0, r0, r0
+0x007076dc:	andeq	r0, r0, r0
+0x007076e0:	andeq	r0, r0, r0
+0x007076e4:	andeq	r0, r0, r0
+0x007076e8:	andeq	r0, r0, r0
+0x007076ec:	andeq	r0, r0, r0
+0x007076f0:	andeq	r0, r0, r0
+0x007076f4:	andeq	r0, r0, r0
+0x007076f8:	andeq	r0, r0, r0
+0x007076fc:	andeq	r0, r0, r0
+0x00707700:	andeq	r0, r0, r0
+0x00707704:	andeq	r0, r0, r0
+0x00707708:	andeq	r0, r0, r0
+0x0070770c:	andeq	r0, r0, r0
+0x00707710:	andeq	r0, r0, r0
+0x00707714:	andeq	r0, r0, r0
+0x00707718:	andeq	r0, r0, r0
+0x0070771c:	andeq	r0, r0, r0
+0x00707720:	andeq	r0, r0, r0
+0x00707724:	andeq	r0, r0, r0
+0x00707728:	andeq	r0, r0, r0
+0x0070772c:	andeq	r0, r0, r0
+0x00707730:	andeq	r0, r0, r0
+0x00707734:	andeq	r0, r0, r0
+0x00707738:	andeq	r0, r0, r0
+0x0070773c:	andeq	r0, r0, r0
+0x00707740:	andeq	r0, r0, r0
+0x00707744:	andeq	r0, r0, r0
+0x00707748:	andeq	r0, r0, r0
+0x0070774c:	andeq	r0, r0, r0
+0x00707750:	andeq	r0, r0, r0
+0x00707754:	andeq	r0, r0, r0
+0x00707758:	andeq	r0, r0, r0
+0x0070775c:	andeq	r0, r0, r0
+0x00707760:	andeq	r0, r0, r0
+0x00707764:	andeq	r0, r0, r0
+0x00707768:	andeq	r0, r0, r0
+0x0070776c:	andeq	r0, r0, r0
+0x00707770:	andeq	r0, r0, r0
+0x00707774:	andeq	r0, r0, r0
+0x00707778:	andeq	r0, r0, r0
+0x0070777c:	andeq	r0, r0, r0
+0x00707780:	andeq	r0, r0, r0
+0x00707784:	andeq	r0, r0, r0
+0x00707788:	andeq	r0, r0, r0
+0x0070778c:	andeq	r0, r0, r0
+0x00707790:	andeq	r0, r0, r0
+0x00707794:	andeq	r0, r0, r0
+0x00707798:	andeq	r0, r0, r0
+0x0070779c:	andeq	r0, r0, r0
+0x007077a0:	andeq	r0, r0, r0
+0x007077a4:	andeq	r0, r0, r0
+0x007077a8:	andeq	r0, r0, r0
+0x007077ac:	andeq	r0, r0, r0
+0x007077b0:	andeq	r0, r0, r0
+0x007077b4:	andeq	r0, r0, r0
+0x007077b8:	andeq	r0, r0, r0
+0x007077bc:	andeq	r0, r0, r0
+0x007077c0:	andeq	r0, r0, r0
+0x007077c4:	andeq	r0, r0, r0
+0x007077c8:	andeq	r0, r0, r0
+0x007077cc:	andeq	r0, r0, r0
+0x007077d0:	andeq	r0, r0, r0
+0x007077d4:	andeq	r0, r0, r0
+0x007077d8:	andeq	r0, r0, r0
+0x007077dc:	andeq	r0, r0, r0
+0x007077e0:	andeq	r0, r0, r0
+0x007077e4:	andeq	r0, r0, r0
+0x007077e8:	andeq	r0, r0, r0
+0x007077ec:	andeq	r0, r0, r0
+0x007077f0:	andeq	r0, r0, r0
+0x007077f4:	andeq	r0, r0, r0
+0x007077f8:	andeq	r0, r0, r0
+0x007077fc:	andeq	r0, r0, r0
+0x00707800:	andeq	r0, r0, r0
+0x00707804:	andeq	r0, r0, r0
+0x00707808:	andeq	r0, r0, r0
+0x0070780c:	andeq	r0, r0, r0
+0x00707810:	andeq	r0, r0, r0
+0x00707814:	andeq	r0, r0, r0
+0x00707818:	andeq	r0, r0, r0
+0x0070781c:	andeq	r0, r0, r0
+0x00707820:	andeq	r0, r0, r0
+0x00707824:	andeq	r0, r0, r0
+0x00707828:	andeq	r0, r0, r0
+0x0070782c:	andeq	r0, r0, r0
+0x00707830:	andeq	r0, r0, r0
+0x00707834:	andeq	r0, r0, r0
+0x00707838:	andeq	r0, r0, r0
+0x0070783c:	andeq	r0, r0, r0
+0x00707840:	andeq	r0, r0, r0
+0x00707844:	andeq	r0, r0, r0
+0x00707848:	andeq	r0, r0, r0
+0x0070784c:	andeq	r0, r0, r0
+0x00707850:	andeq	r0, r0, r0
+0x00707854:	andeq	r0, r0, r0
+0x00707858:	andeq	r0, r0, r0
+0x0070785c:	andeq	r0, r0, r0
+0x00707860:	andeq	r0, r0, r0
+0x00707864:	andeq	r0, r0, r0
+0x00707868:	andeq	r0, r0, r0
+0x0070786c:	andeq	r0, r0, r0
+0x00707870:	andeq	r0, r0, r0
+0x00707874:	andeq	r0, r0, r0
+0x00707878:	andeq	r0, r0, r0
+0x0070787c:	andeq	r0, r0, r0
+0x00707880:	andeq	r0, r0, r0
+0x00707884:	andeq	r0, r0, r0
+0x00707888:	andeq	r0, r0, r0
+0x0070788c:	andeq	r0, r0, r0
+0x00707890:	andeq	r0, r0, r0
+0x00707894:	andeq	r0, r0, r0
+0x00707898:	andeq	r0, r0, r0
+0x0070789c:	andeq	r0, r0, r0
+0x007078a0:	andeq	r0, r0, r0
+0x007078a4:	andeq	r0, r0, r0
+0x007078a8:	andeq	r0, r0, r0
+0x007078ac:	andeq	r0, r0, r0
+0x007078b0:	andeq	r0, r0, r0
+0x007078b4:	andeq	r0, r0, r0
+0x007078b8:	andeq	r0, r0, r0
+0x007078bc:	andeq	r0, r0, r0
+0x007078c0:	andeq	r0, r0, r0
+0x007078c4:	andeq	r0, r0, r0
+0x007078c8:	andeq	r0, r0, r0
+0x007078cc:	andeq	r0, r0, r0
+0x007078d0:	andeq	r0, r0, r0
+0x007078d4:	andeq	r0, r0, r0
+0x007078d8:	andeq	r0, r0, r0
+0x007078dc:	andeq	r0, r0, r0
+0x007078e0:	andeq	r0, r0, r0
+0x007078e4:	andeq	r0, r0, r0
+0x007078e8:	andeq	r0, r0, r0
+0x007078ec:	andeq	r0, r0, r0
+0x007078f0:	andeq	r0, r0, r0
+0x007078f4:	andeq	r0, r0, r0
+0x007078f8:	andeq	r0, r0, r0
+0x007078fc:	andeq	r0, r0, r0
+0x00707900:	andeq	r0, r0, r0
+0x00707904:	andeq	r0, r0, r0
+0x00707908:	andeq	r0, r0, r0
+0x0070790c:	andeq	r0, r0, r0
+0x00707910:	andeq	r0, r0, r0
+0x00707914:	andeq	r0, r0, r0
+0x00707918:	andeq	r0, r0, r0
+0x0070791c:	andeq	r0, r0, r0
+0x00707920:	andeq	r0, r0, r0
+0x00707924:	andeq	r0, r0, r0
+0x00707928:	andeq	r0, r0, r0
+0x0070792c:	andeq	r0, r0, r0
+0x00707930:	andeq	r0, r0, r0
+0x00707934:	andeq	r0, r0, r0
+0x00707938:	andeq	r0, r0, r0
+0x0070793c:	andeq	r0, r0, r0
+0x00707940:	andeq	r0, r0, r0
+0x00707944:	andeq	r0, r0, r0
+0x00707948:	andeq	r0, r0, r0
+0x0070794c:	andeq	r0, r0, r0
+0x00707950:	andeq	r0, r0, r0
+0x00707954:	andeq	r0, r0, r0
+0x00707958:	andeq	r0, r0, r0
+0x0070795c:	andeq	r0, r0, r0
+0x00707960:	andeq	r0, r0, r0
+0x00707964:	andeq	r0, r0, r0
+0x00707968:	andeq	r0, r0, r0
+0x0070796c:	andeq	r0, r0, r0
+0x00707970:	andeq	r0, r0, r0
+0x00707974:	andeq	r0, r0, r0
+0x00707978:	andeq	r0, r0, r0
+0x0070797c:	andeq	r0, r0, r0
+0x00707980:	andeq	r0, r0, r0
+0x00707984:	andeq	r0, r0, r0
+0x00707988:	andeq	r0, r0, r0
+0x0070798c:	andeq	r0, r0, r0
+0x00707990:	andeq	r0, r0, r0
+0x00707994:	andeq	r0, r0, r0
+0x00707998:	andeq	r0, r0, r0
+0x0070799c:	andeq	r0, r0, r0
+0x007079a0:	andeq	r0, r0, r0
+0x007079a4:	andeq	r0, r0, r0
+0x007079a8:	andeq	r0, r0, r0
+0x007079ac:	andeq	r0, r0, r0
+0x007079b0:	andeq	r0, r0, r0
+0x007079b4:	andeq	r0, r0, r0
+0x007079b8:	andeq	r0, r0, r0
+0x007079bc:	andeq	r0, r0, r0
+0x007079c0:	andeq	r0, r0, r0
+0x007079c4:	andeq	r0, r0, r0
+0x007079c8:	andeq	r0, r0, r0
+0x007079cc:	andeq	r0, r0, r0
+0x007079d0:	andeq	r0, r0, r0
+0x007079d4:	andeq	r0, r0, r0
+0x007079d8:	andeq	r0, r0, r0
+0x007079dc:	andeq	r0, r0, r0
+0x007079e0:	andeq	r0, r0, r0
+0x007079e4:	andeq	r0, r0, r0
+0x007079e8:	andeq	r0, r0, r0
+0x007079ec:	andeq	r0, r0, r0
+0x007079f0:	andeq	r0, r0, r0
+0x007079f4:	andeq	r0, r0, r0
+0x007079f8:	andeq	r0, r0, r0
+0x007079fc:	andeq	r0, r0, r0
+0x00707a00:	andeq	r0, r0, r0
+0x00707a04:	andeq	r0, r0, r0
+0x00707a08:	andeq	r0, r0, r0
+0x00707a0c:	andeq	r0, r0, r0
+0x00707a10:	andeq	r0, r0, r0
+0x00707a14:	andeq	r0, r0, r0
+0x00707a18:	andeq	r0, r0, r0
+0x00707a1c:	andeq	r0, r0, r0
+0x00707a20:	andeq	r0, r0, r0
+0x00707a24:	andeq	r0, r0, r0
+0x00707a28:	andeq	r0, r0, r0
+0x00707a2c:	andeq	r0, r0, r0
+0x00707a30:	andeq	r0, r0, r0
+0x00707a34:	andeq	r0, r0, r0
+0x00707a38:	andeq	r0, r0, r0
+0x00707a3c:	andeq	r0, r0, r0
+0x00707a40:	andeq	r0, r0, r0
+0x00707a44:	andeq	r0, r0, r0
+0x00707a48:	andeq	r0, r0, r0
+0x00707a4c:	andeq	r0, r0, r0
+0x00707a50:	andeq	r0, r0, r0
+0x00707a54:	andeq	r0, r0, r0
+0x00707a58:	andeq	r0, r0, r0
+0x00707a5c:	andeq	r0, r0, r0
+0x00707a60:	andeq	r0, r0, r0
+0x00707a64:	andeq	r0, r0, r0
+0x00707a68:	andeq	r0, r0, r0
+0x00707a6c:	andeq	r0, r0, r0
+0x00707a70:	andeq	r0, r0, r0
+0x00707a74:	andeq	r0, r0, r0
+0x00707a78:	andeq	r0, r0, r0
+0x00707a7c:	andeq	r0, r0, r0
+0x00707a80:	andeq	r0, r0, r0
+0x00707a84:	andeq	r0, r0, r0
+0x00707a88:	andeq	r0, r0, r0
+0x00707a8c:	andeq	r0, r0, r0
+0x00707a90:	andeq	r0, r0, r0
+0x00707a94:	andeq	r0, r0, r0
+0x00707a98:	andeq	r0, r0, r0
+0x00707a9c:	andeq	r0, r0, r0
+0x00707aa0:	andeq	r0, r0, r0
+0x00707aa4:	andeq	r0, r0, r0
+0x00707aa8:	andeq	r0, r0, r0
+0x00707aac:	andeq	r0, r0, r0
+0x00707ab0:	andeq	r0, r0, r0
+0x00707ab4:	andeq	r0, r0, r0
+0x00707ab8:	andeq	r0, r0, r0
+0x00707abc:	andeq	r0, r0, r0
+0x00707ac0:	andeq	r0, r0, r0
+0x00707ac4:	andeq	r0, r0, r0
+0x00707ac8:	andeq	r0, r0, r0
+0x00707acc:	andeq	r0, r0, r0
+0x00707ad0:	andeq	r0, r0, r0
+0x00707ad4:	andeq	r0, r0, r0
+0x00707ad8:	andeq	r0, r0, r0
+0x00707adc:	andeq	r0, r0, r0
+0x00707ae0:	andeq	r0, r0, r0
+0x00707ae4:	andeq	r0, r0, r0
+0x00707ae8:	andeq	r0, r0, r0
+0x00707aec:	andeq	r0, r0, r0
+0x00707af0:	andeq	r0, r0, r0
+0x00707af4:	andeq	r0, r0, r0
+0x00707af8:	andeq	r0, r0, r0
+0x00707afc:	andeq	r0, r0, r0
+0x00707b00:	andeq	r0, r0, r0
+0x00707b04:	andeq	r0, r0, r0
+0x00707b08:	andeq	r0, r0, r0
+0x00707b0c:	andeq	r0, r0, r0
+0x00707b10:	andeq	r0, r0, r0
+0x00707b14:	andeq	r0, r0, r0
+0x00707b18:	andeq	r0, r0, r0
+0x00707b1c:	andeq	r0, r0, r0
+0x00707b20:	andeq	r0, r0, r0
+0x00707b24:	andeq	r0, r0, r0
+0x00707b28:	andeq	r0, r0, r0
+0x00707b2c:	andeq	r0, r0, r0
+0x00707b30:	andeq	r0, r0, r0
+0x00707b34:	andeq	r0, r0, r0
+0x00707b38:	andeq	r0, r0, r0
+0x00707b3c:	andeq	r0, r0, r0
+0x00707b40:	andeq	r0, r0, r0
+0x00707b44:	andeq	r0, r0, r0
+0x00707b48:	andeq	r0, r0, r0
+0x00707b4c:	andeq	r0, r0, r0
+0x00707b50:	andeq	r0, r0, r0
+0x00707b54:	andeq	r0, r0, r0
+0x00707b58:	andeq	r0, r0, r0
+0x00707b5c:	andeq	r0, r0, r0
+0x00707b60:	andeq	r0, r0, r0
+0x00707b64:	andeq	r0, r0, r0
+0x00707b68:	andeq	r0, r0, r0
+0x00707b6c:	andeq	r0, r0, r0
+0x00707b70:	andeq	r0, r0, r0
+0x00707b74:	andeq	r0, r0, r0
+0x00707b78:	andeq	r0, r0, r0
+0x00707b7c:	andeq	r0, r0, r0
+0x00707b80:	andeq	r0, r0, r0
+0x00707b84:	andeq	r0, r0, r0
+0x00707b88:	andeq	r0, r0, r0
+0x00707b8c:	andeq	r0, r0, r0
+0x00707b90:	andeq	r0, r0, r0
+0x00707b94:	andeq	r0, r0, r0
+0x00707b98:	andeq	r0, r0, r0
+0x00707b9c:	andeq	r0, r0, r0
+0x00707ba0:	andeq	r0, r0, r0
+0x00707ba4:	andeq	r0, r0, r0
+0x00707ba8:	andeq	r0, r0, r0
+0x00707bac:	andeq	r0, r0, r0
+0x00707bb0:	andeq	r0, r0, r0
+0x00707bb4:	andeq	r0, r0, r0
+0x00707bb8:	andeq	r0, r0, r0
+0x00707bbc:	andeq	r0, r0, r0
+0x00707bc0:	andeq	r0, r0, r0
+0x00707bc4:	andeq	r0, r0, r0
+0x00707bc8:	andeq	r0, r0, r0
+0x00707bcc:	andeq	r0, r0, r0
+0x00707bd0:	andeq	r0, r0, r0
+0x00707bd4:	andeq	r0, r0, r0
+0x00707bd8:	andeq	r0, r0, r0
+0x00707bdc:	andeq	r0, r0, r0
+0x00707be0:	andeq	r0, r0, r0
+0x00707be4:	andeq	r0, r0, r0
+0x00707be8:	andeq	r0, r0, r0
+0x00707bec:	andeq	r0, r0, r0
+0x00707bf0:	andeq	r0, r0, r0
+0x00707bf4:	andeq	r0, r0, r0
+0x00707bf8:	andeq	r0, r0, r0
+0x00707bfc:	andeq	r0, r0, r0
+0x00707c00:	andeq	r0, r0, r0
+0x00707c04:	andeq	r0, r0, r0
+0x00707c08:	andeq	r0, r0, r0
+0x00707c0c:	andeq	r0, r0, r0
+0x00707c10:	andeq	r0, r0, r0
+0x00707c14:	andeq	r0, r0, r0
+0x00707c18:	andeq	r0, r0, r0
+0x00707c1c:	andeq	r0, r0, r0
+0x00707c20:	andeq	r0, r0, r0
+0x00707c24:	andeq	r0, r0, r0
+0x00707c28:	andeq	r0, r0, r0
+0x00707c2c:	andeq	r0, r0, r0
+0x00707c30:	andeq	r0, r0, r0
+0x00707c34:	andeq	r0, r0, r0
+0x00707c38:	andeq	r0, r0, r0
+0x00707c3c:	andeq	r0, r0, r0
+0x00707c40:	andeq	r0, r0, r0
+0x00707c44:	andeq	r0, r0, r0
+0x00707c48:	andeq	r0, r0, r0
+0x00707c4c:	andeq	r0, r0, r0
+0x00707c50:	andeq	r0, r0, r0
+0x00707c54:	andeq	r0, r0, r0
+0x00707c58:	andeq	r0, r0, r0
+0x00707c5c:	andeq	r0, r0, r0
+0x00707c60:	andeq	r0, r0, r0
+0x00707c64:	andeq	r0, r0, r0
+0x00707c68:	andeq	r0, r0, r0
+0x00707c6c:	andeq	r0, r0, r0
+0x00707c70:	andeq	r0, r0, r0
+0x00707c74:	andeq	r0, r0, r0
+0x00707c78:	andeq	r0, r0, r0
+0x00707c7c:	andeq	r0, r0, r0
+0x00707c80:	andeq	r0, r0, r0
+0x00707c84:	andeq	r0, r0, r0
+0x00707c88:	andeq	r0, r0, r0
+0x00707c8c:	andeq	r0, r0, r0
+0x00707c90:	andeq	r0, r0, r0
+0x00707c94:	andeq	r0, r0, r0
+0x00707c98:	andeq	r0, r0, r0
+0x00707c9c:	andeq	r0, r0, r0
+0x00707ca0:	andeq	r0, r0, r0
+0x00707ca4:	andeq	r0, r0, r0
+0x00707ca8:	andeq	r0, r0, r0
+0x00707cac:	andeq	r0, r0, r0
+0x00707cb0:	andeq	r0, r0, r0
+0x00707cb4:	andeq	r0, r0, r0
+0x00707cb8:	andeq	r0, r0, r0
+0x00707cbc:	andeq	r0, r0, r0
+0x00707cc0:	andeq	r0, r0, r0
+0x00707cc4:	andeq	r0, r0, r0
+0x00707cc8:	andeq	r0, r0, r0
+0x00707ccc:	andeq	r0, r0, r0
+0x00707cd0:	andeq	r0, r0, r0
+0x00707cd4:	andeq	r0, r0, r0
+0x00707cd8:	andeq	r0, r0, r0
+0x00707cdc:	andeq	r0, r0, r0
+0x00707ce0:	andeq	r0, r0, r0
+0x00707ce4:	andeq	r0, r0, r0
+0x00707ce8:	andeq	r0, r0, r0
+0x00707cec:	andeq	r0, r0, r0
+0x00707cf0:	andeq	r0, r0, r0
+0x00707cf4:	andeq	r0, r0, r0
+0x00707cf8:	andeq	r0, r0, r0
+0x00707cfc:	andeq	r0, r0, r0
+0x00707d00:	andeq	r0, r0, r0
+0x00707d04:	andeq	r0, r0, r0
+0x00707d08:	andeq	r0, r0, r0
+0x00707d0c:	andeq	r0, r0, r0
+0x00707d10:	andeq	r0, r0, r0
+0x00707d14:	andeq	r0, r0, r0
+0x00707d18:	andeq	r0, r0, r0
+0x00707d1c:	andeq	r0, r0, r0
+0x00707d20:	andeq	r0, r0, r0
+0x00707d24:	andeq	r0, r0, r0
+0x00707d28:	andeq	r0, r0, r0
+0x00707d2c:	andeq	r0, r0, r0
+0x00707d30:	andeq	r0, r0, r0
+0x00707d34:	andeq	r0, r0, r0
+0x00707d38:	andeq	r0, r0, r0
+0x00707d3c:	andeq	r0, r0, r0
+0x00707d40:	andeq	r0, r0, r0
+0x00707d44:	andeq	r0, r0, r0
+0x00707d48:	andeq	r0, r0, r0
+0x00707d4c:	andeq	r0, r0, r0
+0x00707d50:	andeq	r0, r0, r0
+0x00707d54:	andeq	r0, r0, r0
+0x00707d58:	andeq	r0, r0, r0
+0x00707d5c:	andeq	r0, r0, r0
+0x00707d60:	andeq	r0, r0, r0
+0x00707d64:	andeq	r0, r0, r0
+0x00707d68:	andeq	r0, r0, r0
+0x00707d6c:	andeq	r0, r0, r0
+0x00707d70:	andeq	r0, r0, r0
+0x00707d74:	andeq	r0, r0, r0
+0x00707d78:	andeq	r0, r0, r0
+0x00707d7c:	andeq	r0, r0, r0
+0x00707d80:	andeq	r0, r0, r0
+0x00707d84:	andeq	r0, r0, r0
+0x00707d88:	andeq	r0, r0, r0
+0x00707d8c:	andeq	r0, r0, r0
+0x00707d90:	andeq	r0, r0, r0
+0x00707d94:	andeq	r0, r0, r0
+0x00707d98:	andeq	r0, r0, r0
+0x00707d9c:	andeq	r0, r0, r0
+0x00707da0:	andeq	r0, r0, r0
+0x00707da4:	andeq	r0, r0, r0
+0x00707da8:	andeq	r0, r0, r0
+0x00707dac:	andeq	r0, r0, r0
+0x00707db0:	andeq	r0, r0, r0
+0x00707db4:	andeq	r0, r0, r0
+0x00707db8:	andeq	r0, r0, r0
+0x00707dbc:	andeq	r0, r0, r0
+0x00707dc0:	andeq	r0, r0, r0
+0x00707dc4:	andeq	r0, r0, r0
+0x00707dc8:	andeq	r0, r0, r0
+0x00707dcc:	andeq	r0, r0, r0
+0x00707dd0:	andeq	r0, r0, r0
+0x00707dd4:	andeq	r0, r0, r0
+0x00707dd8:	andeq	r0, r0, r0
+0x00707ddc:	andeq	r0, r0, r0
+0x00707de0:	andeq	r0, r0, r0
+0x00707de4:	andeq	r0, r0, r0
+0x00707de8:	andeq	r0, r0, r0
+0x00707dec:	andeq	r0, r0, r0
+0x00707df0:	andeq	r0, r0, r0
+0x00707df4:	andeq	r0, r0, r0
+0x00707df8:	andeq	r0, r0, r0
+0x00707dfc:	andeq	r0, r0, r0
+0x00707e00:	andeq	r0, r0, r0
+0x00707e04:	andeq	r0, r0, r0
+0x00707e08:	andeq	r0, r0, r0
+0x00707e0c:	andeq	r0, r0, r0
+0x00707e10:	andeq	r0, r0, r0
+0x00707e14:	andeq	r0, r0, r0
+0x00707e18:	andeq	r0, r0, r0
+0x00707e1c:	andeq	r0, r0, r0
+0x00707e20:	andeq	r0, r0, r0
+0x00707e24:	andeq	r0, r0, r0
+0x00707e28:	andeq	r0, r0, r0
+0x00707e2c:	andeq	r0, r0, r0
+0x00707e30:	andeq	r0, r0, r0
+0x00707e34:	andeq	r0, r0, r0
+0x00707e38:	andeq	r0, r0, r0
+0x00707e3c:	andeq	r0, r0, r0
+0x00707e40:	andeq	r0, r0, r0
+0x00707e44:	andeq	r0, r0, r0
+0x00707e48:	andeq	r0, r0, r0
+0x00707e4c:	andeq	r0, r0, r0
+0x00707e50:	andeq	r0, r0, r0
+0x00707e54:	andeq	r0, r0, r0
+0x00707e58:	andeq	r0, r0, r0
+0x00707e5c:	andeq	r0, r0, r0
+0x00707e60:	andeq	r0, r0, r0
+0x00707e64:	andeq	r0, r0, r0
+0x00707e68:	andeq	r0, r0, r0
+0x00707e6c:	andeq	r0, r0, r0
+0x00707e70:	andeq	r0, r0, r0
+0x00707e74:	andeq	r0, r0, r0
+0x00707e78:	andeq	r0, r0, r0
+0x00707e7c:	andeq	r0, r0, r0
+0x00707e80:	andeq	r0, r0, r0
+0x00707e84:	andeq	r0, r0, r0
+0x00707e88:	andeq	r0, r0, r0
+0x00707e8c:	andeq	r0, r0, r0
+0x00707e90:	andeq	r0, r0, r0
+0x00707e94:	andeq	r0, r0, r0
+0x00707e98:	andeq	r0, r0, r0
+0x00707e9c:	andeq	r0, r0, r0
+0x00707ea0:	andeq	r0, r0, r0
+0x00707ea4:	andeq	r0, r0, r0
+0x00707ea8:	andeq	r0, r0, r0
+0x00707eac:	andeq	r0, r0, r0
+0x00707eb0:	andeq	r0, r0, r0
+0x00707eb4:	andeq	r0, r0, r0
+0x00707eb8:	andeq	r0, r0, r0
+0x00707ebc:	andeq	r0, r0, r0
+0x00707ec0:	andeq	r0, r0, r0
+0x00707ec4:	andeq	r0, r0, r0
+0x00707ec8:	andeq	r0, r0, r0
+0x00707ecc:	andeq	r0, r0, r0
+0x00707ed0:	andeq	r0, r0, r0
+0x00707ed4:	andeq	r0, r0, r0
+0x00707ed8:	andeq	r0, r0, r0
+0x00707edc:	andeq	r0, r0, r0
+0x00707ee0:	andeq	r0, r0, r0
+0x00707ee4:	andeq	r0, r0, r0
+0x00707ee8:	andeq	r0, r0, r0
+0x00707eec:	andeq	r0, r0, r0
+0x00707ef0:	andeq	r0, r0, r0
+0x00707ef4:	andeq	r0, r0, r0
+0x00707ef8:	andeq	r0, r0, r0
+0x00707efc:	andeq	r0, r0, r0
+0x00707f00:	andeq	r0, r0, r0
+0x00707f04:	andeq	r0, r0, r0
+0x00707f08:	andeq	r0, r0, r0
+0x00707f0c:	andeq	r0, r0, r0
+0x00707f10:	andeq	r0, r0, r0
+0x00707f14:	andeq	r0, r0, r0
+0x00707f18:	andeq	r0, r0, r0
+0x00707f1c:	andeq	r0, r0, r0
+0x00707f20:	andeq	r0, r0, r0
+0x00707f24:	andeq	r0, r0, r0
+0x00707f28:	andeq	r0, r0, r0
+0x00707f2c:	andeq	r0, r0, r0
+0x00707f30:	andeq	r0, r0, r0
+0x00707f34:	andeq	r0, r0, r0
+0x00707f38:	andeq	r0, r0, r0
+0x00707f3c:	andeq	r0, r0, r0
+0x00707f40:	andeq	r0, r0, r0
+0x00707f44:	andeq	r0, r0, r0
+0x00707f48:	andeq	r0, r0, r0
+0x00707f4c:	andeq	r0, r0, r0
+0x00707f50:	andeq	r0, r0, r0
+0x00707f54:	andeq	r0, r0, r0
+0x00707f58:	andeq	r0, r0, r0
+0x00707f5c:	andeq	r0, r0, r0
+0x00707f60:	andeq	r0, r0, r0
+0x00707f64:	andeq	r0, r0, r0
+0x00707f68:	andeq	r0, r0, r0
+0x00707f6c:	andeq	r0, r0, r0
+0x00707f70:	andeq	r0, r0, r0
+0x00707f74:	andeq	r0, r0, r0
+0x00707f78:	andeq	r0, r0, r0
+0x00707f7c:	andeq	r0, r0, r0
+0x00707f80:	andeq	r0, r0, r0
+0x00707f84:	andeq	r0, r0, r0
+0x00707f88:	andeq	r0, r0, r0
+0x00707f8c:	andeq	r0, r0, r0
+0x00707f90:	andeq	r0, r0, r0
+0x00707f94:	andeq	r0, r0, r0
+0x00707f98:	andeq	r0, r0, r0
+0x00707f9c:	andeq	r0, r0, r0
+0x00707fa0:	andeq	r0, r0, r0
+0x00707fa4:	andeq	r0, r0, r0
+0x00707fa8:	andeq	r0, r0, r0
+0x00707fac:	andeq	r0, r0, r0
+0x00707fb0:	andeq	r0, r0, r0
+0x00707fb4:	andeq	r0, r0, r0
+0x00707fb8:	andeq	r0, r0, r0
+0x00707fbc:	andeq	r0, r0, r0
+0x00707fc0:	andeq	r0, r0, r0
+0x00707fc4:	andeq	r0, r0, r0
+0x00707fc8:	andeq	r0, r0, r0
+0x00707fcc:	andeq	r0, r0, r0
+0x00707fd0:	andeq	r0, r0, r0
+0x00707fd4:	andeq	r0, r0, r0
+0x00707fd8:	andeq	r0, r0, r0
+0x00707fdc:	andeq	r0, r0, r0
+0x00707fe0:	andeq	r0, r0, r0
+0x00707fe4:	andeq	r0, r0, r0
+0x00707fe8:	andeq	r0, r0, r0
+0x00707fec:	andeq	r0, r0, r0
+0x00707ff0:	andeq	r0, r0, r0
+0x00707ff4:	andeq	r0, r0, r0
+0x00707ff8:	andeq	r0, r0, r0
+0x00707ffc:	andeq	r0, r0, r0

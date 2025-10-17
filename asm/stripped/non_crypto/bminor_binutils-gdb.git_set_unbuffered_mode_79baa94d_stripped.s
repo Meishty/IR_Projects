@@ -1,21 +1,40 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_set_unbuffered_mode_79baa94d_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	vst3.8	{d27, d29, d31}, [pc:0x40], r0
 
+Function sub_400005 @ 0x00400005
+0x00400005:	strh	r0, [r0, r4]
+0x00400007:	ldr	r4, [pc, #0x28]
+0x00400009:	ldr	r0, [pc, #0x28]
+0x0040000b:	movs	r2, #2
+0x0040000d:	add	r4, pc
+0x0040000f:	movs	r1, #0
+0x00400011:	ldr	r0, [r4, r0]
+0x00400013:	ldr	r0, [r0]
+0x00400015:	bl	#0x400015
 
-Disassembly of section .text.startup:
+Function sub_400015 @ 0x00400015
+0x00400015:	bl	#0x400015
 
-00000000 <.text.startup>:
-   0:	f44fb510 	vst3.8	{d27,d29,d31}, [pc :64], r0
-   4:	4c0a5300 	stcmi	3, cr5, [sl], {-0}
-   8:	2202480a 	andcs	r4, r2, #655360	; 0xa0000
-   c:	2100447c 	tstcs	r0, ip, ror r4
-  10:	68005820 	stmdavs	r0, {r5, fp, ip, lr}
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	f44f4807 	vst2.8	{d20-d21}, [pc], r7
-  1c:	22025300 	andcs	r5, r2, #0, 6
-  20:	58202100 	stmdapl	r0!, {r8, sp}
-  24:	4010e8bd 			; <UNDEFINED> instruction: 0x4010e8bd
-  28:	f7ff6800 			; <UNDEFINED> instruction: 0xf7ff6800
-  2c:	bf00bffe 	svclt	0x0000bffe
-  30:	00000020 	andeq	r0, r0, r0, lsr #32
-	...
+Function sub_400019 @ 0x00400019
+0x00400019:	ldr	r0, [pc, #0x1c]
+0x0040001b:	mov.w	r3, #0x2000
+0x0040001f:	movs	r2, #2
+0x00400021:	movs	r1, #0
+0x00400023:	ldr	r0, [r4, r0]
+0x00400025:	pop.w	{r4, lr}
+0x00400029:	ldr	r0, [r0]
+0x0040002b:	b.w	#0x40002b
+0x0040002b:	b.w	#0x40002b
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r0, r4
+0x00400033:	movs	r0, r0
+0x00400035:	movs	r0, r0
+0x00400037:	movs	r0, r0
+0x00400039:	movs	r0, r0
+0x0040003b:	movs	r0, r0
+
+Function UnresolvableJumpTarget @ 0x0050004c
+0x0050004c:	andeq	r0, r0, r0

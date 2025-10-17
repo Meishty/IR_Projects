@@ -1,33 +1,48 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_py-events_9ec2cf72.o:     file format elf32-littlearm
+Function second @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	movs	r0, #0xc
+0x00400009:	pop	{r3, pc}
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x50000d
 
-Disassembly of section .text:
+Function first @ 0x0040000d
+0x0040000d:	push	{r3, lr}
+0x0040000f:	bl	#0x50000d
+0x00400013:	bl	#0x50000d
+0x00400017:	bl	#0x500001
+0x0040001b:	movs	r0, #0xc
+0x0040001d:	pop	{r3, pc}
 
-00000000 <second>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <fork>
-   6:	200c      	movs	r0, #12
-   8:	bd08      	pop	{r3, pc}
-   a:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
 
-0000000c <first>:
-   c:	b508      	push	{r3, lr}
-   e:	f7ff fffe 	bl	0 <do_nothing>
-  12:	f7ff fffe 	bl	0 <do_nothing>
-  16:	f7ff fffe 	bl	0 <fork>
-  1a:	200c      	movs	r0, #12
-  1c:	bd08      	pop	{r3, pc}
-  1e:	bf00      	nop
+Function main @ 0x00400021
+0x00400021:	push	{r3, lr}
+0x00400023:	bl	#0x50000d
+0x00400027:	bl	#0x50000d
+0x0040002b:	bl	#0x50000d
+0x0040002f:	bl	#0x500001
+0x00400033:	movs	r0, #0xc
+0x00400035:	pop	{r3, pc}
 
-Disassembly of section .text.startup:
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <do_nothing>
-   6:	f7ff fffe 	bl	0 <do_nothing>
-   a:	f7ff fffe 	bl	0 <do_nothing>
-   e:	f7ff fffe 	bl	0 <fork>
-  12:	200c      	movs	r0, #12
-  14:	bd08      	pop	{r3, pc}
-  16:	bf00      	nop
+Function fork @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function do_nothing @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

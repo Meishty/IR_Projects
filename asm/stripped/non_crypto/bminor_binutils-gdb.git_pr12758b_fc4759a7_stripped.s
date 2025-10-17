@@ -1,17 +1,21 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_pr12758b_fc4759a7_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blo	#0x46c5f0
+0x00400004:	stmdblo	r1, {r0, r1, r6, sb, sl, fp, ip}
 
+Function sub_400013 @ 0x00400013
+0x00400013:	ldrb	r0, [r3, #1]!
+0x00400017:	ldrb	r2, [r1, #1]!
+0x0040001b:	subs	r0, r0, r2
+0x0040001d:	beq	#0x40000f
+0x0040001f:	bx	lr
 
-Disassembly of section .text:
+Function sub_400021 @ 0x00400021
+0x00400021:	bx	lr
 
-00000000 <.text>:
-   0:	3a01b17a 	bcc	0x6c5f0
-   4:	39011e43 	stmdbcc	r1, {r0, r1, r6, r9, sl, fp, ip}
-   8:	0c02eb00 			; <UNDEFINED> instruction: 0x0c02eb00
-   c:	4563e001 	strbmi	lr, [r3, #-1]!
-  10:	f813d006 			; <UNDEFINED> instruction: 0xf813d006
-  14:	f8110f01 			; <UNDEFINED> instruction: 0xf8110f01
-  18:	1a802f01 	bne	0xfe00bc24
-  1c:	4770d0f7 			; <UNDEFINED> instruction: 0x4770d0f7
-  20:	46104770 			; <UNDEFINED> instruction: 0x46104770
-  24:	bf00e7fb 	svclt	0x0000e7fb
+Function sub_400023 @ 0x00400023
+0x00400023:	mov	r0, r2
+0x00400025:	b	#0x40001f
+
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	

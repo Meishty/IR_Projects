@@ -1,47 +1,70 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_solib-with-soname-2_3e07b5cc.o:     file format elf32-littlearm
+Function main @ 0x00400079
+0x00400079:	ldr	r3, [pc, #0x48]
+0x0040007b:	movs	r1, #1
+0x0040007d:	push	{r4, lr}
+0x0040007f:	add	r3, pc
+0x00400081:	ldr	r0, [r3]
+0x00400083:	bl	#0x500001
+0x00400087:	cbz	r0, #0x40009f
+0x00400089:	mov	r4, r0
+0x0040008b:	bl	#0x50000d
+0x00400089:	mov	r4, r0
+0x0040008b:	bl	#0x50000d
+0x0040008f:	mov	r3, r0
+0x00400091:	mov	r0, r4
+0x00400093:	mov	r4, r3
+0x00400095:	bl	#0x500019
+0x00400099:	cbnz	r0, #0x4000b1
+0x0040009b:	mov	r0, r4
+0x0040009d:	pop	{r4, pc}
+0x0040009b:	mov	r0, r4
+0x0040009d:	pop	{r4, pc}
+0x0040009f:	ldr	r3, [pc, #0x28]
+0x004000a1:	movs	r2, #0x21
+0x004000a3:	ldr	r1, [pc, #0x28]
+0x004000a5:	ldr	r0, [pc, #0x28]
+0x004000a7:	add	r3, pc
+0x004000a9:	add	r1, pc
+0x004000ab:	add	r0, pc
+0x004000ad:	bl	#0x500025
+0x004000b1:	ldr	r3, [pc, #0x20]
+0x004000b3:	movs	r2, #0x26
+0x004000b5:	ldr	r1, [pc, #0x20]
+0x004000b7:	ldr	r0, [pc, #0x24]
+0x004000b9:	add	r3, pc
+0x004000bb:	add	r1, pc
+0x004000bd:	add	r0, pc
+0x004000bf:	bl	#0x500025
 
+Function sub_4000c3 @ 0x004000c3
 
-Disassembly of section .text.startup:
+Function dlopen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	4b12      	ldr	r3, [pc, #72]	; (4c <main+0x4c>)
-   2:	2101      	movs	r1, #1
-   4:	b510      	push	{r4, lr}
-   6:	447b      	add	r3, pc
-   8:	6818      	ldr	r0, [r3, #0]
-   a:	f7ff fffe 	bl	0 <dlopen>
-   e:	b150      	cbz	r0, 26 <main+0x26>
-  10:	4604      	mov	r4, r0
-  12:	f7ff fffe 	bl	0 <foo>
-  16:	4603      	mov	r3, r0
-  18:	4620      	mov	r0, r4
-  1a:	461c      	mov	r4, r3
-  1c:	f7ff fffe 	bl	0 <dlclose>
-  20:	b950      	cbnz	r0, 38 <main+0x38>
-  22:	4620      	mov	r0, r4
-  24:	bd10      	pop	{r4, pc}
-  26:	4b0a      	ldr	r3, [pc, #40]	; (50 <main+0x50>)
-  28:	2221      	movs	r2, #33	; 0x21
-  2a:	490a      	ldr	r1, [pc, #40]	; (54 <main+0x54>)
-  2c:	480a      	ldr	r0, [pc, #40]	; (58 <main+0x58>)
-  2e:	447b      	add	r3, pc
-  30:	4479      	add	r1, pc
-  32:	4478      	add	r0, pc
-  34:	f7ff fffe 	bl	0 <__assert_fail>
-  38:	4b08      	ldr	r3, [pc, #32]	; (5c <main+0x5c>)
-  3a:	2226      	movs	r2, #38	; 0x26
-  3c:	4908      	ldr	r1, [pc, #32]	; (60 <main+0x60>)
-  3e:	4809      	ldr	r0, [pc, #36]	; (64 <main+0x64>)
-  40:	447b      	add	r3, pc
-  42:	4479      	add	r1, pc
-  44:	4478      	add	r0, pc
-  46:	f7ff fffe 	bl	0 <__assert_fail>
-  4a:	bf00      	nop
-  4c:	00000042 	.word	0x00000042
-  50:	0000001e 	.word	0x0000001e
-  54:	00000020 	.word	0x00000020
-  58:	00000022 	.word	0x00000022
-  5c:	00000018 	.word	0x00000018
-  60:	0000001a 	.word	0x0000001a
-  64:	0000001c 	.word	0x0000001c
+Function foo @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function dlclose @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __assert_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

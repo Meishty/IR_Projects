@@ -1,9 +1,4 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_foo_f0bc1acd.o:     file format elf32-littlearm
-
-
-Disassembly of section .text:
-
-00000000 <c_procedure>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function c_procedure @ 0x00400001
+0x00400001:	movs	r0, #0
+0x00400003:	bx	lr

@@ -1,151 +1,258 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_mdfile_30dafbec.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0xa12864
+0x00400004:	ldrblt	r4, [r0, #-0x47a]!
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	sub.w	sp, sp, #0x408
+0x0040000f:	mov	r5, r1
+0x00400011:	ldr	r3, [r2, r3]
+0x00400013:	add	r4, sp, #4
+0x00400015:	ldr	r3, [r3]
+0x00400017:	str.w	r3, [sp, #0x404]
+0x0040001b:	mov.w	r3, #0
+0x0040001f:	bl	#0x500001
+0x00400023:	b	#0x40002d
+0x00400025:	mov	r1, r4
+0x00400027:	mov	r0, r6
+0x00400029:	bl	#0x50000d
+0x0040002d:	mov.w	r2, #0x400
+0x00400031:	mov	r3, r5
+0x00400033:	movs	r1, #1
+0x00400035:	mov	r0, r4
+0x00400037:	bl	#0x500019
+0x0040003b:	mov	r2, r0
+0x0040003d:	cmp	r0, #0
+0x0040003f:	bne	#0x400025
+0x00400041:	ldr	r2, [pc, #0x24]
+0x00400043:	ldr	r3, [pc, #0x20]
+0x00400045:	add	r2, pc
+0x00400047:	ldr	r3, [r2, r3]
+0x00400049:	ldr	r2, [r3]
+0x0040004b:	ldr.w	r3, [sp, #0x404]
+0x0040004f:	eors	r2, r3
+0x00400051:	mov.w	r3, #0
+0x00400055:	bne	#0x40005d
+0x00400057:	add.w	sp, sp, #0x408
+0x0040005b:	pop	{r4, r5, r6, pc}
+0x0040005d:	bl	#0x500025
 
-Disassembly of section .text:
+Function sub_400061 @ 0x00400061
+0x00400061:	lsls	r0, r3, #1
+0x00400063:	movs	r0, r0
+0x00400065:	movs	r0, r0
+0x00400067:	movs	r0, r0
+0x00400069:	movs	r0, r4
+0x0040006b:	movs	r0, r0
+0x0040006d:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400071:	mov	r5, r2
+0x00400073:	ldr	r2, [pc, #0x70]
+0x00400075:	ldr	r3, [pc, #0x70]
+0x00400077:	sub.w	sp, sp, #0x408
+0x0040007b:	add	r2, pc
+0x0040007d:	add	r6, sp, #4
+0x0040007f:	mov	r8, r0
+0x00400081:	mov	r7, r1
+0x00400083:	ldr	r3, [r2, r3]
+0x00400085:	ldr	r3, [r3]
+0x00400087:	str.w	r3, [sp, #0x404]
+0x0040008b:	mov.w	r3, #0
+0x0040008f:	bl	#0x500001
 
-00000000 <MDfile0.isra.0>:
-   0:	4a17      	ldr	r2, [pc, #92]	; (60 <MDfile0.isra.0+0x60>)
-   2:	4b18      	ldr	r3, [pc, #96]	; (64 <MDfile0.isra.0+0x64>)
-   4:	447a      	add	r2, pc
-   6:	b570      	push	{r4, r5, r6, lr}
-   8:	4606      	mov	r6, r0
-   a:	f5ad 6d81 	sub.w	sp, sp, #1032	; 0x408
-   e:	460d      	mov	r5, r1
-  10:	58d3      	ldr	r3, [r2, r3]
-  12:	ac01      	add	r4, sp, #4
-  14:	681b      	ldr	r3, [r3, #0]
-  16:	f8cd 3404 	str.w	r3, [sp, #1028]	; 0x404
-  1a:	f04f 0300 	mov.w	r3, #0
-  1e:	f7ff fffe 	bl	0 <MD5Init>
-  22:	e003      	b.n	2c <MDfile0.isra.0+0x2c>
-  24:	4621      	mov	r1, r4
-  26:	4630      	mov	r0, r6
-  28:	f7ff fffe 	bl	0 <MD5Update>
-  2c:	f44f 6280 	mov.w	r2, #1024	; 0x400
-  30:	462b      	mov	r3, r5
-  32:	2101      	movs	r1, #1
-  34:	4620      	mov	r0, r4
-  36:	f7ff fffe 	bl	0 <fread>
-  3a:	4602      	mov	r2, r0
-  3c:	2800      	cmp	r0, #0
-  3e:	d1f1      	bne.n	24 <MDfile0.isra.0+0x24>
-  40:	4a09      	ldr	r2, [pc, #36]	; (68 <MDfile0.isra.0+0x68>)
-  42:	4b08      	ldr	r3, [pc, #32]	; (64 <MDfile0.isra.0+0x64>)
-  44:	447a      	add	r2, pc
-  46:	58d3      	ldr	r3, [r2, r3]
-  48:	681a      	ldr	r2, [r3, #0]
-  4a:	f8dd 3404 	ldr.w	r3, [sp, #1028]	; 0x404
-  4e:	405a      	eors	r2, r3
-  50:	f04f 0300 	mov.w	r3, #0
-  54:	d102      	bne.n	5c <MDfile0.isra.0+0x5c>
-  56:	f50d 6d81 	add.w	sp, sp, #1032	; 0x408
-  5a:	bd70      	pop	{r4, r5, r6, pc}
-  5c:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  60:	00000058 	.word	0x00000058
-  64:	00000000 	.word	0x00000000
-  68:	00000020 	.word	0x00000020
+Function MDfile0_len @ 0x0040006d
+0x0040006d:	push.w	{r4, r5, r6, r7, r8, lr}
+0x00400071:	mov	r5, r2
+0x00400073:	ldr	r2, [pc, #0x70]
+0x00400075:	ldr	r3, [pc, #0x70]
+0x00400077:	sub.w	sp, sp, #0x408
+0x0040007b:	add	r2, pc
+0x0040007d:	add	r6, sp, #4
+0x0040007f:	mov	r8, r0
+0x00400081:	mov	r7, r1
+0x00400083:	ldr	r3, [r2, r3]
+0x00400085:	ldr	r3, [r3]
+0x00400087:	str.w	r3, [sp, #0x404]
+0x0040008b:	mov.w	r3, #0
+0x0040008f:	bl	#0x500001
+0x00400093:	cmp.w	r5, #0x400
+0x00400097:	mov	r3, r7
+0x00400099:	ite	lo
+0x0040009b:	movlo	r2, r5
+0x0040009d:	movhs.w	r2, #0x400
+0x004000a1:	movs	r1, #1
+0x004000a3:	mov	r0, r6
+0x004000a5:	bl	#0x500019
+0x004000a9:	subs	r4, r0, #0
+0x004000ab:	bgt	#0x4000cd
+0x004000ad:	ldr	r2, [pc, #0x3c]
+0x004000af:	ldr	r3, [pc, #0x38]
+0x004000b1:	add	r2, pc
+0x004000b3:	ldr	r3, [r2, r3]
+0x004000b5:	ldr	r2, [r3]
+0x004000b7:	ldr.w	r3, [sp, #0x404]
+0x004000bb:	eors	r2, r3
+0x004000bd:	mov.w	r3, #0
+0x004000c1:	bne	#0x4000e1
+0x004000c3:	movs	r0, #0
+0x004000c5:	add.w	sp, sp, #0x408
+0x004000c9:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x004000cd:	mov	r2, r4
+0x004000cf:	mov	r1, r6
+0x004000d1:	mov	r0, r8
+0x004000d3:	subs	r5, r5, r4
+0x004000d5:	bl	#0x50000d
+0x004000d9:	cmp.w	r4, #0x400
+0x004000dd:	beq	#0x400093
+0x004000df:	b	#0x4000ad
+0x004000e1:	bl	#0x500025
 
-0000006c <MDfile0_len>:
-  6c:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-  70:	4615      	mov	r5, r2
-  72:	4a1c      	ldr	r2, [pc, #112]	; (e4 <MDfile0_len+0x78>)
-  74:	4b1c      	ldr	r3, [pc, #112]	; (e8 <MDfile0_len+0x7c>)
-  76:	f5ad 6d81 	sub.w	sp, sp, #1032	; 0x408
-  7a:	447a      	add	r2, pc
-  7c:	ae01      	add	r6, sp, #4
-  7e:	4680      	mov	r8, r0
-  80:	460f      	mov	r7, r1
-  82:	58d3      	ldr	r3, [r2, r3]
-  84:	681b      	ldr	r3, [r3, #0]
-  86:	f8cd 3404 	str.w	r3, [sp, #1028]	; 0x404
-  8a:	f04f 0300 	mov.w	r3, #0
-  8e:	f7ff fffe 	bl	0 <MD5Init>
-  92:	f5b5 6f80 	cmp.w	r5, #1024	; 0x400
-  96:	463b      	mov	r3, r7
-  98:	bf34      	ite	cc
-  9a:	462a      	movcc	r2, r5
-  9c:	f44f 6280 	movcs.w	r2, #1024	; 0x400
-  a0:	2101      	movs	r1, #1
-  a2:	4630      	mov	r0, r6
-  a4:	f7ff fffe 	bl	0 <fread>
-  a8:	1e04      	subs	r4, r0, #0
-  aa:	dc0f      	bgt.n	cc <MDfile0_len+0x60>
-  ac:	4a0f      	ldr	r2, [pc, #60]	; (ec <MDfile0_len+0x80>)
-  ae:	4b0e      	ldr	r3, [pc, #56]	; (e8 <MDfile0_len+0x7c>)
-  b0:	447a      	add	r2, pc
-  b2:	58d3      	ldr	r3, [r2, r3]
-  b4:	681a      	ldr	r2, [r3, #0]
-  b6:	f8dd 3404 	ldr.w	r3, [sp, #1028]	; 0x404
-  ba:	405a      	eors	r2, r3
-  bc:	f04f 0300 	mov.w	r3, #0
-  c0:	d10e      	bne.n	e0 <MDfile0_len+0x74>
-  c2:	2000      	movs	r0, #0
-  c4:	f50d 6d81 	add.w	sp, sp, #1032	; 0x408
-  c8:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  cc:	4622      	mov	r2, r4
-  ce:	4631      	mov	r1, r6
-  d0:	4640      	mov	r0, r8
-  d2:	1b2d      	subs	r5, r5, r4
-  d4:	f7ff fffe 	bl	0 <MD5Update>
-  d8:	f5b4 6f80 	cmp.w	r4, #1024	; 0x400
-  dc:	d0d9      	beq.n	92 <MDfile0_len+0x26>
-  de:	e7e5      	b.n	ac <MDfile0_len+0x40>
-  e0:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  e4:	00000066 	.word	0x00000066
-  e8:	00000000 	.word	0x00000000
-  ec:	00000038 	.word	0x00000038
+Function MDfile @ 0x004000f1
+0x004000f1:	push	{r4, r5, r6, lr}
+0x004000f3:	mov	r5, r1
+0x004000f5:	ldr	r1, [pc, #0x44]
+0x004000f7:	mov	r6, r0
+0x004000f9:	mov	r0, r5
+0x004000fb:	add	r1, pc
+0x004000fd:	bl	#0x500031
+0x00400101:	ldr	r3, [pc, #0x3c]
+0x00400103:	add	r3, pc
+0x00400105:	cbz	r0, #0x40011b
+0x00400107:	mov	r1, r0
+0x00400109:	mov	r4, r0
+0x0040010b:	mov	r0, r6
+0x0040010d:	bl	#0x400001
+0x00400107:	mov	r1, r0
+0x00400109:	mov	r4, r0
+0x0040010b:	mov	r0, r6
+0x0040010d:	bl	#0x400001
+0x0040011b:	ldr	r2, [pc, #0x28]
+0x0040011d:	ldr	r0, [pc, #0x28]
+0x0040011f:	add	r0, pc
+0x00400121:	ldr	r3, [r3, r2]
+0x00400123:	ldr	r4, [r3]
+0x00400125:	bl	#0x500049
+0x00400129:	mov	r3, r5
+0x0040012b:	mov	r2, r0
+0x0040012d:	movs	r1, #1
+0x0040012f:	mov	r0, r4
+0x00400131:	bl	#0x500055
+0x00400135:	mov.w	r0, #-1
+0x00400139:	pop	{r4, r5, r6, pc}
 
-000000f0 <MDfile>:
-  f0:	b570      	push	{r4, r5, r6, lr}
-  f2:	460d      	mov	r5, r1
-  f4:	4911      	ldr	r1, [pc, #68]	; (13c <MDfile+0x4c>)
-  f6:	4606      	mov	r6, r0
-  f8:	4628      	mov	r0, r5
-  fa:	4479      	add	r1, pc
-  fc:	f7ff fffe 	bl	0 <fopen>
- 100:	4b0f      	ldr	r3, [pc, #60]	; (140 <MDfile+0x50>)
- 102:	447b      	add	r3, pc
- 104:	b148      	cbz	r0, 11a <MDfile+0x2a>
- 106:	4601      	mov	r1, r0
- 108:	4604      	mov	r4, r0
- 10a:	4630      	mov	r0, r6
- 10c:	f7ff ff78 	bl	0 <MDfile0.isra.0>
- 110:	4620      	mov	r0, r4
- 112:	f7ff fffe 	bl	0 <fclose>
- 116:	2000      	movs	r0, #0
- 118:	bd70      	pop	{r4, r5, r6, pc}
- 11a:	4a0a      	ldr	r2, [pc, #40]	; (144 <MDfile+0x54>)
- 11c:	480a      	ldr	r0, [pc, #40]	; (148 <MDfile+0x58>)
- 11e:	4478      	add	r0, pc
- 120:	589b      	ldr	r3, [r3, r2]
- 122:	681c      	ldr	r4, [r3, #0]
- 124:	f7ff fffe 	bl	0 <LANG>
- 128:	462b      	mov	r3, r5
- 12a:	4602      	mov	r2, r0
- 12c:	2101      	movs	r1, #1
- 12e:	4620      	mov	r0, r4
- 130:	f7ff fffe 	bl	0 <__fprintf_chk>
- 134:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 138:	bd70      	pop	{r4, r5, r6, pc}
- 13a:	bf00      	nop
- 13c:	0000003e 	.word	0x0000003e
- 140:	0000003a 	.word	0x0000003a
- 144:	00000000 	.word	0x00000000
- 148:	00000026 	.word	0x00000026
+Function sub_400111 @ 0x00400111
+0x00400111:	mov	r0, r4
+0x00400113:	bl	#0x50003d
+0x00400117:	movs	r0, #0
+0x00400119:	pop	{r4, r5, r6, pc}
 
-0000014c <MD_addbuffer>:
- 14c:	b538      	push	{r3, r4, r5, lr}
- 14e:	461c      	mov	r4, r3
- 150:	4605      	mov	r5, r0
- 152:	f7ff fffe 	bl	0 <MD5Update>
- 156:	b154      	cbz	r4, 16e <MD_addbuffer+0x22>
- 158:	4629      	mov	r1, r5
- 15a:	4620      	mov	r0, r4
- 15c:	f7ff fffe 	bl	0 <MD5Final>
- 160:	4628      	mov	r0, r5
- 162:	2258      	movs	r2, #88	; 0x58
- 164:	2100      	movs	r1, #0
- 166:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
- 16a:	f7ff bffe 	b.w	0 <memset>
- 16e:	bd38      	pop	{r3, r4, r5, pc}
+Function sub_40013b @ 0x0040013b
+0x0040013b:	nop	
+0x0040013d:	lsls	r2, r6, #1
+0x0040013f:	movs	r0, r0
+0x00400141:	movs	r2, r7
+0x00400143:	movs	r0, r0
+0x00400145:	movs	r0, r0
+0x00400147:	movs	r0, r0
+0x00400149:	lsls	r2, r2, #1
+0x0040014b:	movs	r0, r0
+0x0040014d:	push	{r3, r4, r5, lr}
+0x0040014f:	mov	r4, r3
+0x00400151:	mov	r5, r0
+0x00400153:	bl	#0x50000d
+
+Function MD_addbuffer @ 0x0040014d
+0x0040014d:	push	{r3, r4, r5, lr}
+0x0040014f:	mov	r4, r3
+0x00400151:	mov	r5, r0
+0x00400153:	bl	#0x50000d
+0x00400157:	cbz	r4, #0x40016f
+0x00400159:	mov	r1, r5
+0x0040015b:	mov	r0, r4
+0x0040015d:	bl	#0x500061
+0x00400159:	mov	r1, r5
+0x0040015b:	mov	r0, r4
+0x0040015d:	bl	#0x500061
+0x00400161:	mov	r0, r5
+0x00400163:	movs	r2, #0x58
+0x00400165:	movs	r1, #0
+0x00400167:	pop.w	{r3, r4, r5, lr}
+0x0040016b:	b.w	#0x50006d
+0x0040016f:	pop	{r3, r4, r5, pc}
+
+Function MD5Init @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function MD5Update @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function fread @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function fopen @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function fclose @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function LANG @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function __fprintf_chk @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function MD5Final @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function memset @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0

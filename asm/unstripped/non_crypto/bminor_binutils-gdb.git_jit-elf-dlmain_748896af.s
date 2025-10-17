@@ -1,30 +1,47 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_jit-elf-dlmain_748896af.o:     file format elf32-littlearm
+Function main @ 0x00400021
+0x00400021:	push	{r4, r5, r6, lr}
+0x00400023:	mov	r4, r0
+0x00400025:	ldr	r0, [pc, #0x28]
+0x00400027:	mov	r5, r1
+0x00400029:	movs	r1, #1
+0x0040002b:	add	r0, pc
+0x0040002d:	bl	#0x500001
+0x00400031:	cbz	r0, #0x400049
+0x00400033:	ldr	r1, [pc, #0x20]
+0x00400035:	add	r1, pc
+0x00400037:	bl	#0x50000d
+0x00400033:	ldr	r1, [pc, #0x20]
+0x00400035:	add	r1, pc
+0x00400037:	bl	#0x50000d
+0x0040003b:	mov	r3, r0
+0x0040003d:	cbz	r0, #0x40004d
+0x0040003f:	mov	r1, r5
+0x00400041:	mov	r0, r4
+0x00400043:	pop.w	{r4, r5, r6, lr}
+0x00400047:	bx	r3
+0x0040003f:	mov	r1, r5
+0x00400041:	mov	r0, r4
+0x00400043:	pop.w	{r4, r5, r6, lr}
+0x00400047:	bx	r3
+0x00400049:	movs	r0, #1
+0x0040004b:	pop	{r4, r5, r6, pc}
+0x0040004d:	movs	r0, #2
+0x0040004f:	pop	{r4, r5, r6, pc}
 
+Function dlopen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function dlsym @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
 
-00000000 <main>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	4604      	mov	r4, r0
-   4:	480a      	ldr	r0, [pc, #40]	; (30 <main+0x30>)
-   6:	460d      	mov	r5, r1
-   8:	2101      	movs	r1, #1
-   a:	4478      	add	r0, pc
-   c:	f7ff fffe 	bl	0 <dlopen>
-  10:	b150      	cbz	r0, 28 <main+0x28>
-  12:	4908      	ldr	r1, [pc, #32]	; (34 <main+0x34>)
-  14:	4479      	add	r1, pc
-  16:	f7ff fffe 	bl	0 <dlsym>
-  1a:	4603      	mov	r3, r0
-  1c:	b130      	cbz	r0, 2c <main+0x2c>
-  1e:	4629      	mov	r1, r5
-  20:	4620      	mov	r0, r4
-  22:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
-  26:	4718      	bx	r3
-  28:	2001      	movs	r0, #1
-  2a:	bd70      	pop	{r4, r5, r6, pc}
-  2c:	2002      	movs	r0, #2
-  2e:	bd70      	pop	{r4, r5, r6, pc}
-  30:	00000022 	.word	0x00000022
-  34:	0000001c 	.word	0x0000001c
+Function UnresolvableJumpTarget @ 0x0060104c
+0x0060104c:	andeq	r0, r0, r0

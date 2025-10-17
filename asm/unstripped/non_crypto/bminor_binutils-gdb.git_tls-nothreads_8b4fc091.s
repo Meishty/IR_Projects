@@ -1,51 +1,45 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_tls-nothreads_8b4fc091.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb01
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r6, r0
+0x0040000b:	movs	r0, r0
 
-00000000 <use_it>:
-   0:	4b01      	ldr	r3, [pc, #4]	; (8 <use_it+0x8>)
-   2:	447b      	add	r3, pc
-   4:	6018      	str	r0, [r3, #0]
-   6:	4770      	bx	lr
-   8:	00000002 	.word	0x00000002
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4812      	ldr	r0, [pc, #72]	; (4c <main+0x4c>)
-   2:	ee1d 2f70 	mrc	15, 0, r2, cr13, cr0, {3}
-   6:	4b13      	ldr	r3, [pc, #76]	; (54 <main+0x54>)
-   8:	2118      	movs	r1, #24
-   a:	eb02 0c00 	add.w	ip, r2, r0
-   e:	b470      	push	{r4, r5, r6}
-  10:	447b      	add	r3, pc
-  12:	4d0f      	ldr	r5, [pc, #60]	; (50 <main+0x50>)
-  14:	f04f 34ff 	mov.w	r4, #4294967295	; 0xffffffff
-  18:	5081      	str	r1, [r0, r2]
-  1a:	2664      	movs	r6, #100	; 0x64
-  1c:	601c      	str	r4, [r3, #0]
-  1e:	2000      	movs	r0, #0
-  20:	6019      	str	r1, [r3, #0]
-  22:	2119      	movs	r1, #25
-  24:	6019      	str	r1, [r3, #0]
-  26:	241a      	movs	r4, #26
-  28:	f8cc 1004 	str.w	r1, [ip, #4]
-  2c:	1951      	adds	r1, r2, r5
-  2e:	601c      	str	r4, [r3, #0]
-  30:	f8cc 4008 	str.w	r4, [ip, #8]
-  34:	242a      	movs	r4, #42	; 0x2a
-  36:	601c      	str	r4, [r3, #0]
-  38:	50ac      	str	r4, [r5, r2]
-  3a:	222b      	movs	r2, #43	; 0x2b
-  3c:	601a      	str	r2, [r3, #0]
-  3e:	604a      	str	r2, [r1, #4]
-  40:	222c      	movs	r2, #44	; 0x2c
-  42:	601a      	str	r2, [r3, #0]
-  44:	608a      	str	r2, [r1, #8]
-  46:	601e      	str	r6, [r3, #0]
-  48:	bc70      	pop	{r4, r5, r6}
-  4a:	4770      	bx	lr
-	...
-  54:	00000040 	.word	0x00000040
+Function main @ 0x00400011
+0x00400011:	ldr	r0, [pc, #0x48]
+0x00400013:	mrc	p15, #0, r2, c13, c0, #3
+0x00400017:	ldr	r3, [pc, #0x4c]
+0x00400019:	movs	r1, #0x18
+0x0040001b:	add.w	ip, r2, r0
+0x0040001f:	push	{r4, r5, r6}
+0x00400021:	add	r3, pc
+0x00400023:	ldr	r5, [pc, #0x3c]
+0x00400025:	mov.w	r4, #-1
+0x00400029:	str	r1, [r0, r2]
+0x0040002b:	movs	r6, #0x64
+0x0040002d:	str	r4, [r3]
+0x0040002f:	movs	r0, #0
+0x00400031:	str	r1, [r3]
+0x00400033:	movs	r1, #0x19
+0x00400035:	str	r1, [r3]
+0x00400037:	movs	r4, #0x1a
+0x00400039:	str.w	r1, [ip, #4]
+0x0040003d:	adds	r1, r2, r5
+0x0040003f:	str	r4, [r3]
+0x00400041:	str.w	r4, [ip, #8]
+0x00400045:	movs	r4, #0x2a
+0x00400047:	str	r4, [r3]
+0x00400049:	str	r4, [r5, r2]
+0x0040004b:	movs	r2, #0x2b
+0x0040004d:	str	r2, [r3]
+0x0040004f:	str	r2, [r1, #4]
+0x00400051:	movs	r2, #0x2c
+0x00400053:	str	r2, [r3]
+0x00400055:	str	r2, [r1, #8]
+0x00400057:	str	r6, [r3]
+0x00400059:	pop	{r4, r5, r6}
+0x0040005b:	bx	lr

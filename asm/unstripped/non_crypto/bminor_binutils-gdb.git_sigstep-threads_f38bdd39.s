@@ -1,83 +1,120 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sigstep-threads_f38bdd39.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r0, #-0xa0b]
+0x00400004:	addlt	r4, r3, sl, ror r4
+0x00400008:	movwlo	r6, #0x1813
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bl	#0x500001
+0x00400013:	mov	r1, r0
+0x00400015:	movs	r0, #0xe0
+0x00400017:	str	r1, [sp, #4]
+0x00400019:	bl	#0x50000d
+0x0040001d:	ldr	r1, [sp, #4]
+0x0040001f:	mov	r2, r0
+0x00400021:	movs	r3, #0xa
+0x00400023:	mov.w	r0, #0x10c
+0x00400027:	add	sp, #0xc
+0x00400029:	ldr	lr, [sp], #4
+0x0040002d:	b.w	#0x50000d
 
-Disassembly of section .text:
+Function sub_400031 @ 0x00400031
+0x00400031:	lsls	r4, r5, #1
+0x00400033:	movs	r0, r0
+0x00400035:	push	{lr}
+0x00400037:	sub	sp, #0xc
+0x00400039:	bl	#0x500001
 
-00000000 <handler>:
-   0:	4a0b      	ldr	r2, [pc, #44]	; (30 <handler+0x30>)
-   2:	b500      	push	{lr}
-   4:	447a      	add	r2, pc
-   6:	b083      	sub	sp, #12
-   8:	6813      	ldr	r3, [r2, #0]
-   a:	3301      	adds	r3, #1
-   c:	6013      	str	r3, [r2, #0]
-   e:	f7ff fffe 	bl	0 <getpid>
-  12:	4601      	mov	r1, r0
-  14:	20e0      	movs	r0, #224	; 0xe0
-  16:	9101      	str	r1, [sp, #4]
-  18:	f7ff fffe 	bl	0 <syscall>
-  1c:	9901      	ldr	r1, [sp, #4]
-  1e:	4602      	mov	r2, r0
-  20:	230a      	movs	r3, #10
-  22:	f44f 7086 	mov.w	r0, #268	; 0x10c
-  26:	b003      	add	sp, #12
-  28:	f85d eb04 	ldr.w	lr, [sp], #4
-  2c:	f7ff bffe 	b.w	0 <syscall>
-  30:	00000028 	.word	0x00000028
+Function start @ 0x00400035
+0x00400035:	push	{lr}
+0x00400037:	sub	sp, #0xc
+0x00400039:	bl	#0x500001
+0x0040003d:	mov	r1, r0
+0x0040003f:	movs	r0, #0xe0
+0x00400041:	str	r1, [sp, #4]
+0x00400043:	bl	#0x50000d
+0x00400047:	ldr	r1, [sp, #4]
+0x00400049:	mov	r2, r0
+0x0040004b:	movs	r3, #0xa
+0x0040004d:	mov.w	r0, #0x10c
+0x00400051:	bl	#0x50000d
+0x00400055:	ldr	r3, [pc, #0x10]
+0x00400057:	ldr	r1, [pc, #0x14]
+0x00400059:	movs	r2, #0x28
+0x0040005b:	ldr	r0, [pc, #0x14]
+0x0040005d:	add	r3, pc
+0x0040005f:	add	r1, pc
+0x00400061:	add	r0, pc
+0x00400063:	bl	#0x500019
 
-00000034 <start>:
-  34:	b500      	push	{lr}
-  36:	b083      	sub	sp, #12
-  38:	f7ff fffe 	bl	0 <getpid>
-  3c:	4601      	mov	r1, r0
-  3e:	20e0      	movs	r0, #224	; 0xe0
-  40:	9101      	str	r1, [sp, #4]
-  42:	f7ff fffe 	bl	0 <syscall>
-  46:	9901      	ldr	r1, [sp, #4]
-  48:	4602      	mov	r2, r0
-  4a:	230a      	movs	r3, #10
-  4c:	f44f 7086 	mov.w	r0, #268	; 0x10c
-  50:	f7ff fffe 	bl	0 <syscall>
-  54:	4b04      	ldr	r3, [pc, #16]	; (68 <start+0x34>)
-  56:	4905      	ldr	r1, [pc, #20]	; (6c <start+0x38>)
-  58:	2228      	movs	r2, #40	; 0x28
-  5a:	4805      	ldr	r0, [pc, #20]	; (70 <start+0x3c>)
-  5c:	447b      	add	r3, pc
-  5e:	4479      	add	r1, pc
-  60:	4478      	add	r0, pc
-  62:	f7ff fffe 	bl	0 <__assert_fail>
-  66:	bf00      	nop
-  68:	00000008 	.word	0x00000008
-  6c:	0000000a 	.word	0x0000000a
-  70:	0000000c 	.word	0x0000000c
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	lsls	r4, r5, #2
+0x0040006b:	movs	r0, r0
+0x0040006d:	movs	r6, r2
+0x0040006f:	movs	r0, r0
+0x00400071:	lsls	r0, r4, #1
+0x00400073:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function main @ 0x004000c9
+0x004000c9:	ldr	r2, [pc, #0x30]
+0x004000cb:	movs	r0, #0xa
+0x004000cd:	ldr	r3, [pc, #0x30]
+0x004000cf:	add	r2, pc
+0x004000d1:	push	{lr}
+0x004000d3:	ldr	r1, [pc, #0x30]
+0x004000d5:	sub	sp, #0xc
+0x004000d7:	ldr	r3, [r2, r3]
+0x004000d9:	add	r1, pc
+0x004000db:	ldr	r3, [r3]
+0x004000dd:	str	r3, [sp, #4]
+0x004000df:	mov.w	r3, #0
+0x004000e3:	bl	#0x500025
+0x004000e7:	ldr	r2, [pc, #0x20]
+0x004000e9:	movs	r3, #0
+0x004000eb:	mov	r1, r3
+0x004000ed:	mov	r0, sp
+0x004000ef:	add	r2, pc
+0x004000f1:	bl	#0x500031
+0x004000f5:	movs	r0, #0
+0x004000f7:	bl	#0x400035
 
-00000000 <main>:
-   0:	4a0c      	ldr	r2, [pc, #48]	; (34 <main+0x34>)
-   2:	200a      	movs	r0, #10
-   4:	4b0c      	ldr	r3, [pc, #48]	; (38 <main+0x38>)
-   6:	447a      	add	r2, pc
-   8:	b500      	push	{lr}
-   a:	490c      	ldr	r1, [pc, #48]	; (3c <main+0x3c>)
-   c:	b083      	sub	sp, #12
-   e:	58d3      	ldr	r3, [r2, r3]
-  10:	4479      	add	r1, pc
-  12:	681b      	ldr	r3, [r3, #0]
-  14:	9301      	str	r3, [sp, #4]
-  16:	f04f 0300 	mov.w	r3, #0
-  1a:	f7ff fffe 	bl	0 <signal>
-  1e:	4a08      	ldr	r2, [pc, #32]	; (40 <main+0x40>)
-  20:	2300      	movs	r3, #0
-  22:	4619      	mov	r1, r3
-  24:	4668      	mov	r0, sp
-  26:	447a      	add	r2, pc
-  28:	f7ff fffe 	bl	0 <pthread_create>
-  2c:	2000      	movs	r0, #0
-  2e:	f7ff fffe 	bl	34 <main+0x34>
-  32:	bf00      	nop
-  34:	0000002a 	.word	0x0000002a
-  38:	00000000 	.word	0x00000000
-  3c:	00000028 	.word	0x00000028
-  40:	00000016 	.word	0x00000016
+Function sub_4000fb @ 0x004000fb
+
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function syscall @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function __assert_fail @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function signal @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function pthread_create @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

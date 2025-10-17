@@ -1,192 +1,441 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_arm-neon_a0f7b5fd.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svclt	#0x4770
 
+Function vec_func2 @ 0x00400005
+0x00400005:	bx	lr
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	bx	lr
 
-00000000 <vec_func1>:
-   0:	4770      	bx	lr
-   2:	bf00      	nop
+Function vec_func3 @ 0x00400009
+0x00400009:	bx	lr
 
-00000004 <vec_func2>:
-   4:	4770      	bx	lr
-   6:	bf00      	nop
+Function sub_40000b @ 0x0040000b
+0x0040000b:	nop	
+0x0040000d:	bx	lr
 
-00000008 <vec_func3>:
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function vec_func4 @ 0x0040000d
+0x0040000d:	bx	lr
 
-0000000c <vec_func4>:
-   c:	4770      	bx	lr
-   e:	bf00      	nop
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
+0x00400011:	bx	lr
 
-00000010 <vec_func5>:
-  10:	4770      	bx	lr
-  12:	bf00      	nop
+Function vec_func5 @ 0x00400011
+0x00400011:	bx	lr
 
-00000014 <vec_func6>:
-  14:	4770      	bx	lr
-  16:	bf00      	nop
+Function sub_400013 @ 0x00400013
+0x00400013:	nop	
+0x00400015:	bx	lr
 
-00000018 <vec_func7>:
-  18:	b084      	sub	sp, #16
-  1a:	b004      	add	sp, #16
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
+Function vec_func6 @ 0x00400015
+0x00400015:	bx	lr
 
-00000020 <vec_func8>:
-  20:	4770      	bx	lr
-  22:	bf00      	nop
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	sub	sp, #0x10
+0x0040001b:	add	sp, #0x10
+0x0040001d:	bx	lr
 
-00000024 <vec_func9>:
-  24:	4770      	bx	lr
-  26:	bf00      	nop
+Function vec_func7 @ 0x00400019
+0x00400019:	sub	sp, #0x10
+0x0040001b:	add	sp, #0x10
+0x0040001d:	bx	lr
 
-00000028 <vec_func10>:
-  28:	b084      	sub	sp, #16
-  2a:	ed8d 1a02 	vstr	s2, [sp, #8]
-  2e:	edcd 1a03 	vstr	s3, [sp, #12]
-  32:	ed8d 0a00 	vstr	s0, [sp]
-  36:	edcd 0a01 	vstr	s1, [sp, #4]
-  3a:	b004      	add	sp, #16
-  3c:	4770      	bx	lr
-  3e:	bf00      	nop
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	bx	lr
 
-00000040 <vec_func11>:
-  40:	b084      	sub	sp, #16
-  42:	ed8d 1a02 	vstr	s2, [sp, #8]
-  46:	edcd 1a03 	vstr	s3, [sp, #12]
-  4a:	ed8d 0a00 	vstr	s0, [sp]
-  4e:	edcd 0a01 	vstr	s1, [sp, #4]
-  52:	b004      	add	sp, #16
-  54:	4770      	bx	lr
-  56:	bf00      	nop
+Function vec_func8 @ 0x00400021
+0x00400021:	bx	lr
 
-00000058 <vec_func12>:
-  58:	b084      	sub	sp, #16
-  5a:	ed8d 1a02 	vstr	s2, [sp, #8]
-  5e:	edcd 1a03 	vstr	s3, [sp, #12]
-  62:	ed8d 0a00 	vstr	s0, [sp]
-  66:	edcd 0a01 	vstr	s1, [sp, #4]
-  6a:	b004      	add	sp, #16
-  6c:	4770      	bx	lr
-  6e:	bf00      	nop
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	bx	lr
 
-00000070 <vec_func13>:
-  70:	b084      	sub	sp, #16
-  72:	ed8d 1a02 	vstr	s2, [sp, #8]
-  76:	edcd 1a03 	vstr	s3, [sp, #12]
-  7a:	ed8d 0a00 	vstr	s0, [sp]
-  7e:	edcd 0a01 	vstr	s1, [sp, #4]
-  82:	b004      	add	sp, #16
-  84:	4770      	bx	lr
-  86:	bf00      	nop
+Function vec_func9 @ 0x00400025
+0x00400025:	bx	lr
 
-00000088 <vec_func14>:
-  88:	b084      	sub	sp, #16
-  8a:	ed8d 1a02 	vstr	s2, [sp, #8]
-  8e:	edcd 1a03 	vstr	s3, [sp, #12]
-  92:	ed8d 0a00 	vstr	s0, [sp]
-  96:	edcd 0a01 	vstr	s1, [sp, #4]
-  9a:	b004      	add	sp, #16
-  9c:	4770      	bx	lr
-  9e:	bf00      	nop
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	sub	sp, #0x10
+0x0040002b:	vstr	s2, [sp, #8]
+0x0040002f:	vstr	s3, [sp, #0xc]
+0x00400033:	vstr	s0, [sp]
+0x00400037:	vstr	s1, [sp, #4]
+0x0040003b:	add	sp, #0x10
+0x0040003d:	bx	lr
 
-000000a0 <vec_func15>:
-  a0:	b084      	sub	sp, #16
-  a2:	ed8d 1a02 	vstr	s2, [sp, #8]
-  a6:	edcd 1a03 	vstr	s3, [sp, #12]
-  aa:	ed8d 0a00 	vstr	s0, [sp]
-  ae:	edcd 0a01 	vstr	s1, [sp, #4]
-  b2:	b004      	add	sp, #16
-  b4:	4770      	bx	lr
-  b6:	bf00      	nop
+Function vec_func10 @ 0x00400029
+0x00400029:	sub	sp, #0x10
+0x0040002b:	vstr	s2, [sp, #8]
+0x0040002f:	vstr	s3, [sp, #0xc]
+0x00400033:	vstr	s0, [sp]
+0x00400037:	vstr	s1, [sp, #4]
+0x0040003b:	add	sp, #0x10
+0x0040003d:	bx	lr
 
-000000b8 <vec_func16>:
-  b8:	b088      	sub	sp, #32
-  ba:	b008      	add	sp, #32
-  bc:	4770      	bx	lr
-  be:	bf00      	nop
+Function sub_40003f @ 0x0040003f
+0x0040003f:	nop	
+0x00400041:	sub	sp, #0x10
+0x00400043:	vstr	s2, [sp, #8]
+0x00400047:	vstr	s3, [sp, #0xc]
+0x0040004b:	vstr	s0, [sp]
+0x0040004f:	vstr	s1, [sp, #4]
+0x00400053:	add	sp, #0x10
+0x00400055:	bx	lr
 
-000000c0 <vec_func17>:
-  c0:	b084      	sub	sp, #16
-  c2:	ed8d 1a02 	vstr	s2, [sp, #8]
-  c6:	edcd 1a03 	vstr	s3, [sp, #12]
-  ca:	ed8d 0a00 	vstr	s0, [sp]
-  ce:	edcd 0a01 	vstr	s1, [sp, #4]
-  d2:	b004      	add	sp, #16
-  d4:	4770      	bx	lr
-  d6:	bf00      	nop
+Function vec_func11 @ 0x00400041
+0x00400041:	sub	sp, #0x10
+0x00400043:	vstr	s2, [sp, #8]
+0x00400047:	vstr	s3, [sp, #0xc]
+0x0040004b:	vstr	s0, [sp]
+0x0040004f:	vstr	s1, [sp, #4]
+0x00400053:	add	sp, #0x10
+0x00400055:	bx	lr
 
-000000d8 <vec_func18>:
-  d8:	b084      	sub	sp, #16
-  da:	ed8d 1a02 	vstr	s2, [sp, #8]
-  de:	edcd 1a03 	vstr	s3, [sp, #12]
-  e2:	ed8d 0a00 	vstr	s0, [sp]
-  e6:	edcd 0a01 	vstr	s1, [sp, #4]
-  ea:	b004      	add	sp, #16
-  ec:	4770      	bx	lr
-  ee:	bf00      	nop
+Function sub_400057 @ 0x00400057
+0x00400057:	nop	
+0x00400059:	sub	sp, #0x10
+0x0040005b:	vstr	s2, [sp, #8]
+0x0040005f:	vstr	s3, [sp, #0xc]
+0x00400063:	vstr	s0, [sp]
+0x00400067:	vstr	s1, [sp, #4]
+0x0040006b:	add	sp, #0x10
+0x0040006d:	bx	lr
 
-000000f0 <hva_func1>:
-  f0:	b500      	push	{lr}
-  f2:	b093      	sub	sp, #76	; 0x4c
-  f4:	f10d 0e18 	add.w	lr, sp, #24
-  f8:	f10d 0c30 	add.w	ip, sp, #48	; 0x30
-  fc:	ed8d 0b06 	vstr	d0, [sp, #24]
- 100:	ed8d 1b08 	vstr	d1, [sp, #32]
- 104:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 108:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
- 10c:	ed8d 2b0a 	vstr	d2, [sp, #40]	; 0x28
- 110:	ed9d 1b0e 	vldr	d1, [sp, #56]	; 0x38
- 114:	ed9d 0b0c 	vldr	d0, [sp, #48]	; 0x30
- 118:	e89e 0003 	ldmia.w	lr, {r0, r1}
- 11c:	e88c 0003 	stmia.w	ip, {r0, r1}
- 120:	ed9d 2b10 	vldr	d2, [sp, #64]	; 0x40
- 124:	b013      	add	sp, #76	; 0x4c
- 126:	f85d fb04 	ldr.w	pc, [sp], #4
- 12a:	bf00      	nop
+Function vec_func12 @ 0x00400059
+0x00400059:	sub	sp, #0x10
+0x0040005b:	vstr	s2, [sp, #8]
+0x0040005f:	vstr	s3, [sp, #0xc]
+0x00400063:	vstr	s0, [sp]
+0x00400067:	vstr	s1, [sp, #4]
+0x0040006b:	add	sp, #0x10
+0x0040006d:	bx	lr
 
-0000012c <hva_func2>:
- 12c:	b500      	push	{lr}
- 12e:	b093      	sub	sp, #76	; 0x4c
- 130:	f10d 0e18 	add.w	lr, sp, #24
- 134:	f10d 0c30 	add.w	ip, sp, #48	; 0x30
- 138:	ed8d 0b06 	vstr	d0, [sp, #24]
- 13c:	ed8d 1b08 	vstr	d1, [sp, #32]
- 140:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 144:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
- 148:	ed8d 2b0a 	vstr	d2, [sp, #40]	; 0x28
- 14c:	ed9d 1b0e 	vldr	d1, [sp, #56]	; 0x38
- 150:	ed9d 0b0c 	vldr	d0, [sp, #48]	; 0x30
- 154:	e89e 0003 	ldmia.w	lr, {r0, r1}
- 158:	e88c 0003 	stmia.w	ip, {r0, r1}
- 15c:	ed9d 2b10 	vldr	d2, [sp, #64]	; 0x40
- 160:	b013      	add	sp, #76	; 0x4c
- 162:	f85d fb04 	ldr.w	pc, [sp], #4
- 166:	bf00      	nop
+Function sub_40006f @ 0x0040006f
+0x0040006f:	nop	
+0x00400071:	sub	sp, #0x10
+0x00400073:	vstr	s2, [sp, #8]
+0x00400077:	vstr	s3, [sp, #0xc]
+0x0040007b:	vstr	s0, [sp]
+0x0040007f:	vstr	s1, [sp, #4]
+0x00400083:	add	sp, #0x10
+0x00400085:	bx	lr
 
-00000168 <hva_func3>:
- 168:	b082      	sub	sp, #8
- 16a:	4684      	mov	ip, r0
- 16c:	b510      	push	{r4, lr}
- 16e:	4604      	mov	r4, r0
- 170:	f10d 0e08 	add.w	lr, sp, #8
- 174:	e9ce 2300 	strd	r2, r3, [lr]
- 178:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 17c:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
- 180:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
- 184:	e8ac 000f 	stmia.w	ip!, {r0, r1, r2, r3}
- 188:	e89e 000f 	ldmia.w	lr, {r0, r1, r2, r3}
- 18c:	e88c 000f 	stmia.w	ip, {r0, r1, r2, r3}
- 190:	4620      	mov	r0, r4
- 192:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
- 196:	b002      	add	sp, #8
- 198:	4770      	bx	lr
- 19a:	bf00      	nop
+Function vec_func13 @ 0x00400071
+0x00400071:	sub	sp, #0x10
+0x00400073:	vstr	s2, [sp, #8]
+0x00400077:	vstr	s3, [sp, #0xc]
+0x0040007b:	vstr	s0, [sp]
+0x0040007f:	vstr	s1, [sp, #4]
+0x00400083:	add	sp, #0x10
+0x00400085:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_400087 @ 0x00400087
+0x00400087:	nop	
+0x00400089:	sub	sp, #0x10
+0x0040008b:	vstr	s2, [sp, #8]
+0x0040008f:	vstr	s3, [sp, #0xc]
+0x00400093:	vstr	s0, [sp]
+0x00400097:	vstr	s1, [sp, #4]
+0x0040009b:	add	sp, #0x10
+0x0040009d:	bx	lr
 
-00000000 <main>:
-   0:	2000      	movs	r0, #0
-   2:	4770      	bx	lr
+Function vec_func14 @ 0x00400089
+0x00400089:	sub	sp, #0x10
+0x0040008b:	vstr	s2, [sp, #8]
+0x0040008f:	vstr	s3, [sp, #0xc]
+0x00400093:	vstr	s0, [sp]
+0x00400097:	vstr	s1, [sp, #4]
+0x0040009b:	add	sp, #0x10
+0x0040009d:	bx	lr
+
+Function sub_40009f @ 0x0040009f
+0x0040009f:	nop	
+0x004000a1:	sub	sp, #0x10
+0x004000a3:	vstr	s2, [sp, #8]
+0x004000a7:	vstr	s3, [sp, #0xc]
+0x004000ab:	vstr	s0, [sp]
+0x004000af:	vstr	s1, [sp, #4]
+0x004000b3:	add	sp, #0x10
+0x004000b5:	bx	lr
+
+Function vec_func15 @ 0x004000a1
+0x004000a1:	sub	sp, #0x10
+0x004000a3:	vstr	s2, [sp, #8]
+0x004000a7:	vstr	s3, [sp, #0xc]
+0x004000ab:	vstr	s0, [sp]
+0x004000af:	vstr	s1, [sp, #4]
+0x004000b3:	add	sp, #0x10
+0x004000b5:	bx	lr
+
+Function sub_4000b7 @ 0x004000b7
+0x004000b7:	nop	
+0x004000b9:	sub	sp, #0x20
+0x004000bb:	add	sp, #0x20
+0x004000bd:	bx	lr
+
+Function vec_func16 @ 0x004000b9
+0x004000b9:	sub	sp, #0x20
+0x004000bb:	add	sp, #0x20
+0x004000bd:	bx	lr
+
+Function sub_4000bf @ 0x004000bf
+0x004000bf:	nop	
+0x004000c1:	sub	sp, #0x10
+0x004000c3:	vstr	s2, [sp, #8]
+0x004000c7:	vstr	s3, [sp, #0xc]
+0x004000cb:	vstr	s0, [sp]
+0x004000cf:	vstr	s1, [sp, #4]
+0x004000d3:	add	sp, #0x10
+0x004000d5:	bx	lr
+
+Function vec_func17 @ 0x004000c1
+0x004000c1:	sub	sp, #0x10
+0x004000c3:	vstr	s2, [sp, #8]
+0x004000c7:	vstr	s3, [sp, #0xc]
+0x004000cb:	vstr	s0, [sp]
+0x004000cf:	vstr	s1, [sp, #4]
+0x004000d3:	add	sp, #0x10
+0x004000d5:	bx	lr
+
+Function sub_4000d7 @ 0x004000d7
+0x004000d7:	nop	
+0x004000d9:	sub	sp, #0x10
+0x004000db:	vstr	s2, [sp, #8]
+0x004000df:	vstr	s3, [sp, #0xc]
+0x004000e3:	vstr	s0, [sp]
+0x004000e7:	vstr	s1, [sp, #4]
+0x004000eb:	add	sp, #0x10
+0x004000ed:	bx	lr
+
+Function vec_func18 @ 0x004000d9
+0x004000d9:	sub	sp, #0x10
+0x004000db:	vstr	s2, [sp, #8]
+0x004000df:	vstr	s3, [sp, #0xc]
+0x004000e3:	vstr	s0, [sp]
+0x004000e7:	vstr	s1, [sp, #4]
+0x004000eb:	add	sp, #0x10
+0x004000ed:	bx	lr
+
+Function sub_4000ef @ 0x004000ef
+0x004000ef:	nop	
+0x004000f1:	push	{lr}
+0x004000f3:	sub	sp, #0x4c
+0x004000f5:	add.w	lr, sp, #0x18
+0x004000f9:	add.w	ip, sp, #0x30
+0x004000fd:	vstr	d0, [sp, #0x18]
+0x00400101:	vstr	d1, [sp, #0x20]
+0x00400105:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400109:	stm.w	ip!, {r0, r1, r2, r3}
+0x0040010d:	vstr	d2, [sp, #0x28]
+0x00400111:	vldr	d1, [sp, #0x38]
+0x00400115:	vldr	d0, [sp, #0x30]
+0x00400119:	ldm.w	lr, {r0, r1}
+0x0040011d:	stm.w	ip, {r0, r1}
+0x00400121:	vldr	d2, [sp, #0x40]
+0x00400125:	add	sp, #0x4c
+0x00400127:	ldr	pc, [sp], #4
+
+Function hva_func1 @ 0x004000f1
+0x004000f1:	push	{lr}
+0x004000f3:	sub	sp, #0x4c
+0x004000f5:	add.w	lr, sp, #0x18
+0x004000f9:	add.w	ip, sp, #0x30
+0x004000fd:	vstr	d0, [sp, #0x18]
+0x00400101:	vstr	d1, [sp, #0x20]
+0x00400105:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400109:	stm.w	ip!, {r0, r1, r2, r3}
+0x0040010d:	vstr	d2, [sp, #0x28]
+0x00400111:	vldr	d1, [sp, #0x38]
+0x00400115:	vldr	d0, [sp, #0x30]
+0x00400119:	ldm.w	lr, {r0, r1}
+0x0040011d:	stm.w	ip, {r0, r1}
+0x00400121:	vldr	d2, [sp, #0x40]
+0x00400125:	add	sp, #0x4c
+0x00400127:	ldr	pc, [sp], #4
+
+Function sub_40012b @ 0x0040012b
+0x0040012b:	nop	
+0x0040012d:	push	{lr}
+0x0040012f:	sub	sp, #0x4c
+0x00400131:	add.w	lr, sp, #0x18
+0x00400135:	add.w	ip, sp, #0x30
+0x00400139:	vstr	d0, [sp, #0x18]
+0x0040013d:	vstr	d1, [sp, #0x20]
+0x00400141:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400145:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400149:	vstr	d2, [sp, #0x28]
+0x0040014d:	vldr	d1, [sp, #0x38]
+0x00400151:	vldr	d0, [sp, #0x30]
+0x00400155:	ldm.w	lr, {r0, r1}
+0x00400159:	stm.w	ip, {r0, r1}
+0x0040015d:	vldr	d2, [sp, #0x40]
+0x00400161:	add	sp, #0x4c
+0x00400163:	ldr	pc, [sp], #4
+
+Function hva_func2 @ 0x0040012d
+0x0040012d:	push	{lr}
+0x0040012f:	sub	sp, #0x4c
+0x00400131:	add.w	lr, sp, #0x18
+0x00400135:	add.w	ip, sp, #0x30
+0x00400139:	vstr	d0, [sp, #0x18]
+0x0040013d:	vstr	d1, [sp, #0x20]
+0x00400141:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400145:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400149:	vstr	d2, [sp, #0x28]
+0x0040014d:	vldr	d1, [sp, #0x38]
+0x00400151:	vldr	d0, [sp, #0x30]
+0x00400155:	ldm.w	lr, {r0, r1}
+0x00400159:	stm.w	ip, {r0, r1}
+0x0040015d:	vldr	d2, [sp, #0x40]
+0x00400161:	add	sp, #0x4c
+0x00400163:	ldr	pc, [sp], #4
+
+Function sub_400167 @ 0x00400167
+0x00400167:	nop	
+0x00400169:	sub	sp, #8
+0x0040016b:	mov	ip, r0
+0x0040016d:	push	{r4, lr}
+0x0040016f:	mov	r4, r0
+0x00400171:	add.w	lr, sp, #8
+0x00400175:	strd	r2, r3, [lr]
+0x00400179:	ldm.w	lr!, {r0, r1, r2, r3}
+0x0040017d:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400181:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400185:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400189:	ldm.w	lr, {r0, r1, r2, r3}
+0x0040018d:	stm.w	ip, {r0, r1, r2, r3}
+0x00400191:	mov	r0, r4
+0x00400193:	pop.w	{r4, lr}
+0x00400197:	add	sp, #8
+0x00400199:	bx	lr
+
+Function hva_func3 @ 0x00400169
+0x00400169:	sub	sp, #8
+0x0040016b:	mov	ip, r0
+0x0040016d:	push	{r4, lr}
+0x0040016f:	mov	r4, r0
+0x00400171:	add.w	lr, sp, #8
+0x00400175:	strd	r2, r3, [lr]
+0x00400179:	ldm.w	lr!, {r0, r1, r2, r3}
+0x0040017d:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400181:	ldm.w	lr!, {r0, r1, r2, r3}
+0x00400185:	stm.w	ip!, {r0, r1, r2, r3}
+0x00400189:	ldm.w	lr, {r0, r1, r2, r3}
+0x0040018d:	stm.w	ip, {r0, r1, r2, r3}
+0x00400191:	mov	r0, r4
+0x00400193:	pop.w	{r4, lr}
+0x00400197:	add	sp, #8
+0x00400199:	bx	lr
+
+Function sub_40019b @ 0x0040019b
+0x0040019b:	nop	
+
+Function main @ 0x004002d9
+0x004002d9:	movs	r0, #0
+0x004002db:	bx	lr
+
+Function sys_380 @ 0x007002f8
+0x007002f8:	andeq	r0, r0, r0
+0x007002fc:	andeq	r0, r0, r0
+0x00700300:	andeq	r0, r0, r0
+0x00700304:	andeq	r0, r0, r0
+0x00700308:	andeq	r0, r0, r0
+0x0070030c:	andeq	r0, r0, r0
+0x00700310:	andeq	r0, r0, r0
+0x00700314:	andeq	r0, r0, r0
+0x00700318:	andeq	r0, r0, r0
+0x0070031c:	andeq	r0, r0, r0
+0x00700320:	andeq	r0, r0, r0
+0x00700324:	andeq	r0, r0, r0
+0x00700328:	andeq	r0, r0, r0
+0x0070032c:	andeq	r0, r0, r0
+0x00700330:	andeq	r0, r0, r0
+0x00700334:	andeq	r0, r0, r0
+0x00700338:	andeq	r0, r0, r0
+0x0070033c:	andeq	r0, r0, r0
+0x00700340:	andeq	r0, r0, r0
+0x00700344:	andeq	r0, r0, r0
+0x00700348:	andeq	r0, r0, r0
+0x0070034c:	andeq	r0, r0, r0
+0x00700350:	andeq	r0, r0, r0
+0x00700354:	andeq	r0, r0, r0
+0x00700358:	andeq	r0, r0, r0
+0x0070035c:	andeq	r0, r0, r0
+0x00700360:	andeq	r0, r0, r0
+0x00700364:	andeq	r0, r0, r0
+0x00700368:	andeq	r0, r0, r0
+0x0070036c:	andeq	r0, r0, r0
+0x00700370:	andeq	r0, r0, r0
+0x00700374:	andeq	r0, r0, r0
+0x00700378:	andeq	r0, r0, r0
+0x0070037c:	andeq	r0, r0, r0
+0x00700380:	andeq	r0, r0, r0
+0x00700384:	andeq	r0, r0, r0
+0x00700388:	andeq	r0, r0, r0
+0x0070038c:	andeq	r0, r0, r0
+0x00700390:	andeq	r0, r0, r0
+0x00700394:	andeq	r0, r0, r0
+0x00700398:	andeq	r0, r0, r0
+0x0070039c:	andeq	r0, r0, r0
+0x007003a0:	andeq	r0, r0, r0
+0x007003a4:	andeq	r0, r0, r0
+0x007003a8:	andeq	r0, r0, r0
+0x007003ac:	andeq	r0, r0, r0
+0x007003b0:	andeq	r0, r0, r0
+0x007003b4:	andeq	r0, r0, r0
+0x007003b8:	andeq	r0, r0, r0
+0x007003bc:	andeq	r0, r0, r0
+0x007003c0:	andeq	r0, r0, r0
+0x007003c4:	andeq	r0, r0, r0
+0x007003c8:	andeq	r0, r0, r0
+0x007003cc:	andeq	r0, r0, r0
+0x007003d0:	andeq	r0, r0, r0
+0x007003d4:	andeq	r0, r0, r0
+0x007003d8:	andeq	r0, r0, r0
+0x007003dc:	andeq	r0, r0, r0
+0x007003e0:	andeq	r0, r0, r0
+0x007003e4:	andeq	r0, r0, r0
+0x007003e8:	andeq	r0, r0, r0
+0x007003ec:	andeq	r0, r0, r0
+0x007003f0:	andeq	r0, r0, r0
+0x007003f4:	andeq	r0, r0, r0
+0x007003f8:	andeq	r0, r0, r0
+0x007003fc:	andeq	r0, r0, r0
+0x00700400:	andeq	r0, r0, r0
+0x00700404:	andeq	r0, r0, r0
+0x00700408:	andeq	r0, r0, r0
+0x0070040c:	andeq	r0, r0, r0
+0x00700410:	andeq	r0, r0, r0
+0x00700414:	andeq	r0, r0, r0
+0x00700418:	andeq	r0, r0, r0
+0x0070041c:	andeq	r0, r0, r0
+0x00700420:	andeq	r0, r0, r0
+0x00700424:	andeq	r0, r0, r0
+0x00700428:	andeq	r0, r0, r0
+0x0070042c:	andeq	r0, r0, r0
+0x00700430:	andeq	r0, r0, r0
+0x00700434:	andeq	r0, r0, r0
+0x00700438:	andeq	r0, r0, r0
+0x0070043c:	andeq	r0, r0, r0
+0x00700440:	andeq	r0, r0, r0
+0x00700444:	andeq	r0, r0, r0
+0x00700448:	andeq	r0, r0, r0
+0x0070044c:	andeq	r0, r0, r0
+0x00700450:	andeq	r0, r0, r0
+0x00700454:	andeq	r0, r0, r0
+0x00700458:	andeq	r0, r0, r0
+0x0070045c:	andeq	r0, r0, r0
+0x00700460:	andeq	r0, r0, r0
+0x00700464:	andeq	r0, r0, r0
+0x00700468:	andeq	r0, r0, r0
+0x0070046c:	andeq	r0, r0, r0
+0x00700470:	andeq	r0, r0, r0
+0x00700474:	andeq	r0, r0, r0
+0x00700478:	andeq	r0, r0, r0
+0x0070047c:	andeq	r0, r0, r0
+0x00700480:	andeq	r0, r0, r0

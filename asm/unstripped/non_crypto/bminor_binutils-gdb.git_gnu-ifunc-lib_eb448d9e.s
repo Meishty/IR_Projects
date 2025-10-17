@@ -1,25 +1,42 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_gnu-ifunc-lib_eb448d9e.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdbmi	r8, {r0, r1, r2, r8, sb, fp, lr}
+0x00400004:	bmi	#0x6111f8
+0x00400004:	bmi	#0x6111f8
+0x00400008:	andvs	r5, r8, sb, asr r8
+0x0040000c:	ldmdavs	r2, {r1, r3, r4, r7, fp, ip, lr}
+0x00400010:	bmi	#0x5ac460
+0x00400010:	bmi	#0x5ac460
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bx	lr
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	ldr	r2, [pc, #0x14]
+0x0040001b:	ldr	r0, [r3, r2]
+0x0040001d:	bx	lr
 
-00000000 <gnu_ifunc>:
-   0:	4b07      	ldr	r3, [pc, #28]	; (20 <gnu_ifunc+0x20>)
-   2:	4908      	ldr	r1, [pc, #32]	; (24 <gnu_ifunc+0x24>)
-   4:	447b      	add	r3, pc
-   6:	4a08      	ldr	r2, [pc, #32]	; (28 <gnu_ifunc+0x28>)
-   8:	5859      	ldr	r1, [r3, r1]
-   a:	6008      	str	r0, [r1, #0]
-   c:	589a      	ldr	r2, [r3, r2]
-   e:	6812      	ldr	r2, [r2, #0]
-  10:	b112      	cbz	r2, 18 <gnu_ifunc+0x18>
-  12:	4a06      	ldr	r2, [pc, #24]	; (2c <gnu_ifunc+0x2c>)
-  14:	5898      	ldr	r0, [r3, r2]
-  16:	4770      	bx	lr
-  18:	4a05      	ldr	r2, [pc, #20]	; (30 <gnu_ifunc+0x30>)
-  1a:	5898      	ldr	r0, [r3, r2]
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
-  20:	00000018 	.word	0x00000018
-	...
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	movs	r0, r3
+0x00400023:	movs	r0, r0
+0x00400025:	movs	r0, r0
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, r0
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r0, r0
+0x00400033:	movs	r0, r0
+
+Function sub_400021 @ 0x00400021
+0x00400021:	movs	r0, r3
+0x00400023:	movs	r0, r0
+0x00400025:	movs	r0, r0
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, r0
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	movs	r0, r0
+0x00400033:	movs	r0, r0

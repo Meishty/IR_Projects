@@ -1,36 +1,41 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_thread-specific_759ee392_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x56d428
+0x0040000c:	ldrb	sp, [lr, r0, lsl #26]!
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r0, r2
+0x0040001b:	movs	r0, r0
 
-00000000 <.text>:
-   0:	4b05b508 	blmi	0x16d428
-   4:	f853447b 			; <UNDEFINED> instruction: 0xf853447b
-   8:	2b003020 	blcs	0xc090
-   c:	e7fedd00 	ldrb	sp, [lr, r0, lsl #26]!
-  10:	f7ff2000 			; <UNDEFINED> instruction: 0xf7ff2000
-  14:	bf00fffe 	svclt	0x0000fffe
-  18:	00000010 	andeq	r0, r0, r0, lsl r0
+Function sub_400021 @ 0x00400021
+0x00400021:	push	{r4, r5, lr}
+0x00400023:	movs	r3, #0
+0x00400025:	ldr.w	lr, [pc, #0x30]
+0x00400029:	ldr.w	ip, [pc, #0x30]
+0x0040002d:	sub	sp, #0x14
+0x0040002f:	add	lr, pc
+0x00400031:	ldr	r4, [pc, #0x2c]
+0x00400033:	ldr	r2, [pc, #0x30]
+0x00400035:	movs	r5, #1
+0x00400037:	add	r4, pc
+0x00400039:	mov	r1, r3
+0x0040003b:	ldr.w	ip, [lr, ip]
+0x0040003f:	add	r2, pc
+0x00400041:	add	r0, sp, #4
+0x00400043:	ldr.w	ip, [ip]
+0x00400047:	str.w	ip, [sp, #0xc]
+0x0040004b:	mov.w	ip, #0
+0x0040004f:	str	r5, [r4]
+0x00400051:	bl	#0x400051
 
-Disassembly of section .text.startup:
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
 
-00000000 <.text.startup>:
-   0:	2300b530 	movwcs	fp, #1328	; 0x530
-   4:	e030f8df 	ldrsbt	pc, [r0], -pc	; <UNPREDICTABLE>
-   8:	c030f8df 	ldrsbtgt	pc, [r0], -pc	; <UNPREDICTABLE>
-   c:	44feb085 	ldrbtmi	fp, [lr], #133	; 0x85
-  10:	4a0c4c0b 	bmi	0x313044
-  14:	447c2501 	ldrbtmi	r2, [ip], #-1281	; 0xfffffaff
-  18:	f85e4619 			; <UNDEFINED> instruction: 0xf85e4619
-  1c:	447ac00c 	ldrbtmi	ip, [sl], #-12
-  20:	f8dca801 			; <UNDEFINED> instruction: 0xf8dca801
-  24:	f8cdc000 			; <UNDEFINED> instruction: 0xf8cdc000
-  28:	f04fc00c 			; <UNDEFINED> instruction: 0xf04fc00c
-  2c:	60250c00 	eorvs	r0, r5, r0, lsl #24
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	e7fe6065 	ldrb	r6, [lr, r5, rrx]!
-  38:	00000026 	andeq	r0, r0, r6, lsr #32
-  3c:	00000000 	andeq	r0, r0, r0
-  40:	00000026 	andeq	r0, r0, r6, lsr #32
-  44:	00000022 	andeq	r0, r0, r2, lsr #32
+Function sub_400055 @ 0x00400055
+0x00400055:	str	r5, [r4, #4]
+0x00400057:	b	#0x400057
+0x00400057:	b	#0x400057

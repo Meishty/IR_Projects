@@ -1,31 +1,52 @@
 
-/root/projects/compiled/non_crypto/stripped/embecosm_mibench.git_prime_a02de121_stripped.o:     file format elf32-littlearm
+Function sub_400001 @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r5, r0
+0x00400005:	vmov	s15, r5
+0x00400009:	vcvt.f64.s32	d0, s15
+0x0040000d:	vcmp.f64	d0, #0
+0x00400011:	vmrs	apsr_nzcv, fpscr
+0x00400015:	bmi	#0x400055
+0x00400005:	vmov	s15, r5
+0x00400009:	vcvt.f64.s32	d0, s15
+0x0040000d:	vcmp.f64	d0, #0
+0x00400011:	vmrs	apsr_nzcv, fpscr
+0x00400015:	bmi	#0x400055
+0x00400017:	vsqrt.f64	d7, d0
+0x0040001b:	vcvt.s32.f64	s15, d7
+0x0040001f:	vmov	r6, s15
+0x00400023:	cmp	r6, #1
+0x00400025:	ble	#0x40004d
+0x0040001b:	vcvt.s32.f64	s15, d7
+0x0040001f:	vmov	r6, s15
+0x00400023:	cmp	r6, #1
+0x00400025:	ble	#0x40004d
+0x00400027:	add.w	r3, r5, r5, lsr #31
+0x0040002b:	bic	r3, r3, #1
+0x0040002f:	cmp	r5, r3
+0x00400031:	beq	#0x400051
+0x00400033:	movs	r4, #2
+0x00400035:	b	#0x400043
+0x00400043:	adds	r4, #1
+0x00400045:	mov	r0, r5
+0x00400047:	mov	r1, r4
+0x00400049:	cmp	r6, r4
+0x0040004b:	bge	#0x400037
+0x0040004d:	mov	r0, r5
+0x0040004f:	pop	{r4, r5, r6, pc}
+0x00400051:	adds	r5, #1
+0x00400053:	b	#0x400005
 
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400037
+0x0040003b:	mul	r0, r4, r0
+0x0040003f:	cmp	r0, r5
+0x00400041:	beq	#0x400051
 
-Disassembly of section .text:
+Function sub_400055 @ 0x00400055
+0x00400055:	bl	#0x400055
+0x00400059:	vmov.f64	d7, d0
+0x0040005d:	b	#0x40001b
 
-00000000 <.text>:
-   0:	4605b570 			; <UNDEFINED> instruction: 0x4605b570
-   4:	5a90ee07 	bpl	0xfe43b828
-   8:	0be7eeb8 	bleq	0xff9fbaf0
-   c:	0b40eeb5 	bleq	0x103bae8
-  10:	fa10eef1 	blx	0x43bbdc
-  14:	eeb1d41e 	mrc	4, 5, sp, cr1, cr14, {0}
-  18:	eefd7bc0 	vcvt.s32.f64	s15, d0
-  1c:	ee177bc7 	vnmla.f64	d7, d23, d7
-  20:	2e016a90 	vmovcs	s3, r6
-  24:	eb05dd12 	bl	0x177474
-  28:	f02373d5 			; <UNDEFINED> instruction: 0xf02373d5
-  2c:	429d0301 	addsmi	r0, sp, #67108864	; 0x4000000
-  30:	2402d00e 	strcs	sp, [r2], #-14
-  34:	f7ffe005 			; <UNDEFINED> instruction: 0xf7ffe005
-  38:	fb04fffe 	blx	0x14003a
-  3c:	42a8f000 	adcmi	pc, r8, #0
-  40:	3401d006 	strcc	sp, [r1], #-6
-  44:	46214628 	strtmi	r4, [r1], -r8, lsr #12
-  48:	daf442a6 	ble	0xffd10ae8
-  4c:	bd704628 	ldcllt	6, cr4, [r0, #-160]!	; 0xffffff60
-  50:	e7d73501 	ldrb	r3, [r7, r1, lsl #10]
-  54:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  58:	7b40eeb0 	blvc	0x103bb20
-  5c:	bf00e7dd 	svclt	0x0000e7dd
+Function sub_40005f @ 0x0040005f
+0x0040005f:	nop	

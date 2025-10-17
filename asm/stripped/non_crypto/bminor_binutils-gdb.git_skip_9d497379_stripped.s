@@ -1,24 +1,30 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_skip_9d497379_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	bl	#0x400007
 
-Disassembly of section .text:
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
 
-00000000 <.text>:
-   0:	47702000 	ldrbmi	r2, [r0, -r0]!
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bl	#0x40000b
 
-Disassembly of section .text.unlikely:
+Function sub_400011 @ 0x00400011
+0x00400011:	push	{r3, lr}
+0x00400013:	bl	#0x400013
 
-00000000 <.text.unlikely>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-   8:	Address 0x0000000000000008 is out of bounds.
+Function sub_400013 @ 0x00400013
+0x00400013:	bl	#0x400013
 
+Function sub_400017 @ 0x00400017
+0x00400017:	movs	r0, #0
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text.startup:
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
 
-00000000 <.text.startup>:
-   0:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-   4:	2000fffe 	strdcs	pc, [r0], -lr
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
+Function sub_40001d @ 0x0040001d
+0x0040001d:	bl	#0x40001d

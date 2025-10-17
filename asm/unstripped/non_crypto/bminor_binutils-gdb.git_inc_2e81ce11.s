@@ -1,18 +1,17 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_inc_2e81ce11.o:     file format elf32-littlearm
+Function imported_func @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	bl	#0x500001
+0x00400007:	ldr	r3, [pc, #0xc]
+0x00400009:	ldr	r2, [pc, #0xc]
+0x0040000b:	add	r3, pc
+0x0040000d:	ldr	r3, [r3, r2]
+0x0040000f:	ldr	r3, [r3]
+0x00400011:	add	r0, r3
+0x00400013:	pop	{r3, pc}
 
-
-Disassembly of section .text:
-
-00000000 <imported_func>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <exported_func>
-   6:	4b03      	ldr	r3, [pc, #12]	; (14 <imported_func+0x14>)
-   8:	4a03      	ldr	r2, [pc, #12]	; (18 <imported_func+0x18>)
-   a:	447b      	add	r3, pc
-   c:	589b      	ldr	r3, [r3, r2]
-   e:	681b      	ldr	r3, [r3, #0]
-  10:	4418      	add	r0, r3
-  12:	bd08      	pop	{r3, pc}
-  14:	00000006 	.word	0x00000006
-  18:	00000000 	.word	0x00000000
+Function exported_func @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

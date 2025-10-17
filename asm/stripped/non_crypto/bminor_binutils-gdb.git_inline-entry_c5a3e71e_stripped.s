@@ -1,24 +1,33 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_inline-entry_c5a3e71e_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbtmi	r4, [fp], #-0xb02
+0x00400004:	ldrmi	r6, [r0], #-0x81a
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	bx	lr
 
-Disassembly of section .text:
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r6, r0
+0x0040000f:	movs	r0, r0
 
-00000000 <.text>:
-   0:	447b4b02 	ldrbtmi	r4, [fp], #-2818	; 0xfffff4fe
-   4:	4410681a 	ldrmi	r6, [r0], #-2074	; 0xfffff7e6
-   8:	47706018 			; <UNDEFINED> instruction: 0x47706018
-   c:	00000006 	andeq	r0, r0, r6
+Function sub_400015 @ 0x00400015
+0x00400015:	push	{r3, lr}
+0x00400017:	ldr	r3, [pc, #0x1c]
+0x00400019:	add	r3, pc
+0x0040001b:	ldr	r2, [r3]
+0x0040001d:	ldr	r3, [r3]
+0x0040001f:	cbz	r2, #0x40002f
+0x00400021:	cmp	r3, #1
+0x00400023:	beq	#0x40002b
+0x00400021:	cmp	r3, #1
+0x00400023:	beq	#0x40002b
+0x00400025:	movs	r0, #1
+0x00400027:	bl	#0x400027
+0x0040002b:	movs	r0, #0
+0x0040002d:	pop	{r3, pc}
+0x0040002f:	cmp	r3, #2
+0x00400031:	bne	#0x400025
+0x00400033:	b	#0x40002b
 
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	4b07b508 	blmi	0x1ed428
-   4:	681a447b 	ldmdavs	sl, {r0, r1, r3, r4, r5, r6, sl, lr}
-   8:	b132681b 	teqlt	r2, fp, lsl r8
-   c:	d0022b01 	andle	r2, r2, r1, lsl #22
-  10:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  14:	2000fffe 	strdcs	pc, [r0], -lr
-  18:	2b02bd08 	blcs	0xaf440
-  1c:	e7fad1f8 	udf	#44312	; 0xad18
-  20:	00000018 	andeq	r0, r0, r8, lsl r0
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027

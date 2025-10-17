@@ -1,25 +1,44 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_solib-reverse_6424870c_stripped.o:     file format elf32-littlearm
+Function sub_400029 @ 0x00400029
+0x00400029:	ldr	r0, [pc, #0x34]
+0x0040002b:	push	{r3, lr}
+0x0040002d:	add	r0, pc
+0x0040002f:	bl	#0x40002f
 
+Function sub_40002f @ 0x0040002f
+0x0040002f:	bl	#0x40002f
+0x00400033:	movs	r0, #0
+0x00400035:	bl	#0x400035
 
-Disassembly of section .text.startup:
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
+0x00400039:	movs	r0, #0xc
+0x0040003b:	bl	#0x40003b
 
-00000000 <.text.startup>:
-   0:	b508480d 	strlt	r4, [r8, #-2061]	; 0xfffff7f3
-   4:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-   8:	2000fffe 	strdcs	pc, [r0], -lr
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	f7ff200c 			; <UNDEFINED> instruction: 0xf7ff200c
-  14:	2011fffe 			; <UNDEFINED> instruction: 0x2011fffe
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	44784807 	ldrbtmi	r4, [r8], #-2055	; 0xfffff7f9
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	44784806 	ldrbtmi	r4, [r8], #-2054	; 0xfffff7fa
-  28:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  2c:	44784805 	ldrbtmi	r4, [r8], #-2053	; 0xfffff7fb
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	bd082000 	stclt	0, cr2, [r8, #-0]
-  38:	00000030 	andeq	r0, r0, r0, lsr r0
-  3c:	0000001a 	andeq	r0, r0, sl, lsl r0
-  40:	00000016 	andeq	r0, r0, r6, lsl r0
-  44:	00000012 	andeq	r0, r0, r2, lsl r0
+Function sub_40003b @ 0x0040003b
+0x0040003b:	bl	#0x40003b
+0x0040003f:	movs	r0, #0x11
+0x00400041:	bl	#0x400041
+
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041
+0x00400045:	ldr	r0, [pc, #0x1c]
+0x00400047:	add	r0, pc
+0x00400049:	bl	#0x400049
+
+Function sub_400049 @ 0x00400049
+0x00400049:	bl	#0x400049
+0x0040004d:	ldr	r0, [pc, #0x18]
+0x0040004f:	add	r0, pc
+0x00400051:	bl	#0x400051
+
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+0x00400055:	ldr	r0, [pc, #0x14]
+0x00400057:	add	r0, pc
+0x00400059:	bl	#0x400059
+
+Function sub_400059 @ 0x00400059
+0x00400059:	bl	#0x400059
+0x0040005d:	movs	r0, #0
+0x0040005f:	pop	{r3, pc}

@@ -1,17 +1,23 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_start-inferior-specific-other_a48de600.o:     file format elf32-littlearm
+Function ctor @ 0x00400001
+0x00400001:	movs	r0, #2
+0x00400003:	b.w	#0x500001
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
+0x00400009:	push	{r3, lr}
+0x0040000b:	movs	r0, #0x3c
+0x0040000d:	bl	#0x500001
 
-Disassembly of section .text.startup:
+Function main @ 0x00400009
+0x00400009:	push	{r3, lr}
+0x0040000b:	movs	r0, #0x3c
+0x0040000d:	bl	#0x500001
+0x00400011:	movs	r0, #0
+0x00400013:	pop	{r3, pc}
 
-00000000 <ctor>:
-   0:	2002      	movs	r0, #2
-   2:	f7ff bffe 	b.w	0 <sleep>
-   6:	bf00      	nop
-
-00000008 <main>:
-   8:	b508      	push	{r3, lr}
-   a:	203c      	movs	r0, #60	; 0x3c
-   c:	f7ff fffe 	bl	0 <sleep>
-  10:	2000      	movs	r0, #0
-  12:	bd08      	pop	{r3, pc}
+Function sleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

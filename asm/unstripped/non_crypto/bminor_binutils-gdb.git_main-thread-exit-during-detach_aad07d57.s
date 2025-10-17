@@ -1,74 +1,122 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_main-thread-exit-during-detach_aad07d57.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400008:	andhs	fp, r1, fp, lsr #2
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	vtbl.8	d22, {d8}, d19
+0x00400013:	cmp	r3, #0
+0x00400015:	bne	#0x40000b
+0x00400017:	movs	r0, #0
+0x00400019:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_40001b @ 0x0040001b
+0x0040001b:	nop	
+0x0040001d:	movs	r4, r6
+0x0040001f:	movs	r0, r0
+0x00400021:	push	{r4, lr}
+0x00400023:	ldr	r4, [pc, #0x14]
+0x00400025:	add	r4, pc
+0x00400027:	ldr	r3, [r4]
+0x00400029:	cbz	r3, #0x400037
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x500001
 
-00000000 <thread_worker>:
-   0:	b510      	push	{r4, lr}
-   2:	4c06      	ldr	r4, [pc, #24]	; (1c <thread_worker+0x1c>)
-   4:	447c      	add	r4, pc
-   6:	6823      	ldr	r3, [r4, #0]
-   8:	b12b      	cbz	r3, 16 <thread_worker+0x16>
-   a:	2001      	movs	r0, #1
-   c:	f7ff fffe 	bl	0 <sleep>
-  10:	6823      	ldr	r3, [r4, #0]
-  12:	2b00      	cmp	r3, #0
-  14:	d1f9      	bne.n	a <thread_worker+0xa>
-  16:	2000      	movs	r0, #0
-  18:	bd10      	pop	{r4, pc}
-  1a:	bf00      	nop
-  1c:	00000014 	.word	0x00000014
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r4, r6
+0x0040001f:	movs	r0, r0
+0x00400021:	push	{r4, lr}
+0x00400023:	ldr	r4, [pc, #0x14]
+0x00400025:	add	r4, pc
+0x00400027:	ldr	r3, [r4]
+0x00400029:	cbz	r3, #0x400037
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x500001
 
-00000020 <breakpt>:
-  20:	b510      	push	{r4, lr}
-  22:	4c05      	ldr	r4, [pc, #20]	; (38 <breakpt+0x18>)
-  24:	447c      	add	r4, pc
-  26:	6823      	ldr	r3, [r4, #0]
-  28:	b12b      	cbz	r3, 36 <breakpt+0x16>
-  2a:	2001      	movs	r0, #1
-  2c:	f7ff fffe 	bl	0 <sleep>
-  30:	6823      	ldr	r3, [r4, #0]
-  32:	2b00      	cmp	r3, #0
-  34:	d1f9      	bne.n	2a <breakpt+0xa>
-  36:	bd10      	pop	{r4, pc}
-  38:	00000010 	.word	0x00000010
+Function breakpt @ 0x00400021
+0x00400021:	push	{r4, lr}
+0x00400023:	ldr	r4, [pc, #0x14]
+0x00400025:	add	r4, pc
+0x00400027:	ldr	r3, [r4]
+0x00400029:	cbz	r3, #0x400037
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x500001
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x500001
+0x00400031:	ldr	r3, [r4]
+0x00400033:	cmp	r3, #0
+0x00400035:	bne	#0x40002b
+0x00400037:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function main @ 0x00400041
+0x00400041:	ldr	r2, [pc, #0x48]
+0x00400043:	mov.w	r0, #0x12c
+0x00400047:	ldr	r3, [pc, #0x48]
+0x00400049:	add	r2, pc
+0x0040004b:	push	{lr}
+0x0040004d:	ldr	r4, [pc, #0x44]
+0x0040004f:	sub	sp, #0xc
+0x00400051:	ldr	r3, [r2, r3]
+0x00400053:	add	r4, pc
+0x00400055:	ldr	r3, [r3]
+0x00400057:	str	r3, [sp, #4]
+0x00400059:	mov.w	r3, #0
+0x0040005d:	bl	#0x50000d
+0x00400061:	ldr	r2, [pc, #0x34]
+0x00400063:	movs	r3, #0
+0x00400065:	mov	r1, r3
+0x00400067:	mov	r0, sp
+0x00400069:	add	r2, pc
+0x0040006b:	bl	#0x500019
+0x0040006f:	ldr	r0, [sp]
+0x00400071:	bl	#0x500025
+0x00400075:	ldr	r3, [r4]
+0x00400077:	cbz	r3, #0x400085
+0x00400079:	movs	r0, #1
+0x0040007b:	bl	#0x500001
+0x00400079:	movs	r0, #1
+0x0040007b:	bl	#0x500001
+0x0040007f:	ldr	r3, [r4]
+0x00400081:	cmp	r3, #0
+0x00400083:	bne	#0x400079
+0x00400085:	movs	r0, #0
+0x00400087:	bl	#0x500031
 
-00000000 <main>:
-   0:	4a12      	ldr	r2, [pc, #72]	; (4c <main+0x4c>)
-   2:	f44f 7096 	mov.w	r0, #300	; 0x12c
-   6:	4b12      	ldr	r3, [pc, #72]	; (50 <main+0x50>)
-   8:	447a      	add	r2, pc
-   a:	b500      	push	{lr}
-   c:	4c11      	ldr	r4, [pc, #68]	; (54 <main+0x54>)
-   e:	b083      	sub	sp, #12
-  10:	58d3      	ldr	r3, [r2, r3]
-  12:	447c      	add	r4, pc
-  14:	681b      	ldr	r3, [r3, #0]
-  16:	9301      	str	r3, [sp, #4]
-  18:	f04f 0300 	mov.w	r3, #0
-  1c:	f7ff fffe 	bl	0 <alarm>
-  20:	4a0d      	ldr	r2, [pc, #52]	; (58 <main+0x58>)
-  22:	2300      	movs	r3, #0
-  24:	4619      	mov	r1, r3
-  26:	4668      	mov	r0, sp
-  28:	447a      	add	r2, pc
-  2a:	f7ff fffe 	bl	0 <pthread_create>
-  2e:	9800      	ldr	r0, [sp, #0]
-  30:	f7ff fffe 	bl	0 <pthread_detach>
-  34:	6823      	ldr	r3, [r4, #0]
-  36:	b12b      	cbz	r3, 44 <main+0x44>
-  38:	2001      	movs	r0, #1
-  3a:	f7ff fffe 	bl	0 <sleep>
-  3e:	6823      	ldr	r3, [r4, #0]
-  40:	2b00      	cmp	r3, #0
-  42:	d1f9      	bne.n	38 <main+0x38>
-  44:	2000      	movs	r0, #0
-  46:	f7ff fffe 	bl	0 <_exit>
-  4a:	bf00      	nop
-  4c:	00000040 	.word	0x00000040
-  50:	00000000 	.word	0x00000000
-  54:	0000003e 	.word	0x0000003e
-  58:	0000002c 	.word	0x0000002c
+Function sub_40008b @ 0x0040008b
+
+Function sleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function alarm @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function pthread_create @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function pthread_detach @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function _exit @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

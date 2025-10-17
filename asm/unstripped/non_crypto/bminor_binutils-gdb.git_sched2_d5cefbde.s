@@ -1,34 +1,70 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sched2_d5cefbde.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	ldr	r1, [pc, #0x3c]
+0x0040000b:	mov.w	r3, #-1
+0x0040000f:	ldr	r2, [pc, #0x3c]
+0x00400011:	push	{lr}
+0x00400013:	add	r1, pc
+0x00400015:	sub	sp, #0xc
+0x00400017:	ldr	r2, [r1, r2]
+0x00400019:	ldr	r2, [r2]
+0x0040001b:	str	r2, [sp, #4]
+0x0040001d:	mov.w	r2, #0
+0x00400021:	str	r3, [sp]
+0x00400023:	bl	#0x500001
+0x00400027:	mov	r1, sp
+0x00400029:	bl	#0x50000d
+0x0040002d:	ldr	r3, [sp]
+0x0040002f:	orrs.w	r4, r0, r3
+0x00400033:	bne	#0x400043
+0x00400035:	ldr	r0, [pc, #0x18]
+0x00400037:	add	r0, pc
+0x00400039:	bl	#0x500019
+0x0040003d:	mov	r0, r4
+0x0040003f:	bl	#0x500025
+0x00400043:	bl	#0x500031
 
+Function sub_400047 @ 0x00400047
+0x00400047:	nop	
+0x00400049:	movs	r2, r6
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function getpid @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	490f      	ldr	r1, [pc, #60]	; (40 <main+0x40>)
-   2:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
-   6:	4a0f      	ldr	r2, [pc, #60]	; (44 <main+0x44>)
-   8:	b500      	push	{lr}
-   a:	4479      	add	r1, pc
-   c:	b083      	sub	sp, #12
-   e:	588a      	ldr	r2, [r1, r2]
-  10:	6812      	ldr	r2, [r2, #0]
-  12:	9201      	str	r2, [sp, #4]
-  14:	f04f 0200 	mov.w	r2, #0
-  18:	9300      	str	r3, [sp, #0]
-  1a:	f7ff fffe 	bl	0 <getpid>
-  1e:	4669      	mov	r1, sp
-  20:	f7ff fffe 	bl	0 <sched_getparam>
-  24:	9b00      	ldr	r3, [sp, #0]
-  26:	ea50 0403 	orrs.w	r4, r0, r3
-  2a:	d106      	bne.n	3a <main+0x3a>
-  2c:	4806      	ldr	r0, [pc, #24]	; (48 <main+0x48>)
-  2e:	4478      	add	r0, pc
-  30:	f7ff fffe 	bl	0 <puts>
-  34:	4620      	mov	r0, r4
-  36:	f7ff fffe 	bl	0 <exit>
-  3a:	f7ff fffe 	bl	0 <abort>
-  3e:	bf00      	nop
-  40:	00000032 	.word	0x00000032
-  44:	00000000 	.word	0x00000000
-  48:	00000016 	.word	0x00000016
+Function sched_getparam @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function abort @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0

@@ -1,64 +1,246 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_reset-catchpoint-cond-lib_ac6cd5ab.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svclt	#0x4770
 
+Function lib_func_test_syscall @ 0x00400005
+0x00400005:	ldr	r0, [pc, #0x1c]
+0x00400007:	push	{r4, lr}
+0x00400009:	add	r0, pc
+0x0040000b:	ldr	r4, [pc, #0x1c]
+0x0040000d:	bl	#0x500001
+0x00400011:	ldr	r2, [pc, #0x18]
+0x00400013:	add	r4, pc
+0x00400015:	mov	r3, r4
+0x00400017:	ldr	r3, [r4, r2]
+0x00400019:	pop.w	{r4, lr}
+0x0040001d:	ldr	r0, [r3]
+0x0040001f:	b.w	#0x500049
 
-Disassembly of section .text:
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	lsls	r0, r2, #2
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r2, r2
+0x0040002b:	movs	r0, r0
+0x0040002d:	movs	r0, r0
+0x0040002f:	movs	r0, r0
+0x00400031:	ldr	r1, [pc, #0x18]
+0x00400033:	movs	r0, #0xa
+0x00400035:	push	{r3, lr}
+0x00400037:	add	r1, pc
+0x00400039:	bl	#0x50000d
 
-00000000 <sig_handler>:
-   0:	4770      	bx	lr
-   2:	bf00      	nop
+Function lib_func_test_signal @ 0x00400031
+0x00400031:	ldr	r1, [pc, #0x18]
+0x00400033:	movs	r0, #0xa
+0x00400035:	push	{r3, lr}
+0x00400037:	add	r1, pc
+0x00400039:	bl	#0x50000d
+0x0040003d:	bl	#0x500019
+0x00400041:	movs	r1, #0xa
+0x00400043:	pop.w	{r3, lr}
+0x00400047:	b.w	#0x500055
 
-00000004 <lib_func_test_syscall>:
-   4:	4807      	ldr	r0, [pc, #28]	; (24 <lib_func_test_syscall+0x20>)
-   6:	b510      	push	{r4, lr}
-   8:	4478      	add	r0, pc
-   a:	4c07      	ldr	r4, [pc, #28]	; (28 <lib_func_test_syscall+0x24>)
-   c:	f7ff fffe 	bl	0 <puts>
-  10:	4a06      	ldr	r2, [pc, #24]	; (2c <lib_func_test_syscall+0x28>)
-  12:	447c      	add	r4, pc
-  14:	4623      	mov	r3, r4
-  16:	58a3      	ldr	r3, [r4, r2]
-  18:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-  1c:	6818      	ldr	r0, [r3, #0]
-  1e:	f7ff bffe 	b.w	0 <fflush>
-  22:	bf00      	nop
-  24:	00000018 	.word	0x00000018
-  28:	00000012 	.word	0x00000012
-  2c:	00000000 	.word	0x00000000
+Function sub_40004b @ 0x0040004b
+0x0040004b:	nop	
 
-00000030 <lib_func_test_signal>:
-  30:	4906      	ldr	r1, [pc, #24]	; (4c <lib_func_test_signal+0x1c>)
-  32:	200a      	movs	r0, #10
-  34:	b508      	push	{r3, lr}
-  36:	4479      	add	r1, pc
-  38:	f7ff fffe 	bl	0 <signal>
-  3c:	f7ff fffe 	bl	0 <getpid>
-  40:	210a      	movs	r1, #10
-  42:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  46:	f7ff bffe 	b.w	0 <kill>
-  4a:	bf00      	nop
-  4c:	00000012 	.word	0x00000012
+Function lib_func_test_fork @ 0x00400051
+0x00400051:	push	{r3, lr}
+0x00400053:	bl	#0x500025
+0x00400057:	adds	r3, r0, #1
+0x00400059:	beq	#0x40006d
+0x0040005b:	cbnz	r0, #0x400061
+0x0040005d:	bl	#0x500031
+0x0040005d:	bl	#0x500031
+0x00400061:	movs	r2, #0
+0x00400063:	pop.w	{r3, lr}
+0x00400067:	mov	r1, r2
+0x00400069:	b.w	#0x500061
+0x0040006d:	ldr	r3, [pc, #0x10]
+0x0040006f:	movs	r2, #0x41
+0x00400071:	ldr	r1, [pc, #0x10]
+0x00400073:	ldr	r0, [pc, #0x14]
+0x00400075:	add	r3, pc
+0x00400077:	add	r1, pc
+0x00400079:	add	r0, pc
+0x0040007b:	bl	#0x50003d
 
-00000050 <lib_func_test_fork>:
-  50:	b508      	push	{r3, lr}
-  52:	f7ff fffe 	bl	0 <fork>
-  56:	1c43      	adds	r3, r0, #1
-  58:	d008      	beq.n	6c <lib_func_test_fork+0x1c>
-  5a:	b908      	cbnz	r0, 60 <lib_func_test_fork+0x10>
-  5c:	f7ff fffe 	bl	0 <exit>
-  60:	2200      	movs	r2, #0
-  62:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
-  66:	4611      	mov	r1, r2
-  68:	f7ff bffe 	b.w	0 <waitpid>
-  6c:	4b04      	ldr	r3, [pc, #16]	; (80 <lib_func_test_fork+0x30>)
-  6e:	2241      	movs	r2, #65	; 0x41
-  70:	4904      	ldr	r1, [pc, #16]	; (84 <lib_func_test_fork+0x34>)
-  72:	4805      	ldr	r0, [pc, #20]	; (88 <lib_func_test_fork+0x38>)
-  74:	447b      	add	r3, pc
-  76:	4479      	add	r1, pc
-  78:	4478      	add	r0, pc
-  7a:	f7ff fffe 	bl	0 <__assert_fail>
-  7e:	bf00      	nop
-  80:	00000008 	.word	0x00000008
-  84:	0000000a 	.word	0x0000000a
-  88:	0000000c 	.word	0x0000000c
+Function sub_40007f @ 0x0040007f
+0x0040007f:	nop	
+0x00400081:	lsls	r0, r2, #2
+0x00400083:	movs	r0, r0
+0x00400085:	movs	r2, r6
+0x00400087:	movs	r0, r0
+0x00400089:	lsls	r0, r0, #2
+0x0040008b:	movs	r0, r0
+
+Function puts @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function signal @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function getpid @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function fork @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function exit @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __assert_fail @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function fflush @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function kill @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function waitpid @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

@@ -1,25 +1,49 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_ugetrlimit1_62934a34_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r2, [pc, #0x38]
+0x0040000b:	movs	r0, #6
+0x0040000d:	ldr	r3, [pc, #0x38]
+0x0040000f:	add	r2, pc
+0x00400011:	push	{lr}
+0x00400013:	sub	sp, #0x14
+0x00400015:	ldr	r3, [r2, r3]
+0x00400017:	add	r1, sp, #4
+0x00400019:	ldr	r3, [r3]
+0x0040001b:	str	r3, [sp, #0xc]
+0x0040001d:	mov.w	r3, #0
+0x00400021:	bl	#0x400021
 
+Function sub_400021 @ 0x00400021
+0x00400021:	bl	#0x400021
 
-Disassembly of section .text.startup:
+Function sub_400025 @ 0x00400025
+0x00400025:	adds	r0, #1
+0x00400027:	bne	#0x400041
 
-00000000 <.text.startup>:
-   0:	20064a0e 	andcs	r4, r6, lr, lsl #20
-   4:	447a4b0e 	ldrbtmi	r4, [sl], #-2830	; 0xfffff4f2
-   8:	b085b500 	addlt	fp, r5, r0, lsl #10
-   c:	a90158d3 	stmdbge	r1, {r0, r1, r4, r6, r7, fp, ip, lr}
-  10:	9303681b 	movwls	r6, #14363	; 0x381b
-  14:	0300f04f 	movweq	pc, #79	; 0x4f	; <UNPREDICTABLE>
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	d10b3001 	tstle	fp, r1
-  20:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  24:	2b166803 	blcs	0x59a038
-  28:	4806d106 	stmdami	r6, {r1, r2, r8, ip, lr, pc}
-  2c:	f7ff4478 			; <UNDEFINED> instruction: 0xf7ff4478
-  30:	2000fffe 	strdcs	pc, [r0], -lr
-  34:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  38:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  3c:	00000032 	andeq	r0, r0, r2, lsr r0
-  40:	00000000 	andeq	r0, r0, r0
-  44:	00000014 	andeq	r0, r0, r4, lsl r0
+Function sub_400029 @ 0x00400029
+0x00400029:	bl	#0x400029
+0x0040002d:	ldr	r3, [r0]
+0x0040002f:	cmp	r3, #0x16
+0x00400031:	bne	#0x400041
+0x00400033:	ldr	r0, [pc, #0x18]
+0x00400035:	add	r0, pc
+0x00400037:	bl	#0x400037
+
+Function sub_400037 @ 0x00400037
+0x00400037:	bl	#0x400037
+
+Function sub_40003b @ 0x0040003b
+0x0040003b:	movs	r0, #0
+0x0040003d:	bl	#0x40003d
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+
+Function sub_400041 @ 0x00400041
+0x00400041:	bl	#0x400041
+0x00400045:	movs	r2, r6
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r0, r0
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r4, r2
+0x0040004f:	movs	r0, r0

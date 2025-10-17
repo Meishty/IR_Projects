@@ -1,87 +1,120 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_norm_f5a5f294.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mvnsmi	lr, sp, lsr #18
 
+Function sub_400013 @ 0x00400013
+0x00400013:	str	r0, [r0, r0]
+0x00400015:	cmp	r5, #0
+0x00400017:	beq	#0x4000c3
+0x00400019:	cmp	r7, #0
+0x0040001b:	ble	#0x4000bf
+0x0040001d:	lsl.w	r8, r7, #3
+0x00400021:	movs	r1, #0
+0x00400023:	mov	r2, r8
+0x00400025:	mov	r0, r5
+0x00400027:	bl	#0x500001
+0x0040002b:	cmp	r6, #0
+0x0040002d:	itttt	gt
+0x0040002f:	lslgt	r2, r7, #2
+0x00400031:	addgt.w	lr, r5, r8
+0x00400035:	movgt	r0, r4
+0x00400037:	movgt	r1, #0
+0x00400039:	ble	#0x400063
+0x0040003b:	mov	ip, r0
+0x0040003d:	mov	r3, r5
+0x0040003f:	vldmia	ip!, {s14}
+0x00400043:	vldr	d6, [r3]
+0x00400047:	vcvt.f64.f32	d7, s14
+0x0040004b:	vadd.f64	d7, d7, d6
+0x0040004f:	vstmia	r3!, {d7}
+0x00400053:	cmp	lr, r3
+0x00400055:	bne	#0x40003f
+0x0040003f:	vldmia	ip!, {s14}
+0x00400043:	vldr	d6, [r3]
+0x00400047:	vcvt.f64.f32	d7, s14
+0x0040004b:	vadd.f64	d7, d7, d6
+0x0040004f:	vstmia	r3!, {d7}
+0x00400053:	cmp	lr, r3
+0x00400055:	bne	#0x40003f
+0x00400057:	adds	r1, #1
+0x00400059:	add	r0, r2
+0x0040005b:	cmp	r6, r1
+0x0040005d:	bne	#0x40003b
+0x0040005f:	cmp	r7, #0
+0x00400061:	ble	#0x4000bf
+0x00400063:	vmov	s15, r6
+0x00400067:	add.w	r2, r5, r8
+0x0040006b:	mov	r3, r5
+0x0040006d:	vcvt.f64.s32	d5, s15
+0x00400071:	vldr	d6, [r3]
+0x00400075:	vdiv.f64	d7, d6, d5
+0x00400079:	vstmia	r3!, {d7}
+0x0040007d:	cmp	r2, r3
+0x0040007f:	bne	#0x400071
+0x00400071:	vldr	d6, [r3]
+0x00400075:	vdiv.f64	d7, d6, d5
+0x00400079:	vstmia	r3!, {d7}
+0x0040007d:	cmp	r2, r3
+0x0040007f:	bne	#0x400071
+0x00400081:	cmp	r6, #0
+0x00400083:	itttt	gt
+0x00400085:	lslgt	r7, r7, #2
+0x00400087:	movgt	r1, #0
+0x00400089:	addgt.w	ip, r4, r7
+0x0040008d:	movgt	r2, ip
+0x0040008f:	ble	#0x4000bf
+0x00400091:	mov	r0, r4
+0x00400093:	mov	r3, r5
+0x00400095:	vldr	s14, [r0]
+0x00400099:	vldmia	r3!, {d6}
+0x0040009d:	vcvt.f64.f32	d7, s14
+0x004000a1:	vsub.f64	d7, d7, d6
+0x004000a5:	vcvt.f32.f64	s14, d7
+0x004000a9:	vstmia	r0!, {s14}
+0x004000ad:	cmp	r0, r2
+0x004000af:	bne	#0x400095
+0x00400095:	vldr	s14, [r0]
+0x00400099:	vldmia	r3!, {d6}
+0x0040009d:	vcvt.f64.f32	d7, s14
+0x004000a1:	vsub.f64	d7, d7, d6
+0x004000a5:	vcvt.f32.f64	s14, d7
+0x004000a9:	vstmia	r0!, {s14}
+0x004000ad:	cmp	r0, r2
+0x004000af:	bne	#0x400095
+0x004000b1:	adds	r1, #1
+0x004000b3:	mov	r4, ip
+0x004000b5:	add	r2, r7
+0x004000b7:	cmp	r6, r1
+0x004000b9:	beq	#0x4000bf
+0x004000bb:	add	ip, r7
+0x004000bd:	b	#0x400091
+0x004000bf:	pop.w	{r4, r5, r6, r7, r8, pc}
+0x004000c3:	movs	r1, #8
+0x004000c5:	mov	r0, r2
+0x004000c7:	bl	#0x50000d
+0x004000cb:	mov	r5, r0
+0x004000cd:	str.w	r0, [r8]
+0x004000d1:	b	#0x400019
 
-Disassembly of section .text:
+Function sub_4000d3 @ 0x004000d3
+0x004000d3:	nop	
+0x004000d5:	lsls	r6, r0, #3
+0x004000d7:	movs	r0, r0
 
-00000000 <norm_mean>:
-   0:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
-   4:	4604      	mov	r4, r0
-   6:	f8df 80cc 	ldr.w	r8, [pc, #204]	; d4 <norm_mean+0xd4>
-   a:	460e      	mov	r6, r1
-   c:	4617      	mov	r7, r2
-   e:	44f8      	add	r8, pc
-  10:	f8d8 5000 	ldr.w	r5, [r8]
-  14:	2d00      	cmp	r5, #0
-  16:	d054      	beq.n	c2 <norm_mean+0xc2>
-  18:	2f00      	cmp	r7, #0
-  1a:	dd50      	ble.n	be <norm_mean+0xbe>
-  1c:	ea4f 08c7 	mov.w	r8, r7, lsl #3
-  20:	2100      	movs	r1, #0
-  22:	4642      	mov	r2, r8
-  24:	4628      	mov	r0, r5
-  26:	f7ff fffe 	bl	0 <memset>
-  2a:	2e00      	cmp	r6, #0
-  2c:	bfc1      	itttt	gt
-  2e:	00ba      	lslgt	r2, r7, #2
-  30:	eb05 0e08 	addgt.w	lr, r5, r8
-  34:	4620      	movgt	r0, r4
-  36:	2100      	movgt	r1, #0
-  38:	dd13      	ble.n	62 <norm_mean+0x62>
-  3a:	4684      	mov	ip, r0
-  3c:	462b      	mov	r3, r5
-  3e:	ecbc 7a01 	vldmia	ip!, {s14}
-  42:	ed93 6b00 	vldr	d6, [r3]
-  46:	eeb7 7ac7 	vcvt.f64.f32	d7, s14
-  4a:	ee37 7b06 	vadd.f64	d7, d7, d6
-  4e:	eca3 7b02 	vstmia	r3!, {d7}
-  52:	459e      	cmp	lr, r3
-  54:	d1f3      	bne.n	3e <norm_mean+0x3e>
-  56:	3101      	adds	r1, #1
-  58:	4410      	add	r0, r2
-  5a:	428e      	cmp	r6, r1
-  5c:	d1ed      	bne.n	3a <norm_mean+0x3a>
-  5e:	2f00      	cmp	r7, #0
-  60:	dd2d      	ble.n	be <norm_mean+0xbe>
-  62:	ee07 6a90 	vmov	s15, r6
-  66:	eb05 0208 	add.w	r2, r5, r8
-  6a:	462b      	mov	r3, r5
-  6c:	eeb8 5be7 	vcvt.f64.s32	d5, s15
-  70:	ed93 6b00 	vldr	d6, [r3]
-  74:	ee86 7b05 	vdiv.f64	d7, d6, d5
-  78:	eca3 7b02 	vstmia	r3!, {d7}
-  7c:	429a      	cmp	r2, r3
-  7e:	d1f7      	bne.n	70 <norm_mean+0x70>
-  80:	2e00      	cmp	r6, #0
-  82:	bfc1      	itttt	gt
-  84:	00bf      	lslgt	r7, r7, #2
-  86:	2100      	movgt	r1, #0
-  88:	eb04 0c07 	addgt.w	ip, r4, r7
-  8c:	4662      	movgt	r2, ip
-  8e:	dd16      	ble.n	be <norm_mean+0xbe>
-  90:	4620      	mov	r0, r4
-  92:	462b      	mov	r3, r5
-  94:	ed90 7a00 	vldr	s14, [r0]
-  98:	ecb3 6b02 	vldmia	r3!, {d6}
-  9c:	eeb7 7ac7 	vcvt.f64.f32	d7, s14
-  a0:	ee37 7b46 	vsub.f64	d7, d7, d6
-  a4:	eeb7 7bc7 	vcvt.f32.f64	s14, d7
-  a8:	eca0 7a01 	vstmia	r0!, {s14}
-  ac:	4290      	cmp	r0, r2
-  ae:	d1f1      	bne.n	94 <norm_mean+0x94>
-  b0:	3101      	adds	r1, #1
-  b2:	4664      	mov	r4, ip
-  b4:	443a      	add	r2, r7
-  b6:	428e      	cmp	r6, r1
-  b8:	d001      	beq.n	be <norm_mean+0xbe>
-  ba:	44bc      	add	ip, r7
-  bc:	e7e8      	b.n	90 <norm_mean+0x90>
-  be:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-  c2:	2108      	movs	r1, #8
-  c4:	4610      	mov	r0, r2
-  c6:	f7ff fffe 	bl	0 <calloc>
-  ca:	4605      	mov	r5, r0
-  cc:	f8c8 0000 	str.w	r0, [r8]
-  d0:	e7a2      	b.n	18 <norm_mean+0x18>
-  d2:	bf00      	nop
-  d4:	000000c2 	.word	0x000000c2
+Function sub_4000d5 @ 0x004000d5
+0x004000d5:	lsls	r6, r0, #3
+0x004000d7:	movs	r0, r0
+
+Function memset @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function calloc @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

@@ -1,22 +1,47 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_rtsigsuspend1_88f3cc3e_stripped.o:     file format elf32-littlearm
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r2, #2
+0x00400013:	movs	r1, #1
+0x00400015:	movs	r0, #0xb3
+0x00400017:	push	{r3, lr}
+0x00400019:	bl	#0x400019
 
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text.startup:
+Function sub_40001d @ 0x0040001d
+0x0040001d:	adds	r0, #1
+0x0040001f:	beq	#0x40002f
 
-00000000 <.text.startup>:
-   0:	21012202 	tstcs	r1, r2, lsl #4
-   4:	b50820b3 	strlt	r2, [r8, #-179]	; 0xffffff4d
-   8:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   c:	d0063001 	andle	r3, r6, r1
-  10:	44784808 	ldrbtmi	r4, [r8], #-2056	; 0xfffff7f8
-  14:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  18:	f7ff2000 			; <UNDEFINED> instruction: 0xf7ff2000
-  1c:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  20:	6803fffe 	stmdavs	r3, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  24:	d1f32b26 	mvnsle	r2, r6, lsr #22
-  28:	44784803 	ldrbtmi	r4, [r8], #-2051	; 0xfffff7fd
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	bf00e7ee 	svclt	0x0000e7ee
-  34:	0000001e 	andeq	r0, r0, lr, lsl r0
-  38:	0000000a 	andeq	r0, r0, sl
+Function sub_400025 @ 0x00400025
+0x00400025:	bl	#0x400025
+
+Function sub_400029 @ 0x00400029
+0x00400029:	movs	r0, #0
+0x0040002b:	bl	#0x40002b
+
+Function sub_40002b @ 0x0040002b
+0x0040002b:	bl	#0x40002b
+
+Function sub_40002f @ 0x0040002f
+0x00400021:	ldr	r0, [pc, #0x20]
+0x00400023:	add	r0, pc
+0x00400025:	bl	#0x400025
+0x0040002f:	bl	#0x40002f
+0x00400033:	ldr	r3, [r0]
+0x00400035:	cmp	r3, #0x26
+0x00400037:	bne	#0x400021
+0x00400039:	ldr	r0, [pc, #0xc]
+0x0040003b:	add	r0, pc
+0x0040003d:	bl	#0x40003d
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+0x00400041:	b	#0x400021
+
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	movs	r6, r3
+0x00400047:	movs	r0, r0
+0x00400049:	movs	r2, r1
+0x0040004b:	movs	r0, r0

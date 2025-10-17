@@ -1,198 +1,477 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_tif_swab_0119502c.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	stmdavc	r2, {r0, r1, r6, fp, ip, sp, lr}
+0x00400004:	andvc	r7, r3, r2, asr #32
+0x00400008:	svclt	#0x4770
+0x00400004:	andvc	r7, r3, r2, asr #32
+0x00400008:	svclt	#0x4770
 
+Function TIFFSwabLong @ 0x0040000d
+0x0040000d:	ldr	r3, [r0]
+0x0040000f:	rev	r3, r3
+0x00400011:	str	r3, [r0]
+0x00400013:	bx	lr
 
-Disassembly of section .text:
+Function TIFFSwabArrayOfShort @ 0x00400015
+0x00400015:	subs	r3, r1, #1
+0x00400017:	cbz	r1, #0x400033
+0x00400019:	adds	r0, #2
+0x0040001b:	ldrb	r2, [r0, #-0x1]
+0x0040001f:	subs	r3, #1
+0x00400021:	ldrb	r1, [r0, #-0x2]
+0x00400025:	adds	r0, #2
+0x00400027:	strb	r2, [r0, #-0x4]
+0x0040002b:	adds	r2, r3, #1
+0x0040002d:	strb	r1, [r0, #-0x3]
+0x00400031:	bne	#0x40001b
+0x00400019:	adds	r0, #2
+0x0040001b:	ldrb	r2, [r0, #-0x1]
+0x0040001f:	subs	r3, #1
+0x00400021:	ldrb	r1, [r0, #-0x2]
+0x00400025:	adds	r0, #2
+0x00400027:	strb	r2, [r0, #-0x4]
+0x0040002b:	adds	r2, r3, #1
+0x0040002d:	strb	r1, [r0, #-0x3]
+0x00400031:	bne	#0x40001b
+0x0040001b:	ldrb	r2, [r0, #-0x1]
+0x0040001f:	subs	r3, #1
+0x00400021:	ldrb	r1, [r0, #-0x2]
+0x00400025:	adds	r0, #2
+0x00400027:	strb	r2, [r0, #-0x4]
+0x0040002b:	adds	r2, r3, #1
+0x0040002d:	strb	r1, [r0, #-0x3]
+0x00400031:	bne	#0x40001b
+0x00400033:	bx	lr
 
-00000000 <TIFFSwabShort>:
-   0:	7843      	ldrb	r3, [r0, #1]
-   2:	7802      	ldrb	r2, [r0, #0]
-   4:	7042      	strb	r2, [r0, #1]
-   6:	7003      	strb	r3, [r0, #0]
-   8:	4770      	bx	lr
-   a:	bf00      	nop
+Function TIFFSwabArrayOfLong @ 0x00400035
+0x00400035:	cbz	r1, #0x400065
+0x00400037:	subs	r2, r1, #1
+0x00400039:	push	{r4, lr}
+0x0040003b:	ldrb	r4, [r0, #3]
+0x0040003d:	movs	r3, #0
+0x0040003f:	ldrb.w	lr, [r0, #2]
+0x00400043:	ldrb.w	ip, [r0, #1]
+0x00400047:	subs	r2, #1
+0x00400049:	bfi	r3, r4, #0, #8
+0x0040004d:	ldrb	r1, [r0]
+0x0040004f:	bfi	r3, lr, #8, #8
+0x00400053:	bfi	r3, ip, #0x10, #8
+0x00400057:	bfi	r3, r1, #0x18, #8
+0x0040005b:	str	r3, [r0], #4
+0x0040005f:	adds	r3, r2, #1
+0x00400061:	bne	#0x40003b
+0x00400037:	subs	r2, r1, #1
+0x00400039:	push	{r4, lr}
+0x0040003b:	ldrb	r4, [r0, #3]
+0x0040003d:	movs	r3, #0
+0x0040003f:	ldrb.w	lr, [r0, #2]
+0x00400043:	ldrb.w	ip, [r0, #1]
+0x00400047:	subs	r2, #1
+0x00400049:	bfi	r3, r4, #0, #8
+0x0040004d:	ldrb	r1, [r0]
+0x0040004f:	bfi	r3, lr, #8, #8
+0x00400053:	bfi	r3, ip, #0x10, #8
+0x00400057:	bfi	r3, r1, #0x18, #8
+0x0040005b:	str	r3, [r0], #4
+0x0040005f:	adds	r3, r2, #1
+0x00400061:	bne	#0x40003b
+0x0040003b:	ldrb	r4, [r0, #3]
+0x0040003d:	movs	r3, #0
+0x0040003f:	ldrb.w	lr, [r0, #2]
+0x00400043:	ldrb.w	ip, [r0, #1]
+0x00400047:	subs	r2, #1
+0x00400049:	bfi	r3, r4, #0, #8
+0x0040004d:	ldrb	r1, [r0]
+0x0040004f:	bfi	r3, lr, #8, #8
+0x00400053:	bfi	r3, ip, #0x10, #8
+0x00400057:	bfi	r3, r1, #0x18, #8
+0x0040005b:	str	r3, [r0], #4
+0x0040005f:	adds	r3, r2, #1
+0x00400061:	bne	#0x40003b
+0x00400063:	pop	{r4, pc}
+0x00400065:	bx	lr
 
-0000000c <TIFFSwabLong>:
-   c:	6803      	ldr	r3, [r0, #0]
-   e:	ba1b      	rev	r3, r3
-  10:	6003      	str	r3, [r0, #0]
-  12:	4770      	bx	lr
+Function sub_400067 @ 0x00400067
+0x00400067:	nop	
+0x00400069:	ldr	r2, [r0]
+0x0040006b:	ldr	r3, [r0, #4]
+0x0040006d:	rev	r2, r2
+0x0040006f:	rev	r3, r3
+0x00400071:	strd	r3, r2, [r0]
+0x00400075:	bx	lr
 
-00000014 <TIFFSwabArrayOfShort>:
-  14:	1e4b      	subs	r3, r1, #1
-  16:	b161      	cbz	r1, 32 <TIFFSwabArrayOfShort+0x1e>
-  18:	3002      	adds	r0, #2
-  1a:	f810 2c01 	ldrb.w	r2, [r0, #-1]
-  1e:	3b01      	subs	r3, #1
-  20:	f810 1c02 	ldrb.w	r1, [r0, #-2]
-  24:	3002      	adds	r0, #2
-  26:	f800 2c04 	strb.w	r2, [r0, #-4]
-  2a:	1c5a      	adds	r2, r3, #1
-  2c:	f800 1c03 	strb.w	r1, [r0, #-3]
-  30:	d1f3      	bne.n	1a <TIFFSwabArrayOfShort+0x6>
-  32:	4770      	bx	lr
+Function TIFFSwabDouble @ 0x00400069
+0x00400069:	ldr	r2, [r0]
+0x0040006b:	ldr	r3, [r0, #4]
+0x0040006d:	rev	r2, r2
+0x0040006f:	rev	r3, r3
+0x00400071:	strd	r3, r2, [r0]
+0x00400075:	bx	lr
 
-00000034 <TIFFSwabArrayOfLong>:
-  34:	b1b1      	cbz	r1, 64 <TIFFSwabArrayOfLong+0x30>
-  36:	1e4a      	subs	r2, r1, #1
-  38:	b510      	push	{r4, lr}
-  3a:	78c4      	ldrb	r4, [r0, #3]
-  3c:	2300      	movs	r3, #0
-  3e:	f890 e002 	ldrb.w	lr, [r0, #2]
-  42:	f890 c001 	ldrb.w	ip, [r0, #1]
-  46:	3a01      	subs	r2, #1
-  48:	f364 0307 	bfi	r3, r4, #0, #8
-  4c:	7801      	ldrb	r1, [r0, #0]
-  4e:	f36e 230f 	bfi	r3, lr, #8, #8
-  52:	f36c 4317 	bfi	r3, ip, #16, #8
-  56:	f361 631f 	bfi	r3, r1, #24, #8
-  5a:	f840 3b04 	str.w	r3, [r0], #4
-  5e:	1c53      	adds	r3, r2, #1
-  60:	d1eb      	bne.n	3a <TIFFSwabArrayOfLong+0x6>
-  62:	bd10      	pop	{r4, pc}
-  64:	4770      	bx	lr
-  66:	bf00      	nop
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	lsls	r3, r1, #1
+0x0040007b:	push	{r4, r5, r6, lr}
+0x0040007d:	cbz	r3, #0x4000af
+0x0040007f:	add.w	ip, r3, #-1
+0x00400083:	mov	r3, r0
+0x00400085:	ldrb	r6, [r3, #3]
+0x00400087:	movs	r2, #0
+0x00400089:	ldrb	r5, [r3, #2]
+0x0040008b:	add.w	ip, ip, #-1
+0x0040008f:	ldrb	r4, [r3, #1]
+0x00400091:	cmp.w	ip, #-1
+0x00400095:	bfi	r2, r6, #0, #8
+0x00400099:	ldrb.w	lr, [r3]
+0x0040009d:	bfi	r2, r5, #8, #8
+0x004000a1:	bfi	r2, r4, #0x10, #8
+0x004000a5:	bfi	r2, lr, #0x18, #8
+0x004000a9:	str	r2, [r3], #4
+0x004000ad:	bne	#0x400085
 
-00000068 <TIFFSwabDouble>:
-  68:	6802      	ldr	r2, [r0, #0]
-  6a:	6843      	ldr	r3, [r0, #4]
-  6c:	ba12      	rev	r2, r2
-  6e:	ba1b      	rev	r3, r3
-  70:	e9c0 3200 	strd	r3, r2, [r0]
-  74:	4770      	bx	lr
-  76:	bf00      	nop
+Function TIFFSwabArrayOfDouble @ 0x00400079
+0x00400079:	lsls	r3, r1, #1
+0x0040007b:	push	{r4, r5, r6, lr}
+0x0040007d:	cbz	r3, #0x4000af
+0x0040007f:	add.w	ip, r3, #-1
+0x00400083:	mov	r3, r0
+0x00400085:	ldrb	r6, [r3, #3]
+0x00400087:	movs	r2, #0
+0x00400089:	ldrb	r5, [r3, #2]
+0x0040008b:	add.w	ip, ip, #-1
+0x0040008f:	ldrb	r4, [r3, #1]
+0x00400091:	cmp.w	ip, #-1
+0x00400095:	bfi	r2, r6, #0, #8
+0x00400099:	ldrb.w	lr, [r3]
+0x0040009d:	bfi	r2, r5, #8, #8
+0x004000a1:	bfi	r2, r4, #0x10, #8
+0x004000a5:	bfi	r2, lr, #0x18, #8
+0x004000a9:	str	r2, [r3], #4
+0x004000ad:	bne	#0x400085
+0x0040007f:	add.w	ip, r3, #-1
+0x00400083:	mov	r3, r0
+0x00400085:	ldrb	r6, [r3, #3]
+0x00400087:	movs	r2, #0
+0x00400089:	ldrb	r5, [r3, #2]
+0x0040008b:	add.w	ip, ip, #-1
+0x0040008f:	ldrb	r4, [r3, #1]
+0x00400091:	cmp.w	ip, #-1
+0x00400095:	bfi	r2, r6, #0, #8
+0x00400099:	ldrb.w	lr, [r3]
+0x0040009d:	bfi	r2, r5, #8, #8
+0x004000a1:	bfi	r2, r4, #0x10, #8
+0x004000a5:	bfi	r2, lr, #0x18, #8
+0x004000a9:	str	r2, [r3], #4
+0x004000ad:	bne	#0x400085
+0x00400085:	ldrb	r6, [r3, #3]
+0x00400087:	movs	r2, #0
+0x00400089:	ldrb	r5, [r3, #2]
+0x0040008b:	add.w	ip, ip, #-1
+0x0040008f:	ldrb	r4, [r3, #1]
+0x00400091:	cmp.w	ip, #-1
+0x00400095:	bfi	r2, r6, #0, #8
+0x00400099:	ldrb.w	lr, [r3]
+0x0040009d:	bfi	r2, r5, #8, #8
+0x004000a1:	bfi	r2, r4, #0x10, #8
+0x004000a5:	bfi	r2, lr, #0x18, #8
+0x004000a9:	str	r2, [r3], #4
+0x004000ad:	bne	#0x400085
+0x004000af:	subs	r3, r1, #1
+0x004000b1:	cbz	r1, #0x4000c5
+0x004000b3:	adds	r0, #8
+0x004000b5:	ldrd	r2, r1, [r0, #-0x8]
+0x004000b9:	subs	r3, #1
+0x004000bb:	strd	r1, r2, [r0, #-0x8]
+0x004000bf:	adds	r0, #8
+0x004000c1:	adds	r2, r3, #1
+0x004000c3:	bne	#0x4000b5
+0x004000b3:	adds	r0, #8
+0x004000b5:	ldrd	r2, r1, [r0, #-0x8]
+0x004000b9:	subs	r3, #1
+0x004000bb:	strd	r1, r2, [r0, #-0x8]
+0x004000bf:	adds	r0, #8
+0x004000c1:	adds	r2, r3, #1
+0x004000c3:	bne	#0x4000b5
+0x004000b5:	ldrd	r2, r1, [r0, #-0x8]
+0x004000b9:	subs	r3, #1
+0x004000bb:	strd	r1, r2, [r0, #-0x8]
+0x004000bf:	adds	r0, #8
+0x004000c1:	adds	r2, r3, #1
+0x004000c3:	bne	#0x4000b5
+0x004000c5:	pop	{r4, r5, r6, pc}
 
-00000078 <TIFFSwabArrayOfDouble>:
-  78:	004b      	lsls	r3, r1, #1
-  7a:	b570      	push	{r4, r5, r6, lr}
-  7c:	b1bb      	cbz	r3, ae <TIFFSwabArrayOfDouble+0x36>
-  7e:	f103 3cff 	add.w	ip, r3, #4294967295	; 0xffffffff
-  82:	4603      	mov	r3, r0
-  84:	78de      	ldrb	r6, [r3, #3]
-  86:	2200      	movs	r2, #0
-  88:	789d      	ldrb	r5, [r3, #2]
-  8a:	f10c 3cff 	add.w	ip, ip, #4294967295	; 0xffffffff
-  8e:	785c      	ldrb	r4, [r3, #1]
-  90:	f1bc 3fff 	cmp.w	ip, #4294967295	; 0xffffffff
-  94:	f366 0207 	bfi	r2, r6, #0, #8
-  98:	f893 e000 	ldrb.w	lr, [r3]
-  9c:	f365 220f 	bfi	r2, r5, #8, #8
-  a0:	f364 4217 	bfi	r2, r4, #16, #8
-  a4:	f36e 621f 	bfi	r2, lr, #24, #8
-  a8:	f843 2b04 	str.w	r2, [r3], #4
-  ac:	d1ea      	bne.n	84 <TIFFSwabArrayOfDouble+0xc>
-  ae:	1e4b      	subs	r3, r1, #1
-  b0:	b141      	cbz	r1, c4 <TIFFSwabArrayOfDouble+0x4c>
-  b2:	3008      	adds	r0, #8
-  b4:	e950 2102 	ldrd	r2, r1, [r0, #-8]
-  b8:	3b01      	subs	r3, #1
-  ba:	e940 1202 	strd	r1, r2, [r0, #-8]
-  be:	3008      	adds	r0, #8
-  c0:	1c5a      	adds	r2, r3, #1
-  c2:	d1f7      	bne.n	b4 <TIFFSwabArrayOfDouble+0x3c>
-  c4:	bd70      	pop	{r4, r5, r6, pc}
-  c6:	bf00      	nop
+Function sub_4000c7 @ 0x004000c7
+0x004000c7:	nop	
+0x004000c9:	cbnz	r0, #0x4000d5
+0x004000cb:	ldr	r0, [pc, #0x10]
+0x004000cd:	add	r0, pc
+0x004000cf:	add.w	r0, r0, #0x100
+0x004000d3:	bx	lr
 
-000000c8 <TIFFGetBitRevTable>:
-  c8:	b920      	cbnz	r0, d4 <TIFFGetBitRevTable+0xc>
-  ca:	4804      	ldr	r0, [pc, #16]	; (dc <TIFFGetBitRevTable+0x14>)
-  cc:	4478      	add	r0, pc
-  ce:	f500 7080 	add.w	r0, r0, #256	; 0x100
-  d2:	4770      	bx	lr
-  d4:	4802      	ldr	r0, [pc, #8]	; (e0 <TIFFGetBitRevTable+0x18>)
-  d6:	4478      	add	r0, pc
-  d8:	4770      	bx	lr
-  da:	bf00      	nop
-  dc:	0000000c 	.word	0x0000000c
-  e0:	00000006 	.word	0x00000006
+Function TIFFGetBitRevTable @ 0x004000c9
+0x004000c9:	cbnz	r0, #0x4000d5
+0x004000cb:	ldr	r0, [pc, #0x10]
+0x004000cd:	add	r0, pc
+0x004000cf:	add.w	r0, r0, #0x100
+0x004000d3:	bx	lr
+0x004000cb:	ldr	r0, [pc, #0x10]
+0x004000cd:	add	r0, pc
+0x004000cf:	add.w	r0, r0, #0x100
+0x004000d3:	bx	lr
+0x004000d5:	ldr	r0, [pc, #8]
+0x004000d7:	add	r0, pc
+0x004000d9:	bx	lr
 
-000000e4 <TIFFReverseBits>:
-  e4:	2908      	cmp	r1, #8
-  e6:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-  ea:	d979      	bls.n	1e0 <TIFFReverseBits+0xfc>
-  ec:	f1a1 0809 	sub.w	r8, r1, #9
-  f0:	4b3e      	ldr	r3, [pc, #248]	; (1ec <TIFFReverseBits+0x108>)
-  f2:	ea4f 07d8 	mov.w	r7, r8, lsr #3
-  f6:	447b      	add	r3, pc
-  f8:	f107 0c01 	add.w	ip, r7, #1
-  fc:	eb00 0ccc 	add.w	ip, r0, ip, lsl #3
- 100:	7804      	ldrb	r4, [r0, #0]
- 102:	2100      	movs	r1, #0
- 104:	f890 a004 	ldrb.w	sl, [r0, #4]
- 108:	460a      	mov	r2, r1
- 10a:	f890 9005 	ldrb.w	r9, [r0, #5]
- 10e:	3008      	adds	r0, #8
- 110:	f810 ec07 	ldrb.w	lr, [r0, #-7]
- 114:	f810 6c02 	ldrb.w	r6, [r0, #-2]
- 118:	f813 b004 	ldrb.w	fp, [r3, r4]
- 11c:	f813 a00a 	ldrb.w	sl, [r3, sl]
- 120:	f810 4c01 	ldrb.w	r4, [r0, #-1]
- 124:	f813 e00e 	ldrb.w	lr, [r3, lr]
- 128:	f36b 0207 	bfi	r2, fp, #0, #8
- 12c:	f813 9009 	ldrb.w	r9, [r3, r9]
- 130:	f36a 0107 	bfi	r1, sl, #0, #8
- 134:	f810 5c06 	ldrb.w	r5, [r0, #-6]
- 138:	5d9e      	ldrb	r6, [r3, r6]
- 13a:	f36e 220f 	bfi	r2, lr, #8, #8
- 13e:	f369 210f 	bfi	r1, r9, #8, #8
- 142:	f810 ec05 	ldrb.w	lr, [r0, #-5]
- 146:	5d1c      	ldrb	r4, [r3, r4]
- 148:	4584      	cmp	ip, r0
- 14a:	5d5d      	ldrb	r5, [r3, r5]
- 14c:	f366 4117 	bfi	r1, r6, #16, #8
- 150:	f364 611f 	bfi	r1, r4, #24, #8
- 154:	f840 1c04 	str.w	r1, [r0, #-4]
- 158:	f813 100e 	ldrb.w	r1, [r3, lr]
- 15c:	f365 4217 	bfi	r2, r5, #16, #8
- 160:	f361 621f 	bfi	r2, r1, #24, #8
- 164:	f840 2c08 	str.w	r2, [r0, #-8]
- 168:	d1ca      	bne.n	100 <TIFFReverseBits+0x1c>
- 16a:	eba8 07c7 	sub.w	r7, r8, r7, lsl #3
- 16e:	4b20      	ldr	r3, [pc, #128]	; (1f0 <TIFFReverseBits+0x10c>)
- 170:	f89c 2000 	ldrb.w	r2, [ip]
- 174:	447b      	add	r3, pc
- 176:	5c9a      	ldrb	r2, [r3, r2]
- 178:	f88c 2000 	strb.w	r2, [ip]
- 17c:	b377      	cbz	r7, 1dc <TIFFReverseBits+0xf8>
- 17e:	f89c 2001 	ldrb.w	r2, [ip, #1]
- 182:	2f01      	cmp	r7, #1
- 184:	5c9a      	ldrb	r2, [r3, r2]
- 186:	f88c 2001 	strb.w	r2, [ip, #1]
- 18a:	d027      	beq.n	1dc <TIFFReverseBits+0xf8>
- 18c:	f89c 2002 	ldrb.w	r2, [ip, #2]
- 190:	2f02      	cmp	r7, #2
- 192:	5c9a      	ldrb	r2, [r3, r2]
- 194:	f88c 2002 	strb.w	r2, [ip, #2]
- 198:	d020      	beq.n	1dc <TIFFReverseBits+0xf8>
- 19a:	f89c 2003 	ldrb.w	r2, [ip, #3]
- 19e:	2f03      	cmp	r7, #3
- 1a0:	5c9a      	ldrb	r2, [r3, r2]
- 1a2:	f88c 2003 	strb.w	r2, [ip, #3]
- 1a6:	d019      	beq.n	1dc <TIFFReverseBits+0xf8>
- 1a8:	f89c 2004 	ldrb.w	r2, [ip, #4]
- 1ac:	2f04      	cmp	r7, #4
- 1ae:	5c9a      	ldrb	r2, [r3, r2]
- 1b0:	f88c 2004 	strb.w	r2, [ip, #4]
- 1b4:	d012      	beq.n	1dc <TIFFReverseBits+0xf8>
- 1b6:	f89c 2005 	ldrb.w	r2, [ip, #5]
- 1ba:	2f05      	cmp	r7, #5
- 1bc:	5c9a      	ldrb	r2, [r3, r2]
- 1be:	f88c 2005 	strb.w	r2, [ip, #5]
- 1c2:	d00b      	beq.n	1dc <TIFFReverseBits+0xf8>
- 1c4:	f89c 2006 	ldrb.w	r2, [ip, #6]
- 1c8:	2f06      	cmp	r7, #6
- 1ca:	5c9a      	ldrb	r2, [r3, r2]
- 1cc:	f88c 2006 	strb.w	r2, [ip, #6]
- 1d0:	d004      	beq.n	1dc <TIFFReverseBits+0xf8>
- 1d2:	f89c 2007 	ldrb.w	r2, [ip, #7]
- 1d6:	5c9b      	ldrb	r3, [r3, r2]
- 1d8:	f88c 3007 	strb.w	r3, [ip, #7]
- 1dc:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 1e0:	2900      	cmp	r1, #0
- 1e2:	d0fb      	beq.n	1dc <TIFFReverseBits+0xf8>
- 1e4:	1e4f      	subs	r7, r1, #1
- 1e6:	4684      	mov	ip, r0
- 1e8:	e7c1      	b.n	16e <TIFFReverseBits+0x8a>
- 1ea:	bf00      	nop
- 1ec:	000000f2 	.word	0x000000f2
- 1f0:	00000078 	.word	0x00000078
+Function sub_4000db @ 0x004000db
+0x004000db:	nop	
+0x004000dd:	lsls	r4, r4, #4
+0x004000df:	movs	r0, r0
+0x004000e1:	lsls	r2, r3, #4
+0x004000e3:	movs	r0, r0
+0x004000e5:	cmp	r1, #8
+0x004000e7:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004000eb:	bls	#0x4001e1
+
+Function TIFFReverseBits @ 0x004000e5
+0x004000e5:	cmp	r1, #8
+0x004000e7:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004000eb:	bls	#0x4001e1
+0x004000ed:	sub.w	r8, r1, #9
+0x004000f1:	ldr	r3, [pc, #0xf8]
+0x004000f3:	lsr.w	r7, r8, #3
+0x004000f7:	add	r3, pc
+0x004000f9:	add.w	ip, r7, #1
+0x004000fd:	add.w	ip, r0, ip, lsl #3
+0x00400101:	ldrb	r4, [r0]
+0x00400103:	movs	r1, #0
+0x00400105:	ldrb.w	sl, [r0, #4]
+0x00400109:	mov	r2, r1
+0x0040010b:	ldrb.w	sb, [r0, #5]
+0x0040010f:	adds	r0, #8
+0x00400111:	ldrb	lr, [r0, #-0x7]
+0x00400115:	ldrb	r6, [r0, #-0x2]
+0x00400119:	ldrb.w	fp, [r3, r4]
+0x0040011d:	ldrb.w	sl, [r3, sl]
+0x00400121:	ldrb	r4, [r0, #-0x1]
+0x00400125:	ldrb.w	lr, [r3, lr]
+0x00400129:	bfi	r2, fp, #0, #8
+0x0040012d:	ldrb.w	sb, [r3, sb]
+0x00400131:	bfi	r1, sl, #0, #8
+0x00400135:	ldrb	r5, [r0, #-0x6]
+0x00400139:	ldrb	r6, [r3, r6]
+0x0040013b:	bfi	r2, lr, #8, #8
+0x0040013f:	bfi	r1, sb, #8, #8
+0x00400143:	ldrb	lr, [r0, #-0x5]
+0x00400147:	ldrb	r4, [r3, r4]
+0x00400149:	cmp	ip, r0
+0x0040014b:	ldrb	r5, [r3, r5]
+0x0040014d:	bfi	r1, r6, #0x10, #8
+0x00400151:	bfi	r1, r4, #0x18, #8
+0x00400155:	str	r1, [r0, #-0x4]
+0x00400159:	ldrb.w	r1, [r3, lr]
+0x0040015d:	bfi	r2, r5, #0x10, #8
+0x00400161:	bfi	r2, r1, #0x18, #8
+0x00400165:	str	r2, [r0, #-0x8]
+0x00400169:	bne	#0x400101
+0x00400101:	ldrb	r4, [r0]
+0x00400103:	movs	r1, #0
+0x00400105:	ldrb.w	sl, [r0, #4]
+0x00400109:	mov	r2, r1
+0x0040010b:	ldrb.w	sb, [r0, #5]
+0x0040010f:	adds	r0, #8
+0x00400111:	ldrb	lr, [r0, #-0x7]
+0x00400115:	ldrb	r6, [r0, #-0x2]
+0x00400119:	ldrb.w	fp, [r3, r4]
+0x0040011d:	ldrb.w	sl, [r3, sl]
+0x00400121:	ldrb	r4, [r0, #-0x1]
+0x00400125:	ldrb.w	lr, [r3, lr]
+0x00400129:	bfi	r2, fp, #0, #8
+0x0040012d:	ldrb.w	sb, [r3, sb]
+0x00400131:	bfi	r1, sl, #0, #8
+0x00400135:	ldrb	r5, [r0, #-0x6]
+0x00400139:	ldrb	r6, [r3, r6]
+0x0040013b:	bfi	r2, lr, #8, #8
+0x0040013f:	bfi	r1, sb, #8, #8
+0x00400143:	ldrb	lr, [r0, #-0x5]
+0x00400147:	ldrb	r4, [r3, r4]
+0x00400149:	cmp	ip, r0
+0x0040014b:	ldrb	r5, [r3, r5]
+0x0040014d:	bfi	r1, r6, #0x10, #8
+0x00400151:	bfi	r1, r4, #0x18, #8
+0x00400155:	str	r1, [r0, #-0x4]
+0x00400159:	ldrb.w	r1, [r3, lr]
+0x0040015d:	bfi	r2, r5, #0x10, #8
+0x00400161:	bfi	r2, r1, #0x18, #8
+0x00400165:	str	r2, [r0, #-0x8]
+0x00400169:	bne	#0x400101
+0x0040016b:	sub.w	r7, r8, r7, lsl #3
+0x0040016f:	ldr	r3, [pc, #0x80]
+0x00400171:	ldrb.w	r2, [ip]
+0x00400175:	add	r3, pc
+0x00400177:	ldrb	r2, [r3, r2]
+0x00400179:	strb.w	r2, [ip]
+0x0040017d:	cbz	r7, #0x4001dd
+0x0040017f:	ldrb.w	r2, [ip, #1]
+0x00400183:	cmp	r7, #1
+0x00400185:	ldrb	r2, [r3, r2]
+0x00400187:	strb.w	r2, [ip, #1]
+0x0040018b:	beq	#0x4001dd
+0x0040016f:	ldr	r3, [pc, #0x80]
+0x00400171:	ldrb.w	r2, [ip]
+0x00400175:	add	r3, pc
+0x00400177:	ldrb	r2, [r3, r2]
+0x00400179:	strb.w	r2, [ip]
+0x0040017d:	cbz	r7, #0x4001dd
+0x0040017f:	ldrb.w	r2, [ip, #1]
+0x00400183:	cmp	r7, #1
+0x00400185:	ldrb	r2, [r3, r2]
+0x00400187:	strb.w	r2, [ip, #1]
+0x0040018b:	beq	#0x4001dd
+0x0040017f:	ldrb.w	r2, [ip, #1]
+0x00400183:	cmp	r7, #1
+0x00400185:	ldrb	r2, [r3, r2]
+0x00400187:	strb.w	r2, [ip, #1]
+0x0040018b:	beq	#0x4001dd
+0x0040018d:	ldrb.w	r2, [ip, #2]
+0x00400191:	cmp	r7, #2
+0x00400193:	ldrb	r2, [r3, r2]
+0x00400195:	strb.w	r2, [ip, #2]
+0x00400199:	beq	#0x4001dd
+0x0040019b:	ldrb.w	r2, [ip, #3]
+0x0040019f:	cmp	r7, #3
+0x004001a1:	ldrb	r2, [r3, r2]
+0x004001a3:	strb.w	r2, [ip, #3]
+0x004001a7:	beq	#0x4001dd
+0x004001a9:	ldrb.w	r2, [ip, #4]
+0x004001ad:	cmp	r7, #4
+0x004001af:	ldrb	r2, [r3, r2]
+0x004001b1:	strb.w	r2, [ip, #4]
+0x004001b5:	beq	#0x4001dd
+0x004001b7:	ldrb.w	r2, [ip, #5]
+0x004001bb:	cmp	r7, #5
+0x004001bd:	ldrb	r2, [r3, r2]
+0x004001bf:	strb.w	r2, [ip, #5]
+0x004001c3:	beq	#0x4001dd
+0x004001c5:	ldrb.w	r2, [ip, #6]
+0x004001c9:	cmp	r7, #6
+0x004001cb:	ldrb	r2, [r3, r2]
+0x004001cd:	strb.w	r2, [ip, #6]
+0x004001d1:	beq	#0x4001dd
+0x004001d3:	ldrb.w	r2, [ip, #7]
+0x004001d7:	ldrb	r3, [r3, r2]
+0x004001d9:	strb.w	r3, [ip, #7]
+0x004001dd:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004001dd:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004001e1:	cmp	r1, #0
+0x004001e3:	beq	#0x4001dd
+0x004001e5:	subs	r7, r1, #1
+0x004001e7:	mov	ip, r0
+0x004001e9:	b	#0x40016f
+
+Function sub_4001eb @ 0x004001eb
+0x004001eb:	nop	
+0x004001ed:	lsls	r2, r7, #3
+0x004001ef:	movs	r0, r0
+0x004001f1:	lsls	r4, r7, #1
+0x004001f3:	movs	r0, r0
+
+Function sys_380 @ 0x007002f8
+0x007002f8:	andeq	r0, r0, r0
+0x007002fc:	andeq	r0, r0, r0
+0x00700300:	andeq	r0, r0, r0
+0x00700304:	andeq	r0, r0, r0
+0x00700308:	andeq	r0, r0, r0
+0x0070030c:	andeq	r0, r0, r0
+0x00700310:	andeq	r0, r0, r0
+0x00700314:	andeq	r0, r0, r0
+0x00700318:	andeq	r0, r0, r0
+0x0070031c:	andeq	r0, r0, r0
+0x00700320:	andeq	r0, r0, r0
+0x00700324:	andeq	r0, r0, r0
+0x00700328:	andeq	r0, r0, r0
+0x0070032c:	andeq	r0, r0, r0
+0x00700330:	andeq	r0, r0, r0
+0x00700334:	andeq	r0, r0, r0
+0x00700338:	andeq	r0, r0, r0
+0x0070033c:	andeq	r0, r0, r0
+0x00700340:	andeq	r0, r0, r0
+0x00700344:	andeq	r0, r0, r0
+0x00700348:	andeq	r0, r0, r0
+0x0070034c:	andeq	r0, r0, r0
+0x00700350:	andeq	r0, r0, r0
+0x00700354:	andeq	r0, r0, r0
+0x00700358:	andeq	r0, r0, r0
+0x0070035c:	andeq	r0, r0, r0
+0x00700360:	andeq	r0, r0, r0
+0x00700364:	andeq	r0, r0, r0
+0x00700368:	andeq	r0, r0, r0
+0x0070036c:	andeq	r0, r0, r0
+0x00700370:	andeq	r0, r0, r0
+0x00700374:	andeq	r0, r0, r0
+0x00700378:	andeq	r0, r0, r0
+0x0070037c:	andeq	r0, r0, r0
+0x00700380:	andeq	r0, r0, r0
+0x00700384:	andeq	r0, r0, r0
+0x00700388:	andeq	r0, r0, r0
+0x0070038c:	andeq	r0, r0, r0
+0x00700390:	andeq	r0, r0, r0
+0x00700394:	andeq	r0, r0, r0
+0x00700398:	andeq	r0, r0, r0
+0x0070039c:	andeq	r0, r0, r0
+0x007003a0:	andeq	r0, r0, r0
+0x007003a4:	andeq	r0, r0, r0
+0x007003a8:	andeq	r0, r0, r0
+0x007003ac:	andeq	r0, r0, r0
+0x007003b0:	andeq	r0, r0, r0
+0x007003b4:	andeq	r0, r0, r0
+0x007003b8:	andeq	r0, r0, r0
+0x007003bc:	andeq	r0, r0, r0
+0x007003c0:	andeq	r0, r0, r0
+0x007003c4:	andeq	r0, r0, r0
+0x007003c8:	andeq	r0, r0, r0
+0x007003cc:	andeq	r0, r0, r0
+0x007003d0:	andeq	r0, r0, r0
+0x007003d4:	andeq	r0, r0, r0
+0x007003d8:	andeq	r0, r0, r0
+0x007003dc:	andeq	r0, r0, r0
+0x007003e0:	andeq	r0, r0, r0
+0x007003e4:	andeq	r0, r0, r0
+0x007003e8:	andeq	r0, r0, r0
+0x007003ec:	andeq	r0, r0, r0
+0x007003f0:	andeq	r0, r0, r0
+0x007003f4:	andeq	r0, r0, r0
+0x007003f8:	andeq	r0, r0, r0
+0x007003fc:	andeq	r0, r0, r0
+0x00700400:	andeq	r0, r0, r0
+0x00700404:	andeq	r0, r0, r0
+0x00700408:	andeq	r0, r0, r0
+0x0070040c:	andeq	r0, r0, r0
+0x00700410:	andeq	r0, r0, r0
+0x00700414:	andeq	r0, r0, r0
+0x00700418:	andeq	r0, r0, r0
+0x0070041c:	andeq	r0, r0, r0
+0x00700420:	andeq	r0, r0, r0
+0x00700424:	andeq	r0, r0, r0
+0x00700428:	andeq	r0, r0, r0
+0x0070042c:	andeq	r0, r0, r0
+0x00700430:	andeq	r0, r0, r0
+0x00700434:	andeq	r0, r0, r0
+0x00700438:	andeq	r0, r0, r0
+0x0070043c:	andeq	r0, r0, r0
+0x00700440:	andeq	r0, r0, r0
+0x00700444:	andeq	r0, r0, r0
+0x00700448:	andeq	r0, r0, r0
+0x0070044c:	andeq	r0, r0, r0
+0x00700450:	andeq	r0, r0, r0
+0x00700454:	andeq	r0, r0, r0
+0x00700458:	andeq	r0, r0, r0
+0x0070045c:	andeq	r0, r0, r0
+0x00700460:	andeq	r0, r0, r0
+0x00700464:	andeq	r0, r0, r0
+0x00700468:	andeq	r0, r0, r0
+0x0070046c:	andeq	r0, r0, r0
+0x00700470:	andeq	r0, r0, r0
+0x00700474:	andeq	r0, r0, r0
+0x00700478:	andeq	r0, r0, r0
+0x0070047c:	andeq	r0, r0, r0
+0x00700480:	andeq	r0, r0, r0

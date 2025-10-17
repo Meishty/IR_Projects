@@ -1,63 +1,99 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mapbrk_0f019359.o:     file format elf32-littlearm
+Function main @ 0x00400011
+0x00400011:	push.w	{r3, r4, r5, r6, r7, r8, sb, lr}
+0x00400015:	movw	r0, #0x1fa4
+0x00400019:	bl	#0x500001
+0x0040001d:	cmp	r0, #0
+0x0040001f:	beq	#0x4000a7
+0x00400021:	mov	r4, r0
+0x00400023:	movw	r0, #0x3fac
+0x00400027:	bl	#0x500001
+0x0040002b:	mov	r6, r0
+0x0040002d:	cbz	r0, #0x4000a7
+0x0040002f:	mov.w	r0, #0xfa0
+0x00400033:	bl	#0x500001
+0x0040002f:	mov.w	r0, #0xfa0
+0x00400033:	bl	#0x500001
+0x00400037:	mov	r5, r0
+0x00400039:	cbz	r0, #0x4000a7
+0x0040003b:	mov.w	r0, #0x1f4
+0x0040003f:	bl	#0x500001
+0x0040003b:	mov.w	r0, #0x1f4
+0x0040003f:	bl	#0x500001
+0x00400043:	mov	sb, r0
+0x00400045:	cbz	r0, #0x4000a7
+0x00400047:	mov.w	r0, #0xfc00
+0x0040004b:	movt	r0, #0xf
+0x0040004f:	bl	#0x500001
+0x00400047:	mov.w	r0, #0xfc00
+0x0040004b:	movt	r0, #0xf
+0x0040004f:	bl	#0x500001
+0x00400053:	mov	r8, r0
+0x00400055:	cbz	r0, #0x4000a7
+0x00400057:	mov.w	r0, #0xfc00
+0x0040005b:	movt	r0, #0x7f
+0x0040005f:	bl	#0x500001
+0x00400057:	mov.w	r0, #0xfc00
+0x0040005b:	movt	r0, #0x7f
+0x0040005f:	bl	#0x500001
+0x00400063:	mov	r7, r0
+0x00400065:	cbz	r0, #0x4000a7
+0x00400067:	mov	r0, r4
+0x00400069:	bl	#0x50000d
+0x00400067:	mov	r0, r4
+0x00400069:	bl	#0x50000d
+0x0040006d:	mov	r0, r6
+0x0040006f:	bl	#0x50000d
+0x00400073:	mov	r0, r5
+0x00400075:	bl	#0x50000d
+0x00400079:	mov	r0, sb
+0x0040007b:	bl	#0x50000d
+0x0040007f:	mov	r0, r8
+0x00400081:	bl	#0x50000d
+0x00400085:	mov	r0, r7
+0x00400087:	bl	#0x50000d
+0x0040008b:	mov.w	r0, #0xfa00
+0x0040008f:	bl	#0x500001
+0x00400093:	cbz	r0, #0x4000a7
+0x00400095:	bl	#0x50000d
+0x00400095:	bl	#0x50000d
+0x00400099:	ldr	r0, [pc, #0x18]
+0x0040009b:	add	r0, pc
+0x0040009d:	bl	#0x500019
+0x004000a1:	movs	r0, #0
+0x004000a3:	bl	#0x500025
+0x004000a7:	ldr	r0, [pc, #0x10]
+0x004000a9:	add	r0, pc
+0x004000ab:	bl	#0x500019
+0x004000af:	movs	r0, #1
+0x004000b1:	bl	#0x500025
 
+Function malloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function free @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <main>:
-   0:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
-   4:	f641 70a4 	movw	r0, #8100	; 0x1fa4
-   8:	f7ff fffe 	bl	0 <malloc>
-   c:	2800      	cmp	r0, #0
-   e:	d042      	beq.n	96 <main+0x96>
-  10:	4604      	mov	r4, r0
-  12:	f643 70ac 	movw	r0, #16300	; 0x3fac
-  16:	f7ff fffe 	bl	0 <malloc>
-  1a:	4606      	mov	r6, r0
-  1c:	b3d8      	cbz	r0, 96 <main+0x96>
-  1e:	f44f 607a 	mov.w	r0, #4000	; 0xfa0
-  22:	f7ff fffe 	bl	0 <malloc>
-  26:	4605      	mov	r5, r0
-  28:	b3a8      	cbz	r0, 96 <main+0x96>
-  2a:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
-  2e:	f7ff fffe 	bl	0 <malloc>
-  32:	4681      	mov	r9, r0
-  34:	b378      	cbz	r0, 96 <main+0x96>
-  36:	f44f 407c 	mov.w	r0, #64512	; 0xfc00
-  3a:	f2c0 000f 	movt	r0, #15
-  3e:	f7ff fffe 	bl	0 <malloc>
-  42:	4680      	mov	r8, r0
-  44:	b338      	cbz	r0, 96 <main+0x96>
-  46:	f44f 407c 	mov.w	r0, #64512	; 0xfc00
-  4a:	f2c0 007f 	movt	r0, #127	; 0x7f
-  4e:	f7ff fffe 	bl	0 <malloc>
-  52:	4607      	mov	r7, r0
-  54:	b1f8      	cbz	r0, 96 <main+0x96>
-  56:	4620      	mov	r0, r4
-  58:	f7ff fffe 	bl	0 <free>
-  5c:	4630      	mov	r0, r6
-  5e:	f7ff fffe 	bl	0 <free>
-  62:	4628      	mov	r0, r5
-  64:	f7ff fffe 	bl	0 <free>
-  68:	4648      	mov	r0, r9
-  6a:	f7ff fffe 	bl	0 <free>
-  6e:	4640      	mov	r0, r8
-  70:	f7ff fffe 	bl	0 <free>
-  74:	4638      	mov	r0, r7
-  76:	f7ff fffe 	bl	0 <free>
-  7a:	f44f 407a 	mov.w	r0, #64000	; 0xfa00
-  7e:	f7ff fffe 	bl	0 <malloc>
-  82:	b140      	cbz	r0, 96 <main+0x96>
-  84:	f7ff fffe 	bl	0 <free>
-  88:	4806      	ldr	r0, [pc, #24]	; (a4 <main+0xa4>)
-  8a:	4478      	add	r0, pc
-  8c:	f7ff fffe 	bl	0 <puts>
-  90:	2000      	movs	r0, #0
-  92:	f7ff fffe 	bl	0 <exit>
-  96:	4804      	ldr	r0, [pc, #16]	; (a8 <main+0xa8>)
-  98:	4478      	add	r0, pc
-  9a:	f7ff fffe 	bl	0 <puts>
-  9e:	2001      	movs	r0, #1
-  a0:	f7ff fffe 	bl	0 <exit>
-  a4:	00000016 	.word	0x00000016
-  a8:	0000000c 	.word	0x0000000c
+Function puts @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function exit @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0

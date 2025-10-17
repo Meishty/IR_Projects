@@ -1,44 +1,58 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_sim-signal_f5e13770.o:     file format elf32-littlearm
+Function sim_signal_to_host @ 0x00400001
+0x00400001:	push	{r3, lr}
+0x00400003:	sub.w	r3, r1, #0x40
+0x00400007:	cmp	r3, #8
+0x00400009:	bhi	#0x400015
+0x0040000b:	ldr	r2, [pc, #0x18]
+0x0040000d:	add	r2, pc
+0x0040000f:	ldr.w	r0, [r2, r3, lsl #2]
+0x00400013:	pop	{r3, pc}
+0x00400015:	mov	r2, r1
+0x00400017:	ldr	r1, [pc, #0x10]
+0x00400019:	add	r1, pc
+0x0040001b:	bl	#0x500001
+0x0040001f:	movs	r0, #1
+0x00400021:	pop	{r3, pc}
 
+Function sub_400023 @ 0x00400023
+0x00400023:	nop	
+0x00400025:	lsls	r0, r6, #1
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r4, r7
+0x0040002b:	movs	r0, r0
+0x0040002d:	mov	r2, r1
+0x0040002f:	subs	r1, #0x40
+0x00400031:	cmp	r1, #8
+0x00400033:	push	{r3, lr}
+0x00400035:	bhi	#0x400043
 
-Disassembly of section .text:
+Function sim_signal_to_gdb_signal @ 0x0040002d
+0x0040002d:	mov	r2, r1
+0x0040002f:	subs	r1, #0x40
+0x00400031:	cmp	r1, #8
+0x00400033:	push	{r3, lr}
+0x00400035:	bhi	#0x400043
+0x00400037:	ldr	r3, [pc, #0x18]
+0x00400039:	add	r3, pc
+0x0040003b:	add.w	r3, r3, r1, lsl #2
+0x0040003f:	ldr	r0, [r3, #0x24]
+0x00400041:	pop	{r3, pc}
+0x00400043:	ldr	r1, [pc, #0x10]
+0x00400045:	add	r1, pc
+0x00400047:	bl	#0x500001
+0x0040004b:	movs	r0, #1
+0x0040004d:	pop	{r3, pc}
 
-00000000 <sim_signal_to_host>:
-   0:	b508      	push	{r3, lr}
-   2:	f1a1 0340 	sub.w	r3, r1, #64	; 0x40
-   6:	2b08      	cmp	r3, #8
-   8:	d804      	bhi.n	14 <sim_signal_to_host+0x14>
-   a:	4a06      	ldr	r2, [pc, #24]	; (24 <sim_signal_to_host+0x24>)
-   c:	447a      	add	r2, pc
-   e:	f852 0023 	ldr.w	r0, [r2, r3, lsl #2]
-  12:	bd08      	pop	{r3, pc}
-  14:	460a      	mov	r2, r1
-  16:	4904      	ldr	r1, [pc, #16]	; (28 <sim_signal_to_host+0x28>)
-  18:	4479      	add	r1, pc
-  1a:	f7ff fffe 	bl	0 <sim_io_eprintf>
-  1e:	2001      	movs	r0, #1
-  20:	bd08      	pop	{r3, pc}
-  22:	bf00      	nop
-  24:	00000014 	.word	0x00000014
-  28:	0000000c 	.word	0x0000000c
+Function sub_40004f @ 0x0040004f
+0x0040004f:	nop	
+0x00400051:	lsls	r4, r0, #1
+0x00400053:	movs	r0, r0
+0x00400055:	movs	r0, r2
+0x00400057:	movs	r0, r0
 
-0000002c <sim_signal_to_gdb_signal>:
-  2c:	460a      	mov	r2, r1
-  2e:	3940      	subs	r1, #64	; 0x40
-  30:	2908      	cmp	r1, #8
-  32:	b508      	push	{r3, lr}
-  34:	d805      	bhi.n	42 <sim_signal_to_gdb_signal+0x16>
-  36:	4b06      	ldr	r3, [pc, #24]	; (50 <sim_signal_to_gdb_signal+0x24>)
-  38:	447b      	add	r3, pc
-  3a:	eb03 0381 	add.w	r3, r3, r1, lsl #2
-  3e:	6a58      	ldr	r0, [r3, #36]	; 0x24
-  40:	bd08      	pop	{r3, pc}
-  42:	4904      	ldr	r1, [pc, #16]	; (54 <sim_signal_to_gdb_signal+0x28>)
-  44:	4479      	add	r1, pc
-  46:	f7ff fffe 	bl	0 <sim_io_eprintf>
-  4a:	2001      	movs	r0, #1
-  4c:	bd08      	pop	{r3, pc}
-  4e:	bf00      	nop
-  50:	00000014 	.word	0x00000014
-  54:	0000000c 	.word	0x0000000c
+Function sim_io_eprintf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,102 +1,144 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_nodebug_86348579.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blmi	#0x552818
+0x00400004:	ldrbtmi	r4, [fp], #-0x47a
+0x00400008:	ldmdavs	fp, {r1, r4, fp, sp, lr}
+0x0040000c:	andlo	r4, r4, r0, lsl r4
+0x0040000c:	andlo	r4, r4, r0, lsl r4
 
+Function sub_400013 @ 0x00400013
+0x00400013:	bx	lr
 
-Disassembly of section .text:
+Function sub_400015 @ 0x00400015
+0x00400015:	lsls	r0, r2, #2
+0x00400017:	movs	r0, r0
+0x00400019:	lsls	r2, r6, #2
+0x0040001b:	movs	r0, r0
+0x0040001d:	ldr	r2, [pc, #0x14]
+0x0040001f:	ldr	r3, [pc, #0x18]
+0x00400021:	add	r2, pc
+0x00400023:	add	r3, pc
+0x00400025:	ldr	r2, [r2]
+0x00400027:	ldr	r3, [r3]
+0x00400029:	add	r0, r2
+0x0040002b:	adds	r0, #4
+0x0040002d:	add	r0, r3
+0x0040002f:	lsls	r0, r0, #2
+0x00400031:	sxth	r0, r0
+0x00400033:	bx	lr
 
-00000000 <inner>:
-   0:	4a04      	ldr	r2, [pc, #16]	; (14 <inner+0x14>)
-   2:	4b05      	ldr	r3, [pc, #20]	; (18 <inner+0x18>)
-   4:	447a      	add	r2, pc
-   6:	447b      	add	r3, pc
-   8:	6812      	ldr	r2, [r2, #0]
-   a:	681b      	ldr	r3, [r3, #0]
-   c:	4410      	add	r0, r2
-   e:	3004      	adds	r0, #4
-  10:	4418      	add	r0, r3
-  12:	4770      	bx	lr
-  14:	0000000c 	.word	0x0000000c
-  18:	0000000e 	.word	0x0000000e
+Function top @ 0x0040001d
+0x0040001d:	ldr	r2, [pc, #0x14]
+0x0040001f:	ldr	r3, [pc, #0x18]
+0x00400021:	add	r2, pc
+0x00400023:	add	r3, pc
+0x00400025:	ldr	r2, [r2]
+0x00400027:	ldr	r3, [r3]
+0x00400029:	add	r0, r2
+0x0040002b:	adds	r0, #4
+0x0040002d:	add	r0, r3
+0x0040002f:	lsls	r0, r0, #2
+0x00400031:	sxth	r0, r0
+0x00400033:	bx	lr
 
-0000001c <top>:
-  1c:	4a05      	ldr	r2, [pc, #20]	; (34 <top+0x18>)
-  1e:	4b06      	ldr	r3, [pc, #24]	; (38 <top+0x1c>)
-  20:	447a      	add	r2, pc
-  22:	447b      	add	r3, pc
-  24:	6812      	ldr	r2, [r2, #0]
-  26:	681b      	ldr	r3, [r3, #0]
-  28:	4410      	add	r0, r2
-  2a:	3004      	adds	r0, #4
-  2c:	4418      	add	r0, r3
-  2e:	0080      	lsls	r0, r0, #2
-  30:	b200      	sxth	r0, r0
-  32:	4770      	bx	lr
-  34:	00000010 	.word	0x00000010
-  38:	00000012 	.word	0x00000012
+Function array_index @ 0x0040003d
+0x0040003d:	push	{r3, r4, r5, lr}
+0x0040003f:	mov	r5, r0
+0x00400041:	movs	r0, #4
+0x00400043:	mov	r4, r1
+0x00400045:	bl	#0x500001
+0x00400049:	ldr	r3, [pc, #0xc]
+0x0040004b:	add	r3, pc
+0x0040004d:	str	r0, [r3, #4]
+0x0040004f:	ldrb	r4, [r5, r4]
+0x00400051:	bl	#0x50000d
+0x00400055:	mov	r0, r4
+0x00400057:	pop	{r3, r4, r5, pc}
 
-0000003c <array_index>:
-  3c:	b538      	push	{r3, r4, r5, lr}
-  3e:	4605      	mov	r5, r0
-  40:	2004      	movs	r0, #4
-  42:	460c      	mov	r4, r1
-  44:	f7ff fffe 	bl	0 <malloc>
-  48:	4b03      	ldr	r3, [pc, #12]	; (58 <array_index+0x1c>)
-  4a:	447b      	add	r3, pc
-  4c:	6058      	str	r0, [r3, #4]
-  4e:	5d2c      	ldrb	r4, [r5, r4]
-  50:	f7ff fffe 	bl	0 <free>
-  54:	4620      	mov	r0, r4
-  56:	bd38      	pop	{r3, r4, r5, pc}
-  58:	0000000a 	.word	0x0000000a
+Function multf @ 0x0040005d
+0x0040005d:	vmul.f32	s0, s0, s1
+0x00400061:	bx	lr
 
-0000005c <multf>:
-  5c:	ee20 0a20 	vmul.f32	s0, s0, s1
-  60:	4770      	bx	lr
-  62:	bf00      	nop
+Function sub_400063 @ 0x00400063
+0x00400063:	nop	
+0x00400065:	vcvt.f32.f64	s0, d0
+0x00400069:	vcvt.f32.f64	s2, d1
+0x0040006d:	vmul.f32	s0, s0, s2
+0x00400071:	bx	lr
 
-00000064 <multf_noproto>:
-  64:	eeb7 0bc0 	vcvt.f32.f64	s0, d0
-  68:	eeb7 1bc1 	vcvt.f32.f64	s2, d1
-  6c:	ee20 0a01 	vmul.f32	s0, s0, s2
-  70:	4770      	bx	lr
-  72:	bf00      	nop
+Function multf_noproto @ 0x00400065
+0x00400065:	vcvt.f32.f64	s0, d0
+0x00400069:	vcvt.f32.f64	s2, d1
+0x0040006d:	vmul.f32	s0, s0, s2
+0x00400071:	bx	lr
 
-00000074 <mult>:
-  74:	ee20 0b01 	vmul.f64	d0, d0, d1
-  78:	4770      	bx	lr
-  7a:	bf00      	nop
+Function sub_400073 @ 0x00400073
+0x00400073:	nop	
+0x00400075:	vmul.f64	d0, d0, d1
+0x00400079:	bx	lr
 
-0000007c <mult_noproto>:
-  7c:	ee20 0b01 	vmul.f64	d0, d0, d1
-  80:	4770      	bx	lr
-  82:	bf00      	nop
+Function mult @ 0x00400075
+0x00400075:	vmul.f64	d0, d0, d1
+0x00400079:	bx	lr
 
-00000084 <add8>:
-  84:	4408      	add	r0, r1
-  86:	b2c0      	uxtb	r0, r0
-  88:	4770      	bx	lr
-  8a:	bf00      	nop
+Function sub_40007b @ 0x0040007b
+0x0040007b:	nop	
+0x0040007d:	vmul.f64	d0, d0, d1
+0x00400081:	bx	lr
 
-0000008c <add8_noproto>:
-  8c:	4408      	add	r0, r1
-  8e:	b2c0      	uxtb	r0, r0
-  90:	4770      	bx	lr
-  92:	bf00      	nop
+Function mult_noproto @ 0x0040007d
+0x0040007d:	vmul.f64	d0, d0, d1
+0x00400081:	bx	lr
 
-Disassembly of section .text.startup:
+Function sub_400083 @ 0x00400083
+0x00400083:	nop	
+0x00400085:	add	r0, r1
+0x00400087:	uxtb	r0, r0
+0x00400089:	bx	lr
 
-00000000 <main>:
-   0:	4a05      	ldr	r2, [pc, #20]	; (18 <main+0x18>)
-   2:	4b06      	ldr	r3, [pc, #24]	; (1c <main+0x1c>)
-   4:	447a      	add	r2, pc
-   6:	447b      	add	r3, pc
-   8:	6812      	ldr	r2, [r2, #0]
-   a:	681b      	ldr	r3, [r3, #0]
-   c:	4410      	add	r0, r2
-   e:	3004      	adds	r0, #4
-  10:	4418      	add	r0, r3
-  12:	0080      	lsls	r0, r0, #2
-  14:	b200      	sxth	r0, r0
-  16:	4770      	bx	lr
-  18:	00000010 	.word	0x00000010
-  1c:	00000012 	.word	0x00000012
+Function add8 @ 0x00400085
+0x00400085:	add	r0, r1
+0x00400087:	uxtb	r0, r0
+0x00400089:	bx	lr
+
+Function sub_40008b @ 0x0040008b
+0x0040008b:	nop	
+0x0040008d:	add	r0, r1
+0x0040008f:	uxtb	r0, r0
+0x00400091:	bx	lr
+
+Function add8_noproto @ 0x0040008d
+0x0040008d:	add	r0, r1
+0x0040008f:	uxtb	r0, r0
+0x00400091:	bx	lr
+
+Function sub_400093 @ 0x00400093
+0x00400093:	nop	
+
+Function main @ 0x004000c5
+0x004000c5:	ldr	r2, [pc, #0x14]
+0x004000c7:	ldr	r3, [pc, #0x18]
+0x004000c9:	add	r2, pc
+0x004000cb:	add	r3, pc
+0x004000cd:	ldr	r2, [r2]
+0x004000cf:	ldr	r3, [r3]
+0x004000d1:	add	r0, r2
+0x004000d3:	adds	r0, #4
+0x004000d5:	add	r0, r3
+0x004000d7:	lsls	r0, r0, #2
+0x004000d9:	sxth	r0, r0
+0x004000db:	bx	lr
+
+Function malloc @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function free @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

@@ -1,47 +1,54 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_generichash_blake2_185c31aa.o:     file format elf32-littlearm
+Function crypto_generichash_blake2b_bytes_min @ 0x00400001
+0x00400001:	movs	r0, #0x10
+0x00400003:	bx	lr
 
+Function crypto_generichash_blake2b_bytes_max @ 0x00400005
+0x00400005:	movs	r0, #0x40
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function crypto_generichash_blake2b_bytes @ 0x00400009
+0x00400009:	movs	r0, #0x20
+0x0040000b:	bx	lr
 
-00000000 <crypto_generichash_blake2b_bytes_min>:
-   0:	2010      	movs	r0, #16
-   2:	4770      	bx	lr
+Function crypto_generichash_blake2b_keybytes_min @ 0x0040000d
+0x0040000d:	movs	r0, #0x10
+0x0040000f:	bx	lr
 
-00000004 <crypto_generichash_blake2b_bytes_max>:
-   4:	2040      	movs	r0, #64	; 0x40
-   6:	4770      	bx	lr
+Function crypto_generichash_blake2b_keybytes_max @ 0x00400011
+0x00400011:	movs	r0, #0x40
+0x00400013:	bx	lr
 
-00000008 <crypto_generichash_blake2b_bytes>:
-   8:	2020      	movs	r0, #32
-   a:	4770      	bx	lr
+Function crypto_generichash_blake2b_keybytes @ 0x00400015
+0x00400015:	movs	r0, #0x20
+0x00400017:	bx	lr
 
-0000000c <crypto_generichash_blake2b_keybytes_min>:
-   c:	2010      	movs	r0, #16
-   e:	4770      	bx	lr
+Function crypto_generichash_blake2b_saltbytes @ 0x00400019
+0x00400019:	movs	r0, #0x10
+0x0040001b:	bx	lr
 
-00000010 <crypto_generichash_blake2b_keybytes_max>:
-  10:	2040      	movs	r0, #64	; 0x40
-  12:	4770      	bx	lr
+Function crypto_generichash_blake2b_personalbytes @ 0x0040001d
+0x0040001d:	movs	r0, #0x10
+0x0040001f:	bx	lr
 
-00000014 <crypto_generichash_blake2b_keybytes>:
-  14:	2020      	movs	r0, #32
-  16:	4770      	bx	lr
+Function crypto_generichash_blake2b_statebytes @ 0x00400021
+0x00400021:	mov.w	r0, #0x180
+0x00400025:	bx	lr
 
-00000018 <crypto_generichash_blake2b_saltbytes>:
-  18:	2010      	movs	r0, #16
-  1a:	4770      	bx	lr
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	movs	r1, #0x20
+0x0040002b:	b.w	#0x500001
 
-0000001c <crypto_generichash_blake2b_personalbytes>:
-  1c:	2010      	movs	r0, #16
-  1e:	4770      	bx	lr
+Function crypto_generichash_blake2b_keygen @ 0x00400029
+0x00400029:	movs	r1, #0x20
+0x0040002b:	b.w	#0x500001
 
-00000020 <crypto_generichash_blake2b_statebytes>:
-  20:	f44f 70c0 	mov.w	r0, #384	; 0x180
-  24:	4770      	bx	lr
-  26:	bf00      	nop
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
 
-00000028 <crypto_generichash_blake2b_keygen>:
-  28:	2120      	movs	r1, #32
-  2a:	f7ff bffe 	b.w	0 <randombytes_buf>
-  2e:	bf00      	nop
+Function randombytes_buf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

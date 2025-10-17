@@ -1,96 +1,59 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dw2-is-stmt-2_fb47f0b9.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	ldr	r3, [pc, #0x6c]
+0x0040000b:	movs	r0, #0
+0x0040000d:	movs	r1, #1
+0x0040000f:	add	r3, pc
+0x00400011:	str	r0, [r3]
+0x00400013:	str	r1, [r3, #4]
+0x00400015:	movs	r2, #2
+0x00400017:	str	r1, [r3]
+0x00400019:	str	r2, [r3, #4]
+0x0040001b:	movs	r1, #3
+0x0040001d:	str	r2, [r3]
+0x0040001f:	str	r1, [r3, #4]
+0x00400021:	movs	r2, #4
+0x00400023:	str	r1, [r3]
+0x00400025:	str	r2, [r3, #4]
+0x00400027:	movs	r1, #5
+0x00400029:	str	r2, [r3]
+0x0040002b:	str	r1, [r3, #4]
+0x0040002d:	movs	r2, #6
+0x0040002f:	str	r1, [r3]
+0x00400031:	str	r2, [r3, #4]
+0x00400033:	movs	r1, #7
+0x00400035:	str	r2, [r3]
+0x00400037:	str	r1, [r3, #4]
+0x00400039:	movs	r2, #8
+0x0040003b:	str	r1, [r3]
+0x0040003d:	str	r2, [r3, #4]
+0x0040003f:	movs	r1, #9
+0x00400041:	str	r2, [r3]
+0x00400043:	str	r1, [r3, #4]
+0x00400045:	movs	r2, #0xa
+0x00400047:	str	r1, [r3]
+0x00400049:	str	r2, [r3, #4]
+0x0040004b:	movs	r1, #0xb
+0x0040004d:	str	r2, [r3]
+0x0040004f:	str	r1, [r3, #4]
+0x00400051:	movs	r2, #0xc
+0x00400053:	str	r1, [r3]
+0x00400055:	str	r2, [r3, #4]
+0x00400057:	movs	r1, #0xd
+0x00400059:	str	r2, [r3]
+0x0040005b:	str	r1, [r3, #4]
+0x0040005d:	movs	r2, #0xe
+0x0040005f:	str	r1, [r3]
+0x00400061:	str	r2, [r3, #4]
+0x00400063:	movs	r1, #0xf
+0x00400065:	str	r2, [r3]
+0x00400067:	str	r1, [r3, #4]
+0x00400069:	movs	r2, #0x10
+0x0040006b:	str	r1, [r3]
+0x0040006d:	str	r2, [r3, #4]
+0x0040006f:	movs	r1, #0x11
+0x00400071:	str	r2, [r3]
+0x00400073:	str	r1, [r3, #4]
+0x00400075:	bx	lr
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b1b      	ldr	r3, [pc, #108]	; (70 <line_label_16+0xa>)
-   2:	2000      	movs	r0, #0
-   4:	2101      	movs	r1, #1
-   6:	447b      	add	r3, pc
-   8:	6018      	str	r0, [r3, #0]
-   a:	6059      	str	r1, [r3, #4]
-
-0000000c <line_label_1>:
-   c:	2202      	movs	r2, #2
-   e:	6019      	str	r1, [r3, #0]
-  10:	605a      	str	r2, [r3, #4]
-
-00000012 <line_label_2>:
-  12:	2103      	movs	r1, #3
-  14:	601a      	str	r2, [r3, #0]
-  16:	6059      	str	r1, [r3, #4]
-
-00000018 <line_label_3>:
-  18:	2204      	movs	r2, #4
-  1a:	6019      	str	r1, [r3, #0]
-  1c:	605a      	str	r2, [r3, #4]
-
-0000001e <line_label_4>:
-  1e:	2105      	movs	r1, #5
-  20:	601a      	str	r2, [r3, #0]
-  22:	6059      	str	r1, [r3, #4]
-
-00000024 <line_label_5>:
-  24:	2206      	movs	r2, #6
-  26:	6019      	str	r1, [r3, #0]
-  28:	605a      	str	r2, [r3, #4]
-
-0000002a <line_label_6>:
-  2a:	2107      	movs	r1, #7
-  2c:	601a      	str	r2, [r3, #0]
-  2e:	6059      	str	r1, [r3, #4]
-
-00000030 <line_label_7>:
-  30:	2208      	movs	r2, #8
-  32:	6019      	str	r1, [r3, #0]
-  34:	605a      	str	r2, [r3, #4]
-
-00000036 <line_label_8>:
-  36:	2109      	movs	r1, #9
-  38:	601a      	str	r2, [r3, #0]
-  3a:	6059      	str	r1, [r3, #4]
-
-0000003c <line_label_9>:
-  3c:	220a      	movs	r2, #10
-  3e:	6019      	str	r1, [r3, #0]
-  40:	605a      	str	r2, [r3, #4]
-
-00000042 <line_label_10>:
-  42:	210b      	movs	r1, #11
-  44:	601a      	str	r2, [r3, #0]
-  46:	6059      	str	r1, [r3, #4]
-
-00000048 <line_label_11>:
-  48:	220c      	movs	r2, #12
-  4a:	6019      	str	r1, [r3, #0]
-  4c:	605a      	str	r2, [r3, #4]
-
-0000004e <line_label_12>:
-  4e:	210d      	movs	r1, #13
-  50:	601a      	str	r2, [r3, #0]
-  52:	6059      	str	r1, [r3, #4]
-
-00000054 <line_label_13>:
-  54:	220e      	movs	r2, #14
-  56:	6019      	str	r1, [r3, #0]
-  58:	605a      	str	r2, [r3, #4]
-
-0000005a <line_label_14>:
-  5a:	210f      	movs	r1, #15
-  5c:	601a      	str	r2, [r3, #0]
-  5e:	6059      	str	r1, [r3, #4]
-
-00000060 <line_label_15>:
-  60:	2210      	movs	r2, #16
-  62:	6019      	str	r1, [r3, #0]
-  64:	605a      	str	r2, [r3, #4]
-
-00000066 <line_label_16>:
-  66:	2111      	movs	r1, #17
-  68:	601a      	str	r2, [r3, #0]
-  6a:	6059      	str	r1, [r3, #4]
-  6c:	4770      	bx	lr
-  6e:	bf00      	nop
-  70:	00000066 	.word	0x00000066
+Function sub_400077 @ 0x00400077

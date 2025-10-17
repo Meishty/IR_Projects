@@ -1,35 +1,65 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_signals_e286a3b8_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strlt	r4, [r8, #-0x905]
 
+Function sub_400007 @ 0x00400007
+0x00400007:	bl	#0x400007
+0x0040000b:	ldr	r2, [pc, #0x10]
+0x0040000d:	add	r2, pc
+0x0040000f:	ldr	r3, [r2]
+0x00400011:	adds	r3, #1
+0x00400013:	str	r3, [r2]
+0x00400015:	pop	{r3, pc}
 
-Disassembly of section .text:
+Function sub_400017 @ 0x00400017
+0x00400017:	nop	
+0x00400019:	movs	r0, r2
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r4, r1
+0x0040001f:	movs	r0, r0
 
-00000000 <.text>:
-   0:	b5084905 	strlt	r4, [r8, #-2309]	; 0xfffff6fb
-   4:	f7ff4479 			; <UNDEFINED> instruction: 0xf7ff4479
-   8:	4a04fffe 	bmi	0x140008
-   c:	6813447a 	ldmdavs	r3, {r1, r3, r4, r5, r6, sl, lr}
-  10:	60133301 	andsvs	r3, r3, r1, lsl #6
-  14:	bf00bd08 	svclt	0x0000bd08
-  18:	00000010 	andeq	r0, r0, r0, lsl r0
-  1c:	0000000c 	andeq	r0, r0, ip
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r0, r2
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r4, r1
+0x0040001f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function sub_400025 @ 0x00400025
+0x00400025:	push	{r4, r5, lr}
+0x00400027:	movs	r0, #0xe
+0x00400029:	ldr	r1, [pc, #0x30]
+0x0040002b:	sub	sp, #0xc
+0x0040002d:	ldr	r5, [pc, #0x30]
+0x0040002f:	add	r1, pc
+0x00400031:	add	r5, pc
+0x00400033:	str	r1, [sp, #4]
+0x00400035:	bl	#0x400035
 
-00000000 <.text.startup>:
-   0:	200eb530 	andcs	fp, lr, r0, lsr r5
-   4:	b083490c 	addlt	r4, r3, ip, lsl #18
-   8:	44794d0c 	ldrbtmi	r4, [r9], #-3340	; 0xfffff2f4
-   c:	9101447d 	tstls	r1, sp, ror r4
-  10:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  14:	200a9901 	andcs	r9, sl, r1, lsl #18
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  20:	682cfffe 	stmdavs	ip!, {r1, r2, r3, r4, r5, r6, r7, r8, r9, sl, fp, ip, sp, lr, pc}
-  24:	f7ff2001 			; <UNDEFINED> instruction: 0xf7ff2001
-  28:	2001fffe 	strdcs	pc, [r1], -lr
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	60281d20 	eorvs	r1, r8, r0, lsr #26
-  34:	bd30b003 	ldclt	0, cr11, [r0, #-12]!
-  38:	0000002a 	andeq	r0, r0, sl, lsr #32
-  3c:	0000002c 	andeq	r0, r0, ip, lsr #32
+Function sub_400035 @ 0x00400035
+0x00400035:	bl	#0x400035
+0x00400039:	ldr	r1, [sp, #4]
+0x0040003b:	movs	r0, #0xa
+0x0040003d:	bl	#0x40003d
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	bl	#0x40003d
+0x00400041:	movs	r0, #1
+0x00400043:	bl	#0x400043
+
+Function sub_400043 @ 0x00400043
+0x00400043:	bl	#0x400043
+0x00400047:	ldr	r4, [r5]
+0x00400049:	movs	r0, #1
+0x0040004b:	bl	#0x40004b
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	bl	#0x40004b
+0x0040004f:	movs	r0, #1
+0x00400051:	bl	#0x400051
+
+Function sub_400051 @ 0x00400051
+0x00400051:	bl	#0x400051
+0x00400055:	adds	r0, r4, #4
+0x00400057:	str	r0, [r5]
+0x00400059:	add	sp, #0xc
+0x0040005b:	pop	{r4, r5, pc}

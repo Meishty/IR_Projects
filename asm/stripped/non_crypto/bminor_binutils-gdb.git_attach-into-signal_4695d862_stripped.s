@@ -1,32 +1,55 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_attach-into-signal_4695d862_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	b.w	#0x400003
 
+Function sub_400007 @ 0x00400007
+0x00400007:	nop	
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r4, [pc, #0x3c]
+0x0040000b:	movs	r2, #0x88
+0x0040000d:	ldr	r3, [pc, #0x3c]
+0x0040000f:	movs	r1, #0
+0x00400011:	add	r4, pc
+0x00400013:	push	{lr}
+0x00400015:	sub	sp, #0x94
+0x00400017:	ldr	r3, [r4, r3]
+0x00400019:	add	r0, sp, #4
+0x0040001b:	mov.w	r4, #0x10000000
+0x0040001f:	ldr	r3, [r3]
+0x00400021:	str	r3, [sp, #0x8c]
+0x00400023:	mov.w	r3, #0
+0x00400027:	bl	#0x400027
 
-00000000 <.text>:
-   0:	f7ff200e 			; <UNDEFINED> instruction: 0xf7ff200e
-   4:	bf00bffe 	svclt	0x0000bffe
+Function sub_400027 @ 0x00400027
+0x00400027:	bl	#0x400027
 
-Disassembly of section .text.startup:
+Function sub_40002b @ 0x0040002b
+0x0040002b:	ldr	r3, [pc, #0x24]
+0x0040002d:	movs	r2, #0
+0x0040002f:	mov	r1, sp
+0x00400031:	movs	r0, #0xe
+0x00400033:	add	r3, pc
+0x00400035:	str	r4, [sp, #0x84]
+0x00400037:	str	r3, [sp]
+0x00400039:	bl	#0x400039
 
-00000000 <.text.startup>:
-   0:	22884c0f 	addcs	r4, r8, #3840	; 0xf00
-   4:	21004b0f 	tstcs	r0, pc, lsl #22
-   8:	b500447c 	strlt	r4, [r0, #-1148]	; 0xfffffb84
-   c:	58e3b0a5 	stmiapl	r3!, {r0, r2, r5, r7, ip, sp, pc}^
-  10:	f04fa801 			; <UNDEFINED> instruction: 0xf04fa801
-  14:	681b5480 	ldmdavs	fp, {r7, sl, ip, lr}
-  18:	f04f9323 			; <UNDEFINED> instruction: 0xf04f9323
-  1c:	f7ff0300 			; <UNDEFINED> instruction: 0xf7ff0300
-  20:	4b09fffe 	blmi	0x280020
-  24:	46692200 	strbtmi	r2, [r9], -r0, lsl #4
-  28:	447b200e 	ldrbtmi	r2, [fp], #-14
-  2c:	93009421 	movwls	r9, #1057	; 0x421
-  30:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  34:	f7ff200e 			; <UNDEFINED> instruction: 0xf7ff200e
-  38:	f7fffffe 			; <UNDEFINED> instruction: 0xf7fffffe
-  3c:	bf00fffe 	svclt	0x0000fffe
-  40:	00000034 	andeq	r0, r0, r4, lsr r0
-  44:	00000000 	andeq	r0, r0, r0
-  48:	0000001a 	andeq	r0, r0, sl, lsl r0
+Function sub_400039 @ 0x00400039
+0x00400039:	bl	#0x400039
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	movs	r0, #0xe
+0x0040003f:	bl	#0x40003f
+
+Function sub_40003f @ 0x0040003f
+0x0040003f:	bl	#0x40003f
+
+Function sub_400043 @ 0x00400043
+0x00400043:	bl	#0x400043
+0x00400047:	nop	
+0x00400049:	movs	r4, r6
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r2, r3
+0x00400053:	movs	r0, r0

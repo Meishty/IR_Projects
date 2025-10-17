@@ -1,36 +1,62 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_dw2-is-stmt-2_fb47f0b9_stripped.o:     file format elf32-littlearm
+Function sub_400009 @ 0x00400009
+0x00400009:	ldr	r3, [pc, #0x6c]
+0x0040000b:	movs	r0, #0
+0x0040000d:	movs	r1, #1
+0x0040000f:	add	r3, pc
+0x00400011:	str	r0, [r3]
+0x00400013:	str	r1, [r3, #4]
+0x00400015:	movs	r2, #2
+0x00400017:	str	r1, [r3]
+0x00400019:	str	r2, [r3, #4]
+0x0040001b:	movs	r1, #3
+0x0040001d:	str	r2, [r3]
+0x0040001f:	str	r1, [r3, #4]
+0x00400021:	movs	r2, #4
+0x00400023:	str	r1, [r3]
+0x00400025:	str	r2, [r3, #4]
+0x00400027:	movs	r1, #5
+0x00400029:	str	r2, [r3]
+0x0040002b:	str	r1, [r3, #4]
+0x0040002d:	movs	r2, #6
+0x0040002f:	str	r1, [r3]
+0x00400031:	str	r2, [r3, #4]
+0x00400033:	movs	r1, #7
+0x00400035:	str	r2, [r3]
+0x00400037:	str	r1, [r3, #4]
+0x00400039:	movs	r2, #8
+0x0040003b:	str	r1, [r3]
+0x0040003d:	str	r2, [r3, #4]
+0x0040003f:	movs	r1, #9
+0x00400041:	str	r2, [r3]
+0x00400043:	str	r1, [r3, #4]
+0x00400045:	movs	r2, #0xa
+0x00400047:	str	r1, [r3]
+0x00400049:	str	r2, [r3, #4]
+0x0040004b:	movs	r1, #0xb
+0x0040004d:	str	r2, [r3]
+0x0040004f:	str	r1, [r3, #4]
+0x00400051:	movs	r2, #0xc
+0x00400053:	str	r1, [r3]
+0x00400055:	str	r2, [r3, #4]
+0x00400057:	movs	r1, #0xd
+0x00400059:	str	r2, [r3]
+0x0040005b:	str	r1, [r3, #4]
+0x0040005d:	movs	r2, #0xe
+0x0040005f:	str	r1, [r3]
+0x00400061:	str	r2, [r3, #4]
+0x00400063:	movs	r1, #0xf
+0x00400065:	str	r2, [r3]
+0x00400067:	str	r1, [r3, #4]
+0x00400069:	movs	r2, #0x10
+0x0040006b:	str	r1, [r3]
+0x0040006d:	str	r2, [r3, #4]
+0x0040006f:	movs	r1, #0x11
+0x00400071:	str	r2, [r3]
+0x00400073:	str	r1, [r3, #4]
+0x00400075:	bx	lr
 
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	20004b1b 	andcs	r4, r0, fp, lsl fp
-   4:	447b2101 	ldrbtmi	r2, [fp], #-257	; 0xfffffeff
-   8:	60596018 	subsvs	r6, r9, r8, lsl r0
-   c:	60192202 	andsvs	r2, r9, r2, lsl #4
-  10:	2103605a 	qaddcs	r6, sl, r3
-  14:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  18:	60192204 	andsvs	r2, r9, r4, lsl #4
-  1c:	2105605a 	qaddcs	r6, sl, r5
-  20:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  24:	60192206 	andsvs	r2, r9, r6, lsl #4
-  28:	2107605a 	qaddcs	r6, sl, r7
-  2c:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  30:	60192208 	andsvs	r2, r9, r8, lsl #4
-  34:	2109605a 	qaddcs	r6, sl, r9
-  38:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  3c:	6019220a 	andsvs	r2, r9, sl, lsl #4
-  40:	210b605a 	qaddcs	r6, sl, fp
-  44:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  48:	6019220c 	andsvs	r2, r9, ip, lsl #4
-  4c:	210d605a 	qaddcs	r6, sl, sp
-  50:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  54:	6019220e 	andsvs	r2, r9, lr, lsl #4
-  58:	210f605a 	qaddcs	r6, sl, pc	; <UNPREDICTABLE>
-  5c:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  60:	60192210 	andsvs	r2, r9, r0, lsl r2
-  64:	2111605a 	tstcs	r1, sl, asr r0
-  68:	6059601a 	subsvs	r6, r9, sl, lsl r0
-  6c:	bf004770 	svclt	0x00004770
-  70:	00000066 	andeq	r0, r0, r6, rrx
+Function sub_400077 @ 0x00400077
+0x00400077:	nop	
+0x00400079:	lsls	r6, r4, #1
+0x0040007b:	movs	r0, r0

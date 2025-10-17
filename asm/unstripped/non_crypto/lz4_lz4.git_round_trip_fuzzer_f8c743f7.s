@@ -1,788 +1,974 @@
 
-/root/projects/compiled/non_crypto/unstripped/lz4_lz4.git_round_trip_fuzzer_f8c743f7.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svcmi	#0xf0e92d
 
+Function sub_400017 @ 0x00400017
+0x00400017:	vpadal.s16	d20, d4
+0x0040001b:	vmov	s16, r0
+0x0040001f:	bl	#0x50000d
+0x00400023:	mov	r5, r0
+0x00400025:	mov	r0, r4
+0x00400027:	bl	#0x500019
+0x0040002b:	mov	r4, r0
+0x0040002d:	movs	r1, #0
+0x0040002f:	mov	r0, r5
+0x00400031:	mov	r2, r4
+0x00400033:	movw	r5, #0xffff
+0x00400037:	bl	#0x500025
+0x0040003b:	mov	r6, r0
+0x0040003d:	mov	r0, r4
+0x0040003f:	bl	#0x500031
+0x00400043:	mov	r8, r0
+0x00400045:	add	r0, r5
+0x00400047:	bl	#0x50003d
+0x0040004b:	cmp	r0, #0
+0x0040004d:	beq.w	#0x400287
+0x00400051:	mov	sb, r0
+0x00400053:	mov	r0, r5
+0x00400055:	bl	#0x50003d
+0x00400059:	movw	r3, #0xfbff
+0x0040005d:	str	r0, [sp, #0x14]
+0x0040005f:	add.w	r2, sb, r3
+0x00400063:	str	r2, [sp, #0x18]
+0x00400065:	cmp	r0, #0
+0x00400067:	beq.w	#0x4005c1
+0x0040006b:	adds	r3, r0, r3
+0x0040006d:	mov	r0, r4
+0x0040006f:	str	r3, [sp, #0x20]
+0x00400071:	add	r5, sb
+0x00400073:	bl	#0x50003d
+0x00400077:	mov	sl, r0
+0x00400079:	cmp	r0, #0
+0x0040007b:	beq.w	#0x4005a5
+0x0040007f:	mov	r3, r8
+0x00400081:	mov	r2, r4
+0x00400083:	mov	r1, r5
+0x00400085:	mov	r0, r7
+0x00400087:	bl	#0x500049
+0x0040008b:	subs.w	r8, r0, #0
+0x0040008f:	ble.w	#0x400589
+0x00400093:	mov	r2, r8
+0x00400095:	mov	r3, r4
+0x00400097:	mov	r1, sl
+0x00400099:	mov	r0, r5
+0x0040009b:	bl	#0x500055
+0x0040009f:	mov	r2, r0
+0x004000a1:	cmp	r0, r4
+0x004000a3:	bne.w	#0x40056d
+0x004000a7:	mov	r1, sl
+0x004000a9:	mov	r0, r7
+0x004000ab:	bl	#0x500061
+0x004000af:	cmp	r0, #0
+0x004000b1:	bne.w	#0x400551
+0x004000b5:	mov	r0, r6
+0x004000b7:	bl	#0x50003d
+0x004000bb:	mov	r4, r0
+0x004000bd:	cmp	r0, #0
+0x004000bf:	beq.w	#0x400535
+0x004000c3:	mov	r1, r0
+0x004000c5:	mov	r3, r6
+0x004000c7:	mov	r2, r8
+0x004000c9:	mov	r0, r5
+0x004000cb:	str	r6, [sp]
+0x004000cd:	bl	#0x50006d
+0x004000d1:	subs.w	fp, r0, #0
+0x004000d5:	blt.w	#0x400519
+0x004000d9:	cmp	r6, fp
+0x004000db:	bne.w	#0x4004fd
+0x004000df:	mov	r2, r6
+0x004000e1:	mov	r1, r4
+0x004000e3:	mov	r0, r7
+0x004000e5:	bl	#0x500061
+0x004000e9:	cmp	r0, #0
+0x004000eb:	bne.w	#0x4004e1
+0x004000ef:	mov	r0, r4
+0x004000f1:	bl	#0x500079
+0x004000f5:	mov	r0, r6
+0x004000f7:	bl	#0x50003d
+0x004000fb:	mov	r1, r0
+0x004000fd:	cmp	r0, #0
+0x004000ff:	beq.w	#0x4004c5
+0x00400103:	movs	r2, #0
+0x00400105:	str	r0, [sp, #0x1c]
+0x00400107:	strd	r2, r2, [sp, #4]
+0x0040010b:	mov	r3, fp
+0x0040010d:	mov	r2, r8
+0x0040010f:	mov	r0, r5
+0x00400111:	str.w	fp, [sp]
+0x00400115:	bl	#0x500085
+0x00400119:	ldr	r1, [sp, #0x1c]
+0x0040011b:	subs	r4, r0, #0
+0x0040011d:	blt.w	#0x4004a9
+0x00400121:	cmp	fp, r4
+0x00400123:	bne.w	#0x40048d
+0x00400127:	mov	r2, fp
+0x00400129:	mov	r0, r7
+0x0040012b:	str	r1, [sp, #0x1c]
+0x0040012d:	bl	#0x500061
+0x00400131:	ldr	r1, [sp, #0x1c]
+0x00400133:	cmp	r0, #0
+0x00400135:	bne.w	#0x400471
+0x00400139:	mov	r0, r1
+0x0040013b:	bl	#0x500079
+0x0040013f:	mov	r0, r6
+0x00400141:	bl	#0x50003d
+0x00400145:	mov	r1, r0
+0x00400147:	cmp	r0, #0
+0x00400149:	beq.w	#0x400455
+0x0040014d:	ldr	r3, [sp, #0x18]
+0x0040014f:	mov.w	r2, #0x400
+0x00400153:	strd	fp, r3, [sp]
+0x00400157:	mov	r3, fp
+0x00400159:	str	r2, [sp, #8]
+0x0040015b:	mov	r2, r8
+0x0040015d:	str	r0, [sp, #0x18]
+0x0040015f:	mov	r0, r5
+0x00400161:	bl	#0x500085
+0x00400165:	ldr	r1, [sp, #0x18]
+0x00400167:	cmp	r0, #0
+0x00400169:	blt.w	#0x400439
+0x0040016d:	cmp	fp, r0
+0x0040016f:	bne.w	#0x40041d
+0x00400173:	mov	r2, fp
+0x00400175:	mov	r0, r7
+0x00400177:	str	r1, [sp, #0x18]
+0x00400179:	bl	#0x500061
+0x0040017d:	ldr	r1, [sp, #0x18]
+0x0040017f:	cmp	r0, #0
+0x00400181:	bne.w	#0x400401
+0x00400185:	mov	r0, r1
+0x00400187:	bl	#0x500079
+0x0040018b:	mov	r0, r6
+0x0040018d:	bl	#0x50003d
+0x00400191:	mov	r1, r0
+0x00400193:	cmp	r0, #0
+0x00400195:	beq.w	#0x4003e5
+0x00400199:	str	r0, [sp, #0x18]
+0x0040019b:	movw	ip, #0xffff
+0x0040019f:	mov	r3, r4
+0x004001a1:	mov	r2, r8
+0x004001a3:	mov	r0, r5
+0x004001a5:	strd	r4, sb, [sp]
+0x004001a9:	str.w	ip, [sp, #8]
+0x004001ad:	bl	#0x500085
+0x004001b1:	ldr	r1, [sp, #0x18]
+0x004001b3:	cmp	r0, #0
+0x004001b5:	blt.w	#0x4003c9
+0x004001b9:	cmp	r4, r0
+0x004001bb:	bne.w	#0x4003ad
+0x004001bf:	mov	r2, r4
+0x004001c1:	mov	r0, r7
+0x004001c3:	str	r1, [sp, #0x18]
+0x004001c5:	bl	#0x500061
+0x004001c9:	ldr	r1, [sp, #0x18]
+0x004001cb:	cmp	r0, #0
+0x004001cd:	bne.w	#0x400391
+0x004001d1:	mov	r0, r1
+0x004001d3:	bl	#0x500079
+0x004001d7:	mov	r0, r6
+0x004001d9:	bl	#0x50003d
+0x004001dd:	mov	r1, r0
+0x004001df:	cmp	r0, #0
+0x004001e1:	beq.w	#0x400375
+0x004001e5:	ldr	r3, [sp, #0x20]
+0x004001e7:	mov	r2, r8
+0x004001e9:	strd	r4, r3, [sp]
+0x004001ed:	mov.w	r3, #0x400
+0x004001f1:	str	r0, [sp, #0x18]
+0x004001f3:	mov	r0, r5
+0x004001f5:	str	r3, [sp, #8]
+0x004001f7:	mov	r3, r4
+0x004001f9:	bl	#0x500085
+0x004001fd:	ldr	r1, [sp, #0x18]
+0x004001ff:	cmp	r0, #0
+0x00400201:	blt.w	#0x400359
+0x00400205:	cmp	r4, r0
+0x00400207:	bne.w	#0x40033d
+0x0040020b:	mov	r2, r4
+0x0040020d:	mov	r0, r7
+0x0040020f:	str	r1, [sp, #0x18]
+0x00400211:	bl	#0x500061
+0x00400215:	ldr	r1, [sp, #0x18]
+0x00400217:	cmp	r0, #0
+0x00400219:	bne.w	#0x400321
+0x0040021d:	mov	r0, r1
+0x0040021f:	bl	#0x500079
+0x00400223:	mov	r0, r6
+0x00400225:	bl	#0x50003d
+0x00400229:	mov	r6, r0
+0x0040022b:	cmp	r0, #0
+0x0040022d:	beq	#0x400305
+0x0040022f:	ldr	r3, [sp, #0x14]
+0x00400231:	mov	r0, r5
+0x00400233:	strd	r4, r3, [sp]
+0x00400237:	mov	r2, r8
+0x00400239:	mov	r3, r4
+0x0040023b:	mov	r1, r6
+0x0040023d:	movw	r5, #0xffff
+0x00400241:	str	r5, [sp, #8]
+0x00400243:	bl	#0x500085
+0x00400247:	cmp	r0, #0
+0x00400249:	blt	#0x4002e9
+0x0040024b:	cmp	r4, r0
+0x0040024d:	bne	#0x4002cd
+0x0040024f:	mov	r2, r4
+0x00400251:	mov	r0, r7
+0x00400253:	mov	r1, r6
+0x00400255:	bl	#0x500061
+0x00400259:	cbnz	r0, #0x4002b1
+0x0040025b:	mov	r0, r6
+0x0040025d:	bl	#0x500079
+0x0040025b:	mov	r0, r6
+0x0040025d:	bl	#0x500079
+0x00400261:	mov	r0, sb
+0x00400263:	bl	#0x500079
+0x00400267:	ldr	r0, [sp, #0x14]
+0x00400269:	bl	#0x500079
+0x0040026d:	mov	r0, sl
+0x0040026f:	bl	#0x500079
+0x00400273:	vmov	r0, s16
+0x00400277:	bl	#0x500091
+0x0040027b:	movs	r0, #0
+0x0040027d:	add	sp, #0x2c
+0x0040027f:	vpop	{d8}
+0x00400283:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x00400287:	ldr	r0, [pc, #0x358]
+0x00400289:	movs	r4, #0x1a
+0x0040028b:	ldr	r5, [sp, #0x24]
+0x0040028d:	ldr	r2, [pc, #0x354]
+0x0040028f:	ldr	r1, [pc, #0x358]
+0x00400291:	add	r2, pc
+0x00400293:	ldr	r3, [pc, #0x358]
+0x00400295:	ldr	r0, [r5, r0]
+0x00400297:	add	r1, pc
+0x00400299:	str	r2, [sp, #8]
+0x0040029b:	add	r3, pc
+0x0040029d:	ldr	r2, [pc, #0x350]
+0x0040029f:	add	r2, pc
+0x004002a1:	strd	r4, r1, [sp]
+0x004002a5:	movs	r1, #1
+0x004002a7:	ldr	r0, [r0]
+0x004002a9:	bl	#0x50009d
+0x004002a1:	strd	r4, r1, [sp]
+0x004002a5:	movs	r1, #1
+0x004002a7:	ldr	r0, [r0]
+0x004002a9:	bl	#0x50009d
+0x004002ad:	bl	#0x5000a9
+0x004002b1:	ldr	r0, [pc, #0x32c]
+0x004002b3:	movs	r4, #0x6b
+0x004002b5:	ldr	r5, [sp, #0x24]
+0x004002b7:	ldr	r2, [pc, #0x33c]
+0x004002b9:	ldr	r1, [pc, #0x33c]
+0x004002bb:	add	r2, pc
+0x004002bd:	ldr	r3, [pc, #0x33c]
+0x004002bf:	ldr	r0, [r5, r0]
+0x004002c1:	add	r1, pc
+0x004002c3:	str	r2, [sp, #8]
+0x004002c5:	add	r3, pc
+0x004002c7:	ldr	r2, [pc, #0x338]
+0x004002c9:	add	r2, pc
+0x004002cb:	b	#0x4002a1
+0x004002cd:	ldr	r0, [pc, #0x310]
+0x004002cf:	movs	r4, #0x6a
+0x004002d1:	ldr	r5, [sp, #0x24]
+0x004002d3:	ldr	r2, [pc, #0x330]
+0x004002d5:	ldr	r1, [pc, #0x330]
+0x004002d7:	add	r2, pc
+0x004002d9:	ldr	r3, [pc, #0x330]
+0x004002db:	ldr	r0, [r5, r0]
+0x004002dd:	add	r1, pc
+0x004002df:	str	r2, [sp, #8]
+0x004002e1:	add	r3, pc
+0x004002e3:	ldr	r2, [pc, #0x32c]
+0x004002e5:	add	r2, pc
+0x004002e7:	b	#0x4002a1
+0x004002e9:	ldr	r0, [pc, #0x2f4]
+0x004002eb:	movs	r4, #0x69
+0x004002ed:	ldr	r5, [sp, #0x24]
+0x004002ef:	ldr	r2, [pc, #0x324]
+0x004002f1:	ldr	r1, [pc, #0x324]
+0x004002f3:	add	r2, pc
+0x004002f5:	ldr	r3, [pc, #0x324]
+0x004002f7:	ldr	r0, [r5, r0]
+0x004002f9:	add	r1, pc
+0x004002fb:	str	r2, [sp, #8]
+0x004002fd:	add	r3, pc
+0x004002ff:	ldr	r2, [pc, #0x320]
+0x00400301:	add	r2, pc
+0x00400303:	b	#0x4002a1
+0x00400305:	ldr	r0, [pc, #0x2d8]
+0x00400307:	movs	r4, #0x66
+0x00400309:	ldr	r5, [sp, #0x24]
+0x0040030b:	ldr	r2, [pc, #0x318]
+0x0040030d:	ldr	r1, [pc, #0x318]
+0x0040030f:	add	r2, pc
+0x00400311:	ldr	r3, [pc, #0x318]
+0x00400313:	ldr	r0, [r5, r0]
+0x00400315:	add	r1, pc
+0x00400317:	str	r2, [sp, #8]
+0x00400319:	add	r3, pc
+0x0040031b:	ldr	r2, [pc, #0x314]
+0x0040031d:	add	r2, pc
+0x0040031f:	b	#0x4002a1
+0x00400321:	ldr	r0, [pc, #0x2bc]
+0x00400323:	movs	r4, #0x60
+0x00400325:	ldr	r5, [sp, #0x24]
+0x00400327:	ldr	r2, [pc, #0x30c]
+0x00400329:	ldr	r1, [pc, #0x30c]
+0x0040032b:	add	r2, pc
+0x0040032d:	ldr	r3, [pc, #0x30c]
+0x0040032f:	ldr	r0, [r5, r0]
+0x00400331:	add	r1, pc
+0x00400333:	str	r2, [sp, #8]
+0x00400335:	add	r3, pc
+0x00400337:	ldr	r2, [pc, #0x308]
+0x00400339:	add	r2, pc
+0x0040033b:	b	#0x4002a1
+0x0040033d:	ldr	r0, [pc, #0x2a0]
+0x0040033f:	movs	r4, #0x5f
+0x00400341:	ldr	r5, [sp, #0x24]
+0x00400343:	ldr	r2, [pc, #0x300]
+0x00400345:	ldr	r1, [pc, #0x300]
+0x00400347:	add	r2, pc
+0x00400349:	ldr	r3, [pc, #0x300]
+0x0040034b:	ldr	r0, [r5, r0]
+0x0040034d:	add	r1, pc
+0x0040034f:	str	r2, [sp, #8]
+0x00400351:	add	r3, pc
+0x00400353:	ldr	r2, [pc, #0x2fc]
+0x00400355:	add	r2, pc
+0x00400357:	b	#0x4002a1
+0x00400359:	ldr	r0, [pc, #0x284]
+0x0040035b:	movs	r4, #0x5e
+0x0040035d:	ldr	r5, [sp, #0x24]
+0x0040035f:	ldr	r2, [pc, #0x2f4]
+0x00400361:	ldr	r1, [pc, #0x2f4]
+0x00400363:	add	r2, pc
+0x00400365:	ldr	r3, [pc, #0x2f4]
+0x00400367:	ldr	r0, [r5, r0]
+0x00400369:	add	r1, pc
+0x0040036b:	str	r2, [sp, #8]
+0x0040036d:	add	r3, pc
+0x0040036f:	ldr	r2, [pc, #0x2f0]
+0x00400371:	add	r2, pc
+0x00400373:	b	#0x4002a1
+0x00400375:	ldr	r0, [pc, #0x268]
+0x00400377:	movs	r4, #0x5b
+0x00400379:	ldr	r5, [sp, #0x24]
+0x0040037b:	ldr	r2, [pc, #0x2e8]
+0x0040037d:	ldr	r1, [pc, #0x2e8]
+0x0040037f:	add	r2, pc
+0x00400381:	ldr	r3, [pc, #0x2e8]
+0x00400383:	ldr	r0, [r5, r0]
+0x00400385:	add	r1, pc
+0x00400387:	str	r2, [sp, #8]
+0x00400389:	add	r3, pc
+0x0040038b:	ldr	r2, [pc, #0x2e4]
+0x0040038d:	add	r2, pc
+0x0040038f:	b	#0x4002a1
+0x00400391:	ldr	r0, [pc, #0x24c]
+0x00400393:	movs	r4, #0x55
+0x00400395:	ldr	r5, [sp, #0x24]
+0x00400397:	ldr	r2, [pc, #0x2dc]
+0x00400399:	ldr	r1, [pc, #0x2dc]
+0x0040039b:	add	r2, pc
+0x0040039d:	ldr	r3, [pc, #0x2dc]
+0x0040039f:	ldr	r0, [r5, r0]
+0x004003a1:	add	r1, pc
+0x004003a3:	str	r2, [sp, #8]
+0x004003a5:	add	r3, pc
+0x004003a7:	ldr	r2, [pc, #0x2d8]
+0x004003a9:	add	r2, pc
+0x004003ab:	b	#0x4002a1
+0x004003ad:	ldr	r0, [pc, #0x230]
+0x004003af:	movs	r4, #0x54
+0x004003b1:	ldr	r5, [sp, #0x24]
+0x004003b3:	ldr	r2, [pc, #0x2d0]
+0x004003b5:	ldr	r1, [pc, #0x2d0]
+0x004003b7:	add	r2, pc
+0x004003b9:	ldr	r3, [pc, #0x2d0]
+0x004003bb:	ldr	r0, [r5, r0]
+0x004003bd:	add	r1, pc
+0x004003bf:	str	r2, [sp, #8]
+0x004003c1:	add	r3, pc
+0x004003c3:	ldr	r2, [pc, #0x2cc]
+0x004003c5:	add	r2, pc
+0x004003c7:	b	#0x4002a1
+0x004003c9:	ldr	r0, [pc, #0x214]
+0x004003cb:	movs	r4, #0x53
+0x004003cd:	ldr	r5, [sp, #0x24]
+0x004003cf:	ldr	r2, [pc, #0x2c4]
+0x004003d1:	ldr	r1, [pc, #0x2c4]
+0x004003d3:	add	r2, pc
+0x004003d5:	ldr	r3, [pc, #0x2c4]
+0x004003d7:	ldr	r0, [r5, r0]
+0x004003d9:	add	r1, pc
+0x004003db:	str	r2, [sp, #8]
+0x004003dd:	add	r3, pc
+0x004003df:	ldr	r2, [pc, #0x2c0]
+0x004003e1:	add	r2, pc
+0x004003e3:	b	#0x4002a1
+0x004003e5:	ldr	r0, [pc, #0x1f8]
+0x004003e7:	movs	r4, #0x50
+0x004003e9:	ldr	r5, [sp, #0x24]
+0x004003eb:	ldr	r2, [pc, #0x2b8]
+0x004003ed:	ldr	r1, [pc, #0x2b8]
+0x004003ef:	add	r2, pc
+0x004003f1:	ldr	r3, [pc, #0x2b8]
+0x004003f3:	ldr	r0, [r5, r0]
+0x004003f5:	add	r1, pc
+0x004003f7:	str	r2, [sp, #8]
+0x004003f9:	add	r3, pc
+0x004003fb:	ldr	r2, [pc, #0x2b4]
+0x004003fd:	add	r2, pc
+0x004003ff:	b	#0x4002a1
+0x00400401:	ldr	r0, [pc, #0x1dc]
+0x00400403:	movs	r4, #0x4a
+0x00400405:	ldr	r5, [sp, #0x24]
+0x00400407:	ldr	r2, [pc, #0x2ac]
+0x00400409:	ldr	r1, [pc, #0x2ac]
+0x0040040b:	add	r2, pc
+0x0040040d:	ldr	r3, [pc, #0x2ac]
+0x0040040f:	ldr	r0, [r5, r0]
+0x00400411:	add	r1, pc
+0x00400413:	str	r2, [sp, #8]
+0x00400415:	add	r3, pc
+0x00400417:	ldr	r2, [pc, #0x2a8]
+0x00400419:	add	r2, pc
+0x0040041b:	b	#0x4002a1
+0x0040041d:	ldr	r0, [pc, #0x1c0]
+0x0040041f:	movs	r4, #0x49
+0x00400421:	ldr	r5, [sp, #0x24]
+0x00400423:	ldr	r2, [pc, #0x2a0]
+0x00400425:	ldr	r1, [pc, #0x2a0]
+0x00400427:	add	r2, pc
+0x00400429:	ldr	r3, [pc, #0x2a0]
+0x0040042b:	ldr	r0, [r5, r0]
+0x0040042d:	add	r1, pc
+0x0040042f:	str	r2, [sp, #8]
+0x00400431:	add	r3, pc
+0x00400433:	ldr	r2, [pc, #0x29c]
+0x00400435:	add	r2, pc
+0x00400437:	b	#0x4002a1
+0x00400439:	ldr	r0, [pc, #0x1a4]
+0x0040043b:	movs	r4, #0x48
+0x0040043d:	ldr	r5, [sp, #0x24]
+0x0040043f:	ldr	r2, [pc, #0x294]
+0x00400441:	ldr	r1, [pc, #0x294]
+0x00400443:	add	r2, pc
+0x00400445:	ldr	r3, [pc, #0x294]
+0x00400447:	ldr	r0, [r5, r0]
+0x00400449:	add	r1, pc
+0x0040044b:	str	r2, [sp, #8]
+0x0040044d:	add	r3, pc
+0x0040044f:	ldr	r2, [pc, #0x290]
+0x00400451:	add	r2, pc
+0x00400453:	b	#0x4002a1
+0x00400455:	ldr	r0, [pc, #0x188]
+0x00400457:	movs	r4, #0x45
+0x00400459:	ldr	r5, [sp, #0x24]
+0x0040045b:	ldr	r2, [pc, #0x288]
+0x0040045d:	ldr	r1, [pc, #0x288]
+0x0040045f:	add	r2, pc
+0x00400461:	ldr	r3, [pc, #0x288]
+0x00400463:	ldr	r0, [r5, r0]
+0x00400465:	add	r1, pc
+0x00400467:	str	r2, [sp, #8]
+0x00400469:	add	r3, pc
+0x0040046b:	ldr	r2, [pc, #0x284]
+0x0040046d:	add	r2, pc
+0x0040046f:	b	#0x4002a1
+0x00400471:	ldr	r0, [pc, #0x16c]
+0x00400473:	movs	r4, #0x3f
+0x00400475:	ldr	r5, [sp, #0x24]
+0x00400477:	ldr	r2, [pc, #0x27c]
+0x00400479:	ldr	r1, [pc, #0x27c]
+0x0040047b:	add	r2, pc
+0x0040047d:	ldr	r3, [pc, #0x27c]
+0x0040047f:	ldr	r0, [r5, r0]
+0x00400481:	add	r1, pc
+0x00400483:	str	r2, [sp, #8]
+0x00400485:	add	r3, pc
+0x00400487:	ldr	r2, [pc, #0x278]
+0x00400489:	add	r2, pc
+0x0040048b:	b	#0x4002a1
+0x0040048d:	ldr	r0, [pc, #0x150]
+0x0040048f:	movs	r4, #0x3e
+0x00400491:	ldr	r5, [sp, #0x24]
+0x00400493:	ldr	r2, [pc, #0x270]
+0x00400495:	ldr	r1, [pc, #0x270]
+0x00400497:	add	r2, pc
+0x00400499:	ldr	r3, [pc, #0x270]
+0x0040049b:	ldr	r0, [r5, r0]
+0x0040049d:	add	r1, pc
+0x0040049f:	str	r2, [sp, #8]
+0x004004a1:	add	r3, pc
+0x004004a3:	ldr	r2, [pc, #0x26c]
+0x004004a5:	add	r2, pc
+0x004004a7:	b	#0x4002a1
+0x004004a9:	ldr	r0, [pc, #0x134]
+0x004004ab:	movs	r4, #0x3d
+0x004004ad:	ldr	r5, [sp, #0x24]
+0x004004af:	ldr	r2, [pc, #0x264]
+0x004004b1:	ldr	r1, [pc, #0x264]
+0x004004b3:	add	r2, pc
+0x004004b5:	ldr	r3, [pc, #0x264]
+0x004004b7:	ldr	r0, [r5, r0]
+0x004004b9:	add	r1, pc
+0x004004bb:	str	r2, [sp, #8]
+0x004004bd:	add	r3, pc
+0x004004bf:	ldr	r2, [pc, #0x260]
+0x004004c1:	add	r2, pc
+0x004004c3:	b	#0x4002a1
+0x004004c5:	ldr	r0, [pc, #0x118]
+0x004004c7:	movs	r4, #0x3a
+0x004004c9:	ldr	r5, [sp, #0x24]
+0x004004cb:	ldr	r2, [pc, #0x258]
+0x004004cd:	ldr	r1, [pc, #0x258]
+0x004004cf:	add	r2, pc
+0x004004d1:	ldr	r3, [pc, #0x258]
+0x004004d3:	ldr	r0, [r5, r0]
+0x004004d5:	add	r1, pc
+0x004004d7:	str	r2, [sp, #8]
+0x004004d9:	add	r3, pc
+0x004004db:	ldr	r2, [pc, #0x254]
+0x004004dd:	add	r2, pc
+0x004004df:	b	#0x4002a1
+0x004004e1:	ldr	r0, [pc, #0xfc]
+0x004004e3:	movs	r4, #0x34
+0x004004e5:	ldr	r5, [sp, #0x24]
+0x004004e7:	ldr	r2, [pc, #0x24c]
+0x004004e9:	ldr	r1, [pc, #0x24c]
+0x004004eb:	add	r2, pc
+0x004004ed:	ldr	r3, [pc, #0x24c]
+0x004004ef:	ldr	r0, [r5, r0]
+0x004004f1:	add	r1, pc
+0x004004f3:	str	r2, [sp, #8]
+0x004004f5:	add	r3, pc
+0x004004f7:	ldr	r2, [pc, #0x248]
+0x004004f9:	add	r2, pc
+0x004004fb:	b	#0x4002a1
+0x004004fd:	ldr	r0, [pc, #0xe0]
+0x004004ff:	movs	r4, #0x33
+0x00400501:	ldr	r5, [sp, #0x24]
+0x00400503:	ldr	r2, [pc, #0x240]
+0x00400505:	ldr	r1, [pc, #0x240]
+0x00400507:	add	r2, pc
+0x00400509:	ldr	r3, [pc, #0x240]
+0x0040050b:	ldr	r0, [r5, r0]
+0x0040050d:	add	r1, pc
+0x0040050f:	str	r2, [sp, #8]
+0x00400511:	add	r3, pc
+0x00400513:	ldr	r2, [pc, #0x23c]
+0x00400515:	add	r2, pc
+0x00400517:	b	#0x4002a1
+0x00400519:	ldr	r0, [pc, #0xc4]
+0x0040051b:	movs	r4, #0x32
+0x0040051d:	ldr	r5, [sp, #0x24]
+0x0040051f:	ldr	r2, [pc, #0x234]
+0x00400521:	ldr	r1, [pc, #0x234]
+0x00400523:	add	r2, pc
+0x00400525:	ldr	r3, [pc, #0x234]
+0x00400527:	ldr	r0, [r5, r0]
+0x00400529:	add	r1, pc
+0x0040052b:	str	r2, [sp, #8]
+0x0040052d:	add	r3, pc
+0x0040052f:	ldr	r2, [pc, #0x230]
+0x00400531:	add	r2, pc
+0x00400533:	b	#0x4002a1
+0x00400535:	ldr	r0, [pc, #0xa8]
+0x00400537:	movs	r4, #0x2f
+0x00400539:	ldr	r5, [sp, #0x24]
+0x0040053b:	ldr	r2, [pc, #0x228]
+0x0040053d:	ldr	r1, [pc, #0x228]
+0x0040053f:	add	r2, pc
+0x00400541:	ldr	r3, [pc, #0x228]
+0x00400543:	ldr	r0, [r5, r0]
+0x00400545:	add	r1, pc
+0x00400547:	str	r2, [sp, #8]
+0x00400549:	add	r3, pc
+0x0040054b:	ldr	r2, [pc, #0x224]
+0x0040054d:	add	r2, pc
+0x0040054f:	b	#0x4002a1
+0x00400551:	ldr	r0, [pc, #0x8c]
+0x00400553:	movs	r4, #0x2a
+0x00400555:	ldr	r5, [sp, #0x24]
+0x00400557:	ldr	r2, [pc, #0x21c]
+0x00400559:	ldr	r1, [pc, #0x21c]
+0x0040055b:	add	r2, pc
+0x0040055d:	ldr	r3, [pc, #0x21c]
+0x0040055f:	ldr	r0, [r5, r0]
+0x00400561:	add	r1, pc
+0x00400563:	str	r2, [sp, #8]
+0x00400565:	add	r3, pc
+0x00400567:	ldr	r2, [pc, #0x218]
+0x00400569:	add	r2, pc
+0x0040056b:	b	#0x4002a1
+0x0040056d:	ldr	r0, [pc, #0x70]
+0x0040056f:	movs	r4, #0x29
+0x00400571:	ldr	r5, [sp, #0x24]
+0x00400573:	ldr	r2, [pc, #0x210]
+0x00400575:	ldr	r1, [pc, #0x210]
+0x00400577:	add	r2, pc
+0x00400579:	ldr	r3, [pc, #0x210]
+0x0040057b:	ldr	r0, [r5, r0]
+0x0040057d:	add	r1, pc
+0x0040057f:	str	r2, [sp, #8]
+0x00400581:	add	r3, pc
+0x00400583:	ldr	r2, [pc, #0x20c]
+0x00400585:	add	r2, pc
+0x00400587:	b	#0x4002a1
+0x00400589:	ldr	r0, [pc, #0x54]
+0x0040058b:	movs	r4, #0x26
+0x0040058d:	ldr	r5, [sp, #0x24]
+0x0040058f:	ldr	r2, [pc, #0x204]
+0x00400591:	ldr	r1, [pc, #0x204]
+0x00400593:	add	r2, pc
+0x00400595:	ldr	r3, [pc, #0x204]
+0x00400597:	ldr	r0, [r5, r0]
+0x00400599:	add	r1, pc
+0x0040059b:	str	r2, [sp, #8]
+0x0040059d:	add	r3, pc
+0x0040059f:	ldr	r2, [pc, #0x200]
+0x004005a1:	add	r2, pc
+0x004005a3:	b	#0x4002a1
+0x004005a5:	ldr	r0, [pc, #0x38]
+0x004005a7:	movs	r4, #0x21
+0x004005a9:	ldr	r5, [sp, #0x24]
+0x004005ab:	ldr	r2, [pc, #0x1f8]
+0x004005ad:	ldr	r1, [pc, #0x1f8]
+0x004005af:	add	r2, pc
+0x004005b1:	ldr	r3, [pc, #0x1f8]
+0x004005b3:	ldr	r0, [r5, r0]
+0x004005b5:	add	r1, pc
+0x004005b7:	str	r2, [sp, #8]
+0x004005b9:	add	r3, pc
+0x004005bb:	ldr	r2, [pc, #0x1f4]
+0x004005bd:	add	r2, pc
+0x004005bf:	b	#0x4002a1
+0x004005c1:	ldr	r0, [pc, #0x1c]
+0x004005c3:	movs	r4, #0x1d
+0x004005c5:	ldr	r5, [sp, #0x24]
+0x004005c7:	ldr	r2, [pc, #0x1ec]
+0x004005c9:	ldr	r1, [pc, #0x1ec]
+0x004005cb:	add	r2, pc
+0x004005cd:	ldr	r3, [pc, #0x1ec]
+0x004005cf:	ldr	r0, [r5, r0]
+0x004005d1:	add	r1, pc
+0x004005d3:	str	r2, [sp, #8]
+0x004005d5:	add	r3, pc
+0x004005d7:	ldr	r2, [pc, #0x1e8]
+0x004005d9:	add	r2, pc
+0x004005db:	b	#0x4002a1
 
-Disassembly of section .text:
+Function sub_4005dd @ 0x004005dd
+0x004005dd:	lsls	r0, r1, #0x17
+0x004005df:	movs	r0, r0
+0x004005e1:	movs	r0, r0
+0x004005e3:	movs	r0, r0
+0x004005e5:	lsls	r4, r0, #0x16
+0x004005e7:	movs	r0, r0
+0x004005e9:	lsls	r2, r0, #0x16
+0x004005eb:	movs	r0, r0
+0x004005ed:	lsls	r6, r4, #0x14
+0x004005ef:	movs	r0, r0
+0x004005f1:	lsls	r2, r2, #0x15
+0x004005f3:	movs	r0, r0
+0x004005f5:	lsls	r2, r7, #0x16
+0x004005f7:	movs	r0, r0
+0x004005f9:	lsls	r0, r3, #0x18
+0x004005fb:	movs	r0, r0
+0x004005fd:	lsls	r4, r7, #0x13
+0x004005ff:	movs	r0, r0
+0x00400601:	lsls	r0, r5, #0x14
+0x00400603:	movs	r0, r0
+0x00400605:	lsls	r6, r7, #0x15
+0x00400607:	movs	r0, r0
+0x00400609:	lsls	r4, r3, #0x17
+0x0040060b:	movs	r0, r0
+0x0040060d:	lsls	r0, r4, #0x13
+0x0040060f:	movs	r0, r0
+0x00400611:	lsls	r4, r1, #0x14
+0x00400613:	movs	r0, r0
+0x00400615:	lsls	r2, r4, #0x14
+0x00400617:	movs	r0, r0
+0x00400619:	lsls	r4, r5, #0x16
+0x0040061b:	movs	r0, r0
+0x0040061d:	lsls	r4, r0, #0x13
+0x0040061f:	movs	r0, r0
+0x00400621:	lsls	r0, r6, #0x13
+0x00400623:	movs	r0, r0
+0x00400625:	lsls	r6, r0, #0x14
+0x00400627:	movs	r0, r0
+0x00400629:	lsls	r4, r0, #0x16
+0x0040062b:	movs	r0, r0
+0x0040062d:	lsls	r0, r5, #0x12
+0x0040062f:	movs	r0, r0
+0x00400631:	lsls	r4, r2, #0x13
+0x00400633:	movs	r0, r0
+0x00400635:	lsls	r2, r1, #0x15
+0x00400637:	movs	r0, r0
+0x00400639:	lsls	r0, r5, #0x16
+0x0040063b:	movs	r0, r0
+0x0040063d:	lsls	r4, r1, #0x12
+0x0040063f:	movs	r0, r0
+0x00400641:	lsls	r0, r7, #0x12
+0x00400643:	movs	r0, r0
+0x00400645:	lsls	r6, r1, #0x14
+0x00400647:	movs	r0, r0
+0x00400649:	lsls	r4, r5, #0x15
+0x0040064b:	movs	r0, r0
+0x0040064d:	lsls	r0, r6, #0x11
+0x0040064f:	movs	r0, r0
+0x00400651:	lsls	r4, r3, #0x12
+0x00400653:	movs	r0, r0
+0x00400655:	lsls	r2, r6, #0x12
+0x00400657:	movs	r0, r0
+0x00400659:	lsls	r4, r7, #0x14
+0x0040065b:	movs	r0, r0
+0x0040065d:	lsls	r4, r2, #0x11
+0x0040065f:	movs	r0, r0
+0x00400661:	lsls	r0, r0, #0x12
+0x00400663:	movs	r0, r0
+0x00400665:	lsls	r6, r2, #0x12
+0x00400667:	movs	r0, r0
+0x00400669:	lsls	r4, r2, #0x14
+0x0040066b:	movs	r0, r0
+0x0040066d:	lsls	r0, r7, #0x10
+0x0040066f:	movs	r0, r0
+0x00400671:	lsls	r4, r4, #0x11
+0x00400673:	movs	r0, r0
+0x00400675:	lsls	r2, r3, #0x13
+0x00400677:	movs	r0, r0
+0x00400679:	lsls	r0, r7, #0x14
+0x0040067b:	movs	r0, r0
+0x0040067d:	lsls	r4, r3, #0x10
+0x0040067f:	movs	r0, r0
+0x00400681:	lsls	r0, r1, #0x11
+0x00400683:	movs	r0, r0
+0x00400685:	lsls	r6, r3, #0x12
+0x00400687:	movs	r0, r0
+0x00400689:	lsls	r4, r7, #0x13
+0x0040068b:	movs	r0, r0
+0x0040068d:	lsls	r0, r0, #0x10
+0x0040068f:	movs	r0, r0
+0x00400691:	lsls	r4, r5, #0x10
+0x00400693:	movs	r0, r0
+0x00400695:	lsls	r2, r0, #0x11
+0x00400697:	movs	r0, r0
+0x00400699:	lsls	r4, r1, #0x13
+0x0040069b:	movs	r0, r0
+0x0040069d:	lsls	r4, r4, #0xf
+0x0040069f:	movs	r0, r0
+0x004006a1:	lsls	r0, r2, #0x10
 
-00000000 <LLVMFuzzerTestOneInput>:
-   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	4607      	mov	r7, r0
-   6:	f8df 45d4 	ldr.w	r4, [pc, #1492]	; 5dc <LLVMFuzzerTestOneInput+0x5dc>
-   a:	ed2d 8b02 	vpush	{d8}
-   e:	b08b      	sub	sp, #44	; 0x2c
-  10:	447c      	add	r4, pc
-  12:	9409      	str	r4, [sp, #36]	; 0x24
-  14:	f7ff fffe 	bl	0 <FUZZ_dataProducer_create>
-  18:	4604      	mov	r4, r0
-  1a:	ee08 0a10 	vmov	s16, r0
-  1e:	f7ff fffe 	bl	0 <FUZZ_dataProducer_retrieve32>
-  22:	4605      	mov	r5, r0
-  24:	4620      	mov	r0, r4
-  26:	f7ff fffe 	bl	0 <FUZZ_dataProducer_remainingBytes>
-  2a:	4604      	mov	r4, r0
-  2c:	2100      	movs	r1, #0
-  2e:	4628      	mov	r0, r5
-  30:	4622      	mov	r2, r4
-  32:	f64f 75ff 	movw	r5, #65535	; 0xffff
-  36:	f7ff fffe 	bl	0 <FUZZ_getRange_from_uint32>
-  3a:	4606      	mov	r6, r0
-  3c:	4620      	mov	r0, r4
-  3e:	f7ff fffe 	bl	0 <LZ4_compressBound>
-  42:	4680      	mov	r8, r0
-  44:	4428      	add	r0, r5
-  46:	f7ff fffe 	bl	0 <malloc>
-  4a:	2800      	cmp	r0, #0
-  4c:	f000 811b 	beq.w	286 <LLVMFuzzerTestOneInput+0x286>
-  50:	4681      	mov	r9, r0
-  52:	4628      	mov	r0, r5
-  54:	f7ff fffe 	bl	0 <malloc>
-  58:	f64f 33ff 	movw	r3, #64511	; 0xfbff
-  5c:	9005      	str	r0, [sp, #20]
-  5e:	eb09 0203 	add.w	r2, r9, r3
-  62:	9206      	str	r2, [sp, #24]
-  64:	2800      	cmp	r0, #0
-  66:	f000 82ab 	beq.w	5c0 <LLVMFuzzerTestOneInput+0x5c0>
-  6a:	18c3      	adds	r3, r0, r3
-  6c:	4620      	mov	r0, r4
-  6e:	9308      	str	r3, [sp, #32]
-  70:	444d      	add	r5, r9
-  72:	f7ff fffe 	bl	0 <malloc>
-  76:	4682      	mov	sl, r0
-  78:	2800      	cmp	r0, #0
-  7a:	f000 8293 	beq.w	5a4 <LLVMFuzzerTestOneInput+0x5a4>
-  7e:	4643      	mov	r3, r8
-  80:	4622      	mov	r2, r4
-  82:	4629      	mov	r1, r5
-  84:	4638      	mov	r0, r7
-  86:	f7ff fffe 	bl	0 <LZ4_compress_default>
-  8a:	f1b0 0800 	subs.w	r8, r0, #0
-  8e:	f340 827b 	ble.w	588 <LLVMFuzzerTestOneInput+0x588>
-  92:	4642      	mov	r2, r8
-  94:	4623      	mov	r3, r4
-  96:	4651      	mov	r1, sl
-  98:	4628      	mov	r0, r5
-  9a:	f7ff fffe 	bl	0 <LZ4_decompress_safe>
-  9e:	4602      	mov	r2, r0
-  a0:	42a0      	cmp	r0, r4
-  a2:	f040 8263 	bne.w	56c <LLVMFuzzerTestOneInput+0x56c>
-  a6:	4651      	mov	r1, sl
-  a8:	4638      	mov	r0, r7
-  aa:	f7ff fffe 	bl	0 <memcmp>
-  ae:	2800      	cmp	r0, #0
-  b0:	f040 824e 	bne.w	550 <LLVMFuzzerTestOneInput+0x550>
-  b4:	4630      	mov	r0, r6
-  b6:	f7ff fffe 	bl	0 <malloc>
-  ba:	4604      	mov	r4, r0
-  bc:	2800      	cmp	r0, #0
-  be:	f000 8239 	beq.w	534 <LLVMFuzzerTestOneInput+0x534>
-  c2:	4601      	mov	r1, r0
-  c4:	4633      	mov	r3, r6
-  c6:	4642      	mov	r2, r8
-  c8:	4628      	mov	r0, r5
-  ca:	9600      	str	r6, [sp, #0]
-  cc:	f7ff fffe 	bl	0 <LZ4_decompress_safe_partial>
-  d0:	f1b0 0b00 	subs.w	fp, r0, #0
-  d4:	f2c0 8220 	blt.w	518 <LLVMFuzzerTestOneInput+0x518>
-  d8:	455e      	cmp	r6, fp
-  da:	f040 820f 	bne.w	4fc <LLVMFuzzerTestOneInput+0x4fc>
-  de:	4632      	mov	r2, r6
-  e0:	4621      	mov	r1, r4
-  e2:	4638      	mov	r0, r7
-  e4:	f7ff fffe 	bl	0 <memcmp>
-  e8:	2800      	cmp	r0, #0
-  ea:	f040 81f9 	bne.w	4e0 <LLVMFuzzerTestOneInput+0x4e0>
-  ee:	4620      	mov	r0, r4
-  f0:	f7ff fffe 	bl	0 <free>
-  f4:	4630      	mov	r0, r6
-  f6:	f7ff fffe 	bl	0 <malloc>
-  fa:	4601      	mov	r1, r0
-  fc:	2800      	cmp	r0, #0
-  fe:	f000 81e1 	beq.w	4c4 <LLVMFuzzerTestOneInput+0x4c4>
- 102:	2200      	movs	r2, #0
- 104:	9007      	str	r0, [sp, #28]
- 106:	e9cd 2201 	strd	r2, r2, [sp, #4]
- 10a:	465b      	mov	r3, fp
- 10c:	4642      	mov	r2, r8
- 10e:	4628      	mov	r0, r5
- 110:	f8cd b000 	str.w	fp, [sp]
- 114:	f7ff fffe 	bl	0 <LZ4_decompress_safe_partial_usingDict>
- 118:	9907      	ldr	r1, [sp, #28]
- 11a:	1e04      	subs	r4, r0, #0
- 11c:	f2c0 81c4 	blt.w	4a8 <LLVMFuzzerTestOneInput+0x4a8>
- 120:	45a3      	cmp	fp, r4
- 122:	f040 81b3 	bne.w	48c <LLVMFuzzerTestOneInput+0x48c>
- 126:	465a      	mov	r2, fp
- 128:	4638      	mov	r0, r7
- 12a:	9107      	str	r1, [sp, #28]
- 12c:	f7ff fffe 	bl	0 <memcmp>
- 130:	9907      	ldr	r1, [sp, #28]
- 132:	2800      	cmp	r0, #0
- 134:	f040 819c 	bne.w	470 <LLVMFuzzerTestOneInput+0x470>
- 138:	4608      	mov	r0, r1
- 13a:	f7ff fffe 	bl	0 <free>
- 13e:	4630      	mov	r0, r6
- 140:	f7ff fffe 	bl	0 <malloc>
- 144:	4601      	mov	r1, r0
- 146:	2800      	cmp	r0, #0
- 148:	f000 8184 	beq.w	454 <LLVMFuzzerTestOneInput+0x454>
- 14c:	9b06      	ldr	r3, [sp, #24]
- 14e:	f44f 6280 	mov.w	r2, #1024	; 0x400
- 152:	e9cd b300 	strd	fp, r3, [sp]
- 156:	465b      	mov	r3, fp
- 158:	9202      	str	r2, [sp, #8]
- 15a:	4642      	mov	r2, r8
- 15c:	9006      	str	r0, [sp, #24]
- 15e:	4628      	mov	r0, r5
- 160:	f7ff fffe 	bl	0 <LZ4_decompress_safe_partial_usingDict>
- 164:	9906      	ldr	r1, [sp, #24]
- 166:	2800      	cmp	r0, #0
- 168:	f2c0 8166 	blt.w	438 <LLVMFuzzerTestOneInput+0x438>
- 16c:	4583      	cmp	fp, r0
- 16e:	f040 8155 	bne.w	41c <LLVMFuzzerTestOneInput+0x41c>
- 172:	465a      	mov	r2, fp
- 174:	4638      	mov	r0, r7
- 176:	9106      	str	r1, [sp, #24]
- 178:	f7ff fffe 	bl	0 <memcmp>
- 17c:	9906      	ldr	r1, [sp, #24]
- 17e:	2800      	cmp	r0, #0
- 180:	f040 813e 	bne.w	400 <LLVMFuzzerTestOneInput+0x400>
- 184:	4608      	mov	r0, r1
- 186:	f7ff fffe 	bl	0 <free>
- 18a:	4630      	mov	r0, r6
- 18c:	f7ff fffe 	bl	0 <malloc>
- 190:	4601      	mov	r1, r0
- 192:	2800      	cmp	r0, #0
- 194:	f000 8126 	beq.w	3e4 <LLVMFuzzerTestOneInput+0x3e4>
- 198:	9006      	str	r0, [sp, #24]
- 19a:	f64f 7cff 	movw	ip, #65535	; 0xffff
- 19e:	4623      	mov	r3, r4
- 1a0:	4642      	mov	r2, r8
- 1a2:	4628      	mov	r0, r5
- 1a4:	e9cd 4900 	strd	r4, r9, [sp]
- 1a8:	f8cd c008 	str.w	ip, [sp, #8]
- 1ac:	f7ff fffe 	bl	0 <LZ4_decompress_safe_partial_usingDict>
- 1b0:	9906      	ldr	r1, [sp, #24]
- 1b2:	2800      	cmp	r0, #0
- 1b4:	f2c0 8108 	blt.w	3c8 <LLVMFuzzerTestOneInput+0x3c8>
- 1b8:	4284      	cmp	r4, r0
- 1ba:	f040 80f7 	bne.w	3ac <LLVMFuzzerTestOneInput+0x3ac>
- 1be:	4622      	mov	r2, r4
- 1c0:	4638      	mov	r0, r7
- 1c2:	9106      	str	r1, [sp, #24]
- 1c4:	f7ff fffe 	bl	0 <memcmp>
- 1c8:	9906      	ldr	r1, [sp, #24]
- 1ca:	2800      	cmp	r0, #0
- 1cc:	f040 80e0 	bne.w	390 <LLVMFuzzerTestOneInput+0x390>
- 1d0:	4608      	mov	r0, r1
- 1d2:	f7ff fffe 	bl	0 <free>
- 1d6:	4630      	mov	r0, r6
- 1d8:	f7ff fffe 	bl	0 <malloc>
- 1dc:	4601      	mov	r1, r0
- 1de:	2800      	cmp	r0, #0
- 1e0:	f000 80c8 	beq.w	374 <LLVMFuzzerTestOneInput+0x374>
- 1e4:	9b08      	ldr	r3, [sp, #32]
- 1e6:	4642      	mov	r2, r8
- 1e8:	e9cd 4300 	strd	r4, r3, [sp]
- 1ec:	f44f 6380 	mov.w	r3, #1024	; 0x400
- 1f0:	9006      	str	r0, [sp, #24]
- 1f2:	4628      	mov	r0, r5
- 1f4:	9302      	str	r3, [sp, #8]
- 1f6:	4623      	mov	r3, r4
- 1f8:	f7ff fffe 	bl	0 <LZ4_decompress_safe_partial_usingDict>
- 1fc:	9906      	ldr	r1, [sp, #24]
- 1fe:	2800      	cmp	r0, #0
- 200:	f2c0 80aa 	blt.w	358 <LLVMFuzzerTestOneInput+0x358>
- 204:	4284      	cmp	r4, r0
- 206:	f040 8099 	bne.w	33c <LLVMFuzzerTestOneInput+0x33c>
- 20a:	4622      	mov	r2, r4
- 20c:	4638      	mov	r0, r7
- 20e:	9106      	str	r1, [sp, #24]
- 210:	f7ff fffe 	bl	0 <memcmp>
- 214:	9906      	ldr	r1, [sp, #24]
- 216:	2800      	cmp	r0, #0
- 218:	f040 8082 	bne.w	320 <LLVMFuzzerTestOneInput+0x320>
- 21c:	4608      	mov	r0, r1
- 21e:	f7ff fffe 	bl	0 <free>
- 222:	4630      	mov	r0, r6
- 224:	f7ff fffe 	bl	0 <malloc>
- 228:	4606      	mov	r6, r0
- 22a:	2800      	cmp	r0, #0
- 22c:	d06a      	beq.n	304 <LLVMFuzzerTestOneInput+0x304>
- 22e:	9b05      	ldr	r3, [sp, #20]
- 230:	4628      	mov	r0, r5
- 232:	e9cd 4300 	strd	r4, r3, [sp]
- 236:	4642      	mov	r2, r8
- 238:	4623      	mov	r3, r4
- 23a:	4631      	mov	r1, r6
- 23c:	f64f 75ff 	movw	r5, #65535	; 0xffff
- 240:	9502      	str	r5, [sp, #8]
- 242:	f7ff fffe 	bl	0 <LZ4_decompress_safe_partial_usingDict>
- 246:	2800      	cmp	r0, #0
- 248:	db4e      	blt.n	2e8 <LLVMFuzzerTestOneInput+0x2e8>
- 24a:	4284      	cmp	r4, r0
- 24c:	d13e      	bne.n	2cc <LLVMFuzzerTestOneInput+0x2cc>
- 24e:	4622      	mov	r2, r4
- 250:	4638      	mov	r0, r7
- 252:	4631      	mov	r1, r6
- 254:	f7ff fffe 	bl	0 <memcmp>
- 258:	bb50      	cbnz	r0, 2b0 <LLVMFuzzerTestOneInput+0x2b0>
- 25a:	4630      	mov	r0, r6
- 25c:	f7ff fffe 	bl	0 <free>
- 260:	4648      	mov	r0, r9
- 262:	f7ff fffe 	bl	0 <free>
- 266:	9805      	ldr	r0, [sp, #20]
- 268:	f7ff fffe 	bl	0 <free>
- 26c:	4650      	mov	r0, sl
- 26e:	f7ff fffe 	bl	0 <free>
- 272:	ee18 0a10 	vmov	r0, s16
- 276:	f7ff fffe 	bl	0 <FUZZ_dataProducer_free>
- 27a:	2000      	movs	r0, #0
- 27c:	b00b      	add	sp, #44	; 0x2c
- 27e:	ecbd 8b02 	vpop	{d8}
- 282:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 286:	48d6      	ldr	r0, [pc, #856]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 288:	241a      	movs	r4, #26
- 28a:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 28c:	4ad5      	ldr	r2, [pc, #852]	; (5e4 <LLVMFuzzerTestOneInput+0x5e4>)
- 28e:	49d6      	ldr	r1, [pc, #856]	; (5e8 <LLVMFuzzerTestOneInput+0x5e8>)
- 290:	447a      	add	r2, pc
- 292:	4bd6      	ldr	r3, [pc, #856]	; (5ec <LLVMFuzzerTestOneInput+0x5ec>)
- 294:	5828      	ldr	r0, [r5, r0]
- 296:	4479      	add	r1, pc
- 298:	9202      	str	r2, [sp, #8]
- 29a:	447b      	add	r3, pc
- 29c:	4ad4      	ldr	r2, [pc, #848]	; (5f0 <LLVMFuzzerTestOneInput+0x5f0>)
- 29e:	447a      	add	r2, pc
- 2a0:	e9cd 4100 	strd	r4, r1, [sp]
- 2a4:	2101      	movs	r1, #1
- 2a6:	6800      	ldr	r0, [r0, #0]
- 2a8:	f7ff fffe 	bl	0 <__fprintf_chk>
- 2ac:	f7ff fffe 	bl	0 <abort>
- 2b0:	48cb      	ldr	r0, [pc, #812]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 2b2:	246b      	movs	r4, #107	; 0x6b
- 2b4:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 2b6:	4acf      	ldr	r2, [pc, #828]	; (5f4 <LLVMFuzzerTestOneInput+0x5f4>)
- 2b8:	49cf      	ldr	r1, [pc, #828]	; (5f8 <LLVMFuzzerTestOneInput+0x5f8>)
- 2ba:	447a      	add	r2, pc
- 2bc:	4bcf      	ldr	r3, [pc, #828]	; (5fc <LLVMFuzzerTestOneInput+0x5fc>)
- 2be:	5828      	ldr	r0, [r5, r0]
- 2c0:	4479      	add	r1, pc
- 2c2:	9202      	str	r2, [sp, #8]
- 2c4:	447b      	add	r3, pc
- 2c6:	4ace      	ldr	r2, [pc, #824]	; (600 <LLVMFuzzerTestOneInput+0x600>)
- 2c8:	447a      	add	r2, pc
- 2ca:	e7e9      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 2cc:	48c4      	ldr	r0, [pc, #784]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 2ce:	246a      	movs	r4, #106	; 0x6a
- 2d0:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 2d2:	4acc      	ldr	r2, [pc, #816]	; (604 <LLVMFuzzerTestOneInput+0x604>)
- 2d4:	49cc      	ldr	r1, [pc, #816]	; (608 <LLVMFuzzerTestOneInput+0x608>)
- 2d6:	447a      	add	r2, pc
- 2d8:	4bcc      	ldr	r3, [pc, #816]	; (60c <LLVMFuzzerTestOneInput+0x60c>)
- 2da:	5828      	ldr	r0, [r5, r0]
- 2dc:	4479      	add	r1, pc
- 2de:	9202      	str	r2, [sp, #8]
- 2e0:	447b      	add	r3, pc
- 2e2:	4acb      	ldr	r2, [pc, #812]	; (610 <LLVMFuzzerTestOneInput+0x610>)
- 2e4:	447a      	add	r2, pc
- 2e6:	e7db      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 2e8:	48bd      	ldr	r0, [pc, #756]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 2ea:	2469      	movs	r4, #105	; 0x69
- 2ec:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 2ee:	4ac9      	ldr	r2, [pc, #804]	; (614 <LLVMFuzzerTestOneInput+0x614>)
- 2f0:	49c9      	ldr	r1, [pc, #804]	; (618 <LLVMFuzzerTestOneInput+0x618>)
- 2f2:	447a      	add	r2, pc
- 2f4:	4bc9      	ldr	r3, [pc, #804]	; (61c <LLVMFuzzerTestOneInput+0x61c>)
- 2f6:	5828      	ldr	r0, [r5, r0]
- 2f8:	4479      	add	r1, pc
- 2fa:	9202      	str	r2, [sp, #8]
- 2fc:	447b      	add	r3, pc
- 2fe:	4ac8      	ldr	r2, [pc, #800]	; (620 <LLVMFuzzerTestOneInput+0x620>)
- 300:	447a      	add	r2, pc
- 302:	e7cd      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 304:	48b6      	ldr	r0, [pc, #728]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 306:	2466      	movs	r4, #102	; 0x66
- 308:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 30a:	4ac6      	ldr	r2, [pc, #792]	; (624 <LLVMFuzzerTestOneInput+0x624>)
- 30c:	49c6      	ldr	r1, [pc, #792]	; (628 <LLVMFuzzerTestOneInput+0x628>)
- 30e:	447a      	add	r2, pc
- 310:	4bc6      	ldr	r3, [pc, #792]	; (62c <LLVMFuzzerTestOneInput+0x62c>)
- 312:	5828      	ldr	r0, [r5, r0]
- 314:	4479      	add	r1, pc
- 316:	9202      	str	r2, [sp, #8]
- 318:	447b      	add	r3, pc
- 31a:	4ac5      	ldr	r2, [pc, #788]	; (630 <LLVMFuzzerTestOneInput+0x630>)
- 31c:	447a      	add	r2, pc
- 31e:	e7bf      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 320:	48af      	ldr	r0, [pc, #700]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 322:	2460      	movs	r4, #96	; 0x60
- 324:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 326:	4ac3      	ldr	r2, [pc, #780]	; (634 <LLVMFuzzerTestOneInput+0x634>)
- 328:	49c3      	ldr	r1, [pc, #780]	; (638 <LLVMFuzzerTestOneInput+0x638>)
- 32a:	447a      	add	r2, pc
- 32c:	4bc3      	ldr	r3, [pc, #780]	; (63c <LLVMFuzzerTestOneInput+0x63c>)
- 32e:	5828      	ldr	r0, [r5, r0]
- 330:	4479      	add	r1, pc
- 332:	9202      	str	r2, [sp, #8]
- 334:	447b      	add	r3, pc
- 336:	4ac2      	ldr	r2, [pc, #776]	; (640 <LLVMFuzzerTestOneInput+0x640>)
- 338:	447a      	add	r2, pc
- 33a:	e7b1      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 33c:	48a8      	ldr	r0, [pc, #672]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 33e:	245f      	movs	r4, #95	; 0x5f
- 340:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 342:	4ac0      	ldr	r2, [pc, #768]	; (644 <LLVMFuzzerTestOneInput+0x644>)
- 344:	49c0      	ldr	r1, [pc, #768]	; (648 <LLVMFuzzerTestOneInput+0x648>)
- 346:	447a      	add	r2, pc
- 348:	4bc0      	ldr	r3, [pc, #768]	; (64c <LLVMFuzzerTestOneInput+0x64c>)
- 34a:	5828      	ldr	r0, [r5, r0]
- 34c:	4479      	add	r1, pc
- 34e:	9202      	str	r2, [sp, #8]
- 350:	447b      	add	r3, pc
- 352:	4abf      	ldr	r2, [pc, #764]	; (650 <LLVMFuzzerTestOneInput+0x650>)
- 354:	447a      	add	r2, pc
- 356:	e7a3      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 358:	48a1      	ldr	r0, [pc, #644]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 35a:	245e      	movs	r4, #94	; 0x5e
- 35c:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 35e:	4abd      	ldr	r2, [pc, #756]	; (654 <LLVMFuzzerTestOneInput+0x654>)
- 360:	49bd      	ldr	r1, [pc, #756]	; (658 <LLVMFuzzerTestOneInput+0x658>)
- 362:	447a      	add	r2, pc
- 364:	4bbd      	ldr	r3, [pc, #756]	; (65c <LLVMFuzzerTestOneInput+0x65c>)
- 366:	5828      	ldr	r0, [r5, r0]
- 368:	4479      	add	r1, pc
- 36a:	9202      	str	r2, [sp, #8]
- 36c:	447b      	add	r3, pc
- 36e:	4abc      	ldr	r2, [pc, #752]	; (660 <LLVMFuzzerTestOneInput+0x660>)
- 370:	447a      	add	r2, pc
- 372:	e795      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 374:	489a      	ldr	r0, [pc, #616]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 376:	245b      	movs	r4, #91	; 0x5b
- 378:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 37a:	4aba      	ldr	r2, [pc, #744]	; (664 <LLVMFuzzerTestOneInput+0x664>)
- 37c:	49ba      	ldr	r1, [pc, #744]	; (668 <LLVMFuzzerTestOneInput+0x668>)
- 37e:	447a      	add	r2, pc
- 380:	4bba      	ldr	r3, [pc, #744]	; (66c <LLVMFuzzerTestOneInput+0x66c>)
- 382:	5828      	ldr	r0, [r5, r0]
- 384:	4479      	add	r1, pc
- 386:	9202      	str	r2, [sp, #8]
- 388:	447b      	add	r3, pc
- 38a:	4ab9      	ldr	r2, [pc, #740]	; (670 <LLVMFuzzerTestOneInput+0x670>)
- 38c:	447a      	add	r2, pc
- 38e:	e787      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 390:	4893      	ldr	r0, [pc, #588]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 392:	2455      	movs	r4, #85	; 0x55
- 394:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 396:	4ab7      	ldr	r2, [pc, #732]	; (674 <LLVMFuzzerTestOneInput+0x674>)
- 398:	49b7      	ldr	r1, [pc, #732]	; (678 <LLVMFuzzerTestOneInput+0x678>)
- 39a:	447a      	add	r2, pc
- 39c:	4bb7      	ldr	r3, [pc, #732]	; (67c <LLVMFuzzerTestOneInput+0x67c>)
- 39e:	5828      	ldr	r0, [r5, r0]
- 3a0:	4479      	add	r1, pc
- 3a2:	9202      	str	r2, [sp, #8]
- 3a4:	447b      	add	r3, pc
- 3a6:	4ab6      	ldr	r2, [pc, #728]	; (680 <LLVMFuzzerTestOneInput+0x680>)
- 3a8:	447a      	add	r2, pc
- 3aa:	e779      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 3ac:	488c      	ldr	r0, [pc, #560]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 3ae:	2454      	movs	r4, #84	; 0x54
- 3b0:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 3b2:	4ab4      	ldr	r2, [pc, #720]	; (684 <LLVMFuzzerTestOneInput+0x684>)
- 3b4:	49b4      	ldr	r1, [pc, #720]	; (688 <LLVMFuzzerTestOneInput+0x688>)
- 3b6:	447a      	add	r2, pc
- 3b8:	4bb4      	ldr	r3, [pc, #720]	; (68c <LLVMFuzzerTestOneInput+0x68c>)
- 3ba:	5828      	ldr	r0, [r5, r0]
- 3bc:	4479      	add	r1, pc
- 3be:	9202      	str	r2, [sp, #8]
- 3c0:	447b      	add	r3, pc
- 3c2:	4ab3      	ldr	r2, [pc, #716]	; (690 <LLVMFuzzerTestOneInput+0x690>)
- 3c4:	447a      	add	r2, pc
- 3c6:	e76b      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 3c8:	4885      	ldr	r0, [pc, #532]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 3ca:	2453      	movs	r4, #83	; 0x53
- 3cc:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 3ce:	4ab1      	ldr	r2, [pc, #708]	; (694 <LLVMFuzzerTestOneInput+0x694>)
- 3d0:	49b1      	ldr	r1, [pc, #708]	; (698 <LLVMFuzzerTestOneInput+0x698>)
- 3d2:	447a      	add	r2, pc
- 3d4:	4bb1      	ldr	r3, [pc, #708]	; (69c <LLVMFuzzerTestOneInput+0x69c>)
- 3d6:	5828      	ldr	r0, [r5, r0]
- 3d8:	4479      	add	r1, pc
- 3da:	9202      	str	r2, [sp, #8]
- 3dc:	447b      	add	r3, pc
- 3de:	4ab0      	ldr	r2, [pc, #704]	; (6a0 <LLVMFuzzerTestOneInput+0x6a0>)
- 3e0:	447a      	add	r2, pc
- 3e2:	e75d      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 3e4:	487e      	ldr	r0, [pc, #504]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 3e6:	2450      	movs	r4, #80	; 0x50
- 3e8:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 3ea:	4aae      	ldr	r2, [pc, #696]	; (6a4 <LLVMFuzzerTestOneInput+0x6a4>)
- 3ec:	49ae      	ldr	r1, [pc, #696]	; (6a8 <LLVMFuzzerTestOneInput+0x6a8>)
- 3ee:	447a      	add	r2, pc
- 3f0:	4bae      	ldr	r3, [pc, #696]	; (6ac <LLVMFuzzerTestOneInput+0x6ac>)
- 3f2:	5828      	ldr	r0, [r5, r0]
- 3f4:	4479      	add	r1, pc
- 3f6:	9202      	str	r2, [sp, #8]
- 3f8:	447b      	add	r3, pc
- 3fa:	4aad      	ldr	r2, [pc, #692]	; (6b0 <LLVMFuzzerTestOneInput+0x6b0>)
- 3fc:	447a      	add	r2, pc
- 3fe:	e74f      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 400:	4877      	ldr	r0, [pc, #476]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 402:	244a      	movs	r4, #74	; 0x4a
- 404:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 406:	4aab      	ldr	r2, [pc, #684]	; (6b4 <LLVMFuzzerTestOneInput+0x6b4>)
- 408:	49ab      	ldr	r1, [pc, #684]	; (6b8 <LLVMFuzzerTestOneInput+0x6b8>)
- 40a:	447a      	add	r2, pc
- 40c:	4bab      	ldr	r3, [pc, #684]	; (6bc <LLVMFuzzerTestOneInput+0x6bc>)
- 40e:	5828      	ldr	r0, [r5, r0]
- 410:	4479      	add	r1, pc
- 412:	9202      	str	r2, [sp, #8]
- 414:	447b      	add	r3, pc
- 416:	4aaa      	ldr	r2, [pc, #680]	; (6c0 <LLVMFuzzerTestOneInput+0x6c0>)
- 418:	447a      	add	r2, pc
- 41a:	e741      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 41c:	4870      	ldr	r0, [pc, #448]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 41e:	2449      	movs	r4, #73	; 0x49
- 420:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 422:	4aa8      	ldr	r2, [pc, #672]	; (6c4 <LLVMFuzzerTestOneInput+0x6c4>)
- 424:	49a8      	ldr	r1, [pc, #672]	; (6c8 <LLVMFuzzerTestOneInput+0x6c8>)
- 426:	447a      	add	r2, pc
- 428:	4ba8      	ldr	r3, [pc, #672]	; (6cc <LLVMFuzzerTestOneInput+0x6cc>)
- 42a:	5828      	ldr	r0, [r5, r0]
- 42c:	4479      	add	r1, pc
- 42e:	9202      	str	r2, [sp, #8]
- 430:	447b      	add	r3, pc
- 432:	4aa7      	ldr	r2, [pc, #668]	; (6d0 <LLVMFuzzerTestOneInput+0x6d0>)
- 434:	447a      	add	r2, pc
- 436:	e733      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 438:	4869      	ldr	r0, [pc, #420]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 43a:	2448      	movs	r4, #72	; 0x48
- 43c:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 43e:	4aa5      	ldr	r2, [pc, #660]	; (6d4 <LLVMFuzzerTestOneInput+0x6d4>)
- 440:	49a5      	ldr	r1, [pc, #660]	; (6d8 <LLVMFuzzerTestOneInput+0x6d8>)
- 442:	447a      	add	r2, pc
- 444:	4ba5      	ldr	r3, [pc, #660]	; (6dc <LLVMFuzzerTestOneInput+0x6dc>)
- 446:	5828      	ldr	r0, [r5, r0]
- 448:	4479      	add	r1, pc
- 44a:	9202      	str	r2, [sp, #8]
- 44c:	447b      	add	r3, pc
- 44e:	4aa4      	ldr	r2, [pc, #656]	; (6e0 <LLVMFuzzerTestOneInput+0x6e0>)
- 450:	447a      	add	r2, pc
- 452:	e725      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 454:	4862      	ldr	r0, [pc, #392]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 456:	2445      	movs	r4, #69	; 0x45
- 458:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 45a:	4aa2      	ldr	r2, [pc, #648]	; (6e4 <LLVMFuzzerTestOneInput+0x6e4>)
- 45c:	49a2      	ldr	r1, [pc, #648]	; (6e8 <LLVMFuzzerTestOneInput+0x6e8>)
- 45e:	447a      	add	r2, pc
- 460:	4ba2      	ldr	r3, [pc, #648]	; (6ec <LLVMFuzzerTestOneInput+0x6ec>)
- 462:	5828      	ldr	r0, [r5, r0]
- 464:	4479      	add	r1, pc
- 466:	9202      	str	r2, [sp, #8]
- 468:	447b      	add	r3, pc
- 46a:	4aa1      	ldr	r2, [pc, #644]	; (6f0 <LLVMFuzzerTestOneInput+0x6f0>)
- 46c:	447a      	add	r2, pc
- 46e:	e717      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 470:	485b      	ldr	r0, [pc, #364]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 472:	243f      	movs	r4, #63	; 0x3f
- 474:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 476:	4a9f      	ldr	r2, [pc, #636]	; (6f4 <LLVMFuzzerTestOneInput+0x6f4>)
- 478:	499f      	ldr	r1, [pc, #636]	; (6f8 <LLVMFuzzerTestOneInput+0x6f8>)
- 47a:	447a      	add	r2, pc
- 47c:	4b9f      	ldr	r3, [pc, #636]	; (6fc <LLVMFuzzerTestOneInput+0x6fc>)
- 47e:	5828      	ldr	r0, [r5, r0]
- 480:	4479      	add	r1, pc
- 482:	9202      	str	r2, [sp, #8]
- 484:	447b      	add	r3, pc
- 486:	4a9e      	ldr	r2, [pc, #632]	; (700 <LLVMFuzzerTestOneInput+0x700>)
- 488:	447a      	add	r2, pc
- 48a:	e709      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 48c:	4854      	ldr	r0, [pc, #336]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 48e:	243e      	movs	r4, #62	; 0x3e
- 490:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 492:	4a9c      	ldr	r2, [pc, #624]	; (704 <LLVMFuzzerTestOneInput+0x704>)
- 494:	499c      	ldr	r1, [pc, #624]	; (708 <LLVMFuzzerTestOneInput+0x708>)
- 496:	447a      	add	r2, pc
- 498:	4b9c      	ldr	r3, [pc, #624]	; (70c <LLVMFuzzerTestOneInput+0x70c>)
- 49a:	5828      	ldr	r0, [r5, r0]
- 49c:	4479      	add	r1, pc
- 49e:	9202      	str	r2, [sp, #8]
- 4a0:	447b      	add	r3, pc
- 4a2:	4a9b      	ldr	r2, [pc, #620]	; (710 <LLVMFuzzerTestOneInput+0x710>)
- 4a4:	447a      	add	r2, pc
- 4a6:	e6fb      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 4a8:	484d      	ldr	r0, [pc, #308]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 4aa:	243d      	movs	r4, #61	; 0x3d
- 4ac:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 4ae:	4a99      	ldr	r2, [pc, #612]	; (714 <LLVMFuzzerTestOneInput+0x714>)
- 4b0:	4999      	ldr	r1, [pc, #612]	; (718 <LLVMFuzzerTestOneInput+0x718>)
- 4b2:	447a      	add	r2, pc
- 4b4:	4b99      	ldr	r3, [pc, #612]	; (71c <LLVMFuzzerTestOneInput+0x71c>)
- 4b6:	5828      	ldr	r0, [r5, r0]
- 4b8:	4479      	add	r1, pc
- 4ba:	9202      	str	r2, [sp, #8]
- 4bc:	447b      	add	r3, pc
- 4be:	4a98      	ldr	r2, [pc, #608]	; (720 <LLVMFuzzerTestOneInput+0x720>)
- 4c0:	447a      	add	r2, pc
- 4c2:	e6ed      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 4c4:	4846      	ldr	r0, [pc, #280]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 4c6:	243a      	movs	r4, #58	; 0x3a
- 4c8:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 4ca:	4a96      	ldr	r2, [pc, #600]	; (724 <LLVMFuzzerTestOneInput+0x724>)
- 4cc:	4996      	ldr	r1, [pc, #600]	; (728 <LLVMFuzzerTestOneInput+0x728>)
- 4ce:	447a      	add	r2, pc
- 4d0:	4b96      	ldr	r3, [pc, #600]	; (72c <LLVMFuzzerTestOneInput+0x72c>)
- 4d2:	5828      	ldr	r0, [r5, r0]
- 4d4:	4479      	add	r1, pc
- 4d6:	9202      	str	r2, [sp, #8]
- 4d8:	447b      	add	r3, pc
- 4da:	4a95      	ldr	r2, [pc, #596]	; (730 <LLVMFuzzerTestOneInput+0x730>)
- 4dc:	447a      	add	r2, pc
- 4de:	e6df      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 4e0:	483f      	ldr	r0, [pc, #252]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 4e2:	2434      	movs	r4, #52	; 0x34
- 4e4:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 4e6:	4a93      	ldr	r2, [pc, #588]	; (734 <LLVMFuzzerTestOneInput+0x734>)
- 4e8:	4993      	ldr	r1, [pc, #588]	; (738 <LLVMFuzzerTestOneInput+0x738>)
- 4ea:	447a      	add	r2, pc
- 4ec:	4b93      	ldr	r3, [pc, #588]	; (73c <LLVMFuzzerTestOneInput+0x73c>)
- 4ee:	5828      	ldr	r0, [r5, r0]
- 4f0:	4479      	add	r1, pc
- 4f2:	9202      	str	r2, [sp, #8]
- 4f4:	447b      	add	r3, pc
- 4f6:	4a92      	ldr	r2, [pc, #584]	; (740 <LLVMFuzzerTestOneInput+0x740>)
- 4f8:	447a      	add	r2, pc
- 4fa:	e6d1      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 4fc:	4838      	ldr	r0, [pc, #224]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 4fe:	2433      	movs	r4, #51	; 0x33
- 500:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 502:	4a90      	ldr	r2, [pc, #576]	; (744 <LLVMFuzzerTestOneInput+0x744>)
- 504:	4990      	ldr	r1, [pc, #576]	; (748 <LLVMFuzzerTestOneInput+0x748>)
- 506:	447a      	add	r2, pc
- 508:	4b90      	ldr	r3, [pc, #576]	; (74c <LLVMFuzzerTestOneInput+0x74c>)
- 50a:	5828      	ldr	r0, [r5, r0]
- 50c:	4479      	add	r1, pc
- 50e:	9202      	str	r2, [sp, #8]
- 510:	447b      	add	r3, pc
- 512:	4a8f      	ldr	r2, [pc, #572]	; (750 <LLVMFuzzerTestOneInput+0x750>)
- 514:	447a      	add	r2, pc
- 516:	e6c3      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 518:	4831      	ldr	r0, [pc, #196]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 51a:	2432      	movs	r4, #50	; 0x32
- 51c:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 51e:	4a8d      	ldr	r2, [pc, #564]	; (754 <LLVMFuzzerTestOneInput+0x754>)
- 520:	498d      	ldr	r1, [pc, #564]	; (758 <LLVMFuzzerTestOneInput+0x758>)
- 522:	447a      	add	r2, pc
- 524:	4b8d      	ldr	r3, [pc, #564]	; (75c <LLVMFuzzerTestOneInput+0x75c>)
- 526:	5828      	ldr	r0, [r5, r0]
- 528:	4479      	add	r1, pc
- 52a:	9202      	str	r2, [sp, #8]
- 52c:	447b      	add	r3, pc
- 52e:	4a8c      	ldr	r2, [pc, #560]	; (760 <LLVMFuzzerTestOneInput+0x760>)
- 530:	447a      	add	r2, pc
- 532:	e6b5      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 534:	482a      	ldr	r0, [pc, #168]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 536:	242f      	movs	r4, #47	; 0x2f
- 538:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 53a:	4a8a      	ldr	r2, [pc, #552]	; (764 <LLVMFuzzerTestOneInput+0x764>)
- 53c:	498a      	ldr	r1, [pc, #552]	; (768 <LLVMFuzzerTestOneInput+0x768>)
- 53e:	447a      	add	r2, pc
- 540:	4b8a      	ldr	r3, [pc, #552]	; (76c <LLVMFuzzerTestOneInput+0x76c>)
- 542:	5828      	ldr	r0, [r5, r0]
- 544:	4479      	add	r1, pc
- 546:	9202      	str	r2, [sp, #8]
- 548:	447b      	add	r3, pc
- 54a:	4a89      	ldr	r2, [pc, #548]	; (770 <LLVMFuzzerTestOneInput+0x770>)
- 54c:	447a      	add	r2, pc
- 54e:	e6a7      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 550:	4823      	ldr	r0, [pc, #140]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 552:	242a      	movs	r4, #42	; 0x2a
- 554:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 556:	4a87      	ldr	r2, [pc, #540]	; (774 <LLVMFuzzerTestOneInput+0x774>)
- 558:	4987      	ldr	r1, [pc, #540]	; (778 <LLVMFuzzerTestOneInput+0x778>)
- 55a:	447a      	add	r2, pc
- 55c:	4b87      	ldr	r3, [pc, #540]	; (77c <LLVMFuzzerTestOneInput+0x77c>)
- 55e:	5828      	ldr	r0, [r5, r0]
- 560:	4479      	add	r1, pc
- 562:	9202      	str	r2, [sp, #8]
- 564:	447b      	add	r3, pc
- 566:	4a86      	ldr	r2, [pc, #536]	; (780 <LLVMFuzzerTestOneInput+0x780>)
- 568:	447a      	add	r2, pc
- 56a:	e699      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 56c:	481c      	ldr	r0, [pc, #112]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 56e:	2429      	movs	r4, #41	; 0x29
- 570:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 572:	4a84      	ldr	r2, [pc, #528]	; (784 <LLVMFuzzerTestOneInput+0x784>)
- 574:	4984      	ldr	r1, [pc, #528]	; (788 <LLVMFuzzerTestOneInput+0x788>)
- 576:	447a      	add	r2, pc
- 578:	4b84      	ldr	r3, [pc, #528]	; (78c <LLVMFuzzerTestOneInput+0x78c>)
- 57a:	5828      	ldr	r0, [r5, r0]
- 57c:	4479      	add	r1, pc
- 57e:	9202      	str	r2, [sp, #8]
- 580:	447b      	add	r3, pc
- 582:	4a83      	ldr	r2, [pc, #524]	; (790 <LLVMFuzzerTestOneInput+0x790>)
- 584:	447a      	add	r2, pc
- 586:	e68b      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 588:	4815      	ldr	r0, [pc, #84]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 58a:	2426      	movs	r4, #38	; 0x26
- 58c:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 58e:	4a81      	ldr	r2, [pc, #516]	; (794 <LLVMFuzzerTestOneInput+0x794>)
- 590:	4981      	ldr	r1, [pc, #516]	; (798 <LLVMFuzzerTestOneInput+0x798>)
- 592:	447a      	add	r2, pc
- 594:	4b81      	ldr	r3, [pc, #516]	; (79c <LLVMFuzzerTestOneInput+0x79c>)
- 596:	5828      	ldr	r0, [r5, r0]
- 598:	4479      	add	r1, pc
- 59a:	9202      	str	r2, [sp, #8]
- 59c:	447b      	add	r3, pc
- 59e:	4a80      	ldr	r2, [pc, #512]	; (7a0 <LLVMFuzzerTestOneInput+0x7a0>)
- 5a0:	447a      	add	r2, pc
- 5a2:	e67d      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 5a4:	480e      	ldr	r0, [pc, #56]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 5a6:	2421      	movs	r4, #33	; 0x21
- 5a8:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 5aa:	4a7e      	ldr	r2, [pc, #504]	; (7a4 <LLVMFuzzerTestOneInput+0x7a4>)
- 5ac:	497e      	ldr	r1, [pc, #504]	; (7a8 <LLVMFuzzerTestOneInput+0x7a8>)
- 5ae:	447a      	add	r2, pc
- 5b0:	4b7e      	ldr	r3, [pc, #504]	; (7ac <LLVMFuzzerTestOneInput+0x7ac>)
- 5b2:	5828      	ldr	r0, [r5, r0]
- 5b4:	4479      	add	r1, pc
- 5b6:	9202      	str	r2, [sp, #8]
- 5b8:	447b      	add	r3, pc
- 5ba:	4a7d      	ldr	r2, [pc, #500]	; (7b0 <LLVMFuzzerTestOneInput+0x7b0>)
- 5bc:	447a      	add	r2, pc
- 5be:	e66f      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 5c0:	4807      	ldr	r0, [pc, #28]	; (5e0 <LLVMFuzzerTestOneInput+0x5e0>)
- 5c2:	241d      	movs	r4, #29
- 5c4:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 5c6:	4a7b      	ldr	r2, [pc, #492]	; (7b4 <LLVMFuzzerTestOneInput+0x7b4>)
- 5c8:	497b      	ldr	r1, [pc, #492]	; (7b8 <LLVMFuzzerTestOneInput+0x7b8>)
- 5ca:	447a      	add	r2, pc
- 5cc:	4b7b      	ldr	r3, [pc, #492]	; (7bc <LLVMFuzzerTestOneInput+0x7bc>)
- 5ce:	5828      	ldr	r0, [r5, r0]
- 5d0:	4479      	add	r1, pc
- 5d2:	9202      	str	r2, [sp, #8]
- 5d4:	447b      	add	r3, pc
- 5d6:	4a7a      	ldr	r2, [pc, #488]	; (7c0 <LLVMFuzzerTestOneInput+0x7c0>)
- 5d8:	447a      	add	r2, pc
- 5da:	e661      	b.n	2a0 <LLVMFuzzerTestOneInput+0x2a0>
- 5dc:	000005c8 	.word	0x000005c8
- 5e0:	00000000 	.word	0x00000000
- 5e4:	00000350 	.word	0x00000350
- 5e8:	0000034e 	.word	0x0000034e
- 5ec:	0000034e 	.word	0x0000034e
- 5f0:	0000034e 	.word	0x0000034e
- 5f4:	00000336 	.word	0x00000336
- 5f8:	00000334 	.word	0x00000334
- 5fc:	00000334 	.word	0x00000334
- 600:	00000334 	.word	0x00000334
- 604:	0000032a 	.word	0x0000032a
- 608:	00000328 	.word	0x00000328
- 60c:	00000328 	.word	0x00000328
- 610:	00000328 	.word	0x00000328
- 614:	0000031e 	.word	0x0000031e
- 618:	0000031c 	.word	0x0000031c
- 61c:	0000031c 	.word	0x0000031c
- 620:	0000031c 	.word	0x0000031c
- 624:	00000312 	.word	0x00000312
- 628:	00000310 	.word	0x00000310
- 62c:	00000310 	.word	0x00000310
- 630:	00000310 	.word	0x00000310
- 634:	00000306 	.word	0x00000306
- 638:	00000304 	.word	0x00000304
- 63c:	00000304 	.word	0x00000304
- 640:	00000304 	.word	0x00000304
- 644:	000002fa 	.word	0x000002fa
- 648:	000002f8 	.word	0x000002f8
- 64c:	000002f8 	.word	0x000002f8
- 650:	000002f8 	.word	0x000002f8
- 654:	000002ee 	.word	0x000002ee
- 658:	000002ec 	.word	0x000002ec
- 65c:	000002ec 	.word	0x000002ec
- 660:	000002ec 	.word	0x000002ec
- 664:	000002e2 	.word	0x000002e2
- 668:	000002e0 	.word	0x000002e0
- 66c:	000002e0 	.word	0x000002e0
- 670:	000002e0 	.word	0x000002e0
- 674:	000002d6 	.word	0x000002d6
- 678:	000002d4 	.word	0x000002d4
- 67c:	000002d4 	.word	0x000002d4
- 680:	000002d4 	.word	0x000002d4
- 684:	000002ca 	.word	0x000002ca
- 688:	000002c8 	.word	0x000002c8
- 68c:	000002c8 	.word	0x000002c8
- 690:	000002c8 	.word	0x000002c8
- 694:	000002be 	.word	0x000002be
- 698:	000002bc 	.word	0x000002bc
- 69c:	000002bc 	.word	0x000002bc
- 6a0:	000002bc 	.word	0x000002bc
- 6a4:	000002b2 	.word	0x000002b2
- 6a8:	000002b0 	.word	0x000002b0
- 6ac:	000002b0 	.word	0x000002b0
- 6b0:	000002b0 	.word	0x000002b0
- 6b4:	000002a6 	.word	0x000002a6
- 6b8:	000002a4 	.word	0x000002a4
- 6bc:	000002a4 	.word	0x000002a4
- 6c0:	000002a4 	.word	0x000002a4
- 6c4:	0000029a 	.word	0x0000029a
- 6c8:	00000298 	.word	0x00000298
- 6cc:	00000298 	.word	0x00000298
- 6d0:	00000298 	.word	0x00000298
- 6d4:	0000028e 	.word	0x0000028e
- 6d8:	0000028c 	.word	0x0000028c
- 6dc:	0000028c 	.word	0x0000028c
- 6e0:	0000028c 	.word	0x0000028c
- 6e4:	00000282 	.word	0x00000282
- 6e8:	00000280 	.word	0x00000280
- 6ec:	00000280 	.word	0x00000280
- 6f0:	00000280 	.word	0x00000280
- 6f4:	00000276 	.word	0x00000276
- 6f8:	00000274 	.word	0x00000274
- 6fc:	00000274 	.word	0x00000274
- 700:	00000274 	.word	0x00000274
- 704:	0000026a 	.word	0x0000026a
- 708:	00000268 	.word	0x00000268
- 70c:	00000268 	.word	0x00000268
- 710:	00000268 	.word	0x00000268
- 714:	0000025e 	.word	0x0000025e
- 718:	0000025c 	.word	0x0000025c
- 71c:	0000025c 	.word	0x0000025c
- 720:	0000025c 	.word	0x0000025c
- 724:	00000252 	.word	0x00000252
- 728:	00000250 	.word	0x00000250
- 72c:	00000250 	.word	0x00000250
- 730:	00000250 	.word	0x00000250
- 734:	00000246 	.word	0x00000246
- 738:	00000244 	.word	0x00000244
- 73c:	00000244 	.word	0x00000244
- 740:	00000244 	.word	0x00000244
- 744:	0000023a 	.word	0x0000023a
- 748:	00000238 	.word	0x00000238
- 74c:	00000238 	.word	0x00000238
- 750:	00000238 	.word	0x00000238
- 754:	0000022e 	.word	0x0000022e
- 758:	0000022c 	.word	0x0000022c
- 75c:	0000022c 	.word	0x0000022c
- 760:	0000022c 	.word	0x0000022c
- 764:	00000222 	.word	0x00000222
- 768:	00000220 	.word	0x00000220
- 76c:	00000220 	.word	0x00000220
- 770:	00000220 	.word	0x00000220
- 774:	00000216 	.word	0x00000216
- 778:	00000214 	.word	0x00000214
- 77c:	00000214 	.word	0x00000214
- 780:	00000214 	.word	0x00000214
- 784:	0000020a 	.word	0x0000020a
- 788:	00000208 	.word	0x00000208
- 78c:	00000208 	.word	0x00000208
- 790:	00000208 	.word	0x00000208
- 794:	000001fe 	.word	0x000001fe
- 798:	000001fc 	.word	0x000001fc
- 79c:	000001fc 	.word	0x000001fc
- 7a0:	000001fc 	.word	0x000001fc
- 7a4:	000001f2 	.word	0x000001f2
- 7a8:	000001f0 	.word	0x000001f0
- 7ac:	000001f0 	.word	0x000001f0
- 7b0:	000001f0 	.word	0x000001f0
- 7b4:	000001e6 	.word	0x000001e6
- 7b8:	000001e4 	.word	0x000001e4
- 7bc:	000001e4 	.word	0x000001e4
- 7c0:	000001e4 	.word	0x000001e4
+Function FUZZ_dataProducer_retrieve32 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function FUZZ_dataProducer_remainingBytes @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function FUZZ_getRange_from_uint32 @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function LZ4_compressBound @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function malloc @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function LZ4_compress_default @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function LZ4_decompress_safe @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function memcmp @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function LZ4_decompress_safe_partial @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function free @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function LZ4_decompress_safe_partial_usingDict @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function FUZZ_dataProducer_free @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+0x00500099:	movs	r0, r0
+0x0050009b:	movs	r0, r0
+
+Function __fprintf_chk @ 0x0050009d
+0x0050009d:	movs	r0, r0
+0x0050009f:	movs	r0, r0
+0x005000a1:	movs	r0, r0
+0x005000a3:	movs	r0, r0
+0x005000a5:	movs	r0, r0
+0x005000a7:	movs	r0, r0
+
+Function abort @ 0x005000a9
+0x005000a9:	movs	r0, r0
+0x005000ab:	movs	r0, r0
+0x005000ad:	movs	r0, r0
+0x005000af:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

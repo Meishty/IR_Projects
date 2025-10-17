@@ -1,388 +1,749 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_utils_e459cf50.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	andls	fp, r1, r2, lsl #1
+0x00400004:	movwhs	fp, #0x141
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	mov	r2, r3
+0x0040000d:	ldr	r0, [sp, #4]
+0x0040000f:	adds	r3, #1
+0x00400011:	cmp	r1, r3
+0x00400013:	strb.w	ip, [r0, r2]
+0x00400017:	bne	#0x40000b
+0x00400019:	add	sp, #8
+0x0040001b:	bx	lr
 
-Disassembly of section .text:
+Function sodium_stackzero @ 0x0040001d
+0x0040001d:	bx	lr
 
-00000000 <sodium_memzero>:
-   0:	b082      	sub	sp, #8
-   2:	9001      	str	r0, [sp, #4]
-   4:	b141      	cbz	r1, 18 <sodium_memzero+0x18>
-   6:	2300      	movs	r3, #0
-   8:	469c      	mov	ip, r3
-   a:	461a      	mov	r2, r3
-   c:	9801      	ldr	r0, [sp, #4]
-   e:	3301      	adds	r3, #1
-  10:	4299      	cmp	r1, r3
-  12:	f800 c002 	strb.w	ip, [r0, r2]
-  16:	d1f8      	bne.n	a <sodium_memzero+0xa>
-  18:	b002      	add	sp, #8
-  1a:	4770      	bx	lr
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	sub	sp, #0x10
+0x00400023:	movs	r3, #0
+0x00400025:	str	r0, [sp, #8]
+0x00400027:	str	r1, [sp, #0xc]
+0x00400029:	strb.w	r3, [sp, #7]
+0x0040002d:	cbz	r2, #0x40004f
+0x0040002f:	ldr	r1, [sp, #8]
+0x00400031:	ldrb	r0, [r1, r3]
+0x00400033:	ldr	r1, [sp, #0xc]
+0x00400035:	ldrb.w	ip, [r1, r3]
+0x00400039:	adds	r3, #1
+0x0040003b:	ldrb.w	r1, [sp, #7]
+0x0040003f:	cmp	r2, r3
+0x00400041:	eor.w	r0, r0, ip
+0x00400045:	orr.w	r1, r1, r0
+0x00400049:	strb.w	r1, [sp, #7]
+0x0040004d:	bne	#0x40002f
 
-0000001c <sodium_stackzero>:
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
+Function sodium_memcmp @ 0x00400021
+0x00400021:	sub	sp, #0x10
+0x00400023:	movs	r3, #0
+0x00400025:	str	r0, [sp, #8]
+0x00400027:	str	r1, [sp, #0xc]
+0x00400029:	strb.w	r3, [sp, #7]
+0x0040002d:	cbz	r2, #0x40004f
+0x0040002f:	ldr	r1, [sp, #8]
+0x00400031:	ldrb	r0, [r1, r3]
+0x00400033:	ldr	r1, [sp, #0xc]
+0x00400035:	ldrb.w	ip, [r1, r3]
+0x00400039:	adds	r3, #1
+0x0040003b:	ldrb.w	r1, [sp, #7]
+0x0040003f:	cmp	r2, r3
+0x00400041:	eor.w	r0, r0, ip
+0x00400045:	orr.w	r1, r1, r0
+0x00400049:	strb.w	r1, [sp, #7]
+0x0040004d:	bne	#0x40002f
+0x0040002f:	ldr	r1, [sp, #8]
+0x00400031:	ldrb	r0, [r1, r3]
+0x00400033:	ldr	r1, [sp, #0xc]
+0x00400035:	ldrb.w	ip, [r1, r3]
+0x00400039:	adds	r3, #1
+0x0040003b:	ldrb.w	r1, [sp, #7]
+0x0040003f:	cmp	r2, r3
+0x00400041:	eor.w	r0, r0, ip
+0x00400045:	orr.w	r1, r1, r0
+0x00400049:	strb.w	r1, [sp, #7]
+0x0040004d:	bne	#0x40002f
+0x0040004f:	ldrb.w	r0, [sp, #7]
+0x00400053:	subs	r0, #1
+0x00400055:	lsrs	r0, r0, #0x1f
+0x00400057:	subs	r0, #1
+0x00400059:	add	sp, #0x10
+0x0040005b:	bx	lr
 
-00000020 <sodium_memcmp>:
-  20:	b084      	sub	sp, #16
-  22:	2300      	movs	r3, #0
-  24:	9002      	str	r0, [sp, #8]
-  26:	9103      	str	r1, [sp, #12]
-  28:	f88d 3007 	strb.w	r3, [sp, #7]
-  2c:	b17a      	cbz	r2, 4e <sodium_memcmp+0x2e>
-  2e:	9902      	ldr	r1, [sp, #8]
-  30:	5cc8      	ldrb	r0, [r1, r3]
-  32:	9903      	ldr	r1, [sp, #12]
-  34:	f811 c003 	ldrb.w	ip, [r1, r3]
-  38:	3301      	adds	r3, #1
-  3a:	f89d 1007 	ldrb.w	r1, [sp, #7]
-  3e:	429a      	cmp	r2, r3
-  40:	ea80 000c 	eor.w	r0, r0, ip
-  44:	ea41 0100 	orr.w	r1, r1, r0
-  48:	f88d 1007 	strb.w	r1, [sp, #7]
-  4c:	d1ef      	bne.n	2e <sodium_memcmp+0xe>
-  4e:	f89d 0007 	ldrb.w	r0, [sp, #7]
-  52:	3801      	subs	r0, #1
-  54:	0fc0      	lsrs	r0, r0, #31
-  56:	3801      	subs	r0, #1
-  58:	b004      	add	sp, #16
-  5a:	4770      	bx	lr
+Function sodium_compare @ 0x0040005d
+0x0040005d:	push	{lr}
+0x0040005f:	movs	r3, #1
+0x00400061:	sub	sp, #0x14
+0x00400063:	str	r0, [sp, #8]
+0x00400065:	movs	r0, #0
+0x00400067:	str	r1, [sp, #0xc]
+0x00400069:	strb.w	r0, [sp, #6]
+0x0040006d:	strb.w	r3, [sp, #7]
+0x00400071:	cbz	r2, #0x4000a9
+0x00400073:	ldr	r3, [sp, #8]
+0x00400075:	subs	r2, #1
+0x00400077:	ldrb	r3, [r3, r2]
+0x00400079:	ldr	r1, [sp, #0xc]
+0x0040007b:	ldrb	r0, [r1, r2]
+0x0040007d:	ldrb.w	r1, [sp, #7]
+0x00400081:	sub.w	lr, r0, r3
+0x00400085:	ldrb.w	ip, [sp, #6]
+0x00400089:	eors	r3, r0
+0x0040008b:	and.w	r1, r1, lr, lsr #8
+0x0040008f:	subs	r3, #1
+0x00400091:	orr.w	r1, r1, ip
+0x00400095:	strb.w	r1, [sp, #6]
+0x00400099:	ldrb.w	r1, [sp, #7]
+0x0040009d:	and.w	r3, r1, r3, lsr #8
+0x004000a1:	strb.w	r3, [sp, #7]
+0x004000a5:	cmp	r2, #0
+0x004000a7:	bne	#0x400073
+0x00400073:	ldr	r3, [sp, #8]
+0x00400075:	subs	r2, #1
+0x00400077:	ldrb	r3, [r3, r2]
+0x00400079:	ldr	r1, [sp, #0xc]
+0x0040007b:	ldrb	r0, [r1, r2]
+0x0040007d:	ldrb.w	r1, [sp, #7]
+0x00400081:	sub.w	lr, r0, r3
+0x00400085:	ldrb.w	ip, [sp, #6]
+0x00400089:	eors	r3, r0
+0x0040008b:	and.w	r1, r1, lr, lsr #8
+0x0040008f:	subs	r3, #1
+0x00400091:	orr.w	r1, r1, ip
+0x00400095:	strb.w	r1, [sp, #6]
+0x00400099:	ldrb.w	r1, [sp, #7]
+0x0040009d:	and.w	r3, r1, r3, lsr #8
+0x004000a1:	strb.w	r3, [sp, #7]
+0x004000a5:	cmp	r2, #0
+0x004000a7:	bne	#0x400073
+0x004000a9:	ldrb.w	r0, [sp, #6]
+0x004000ad:	ldrb.w	r2, [sp, #6]
+0x004000b1:	ldrb.w	r3, [sp, #7]
+0x004000b5:	add	r0, r2
+0x004000b7:	add	r0, r3
+0x004000b9:	subs	r0, #1
+0x004000bb:	add	sp, #0x14
+0x004000bd:	ldr	pc, [sp], #4
 
-0000005c <sodium_compare>:
-  5c:	b500      	push	{lr}
-  5e:	2301      	movs	r3, #1
-  60:	b085      	sub	sp, #20
-  62:	9002      	str	r0, [sp, #8]
-  64:	2000      	movs	r0, #0
-  66:	9103      	str	r1, [sp, #12]
-  68:	f88d 0006 	strb.w	r0, [sp, #6]
-  6c:	f88d 3007 	strb.w	r3, [sp, #7]
-  70:	b1d2      	cbz	r2, a8 <sodium_compare+0x4c>
-  72:	9b02      	ldr	r3, [sp, #8]
-  74:	3a01      	subs	r2, #1
-  76:	5c9b      	ldrb	r3, [r3, r2]
-  78:	9903      	ldr	r1, [sp, #12]
-  7a:	5c88      	ldrb	r0, [r1, r2]
-  7c:	f89d 1007 	ldrb.w	r1, [sp, #7]
-  80:	eba0 0e03 	sub.w	lr, r0, r3
-  84:	f89d c006 	ldrb.w	ip, [sp, #6]
-  88:	4043      	eors	r3, r0
-  8a:	ea01 211e 	and.w	r1, r1, lr, lsr #8
-  8e:	3b01      	subs	r3, #1
-  90:	ea41 010c 	orr.w	r1, r1, ip
-  94:	f88d 1006 	strb.w	r1, [sp, #6]
-  98:	f89d 1007 	ldrb.w	r1, [sp, #7]
-  9c:	ea01 2313 	and.w	r3, r1, r3, lsr #8
-  a0:	f88d 3007 	strb.w	r3, [sp, #7]
-  a4:	2a00      	cmp	r2, #0
-  a6:	d1e4      	bne.n	72 <sodium_compare+0x16>
-  a8:	f89d 0006 	ldrb.w	r0, [sp, #6]
-  ac:	f89d 2006 	ldrb.w	r2, [sp, #6]
-  b0:	f89d 3007 	ldrb.w	r3, [sp, #7]
-  b4:	4410      	add	r0, r2
-  b6:	4418      	add	r0, r3
-  b8:	3801      	subs	r0, #1
-  ba:	b005      	add	sp, #20
-  bc:	f85d fb04 	ldr.w	pc, [sp], #4
+Function sodium_is_zero @ 0x004000c1
+0x004000c1:	sub	sp, #8
+0x004000c3:	movs	r3, #0
+0x004000c5:	strb.w	r3, [sp, #7]
+0x004000c9:	cbz	r1, #0x4000e3
+0x004000cb:	add	r1, r0
+0x004000cd:	subs	r0, #1
+0x004000cf:	subs	r1, #1
+0x004000d1:	ldrb.w	r3, [sp, #7]
+0x004000d5:	ldrb	r2, [r0, #1]!
+0x004000d9:	orrs	r3, r2
+0x004000db:	cmp	r0, r1
+0x004000dd:	strb.w	r3, [sp, #7]
+0x004000e1:	bne	#0x4000d1
+0x004000cb:	add	r1, r0
+0x004000cd:	subs	r0, #1
+0x004000cf:	subs	r1, #1
+0x004000d1:	ldrb.w	r3, [sp, #7]
+0x004000d5:	ldrb	r2, [r0, #1]!
+0x004000d9:	orrs	r3, r2
+0x004000db:	cmp	r0, r1
+0x004000dd:	strb.w	r3, [sp, #7]
+0x004000e1:	bne	#0x4000d1
+0x004000d1:	ldrb.w	r3, [sp, #7]
+0x004000d5:	ldrb	r2, [r0, #1]!
+0x004000d9:	orrs	r3, r2
+0x004000db:	cmp	r0, r1
+0x004000dd:	strb.w	r3, [sp, #7]
+0x004000e1:	bne	#0x4000d1
+0x004000e3:	ldrb.w	r0, [sp, #7]
+0x004000e7:	subs	r0, #1
+0x004000e9:	lsrs	r0, r0, #0x1f
+0x004000eb:	add	sp, #8
+0x004000ed:	bx	lr
 
-000000c0 <sodium_is_zero>:
-  c0:	b082      	sub	sp, #8
-  c2:	2300      	movs	r3, #0
-  c4:	f88d 3007 	strb.w	r3, [sp, #7]
-  c8:	b159      	cbz	r1, e2 <sodium_is_zero+0x22>
-  ca:	4401      	add	r1, r0
-  cc:	3801      	subs	r0, #1
-  ce:	3901      	subs	r1, #1
-  d0:	f89d 3007 	ldrb.w	r3, [sp, #7]
-  d4:	f810 2f01 	ldrb.w	r2, [r0, #1]!
-  d8:	4313      	orrs	r3, r2
-  da:	4288      	cmp	r0, r1
-  dc:	f88d 3007 	strb.w	r3, [sp, #7]
-  e0:	d1f6      	bne.n	d0 <sodium_is_zero+0x10>
-  e2:	f89d 0007 	ldrb.w	r0, [sp, #7]
-  e6:	3801      	subs	r0, #1
-  e8:	0fc0      	lsrs	r0, r0, #31
-  ea:	b002      	add	sp, #8
-  ec:	4770      	bx	lr
-  ee:	bf00      	nop
+Function sub_4000ef @ 0x004000ef
+0x004000ef:	nop	
+0x004000f1:	cbz	r1, #0x40010b
+0x004000f3:	add	r1, r0
+0x004000f5:	movs	r3, #1
+0x004000f7:	subs	r0, #1
+0x004000f9:	subs	r1, #1
+0x004000fb:	ldrb	r2, [r0, #1]!
+0x004000ff:	add	r3, r2
+0x00400101:	cmp	r1, r0
+0x00400103:	strb	r3, [r0]
+0x00400105:	lsr.w	r3, r3, #8
+0x00400109:	bne	#0x4000fb
 
-000000f0 <sodium_increment>:
-  f0:	b159      	cbz	r1, 10a <sodium_increment+0x1a>
-  f2:	4401      	add	r1, r0
-  f4:	2301      	movs	r3, #1
-  f6:	3801      	subs	r0, #1
-  f8:	3901      	subs	r1, #1
-  fa:	f810 2f01 	ldrb.w	r2, [r0, #1]!
-  fe:	4413      	add	r3, r2
- 100:	4281      	cmp	r1, r0
- 102:	7003      	strb	r3, [r0, #0]
- 104:	ea4f 2313 	mov.w	r3, r3, lsr #8
- 108:	d1f7      	bne.n	fa <sodium_increment+0xa>
- 10a:	4770      	bx	lr
+Function sodium_increment @ 0x004000f1
+0x004000f1:	cbz	r1, #0x40010b
+0x004000f3:	add	r1, r0
+0x004000f5:	movs	r3, #1
+0x004000f7:	subs	r0, #1
+0x004000f9:	subs	r1, #1
+0x004000fb:	ldrb	r2, [r0, #1]!
+0x004000ff:	add	r3, r2
+0x00400101:	cmp	r1, r0
+0x00400103:	strb	r3, [r0]
+0x00400105:	lsr.w	r3, r3, #8
+0x00400109:	bne	#0x4000fb
+0x004000f3:	add	r1, r0
+0x004000f5:	movs	r3, #1
+0x004000f7:	subs	r0, #1
+0x004000f9:	subs	r1, #1
+0x004000fb:	ldrb	r2, [r0, #1]!
+0x004000ff:	add	r3, r2
+0x00400101:	cmp	r1, r0
+0x00400103:	strb	r3, [r0]
+0x00400105:	lsr.w	r3, r3, #8
+0x00400109:	bne	#0x4000fb
+0x004000fb:	ldrb	r2, [r0, #1]!
+0x004000ff:	add	r3, r2
+0x00400101:	cmp	r1, r0
+0x00400103:	strb	r3, [r0]
+0x00400105:	lsr.w	r3, r3, #8
+0x00400109:	bne	#0x4000fb
+0x0040010b:	bx	lr
 
-0000010c <sodium_add>:
- 10c:	b19a      	cbz	r2, 136 <sodium_add+0x2a>
- 10e:	4402      	add	r2, r0
- 110:	b500      	push	{lr}
- 112:	3801      	subs	r0, #1
- 114:	3901      	subs	r1, #1
- 116:	f102 3eff 	add.w	lr, r2, #4294967295	; 0xffffffff
- 11a:	2300      	movs	r3, #0
- 11c:	f810 2f01 	ldrb.w	r2, [r0, #1]!
- 120:	f811 cf01 	ldrb.w	ip, [r1, #1]!
- 124:	4586      	cmp	lr, r0
- 126:	4462      	add	r2, ip
- 128:	4413      	add	r3, r2
- 12a:	7003      	strb	r3, [r0, #0]
- 12c:	ea4f 2313 	mov.w	r3, r3, lsr #8
- 130:	d1f4      	bne.n	11c <sodium_add+0x10>
- 132:	f85d fb04 	ldr.w	pc, [sp], #4
- 136:	4770      	bx	lr
+Function sodium_add @ 0x0040010d
+0x0040010d:	cbz	r2, #0x400137
+0x0040010f:	add	r2, r0
+0x00400111:	push	{lr}
+0x00400113:	subs	r0, #1
+0x00400115:	subs	r1, #1
+0x00400117:	add.w	lr, r2, #-1
+0x0040011b:	movs	r3, #0
+0x0040011d:	ldrb	r2, [r0, #1]!
+0x00400121:	ldrb	ip, [r1, #1]!
+0x00400125:	cmp	lr, r0
+0x00400127:	add	r2, ip
+0x00400129:	add	r3, r2
+0x0040012b:	strb	r3, [r0]
+0x0040012d:	lsr.w	r3, r3, #8
+0x00400131:	bne	#0x40011d
+0x0040010f:	add	r2, r0
+0x00400111:	push	{lr}
+0x00400113:	subs	r0, #1
+0x00400115:	subs	r1, #1
+0x00400117:	add.w	lr, r2, #-1
+0x0040011b:	movs	r3, #0
+0x0040011d:	ldrb	r2, [r0, #1]!
+0x00400121:	ldrb	ip, [r1, #1]!
+0x00400125:	cmp	lr, r0
+0x00400127:	add	r2, ip
+0x00400129:	add	r3, r2
+0x0040012b:	strb	r3, [r0]
+0x0040012d:	lsr.w	r3, r3, #8
+0x00400131:	bne	#0x40011d
+0x0040011d:	ldrb	r2, [r0, #1]!
+0x00400121:	ldrb	ip, [r1, #1]!
+0x00400125:	cmp	lr, r0
+0x00400127:	add	r2, ip
+0x00400129:	add	r3, r2
+0x0040012b:	strb	r3, [r0]
+0x0040012d:	lsr.w	r3, r3, #8
+0x00400131:	bne	#0x40011d
+0x00400133:	ldr	pc, [sp], #4
+0x00400137:	bx	lr
 
-00000138 <sodium_sub>:
- 138:	b1a2      	cbz	r2, 164 <sodium_sub+0x2c>
- 13a:	4402      	add	r2, r0
- 13c:	b500      	push	{lr}
- 13e:	3801      	subs	r0, #1
- 140:	f102 3eff 	add.w	lr, r2, #4294967295	; 0xffffffff
- 144:	3901      	subs	r1, #1
- 146:	2200      	movs	r2, #0
- 148:	f810 3f01 	ldrb.w	r3, [r0, #1]!
- 14c:	f811 cf01 	ldrb.w	ip, [r1, #1]!
- 150:	1a9b      	subs	r3, r3, r2
- 152:	4586      	cmp	lr, r0
- 154:	eba3 030c 	sub.w	r3, r3, ip
- 158:	7003      	strb	r3, [r0, #0]
- 15a:	f3c3 2200 	ubfx	r2, r3, #8, #1
- 15e:	d1f3      	bne.n	148 <sodium_sub+0x10>
- 160:	f85d fb04 	ldr.w	pc, [sp], #4
- 164:	4770      	bx	lr
- 166:	bf00      	nop
+Function sodium_sub @ 0x00400139
+0x00400139:	cbz	r2, #0x400165
+0x0040013b:	add	r2, r0
+0x0040013d:	push	{lr}
+0x0040013f:	subs	r0, #1
+0x00400141:	add.w	lr, r2, #-1
+0x00400145:	subs	r1, #1
+0x00400147:	movs	r2, #0
+0x00400149:	ldrb	r3, [r0, #1]!
+0x0040014d:	ldrb	ip, [r1, #1]!
+0x00400151:	subs	r3, r3, r2
+0x00400153:	cmp	lr, r0
+0x00400155:	sub.w	r3, r3, ip
+0x00400159:	strb	r3, [r0]
+0x0040015b:	ubfx	r2, r3, #8, #1
+0x0040015f:	bne	#0x400149
+0x0040013b:	add	r2, r0
+0x0040013d:	push	{lr}
+0x0040013f:	subs	r0, #1
+0x00400141:	add.w	lr, r2, #-1
+0x00400145:	subs	r1, #1
+0x00400147:	movs	r2, #0
+0x00400149:	ldrb	r3, [r0, #1]!
+0x0040014d:	ldrb	ip, [r1, #1]!
+0x00400151:	subs	r3, r3, r2
+0x00400153:	cmp	lr, r0
+0x00400155:	sub.w	r3, r3, ip
+0x00400159:	strb	r3, [r0]
+0x0040015b:	ubfx	r2, r3, #8, #1
+0x0040015f:	bne	#0x400149
+0x00400149:	ldrb	r3, [r0, #1]!
+0x0040014d:	ldrb	ip, [r1, #1]!
+0x00400151:	subs	r3, r3, r2
+0x00400153:	cmp	lr, r0
+0x00400155:	sub.w	r3, r3, ip
+0x00400159:	strb	r3, [r0]
+0x0040015b:	ubfx	r2, r3, #8, #1
+0x0040015f:	bne	#0x400149
+0x00400161:	ldr	pc, [sp], #4
+0x00400165:	bx	lr
 
-00000168 <_sodium_alloc_init>:
- 168:	4803      	ldr	r0, [pc, #12]	; (178 <_sodium_alloc_init+0x10>)
- 16a:	2110      	movs	r1, #16
- 16c:	b508      	push	{r3, lr}
- 16e:	4478      	add	r0, pc
- 170:	f7ff fffe 	bl	0 <randombytes_buf>
- 174:	2000      	movs	r0, #0
- 176:	bd08      	pop	{r3, pc}
- 178:	00000006 	.word	0x00000006
+Function sub_400167 @ 0x00400167
+0x00400167:	nop	
+0x00400169:	ldr	r0, [pc, #0xc]
+0x0040016b:	movs	r1, #0x10
+0x0040016d:	push	{r3, lr}
+0x0040016f:	add	r0, pc
+0x00400171:	bl	#0x500001
 
-0000017c <sodium_mlock>:
- 17c:	b508      	push	{r3, lr}
- 17e:	f7ff fffe 	bl	0 <__errno_location>
- 182:	4603      	mov	r3, r0
- 184:	2226      	movs	r2, #38	; 0x26
- 186:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 18a:	601a      	str	r2, [r3, #0]
- 18c:	bd08      	pop	{r3, pc}
- 18e:	bf00      	nop
+Function _sodium_alloc_init @ 0x00400169
+0x00400169:	ldr	r0, [pc, #0xc]
+0x0040016b:	movs	r1, #0x10
+0x0040016d:	push	{r3, lr}
+0x0040016f:	add	r0, pc
+0x00400171:	bl	#0x500001
+0x00400175:	movs	r0, #0
+0x00400177:	pop	{r3, pc}
 
-00000190 <sodium_munlock>:
- 190:	b500      	push	{lr}
- 192:	b083      	sub	sp, #12
- 194:	9001      	str	r0, [sp, #4]
- 196:	b141      	cbz	r1, 1aa <sodium_munlock+0x1a>
- 198:	2300      	movs	r3, #0
- 19a:	469c      	mov	ip, r3
- 19c:	461a      	mov	r2, r3
- 19e:	9801      	ldr	r0, [sp, #4]
- 1a0:	3301      	adds	r3, #1
- 1a2:	4299      	cmp	r1, r3
- 1a4:	f800 c002 	strb.w	ip, [r0, r2]
- 1a8:	d1f8      	bne.n	19c <sodium_munlock+0xc>
- 1aa:	f7ff fffe 	bl	0 <__errno_location>
- 1ae:	4603      	mov	r3, r0
- 1b0:	2226      	movs	r2, #38	; 0x26
- 1b2:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 1b6:	601a      	str	r2, [r3, #0]
- 1b8:	b003      	add	sp, #12
- 1ba:	f85d fb04 	ldr.w	pc, [sp], #4
- 1be:	bf00      	nop
+Function sodium_mlock @ 0x0040017d
+0x0040017d:	push	{r3, lr}
+0x0040017f:	bl	#0x50000d
+0x00400183:	mov	r3, r0
+0x00400185:	movs	r2, #0x26
+0x00400187:	mov.w	r0, #-1
+0x0040018b:	str	r2, [r3]
+0x0040018d:	pop	{r3, pc}
 
-000001c0 <sodium_malloc>:
- 1c0:	2801      	cmp	r0, #1
- 1c2:	b538      	push	{r3, r4, r5, lr}
- 1c4:	4605      	mov	r5, r0
- 1c6:	bf38      	it	cc
- 1c8:	2001      	movcc	r0, #1
- 1ca:	f7ff fffe 	bl	0 <malloc>
- 1ce:	4604      	mov	r4, r0
- 1d0:	b118      	cbz	r0, 1da <sodium_malloc+0x1a>
- 1d2:	462a      	mov	r2, r5
- 1d4:	21db      	movs	r1, #219	; 0xdb
- 1d6:	f7ff fffe 	bl	0 <memset>
- 1da:	4620      	mov	r0, r4
- 1dc:	bd38      	pop	{r3, r4, r5, pc}
- 1de:	bf00      	nop
+Function sub_40018f @ 0x0040018f
+0x0040018f:	nop	
+0x00400191:	push	{lr}
+0x00400193:	sub	sp, #0xc
+0x00400195:	str	r0, [sp, #4]
+0x00400197:	cbz	r1, #0x4001ab
+0x00400199:	movs	r3, #0
+0x0040019b:	mov	ip, r3
+0x0040019d:	mov	r2, r3
+0x0040019f:	ldr	r0, [sp, #4]
+0x004001a1:	adds	r3, #1
+0x004001a3:	cmp	r1, r3
+0x004001a5:	strb.w	ip, [r0, r2]
+0x004001a9:	bne	#0x40019d
 
-000001e0 <sodium_allocarray>:
- 1e0:	b538      	push	{r3, r4, r5, lr}
- 1e2:	460d      	mov	r5, r1
- 1e4:	4604      	mov	r4, r0
- 1e6:	b130      	cbz	r0, 1f6 <sodium_allocarray+0x16>
- 1e8:	4601      	mov	r1, r0
- 1ea:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 1ee:	f7ff fffe 	bl	0 <__aeabi_uidiv>
- 1f2:	42a8      	cmp	r0, r5
- 1f4:	d90f      	bls.n	216 <sodium_allocarray+0x36>
- 1f6:	fb05 f404 	mul.w	r4, r5, r4
- 1fa:	2c01      	cmp	r4, #1
- 1fc:	4620      	mov	r0, r4
- 1fe:	bf38      	it	cc
- 200:	2001      	movcc	r0, #1
- 202:	f7ff fffe 	bl	0 <malloc>
- 206:	4605      	mov	r5, r0
- 208:	b118      	cbz	r0, 212 <sodium_allocarray+0x32>
- 20a:	4622      	mov	r2, r4
- 20c:	21db      	movs	r1, #219	; 0xdb
- 20e:	f7ff fffe 	bl	0 <memset>
- 212:	4628      	mov	r0, r5
- 214:	bd38      	pop	{r3, r4, r5, pc}
- 216:	2500      	movs	r5, #0
- 218:	f7ff fffe 	bl	0 <__errno_location>
- 21c:	230c      	movs	r3, #12
- 21e:	6003      	str	r3, [r0, #0]
- 220:	4628      	mov	r0, r5
- 222:	bd38      	pop	{r3, r4, r5, pc}
+Function sodium_munlock @ 0x00400191
+0x00400191:	push	{lr}
+0x00400193:	sub	sp, #0xc
+0x00400195:	str	r0, [sp, #4]
+0x00400197:	cbz	r1, #0x4001ab
+0x00400199:	movs	r3, #0
+0x0040019b:	mov	ip, r3
+0x0040019d:	mov	r2, r3
+0x0040019f:	ldr	r0, [sp, #4]
+0x004001a1:	adds	r3, #1
+0x004001a3:	cmp	r1, r3
+0x004001a5:	strb.w	ip, [r0, r2]
+0x004001a9:	bne	#0x40019d
+0x00400199:	movs	r3, #0
+0x0040019b:	mov	ip, r3
+0x0040019d:	mov	r2, r3
+0x0040019f:	ldr	r0, [sp, #4]
+0x004001a1:	adds	r3, #1
+0x004001a3:	cmp	r1, r3
+0x004001a5:	strb.w	ip, [r0, r2]
+0x004001a9:	bne	#0x40019d
+0x0040019d:	mov	r2, r3
+0x0040019f:	ldr	r0, [sp, #4]
+0x004001a1:	adds	r3, #1
+0x004001a3:	cmp	r1, r3
+0x004001a5:	strb.w	ip, [r0, r2]
+0x004001a9:	bne	#0x40019d
+0x004001ab:	bl	#0x50000d
+0x004001af:	mov	r3, r0
+0x004001b1:	movs	r2, #0x26
+0x004001b3:	mov.w	r0, #-1
+0x004001b7:	str	r2, [r3]
+0x004001b9:	add	sp, #0xc
+0x004001bb:	ldr	pc, [sp], #4
 
-00000224 <sodium_free>:
- 224:	f7ff bffe 	b.w	0 <free>
+Function sub_4001bf @ 0x004001bf
+0x004001bf:	nop	
+0x004001c1:	cmp	r0, #1
+0x004001c3:	push	{r3, r4, r5, lr}
+0x004001c5:	mov	r5, r0
+0x004001c7:	it	lo
+0x004001c9:	movlo	r0, #1
+0x004001cb:	bl	#0x500019
 
-00000228 <sodium_mprotect_noaccess>:
- 228:	b508      	push	{r3, lr}
- 22a:	f7ff fffe 	bl	0 <__errno_location>
- 22e:	4603      	mov	r3, r0
- 230:	2226      	movs	r2, #38	; 0x26
- 232:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 236:	601a      	str	r2, [r3, #0]
- 238:	bd08      	pop	{r3, pc}
- 23a:	bf00      	nop
+Function sodium_malloc @ 0x004001c1
+0x004001c1:	cmp	r0, #1
+0x004001c3:	push	{r3, r4, r5, lr}
+0x004001c5:	mov	r5, r0
+0x004001c7:	it	lo
+0x004001c9:	movlo	r0, #1
+0x004001cb:	bl	#0x500019
+0x004001cf:	mov	r4, r0
+0x004001d1:	cbz	r0, #0x4001db
+0x004001d3:	mov	r2, r5
+0x004001d5:	movs	r1, #0xdb
+0x004001d7:	bl	#0x500025
+0x004001d3:	mov	r2, r5
+0x004001d5:	movs	r1, #0xdb
+0x004001d7:	bl	#0x500025
+0x004001db:	mov	r0, r4
+0x004001dd:	pop	{r3, r4, r5, pc}
 
-0000023c <sodium_mprotect_readonly>:
- 23c:	b508      	push	{r3, lr}
- 23e:	f7ff fffe 	bl	0 <__errno_location>
- 242:	4603      	mov	r3, r0
- 244:	2226      	movs	r2, #38	; 0x26
- 246:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 24a:	601a      	str	r2, [r3, #0]
- 24c:	bd08      	pop	{r3, pc}
- 24e:	bf00      	nop
+Function sub_4001df @ 0x004001df
+0x004001df:	nop	
+0x004001e1:	push	{r3, r4, r5, lr}
+0x004001e3:	mov	r5, r1
+0x004001e5:	mov	r4, r0
+0x004001e7:	cbz	r0, #0x4001f7
+0x004001e9:	mov	r1, r0
+0x004001eb:	mov.w	r0, #-1
+0x004001ef:	bl	#0x500031
 
-00000250 <sodium_mprotect_readwrite>:
- 250:	b508      	push	{r3, lr}
- 252:	f7ff fffe 	bl	0 <__errno_location>
- 256:	4603      	mov	r3, r0
- 258:	2226      	movs	r2, #38	; 0x26
- 25a:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 25e:	601a      	str	r2, [r3, #0]
- 260:	bd08      	pop	{r3, pc}
- 262:	bf00      	nop
+Function sodium_allocarray @ 0x004001e1
+0x004001e1:	push	{r3, r4, r5, lr}
+0x004001e3:	mov	r5, r1
+0x004001e5:	mov	r4, r0
+0x004001e7:	cbz	r0, #0x4001f7
+0x004001e9:	mov	r1, r0
+0x004001eb:	mov.w	r0, #-1
+0x004001ef:	bl	#0x500031
+0x004001e9:	mov	r1, r0
+0x004001eb:	mov.w	r0, #-1
+0x004001ef:	bl	#0x500031
+0x004001f3:	cmp	r0, r5
+0x004001f5:	bls	#0x400217
+0x004001f7:	mul	r4, r5, r4
+0x004001fb:	cmp	r4, #1
+0x004001fd:	mov	r0, r4
+0x004001ff:	it	lo
+0x00400201:	movlo	r0, #1
+0x00400203:	bl	#0x500019
+0x00400207:	mov	r5, r0
+0x00400209:	cbz	r0, #0x400213
+0x0040020b:	mov	r2, r4
+0x0040020d:	movs	r1, #0xdb
+0x0040020f:	bl	#0x500025
+0x0040020b:	mov	r2, r4
+0x0040020d:	movs	r1, #0xdb
+0x0040020f:	bl	#0x500025
+0x00400213:	mov	r0, r5
+0x00400215:	pop	{r3, r4, r5, pc}
+0x00400217:	movs	r5, #0
+0x00400219:	bl	#0x50000d
+0x0040021d:	movs	r3, #0xc
+0x0040021f:	str	r3, [r0]
+0x00400221:	mov	r0, r5
+0x00400223:	pop	{r3, r4, r5, pc}
 
-00000264 <sodium_pad>:
- 264:	2b00      	cmp	r3, #0
- 266:	d042      	beq.n	2ee <sodium_pad+0x8a>
- 268:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
- 26c:	1e5d      	subs	r5, r3, #1
- 26e:	ea6f 0902 	mvn.w	r9, r2
- 272:	422b      	tst	r3, r5
- 274:	b083      	sub	sp, #12
- 276:	4680      	mov	r8, r0
- 278:	460f      	mov	r7, r1
- 27a:	4614      	mov	r4, r2
- 27c:	461e      	mov	r6, r3
- 27e:	bf08      	it	eq
- 280:	ea05 0509 	andeq.w	r5, r5, r9
- 284:	d12d      	bne.n	2e2 <sodium_pad+0x7e>
- 286:	454d      	cmp	r5, r9
- 288:	d237      	bcs.n	2fa <sodium_pad+0x96>
- 28a:	9b0a      	ldr	r3, [sp, #40]	; 0x28
- 28c:	192a      	adds	r2, r5, r4
- 28e:	429a      	cmp	r2, r3
- 290:	d230      	bcs.n	2f4 <sodium_pad+0x90>
- 292:	f1b8 0f00 	cmp.w	r8, #0
- 296:	d002      	beq.n	29e <sodium_pad+0x3a>
- 298:	1c53      	adds	r3, r2, #1
- 29a:	f8c8 3000 	str.w	r3, [r8]
- 29e:	eba7 0e06 	sub.w	lr, r7, r6
- 2a2:	18b9      	adds	r1, r7, r2
- 2a4:	4496      	add	lr, r2
- 2a6:	4608      	mov	r0, r1
- 2a8:	2300      	movs	r3, #0
- 2aa:	f88d 3007 	strb.w	r3, [sp, #7]
- 2ae:	1a0b      	subs	r3, r1, r0
- 2b0:	f89d 4007 	ldrb.w	r4, [sp, #7]
- 2b4:	406b      	eors	r3, r5
- 2b6:	7802      	ldrb	r2, [r0, #0]
- 2b8:	3b01      	subs	r3, #1
- 2ba:	f89d c007 	ldrb.w	ip, [sp, #7]
- 2be:	4022      	ands	r2, r4
- 2c0:	0e1b      	lsrs	r3, r3, #24
- 2c2:	f023 047f 	bic.w	r4, r3, #127	; 0x7f
- 2c6:	ea4c 0c03 	orr.w	ip, ip, r3
- 2ca:	ea42 0304 	orr.w	r3, r2, r4
- 2ce:	f800 3901 	strb.w	r3, [r0], #-1
- 2d2:	f88d c007 	strb.w	ip, [sp, #7]
- 2d6:	4586      	cmp	lr, r0
- 2d8:	d1e9      	bne.n	2ae <sodium_pad+0x4a>
- 2da:	2000      	movs	r0, #0
- 2dc:	b003      	add	sp, #12
- 2de:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
- 2e2:	4619      	mov	r1, r3
- 2e4:	4610      	mov	r0, r2
- 2e6:	f7ff fffe 	bl	0 <__aeabi_uidivmod>
- 2ea:	1a6d      	subs	r5, r5, r1
- 2ec:	e7cb      	b.n	286 <sodium_pad+0x22>
- 2ee:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 2f2:	4770      	bx	lr
- 2f4:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 2f8:	e7f0      	b.n	2dc <sodium_pad+0x78>
- 2fa:	f7ff fffe 	bl	0 <sodium_misuse>
- 2fe:	bf00      	nop
+Function sodium_free @ 0x00400225
+0x00400225:	b.w	#0x500055
 
-00000300 <sodium_unpad>:
- 300:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
- 304:	4607      	mov	r7, r0
- 306:	1e58      	subs	r0, r3, #1
- 308:	b082      	sub	sp, #8
- 30a:	2400      	movs	r4, #0
- 30c:	4290      	cmp	r0, r2
- 30e:	9401      	str	r4, [sp, #4]
- 310:	d22f      	bcs.n	372 <sodium_unpad+0x72>
- 312:	b35b      	cbz	r3, 36c <sodium_unpad+0x6c>
- 314:	1ad3      	subs	r3, r2, r3
- 316:	188e      	adds	r6, r1, r2
- 318:	18cd      	adds	r5, r1, r3
- 31a:	46b4      	mov	ip, r6
- 31c:	46a6      	mov	lr, r4
- 31e:	9901      	ldr	r1, [sp, #4]
- 320:	eba6 080c 	sub.w	r8, r6, ip
- 324:	f81c 9d01 	ldrb.w	r9, [ip, #-1]!
- 328:	f10e 33ff 	add.w	r3, lr, #4294967295	; 0xffffffff
- 32c:	f101 3aff 	add.w	sl, r1, #4294967295	; 0xffffffff
- 330:	9801      	ldr	r0, [sp, #4]
- 332:	f089 0180 	eor.w	r1, r9, #128	; 0x80
- 336:	ea03 030a 	and.w	r3, r3, sl
- 33a:	3901      	subs	r1, #1
- 33c:	ea49 0e0e 	orr.w	lr, r9, lr
- 340:	400b      	ands	r3, r1
- 342:	4565      	cmp	r5, ip
- 344:	f3c3 2300 	ubfx	r3, r3, #8, #1
- 348:	f1c3 0100 	rsb	r1, r3, #0
- 34c:	ea44 0403 	orr.w	r4, r4, r3
- 350:	ea01 0308 	and.w	r3, r1, r8
- 354:	ea43 0300 	orr.w	r3, r3, r0
- 358:	9301      	str	r3, [sp, #4]
- 35a:	d1e0      	bne.n	31e <sodium_unpad+0x1e>
- 35c:	1e60      	subs	r0, r4, #1
- 35e:	9b01      	ldr	r3, [sp, #4]
- 360:	1ad2      	subs	r2, r2, r3
- 362:	3a01      	subs	r2, #1
- 364:	603a      	str	r2, [r7, #0]
- 366:	b002      	add	sp, #8
- 368:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 36c:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 370:	e7f5      	b.n	35e <sodium_unpad+0x5e>
- 372:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 376:	e7f6      	b.n	366 <sodium_unpad+0x66>
+Function sodium_mprotect_noaccess @ 0x00400229
+0x00400229:	push	{r3, lr}
+0x0040022b:	bl	#0x50000d
+0x0040022f:	mov	r3, r0
+0x00400231:	movs	r2, #0x26
+0x00400233:	mov.w	r0, #-1
+0x00400237:	str	r2, [r3]
+0x00400239:	pop	{r3, pc}
+
+Function sub_40023b @ 0x0040023b
+0x0040023b:	nop	
+0x0040023d:	push	{r3, lr}
+0x0040023f:	bl	#0x50000d
+
+Function sodium_mprotect_readonly @ 0x0040023d
+0x0040023d:	push	{r3, lr}
+0x0040023f:	bl	#0x50000d
+0x00400243:	mov	r3, r0
+0x00400245:	movs	r2, #0x26
+0x00400247:	mov.w	r0, #-1
+0x0040024b:	str	r2, [r3]
+0x0040024d:	pop	{r3, pc}
+
+Function sub_40024f @ 0x0040024f
+0x0040024f:	nop	
+0x00400251:	push	{r3, lr}
+0x00400253:	bl	#0x50000d
+
+Function sodium_mprotect_readwrite @ 0x00400251
+0x00400251:	push	{r3, lr}
+0x00400253:	bl	#0x50000d
+0x00400257:	mov	r3, r0
+0x00400259:	movs	r2, #0x26
+0x0040025b:	mov.w	r0, #-1
+0x0040025f:	str	r2, [r3]
+0x00400261:	pop	{r3, pc}
+
+Function sub_400263 @ 0x00400263
+0x00400263:	nop	
+0x00400265:	cmp	r3, #0
+0x00400267:	beq	#0x4002ef
+
+Function sodium_pad @ 0x00400265
+0x00400265:	cmp	r3, #0
+0x00400267:	beq	#0x4002ef
+0x00400269:	push.w	{r4, r5, r6, r7, r8, sb, lr}
+0x0040026d:	subs	r5, r3, #1
+0x0040026f:	mvn.w	sb, r2
+0x00400273:	tst	r3, r5
+0x00400275:	sub	sp, #0xc
+0x00400277:	mov	r8, r0
+0x00400279:	mov	r7, r1
+0x0040027b:	mov	r4, r2
+0x0040027d:	mov	r6, r3
+0x0040027f:	it	eq
+0x00400281:	andeq.w	r5, r5, sb
+0x00400285:	bne	#0x4002e3
+0x00400287:	cmp	r5, sb
+0x00400289:	bhs	#0x4002fb
+0x0040028b:	ldr	r3, [sp, #0x28]
+0x0040028d:	adds	r2, r5, r4
+0x0040028f:	cmp	r2, r3
+0x00400291:	bhs	#0x4002f5
+0x00400293:	cmp.w	r8, #0
+0x00400297:	beq	#0x40029f
+0x00400299:	adds	r3, r2, #1
+0x0040029b:	str.w	r3, [r8]
+0x0040029f:	sub.w	lr, r7, r6
+0x004002a3:	adds	r1, r7, r2
+0x004002a5:	add	lr, r2
+0x004002a7:	mov	r0, r1
+0x004002a9:	movs	r3, #0
+0x004002ab:	strb.w	r3, [sp, #7]
+0x004002af:	subs	r3, r1, r0
+0x004002b1:	ldrb.w	r4, [sp, #7]
+0x004002b5:	eors	r3, r5
+0x004002b7:	ldrb	r2, [r0]
+0x004002b9:	subs	r3, #1
+0x004002bb:	ldrb.w	ip, [sp, #7]
+0x004002bf:	ands	r2, r4
+0x004002c1:	lsrs	r3, r3, #0x18
+0x004002c3:	bic	r4, r3, #0x7f
+0x004002c7:	orr.w	ip, ip, r3
+0x004002cb:	orr.w	r3, r2, r4
+0x004002cf:	strb	r3, [r0], #-1
+0x004002d3:	strb.w	ip, [sp, #7]
+0x004002d7:	cmp	lr, r0
+0x004002d9:	bne	#0x4002af
+0x0040029f:	sub.w	lr, r7, r6
+0x004002a3:	adds	r1, r7, r2
+0x004002a5:	add	lr, r2
+0x004002a7:	mov	r0, r1
+0x004002a9:	movs	r3, #0
+0x004002ab:	strb.w	r3, [sp, #7]
+0x004002af:	subs	r3, r1, r0
+0x004002b1:	ldrb.w	r4, [sp, #7]
+0x004002b5:	eors	r3, r5
+0x004002b7:	ldrb	r2, [r0]
+0x004002b9:	subs	r3, #1
+0x004002bb:	ldrb.w	ip, [sp, #7]
+0x004002bf:	ands	r2, r4
+0x004002c1:	lsrs	r3, r3, #0x18
+0x004002c3:	bic	r4, r3, #0x7f
+0x004002c7:	orr.w	ip, ip, r3
+0x004002cb:	orr.w	r3, r2, r4
+0x004002cf:	strb	r3, [r0], #-1
+0x004002d3:	strb.w	ip, [sp, #7]
+0x004002d7:	cmp	lr, r0
+0x004002d9:	bne	#0x4002af
+0x004002af:	subs	r3, r1, r0
+0x004002b1:	ldrb.w	r4, [sp, #7]
+0x004002b5:	eors	r3, r5
+0x004002b7:	ldrb	r2, [r0]
+0x004002b9:	subs	r3, #1
+0x004002bb:	ldrb.w	ip, [sp, #7]
+0x004002bf:	ands	r2, r4
+0x004002c1:	lsrs	r3, r3, #0x18
+0x004002c3:	bic	r4, r3, #0x7f
+0x004002c7:	orr.w	ip, ip, r3
+0x004002cb:	orr.w	r3, r2, r4
+0x004002cf:	strb	r3, [r0], #-1
+0x004002d3:	strb.w	ip, [sp, #7]
+0x004002d7:	cmp	lr, r0
+0x004002d9:	bne	#0x4002af
+0x004002db:	movs	r0, #0
+0x004002dd:	add	sp, #0xc
+0x004002df:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x004002dd:	add	sp, #0xc
+0x004002df:	pop.w	{r4, r5, r6, r7, r8, sb, pc}
+0x004002e3:	mov	r1, r3
+0x004002e5:	mov	r0, r2
+0x004002e7:	bl	#0x50003d
+0x004002eb:	subs	r5, r5, r1
+0x004002ed:	b	#0x400287
+0x004002ef:	mov.w	r0, #-1
+0x004002f3:	bx	lr
+0x004002f5:	mov.w	r0, #-1
+0x004002f9:	b	#0x4002dd
+0x004002fb:	bl	#0x500049
+0x004002ff:	nop	
+0x00400301:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x00400305:	mov	r7, r0
+0x00400307:	subs	r0, r3, #1
+0x00400309:	sub	sp, #8
+0x0040030b:	movs	r4, #0
+0x0040030d:	cmp	r0, r2
+0x0040030f:	str	r4, [sp, #4]
+0x00400311:	bhs	#0x400373
+
+Function sodium_unpad @ 0x00400301
+0x00400301:	push.w	{r4, r5, r6, r7, r8, sb, sl, lr}
+0x00400305:	mov	r7, r0
+0x00400307:	subs	r0, r3, #1
+0x00400309:	sub	sp, #8
+0x0040030b:	movs	r4, #0
+0x0040030d:	cmp	r0, r2
+0x0040030f:	str	r4, [sp, #4]
+0x00400311:	bhs	#0x400373
+0x00400313:	cbz	r3, #0x40036d
+0x00400315:	subs	r3, r2, r3
+0x00400317:	adds	r6, r1, r2
+0x00400319:	adds	r5, r1, r3
+0x0040031b:	mov	ip, r6
+0x0040031d:	mov	lr, r4
+0x0040031f:	ldr	r1, [sp, #4]
+0x00400321:	sub.w	r8, r6, ip
+0x00400325:	ldrb	sb, [ip, #-0x1]!
+0x00400329:	add.w	r3, lr, #-1
+0x0040032d:	add.w	sl, r1, #-1
+0x00400331:	ldr	r0, [sp, #4]
+0x00400333:	eor	r1, sb, #0x80
+0x00400337:	and.w	r3, r3, sl
+0x0040033b:	subs	r1, #1
+0x0040033d:	orr.w	lr, sb, lr
+0x00400341:	ands	r3, r1
+0x00400343:	cmp	r5, ip
+0x00400345:	ubfx	r3, r3, #8, #1
+0x00400349:	rsb.w	r1, r3, #0
+0x0040034d:	orr.w	r4, r4, r3
+0x00400351:	and.w	r3, r1, r8
+0x00400355:	orr.w	r3, r3, r0
+0x00400359:	str	r3, [sp, #4]
+0x0040035b:	bne	#0x40031f
+0x00400315:	subs	r3, r2, r3
+0x00400317:	adds	r6, r1, r2
+0x00400319:	adds	r5, r1, r3
+0x0040031b:	mov	ip, r6
+0x0040031d:	mov	lr, r4
+0x0040031f:	ldr	r1, [sp, #4]
+0x00400321:	sub.w	r8, r6, ip
+0x00400325:	ldrb	sb, [ip, #-0x1]!
+0x00400329:	add.w	r3, lr, #-1
+0x0040032d:	add.w	sl, r1, #-1
+0x00400331:	ldr	r0, [sp, #4]
+0x00400333:	eor	r1, sb, #0x80
+0x00400337:	and.w	r3, r3, sl
+0x0040033b:	subs	r1, #1
+0x0040033d:	orr.w	lr, sb, lr
+0x00400341:	ands	r3, r1
+0x00400343:	cmp	r5, ip
+0x00400345:	ubfx	r3, r3, #8, #1
+0x00400349:	rsb.w	r1, r3, #0
+0x0040034d:	orr.w	r4, r4, r3
+0x00400351:	and.w	r3, r1, r8
+0x00400355:	orr.w	r3, r3, r0
+0x00400359:	str	r3, [sp, #4]
+0x0040035b:	bne	#0x40031f
+0x0040031f:	ldr	r1, [sp, #4]
+0x00400321:	sub.w	r8, r6, ip
+0x00400325:	ldrb	sb, [ip, #-0x1]!
+0x00400329:	add.w	r3, lr, #-1
+0x0040032d:	add.w	sl, r1, #-1
+0x00400331:	ldr	r0, [sp, #4]
+0x00400333:	eor	r1, sb, #0x80
+0x00400337:	and.w	r3, r3, sl
+0x0040033b:	subs	r1, #1
+0x0040033d:	orr.w	lr, sb, lr
+0x00400341:	ands	r3, r1
+0x00400343:	cmp	r5, ip
+0x00400345:	ubfx	r3, r3, #8, #1
+0x00400349:	rsb.w	r1, r3, #0
+0x0040034d:	orr.w	r4, r4, r3
+0x00400351:	and.w	r3, r1, r8
+0x00400355:	orr.w	r3, r3, r0
+0x00400359:	str	r3, [sp, #4]
+0x0040035b:	bne	#0x40031f
+0x0040035d:	subs	r0, r4, #1
+0x0040035f:	ldr	r3, [sp, #4]
+0x00400361:	subs	r2, r2, r3
+0x00400363:	subs	r2, #1
+0x00400365:	str	r2, [r7]
+0x00400367:	add	sp, #8
+0x00400369:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x0040035f:	ldr	r3, [sp, #4]
+0x00400361:	subs	r2, r2, r3
+0x00400363:	subs	r2, #1
+0x00400365:	str	r2, [r7]
+0x00400367:	add	sp, #8
+0x00400369:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x00400367:	add	sp, #8
+0x00400369:	pop.w	{r4, r5, r6, r7, r8, sb, sl, pc}
+0x0040036d:	mov.w	r0, #-1
+0x00400371:	b	#0x40035f
+0x00400373:	mov.w	r0, #-1
+0x00400377:	b	#0x400367
+
+Function randombytes_buf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __errno_location @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function malloc @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function memset @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function __aeabi_uidiv @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function __aeabi_uidivmod @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function free @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0

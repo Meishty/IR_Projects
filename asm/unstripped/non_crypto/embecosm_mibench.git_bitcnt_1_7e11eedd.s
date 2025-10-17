@@ -1,15 +1,8 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_bitcnt_1_7e11eedd.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	strmi	fp, [r3], -r8, lsr #2
+0x00400004:	cdpne	p0, #5, c2, c10, c0, #0
+0x00400008:	andsmi	r3, r3, r1
 
-
-Disassembly of section .text:
-
-00000000 <bit_count>:
-   0:	b128      	cbz	r0, e <bit_count+0xe>
-   2:	4603      	mov	r3, r0
-   4:	2000      	movs	r0, #0
-   6:	1e5a      	subs	r2, r3, #1
-   8:	3001      	adds	r0, #1
-   a:	4013      	ands	r3, r2
-   c:	d1fb      	bne.n	6 <bit_count+0x6>
-   e:	4770      	bx	lr
+Function sub_40000f @ 0x0040000f
+0x0040000f:	bx	lr

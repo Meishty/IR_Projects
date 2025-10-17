@@ -1,19 +1,20 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_x86-set-solib-absolute-prefix_8345cf8f.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	push	{r3, lr}
+0x00400007:	ldr	r3, [pc, #0x14]
+0x00400009:	add	r3, pc
+0x0040000b:	ldr	r2, [r3]
+0x0040000d:	adds	r2, #1
+0x0040000f:	str	r2, [r3]
+0x00400011:	ldr	r2, [r3]
+0x00400013:	adds	r2, #1
+0x00400015:	str	r2, [r3]
+0x00400017:	bl	#0x500001
 
+Function sub_40001b @ 0x0040001b
 
-Disassembly of section .text.unlikely:
-
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	4b05      	ldr	r3, [pc, #20]	; (18 <main+0x18>)
-   4:	447b      	add	r3, pc
-   6:	681a      	ldr	r2, [r3, #0]
-   8:	3201      	adds	r2, #1
-   a:	601a      	str	r2, [r3, #0]
-   c:	681a      	ldr	r2, [r3, #0]
-   e:	3201      	adds	r2, #1
-  10:	601a      	str	r2, [r3, #0]
-  12:	f7ff fffe 	bl	0 <abort>
-  16:	bf00      	nop
-  18:	00000010 	.word	0x00000010
+Function abort @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

@@ -1,14 +1,9 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_dw2-single-line-discriminators_83eff936.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	ldr	r3, [pc, #8]
+0x00400007:	movs	r0, #0
+0x00400009:	add	r3, pc
+0x0040000b:	str	r0, [r3]
+0x0040000d:	bx	lr
 
-
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	4b02      	ldr	r3, [pc, #8]	; (c <main+0xc>)
-   2:	2000      	movs	r0, #0
-   4:	447b      	add	r3, pc
-   6:	6018      	str	r0, [r3, #0]
-   8:	4770      	bx	lr
-   a:	bf00      	nop
-   c:	00000004 	.word	0x00000004
+Function sub_40000f @ 0x0040000f

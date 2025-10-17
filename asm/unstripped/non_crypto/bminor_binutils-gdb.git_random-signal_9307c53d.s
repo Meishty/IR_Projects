@@ -1,12 +1,15 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_random-signal_9307c53d.o:     file format elf32-littlearm
+Function main @ 0x00400005
+0x00400005:	movs	r0, #0x3c
+0x00400007:	push	{r3, lr}
+0x00400009:	bl	#0x500001
+0x0040000d:	b	#0x40000d
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	nop	
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	203c      	movs	r0, #60	; 0x3c
-   2:	b508      	push	{r3, lr}
-   4:	f7ff fffe 	bl	0 <alarm>
-   8:	e7fe      	b.n	8 <main+0x8>
-   a:	bf00      	nop
+Function alarm @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

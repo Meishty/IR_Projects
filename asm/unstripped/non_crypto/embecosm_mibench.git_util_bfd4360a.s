@@ -1,36 +1,42 @@
 
-/root/projects/compiled/non_crypto/unstripped/embecosm_mibench.git_util_bfd4360a.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	blt	#0xada014
+0x00400004:	ldrbmi	r6, [r0, -r3]!
+0x00400008:	vstrle.16	s4, [r7, #-0]
 
+Function swapShortBuf @ 0x00400009
+0x00400009:	cmp	r1, #0
+0x0040000b:	ble	#0x40001d
+0x0040000d:	add.w	r1, r0, r1, lsl #1
+0x00400011:	ldrh	r3, [r0]
+0x00400013:	rev16	r3, r3
+0x00400015:	strh	r3, [r0], #2
+0x00400019:	cmp	r0, r1
+0x0040001b:	bne	#0x400011
+0x00400011:	ldrh	r3, [r0]
+0x00400013:	rev16	r3, r3
+0x00400015:	strh	r3, [r0], #2
+0x00400019:	cmp	r0, r1
+0x0040001b:	bne	#0x400011
+0x0040001d:	bx	lr
 
-Disassembly of section .text:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	subs	r2, r1, #1
+0x00400023:	cmp	r1, #0
+0x00400025:	ble	#0x400035
 
-00000000 <swapLong>:
-   0:	6803      	ldr	r3, [r0, #0]
-   2:	ba1b      	rev	r3, r3
-   4:	6003      	str	r3, [r0, #0]
-   6:	4770      	bx	lr
+Function swapLongBuf @ 0x00400021
+0x00400021:	subs	r2, r1, #1
+0x00400023:	cmp	r1, #0
+0x00400025:	ble	#0x400035
+0x00400027:	ldr	r3, [r0]
+0x00400029:	subs	r2, #1
+0x0040002b:	rev	r3, r3
+0x0040002d:	str	r3, [r0], #4
+0x00400031:	adds	r3, r2, #1
+0x00400033:	bne	#0x400027
+0x00400035:	bx	lr
 
-00000008 <swapShortBuf>:
-   8:	2900      	cmp	r1, #0
-   a:	dd07      	ble.n	1c <swapShortBuf+0x14>
-   c:	eb00 0141 	add.w	r1, r0, r1, lsl #1
-  10:	8803      	ldrh	r3, [r0, #0]
-  12:	ba5b      	rev16	r3, r3
-  14:	f820 3b02 	strh.w	r3, [r0], #2
-  18:	4288      	cmp	r0, r1
-  1a:	d1f9      	bne.n	10 <swapShortBuf+0x8>
-  1c:	4770      	bx	lr
-  1e:	bf00      	nop
-
-00000020 <swapLongBuf>:
-  20:	1e4a      	subs	r2, r1, #1
-  22:	2900      	cmp	r1, #0
-  24:	dd06      	ble.n	34 <swapLongBuf+0x14>
-  26:	6803      	ldr	r3, [r0, #0]
-  28:	3a01      	subs	r2, #1
-  2a:	ba1b      	rev	r3, r3
-  2c:	f840 3b04 	str.w	r3, [r0], #4
-  30:	1c53      	adds	r3, r2, #1
-  32:	d1f8      	bne.n	26 <swapLongBuf+0x6>
-  34:	4770      	bx	lr
-  36:	bf00      	nop
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	

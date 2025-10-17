@@ -1,30 +1,50 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_tlsdesc1a_2800675c.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	push	{r3, lr}
+0x0040000b:	bl	#0x500001
+0x0040000f:	ldr	r3, [pc, #0x28]
+0x00400011:	mrc	p15, #0, r2, c13, c0, #3
+0x00400015:	ldr	r3, [r3, r2]
+0x00400017:	cmp	r0, r3
+0x00400019:	bne	#0x400033
+0x0040001b:	ldr	r3, [pc, #0x20]
+0x0040001d:	add	r3, pc
+0x0040001f:	ldr	r3, [r3]
+0x00400021:	ldr	r3, [r2, r3]
+0x00400023:	cmp	r3, #0x64
+0x00400025:	bne	#0x400033
+0x00400027:	ldr	r0, [pc, #0x18]
+0x00400029:	add	r0, pc
+0x0040002b:	bl	#0x50000d
+0x0040002f:	movs	r0, #0
+0x00400031:	pop	{r3, pc}
+0x00400033:	bl	#0x500019
 
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	movs	r0, r0
+0x0040003b:	movs	r0, r0
+0x0040003d:	movs	r4, r3
+0x0040003f:	movs	r0, r0
 
-Disassembly of section .text.startup:
+Function foo @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b508      	push	{r3, lr}
-   2:	f7ff fffe 	bl	0 <foo>
-   6:	4b0a      	ldr	r3, [pc, #40]	; (30 <main+0x30>)
-   8:	ee1d 2f70 	mrc	15, 0, r2, cr13, cr0, {3}
-   c:	589b      	ldr	r3, [r3, r2]
-   e:	4298      	cmp	r0, r3
-  10:	d10b      	bne.n	2a <main+0x2a>
-  12:	4b08      	ldr	r3, [pc, #32]	; (34 <main+0x34>)
-  14:	447b      	add	r3, pc
-  16:	681b      	ldr	r3, [r3, #0]
-  18:	58d3      	ldr	r3, [r2, r3]
-  1a:	2b64      	cmp	r3, #100	; 0x64
-  1c:	d105      	bne.n	2a <main+0x2a>
-  1e:	4806      	ldr	r0, [pc, #24]	; (38 <main+0x38>)
-  20:	4478      	add	r0, pc
-  22:	f7ff fffe 	bl	0 <puts>
-  26:	2000      	movs	r0, #0
-  28:	bd08      	pop	{r3, pc}
-  2a:	f7ff fffe 	bl	0 <abort>
-  2e:	bf00      	nop
-  30:	00000000 	.word	0x00000000
-  34:	0000001c 	.word	0x0000001c
-  38:	00000014 	.word	0x00000014
+Function puts @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function abort @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

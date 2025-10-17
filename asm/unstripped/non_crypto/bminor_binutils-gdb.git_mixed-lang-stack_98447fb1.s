@@ -1,39 +1,52 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_mixed-lang-stack_98447fb1.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	mrc	p5, #5, fp, c7, c0, #0
+0x00400004:	vcvt.f64.f32	d5, s5
+0x00400008:	vcvt.f64.f32	d6, s4
+0x0040000c:	addlt	r7, lr, r0, asr #21
 
+Function sub_400013 @ 0x00400013
+0x00400013:	mov	r2, r0
+0x00400015:	movs	r4, #0x17
+0x00400017:	str	r0, [sp, #0x34]
+0x00400019:	add	r1, pc
+0x0040001b:	vstr	d1, [sp, #8]
+0x0040001f:	movs	r0, #1
+0x00400021:	vstr	d5, [sp, #0x18]
+0x00400025:	vstr	d6, [sp, #0x10]
+0x00400029:	vstr	d7, [sp]
+0x0040002d:	vstr	s0, [sp, #0x30]
+0x00400031:	vstr	d1, [sp, #0x28]
+0x00400035:	vstr	s4, [sp, #0x20]
+0x00400039:	vstr	s5, [sp, #0x24]
+0x0040003d:	bl	#0x500001
+0x00400041:	ldr	r0, [pc, #0x18]
+0x00400043:	add	r3, sp, #0x20
+0x00400045:	add	r2, sp, #0x28
+0x00400047:	add	r1, sp, #0x30
+0x00400049:	add	r0, pc
+0x0040004b:	strd	r0, r4, [sp]
+0x0040004f:	add	r0, sp, #0x34
+0x00400051:	bl	#0x50000d
+0x00400055:	add	sp, #0x38
+0x00400057:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_400059 @ 0x00400059
+0x00400059:	lsls	r4, r0, #1
+0x0040005b:	movs	r0, r0
+0x0040005d:	movs	r4, r7
+0x0040005f:	movs	r0, r0
 
-00000000 <mixed_func_1c>:
-   0:	b510      	push	{r4, lr}
-   2:	eeb7 5ae2 	vcvt.f64.f32	d5, s5
-   6:	eeb7 6ac2 	vcvt.f64.f32	d6, s4
-   a:	eeb7 7ac0 	vcvt.f64.f32	d7, s0
-   e:	b08e      	sub	sp, #56	; 0x38
-  10:	4911      	ldr	r1, [pc, #68]	; (58 <mixed_func_1c+0x58>)
-  12:	4602      	mov	r2, r0
-  14:	2417      	movs	r4, #23
-  16:	900d      	str	r0, [sp, #52]	; 0x34
-  18:	4479      	add	r1, pc
-  1a:	ed8d 1b02 	vstr	d1, [sp, #8]
-  1e:	2001      	movs	r0, #1
-  20:	ed8d 5b06 	vstr	d5, [sp, #24]
-  24:	ed8d 6b04 	vstr	d6, [sp, #16]
-  28:	ed8d 7b00 	vstr	d7, [sp]
-  2c:	ed8d 0a0c 	vstr	s0, [sp, #48]	; 0x30
-  30:	ed8d 1b0a 	vstr	d1, [sp, #40]	; 0x28
-  34:	ed8d 2a08 	vstr	s4, [sp, #32]
-  38:	edcd 2a09 	vstr	s5, [sp, #36]	; 0x24
-  3c:	f7ff fffe 	bl	0 <__printf_chk>
-  40:	4806      	ldr	r0, [pc, #24]	; (5c <mixed_func_1c+0x5c>)
-  42:	ab08      	add	r3, sp, #32
-  44:	aa0a      	add	r2, sp, #40	; 0x28
-  46:	a90c      	add	r1, sp, #48	; 0x30
-  48:	4478      	add	r0, pc
-  4a:	e9cd 0400 	strd	r0, r4, [sp]
-  4e:	a80d      	add	r0, sp, #52	; 0x34
-  50:	f7ff fffe 	bl	0 <mixed_func_1d_>
-  54:	b00e      	add	sp, #56	; 0x38
-  56:	bd10      	pop	{r4, pc}
-  58:	0000003c 	.word	0x0000003c
-  5c:	00000010 	.word	0x00000010
+Function __printf_chk @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function mixed_func_1d_ @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

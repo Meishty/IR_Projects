@@ -1,33 +1,76 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_py-framefilter_41a0bce0_stripped.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	movwls	fp, #0x1082
+0x00400004:	ldrbmi	fp, [r0, -r2]!
+0x00400008:	ldrbtmi	r4, [fp], #-0xb03
+0x0040000c:	bhs	#0x65a07c
+0x00400010:	andhs	fp, sl, #220, #30
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bx	lr
 
-Disassembly of section .text:
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r2, r1
+0x0040001b:	movs	r0, r0
+0x0040001d:	b.w	#0x40001d
+0x0040001d:	b.w	#0x40001d
 
-00000000 <.text>:
-   0:	9301b082 	movwls	fp, #4226	; 0x1082
-   4:	4770b002 	ldrbmi	fp, [r0, -r2]!
-   8:	447b4b03 	ldrbtmi	r4, [fp], #-2819	; 0xfffff4fd
-   c:	2a09681a 	bcs	0x25a07c
-  10:	220abfdc 	andcs	fp, sl, #220, 30	; 0x370
-  14:	4770601a 			; <UNDEFINED> instruction: 0x4770601a
-  18:	0000000a 	andeq	r0, r0, sl
-  1c:	bffef7ff 	svclt	0x00fef7ff
-  20:	bffef7ff 	svclt	0x00fef7ff
-  24:	bffef7ff 	svclt	0x00fef7ff
-  28:	2001b508 	andcs	fp, r1, r8, lsl #10
-  2c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  30:	bf00bd08 	svclt	0x0000bd08
-  34:	bf00e7f4 	svclt	0x0000e7f4
-  38:	2002b508 	andcs	fp, r2, r8, lsl #10
-  3c:	fff0f7ff 			; <UNDEFINED> instruction: 0xfff0f7ff
-  40:	bf00bd08 	svclt	0x0000bd08
-  44:	f7ffb508 			; <UNDEFINED> instruction: 0xf7ffb508
-  48:	bd08ffeb 	stclt	15, cr15, [r8, #-940]	; 0xfffffc54
+Function sub_400021 @ 0x00400021
+0x00400021:	b.w	#0x400021
 
-Disassembly of section .text.startup:
+Function sub_400025 @ 0x00400025
+0x00400025:	b.w	#0x400025
 
-00000000 <.text.startup>:
-   0:	2000b508 	andcs	fp, r0, r8, lsl #10
-   4:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-   8:	bf00bd08 	svclt	0x0000bd08
+Function sub_400029 @ 0x00400029
+0x00400029:	push	{r3, lr}
+0x0040002b:	movs	r0, #1
+0x0040002d:	bl	#0x40002d
+
+Function sub_40002d @ 0x0040002d
+0x0040002d:	bl	#0x40002d
+0x00400031:	pop	{r3, pc}
+
+Function sub_400033 @ 0x00400033
+0x00400033:	nop	
+0x00400035:	b	#0x400021
+
+Function sub_400035 @ 0x00400035
+0x00400035:	b	#0x400021
+
+Function sub_400037 @ 0x00400037
+0x00400037:	nop	
+0x00400039:	push	{r3, lr}
+0x0040003b:	movs	r0, #2
+0x0040003d:	bl	#0x400021
+
+Function sub_400039 @ 0x00400039
+0x00400039:	push	{r3, lr}
+0x0040003b:	movs	r0, #2
+0x0040003d:	bl	#0x400021
+
+Function sub_400041 @ 0x00400041
+0x00400041:	pop	{r3, pc}
+
+Function sub_400043 @ 0x00400043
+0x00400043:	nop	
+0x00400045:	push	{r3, lr}
+0x00400047:	bl	#0x400021
+
+Function sub_400045 @ 0x00400045
+0x00400045:	push	{r3, lr}
+0x00400047:	bl	#0x400021
+
+Function sub_40004b @ 0x0040004b
+0x0040004b:	pop	{r3, pc}
+
+Function sub_400051 @ 0x00400051
+0x00400051:	push	{r3, lr}
+0x00400053:	movs	r0, #0
+0x00400055:	bl	#0x400055
+
+Function sub_400055 @ 0x00400055
+0x00400055:	bl	#0x400055
+0x00400059:	pop	{r3, pc}
+
+Function sub_40005b @ 0x0040005b
+0x0040005b:	nop	

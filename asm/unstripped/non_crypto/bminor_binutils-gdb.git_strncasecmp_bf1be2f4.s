@@ -1,32 +1,39 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_strncasecmp_bf1be2f4.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_400005 @ 0x00400005
+0x00400005:	stm	r0!, {r3, r4, r5}
+0x00400007:	push	{r4, lr}
+0x00400009:	adds	r4, r0, r2
+0x0040000b:	add	ip, pc
+0x0040000d:	b	#0x400015
+0x0040000f:	cbz	r3, #0x40002f
+0x00400011:	cmp	r0, r4
+0x00400013:	beq	#0x400033
+0x00400011:	cmp	r0, r4
+0x00400013:	beq	#0x400033
+0x00400015:	ldrb	r3, [r0], #1
+0x00400019:	ldrb	lr, [r1], #1
+0x0040001d:	ldrb.w	r2, [ip, r3]
+0x00400021:	ldrb.w	lr, [ip, lr]
+0x00400025:	cmp	r2, lr
+0x00400027:	beq	#0x40000f
+0x00400029:	sub.w	r0, r2, lr
+0x0040002d:	pop	{r4, pc}
+0x0040002f:	mov	r0, r3
+0x00400031:	pop	{r4, pc}
+0x00400033:	movs	r0, #0
+0x00400035:	pop	{r4, pc}
 
-Disassembly of section .text:
+Function sub_400037 @ 0x00400037
+0x00400037:	mov	r0, r2
+0x00400039:	bx	lr
 
-00000000 <strncasecmp>:
-   0:	b1ca      	cbz	r2, 36 <strncasecmp+0x36>
-   2:	f8df c038 	ldr.w	ip, [pc, #56]	; 3c <strncasecmp+0x3c>
-   6:	b510      	push	{r4, lr}
-   8:	1884      	adds	r4, r0, r2
-   a:	44fc      	add	ip, pc
-   c:	e002      	b.n	14 <strncasecmp+0x14>
-   e:	b173      	cbz	r3, 2e <strncasecmp+0x2e>
-  10:	42a0      	cmp	r0, r4
-  12:	d00e      	beq.n	32 <strncasecmp+0x32>
-  14:	f810 3b01 	ldrb.w	r3, [r0], #1
-  18:	f811 eb01 	ldrb.w	lr, [r1], #1
-  1c:	f81c 2003 	ldrb.w	r2, [ip, r3]
-  20:	f81c e00e 	ldrb.w	lr, [ip, lr]
-  24:	4572      	cmp	r2, lr
-  26:	d0f2      	beq.n	e <strncasecmp+0xe>
-  28:	eba2 000e 	sub.w	r0, r2, lr
-  2c:	bd10      	pop	{r4, pc}
-  2e:	4618      	mov	r0, r3
-  30:	bd10      	pop	{r4, pc}
-  32:	2000      	movs	r0, #0
-  34:	bd10      	pop	{r4, pc}
-  36:	4610      	mov	r0, r2
-  38:	4770      	bx	lr
-  3a:	bf00      	nop
-  3c:	0000002e 	.word	0x0000002e
+Function sub_40003b @ 0x0040003b
+0x0040003b:	nop	
+0x0040003d:	movs	r2, r6
+0x0040003f:	movs	r0, r0
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	movs	r2, r6
+0x0040003f:	movs	r0, r0

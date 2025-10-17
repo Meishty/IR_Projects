@@ -1,43 +1,72 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_strtok_r_44992c82.o:     file format elf32-littlearm
+Function strtok_r @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r5, r2
+0x00400005:	mov	r4, r0
+0x00400007:	sub	sp, #8
+0x00400009:	cbz	r0, #0x400031
+0x0040000b:	mov	r0, r4
+0x0040000d:	str	r1, [sp, #4]
+0x0040000f:	bl	#0x500001
+0x0040000b:	mov	r0, r4
+0x0040000d:	str	r1, [sp, #4]
+0x0040000f:	bl	#0x500001
+0x00400013:	ldrb	r3, [r4, r0]
+0x00400015:	adds	r6, r4, r0
+0x00400017:	cbz	r3, #0x400045
+0x00400019:	ldr	r1, [sp, #4]
+0x0040001b:	mov	r0, r6
+0x0040001d:	bl	#0x50000d
+0x00400019:	ldr	r1, [sp, #4]
+0x0040001b:	mov	r0, r6
+0x0040001d:	bl	#0x50000d
+0x00400021:	cbz	r0, #0x400035
+0x00400023:	movs	r3, #0
+0x00400025:	strb	r3, [r0], #1
+0x00400029:	str	r0, [r5]
+0x0040002b:	mov	r0, r6
+0x0040002d:	add	sp, #8
+0x0040002f:	pop	{r4, r5, r6, pc}
+0x00400023:	movs	r3, #0
+0x00400025:	strb	r3, [r0], #1
+0x00400029:	str	r0, [r5]
+0x0040002b:	mov	r0, r6
+0x0040002d:	add	sp, #8
+0x0040002f:	pop	{r4, r5, r6, pc}
+0x00400031:	ldr	r4, [r2]
+0x00400033:	b	#0x40000b
+0x00400035:	mov	r0, r6
+0x00400037:	bl	#0x500019
+0x0040003b:	add	r0, r6
+0x0040003d:	str	r0, [r5]
+0x0040003f:	mov	r0, r6
+0x00400041:	add	sp, #8
+0x00400043:	pop	{r4, r5, r6, pc}
+0x00400045:	mov	r0, r6
+0x00400047:	mov	r6, r3
+0x00400049:	str	r0, [r5]
+0x0040004b:	mov	r0, r6
+0x0040004d:	add	sp, #8
+0x0040004f:	pop	{r4, r5, r6, pc}
 
+Function strspn @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
+Function strpbrk @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
 
-00000000 <strtok_r>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	4615      	mov	r5, r2
-   4:	4604      	mov	r4, r0
-   6:	b082      	sub	sp, #8
-   8:	b190      	cbz	r0, 30 <strtok_r+0x30>
-   a:	4620      	mov	r0, r4
-   c:	9101      	str	r1, [sp, #4]
-   e:	f7ff fffe 	bl	0 <strspn>
-  12:	5c23      	ldrb	r3, [r4, r0]
-  14:	1826      	adds	r6, r4, r0
-  16:	b1ab      	cbz	r3, 44 <strtok_r+0x44>
-  18:	9901      	ldr	r1, [sp, #4]
-  1a:	4630      	mov	r0, r6
-  1c:	f7ff fffe 	bl	0 <strpbrk>
-  20:	b140      	cbz	r0, 34 <strtok_r+0x34>
-  22:	2300      	movs	r3, #0
-  24:	f800 3b01 	strb.w	r3, [r0], #1
-  28:	6028      	str	r0, [r5, #0]
-  2a:	4630      	mov	r0, r6
-  2c:	b002      	add	sp, #8
-  2e:	bd70      	pop	{r4, r5, r6, pc}
-  30:	6814      	ldr	r4, [r2, #0]
-  32:	e7ea      	b.n	a <strtok_r+0xa>
-  34:	4630      	mov	r0, r6
-  36:	f7ff fffe 	bl	0 <strlen>
-  3a:	4430      	add	r0, r6
-  3c:	6028      	str	r0, [r5, #0]
-  3e:	4630      	mov	r0, r6
-  40:	b002      	add	sp, #8
-  42:	bd70      	pop	{r4, r5, r6, pc}
-  44:	4630      	mov	r0, r6
-  46:	461e      	mov	r6, r3
-  48:	6028      	str	r0, [r5, #0]
-  4a:	4630      	mov	r0, r6
-  4c:	b002      	add	sp, #8
-  4e:	bd70      	pop	{r4, r5, r6, pc}
+Function strlen @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0

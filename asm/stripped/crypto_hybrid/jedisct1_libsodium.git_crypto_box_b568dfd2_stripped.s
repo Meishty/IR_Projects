@@ -1,27 +1,73 @@
 
-/root/projects/compiled/crypto_hybrid/stripped/jedisct1_libsodium.git_crypto_box_b568dfd2_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	bx	lr
 
+Function sub_400005 @ 0x00400005
+0x00400005:	movs	r0, #0x20
+0x00400007:	bx	lr
 
-Disassembly of section .text:
+Function sub_400009 @ 0x00400009
+0x00400009:	movs	r0, #0x20
+0x0040000b:	bx	lr
 
-00000000 <.text>:
-   0:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   4:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   8:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-   c:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-  10:	47702018 			; <UNDEFINED> instruction: 0x47702018
-  14:	47702020 	ldrbmi	r2, [r0, -r0, lsr #32]!
-  18:	47702010 			; <UNDEFINED> instruction: 0x47702010
-  1c:	47702010 			; <UNDEFINED> instruction: 0x47702010
-  20:	0010f06f 	andseq	pc, r0, pc, rrx
-  24:	bf004770 	svclt	0x00004770
-  28:	44784801 	ldrbtmi	r4, [r8], #-2049	; 0xfffff7ff
-  2c:	bf004770 	svclt	0x00004770
-  30:	00000002 	andeq	r0, r0, r2
-  34:	bffef7ff 	svclt	0x00fef7ff
-  38:	bffef7ff 	svclt	0x00fef7ff
-  3c:	bffef7ff 	svclt	0x00fef7ff
-  40:	bffef7ff 	svclt	0x00fef7ff
-  44:	bffef7ff 	svclt	0x00fef7ff
-  48:	bffef7ff 	svclt	0x00fef7ff
-  4c:	bffef7ff 	svclt	0x00fef7ff
+Function sub_40000d @ 0x0040000d
+0x0040000d:	movs	r0, #0x20
+0x0040000f:	bx	lr
+
+Function sub_400011 @ 0x00400011
+0x00400011:	movs	r0, #0x18
+0x00400013:	bx	lr
+
+Function sub_400015 @ 0x00400015
+0x00400015:	movs	r0, #0x20
+0x00400017:	bx	lr
+
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r0, #0x10
+0x0040001b:	bx	lr
+
+Function sub_40001d @ 0x0040001d
+0x0040001d:	movs	r0, #0x10
+0x0040001f:	bx	lr
+
+Function sub_400021 @ 0x00400021
+0x00400021:	mvn	r0, #0x10
+0x00400025:	bx	lr
+
+Function sub_400027 @ 0x00400027
+0x00400027:	nop	
+0x00400029:	ldr	r0, [pc, #4]
+0x0040002b:	add	r0, pc
+0x0040002d:	bx	lr
+
+Function sub_400029 @ 0x00400029
+0x00400029:	ldr	r0, [pc, #4]
+0x0040002b:	add	r0, pc
+0x0040002d:	bx	lr
+
+Function sub_40002f @ 0x0040002f
+0x0040002f:	nop	
+0x00400031:	movs	r2, r0
+0x00400033:	movs	r0, r0
+0x00400035:	b.w	#0x400035
+
+Function sub_400035 @ 0x00400035
+0x00400035:	b.w	#0x400035
+
+Function sub_400039 @ 0x00400039
+0x00400039:	b.w	#0x400039
+
+Function sub_40003d @ 0x0040003d
+0x0040003d:	b.w	#0x40003d
+
+Function sub_400041 @ 0x00400041
+0x00400041:	b.w	#0x400041
+
+Function sub_400045 @ 0x00400045
+0x00400045:	b.w	#0x400045
+
+Function sub_400049 @ 0x00400049
+0x00400049:	b.w	#0x400049
+
+Function sub_40004d @ 0x0040004d
+0x0040004d:	b.w	#0x40004d

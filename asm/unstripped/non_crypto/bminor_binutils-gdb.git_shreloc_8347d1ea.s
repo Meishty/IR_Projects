@@ -1,23 +1,33 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_shreloc_8347d1ea.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_40000f @ 0x0040000f
+0x0040000f:	vtbl.8	d20, {d8, d9, d10, d11}, d5
+0x00400013:	ldr	r3, [r4, r3]
+0x00400015:	ldr	r0, [r3]
+0x00400017:	bl	#0x50000d
+0x0040001b:	movs	r0, #0
+0x0040001d:	pop	{r4, pc}
 
-Disassembly of section .text.startup:
+Function sub_40001f @ 0x0040001f
+0x0040001f:	nop	
+0x00400021:	movs	r6, r2
+0x00400023:	movs	r0, r0
+0x00400025:	movs	r0, r0
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, r0
+0x0040002b:	movs	r0, r0
 
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	4c07      	ldr	r4, [pc, #28]	; (20 <main+0x20>)
-   4:	4b07      	ldr	r3, [pc, #28]	; (24 <main+0x24>)
-   6:	447c      	add	r4, pc
-   8:	58e3      	ldr	r3, [r4, r3]
-   a:	6818      	ldr	r0, [r3, #0]
-   c:	f7ff fffe 	bl	0 <fn_1>
-  10:	4b05      	ldr	r3, [pc, #20]	; (28 <main+0x28>)
-  12:	58e3      	ldr	r3, [r4, r3]
-  14:	6818      	ldr	r0, [r3, #0]
-  16:	f7ff fffe 	bl	0 <fn_2>
-  1a:	2000      	movs	r0, #0
-  1c:	bd10      	pop	{r4, pc}
-  1e:	bf00      	nop
-  20:	00000016 	.word	0x00000016
-	...
+Function sub_400021 @ 0x00400021
+0x00400021:	movs	r6, r2
+0x00400023:	movs	r0, r0
+0x00400025:	movs	r0, r0
+0x00400027:	movs	r0, r0
+0x00400029:	movs	r0, r0
+0x0040002b:	movs	r0, r0
+
+Function fn_2 @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

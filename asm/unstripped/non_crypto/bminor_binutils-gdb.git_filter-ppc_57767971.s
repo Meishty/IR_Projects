@@ -1,38 +1,59 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_filter-ppc_57767971.o:     file format elf32-littlearm
+Function it_is @ 0x00400001
+0x00400001:	push	{r4, r5, r6, lr}
+0x00400003:	mov	r4, r1
+0x00400005:	mov	r6, r0
+0x00400007:	bl	#0x500001
+0x0040000b:	mov	r5, r0
+0x0040000d:	ldrb	r0, [r4]
+0x0040000f:	cbz	r0, #0x40003f
+0x00400011:	mov	r2, r5
+0x00400013:	mov	r1, r6
+0x00400015:	mov	r0, r4
+0x00400017:	bl	#0x50000d
+0x00400011:	mov	r2, r5
+0x00400013:	mov	r1, r6
+0x00400015:	mov	r0, r4
+0x00400017:	bl	#0x50000d
+0x0040001b:	cbnz	r0, #0x400027
+0x0040001d:	ldrb	r3, [r4, r5]
+0x0040001f:	cmp	r3, #0
+0x00400021:	it	ne
+0x00400023:	cmpne	r3, #0x2c
+0x00400025:	beq	#0x400041
+0x0040001d:	ldrb	r3, [r4, r5]
+0x0040001f:	cmp	r3, #0
+0x00400021:	it	ne
+0x00400023:	cmpne	r3, #0x2c
+0x00400025:	beq	#0x400041
+0x00400027:	ldrb	r0, [r4]
+0x00400029:	cmp	r0, #0x2c
+0x0040002b:	beq	#0x400037
+0x0040002d:	cbz	r0, #0x40003f
+0x0040002f:	ldrb	r0, [r4, #1]!
+0x00400033:	cmp	r0, #0x2c
+0x00400035:	bne	#0x40002d
+0x0040002f:	ldrb	r0, [r4, #1]!
+0x00400033:	cmp	r0, #0x2c
+0x00400035:	bne	#0x40002d
+0x00400037:	ldrb	r0, [r4, #1]
+0x00400039:	adds	r4, #1
+0x0040003b:	cmp	r0, #0
+0x0040003d:	bne	#0x400011
+0x0040003f:	pop	{r4, r5, r6, pc}
+0x00400041:	movs	r0, #1
+0x00400043:	pop	{r4, r5, r6, pc}
 
+Function strlen @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
 
-Disassembly of section .text:
-
-00000000 <it_is>:
-   0:	b570      	push	{r4, r5, r6, lr}
-   2:	460c      	mov	r4, r1
-   4:	4606      	mov	r6, r0
-   6:	f7ff fffe 	bl	0 <strlen>
-   a:	4605      	mov	r5, r0
-   c:	7820      	ldrb	r0, [r4, #0]
-   e:	b1b0      	cbz	r0, 3e <it_is+0x3e>
-  10:	462a      	mov	r2, r5
-  12:	4631      	mov	r1, r6
-  14:	4620      	mov	r0, r4
-  16:	f7ff fffe 	bl	0 <strncmp>
-  1a:	b920      	cbnz	r0, 26 <it_is+0x26>
-  1c:	5d63      	ldrb	r3, [r4, r5]
-  1e:	2b00      	cmp	r3, #0
-  20:	bf18      	it	ne
-  22:	2b2c      	cmpne	r3, #44	; 0x2c
-  24:	d00c      	beq.n	40 <it_is+0x40>
-  26:	7820      	ldrb	r0, [r4, #0]
-  28:	282c      	cmp	r0, #44	; 0x2c
-  2a:	d004      	beq.n	36 <it_is+0x36>
-  2c:	b138      	cbz	r0, 3e <it_is+0x3e>
-  2e:	f814 0f01 	ldrb.w	r0, [r4, #1]!
-  32:	282c      	cmp	r0, #44	; 0x2c
-  34:	d1fa      	bne.n	2c <it_is+0x2c>
-  36:	7860      	ldrb	r0, [r4, #1]
-  38:	3401      	adds	r4, #1
-  3a:	2800      	cmp	r0, #0
-  3c:	d1e8      	bne.n	10 <it_is+0x10>
-  3e:	bd70      	pop	{r4, r5, r6, pc}
-  40:	2001      	movs	r0, #1
-  42:	bd70      	pop	{r4, r5, r6, pc}
+Function strncmp @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

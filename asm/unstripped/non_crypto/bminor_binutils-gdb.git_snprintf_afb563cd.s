@@ -1,38 +1,53 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_snprintf_afb563cd.o:     file format elf32-littlearm
+Function _start @ 0x00400000
 
+Function sub_400005 @ 0x00400005
+0x00400005:	stm	r0!, {r2, r6}
+0x00400007:	push	{lr}
+0x00400009:	ldr	r2, [pc, #0x40]
+0x0040000b:	add	ip, pc
+0x0040000d:	sub	sp, #0xc
+0x0040000f:	add	r3, sp, #0x10
+0x00400011:	ldr.w	r2, [ip, r2]
+0x00400015:	ldr	r2, [r2]
+0x00400017:	str	r2, [sp, #4]
+0x00400019:	mov.w	r2, #0
+0x0040001d:	ldr	r2, [r3], #4
+0x00400021:	str	r3, [sp]
+0x00400023:	bl	#0x500001
+0x00400027:	ldr	r2, [pc, #0x28]
+0x00400029:	ldr	r3, [pc, #0x20]
+0x0040002b:	add	r2, pc
+0x0040002d:	ldr	r3, [r2, r3]
+0x0040002f:	ldr	r2, [r3]
+0x00400031:	ldr	r3, [sp, #4]
+0x00400033:	eors	r2, r3
+0x00400035:	mov.w	r3, #0
+0x00400039:	bne	#0x400045
+0x0040003b:	add	sp, #0xc
+0x0040003d:	ldr	lr, [sp], #4
+0x00400041:	add	sp, #8
+0x00400043:	bx	lr
+0x00400045:	bl	#0x50000d
 
-Disassembly of section .text:
+Function sub_400049 @ 0x00400049
+0x00400049:	movs	r2, r7
+0x0040004b:	movs	r0, r0
+0x0040004d:	movs	r0, r0
+0x0040004f:	movs	r0, r0
+0x00400051:	movs	r2, r4
+0x00400053:	movs	r0, r0
 
-00000000 <snprintf>:
-   0:	b40c      	push	{r2, r3}
-   2:	f8df c044 	ldr.w	ip, [pc, #68]	; 48 <snprintf+0x48>
-   6:	b500      	push	{lr}
-   8:	4a10      	ldr	r2, [pc, #64]	; (4c <snprintf+0x4c>)
-   a:	44fc      	add	ip, pc
-   c:	b083      	sub	sp, #12
-   e:	ab04      	add	r3, sp, #16
-  10:	f85c 2002 	ldr.w	r2, [ip, r2]
-  14:	6812      	ldr	r2, [r2, #0]
-  16:	9201      	str	r2, [sp, #4]
-  18:	f04f 0200 	mov.w	r2, #0
-  1c:	f853 2b04 	ldr.w	r2, [r3], #4
-  20:	9300      	str	r3, [sp, #0]
-  22:	f7ff fffe 	bl	0 <vsnprintf>
-  26:	4a0a      	ldr	r2, [pc, #40]	; (50 <snprintf+0x50>)
-  28:	4b08      	ldr	r3, [pc, #32]	; (4c <snprintf+0x4c>)
-  2a:	447a      	add	r2, pc
-  2c:	58d3      	ldr	r3, [r2, r3]
-  2e:	681a      	ldr	r2, [r3, #0]
-  30:	9b01      	ldr	r3, [sp, #4]
-  32:	405a      	eors	r2, r3
-  34:	f04f 0300 	mov.w	r3, #0
-  38:	d104      	bne.n	44 <snprintf+0x44>
-  3a:	b003      	add	sp, #12
-  3c:	f85d eb04 	ldr.w	lr, [sp], #4
-  40:	b002      	add	sp, #8
-  42:	4770      	bx	lr
-  44:	f7ff fffe 	bl	0 <__stack_chk_fail>
-  48:	0000003a 	.word	0x0000003a
-  4c:	00000000 	.word	0x00000000
-  50:	00000022 	.word	0x00000022
+Function vsnprintf @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0

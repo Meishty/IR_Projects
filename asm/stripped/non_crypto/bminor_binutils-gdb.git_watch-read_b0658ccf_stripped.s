@@ -1,11 +1,12 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_watch-read_b0658ccf_stripped.o:     file format elf32-littlearm
-
-
-Disassembly of section .text.startup:
-
-00000000 <.text.startup>:
-   0:	447a4a02 	ldrbtmi	r4, [sl], #-2562	; 0xfffff5fe
-   4:	33016813 	movwcc	r6, #6163	; 0x1813
-   8:	e7fb6013 			; <UNDEFINED> instruction: 0xe7fb6013
-   c:	00000006 	andeq	r0, r0, r6
+Function sub_400005 @ 0x00400005
+0x00400005:	ldr	r2, [pc, #8]
+0x00400007:	add	r2, pc
+0x00400009:	ldr	r3, [r2]
+0x0040000b:	adds	r3, #1
+0x0040000d:	str	r3, [r2]
+0x0040000f:	b	#0x400009
+0x00400009:	ldr	r3, [r2]
+0x0040000b:	adds	r3, #1
+0x0040000d:	str	r3, [r2]
+0x0040000f:	b	#0x400009

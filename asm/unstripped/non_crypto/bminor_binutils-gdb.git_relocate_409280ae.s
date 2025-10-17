@@ -1,25 +1,18 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_relocate_409280ae.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	ldrbmi	r2, [r0, -r5]!
+0x00400004:	ldrbmi	r2, [r0, -r6]!
+0x00400008:	stmdami	r3, {r3, r4, r8, fp, ip, sp, pc}
+0x0040000c:	andlo	r4, r4, r8, ror r4
+0x00400010:	stmdami	r2, {r4, r5, r6, r8, sb, sl, lr}
+0x0040000c:	andlo	r4, r4, r8, ror r4
+0x00400010:	stmdami	r2, {r4, r5, r6, r8, sb, sl, lr}
 
+Function sub_400017 @ 0x00400017
+0x00400017:	bx	lr
 
-Disassembly of section .text:
-
-00000000 <function_foo>:
-   0:	2005      	movs	r0, #5
-   2:	4770      	bx	lr
-
-00000004 <function_bar>:
-   4:	2006      	movs	r0, #6
-   6:	4770      	bx	lr
-
-00000008 <hack>:
-   8:	b918      	cbnz	r0, 12 <hack+0xa>
-   a:	4803      	ldr	r0, [pc, #12]	; (18 <hack+0x10>)
-   c:	4478      	add	r0, pc
-   e:	3004      	adds	r0, #4
-  10:	4770      	bx	lr
-  12:	4802      	ldr	r0, [pc, #8]	; (1c <hack+0x14>)
-  14:	4478      	add	r0, pc
-  16:	4770      	bx	lr
-  18:	00000008 	.word	0x00000008
-  1c:	00000004 	.word	0x00000004
+Function sub_400019 @ 0x00400019
+0x00400019:	movs	r0, r2
+0x0040001b:	movs	r0, r0
+0x0040001d:	movs	r0, r1
+0x0040001f:	movs	r0, r0

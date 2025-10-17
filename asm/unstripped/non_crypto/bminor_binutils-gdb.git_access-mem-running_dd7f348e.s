@@ -1,22 +1,27 @@
 
-/root/projects/compiled/non_crypto/unstripped/bminor_binutils-gdb.git_access-mem-running_dd7f348e.o:     file format elf32-littlearm
+Function main @ 0x00400009
+0x00400009:	push	{r4, lr}
+0x0040000b:	movs	r3, #1
+0x0040000d:	ldr	r4, [pc, #0x18]
+0x0040000f:	add	r4, pc
+0x00400011:	movw	r0, #0x1388
+0x00400015:	adds	r3, #1
+0x00400017:	str	r3, [r4]
+0x00400019:	bl	#0x500001
+0x00400011:	movw	r0, #0x1388
+0x00400015:	adds	r3, #1
+0x00400017:	str	r3, [r4]
+0x00400019:	bl	#0x500001
+0x0040001d:	ldr	r3, [r4]
+0x0040001f:	cmp	r3, #0
+0x00400021:	bne	#0x400011
+0x00400023:	mov	r0, r3
+0x00400025:	pop	{r4, pc}
 
+Function sub_400027 @ 0x00400027
 
-Disassembly of section .text.startup:
-
-00000000 <main>:
-   0:	b510      	push	{r4, lr}
-   2:	2301      	movs	r3, #1
-   4:	4c06      	ldr	r4, [pc, #24]	; (20 <main+0x20>)
-   6:	447c      	add	r4, pc
-   8:	f241 3088 	movw	r0, #5000	; 0x1388
-   c:	3301      	adds	r3, #1
-   e:	6023      	str	r3, [r4, #0]
-  10:	f7ff fffe 	bl	0 <usleep>
-  14:	6823      	ldr	r3, [r4, #0]
-  16:	2b00      	cmp	r3, #0
-  18:	d1f6      	bne.n	8 <main+0x8>
-  1a:	4618      	mov	r0, r3
-  1c:	bd10      	pop	{r4, pc}
-  1e:	bf00      	nop
-  20:	00000016 	.word	0x00000016
+Function usleep @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0

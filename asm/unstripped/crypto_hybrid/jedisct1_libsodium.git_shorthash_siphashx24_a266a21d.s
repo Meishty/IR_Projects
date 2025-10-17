@@ -1,13 +1,8 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_shorthash_siphashx24_a266a21d.o:     file format elf32-littlearm
+Function crypto_shorthash_siphashx24_bytes @ 0x00400001
+0x00400001:	movs	r0, #0x10
+0x00400003:	bx	lr
 
-
-Disassembly of section .text:
-
-00000000 <crypto_shorthash_siphashx24_bytes>:
-   0:	2010      	movs	r0, #16
-   2:	4770      	bx	lr
-
-00000004 <crypto_shorthash_siphashx24_keybytes>:
-   4:	2010      	movs	r0, #16
-   6:	4770      	bx	lr
+Function crypto_shorthash_siphashx24_keybytes @ 0x00400005
+0x00400005:	movs	r0, #0x10
+0x00400007:	bx	lr

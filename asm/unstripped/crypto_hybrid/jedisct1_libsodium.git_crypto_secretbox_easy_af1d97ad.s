@@ -1,349 +1,594 @@
 
-/root/projects/compiled/crypto_hybrid/unstripped/jedisct1_libsodium.git_crypto_secretbox_easy_af1d97ad.o:     file format elf32-littlearm
+Function _start @ 0x00400000
+0x00400000:	svcmi	#0xf0e92d
+0x00400004:	bmi	#0x1d11864
 
+Function sub_40000b @ 0x0040000b
+0x0040000b:	mov	r4, r0
+0x0040000d:	vpush	{d8}
+0x00400011:	add	r2, pc
+0x00400013:	sub	sp, #0x19c
+0x00400015:	vmov	s17, r1
+0x00400019:	add.w	fp, sp, #0x134
+0x0040001d:	add.w	r8, sp, #0x37
+0x00400021:	ldr	r3, [r2, r3]
+0x00400023:	mov	r0, fp
+0x00400025:	ldr.w	sl, [sp, #0x1d0]
+0x00400029:	bic	r8, r8, #0xf
+0x0040002d:	ldr	r3, [r3]
+0x0040002f:	str	r3, [sp, #0x194]
+0x00400031:	mov.w	r3, #0
+0x00400035:	ldr	r2, [sp, #0x1d4]
+0x00400037:	movs	r3, #0
+0x00400039:	mov	r1, sl
+0x0040003b:	ldrd	r5, r7, [sp, #0x1c8]
+0x0040003f:	bl	#0x500001
+0x00400043:	cmp	r4, r6
+0x00400045:	bls.w	#0x40014d
+0x00400049:	subs	r3, r4, r6
+0x0040004b:	movs	r2, #0
+0x0040004d:	cmp	r3, r5
+0x0040004f:	sbcs	r2, r7
+0x00400051:	bhs	#0x40014d
+0x00400053:	mov	r1, r6
+0x00400055:	mov	r2, r5
+0x00400057:	mov	r0, r4
+0x00400059:	mov	r6, r4
+0x0040005b:	bl	#0x50000d
+0x0040005f:	add.w	sb, sp, #0x154
+0x00400063:	movs	r2, #0x20
+0x00400065:	movs	r1, #0
+0x00400067:	mov	r0, sb
+0x00400069:	bl	#0x500019
+0x0040006d:	cmp	r5, #0x21
+0x0040006f:	sbcs	r3, r7, #0
+0x00400073:	strd	r5, r7, [sp, #0x1c]
+0x00400077:	ittt	hs
+0x00400079:	movhs	r3, #0
+0x0040007b:	movhs	r2, #0x20
+0x0040007d:	strdhs	r2, r3, [sp, #0x1c]
+0x00400081:	add.w	r3, sl, #0x10
+0x00400085:	str	r3, [sp, #0x24]
+0x00400087:	orrs.w	r3, r5, r7
+0x0040008b:	beq	#0x400169
+0x0040008d:	ldr	r2, [sp, #0x1c]
+0x0040008f:	it	eq
+0x00400091:	moveq	r1, #1
+0x00400093:	add.w	sl, sp, #0x174
+0x00400097:	it	ne
+0x00400099:	movne	r1, r2
+0x0040009b:	mov	r0, sl
+0x0040009d:	mov	r2, r1
+0x0040009f:	vmov	s16, r1
+0x004000a3:	mov	r1, r6
+0x004000a5:	bl	#0x500025
+0x004000a9:	ldr	r3, [sp, #0x24]
+0x004000ab:	movs	r2, #0x40
+0x004000ad:	mov	r1, sb
+0x004000af:	str	r3, [sp]
+0x004000b1:	mov	r0, sb
+0x004000b3:	movs	r3, #0
+0x004000b5:	str.w	fp, [sp, #4]
+0x004000b9:	bl	#0x500031
+0x004000bd:	mov	r1, sb
+0x004000bf:	mov	r0, r8
+0x004000c1:	bl	#0x50003d
+0x004000c5:	vmov	r2, s16
+0x004000c9:	mov	r1, sl
+0x004000cb:	mov	r0, r4
+0x004000cd:	bl	#0x500025
+0x004000d1:	mov	r0, sb
+0x004000d3:	movs	r1, #0x40
+0x004000d5:	bl	#0x500049
+0x004000d9:	ldr	r2, [sp, #0x1c]
+0x004000db:	ldr	r3, [sp, #0x20]
+0x004000dd:	cmp	r2, r5
+0x004000df:	sbcs	r3, r7
+0x004000e1:	bhs	#0x400105
+0x004000e3:	ldr	r3, [sp, #0x24]
+0x004000e5:	mov	r0, r2
+0x004000e7:	vldr	d7, [pc, #0xa8]
+0x004000eb:	adds	r1, r6, r2
+0x004000ed:	str	r3, [sp]
+0x004000ef:	subs	r2, r5, r2
+0x004000f1:	ldr	r3, [sp, #0x20]
+0x004000f3:	add	r0, r4
+0x004000f5:	str.w	fp, [sp, #0x10]
+0x004000f9:	sbc.w	r3, r7, r3
+0x004000fd:	vstr	d7, [sp, #8]
+0x00400101:	bl	#0x500055
+0x00400105:	mov	r0, fp
+0x00400107:	movs	r1, #0x20
+0x00400109:	bl	#0x500049
+0x0040010d:	mov	r2, r5
+0x0040010f:	mov	r3, r7
+0x00400111:	mov	r1, r4
+0x00400113:	mov	r0, r8
+0x00400115:	bl	#0x500061
+0x00400119:	vmov	r1, s17
+0x0040011d:	mov	r0, r8
+0x0040011f:	bl	#0x50006d
+0x00400123:	mov.w	r1, #0x100
+0x00400127:	mov	r0, r8
+0x00400129:	bl	#0x500049
+0x0040012d:	ldr	r2, [pc, #0x70]
+0x0040012f:	ldr	r3, [pc, #0x6c]
+0x00400131:	add	r2, pc
+0x00400133:	ldr	r3, [r2, r3]
+0x00400135:	ldr	r2, [r3]
+0x00400137:	ldr	r3, [sp, #0x194]
+0x00400139:	eors	r2, r3
+0x0040013b:	mov.w	r3, #0
+0x0040013f:	bne	#0x40018d
+0x00400141:	movs	r0, #0
+0x00400143:	add	sp, #0x19c
+0x00400145:	vpop	{d8}
+0x00400149:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x0040014d:	cmp	r4, r6
+0x0040014f:	bhs	#0x40005f
+0x00400151:	subs	r3, r6, r4
+0x00400153:	movs	r2, #0
+0x00400155:	cmp	r3, r5
+0x00400157:	sbcs	r2, r7
+0x00400159:	bhs	#0x40005f
+0x0040015b:	mov	r1, r6
+0x0040015d:	mov	r2, r5
+0x0040015f:	mov	r0, r4
+0x00400161:	mov	r6, r4
+0x00400163:	bl	#0x50000d
+0x00400167:	b	#0x40005f
+0x00400169:	ldr	r3, [sp, #0x24]
+0x0040016b:	mov	r1, sb
+0x0040016d:	movs	r2, #0x40
+0x0040016f:	strd	r3, fp, [sp]
+0x00400173:	mov	r0, sb
+0x00400175:	movs	r3, #0
+0x00400177:	bl	#0x500031
+0x0040017b:	mov	r1, sb
+0x0040017d:	mov	r0, r8
+0x0040017f:	bl	#0x50003d
+0x00400183:	mov	r0, sb
+0x00400185:	movs	r1, #0x40
+0x00400187:	bl	#0x500049
+0x0040018b:	b	#0x400105
+0x0040018d:	bl	#0x500079
 
-Disassembly of section .text:
+Function sub_400199 @ 0x00400199
+0x00400199:	lsls	r4, r0, #6
+0x0040019b:	movs	r0, r0
+0x0040019d:	movs	r0, r0
+0x0040019f:	movs	r0, r0
+0x004001a1:	lsls	r4, r5, #1
+0x004001a3:	movs	r0, r0
+0x004001a5:	push	{r4, r5, lr}
+0x004001a7:	mvn	ip, #0x10
+0x004001ab:	mov	r4, r2
+0x004001ad:	cmp	ip, r4
+0x004001af:	mov	r2, r1
+0x004001b1:	mov.w	r1, #0
+0x004001b5:	sub	sp, #0x14
+0x004001b7:	sbcs	r1, r3
+0x004001b9:	blo	#0x4001d3
 
-00000000 <crypto_secretbox_detached>:
-   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
-   4:	4616      	mov	r6, r2
-   6:	4a64      	ldr	r2, [pc, #400]	; (198 <crypto_secretbox_detached+0x198>)
-   8:	4b64      	ldr	r3, [pc, #400]	; (19c <crypto_secretbox_detached+0x19c>)
-   a:	4604      	mov	r4, r0
-   c:	ed2d 8b02 	vpush	{d8}
-  10:	447a      	add	r2, pc
-  12:	b0e7      	sub	sp, #412	; 0x19c
-  14:	ee08 1a90 	vmov	s17, r1
-  18:	f50d 7b9a 	add.w	fp, sp, #308	; 0x134
-  1c:	f10d 0837 	add.w	r8, sp, #55	; 0x37
-  20:	58d3      	ldr	r3, [r2, r3]
-  22:	4658      	mov	r0, fp
-  24:	f8dd a1d0 	ldr.w	sl, [sp, #464]	; 0x1d0
-  28:	f028 080f 	bic.w	r8, r8, #15
-  2c:	681b      	ldr	r3, [r3, #0]
-  2e:	9365      	str	r3, [sp, #404]	; 0x194
-  30:	f04f 0300 	mov.w	r3, #0
-  34:	9a75      	ldr	r2, [sp, #468]	; 0x1d4
-  36:	2300      	movs	r3, #0
-  38:	4651      	mov	r1, sl
-  3a:	e9dd 5772 	ldrd	r5, r7, [sp, #456]	; 0x1c8
-  3e:	f7ff fffe 	bl	0 <crypto_core_hsalsa20>
-  42:	42b4      	cmp	r4, r6
-  44:	f240 8082 	bls.w	14c <crypto_secretbox_detached+0x14c>
-  48:	1ba3      	subs	r3, r4, r6
-  4a:	2200      	movs	r2, #0
-  4c:	42ab      	cmp	r3, r5
-  4e:	41ba      	sbcs	r2, r7
-  50:	d27c      	bcs.n	14c <crypto_secretbox_detached+0x14c>
-  52:	4631      	mov	r1, r6
-  54:	462a      	mov	r2, r5
-  56:	4620      	mov	r0, r4
-  58:	4626      	mov	r6, r4
-  5a:	f7ff fffe 	bl	0 <memmove>
-  5e:	f50d 79aa 	add.w	r9, sp, #340	; 0x154
-  62:	2220      	movs	r2, #32
-  64:	2100      	movs	r1, #0
-  66:	4648      	mov	r0, r9
-  68:	f7ff fffe 	bl	0 <memset>
-  6c:	2d21      	cmp	r5, #33	; 0x21
-  6e:	f177 0300 	sbcs.w	r3, r7, #0
-  72:	e9cd 5707 	strd	r5, r7, [sp, #28]
-  76:	bf22      	ittt	cs
-  78:	2300      	movcs	r3, #0
-  7a:	2220      	movcs	r2, #32
-  7c:	e9cd 2307 	strdcs	r2, r3, [sp, #28]
-  80:	f10a 0310 	add.w	r3, sl, #16
-  84:	9309      	str	r3, [sp, #36]	; 0x24
-  86:	ea55 0307 	orrs.w	r3, r5, r7
-  8a:	d06d      	beq.n	168 <crypto_secretbox_detached+0x168>
-  8c:	9a07      	ldr	r2, [sp, #28]
-  8e:	bf08      	it	eq
-  90:	2101      	moveq	r1, #1
-  92:	f50d 7aba 	add.w	sl, sp, #372	; 0x174
-  96:	bf18      	it	ne
-  98:	4611      	movne	r1, r2
-  9a:	4650      	mov	r0, sl
-  9c:	460a      	mov	r2, r1
-  9e:	ee08 1a10 	vmov	s16, r1
-  a2:	4631      	mov	r1, r6
-  a4:	f7ff fffe 	bl	0 <memcpy>
-  a8:	9b09      	ldr	r3, [sp, #36]	; 0x24
-  aa:	2240      	movs	r2, #64	; 0x40
-  ac:	4649      	mov	r1, r9
-  ae:	9300      	str	r3, [sp, #0]
-  b0:	4648      	mov	r0, r9
-  b2:	2300      	movs	r3, #0
-  b4:	f8cd b004 	str.w	fp, [sp, #4]
-  b8:	f7ff fffe 	bl	0 <crypto_stream_salsa20_xor>
-  bc:	4649      	mov	r1, r9
-  be:	4640      	mov	r0, r8
-  c0:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_init>
-  c4:	ee18 2a10 	vmov	r2, s16
-  c8:	4651      	mov	r1, sl
-  ca:	4620      	mov	r0, r4
-  cc:	f7ff fffe 	bl	0 <memcpy>
-  d0:	4648      	mov	r0, r9
-  d2:	2140      	movs	r1, #64	; 0x40
-  d4:	f7ff fffe 	bl	0 <sodium_memzero>
-  d8:	9a07      	ldr	r2, [sp, #28]
-  da:	9b08      	ldr	r3, [sp, #32]
-  dc:	42aa      	cmp	r2, r5
-  de:	41bb      	sbcs	r3, r7
-  e0:	d210      	bcs.n	104 <crypto_secretbox_detached+0x104>
-  e2:	9b09      	ldr	r3, [sp, #36]	; 0x24
-  e4:	4610      	mov	r0, r2
-  e6:	ed9f 7b2a 	vldr	d7, [pc, #168]	; 190 <crypto_secretbox_detached+0x190>
-  ea:	18b1      	adds	r1, r6, r2
-  ec:	9300      	str	r3, [sp, #0]
-  ee:	1aaa      	subs	r2, r5, r2
-  f0:	9b08      	ldr	r3, [sp, #32]
-  f2:	4420      	add	r0, r4
-  f4:	f8cd b010 	str.w	fp, [sp, #16]
-  f8:	eb67 0303 	sbc.w	r3, r7, r3
-  fc:	ed8d 7b02 	vstr	d7, [sp, #8]
- 100:	f7ff fffe 	bl	0 <crypto_stream_salsa20_xor_ic>
- 104:	4658      	mov	r0, fp
- 106:	2120      	movs	r1, #32
- 108:	f7ff fffe 	bl	0 <sodium_memzero>
- 10c:	462a      	mov	r2, r5
- 10e:	463b      	mov	r3, r7
- 110:	4621      	mov	r1, r4
- 112:	4640      	mov	r0, r8
- 114:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_update>
- 118:	ee18 1a90 	vmov	r1, s17
- 11c:	4640      	mov	r0, r8
- 11e:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_final>
- 122:	f44f 7180 	mov.w	r1, #256	; 0x100
- 126:	4640      	mov	r0, r8
- 128:	f7ff fffe 	bl	0 <sodium_memzero>
- 12c:	4a1c      	ldr	r2, [pc, #112]	; (1a0 <crypto_secretbox_detached+0x1a0>)
- 12e:	4b1b      	ldr	r3, [pc, #108]	; (19c <crypto_secretbox_detached+0x19c>)
- 130:	447a      	add	r2, pc
- 132:	58d3      	ldr	r3, [r2, r3]
- 134:	681a      	ldr	r2, [r3, #0]
- 136:	9b65      	ldr	r3, [sp, #404]	; 0x194
- 138:	405a      	eors	r2, r3
- 13a:	f04f 0300 	mov.w	r3, #0
- 13e:	d125      	bne.n	18c <crypto_secretbox_detached+0x18c>
- 140:	2000      	movs	r0, #0
- 142:	b067      	add	sp, #412	; 0x19c
- 144:	ecbd 8b02 	vpop	{d8}
- 148:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 14c:	42b4      	cmp	r4, r6
- 14e:	d286      	bcs.n	5e <crypto_secretbox_detached+0x5e>
- 150:	1b33      	subs	r3, r6, r4
- 152:	2200      	movs	r2, #0
- 154:	42ab      	cmp	r3, r5
- 156:	41ba      	sbcs	r2, r7
- 158:	d281      	bcs.n	5e <crypto_secretbox_detached+0x5e>
- 15a:	4631      	mov	r1, r6
- 15c:	462a      	mov	r2, r5
- 15e:	4620      	mov	r0, r4
- 160:	4626      	mov	r6, r4
- 162:	f7ff fffe 	bl	0 <memmove>
- 166:	e77a      	b.n	5e <crypto_secretbox_detached+0x5e>
- 168:	9b09      	ldr	r3, [sp, #36]	; 0x24
- 16a:	4649      	mov	r1, r9
- 16c:	2240      	movs	r2, #64	; 0x40
- 16e:	e9cd 3b00 	strd	r3, fp, [sp]
- 172:	4648      	mov	r0, r9
- 174:	2300      	movs	r3, #0
- 176:	f7ff fffe 	bl	0 <crypto_stream_salsa20_xor>
- 17a:	4649      	mov	r1, r9
- 17c:	4640      	mov	r0, r8
- 17e:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_init>
- 182:	4648      	mov	r0, r9
- 184:	2140      	movs	r1, #64	; 0x40
- 186:	f7ff fffe 	bl	0 <sodium_memzero>
- 18a:	e7bb      	b.n	104 <crypto_secretbox_detached+0x104>
- 18c:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 190:	00000001 	.word	0x00000001
- 194:	00000000 	.word	0x00000000
- 198:	00000184 	.word	0x00000184
- 19c:	00000000 	.word	0x00000000
- 1a0:	0000006c 	.word	0x0000006c
+Function crypto_secretbox_easy @ 0x004001a5
+0x004001a5:	push	{r4, r5, lr}
+0x004001a7:	mvn	ip, #0x10
+0x004001ab:	mov	r4, r2
+0x004001ad:	cmp	ip, r4
+0x004001af:	mov	r2, r1
+0x004001b1:	mov.w	r1, #0
+0x004001b5:	sub	sp, #0x14
+0x004001b7:	sbcs	r1, r3
+0x004001b9:	blo	#0x4001d3
+0x004001bb:	ldr	r5, [sp, #0x24]
+0x004001bd:	mov	r1, r0
+0x004001bf:	str	r5, [sp, #0xc]
+0x004001c1:	adds	r0, #0x10
+0x004001c3:	ldr	r5, [sp, #0x20]
+0x004001c5:	str	r5, [sp, #8]
+0x004001c7:	strd	r4, r3, [sp]
+0x004001cb:	bl	#0x400001
+0x004001d3:	bl	#0x500085
+0x004001d7:	nop	
+0x004001d9:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004001dd:	mov	sl, r2
+0x004001df:	ldr	r2, [pc, #0x150]
+0x004001e1:	sub	sp, #0x8c
+0x004001e3:	ldr	r3, [pc, #0x150]
+0x004001e5:	add	r2, pc
+0x004001e7:	add.w	sb, sp, #0x24
+0x004001eb:	mov	r6, r0
+0x004001ed:	mov	r5, r1
+0x004001ef:	ldrd	r7, fp, [sp, #0xb4]
+0x004001f3:	mov	r0, sb
+0x004001f5:	ldr	r3, [r2, r3]
+0x004001f7:	add.w	r8, sp, #0x44
+0x004001fb:	ldr	r4, [sp, #0xb0]
+0x004001fd:	mov	r1, fp
+0x004001ff:	ldr	r2, [sp, #0xbc]
+0x00400201:	ldr	r3, [r3]
+0x00400203:	str	r3, [sp, #0x84]
+0x00400205:	mov.w	r3, #0
+0x00400209:	movs	r3, #0
+0x0040020b:	bl	#0x500001
 
-000001a4 <crypto_secretbox_easy>:
- 1a4:	b530      	push	{r4, r5, lr}
- 1a6:	f06f 0c10 	mvn.w	ip, #16
- 1aa:	4614      	mov	r4, r2
- 1ac:	45a4      	cmp	ip, r4
- 1ae:	460a      	mov	r2, r1
- 1b0:	f04f 0100 	mov.w	r1, #0
- 1b4:	b085      	sub	sp, #20
- 1b6:	4199      	sbcs	r1, r3
- 1b8:	d30b      	bcc.n	1d2 <crypto_secretbox_easy+0x2e>
- 1ba:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 1bc:	4601      	mov	r1, r0
- 1be:	9503      	str	r5, [sp, #12]
- 1c0:	3010      	adds	r0, #16
- 1c2:	9d08      	ldr	r5, [sp, #32]
- 1c4:	9502      	str	r5, [sp, #8]
- 1c6:	e9cd 4300 	strd	r4, r3, [sp]
- 1ca:	f7ff fffe 	bl	0 <crypto_secretbox_detached>
- 1ce:	b005      	add	sp, #20
- 1d0:	bd30      	pop	{r4, r5, pc}
- 1d2:	f7ff fffe 	bl	0 <sodium_misuse>
- 1d6:	bf00      	nop
+Function sub_4001cf @ 0x004001cf
+0x004001cf:	add	sp, #0x14
+0x004001d1:	pop	{r4, r5, pc}
 
-000001d8 <crypto_secretbox_open_detached>:
- 1d8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
- 1dc:	4692      	mov	sl, r2
- 1de:	4a54      	ldr	r2, [pc, #336]	; (330 <crypto_secretbox_open_detached+0x158>)
- 1e0:	b0a3      	sub	sp, #140	; 0x8c
- 1e2:	4b54      	ldr	r3, [pc, #336]	; (334 <crypto_secretbox_open_detached+0x15c>)
- 1e4:	447a      	add	r2, pc
- 1e6:	f10d 0924 	add.w	r9, sp, #36	; 0x24
- 1ea:	4606      	mov	r6, r0
- 1ec:	460d      	mov	r5, r1
- 1ee:	e9dd 7b2d 	ldrd	r7, fp, [sp, #180]	; 0xb4
- 1f2:	4648      	mov	r0, r9
- 1f4:	58d3      	ldr	r3, [r2, r3]
- 1f6:	f10d 0844 	add.w	r8, sp, #68	; 0x44
- 1fa:	9c2c      	ldr	r4, [sp, #176]	; 0xb0
- 1fc:	4659      	mov	r1, fp
- 1fe:	9a2f      	ldr	r2, [sp, #188]	; 0xbc
- 200:	681b      	ldr	r3, [r3, #0]
- 202:	9321      	str	r3, [sp, #132]	; 0x84
- 204:	f04f 0300 	mov.w	r3, #0
- 208:	2300      	movs	r3, #0
- 20a:	f7ff fffe 	bl	0 <crypto_core_hsalsa20>
- 20e:	2100      	movs	r1, #0
- 210:	2220      	movs	r2, #32
- 212:	4640      	mov	r0, r8
- 214:	f7ff fffe 	bl	0 <memset>
- 218:	2c21      	cmp	r4, #33	; 0x21
- 21a:	f177 0300 	sbcs.w	r3, r7, #0
- 21e:	e9cd 4706 	strd	r4, r7, [sp, #24]
- 222:	bf22      	ittt	cs
- 224:	2120      	movcs	r1, #32
- 226:	2300      	movcs	r3, #0
- 228:	e9cd 1306 	strdcs	r1, r3, [sp, #24]
- 22c:	ea54 0307 	orrs.w	r3, r4, r7
- 230:	d008      	beq.n	244 <crypto_secretbox_open_detached+0x6c>
- 232:	9b06      	ldr	r3, [sp, #24]
- 234:	bf08      	it	eq
- 236:	2201      	moveq	r2, #1
- 238:	4629      	mov	r1, r5
- 23a:	a819      	add	r0, sp, #100	; 0x64
- 23c:	bf18      	it	ne
- 23e:	461a      	movne	r2, r3
- 240:	f7ff fffe 	bl	0 <memcpy>
- 244:	4641      	mov	r1, r8
- 246:	2240      	movs	r2, #64	; 0x40
- 248:	2300      	movs	r3, #0
- 24a:	f10b 0b10 	add.w	fp, fp, #16
- 24e:	4640      	mov	r0, r8
- 250:	e9cd b900 	strd	fp, r9, [sp]
- 254:	f7ff fffe 	bl	0 <crypto_stream_salsa20_xor>
- 258:	4650      	mov	r0, sl
- 25a:	4622      	mov	r2, r4
- 25c:	463b      	mov	r3, r7
- 25e:	4629      	mov	r1, r5
- 260:	f8cd 8000 	str.w	r8, [sp]
- 264:	f7ff fffe 	bl	0 <crypto_onetimeauth_poly1305_verify>
- 268:	4682      	mov	sl, r0
- 26a:	2800      	cmp	r0, #0
- 26c:	d156      	bne.n	31c <crypto_secretbox_open_detached+0x144>
- 26e:	b32e      	cbz	r6, 2bc <crypto_secretbox_open_detached+0xe4>
- 270:	42b5      	cmp	r5, r6
- 272:	d931      	bls.n	2d8 <crypto_secretbox_open_detached+0x100>
- 274:	1bab      	subs	r3, r5, r6
- 276:	42a3      	cmp	r3, r4
- 278:	eb70 0307 	sbcs.w	r3, r0, r7
- 27c:	d22c      	bcs.n	2d8 <crypto_secretbox_open_detached+0x100>
- 27e:	4629      	mov	r1, r5
- 280:	4622      	mov	r2, r4
- 282:	4630      	mov	r0, r6
- 284:	4635      	mov	r5, r6
- 286:	f7ff fffe 	bl	0 <memmove>
- 28a:	ea54 0307 	orrs.w	r3, r4, r7
- 28e:	d040      	beq.n	312 <crypto_secretbox_open_detached+0x13a>
- 290:	9b06      	ldr	r3, [sp, #24]
- 292:	bf08      	it	eq
- 294:	2201      	moveq	r2, #1
- 296:	a919      	add	r1, sp, #100	; 0x64
- 298:	4630      	mov	r0, r6
- 29a:	bf18      	it	ne
- 29c:	461a      	movne	r2, r3
- 29e:	f7ff fffe 	bl	0 <memcpy>
- 2a2:	4640      	mov	r0, r8
- 2a4:	2140      	movs	r1, #64	; 0x40
- 2a6:	f7ff fffe 	bl	0 <sodium_memzero>
- 2aa:	9b06      	ldr	r3, [sp, #24]
- 2ac:	42a3      	cmp	r3, r4
- 2ae:	9b07      	ldr	r3, [sp, #28]
- 2b0:	41bb      	sbcs	r3, r7
- 2b2:	d319      	bcc.n	2e8 <crypto_secretbox_open_detached+0x110>
- 2b4:	2120      	movs	r1, #32
- 2b6:	4648      	mov	r0, r9
- 2b8:	f7ff fffe 	bl	0 <sodium_memzero>
- 2bc:	4a1e      	ldr	r2, [pc, #120]	; (338 <crypto_secretbox_open_detached+0x160>)
- 2be:	4b1d      	ldr	r3, [pc, #116]	; (334 <crypto_secretbox_open_detached+0x15c>)
- 2c0:	447a      	add	r2, pc
- 2c2:	58d3      	ldr	r3, [r2, r3]
- 2c4:	681a      	ldr	r2, [r3, #0]
- 2c6:	9b21      	ldr	r3, [sp, #132]	; 0x84
- 2c8:	405a      	eors	r2, r3
- 2ca:	f04f 0300 	mov.w	r3, #0
- 2ce:	d12c      	bne.n	32a <crypto_secretbox_open_detached+0x152>
- 2d0:	4650      	mov	r0, sl
- 2d2:	b023      	add	sp, #140	; 0x8c
- 2d4:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 2d8:	42b5      	cmp	r5, r6
- 2da:	d2d6      	bcs.n	28a <crypto_secretbox_open_detached+0xb2>
- 2dc:	1b73      	subs	r3, r6, r5
- 2de:	2200      	movs	r2, #0
- 2e0:	42a3      	cmp	r3, r4
- 2e2:	41ba      	sbcs	r2, r7
- 2e4:	d2d1      	bcs.n	28a <crypto_secretbox_open_detached+0xb2>
- 2e6:	e7ca      	b.n	27e <crypto_secretbox_open_detached+0xa6>
- 2e8:	9806      	ldr	r0, [sp, #24]
- 2ea:	9b07      	ldr	r3, [sp, #28]
- 2ec:	1a22      	subs	r2, r4, r0
- 2ee:	eb05 0100 	add.w	r1, r5, r0
- 2f2:	f04f 0401 	mov.w	r4, #1
- 2f6:	f04f 0500 	mov.w	r5, #0
- 2fa:	eb67 0303 	sbc.w	r3, r7, r3
- 2fe:	1830      	adds	r0, r6, r0
- 300:	f8cd b000 	str.w	fp, [sp]
- 304:	f8cd 9010 	str.w	r9, [sp, #16]
- 308:	e9cd 4502 	strd	r4, r5, [sp, #8]
- 30c:	f7ff fffe 	bl	0 <crypto_stream_salsa20_xor_ic>
- 310:	e7d0      	b.n	2b4 <crypto_secretbox_open_detached+0xdc>
- 312:	2140      	movs	r1, #64	; 0x40
- 314:	4640      	mov	r0, r8
- 316:	f7ff fffe 	bl	0 <sodium_memzero>
- 31a:	e7cb      	b.n	2b4 <crypto_secretbox_open_detached+0xdc>
- 31c:	2120      	movs	r1, #32
- 31e:	4648      	mov	r0, r9
- 320:	f04f 3aff 	mov.w	sl, #4294967295	; 0xffffffff
- 324:	f7ff fffe 	bl	0 <sodium_memzero>
- 328:	e7c8      	b.n	2bc <crypto_secretbox_open_detached+0xe4>
- 32a:	f7ff fffe 	bl	0 <__stack_chk_fail>
- 32e:	bf00      	nop
- 330:	00000148 	.word	0x00000148
- 334:	00000000 	.word	0x00000000
- 338:	00000074 	.word	0x00000074
+Function crypto_secretbox_open_detached @ 0x004001d9
+0x004001d9:	push.w	{r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x004001dd:	mov	sl, r2
+0x004001df:	ldr	r2, [pc, #0x150]
+0x004001e1:	sub	sp, #0x8c
+0x004001e3:	ldr	r3, [pc, #0x150]
+0x004001e5:	add	r2, pc
+0x004001e7:	add.w	sb, sp, #0x24
+0x004001eb:	mov	r6, r0
+0x004001ed:	mov	r5, r1
+0x004001ef:	ldrd	r7, fp, [sp, #0xb4]
+0x004001f3:	mov	r0, sb
+0x004001f5:	ldr	r3, [r2, r3]
+0x004001f7:	add.w	r8, sp, #0x44
+0x004001fb:	ldr	r4, [sp, #0xb0]
+0x004001fd:	mov	r1, fp
+0x004001ff:	ldr	r2, [sp, #0xbc]
+0x00400201:	ldr	r3, [r3]
+0x00400203:	str	r3, [sp, #0x84]
+0x00400205:	mov.w	r3, #0
+0x00400209:	movs	r3, #0
+0x0040020b:	bl	#0x500001
+0x0040020f:	movs	r1, #0
+0x00400211:	movs	r2, #0x20
+0x00400213:	mov	r0, r8
+0x00400215:	bl	#0x500019
+0x00400219:	cmp	r4, #0x21
+0x0040021b:	sbcs	r3, r7, #0
+0x0040021f:	strd	r4, r7, [sp, #0x18]
+0x00400223:	ittt	hs
+0x00400225:	movhs	r1, #0x20
+0x00400227:	movhs	r3, #0
+0x00400229:	strdhs	r1, r3, [sp, #0x18]
+0x0040022d:	orrs.w	r3, r4, r7
+0x00400231:	beq	#0x400245
+0x00400233:	ldr	r3, [sp, #0x18]
+0x00400235:	it	eq
+0x00400237:	moveq	r2, #1
+0x00400239:	mov	r1, r5
+0x0040023b:	add	r0, sp, #0x64
+0x0040023d:	it	ne
+0x0040023f:	movne	r2, r3
+0x00400241:	bl	#0x500025
+0x00400245:	mov	r1, r8
+0x00400247:	movs	r2, #0x40
+0x00400249:	movs	r3, #0
+0x0040024b:	add.w	fp, fp, #0x10
+0x0040024f:	mov	r0, r8
+0x00400251:	strd	fp, sb, [sp]
+0x00400255:	bl	#0x500031
+0x00400259:	mov	r0, sl
+0x0040025b:	mov	r2, r4
+0x0040025d:	mov	r3, r7
+0x0040025f:	mov	r1, r5
+0x00400261:	str.w	r8, [sp]
+0x00400265:	bl	#0x500091
+0x00400269:	mov	sl, r0
+0x0040026b:	cmp	r0, #0
+0x0040026d:	bne	#0x40031d
+0x0040026f:	cbz	r6, #0x4002bd
+0x00400271:	cmp	r5, r6
+0x00400273:	bls	#0x4002d9
+0x00400271:	cmp	r5, r6
+0x00400273:	bls	#0x4002d9
+0x00400275:	subs	r3, r5, r6
+0x00400277:	cmp	r3, r4
+0x00400279:	sbcs.w	r3, r0, r7
+0x0040027d:	bhs	#0x4002d9
+0x0040027f:	mov	r1, r5
+0x00400281:	mov	r2, r4
+0x00400283:	mov	r0, r6
+0x00400285:	mov	r5, r6
+0x00400287:	bl	#0x50000d
+0x0040028b:	orrs.w	r3, r4, r7
+0x0040028f:	beq	#0x400313
+0x00400291:	ldr	r3, [sp, #0x18]
+0x00400293:	it	eq
+0x00400295:	moveq	r2, #1
+0x00400297:	add	r1, sp, #0x64
+0x00400299:	mov	r0, r6
+0x0040029b:	it	ne
+0x0040029d:	movne	r2, r3
+0x0040029f:	bl	#0x500025
+0x004002a3:	mov	r0, r8
+0x004002a5:	movs	r1, #0x40
+0x004002a7:	bl	#0x500049
+0x004002ab:	ldr	r3, [sp, #0x18]
+0x004002ad:	cmp	r3, r4
+0x004002af:	ldr	r3, [sp, #0x1c]
+0x004002b1:	sbcs	r3, r7
+0x004002b3:	blo	#0x4002e9
+0x004002b5:	movs	r1, #0x20
+0x004002b7:	mov	r0, sb
+0x004002b9:	bl	#0x500049
+0x004002bd:	ldr	r2, [pc, #0x78]
+0x004002bf:	ldr	r3, [pc, #0x74]
+0x004002c1:	add	r2, pc
+0x004002c3:	ldr	r3, [r2, r3]
+0x004002c5:	ldr	r2, [r3]
+0x004002c7:	ldr	r3, [sp, #0x84]
+0x004002c9:	eors	r2, r3
+0x004002cb:	mov.w	r3, #0
+0x004002cf:	bne	#0x40032b
+0x004002d1:	mov	r0, sl
+0x004002d3:	add	sp, #0x8c
+0x004002d5:	pop.w	{r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x004002d9:	cmp	r5, r6
+0x004002db:	bhs	#0x40028b
+0x004002dd:	subs	r3, r6, r5
+0x004002df:	movs	r2, #0
+0x004002e1:	cmp	r3, r4
+0x004002e3:	sbcs	r2, r7
+0x004002e5:	bhs	#0x40028b
+0x004002e7:	b	#0x40027f
+0x004002e9:	ldr	r0, [sp, #0x18]
+0x004002eb:	ldr	r3, [sp, #0x1c]
+0x004002ed:	subs	r2, r4, r0
+0x004002ef:	add.w	r1, r5, r0
+0x004002f3:	mov.w	r4, #1
+0x004002f7:	mov.w	r5, #0
+0x004002fb:	sbc.w	r3, r7, r3
+0x004002ff:	adds	r0, r6, r0
+0x00400301:	str.w	fp, [sp]
+0x00400305:	str.w	sb, [sp, #0x10]
+0x00400309:	strd	r4, r5, [sp, #8]
+0x0040030d:	bl	#0x500055
+0x00400311:	b	#0x4002b5
+0x00400313:	movs	r1, #0x40
+0x00400315:	mov	r0, r8
+0x00400317:	bl	#0x500049
+0x0040031b:	b	#0x4002b5
+0x0040031d:	movs	r1, #0x20
+0x0040031f:	mov	r0, sb
+0x00400321:	mov.w	sl, #-1
+0x00400325:	bl	#0x500049
+0x00400329:	b	#0x4002bd
+0x0040032b:	bl	#0x500079
 
-0000033c <crypto_secretbox_open_easy>:
- 33c:	4694      	mov	ip, r2
- 33e:	460a      	mov	r2, r1
- 340:	f1bc 0f10 	cmp.w	ip, #16
- 344:	f173 0100 	sbcs.w	r1, r3, #0
- 348:	d311      	bcc.n	36e <crypto_secretbox_open_easy+0x32>
- 34a:	b530      	push	{r4, r5, lr}
- 34c:	f1bc 0410 	subs.w	r4, ip, #16
- 350:	f143 33ff 	adc.w	r3, r3, #4294967295	; 0xffffffff
- 354:	b085      	sub	sp, #20
- 356:	f102 0110 	add.w	r1, r2, #16
- 35a:	9d09      	ldr	r5, [sp, #36]	; 0x24
- 35c:	9503      	str	r5, [sp, #12]
- 35e:	9d08      	ldr	r5, [sp, #32]
- 360:	9502      	str	r5, [sp, #8]
- 362:	e9cd 4300 	strd	r4, r3, [sp]
- 366:	f7ff fffe 	bl	1d8 <crypto_secretbox_open_detached>
- 36a:	b005      	add	sp, #20
- 36c:	bd30      	pop	{r4, r5, pc}
- 36e:	f04f 30ff 	mov.w	r0, #4294967295	; 0xffffffff
- 372:	4770      	bx	lr
+Function sub_40032f @ 0x0040032f
+0x0040032f:	nop	
+0x00400331:	lsls	r0, r1, #5
+0x00400333:	movs	r0, r0
+0x00400335:	movs	r0, r0
+0x00400337:	movs	r0, r0
+0x00400339:	lsls	r4, r6, #1
+0x0040033b:	movs	r0, r0
+0x0040033d:	mov	ip, r2
+0x0040033f:	mov	r2, r1
+0x00400341:	cmp.w	ip, #0x10
+0x00400345:	sbcs	r1, r3, #0
+0x00400349:	blo	#0x40036f
+
+Function crypto_secretbox_open_easy @ 0x0040033d
+0x0040033d:	mov	ip, r2
+0x0040033f:	mov	r2, r1
+0x00400341:	cmp.w	ip, #0x10
+0x00400345:	sbcs	r1, r3, #0
+0x00400349:	blo	#0x40036f
+0x0040034b:	push	{r4, r5, lr}
+0x0040034d:	subs.w	r4, ip, #0x10
+0x00400351:	adc	r3, r3, #-1
+0x00400355:	sub	sp, #0x14
+0x00400357:	add.w	r1, r2, #0x10
+0x0040035b:	ldr	r5, [sp, #0x24]
+0x0040035d:	str	r5, [sp, #0xc]
+0x0040035f:	ldr	r5, [sp, #0x20]
+0x00400361:	str	r5, [sp, #8]
+0x00400363:	strd	r4, r3, [sp]
+0x00400367:	bl	#0x4001d9
+0x0040036b:	add	sp, #0x14
+0x0040036d:	pop	{r4, r5, pc}
+0x0040036f:	mov.w	r0, #-1
+0x00400373:	bx	lr
+
+Function crypto_core_hsalsa20 @ 0x00500001
+0x00500001:	movs	r0, r0
+0x00500003:	movs	r0, r0
+0x00500005:	movs	r0, r0
+0x00500007:	movs	r0, r0
+0x00500009:	movs	r0, r0
+0x0050000b:	movs	r0, r0
+
+Function memmove @ 0x0050000d
+0x0050000d:	movs	r0, r0
+0x0050000f:	movs	r0, r0
+0x00500011:	movs	r0, r0
+0x00500013:	movs	r0, r0
+0x00500015:	movs	r0, r0
+0x00500017:	movs	r0, r0
+
+Function memset @ 0x00500019
+0x00500019:	movs	r0, r0
+0x0050001b:	movs	r0, r0
+0x0050001d:	movs	r0, r0
+0x0050001f:	movs	r0, r0
+0x00500021:	movs	r0, r0
+0x00500023:	movs	r0, r0
+
+Function memcpy @ 0x00500025
+0x00500025:	movs	r0, r0
+0x00500027:	movs	r0, r0
+0x00500029:	movs	r0, r0
+0x0050002b:	movs	r0, r0
+0x0050002d:	movs	r0, r0
+0x0050002f:	movs	r0, r0
+
+Function crypto_stream_salsa20_xor @ 0x00500031
+0x00500031:	movs	r0, r0
+0x00500033:	movs	r0, r0
+0x00500035:	movs	r0, r0
+0x00500037:	movs	r0, r0
+0x00500039:	movs	r0, r0
+0x0050003b:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_init @ 0x0050003d
+0x0050003d:	movs	r0, r0
+0x0050003f:	movs	r0, r0
+0x00500041:	movs	r0, r0
+0x00500043:	movs	r0, r0
+0x00500045:	movs	r0, r0
+0x00500047:	movs	r0, r0
+
+Function sodium_memzero @ 0x00500049
+0x00500049:	movs	r0, r0
+0x0050004b:	movs	r0, r0
+0x0050004d:	movs	r0, r0
+0x0050004f:	movs	r0, r0
+0x00500051:	movs	r0, r0
+0x00500053:	movs	r0, r0
+
+Function crypto_stream_salsa20_xor_ic @ 0x00500055
+0x00500055:	movs	r0, r0
+0x00500057:	movs	r0, r0
+0x00500059:	movs	r0, r0
+0x0050005b:	movs	r0, r0
+0x0050005d:	movs	r0, r0
+0x0050005f:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_update @ 0x00500061
+0x00500061:	movs	r0, r0
+0x00500063:	movs	r0, r0
+0x00500065:	movs	r0, r0
+0x00500067:	movs	r0, r0
+0x00500069:	movs	r0, r0
+0x0050006b:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_final @ 0x0050006d
+0x0050006d:	movs	r0, r0
+0x0050006f:	movs	r0, r0
+0x00500071:	movs	r0, r0
+0x00500073:	movs	r0, r0
+0x00500075:	movs	r0, r0
+0x00500077:	movs	r0, r0
+
+Function __stack_chk_fail @ 0x00500079
+0x00500079:	movs	r0, r0
+0x0050007b:	movs	r0, r0
+0x0050007d:	movs	r0, r0
+0x0050007f:	movs	r0, r0
+0x00500081:	movs	r0, r0
+0x00500083:	movs	r0, r0
+
+Function sodium_misuse @ 0x00500085
+0x00500085:	movs	r0, r0
+0x00500087:	movs	r0, r0
+0x00500089:	movs	r0, r0
+0x0050008b:	movs	r0, r0
+0x0050008d:	movs	r0, r0
+0x0050008f:	movs	r0, r0
+
+Function crypto_onetimeauth_poly1305_verify @ 0x00500091
+0x00500091:	movs	r0, r0
+0x00500093:	movs	r0, r0
+0x00500095:	movs	r0, r0
+0x00500097:	movs	r0, r0
+
+Function sys_380 @ 0x008002f8
+0x008002f8:	andeq	r0, r0, r0
+0x008002fc:	andeq	r0, r0, r0
+0x00800300:	andeq	r0, r0, r0
+0x00800304:	andeq	r0, r0, r0
+0x00800308:	andeq	r0, r0, r0
+0x0080030c:	andeq	r0, r0, r0
+0x00800310:	andeq	r0, r0, r0
+0x00800314:	andeq	r0, r0, r0
+0x00800318:	andeq	r0, r0, r0
+0x0080031c:	andeq	r0, r0, r0
+0x00800320:	andeq	r0, r0, r0
+0x00800324:	andeq	r0, r0, r0
+0x00800328:	andeq	r0, r0, r0
+0x0080032c:	andeq	r0, r0, r0
+0x00800330:	andeq	r0, r0, r0
+0x00800334:	andeq	r0, r0, r0
+0x00800338:	andeq	r0, r0, r0
+0x0080033c:	andeq	r0, r0, r0
+0x00800340:	andeq	r0, r0, r0
+0x00800344:	andeq	r0, r0, r0
+0x00800348:	andeq	r0, r0, r0
+0x0080034c:	andeq	r0, r0, r0
+0x00800350:	andeq	r0, r0, r0
+0x00800354:	andeq	r0, r0, r0
+0x00800358:	andeq	r0, r0, r0
+0x0080035c:	andeq	r0, r0, r0
+0x00800360:	andeq	r0, r0, r0
+0x00800364:	andeq	r0, r0, r0
+0x00800368:	andeq	r0, r0, r0
+0x0080036c:	andeq	r0, r0, r0
+0x00800370:	andeq	r0, r0, r0
+0x00800374:	andeq	r0, r0, r0
+0x00800378:	andeq	r0, r0, r0
+0x0080037c:	andeq	r0, r0, r0
+0x00800380:	andeq	r0, r0, r0
+0x00800384:	andeq	r0, r0, r0
+0x00800388:	andeq	r0, r0, r0
+0x0080038c:	andeq	r0, r0, r0
+0x00800390:	andeq	r0, r0, r0
+0x00800394:	andeq	r0, r0, r0
+0x00800398:	andeq	r0, r0, r0
+0x0080039c:	andeq	r0, r0, r0
+0x008003a0:	andeq	r0, r0, r0
+0x008003a4:	andeq	r0, r0, r0
+0x008003a8:	andeq	r0, r0, r0
+0x008003ac:	andeq	r0, r0, r0
+0x008003b0:	andeq	r0, r0, r0
+0x008003b4:	andeq	r0, r0, r0
+0x008003b8:	andeq	r0, r0, r0
+0x008003bc:	andeq	r0, r0, r0
+0x008003c0:	andeq	r0, r0, r0
+0x008003c4:	andeq	r0, r0, r0
+0x008003c8:	andeq	r0, r0, r0
+0x008003cc:	andeq	r0, r0, r0
+0x008003d0:	andeq	r0, r0, r0
+0x008003d4:	andeq	r0, r0, r0
+0x008003d8:	andeq	r0, r0, r0
+0x008003dc:	andeq	r0, r0, r0
+0x008003e0:	andeq	r0, r0, r0
+0x008003e4:	andeq	r0, r0, r0
+0x008003e8:	andeq	r0, r0, r0
+0x008003ec:	andeq	r0, r0, r0
+0x008003f0:	andeq	r0, r0, r0
+0x008003f4:	andeq	r0, r0, r0
+0x008003f8:	andeq	r0, r0, r0
+0x008003fc:	andeq	r0, r0, r0
+0x00800400:	andeq	r0, r0, r0
+0x00800404:	andeq	r0, r0, r0
+0x00800408:	andeq	r0, r0, r0
+0x0080040c:	andeq	r0, r0, r0
+0x00800410:	andeq	r0, r0, r0
+0x00800414:	andeq	r0, r0, r0
+0x00800418:	andeq	r0, r0, r0
+0x0080041c:	andeq	r0, r0, r0
+0x00800420:	andeq	r0, r0, r0
+0x00800424:	andeq	r0, r0, r0
+0x00800428:	andeq	r0, r0, r0
+0x0080042c:	andeq	r0, r0, r0
+0x00800430:	andeq	r0, r0, r0
+0x00800434:	andeq	r0, r0, r0
+0x00800438:	andeq	r0, r0, r0
+0x0080043c:	andeq	r0, r0, r0
+0x00800440:	andeq	r0, r0, r0
+0x00800444:	andeq	r0, r0, r0
+0x00800448:	andeq	r0, r0, r0
+0x0080044c:	andeq	r0, r0, r0
+0x00800450:	andeq	r0, r0, r0
+0x00800454:	andeq	r0, r0, r0
+0x00800458:	andeq	r0, r0, r0
+0x0080045c:	andeq	r0, r0, r0
+0x00800460:	andeq	r0, r0, r0
+0x00800464:	andeq	r0, r0, r0
+0x00800468:	andeq	r0, r0, r0
+0x0080046c:	andeq	r0, r0, r0
+0x00800470:	andeq	r0, r0, r0
+0x00800474:	andeq	r0, r0, r0
+0x00800478:	andeq	r0, r0, r0
+0x0080047c:	andeq	r0, r0, r0
+0x00800480:	andeq	r0, r0, r0

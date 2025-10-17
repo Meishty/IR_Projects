@@ -1,17 +1,25 @@
 
-/root/projects/compiled/non_crypto/stripped/bminor_binutils-gdb.git_stpncpy_85cd926b_stripped.o:     file format elf32-littlearm
+Function sub_400003 @ 0x00400003
+0x00400003:	mov	r4, r2
+0x00400005:	mov	r6, r0
+0x00400007:	sub	sp, #8
+0x00400009:	mov	r0, r1
+0x0040000b:	str	r1, [sp, #4]
+0x0040000d:	bl	#0x40000d
 
+Function sub_40000d @ 0x0040000d
+0x0040000d:	bl	#0x40000d
+0x00400011:	ldr	r1, [sp, #4]
+0x00400013:	mov	r5, r0
+0x00400015:	mov	r2, r4
+0x00400017:	mov	r0, r6
+0x00400019:	bl	#0x400019
 
-Disassembly of section .text:
-
-00000000 <.text>:
-   0:	4614b570 			; <UNDEFINED> instruction: 0x4614b570
-   4:	b0824606 	addlt	r4, r2, r6, lsl #12
-   8:	91014608 	tstls	r1, r8, lsl #12
-   c:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  10:	46059901 	strmi	r9, [r5], -r1, lsl #18
-  14:	46304622 	ldrtmi	r4, [r0], -r2, lsr #12
-  18:	fffef7ff 			; <UNDEFINED> instruction: 0xfffef7ff
-  1c:	bf9442a5 	svclt	0x009442a5
-  20:	19001940 	stmdbne	r0, {r6, r8, fp, ip}
-  24:	bd70b002 	ldcllt	0, cr11, [r0, #-8]!
+Function sub_400019 @ 0x00400019
+0x00400019:	bl	#0x400019
+0x0040001d:	cmp	r5, r4
+0x0040001f:	ite	ls
+0x00400021:	addls	r0, r0, r5
+0x00400023:	addhi	r0, r0, r4
+0x00400025:	add	sp, #8
+0x00400027:	pop	{r4, r5, r6, pc}
