@@ -1,0 +1,53 @@
+Function main @ 0x400010
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64 t4:Ity_I64 t5:Ity_I64 t6:Ity_I64 t7:Ity_I64 t8:Ity_I64 t9:Ity_I64 t10:Ity_I64 t11:Ity_I64 t12:Ity_I64 t13:Ity_I64 t14:Ity_I64 t15:Ity_I64 t16:Ity_I64
+
+   00 | ------ IMark(0x400010, 4, 0) ------
+   01 | t0 = GET:I64(xsp)
+   02 | t1 = Add64(t0,0xfffffffffffffff0)
+   03 | PUT(xsp) = t1
+   04 | t11 = GET:I64(x29)
+   05 | STle(t1) = t11
+   06 | t12 = Add64(t1,0x0000000000000008)
+   07 | t13 = GET:I64(x30)
+   08 | STle(t12) = t13
+   09 | ------ IMark(0x400014, 4, 0) ------
+   10 | PUT(x2) = 0x0000000000000063
+   11 | ------ IMark(0x400018, 4, 0) ------
+   12 | ------ IMark(0x40001c, 4, 0) ------
+   13 | PUT(x29) = t1
+   14 | ------ IMark(0x400020, 4, 0) ------
+   15 | PUT(x1) = 0x0000000000400000
+   16 | ------ IMark(0x400024, 4, 0) ------
+   17 | PUT(x0) = 0x0000000000000001
+   18 | ------ IMark(0x400028, 4, 0) ------
+   19 | PUT(x30) = 0x000000000040002c
+   NEXT: PUT(pc) = 0x0000000000500000; Ijk_Call
+}
+
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64 t4:Ity_I64 t5:Ity_I64 t6:Ity_I64 t7:Ity_I64 t8:Ity_I64 t9:Ity_I64 t10:Ity_I64
+
+   00 | ------ IMark(0x40002c, 4, 0) ------
+   01 | PUT(x0) = 0x0000000000000000
+   02 | PUT(pc) = 0x0000000000400030
+   03 | ------ IMark(0x400030, 4, 0) ------
+   04 | t0 = GET:I64(xsp)
+   05 | t1 = Add64(t0,0x0000000000000010)
+   06 | t5 = LDle:I64(t0)
+   07 | PUT(x29) = t5
+   08 | t8 = Add64(t0,0x0000000000000008)
+   09 | t7 = LDle:I64(t8)
+   10 | PUT(x30) = t7
+   11 | PUT(xsp) = t1
+   12 | ------ IMark(0x400034, 4, 0) ------
+   NEXT: PUT(pc) = t7; Ijk_Ret
+}
+
+Function __printf_chk @ 0x500000
+IRSB {
+   
+
+   NEXT: PUT(pc) = 0x0000000000500000; Ijk_NoDecode
+}
+

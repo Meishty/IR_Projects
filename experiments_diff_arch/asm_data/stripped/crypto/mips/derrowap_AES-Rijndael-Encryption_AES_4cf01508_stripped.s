@@ -1,0 +1,1758 @@
+
+Function _start @ 0x00400000
+0x00400000:	lbu	$a2, ($a0)
+0x00400004:	lui	$v0, 0
+0x00400008:	lbu	$a1, 1($a0)
+0x0040000c:	addiu	$v0, $v0, 0
+0x00400010:	lbu	$a3, 2($a0)
+0x00400014:	andi	$v1, $a2, 0xf0
+0x00400018:	lbu	$t3, 3($a0)
+0x0040001c:	addu	$v1, $v1, $v0
+0x00400020:	lbu	$t2, 5($a0)
+0x00400024:	andi	$a2, $a2, 0xf
+0x00400028:	lbu	$t1, 6($a0)
+0x0040002c:	addu	$v1, $v1, $a2
+0x00400030:	lbu	$t0, 7($a0)
+0x00400034:	andi	$a2, $a1, 0xf0
+0x00400038:	lbu	$t7, 4($a0)
+0x0040003c:	addu	$a2, $a2, $v0
+0x00400040:	lbu	$t6, 0xa($a0)
+0x00400044:	lbu	$t4, ($v1)
+0x00400048:	andi	$a1, $a1, 0xf
+0x0040004c:	addu	$a2, $a2, $a1
+0x00400050:	lbu	$v1, 8($a0)
+0x00400054:	andi	$a1, $a3, 0xf0
+0x00400058:	lbu	$t5, 0xb($a0)
+0x0040005c:	sb	$t4, ($a0)
+0x00400060:	addu	$a1, $a1, $v0
+0x00400064:	lbu	$a2, ($a2)
+0x00400068:	andi	$a3, $a3, 0xf
+0x0040006c:	addu	$a1, $a1, $a3
+0x00400070:	lbu	$t4, 9($a0)
+0x00400074:	andi	$a3, $t3, 0xf0
+0x00400078:	sb	$a2, 1($a0)
+0x0040007c:	addu	$a3, $a3, $v0
+0x00400080:	lbu	$a1, ($a1)
+0x00400084:	andi	$t3, $t3, 0xf
+0x00400088:	addu	$a3, $a3, $t3
+0x0040008c:	andi	$t3, $t2, 0xf0
+0x00400090:	sb	$a1, 2($a0)
+0x00400094:	addu	$t3, $t3, $v0
+0x00400098:	lbu	$a1, ($a3)
+0x0040009c:	andi	$t2, $t2, 0xf
+0x004000a0:	addu	$t3, $t3, $t2
+0x004000a4:	andi	$t2, $t1, 0xf0
+0x004000a8:	sb	$a1, 3($a0)
+0x004000ac:	addu	$t2, $t2, $v0
+0x004000b0:	lbu	$a1, ($t3)
+0x004000b4:	andi	$t1, $t1, 0xf
+0x004000b8:	addu	$t2, $t2, $t1
+0x004000bc:	andi	$t1, $t0, 0xf0
+0x004000c0:	sb	$a1, 4($a0)
+0x004000c4:	addu	$t1, $t1, $v0
+0x004000c8:	lbu	$a1, ($t2)
+0x004000cc:	andi	$t0, $t0, 0xf
+0x004000d0:	addu	$t1, $t1, $t0
+0x004000d4:	andi	$t0, $t7, 0xf0
+0x004000d8:	sb	$a1, 5($a0)
+0x004000dc:	addu	$t0, $t0, $v0
+0x004000e0:	lbu	$a1, ($t1)
+0x004000e4:	andi	$t7, $t7, 0xf
+0x004000e8:	addu	$t0, $t0, $t7
+0x004000ec:	andi	$a2, $t6, 0xf0
+0x004000f0:	sb	$a1, 6($a0)
+0x004000f4:	addu	$a2, $a2, $v0
+0x004000f8:	lbu	$a3, ($t0)
+0x004000fc:	andi	$t6, $t6, 0xf
+0x00400100:	addu	$a2, $a2, $t6
+0x00400104:	andi	$a1, $v1, 0xf0
+0x00400108:	sb	$a3, 7($a0)
+0x0040010c:	addu	$a1, $a1, $v0
+0x00400110:	lbu	$a2, ($a2)
+0x00400114:	andi	$v1, $v1, 0xf
+0x00400118:	addu	$a1, $a1, $v1
+0x0040011c:	andi	$v1, $t5, 0xf0
+0x00400120:	sb	$a2, 8($a0)
+0x00400124:	addu	$v1, $v1, $v0
+0x00400128:	lbu	$a1, ($a1)
+0x0040012c:	andi	$t5, $t5, 0xf
+0x00400130:	addu	$v1, $v1, $t5
+0x00400134:	andi	$a3, $t4, 0xf0
+0x00400138:	sb	$a1, 0xa($a0)
+0x0040013c:	addu	$a3, $a3, $v0
+0x00400140:	lbu	$t1, ($v1)
+0x00400144:	andi	$t4, $t4, 0xf
+0x00400148:	lbu	$v1, 0xe($a0)
+0x0040014c:	addu	$a3, $a3, $t4
+0x00400150:	lbu	$a1, 0xd($a0)
+0x00400154:	lbu	$t0, 0xc($a0)
+0x00400158:	andi	$a2, $v1, 0xf0
+0x0040015c:	sb	$t1, 9($a0)
+0x00400160:	addu	$a2, $a2, $v0
+0x00400164:	lbu	$t1, ($a3)
+0x00400168:	andi	$v1, $v1, 0xf
+0x0040016c:	lbu	$a3, 0xf($a0)
+0x00400170:	addu	$a2, $a2, $v1
+0x00400174:	andi	$v1, $a1, 0xf0
+0x00400178:	sb	$t1, 0xb($a0)
+0x0040017c:	addu	$v1, $v1, $v0
+0x00400180:	lbu	$a2, ($a2)
+0x00400184:	andi	$a1, $a1, 0xf
+0x00400188:	addu	$v1, $v1, $a1
+0x0040018c:	andi	$a1, $t0, 0xf0
+0x00400190:	sb	$a2, 0xf($a0)
+0x00400194:	addu	$a1, $a1, $v0
+0x00400198:	lbu	$a2, ($v1)
+0x0040019c:	andi	$t0, $t0, 0xf
+0x004001a0:	addu	$a1, $a1, $t0
+0x004001a4:	andi	$v1, $a3, 0xf0
+0x004001a8:	sb	$a2, 0xe($a0)
+0x004001ac:	addu	$v0, $v1, $v0
+0x004001b0:	andi	$a3, $a3, 0xf
+0x004001b4:	lbu	$v1, ($a1)
+0x004001b8:	addu	$v0, $v0, $a3
+0x004001bc:	sb	$v1, 0xd($a0)
+0x004001c0:	lbu	$v0, ($v0)
+0x004001c4:	jr	$ra
+0x004001c8:	sb	$v0, 0xc($a0)
+
+Function sub_4001cc @ 0x004001cc
+0x004001cc:	addiu	$sp, $sp, -0xa8
+0x004001d0:	lbu	$t0, ($a0)
+0x004001d4:	lbu	$t9, 7($a0)
+0x004001d8:	lbu	$v0, 8($a0)
+0x004001dc:	lbu	$v1, 9($a0)
+0x004001e0:	lbu	$a1, 0xa($a0)
+0x004001e4:	lbu	$a3, 0xb($a0)
+0x004001e8:	lbu	$t1, 4($a0)
+0x004001ec:	lbu	$t2, 1($a0)
+0x004001f0:	lbu	$t3, 5($a0)
+0x004001f4:	srl	$a2, $a3, 7
+0x004001f8:	lbu	$t4, 2($a0)
+0x004001fc:	lbu	$t7, 6($a0)
+0x00400200:	lbu	$t8, 3($a0)
+0x00400204:	sw	$s7, 0xa0($sp)
+0x00400208:	srl	$s7, $t0, 7
+0x0040020c:	sw	$t0, 0x14($sp)
+0x00400210:	sw	$s1, 0x88($sp)
+0x00400214:	srl	$s1, $t9, 7
+0x00400218:	sw	$fp, 0xa4($sp)
+0x0040021c:	srl	$t5, $t8, 7
+0x00400220:	sw	$s6, 0x9c($sp)
+0x00400224:	srl	$s6, $t1, 7
+0x00400228:	sw	$s5, 0x98($sp)
+0x0040022c:	srl	$fp, $a1, 7
+0x00400230:	sw	$s4, 0x94($sp)
+0x00400234:	srl	$s4, $v0, 7
+0x00400238:	sw	$s3, 0x90($sp)
+0x0040023c:	sw	$s2, 0x8c($sp)
+0x00400240:	srl	$s2, $t2, 7
+0x00400244:	sw	$s0, 0x84($sp)
+0x00400248:	srl	$s0, $t3, 7
+0x0040024c:	sw	$v0, 4($sp)
+0x00400250:	srl	$v0, $v1, 7
+0x00400254:	sw	$v1, 8($sp)
+0x00400258:	srl	$v1, $t7, 7
+0x0040025c:	sw	$a1, 0xc($sp)
+0x00400260:	srl	$a1, $t4, 7
+0x00400264:	sw	$a3, 0x10($sp)
+0x00400268:	move	$a3, $s1
+0x0040026c:	sw	$t1, 0x38($sp)
+0x00400270:	sll	$t6, $a1, 3
+0x00400274:	sw	$t2, 0x18($sp)
+0x00400278:	sll	$t2, $fp, 3
+0x0040027c:	sw	$t3, 0x1c($sp)
+0x00400280:	subu	$t6, $t6, $a1
+0x00400284:	sw	$t4, 0x20($sp)
+0x00400288:	lbu	$t0, 0xc($a0)
+0x0040028c:	sll	$t6, $t6, 2
+0x00400290:	sw	$t7, 0x24($sp)
+0x00400294:	sll	$t7, $s2, 3
+0x00400298:	lbu	$t1, 0xd($a0)
+0x0040029c:	subu	$a1, $t6, $a1
+0x004002a0:	lbu	$t3, 0xe($a0)
+0x004002a4:	srl	$s1, $t0, 7
+0x004002a8:	sw	$t0, 0x3c($sp)
+0x004002ac:	subu	$t7, $t7, $s2
+0x004002b0:	move	$t0, $s1
+0x004002b4:	sw	$v0, 0x50($sp)
+0x004002b8:	srl	$s1, $t1, 7
+0x004002bc:	sw	$t5, 0x58($sp)
+0x004002c0:	srl	$s3, $t3, 7
+0x004002c4:	sw	$a3, 0x5c($sp)
+0x004002c8:	sw	$s1, 0x30($sp)
+0x004002cc:	sll	$t7, $t7, 2
+0x004002d0:	sw	$s3, 0x34($sp)
+0x004002d4:	sll	$s3, $s6, 3
+0x004002d8:	sw	$a2, 0x60($sp)
+0x004002dc:	subu	$t7, $t7, $s2
+0x004002e0:	sw	$t8, 0x28($sp)
+0x004002e4:	sll	$t8, $v0, 3
+0x004002e8:	sw	$t1, 0x40($sp)
+0x004002ec:	sll	$v0, $t5, 3
+0x004002f0:	sll	$t1, $a3, 3
+0x004002f4:	sw	$fp, 0x54($sp)
+0x004002f8:	lw	$t5, 0x30($sp)
+0x004002fc:	sll	$a3, $a2, 3
+0x00400300:	lw	$a2, 0x34($sp)
+0x00400304:	subu	$s3, $s3, $s6
+0x00400308:	lbu	$t4, 0xf($a0)
+0x0040030c:	sll	$s1, $s4, 3
+0x00400310:	sll	$fp, $t5, 3
+0x00400314:	sw	$t0, 0x4c($sp)
+0x00400318:	sll	$t5, $a2, 3
+0x0040031c:	lw	$a2, 0x50($sp)
+0x00400320:	srl	$s5, $t4, 7
+0x00400324:	sw	$t4, 0x48($sp)
+0x00400328:	sll	$t0, $t0, 3
+0x0040032c:	sw	$t9, 0x2c($sp)
+0x00400330:	subu	$t8, $t8, $a2
+0x00400334:	lw	$a2, 0x54($sp)
+0x00400338:	move	$t4, $s5
+0x0040033c:	sw	$t3, 0x44($sp)
+0x00400340:	sll	$s5, $s7, 3
+0x00400344:	sw	$t4, 0x64($sp)
+0x00400348:	subu	$t2, $t2, $a2
+0x0040034c:	lw	$a2, 0x58($sp)
+0x00400350:	subu	$s5, $s5, $s7
+0x00400354:	sll	$s3, $s3, 2
+0x00400358:	subu	$v0, $v0, $a2
+0x0040035c:	lw	$a2, 0x5c($sp)
+0x00400360:	sll	$s5, $s5, 2
+0x00400364:	subu	$s3, $s3, $s6
+0x00400368:	subu	$t1, $t1, $a2
+0x0040036c:	lw	$a2, 0x60($sp)
+0x00400370:	subu	$s5, $s5, $s7
+0x00400374:	lw	$s7, 0x14($sp)
+0x00400378:	sll	$t2, $t2, 2
+0x0040037c:	subu	$a3, $a3, $a2
+0x00400380:	lw	$a2, 0x4c($sp)
+0x00400384:	sll	$s7, $s7, 1
+0x00400388:	sll	$a3, $a3, 2
+0x0040038c:	subu	$t0, $t0, $a2
+0x00400390:	lw	$a2, 0x30($sp)
+0x00400394:	sw	$s7, 0x68($sp)
+0x00400398:	sll	$t9, $s0, 3
+0x0040039c:	lw	$s7, 0x38($sp)
+0x004003a0:	sll	$t0, $t0, 2
+0x004003a4:	subu	$fp, $fp, $a2
+0x004003a8:	lw	$a2, 0x34($sp)
+0x004003ac:	subu	$t9, $t9, $s0
+0x004003b0:	sll	$s6, $s7, 1
+0x004003b4:	subu	$t5, $t5, $a2
+0x004003b8:	lw	$a2, 0x64($sp)
+0x004003bc:	sw	$s6, 0x6c($sp)
+0x004003c0:	sll	$fp, $fp, 2
+0x004003c4:	lw	$t6, 0x20($sp)
+0x004003c8:	sll	$t9, $t9, 2
+0x004003cc:	lw	$s7, 0x18($sp)
+0x004003d0:	sll	$t3, $v1, 3
+0x004003d4:	lw	$s6, 0x24($sp)
+0x004003d8:	subu	$t9, $t9, $s0
+0x004003dc:	sll	$t6, $t6, 1
+0x004003e0:	lw	$s0, 0x1c($sp)
+0x004003e4:	sll	$s2, $s7, 1
+0x004003e8:	lw	$s7, 0x58($sp)
+0x004003ec:	sw	$t6, 0x74($sp)
+0x004003f0:	subu	$t3, $t3, $v1
+0x004003f4:	lw	$t6, 0x54($sp)
+0x004003f8:	sll	$t5, $t5, 2
+0x004003fc:	sw	$s2, 0x70($sp)
+0x00400400:	sll	$s2, $s0, 1
+0x00400404:	sll	$s0, $s6, 1
+0x00400408:	lw	$s6, 0xc($sp)
+0x0040040c:	subu	$t2, $t2, $t6
+0x00400410:	lw	$t6, 0x60($sp)
+0x00400414:	sll	$t3, $t3, 2
+0x00400418:	sll	$t4, $t4, 3
+0x0040041c:	subu	$a3, $a3, $t6
+0x00400420:	lw	$t6, 0x4c($sp)
+0x00400424:	subu	$t3, $t3, $v1
+0x00400428:	sll	$v1, $s6, 1
+0x0040042c:	lw	$s6, 0x5c($sp)
+0x00400430:	subu	$t0, $t0, $t6
+0x00400434:	lw	$t6, 0x30($sp)
+0x00400438:	sw	$v1, 0x78($sp)
+0x0040043c:	subu	$t4, $t4, $a2
+0x00400440:	sw	$t0, 0x4c($sp)
+0x00400444:	sll	$v0, $v0, 2
+0x00400448:	subu	$fp, $fp, $t6
+0x0040044c:	lw	$v1, 0x28($sp)
+0x00400450:	lw	$t0, 0x3c($sp)
+0x00400454:	subu	$s1, $s1, $s4
+0x00400458:	sw	$fp, 0x54($sp)
+0x0040045c:	sll	$t4, $t4, 2
+0x00400460:	lw	$fp, 0x40($sp)
+0x00400464:	subu	$v0, $v0, $s7
+0x00400468:	lw	$a2, 0x50($sp)
+0x0040046c:	sll	$s7, $v1, 1
+0x00400470:	lw	$v1, 0x2c($sp)
+0x00400474:	sll	$t0, $t0, 1
+0x00400478:	sll	$fp, $fp, 1
+0x0040047c:	sll	$s1, $s1, 2
+0x00400480:	sw	$t0, 0x50($sp)
+0x00400484:	sw	$fp, 0x58($sp)
+0x00400488:	sll	$t8, $t8, 2
+0x0040048c:	lw	$fp, 0x34($sp)
+0x00400490:	sll	$t1, $t1, 2
+0x00400494:	subu	$s1, $s1, $s4
+0x00400498:	lw	$s4, 4($sp)
+0x0040049c:	subu	$t8, $t8, $a2
+0x004004a0:	lw	$a2, 8($sp)
+0x004004a4:	subu	$t5, $t5, $fp
+0x004004a8:	subu	$t1, $t1, $s6
+0x004004ac:	sw	$t5, 0x5c($sp)
+0x004004b0:	sll	$s6, $v1, 1
+0x004004b4:	lw	$t5, 0x44($sp)
+0x004004b8:	sll	$s4, $s4, 1
+0x004004bc:	lw	$v1, 0x10($sp)
+0x004004c0:	sll	$a2, $a2, 1
+0x004004c4:	xor	$s1, $s1, $s4
+0x004004c8:	sll	$fp, $t5, 1
+0x004004cc:	xor	$t8, $t8, $a2
+0x004004d0:	sw	$fp, 0x60($sp)
+0x004004d4:	xor	$t9, $t9, $s2
+0x004004d8:	lw	$fp, 0x64($sp)
+0x004004dc:	xor	$t3, $t3, $s0
+0x004004e0:	xor	$t1, $t1, $s6
+0x004004e4:	sll	$v1, $v1, 1
+0x004004e8:	subu	$t5, $t4, $fp
+0x004004ec:	xor	$a3, $a3, $v1
+0x004004f0:	sw	$t5, 0x64($sp)
+0x004004f4:	xor	$v0, $v0, $s7
+0x004004f8:	lw	$t4, 0x48($sp)
+0x004004fc:	andi	$s1, $s1, 0xff
+0x00400500:	lw	$t5, 0x14($sp)
+0x00400504:	andi	$t9, $t9, 0xff
+0x00400508:	lw	$t0, 0x38($sp)
+0x0040050c:	andi	$t3, $t3, 0xff
+0x00400510:	sll	$t4, $t4, 1
+0x00400514:	lw	$fp, 0x18($sp)
+0x00400518:	lw	$t6, 0x2c($sp)
+0x0040051c:	andi	$a3, $a3, 0xff
+0x00400520:	sw	$t4, 0x7c($sp)
+0x00400524:	xor	$t4, $t5, $t0
+0x00400528:	sw	$t4, 0x38($sp)
+0x0040052c:	andi	$v0, $v0, 0xff
+0x00400530:	lw	$t4, 0x1c($sp)
+0x00400534:	lw	$t5, 0x24($sp)
+0x00400538:	lw	$s4, 4($sp)
+0x0040053c:	xor	$t4, $fp, $t4
+0x00400540:	lw	$fp, 0x20($sp)
+0x00400544:	lw	$s2, 8($sp)
+0x00400548:	lw	$a2, 0x1c($sp)
+0x0040054c:	xor	$t0, $t0, $s4
+0x00400550:	xor	$fp, $fp, $t5
+0x00400554:	lw	$t5, 0x28($sp)
+0x00400558:	lw	$s0, 0x78($sp)
+0x0040055c:	xor	$a2, $a2, $s2
+0x00400560:	lw	$s6, 0x10($sp)
+0x00400564:	xor	$t6, $t5, $t6
+0x00400568:	lw	$t5, 0x14($sp)
+0x0040056c:	sw	$t6, 0x34($sp)
+0x00400570:	xor	$t2, $t2, $s0
+0x00400574:	lw	$t6, 0x68($sp)
+0x00400578:	xor	$s4, $t5, $s4
+0x0040057c:	lw	$t5, 0x18($sp)
+0x00400580:	lw	$s0, 0xc($sp)
+0x00400584:	xor	$s5, $s5, $t6
+0x00400588:	lw	$t6, 0x6c($sp)
+0x0040058c:	xor	$s2, $t5, $s2
+0x00400590:	lw	$t5, 0x74($sp)
+0x00400594:	lw	$v1, 0x2c($sp)
+0x00400598:	andi	$s5, $s5, 0xff
+0x0040059c:	xor	$s3, $s3, $t6
+0x004005a0:	lw	$t6, 0x70($sp)
+0x004005a4:	sw	$s1, 0x14($sp)
+0x004005a8:	sw	$t9, 0x2c($sp)
+0x004005ac:	andi	$t9, $t1, 0xff
+0x004005b0:	xor	$t7, $t7, $t6
+0x004005b4:	xor	$t6, $a1, $t5
+0x004005b8:	lw	$t5, 0x20($sp)
+0x004005bc:	lw	$a1, 0x24($sp)
+0x004005c0:	xor	$v1, $v1, $s6
+0x004005c4:	andi	$t7, $t7, 0xff
+0x004005c8:	andi	$t6, $t6, 0xff
+0x004005cc:	xor	$a1, $a1, $s0
+0x004005d0:	xor	$s0, $t5, $s0
+0x004005d4:	lw	$t5, 0x28($sp)
+0x004005d8:	xor	$s7, $t5, $s6
+0x004005dc:	andi	$t5, $s3, 0xff
+0x004005e0:	andi	$s3, $t8, 0xff
+0x004005e4:	sw	$t5, 0x28($sp)
+0x004005e8:	sw	$s3, 0x18($sp)
+0x004005ec:	andi	$t5, $t2, 0xff
+0x004005f0:	sw	$t3, 0x1c($sp)
+0x004005f4:	sw	$a3, 0x24($sp)
+0x004005f8:	lw	$t2, 0x3c($sp)
+0x004005fc:	lw	$t3, 0x38($sp)
+0x00400600:	lw	$s1, 0x50($sp)
+0x00400604:	lw	$a3, 0x4c($sp)
+0x00400608:	xor	$t0, $t2, $t0
+0x0040060c:	lw	$t1, 4($sp)
+0x00400610:	xor	$s3, $t2, $t3
+0x00400614:	xor	$s4, $t2, $s4
+0x00400618:	lw	$t2, 0x58($sp)
+0x0040061c:	xor	$a3, $a3, $s1
+0x00400620:	lw	$s1, 0x54($sp)
+0x00400624:	sw	$t5, 0x20($sp)
+0x00400628:	xor	$t5, $t1, $t3
+0x0040062c:	lw	$t1, 8($sp)
+0x00400630:	xor	$t0, $s5, $t0
+0x00400634:	xor	$t3, $s1, $t2
+0x00400638:	lw	$t2, 0x40($sp)
+0x0040063c:	lw	$t8, 0x44($sp)
+0x00400640:	xor	$t5, $s5, $t5
+0x00400644:	sw	$t9, 0x30($sp)
+0x00400648:	andi	$a3, $a3, 0xff
+0x0040064c:	xor	$s1, $t2, $t4
+0x00400650:	lw	$s6, 0x10($sp)
+0x00400654:	xor	$a2, $t2, $a2
+0x00400658:	lw	$s5, 0x2c($sp)
+0x0040065c:	xor	$s2, $t2, $s2
+0x00400660:	lw	$t2, 0x5c($sp)
+0x00400664:	xor	$t4, $t1, $t4
+0x00400668:	lw	$t1, 0x60($sp)
+0x0040066c:	xor	$t9, $t8, $fp
+0x00400670:	xor	$a1, $t8, $a1
+0x00400674:	xor	$t2, $t2, $t1
+0x00400678:	lw	$t1, 0xc($sp)
+0x0040067c:	xor	$s0, $t8, $s0
+0x00400680:	lw	$t8, 0x7c($sp)
+0x00400684:	xor	$a2, $t7, $a2
+0x00400688:	xor	$fp, $t1, $fp
+0x0040068c:	lw	$t1, 0x64($sp)
+0x00400690:	xor	$t4, $t7, $t4
+0x00400694:	lw	$t7, 0x1c($sp)
+0x00400698:	xor	$a1, $t6, $a1
+0x0040069c:	xor	$t1, $t1, $t8
+0x004006a0:	lw	$t8, 0x48($sp)
+0x004006a4:	xor	$s0, $t7, $s0
+0x004006a8:	lw	$t7, 0x24($sp)
+0x004006ac:	xor	$t6, $t6, $fp
+0x004006b0:	lw	$fp, 0x30($sp)
+0x004006b4:	xor	$v1, $t8, $v1
+0x004006b8:	sw	$v1, 4($sp)
+0x004006bc:	xor	$s7, $t8, $s7
+0x004006c0:	lw	$v1, 0x34($sp)
+0x004006c4:	xor	$t5, $a3, $t5
+0x004006c8:	andi	$t3, $t3, 0xff
+0x004006cc:	andi	$t2, $t2, 0xff
+0x004006d0:	xor	$s6, $s6, $v1
+0x004006d4:	xor	$t8, $t8, $v1
+0x004006d8:	lw	$v1, 0x14($sp)
+0x004006dc:	sw	$s6, 8($sp)
+0x004006e0:	xor	$t8, $t7, $t8
+0x004006e4:	lw	$s6, 0x28($sp)
+0x004006e8:	andi	$t1, $t1, 0xff
+0x004006ec:	xor	$s3, $v1, $s3
+0x004006f0:	lw	$v1, 0x18($sp)
+0x004006f4:	xor	$s3, $a3, $s3
+0x004006f8:	xor	$s4, $s6, $s4
+0x004006fc:	xor	$s1, $v1, $s1
+0x00400700:	lw	$v1, 0x20($sp)
+0x00400704:	xor	$s2, $s5, $s2
+0x00400708:	xor	$s7, $fp, $s7
+0x0040070c:	xor	$t9, $v1, $t9
+0x00400710:	lw	$v1, 4($sp)
+0x00400714:	lw	$t7, 8($sp)
+0x00400718:	xor	$t0, $s6, $t0
+0x0040071c:	lw	$s6, 0x9c($sp)
+0x00400720:	xor	$a2, $s5, $a2
+0x00400724:	xor	$v1, $v0, $v1
+0x00400728:	lw	$s5, 0x98($sp)
+0x0040072c:	xor	$v0, $v0, $t7
+0x00400730:	lw	$t7, 0x14($sp)
+0x00400734:	sb	$s3, 8($a0)
+0x00400738:	xor	$s1, $t3, $s1
+0x0040073c:	sb	$t5, 0xc($a0)
+0x00400740:	xor	$v1, $fp, $v1
+0x00400744:	xor	$s4, $t7, $s4
+0x00400748:	lw	$t7, 0x1c($sp)
+0x0040074c:	lw	$s3, 0x18($sp)
+0x00400750:	xor	$t4, $t3, $t4
+0x00400754:	lw	$t5, 0x20($sp)
+0x00400758:	xor	$t9, $t2, $t9
+0x0040075c:	xor	$a1, $t7, $a1
+0x00400760:	lw	$t7, 0x24($sp)
+0x00400764:	xor	$s2, $s3, $s2
+0x00400768:	lw	$fp, 0xa4($sp)
+0x0040076c:	xor	$s0, $t5, $s0
+0x00400770:	lw	$s3, 0x90($sp)
+0x00400774:	xor	$s7, $t7, $s7
+0x00400778:	sb	$s4, 4($a0)
+0x0040077c:	xor	$t6, $t2, $t6
+0x00400780:	sb	$s2, 5($a0)
+0x00400784:	xor	$t8, $t1, $t8
+0x00400788:	sb	$s1, 9($a0)
+0x0040078c:	xor	$v0, $t1, $v0
+0x00400790:	sb	$s0, 6($a0)
+0x00400794:	sb	$s7, 7($a0)
+0x00400798:	sb	$t0, ($a0)
+0x0040079c:	sb	$a2, 1($a0)
+0x004007a0:	sb	$t4, 0xd($a0)
+0x004007a4:	sb	$a1, 2($a0)
+0x004007a8:	sb	$t9, 0xa($a0)
+0x004007ac:	sb	$t6, 0xe($a0)
+0x004007b0:	sb	$v1, 3($a0)
+0x004007b4:	sb	$t8, 0xb($a0)
+0x004007b8:	sb	$v0, 0xf($a0)
+0x004007bc:	lw	$s7, 0xa0($sp)
+0x004007c0:	lw	$s4, 0x94($sp)
+0x004007c4:	lw	$s2, 0x8c($sp)
+0x004007c8:	lw	$s1, 0x88($sp)
+0x004007cc:	lw	$s0, 0x84($sp)
+0x004007d0:	jr	$ra
+0x004007d4:	addiu	$sp, $sp, 0xa8
+
+Function sub_4007d8 @ 0x004007d8
+0x004007d8:	lbu	$a3, ($a1)
+0x004007dc:	lbu	$a2, ($a0)
+0x004007e0:	lbu	$v1, 1($a0)
+0x004007e4:	lbu	$v0, 2($a0)
+0x004007e8:	xor	$a2, $a2, $a3
+0x004007ec:	lbu	$t3, 3($a0)
+0x004007f0:	sb	$a2, ($a0)
+0x004007f4:	lbu	$a2, 1($a1)
+0x004007f8:	lbu	$t2, 4($a0)
+0x004007fc:	lbu	$t1, 5($a0)
+0x00400800:	xor	$v1, $v1, $a2
+0x00400804:	lbu	$t0, 6($a0)
+0x00400808:	sb	$v1, 1($a0)
+0x0040080c:	lbu	$v1, 2($a1)
+0x00400810:	lbu	$a3, 7($a0)
+0x00400814:	lbu	$a2, 8($a0)
+0x00400818:	xor	$v0, $v0, $v1
+0x0040081c:	lbu	$v1, 9($a0)
+0x00400820:	sb	$v0, 2($a0)
+0x00400824:	lbu	$t4, 3($a1)
+0x00400828:	lbu	$v0, 0xa($a0)
+0x0040082c:	xor	$t3, $t3, $t4
+0x00400830:	sb	$t3, 3($a0)
+0x00400834:	lbu	$t3, 4($a1)
+0x00400838:	xor	$t2, $t2, $t3
+0x0040083c:	sb	$t2, 4($a0)
+0x00400840:	lbu	$t2, 5($a1)
+0x00400844:	xor	$t1, $t1, $t2
+0x00400848:	sb	$t1, 5($a0)
+0x0040084c:	lbu	$t1, 6($a1)
+0x00400850:	xor	$t0, $t0, $t1
+0x00400854:	sb	$t0, 6($a0)
+0x00400858:	lbu	$t0, 7($a1)
+0x0040085c:	xor	$a3, $a3, $t0
+0x00400860:	sb	$a3, 7($a0)
+0x00400864:	lbu	$a3, 8($a1)
+0x00400868:	xor	$a2, $a2, $a3
+0x0040086c:	sb	$a2, 8($a0)
+0x00400870:	lbu	$a2, 9($a1)
+0x00400874:	xor	$v1, $v1, $a2
+0x00400878:	sb	$v1, 9($a0)
+0x0040087c:	lbu	$v1, 0xa($a1)
+0x00400880:	xor	$v0, $v0, $v1
+0x00400884:	sb	$v0, 0xa($a0)
+0x00400888:	lbu	$v1, 0xb($a1)
+0x0040088c:	lbu	$v0, 0xb($a0)
+0x00400890:	lbu	$a3, 0xc($a0)
+0x00400894:	lbu	$a2, 0xd($a0)
+0x00400898:	xor	$v0, $v0, $v1
+0x0040089c:	lbu	$v1, 0xe($a0)
+0x004008a0:	sb	$v0, 0xb($a0)
+0x004008a4:	lbu	$t0, 0xc($a1)
+0x004008a8:	lbu	$v0, 0xf($a0)
+0x004008ac:	xor	$a3, $a3, $t0
+0x004008b0:	sb	$a3, 0xc($a0)
+0x004008b4:	lbu	$a3, 0xd($a1)
+0x004008b8:	xor	$a2, $a2, $a3
+0x004008bc:	sb	$a2, 0xd($a0)
+0x004008c0:	lbu	$a2, 0xe($a1)
+0x004008c4:	xor	$v1, $v1, $a2
+0x004008c8:	sb	$v1, 0xe($a0)
+0x004008cc:	lbu	$v1, 0xf($a1)
+0x004008d0:	xor	$v0, $v0, $v1
+0x004008d4:	jr	$ra
+0x004008d8:	sb	$v0, 0xf($a0)
+
+Function sub_4008dc @ 0x004008dc
+0x004008dc:	addiu	$sp, $sp, -0x20
+0x004008e0:	lbu	$a1, 7($a0)
+0x004008e4:	lbu	$a3, 0xf($a0)
+0x004008e8:	lui	$v1, 0
+0x004008ec:	lbu	$t0, 0xb($a0)
+0x004008f0:	sw	$s4, 0x14($sp)
+0x004008f4:	lui	$s4, 0
+0x004008f8:	sw	$s5, 0x18($sp)
+0x004008fc:	addiu	$v1, $v1, 0
+0x00400900:	sw	$s2, 0xc($sp)
+0x00400904:	lui	$s5, 0
+0x00400908:	sw	$s3, 0x10($sp)
+0x0040090c:	andi	$t1, $a3, 0xf0
+0x00400910:	lbu	$s2, ($s4)
+0x00400914:	andi	$v0, $a1, 0xf0
+0x00400918:	addu	$t8, $t1, $v1
+0x0040091c:	lbu	$a2, 3($a0)
+0x00400920:	addiu	$t1, $s5, 0
+0x00400924:	sw	$s6, 0x1c($sp)
+0x00400928:	addu	$v0, $v0, $v1
+0x0040092c:	sw	$s1, 8($sp)
+0x00400930:	andi	$t2, $a1, 0xf
+0x00400934:	sw	$s0, 4($sp)
+0x00400938:	andi	$t9, $t0, 0xf0
+0x0040093c:	lbu	$s1, 4($a0)
+0x00400940:	andi	$s3, $s2, 0x1f
+0x00400944:	lbu	$t7, 1($a0)
+0x00400948:	addu	$s3, $s3, $t1
+0x0040094c:	lbu	$t5, 5($a0)
+0x00400950:	addu	$v0, $v0, $t2
+0x00400954:	lbu	$s0, 8($a0)
+0x00400958:	addu	$t9, $t9, $v1
+0x0040095c:	lbu	$t6, 2($a0)
+0x00400960:	addiu	$t1, $s2, 1
+0x00400964:	lbu	$s5, ($s3)
+0x00400968:	andi	$s6, $t0, 0xf
+0x0040096c:	lbu	$v0, ($v0)
+0x00400970:	addu	$t9, $t9, $s6
+0x00400974:	lbu	$t4, 6($a0)
+0x00400978:	sb	$t1, ($s4)
+0x0040097c:	andi	$s2, $a3, 0xf
+0x00400980:	addu	$t1, $t8, $s2
+0x00400984:	lbu	$s2, ($a0)
+0x00400988:	lbu	$t9, ($t9)
+0x0040098c:	andi	$s3, $a2, 0xf0
+0x00400990:	xor	$v0, $v0, $s5
+0x00400994:	lbu	$t3, 9($a0)
+0x00400998:	lbu	$t8, ($t1)
+0x0040099c:	addu	$v1, $s3, $v1
+0x004009a0:	xor	$v0, $v0, $s2
+0x004009a4:	lbu	$t2, 0xa($a0)
+0x004009a8:	xor	$t9, $t9, $s1
+0x004009ac:	andi	$v0, $v0, 0xff
+0x004009b0:	andi	$t1, $a2, 0xf
+0x004009b4:	xor	$t7, $v0, $t7
+0x004009b8:	xor	$t5, $t9, $t5
+0x004009bc:	addu	$v1, $v1, $t1
+0x004009c0:	xor	$t8, $t8, $s0
+0x004009c4:	xor	$t6, $t7, $t6
+0x004009c8:	xor	$t4, $t5, $t4
+0x004009cc:	lbu	$t1, ($v1)
+0x004009d0:	xor	$t3, $t8, $t3
+0x004009d4:	sb	$v0, ($a0)
+0x004009d8:	xor	$a1, $a1, $t4
+0x004009dc:	sb	$t7, 1($a0)
+0x004009e0:	xor	$a2, $a2, $t6
+0x004009e4:	sb	$t6, 2($a0)
+0x004009e8:	xor	$t2, $t3, $t2
+0x004009ec:	sb	$a2, 3($a0)
+0x004009f0:	sb	$t9, 4($a0)
+0x004009f4:	xor	$v1, $t0, $t2
+0x004009f8:	sb	$a1, 7($a0)
+0x004009fc:	sb	$v1, 0xb($a0)
+0x00400a00:	lbu	$a1, 0xc($a0)
+0x00400a04:	lbu	$v0, 0xd($a0)
+0x00400a08:	lbu	$v1, 0xe($a0)
+0x00400a0c:	xor	$a1, $t1, $a1
+0x00400a10:	lw	$s6, 0x1c($sp)
+0x00400a14:	xor	$v0, $a1, $v0
+0x00400a18:	lw	$s5, 0x18($sp)
+0x00400a1c:	xor	$v1, $v0, $v1
+0x00400a20:	lw	$s4, 0x14($sp)
+0x00400a24:	lw	$s3, 0x10($sp)
+0x00400a28:	lw	$s2, 0xc($sp)
+0x00400a2c:	lw	$s1, 8($sp)
+0x00400a30:	lw	$s0, 4($sp)
+0x00400a34:	addiu	$sp, $sp, 0x20
+0x00400a38:	sb	$v0, 0xd($a0)
+0x00400a3c:	xor	$v0, $a3, $v1
+0x00400a40:	sb	$t5, 5($a0)
+0x00400a44:	sb	$t4, 6($a0)
+0x00400a48:	sb	$t8, 8($a0)
+0x00400a4c:	sb	$t3, 9($a0)
+0x00400a50:	sb	$t2, 0xa($a0)
+0x00400a54:	sb	$a1, 0xc($a0)
+0x00400a58:	sb	$v1, 0xe($a0)
+0x00400a5c:	jr	$ra
+0x00400a60:	sb	$v0, 0xf($a0)
+
+Function sub_400a64 @ 0x00400a64
+0x00400a64:	lbu	$v0, ($a1)
+0x00400a68:	sb	$v0, ($a0)
+0x00400a6c:	lbu	$v0, 1($a1)
+0x00400a70:	sb	$v0, 1($a0)
+0x00400a74:	lbu	$v0, 2($a1)
+0x00400a78:	sb	$v0, 2($a0)
+0x00400a7c:	lbu	$v0, 3($a1)
+0x00400a80:	sb	$v0, 3($a0)
+0x00400a84:	lbu	$v0, 4($a1)
+0x00400a88:	sb	$v0, 4($a0)
+0x00400a8c:	lbu	$v0, 5($a1)
+0x00400a90:	sb	$v0, 5($a0)
+0x00400a94:	lbu	$v0, 6($a1)
+0x00400a98:	sb	$v0, 6($a0)
+0x00400a9c:	lbu	$v0, 7($a1)
+0x00400aa0:	sb	$v0, 7($a0)
+0x00400aa4:	lbu	$v0, 8($a1)
+0x00400aa8:	sb	$v0, 8($a0)
+0x00400aac:	lbu	$v0, 9($a1)
+0x00400ab0:	sb	$v0, 9($a0)
+0x00400ab4:	lbu	$v0, 0xa($a1)
+0x00400ab8:	sb	$v0, 0xa($a0)
+0x00400abc:	lbu	$v0, 0xb($a1)
+0x00400ac0:	sb	$v0, 0xb($a0)
+0x00400ac4:	lbu	$v0, 0xc($a1)
+0x00400ac8:	sb	$v0, 0xc($a0)
+0x00400acc:	lbu	$v0, 0xd($a1)
+0x00400ad0:	sb	$v0, 0xd($a0)
+0x00400ad4:	lbu	$v0, 0xe($a1)
+0x00400ad8:	sb	$v0, 0xe($a0)
+0x00400adc:	lbu	$v0, 0xf($a1)
+0x00400ae0:	jr	$ra
+0x00400ae4:	sb	$v0, 0xf($a0)
+
+Function sub_400ae8 @ 0x00400ae8
+0x00400ae8:	lui	$gp, 0
+0x00400aec:	addiu	$sp, $sp, -0x60
+0x00400af0:	addiu	$gp, $gp, 0
+0x00400af4:	move	$v0, $a0
+0x00400af8:	sw	$ra, 0x5c($sp)
+0x00400afc:	lui	$a1, 0
+0x00400b00:	sw	$s2, 0x58($sp)
+0x00400b04:	sw	$s1, 0x54($sp)
+0x00400b08:	addiu	$a1, $a1, 0
+0x00400b0c:	sw	$s0, 0x50($sp)
+0x00400b10:	sw	$gp, 0x48($sp)
+0x00400b14:	lbu	$t1, 4($v0)
+0x00400b18:	lbu	$t0, 3($v0)
+0x00400b1c:	lbu	$v1, 2($v0)
+0x00400b20:	lbu	$s2, 0xf($a0)
+0x00400b24:	addiu	$a0, $zero, 1
+0x00400b28:	lbu	$s1, 0xe($v0)
+0x00400b2c:	lbu	$s0, 0xd($v0)
+0x00400b30:	lbu	$ra, 0xc($v0)
+0x00400b34:	lbu	$t8, 0xb($v0)
+0x00400b38:	lbu	$t7, 0xa($v0)
+0x00400b3c:	lbu	$t6, 9($v0)
+0x00400b40:	lbu	$t5, 8($v0)
+0x00400b44:	lbu	$t4, 7($v0)
+0x00400b48:	lbu	$t3, 6($v0)
+0x00400b4c:	lbu	$t2, 5($v0)
+0x00400b50:	lbu	$a3, 1($v0)
+0x00400b54:	lbu	$a2, ($v0)
+0x00400b58:	lw	$t9, ($gp)
+0x00400b5c:	sw	$ra, 0x38($sp)
+0x00400b60:	sw	$t8, 0x34($sp)
+0x00400b64:	sw	$t7, 0x30($sp)
+0x00400b68:	sw	$t6, 0x2c($sp)
+0x00400b6c:	sw	$t5, 0x28($sp)
+0x00400b70:	sw	$t4, 0x24($sp)
+0x00400b74:	sw	$t3, 0x20($sp)
+0x00400b78:	sw	$s2, 0x44($sp)
+0x00400b7c:	sw	$s1, 0x40($sp)
+0x00400b80:	sw	$s0, 0x3c($sp)
+0x00400b84:	sw	$t2, 0x1c($sp)
+0x00400b88:	sw	$t1, 0x18($sp)
+0x00400b8c:	sw	$t0, 0x14($sp)
+0x00400b90:	jalr	$t9
+0x00400b94:	sw	$v1, 0x10($sp)
+0x00400b98:	lw	$ra, 0x5c($sp)
+0x00400b9c:	lw	$s2, 0x58($sp)
+0x00400ba0:	lw	$s1, 0x54($sp)
+0x00400ba4:	lw	$s0, 0x50($sp)
+0x00400ba8:	jr	$ra
+0x00400bac:	addiu	$sp, $sp, 0x60
+
+Function sub_400e9c @ 0x00400e9c
+0x00400e9c:	lui	$gp, 0
+0x00400ea0:	addiu	$sp, $sp, -0x1b0
+0x00400ea4:	addiu	$gp, $gp, 0
+0x00400ea8:	lui	$a1, 0
+0x00400eac:	sw	$s0, 0x188($sp)
+0x00400eb0:	lui	$s0, 0
+0x00400eb4:	lw	$v0, ($gp)
+0x00400eb8:	addiu	$a1, $a1, 0
+0x00400ebc:	lw	$t9, ($gp)
+0x00400ec0:	addiu	$a0, $s0, 0
+0x00400ec4:	sw	$gp, 0x48($sp)
+0x00400ec8:	sw	$v0, 0x134($sp)
+0x00400ecc:	sw	$ra, 0x1ac($sp)
+0x00400ed0:	sw	$fp, 0x1a8($sp)
+0x00400ed4:	sw	$s7, 0x1a4($sp)
+0x00400ed8:	sw	$s6, 0x1a0($sp)
+0x00400edc:	sw	$s5, 0x19c($sp)
+0x00400ee0:	sw	$s4, 0x198($sp)
+0x00400ee4:	sw	$s3, 0x194($sp)
+0x00400ee8:	sw	$s2, 0x190($sp)
+0x00400eec:	sw	$s1, 0x18c($sp)
+0x00400ef0:	lw	$v0, ($v0)
+0x00400ef4:	sw	$v0, 0x184($sp)
+0x00400ef8:	jalr	$t9
+0x00400efc:	nop	
+0x00400f00:	beqz	$v0, 0x401af0
+0x00400f04:	lw	$gp, 0x48($sp)
+0x00400f08:	lui	$s0, 0
+0x00400f0c:	lw	$t9, ($gp)
+0x00400f10:	addiu	$a2, $sp, 0x13c
+0x00400f14:	sw	$v0, 0x50($sp)
+0x00400f18:	addiu	$a1, $s0, 0
+0x00400f1c:	jalr	$t9
+0x00400f20:	move	$a0, $v0
+0x00400f24:	addiu	$s1, $sp, 0x164
+0x00400f28:	lw	$gp, 0x48($sp)
+0x00400f2c:	addiu	$a1, $s0, 0
+0x00400f30:	lw	$a0, 0x50($sp)
+0x00400f34:	addiu	$a2, $sp, 0x140
+0x00400f38:	sw	$s1, 0x120($sp)
+0x00400f3c:	lw	$t9, ($gp)
+0x00400f40:	jalr	$t9
+0x00400f44:	lui	$s0, 0
+0x00400f48:	addiu	$v0, $sp, 0x153
+0x00400f4c:	lw	$gp, 0x48($sp)
+0x00400f50:	addiu	$a3, $sp, 0x148
+0x00400f54:	sw	$v0, 0x44($sp)
+0x00400f58:	addiu	$v0, $sp, 0x14f
+0x00400f5c:	lw	$a0, 0x50($sp)
+0x00400f60:	addiu	$a2, $sp, 0x144
+0x00400f64:	sw	$v0, 0x40($sp)
+0x00400f68:	addiu	$v0, $sp, 0x14b
+0x00400f6c:	lw	$t9, ($gp)
+0x00400f70:	addiu	$a1, $s0, 0
+0x00400f74:	sw	$v0, 0x3c($sp)
+0x00400f78:	addiu	$v0, $sp, 0x147
+0x00400f7c:	sw	$v0, 0x38($sp)
+0x00400f80:	addiu	$v0, $sp, 0x152
+0x00400f84:	sw	$v0, 0x34($sp)
+0x00400f88:	addiu	$v0, $sp, 0x14e
+0x00400f8c:	sw	$v0, 0x30($sp)
+0x00400f90:	addiu	$v0, $sp, 0x14a
+0x00400f94:	sw	$v0, 0x2c($sp)
+0x00400f98:	addiu	$v0, $sp, 0x146
+0x00400f9c:	sw	$v0, 0x28($sp)
+0x00400fa0:	addiu	$v0, $sp, 0x151
+0x00400fa4:	sw	$v0, 0x24($sp)
+0x00400fa8:	addiu	$v0, $sp, 0x14d
+0x00400fac:	sw	$v0, 0x20($sp)
+0x00400fb0:	addiu	$v0, $sp, 0x149
+0x00400fb4:	sw	$v0, 0x1c($sp)
+0x00400fb8:	addiu	$v0, $sp, 0x145
+0x00400fbc:	sw	$v0, 0x18($sp)
+0x00400fc0:	addiu	$v0, $sp, 0x150
+0x00400fc4:	sw	$v0, 0x14($sp)
+0x00400fc8:	addiu	$v0, $sp, 0x14c
+0x00400fcc:	jalr	$t9
+0x00400fd0:	sw	$v0, 0x10($sp)
+0x00400fd4:	addiu	$v0, $sp, 0x173
+0x00400fd8:	lw	$gp, 0x48($sp)
+0x00400fdc:	addiu	$a3, $sp, 0x168
+0x00400fe0:	sw	$v0, 0x44($sp)
+0x00400fe4:	addiu	$v0, $sp, 0x16f
+0x00400fe8:	lw	$a0, 0x50($sp)
+0x00400fec:	addiu	$a1, $s0, 0
+0x00400ff0:	sw	$v0, 0x40($sp)
+0x00400ff4:	addiu	$v0, $sp, 0x16b
+0x00400ff8:	lw	$t9, ($gp)
+0x00400ffc:	move	$a2, $s1
+0x00401000:	sw	$v0, 0x3c($sp)
+0x00401004:	addiu	$v0, $sp, 0x167
+0x00401008:	sw	$v0, 0x38($sp)
+0x0040100c:	addiu	$v0, $sp, 0x172
+0x00401010:	sw	$v0, 0x34($sp)
+0x00401014:	addiu	$v0, $sp, 0x16e
+0x00401018:	sw	$v0, 0x30($sp)
+0x0040101c:	addiu	$v0, $sp, 0x16a
+0x00401020:	sw	$v0, 0x2c($sp)
+0x00401024:	addiu	$v0, $sp, 0x166
+0x00401028:	sw	$v0, 0x28($sp)
+0x0040102c:	addiu	$v0, $sp, 0x171
+0x00401030:	sw	$v0, 0x24($sp)
+0x00401034:	addiu	$v0, $sp, 0x16d
+0x00401038:	sw	$v0, 0x20($sp)
+0x0040103c:	addiu	$v0, $sp, 0x169
+0x00401040:	sw	$v0, 0x1c($sp)
+0x00401044:	addiu	$v0, $sp, 0x165
+0x00401048:	sw	$v0, 0x18($sp)
+0x0040104c:	addiu	$v0, $sp, 0x170
+0x00401050:	sw	$v0, 0x14($sp)
+0x00401054:	addiu	$v0, $sp, 0x16c
+0x00401058:	jalr	$t9
+0x0040105c:	sw	$v0, 0x10($sp)
+0x00401060:	lw	$gp, 0x48($sp)
+0x00401064:	lw	$t9, ($gp)
+0x00401068:	jalr	$t9
+0x0040106c:	lw	$a0, 0x50($sp)
+0x00401070:	lw	$v1, 0x168($sp)
+0x00401074:	lw	$v0, 0x13c($sp)
+0x00401078:	lw	$gp, 0x48($sp)
+0x0040107c:	sw	$v1, 0x178($sp)
+0x00401080:	lw	$v1, 0x164($sp)
+0x00401084:	sw	$v1, 0x174($sp)
+0x00401088:	lw	$v1, 0x16c($sp)
+0x0040108c:	sw	$v1, 0x17c($sp)
+0x00401090:	lw	$v1, 0x170($sp)
+0x00401094:	blez	$v0, 0x401a08
+0x00401098:	sw	$v1, 0x180($sp)
+0x0040109c:	lui	$v0, 0
+0x004010a0:	sw	$zero, 0x12c($sp)
+0x004010a4:	sw	$v0, 0xcc($sp)
+0x004010a8:	addiu	$v0, $sp, 0x154
+0x004010ac:	mtlo	$v0
+0x004010b0:	lui	$v0, 0
+0x004010b4:	addiu	$v0, $v0, 0
+0x004010b8:	sw	$v0, 0x124($sp)
+0x004010bc:	lui	$v0, 0
+0x004010c0:	addiu	$v0, $v0, 0
+0x004010c4:	sw	$v0, 0x128($sp)
+0x004010c8:	addiu	$v0, $sp, 0x174
+0x004010cc:	sw	$v0, 0x130($sp)
+0x004010d0:	addiu	$v0, $zero, 1
+0x004010d4:	lw	$a0, 0x120($sp)
+0x004010d8:	mflo	$a1
+0x004010dc:	sw	$v0, 0xa4($sp)
+0x004010e0:	lw	$v0, 0x148($sp)
+0x004010e4:	sw	$v0, 0x158($sp)
+0x004010e8:	lw	$v0, 0x14c($sp)
+0x004010ec:	sw	$v0, 0x15c($sp)
+0x004010f0:	lw	$v0, 0x144($sp)
+0x004010f4:	sw	$v0, 0x154($sp)
+0x004010f8:	lw	$v0, 0x150($sp)
+0x004010fc:	sw	$v0, 0x160($sp)
+0x00401100:	lw	$v0, 0xcc($sp)
+0x00401104:	jal	0
+0x00401108:	sb	$zero, ($v0)
+0x004010d4:	lw	$a0, 0x120($sp)
+0x004010d8:	mflo	$a1
+0x004010dc:	sw	$v0, 0xa4($sp)
+0x004010e0:	lw	$v0, 0x148($sp)
+0x004010e4:	sw	$v0, 0x158($sp)
+0x004010e8:	lw	$v0, 0x14c($sp)
+0x004010ec:	sw	$v0, 0x15c($sp)
+0x004010f0:	lw	$v0, 0x144($sp)
+0x004010f4:	sw	$v0, 0x154($sp)
+0x004010f8:	lw	$v0, 0x150($sp)
+0x004010fc:	sw	$v0, 0x160($sp)
+0x00401100:	lw	$v0, 0xcc($sp)
+0x00401104:	jal	0
+0x00401108:	sb	$zero, ($v0)
+0x0040110c:	lw	$v0, 0x140($sp)
+0x00401110:	slti	$v0, $v0, 2
+0x00401114:	bnez	$v0, 0x4019b0
+0x00401118:	lw	$s0, 0x120($sp)
+0x0040111c:	jal	0
+0x00401120:	lw	$a0, 0x120($sp)
+0x00401124:	lw	$v0, 0xa4($sp)
+0x00401128:	lw	$a0, 0xcc($sp)
+0x0040112c:	lw	$s7, 0x124($sp)
+0x00401130:	addiu	$v0, $v0, 1
+0x00401134:	lbu	$fp, 0x166($sp)
+0x00401138:	lw	$t1, 0x128($sp)
+0x0040113c:	lbu	$t3, ($a0)
+0x00401140:	lbu	$a1, 0x16d($sp)
+0x00401144:	lbu	$a3, 0x16e($sp)
+0x00401148:	lbu	$t9, 0x16a($sp)
+0x0040114c:	lbu	$t2, 0x167($sp)
+0x00401150:	srl	$s1, $a1, 7
+0x00401154:	sw	$v0, 0xa4($sp)
+0x00401158:	srl	$s0, $a3, 7
+0x0040115c:	lbu	$v0, 0x15b($sp)
+0x00401160:	lbu	$a2, 0x164($sp)
+0x00401164:	srl	$s3, $t2, 7
+0x00401168:	lbu	$t0, 0x165($sp)
+0x0040116c:	andi	$v1, $v0, 0xf0
+0x00401170:	lbu	$t5, 0x171($sp)
+0x00401174:	andi	$a0, $v0, 0xf
+0x00401178:	lbu	$s2, 0x15f($sp)
+0x0040117c:	addu	$v1, $s7, $v1
+0x00401180:	sw	$v0, 0xd0($sp)
+0x00401184:	andi	$v0, $t3, 0x1f
+0x00401188:	sw	$a1, 0x58($sp)
+0x0040118c:	addu	$v0, $t1, $v0
+0x00401190:	sw	$a2, 0x64($sp)
+0x00401194:	srl	$t1, $fp, 7
+0x00401198:	sw	$t0, 0x6c($sp)
+0x0040119c:	addu	$v1, $v1, $a0
+0x004011a0:	sw	$t9, 0x70($sp)
+0x004011a4:	move	$a1, $t1
+0x004011a8:	sw	$a3, 0x5c($sp)
+0x004011ac:	srl	$t1, $t9, 7
+0x004011b0:	sw	$s0, 0x8c($sp)
+0x004011b4:	sw	$t2, 0x74($sp)
+0x004011b8:	srl	$s5, $t0, 7
+0x004011bc:	sw	$t1, 0x88($sp)
+0x004011c0:	andi	$t2, $s2, 0xf0
+0x004011c4:	sw	$s3, 0x94($sp)
+0x004011c8:	srl	$t4, $a2, 7
+0x004011cc:	lbu	$s6, 0x169($sp)
+0x004011d0:	addu	$t2, $s7, $t2
+0x004011d4:	lbu	$t8, 0x16b($sp)
+0x004011d8:	addiu	$t3, $t3, 1
+0x004011dc:	lbu	$a0, 0x16c($sp)
+0x004011e0:	lbu	$t6, 0x172($sp)
+0x004011e4:	srl	$ra, $s6, 7
+0x004011e8:	lbu	$t7, 0x16f($sp)
+0x004011ec:	srl	$s0, $t8, 7
+0x004011f0:	lbu	$t9, 0x168($sp)
+0x004011f4:	lbu	$s4, 0x163($sp)
+0x004011f8:	lbu	$t0, ($v1)
+0x004011fc:	srl	$v1, $t5, 7
+0x00401200:	sw	$t5, 0xbc($sp)
+0x00401204:	move	$t5, $s2
+0x00401208:	sw	$t9, 0x68($sp)
+0x0040120c:	srl	$t1, $t9, 7
+0x00401210:	lbu	$s2, 0x173($sp)
+0x00401214:	lbu	$t9, 0x170($sp)
+0x00401218:	lbu	$s3, 0x157($sp)
+0x0040121c:	lbu	$a3, ($v0)
+0x00401220:	srl	$v0, $t7, 7
+0x00401224:	sw	$s2, 0x50($sp)
+0x00401228:	sw	$v1, 0x84($sp)
+0x0040122c:	srl	$v1, $t6, 7
+0x00401230:	sw	$s0, 0x98($sp)
+0x00401234:	srl	$s0, $a0, 7
+0x00401238:	sw	$v1, 0x90($sp)
+0x0040123c:	sll	$v1, $ra, 3
+0x00401240:	sw	$ra, 0xa0($sp)
+0x00401244:	xor	$a3, $t0, $a3
+0x00401248:	lbu	$s2, 0x156($sp)
+0x0040124c:	lw	$ra, 0x88($sp)
+0x00401250:	lbu	$a2, 0x154($sp)
+0x00401254:	sw	$s2, 0xe8($sp)
+0x00401258:	srl	$s2, $t9, 7
+0x0040125c:	sw	$t8, 0x78($sp)
+0x00401260:	sw	$t1, 0xb4($sp)
+0x00401264:	andi	$t1, $s3, 0xf0
+0x00401268:	sw	$a0, 0x54($sp)
+0x0040126c:	addu	$t1, $s7, $t1
+0x00401270:	sw	$s0, 0x7c($sp)
+0x00401274:	andi	$s0, $s4, 0xf0
+0x00401278:	sw	$t7, 0x60($sp)
+0x0040127c:	addu	$s0, $s7, $s0
+0x00401280:	sw	$v0, 0x9c($sp)
+0x00401284:	sll	$v0, $ra, 3
+0x00401288:	sw	$s4, 0xa8($sp)
+0x0040128c:	xor	$a3, $a3, $a2
+0x00401290:	sw	$s3, 0xac($sp)
+0x00401294:	andi	$a2, $a3, 0xff
+0x00401298:	sw	$t9, 0xb8($sp)
+0x0040129c:	sll	$s3, $s5, 3
+0x004012a0:	sw	$s2, 0x80($sp)
+0x004012a4:	sll	$s2, $s1, 3
+0x004012a8:	sw	$s1, 0xc4($sp)
+0x004012ac:	sll	$s1, $a1, 3
+0x004012b0:	sw	$a1, 0xc8($sp)
+0x004012b4:	subu	$s3, $s3, $s5
+0x004012b8:	sw	$t6, 0xc0($sp)
+0x004012bc:	sll	$s4, $t4, 3
+0x004012c0:	lbu	$t8, 0x155($sp)
+0x004012c4:	sll	$s3, $s3, 2
+0x004012c8:	lw	$a0, 0x8c($sp)
+0x004012cc:	subu	$s4, $s4, $t4
+0x004012d0:	lw	$t6, 0x94($sp)
+0x004012d4:	subu	$s3, $s3, $s5
+0x004012d8:	lw	$ra, 0x98($sp)
+0x004012dc:	sll	$s4, $s4, 2
+0x004012e0:	lw	$s7, 0xb4($sp)
+0x004012e4:	sll	$a0, $a0, 3
+0x004012e8:	sll	$t7, $t6, 3
+0x004012ec:	lw	$t6, 0x84($sp)
+0x004012f0:	sll	$a1, $ra, 3
+0x004012f4:	sw	$t5, 0xd4($sp)
+0x004012f8:	sll	$ra, $s7, 3
+0x004012fc:	lw	$s7, 0x7c($sp)
+0x00401300:	sll	$t0, $t6, 3
+0x00401304:	lw	$a3, 0xa0($sp)
+0x00401308:	sw	$a2, 0xb0($sp)
+0x0040130c:	subu	$s4, $s4, $t4
+0x00401310:	sll	$t9, $s7, 3
+0x00401314:	sw	$t0, 0xe4($sp)
+0x00401318:	lw	$s7, 0x9c($sp)
+0x0040131c:	subu	$v1, $v1, $a3
+0x00401320:	lw	$t0, 0x90($sp)
+0x00401324:	sb	$a2, 0x154($sp)
+0x00401328:	sll	$v1, $v1, 2
+0x0040132c:	lw	$a2, 0x80($sp)
+0x00401330:	sll	$t6, $t0, 3
+0x00401334:	sll	$t0, $s7, 3
+0x00401338:	andi	$s7, $t5, 0xf
+0x0040133c:	sw	$s7, 0xd8($sp)
+0x00401340:	sll	$a2, $a2, 3
+0x00401344:	lw	$s7, 0xa8($sp)
+0x00401348:	subu	$v1, $v1, $a3
+0x0040134c:	andi	$t5, $s7, 0xf
+0x00401350:	lw	$s7, 0xac($sp)
+0x00401354:	addu	$t5, $s0, $t5
+0x00401358:	andi	$s7, $s7, 0xf
+0x0040135c:	sw	$s7, 0xdc($sp)
+0x00401360:	lw	$s7, 0xc4($sp)
+0x00401364:	lw	$s0, 0xdc($sp)
+0x00401368:	subu	$s2, $s2, $s7
+0x0040136c:	lw	$s7, 0xc8($sp)
+0x00401370:	addu	$t1, $t1, $s0
+0x00401374:	lw	$s0, 0x50($sp)
+0x00401378:	sll	$s2, $s2, 2
+0x0040137c:	subu	$s1, $s1, $s7
+0x00401380:	lw	$s7, 0x88($sp)
+0x00401384:	srl	$s0, $s0, 7
+0x00401388:	sll	$s1, $s1, 2
+0x0040138c:	subu	$v0, $v0, $s7
+0x00401390:	lw	$s7, 0x8c($sp)
+0x00401394:	sw	$s0, 0xa0($sp)
+0x00401398:	lw	$s0, 0xb0($sp)
+0x0040139c:	sll	$v0, $v0, 2
+0x004013a0:	subu	$a0, $a0, $s7
+0x004013a4:	lw	$s7, 0x94($sp)
+0x004013a8:	xor	$t8, $s0, $t8
+0x004013ac:	subu	$t7, $t7, $s7
+0x004013b0:	lw	$s7, 0x98($sp)
+0x004013b4:	sll	$a0, $a0, 2
+0x004013b8:	sll	$t7, $t7, 2
+0x004013bc:	subu	$a1, $a1, $s7
+0x004013c0:	lw	$s7, 0xd8($sp)
+0x004013c4:	sll	$a1, $a1, 2
+0x004013c8:	addu	$t2, $t2, $s7
+0x004013cc:	lbu	$t2, ($t2)
+0x004013d0:	sw	$t2, 0xd8($sp)
+0x004013d4:	lbu	$t2, ($t5)
+0x004013d8:	sw	$t2, 0xdc($sp)
+0x004013dc:	move	$t2, $t8
+0x004013e0:	lw	$t5, 0xb4($sp)
+0x004013e4:	lbu	$t1, ($t1)
+0x004013e8:	sb	$t8, 0x155($sp)
+0x004013ec:	lw	$t8, 0xe4($sp)
+0x004013f0:	subu	$ra, $ra, $t5
+0x004013f4:	sw	$t1, 0xe0($sp)
+0x004013f8:	lw	$t1, 0x84($sp)
+0x004013fc:	sll	$ra, $ra, 2
+0x00401400:	lw	$s0, 0x7c($sp)
+0x00401404:	sw	$t2, 0xe4($sp)
+0x00401408:	subu	$ra, $ra, $t5
+0x0040140c:	subu	$s7, $t8, $t1
+0x00401410:	lw	$t8, 0x9c($sp)
+0x00401414:	lw	$t1, 0x90($sp)
+0x00401418:	subu	$t9, $t9, $s0
+0x0040141c:	lbu	$s0, 0x158($sp)
+0x00401420:	sll	$s7, $s7, 2
+0x00401424:	subu	$t0, $t0, $t8
+0x00401428:	lw	$t8, 0xcc($sp)
+0x0040142c:	subu	$t6, $t6, $t1
+0x00401430:	lw	$t1, 0xe8($sp)
+0x00401434:	sll	$t9, $t9, 2
+0x00401438:	sll	$t6, $t6, 2
+0x0040143c:	sb	$t3, ($t8)
+0x00401440:	xor	$t1, $t2, $t1
+0x00401444:	lw	$t3, 0x80($sp)
+0x00401448:	sll	$t0, $t0, 2
+0x0040144c:	lbu	$t8, 0x15c($sp)
+0x00401450:	sw	$t1, 0xb4($sp)
+0x00401454:	subu	$a2, $a2, $t3
+0x00401458:	lbu	$t3, 0x159($sp)
+0x0040145c:	sw	$t8, 0x108($sp)
+0x00401460:	sb	$t1, 0x156($sp)
+0x00401464:	sll	$a2, $a2, 2
+0x00401468:	sw	$t3, 0x100($sp)
+0x0040146c:	lbu	$t3, 0x160($sp)
+0x00401470:	lbu	$t8, 0x15a($sp)
+0x00401474:	lbu	$t1, 0x162($sp)
+0x00401478:	sw	$t3, 0x114($sp)
+0x0040147c:	sw	$t8, 0x104($sp)
+0x00401480:	lbu	$t3, 0x15d($sp)
+0x00401484:	lbu	$t8, 0x161($sp)
+0x00401488:	sw	$t3, 0x10c($sp)
+0x0040148c:	sw	$t8, 0x118($sp)
+0x00401490:	lbu	$t3, 0x15e($sp)
+0x00401494:	sw	$t3, 0x110($sp)
+0x00401498:	sw	$t1, 0x11c($sp)
+0x0040149c:	lw	$s5, 0x88($sp)
+0x004014a0:	lw	$t5, 0x68($sp)
+0x004014a4:	lw	$t3, 0xa0($sp)
+0x004014a8:	subu	$v0, $v0, $s5
+0x004014ac:	lw	$s5, 0x8c($sp)
+0x004014b0:	sll	$t5, $t5, 1
+0x004014b4:	lw	$a3, 0x58($sp)
+0x004014b8:	sll	$t8, $t3, 3
+0x004014bc:	lw	$t3, 0x64($sp)
+0x004014c0:	subu	$a0, $a0, $s5
+0x004014c4:	lw	$s5, 0x94($sp)
+0x004014c8:	sw	$t5, 0x88($sp)
+0x004014cc:	sll	$t1, $a3, 1
+0x004014d0:	lw	$t5, 0x54($sp)
+0x004014d4:	sll	$t4, $t3, 1
+0x004014d8:	subu	$t7, $t7, $s5
+0x004014dc:	lw	$s5, 0x98($sp)
+0x004014e0:	lw	$t3, 0x6c($sp)
+0x004014e4:	sw	$t4, 0xe8($sp)
+0x004014e8:	subu	$a1, $a1, $s5
+0x004014ec:	lw	$s5, 0x7c($sp)
+0x004014f0:	sll	$t4, $t3, 1
+0x004014f4:	lw	$a3, 0x70($sp)
+0x004014f8:	sw	$t1, 0xf0($sp)
+0x004014fc:	subu	$t9, $t9, $s5
+0x00401500:	sw	$t4, 0xec($sp)
+0x00401504:	sll	$s5, $t5, 1
+0x00401508:	lw	$t5, 0xbc($sp)
+0x0040150c:	lw	$t4, 0xc4($sp)
+0x00401510:	sll	$t3, $a3, 1
+0x00401514:	sw	$s5, 0x98($sp)
+0x00401518:	lw	$s5, 0x84($sp)
+0x0040151c:	xor	$v0, $v0, $t3
+0x00401520:	subu	$s2, $s2, $t4
+0x00401524:	lw	$t4, 0xc8($sp)
+0x00401528:	lw	$t1, 0x5c($sp)
+0x0040152c:	andi	$v0, $v0, 0xff
+0x00401530:	subu	$s7, $s7, $s5
+0x00401534:	lw	$a3, 0x74($sp)
+0x00401538:	sll	$s5, $t5, 1
+0x0040153c:	lw	$t5, 0xc0($sp)
+0x00401540:	sll	$t2, $t1, 1
+0x00401544:	sw	$s5, 0xc8($sp)
+0x00401548:	sll	$t1, $a3, 1
+0x0040154c:	lw	$s5, 0x90($sp)
+0x00401550:	subu	$s1, $s1, $t4
+0x00401554:	lw	$a3, 0x78($sp)
+0x00401558:	sll	$t4, $fp, 1
+0x0040155c:	xor	$a0, $a0, $t2
+0x00401560:	subu	$t6, $t6, $s5
+0x00401564:	sll	$s5, $t5, 1
+0x00401568:	lw	$t5, 0x60($sp)
+0x0040156c:	xor	$s1, $s1, $t4
+0x00401570:	sw	$s5, 0xf4($sp)
+0x00401574:	xor	$t7, $t7, $t1
+0x00401578:	lw	$s5, 0x9c($sp)
+0x0040157c:	sll	$a3, $a3, 1
+0x00401580:	andi	$t7, $t7, 0xff
+0x00401584:	xor	$a1, $a1, $a3
+0x00401588:	subu	$t0, $t0, $s5
+0x0040158c:	sll	$s5, $t5, 1
+0x00401590:	sw	$t0, 0xf8($sp)
+0x00401594:	andi	$s1, $s1, 0xff
+0x00401598:	sw	$s5, 0xfc($sp)
+0x0040159c:	andi	$a0, $a0, 0xff
+0x004015a0:	lw	$s5, 0xa0($sp)
+0x004015a4:	andi	$a1, $a1, 0xff
+0x004015a8:	lw	$t0, 0x64($sp)
+0x004015ac:	lw	$t2, 0x54($sp)
+0x004015b0:	subu	$t8, $t8, $s5
+0x004015b4:	lw	$s5, 0xd8($sp)
+0x004015b8:	lw	$t1, 0x5c($sp)
+0x004015bc:	lw	$t4, 0x68($sp)
+0x004015c0:	xor	$s0, $s5, $s0
+0x004015c4:	lw	$s5, 0x68($sp)
+0x004015c8:	sb	$s0, 0x158($sp)
+0x004015cc:	xor	$a3, $t4, $t2
+0x004015d0:	lw	$t4, 0x78($sp)
+0x004015d4:	xor	$s5, $t0, $s5
+0x004015d8:	lw	$t0, 0x6c($sp)
+0x004015dc:	sw	$s5, 0x94($sp)
+0x004015e0:	xor	$t5, $t4, $t5
+0x004015e4:	xor	$s5, $t0, $s6
+0x004015e8:	lw	$t0, 0x70($sp)
+0x004015ec:	sw	$s5, 0x90($sp)
+0x004015f0:	lw	$s5, 0x80($sp)
+0x004015f4:	xor	$t0, $fp, $t0
+0x004015f8:	sw	$t0, 0x8c($sp)
+0x004015fc:	subu	$a2, $a2, $s5
+0x00401600:	lw	$t0, 0x70($sp)
+0x00401604:	sw	$a2, 0x9c($sp)
+0x00401608:	lw	$a2, 0xb8($sp)
+0x0040160c:	xor	$s5, $t0, $t1
+0x00401610:	lw	$t0, 0x64($sp)
+0x00401614:	sll	$a2, $a2, 1
+0x00401618:	xor	$t4, $t0, $t2
+0x0040161c:	lw	$t0, 0x6c($sp)
+0x00401620:	sw	$a2, 0xc4($sp)
+0x00401624:	xor	$t2, $fp, $t1
+0x00401628:	lw	$a2, 0xe8($sp)
+0x0040162c:	lw	$fp, 0x60($sp)
+0x00401630:	xor	$s4, $s4, $a2
+0x00401634:	lw	$a2, 0xec($sp)
+0x00401638:	andi	$s4, $s4, 0xff
+0x0040163c:	xor	$s3, $s3, $a2
+0x00401640:	sll	$a2, $s6, 1
+0x00401644:	andi	$s3, $s3, 0xff
+0x00401648:	xor	$v1, $v1, $a2
+0x0040164c:	lw	$a2, 0xf0($sp)
+0x00401650:	andi	$v1, $v1, 0xff
+0x00401654:	xor	$s2, $s2, $a2
+0x00401658:	lw	$a2, 0x58($sp)
+0x0040165c:	andi	$s2, $s2, 0xff
+0x00401660:	xor	$t3, $t0, $a2
+0x00401664:	lw	$t0, 0x74($sp)
+0x00401668:	xor	$s6, $s6, $a2
+0x0040166c:	lw	$a2, 0x108($sp)
+0x00401670:	xor	$t1, $t0, $fp
+0x00401674:	lw	$fp, 0x100($sp)
+0x00401678:	lw	$t0, 0xdc($sp)
+0x0040167c:	xor	$fp, $s0, $fp
+0x00401680:	sw	$fp, 0x64($sp)
+0x00401684:	xor	$a2, $t0, $a2
+0x00401688:	sb	$fp, 0x159($sp)
+0x0040168c:	lw	$fp, 0xe0($sp)
+0x00401690:	lw	$t0, 0x114($sp)
+0x00401694:	sw	$s3, 0x6c($sp)
+0x00401698:	sw	$t7, 0x84($sp)
+0x0040169c:	lw	$s3, 0xc8($sp)
+0x004016a0:	xor	$fp, $fp, $t0
+0x004016a4:	lw	$t7, 0x88($sp)
+0x004016a8:	lw	$t0, 0xf8($sp)
+0x004016ac:	xor	$s7, $s7, $s3
+0x004016b0:	lw	$s3, 0xf4($sp)
+0x004016b4:	sw	$s2, 0x70($sp)
+0x004016b8:	sll	$s2, $t8, 2
+0x004016bc:	xor	$t8, $ra, $t7
+0x004016c0:	sw	$s4, 0x68($sp)
+0x004016c4:	lw	$t7, 0x98($sp)
+0x004016c8:	xor	$t6, $t6, $s3
+0x004016cc:	lw	$s3, 0xfc($sp)
+0x004016d0:	andi	$t6, $t6, 0xff
+0x004016d4:	lw	$ra, 0xbc($sp)
+0x004016d8:	andi	$t8, $t8, 0xff
+0x004016dc:	lw	$s4, 0x90($sp)
+0x004016e0:	xor	$t7, $t9, $t7
+0x004016e4:	xor	$t0, $t0, $s3
+0x004016e8:	lw	$t9, 0xb8($sp)
+0x004016ec:	lw	$s3, 0x94($sp)
+0x004016f0:	xor	$s6, $ra, $s6
+0x004016f4:	sw	$s1, 0x7c($sp)
+0x004016f8:	xor	$t3, $ra, $t3
+0x004016fc:	sw	$s2, 0xd8($sp)
+0x00401700:	xor	$a3, $t9, $a3
+0x00401704:	lw	$s1, 0xc0($sp)
+0x00401708:	xor	$t4, $t9, $t4
+0x0040170c:	lw	$s2, 0x50($sp)
+0x00401710:	xor	$t9, $t9, $s3
+0x00401714:	xor	$s3, $ra, $s4
+0x00401718:	lw	$ra, 0x8c($sp)
+0x0040171c:	xor	$s5, $s1, $s5
+0x00401720:	sw	$t6, 0x80($sp)
+0x00401724:	xor	$t5, $s2, $t5
+0x00401728:	sb	$a2, 0x15c($sp)
+0x0040172c:	xor	$t2, $s1, $t2
+0x00401730:	sb	$fp, 0x160($sp)
+0x00401734:	xor	$t1, $s2, $t1
+0x00401738:	xor	$s2, $s1, $ra
+0x0040173c:	lw	$ra, 0x64($sp)
+0x00401740:	lw	$s1, 0x104($sp)
+0x00401744:	andi	$t6, $t0, 0xff
+0x00401748:	sw	$t6, 0x88($sp)
+0x0040174c:	xor	$t3, $v1, $t3
+0x00401750:	xor	$t4, $s0, $t4
+0x00401754:	xor	$s4, $ra, $s1
+0x00401758:	lw	$s1, 0x10c($sp)
+0x0040175c:	lw	$ra, 0x118($sp)
+0x00401760:	xor	$t4, $t8, $t4
+0x00401764:	sb	$s4, 0x15a($sp)
+0x00401768:	xor	$t2, $v0, $t2
+0x0040176c:	xor	$s1, $a2, $s1
+0x00401770:	xor	$ra, $fp, $ra
+0x00401774:	sb	$s1, 0x15d($sp)
+0x00401778:	sb	$ra, 0x161($sp)
+0x0040177c:	xor	$a2, $a2, $t9
+0x00401780:	lw	$t6, 0x9c($sp)
+0x00401784:	xor	$t1, $a1, $t1
+0x00401788:	lw	$t0, 0xc4($sp)
+0x0040178c:	xor	$s2, $a0, $s2
+0x00401790:	sw	$t3, 0xc0($sp)
+0x00401794:	xor	$t2, $a0, $t2
+0x00401798:	lw	$t3, 0xa0($sp)
+0x0040179c:	andi	$t7, $t7, 0xff
+0x004017a0:	xor	$t6, $t6, $t0
+0x004017a4:	lw	$t0, 0x68($sp)
+0x004017a8:	lw	$t9, 0x70($sp)
+0x004017ac:	andi	$s7, $s7, 0xff
+0x004017b0:	lw	$a0, 0x88($sp)
+0x004017b4:	andi	$t6, $t6, 0xff
+0x004017b8:	xor	$a3, $t0, $a3
+0x004017bc:	lw	$t0, 0x6c($sp)
+0x004017c0:	sw	$a3, 0xb8($sp)
+0x004017c4:	xor	$s3, $t9, $s3
+0x004017c8:	lw	$t9, 0x110($sp)
+0x004017cc:	xor	$t1, $a0, $t1
+0x004017d0:	xor	$s6, $t0, $s6
+0x004017d4:	lw	$t0, 0x7c($sp)
+0x004017d8:	xor	$v1, $v1, $s6
+0x004017dc:	lw	$a0, 0x80($sp)
+0x004017e0:	xor	$s0, $s1, $t9
+0x004017e4:	lw	$t9, 0x11c($sp)
+0x004017e8:	xor	$a3, $t0, $s5
+0x004017ec:	lw	$s5, 0x84($sp)
+0x004017f0:	sw	$a3, 0xbc($sp)
+0x004017f4:	xor	$s2, $a0, $s2
+0x004017f8:	lw	$a3, 0xd8($sp)
+0x004017fc:	xor	$t9, $ra, $t9
+0x00401800:	lw	$t0, 0xb4($sp)
+0x00401804:	xor	$t5, $s5, $t5
+0x00401808:	lw	$s5, 0xac($sp)
+0x0040180c:	xor	$a1, $a1, $t5
+0x00401810:	subu	$t3, $a3, $t3
+0x00401814:	lw	$s6, 0xbc($sp)
+0x00401818:	lw	$t5, 0x74($sp)
+0x0040181c:	xor	$s3, $s7, $s3
+0x00401820:	sw	$t3, 0x98($sp)
+0x00401824:	xor	$s5, $s5, $t0
+0x00401828:	lw	$t3, 0x50($sp)
+0x0040182c:	xor	$v0, $v0, $s6
+0x00401830:	lw	$t0, 0xd0($sp)
+0x00401834:	xor	$a2, $t7, $a2
+0x00401838:	sb	$s0, 0x15e($sp)
+0x0040183c:	xor	$t2, $s4, $t2
+0x00401840:	sll	$a3, $t3, 1
+0x00401844:	lw	$t3, 0xc0($sp)
+0x00401848:	xor	$t0, $t0, $s4
+0x0040184c:	sb	$t9, 0x162($sp)
+0x00401850:	sw	$a3, 0x9c($sp)
+0x00401854:	xor	$a2, $t6, $a2
+0x00401858:	lw	$a3, 0xb8($sp)
+0x0040185c:	xor	$s3, $s1, $s3
+0x00401860:	sb	$s5, 0x157($sp)
+0x00401864:	xor	$a1, $s5, $a1
+0x00401868:	sb	$t0, 0x15b($sp)
+0x0040186c:	xor	$t1, $t0, $t1
+0x00401870:	xor	$a3, $t8, $a3
+0x00401874:	lw	$t8, 0x70($sp)
+0x00401878:	xor	$t4, $t7, $t4
+0x0040187c:	xor	$s2, $s0, $s2
+0x00401880:	xor	$t3, $t8, $t3
+0x00401884:	lw	$t8, 0x78($sp)
+0x00401888:	xor	$t8, $t5, $t8
+0x0040188c:	lw	$t5, 0xd4($sp)
+0x00401890:	lw	$s6, 0xa8($sp)
+0x00401894:	lw	$s5, 0x90($sp)
+0x00401898:	sb	$t2, 0x16a($sp)
+0x0040189c:	xor	$t5, $t5, $s0
+0x004018a0:	xor	$a0, $s6, $t9
+0x004018a4:	lw	$s6, 0xb0($sp)
+0x004018a8:	lw	$t2, 0x54($sp)
+0x004018ac:	lw	$s0, 0x9c($sp)
+0x004018b0:	xor	$a3, $s6, $a3
+0x004018b4:	lw	$s6, 0xe4($sp)
+0x004018b8:	sb	$a2, 0x16c($sp)
+0x004018bc:	sb	$s3, 0x16d($sp)
+0x004018c0:	xor	$v1, $s6, $v1
+0x004018c4:	lw	$s6, 0xb4($sp)
+0x004018c8:	lw	$s3, 0x94($sp)
+0x004018cc:	lw	$a2, 0x58($sp)
+0x004018d0:	xor	$v0, $s6, $v0
+0x004018d4:	sb	$a1, 0x167($sp)
+0x004018d8:	sb	$v0, 0x166($sp)
+0x004018dc:	xor	$s4, $t2, $s3
+0x004018e0:	sb	$t4, 0x168($sp)
+0x004018e4:	xor	$s3, $a2, $s5
+0x004018e8:	sb	$t1, 0x16b($sp)
+0x004018ec:	xor	$s4, $fp, $s4
+0x004018f0:	lw	$v0, 0x64($sp)
+0x004018f4:	lw	$a1, 0x8c($sp)
+0x004018f8:	lw	$a2, 0x6c($sp)
+0x004018fc:	xor	$t3, $v0, $t3
+0x00401900:	lw	$t4, 0x98($sp)
+0x00401904:	lw	$t1, 0x5c($sp)
+0x00401908:	sb	$t3, 0x169($sp)
+0x0040190c:	xor	$s3, $a2, $s3
+0x00401910:	sb	$a3, 0x164($sp)
+0x00401914:	xor	$t0, $t4, $s0
+0x00401918:	sb	$a0, 0x163($sp)
+0x0040191c:	xor	$s1, $t1, $a1
+0x00401920:	sb	$v1, 0x165($sp)
+0x00401924:	andi	$t0, $t0, 0xff
+0x00401928:	sb	$t5, 0x15f($sp)
+0x0040192c:	xor	$s7, $s7, $s3
+0x00401930:	sb	$s2, 0x16e($sp)
+0x00401934:	xor	$ra, $ra, $s7
+0x00401938:	lw	$t3, 0x50($sp)
+0x0040193c:	lw	$a3, 0x88($sp)
+0x00401940:	lw	$v1, 0x60($sp)
+0x00401944:	lw	$a2, 0x7c($sp)
+0x00401948:	xor	$v0, $t3, $t8
+0x0040194c:	lw	$s5, 0x84($sp)
+0x00401950:	xor	$v0, $a3, $v0
+0x00401954:	lw	$a1, 0x68($sp)
+0x00401958:	xor	$v0, $t0, $v0
+0x0040195c:	xor	$v0, $t5, $v0
+0x00401960:	sb	$ra, 0x171($sp)
+0x00401964:	xor	$t8, $v1, $t8
+0x00401968:	sb	$v0, 0x16f($sp)
+0x0040196c:	xor	$s4, $a1, $s4
+0x00401970:	lw	$a1, 0x80($sp)
+0x00401974:	lw	$v0, 0x140($sp)
+0x00401978:	xor	$s1, $a2, $s1
+0x0040197c:	lw	$v1, 0xa4($sp)
+0x00401980:	xor	$t8, $s5, $t8
+0x00401984:	xor	$s1, $a1, $s1
+0x00401988:	xor	$t0, $t0, $t8
+0x0040198c:	xor	$t6, $t6, $s4
+0x00401990:	xor	$t9, $t9, $s1
+0x00401994:	sb	$t6, 0x170($sp)
+0x00401998:	xor	$a0, $a0, $t0
+0x0040199c:	sb	$t9, 0x172($sp)
+0x004019a0:	slt	$v0, $v1, $v0
+0x004019a4:	bnez	$v0, 0x40111c
+0x004019a8:	sb	$a0, 0x173($sp)
+0x004019ac:	lw	$s0, 0x120($sp)
+0x004019b0:	jal	0
+0x004019b4:	move	$a0, $s0
+0x004019b0:	jal	0
+0x004019b4:	move	$a0, $s0
+0x004019b8:	mflo	$v0
+0x004019bc:	mtlo	$v0
+0x004019c0:	jal	0
+0x004019c4:	move	$a0, $v0
+0x004019c8:	move	$a0, $s0
+0x004019cc:	jal	0
+0x004019d0:	mflo	$a1
+0x004019d4:	lw	$v0, 0x12c($sp)
+0x004019d8:	lw	$gp, 0x48($sp)
+0x004019dc:	addiu	$v0, $v0, 1
+0x004019e0:	move	$v1, $v0
+0x004019e4:	sw	$v0, 0x12c($sp)
+0x004019e8:	lw	$v0, 0x13c($sp)
+0x004019ec:	slt	$v0, $v1, $v0
+0x004019f0:	beqz	$v0, 0x401a08
+0x004019f4:	nop	
+0x004019f8:	jal	0
+0x004019fc:	lw	$a1, 0x130($sp)
+0x00401a00:	b	0x4010d4
+0x00401a04:	addiu	$v0, $zero, 1
+0x00401a08:	lui	$a0, 0
+0x00401a0c:	lw	$t9, ($gp)
+0x00401a10:	jalr	$t9
+0x00401a14:	addiu	$a0, $a0, 0
+0x00401a18:	lui	$a1, 0
+0x00401a1c:	lw	$gp, 0x48($sp)
+0x00401a20:	addiu	$a0, $zero, 1
+0x00401a24:	lbu	$v1, 0x170($sp)
+0x00401a28:	addiu	$a1, $a1, 0
+0x00401a2c:	lbu	$s1, 0x173($sp)
+0x00401a30:	lbu	$s0, 0x16f($sp)
+0x00401a34:	lbu	$ra, 0x16b($sp)
+0x00401a38:	lbu	$t8, 0x167($sp)
+0x00401a3c:	lbu	$t7, 0x172($sp)
+0x00401a40:	lbu	$t6, 0x16e($sp)
+0x00401a44:	lbu	$t5, 0x16a($sp)
+0x00401a48:	lbu	$t4, 0x166($sp)
+0x00401a4c:	lbu	$t3, 0x171($sp)
+0x00401a50:	lbu	$t2, 0x16d($sp)
+0x00401a54:	lbu	$t1, 0x169($sp)
+0x00401a58:	lbu	$t0, 0x165($sp)
+0x00401a5c:	lbu	$v0, 0x16c($sp)
+0x00401a60:	lw	$t9, ($gp)
+0x00401a64:	lbu	$a3, 0x168($sp)
+0x00401a68:	lbu	$a2, 0x164($sp)
+0x00401a6c:	sw	$v1, 0x14($sp)
+0x00401a70:	sw	$s1, 0x44($sp)
+0x00401a74:	sw	$s0, 0x40($sp)
+0x00401a78:	sw	$ra, 0x3c($sp)
+0x00401a7c:	sw	$t8, 0x38($sp)
+0x00401a80:	sw	$t7, 0x34($sp)
+0x00401a84:	sw	$t6, 0x30($sp)
+0x00401a88:	sw	$t5, 0x2c($sp)
+0x00401a8c:	sw	$t4, 0x28($sp)
+0x00401a90:	sw	$t3, 0x24($sp)
+0x00401a94:	sw	$t2, 0x20($sp)
+0x00401a98:	sw	$t1, 0x1c($sp)
+0x00401a9c:	sw	$t0, 0x18($sp)
+0x00401aa0:	jalr	$t9
+0x00401aa4:	sw	$v0, 0x10($sp)
+0x00401aa8:	lw	$v0, 0x134($sp)
+0x00401aac:	lw	$v1, 0x184($sp)
+0x00401ab0:	lw	$gp, 0x48($sp)
+0x00401ab4:	lw	$v0, ($v0)
+0x00401ab8:	bne	$v1, $v0, 0x401b20
+0x00401abc:	lw	$ra, 0x1ac($sp)
+0x00401ac0:	move	$v0, $zero
+0x00401ac4:	lw	$fp, 0x1a8($sp)
+0x00401ac8:	lw	$s7, 0x1a4($sp)
+0x00401acc:	lw	$s6, 0x1a0($sp)
+0x00401ad0:	lw	$s5, 0x19c($sp)
+0x00401ad4:	lw	$s4, 0x198($sp)
+0x00401ad8:	lw	$s3, 0x194($sp)
+0x00401adc:	lw	$s2, 0x190($sp)
+0x00401ae0:	lw	$s1, 0x18c($sp)
+0x00401ae4:	lw	$s0, 0x188($sp)
+0x00401ae8:	jr	$ra
+0x00401aec:	addiu	$sp, $sp, 0x1b0
+0x00401af0:	lw	$v0, ($gp)
+0x00401af4:	lui	$a2, 0
+0x00401af8:	lw	$t9, ($gp)
+0x00401afc:	addiu	$a3, $s0, 0
+0x00401b00:	addiu	$a2, $a2, 0
+0x00401b04:	addiu	$a1, $zero, 1
+0x00401b08:	jalr	$t9
+0x00401b0c:	lw	$a0, ($v0)
+0x00401b10:	lw	$gp, 0x48($sp)
+0x00401b14:	lw	$t9, ($gp)
+0x00401b18:	jalr	$t9
+0x00401b1c:	addiu	$a0, $zero, 1
+0x00401b20:	lw	$t9, ($gp)
+0x00401b24:	jalr	$t9
+0x00401b28:	nop	
+
+Function UnresolvableCallTarget @ 0x00500050
+0x00500050:	nop	
+0x00500054:	nop	
+0x00500058:	nop	
+0x0050005c:	nop	
+0x00500060:	nop	
+0x00500064:	nop	
+0x00500068:	nop	
+0x0050006c:	nop	
+0x00500070:	nop	
+0x00500074:	nop	
+0x00500078:	nop	
+0x0050007c:	nop	
+0x00500080:	nop	
+0x00500084:	nop	
+0x00500088:	nop	
+0x0050008c:	nop	
+0x00500090:	nop	
+0x00500094:	nop	
+0x00500098:	nop	
+0x0050009c:	nop	
+0x005000a0:	nop	
+0x005000a4:	nop	
+0x005000a8:	nop	
+0x005000ac:	nop	
+0x005000b0:	nop	
+0x005000b4:	nop	
+0x005000b8:	nop	
+0x005000bc:	nop	
+0x005000c0:	nop	
+0x005000c4:	nop	
+0x005000c8:	nop	
+0x005000cc:	nop	
+0x005000d0:	nop	
+0x005000d4:	nop	
+0x005000d8:	nop	
+0x005000dc:	nop	
+0x005000e0:	nop	
+0x005000e4:	nop	
+0x005000e8:	nop	
+0x005000ec:	nop	
+0x005000f0:	nop	
+0x005000f4:	nop	
+0x005000f8:	nop	
+0x005000fc:	nop	
+0x00500100:	nop	
+0x00500104:	nop	
+0x00500108:	nop	
+0x0050010c:	nop	
+0x00500110:	nop	
+0x00500114:	nop	
+0x00500118:	nop	
+0x0050011c:	nop	
+0x00500120:	nop	
+0x00500124:	nop	
+0x00500128:	nop	
+0x0050012c:	nop	
+0x00500130:	nop	
+0x00500134:	nop	
+0x00500138:	nop	
+0x0050013c:	nop	
+0x00500140:	nop	
+0x00500144:	nop	
+0x00500148:	nop	
+0x0050014c:	nop	
+0x00500150:	nop	
+0x00500154:	nop	
+0x00500158:	nop	
+0x0050015c:	nop	
+0x00500160:	nop	
+0x00500164:	nop	
+0x00500168:	nop	
+0x0050016c:	nop	
+0x00500170:	nop	
+0x00500174:	nop	
+0x00500178:	nop	
+0x0050017c:	nop	
+0x00500180:	nop	
+0x00500184:	nop	
+0x00500188:	nop	
+0x0050018c:	nop	
+0x00500190:	nop	
+0x00500194:	nop	
+0x00500198:	nop	
+0x0050019c:	nop	
+0x005001a0:	nop	
+0x005001a4:	nop	
+0x005001a8:	nop	
+0x005001ac:	nop	
+0x005001b0:	nop	
+0x005001b4:	nop	
+0x005001b8:	nop	
+0x005001bc:	nop	
+0x005001c0:	nop	
+0x005001c4:	nop	
+0x005001c8:	nop	
+0x005001cc:	nop	
+0x005001d0:	nop	
+0x005001d4:	nop	
+0x005001d8:	nop	
+
+==============================
+NON-TEXT SECTION DUMP
+==============================
+
+[SECTION] 
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 0
+
+[SECTION] .data
+  Address: 0x0
+  Size   : 320 bytes
+  Flags  : 3
+  Data (first 256 bytes): 01 02 04 08 10 20 40 80 1b 36 6c d8 ab 4d 9a 2f 5e bc 63 c6 97 35 6a d4 b3 7d fa ef c5 91 39 72 e4 d3 bd 61 c2 9f 25 4a 94 33 66 cc 83 1d 3a 74 e8 cb 8d 01 02 04 08 10 20 40 80 1b 36 6c d8 ab 63 7c 77 7b f2 6b 6f c5 30 01 67 2b fe d7 ab 76 ca 82 c9 7d fa 59 47 f0 ad d4 a2 af 9c a4 72 c0 b7 fd 93 26 36 3f f7 cc 34 a5 e5 f1 71 d8 31 15 04 c7 23 c3 18 96 05 9a 07 12 80 e2 eb 27 b2 75 09 83 2c 1a 1b 6e 5a a0 52 3b d6 b3 29 e3 2f 84 53 d1 00 ed 20 fc b1 5b 6a cb be 39 4a 4c 58 cf d0 ef aa fb 43 4d 33 85 45 f9 02 7f 50 3c 9f a8 51 a3 40 8f 92 9d 38 f5 bc b6 da 21 10 ff f3 d2 cd 0c 13 ec 5f 97 44 17 c4 a7 7e 3d 64 5d 19 73 60 81 4f dc 22 2a 90 88 46 ee b8 14 de 5e 0b db e0 32 3a 0a 49 06 24 5c c2 d3 ac 62 91 95 e4 79 e7 c8 37 6d 8d d5 4e a9 6c 56 f4 ea 65 7a ae 08
+
+[SECTION] .bss
+  Address: 0x0
+  Size   : 16 bytes
+  Flags  : 3
+  Data (first 256 bytes): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[SECTION] .reginfo
+  Address: 0x0
+  Size   : 24 bytes
+  Flags  : 2
+  Data (first 256 bytes): f3 ff ff fc 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[SECTION] .MIPS.abiflags
+  Address: 0x0
+  Size   : 24 bytes
+  Flags  : 2
+  Data (first 256 bytes): 00 00 20 02 01 01 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[SECTION] .pdr
+  Address: 0x0
+  Size   : 224 bytes
+  Flags  : 0
+  Data (first 256 bytes): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d 00 00 00 1f 00 00 00 00 40 ff 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 00 a8 00 00 00 1d 00 00 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d 00 00 00 1f 00 00 00 00 00 7f 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 00 20 00 00 00 1d 00 00 00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d 00 00 00 1f 00 00 00 00 80 07 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 00 60 00 00 00 1d 00 00 00 1f 00 00 00 00 c0 ff 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 01 b0 00 00 00 1d 00 00 00 1f
+
+[SECTION] .mdebug.abi32
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 0
+
+[SECTION] .rodata.str1.4
+  Address: 0x0
+  Size   : 364 bytes
+  Flags  : 50
+  Data (first 256 bytes): 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 0a 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 0a 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 0a 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 20 25 30 32 68 68 78 0a 00 00 00 00 72 00 00 00 61 65 73 69 6e 70 75 74 2e 74 78 74 00 00 00 00 43 61 6e 6e 6f 74 20 72 65 61 64 20 66 69 6c 65 20 25 73 0a 00 00 00 00 25 64 0a 00 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 25 32 68 68 78 0a 00 00 00 46 69 6e 61 6c 20 62 6c
+
+[SECTION] .comment
+  Address: 0x0
+  Size   : 38 bytes
+  Flags  : 48
+  Data (first 256 bytes): 00 47 43 43 3a 20 28 55 62 75 6e 74 75 20 31 30 2e 33 2e 30 2d 31 75 62 75 6e 74 75 31 29 20 31 30 2e 33 2e 30 00
+
+[SECTION] .note.GNU-stack
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 0
+
+[SECTION] .gnu.attributes
+  Address: 0x0
+  Size   : 16 bytes
+  Flags  : 0
+  Data (first 256 bytes): 41 00 00 00 0f 67 6e 75 00 01 00 00 00 07 04 05
+
+[SECTION] .shstrtab
+  Address: 0x0
+  Size   : 141 bytes
+  Flags  : 0
+  Data (first 256 bytes): 00 2e 73 68 73 74 72 74 61 62 00 2e 74 65 78 74 00 2e 64 61 74 61 00 2e 62 73 73 00 2e 72 65 67 69 6e 66 6f 00 2e 4d 49 50 53 2e 61 62 69 66 6c 61 67 73 00 2e 70 64 72 00 2e 6d 64 65 62 75 67 2e 61 62 69 33 32 00 2e 72 6f 64 61 74 61 2e 73 74 72 31 2e 34 00 2e 74 65 78 74 2e 73 74 61 72 74 75 70 00 2e 63 6f 6d 6d 65 6e 74 00 2e 6e 6f 74 65 2e 47 4e 55 2d 73 74 61 63 6b 00 2e 67 6e 75 2e 61 74 74 72 69 62 75 74 65 73 00
+
+==============================

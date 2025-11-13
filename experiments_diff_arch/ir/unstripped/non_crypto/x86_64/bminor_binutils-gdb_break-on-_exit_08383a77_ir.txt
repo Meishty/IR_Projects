@@ -1,0 +1,67 @@
+Function main @ 0x400000
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I64 t8:Ity_I64 t9:Ity_I64 t10:Ity_I64 t11:Ity_I64 t12:Ity_I64 t13:Ity_I64 t14:Ity_I64 t15:Ity_I64 t16:Ity_I32 t17:Ity_I64 t18:Ity_I32 t19:Ity_I64 t20:Ity_I64 t21:Ity_I64 t22:Ity_I64 t23:Ity_I64 t24:Ity_I64 t25:Ity_I64
+
+   00 | ------ IMark(0x400000, 4, 0) ------
+   01 | PUT(rip) = 0x0000000000400004
+   02 | ------ IMark(0x400004, 1, 0) ------
+   03 | t0 = GET:I64(rax)
+   04 | t13 = GET:I64(rsp)
+   05 | t12 = Sub64(t13,0x0000000000000008)
+   06 | PUT(rsp) = t12
+   07 | STle(t12) = t0
+   08 | PUT(rip) = 0x0000000000400005
+   09 | ------ IMark(0x400005, 1, 0) ------
+   10 | t2 = LDle:I64(t12)
+   11 | t14 = Add64(t12,0x0000000000000008)
+   12 | PUT(rax) = t2
+   13 | ------ IMark(0x400006, 2, 0) ------
+   14 | PUT(rdi) = 0x0000000000000000
+   15 | ------ IMark(0x400008, 4, 0) ------
+   16 | t7 = Sub64(t14,0x0000000000000008)
+   17 | PUT(cc_op) = 0x0000000000000008
+   18 | PUT(cc_dep1) = t14
+   19 | PUT(cc_dep2) = 0x0000000000000008
+   20 | PUT(rip) = 0x000000000040000c
+   21 | ------ IMark(0x40000c, 5, 0) ------
+   22 | t22 = Sub64(t7,0x0000000000000008)
+   23 | PUT(rsp) = t22
+   24 | STle(t22) = 0x0000000000400011
+   25 | t24 = Sub64(t22,0x0000000000000080)
+   26 | ====== AbiHint(0xt24, 128, 0x0000000000500000) ======
+   NEXT: PUT(rip) = 0x0000000000500000; Ijk_Call
+}
+
+Function _exit @ 0x500000
+IRSB {
+   t0:Ity_I8 t1:Ity_I8 t2:Ity_I8 t3:Ity_I64 t4:Ity_I8 t5:Ity_I8 t6:Ity_I8 t7:Ity_I64 t8:Ity_I8 t9:Ity_I8 t10:Ity_I8 t11:Ity_I64 t12:Ity_I8 t13:Ity_I8 t14:Ity_I8 t15:Ity_I64 t16:Ity_I64 t17:Ity_I64 t18:Ity_I64 t19:Ity_I64 t20:Ity_I64 t21:Ity_I64 t22:Ity_I64 t23:Ity_I64 t24:Ity_I64
+
+   00 | ------ IMark(0x500000, 2, 0) ------
+   01 | t3 = GET:I64(rax)
+   02 | t2 = LDle:I8(t3)
+   03 | t1 = GET:I8(al)
+   04 | t0 = Add8(t2,t1)
+   05 | STle(t3) = t0
+   06 | PUT(rip) = 0x0000000000500002
+   07 | ------ IMark(0x500002, 2, 0) ------
+   08 | t6 = LDle:I8(t3)
+   09 | t4 = Add8(t6,t1)
+   10 | STle(t3) = t4
+   11 | PUT(rip) = 0x0000000000500004
+   12 | ------ IMark(0x500004, 2, 0) ------
+   13 | t10 = LDle:I8(t3)
+   14 | t8 = Add8(t10,t1)
+   15 | STle(t3) = t8
+   16 | PUT(rip) = 0x0000000000500006
+   17 | ------ IMark(0x500006, 2, 0) ------
+   18 | t14 = LDle:I8(t3)
+   19 | t12 = Add8(t14,t1)
+   20 | STle(t3) = t12
+   21 | PUT(cc_op) = 0x0000000000000001
+   22 | t22 = 8Uto64(t14)
+   23 | PUT(cc_dep1) = t22
+   24 | t23 = 8Uto64(t1)
+   25 | PUT(cc_dep2) = t23
+   NEXT: PUT(rip) = 0x0000000000500008; Ijk_Boring
+}
+

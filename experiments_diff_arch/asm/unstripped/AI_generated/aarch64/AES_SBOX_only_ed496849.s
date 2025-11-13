@@ -1,0 +1,14 @@
+
+Function main @ 0x00400010
+0x00400010:	stp	x29, x30, [sp, #-0x10]!
+0x00400014:	mov	w2, #0x63
+0x00400018:	adrp	x1, #0x400000
+0x0040001c:	mov	x29, sp
+0x00400020:	add	x1, x1, #0
+0x00400024:	mov	w0, #1
+0x00400028:	bl	#0x500000
+0x0040002c:	mov	w0, #0
+0x00400030:	ldp	x29, x30, [sp], #0x10
+0x00400034:	ret	
+
+Function __printf_chk @ 0x00500000

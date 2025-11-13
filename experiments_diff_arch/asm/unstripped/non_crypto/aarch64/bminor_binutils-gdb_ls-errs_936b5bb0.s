@@ -1,0 +1,8 @@
+
+Function myfunction @ 0x00400000
+0x00400000:	add	w0, w0, #0x2a
+0x00400004:	ret	
+
+Function main @ 0x00400010
+0x00400010:	mov	w0, #0x2a
+0x00400014:	ret	

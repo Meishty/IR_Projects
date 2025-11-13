@@ -1,0 +1,10 @@
+
+Function myfunction @ 0x00400000
+0x00400000:	endbr64	
+0x00400004:	lea	eax, [rdi + 0x2a]
+0x00400007:	ret	
+
+Function main @ 0x00400010
+0x00400010:	endbr64	
+0x00400014:	mov	eax, 0x2a
+0x00400019:	ret	
