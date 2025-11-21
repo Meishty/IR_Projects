@@ -1044,3 +1044,94 @@ Function UnresolvableCallTarget @ 0x00601050
 0x006011d0:	nop	
 0x006011d4:	nop	
 0x006011d8:	nop	
+
+==============================
+NON-TEXT SECTION DUMP
+==============================
+
+[SECTION] 
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 0
+
+[SECTION] .rel.text
+  Address: 0x0
+  Size   : 144 bytes
+  Flags  : 64
+  Data (first 256 bytes): 00 00 0a d8 00 00 0f 05 00 00 0a e4 00 00 0f 06 00 00 0b 40 00 00 10 0b 00 00 0b 58 00 00 10 25 00 00 0b 68 00 00 0d 04 00 00 0b f4 00 00 0d 04 00 00 0c 30 00 00 10 0b 00 00 0c 34 00 00 10 25 00 00 0c 60 00 00 10 25 00 00 0c 70 00 00 0f 05 00 00 0c 88 00 00 0f 06 00 00 0c a4 00 00 12 0b 00 00 0c c0 00 00 12 25 00 00 0c cc 00 00 0d 04 00 00 0c e0 00 00 12 0b 00 00 0c e4 00 00 12 25 00 00 0d 00 00 00 0d 04 00 00 0d 78 00 00 12 25
+
+[SECTION] .data
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 3
+
+[SECTION] .bss
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 3
+
+[SECTION] .reginfo
+  Address: 0x0
+  Size   : 24 bytes
+  Flags  : 2
+  Data (first 256 bytes): f3 ff ff fc 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[SECTION] .MIPS.abiflags
+  Address: 0x0
+  Size   : 24 bytes
+  Flags  : 2
+  Data (first 256 bytes): 00 00 20 02 01 01 00 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[SECTION] .pdr
+  Address: 0x0
+  Size   : 128 bytes
+  Flags  : 0
+  Data (first 256 bytes): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d 00 00 00 1f 00 00 00 00 40 ff 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 1d 00 00 00 1f 00 00 00 00 80 3f 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 00 38 00 00 00 1d 00 00 00 1f 00 00 00 00 80 07 00 00 ff ff ff fc 00 00 00 00 00 00 00 00 00 00 00 28 00 00 00 1d 00 00 00 1f
+
+[SECTION] .rel.pdr
+  Address: 0x0
+  Size   : 32 bytes
+  Flags  : 64
+  Data (first 256 bytes): 00 00 00 00 00 00 0c 02 00 00 00 20 00 00 0d 02 00 00 00 40 00 00 0e 02 00 00 00 60 00 00 11 02
+
+[SECTION] .mdebug.abi32
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 0
+
+[SECTION] .comment
+  Address: 0x0
+  Size   : 38 bytes
+  Flags  : 48
+  Data (first 256 bytes): 00 47 43 43 3a 20 28 55 62 75 6e 74 75 20 31 30 2e 33 2e 30 2d 31 75 62 75 6e 74 75 31 29 20 31 30 2e 33 2e 30 00
+
+[SECTION] .note.GNU-stack
+  Address: 0x0
+  Size   : 0 bytes
+  Flags  : 0
+
+[SECTION] .gnu.attributes
+  Address: 0x0
+  Size   : 16 bytes
+  Flags  : 0
+  Data (first 256 bytes): 41 00 00 00 0f 67 6e 75 00 01 00 00 00 07 04 05
+
+[SECTION] .symtab
+  Address: 0x0
+  Size   : 304 bytes
+  Flags  : 0
+  Data (first 256 bytes): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 04 00 ff f1 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 09 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 0b 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 05 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 06 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 07 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 0a 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 0c 00 00 00 07 00 00 00 00 00 00 00 3c 12 00 00 01 00 00 00 0f 00 00 00 3c 00 00 0a 90 12 00 00 01 00 00 00 1c 00 00 0a cc 00 00 01 9c 12 00 00 01 00 00 00 26 00 00 00 00 00 00 00 00 10 00 00 00
+
+[SECTION] .strtab
+  Address: 0x0
+  Size   : 76 bytes
+  Flags  : 0
+  Data (first 256 bytes): 00 6d 64 35 2e 63 00 4d 44 35 49 6e 69 74 00 4d 44 35 54 72 61 6e 73 66 6f 72 6d 00 4d 44 35 55 70 64 61 74 65 00 5f 5f 67 6e 75 5f 6c 6f 63 61 6c 5f 67 70 00 6d 65 6d 63 70 79 00 4d 44 35 46 69 6e 61 6c 00 6d 65 6d 73 65 74 00
+
+[SECTION] .shstrtab
+  Address: 0x0
+  Size   : 136 bytes
+  Flags  : 0
+  Data (first 256 bytes): 00 2e 73 79 6d 74 61 62 00 2e 73 74 72 74 61 62 00 2e 73 68 73 74 72 74 61 62 00 2e 72 65 6c 2e 74 65 78 74 00 2e 64 61 74 61 00 2e 62 73 73 00 2e 72 65 67 69 6e 66 6f 00 2e 4d 49 50 53 2e 61 62 69 66 6c 61 67 73 00 2e 72 65 6c 2e 70 64 72 00 2e 6d 64 65 62 75 67 2e 61 62 69 33 32 00 2e 63 6f 6d 6d 65 6e 74 00 2e 6e 6f 74 65 2e 47 4e 55 2d 73 74 61 63 6b 00 2e 67 6e 75 2e 61 74 74 72 69 62 75 74 65 73 00
+
+==============================
