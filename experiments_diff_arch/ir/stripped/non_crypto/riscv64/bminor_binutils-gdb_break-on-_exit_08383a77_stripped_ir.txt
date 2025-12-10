@@ -1,0 +1,31 @@
+Function _start @ 0x400000
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64 t4:Ity_I64 t5:Ity_I64 t6:Ity_I64 t7:Ity_I64 t8:Ity_I64
+
+   00 | ------ IMark(0x400000, 2, 0) ------
+   01 | t2 = GET:I64(x2)
+   02 | t1 = Add64(t2,0xfffffffffffffff0)
+   03 | PUT(x2) = t1
+   04 | ------ IMark(0x400002, 2, 0) ------
+   05 | PUT(x10) = 0x0000000000000000
+   06 | PUT(pc) = 0x0000000000400004
+   07 | ------ IMark(0x400004, 2, 0) ------
+   08 | t3 = Add64(t1,0x0000000000000008)
+   09 | t5 = GET:I64(x1)
+   10 | STle(t3) = t5
+   11 | ------ IMark(0x400006, 4, 0) ------
+   12 | ------ IMark(0x40000a, 4, 0) ------
+   13 | PUT(x1) = 0x000000000040000e
+   NEXT: PUT(pc) = 0x0000000000400006; Ijk_Call
+}
+
+Function sub_400006 @ 0x400006
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64
+
+   00 | ------ IMark(0x400006, 4, 0) ------
+   01 | ------ IMark(0x40000a, 4, 0) ------
+   02 | PUT(x1) = 0x000000000040000e
+   NEXT: PUT(pc) = 0x0000000000400006; Ijk_Call
+}
+

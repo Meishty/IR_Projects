@@ -1,0 +1,39 @@
+Function _start @ 0x400000
+IRSB {
+   t0:Ity_I32 t1:Ity_I32 t2:Ity_I32 t3:Ity_I32 t4:Ity_I32 t5:Ity_I32 t6:Ity_I32 t7:Ity_I32 t8:Ity_I32 t9:Ity_I32 t10:Ity_I32 t11:Ity_I32 t12:Ity_I32 t13:Ity_I32 t14:Ity_I32 t15:Ity_I32 t16:Ity_I32 t17:Ity_I32 t18:Ity_I1 t19:Ity_I32 t20:Ity_I32 t21:Ity_I1 t22:Ity_I32 t23:Ity_I32 t24:Ity_I32 t25:Ity_I32 t26:Ity_I32 t27:Ity_I32 t28:Ity_I32 t29:Ity_I32 t30:Ity_I1 t31:Ity_I32
+
+   00 | ------ IMark(0x400000, 4, 0) ------
+   01 | t10 = GET:I32(cc_op)
+   02 | t9 = Or32(t10,0x00000040)
+   03 | t11 = GET:I32(cc_dep1)
+   04 | t12 = GET:I32(cc_dep2)
+   05 | t13 = GET:I32(cc_ndep)
+   06 | t14 = armg_calculate_condition(t9,t11,t12,t13):Ity_I32
+   07 | t16 = GET:I32(r0)
+   08 | t17 = GET:I32(r3)
+   09 | t18 = CmpNE32(t14,0x00000000)
+   10 | t3 = if (t18) ILGop_8Uto32(LDle(t16)) else t17
+   11 | PUT(r3) = t3
+   12 | PUT(r0) = t16
+   13 | ------ IMark(0x400004, 4, 0) ------
+   14 | t22 = Or32(t10,0x00000020)
+   15 | t27 = armg_calculate_condition(t22,t11,t12,t13):Ity_I32
+   16 | t7 = GET:I32(r8)
+   17 | t6 = Shl32(t7,0x0a)
+   18 | t8 = And32(t16,t6)
+   19 | t29 = GET:I32(r11)
+   20 | t30 = CmpNE32(t27,0x00000000)
+   21 | t28 = ITE(t30,t8,t29)
+   22 | PUT(r11) = t28
+   23 | ------ IMark(0x400008, 0, 0) ------
+   NEXT: PUT(pc) = 0x00400008; Ijk_NoDecode
+}
+
+Function sub_40000a @ 0x40000a
+IRSB {
+   
+
+   00 | ------ IMark(0x40000a, 4, 0) ------
+   NEXT: PUT(pc) = 0x0040000e; Ijk_Boring
+}
+

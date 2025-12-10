@@ -1,0 +1,40 @@
+Function myfunction @ 0x400000
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64 t4:Ity_I64 t5:Ity_I64 t6:Ity_I64 t7:Ity_I32 t8:Ity_I64 t9:Ity_I64
+
+   00 | ------ IMark(0x400000, 4, 0) ------
+   01 | ------ IMark(0x400004, 3, 0) ------
+   02 | t5 = GET:I64(rdi)
+   03 | t4 = Add64(t5,0x000000000000002a)
+   04 | t7 = 64to32(t4)
+   05 | t6 = 32Uto64(t7)
+   06 | PUT(rax) = t6
+   07 | PUT(rip) = 0x0000000000400007
+   08 | ------ IMark(0x400007, 1, 0) ------
+   09 | t1 = GET:I64(rsp)
+   10 | t2 = LDle:I64(t1)
+   11 | t3 = Add64(t1,0x0000000000000008)
+   12 | PUT(rsp) = t3
+   13 | t8 = Sub64(t3,0x0000000000000080)
+   14 | ====== AbiHint(0xt8, 128, t2) ======
+   NEXT: PUT(rip) = t2; Ijk_Ret
+}
+
+Function main @ 0x400010
+IRSB {
+   t0:Ity_I64 t1:Ity_I64 t2:Ity_I64 t3:Ity_I64 t4:Ity_I64 t5:Ity_I64
+
+   00 | ------ IMark(0x400010, 4, 0) ------
+   01 | ------ IMark(0x400014, 5, 0) ------
+   02 | PUT(rax) = 0x000000000000002a
+   03 | PUT(rip) = 0x0000000000400019
+   04 | ------ IMark(0x400019, 1, 0) ------
+   05 | t0 = GET:I64(rsp)
+   06 | t1 = LDle:I64(t0)
+   07 | t2 = Add64(t0,0x0000000000000008)
+   08 | PUT(rsp) = t2
+   09 | t4 = Sub64(t2,0x0000000000000080)
+   10 | ====== AbiHint(0xt4, 128, t1) ======
+   NEXT: PUT(rip) = t1; Ijk_Ret
+}
+
